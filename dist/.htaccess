@@ -1,0 +1,27 @@
+<IfModule mod_rewrite.c>  
+    RewriteEngine on  
+
+	# https://docs.grabaperch.com/addons/blog/examples/clean-urls-perch/
+
+	RewriteRule ^posts/([a-zA-Z0-9-/]+)$ /blog/post.php?s=$1 [L]
+	# Once URLs are rewritten, draft post preview is achieved by adding /preview to the end of your URL, so remember to add a rule for that. You should rewrite it to add the query string argument preview=all to the URL.
+
+
+
+	# make sure the address we received (e.g. /mypage) is not an existing file      
+	RewriteCond %{REQUEST_FILENAME} !-f
+	#  make sure it's not an existing directory either
+	RewriteCond %{REQUEST_FILENAME} !-d
+	# make sure there IS an existing .php file corresponding to it
+	RewriteCond %{REQUEST_FILENAME}.php -f
+
+
+	
+	# if the address starts with "blog/", pick what comes afterwards, put it into the GET Parameter and quit (that's the [L]) 
+	#RewriteRule ^blog/([a-zA-Z0-9-/]+)$ /blog/post.php?s=$1 [L]
+
+
+	# else if it wasn't a blog post, just append .php to it. Ah, and keep other get params (that's the QSA=Query String Append). 
+	RewriteRule ^(.+)$ $1.php [L,QSA]
+
+</IfModule>
