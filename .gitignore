@@ -6,6 +6,7 @@
 
 # Ignore image/media uploaded through Perch CMS
 dist/console/resources/*
+dist/console/config/config.php
 node_modules
 
 # Docker: stuff to ignore (ref: https://github.com/PerchCMS/simple-docker)
