@@ -18,7 +18,7 @@
 
 	
 	# if the address starts with "blog/", pick what comes afterwards, put it into the GET Parameter and quit (that's the [L]) 
-	#RewriteRule ^blog/([a-zA-Z0-9-/]+)$ /blog/post.php?s=$1 [L]
+	# RewriteRule ^blog/([a-zA-Z0-9-/]+)$ /blog/post.php?s=$1 [L]
 
 
 	# else if it wasn't a blog post, just append .php to it. Ah, and keep other get params (that's the QSA=Query String Append). 
