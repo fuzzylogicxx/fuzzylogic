@@ -53,4 +53,5 @@
     
     <?php //perch_get_javascript(); ?>
 </body>
+<?php PerchUtil::output_debug(); ?>
 </html>
