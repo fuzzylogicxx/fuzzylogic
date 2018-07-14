@@ -1,6 +1,25 @@
 version: '2'
 
 services:
+  proxy:
+    build: ./docker/nginx
+    volumes:
+      - letsencrypt_certs:/etc/nginx/certs
+      - letsencrypt_www:/var/www/letsencrypt
+    links:
+      - webserver:fuzzylogic.me
+    ports:
+      - "80:80"
+      - "443:443"
+    restart: always
+
+  letsencrypt:
+    build: ./docker/certbot
+    command: /bin/true
+    volumes:
+      - letsencrypt_certs:/etc/letsencrypt
+      - letsencrypt_www:/var/www/letsencrypt
+
   webserver:
     build: ./docker/webserver
     image: fuzzylogic_web
@@ -11,6 +30,7 @@ services:
       - /home/fuzzylogic/code/dist:/var/www/html
     links:
       - db
+    restart: always
 
   db:
     image: mysql:5.7
@@ -21,3 +41,8 @@ services:
     environment:
       - MYSQL_ROOT_PASSWORD=docker
       - MYSQL_DATABASE=db_fuzzylogic
+
+
+volumes:
+  letsencrypt_certs: ~
+  letsencrypt_www: ~
