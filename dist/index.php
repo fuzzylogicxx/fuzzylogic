@@ -6,9 +6,26 @@
 	<title>Fuzzy Logic: Homepage</title>
 	<?php //perch_get_css(); ?>
 	<link rel="alternate" type="application/rss+xml" title="RSS" href="rss.php" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta name="robots" content="noindex">
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+		}
+		div {
+			margin: 0 2%;
+		}
+		@media only screen and (min-width: 40em)  { 
+			div {
+				margin: 0 20%;
+			}
+		}
+	</style>
 </head>
 <body>
+    <div>
+
     <h1><?php perch_content('Main heading'); ?></h1>
 
     <?php perch_content('Intro'); ?>
@@ -47,8 +64,7 @@
 
 	<small>Copyright &copy; <?php echo date('Y'); ?></small>
 
-
-
+	</div>
 
     
     <?php //perch_get_javascript(); ?>
