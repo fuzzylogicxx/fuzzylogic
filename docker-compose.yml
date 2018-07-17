@@ -15,8 +15,8 @@ services:
     restart: always
 
   letsencrypt:
-    image: certbot
-    build: ./docker/certbot
+    image: letsencrypt
+    build: ./docker/letsencrypt
     command: /bin/true
     volumes:
       - letsencrypt_certs:/etc/letsencrypt
@@ -27,7 +27,6 @@ services:
     image: fuzzylogic_web
     ports:
       - "80:80"
-      - "443:443"
     volumes:
       - /home/fuzzylogic/code/dist:/var/www/html
     links:
