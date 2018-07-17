@@ -2,6 +2,7 @@ version: '2'
 
 services:
   proxy:
+    image: nginx
     build: ./docker/nginx
     volumes:
       - letsencrypt_certs:/etc/nginx/certs
@@ -14,6 +15,7 @@ services:
     restart: always
 
   letsencrypt:
+    image: certbot
     build: ./docker/certbot
     command: /bin/true
     volumes:
