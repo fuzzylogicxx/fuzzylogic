@@ -27,6 +27,7 @@ services:
     image: fuzzylogic_web
     volumes:
       - /home/fuzzylogic/code/dist:/var/www/html
+      - letsencrypt_certs:/etc/letsencrypt
     links:
       - db
     restart: always
