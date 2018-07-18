@@ -26,9 +26,11 @@
 <body>
     <div>
 
-    <h1><?php perch_content('Main heading'); ?></h1>
+    	<p>Hello World FL</p>
 
-    <?php perch_content('Intro'); ?>
+    <!-- <h1><?php perch_content('Main heading'); ?></h1>
+
+    <?php perch_content('Intro'); ?> -->
 
 
 
@@ -38,7 +40,7 @@
 	paths used in these templates are correct for your installation.
 	 -->
     <?php
-        perch_blog_recent_posts(10);
+        //perch_blog_recent_posts(10);
     ?>
 
     <p><a href="archive.php">More posts</a></p>
