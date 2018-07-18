@@ -1,48 +1,27 @@
-version: '2'
+https-portal:
+  image: steveltn/https-portal
+  ports:
+    - 80:80
+    - 443:443
+  links:
+    - webserver
+  environment:
+    - "DOMAINS=fuzzylogic.me -> http://webserver"
 
-services:
-  proxy:
-    image: nginx
-    build: ./docker/nginx
-    volumes:
-      - letsencrypt_certs:/etc/nginx/certs
-      - letsencrypt_www:/var/www/letsencrypt
-    links:
-      - webserver:fuzzylogic.me
-    ports:
-      - "80:80"
-      - "443:443"
-    restart: always
-
-  letsencrypt:
-    image: letsencrypt
-    build: ./docker/letsencrypt
-    command: /bin/true
-    volumes:
-      - letsencrypt_certs:/etc/letsencrypt
-      - letsencrypt_www:/var/www/letsencrypt
-
-  webserver:
-    build: ./docker/webserver
-    image: fuzzylogic_web
-    volumes:
+webserver:
+  build: ./docker/webserver
+  image: fuzzylogic_web
+  volumes:
       - /home/fuzzylogic/code/dist:/var/www/html
-      - letsencrypt_certs:/etc/letsencrypt
-    links:
-      - db
-    restart: always
+  links:
+    - db
 
-  db: 
-    image: mysql:5.7
-    ports: 
-      - "4407:3306"
-    volumes:
-      - ./db:/var/lib/mysql
-    environment:
-      - MYSQL_ROOT_PASSWORD=docker
-      - MYSQL_DATABASE=db_fuzzylogic
-
-
-volumes:
-  letsencrypt_certs: ~
-  letsencrypt_www: ~
+db: 
+  image: mysql:5.7
+  ports: 
+    - "4407:3306"
+  volumes:
+    - ./db:/var/lib/mysql
+  environment:
+    - MYSQL_ROOT_PASSWORD=docker
+    - MYSQL_DATABASE=db_fuzzylogic
