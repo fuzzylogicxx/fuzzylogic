@@ -1,5 +1,7 @@
-https-portal:
+version: '2'
+
 services:
+https-portal:
   image: steveltn/https-portal
   ports:
     - 80:80
@@ -26,6 +28,4 @@ db:
   environment:
     - MYSQL_ROOT_PASSWORD=docker
     - MYSQL_DATABASE=db_fuzzylogic
-
-
 
