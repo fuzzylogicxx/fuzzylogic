@@ -10,7 +10,6 @@ https-portal:
 
 webserver:
   build: ./docker/webserver
-  image: fuzzylogic_web
   volumes:
       - /home/fuzzylogic/code/dist:/var/www/html
   links:
