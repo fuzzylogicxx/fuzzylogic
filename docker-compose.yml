@@ -8,7 +8,7 @@ services:
       - "80:80"
       - "443:443"
     volumes:
-      - /home/fuzzylogic/code/dist:/var/www/html
+      - /Users/laurencehughes/code_docker/fuzzylogic/dist:/var/www/html
     links:
       - db
 
