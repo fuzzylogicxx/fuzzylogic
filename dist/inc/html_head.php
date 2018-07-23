@@ -32,7 +32,8 @@
 			font-family: 'Source Sans Pro', sans-serif;
 			margin: 0;
 			padding: 0;
-			line-height: 1.5;
+			line-height: 1.4;
+			color: #333;
 		}
 		body {
 		    font-feature-settings: "liga" 1;
