@@ -38,7 +38,6 @@
 		body {
 		    font-feature-settings: "liga" 1;
 		    font-feature-settings: "onum" 1;
-		    line-height: $base-line-height;
 		    -webkit-font-smoothing: antialiased;
 		}
 		@supports (font-variant-ligatures: common-ligatures) {
