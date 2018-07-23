@@ -25,10 +25,32 @@
 	<link rel="stylesheet" href="/css/normalize.css">
 	<link rel="stylesheet" href="/css/main.css">
 
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&amp;subset=latin-ext" rel="stylesheet"> 
+
 	<style>
 		body {
+			font-family: 'Source Sans Pro', sans-serif;
 			margin: 0;
 			padding: 0;
+			line-height: 1.5;
+		}
+		body {
+		    font-feature-settings: "liga" 1;
+		    font-feature-settings: "onum" 1;
+		    line-height: $base-line-height;
+		    -webkit-font-smoothing: antialiased;
+		}
+		@supports (font-variant-ligatures: common-ligatures) {
+		    body {
+		        font-feature-settings: normal;
+		        font-variant-ligatures: common-ligatures;
+		    }
+		}
+		@supports (font-variant-numeric: oldstyle-nums) {
+		    body {
+		        font-feature-settings: normal;
+		        font-variant-numeric: oldstyle-nums;
+		    }
 		}
 		header, .container {
 			margin: 0 2%;
