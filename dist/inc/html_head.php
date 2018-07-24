@@ -54,10 +54,12 @@
 		}
 		header, .container {
 			margin: 0 2%;
+			max-width: 38em;
 		}
-		@media only screen and (min-width: 40em)  { 
+		@media only screen and (min-width: 38em)  { 
 			header,  .container {
-				margin: 0 20%;
+				margin-left: auto;
+				margin-right: auto;
 			}
 		}
 	</style>
