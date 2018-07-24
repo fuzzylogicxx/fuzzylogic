@@ -32,7 +32,7 @@
 			font-family: 'Source Sans Pro', sans-serif;
 			margin: 0;
 			padding: 0;
-			line-height: 1.4;
+			line-height: 1.5;
 			color: #333;
 		}
 		body {
@@ -53,7 +53,7 @@
 		    }
 		}
 		header, .container {
-			margin: 0 2%;
+			margin: 0 20px;
 			max-width: 38em;
 		}
 		@media only screen and (min-width: 38em)  { 
