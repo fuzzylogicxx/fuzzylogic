@@ -34,32 +34,104 @@
 
 
 	<style>
+		/*
+		Thin (normally 100)
+		Extra Light  (normally 200)
+		Light (normally 300)
+		Book  (?)
+		Regular (normally 400)
+		Core (?)
+		Medium  (normally 500)
+		SemiBold (normally 600)
+		Bold (normally 700)
+		ExtraBold (normally 800)
+		Heavy (normally 900)
+
+
+
+
 		@font-face {
 			font-family: 'FSEmeric';
-			src: url('/fonts/fsemericwebregular/FSEmericWeb-Regular.eot'); /* IE9 */
-			src: url('/fonts/fsemericwebregular/FSEmericWeb-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ 
-			url('/fonts/fsemericwebregular/FSEmericWeb-Regular.woff') format('woff'); /* Modern Browsers */
-			font-weight: normal;
+			src: url('/fonts/fsemericwebextralight/FSEmericWeb-ExtraLight.eot'); /* IE9 */
+			src: url('/fonts/fsemericwebextralight/FSEmericWeb-ExtraLight.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ 
+			url('/fonts/fsemericwebextralight/FSEmericWeb-ExtraLight.woff') format('woff'); /* Modern Browsers */
+			font-weight: 200;
 			font-style: normal;
 		}
+		@font-face {
+			font-family: 'FSEmeric';
+			src: url('/fonts/fsemericwebextralightitalic/FSEmericWeb-ExtraLightItalic.eot'); /* IE9 */
+			src: url('/fonts/fsemericwebextralightitalic/FSEmericWeb-ExtraLightItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ 
+			url('/fonts/fsemericwebextralightitalic/FSEmericWeb-ExtraLightItalic.woff') format('woff'); /* Modern Browsers */
+			font-weight: 200;
+			font-style: italic;
+		}
+		
 		@font-face {
 			font-family: 'FSEmeric';
 			src: url('/fonts/fsemericwebbook/FSEmericWeb-Book.eot'); /* IE9 */
 			src: url('/fonts/fsemericwebbook/FSEmericWeb-Book.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ 
 			url('/fonts/fsemericwebbook/FSEmericWeb-Book.woff') format('woff'); /* Modern Browsers */
-			font-weight: 300;
+			font-weight: 350;
 			font-style: normal;
 		}
+		@font-face {
+			font-family: 'FSEmeric';
+			src: url('/fonts/fsemericwebbookitalic/FSEmericWeb-BookItalic.eot'); /* IE9 */
+			src: url('/fonts/fsemericwebbookitalic/FSEmericWeb-BookItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ 
+			url('/fonts/fsemericwebbookitalic/FSEmericWeb-BookItalic.woff') format('woff'); /* Modern Browsers */
+			font-weight: 350;
+			font-style: italic;
+		}
+
+		@font-face {
+			font-family: 'FSEmeric';
+			src: url('/fonts/fsemericwebregular/FSEmericWeb-Regular.eot'); /* IE9 */
+			src: url('/fonts/fsemericwebregular/FSEmericWeb-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ 
+			url('/fonts/fsemericwebregular/FSEmericWeb-Regular.woff') format('woff'); /* Modern Browsers */
+			font-weight: 400; /* i.e. normal */
+			font-style: normal;
+		}
+		@font-face {
+			font-family: 'FSEmeric';
+			src: url('/fonts/fsemericwebitalic/FSEmericWeb-Italic.eot'); /* IE9 */
+			src: url('/fonts/fsemericwebitalic/FSEmericWeb-Italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ 
+			url('/fonts/fsemericwebitalic/FSEmericWeb-Italic.woff') format('woff'); /* Modern Browsers */
+			font-weight: 400; /* i.e. normal */
+			font-style: italic;
+		}
+
+		@font-face {
+			font-family: 'FSEmeric';
+			src: url('/fonts/fsemericwebbold/FSEmericWeb-Bold.eot'); /* IE9 */
+			src: url('/fonts/fsemericwebbold/FSEmericWeb-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ 
+			url('/fonts/fsemericwebbold/FSEmericWeb-Bold.woff') format('woff'); /* Modern Browsers */
+			font-weight: 700; /* i.e. normal */
+			font-style: normal;
+		}
+		@font-face {
+			font-family: 'FSEmeric';
+			src: url('/fonts/fsemericwebbolditalic/FSEmericWeb-BoldItalic.eot'); /* IE9 */
+			src: url('/fonts/fsemericwebbolditalic/FSEmericWeb-BoldItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ 
+			url('/fonts/fsemericwebbolditalic/FSEmericWeb-BoldItalic.woff') format('woff'); /* Modern Browsers */
+			font-weight: 700; /* i.e. normal */
+			font-style: italic;
+		}
+
+
 		body {
 			font-family: 'FSEmeric', sans-serif; /* 'Fira Sans', *//* 'Open Sans',*/ /*  'Lato',  */ /* 'Source Sans Pro', */
 			margin: 0;
 			padding: 0;
 			line-height: 1.5;
 			font-size: 17px;
-			font-weight: 300;
+			color: rgb(51,51,51);
+			/*font-weight: 300;*/
 			/*color: #fff;*/
 			/*background-color: rgb(38, 38, 38);*/
-			color: #333;
+			/*background-color: #1e8b8e;*/
+			/*color: #fff;*/
+			text-rendering: optimizeLegibility;
 			-webkit-font-smoothing: antialiased;
 		}
 		body {
@@ -80,7 +152,12 @@
 		    }
 		}
 		a {
-			color: #4db7ac;
+			  color: #35857d;
+			  text-decoration-skip-ink: none;
+			/*color: #fff;
+			text-decoration: none;*/
+			/*border-bottom: 1px solid #fff;*/
+
 			/*color: green;*/ /*rgb(158, 216, 210);*/ /* color: rgb(185, 225, 220); */
 			/*color: rgb(255,255,255);*/
 		}
@@ -107,6 +184,14 @@
 			list-style: none;
 			padding-left: 0;
 			margin-left: 0;
+		}
+		.intro {
+			font-weight: 200;
+			font-size: 22px;
+			line-height: 1.37;
+		}
+		img {
+			max-width: 100%;
 		}
 	</style>
 

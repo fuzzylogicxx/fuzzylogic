@@ -3,7 +3,9 @@
 
 <div class="container">
 
-<?php perch_content('Intro'); ?>
+<p class="intro">Hi &ndash; I’m Laurence Hughes, a web developer and director at <a href="http://www.greenhilldigital.com/">Greenhill</a>, music maker in <a href="http://nuclearfami.ly/">The Nuclear Family</a>, player of records and pinger of pongs. This is my online home, where I test-drive web <em>stuff</em> and share my thoughts on code, music and other jive-talk. Thanks for stopping by.</p>
+
+<?php //perch_content('Intro'); ?>
 
 <!-- this is an example blog homepage showing a simple call to perch_blog_recent_posts()
 

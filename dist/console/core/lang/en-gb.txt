@@ -379,5 +379,6 @@
     "Show dedicated back link in sidebar": "Show dedicated back link in sidebar",
     "Enable keyboard shortcuts": "Enable keyboard shortcuts",
     "Skip region list for just one region": "Skip region list for just one region",
-    "Enforce bucket restrictions on content": "Enforce bucket restrictions on content"
+    "Enforce bucket restrictions on content": "Enforce bucket restrictions on content",
+    "Markdown formatting": "Markdown formatting"
 }
