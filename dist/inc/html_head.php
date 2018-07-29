@@ -118,7 +118,10 @@
 			font-style: italic;
 		}
 
-
+		html {
+			margin: 0;
+			padding: 0;
+		}
 		body {
 			font-family: 'FSEmeric', sans-serif; /* 'Fira Sans', *//* 'Open Sans',*/ /*  'Lato',  */ /* 'Source Sans Pro', */
 			margin: 0;
@@ -164,11 +167,14 @@
 		a:hover {
 
 		}
-		header, .container {
+		.container {
 			margin: 0 20px;
 			max-width: 38em;
 		}
 		@media only screen and (min-width: 38em)  { 
+			header {
+				max-width: 38em;		
+			}
 			header,  .container {
 				margin-left: auto;
 				margin-right: auto;
@@ -192,6 +198,23 @@
 		}
 		img {
 			max-width: 100%;
+		}
+		header {
+			background: #80C1B0;
+			text-align: center;
+		}
+		header h1 {
+			margin-top: 0;
+		}
+		#logo {
+			/*add non retina here and wrap following line in a retina-testing media query*/
+			background-image: url(../img/fuzzylogic_roundel_d_72@2x.png);
+			background-size: 72px 72px;
+			display: block;
+			text-indent: -9999999px;
+			width: 72px;
+			height: 72px;
+			margin: 0 auto;
 		}
 	</style>
 
