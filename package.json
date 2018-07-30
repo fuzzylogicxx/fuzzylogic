@@ -1,0 +1,15 @@
+{
+  "name": "fuzzylogic",
+  "version": "1.0.0",
+  "description": "Personal website of Laurence Hughes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "buddy@app.buddy.works:laurencehughes1976/fuzzy-logic-personal-site"
+  },
+  "author": "",
+  "license": "ISC"
+}
