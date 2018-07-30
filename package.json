@@ -11,5 +11,11 @@
     "url": "buddy@app.buddy.works:laurencehughes1976/fuzzy-logic-personal-site"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-sass": "^4.0.1",
+    "gulp-sourcemaps": "^2.6.4"
+  }
 }
