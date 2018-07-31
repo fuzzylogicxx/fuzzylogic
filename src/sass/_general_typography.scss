@@ -1,0 +1,309 @@
+/*
+Thin (normally 100)
+Extra Light  (normally 200)
+Light (normally 300)
+Book  (?)
+Regular (normally 400)
+Core (?)
+Medium  (normally 500)
+SemiBold (normally 600)
+Bold (normally 700)
+ExtraBold (normally 800)
+Heavy (normally 900)
+*/
+
+@font-face {
+    font-family: 'FSEmeric';
+    src: url('/fonts/fsemericwebextralight/FSEmericWeb-ExtraLight.eot'); /* IE9 */
+    src: url('/fonts/fsemericwebextralight/FSEmericWeb-ExtraLight.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ 
+    url('/fonts/fsemericwebextralight/FSEmericWeb-ExtraLight.woff') format('woff'); /* Modern Browsers */
+    font-weight: 200;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'FSEmeric';
+    src: url('/fonts/fsemericwebextralightitalic/FSEmericWeb-ExtraLightItalic.eot'); /* IE9 */
+    src: url('/fonts/fsemericwebextralightitalic/FSEmericWeb-ExtraLightItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ 
+    url('/fonts/fsemericwebextralightitalic/FSEmericWeb-ExtraLightItalic.woff') format('woff'); /* Modern Browsers */
+    font-weight: 200;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'FSEmeric';
+    src: url('/fonts/fsemericwebbook/FSEmericWeb-Book.eot'); /* IE9 */
+    src: url('/fonts/fsemericwebbook/FSEmericWeb-Book.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ 
+    url('/fonts/fsemericwebbook/FSEmericWeb-Book.woff') format('woff'); /* Modern Browsers */
+    font-weight: 350;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'FSEmeric';
+    src: url('/fonts/fsemericwebbookitalic/FSEmericWeb-BookItalic.eot'); /* IE9 */
+    src: url('/fonts/fsemericwebbookitalic/FSEmericWeb-BookItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ 
+    url('/fonts/fsemericwebbookitalic/FSEmericWeb-BookItalic.woff') format('woff'); /* Modern Browsers */
+    font-weight: 350;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'FSEmeric';
+    src: url('/fonts/fsemericwebregular/FSEmericWeb-Regular.eot'); /* IE9 */
+    src: url('/fonts/fsemericwebregular/FSEmericWeb-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ 
+    url('/fonts/fsemericwebregular/FSEmericWeb-Regular.woff') format('woff'); /* Modern Browsers */
+    font-weight: 400; /* i.e. normal */
+    font-style: normal;
+}
+@font-face {
+    font-family: 'FSEmeric';
+    src: url('/fonts/fsemericwebitalic/FSEmericWeb-Italic.eot'); /* IE9 */
+    src: url('/fonts/fsemericwebitalic/FSEmericWeb-Italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ 
+    url('/fonts/fsemericwebitalic/FSEmericWeb-Italic.woff') format('woff'); /* Modern Browsers */
+    font-weight: 400; /* i.e. normal */
+    font-style: italic;
+}
+@font-face {
+    font-family: 'FSEmeric';
+    src: url('/fonts/fsemericwebbold/FSEmericWeb-Bold.eot'); /* IE9 */
+    src: url('/fonts/fsemericwebbold/FSEmericWeb-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ 
+    url('/fonts/fsemericwebbold/FSEmericWeb-Bold.woff') format('woff'); /* Modern Browsers */
+    font-weight: 700; 
+    font-style: normal;
+}
+@font-face {
+    font-family: 'FSEmeric';
+    src: url('/fonts/fsemericwebbolditalic/FSEmericWeb-BoldItalic.eot'); /* IE9 */
+    src: url('/fonts/fsemericwebbolditalic/FSEmericWeb-BoldItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ 
+    url('/fonts/fsemericwebbolditalic/FSEmericWeb-BoldItalic.woff') format('woff'); /* Modern Browsers */
+    font-weight: 700;
+    font-style: italic;
+}
+
+html {
+    color: $color-main;
+    font-family: $font-sans;
+    // @include breakpoint(bp-small) {
+    //    font-size: 112.5%; // =1.125em (so 1rem (and 1em on any element without a dedicated font-size) = 18px)
+    // }
+    // @include breakpoint(bp-large) {
+    //    font-size: 125%; // =1.25em (so 1rem (and 1em on any element without a dedicated font-size) = 20px)
+    // }
+}
+
+body {
+    font-feature-settings: "liga" 1;
+    font-feature-settings: "onum" 1;
+    line-height: $base-line-height;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+@supports (font-variant-ligatures: common-ligatures) {
+    body {
+        font-feature-settings: normal;
+        font-variant-ligatures: common-ligatures;
+    }
+}
+
+@supports (font-variant-numeric: oldstyle-nums) {
+    body {
+        font-feature-settings: normal;
+        font-variant-numeric: oldstyle-nums;
+    }
+}
+
+a {
+    color: $color-accent;
+    text-decoration-skip-ink: none;
+    //&:hover {
+    //    color: darken($color-accent, 20%);
+    //}
+}
+
+small {
+    @include font-size-to-rem($smallest-font-size);
+}
+
+p {
+    @paragraph-margins();
+}
+
+blockquote, 
+ul,
+ol {
+    @paragraph-margins();
+}
+
+ul ul, 
+ol ol {
+    margin-top: 0;
+}
+
+li {
+    list-style-position: inside;
+}
+
+ul li {
+    padding-left: .75em;
+    li {
+        padding-left: 1.5em;
+    }
+}
+
+@include breakpoint(bp-medium) {
+    ol {
+        list-style: none;
+        counter-reset: mylist;
+        li {
+            list-style-position: outside;
+            &::before {
+                counter-increment: mylist;
+                content: counter(mylist);
+                margin-left: -1.25+em;
+                margin-right: .75em;
+            }
+        }
+    }
+}
+
+dt {
+    // font-weight: 600;
+}
+
+dd {
+    @paragraph-margins();
+}
+
+abbr, code.markup.element, code.markup.attribute {
+    text-decoration: none;
+    font-family: inherit;
+    font-variant: all-small-caps;
+}
+
+// Assuming we've set our language in the <html> element, turn on automatic hyphenation in CSS.
+/*h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+li,
+dd {
+    hyphens: auto;
+}*/
+
+h1, h2, h3, h4, h5, h6 {
+    color: $color-interface-and-display;        //$color-main;
+    font-family: $font-sans;
+    font-feature-settings: "dlig" 1;
+    @supports (font-variant-ligatures: discretionary-ligatures) {
+        .dlig {
+            font-feature-settings: normal;
+            font-variant-ligatures: discretionary-ligatures;
+        }
+    }
+}
+
+// Headings, starting with smallest first.
+/*h6,
+h5, 
+h4 {
+    font-weight: 800;
+    @include font-size-to-rem($base-font-size);
+    line-height: 1.25; // set by eye. 1.5 is too much, 1 is too small.
+    @include rhythmic-vertical-margins($base-font-size);
+    letter-spacing: -0.01em;
+}*/
+/*h3 {
+    font-weight: 800;
+    @include font-size-to-rem(18); // was 21 - maybe go for that at iphone7
+    @include rhythmic-line-height(18);
+    @include rhythmic-vertical-margins(18);
+    letter-spacing: -0.01em;
+    /*max-width: 30em;* /
+}*/
+/*%h2,
+h2 {
+    font-weight: 800;
+    @include font-size-to-rem(21); // was 25 - maybe go for that at iphone7
+    @include rhythmic-line-height(21);
+    @include rhythmic-vertical-margins(21);
+    letter-spacing: -0.01em;
+}*/
+/*h1 {
+    font-weight: 800;
+    @include font-size-to-rem(33); 
+    
+    line-height: 1; 
+    
+    @include rhythmic-vertical-margins(33);
+    letter-spacing: -0.02em; // Gently tighten big, bold and wide fonts
+    /*max-width: 28em;* /
+}
+*/
+
+
+
+/*%nice-body-letter-spacing {
+    letter-spacing: -.0125em;
+}*/
+article {
+    p,
+    li,
+    dt,
+    dd {
+        /*@extend %nice-body-letter-spacing;*/
+        hyphens: auto;
+    }
+}
+/*// Mark the opening of each passage of text
+.article-body > p:first-child::first-line {
+    // for legacy browsers
+    font-feature-settings: "smcp" 1;
+}
+@supports (font-variant-caps: small-caps) {
+    .article-body > p:first-child::first-line {
+        font-feature-settings: normal;
+        font-variant-caps: small-caps;
+    }
+}*/
+@supports(-webkit-initial-letter: 2) {
+    .article-body::first-letter {
+        -webkit-initial-letter: 2;
+        initial-letter: 2;
+        font-weight: bold;
+        margin-right: .5em;
+    }
+}
+
+blockquote { //.quoted
+
+    p {
+        font-style: italic;
+        hanging-punctuation: first last;
+        quotes: '“' '”' '‘' '’';
+        &:first-of-type::before {
+            content: open-quote;
+            margin-left: -0.83ch;
+        }
+    }
+    footer {
+    }   
+}
+@supports(hanging-punctuation: first last) {
+    blockquote p:first-of-type::before {
+        margin-left: 0;
+    }
+}
+blockquote p:last-of-type::after  {
+    content: close-quote;
+}
+blockquote p:last-of-type {
+    margin-bottom: 0;
+}
+.pullquote {
+}
+
+
+figure {
+}

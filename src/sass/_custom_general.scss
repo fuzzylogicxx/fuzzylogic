@@ -1,0 +1,17 @@
+// Site-specific styles
+
+// Change box model from the default 'content-box' setting.
+// 'content-box' applies element's declared width to its content only, placing padding and border outside the element's box.
+// This effectively increases how much space the element takes up.
+// border-box puts the padding and border inside the box so box is as wide as the width we declared.
+// Also, use the 'inheritance' based approach https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+// This approach means that if we need to include a third-party component and don't want to mess with its box-model...
+// then we can reset it to normal using .component { box-sizing: content-box; } and won't have any inheritance issues with child elements
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+

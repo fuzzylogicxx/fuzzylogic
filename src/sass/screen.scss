@@ -1,0 +1,158 @@
+@import "normalise.scss";
+@import "reset.scss";
+@import "selected_h5bp_maindotcss_goodies.scss"
+@import "variables.scss";
+@import "mixins.scss";
+@import "custom_general.scss";
+@import "general_typography.scss";
+@import "forms.scss";
+
+// Responsive images
+
+img {
+    max-width: 100%;
+}
+
+
+// Tables
+// For consistency and ease of understanding, match the alignment of headings to the alignment of the data.
+// Right-align headings of numeric data and left-align headings of columns with text.
+
+table {
+    font-variant-numeric: lining-nums tabular-nums;
+    @include paragraph-margins();
+}
+tfoot {
+    display: none;
+}
+.fig-table {
+    max-width: 100%;
+    overflow-x: scroll;
+}
+
+// Alerts
+
+%alert {
+    color: #31708f;
+    background-color: #d9edf7;
+    border-color: #bce8f1;
+}
+[role=alert],
+.message,
+.alert-success,
+.alert-error {
+    @extend %alert;
+}
+.alert-success {
+    color: #3c763d;
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+}
+.alert-error {
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #ebccd1;
+}
+
+// Tabs
+
+[role=tab] {
+    display: inline-block;
+}
+[role=tab][aria-selected=true] {
+    background: tomato;
+}
+[role=tabpanel] {
+    display: none;
+}
+[role=tabpanel][aria-expanded=true] {
+    display: block;
+}
+
+// Utilities / Common
+
+// In most situations we want images to display block (but not by default)
+article img {
+    display: block;
+}
+
+
+
+
+
+// Header
+
+[role=banner] {}
+#logo {}
+
+header {
+    background: #80C1B0;
+    text-align: center;
+}
+/*header h1 {
+    margin-top: 0;
+}*/
+#logo {
+    /* to do: add non retina here and wrap following line in a retina-testing media query */
+    background-image: url(../img/fuzzylogic_roundel_d_72@2x.png); /* if we change basic unit of vertical rhythm from 24, could change logo height from 72 to sthg that retains rhythm */
+    background-size: 72px 72px;
+    display: block;
+    text-indent: -9999999px;
+    width: 72px;
+    height: 72px;
+    margin: 0 auto;
+}
+
+
+
+// Navigation
+
+[role=navigation] {}
+
+// Main
+
+main {}
+
+
+// Sidebar
+aside {
+}
+
+// Articles
+
+article {}
+
+
+// Lists
+.hfeed, 
+.hfeed li {
+    list-style: none;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+
+
+
+
+// Footer (i.e. the global footer, as opposed to any other local <footer> elements)
+
+[role=contentinfo] {}
+
+
+// Homepage 
+
+.intro {
+/*    font-weight: 200;
+    font-size: 22px;
+    line-height: 1.37;*/
+}
+
+// Page: X
+
+
+
+
+// Page: Y
+
+
