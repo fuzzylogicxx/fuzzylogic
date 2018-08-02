@@ -1,8 +1,6 @@
 <?php $page = ['title' => 'Homepage']; ?>
 <?php require_once($_SERVER['DOCUMENT_ROOT'].'/inc/page_start.php'); ?>
 
-<div class="container">
-
 <p class="intro">Hi &ndash; I’m Laurence Hughes, a web developer and director at <a href="http://www.greenhilldigital.com/">Greenhill</a>, music maker in <a href="http://nuclearfami.ly/">The Nuclear Family</a>, player of records and pinger of pongs.</p>
 
 <p class="intro"><a href="https://fuzzylogic.me/" rel="me">Fuzzy Logic</a> is my online home, where I test-drive web <em>stuff</em> and share my thoughts on code, music and more.</p>

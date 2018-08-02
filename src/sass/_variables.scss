@@ -38,9 +38,9 @@ $font-serif: 'FSEmeric', sans-serif;
 // we start with body copy font size at X, with a line height of Y
 // at viewport width X+ we increase body font size to Y
 // at viewport width X+ we increase body font size to Y
-$smallest-font-size: 14;
+$smallest-font-size: 12;
 $base-font-size: 16;
-$base-line-height: 1.5;
+$base-line-height: 1.4;
 $base-line-height-in-px: ($base-font-size * $base-line-height);
 
 $bp-xs-base-font-size: 17;

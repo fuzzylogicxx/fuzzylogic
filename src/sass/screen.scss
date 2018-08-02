@@ -1,6 +1,6 @@
 @import "normalise.scss";
 @import "reset.scss";
-@import "selected_h5bp_maindotcss_goodies.scss"
+@import "selected_h5bp_maindotcss_goodies.scss";
 @import "variables.scss";
 @import "mixins.scss";
 @import "custom_general.scss";
@@ -71,10 +71,14 @@ tfoot {
 
 // Utilities / Common
 
-// In most situations we want images to display block (but not by default)
+// In most (but not necessarily all) situations we want images to display block
 article img {
     display: block;
 }
+
+// Layout (NB make sure to revisit any grid-only layout and do it responsibly)
+
+
 
 
 
@@ -82,10 +86,7 @@ article img {
 
 // Header
 
-[role=banner] {}
-#logo {}
-
-header {
+[role=banner] {
     background: #80C1B0;
     text-align: center;
 }
@@ -111,7 +112,9 @@ header {
 
 // Main
 
-main {}
+main {
+    margin: 0 1em;
+}
 
 
 // Sidebar
