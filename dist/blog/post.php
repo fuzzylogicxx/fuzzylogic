@@ -1,12 +1,14 @@
 <?php $page = ['title' => 'Homepage | Fuzzy Logic']; ?>
 <?php require_once($_SERVER['DOCUMENT_ROOT'].'/inc/page_start.php'); ?>
 
-<div class="container">
+<main>
 
 <div class="post">
 	<?php perch_blog_post(perch_get('s')); ?>
 
-	<?php perch_blog_author_for_post(perch_get('s')); ?>
+	<?php 
+    /*
+    <?php perch_blog_author_for_post(perch_get('s')); ?>
 
 	<div class="meta">
         <div class="cats">
@@ -20,9 +22,13 @@
 	<?php //perch_blog_post_comments(perch_get('s')); ?>
 
 	<?php //perch_blog_post_comment_form(perch_get('s')); ?>
+    */
+    ?>
 
 </div>
 
+<?php
+/*
 <nav class="sidebar">
     <h2>Archive</h2>
     <!-- The following functions are different ways to display archives. You can use any or all of these.
@@ -41,5 +47,10 @@
     <!--  By year and then month - can take parameters for two templates. The first displays the years and the second the months see the default templates for examples -->
     <?php perch_blog_date_archive_months(); ?>
 </nav>
+*/
+?>
+
+</main>
+
 
 <?php require_once($_SERVER['DOCUMENT_ROOT'].'/inc/page_end.php'); ?>

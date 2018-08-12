@@ -18,6 +18,7 @@
     perch_blog_recent_posts(10);
 ?>
 
+<?php /*
 <p><a href="/blog/archive.php">More posts</a></p>
 
 <nav class="sidebar">
@@ -38,6 +39,8 @@
     <!--  By year and then month - can take parameters for two templates. The first displays the years and the second the months see the default templates for examples -->
     <?php perch_blog_date_archive_months(); ?>
 </nav>
+*/
+?>
 
 </main>
 
