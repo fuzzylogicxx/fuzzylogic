@@ -1,6 +1,6 @@
 // Colours
-$color-main: rgb(51,51,51);
-$color-interface-and-display: rgb(51,51,51);
+$color-main: rgb(68,68,68); // #444 (versus previous #333 or rgb(51,51,51) which is darker)
+$color-interface-and-display: rgb(68,68,68); // #444 (versus previous #333 or rgb(51,51,51) which is darker)
 $color-accent: #35857d;
 
 
@@ -31,6 +31,9 @@ $font-sans: 'FSEmeric', sans-serif;
 $font-serif: 'FSEmeric', sans-serif;
 
 
+// Typographic Scale
+// http://simplescale.online/?scale_base=16&scale_ratio=1.333&scale_interval=2
+
 
 // Key Font Size Settings
 // We're using this typographic scale: http://simplescale.online/...
@@ -44,15 +47,15 @@ $base-line-height: 1.4;
 $base-line-height-in-px: ($base-font-size * $base-line-height);
 
 $bp-xs-base-font-size: 17;
-$bp-xs-base-line-height: 1.5;
+$bp-xs-base-line-height: 1.4;
 $bp-xs-px-base-line-height: ($bp-xs-base-font-size * $bp-xs-base-line-height);
 
 $bp-s-base-font-size: 18;
-$bp-s-base-line-height: 1.5;
+$bp-s-base-line-height: 1.4;
 $bp-s-px-base-line-height: ($bp-s-base-font-size * $bp-s-base-line-height);
 
 $bp-m-base-font-size: 18;
-$bp-m-base-line-height: 1.5;
+$bp-m-base-line-height: 1.4;
 $bp-m-px-base-line-height: ($bp-m-base-font-size * $bp-m-base-line-height);
 
 $bp-l-base-font-size: 20;

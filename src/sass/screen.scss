@@ -76,14 +76,6 @@ article img {
     display: block;
 }
 
-// Layout (NB make sure to revisit any grid-only layout and do it responsibly)
-
-
-
-
-
-
-
 // Header
 
 [role=banner] {
@@ -113,7 +105,9 @@ article img {
 // Main
 
 main {
-    margin: 0 1em;
+    margin: 0 auto;
+    max-width: 32em;
+    width: 90%;
 }
 
 
@@ -134,10 +128,6 @@ article {}
     margin-left: 0;
 }
 
-
-
-
-
 // Footer (i.e. the global footer, as opposed to any other local <footer> elements)
 
 [role=contentinfo] {}
@@ -146,9 +136,7 @@ article {}
 // Homepage 
 
 .intro {
-/*    font-weight: 200;
-    font-size: 22px;
-    line-height: 1.37;*/
+    margin: $base-line-height+em 0 ($base-line-height*2)+em;
 }
 
 // Page: X

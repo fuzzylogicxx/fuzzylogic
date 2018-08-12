@@ -7,9 +7,9 @@
   clear: both;
 }
 
-@mixin font-size-to-rem($targetFontSize: $base-font-size) {
+@mixin font-size-to-rem($targetFontSize: $base-font-size, $baseFontSize: $base-font-size) {
   font-size: $targetFontSize + px; // fallback for old browsers
-  font-size: ($targetFontSize / $base-font-size) + rem;
+  font-size: ($targetFontSize / $baseFontSize) + rem;
 }
 
 // set the correct line height on an element to maintain vertical rhythm, for a given font size and unit of vertical rhythm

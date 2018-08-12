@@ -47,6 +47,23 @@ Heavy (normally 900)
     font-style: italic;
 }
 
+/*@font-face {
+    font-family: 'FSEmeric';
+    src: url('/fonts/fsemericwebregular/FSEmericWeb-Regular.eot');
+    src: url('/fonts/fsemericwebregular/FSEmericWeb-Regular.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/fsemericwebregular/FSEmericWeb-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'FSEmeric';
+    src: url('/fonts/fsemericwebitalic/FSEmericWeb-Italic.eot');
+    src: url('/fonts/fsemericwebitalic/FSEmericWeb-Italic.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/fsemericwebitalic/FSEmericWeb-Italic.woff') format('woff');
+    font-weight: 400;
+    font-style: italic;
+}*/
+
 @font-face {
     font-family: 'FSEmeric';
     src: url('/fonts/fsemericwebbold/FSEmericWeb-Bold.eot'); /* IE9 */
@@ -67,6 +84,17 @@ Heavy (normally 900)
 html {
     color: $color-main;
     font-family: $font-sans;
+    @include breakpoint(bp-medium) {
+        font-size: 112.5%; // =1.125em (so 1rem (and 1em on any element without a dedicated font-size) = 18px)
+    }
+    @include breakpoint(bp-xlarge) {
+        font-size: 131.25%; // =1.125em (so 1rem (and 1em on any element without a dedicated font-size) = 18px)
+    }
+    
+
+
+
+
     // font-size: 1em; // from HTML5 Boilerplate. However I'm not sure it's necessary to explicitly set font-size to 1em.
     // @include breakpoint(bp-small) {
     //    font-size: 112.5%; // =1.125em (so 1rem (and 1em on any element without a dedicated font-size) = 18px)
@@ -80,6 +108,9 @@ body {
     font-feature-settings: "liga" 1;
     font-feature-settings: "onum" 1;
     line-height: $base-line-height;
+    @include breakpoint(bp-medium) {
+        line-height: $bp-m-base-line-height;
+    }
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
 }
@@ -101,6 +132,8 @@ body {
 a {
     color: $color-accent;
     text-decoration-skip-ink: none;
+    text-decoration: none;
+    /*border-bottom: 1px solid $color-accent;*/
     //&:hover {
     //    color: darken($color-accent, 20%);
     //}
@@ -230,16 +263,53 @@ h2 {
     /*max-width: 28em;* /
 }
 */
-
+h6,
+h5, 
+h4 {
+    /*font-weight: 800;*/
+    /*letter-spacing: -0.01em;*/
+    @include font-size-to-rem($base-font-size);
+    @include rhythmic-line-height($base-font-size);
+    @include rhythmic-vertical-margins($base-font-size);
+    @include breakpoint(bp-medium) {
+        @include font-size-to-rem($bp-m-base-font-size, $bp-m-base-font-size);
+        line-height: $bp-m-base-line-height;
+        @include rhythmic-vertical-margins($bp-m-base-font-size, $bp-m-px-base-line-height);
+    }
+}
+%h3, 
+h3 {
+    letter-spacing: -0.02em;
+    @include font-size-to-rem(21);
+    @include rhythmic-vertical-margins(21);
+    @include rhythmic-line-height(21); // this is fine
+    @include breakpoint(bp-medium) {
+        @include font-size-to-rem(25, $bp-m-base-font-size);
+        line-height: 1;
+        @include rhythmic-vertical-margins(25, $bp-m-px-base-line-height);
+    }
+}
+%h2, 
 h2 {
+    letter-spacing: -0.02em;
     @include font-size-to-rem(25);
     @include rhythmic-vertical-margins(25);
-    line-height: 1; 
+    line-height: 1; // to do: may want to make adjustments to padding/margins to attempt to preserve vertical rhythm // @include rhythmic-line-height(25); // this is too tight
+    @include breakpoint(bp-medium) {
+        @include font-size-to-rem(33, $bp-m-base-font-size);
+        @include rhythmic-vertical-margins(33, $bp-m-px-base-line-height);
+    }
 }
+%h1, 
 h1 {
+    letter-spacing: -0.02em;
     @include font-size-to-rem(33);
     @include rhythmic-vertical-margins(33);
-    line-height: 1; 
+    line-height: 1; // to do: may want to make adjustments to padding/margins to attempt to preserve vertical rhythm // @include rhythmic-line-height(33); // doesn't work
+    @include breakpoint(bp-medium) {
+        @include font-size-to-rem(51, $bp-m-base-font-size);
+        @include rhythmic-vertical-margins(51, $bp-m-px-base-line-height);
+    }
 }
 
 
