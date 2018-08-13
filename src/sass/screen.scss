@@ -131,7 +131,7 @@ article {}
 // Footer (i.e. the global footer, as opposed to any other local <footer> elements)
 
 [role=contentinfo] {
-    margin: 0 auto;
+    margin: ($base-line-height*2)+em auto;
     max-width: 32em;
     width: 90%;
 }
