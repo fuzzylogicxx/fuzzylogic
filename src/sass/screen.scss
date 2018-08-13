@@ -130,7 +130,11 @@ article {}
 
 // Footer (i.e. the global footer, as opposed to any other local <footer> elements)
 
-[role=contentinfo] {}
+[role=contentinfo] {
+    margin: 0 auto;
+    max-width: 32em;
+    width: 90%;
+}
 
 
 // Homepage 
