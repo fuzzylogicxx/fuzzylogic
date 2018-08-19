@@ -97,6 +97,7 @@ article img {
 }
 
 .embed-container { 
+    margin: $base-line-height+em 0;
     position: relative; 
     padding-bottom: 56.25%; 
     height: 0; 
@@ -131,6 +132,9 @@ aside {
 // Articles
 
 article {}
+.post-main-image {
+    margin: $base-line-height+em 0;
+}
 
 
 // Lists
