@@ -279,6 +279,7 @@ h4 {
 }
 %h3, 
 h3 {
+    font-weight: 400;
     letter-spacing: -0.02em;
     @include font-size-to-rem(21);
     @include rhythmic-vertical-margins(21);
@@ -291,6 +292,7 @@ h3 {
 }
 %h2, 
 h2 {
+    font-weight: 400;
     letter-spacing: -0.02em;
     @include font-size-to-rem(25);
     @include rhythmic-vertical-margins(25);
@@ -302,6 +304,7 @@ h2 {
 }
 %h1, 
 h1 {
+    font-weight: 400;
     letter-spacing: -0.02em;
     @include font-size-to-rem(33);
     @include rhythmic-vertical-margins(33);
