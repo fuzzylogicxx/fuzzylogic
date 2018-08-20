@@ -13,7 +13,7 @@
 
 <?php //perch_content('Intro'); ?>
 
-<h2>Latest Posts</h2>
+<!-- <h2>Latest Posts</h2> -->
 
 <?php
     perch_blog_recent_posts(10);
