@@ -138,12 +138,25 @@ article {}
 
 
 // Lists
+
 .hfeed, 
 .hfeed li {
     list-style: none;
     padding-left: 0;
     margin-left: 0;
 }
+
+.hfeed .hentry { 
+    .entry-published {
+        margin: 0;
+    }
+    img {
+        display: block;
+        @include paragraph-margins();
+    }
+}
+
+
 
 // Footer (i.e. the global footer, as opposed to any other local <footer> elements)
 
