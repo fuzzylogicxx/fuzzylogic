@@ -146,7 +146,7 @@ article {}
     margin-left: 0;
 }
 
-/*.hfeed .hentry { 
+.hfeed .hentry { 
     .entry-published {
         margin: 0;
     }
@@ -154,7 +154,11 @@ article {}
         display: block;
         @include paragraph-margins();
     }
-}*/
+}
+
+.entry-summary p {
+    margin-bottom: 2.1em; // 1.4em +.7em
+}
 
 
 
