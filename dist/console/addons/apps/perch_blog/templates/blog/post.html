@@ -16,9 +16,6 @@
 	</p>
     <perch:if exists="image">
         <figure class="post-main-image">
-            <img src="<perch:blog id="image" type="image" width="320" height="240" crop="true" label="Image" order="4" />" alt="<perch:blog id="postTitle" />" />
-        </figure>
-        <figure class="post-main-image">
             <perch:if exists="image">
             <img 
             srcset="<perch:content id="image" type="image" label="Article Main Image" width="320" help="Upload a 1600x1200 (4:3) source" /> 320w,
