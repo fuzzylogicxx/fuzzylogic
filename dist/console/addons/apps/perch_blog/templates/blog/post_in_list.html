@@ -3,7 +3,19 @@
     <li class="hentry">
         <p class="entry-published date"><perch:blog id="postDateTime" format="%d %B %Y" /></p>
         <h3><a href="<perch:blog id="postURL" />" rel="bookmark" class="entry-title"><perch:blog id="postTitle" /></a></h3>
-        <perch:if exists="image"><img src="<perch:blog id="image" type="image" width="50" height="50" crop="true" />" alt="<perch:blog id="postTitle" />" /></perch:if>
+        <perch:if exists="image">
+        <img 
+        srcset="<perch:content id="image" type="image" width="320" /> 320w,
+                <perch:content id="image" type="image" width="480" /> 480w, 
+                <perch:content id="image" type="image" width="640" /> 640w, 
+                <perch:content id="image" type="image" width="752" /> 752w, 
+                <perch:content id="image" type="image" width="960" /> 960w, 
+                <perch:content id="image" type="image" width="1400" /> 1400w"
+        sizes="(max-width: 59em) 90vw, 
+               (max-width: 105em) 50vw,
+               960px" 
+        src="<perch:content id="image" width="960" />" alt="<perch:content type="text" id="alt" label="Description" required help="Alt text for the main image: describe its subject/purpose." />" />
+        </perch:if>
         <div class="description entry-summary">
         <perch:blog id="excerpt" type="textarea" textile="true" />
         <!-- <p>Comments: <perch:blog id="postCommentCount"/></p> -->

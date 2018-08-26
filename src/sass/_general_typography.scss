@@ -290,6 +290,14 @@ h3 {
         @include rhythmic-vertical-margins(25, $bp-m-px-base-line-height);
     }
 }
+
+/*.entry-published + h3 {
+    // margin: ($lineHeightInPx / $fontSize)+em 0;
+    margin: 0;
+}*/
+
+
+
 %h2, 
 h2 {
     font-weight: 400;

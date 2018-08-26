@@ -18,6 +18,22 @@
         <figure class="post-main-image">
             <img src="<perch:blog id="image" type="image" width="320" height="240" crop="true" label="Image" order="4" />" alt="<perch:blog id="postTitle" />" />
         </figure>
+        <figure class="post-main-image">
+            <perch:if exists="image">
+            <img 
+            srcset="<perch:content id="image" type="image" label="Article Main Image" width="320" help="Upload a 1600x1200 (4:3) source" /> 320w,
+                    <perch:content id="image" type="image" label="Article Main Image" width="480" /> 480w, 
+                    <perch:content id="image" type="image" label="Article Main Image" width="640" /> 640w, 
+                    <perch:content id="image" type="image" label="Article Main Image" width="752" /> 752w, 
+                    <perch:content id="image" type="image" label="Article Main Image" width="960" /> 960w, 
+                    <perch:content id="image" type="image" label="Article Main Image" width="1400" /> 1400w"
+            sizes="(max-width: 59em) 90vw, 
+                   (max-width: 105em) 50vw,
+                   960px" 
+            src="<perch:content id="image" type="image" label="Article Main Image" width="960" />" alt="<perch:content type="text" id="alt" label="Alt text for Article Main Image" required help="Describe the image's subject/purpose" />">
+            <perch:if exists="caption"><figcaption><perch:content type="text" id="caption" label="Caption for Article Main Image" /></figcaption></perch:if>
+            </perch:if>
+        </figure>
     </perch:if>
     <div class="description e-content">
     	<perch:blog id="postDescHTML" type="textarea" label="Post" order="2" editor="markitup" html="true" size="xxl autowidth" required="true" />
