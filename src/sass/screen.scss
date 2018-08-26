@@ -150,6 +150,9 @@ article {}
     .entry-published {
         margin: 0;
     }
+    h3 {
+        margin-top: 0;
+    }
     img {
         display: block;
         @include paragraph-margins();
