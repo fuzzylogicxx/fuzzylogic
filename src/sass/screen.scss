@@ -72,6 +72,7 @@ tfoot {
 // Utilities / Common
 
 // In most (but not necessarily all) situations we want images to display block
+
 article img {
     display: block;
 }
@@ -128,7 +129,7 @@ main {
 // Sidebar
 
 [role=complementary] {
-    margin: 0 auto;
+    margin: ($base-line-height*4)+em auto 0;
     max-width: 32em;
     width: 90%;
 }
