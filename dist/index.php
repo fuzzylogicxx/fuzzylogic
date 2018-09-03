@@ -47,7 +47,7 @@
 
 <aside role="complementary">
     <h3>Eleswhere online</h3>
-    <p>You‘ll find me posting photos on <a href="https://www.instagram.com/">Instagram</a>; on Soundcloud sharing <a href="https://soundcloud.com/the_nuclear_family">music</a> and <a href="https://soundcloud.com/fuzzylogicx">mixes</a>; collecting, buying and selling records on <a href="https://www.discogs.com/user/laurence">Discogs</a>; and coding on <a href="https://github.com/fuzzylogicxx">Github</a> and and <a href="https://codepen.io/fuzzylogicx/">CodePen</a>.</p>
+    <p>You‘ll find me posting photos on <a href="https://www.instagram.com/fuzzylogicx/">Instagram</a>; on Soundcloud sharing <a href="https://soundcloud.com/the_nuclear_family">music</a> and <a href="https://soundcloud.com/fuzzylogicx">mixes</a>; collecting, buying and selling records on <a href="https://www.discogs.com/user/laurence">Discogs</a>; and coding on <a href="https://github.com/fuzzylogicxx">Github</a> and and <a href="https://codepen.io/fuzzylogicx/">CodePen</a>.</p>
 </aside>
 
 <?php require_once($_SERVER['DOCUMENT_ROOT'].'/inc/page_end.php'); ?>
