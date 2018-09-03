@@ -126,7 +126,11 @@ main {
 
 
 // Sidebar
-aside {
+
+[role=complementary] {
+    margin: 0 auto;
+    max-width: 32em;
+    width: 90%;
 }
 
 // Articles
