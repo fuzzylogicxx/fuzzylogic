@@ -15,6 +15,11 @@
             </a>
         </perch:categories>
 	</p>
+
+    <perch:if exists="authorGivenName">
+    <p>by <span class="p-author h-card"><perch:blog id="authorGivenName" type="hidden" /> <perch:blog id="authorFamilyName" type="hidden" /></span></p>
+    </perch:if>    
+
     <perch:if exists="image">
         <figure class="post-main-image">
             <perch:if exists="image">
@@ -34,7 +39,7 @@
         </figure>
     </perch:if>
     <div class="description e-content">
-    	<perch:blog id="postDescHTML" type="textarea" label="Post" order="2" editor="markitup" html="true" size="xxl autowidth" required="true" />
+    	TEST<perch:blog id="postDescHTML" type="textarea" label="Post" order="2" editor="markitup" html="true" size="xxl autowidth" required="true" />
     </div>
 </article>
 
