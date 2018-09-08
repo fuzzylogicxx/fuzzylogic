@@ -6,6 +6,8 @@
 <div class="post">
 	<?php perch_blog_post(perch_get('s')); ?>
 
+    <?php perch_blog_post_ping_form(perch_get('s')); ?>
+
 	<?php 
     /*
     <?php perch_blog_author_for_post(perch_get('s')); ?>

@@ -2,6 +2,7 @@
     RewriteEngine on  
 
 	RewriteRule ^posts/([a-zA-Z0-9-/]+)$ /blog/post.php?s=$1 [L]
+	
 	# if the address starts with "blog/", pick what comes afterwards, put it into the GET Parameter and quit (that's the [L]) 
 	# RewriteRule ^blog/([a-zA-Z0-9-/]+)$ /blog/post.php?s=$1 [L]
 
