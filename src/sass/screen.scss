@@ -139,7 +139,7 @@ main {
     margin: $base-line-height+em 0;
 }
 
-.meta {
+.h-entry + .meta {
     margin-top: ($base-line-height*4)+em;
 }
 
