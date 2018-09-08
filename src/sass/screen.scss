@@ -139,6 +139,9 @@ main {
     margin: $base-line-height+em 0;
 }
 
+.meta {
+    margin-top: ($base-line-height*4)+em;
+}
 
 // Lists
 
@@ -176,8 +179,6 @@ main {
 .entry-summary p {
     margin-bottom: 2.1em; // 1.4em +.7em
 }
-
-
 
 // Footer (i.e. the global footer, as opposed to any other local <footer> elements)
 
