@@ -1,8 +1,9 @@
 <perch:before>
 <ul class="hfeed listing"></perch:before>
     <li class="hentry">
+        <a href="<perch:blog id="postURL" />" rel="bookmark" class="entry-title">
         <p class="entry-published date"><perch:blog id="postDateTime" format="%d %B %Y" /></p>
-        <h3><a href="<perch:blog id="postURL" />" rel="bookmark" class="entry-title"><perch:blog id="postTitle" /></a></h3>
+        <h3><perch:blog id="postTitle" /></h3>
         <perch:if exists="image">
         <img 
         srcset="<perch:blog id="image" type="image" width="320" /> 320w,
@@ -20,6 +21,7 @@
         <perch:blog id="excerpt" type="textarea" textile="true" />
         <!-- <p>Comments: <perch:blog id="postCommentCount"/></p> -->
         </div>
+        </a>
     </li>
 <perch:after>
     </ul>

@@ -125,7 +125,6 @@ main {
     width: 90%;
 }
 
-
 // Sidebar
 
 [role=complementary] {
@@ -136,7 +135,6 @@ main {
 
 // Articles
 
-article {}
 .post-main-image {
     margin: $base-line-height+em 0;
 }
@@ -151,16 +149,27 @@ article {}
     margin-left: 0;
 }
 
-.hfeed .hentry { 
+.hfeed .hentry a { 
     .entry-published {
         margin: 0;
     }
     h3 {
+        color: $color-accent;
         margin-top: 0;
     }
     img {
         display: block;
         @include paragraph-margins();
+    }
+    p {
+        color: $color-main;
+    }
+}
+
+.hfeed .hentry a:hover { 
+    text-decoration: none;
+    h3 {
+        text-decoration: underline;
     }
 }
 

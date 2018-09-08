@@ -134,9 +134,10 @@ a {
     text-decoration-skip-ink: none;
     text-decoration: none;
     /*border-bottom: 1px solid $color-accent;*/
-    //&:hover {
-    //    color: darken($color-accent, 20%);
-    //}
+    &:hover {
+        //color: darken($color-accent, 20%);
+        text-decoration: underline;
+    }
 }
 
 small {
