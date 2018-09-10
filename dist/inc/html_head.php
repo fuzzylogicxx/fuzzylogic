@@ -14,6 +14,8 @@
 	<meta name="description" content="">
 	<?php } ?>
 
+	<link rel="authorization_endpoint" href="https://indieauth.com/auth">
+
 	<link rel="alternate" type="application/rss+xml" title="RSS" href="rss.php" />
 
 	<meta name="robots" content="noindex">
