@@ -147,6 +147,7 @@ small {
 p {
     @include paragraph-margins();
     font-weight: 400;
+    max-width: 38em;
 }
 
 blockquote, 
