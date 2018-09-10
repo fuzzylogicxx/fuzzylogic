@@ -29,25 +29,24 @@ Heavy (normally 900)
     font-style: italic;
 }
 
-/* Going for Emeric book instead of 'regular' as body font */
-@font-face {
+/*@font-face {
     font-family: 'FSEmeric';
-    src: url('/fonts/fsemericwebbook/FSEmericWeb-Book.eot'); /* IE9 */
-    src: url('/fonts/fsemericwebbook/FSEmericWeb-Book.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ 
-    url('/fonts/fsemericwebbook/FSEmericWeb-Book.woff') format('woff'); /* Modern Browsers */
+    src: url('/fonts/fsemericwebbook/FSEmericWeb-Book.eot');
+    src: url('/fonts/fsemericwebbook/FSEmericWeb-Book.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/fsemericwebbook/FSEmericWeb-Book.woff') format('woff');
     font-weight: 400;
     font-style: normal;
 }
 @font-face {
     font-family: 'FSEmeric';
-    src: url('/fonts/fsemericwebbookitalic/FSEmericWeb-BookItalic.eot'); /* IE9 */
-    src: url('/fonts/fsemericwebbookitalic/FSEmericWeb-BookItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ 
-    url('/fonts/fsemericwebbookitalic/FSEmericWeb-BookItalic.woff') format('woff'); /* Modern Browsers */
+    src: url('/fonts/fsemericwebbookitalic/FSEmericWeb-BookItalic.eot');
+    src: url('/fonts/fsemericwebbookitalic/FSEmericWeb-BookItalic.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/fsemericwebbookitalic/FSEmericWeb-BookItalic.woff') format('woff');
     font-weight: 400;
     font-style: italic;
-}
+}*/
 
-/*@font-face {
+@font-face {
     font-family: 'FSEmeric';
     src: url('/fonts/fsemericwebregular/FSEmericWeb-Regular.eot');
     src: url('/fonts/fsemericwebregular/FSEmericWeb-Regular.eot?#iefix') format('embedded-opentype'),
@@ -62,7 +61,7 @@ Heavy (normally 900)
     url('/fonts/fsemericwebitalic/FSEmericWeb-Italic.woff') format('woff');
     font-weight: 400;
     font-style: italic;
-}*/
+}
 
 @font-face {
     font-family: 'FSEmeric';
