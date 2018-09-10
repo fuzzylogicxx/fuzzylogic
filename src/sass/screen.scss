@@ -121,7 +121,7 @@ article img {
 
 main {
     margin: 0 auto;
-    max-width: 32em;
+    max-width: 40em;
     width: 90%;
 }
 
@@ -134,6 +134,11 @@ main {
 }
 
 // Articles
+
+.article-body {
+    max-width: 32em;
+    margin: 0 auto;
+}
 
 .post-main-image {
     margin: $base-line-height+em 0;
@@ -149,7 +154,8 @@ main {
 .hfeed li {
     list-style: none;
     padding-left: 0;
-    margin-left: 0;
+    max-width: 32em;
+    margin: 0 auto;
 }
 
 .hfeed .hentry a { 
