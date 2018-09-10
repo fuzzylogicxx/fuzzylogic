@@ -83,25 +83,13 @@ Heavy (normally 900)
 
 html {
     color: $color-main;
-    font-family: $font-sans;
+    font-family: $font-sans; //sans-serif;
     @include breakpoint(bp-medium) {
         font-size: 112.5%; // =1.125em (so 1rem (and 1em on any element without a dedicated font-size) = 18px)
     }
     @include breakpoint(bp-xlarge) {
-        font-size: 131.25%; // =1.125em (so 1rem (and 1em on any element without a dedicated font-size) = 18px)
+        font-size: 131.25%; // =1.3125em (so 1rem (and 1em on any element without a dedicated font-size) = 21px)
     }
-    
-
-
-
-
-    // font-size: 1em; // from HTML5 Boilerplate. However I'm not sure it's necessary to explicitly set font-size to 1em.
-    // @include breakpoint(bp-small) {
-    //    font-size: 112.5%; // =1.125em (so 1rem (and 1em on any element without a dedicated font-size) = 18px)
-    // }
-    // @include breakpoint(bp-large) {
-    //    font-size: 125%; // =1.25em (so 1rem (and 1em on any element without a dedicated font-size) = 20px)
-    // }
 }
 
 body {
@@ -298,8 +286,6 @@ h3 {
     margin: 0;
 }*/
 
-
-
 %h2, 
 h2 {
     font-weight: 400;
@@ -312,6 +298,7 @@ h2 {
         @include rhythmic-vertical-margins(33, $bp-m-px-base-line-height);
     }
 }
+
 %h1, 
 h1 {
     font-weight: 400;
@@ -330,6 +317,7 @@ h1 {
 /*%nice-body-letter-spacing {
     letter-spacing: -.0125em;
 }*/
+
 article {
     p,
     li,
@@ -339,17 +327,20 @@ article {
         hyphens: auto;
     }
 }
+
 /*// Mark the opening of each passage of text
 .article-body > p:first-child::first-line {
     // for legacy browsers
     font-feature-settings: "smcp" 1;
 }
+
 @supports (font-variant-caps: small-caps) {
     .article-body > p:first-child::first-line {
         font-feature-settings: normal;
         font-variant-caps: small-caps;
     }
 }*/
+
 @supports(-webkit-initial-letter: 2) {
     .article-body::first-letter {
         -webkit-initial-letter: 2;
@@ -360,7 +351,6 @@ article {
 }
 
 blockquote { //.quoted
-
     p {
         font-style: italic;
         hanging-punctuation: first last;
@@ -373,17 +363,21 @@ blockquote { //.quoted
     footer {
     }   
 }
+
 @supports(hanging-punctuation: first last) {
     blockquote p:first-of-type::before {
         margin-left: 0;
     }
 }
+
 blockquote p:last-of-type::after  {
     content: close-quote;
 }
+
 blockquote p:last-of-type {
     margin-bottom: 0;
 }
+
 .pullquote {
 }
 
