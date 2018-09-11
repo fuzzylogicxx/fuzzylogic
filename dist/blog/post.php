@@ -14,7 +14,6 @@
     </div>
 </div>
 
-<h3>Responses</h3>
 <?php perch_blog_post_ping_form(perch_get('s')); ?>
 
 <?php perch_blog_post_comments(perch_get('s')); ?>
