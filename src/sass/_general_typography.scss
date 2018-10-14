@@ -113,7 +113,7 @@ body {
     font-feature-settings: "onum" 1;
     line-height: $base-line-height; // 16 * 1.35 = 21.6;
     @include breakpoint(bp-medium) {
-        line-height: $bp-m-base-line-height;  // still 1.35 so 18 * 1.35 = 24.3;
+        line-height: $bp-m-base-line-height;  // still 1.35 so at bp-medium line-height = 24.3 (18 * 1.35) and at bp-large line-height = 28.35 (21 * 1.35);
     }
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
@@ -254,7 +254,7 @@ h3 {
     @include rhythmic-vertical-margins(21);
     @include rhythmic-line-height(21);
     @include breakpoint(bp-medium) {
-        @include font-size-to-rem(25, $bp-m-base-font-size);        
+        @include font-size-to-rem(25, $bp-m-base-font-size);
         //@include rhythmic-line-height(25, $bp-m-px-base-line-height * 1.25); // under 1 so dangerously tight: watch it.
 
         line-height: 1;
@@ -289,7 +289,7 @@ h2 {
         //@include rhythmic-line-height(44, $bp-l-px-base-line-height * 1.75);
 
         line-height: 1;
-        
+
         @include rhythmic-vertical-margins(44, $bp-l-px-base-line-height);
     }
 }
@@ -530,9 +530,21 @@ article {
         color: $color-accent-alt;
     }
     p {
-        @extend %h2;
         color: $color-light;
         font-weight: 200;
+        @include font-size-to-rem(18);
+        @include rhythmic-line-height(18);
+        @include rhythmic-vertical-margins(18);
+        @include breakpoint(bp-medium) {
+            @include font-size-to-rem(21, $bp-m-base-font-size);
+            @include rhythmic-line-height(21, $bp-m-px-base-line-height);
+            @include rhythmic-vertical-margins(21, $bp-m-px-base-line-height);
+        }
+        @include breakpoint(bp-large) {
+            @include font-size-to-rem(25, $bp-l-base-font-size);
+            @include rhythmic-line-height(25, $bp-l-px-base-line-height);
+            @include rhythmic-vertical-margins(25, $bp-l-px-base-line-height);
+        }
     }
     a {
         /*color: inherit;*/
@@ -541,4 +553,3 @@ article {
         text-decoration-color: 1px solid lighten($color-main, 80%);*/
     }
 }
-
