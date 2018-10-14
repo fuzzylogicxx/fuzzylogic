@@ -111,9 +111,9 @@ html {
 body {
     font-feature-settings: "liga" 1;
     font-feature-settings: "onum" 1;
-    line-height: $base-line-height;
+    line-height: $base-line-height; // 16 * 1.35 = 21.6;
     @include breakpoint(bp-medium) {
-        line-height: $bp-m-base-line-height;
+        line-height: $bp-m-base-line-height;  // still 1.35 so 18 * 1.35 = 24.3;
     }
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
@@ -254,8 +254,11 @@ h3 {
     @include rhythmic-vertical-margins(21);
     @include rhythmic-line-height(21);
     @include breakpoint(bp-medium) {
-        @include font-size-to-rem(25, $bp-m-base-font-size);
-        @include rhythmic-line-height(25, $bp-m-px-base-line-height * 1.25); // under 1 so dangerously tight: watch it.
+        @include font-size-to-rem(25, $bp-m-base-font-size);        
+        //@include rhythmic-line-height(25, $bp-m-px-base-line-height * 1.25); // under 1 so dangerously tight: watch it.
+
+        line-height: 1;
+
         @include rhythmic-vertical-margins(25, $bp-m-px-base-line-height);
     }
     @include breakpoint(bp-large) {
@@ -265,11 +268,6 @@ h3 {
     }
 }
 
-/*.entry-published + h3 {
-    // margin: ($lineHeightInPx / $fontSize)+em 0;
-    margin: 0;
-}*/
-
 %h2, 
 h2 {
     font-weight: 600;
@@ -277,15 +275,21 @@ h2 {
     @include font-size-to-rem(25);
     @include rhythmic-vertical-margins(25);
     // line-height: 1; // to do: may want to make adjustments to padding/margins to attempt to preserve vertical rhythm // @include rhythmic-line-height(25); // this is too tight
-    @include rhythmic-line-height(25, $base-line-height-in-px * 1.25);
+    //    @include rhythmic-line-height(25, $base-line-height-in-px * 1.25);
+    line-height: 1;
     @include breakpoint(bp-medium) {
         @include font-size-to-rem(33, $bp-m-base-font-size);
-        @include rhythmic-line-height(33, $bp-m-px-base-line-height * 1.25);
+        //@include rhythmic-line-height(33, $bp-m-px-base-line-height * 1.25);
+        line-height: 1;
+
         @include rhythmic-vertical-margins(33, $bp-m-px-base-line-height);
     }
     @include breakpoint(bp-xlarge) {
         @include font-size-to-rem(44, $bp-l-base-font-size);
-        @include rhythmic-line-height(44, $bp-l-px-base-line-height * 1.75);
+        //@include rhythmic-line-height(44, $bp-l-px-base-line-height * 1.75);
+
+        line-height: 1;
+        
         @include rhythmic-vertical-margins(44, $bp-l-px-base-line-height);
     }
 }
@@ -298,14 +302,23 @@ h1 {
     @include rhythmic-vertical-margins(33);
     //line-height: 1; // to do: may want to make adjustments to padding/margins to attempt to preserve vertical rhythm // @include rhythmic-line-height(33); // doesn't work
     @include rhythmic-line-height(33, $base-line-height-in-px * 1.75);
+
+    line-height: 1;
+
     @include breakpoint(bp-medium) {
         @include font-size-to-rem(51, $bp-m-base-font-size);
-        @include rhythmic-line-height(51, $bp-m-px-base-line-height * 2.25);
+        //@include rhythmic-line-height(51, $bp-m-px-base-line-height * 2.25);
+
+        line-height: 1;
+
         @include rhythmic-vertical-margins(51, $bp-m-px-base-line-height);
     }
     @include breakpoint(bp-xlarge) {
         @include font-size-to-rem(78, $bp-l-base-font-size);
-        @include rhythmic-line-height(78, $bp-m-px-base-line-height * 3.25);
+        //@include rhythmic-line-height(78, $bp-m-px-base-line-height * 3.25);
+
+        line-height: 1;
+
         @include rhythmic-vertical-margins(78, $bp-l-px-base-line-height);
     }
 }
