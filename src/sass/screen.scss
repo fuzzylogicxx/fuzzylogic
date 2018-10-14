@@ -98,11 +98,27 @@ article img {
     width: 72px;
     height: 72px;
     margin: 0 auto;*/
-    @extend %h2;
-    /*color: $color-light;*/
+    @extend %h1;
+    display: none;
+    color: lighten($color-main, 50%);
     font-weight: 700;
     text-decoration: none;
-    display: none;
+    @include breakpoint(bp-small) {
+        display: block;
+        /*margin: 0;*/
+        /*transform: rotate(-90deg);
+        
+        bottom: 110px;
+        right: 1em;*/
+        right: 2vw;
+        bottom: 0;
+        position: fixed;
+        writing-mode: vertical-rl;
+        transform: rotate(180deg);
+        /*margin-right: -94px;*/
+        /*max-width: 300px;*//*display: inline-block;*//*line-height: 0.78em;*/
+    }
+    /*display: none;*/
 }
 
 /* Embed Video */

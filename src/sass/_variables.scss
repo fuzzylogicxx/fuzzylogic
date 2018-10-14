@@ -7,7 +7,8 @@ $color-main: rgb(34,34,34); //rgb(149,149,149);
 $color-interface-and-display: rgb(34,34,34);
 $color-accent: rgb(30,139,142);
 $color-accent-alt: rgb(215,0,20);
-$color-light: lighten($color-main, 25%); //rgb(149,149,149);
+$color-light: lighten($color-main, 25%);
+$color-light-alt: lighten($color-main, 12.5%); //rgb(149,149,149);
 
 
 

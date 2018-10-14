@@ -534,7 +534,7 @@ article {
         color: $color-accent-alt;
     }
     p {
-        color: $color-light;
+        color: $color-light-alt;
         font-weight: 200;
         @include font-size-to-rem(18);
         @include rhythmic-line-height(18);
