@@ -17,14 +17,14 @@
   line-height: ($lineHeightInPx / $fontSize);
 }
 
-// Separate paragraphs by no more than 1em. Half the line-height shuld be sufficient.
-@mixin paragraph-margins() {
-  margin: ($base-line-height/2)+em 0; // margin: $base-line-height+em 0;
-}
-
 // set vertical margins on an element to maintain vertical rhythm, for a given font size and unit of vertical rhythm
 @mixin rhythmic-vertical-margins($fontSize: $base-font-size, $lineHeightInPx: $base-line-height-in-px) {
   margin: ($lineHeightInPx / $fontSize)+em 0;
+}
+
+// Separate paragraphs by no more than 1em. Half the line-height should be sufficient.
+@mixin paragraph-margins() {
+  margin: ($base-line-height/2)+em 0; // margin: $base-line-height+em 0;
 }
 
 
@@ -50,6 +50,20 @@
     @media only screen and (min-width: $bp-xxsmall)  { @content; }
   }
 }
+
+// Utility
+@mixin buovr-margins() { // set top and bottom margin each to "one line-height" (the Basic Unit Of Vertical Rhythm)
+  margin: $base-line-height+em 0;
+  @include breakpoint(bp-medium) {
+      margin: $bp-m-base-line-height+em 0;
+  }
+  @include breakpoint(bp-xlarge) {
+      margin: $bp-xl-base-line-height+em 0;
+  }
+}
+
+
+
 
 // Serve HiDPI background images from any selector you’d like, just by creating two image assets and one line of SCSS
 // Usage: @include retinize('icon-dribbble', 'png', 24px, 24px);

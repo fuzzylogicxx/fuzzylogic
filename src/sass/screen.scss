@@ -142,9 +142,15 @@ main {
     /*margin: ($base-line-height*4)+em auto 0;
     max-width: 32em;
     width: 90%;*/
-    max-width: 32rem;
-    margin: 0 auto;
     width: 90%;
+    max-width: 32rem;
+    margin: 0 auto $base-line-height*2+em;
+    @include breakpoint(bp-medium) {
+        margin-bottom: $bp-m-base-line-height*2+em;
+    }
+    @include breakpoint(bp-xlarge) {
+        margin-bottom: $bp-l-base-line-height*2+em;
+    }
 }
 
 // Articles
@@ -164,42 +170,6 @@ main {
 
 // Lists
 
-.hfeed, 
-.hfeed li {
-    list-style: none;
-    padding-left: 0;
-    /*max-width: 32em;
-    margin: 0 auto;*/
-}
-
-.hfeed .hentry {
-    margin-bottom: $base-line-height*2+em;
-    @include breakpoint(bp-medium) {
-        margin-bottom: $bp-m-base-line-height*2+em;
-    }
-    @include breakpoint(bp-xlarge) {
-        margin-bottom: $bp-l-base-line-height*2+em;
-    }
-
-    a { 
-    text-decoration: none;
-    /*.entry-published {
-        margin: 0;
-    }*/
-    h3 {
-        @extend %h2;
-        color: $color-accent;
-        //margin-top: 0;
-    }
-    img {
-        display: block;
-        @include paragraph-margins();
-    }
-    /*p {
-        color: $color-main;
-    }*/
-    } 
-}
 
 .hfeed .hentry a:hover { 
     /*text-decoration: none;
@@ -218,13 +188,6 @@ main {
     /*margin: ($base-line-height*4)+em auto 0;
     max-width: 32em;
     width: 90%;*/
-    margin-top: $base-line-height*2+em;
-    @include breakpoint(bp-medium) {
-        margin-top: $bp-m-base-line-height*2+em;
-    }
-    @include breakpoint(bp-xlarge) {
-        margin-top: $bp-l-base-line-height*2+em;
-    }
     max-width: 32rem;
     margin: 0 auto;
     width: 90%;

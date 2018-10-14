@@ -134,8 +134,8 @@ body {
 }
 
 a {
-    //color: $color-accent; 
-    color: $color-main;
+    color: $color-accent; 
+    //color: $color-main;
     text-decoration-skip-ink: none;
     /*text-decoration: none;*/
     /*border-bottom: 1px solid $color-accent;*/
@@ -148,6 +148,12 @@ a {
 
 small {
     @include font-size-to-rem($smallest-font-size);
+    @include breakpoint(bp-medium) {
+        @include font-size-to-rem($smallest-font-size);
+    }
+    @include breakpoint(bp-large) {
+        @include font-size-to-rem($smallest-font-size);
+    }
 }
 
 p {
@@ -309,70 +315,21 @@ h1 a {
     text-decoration: none;
 }
 
-.intro {
-    margin-bottom: $base-line-height*2+em;
-    @include breakpoint(bp-medium) {
-        margin-bottom: $bp-m-base-line-height*2+em;
-    }
-    @include breakpoint(bp-xlarge) {
-        margin-bottom: $bp-l-base-line-height*2+em;
-    }
-    .intro-first-word {
-        display: block;
-    }
-    .intro-last-full-stop {
-        color: $color-accent-alt;
-    }
-    p {
-        font-weight: 200;
-    }
-    a {
-        text-decoration-line: underline;
-        text-decoration-color: 1px solid lighten($color-main, 80%);
-    }
-}
+[role=contentinfo] {
+    small {
+        @include paragraph-margins();
+        @include rhythmic-line-height($smallest-font-size);
+        @include rhythmic-vertical-margins($smallest-font-size);
+        @include breakpoint(bp-medium) {
+            @include rhythmic-line-height($smallest-font-size, $bp-m-px-base-line-height);
+            @include rhythmic-vertical-margins($smallest-font-size, $bp-m-px-base-line-height);
+        }
+        @include breakpoint(bp-large) {
+            @include font-size-to-rem($bp-l-base-font-size, $bp-l-base-font-size);
+            @include rhythmic-line-height($smallest-font-size, $bp-l-px-base-line-height);
+            @include rhythmic-vertical-margins($smallest-font-size, $bp-l-px-base-line-height);
+        }
 
-/*.intro p {
-    font-weight: 200;
-    @include font-size-to-rem(18);
-    @include rhythmic-line-height(18); // 
-    @include rhythmic-vertical-margins(18);
-}*/
-
-
-/*%nice-body-letter-spacing {
-    letter-spacing: -.0125em;
-}*/
-
-article {
-    p,
-    li,
-    dt,
-    dd {
-        /*@extend %nice-body-letter-spacing;*/
-        hyphens: auto; // assuming we've set our language in the <html> element, this turn on automatic hyphenation.
-    }
-}
-
-/*// Mark the opening of each passage of text
-.article-body > p:first-child::first-line {
-    // for legacy browsers
-    font-feature-settings: "smcp" 1;
-}
-
-@supports (font-variant-caps: small-caps) {
-    .article-body > p:first-child::first-line {
-        font-feature-settings: normal;
-        font-variant-caps: small-caps;
-    }
-}*/
-
-@supports(-webkit-initial-letter: 2) {
-    .article-body::first-letter {
-        -webkit-initial-letter: 2;
-        initial-letter: 2;
-        font-weight: bold;
-        margin-right: .5em;
     }
 }
 
@@ -427,4 +384,148 @@ figcaption {
     }*/
 }
 
+article {
+    p,
+    li,
+    dt,
+    dd {
+        /*@extend %nice-body-letter-spacing;*/
+        hyphens: auto; // assuming we've set our language in the <html> element, this turn on automatic hyphenation.
+    }
+}
+
+/*// Mark the opening of each passage of text
+.article-body > p:first-child::first-line {
+    // for legacy browsers
+    font-feature-settings: "smcp" 1;
+}
+
+@supports (font-variant-caps: small-caps) {
+    .article-body > p:first-child::first-line {
+        font-feature-settings: normal;
+        font-variant-caps: small-caps;
+    }
+}*/
+
+@supports(-webkit-initial-letter: 2) {
+    .article-body::first-letter {
+        -webkit-initial-letter: 2;
+        initial-letter: 2;
+        font-weight: bold;
+        margin-right: .5em;
+    }
+}
+
+// Articles
+
+.meta, 
+.entry-published {
+    @include font-size-to-rem($smallest-font-size);
+    @include rhythmic-line-height($smallest-font-size);
+    @include rhythmic-vertical-margins($smallest-font-size);
+    /*@include breakpoint(bp-medium) {
+        line-height: $bp-m-base-line-height;
+        @include rhythmic-vertical-margins($bp-m-base-font-size, $bp-m-px-base-line-height);
+    }
+    @include breakpoint(bp-large) {
+        @include font-size-to-rem($bp-l-base-font-size, $bp-l-base-font-size);
+        line-height: $bp-l-base-line-height;
+        @include rhythmic-vertical-margins($bp-l-base-font-size, $bp-l-px-base-line-height);
+    }*/
+}
+
+.article-body {
+    /*max-width: 32em;
+    margin: 0 auto;*/
+}
+
+.post-main-image {
+    /*margin: $base-line-height+em 0;*/
+}
+
+.h-entry + .meta {
+    /*margin-top: ($base-line-height*4)+em;*/
+}
+
+// Lists
+
+.hfeed, 
+.hfeed li {
+    list-style: none;
+    padding-left: 0;
+    /*max-width: 32em;
+    margin: 0 auto;*/
+}
+
+.hfeed .hentry {
+    margin-bottom: $base-line-height*2+em;
+    @include breakpoint(bp-medium) {
+        margin-bottom: $bp-m-base-line-height*2+em;
+    }
+    @include breakpoint(bp-xlarge) {
+        margin-bottom: $bp-l-base-line-height*2+em;
+    }
+    a { 
+        text-decoration: none;
+        h3 {
+            @extend %h2;
+            color: $color-accent;
+            //margin-top: 0;
+        }
+        .entry-published {
+            color: $color-main;
+        }
+        img {
+            display: block;
+            margin: $base-line-height+em 0 $base-line-height+em/2;
+        }
+        .description p {
+            color: $color-main;
+            //margin: $base-line-height+em 0;
+        }
+        /*p {
+            color: $color-main;
+        }*/
+    } 
+}
+
+.hfeed .hentry a:hover { 
+    /*text-decoration: none;
+    h3 {
+        text-decoration: underline;
+    }*/
+}
+
+.entry-summary p {
+    //margin-bottom: 2.1em; // 1.4em +.7em
+}
+
+// Homepage
+
+.intro {
+    margin-bottom: $base-line-height*2+em;
+    @include breakpoint(bp-medium) {
+        margin-bottom: $bp-m-base-line-height*2+em;
+    }
+    @include breakpoint(bp-xlarge) {
+        margin-bottom: $bp-l-base-line-height*2+em;
+    }
+    .intro-first-word {
+        display: block;
+    }
+    .intro-last-full-stop {
+        color: $color-accent-alt;
+    }
+    p {
+        @extend %h2;
+        color: $color-light;
+        font-weight: 200;
+    }
+    a {
+        /*color: inherit;*/
+        text-decoration: none;
+        /*text-decoration-line: underline;
+        text-decoration-color: 1px solid lighten($color-main, 80%);*/
+    }
+}
 
