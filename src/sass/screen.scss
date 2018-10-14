@@ -193,7 +193,7 @@ main {
     max-width: 32em;
     width: 90%;*/
     max-width: 32rem;
-    margin: 0 auto;
+    margin: ($base-line-height*4)+em auto 0;
     width: 90%;
 }
 
