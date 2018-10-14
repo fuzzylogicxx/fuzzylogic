@@ -1,7 +1,13 @@
 // Colours
-$color-main: rgb(68,68,68); //#333; // #444 (versus previous #333 (rgb(51,51,51)) which is darker)
-$color-interface-and-display: rgb(68,68,68); // #444 (versus previous #333 or rgb(51,51,51) which is darker)
-$color-accent: #35857d;
+//$color-main: rgb(68,68,68); //#333; // #444 (versus previous #333 (rgb(51,51,51)) which is darker)
+//$color-interface-and-display: rgb(68,68,68); // #444 (versus previous #333 or rgb(51,51,51) which is darker)
+//$color-accent: #35857d;
+
+$color-main: rgb(34,34,34); //rgb(149,149,149);
+$color-interface-and-display: rgb(34,34,34);
+$color-accent: rgb(30,139,142);
+$color-accent-alt: rgb(215,0,20);
+$color-light: rgb(149,149,149);
 
 
 

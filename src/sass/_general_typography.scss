@@ -29,7 +29,7 @@ Heavy (normally 900)
     font-style: italic;
 }
 
-/*@font-face {
+@font-face {
     font-family: 'FSEmeric';
     src: url('/fonts/fsemericwebbook/FSEmericWeb-Book.eot');
     src: url('/fonts/fsemericwebbook/FSEmericWeb-Book.eot?#iefix') format('embedded-opentype'),
@@ -44,9 +44,9 @@ Heavy (normally 900)
     url('/fonts/fsemericwebbookitalic/FSEmericWeb-BookItalic.woff') format('woff');
     font-weight: 400;
     font-style: italic;
-}*/
+}
 
-@font-face {
+/*@font-face {
     font-family: 'FSEmeric';
     src: url('/fonts/fsemericwebregular/FSEmericWeb-Regular.eot');
     src: url('/fonts/fsemericwebregular/FSEmericWeb-Regular.eot?#iefix') format('embedded-opentype'),
@@ -61,8 +61,24 @@ Heavy (normally 900)
     url('/fonts/fsemericwebitalic/FSEmericWeb-Italic.woff') format('woff');
     font-weight: 400;
     font-style: italic;
-}
+}*/
 
+@font-face {
+    font-family: 'FSEmeric';
+    src: url('/fonts/fsemericwebsemibold/FSEmericWeb-SemiBold.eot'); /* IE9 */
+    src: url('/fonts/fsemericwebsemibold/FSEmericWeb-SemiBold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ 
+    url('/fonts/fsemericwebsemibold/FSEmericWeb-SemiBold.woff') format('woff'); /* Modern Browsers */
+    font-weight: 600; 
+    font-style: normal;
+}
+@font-face {
+    font-family: 'FSEmeric';
+    src: url('/fonts/fsemericwebsemibolditalic/FSEmericWeb-SemiBoldItalic.eot'); /* IE9 */
+    src: url('/fonts/fsemericwebsemibolditalic/FSEmericWeb-SemiBoldItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ 
+    url('/fonts/fsemericwebsemibolditalic/FSEmericWeb-SemiBoldItalic.woff') format('woff'); /* Modern Browsers */
+    font-weight: 600;
+    font-style: italic;
+}
 @font-face {
     font-family: 'FSEmeric';
     src: url('/fonts/fsemericwebbold/FSEmericWeb-Bold.eot'); /* IE9 */
@@ -118,12 +134,14 @@ body {
 }
 
 a {
-    color: $color-accent;
+    //color: $color-accent; 
+    color: $color-main;
     text-decoration-skip-ink: none;
-    text-decoration: none;
+    /*text-decoration: none;*/
     /*border-bottom: 1px solid $color-accent;*/
     &:hover {
         //color: darken($color-accent, 20%);
+        color: $color-interface-and-display;
         text-decoration: underline;
     }
 }
@@ -190,20 +208,6 @@ abbr, code.markup.element, code.markup.attribute {
     font-variant: all-small-caps;
 }
 
-// Assuming we've set our language in the <html> element, turn on automatic hyphenation in CSS.
-/*h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-li,
-dd {
-    hyphens: auto;
-}*/
-
 h1, h2, h3, h4, h5, h6 {
     color: $color-interface-and-display;        //$color-main;
     font-family: $font-sans;
@@ -221,6 +225,7 @@ h1, h2, h3, h4, h5, h6 {
 h6,
 h5, 
 h4 {
+    font-weight: 200;
     @include font-size-to-rem($base-font-size);
     @include rhythmic-line-height($base-font-size);
     @include rhythmic-vertical-margins($base-font-size);
@@ -237,8 +242,8 @@ h4 {
 }
 %h3, 
 h3 {
-    font-weight: 400;
-    letter-spacing: -0.02em;
+    font-weight: 200;
+    /*letter-spacing: -0.02em;*/
     @include font-size-to-rem(21);
     @include rhythmic-vertical-margins(21);
     @include rhythmic-line-height(21);
@@ -261,8 +266,8 @@ h3 {
 
 %h2, 
 h2 {
-    font-weight: 400;
-    letter-spacing: -0.02em;
+    font-weight: 600;
+    /*letter-spacing: -0.02em;*/
     @include font-size-to-rem(25);
     @include rhythmic-vertical-margins(25);
     // line-height: 1; // to do: may want to make adjustments to padding/margins to attempt to preserve vertical rhythm // @include rhythmic-line-height(25); // this is too tight
@@ -281,7 +286,7 @@ h2 {
 
 %h1, 
 h1 {
-    font-weight: 400;
+    font-weight: 700;
     letter-spacing: -0.02em;
     @include font-size-to-rem(33);
     @include rhythmic-vertical-margins(33);
@@ -296,6 +301,27 @@ h1 {
         @include font-size-to-rem(78, $bp-l-base-font-size);
         @include rhythmic-line-height(78, $bp-m-px-base-line-height * 3.25);
         @include rhythmic-vertical-margins(78, $bp-l-px-base-line-height);
+    }
+}
+h1, 
+h1 a {
+    color: $color-light;
+}
+
+.intro {
+    margin-bottom: $base-line-height*2+em;
+    .intro-first-word {
+        display: block;
+    }
+    .intro-last-full-stop {
+        color: $color-accent;
+    }
+    p {
+        font-weight: 200;
+    }
+    a {
+        text-decoration: none;
+        border-bottom: 1px solid lighten($color-main, 50%);
     }
 }
 
@@ -317,7 +343,7 @@ article {
     dt,
     dd {
         /*@extend %nice-body-letter-spacing;*/
-        hyphens: auto;
+        hyphens: auto; // assuming we've set our language in the <html> element, this turn on automatic hyphenation.
     }
 }
 
