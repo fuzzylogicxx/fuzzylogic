@@ -25,7 +25,7 @@
 	<link rel="apple-touch-icon" href="icon.png">
 	<!-- Place favicon.ico in the root directory -->
 
-	<link rel="stylesheet" href="/css/screen.css"> <?php //perch_get_css(); ?>
+	<link rel="stylesheet" href="/css/screen_v2.css"> <?php //perch_get_css(); ?>
 
 
 </head>
