@@ -311,6 +311,12 @@ h1 a {
 
 .intro {
     margin-bottom: $base-line-height*2+em;
+    @include breakpoint(bp-medium) {
+        margin-bottom: $bp-m-base-line-height*2+em;
+    }
+    @include breakpoint(bp-xlarge) {
+        margin-bottom: $bp-l-base-line-height*2+em;
+    }
     .intro-first-word {
         display: block;
     }

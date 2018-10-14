@@ -173,6 +173,7 @@ main {
 }
 
 .hfeed .hentry a { 
+    text-decoration: none;
     /*.entry-published {
         margin: 0;
     }*/
@@ -206,6 +207,13 @@ main {
     /*margin: ($base-line-height*4)+em auto 0;
     max-width: 32em;
     width: 90%;*/
+    margin-top: $base-line-height*2+em;
+    @include breakpoint(bp-medium) {
+        margin-top: $bp-m-base-line-height*2+em;
+    }
+    @include breakpoint(bp-xlarge) {
+        margin-top: $bp-l-base-line-height*2+em;
+    }
     max-width: 32rem;
     margin: 0 auto;
     width: 90%;
