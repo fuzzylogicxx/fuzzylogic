@@ -74,8 +74,13 @@ tfoot {
 
 // In most (but not necessarily all) situations we want images to display block
 
-article img {
-    display: block;
+article {
+    figure {
+        margin-bottom: $base-line-height+em;
+    }
+    img {
+        display: block;
+    }
 }
 
 // Header
