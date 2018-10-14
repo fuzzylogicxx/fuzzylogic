@@ -4,7 +4,7 @@
 <main>
 
 <div class="intro">
-    <h1><span class="intro-first-word">Hello</span> and welcome<span class="intro-last-full-stop">.</span></h1>
+    <h1><span class="intro-first-word">Hello, and</span> welcome<span class="intro-last-full-stop">.</span></h1>
     <p>I’m Laurence Hughes, a web developer and director at <a href="http://www.greenhilldigital.com/">Greenhill</a>, music maker in <a href="http://nuclearfami.ly/">The Nuclear Family</a>, player of records and pinger of pongs.</p>
 
     <p><a href="https://fuzzylogic.me/" rel="me">Fuzzy Logic</a> is my online home, where I test-drive web stuff, log discoveries and ramble about code, music and more.</p>

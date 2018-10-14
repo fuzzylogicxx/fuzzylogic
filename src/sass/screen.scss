@@ -172,15 +172,25 @@ main {
     margin: 0 auto;*/
 }
 
-.hfeed .hentry a { 
+.hfeed .hentry {
+    margin-bottom: $base-line-height*2+em;
+    @include breakpoint(bp-medium) {
+        margin-bottom: $bp-m-base-line-height*2+em;
+    }
+    @include breakpoint(bp-xlarge) {
+        margin-bottom: $bp-l-base-line-height*2+em;
+    }
+
+    a { 
     text-decoration: none;
     /*.entry-published {
         margin: 0;
     }*/
-    /*h3 {
+    h3 {
+        @extend %h2;
         color: $color-accent;
-        margin-top: 0;
-    }*/
+        //margin-top: 0;
+    }
     img {
         display: block;
         @include paragraph-margins();
@@ -188,6 +198,7 @@ main {
     /*p {
         color: $color-main;
     }*/
+    } 
 }
 
 .hfeed .hentry a:hover { 
