@@ -5,7 +5,7 @@
 
 <div class="intro">
     <h1>Hello<span class="intro-last-full-stop">.</span></h1>
-    <p>I’m Laurence Hughes, a web developer and director at <a href="http://www.greenhilldigital.com/">Greenhill</a>, music maker in <a href="http://nuclearfami.ly/">The Nuclear Family</a>, player of records and pinger of pongs.</p>
+    <p>I’m Laurence Hughes, a web developer/director at <a href="http://www.greenhilldigital.com/">Greenhill</a>, music maker in <a href="http://nuclearfami.ly/">The Nuclear Family</a>, player of records and pinger of pongs.</p>
 
     <p><a href="https://fuzzylogic.me/" rel="me">Fuzzy Logic</a> is my online home, where I test-drive web stuff, log discoveries and ramble about code, music and more.</p>
 </div>
