@@ -111,9 +111,9 @@ html {
 body {
     font-feature-settings: "liga" 1;
     font-feature-settings: "onum" 1;
-    line-height: $base-line-height; // 16 * 1.35 = 21.6;
+    line-height: $base-line-height; // 16 * 1.4 = 22.4;
     @include breakpoint(bp-medium) {
-        line-height: $bp-m-base-line-height;  // still 1.35 so at bp-medium line-height = 24.3 (18 * 1.35) and at bp-large line-height = 28.35 (21 * 1.35);
+        line-height: $bp-m-base-line-height;  // still 1.4 so at bp-medium line-height = 25.2 (18 * 1.35) and at bp-large line-height = 29.4 (21 * 1.35);
     }
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
@@ -257,7 +257,7 @@ h3 {
         @include font-size-to-rem(25, $bp-m-base-font-size);
         //@include rhythmic-line-height(25, $bp-m-px-base-line-height * 1.25); // under 1 so dangerously tight: watch it.
 
-        line-height: 1;
+        @include rhythmic-line-height(21, $bp-m-px-base-line-height); //line-height: 1;
 
         @include rhythmic-vertical-margins(25, $bp-m-px-base-line-height);
     }
@@ -426,7 +426,7 @@ article {
         -webkit-initial-letter: 2;
         initial-letter: 2;
         font-weight: bold;
-        margin-right: .5em;
+        margin-right: .25em;
     }
 }
 
@@ -472,12 +472,17 @@ article {
 }
 
 .hfeed .hentry {
+    background: linear-gradient(#eee, #eee) no-repeat bottom center / 12.5% 0.2ch;
+    padding-bottom: $base-line-height*1.5+em;
     margin-bottom: $base-line-height*2+em;
     @include breakpoint(bp-medium) {
         margin-bottom: $bp-m-base-line-height*2+em;
     }
     @include breakpoint(bp-xlarge) {
         margin-bottom: $bp-l-base-line-height*2+em;
+    }
+    &:last-child {
+        background: none;
     }
     a { 
         text-decoration: none;
