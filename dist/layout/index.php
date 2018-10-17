@@ -81,6 +81,10 @@ aside {
 		  ". 	  content sidebar ."
 		  "footer footer  footer  footer";
 	}
+	nav {
+		display: flex;
+		justify-content: space-between;
+	}
 	nav ul {
 		display: flex;
 		justify-content: space-between;
@@ -88,20 +92,20 @@ aside {
 
 	[role=banner] {
 	  	display: inherit;
-		grid-template-columns: inherit;
+		grid-template-columns: 1fr 1fr 38rem 9.5rem 1fr 1fr;
 	}
 
 	[role=navigation] {
-		grid-column: 2 / 3;
+		grid-column: 2 / 6;
 	}
 
 	[role=contentinfo] {
 	  	display: inherit;
-		grid-template-columns: inherit;
+		grid-template-columns: 1fr 1fr 38rem 9.5rem 1fr 1fr;
 	}
 
 	small {
-		grid-column: 2 / 3;
+		grid-column: 2 / 6;
 	}
 
 
