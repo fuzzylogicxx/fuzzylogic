@@ -23,6 +23,10 @@
 <style type="text/css">
 
 	* {box-sizing: border-box;}
+	html, body {
+		margin: 0;
+		padding: 0;
+	}
 
 /*    .wrapper {
         max-width: 1024px;
@@ -42,11 +46,23 @@
         margin: 0;
         padding: 0;
     }
-
+body {
+  display: grid;
+  /*grid-gap: 20px;*/
+  grid-template-areas: 
+    "header"
+    "content"
+    "sidebar"
+    "footer";
+}
 [role=banner] {
   grid-area: header;
+  background: red;
 }
-article {
+#dummy-logo {
+	color: #fff;
+}
+main {
   grid-area: content;
 }
 aside {
@@ -55,42 +71,41 @@ aside {
 [role=contentinfo] {
   grid-area: footer;
 }
-body {
-  display: grid;
-  grid-gap: 20px;
-  grid-template-areas: 
-    "header"
-    "content"
-    "sidebar"
-    "footer";
-}
-@media (min-width: 500px) {
- body {
-    grid-template-columns: 3fr 1fr;
-    grid-template-areas: 
-      "header  header"
-      "content sidebar"
-      "footer footer";
-  }
-  nav ul {
-    display: flex;
-    justify-content: space-between;
-  }
-}
-/*@media (min-width: 700px) {
-  .wrapper {
-    grid-template-columns: 1fr 4fr 1fr;
-    grid-template-areas: 
-      "header header  header"
-      "nav    content sidebar"
-      "nav    content ad"
-      "footer footer  footer"
-   }
-   nav ul {
-     flex-direction: column;
-   }
-}*/
 
+@media (min-width: 50em) {
+
+	body {
+		grid-template-columns: auto 38rem 9.5rem auto;
+		grid-template-areas: 
+		  "header header  header  header"
+		  ". 	  content sidebar ."
+		  "footer footer  footer  footer";
+	}
+	nav ul {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	[role=banner] {
+	  	display: inherit;
+		grid-template-columns: inherit;
+	}
+
+	[role=navigation] {
+		grid-column: 2 / 3;
+	}
+
+	[role=contentinfo] {
+	  	display: inherit;
+		grid-template-columns: inherit;
+	}
+
+	small {
+		grid-column: 2 / 3;
+	}
+
+
+}
 	
 </style>
 
