@@ -11,7 +11,6 @@
 
 img {
     max-width: 100%;
-
 }
 
 
@@ -83,11 +82,36 @@ article {
     }
 }
 
+body {
+    display: grid;
+    /*grid-gap: 1.4rem;*/
+    grid-template-areas: 
+        "header"
+       "content"
+        "sidebar"
+        "footer";
+    @media (min-width: 50em) {
+        grid-template-columns: auto 33rem 13rem auto; //grid-template-columns: 1fr 1fr 33rem 12rem 1fr 1fr;
+        grid-template-areas: 
+          "header header  header  header"
+          ".      content sidebar ."
+          "footer footer  footer  footer";
+        column-gap: 2.8em;
+    }
+}
+
+
 // Header
 
 [role=banner] {
     //background: #80C1B0;
-    text-align: center;
+    //text-align: center;
+    grid-area: header;
+    @media (min-width: 50em) {
+        display: inherit;
+        grid-template-columns: 1fr 1fr 33rem 13rem 1fr 1fr;
+        column-gap: 2.8em;
+    }
 }
 
 /*header h1 {
@@ -145,16 +169,38 @@ article {
 
 // Navigation
 
-[role=navigation] {}
+[role=navigation] {
+    @media (min-width: 50em) {
+        display: flex;
+        justify-content: space-between;
+        grid-column: 3 / 5;
+        padding: 1.4em 0;
+    }
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        @media (min-width: 50em) {
+            display: flex;
+            justify-content: space-between;
+        }
+        li {
+            padding: 0 0 0 1.4em;
+        }
+    }
+}
+
 
 // Main
 
 main {
     /*margin: 0 auto;
     width: 90%;*/
-    max-width: 32rem;
+
+/*    max-width: 32rem;
     margin: 0 auto;
-    width: 90%;
+    width: 90%;*/
+    grid-area: content;
 }
 
 // Sidebar
@@ -163,7 +209,8 @@ main {
     /*margin: ($base-line-height*4)+em auto 0;
     max-width: 32em;
     width: 90%;*/
-    width: 90%;
+ 
+/*    width: 90%;
     max-width: 32rem;
     margin: 0 auto $base-line-height*2+em;
     @include breakpoint(bp-medium) {
@@ -171,7 +218,8 @@ main {
     }
     @include breakpoint(bp-xlarge) {
         margin-bottom: $bp-l-base-line-height*2+em;
-    }
+    }*/
+    grid-area: sidebar;
 }
 
 // Articles
@@ -213,9 +261,19 @@ main {
     /*margin: ($base-line-height*4)+em auto 0;
     max-width: 32em;
     width: 90%;*/
-    max-width: 32rem;
+
+/*    max-width: 32rem;
     margin: ($base-line-height*4)+em auto 0;
-    width: 90%;
+    width: 90%;*/
+    grid-area: footer;
+    @media (min-width: 50em) {
+        display: inherit;
+        grid-template-columns: 1fr 1fr 33rem 13rem 1fr 1fr;
+        column-gap: 2.8em;
+        small {
+            grid-column: 3 / 5;
+        }
+    }
 }
 
 

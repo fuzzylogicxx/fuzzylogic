@@ -162,6 +162,17 @@ p {
     max-width: 38em;
 }
 
+[role=complementary] {
+    p {
+        @include breakpoint(bp-large) {
+            font-size: ((18/21)*100)+%; // =1em = 16px
+        }
+        /*@include breakpoint(bp-medium) {
+            line-height: $bp-m-base-line-height;  // still 1.4 so at bp-medium line-height = 25.2 (18 * 1.35) and at bp-large line-height = 29.4 (21 * 1.35);
+        }*/
+    }
+}
+
 blockquote, 
 ul,
 ol {

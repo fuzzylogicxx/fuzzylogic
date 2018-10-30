@@ -5,7 +5,9 @@
 
 <div class="intro">
     <h1>Hello<span class="intro-last-full-stop">.</span></h1>
-    <p>I’m Laurence Hughes, a web developer at <a href="http://www.greenhilldigital.com/">Greenhill</a>, producer in <a href="http://nuclearfami.ly/">The Nuclear Family</a>, player of records and pinger of pongs. <a href="https://fuzzylogic.me/" rel="me">Fuzzy Logic</a> is my online home, where I test-drive web stuff and ramble about code, music and more.</p>
+    <p>I’m Laurence Hughes, a web developer at <a href="http://www.greenhilldigital.com/">Greenhill</a>, producer in <a href="http://nuclearfami.ly/">The Nuclear Family</a>, player of records and pinger of pongs. <a href="https://fuzzylogic.me/" rel="me">Fuzzy Logic</a> is my online home, where I try out web stuff and ramble about code, music and more.</p>
+    <!-- <p>I’m Laurence Hughes — a Glasgwegian web developer, maker of music, player of records and pinger of pongs. <a href="https://fuzzylogic.me/" rel="me">Fuzzy Logic</a> is my online home, where I try out web stuff and ramble about code, music and more.</p> -->
+    <!-- at <a href="http://www.greenhilldigital.com/">Greenhill</a> |  in <a href="http://nuclearfami.ly/">The Nuclear Family</a> -->
 </div>
 
 
@@ -16,6 +18,7 @@
 <?php
     perch_blog_recent_posts(10);
 ?>
+<p><a href="/blog/archive.php">More posts</a></p>
 
 <?php /*
 <p><a href="/blog/archive.php">More posts</a></p>
@@ -43,9 +46,6 @@
 
 </main>
 
-<aside role="complementary">
-    <h3>Elsewhere online</h3>
-    <p>You’ll find me tweeting on <a rel="me" href="https://twitter.com/fuzzylogicx">Twitter</a>; posting photos on <a rel="me" href="https://www.instagram.com/fuzzylogicx/">Instagram</a>; on Soundcloud sharing <a rel="me" href="https://soundcloud.com/the_nuclear_family">music</a> and <a rel="me" href="https://soundcloud.com/fuzzylogicx">mixes</a>; collecting, buying and selling records on <a rel="me" href="https://www.discogs.com/user/laurence">Discogs</a>; and coding on <a rel="me" href="https://github.com/fuzzylogicxx">Github</a> and <a rel="me" href="https://codepen.io/fuzzylogicx/">CodePen</a>.</p>
-</aside>
+<?php require_once($_SERVER['DOCUMENT_ROOT'].'/inc/sidebar.php'); ?>
 
 <?php require_once($_SERVER['DOCUMENT_ROOT'].'/inc/page_end.php'); ?>

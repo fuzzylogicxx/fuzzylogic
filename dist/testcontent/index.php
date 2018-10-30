@@ -1,4 +1,4 @@
-<?php $page = ['title' => 'Homepage']; ?>
+<?php $page = ['title' => 'Test Content']; ?>
 <?php require_once($_SERVER['DOCUMENT_ROOT'].'/inc/page_start.php'); ?>
 
 <main>
@@ -325,8 +325,6 @@
 
 </main>
 
-<aside>
-  Sidebar
-</aside>
+<?php require_once($_SERVER['DOCUMENT_ROOT'].'/inc/sidebar.php'); ?>
 
 <?php require_once($_SERVER['DOCUMENT_ROOT'].'/inc/page_end.php'); ?>
