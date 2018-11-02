@@ -71,86 +71,8 @@ tfoot {
 
 // Utilities / Common
 
-// In most (but not necessarily all) situations we want images to display block
+/* Embed Video and other media */
 
-article {
-    figure {
-        margin-bottom: $base-line-height+em;
-    }
-    img {
-        display: block;
-    }
-}
-
-body {
-    display: grid;
-    /*grid-gap: 1.4rem;*/
-    grid-template-areas: 
-        "header"
-       "content"
-        "sidebar"
-        "footer";
-    @media (min-width: 50em) {
-        grid-template-columns: auto 33rem 13rem auto; //grid-template-columns: 1fr 1fr 33rem 12rem 1fr 1fr;
-        grid-template-areas: 
-          "header header  header  header"
-          ".      content sidebar ."
-          "footer footer  footer  footer";
-        column-gap: 2.8em;
-    }
-}
-
-
-// Header
-
-[role=banner] {
-    //background: #80C1B0;
-    //text-align: center;
-    grid-area: header;
-    @media (min-width: 50em) {
-        display: inherit;
-        grid-template-columns: 1fr 1fr 33rem 13rem 1fr 1fr;
-        column-gap: 2.8em;
-    }
-}
-
-/*header h1 {
-    margin-top: 0;
-}*/
-
-#logo {
-    /* to do: add non retina here and wrap following line in a retina-testing media query */
-    /*background-image: url(../img/fuzzylogic_roundel_d_72@2x.png);*/ /* if we change basic unit of vertical rhythm from 24, could change logo height from 72 to sthg that retains rhythm */
-    /*background-size: 72px 72px;
-    display: block;
-    text-indent: -9999999px;
-    width: 72px;
-    height: 72px;
-    margin: 0 auto;*/
-    @extend %h1;
-    display: none;
-    color: lighten($color-main, 50%);
-    font-weight: 700;
-    text-decoration: none;
-    @include breakpoint(bp-small) {
-        display: block;
-        /*margin: 0;*/
-        /*transform: rotate(-90deg);
-        
-        bottom: 110px;
-        right: 1em;*/
-        right: 2vw;
-        bottom: 0;
-        position: fixed;
-        writing-mode: vertical-rl;
-        transform: rotate(180deg);
-        /*margin-right: -94px;*/
-        /*max-width: 300px;*//*display: inline-block;*//*line-height: 0.78em;*/
-    }
-    /*display: none;*/
-}
-
-/* Embed Video */
 .embed-container { 
     margin: $base-line-height+em 0;
     position: relative; 
@@ -159,6 +81,7 @@ body {
     overflow: hidden; 
     max-width: 100%; 
 } 
+
 .embed-container iframe, .embed-container object, .embed-container embed { 
     position: absolute; 
     top: 0; 
@@ -167,25 +90,35 @@ body {
     height: 100%; 
 }
 
+
+
+
+
+
+
+[role=banner] {
+    max-width: 32rem;
+    margin: 0 auto;
+    width: 90%;
+}
+
 // Navigation
 
 [role=navigation] {
-    @media (min-width: 50em) {
-        display: flex;
-        justify-content: space-between;
-        grid-column: 3 / 5;
-        padding: 1.4em 0;
+    display: flex;
+    flex-direction: column;
+    #logo {
+        align-self: center;
     }
     ul {
         list-style: none;
         margin: 0;
         padding: 0;
-        @media (min-width: 50em) {
-            display: flex;
-            justify-content: space-between;
-        }
+        display: flex;
+        justify-content: space-between;
         li {
-            padding: 0 0 0 1.4em;
+            margin: 0;
+            padding: 0;
         }
     }
 }
@@ -194,103 +127,10 @@ body {
 // Main
 
 main {
-    /*margin: 0 auto;
-    width: 90%;*/
-
-/*    max-width: 32rem;
-    margin: 0 auto;
-    width: 90%;*/
-    grid-area: content;
-}
-
-// Sidebar
-
-[role=complementary] {
-    /*margin: ($base-line-height*4)+em auto 0;
-    max-width: 32em;
-    width: 90%;*/
- 
-/*    width: 90%;
     max-width: 32rem;
-    margin: 0 auto $base-line-height*2+em;
-    @include breakpoint(bp-medium) {
-        margin-bottom: $bp-m-base-line-height*2+em;
-    }
-    @include breakpoint(bp-xlarge) {
-        margin-bottom: $bp-l-base-line-height*2+em;
-    }*/
-    grid-area: sidebar;
+    margin: 0 auto;
+    width: 90%;
 }
 
-// Articles
-
-.article-body {
-    /*max-width: 32em;
-    margin: 0 auto;*/
-}
-
-.post-main-image {
-    /*margin: $base-line-height+em 0;*/
-}
-
-.h-entry + .meta {
-    /*margin-top: ($base-line-height*4)+em;*/
-}
-
-.h-card img {
-    display: none;
-}
-
-// Lists
-
-
-.hfeed .hentry a:hover { 
-    /*text-decoration: none;
-    h3 {
-        text-decoration: underline;
-    }*/
-}
-
-.entry-summary p {
-    //margin-bottom: 2.1em; // 1.4em +.7em
-}
-
-// Footer (i.e. the global footer, as opposed to any other local <footer> elements)
-
-[role=contentinfo] {
-    /*margin: ($base-line-height*4)+em auto 0;
-    max-width: 32em;
-    width: 90%;*/
-
-/*    max-width: 32rem;
-    margin: ($base-line-height*4)+em auto 0;
-    width: 90%;*/
-    grid-area: footer;
-    @media (min-width: 50em) {
-        display: inherit;
-        grid-template-columns: 1fr 1fr 33rem 13rem 1fr 1fr;
-        column-gap: 2.8em;
-        small {
-            grid-column: 3 / 5;
-        }
-    }
-}
-
-
-// Homepage 
-
-.intro {
-    //margin: $base-line-height+em 0 ($base-line-height*2)+em;
-    p {
-        //font-weight: 200;
-    }
-}
-
-// Page: X
-
-
-
-
-// Page: Y
 
 
