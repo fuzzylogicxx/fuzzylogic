@@ -18,9 +18,15 @@ ErrorDocument 404 /404.html
 <IfModule mod_rewrite.c>  
     RewriteEngine on  
 
-	RewriteRule ^posts/([a-zA-Z0-9-/]+)$ /blog/post.php?s=$1 [L]
+	# if the address starts with "posts/", pick what comes afterwards, put it into the GET Parameter and quit (that's the [L]) 
+	RewriteRule ^thoughts/([a-zA-Z0-9-/]+)$ /blog/post.php?s=$1 [L]
+	RewriteRule ^sounds/([a-zA-Z0-9-/]+)$ /blog/post.php?s=$1 [L]
+	RewriteRule ^links/([a-zA-Z0-9-/]+)$ /blog/post.php?s=$1 [L]
+
+	RewriteRule ^thoughts/$ /blog/section.php?s=thoughts [L]
+	RewriteRule ^sounds/$ /blog/section.php?s=sounds [L]
+	RewriteRule ^links/$ /blog/section.php?s=links [L]
 	
-	# if the address starts with "blog/", pick what comes afterwards, put it into the GET Parameter and quit (that's the [L]) 
 	# RewriteRule ^blog/([a-zA-Z0-9-/]+)$ /blog/post.php?s=$1 [L]
 
 	# Once URLs are rewritten, draft post preview is achieved by adding /preview to the end of your URL, so remember to add a rule for that. You should rewrite it to add the query string argument preview=all to the URL.

@@ -5,7 +5,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 	<?php
-	$is_blog_article = (strpos($_SERVER['REQUEST_URI'], 'posts') !== false); 
+	$is_blog_article = (
+		((strpos($_SERVER['REQUEST_URI'], 'thoughts') !== false) || (strpos($_SERVER['REQUEST_URI'], 'sounds') !== false) || (strpos($_SERVER['REQUEST_URI'], 'links') !== false))
+		&& 
+		( ($_SERVER['REQUEST_URI'] !== "/thoughts/") && ($_SERVER['REQUEST_URI'] !== "/sounds/") && ($_SERVER['REQUEST_URI'] !== "/links/") )
+	); 
 	if ($is_blog_article) {
 		perch_blog_post_meta(perch_get('s'));
 		perch_blog_post_webmention_endpoint(perch_get('s'));
