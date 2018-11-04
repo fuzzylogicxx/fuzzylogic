@@ -94,7 +94,7 @@ tfoot {
 
 
 
-
+// Global Header
 
 [role=banner] {
     max-width: 32rem;
@@ -123,7 +123,6 @@ tfoot {
     }
 }
 
-
 // Main
 
 main {
@@ -132,5 +131,19 @@ main {
     width: 90%;
 }
 
+// Sidebar
 
+[role=complementary] {
+    max-width: 32rem;
+    margin: 0 auto;
+    width: 90%;
+}
+
+// Footer (i.e. the global footer, as opposed to any other local <footer> elements)
+
+[role=contentinfo] {
+    max-width: 32rem;
+    margin: 0 auto;
+    width: 90%;
+}
 

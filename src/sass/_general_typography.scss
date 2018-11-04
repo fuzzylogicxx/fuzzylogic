@@ -159,6 +159,7 @@ p {
 }
 
 // Sidebar paragraphs
+
 [role=complementary] {
     p {
         @include breakpoint(bp-large) {
@@ -205,5 +206,165 @@ ul li {
     }
 }
 
+dt {
+    font-weight: 600;
+}
+
+dd {
+    @include paragraph-margins();
+}
+
+abbr, code.markup.element, code.markup.attribute {
+    text-decoration: none;
+    font-family: inherit;
+    font-variant: all-small-caps;
+}
+
+// Headings, starting with smallest first.
+
+h1, h2, h3, h4, h5, h6 {
+    color: $color-interface-and-display;
+    font-family: $font-sans;
+    font-feature-settings: "dlig" 1;
+    @supports (font-variant-ligatures: discretionary-ligatures) {
+        .dlig {
+            font-feature-settings: normal;
+            font-variant-ligatures: discretionary-ligatures;
+        }
+    }
+}
+
+h6,
+h5, 
+h4 {
+    font-weight: 200;
+    @include font-size-to-rem($base-font-size);
+    @include rhythmic-line-height($base-font-size);
+    @include rhythmic-vertical-margins($base-font-size);
+    /*@include breakpoint(bp-medium) {
+        @include font-size-to-rem($bp-m-base-font-size, $bp-m-base-font-size);
+        line-height: $bp-m-base-line-height;
+        @include rhythmic-vertical-margins($bp-m-base-font-size, $bp-m-px-base-line-height);
+    }
+    @include breakpoint(bp-large) {
+        @include font-size-to-rem($bp-l-base-font-size, $bp-l-base-font-size);
+        line-height: $bp-l-base-line-height;
+        @include rhythmic-vertical-margins($bp-l-base-font-size, $bp-l-px-base-line-height);
+    }*/
+}
+
+%h3, 
+h3 {
+    font-weight: 200;
+    /*letter-spacing: -0.02em;*/
+    @include font-size-to-rem(21);
+    @include rhythmic-vertical-margins(21);
+    @include rhythmic-line-height(21);
+    /*@include breakpoint(bp-medium) {
+        @include font-size-to-rem(25, $bp-m-base-font-size);
+        //@include rhythmic-line-height(25, $bp-m-px-base-line-height * 1.25); // under 1 so dangerously tight: watch it.
+
+        @include rhythmic-line-height(25, $bp-m-px-base-line-height); //line-height: 1;
+
+        @include rhythmic-vertical-margins(25, $bp-m-px-base-line-height);
+    }
+    @include breakpoint(bp-large) {
+        @include font-size-to-rem(28, $bp-l-base-font-size);
+        @include rhythmic-line-height(28, $bp-l-px-base-line-height);
+        @include rhythmic-vertical-margins(28, $bp-l-px-base-line-height);
+    }*/
+}
+
+%h2, 
+h2 {
+    font-weight: 600;
+    /*letter-spacing: -0.02em;*/
+    @include font-size-to-rem(25);
+    @include rhythmic-vertical-margins(25);
+    @include rhythmic-line-height(25);
+/*    @include breakpoint(bp-medium) {
+        @include font-size-to-rem(33, $bp-m-base-font-size);
+        //@include rhythmic-line-height(33, $bp-m-px-base-line-height * 1.25);
+        line-height: 1;
+
+        @include rhythmic-vertical-margins(33, $bp-m-px-base-line-height);
+    }
+    @include breakpoint(bp-xlarge) {
+        @include font-size-to-rem(44, $bp-l-base-font-size);
+        //@include rhythmic-line-height(44, $bp-l-px-base-line-height * 1.75);
+
+        line-height: 1;
+
+        @include rhythmic-vertical-margins(44, $bp-l-px-base-line-height);
+    }*/
+}
+
+%h1, 
+h1 {
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    @include font-size-to-rem(33);
+    @include rhythmic-vertical-margins(33);
+    @include rhythmic-line-height(33);
+    @include rhythmic-line-height(33, $base-line-height-in-px * 2);
+/*    @include breakpoint(bp-medium) {
+        @include font-size-to-rem(51, $bp-m-base-font-size);
+        //@include rhythmic-line-height(51, $bp-m-px-base-line-height * 2.25);
+        line-height: 1;
+        @include rhythmic-vertical-margins(51, $bp-m-px-base-line-height);
+    }
+    @include breakpoint(bp-xlarge) {
+        @include font-size-to-rem(78, $bp-l-base-font-size);
+        //@include rhythmic-line-height(78, $bp-m-px-base-line-height * 3.25);
+        line-height: 1;
+        @include rhythmic-vertical-margins(78, $bp-l-px-base-line-height);
+    }*/
+}
+
+
+
+// Lists
+
+.hfeed, 
+.hfeed li {
+    list-style: none;
+    padding-left: 0;
+}
+
+.hfeed .hentry {
+    background: linear-gradient(#eee, #eee) no-repeat bottom center / 12.5% 0.2ch;
+    padding-bottom: $base-line-height*1.5+em; // (1.5 line-heights plus the half line-height of margin above the last paragraph = a round 2 line-heights)
+    margin-bottom: $base-line-height*2+em;
+    /*@include breakpoint(bp-medium) {
+        margin-bottom: $bp-m-base-line-height*2+em;
+    }
+    @include breakpoint(bp-xlarge) {
+        margin-bottom: $bp-l-base-line-height*2+em;
+    }*/
+    &:last-child {
+        background: none;
+    }
+    a { 
+        text-decoration: none;
+        h3 {
+            @extend %h2;
+            color: $color-accent;
+        }
+        .entry-published {
+            color: $color-main;
+        }
+        img {
+            display: block;
+            margin: $base-line-height+em 0 $base-line-height+em/2;
+        }
+        .description {
+            //overflow: auto;
+        }
+        .description p {
+            color: $color-main;
+            margin-bottom: 0;
+        }
+    } 
+}
 
 
