@@ -182,9 +182,9 @@ li {
 }
 
 ul li {
-    padding-left: .75em;
+    padding-left: $base-line-height/2+em;
     li {
-        padding-left: 1.5em;
+        padding-left: $base-line-height+em;
     }
 }
 

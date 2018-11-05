@@ -1,6 +1,6 @@
 <aside role="complementary" id="sidebar">
 
-    <h3>Fuzzy What?</h3>
+    <!-- <h3>Fuzzy What?</h3> -->
 
     <!-- The following functions are different ways to display archives. You can use any or all of these.
     All of these functions can take a parameter of a template to overwrite the default template, for example:

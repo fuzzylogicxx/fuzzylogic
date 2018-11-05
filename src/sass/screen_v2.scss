@@ -92,6 +92,25 @@ tfoot {
 
 
 
+// Body
+
+body {
+    /*grid-gap: 1.4rem;*/
+    display: grid;
+    grid-template-areas: 
+        "header"
+        "content"
+        "sidebar"
+        "footer";
+    @media (min-width: 50em) {
+        grid-template-columns: auto 33rem 13rem auto; //grid-template-columns: 1fr 1fr 33rem 12rem 1fr 1fr;
+        grid-template-areas: 
+          "header header  header  header"
+          ".      content sidebar ."
+          "footer footer  footer  footer";
+        column-gap: 2.8em;
+    }
+}
 
 
 // Global Header
@@ -100,6 +119,15 @@ tfoot {
     max-width: 32rem;
     margin: 0 auto;
     width: 90%;
+    @media (min-width: 50em) {
+        max-width: none;
+        width: auto;
+        margin: 0;
+        grid-area: header;
+        display: inherit;
+        grid-template-columns: 1fr 1fr 33rem 13rem 1fr 1fr;
+        column-gap: 2.8em;
+    }
 }
 
 #logo {
@@ -118,8 +146,15 @@ tfoot {
 [role=navigation] {
     display: flex;
     flex-direction: column;
+    @media (min-width: 50em) {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        grid-column: 2 / 6;
+        /*padding: ($base-line-height/2)+em 0;*/
+    }
     #logo {
-        align-self: center;
+        /*align-self: center;*/
     }
     ul {
         list-style: none;
@@ -127,9 +162,13 @@ tfoot {
         padding: 0;
         display: flex;
         justify-content: space-between;
+        @media (min-width: 50em) {
+            margin: 0;
+        }
         li {
             margin: 0;
             padding: 0;
+            padding-left: $base-line-height+em;
         }
         a {
             display: block;
@@ -142,6 +181,8 @@ tfoot {
     }
 }
 
+
+
 // Main
 
 main {
@@ -151,6 +192,12 @@ main {
     max-width: 32rem;
     margin: 0 auto;
     width: 90%;
+    @media (min-width: 50em) {
+        /*max-width: none;*/
+        margin: 0;
+        width: auto;
+        grid-area: content;
+    }
 }
 
 
@@ -165,6 +212,12 @@ main {
     max-width: 32rem;
     margin: 0 auto;
     width: 90%;
+    @media (min-width: 50em) {
+        background: none;
+        width: auto;
+        grid-area: sidebar;
+        padding: 0;
+    }
 }
 
 // Footer (i.e. the global footer, as opposed to any other local <footer> elements)
@@ -175,5 +228,18 @@ main {
     margin: 0 auto;
     width: 90%;
     text-align: center;
+    @media (min-width: 50em) {
+        text-align: left;
+        max-width: none;
+        width: auto;
+        margin: 0;
+        grid-area: footer;
+        display: inherit;
+        grid-template-columns: 1fr 1fr 33rem 13rem 1fr 1fr;
+        column-gap: 2.8em;
+        small {
+            grid-column: 3 / 5;
+        }
+    }
 }
 
