@@ -154,7 +154,7 @@ body {
         /*padding: ($base-line-height/2)+em 0;*/
     }
     #logo {
-        /*align-self: center;*/
+        align-self: center;
     }
     ul {
         list-style: none;
@@ -168,7 +168,9 @@ body {
         li {
             margin: 0;
             padding: 0;
-            padding-left: $base-line-height+em;
+            @media (min-width: 50em) {
+                padding-left: $base-line-height+em;
+            }
         }
         a {
             display: block;
