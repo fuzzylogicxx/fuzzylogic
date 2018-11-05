@@ -161,9 +161,7 @@ p {
 
 [role=complementary] {
     p {
-        @include breakpoint(bp-large) {
-            font-size: ((18/21)*100)+%; // =18px
-        }
+
     }
 }
 

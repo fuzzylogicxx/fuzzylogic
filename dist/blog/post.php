@@ -6,12 +6,10 @@
 <?php perch_blog_post(perch_get('s')); ?>
 
 <div class="meta">
-    <div class="cats">
-        <?php perch_blog_post_categories(perch_get('s')); ?>
-    </div>
-    <div class="tags">
-        <?php perch_blog_post_tags(perch_get('s')); ?>
-    </div>
+    <!-- <div class="cats">
+        <?php //perch_blog_post_categories(perch_get('s')); ?>
+    </div> -->
+    <?php perch_blog_post_tags(perch_get('s')); ?>
 </div>
 
 <?php perch_blog_post_ping_form(perch_get('s')); ?>

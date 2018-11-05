@@ -145,14 +145,23 @@ tfoot {
 // Main
 
 main {
+    background: linear-gradient(#eee, #eee) no-repeat bottom center / 12.5% 0.2ch;
+    padding-bottom: $base-line-height*2+em; // (1.5 line-heights plus the half line-height of margin above the last paragraph = a round 2 line-heights)
+    margin-bottom: $base-line-height*2+em;
     max-width: 32rem;
     margin: 0 auto;
     width: 90%;
 }
 
+
+    
+
 // Sidebar
 
 [role=complementary] {
+    background: linear-gradient(#eee, #eee) no-repeat bottom center / 12.5% 0.2ch;
+    padding: $base-line-height+em 0 $base-line-height*2+em;
+    margin-bottom: $base-line-height*2+em;
     max-width: 32rem;
     margin: 0 auto;
     width: 90%;
@@ -161,8 +170,10 @@ main {
 // Footer (i.e. the global footer, as opposed to any other local <footer> elements)
 
 [role=contentinfo] {
+    padding-top: $base-line-height+em;
     max-width: 32rem;
     margin: 0 auto;
     width: 90%;
+    text-align: center;
 }
 
