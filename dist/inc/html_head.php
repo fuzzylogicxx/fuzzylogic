@@ -26,10 +26,21 @@
 	<meta name="robots" content="noindex">
 
 	<link rel="manifest" href="site.webmanifest">
-	<link rel="apple-touch-icon" href="icon.png">
+	<!-- <link rel="apple-touch-icon" href="icon.png"> -->
 	<!-- Place favicon.ico in the root directory -->
 
 	<link rel="stylesheet" href="/css/screen_v2.css"> <?php //perch_get_css(); ?>
+
+	<!-- third-generation iPad with high-resolution Retina display: -->
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/favicon144.png">
+	<!-- iPhone with high-resolution Retina display: -->
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/img/favicon114.png">
+	<!-- first- and second-generation iPad: -->
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/img/favicon72.png">
+	<!-- non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+	<link rel="apple-touch-icon-precomposed" href="/img/favicon57.png">
+	<!-- basic favicon -->
+	<link rel="shortcut icon" href="/img/favicon32.png">
 
 
 </head>
