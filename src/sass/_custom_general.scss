@@ -15,3 +15,12 @@ html {
 }
 
 
+// Mina Markham’s non-crappy-but-still-accessible focus outline
+
+:focus-visible {
+	outline: thin solid $color-accent;
+	outline-offset: .25rem;
+}
+:focus:not(:focus-visible) {
+	outline: none;
+}

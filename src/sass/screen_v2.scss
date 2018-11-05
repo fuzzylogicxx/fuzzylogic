@@ -102,6 +102,17 @@ tfoot {
     width: 90%;
 }
 
+#logo {
+    @include retinize('logo_roundel_v2', 'png', 88px, 88px);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    text-indent: -9999999px;
+    width: 88px;
+    line-height: $base-line-height*4+em; //88px;
+    margin: $base-line-height/2+em 0;
+}
+
+
 // Navigation
 
 [role=navigation] {
@@ -112,13 +123,21 @@ tfoot {
     }
     ul {
         list-style: none;
-        margin: 0;
+        margin: 0 0 $base-line-height+em 0;
         padding: 0;
         display: flex;
         justify-content: space-between;
         li {
             margin: 0;
             padding: 0;
+        }
+        a {
+            display: block;
+            text-transform: uppercase;
+            text-decoration: none;
+            font-weight: 700;
+            @include font-size-to-rem(14);
+            @include rhythmic-line-height(14);
         }
     }
 }

@@ -170,7 +170,8 @@ p {
 
 blockquote, 
 ul,
-ol {
+ol, 
+dl {
     @include paragraph-margins();
 }
 
@@ -208,10 +209,11 @@ ul li {
 
 dt {
     font-weight: 600;
+    margin: $base-line-height/2+em 0 0;
 }
 
 dd {
-    @include paragraph-margins();
+    margin-bottom: $base-line-height/2+em;
 }
 
 abbr, code.markup.element, code.markup.attribute {
@@ -319,8 +321,119 @@ h1 {
         line-height: 1;
         @include rhythmic-vertical-margins(78, $bp-l-px-base-line-height);
     }*/
+    a {
+        color: $color-interface-and-display;
+        text-decoration: none;
+    }
 }
 
+[role=contentinfo] {
+    small {
+        display: block;
+        @include paragraph-margins();
+        @include rhythmic-line-height($smallest-font-size);
+        @include rhythmic-vertical-margins($smallest-font-size);
+        /*@include breakpoint(bp-medium) {
+            @include rhythmic-line-height($smallest-font-size, $bp-m-px-base-line-height);
+            @include rhythmic-vertical-margins($smallest-font-size, $bp-m-px-base-line-height);
+        }
+        @include breakpoint(bp-large) {
+            @include font-size-to-rem($bp-l-base-font-size, $bp-l-base-font-size);
+            @include rhythmic-line-height($smallest-font-size, $bp-l-px-base-line-height);
+            @include rhythmic-vertical-margins($smallest-font-size, $bp-l-px-base-line-height);
+        }*/
+    }
+}
+
+blockquote { //.quoted
+    p {
+        font-style: italic;
+        hanging-punctuation: first last;
+        quotes: '“' '”' '‘' '’';
+        &:first-of-type::before {
+            content: open-quote;
+            /*margin-left: -0.83ch;*/
+        }
+    }
+    footer {
+        .cite-and-pubdate {
+            display: block;
+        }
+    }   
+}
+
+@supports(hanging-punctuation: first last) {
+    blockquote p:first-of-type::before {
+        margin-left: 0;
+    }
+}
+
+blockquote p:last-of-type::after  {
+    content: close-quote;
+}
+
+blockquote p:last-of-type {
+    margin-bottom: 0;
+}
+
+.pullquote {
+}
+
+figure {
+    @include paragraph-margins();
+}
+
+figcaption {
+    @include font-size-to-rem($smallest-font-size);
+    @include rhythmic-line-height($smallest-font-size);
+    color: $color-lightest;
+    /*margin: 0; //@include rhythmic-vertical-margins($smallest-font-size);*/
+    /*@include breakpoint(bp-medium) {
+        @include font-size-to-rem($bp-m-base-font-size, $bp-m-base-font-size);
+        line-height: $bp-m-base-line-height;
+        @include rhythmic-vertical-margins($bp-m-base-font-size, $bp-m-px-base-line-height);
+    }
+    @include breakpoint(bp-large) {
+        @include font-size-to-rem($bp-l-base-font-size, $bp-l-base-font-size);
+        line-height: $bp-l-base-line-height;
+        @include rhythmic-vertical-margins($bp-l-base-font-size, $bp-l-px-base-line-height);
+    }*/
+}
+
+article {
+    p,
+    li,
+    dt,
+    dd {
+        hyphens: auto; // assuming we've set our language in the <html> element, this turn on automatic hyphenation.
+    }
+}
+
+@supports(-webkit-initial-letter: 2) {
+    .article-body::first-letter {
+        -webkit-initial-letter: 2;
+        initial-letter: 2;
+        font-weight: bold;
+        margin-right: .125em;
+    }
+}
+
+.more-posts {
+    display: block;
+    @include paragraph-margins();
+    @include rhythmic-line-height($smallest-font-size);
+    @include rhythmic-vertical-margins($smallest-font-size);
+    text-align: center;
+}
+
+
+// 
+
+.date, 
+%date
+ {
+    color: $color-lightest;
+}
 
 
 // Lists
@@ -333,7 +446,7 @@ h1 {
 
 .hfeed .hentry {
     background: linear-gradient(#eee, #eee) no-repeat bottom center / 12.5% 0.2ch;
-    padding-bottom: $base-line-height*1.5+em; // (1.5 line-heights plus the half line-height of margin above the last paragraph = a round 2 line-heights)
+    padding-bottom: $base-line-height*2+em; // (1.5 line-heights plus the half line-height of margin above the last paragraph = a round 2 line-heights)
     margin-bottom: $base-line-height*2+em;
     /*@include breakpoint(bp-medium) {
         margin-bottom: $bp-m-base-line-height*2+em;
@@ -350,12 +463,15 @@ h1 {
             @extend %h2;
             color: $color-accent;
         }
-        .entry-published {
+/*        .entry-published {
             color: $color-main;
-        }
+        }*/
         img {
             display: block;
             margin: $base-line-height+em 0 $base-line-height+em/2;
+        }
+        .date {
+            @extend %date;
         }
         .description {
             //overflow: auto;
