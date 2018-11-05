@@ -220,6 +220,9 @@ main {
         grid-area: sidebar;
         padding: 0;
     }
+    h3:first-of-type {
+        margin-top: 0;
+    }
 }
 
 // Footer (i.e. the global footer, as opposed to any other local <footer> elements)

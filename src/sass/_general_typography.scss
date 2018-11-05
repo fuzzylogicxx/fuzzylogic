@@ -304,7 +304,6 @@ h1 {
     letter-spacing: -0.02em;
     @include font-size-to-rem(33);
     @include rhythmic-vertical-margins(33);
-    @include rhythmic-line-height(33);
     @include rhythmic-line-height(33, $base-line-height-in-px * 2);
 /*    @include breakpoint(bp-medium) {
         @include font-size-to-rem(51, $bp-m-base-font-size);
@@ -479,5 +478,55 @@ article {
         }
     } 
 }
+
+
+
+
+
+
+
+//
+
+.intro {
+    margin-bottom: $base-line-height*2+em;
+    padding-bottom: $base-line-height+em;
+    background: linear-gradient($color-main, $color-main) no-repeat bottom left / 12.5% 0.2ch;
+    /*@include breakpoint(bp-medium) {
+        margin-bottom: $bp-m-base-line-height*2+em;
+    }*/
+    /*@include breakpoint(bp-xlarge) {
+        margin-bottom: $bp-l-base-line-height*2+em;
+    }*/
+    h1 {
+        margin-top: 0;
+    }
+    .intro-last-full-stop {
+        color: $color-accent-alt;
+    }
+    p {
+        color: $color-light-alt;
+        font-weight: 200;
+        @include font-size-to-rem(18);
+        @include rhythmic-line-height(18);
+        @include rhythmic-vertical-margins(18);
+        /*@include breakpoint(bp-medium) {
+            @include font-size-to-rem(21, $bp-m-base-font-size);
+            @include rhythmic-line-height(21, $bp-m-px-base-line-height);
+            @include rhythmic-vertical-margins(21, $bp-m-px-base-line-height);
+        }
+        @include breakpoint(bp-large) {
+            @include font-size-to-rem(25, $bp-l-base-font-size);
+            @include rhythmic-line-height(25, $bp-l-px-base-line-height);
+            @include rhythmic-vertical-margins(25, $bp-l-px-base-line-height);
+        }*/
+    }
+    a {
+        /*color: inherit;*/
+        text-decoration: none;
+        /*text-decoration-line: underline;
+        text-decoration-color: 1px solid lighten($color-main, 80%);*/
+    }
+}
+
 
 

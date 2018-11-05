@@ -1,6 +1,6 @@
 <aside role="complementary" id="sidebar">
 
-    <!-- <h3>Fuzzy What?</h3> -->
+    <h3>Fuzzy What?</h3>
 
     <!-- The following functions are different ways to display archives. You can use any or all of these.
     All of these functions can take a parameter of a template to overwrite the default template, for example:
@@ -9,7 +9,7 @@
     <?php //perch_search_form(); ?>
     
     
-    <p>I’m Laurence Hughes and Fuzzy Logic is my online home. By day I’m a web developer at <a href="http://www.greenhilldigital.com/">Greenhill</a> in Glasgow. By night I produce electronic music as <a href="http://nuclearfami.ly/">The Nuclear Family</a>.</p>
+    <p>I’m Laurence Hughes and Fuzzy Logic is my corner of the web. By day I’m a web developer at <a href="http://www.greenhilldigital.com/">Greenhill</a> in Glasgow. By night I produce electronic music as <a href="http://nuclearfami.ly/">The Nuclear Family</a>.</p>
     <!-- <p><a href="/about">More about me</a></p> -->
 
     <h3>Regular Haunts</h3>
