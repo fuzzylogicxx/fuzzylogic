@@ -99,13 +99,12 @@ Heavy (normally 900)
 html {
     color: $color-main;
     font-family: $font-sans; //sans-serif;
-    @include breakpoint(bp-medium) {
+    /*@include breakpoint(bp-medium) {
         font-size: 112.5%; // =1.125em (so 1rem (and 1em on any element without a dedicated font-size) = 18px)
     }
     @include breakpoint(bp-large) {
-        /*font-size: 137.5%; // =1.375em (so 1rem (and 1em on any element without a dedicated font-size) = 22px)*/
         font-size: 131.25%; // =1.3125em (so 1rem (and 1em on any element without a dedicated font-size) = 21px) | 21 rather than 22 because 22 is not on our scale.
-    }
+    }*/
 }
 
 body {

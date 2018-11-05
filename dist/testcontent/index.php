@@ -140,17 +140,17 @@
 
 <form action="">
     <label for="input-1" class="form-group">
-        <b class="label-text">Input 1</b>
+        <b class="label-text">Input One</b>
         <input type="text" id="input-1" />
     </label>
-    <div class="error-msg">This is required.</div>
+    <!-- <div class="error-msg">This is required.</div> -->
     <label for="input-2" class="form-group">
-        <b class="label-text">Input 2</b>
+        <b class="label-text">Input Two</b>
         <input type="url" id="input-2" />
     </label>
     <label class="form-group" for="input-2">
         <b class="label-text">Birthday</b>
-        <div class="custom-select">
+        <span class="custom-select">
             <select id="input-3">
                 <option selected disabled>Month</option>
                 <option>January</option>
@@ -166,13 +166,13 @@
                 <option>November</option>
                 <option>December</option>
             </select>
-        </div>
+        </span>
     </label>
     <label for="input-4" class="form-group">
-        <b class="label-text">Input 4</b>
+        <b class="label-text">Input Four</b>
         <input type="text" id="input-4" />
     </label>
-    <div class="error-msg">This is required.</div>
+    <!-- <div class="error-msg">This is required.</div> -->
     <div class="submit-wrap">
         <button type="submit">Submit</button>
     </div>
