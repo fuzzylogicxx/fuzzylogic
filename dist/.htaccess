@@ -26,6 +26,10 @@ ErrorDocument 404 /404.html
 	RewriteRule ^thoughts/$ /blog/section.php?s=thoughts [L]
 	RewriteRule ^sounds/$ /blog/section.php?s=sounds [L]
 	RewriteRule ^links/$ /blog/section.php?s=links [L]
+
+	RewriteRule ^blog/archive/([a-zA-Z0-9-/]+)$ /blog/archive.php?s=$1 [L]
+
+	RewriteRule ^blog/archive/$ /blog/archive.php [L]
 	
 	# RewriteRule ^blog/([a-zA-Z0-9-/]+)$ /blog/post.php?s=$1 [L]
 
