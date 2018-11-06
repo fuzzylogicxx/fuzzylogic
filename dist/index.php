@@ -3,16 +3,9 @@
 
 <main>
 
-<!-- <div class="intro">
-    <p>Here is some chat lorem ipsum dolor sit amet consectuer ad piscing nonummy sed diam blah blah blah lorem ipsum dolor sit amet.</p>
-    <p>You’ll find me tweeting on <a rel="me" href="https://twitter.com/fuzzylogicx">Twitter</a>; posting photos on <a rel="me" href="https://www.instagram.com/fuzzylogicx/">Instagram</a>; on Soundcloud sharing <a rel="me" href="https://soundcloud.com/the_nuclear_family">music</a> and <a rel="me" href="https://soundcloud.com/fuzzylogicx">mixes</a>; collecting, buying and selling records on <a rel="me" href="https://www.discogs.com/user/laurence">Discogs</a>; and coding on <a rel="me" href="https://github.com/fuzzylogicxx">Github</a> and <a rel="me" href="https://codepen.io/fuzzylogicx/">CodePen</a>.</p>
-</div> -->
-
 <div class="intro">
-    <h1>Hello<span class="intro-last-full-stop">.</span></h1>
-    <!-- <p>I’m Laurence Hughes, a web developer at <a href="http://www.greenhilldigital.com/">Greenhill</a>, music maker in <a href="http://nuclearfami.ly/">The Nuclear Family</a>, player of records and pinger of pongs. <a href="https://fuzzylogic.me/" rel="me">Fuzzy Logic</a> is my online home, where I try out web stuff and ramble about code, music and more.</p>
+    <h1>Hi<span class="intro-last-full-stop">.</span></h1>
     --> <p>I’m Laurence Hughes — a Glaswegian web developer, music maker, player of records and pinger of pongs. <a href="https://fuzzylogic.me/" rel="me">Fuzzy Logic</a> is my online home, where I try out web stuff and ramble about code, music and more.</p>
-    <!-- at <a href="http://www.greenhilldigital.com/">Greenhill</a> |  in <a href="http://nuclearfami.ly/">The Nuclear Family</a> -->
 </div>
 
 
