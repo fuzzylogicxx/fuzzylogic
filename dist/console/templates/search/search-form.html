@@ -1,8 +1,15 @@
 <h3>Search</h3>
 <perch:form id="search" method="get" action="/search">
-    <div>
-        <perch:label for="q">I’m looking for:</perch:label>
-        <perch:input type="search" id="q" />
-        <perch:input type="submit" value="Go" />
-    </div>
+    <perch:label for="q">I’m looking for:</perch:label>
+    <perch:input type="search" id="q" />
+    <!-- <perch:input type="submit" value="Go" /> -->
+    <button type="submit" value="Go">Go</button>
 </perch:form>
+
+<!--     <label for="q" class="form-group">
+        <b class="label-text">I’m looking for:</b>
+        <input type="search" id="q" />
+    </label>
+    <div class="submit-wrap">
+        <button type="submit" value="Go">Go</button>
+    </div> -->

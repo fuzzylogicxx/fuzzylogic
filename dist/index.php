@@ -10,8 +10,8 @@
 
 <div class="intro">
     <h1>Hello<span class="intro-last-full-stop">.</span></h1>
-    <p>I’m Laurence Hughes, a web developer at <a href="http://www.greenhilldigital.com/">Greenhill</a>, music maker in <a href="http://nuclearfami.ly/">The Nuclear Family</a>, player of records and pinger of pongs. <a href="https://fuzzylogic.me/" rel="me">Fuzzy Logic</a> is my online home, where I try out web stuff and ramble about code, music and more.</p>
-    <!-- <p>I’m Laurence Hughes — a Glasgwegian web developer, maker of music, player of records and pinger of pongs. <a href="https://fuzzylogic.me/" rel="me">Fuzzy Logic</a> is my online home, where I try out web stuff and ramble about code, music and more.</p> -->
+    <!-- <p>I’m Laurence Hughes, a web developer at <a href="http://www.greenhilldigital.com/">Greenhill</a>, music maker in <a href="http://nuclearfami.ly/">The Nuclear Family</a>, player of records and pinger of pongs. <a href="https://fuzzylogic.me/" rel="me">Fuzzy Logic</a> is my online home, where I try out web stuff and ramble about code, music and more.</p>
+    --> <p>I’m Laurence Hughes — a Glaswegian web developer, music maker, player of records and pinger of pongs. <a href="https://fuzzylogic.me/" rel="me">Fuzzy Logic</a> is my online home, where I try out web stuff and ramble about code, music and more.</p>
     <!-- at <a href="http://www.greenhilldigital.com/">Greenhill</a> |  in <a href="http://nuclearfami.ly/">The Nuclear Family</a> -->
 </div>
 

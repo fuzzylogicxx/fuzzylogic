@@ -4,19 +4,19 @@
     <perch:if exists="paging">
         <p><perch:search id="total" /> results</p>
     </perch:if>
-        <ul>
+        <ul id="search-results">
 </perch:before>
 
         <li class="<perch:search id="perch_item_odd" />">
             <h2><a href="<perch:search id="result_url" />"><perch:search id="result_title" /></a></h2>
             <perch:if exists="result_excerpt"><p class="excerpt">&hellip;<perch:search id="result_excerpt" encode="false" />&hellip;</p></perch:if>
-            <p><a href="<perch:search id="result_url" />">
-                <perch:if exists="result_pageNavText">
-                    <perch:search id="result_pageNavText" />
-                <perch:else />
-                    <perch:search id="result_url" />
-                </perch:if>
-                </a></p>
+            <!-- <p><a href="<perch:search id="result_url" />">
+            <perch:if exists="result_pageNavText">
+                <perch:search id="result_pageNavText" />
+            <perch:else />
+                <perch:search id="result_url" />
+            </perch:if>
+            </a></p> -->
         </li>
 
 <perch:after>

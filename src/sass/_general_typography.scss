@@ -99,10 +99,10 @@ Heavy (normally 900)
 html {
     color: $color-main;
     font-family: $font-sans; //sans-serif;
-    /*@include breakpoint(bp-medium) {
+    @include breakpoint(bp-medium) {
         font-size: 112.5%; // =1.125em (so 1rem (and 1em on any element without a dedicated font-size) = 18px)
     }
-    @include breakpoint(bp-large) {
+    /*@include breakpoint(bp-large) {
         font-size: 131.25%; // =1.3125em (so 1rem (and 1em on any element without a dedicated font-size) = 21px) | 21 rather than 22 because 22 is not on our scale.
     }*/
 }
@@ -240,12 +240,12 @@ h4 {
     @include font-size-to-rem($base-font-size);
     @include rhythmic-line-height($base-font-size);
     @include rhythmic-vertical-margins($base-font-size);
-    /*@include breakpoint(bp-medium) {
+    @include breakpoint(bp-medium) {
         @include font-size-to-rem($bp-m-base-font-size, $bp-m-base-font-size);
         line-height: $bp-m-base-line-height;
         @include rhythmic-vertical-margins($bp-m-base-font-size, $bp-m-px-base-line-height);
     }
-    @include breakpoint(bp-large) {
+    /*@include breakpoint(bp-large) {
         @include font-size-to-rem($bp-l-base-font-size, $bp-l-base-font-size);
         line-height: $bp-l-base-line-height;
         @include rhythmic-vertical-margins($bp-l-base-font-size, $bp-l-px-base-line-height);
@@ -259,14 +259,12 @@ h3 {
     @include font-size-to-rem(21);
     @include rhythmic-vertical-margins(21);
     @include rhythmic-line-height(21);
-    /*@include breakpoint(bp-medium) {
+    @include breakpoint(bp-medium) {
         @include font-size-to-rem(25, $bp-m-base-font-size);
-        //@include rhythmic-line-height(25, $bp-m-px-base-line-height * 1.25); // under 1 so dangerously tight: watch it.
-
-        @include rhythmic-line-height(25, $bp-m-px-base-line-height); //line-height: 1;
-
+        @include rhythmic-line-height(25, $bp-m-px-base-line-height);
         @include rhythmic-vertical-margins(25, $bp-m-px-base-line-height);
     }
+    /*
     @include breakpoint(bp-large) {
         @include font-size-to-rem(28, $bp-l-base-font-size);
         @include rhythmic-line-height(28, $bp-l-px-base-line-height);
@@ -281,13 +279,12 @@ h2 {
     @include font-size-to-rem(25);
     @include rhythmic-vertical-margins(25);
     @include rhythmic-line-height(25);
-/*    @include breakpoint(bp-medium) {
+    @include breakpoint(bp-medium) {
         @include font-size-to-rem(33, $bp-m-base-font-size);
-        //@include rhythmic-line-height(33, $bp-m-px-base-line-height * 1.25);
-        line-height: 1;
-
+        @include rhythmic-line-height(33, $bp-m-px-base-line-height);
         @include rhythmic-vertical-margins(33, $bp-m-px-base-line-height);
     }
+/*    
     @include breakpoint(bp-xlarge) {
         @include font-size-to-rem(44, $bp-l-base-font-size);
         //@include rhythmic-line-height(44, $bp-l-px-base-line-height * 1.75);
@@ -305,6 +302,11 @@ h1 {
     @include font-size-to-rem(33);
     @include rhythmic-vertical-margins(33);
     @include rhythmic-line-height(33, $base-line-height-in-px * 2);
+    @include breakpoint(bp-medium) {
+        @include font-size-to-rem(51, $bp-m-base-font-size);
+        @include rhythmic-line-height(51, $bp-m-px-base-line-height * 3);
+        @include rhythmic-vertical-margins(51, $bp-m-px-base-line-height);
+    }
 /*    @include breakpoint(bp-medium) {
         @include font-size-to-rem(51, $bp-m-base-font-size);
         //@include rhythmic-line-height(51, $bp-m-px-base-line-height * 2.25);
@@ -329,11 +331,16 @@ h1 {
         @include paragraph-margins();
         @include rhythmic-line-height($smallest-font-size);
         @include rhythmic-vertical-margins($smallest-font-size);
-        /*@include breakpoint(bp-medium) {
+        @include breakpoint(bp-medium) {
+            @include font-size-to-rem($smallest-font-size, $bp-m-base-font-size);
             @include rhythmic-line-height($smallest-font-size, $bp-m-px-base-line-height);
             @include rhythmic-vertical-margins($smallest-font-size, $bp-m-px-base-line-height);
+
+
+
+
         }
-        @include breakpoint(bp-large) {
+        /*@include breakpoint(bp-large) {
             @include font-size-to-rem($bp-l-base-font-size, $bp-l-base-font-size);
             @include rhythmic-line-height($smallest-font-size, $bp-l-px-base-line-height);
             @include rhythmic-vertical-margins($smallest-font-size, $bp-l-px-base-line-height);

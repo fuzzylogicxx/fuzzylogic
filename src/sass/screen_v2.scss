@@ -138,25 +138,23 @@ body {
     width: 88px;
     line-height: $base-line-height*4+em; //88px;
     margin: $base-line-height/2+em auto;
-    grid-column: 2 / 3;
+    @include breakpoint(bp-medium) {
+        @include retinize('logo_roundel', 'png', 100px, 100px);
+        width: 100px;
+    }
+    @media (min-width: 80em) {
+        grid-column: 2 / 3;
+    }
 }
 
 
 // Navigation
 
 [role=navigation] {
-/*    display: flex;
-    flex-direction: column;*/
     @media (min-width: 80em) {
-        /*flex-direction: row;*/
-        /*justify-content: space-between;*/
-        /*align-items: center;*/
         grid-column: 3 / 5;
-        align-self: center;
+        align-self: center; // vertically aligns 'center' the nav element
     }
-/*    #logo {
-        align-self: center;
-    }*/
     ul {
         list-style: none;
         margin: 0 0 $base-line-height+em 0;
@@ -165,13 +163,14 @@ body {
         justify-content: space-between;
         @media (min-width: 80em) {
             margin: 0;
+            justify-content: flex-start;
         }
         li {
             margin: 0;
             padding: 0;
-/*            @media (min-width: 80em) {
-                padding-left: $base-line-height+em;
-            }*/
+            @media (min-width: 80em) {
+                margin-right: $base-line-height*2+em;
+            }
         }
         a {
             display: block;
@@ -180,6 +179,10 @@ body {
             font-weight: 700;
             @include font-size-to-rem(14);
             @include rhythmic-line-height(14);
+            @include breakpoint(bp-medium) {
+                @include font-size-to-rem(14, $bp-m-base-font-size);
+                @include rhythmic-line-height(14, $bp-m-px-base-line-height);
+            }
         }
     }
 }
@@ -208,6 +211,7 @@ main {
 // Sidebar
 
 [role=complementary] {
+    color: $color-lightest;
     background: linear-gradient(#eee, #eee) no-repeat bottom center / 12.5% 0.2ch;
     padding: $base-line-height+em 0 $base-line-height*2+em;
     margin-bottom: $base-line-height*2+em;
@@ -219,16 +223,22 @@ main {
         width: auto;
         grid-area: sidebar;
         padding: 0;
-    }
-    h3:first-of-type {
-        margin-top: 0;
-    }
+        h3 {
+            @include font-size-to-rem(14, $bp-m-base-font-size);
+            @include rhythmic-line-height(14, $bp-m-px-base-line-height);
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+        h3:first-of-type {
+            margin-top: 0;
+        }
+    } 
 }
 
 // Footer (i.e. the global footer, as opposed to any other local <footer> elements)
 
 [role=contentinfo] {
-    padding-top: $base-line-height+em;
+    /*padding-top: $base-line-height+em;*/
     max-width: 32rem;
     margin: 0 auto;
     width: 90%;
@@ -247,4 +257,15 @@ main {
         }
     }
 }
+
+// Search Results
+
+#search-results {
+    list-style: none;
+    li {
+        padding: 0;
+    }
+}
+
+
 
