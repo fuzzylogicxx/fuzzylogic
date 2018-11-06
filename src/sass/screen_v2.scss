@@ -95,14 +95,13 @@ tfoot {
 // Body
 
 body {
-    /*grid-gap: 1.4rem;*/
     display: grid;
     grid-template-areas: 
         "header"
         "content"
         "sidebar"
         "footer";
-    @media (min-width: 50em) {
+    @media (min-width: 80em) {
         grid-template-columns: auto 33rem 13rem auto; //grid-template-columns: 1fr 1fr 33rem 12rem 1fr 1fr;
         grid-template-areas: 
           "header header  header  header"
@@ -119,7 +118,7 @@ body {
     max-width: 32rem;
     margin: 0 auto;
     width: 90%;
-    @media (min-width: 50em) {
+    @media (min-width: 80em) {
         max-width: none;
         width: auto;
         margin: 0;
@@ -134,43 +133,45 @@ body {
     @include retinize('logo_roundel_v2', 'png', 88px, 88px);
     background-repeat: no-repeat;
     background-position: 50% 50%;
+    display: block;
     text-indent: -9999999px;
     width: 88px;
     line-height: $base-line-height*4+em; //88px;
-    margin: $base-line-height/2+em 0;
+    margin: $base-line-height/2+em auto;
+    grid-column: 2 / 3;
 }
 
 
 // Navigation
 
 [role=navigation] {
-    display: flex;
-    flex-direction: column;
-    @media (min-width: 50em) {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        grid-column: 2 / 6;
-        /*padding: ($base-line-height/2)+em 0;*/
-    }
-    #logo {
+/*    display: flex;
+    flex-direction: column;*/
+    @media (min-width: 80em) {
+        /*flex-direction: row;*/
+        /*justify-content: space-between;*/
+        /*align-items: center;*/
+        grid-column: 3 / 5;
         align-self: center;
     }
+/*    #logo {
+        align-self: center;
+    }*/
     ul {
         list-style: none;
         margin: 0 0 $base-line-height+em 0;
         padding: 0;
         display: flex;
         justify-content: space-between;
-        @media (min-width: 50em) {
+        @media (min-width: 80em) {
             margin: 0;
         }
         li {
             margin: 0;
             padding: 0;
-            @media (min-width: 50em) {
+/*            @media (min-width: 80em) {
                 padding-left: $base-line-height+em;
-            }
+            }*/
         }
         a {
             display: block;
@@ -194,8 +195,7 @@ main {
     max-width: 32rem;
     margin: 0 auto;
     width: 90%;
-    @media (min-width: 50em) {
-        /*max-width: none;*/
+    @media (min-width: 80em) {
         margin: 0;
         width: auto;
         grid-area: content;
@@ -214,7 +214,7 @@ main {
     max-width: 32rem;
     margin: 0 auto;
     width: 90%;
-    @media (min-width: 50em) {
+    @media (min-width: 80em) {
         background: none;
         width: auto;
         grid-area: sidebar;
@@ -233,7 +233,7 @@ main {
     margin: 0 auto;
     width: 90%;
     text-align: center;
-    @media (min-width: 50em) {
+    @media (min-width: 80em) {
         text-align: left;
         max-width: none;
         width: auto;
@@ -243,7 +243,7 @@ main {
         grid-template-columns: 1fr 1fr 33rem 13rem 1fr 1fr;
         column-gap: 2.8em;
         small {
-            grid-column: 3 / 5;
+            grid-column: 2 / 6;
         }
     }
 }

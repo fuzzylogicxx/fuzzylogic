@@ -5,9 +5,25 @@
 
 <?php perch_blog_section(perch_get('s')); ?>
 
-<?php perch_blog_custom([
-	'section'=>perch_get('s'),
-]); ?>
+<?php 
+$posts_per_page = 10;
+    $template       = 'post_in_list.html';
+    $sort_order     = 'DESC';
+    $sort_by        = 'postDateTime';
+
+    // Have we displayed any posts yet?
+    $posts_displayed = false;
+?>
+
+<?php
+perch_blog_custom([
+                'section'=>perch_get('s'),
+                'template'   => $template,
+                'count'      => $posts_per_page,
+                'sort'       => $sort_by,
+                'sort-order' => $sort_order,
+                ]);
+?>
 <!-- <p><a href="/blog/archive.php">More posts</a></p> -->
 
 <?php /*

@@ -3,9 +3,8 @@
 </header> -->
 
 	<header role="banner">
+		<a id="logo" href="https://fuzzylogic.me/" title="Home">Fuzzy Logic</a>
 		<nav role="navigation">
-			<a id="logo" href="https://fuzzylogic.me/" title="Home">Fuzzy Logic</a>
-			<!-- <button id="show-menu" aria-expanded="false" aria-controls="global-nav">Menu</button> -->
 			<ul id="global-nav">
 				<li><a href="/thoughts/">Thoughts</a></li>
 				<li><a href="/labs/">Labs</a></li>
