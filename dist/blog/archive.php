@@ -4,7 +4,7 @@
 <main>
 
 <!--  By category listing -->
-<?php perch_blog_categories(); ?>
+<?php //perch_blog_categories(); ?>
 
 <?php
     // defaults for all modes
