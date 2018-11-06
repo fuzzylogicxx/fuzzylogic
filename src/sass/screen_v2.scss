@@ -221,11 +221,9 @@ main {
             @include font-size-to-rem(14, $bp-m-base-font-size);
             @include rhythmic-line-height(14, $bp-m-px-base-line-height);
             @include rhythmic-vertical-margins(14, $bp-m-px-base-line-height);
+            margin-bottom: 0;
             text-transform: uppercase;
             font-weight: 700;
-        }
-        h3:first-of-type {
-            margin-top: 0;
         }
     }
     a {
@@ -235,6 +233,9 @@ main {
 
 .sidebar-module {
     margin-bottom: $base-line-height*2+em;
+    &:first-of-type h3 {
+        margin-top: 0;    
+    }
 }
 
 // Footer (i.e. the global footer, as opposed to any other local <footer> elements)
