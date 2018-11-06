@@ -14,9 +14,15 @@
 <!-- <h2>Latest Posts</h2> -->
 
 <?php
-    perch_blog_recent_posts(10);
+    perch_blog_custom([
+        'count'      => 10,
+        'template'   => 'post_in_list.html',
+        'sort'       => 'postDateTime',
+        'sort-order' => 'DESC', 
+        'paginate' => false
+    ]);
 ?>
-<a class="more-posts" href="/thoughts/">Browse older posts</a>
+<a class="more-posts" href="/blog/archive/">Browse older posts</a>
 
 <?php /*
 <p><a href="/blog/archive.php">More posts</a></p>
