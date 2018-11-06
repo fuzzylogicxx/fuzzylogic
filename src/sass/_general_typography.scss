@@ -301,11 +301,11 @@ h1 {
     letter-spacing: -0.02em;
     @include font-size-to-rem(33);
     @include rhythmic-vertical-margins(33);
-    @include rhythmic-line-height(33, $base-line-height-in-px * 2);
+    line-height: 1; // @include rhythmic-line-height(33, $base-line-height-in-px * 2);
     margin-top: 0;
     @include breakpoint(bp-medium) {
         @include font-size-to-rem(51, $bp-m-base-font-size);
-        @include rhythmic-line-height(51, $bp-m-px-base-line-height * 3);
+        line-height: 1; /*@include rhythmic-line-height(51, $bp-m-px-base-line-height * 3);*/
         @include rhythmic-vertical-margins(51, $bp-m-px-base-line-height);
         margin-top: 0;
     }
