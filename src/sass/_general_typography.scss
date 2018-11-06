@@ -302,10 +302,12 @@ h1 {
     @include font-size-to-rem(33);
     @include rhythmic-vertical-margins(33);
     @include rhythmic-line-height(33, $base-line-height-in-px * 2);
+    margin-top: 0;
     @include breakpoint(bp-medium) {
         @include font-size-to-rem(51, $bp-m-base-font-size);
         @include rhythmic-line-height(51, $bp-m-px-base-line-height * 3);
         @include rhythmic-vertical-margins(51, $bp-m-px-base-line-height);
+        margin-top: 0;
     }
 /*    @include breakpoint(bp-medium) {
         @include font-size-to-rem(51, $bp-m-base-font-size);
@@ -448,7 +450,7 @@ article {
 }
 
 .hfeed .hentry {
-    background: linear-gradient(#eee, #eee) no-repeat bottom center / 12.5% 0.2ch;
+    background: linear-gradient($color-accent-alt, $color-accent-alt) no-repeat bottom center / 2.4em 0.2ch;
     padding-bottom: $base-line-height*2+em; // (1.5 line-heights plus the half line-height of margin above the last paragraph = a round 2 line-heights)
     margin-bottom: $base-line-height*2+em;
     /*@include breakpoint(bp-medium) {
@@ -497,7 +499,7 @@ article {
 .intro {
     margin-bottom: $base-line-height*2+em;
     padding-bottom: $base-line-height+em;
-    background: linear-gradient($color-main, $color-main) no-repeat bottom left / 12.5% 0.2ch;
+    background: linear-gradient($color-main, $color-main) no-repeat bottom left / 2.4em 0.2ch;
     /*@include breakpoint(bp-medium) {
         margin-bottom: $bp-m-base-line-height*2+em;
     }*/

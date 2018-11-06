@@ -1,9 +1,10 @@
-<?php $page = ['title' => 'Homepage']; ?>
+<?php $page = ['title' => 'Archive']; ?>
 <?php require_once($_SERVER['DOCUMENT_ROOT'].'/inc/page_start.php'); ?>
 
-<div class="container">
+<main>
 
-<div>
+<!--  By category listing -->
+<?php perch_blog_categories(); ?>
 
 <?php
     // defaults for all modes
@@ -134,17 +135,8 @@
   	}
 
 ?>
-</div>
-<nav class="sidebar">
-<h2>Filter archive</h2>
-<!--  By category listing -->
-<?php perch_blog_categories(); ?>
-<!--  By tag -->
-<?php perch_blog_tags(); ?>
-<!--  By year -->
-<?php perch_blog_date_archive_years(); ?>
-<!--  By year and then month - can take parameters for two templates. The first displays the years and the second the months see the default templates for examples -->
-<?php perch_blog_date_archive_months(); ?>
-</nav>
+</main>
+
+<?php require_once($_SERVER['DOCUMENT_ROOT'].'/inc/sidebar.php'); ?>
 
 <?php require_once($_SERVER['DOCUMENT_ROOT'].'/inc/page_end.php'); ?>

@@ -1,11 +1,21 @@
 <aside role="complementary" id="sidebar">
 
-    <h3>What’s this?</h3>
-    <p>Fuzzy Logic is the personal website of Laurence Hughes, a web developer at <a href="https://www.greenhilldigital.com/">Greenhill</a> and producer in <a href="http://nuclearfami.ly">The Nuclear Family</a>.</p>
-    <p>Read more <a href="/about/">about me</a>.</p>
-    <!-- <p>Fuzzy Logic is the personal site of <a href="/about">Laurence Hughes</a>.</p> -->
+    <div class="sidebar-module">
+        <h3>What’s this?</h3>
+        <p><a href="https://fuzzylogic.me">Fuzzy Logic</a> is the personal website of Laurence Hughes, a web developer at <a href="https://www.greenhilldigital.com/">Greenhill</a> and producer in <a href="http://nuclearfami.ly">The Nuclear Family</a>.</p>
+        <p>If you’re interested, read more <a href="/about/">about me</a>.</p>
+        <!-- <p>Fuzzy Logic is the personal site of <a href="/about">Laurence Hughes</a>.</p> -->
+    </div>
 
-    <?php perch_search_form(); ?>
+    
+    <div class="sidebar-module">
+        <?php perch_search_form(); ?>
+    </div>
+
+    <div class="sidebar-module">
+        <h3>My Other Haunts</h3>
+        <p>You’ll find me on <a href="https://www.facebook.com/laurence.hughes1">Facebook</a>, tweeting on <a rel="me" href="https://twitter.com/fuzzylogicx">Twitter</a>; posting photos on <a rel="me" href="https://www.instagram.com/fuzzylogicx/">Instagram</a>; on Soundcloud sharing <a rel="me" href="https://soundcloud.com/the_nuclear_family">my tracks</a> and <a rel="me" href="https://soundcloud.com/fuzzylogicx">DJ mixes</a>; collecting, buying and selling records on <a rel="me" href="https://www.discogs.com/user/laurence">Discogs</a>; and coding on <a rel="me" href="https://github.com/fuzzylogicxx">Github</a> and <a rel="me" href="https://codepen.io/fuzzylogicx/">CodePen</a>.</p>
+    </div>
 
     <?php 
     /*
