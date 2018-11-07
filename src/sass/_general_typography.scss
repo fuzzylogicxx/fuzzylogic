@@ -473,7 +473,7 @@ article {
         }*/
         img {
             display: block;
-            margin: $base-line-height+em 0 $base-line-height+em/2;
+            margin: $base-line-height+em 0;
         }
         .date {
             @extend %date;
