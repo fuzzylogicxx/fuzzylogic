@@ -98,6 +98,7 @@ body {
     display: grid;
     grid-template-areas: 
         "header"
+        "intro"
         "content"
         "sidebar"
         "footer";
@@ -105,7 +106,7 @@ body {
         grid-template-columns: auto 32rem 14.4rem auto; //grid-template-columns: 1fr 1fr 33rem 12rem 1fr 1fr;
         grid-template-areas: 
           "header header  header  header"
-          ".      content sidebar ."
+          ".      content sidebar .     "
           "footer footer  footer  footer";
         column-gap: 2.8em;
     }
@@ -152,6 +153,7 @@ body {
     @media (min-width: 80em) {
         grid-column: 3 / 5;
         align-self: center; // vertically aligns 'center' the nav element
+        justify-self: end;
     }
     ul {
         list-style: none;
@@ -168,6 +170,11 @@ body {
             padding: 0;
             @media (min-width: 80em) {
                 margin-right: $base-line-height*2+em;
+            }
+        }
+        li:last-child {
+            @media (min-width: 80em) {
+                margin-right: 0;
             }
         }
         a {
