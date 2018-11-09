@@ -11,18 +11,6 @@
         <time class="dt-published" datetime="<perch:blog id="postDateTime" type="date" label="Date" time="true" format="Y-m-d H:i:s" divider-before="Publishing" />">
             <perch:blog id="postDateTime" type="date" time="true" format="%d %B %Y" /> 
         </time> 
-        <perch:if exists="authorGivenName">by 
-            <span class="p-author h-card">
-                <!-- <perch:if exists="author_image"><img class="u-photo" src="<perch:blog id="author_image" type="hidden" width="240" height="240" />" width="120" height="120" alt="" /></perch:if> -->
-                <a class="u-url" href="/blog/archive.php?author=<perch:blog id="authorSlug" type="text" />"><perch:blog id="authorGivenName" type="hidden" /> <perch:blog id="authorFamilyName" type="hidden" /></a>
-            </span>
-        </perch:if> 
-        <!-- in 
-        <perch:categories id="categories" set="blog" label="Categories" display-as="checkboxes">
-            <a href="/blog/archive.php?cat=<perch:category id="catSlug" type="slug" />" class="p-category">
-                <perch:category id="catTitle" type="text" />
-            </a>
-        </perch:categories> -->
 	</p>
 
     <div class="article-body description e-content">
