@@ -462,30 +462,29 @@ article {
     &:last-child {
         background: none;
     }
+    h3 {
+        @extend %h2;
+        color: $color-accent;
+    }
+    img {
+        display: block;
+        margin: $base-line-height+em 0;
+    }
+    .date {
+        @extend %date;
+    }
+
     a { 
         text-decoration: none;
-        h3 {
-            @extend %h2;
-            color: $color-accent;
-        }
+        
 /*        .entry-published {
             color: $color-main;
         }*/
-        img {
-            display: block;
-            margin: $base-line-height+em 0;
-        }
-        .date {
-            @extend %date;
-        }
-        .description {
-            //overflow: auto;
-        }
-        .description p {
-            color: $color-main;
-            margin-bottom: 0;
-        }
     } 
+    .description p {
+        color: $color-main;
+        margin-bottom: 0;
+    }
 }
 
 

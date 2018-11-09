@@ -3,12 +3,10 @@
     <li class="hentry">
     	<p class="entry-published date"><perch:blog id="postDateTime" format="%d %B %Y" /></p>
     	<perch:if exists="linkURL">
-    	<a href="<perch:blog id="linkURL" type="text" />">
-	    	<h3 class="entry-title"><perch:blog id="postTitle" /></h3>
-	        <div class="description entry-summary">
-	        	<perch:blog id="postDescHTML" type="textarea" textile="true" />
-	        </div>
-        </a>
+    	<h3 class="entry-title"><a href="<perch:blog id="linkURL" type="text" />"><perch:blog id="postTitle" /></a></h3>
+        <div class="description entry-summary">
+        	<perch:blog id="postDescHTML" type="textarea" textile="true" />
+        </div>
     	<perch:else />
         <a href="<perch:blog id="postURL" />" rel="bookmark">
         <h3 class="entry-title"><perch:blog id="postTitle" /></h3>
@@ -25,12 +23,12 @@
                960px" 
         src="<perch:blog id="image" width="960" />" alt="<perch:blog type="text" id="alt" label="Description" required help="Alt text for the main image: describe its subject/purpose." />" />
         </perch:if>
+        </a>
         <div class="description entry-summary">
         	<perch:blog id="postDescHTML" type="textarea" textile="true" />
         	<!-- <p><perch:blog id="postDescHTML" type="textarea" textile="true" words="20" append="…" /></p> -->
         	<!-- <p>Comments: <perch:blog id="postCommentCount"/></p> -->
         </div>
-        </a>
         </perch:if>
     </li>
 <perch:after>
