@@ -258,7 +258,7 @@ h3 {
     /*letter-spacing: -0.02em;*/
     @include font-size-to-rem(21);
     @include rhythmic-vertical-margins(21);
-    @include rhythmic-line-height(21);
+    line-height: 1; // @include rhythmic-line-height(21);
     @include breakpoint(bp-medium) {
         @include font-size-to-rem(25, $bp-m-base-font-size);
         @include rhythmic-line-height(25, $bp-m-px-base-line-height);

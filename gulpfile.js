@@ -17,7 +17,7 @@ gulp.task('sass', function () {
     .pipe(sass({precision: 10}).on('error', sass.logError))
     .pipe(sourcemaps.write())
     .pipe(autoprefixer())
-    .pipe(rename('screen_v5.css'))
+    .pipe(rename('screen_v6.css'))
     .pipe(gulp.dest(output));
 });
 
