@@ -261,7 +261,7 @@ h3 {
     line-height: 1; // @include rhythmic-line-height(21);
     @include breakpoint(bp-medium) {
         @include font-size-to-rem(25, $bp-m-base-font-size);
-        @include rhythmic-line-height(25, $bp-m-px-base-line-height);
+        line-height: 1; // @include rhythmic-line-height(25, $bp-m-px-base-line-height);
         @include rhythmic-vertical-margins(25, $bp-m-px-base-line-height);
     }
     /*
