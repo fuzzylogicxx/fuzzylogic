@@ -19,10 +19,10 @@
         'template'   => 'post_in_list.html',
         'sort'       => 'postDateTime',
         'sort-order' => 'DESC', 
-        'paginate' => false
+        // 'paginate' => false
     ]);
 ?>
-<a class="more-posts" href="/blog/archive/">Browse older posts</a>
+<!-- <a class="more-posts" href="/blog/archive/">Browse older posts</a> -->
 
 <?php /*
 <p><a href="/blog/archive.php">More posts</a></p>

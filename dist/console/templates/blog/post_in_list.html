@@ -1,9 +1,17 @@
 <perch:before>
 <ul class="hfeed listing"></perch:before>
     <li class="hentry">
-        <a href="<perch:blog id="postURL" />" rel="bookmark" class="entry-title">
-        <h3><perch:blog id="postTitle" /></h3>
-        <p class="entry-published date"><perch:blog id="postDateTime" format="%d %B %Y" /></p>
+    	<p class="entry-published date"><perch:blog id="postDateTime" format="%d %B %Y" /></p>
+    	<perch:if exists="linkURL">
+    	<a href="<perch:blog id="linkURL" type="text" />">
+	    	<h3 class="entry-title"><perch:blog id="postTitle" /></h3>
+	        <div class="description entry-summary">
+	        	<perch:blog id="postDescHTML" type="textarea" textile="true" />
+	        </div>
+        </a>
+    	<perch:else />
+        <a href="<perch:blog id="postURL" />" rel="bookmark">
+        <h3 class="entry-title"><perch:blog id="postTitle" /></h3>
         <perch:if exists="image">
         <img 
         srcset="<perch:blog id="image" type="image" width="320" /> 320w,
@@ -18,10 +26,12 @@
         src="<perch:blog id="image" width="960" />" alt="<perch:blog type="text" id="alt" label="Description" required help="Alt text for the main image: describe its subject/purpose." />" />
         </perch:if>
         <div class="description entry-summary">
-        <perch:blog id="postDescHTML" type="textarea" textile="true" words="20" append="…" />
-        <!-- <p>Comments: <perch:blog id="postCommentCount"/></p> -->
+        	<perch:blog id="postDescHTML" type="textarea" textile="true" />
+        	<!-- <p><perch:blog id="postDescHTML" type="textarea" textile="true" words="20" append="…" /></p> -->
+        	<!-- <p>Comments: <perch:blog id="postCommentCount"/></p> -->
         </div>
         </a>
+        </perch:if>
     </li>
 <perch:after>
     </ul>
