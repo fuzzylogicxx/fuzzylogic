@@ -9,7 +9,10 @@
         </div>
     	<perch:else />
         <a href="<perch:blog id="postURL" />" rel="bookmark">
+        
+        <perch:if exists="friendsWith">
         <h3 class="entry-title"><perch:blog id="postTitle" /></h3>
+        </perch:if>
         <perch:if exists="image">
         <img 
         srcset="<perch:blog id="image" type="image" width="320" /> 320w,
