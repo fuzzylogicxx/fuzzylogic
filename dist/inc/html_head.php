@@ -22,7 +22,7 @@
 	<link rel="authorization_endpoint" href="https://indieauth.com/auth">
 	<link rel="token_endpoint" href="https://tokens.indieauth.com/token">
 
-	<link rel="alternate" type="application/rss+xml" title="RSS" href="rss.php" />
+	<link rel="alternate" type="application/rss+xml" title="RSS" href="/blog/rss.php" />
 	<?php if ($is_homepage || $is_blog_article) { // to do: add sounds, and...? ?>
 <meta name="robots" content="index,follow" />
 	<?php } else { ?>
