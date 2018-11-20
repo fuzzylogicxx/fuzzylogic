@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 	<?php
+	$is_homepage = ($_SERVER['REQUEST_URI'] === "/");
 	$is_blog_article = (
 		((strpos($_SERVER['REQUEST_URI'], 'thoughts') !== false) || (strpos($_SERVER['REQUEST_URI'], 'sounds') !== false) || (strpos($_SERVER['REQUEST_URI'], 'links') !== false))
 		&& 
@@ -22,14 +23,17 @@
 	<link rel="token_endpoint" href="https://tokens.indieauth.com/token">
 
 	<link rel="alternate" type="application/rss+xml" title="RSS" href="rss.php" />
-
-	<meta name="robots" content="noindex">
+	<?php if ($is_homepage || $is_blog_article) { // to do: add sounds, and...? ?>
+<meta name="robots" content="index,follow" />
+	<?php } else { ?>
+<meta name="robots" content="noindex">
+	<?php } ?>
 
 	<link rel="manifest" href="site.webmanifest">
 	<!-- <link rel="apple-touch-icon" href="icon.png"> -->
 	<!-- Place favicon.ico in the root directory -->
 
-	<link rel="stylesheet" href="/css/screen_v6.css">
+	<link rel="stylesheet" href="/css/screen_v7.css">
 
 	<!-- third-generation iPad with high-resolution Retina display: -->
 	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/favicon144.png">
