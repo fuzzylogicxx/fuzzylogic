@@ -21,10 +21,12 @@ ErrorDocument 404 /404.html
 	# if the address starts with "posts/", pick what comes afterwards, put it into the GET Parameter and quit (that's the [L]) 
 	RewriteRule ^thoughts/([a-zA-Z0-9-/]+)$ /blog/post.php?s=$1 [L]
 	RewriteRule ^sounds/([a-zA-Z0-9-/]+)$ /blog/post.php?s=$1 [L]
+	RewriteRule ^bytes/([a-zA-Z0-9-/]+)$ /blog/post.php?s=$1 [L]
 	RewriteRule ^links/([a-zA-Z0-9-/]+)$ /blog/post.php?s=$1 [L]
 
 	RewriteRule ^thoughts/$ /blog/section.php?s=thoughts [L]
 	RewriteRule ^sounds/$ /blog/section.php?s=sounds [L]
+	RewriteRule ^bytes/$ /blog/section.php?s=bytes [L]
 	RewriteRule ^links/$ /blog/section.php?s=links [L]
 
 	RewriteRule ^blog/archive/([a-zA-Z0-9-/]+)$ /blog/archive.php?s=$1 [L]

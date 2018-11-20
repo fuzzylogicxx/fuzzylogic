@@ -7,9 +7,19 @@
 	<?php
 	$is_homepage = ($_SERVER['REQUEST_URI'] === "/");
 	$is_blog_article = (
-		((strpos($_SERVER['REQUEST_URI'], 'thoughts') !== false) || (strpos($_SERVER['REQUEST_URI'], 'sounds') !== false) || (strpos($_SERVER['REQUEST_URI'], 'links') !== false))
+		(
+			(strpos($_SERVER['REQUEST_URI'], 'thoughts') !== false) || 
+			(strpos($_SERVER['REQUEST_URI'], 'sounds') !== false) || 
+			(strpos($_SERVER['REQUEST_URI'], 'bytes') !== false) || 
+			(strpos($_SERVER['REQUEST_URI'], 'links') !== false)
+		)
 		&& 
-		( ($_SERVER['REQUEST_URI'] !== "/thoughts/") && ($_SERVER['REQUEST_URI'] !== "/sounds/") && ($_SERVER['REQUEST_URI'] !== "/links/") )
+		( 
+			($_SERVER['REQUEST_URI'] !== "/thoughts/") && 
+			($_SERVER['REQUEST_URI'] !== "/sounds/") && 
+			($_SERVER['REQUEST_URI'] !== "/bytes/") && 
+			($_SERVER['REQUEST_URI'] !== "/links/") 
+		)
 	); 
 	if ($is_blog_article) {
 		perch_blog_post_meta(perch_get('s'));
