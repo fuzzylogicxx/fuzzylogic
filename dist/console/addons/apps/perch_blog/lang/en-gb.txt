@@ -278,5 +278,6 @@
     "Receive webmentions": "Receive webmentions",
     "This comment is a webmention (%s)": "This comment is a webmention (%s)",
     "Comment on \u2018%s\u2019": "Comment on \u2018%s\u2019",
-    "Save & Add another": "Save & Moderate next"
+    "Save & Add another": "Save & Moderate next",
+    "To create a map you must set up a Google API key.": "To create a map you must set up a Google API key."
 }

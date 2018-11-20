@@ -406,5 +406,6 @@
     "Your set has been successfully created. Return to %scategory listing%s": "Your set has been successfully created. Return to %scategory listing%s",
     "Delete Category Set": "Delete Category Set",
     "Your set has been successfully edited. Return to %scategory listing%s": "Your set has been successfully edited. Return to %scategory listing%s",
-    "Your category has been successfully edited. Return to %scategory listing%s": "Your category has been successfully edited. Return to %scategory listing%s"
+    "Your category has been successfully edited. Return to %scategory listing%s": "Your category has been successfully edited. Return to %scategory listing%s",
+    "To create a map you must set up a Google API key.": "To create a map you must set up a Google API key."
 }
