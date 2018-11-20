@@ -63,18 +63,38 @@ body {
 [role=banner] {
   grid-area: header;
   background: red;
+  padding: 0 5%;
 }
 #dummy-logo {
 	color: #fff;
 }
 main {
   grid-area: content;
+  margin: 0 auto;
+  width: 90%;
 }
 aside {
   grid-area: sidebar;
+  margin: 0 auto;
+  width: 90%;
 }
 [role=contentinfo] {
   grid-area: footer;
+  margin: 0 auto;
+  width: 90%;
+}
+
+@media (min-width: 80em) {
+	[role=banner] {
+	  padding: 0;
+	}
+	main, 
+	aside, 
+	[role=contentinfo]
+	 {
+	    margin: 0;
+	    width: auto;
+    }
 }
 
 @media (min-width: 50em) {
