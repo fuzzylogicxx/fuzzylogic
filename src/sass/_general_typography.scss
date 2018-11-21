@@ -445,7 +445,7 @@ article {
 // Lists
 
 .hfeed, 
-.hfeed li {
+.hfeed > li {
     list-style: none;
     padding-left: 0;
 }
