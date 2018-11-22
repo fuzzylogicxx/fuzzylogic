@@ -54,25 +54,25 @@ $font-serif: 'FSEmeric', sans-serif;
 // at viewport width X+ we increase body font size to Y
 $smallest-font-size: 12;
 $base-font-size: 16;
-$base-line-height: 1.4;
+$base-line-height: 1.5;
 $base-line-height-in-px: ($base-font-size * $base-line-height);
 
 $bp-xs-base-font-size: 16;
-$bp-xs-base-line-height: 1.4;
+$bp-xs-base-line-height: 1.5;
 $bp-xs-px-base-line-height: ($bp-xs-base-font-size * $bp-xs-base-line-height);
 
 $bp-s-base-font-size: 16;
-$bp-s-base-line-height: 1.4;
+$bp-s-base-line-height: 1.5;
 $bp-s-px-base-line-height: ($bp-s-base-font-size * $bp-s-base-line-height);
 
 $bp-m-base-font-size: 18;
-$bp-m-base-line-height: 1.4;
+$bp-m-base-line-height: 1.5;
 $bp-m-px-base-line-height: ($bp-m-base-font-size * $bp-m-base-line-height);
 
 $bp-l-base-font-size: 21;
-$bp-l-base-line-height: 1.4;
+$bp-l-base-line-height: 1.5;
 $bp-l-px-base-line-height: ($bp-l-base-font-size * $bp-l-base-line-height);
 
 $bp-xl-base-font-size: 21;
-$bp-xl-base-line-height: 1.4;
+$bp-xl-base-line-height: 1.5;
 $bp-xl-px-base-line-height: ($bp-xl-base-font-size * $bp-xl-base-line-height);

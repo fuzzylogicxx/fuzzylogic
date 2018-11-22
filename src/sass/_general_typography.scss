@@ -110,9 +110,9 @@ html {
 body {
     font-feature-settings: "liga" 1;
     font-feature-settings: "onum" 1;
-    line-height: $base-line-height; // 16 * 1.4 = 22.4;
+    line-height: $base-line-height; // 16 * 1.5 = 24;
     @include breakpoint(bp-medium) {
-        line-height: $bp-m-base-line-height;  // still 1.4 so at bp-medium and above line-height = 25.2 (18 * 1.35) and at bp-large line-height = 29.4 (21 * 1.35);
+        line-height: $bp-m-base-line-height;  // still 1.5 so at bp-medium and above, line-height = 27 (18 * 1.5) and at bp-large line-height = 31.5 (21 * 1.35);
     }
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
@@ -155,14 +155,6 @@ p {
     @include paragraph-margins();
     font-weight: 400;
     //max-width: 38em;
-}
-
-// Sidebar paragraphs
-
-[role=complementary] {
-    p {
-
-    }
 }
 
 blockquote, 
@@ -337,10 +329,6 @@ h1 {
             @include font-size-to-rem($smallest-font-size, $bp-m-base-font-size);
             @include rhythmic-line-height($smallest-font-size, $bp-m-px-base-line-height);
             @include rhythmic-vertical-margins($smallest-font-size, $bp-m-px-base-line-height);
-
-
-
-
         }
         /*@include breakpoint(bp-large) {
             @include font-size-to-rem($bp-l-base-font-size, $bp-l-base-font-size);
@@ -452,7 +440,7 @@ article {
 
 .hfeed .hentry {
     background: linear-gradient($color-accent-alt, $color-accent-alt) no-repeat bottom center / 2.4em 0.2ch;
-    padding-bottom: $base-line-height*2+em; // (1.5 line-heights plus the half line-height of margin above the last paragraph = a round 2 line-heights)
+    padding-bottom: $base-line-height*2+em;
     margin-bottom: $base-line-height*2+em;
     /*@include breakpoint(bp-medium) {
         margin-bottom: $bp-m-base-line-height*2+em;
@@ -487,10 +475,6 @@ article {
         margin-bottom: 0;
     }
 }
-
-
-
-
 
 
 
@@ -533,6 +517,4 @@ article {
         text-decoration-color: 1px solid lighten($color-main, 80%);*/
     }
 }
-
-
 

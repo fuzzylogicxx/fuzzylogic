@@ -90,8 +90,6 @@ tfoot {
     height: 100%; 
 }
 
-
-
 // Body
 
 body {
@@ -108,7 +106,7 @@ body {
           "header header  header  header"
           ".      content sidebar .     "
           "footer footer  footer  footer";
-        column-gap: 2.8em;
+        column-gap: 3em;
     }
 }
 
@@ -125,22 +123,22 @@ body {
         grid-area: header;
         display: inherit;
         grid-template-columns: 1fr 1fr 32rem 14.4rem 1fr 1fr;
-        column-gap: 2.8em;
+        column-gap: 3em;
     }
 }
 
 #logo {
-    @include retinize('logo_roundel_v2', 'png', 88px, 88px);
+    @include retinize('logo_roundel_96', 'png', 96px, 96px);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     display: block;
     text-indent: -9999999px;
-    width: 88px;
-    line-height: $base-line-height*4+em; //88px;
+    width: 96px;
+    line-height: $base-line-height*4+em; //96px;
     margin: $base-line-height/2+em auto;
     @include breakpoint(bp-medium) {
-        @include retinize('logo_roundel', 'png', 100px, 100px);
-        width: 100px;
+        @include retinize('logo_roundel_108', 'png', 108px, 108px);
+        width: 108px;
     }
     @media (min-width: 80em) {
         grid-column: 2 / 3;
@@ -196,7 +194,7 @@ body {
 
 main {
     background: linear-gradient(#eee, #eee) no-repeat bottom center / 2.4em 0.2ch;
-    padding-bottom: $base-line-height*2+em; // (1.5 line-heights plus the half line-height of margin above the last paragraph = a round 2 line-heights)
+    padding-bottom: $base-line-height*2+em;
     margin-bottom: $base-line-height*2+em;
     max-width: 32rem;
     margin: 0 auto;
@@ -219,16 +217,24 @@ main {
     margin: 0 auto;
     width: 90%;
     @media (min-width: 80em) {
-        background: none;
         background: linear-gradient(#eee, #eee) no-repeat top left / 1px 100%;
         width: auto;
         grid-area: sidebar;
         padding: 0 0 0 $base-line-height+em;
+        p {
+            @include font-size-to-rem(16, $bp-m-base-font-size); // reduce the font-size from 18 to 16
+            line-height: (24/16); // in the sidebar reduce the line-height from 27px to 24px, so 1.3333333333 (24/16)
+            /*@include rhythmic-vertical-margins(16, 24);*/
+            margin: 12px 0;
+        }
+        label {
+            @include font-size-to-rem(16, $bp-m-base-font-size);
+        }
         h3 {
             @include font-size-to-rem(14, $bp-m-base-font-size);
-            @include rhythmic-line-height(14, $bp-m-px-base-line-height);
-            @include rhythmic-vertical-margins(14, $bp-m-px-base-line-height);
-            margin-bottom: 0;
+            line-height: (24/14); // in the sidebar reduce the line-height from 27px to 24px
+            margin-top: 0;
+            margin-bottom: 12px;
             text-transform: uppercase;
             font-weight: 700;
         }
@@ -238,6 +244,7 @@ main {
     }
 }
 
+
 .sidebar-module {
     margin-bottom: $base-line-height*2+em;
     &:first-of-type h3 {
@@ -245,7 +252,7 @@ main {
     }
 }
 
-// Footer (i.e. the global footer, as opposed to any other local <footer> elements)
+// Footer (i.e. the global footer, as opposed to any other "local" <footer> elements)
 
 [role=contentinfo] {
     color: $color-lightest;
@@ -261,7 +268,7 @@ main {
         grid-area: footer;
         display: inherit;
         grid-template-columns: 1fr 1fr 32rem 14.4rem 1fr 1fr;
-        column-gap: 2.8em;
+        column-gap: 3em;
         small {
             grid-column: 2 / 6;
         }
