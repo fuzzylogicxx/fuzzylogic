@@ -43,7 +43,7 @@
 	<!-- <link rel="apple-touch-icon" href="icon.png"> -->
 	<!-- Place favicon.ico in the root directory -->
 
-	<link rel="stylesheet" href="/css/screen_v7.css">
+	<link rel="stylesheet" href="/css/screen_v8.css">
 
 	<!-- third-generation iPad with high-resolution Retina display: -->
 	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/favicon144.png">
