@@ -16,11 +16,11 @@ html {
 
 
 // Mina Markham’s better focus outline
-
-:focus-visible {
-	outline: thin solid $color-accent;
-	outline-offset: .25rem;
-}
-:focus:not(:focus-visible) {
-	outline: none;
-}
+// Commented out pending re-testing, because I‘m not sure it’s a good idea (see gomakethings.com/just-use-focus-styles-damnit) and not sure I care enough about what it achieves anyway!
+//:focus-visible {
+//	outline: thin solid $color-accent;
+//	outline-offset: .25rem;
+//}
+//:focus:not(:focus-visible) {
+//	outline: none;
+//}
