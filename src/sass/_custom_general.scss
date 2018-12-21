@@ -1,5 +1,10 @@
 // Site-specific styles
 
+// Based on Tim Brown‘s advice in his ABA book “Flexible Typesetting”
+@viewport {
+  width: device-width;
+}
+
 // Change box model from the default 'content-box' setting.
 // 'content-box' applies element's declared width to its content only, placing padding and border outside the element's box.
 // This effectively increases how much space the element takes up.
