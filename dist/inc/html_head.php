@@ -35,7 +35,6 @@
 	if ($is_blog_article) {
 		perch_blog_post_meta(perch_get('s'));
 		perch_blog_post_webmention_endpoint(perch_get('s'));
-		// To Do: find a way to render this correctly. <link rel='canonical' href="<?= $production_URL ?>/journal/<?php perch_blog_post_field(perch_get('s'), 'postSlug'); ?>">
 	} else { ?>
 	<title><?php echo $page['title']; ?> | Fuzzy Logic</title>
 	<meta name="description" content="">
