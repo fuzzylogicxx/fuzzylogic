@@ -4,7 +4,7 @@
 
 	<header role="banner">
 		<a id="logo" href="https://fuzzylogic.me/" title="Home">Fuzzy Logic</a>
-		<nav role="navigation">
+		<nav aria-labelledby="header-nav">
 			<ul id="global-nav">
 				<li><a href="/thoughts/">Thoughts</a></li>
 				<li><a href="/labs/">Labs</a></li>

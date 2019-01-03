@@ -322,7 +322,6 @@ h1 {
 [role=contentinfo] {
     small {
         display: block;
-        @include paragraph-margins();
         @include rhythmic-line-height($smallest-font-size);
         @include rhythmic-vertical-margins($smallest-font-size);
         @include breakpoint(bp-medium) {
@@ -335,6 +334,20 @@ h1 {
             @include rhythmic-line-height($smallest-font-size, $bp-l-px-base-line-height);
             @include rhythmic-vertical-margins($smallest-font-size, $bp-l-px-base-line-height);
         }*/
+    }
+    ul {
+        @include font-size-to-rem($smallest-font-size);
+        @include rhythmic-vertical-margins($smallest-font-size);
+        @include breakpoint(bp-medium) {
+            @include font-size-to-rem($smallest-font-size, $bp-m-base-font-size);
+            @include rhythmic-vertical-margins($smallest-font-size, $bp-m-px-base-line-height);
+        }
+    }
+    li {
+        @include rhythmic-line-height($smallest-font-size);
+        @include breakpoint(bp-medium) {
+            @include rhythmic-line-height($smallest-font-size, $bp-m-px-base-line-height);
+        }
     }
 }
 
