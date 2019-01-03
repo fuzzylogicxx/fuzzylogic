@@ -1,0 +1,5 @@
+User-Agent: *
+Disallow: /*?*
+Disallow: /console/
+Disallow: /sitemap/
+Disallow: /sitemap
