@@ -9,7 +9,7 @@
 				<li><a href="/thoughts/">Thoughts</a></li>
 				<li><a href="/labs/">Labs</a></li>
 				<li><a href="/sounds/">Sounds</a></li>
-				<li style="display:none;"><a href="/bytes/">Bytes</a></li>
+				<li id="nav-bytes"><a href="/bytes/">Bytes</a></li>
 				<li><a href="/links/">Links</a></li>
 				<!-- <li><a href="/">Remix my site</a></li> -->
 				<!-- <li><a href="/about/">About</a></li> -->

@@ -189,6 +189,12 @@ body {
         }
     }
 }
+#nav-bytes {
+    display: none;
+    @include breakpoint(bp-medium) {
+        display: block;
+    }
+}
 
 // Main
 
