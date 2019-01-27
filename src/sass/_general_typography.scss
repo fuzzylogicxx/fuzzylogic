@@ -19,6 +19,7 @@ Heavy (normally 900)
     url('/fonts/fsemericwebextralight/FSEmericWeb-ExtraLight.woff') format('woff'); /* Modern Browsers */
     font-weight: 200;
     font-style: normal;
+    font-display: swap;
 }
 @font-face {
     font-family: 'FSEmeric';
@@ -27,6 +28,7 @@ Heavy (normally 900)
     url('/fonts/fsemericwebextralightitalic/FSEmericWeb-ExtraLightItalic.woff') format('woff'); /* Modern Browsers */
     font-weight: 200;
     font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
@@ -36,6 +38,7 @@ Heavy (normally 900)
     url('/fonts/fsemericwebbook/FSEmericWeb-Book.woff') format('woff');
     font-weight: 400;
     font-style: normal;
+    font-display: swap;
 }
 @font-face {
     font-family: 'FSEmeric';
@@ -44,6 +47,7 @@ Heavy (normally 900)
     url('/fonts/fsemericwebbookitalic/FSEmericWeb-BookItalic.woff') format('woff');
     font-weight: 400;
     font-style: italic;
+    font-display: swap;
 }
 
 /*@font-face {
@@ -53,6 +57,7 @@ Heavy (normally 900)
     url('/fonts/fsemericwebregular/FSEmericWeb-Regular.woff') format('woff');
     font-weight: 400;
     font-style: normal;
+    font-display: swap;
 }
 @font-face {
     font-family: 'FSEmeric';
@@ -61,6 +66,7 @@ Heavy (normally 900)
     url('/fonts/fsemericwebitalic/FSEmericWeb-Italic.woff') format('woff');
     font-weight: 400;
     font-style: italic;
+    font-display: swap;
 }*/
 
 @font-face {
@@ -70,6 +76,7 @@ Heavy (normally 900)
     url('/fonts/fsemericwebsemibold/FSEmericWeb-SemiBold.woff') format('woff'); /* Modern Browsers */
     font-weight: 600; 
     font-style: normal;
+    font-display: swap;
 }
 @font-face {
     font-family: 'FSEmeric';
@@ -78,6 +85,7 @@ Heavy (normally 900)
     url('/fonts/fsemericwebsemibolditalic/FSEmericWeb-SemiBoldItalic.woff') format('woff'); /* Modern Browsers */
     font-weight: 600;
     font-style: italic;
+    font-display: swap;
 }
 @font-face {
     font-family: 'FSEmeric';
@@ -86,6 +94,7 @@ Heavy (normally 900)
     url('/fonts/fsemericwebbold/FSEmericWeb-Bold.woff') format('woff'); /* Modern Browsers */
     font-weight: 700; 
     font-style: normal;
+    font-display: swap;
 }
 @font-face {
     font-family: 'FSEmeric';
@@ -94,6 +103,7 @@ Heavy (normally 900)
     url('/fonts/fsemericwebbolditalic/FSEmericWeb-BoldItalic.woff') format('woff'); /* Modern Browsers */
     font-weight: 700;
     font-style: italic;
+    font-display: swap;
 }
 
 html {

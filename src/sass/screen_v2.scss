@@ -90,6 +90,11 @@ tfoot {
     height: 100%; 
 }
 
+/* Codepen embeds */
+.cp_embed_wrapper {
+    margin: $base-line-height+em 0;
+}
+
 // Body
 
 body {
