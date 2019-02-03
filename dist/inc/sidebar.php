@@ -4,7 +4,6 @@
         <h3>What’s this?</h3>
         <p><a href="https://fuzzylogic.me">Fuzzy Logic</a> is the personal website of <a href="mailto:laurence@fuzzylogic.me">Laurence Hughes</a>, a web developer at <a href="https://www.greenhilldigital.com/">Greenhill</a> and producer in <a href="http://nuclearfami.ly">The Nuclear Family</a>.</p>
         <p>If you’re interested, read more <a href="/about/">about me</a>.</p>
-        <!-- <p>Fuzzy Logic is the personal site of <a href="/about">Laurence Hughes</a>.</p> -->
     </div>
 
     
@@ -39,7 +38,6 @@
     <!--  By year and then month - can take parameters for two templates. The first displays the years and the second the months see the default templates for examples -->
     <?php //perch_blog_date_archive_months(); ?>
     */
-    ?>
-    
+    ?>  
 
 </aside>
