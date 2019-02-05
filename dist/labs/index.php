@@ -7,6 +7,7 @@
 	
 	<h2>CSS Grid Experiments</h2>
 	<ul>
+		<li><a href="/labs/vanilla_js_state_based_ui_lunch.html">State-based UI with Vanilla JS</a></li>
 		<li><a href="/labs/grid-layout-1.html">CSS Grid Layout 1</a></li>
 	</ul>
 

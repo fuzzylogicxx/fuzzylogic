@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Choose Lunch</title>
+	<style>
+		body {
+ 			font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+ 			font-size: 150%;
+		}
+		form {
+			margin: 1.5em 0;
+		}
+		.util {
+			display: block;
+		}
+
+		/**
+		 * Visually hide an element, but leave it available for screen readers
+		 * @link https://github.com/h5bp/html5-boilerplate/blob/master/dist/css/main.css
+		 * @link http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+		 */
+		.screen-reader-only {
+			border: 0;
+			clip: rect(0 0 0 0);
+			height: 1px;
+			margin: -1px;
+			overflow: hidden;
+			padding: 0;
+			position: absolute;
+			white-space: nowrap;
+			width: 1px;
+		}
+	</style>
+</head>
+<body>
+
+<h1>Choose Lunch</h1>
+
+<div id="app" aria-live="polite"></div>
+
+<form id="form-add-lunch-option">
+	<label for="lunch-option" class="screen-reader-only">Add option</label>
+	<input type="text" id="lunch-option" placeholder="Add lunch option" />
+	<button>Submit</button>
+</form>
+
+<button class="util" id="pick-lunch">Pick Lunch</button>
+<button class="util" id="clear-options">Clear Options</button>
+
+<script type="text/javascript">
+	
+	'use strict';
+
+	//
+	// Variables
+	//
+
+	var data = {
+		lunchOptions: [], 
+		selectedLunchOption: null
+	};
+
+
+
+	//
+	// Methods
+	//
+
+	/*!
+	 * Sanitize and encode all HTML in a user-submitted string
+	 * (c) 2018 Chris Ferdinandi, MIT License, https://gomakethings.com
+	 * @param  {String} str  The user-submitted string
+	 * @return {String} str  The sanitized string
+	 */
+	var sanitizeHTML = function (str) {
+		var temp = document.createElement('div');
+		temp.textContent = str;
+		return temp.innerHTML;
+	};
+
+
+	// Create the markup string
+	var getPopulatedTemplate = function() {
+
+		// Create lunch option items
+		var lunchOptionsList = data.lunchOptions.map(function(val, index) {
+			return '<li>' + val + ' <button data-remove-option="' + index + '">Remove Option</button></li>';
+		});
+
+		var html = '';
+
+		if (lunchOptionsList.length > 0) {
+			html += '<ul>' + lunchOptionsList.join('') + '</ul>';
+		}
+
+		if (data.selectedLunchOption) {
+			html += '<p>Selected Option: ' + data.selectedLunchOption + '</p>';
+		}
+
+		return html;
+
+	};
+
+
+	// Emit a custom event
+	var emitEvent = function (elem, detail) {
+		// Create a new event
+		var event = new CustomEvent('render', {
+			bubbles: true,
+			cancelable: true,
+			detail: detail || {}
+		});
+		// Dispatch the event
+		elem.dispatchEvent(event);
+	};
+
+
+	// Render our template into the DOM
+	var render = function() {
+		var appContainer = document.querySelector('#app');
+		if (!appContainer) return;
+		appContainer.innerHTML = getPopulatedTemplate();
+		// emit a "render(ed)" event for our #app element (much like a "click" event for a button)
+		emitEvent(appContainer, data);
+	};
+
+
+	// SHuffle an array of options
+	var shuffle = function(options) {
+		// Create a clone of the array so that we don't shuffle the original one
+		var arrClone = options.slice();
+		// Shuffle the array
+		return arrClone.sort(function() {
+			return Math.random() - 0.5;
+		});
+	};
+
+
+	// Handle the addition of a new lunch suggestion/option
+	var submitHandler = function(event) {
+		if (!event.target.matches('#form-add-lunch-option')) return;
+
+		// Prevent default form submission behaviour
+		event.preventDefault();
+
+		var newLunchOption = event.target.querySelector('#lunch-option');
+		if (!newLunchOption || newLunchOption.value.length < 1) return;
+
+		// Update our data and UI
+		data.lunchOptions.push(sanitizeHTML(newLunchOption.value));
+		render();
+
+		// Clear the value and refocus
+		newLunchOption.value = '';
+		newLunchOption.focus();
+	};
+
+	
+	// Delete a lunch option from the list of options
+	var removeLunchOption = function(eventRemove) {
+		var index = eventRemove.target.getAttribute('data-remove-option');
+		data.lunchOptions.splice(index, 1);
+		render();
+	};
+
+
+	// Pick a lunch option
+	var pickLunchOption = function() {
+		var shuffledOptions = shuffle(data.lunchOptions);
+		data.selectedLunchOption = shuffledOptions[0];
+		render();
+	};
+
+
+	// Delete all lunch options
+	var clearLunchOptions = function() {
+		data.lunchOptions = [];
+		data.selectedLunchOption = null;
+		render();
+	};
+
+	
+	// Handle all types of clicks including deleting lunch options and clearing all optioons
+	var clickHandler = function(event) {
+	
+		if (event.target.matches('[data-remove-option]')) {
+			removeLunchOption(event);
+		}
+
+		if (event.target.matches('#pick-lunch')) {
+			pickLunchOption();
+		}
+
+		if (event.target.matches('#clear-options')) {
+			clearLunchOptions();
+		}
+
+	};
+
+	// If there any lunch options already in localStorage, load them into our data 
+	var getLunchOptionsFromLocalStorage = function() {
+		var lunchOptions = localStorage.getItem('lunchChooser');
+		if (lunchOptions) {
+			data.lunchOptions = JSON.parse(lunchOptions);
+		}
+	};
+
+
+	// On render, store the new data/state to localStorage
+	var renderHandler = function() {
+		localStorage.setItem('lunchChooser', JSON.stringify(data.lunchOptions));
+	};
+
+	//
+	// Inits and Event Listeners
+	//
+
+	// Event Listeners
+	document.addEventListener('submit', submitHandler, false);
+	document.addEventListener('click', clickHandler, false);
+	document.addEventListener('render', renderHandler, false);
+
+	// Initial render
+	getLunchOptionsFromLocalStorage();
+	render();
+
+
+</script>
+
+</body>
+</html>
