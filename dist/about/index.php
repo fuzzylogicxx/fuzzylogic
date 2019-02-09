@@ -14,7 +14,7 @@
 	<!-- <p>I’m a web designer-developer (specialising in front end development but also accomplished in backend dev)</p> -->
 
 	<h2>Music</h2>
-	<p>I’ve been collecting records since I was fifteen and playing or making music for longer still. Growing up in the eighties, electronic music was the sound that grabbed my attention and it’s been a big part of my life ever since.</p>
+	<p>I’ve been collecting records since I was fifteen and playing or making music for longer still. Growing up in the eighties, electronic music was the sound that grabbed my attention and electronic music in all its forms has been a big part of my life ever since.</p>
 	<p>My first release (under the name Elijah) was in 2002 – a track called Ice 2 Go on <a href="https://www.discogs.com/Various-Better-By-Design/release/110485"><em>Better by Design</em></a> from Glasgow label Iridite. Nowadays I co-run and release music on a label called <a href="https://www.discogs.com/The-Nuclear-Family-vs-Other-Lands-Surface-Noise/release/12684949">The Nuclear Family</a>.</p>
 
 </main>
