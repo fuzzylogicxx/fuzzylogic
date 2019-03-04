@@ -33,9 +33,7 @@ gulp.task('sass:watch', function () {
   gulp.watch(input, gulp.series('sass'));
 });
 
-gulp.task('icons', function() {
-  gulpicon(files, config);
-});
+gulp.task('icons', gulpicon(files, config));
 
 // gulp.task('default', function() {
 //   // place code for your default task here
