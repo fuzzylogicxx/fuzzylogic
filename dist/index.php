@@ -8,8 +8,6 @@
     <p>I’m Laurence Hughes, a Glaswegian web developer, music maker, player of records and pinger of pongs. <a href="https://fuzzylogic.me/" rel="me">Fuzzy Logic</a> is my online home, where I try out web stuff and ramble about code, music and more.</p>
 </div>
 
-<p class="icon-burger">Burger</p>
-
 
 <?php //perch_content('Intro'); ?>
 
