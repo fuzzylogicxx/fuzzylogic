@@ -7,26 +7,18 @@
 
 	<style type="text/css">
 		@supports (transition: 2s) {
-		  .footer { 
-		    opacity: 0; 
-		    transition: 2s; 
-		  } 
+		  .footer {
+		    opacity: 0;
+		    transition: 2s;
+		  }
 		}
-		.in-viewport { 
+		.in-viewport {
 		  opacity: 1;
 		}
 
 
 
 		/* non-important styles */
-		.box {
-		  border: 4px solid #333;
-		  padding: 1rem;
-		  margin: 10rem 0;
-		}
-		.footer {
-		  border-color: firebrick;
-		}
 		body {
 		  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 		  font-size: 125%;
@@ -34,17 +26,28 @@
 			max-width: 42em;
 			width: 88%;
 		}
-
 		input,
 		textarea,
 		select,
 		button {
 			font: inherit;
 		}
+    h1 {
+      font-size: 125%;
+    }
+    .box {
+      border: 4px solid #333;
+      padding: 1rem;
+      margin: 10rem 0;
+    }
+    .footer {
+      border-color: firebrick;
+    }
 	</style>
 </head>
 <body>
-	<div class="box">Stuff – keep scrolling down the page</div>
+	<h1>Animate a scrolled-to element w. vanilla JS and CSS</h1>
+  <div class="box">Stuff – keep scrolling down the page</div>
 	<div class="box">Stuff</div>
 	<div class="box">Stuff</div>
 	<div class="box">Stuff</div>
