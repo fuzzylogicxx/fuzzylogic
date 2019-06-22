@@ -41,7 +41,7 @@
 	<link rel="manifest" href="site.webmanifest">
 	<!-- <link rel="apple-touch-icon" href="icon.png"> -->
 
-	<link rel="stylesheet" href="/css/screen_v12.css">
+	<link rel="stylesheet" href="/css/screen_v13.css">
 
 	<!-- third-generation iPad with high-resolution Retina display: -->
 	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/favicon144.png">

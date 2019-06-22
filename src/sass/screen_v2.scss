@@ -73,21 +73,21 @@ tfoot {
 
 /* Embed Video and other media */
 
-.embed-container { 
+.embed-container {
     margin: $base-line-height+em 0;
-    position: relative; 
-    padding-bottom: 56.25%; 
-    height: 0; 
-    overflow: hidden; 
-    max-width: 100%; 
-} 
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+}
 
-.embed-container iframe, .embed-container object, .embed-container embed { 
-    position: absolute; 
-    top: 0; 
-    left: 0; 
-    width: 100%; 
-    height: 100%; 
+.embed-container iframe, .embed-container object, .embed-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 /* Codepen embeds */
@@ -99,7 +99,7 @@ tfoot {
 
 body {
     display: grid;
-    grid-template-areas: 
+    grid-template-areas:
         "header"
         "intro"
         "content"
@@ -107,7 +107,7 @@ body {
         "footer";
     @media (min-width: 80em) {
         grid-template-columns: auto 32rem 14.4rem auto; //grid-template-columns: 1fr 1fr 33rem 12rem 1fr 1fr;
-        grid-template-areas: 
+        grid-template-areas:
           "header header  header  header"
           ".      content sidebar .     "
           "footer footer  footer  footer";
@@ -259,7 +259,7 @@ main {
 .sidebar-module {
     margin-bottom: $base-line-height*2+em;
     &:first-of-type h3 {
-        margin-top: 0;    
+        margin-top: 0;
     }
 }
 
@@ -314,4 +314,18 @@ main {
     li {
         padding: 0;
     }
+}
+
+// Comments
+
+.comments {
+  list-style: none;
+
+  li {
+    padding-left: 0;
+  }
+
+  img {
+    display: none;
+  }
 }
