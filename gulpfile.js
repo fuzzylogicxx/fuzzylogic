@@ -11,14 +11,6 @@ var rename = require('gulp-rename');
 var input = './src/sass/*.scss';
 var output = './dist/css';
 
-// For gulpicon
-var glob = require("glob");
-var gulpicon = require("gulpicon/tasks/gulpicon");
-var config = require("./src/gulpicon/example/config.js");
-config.dest = "./dist/svg";
-var files = glob.sync("./src/gulpicon/example/svg/*.svg");
-// End For gulpicon
-
 gulp.task('sass', function () {
   return gulp.src(input)
     .pipe(sourcemaps.init())
@@ -32,8 +24,6 @@ gulp.task('sass', function () {
 gulp.task('sass:watch', function () {
   gulp.watch(input, gulp.series('sass'));
 });
-
-gulp.task('icons', gulpicon(files, config));
 
 // gulp.task('default', function() {
 //   // place code for your default task here
