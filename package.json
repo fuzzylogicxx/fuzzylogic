@@ -15,5 +15,8 @@
   "license": "ISC",
   "devDependencies": {
     "@11ty/eleventy": "^0.8.3"
+  },
+  "dependencies": {
+    "file-size": "^1.0.0"
   }
 }
