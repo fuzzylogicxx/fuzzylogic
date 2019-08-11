@@ -12,3 +12,7 @@ node_modules
 # Docker: stuff to ignore (ref: https://github.com/PerchCMS/simple-docker)
 db/*
 !db/.gitkeep
+
+
+
+_site/*
