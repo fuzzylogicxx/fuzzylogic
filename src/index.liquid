@@ -12,7 +12,8 @@ pagination:
 {% for post in posts %}
   <article>
     <h1>
-      <a href="{{ post.url | url }}">{{ post.data.pageTitle }}</a>
+      <a href="{{ post.url | url }}">{{ post.data.pageTitle }}</a> 
+      <!-- {{ post.url }} -->
     </h1>
     <em>{{ post.date | date: "%Y-%m-%d" }}</em>
   </article>

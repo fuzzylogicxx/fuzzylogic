@@ -3,12 +3,9 @@ const filesize = require("file-size");
 
 
 
-
-
 module.exports = (function(eleventyConfig) {
 
-
-
+ // 
  eleventyConfig.addFilter("filesize", function(path) {
   let stat = fs.statSync(path);
   if( stat ) {
@@ -18,14 +15,26 @@ module.exports = (function(eleventyConfig) {
  });
 
 
-  // Copy the `img/` directory 
-  eleventyConfig.addPassthroughCopy("img");
-  
-  // Copy the `css/fonts/` directory
-  eleventyConfig.addPassthroughCopy("css");
 
-  // If you use a subdirectory, it’ll copy using the same directory structure.
-  //eleventyConfig.addPassthroughCopy("css/fonts");
+
+ // Copy the `img/` directory 
+ eleventyConfig.addPassthroughCopy("src/img");
+  
+ // Copy the `css/` directory
+ eleventyConfig.addPassthroughCopy("src/css");
+
+ // If you use a subdirectory, it’ll copy using the same directory structure.
+ //eleventyConfig.addPassthroughCopy("css/fonts");
+
+
+
+// Base Config
+return {
+    dir: {
+        input: 'src',
+        output: 'dist'
+    }
+}
 
 
 

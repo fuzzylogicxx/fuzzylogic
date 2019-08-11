@@ -16,3 +16,4 @@ db/*
 
 
 _site/*
+dist/*
