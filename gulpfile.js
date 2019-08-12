@@ -35,7 +35,7 @@ var paths = {
 		output: 'src/assets/svg/'
 	},
 	copy: {
-		input: 'src/raw_assets/assets/copy/**/*',
+		input: 'src/raw_assets/copy/**/*',
 		output: 'src/assets/'
 	},
 	reload: 'src/'
@@ -98,9 +98,6 @@ var svgmin = require('gulp-svgmin');
 // BrowserSync
 var browserSync = require('browser-sync');
 
-// fileinclude for "includes" in HTML files
-var fileinclude = require('gulp-file-include')
-
 
 /**
  * Gulp Tasks
@@ -113,8 +110,10 @@ var cleanDist = function (done) {
 	if (!settings.clean) return done();
 
 	// Clean the dist folder
-	del.sync([
+  del.sync([
 		paths.output
+    // and also delete the layout file which contains references to static assets because we’re updating static asset filenames to bust browser caches.
+    //,paths.copy.outputLayoutCacheBust
 	]);
 
 	// Signal completion
@@ -321,7 +320,7 @@ var watchSource = function (done) {
  */
 
 // Default task
-// gulp
+// Just run "gulp"
 exports.default = series(
 	cleanDist,
 	parallel(
@@ -334,9 +333,11 @@ exports.default = series(
 );
 
 // Watch and reload
-// gulp watch
+// Run "gulp watch"
 exports.watch = series(
 	exports.default,
 	startServer,
 	watchSource
 );
+
+
