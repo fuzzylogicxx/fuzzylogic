@@ -1,0 +1,30 @@
+// Usage:
+// <a href="/" class="text-icon-pair"><span>Download</span> <svg width="1em" height="1em" viewBox="…" class="special-link-icon" aria-hidden="true"><path fill="currentColor"></path></svg></a>
+// or
+// <a href="/" class="special-link"><svg width="1em" height="1em" viewBox="…" class="special-link-icon" aria-hidden="true"><path fill="currentColor"></path></svg> <span>Download</span></a>
+
+// Setting the icon’s dimensions with ems makes it predictably sized by default (same font-size as parent element) so might be great out-the-box.
+// The icon also adapts to context, scaling proprotionately with its parent element‘s font-size, whatever that is in the given context.
+// If need to tweak the icon’s size (relative to adjacent text) we can do so using font-size. The icon size will still scale proportionately with parent’s font-size.
+
+
+// layout styles for parent anchor. We won’t put font-size here because we want this style utility to be abstract, flexible, reusable.
+
+.text-icon-pair {
+  display: inline-flex;
+  align-items: center;
+}
+
+.text-icon-pair :last-child {
+  margin-left: .2em;
+}
+
+
+// Offsite links
+// Note 1) may consider applying the class automatically so that it’s not reliant on the CMS administrator
+// e.g. a:not([href*='yourdomain.com']):not([href^='#']):not([href^='/']):after {}
+// Note 2) since there might be many offsite links on a page, might consider using a background image (rather than inline SVG) to take advantage of cacheing.
+
+.offsite svg {
+  font-size: .9em; // just works better for the icon we’re currently using.
+}

@@ -1,0 +1,396 @@
+// Starting position is just the browser default form styles (i.e. forms haven’t been reset and borders removed etc), which means:
+  // 1) all inputs have borders and look like inputs, which is good.
+  // 2) Webkit search inputs have a special webkit-appearance and cancel (x) button
+  // 3) Inputs have their own font characteristics – they don’t inherit font styles from root/body. Textarea uses monospace font.
+  // 4) input type=submit and <button>s look pretty much the same (at least in OSX)
+  // 5) labels and inputs sit inline / adjacent to one another.
+// We’ll leave default form elements as they are to maintain resilience and to reduce conflicts and unnecessary head-scratching when bringing in 3rd party stuff.
+// But we’ll scope some improved form UI inside a custom class.
+
+
+
+
+// Define button styles that we’ll use for buttons inside custom forms and call-to-action links
+
+@mixin button_style() {
+  background: $color-accent;
+  border: 0;
+  border-radius: $global-border-radius;
+  color: #fff;
+  display: inline-block;
+  font-weight: 700;
+  white-space: nowrap;
+  padding: scale-value(-6)+em scale-value(-3)+em scale-value(-5)+em;
+  transition: all 0.3s ease;
+}
+
+@mixin button_hover_style() {
+  background: darken($color-accent, 10%);
+  color: darken(#fff, 10%);
+}
+
+// is a smaller button style necessary if the default is pretty small?
+//@mixin small_button_style() {
+//  padding: scale-value(-6)+em scale-value(-3)+em scale-value(-5)+em;
+//}
+
+@mixin large_button_style() {
+  padding: scale-value(-4)+em 1em scale-value(-3)+em;
+}
+
+.btn-wrap {
+  //margin-top: $space-xs;
+}
+
+form {
+  //margin-bottom: $space-xxs;
+}
+
+// Begin "custom forms" styles
+
+.form-custom {
+
+  // H5BP main.css: Remove default fieldset styles.
+
+  fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+  }
+
+
+  // normalize.css: correct the inability to style clickable types in iOS and Safari.
+
+  button,
+  [type="button"],
+  [type="reset"],
+  [type="submit"] {
+    -webkit-appearance: button;
+  }
+
+  // Scott O’Hara’s accessible form components: shared styles
+  // https://scottaohara.github.io/a11y_styled_form_controls/src/assets/css/--shared--.css
+
+  /**
+   * Shared styling among the different form controls.
+   * Much of these styles are pulled from normalize.css.
+   * Use as necessary within your own style sheets.
+   */
+
+  input,
+  button,
+  textarea,
+  select {
+    border-radius: 0; /* may change, but start consistently */
+    box-sizing: border-box;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: normal;
+    margin: 0;
+    overflow: visible; /* show overflow in Edge */
+    text-transform: none; /* remove inheritance Edge, Firefox, IE */
+  }
+
+  /**
+  * Remove the Clear button added by MS browsers
+  */
+  input::-ms-clear {
+    display: none;
+    height: 0;
+    width: 0;
+  }
+
+  /**
+  * <button> Focus Normalization:
+  * remove FireFox specific inner focus styles.
+  * focus style will be reapplied later.
+  */
+  button::-moz-focus-inner,
+  [type="button"]::-moz-focus-inner,
+  [type="reset"]::-moz-focus-inner,
+  [type="submit"]::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+  }
+
+  // Sofrito interjection because it comes from the same place in normalize.css and feels important aceessibility-wise
+
+  /**
+  * Restore the focus styles unset by the previous rule.
+  */
+  button:-moz-focusring,
+  [type="button"]:-moz-focusring,
+  [type="reset"]:-moz-focusring,
+  [type="submit"]:-moz-focusring {
+    outline: 1px dotted ButtonText;
+  }
+
+  /**
+  * 1. Correct color inheritance in IE
+  * 2. Correct the text wrapping in Edge and IE
+  */
+  legend {
+    color: inherit; /* 1 */
+    display: table; /* 2 */
+    line-height: normal;
+    max-width: 100%; /* 2 */
+    white-space: normal; /* 2 */
+  }
+
+  // Some common styles for consistency
+
+  .form-group {
+    //margin-bottom: $space-xxs;
+  }
+
+  label {
+    display: block;
+    font-weight: 700;
+  }
+
+  input[type=text],
+  input[type=email],
+  input[type=number],
+  input[type=tel],
+  input[type=search],
+  textarea,
+  select {
+    border: 1px solid $border-color;
+  }
+
+  input[type=text],
+  input[type=email],
+  input[type=number],
+  input[type=tel],
+  input[type=search],
+  textarea,
+  select {
+    padding: .5em;
+  }
+
+  input[type=text],
+  input[type=email],
+  input[type=search],
+  textarea {
+    border-radius: $global-border-radius;
+    width: 100%;
+  }
+
+
+  // Buttons
+
+  button,
+  [type="button"],
+  [type="submit"],
+  [type="reset"]
+  {
+    @include button_style();
+  }
+
+  .btn-large,
+  .btn-large {
+    @include large_button_style();
+  }
+
+  button:hover,
+  [type="button"]:hover,
+  [type="submit"]:hover,
+  [type="reset"]:hover
+  {
+    @include button_hover_style();
+  }
+
+
+  // Textareas
+
+  textarea {
+    // normalize.css: Remove the default vertical scrollbar in IE 10+.
+    overflow: auto;
+
+    // H5BP main.css: Allow only vertical resizing of textareas.
+    resize: vertical;
+  }
+
+
+  // Search inputs (ref https://scottaohara.github.io/a11y_styled_form_controls/src/search/)
+
+  /**
+   * 1. Remove webkit redesign of searches
+   *
+   * 2. Remove inner padding & search cancel button in Safari & Chrome on
+   *    OS X. Safari (but not Chrome) clips the cancel button when the
+   *    search input has padding (& `textfield` appearance).
+   */
+  input[type="search"] {
+    -webkit-appearance: none; /* 1 */
+  }
+
+  input[type="search"]::-webkit-search-decoration,
+  input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none; /* 2 */
+    appearance: none;
+  }
+
+
+  // Checkboxes
+
+  .form-group-checkbox,
+  .form-group-radio {
+
+    div {
+      display: flex;
+      align-items: center;
+    }
+
+    input[type="checkbox"],
+    input[type="checkbox"]:focus {
+      border-radius: 10%;
+    }
+
+    input[type="checkbox"] + label,
+    label + input[type="checkbox"] {
+      margin-left: scale-value(-4)+em;
+    }
+
+    input[type="radio"],  {
+      border-radius: 100%;
+      margin-right: scale-value(-4)+em;
+    }
+
+    label {
+      font-weight: 400;
+
+    }
+
+  }
+
+  input[type="checkbox"],
+  input[type="radio"] {
+    padding: 0;
+    border: 0;
+  }
+
+
+  // Container for a field and adjacent submit button, for example a newsletter subscription form
+
+  .field-button-pair {
+    display: flex;
+
+    input:not([type=submit]) {
+      min-width: 0; // allows text (etc) input to shrink on narrow screens. Inputs are weird. They don’t respond to the default flex-shrink:1 like other elements
+      margin-right: $space-s;
+    }
+  }
+
+  // for search inputs let’s have the submit button sitting flush against the input
+
+  .field-button-pair-search {
+
+    input:not([type=submit]) {
+      margin-right: 0;
+      border-right: 0;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+
+    [type=submit] {
+      border-bottom-left-radius: 0;
+      border-top-left-radius: 0;
+    }
+
+  }
+
+
+  // <select>
+  // Scott Jehl: style a select like it’s 2019
+  // https://www.filamentgroup.com/lab/select-css.html
+
+  select {
+    // set some font settings explicitly on this element, and not using inherit, just for safety
+    font-size: 1rem;
+    font-family: $base-font-family-fonts-loaded;
+    color: $text-color;
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    border-radius: $global-border-radius;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #fff;
+
+    // 565656 is the bit of the following arrow SVG icon data URI that we can exchange for another hex colour of our choice.
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23dcdcdc%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E'),
+      linear-gradient(to bottom, #fff 0%,#fff 100%);
+
+    background-repeat: no-repeat, repeat;
+    background-position: right .7em top 50%, 0 0;
+    background-size: .65em auto, 100%;
+  }
+  select::-ms-expand {
+    display: none;
+  }
+  select:hover {
+    border-color: #888;
+  }
+  select:focus {
+    border-color: #aaa;
+    box-shadow: 0 0 1px 3px rgba(59, 153, 252, .7);
+    box-shadow: 0 0 0 3px -moz-mac-focusring;
+    color: #222;
+    outline: none;
+  }
+  select option {
+    font-weight: normal;
+  }
+
+}
+
+
+
+// Non-form-based buttons (call-to-action links styled like buttons)
+
+.btn {
+  @include button_style();
+  text-decoration: none;
+}
+
+.btn:link, .btn:visited {
+  color: #fff;
+}
+
+.btn:hover {
+  @include button_hover_style();
+  text-decoration: none;
+}
+
+// is a smaller button style necessary if the default is pretty small?
+//.btn-small:link, .btn-small:visited {
+//  @include small_button_style();
+//}
+
+.btn-large:link, .btn-large:visited {
+  @include large_button_style();
+}
+
+
+
+// Buttons with icons (button-style links AND form buttons)
+// todo: try sharing/reusing the style/component used in svg_and_text_pairs.scss
+
+.btn-icon:link, .btn-icon:hover,
+.form-custom button.btn-icon, .form-custom [type="button"].btn-icon, .form-custom [type="reset"].btn-icon {
+  display: inline-flex;
+  align-items: center;
+}
+
+.btn-icon > * + * {
+  margin-left: scale-value(-6)+em;
+}
+
+

@@ -1,0 +1,39 @@
+///////////////////////////////////
+// Accessible skip links (review this)
+///////////////////////////////////
+
+// Inspired by the implementation on https://meyerweb.com/
+
+#skip-links {
+  position: absolute;
+  top: 1.5vh;
+  left: -51em;
+  width: 10em;
+}
+#skip-links a {
+  display: block;
+  background: #000;
+  color: #fff;
+  text-decoration-color: #fff;
+  margin: 0.335em;
+  padding: 0.335em;
+  transition: 150ms;
+}
+#skip-links a:focus {
+  background: #060;
+}
+#skip-links a:focus,
+#skip-links a:focus ~ a {
+  transform: translate(52em);
+}
+#skip-links:focus-within a {
+  transform: translate(52em);
+}
+@media (max-height: 42em) {
+  #skip-links {
+    width: auto;
+  }
+  #skip-links a {
+    display: inline-block;
+  }
+}

@@ -1,0 +1,41 @@
+// Set font-size on the parent .profile component.
+// Use ems not rems to size the child .profile__heading and .profile__image elements.
+// The elements of the component are now relative to the component’s size rather than absolute.
+// So if we change the font-size of the parent (for example by adding a modifier class)
+// ...both of the inner elements scale up while maintaining their relative proportions in the component.
+// Hat tip Andy Bell (https://andy-bell.design/wrote/relative-sizing-with-em-units/)
+
+.profile {
+  font-size: 3rem;
+  display: flex;
+  align-items: center;
+}
+
+.profile--large {
+  font-size: 5rem;
+}
+
+.profile > * + * {
+   margin-left: 0.5em;
+}
+
+.profile__heading {
+  font-size: 0.5em;
+  line-height: 1.1;
+}
+
+.profile__image {
+  width: 1.5em;
+  height: 1.5em;
+  object-fit: cover;
+  border-radius: 999px;
+  flex-shrink: 0;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+/* Pres */
+
+.user {
+  @include stack();
+}
+

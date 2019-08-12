@@ -1,0 +1,601 @@
+// Useful layout refs:
+// Grid: https://css-tricks.com/snippets/css/complete-guide-grid/, http://grid.malven.co/, https://cssgrid-generator.netlify.com/
+
+
+// Temp til WE decide where to put these vars
+
+:root {
+  --border-thin: 1px;
+}
+
+///////////////////////////////////
+// Box
+///////////////////////////////////
+
+// Purpose: create a "visible box" which groups and demarcates some content.
+// Example use cases: i) a note/message to stand out among flow content; or ii) a card in a grid; or iii) inside a positioned alert.
+// It should have:
+// i) padding on all sides or none at all; and or
+// ii) border on all sides or none at all; and or
+// iii) a background colour with contrasting text colour. If there’s no border, add a transparent outline because high-contrast themes eliminate backgrounds.
+// Ref: https://absolutely.every-layout.dev/layouts/box/
+
+.box {
+  padding: $space-s;
+  border: var(--border-thin) solid;
+  --color-light: #eee;
+  --color-dark: #222;
+  background-color: var(--color-light);
+  color: var(--color-dark);
+}
+
+.box.box-no-padding {
+  padding: 0;
+}
+
+.box.box-no-border {
+  border: none;
+  outline: 0.125rem solid transparent;
+  outline-offset: -0.125rem;
+}
+
+.box *:not(a) {
+  color: inherit;
+}
+
+.box.invert {
+  color: var(--color-light);
+  background-color: var(--color-dark);
+}
+
+
+
+///////////////////////////////////
+// Centre
+///////////////////////////////////
+
+// Purpose: horizontal centring (as a composable unit)
+// Create a horizontally centered column, capping its width at a reasonable measure.
+// Optionally include gutter so that in narrower contexts the centred column is not cramped flush against its parent’s sides.
+// Set box-sizing such that any included gutter does not make the element’s width narrower.
+
+@mixin centre() {
+  box-sizing: content-box;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: $text-measure-max-in-ems+rem;
+  padding-left: $space-s;
+  padding-right: $space-s;
+}
+
+@mixin centre-no-gutter() {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+@mixin centre-with-centred-text() {
+  text-align: center;
+}
+
+@mixin centre-with-centre-intrinsic() {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+// Apply and re-use the styles via the above mixins, or by adding the following classes directly to HTML elements.
+
+.centre {
+  @include centre();
+}
+
+.centre.centre-no-gutter {
+  @include centre-no-gutter();
+}
+
+.centre.centre-with-centred-text {
+  @include centre-with-centred-text();
+}
+
+// .centre-intrinsic
+// Purpose: builds on .centre, going further by also centring the elements within the centred column based on their natural, content-based widths.
+// Useful for naturally small elements like buttons, or elements with their own max-width set under our max. measure.
+
+.centre.centre-intrinsic {
+  @include centre-with-centre-intrinsic();
+}
+
+
+// Container: a class for centring the outermost columns/containers in "centred" sites (i.e. no sidebar flush at viewport edge) like BBC, gov.uk etc.
+// I could have created dedicated styles but instead I’m creating an instance of .centre (slightly customised) so as to inherit .centre’s goodness.
+
+.container {
+  @include centre();
+
+  // set a generous but sensible final max-width (something bigger than just our text measure (.centre’s default max-width)
+  // But intervene with media queries on the way up to that final max-width to avoid too-wide content / too narrow gutters on narrower resolutions.
+  // Avoiding media queries is great but they make sense here because the element’s parent will always be viewport-width.
+  max-width: ($text-measure-max-in-ems * 1.8)+rem;
+  @include at-least($bp-wide-one) {
+    padding-left: scale-value(2)+rem;;
+    padding-right: scale-value(2)+rem;;
+  }
+}
+
+
+
+///////////////////////////////////
+// Cluster
+///////////////////////////////////
+
+// Purpose: reliable, responsive, non-ragged, flexible layout of any group of elements that differ in length and are liable to wrap.
+// Variables: i) 'justify' for horizontal alignment via CSS justify-content, e.g. flex-start; ii) 'align' for vertical alignment, e.g. 'center'; iii) 'space' between each element.
+// Note: requires an inner wrapper with -ve margins. Soon we’ll replace with "gap". But a.t.m. there’s only grid-gap support (none for flex), and cluster can’t be achieved with Grid.
+// Use cases: i) Buttons that appear together at the end of forms; ii) lists of tags, keywords, or other meta information; iii) page header.
+
+.cluster {
+  --space: 1rem;
+  overflow: hidden;
+}
+
+.cluster > * {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  margin: calc(var(--space) / 2 * -1);
+}
+
+.cluster > * > * {
+  margin: calc(var(--space) / 2);
+}
+
+
+
+///////////////////////////////////
+// Sidebar
+///////////////////////////////////
+
+// Purpose: a reusable "wide-elem + narrow-elem" layout which responds (by stacking in a col or aligning in a row) to the width of its CONTAINER (so doesn’t need media queries)
+// Use cases: i) overall layout; ii) micro layouts; iii) media objects; iv) search components (input + submit_button)
+// Options: i) the min-width (e.g. 50%) of our widecol; ii) set .sidebar to fixed width or intrinsic-width; iii) gutter between, or elements touching; iv) turn off "equal height";
+// Note 1: Uses Flexbox. Unlike a CSS Grid sidebar approach it doesn’t need media queries. Flex-grow: 1 is useful in small containers for making elements full-container-width.
+// Note 2: if use this component as a direct child of <body> you’ll get horizontal scrollbars (so don’t)
+// ref https://every-layout.dev/layouts/sidebar/
+
+.with-sidebar {
+  overflow: hidden;
+}
+
+.with-sidebar > * {
+  display: flex;
+  flex-wrap: wrap;
+  margin: calc(0px / 2 * -1); // Use 0px (the px is important) when you want the two elements to touch rather than have space between.
+}
+
+.with-sidebar-blog-layout > *,
+.with-sidebar-media-object > * {
+  margin: calc(1rem / 2 * -1); // instead of var(--s1) I’ve just inserted 1rem for now.
+}
+
+.with-sidebar > * > * {
+  margin: calc(0px / 2);
+  flex-grow: 1;
+}
+
+.with-sidebar-blog-layout > * > * {
+  margin: calc(1rem / 2);
+  flex-basis: 20rem;
+}
+
+.with-sidebar-media-object > * > * {
+  margin: calc(1rem / 2);
+  flex-basis: 15rem;
+}
+
+.with-sidebar-on-left > * > :last-child {
+  flex-basis: 0;
+  flex-grow: 999;
+  min-width: calc(50% - 0px);
+}
+
+.with-sidebar-on-right > * > :first-child {
+  flex-basis: 0;
+  flex-grow: 999;
+  min-width: calc(50% - 0px);
+}
+
+.with-sidebar-blog-layout.with-sidebar-on-left > * > :last-child,
+.with-sidebar-media-object.with-sidebar-on-left > * > :last-child
+ {
+  min-width: calc(50% - 1rem);
+}
+
+.with-sidebar-blog-layout.with-sidebar-on-right > * > :first-child,
+.with-sidebar-media-object.with-sidebar-on-right > * > :first-child {
+  min-width: calc(50% - 1rem);
+}
+
+
+
+///////////////////////////////////
+// Switcher
+///////////////////////////////////
+
+// Purpose: switch directly from a horizontal (one row) to a vertical (one column) layout, bypassing intermediary (potentially irregular) states.
+// Use cases: where each element should be considered equal, or part of a continuum. Product Cards; A set of numbered steps.
+
+.switcher > * {
+  display: flex;
+  flex-wrap: wrap;
+  margin: calc((1rem / 2) * -1); // 1rem is our "space between child elements" value, in place of var(--s1). If don’t want space, use 0px.
+}
+
+.switcher > * > * {
+  flex-grow: 1;
+  flex-basis: calc((#{$text-measure-max-in-ems}rem - (100% - 1rem)) * 999); // $text-measure-max-in-ems+rem (in place of var(--measure)): "break" when the container is narrower.
+  margin: calc(1rem / 2);
+}
+
+// default max of 4 items allowed in the horizontal version or else it’ll be too cramped and we should display as a column.
+
+.switcher > * > :nth-last-child(n+5),
+.switcher > * > :nth-last-child(n+5) ~ * {
+  flex-basis: 100%;
+}
+
+
+
+///////////////////////////////////
+// Cover
+///////////////////////////////////
+
+// Purpose: vertical centring (as a composable unit) that also handles optional header and footer elements.
+// Default is to "cover" entire viewport height, however could customise by changing the min-height.
+// Requires a centred element, but can also handle one element above and/or one below (e.g. a close button at top right; a “read more” at bottom.
+// Use cases: i) full viewport height "book covers"; or ii) a full height “above the fold” header preeceding more content;
+// Ref: https://absolutely.every-layout.dev/layouts/cover/#the-generator
+
+.cover {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 1rem;
+}
+
+.cover.cover-no-padding {
+  padding: 0;
+}
+
+.cover > * {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.cover > :first-child:not(.centred) {
+  margin-top: 0;
+}
+
+.cover > :last-child:not(.centred) {
+  margin-bottom: 0;
+}
+
+.cover > .centred {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+
+
+///////////////////////////////////
+// Grid
+///////////////////////////////////
+
+// Purpose: create basic, context-independent grids which are automatically responsive (non-reliant on media queries) therefore more suited to design systems.
+// Note 1: favour CSS Grid over Flexbox because we can make items grow, shrink, and wrap together but importantly without breaching column boundaries (unlike last items in flexbox).
+// Note 2: minmax() without min() is flawed and requires setting "fixed minimums" (e.g. minmax(250px, 1fr)) that result in overflow when in narrow contexts.
+// Note 3: we use i) mixmax() with min(); or if min() not supported ii) JS’s ResizeObserver... to trigger changes based on the width of the container and without "fixed minimums".
+// Note 4: if they are not supported, the fallback one-column layout is applied perpetually. (Could fallback to a flexbox grid but note would need -ve margin soln for gaps).
+// Vars: i) "minimum": the left-hand value of the min() function, e.g. 20rem; ii) "space": the space between grid cells, e.g. 1rem.
+
+@mixin grid($min_trigger: 20rem, $space: 1rem) {
+  display: grid;
+  grid-gap: $space;
+  grid-template-columns: 100%;
+
+  &.aboveMin {
+    grid-template-columns: repeat(auto-fit, minmax($min_trigger, 1fr));
+  }
+
+  // Add min() into the mix to avoid overflows within narrow containers.
+  // To Do: find a way of getting gulp/node-sass to allow CSS’s min() without the hack of replacing "min" with "m#{i}n".
+  @supports (width: m#{i}n(20rem, 100%)) {
+    grid-template-columns: repeat(auto-fit, minmax(m#{i}n(20rem, 100%), 1fr));
+  }
+}
+
+.grid {
+  @include grid();
+}
+
+
+
+///////////////////////////////////
+// Scroll-Track
+///////////////////////////////////
+
+// Purpose: horizontally align a list items and retain this layout even in narrow contexts by using overflow + horizontal scrolling (rather than vertical stacking) when required.
+// Notes: tell flex items not to shrink; we’re intentionally letting them overflow rather than trying to squeeze them in.
+// Potential Use Cases: i) an image gallery; ii) navigation
+// Ref: https://andy-bell.design/wrote/progressive-overflow-management-with-a-scroll-track-utility/
+
+.scroll-track {
+  display: flex;
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+
+.scroll-track > * {
+  flex-shrink: 0;
+}
+
+// Make it centre-able. All that is needed is for the parent to use text-align: center;. Alternatively could avoid this class and just place inside a .centre.
+
+.scroll-track-intrinsic {
+  display: inline-flex;
+}
+
+
+
+///////////////////////////////////
+// Frame
+///////////////////////////////////
+
+// Purpose: draw a rectangle-based container with an aspect-ratio of our choosing and use it as a window to an image or video.
+// We use object-fit: cover to crop the media. The default object-position value is 50% 50%, therefore the media is cropped around its center point.
+// Use cases: when we don’t know what aspect ratio an image will be and want to control it.
+
+.frame {
+  --n: 6;
+  --d: 9;
+  padding-bottom: calc(var(--n) / var(--d) * 100%);
+  position: relative;
+
+  // support inline elements like <a> as the .frame
+  display: block;
+}
+
+@media (orientation: portrait) {
+  .frame {
+    --n: 1;
+    --d: 1;
+  }
+}
+
+.frame > * {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  // for alignment of normal, non-replaced elements (note that these flexbox styles won’t have any effect on <img> and <video>)
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.frame > img,
+.frame > video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+// ToDo: test if .frame also works with an embedded youtube iframe.
+// For now, retain the following slight variation (no overflow:hidden on the child) thje .aspect-ratio-wide version of which we know works on youtube embeds (which are 16:9).
+// ref: Andy Bell https://andy-bell.design/wrote/creating-an-aspect-ratio-css-utility/
+
+[class*='aspect-ratio-'] {
+  display: block;
+  position: relative;
+}
+
+[class*='aspect-ratio-'] > * {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.aspect-ratio-wide {
+  padding-top: 56.25%;
+}
+
+.aspect-ratio-square {
+  padding-top: 100%;
+}
+
+
+
+////////////////////////////////////////////////
+// Previous stuff for review (to keep or ditch)
+////////////////////////////////////////////////
+
+/*
+///////////////////////////////////
+// Responsive utilities
+///////////////////////////////////
+
+// Container
+// Use this to give wrappers a sensible maximum width and some lateral breathing space.
+// Defined as a mixin so the styles can be imported into different elements; not just by necessity of using a .container class.
+
+@mixin container() {
+
+  margin-left: $space-s;
+  margin-right: $space-s;
+
+  @include at-least($bp-wide-two) {
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+
+  @include at-least($bp-wide-three) {
+    margin-left: 6%;
+    margin-right: 6%;
+  }
+
+  @include at-least($bp-wide-four) {
+    //margin-left: 10%;
+    //margin-right: 10%;
+
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 70vw; // change as required based on the maximum width you want your content to go.
+  }
+
+  @include at-least($bp-wide-five) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.container {
+  @include container();
+}
+
+
+// Container (centred inner content e.g. a centred column)
+// A container which centres its content based on the max-width of that content.
+// By using flexbox centring, there is no need for a max-width on this parent which makes it more flexible.
+// Flex-direction is column so that subsequent sibling elements don’t align horizontally.
+
+@mixin container-centred-content() {
+  margin-left: $space-s;
+  margin-right: $space-s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container-centred-content {
+  @include container-centred-content();
+}
+
+
+// Container (centred content and centred text within)
+
+.container-centred-content-centred-text {
+  @include container-centred-content();
+  & > * {
+    text-align: center;
+    max-width: $text-measure-max-in-ems+rem;
+  }
+}
+
+
+
+// Create a grid with 3 flexible-width-but-always-equal-width colummns
+// (and auto-rows? - test to confirm)
+
+@mixin trio() {
+  display: grid;
+  grid-column-gap: $space-l;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.trio {
+  //--flow-space: #{$body-line-height-min}rem;
+  @include stack-recursive();
+
+  @include at-least($bp-wide-one) {
+    @include trio();
+
+    & > * {
+      margin-top: 0;
+    }
+
+    section {
+      --flow-space: #{$flow-space-compact}rem;
+    }
+  }
+}
+
+
+
+// Create a row with 2 equal-width columns (using multi-column) but when space allows, 3 equal-width columns.
+
+.min-duo-max-trio {
+  columns: 2;
+  @include at-least($bp-wide-one) {
+    columns: unset;
+    @include trio();
+  }
+}
+
+
+
+
+
+// Component lists of flexible/unknown quantity with equal width items.
+// To achieve wrapping, we can use the auto-fit or auto-fill keywords.
+// auto-fill inserts empty columns to end of line if necessary
+// auto-fit also inserts empty columns but collapses them so they don’t take up space then allocates their space to the items.
+// See https://css-tricks.com/auto-sizing-columns-css-grid-auto-fill-vs-auto-fit/
+
+
+
+
+// Create a grid that shows two across on narrow screens
+// but on wider screens, auto-fits columns and rows (inserts empty columns to end of line if necessary)
+// and never lets items get too wide, by virtue of using a vw-based column-gap
+// Ref: https://www.sarasoueidan.com/work/
+// Note: should test/decide whether grid or flexbox is best here
+
+.flexible-list-component {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 15vw;
+}
+
+@media (min-width: 50em) {
+  .flexible-list-component {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 7em 7vw;
+
+    & > * {
+      //outline: 1px solid red;
+    }
+  }
+
+}
+
+
+
+// A flexible grid suited to items that can be narrow.
+// It increases the minimum width of items beyond a breakpoint.
+
+.another-flexible-list-component {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    grid-gap: 3em;
+}
+
+@media (min-width: 56.25em) {
+  .another-flexible-list-component {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  }
+}
+*/

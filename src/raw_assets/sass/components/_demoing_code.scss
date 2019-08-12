@@ -1,0 +1,48 @@
+// start with basic inline code element i.e. could appear within the running text of a paragraph or heading
+// Note: using ems so that any tweaked font-size scales up whether in a <p> or <h1>
+// Note 2: nice style treatments could be:
+// - bold and coloured per https://andy-bell.design/wrote/keep-it-simple/; or
+// - regular, normal-coloured, on coloured background like on https://css-tricks.com/what-if-we-got-aspect-ratio-sized-images-by-doing-almost-nothing/
+
+code, pre {
+  color: #000;
+  background: 0 0;
+  text-shadow: 0 1px #fff;
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace, monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  font-variant-ligatures: none;
+  word-wrap: normal;
+  tab-size: 4;
+  hyphens: none;
+}
+
+code {
+  background: #f6f3f2;
+  color: #333;
+  display: inline-block;
+  font-size: scale-value(-1)+rem;
+  font-feature-settings: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding: 0 .275em;
+}
+
+pre {
+  background: #f5f2f0;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  min-width: 250px;
+  max-width: 100vw;
+  overflow: auto;
+  padding: 1em;
+  resize: both;
+}
+
+pre code {
+  color: #000;
+  background: 0 0;
+  text-shadow: 0 1px #fff;
+}
