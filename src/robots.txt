@@ -1,0 +1,4 @@
+# Starting point: Apply to all robots: do not visit any pages on the site.
+# Later, when ready to launch, could remove Disallow: /, or replace with any directories (say, /cms/) we want robots not to visit.
+User-agent: *
+Disallow: /
