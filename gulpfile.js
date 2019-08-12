@@ -20,25 +20,29 @@ var settings = {
 
 var paths = {
 	input: 'src/raw_assets',
-	output: 'dist/assets',
+	output: 'src/assets',
 	scripts: {
 		input: 'src/raw_assets/js/*',
 		polyfills: '.polyfill.js',
-		output: 'dist/assets/js/'
+		output: 'src/assets/js/'
 	},
 	styles: {
 		input: 'src/raw_assets/sass/**/*.{scss,sass}',
-		output: 'dist/assets/css/'
+		output: 'src/assets/css/'
 	},
 	svgs: {
 		input: 'src/raw_assets/svg/*.svg',
-		output: 'dist/assets/svg/'
+		output: 'src/assets/svg/'
 	},
 	copy: {
 		input: 'src/raw_assets/copy/**/*',
-		output: 'dist/assets/'
+		output: 'src/assets/'
 	},
-	reload: 'dist/'
+  clean: {
+    output1: 'dist/assets',
+    output2: 'src/assets',
+  },
+	reload: 'src/'
 };
 
 
@@ -111,7 +115,8 @@ var cleanDist = function (done) {
 
 	// Clean the dist folder
   del.sync([
-		paths.output
+		paths.clean.output1,
+    paths.clean.output2
 	]);
 
 	// Signal completion

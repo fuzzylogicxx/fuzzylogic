@@ -17,6 +17,7 @@ module.exports = (function(eleventyConfig) {
   eleventyConfig.setUseGitIgnore(false);
 
   // Copy (without processing) the following directories and file types to the compiled site folder
+  eleventyConfig.addPassthroughCopy('src/assets');
   eleventyConfig.addPassthroughCopy('src/favicon.ico');
   eleventyConfig.addPassthroughCopy('src/site.webmanifest');
   eleventyConfig.addPassthroughCopy('src/safari-pinned-tab.svg');
