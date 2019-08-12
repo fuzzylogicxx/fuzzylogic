@@ -20,25 +20,25 @@ var settings = {
 
 var paths = {
 	input: 'src/raw_assets',
-	output: 'src/assets',
+	output: 'dist/assets',
 	scripts: {
 		input: 'src/raw_assets/js/*',
 		polyfills: '.polyfill.js',
-		output: 'src/assets/js/'
+		output: 'dist/assets/js/'
 	},
 	styles: {
 		input: 'src/raw_assets/sass/**/*.{scss,sass}',
-		output: 'src/assets/css/'
+		output: 'dist/assets/css/'
 	},
 	svgs: {
 		input: 'src/raw_assets/svg/*.svg',
-		output: 'src/assets/svg/'
+		output: 'dist/assets/svg/'
 	},
 	copy: {
 		input: 'src/raw_assets/copy/**/*',
-		output: 'src/assets/'
+		output: 'dist/assets/'
 	},
-	reload: 'src/'
+	reload: 'dist/'
 };
 
 
@@ -112,8 +112,6 @@ var cleanDist = function (done) {
 	// Clean the dist folder
   del.sync([
 		paths.output
-    // and also delete the layout file which contains references to static assets because we’re updating static asset filenames to bust browser caches.
-    //,paths.copy.outputLayoutCacheBust
 	]);
 
 	// Signal completion
