@@ -1,13 +1,10 @@
 {
-  "name": "fuzzylogic",
+  "name": "fuzzylogic.me",
   "version": "1.0.0",
-  "description": "",
+  "description": "fuzzylogic.me is the personal website of Laurence Hughes",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1", 
+    "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npx eleventy",
     "serve": "npx eleventy --serve",
     "debug": "DEBUG=* npx eleventy"
@@ -20,9 +17,24 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@11ty/eleventy": "^0.8.3"
+    "@11ty/eleventy": "^0.8.3",
+    "del": "^5.0.0",
+    "file-size": "^1.0.0",
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssnano": "^2.1.3",
+    "gulp-file-include": "^2.1.0",
+    "gulp-flatmap": "^1.0.2",
+    "gulp-header": "^2.0.9",
+    "gulp-jshint": "^2.1.0",
+    "gulp-optimize-js": "^1.1.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-svgmin": "^2.2.0",
+    "gulp-terser": "^1.2.0",
+    "jshint": "^2.10.2",
+    "jshint-stylish": "^2.2.1",
+    "lazypipe": "^1.0.2"
   },
-  "dependencies": {
-    "file-size": "^1.0.0"
-  }
+  "dependencies": {}
 }
