@@ -9,7 +9,7 @@ var settings = {
 	polyfills: true,
 	styles: true,
 	svgs: true,
-	copy: false,
+	copy: true,
 	reload: false
 };
 
@@ -19,27 +19,26 @@ var settings = {
  */
 
 var paths = {
-	input: 'src/assets',
-	output: 'dist/assets',
+	input: 'src/raw_assets',
+	output: 'src/assets',
 	scripts: {
-		input: 'src/js/*',
+		input: 'src/raw_assets/js/*',
 		polyfills: '.polyfill.js',
-		output: 'dist/assets/js/'
+		output: 'src/assets/js/'
 	},
 	styles: {
-		input: 'src/sass/**/*.{scss,sass}',
-		output: 'dist/assets/css/'
+		input: 'src/raw_assets/sass/**/*.{scss,sass}',
+		output: 'src/assets/css/'
 	},
 	svgs: {
-		input: 'src/svg/*.svg',
-		output: 'dist/assets/svg/'
+		input: 'src/raw_assets/svg/*.svg',
+		output: 'src/assets/svg/'
 	},
 	copy: {
-		input: 'src/copy/**/*',
-    inputHTML: 'src/copy/**/*.html',
-		output: 'dist/'
+		input: 'src/raw_assets/assets/copy/**/*',
+		output: 'src/assets/'
 	},
-	reload: 'dist/'
+	reload: 'src/'
 };
 
 
@@ -250,26 +249,38 @@ var buildSVGs = function (done) {
 
 };
 
+// // Copy static files into output folder
+// var copyFiles = function (done) {
+
+// 	// Make sure this feature is activated before running
+// 	if (!settings.copy) return done();
+
+// 	// Copy everything except HTML files
+//   src([paths.copy.input, '!'+paths.copy.inputHTML])
+// 		.pipe(dest(paths.copy.output));
+
+//   // Copy only HTML files, replacing @@placeholders with real global "includes" e.g. header.html
+//   src(paths.copy.inputHTML)
+//     .pipe(fileinclude({
+//       prefix: '@@',
+//       basepath: '@file'
+//     }))
+//     .pipe(dest(paths.copy.output));
+
+// 	// Signal completion
+// 	done();
+
+// };
+
 // Copy static files into output folder
 var copyFiles = function (done) {
 
 	// Make sure this feature is activated before running
 	if (!settings.copy) return done();
 
-	// Copy everything except HTML files
-  src([paths.copy.input, '!'+paths.copy.inputHTML])
+	// Copy static files
+	return src(paths.copy.input)
 		.pipe(dest(paths.copy.output));
-
-  // Copy only HTML files, replacing @@placeholders with real global "includes" e.g. header.html
-  src(paths.copy.inputHTML)
-    .pipe(fileinclude({
-      prefix: '@@',
-      basepath: '@file'
-    }))
-    .pipe(dest(paths.copy.output));
-
-	// Signal completion
-	done();
 
 };
 
