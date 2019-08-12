@@ -14,14 +14,20 @@ module.exports = (function(eleventyConfig) {
   return "";
  });
 
+ //
+ eleventyConfig.setUseGitIgnore(false);
+
+    
 
 
+  // Copy (without processing) the `assets` directory to the compiled site folder
+  eleventyConfig.addPassthroughCopy('src/assets');
 
  // Copy the `img/` directory 
- eleventyConfig.addPassthroughCopy("src/img");
+ //eleventyConfig.addPassthroughCopy("src/img");
   
  // Copy the `css/` directory
- eleventyConfig.addPassthroughCopy("src/css");
+ //eleventyConfig.addPassthroughCopy("src/css");
 
  // If you use a subdirectory, it’ll copy using the same directory structure.
  //eleventyConfig.addPassthroughCopy("css/fonts");
