@@ -15,5 +15,7 @@ db/*
 
 
 
-_site/*
 dist/*
+src/assets
+
+
