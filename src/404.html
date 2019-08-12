@@ -1,16 +1,51 @@
 ---
-title: Oops! Not Found
+title: Oops! Page Not Found
 permalink: 404.html
 ---
 <!doctype html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ title }}</title>
-  </head>
-  <body>
+    <title>Page Not Found</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+        html {
+            display: table;
+            height: 100%;
+            text-align: center;
+            width: 100%;
+        }
+
+        body {
+            display: table-cell;
+            vertical-align: middle;
+            margin: 2em auto;
+        }
+
+        p {
+            margin: 0 auto;
+            width: 280px;
+        }
+
+        @media only screen and (max-width: 280px) {
+
+            body, p {
+                width: 95%;
+            }
+
+            h1 {
+                font-size: 1.5em;
+                margin: 0 0 0.3em;
+            }
+
+        }
+
+    </style>
+</head>
+<body>
     <h1>{{ title }}</h1>
-    <p>This is where you should tell the user how to find their content. Maybe on the <a href="{{ "/" | url }}">home page?</a></p>
-  </body>
+    <p>Sorry, but the page you were trying to view does not exist. To get you back on track, try the <a href="/sitemap">site map</a> or <a href="/">Homepage</a>.</p>
+</body>
 </html>
+<!-- IE needs 512+ bytes: https://blogs.msdn.microsoft.com/ieinternals/2010/08/18/friendly-http-error-pages/ -->
