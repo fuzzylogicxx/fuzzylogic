@@ -161,72 +161,105 @@ $space-l: scale-value(3)+rem;
 
 
 
-///////////////////////////////////
+///////////////////////////////////////
 // Spacing and Rhythm
-///////////////////////////////////
+///////////////////////////////////////
 
-// Add space “between relationships” not "to elements". so as to: reduce code, make styling more flexible, make spacing even by not leaving space “hanging” causing doubles/conflicts.
-// By using i) margin-top; ii) only on * + * items; and iii) padding the container, this also removes the need for overflow: auto to show coloured backgrounds.
-// Ref: Heydon Pickering and Andy Bell
-// https://24ways.org/2018/managing-flow-and-rhythm-with-css-custom-properties/
-// http://alistapart.com/article/axiomatic-css-and-lobotomized-owls/
+// Purpose: spacing: create space between relationships i.e. when elem1 is followed by elem2, insert a space above elem2 to separate them.
 
 :root {
-  // It’d be interesting to try an em-based default so that spacing of child elements in components scales proprortionately to each element’s font-size.
-  // This might result in more adaptable components, in the context of a design system.
-  // And could always override flow-space with a rem value in a local element, if/when want to, to make spacing between elements uniform.
-  // One to experiment with. See Andy Bell’s usage for ref.
   --flow-space: 1em;
 }
 
-@mixin stack() {
-  & > * + * {
-    margin-top: 1rem;
-    margin-top: var(--flow-space);
+// As Sass mixin, so we can include a custom version on demand
+
+@mixin stack($flow-space: 1em, $recursive: false, $nthchild-index-to-split-after: false) {
+  --flow-space: #{$flow-space};
+
+  @if $nthchild-index-to-split-after {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
   }
+
+  @if $recursive {
+
+    & > * {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    & * + * {
+      margin-top: 1em;
+      margin-top: var(--flow-space);
+    }
+
+  } @else {
+
+    & > * {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    & > * + * {
+      margin-top: 1em;
+      margin-top: var(--flow-space);
+    }
+
+  }
+
+  @if $nthchild-index-to-split-after {
+    & > :nth-child($nthchild-index-to-split-after) {
+      margin-bottom: auto;
+    }
+  }
+
 }
 
-// Recursive Stack: use sparingly; only when we know exactly what the inner content will be
-@mixin stack_recursive() {
-  & * + * {
-    margin-top: 1rem;
-    margin-top: var(--flow-space);
-  }
+// Default stack
+
+.stack {
+  @include stack();
 }
 
-.stack,
-main,
-.container,
 .prose,
-.entry-header,
-.entry-content,
-form,
-.a11y-modal > * {
+.e-content {
   @include stack();
 }
 
-.stack-recursive {
-  @include stack_recursive();
-}
+// Nested, non-recursive stacks
+// Often we want stacks within the nest to use different spacing from their parents/children.
+// This requires additional override rules at the *+* level.
 
-$flow-space-compact: (scale-value(-6));
-
-.stack-compact {
-  --flow-space: #{$flow-space-compact}rem;
+[class^='stack-in-nest'] {
   @include stack();
 }
 
-$flow-space-spacious: scale-value(3);
+.stack-in-nest-large > * + * {
+  --flow-space: 3rem;
+}
 
-.stack-spacious,
-.global-footer {
-  --flow-space: #{$flow-space-spacious}rem;
+.stack-in-nest-small > * + * {
+  --flow-space: 1em;
+}
+
+// Blog Post List: nest of h-feed, .prose and .e-content stacks.
+
+.h-feed {
   @include stack();
 }
 
-.stack-deactivate > * {
-  margin-top: 0;
+.h-feed > * + * {
+  --flow-space: 3rem;
 }
+
+.prose > * + *,
+.e-content > * + * {
+  --flow-space: 1em;
+}
+
+
+
 
 
 
@@ -442,13 +475,6 @@ h2,
 .prose h2 + * {
   --flow-space: #{scale-value(-3)}rem;
 }
-
-/*
-.skip-custom-heading-spacing h3 + *,
-.skip-custom-heading-spacing h2 + * {
-  --flow-space: 1rem;
-}
-*/
 
 h1 {
   color: $color-accent;

@@ -28,7 +28,8 @@
 @import "components/content_slider.scss";
 @import "components/cookieconsent2_3.1.0.min.scss";
 
-
+// Minimum required utility classes
+@import "components/helpers.scss";
 
 
 ///////////////////////////////////
@@ -38,10 +39,10 @@
 // Intro
 
 .intro {
-  --flow-space: #{scale-value(2)}rem;
   background: linear-gradient($color-accent, $color-accent) no-repeat bottom left/2.4em 0.2ch;
+
+  @include stack(scale-value(2)+rem);
   padding-bottom: 3rem;
-  margin-bottom: 3rem;
 
   h1 {
     font-weight: 400;
@@ -73,7 +74,7 @@
 
 // Blog stuff
 
-.entry-meta {
+/*.entry-meta {
   color: #999;
 
   a {
@@ -83,21 +84,25 @@
 }
 
 .published { //.dt-published
-  //color: gray;
+  color: gray;
 }
 
 .entry-meta .posted-on::before {
   content: " · ";
-}
+}*/
 
-/*.hentry > * + * {
-  //margin-top: scale-value(-5)+rem;
-  //margin-top: var(--flow-space);
+/*.h-entry > * + * {
+  --flow-space: 1rem;
+  margin-top: var(--flow-space);
 }*/
 
 // Posts in List
 
-.home-feed-wrap {
+/*.home-feed-wrap {
+  margin-top: 3rem;
+}*/
+
+/*.home-feed-wrap {
   max-width: 45rem;
 }
 
@@ -135,7 +140,7 @@
 .hentry footer {
   display: block;
   text-align: right;
-}
+}*/
 
 
 
@@ -266,10 +271,11 @@
 /////////////////
 
 .global-footer {
+  font-size: scale-value(-1)+rem;
   background: $text-color;
   color: #fff;
-  padding-top: var(--flow-space);
-  padding-bottom: var(--flow-space);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 
   a {
     color: #fff;
@@ -278,6 +284,10 @@
     &:hover {
       text-decoration: underline;
     }
+  }
+
+  & > * {
+    @include stack();
   }
 }
 
@@ -292,10 +302,10 @@
   }
 
   li {
-    font-size: scale-value(-1)+rem;
+    //font-size: scale-value(-1)+rem;
   }
   li + li {
-    margin-top: scale-value(-6)+rem;
+    //margin-top: scale-value(-6)+rem;
   }
 }
 
@@ -318,6 +328,12 @@
   &.with-header-banner {
     padding-top: 0;
   }
+
+  // Page-specific element spacing within the <main> element
+  .page-home & {
+    @include stack(3rem);
+  }
+
 }
 
 
