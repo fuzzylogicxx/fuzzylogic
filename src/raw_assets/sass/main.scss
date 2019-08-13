@@ -41,8 +41,12 @@
 .intro {
   background: linear-gradient($color-accent, $color-accent) no-repeat bottom left/2.4em 0.2ch;
 
-  @include stack(scale-value(2)+rem);
-  padding-bottom: 3rem;
+  @include stack();
+  & > * + * {
+    --flow-space: #{scale-value(2)}rem;
+  }
+
+  padding-bottom: scale-value(4)+rem;
 
   h1 {
     font-weight: 400;
@@ -74,6 +78,38 @@
 
 // Blog stuff
 
+.h-entry header {
+  @include stack();
+  position: relative;
+}
+
+.h-entry header > * + * {
+  --flow-space: #{scale-value(-6)}rem;
+}
+
+.entry-meta {
+  //text-transform: uppercase;
+  font-size: scale-value(-1)+rem;
+  color: #999;
+
+  a {
+    color: #999;
+  }
+
+  /*@include at-least($bp-wide-two) {
+    position: absolute;
+    left: -10rem;
+    top: 0;
+    text-align: right;
+  }*/
+}
+
+/*.dt-published {
+  @include at-least($bp-wide-two) {
+    display: block;
+  }
+}*/
+
 /*.entry-meta {
   color: #999;
 
@@ -97,6 +133,14 @@
 }*/
 
 // Posts in List
+
+.feed-entry-title {
+  font-size: (scale-value(-2) + scale-value(-3))+rem;
+  @include at-least($bp-wide-two) {
+    //font-size: scale-value(2)+rem;
+    font-size: (scale-value(1) + scale-value(-5))+rem;
+  }
+}
 
 /*.home-feed-wrap {
   margin-top: 3rem;
@@ -279,6 +323,9 @@
 
   a {
     color: #fff;
+  }
+
+  li a {
     text-decoration: none;
 
     &:hover {
@@ -331,7 +378,7 @@
 
   // Page-specific element spacing within the <main> element
   .page-home & {
-    @include stack(3rem);
+    @include stack(4rem);
   }
 
 }

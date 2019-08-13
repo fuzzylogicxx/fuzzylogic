@@ -14,23 +14,23 @@ bodyClass: page-home
 
   <section class="intro prose">
 
-    <h1>Hi! I’m Laurence Hughes, a <span class="nobreak">web developer</span> from Glasgow.</h1>
+    <h1>Hi, I’m Laurence Hughes, a <span class="nobreak">web developer</span> from Glasgow.</h1>
 
-    <p class="no-hyphens">I work on the front-end, creating responsive web apps and pattern libraries which balance design, technology and accessibility. In my spare time I make music, play  records and ping pongs. Fuzzy Logic is my online home, where I try out web stuff and ramble about code, music and more.</p>
+    <p class="no-hyphens">I’m a front-end developer, creating responsive web apps and pattern libraries which balance design, technology and accessibility. In my spare time I make music, play  records and ping pongs. Fuzzy Logic is my online home, where I try out web stuff and ramble about code, music and more.</p>
 
   </section>
 
 </div>
 
-<div class="centre">
+<div class="centre-with-gutter">
 
   <section class="home-feed-wrap h-feed centre">
 
     {% for post in posts %}
       <article class="h-entry prose">
         <header>
-          <h3 class="entry-title"><a rel="bookmark" class="p-name u-url" href="{{ post.url | url }}">{{ post.data.pageTitle }}</a></h3>
-          <p class="dt-published">{{ post.date | date: "%A, %b %d, %Y" }} in <a class="p-category" href="/">Thoughts</a></p>
+          <h3 class="feed-entry-title"><a rel="bookmark" class="p-name u-url" href="{{ post.url | url }}">{{ post.data.pageTitle }}</a></h3>
+          <p class="entry-meta"><span class="dt-published">{{ post.date | date: "%A, %b %d, %Y" }}</span> in <a class="p-category" href="/">Thoughts</a></p>
         </header>
         <div class="e-content">
           {{ post.templateContent }}
