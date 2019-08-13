@@ -39,16 +39,9 @@
 
 .intro {
   --flow-space: #{scale-value(2)}rem;
-  border: 1px solid red;
-
-  @include at-least($bp-wide-one) {
-    padding-top: $space-l;
-    padding-bottom: $space-l;
-  }
-  /*@include at-least($bp-wide-four) {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-  }*/
+  background: linear-gradient($color-accent, $color-accent) no-repeat bottom left/2.4em 0.2ch;
+  padding-bottom: 3rem;
+  margin-bottom: 3rem;
 
   h1 {
     font-weight: 400;
@@ -61,6 +54,7 @@
     }
   }
 }
+
 
 // Header Banners
 
@@ -95,6 +89,113 @@
 .entry-meta .posted-on::before {
   content: " · ";
 }
+
+/*.hentry > * + * {
+  //margin-top: scale-value(-5)+rem;
+  //margin-top: var(--flow-space);
+}*/
+
+// Posts in List
+
+.home-feed-wrap {
+  max-width: 45rem;
+}
+
+.hfeed, .hentry {
+  max-width: none;
+}
+
+.hentry {
+  overflow: hidden;
+}
+
+.hentry > * {
+  display: flex;
+  flex-wrap: wrap;
+  margin: calc(1rem / 2 * -1); // instead of var(--s1) I’ve just inserted 1rem for now.
+}
+
+.hentry > * > * {
+  flex-basis: 10rem;
+  flex-grow: 1;
+  margin: calc(1rem / 2);
+}
+
+.hentry > * > :last-child {
+  order: 1;
+}
+
+.hentry > * > :first-child {
+  order: 2;
+  flex-basis: 0;
+  flex-grow: 999;
+  min-width: calc(70% - 1rem);
+}
+
+.hentry footer {
+  display: block;
+  text-align: right;
+}
+
+
+
+/*.with-sidebar-on-left > * > :last-child {
+  flex-basis: 0;
+  flex-grow: 999;
+  min-width: calc(50% - 1rem);
+}*/
+
+/*.hentry > * > :last-child {
+  flex-basis: 0;
+  flex-grow: 999;
+  min-width: calc(50% - 0px);
+}*/
+
+
+/*.with-sidebar-blog-layout > *,
+.with-sidebar-media-object > * {
+  margin: calc(1rem / 2 * -1); // instead of var(--s1) I’ve just inserted 1rem for now.
+}
+
+.with-sidebar > * > * {
+  margin: calc(0px / 2);
+  flex-grow: 1;
+}
+
+.with-sidebar-blog-layout > * > * {
+  margin: calc(1rem / 2);
+  flex-basis: 20rem;
+}
+
+.with-sidebar-media-object > * > * {
+  margin: calc(1rem / 2);
+  flex-basis: 15rem;
+}
+
+.with-sidebar-on-left > * > :last-child {
+  flex-basis: 0;
+  flex-grow: 999;
+  min-width: calc(50% - 0px);
+}
+
+.with-sidebar-on-right > * > :first-child {
+  flex-basis: 0;
+  flex-grow: 999;
+  min-width: calc(50% - 0px);
+}
+
+.with-sidebar-blog-layout.with-sidebar-on-left > * > :last-child,
+.with-sidebar-media-object.with-sidebar-on-left > * > :last-child {
+  min-width: calc(50% - 1rem);
+}
+
+.with-sidebar-blog-layout.with-sidebar-on-right > * > :first-child,
+.with-sidebar-media-object.with-sidebar-on-right > * > :first-child {
+  min-width: calc(50% - 1rem);
+}*/
+
+
+
 
 
 
@@ -210,6 +311,9 @@
 .primary-content {
   padding-top: $space-l;
   padding-bottom: 3rem;
+  @include at-least($width-pressure-point-one) {
+    padding-bottom: 6rem;
+  }
 
   &.with-header-banner {
     padding-top: 0;

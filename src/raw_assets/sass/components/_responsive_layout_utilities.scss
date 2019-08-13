@@ -63,7 +63,7 @@
   box-sizing: content-box;
   margin-left: auto;
   margin-right: auto;
-  max-width: $text-measure-max-in-ems+rem;
+  max-width: var(--measure); //$text-measure-max-in-ems+rem;
   padding-left: $space-s;
   padding-right: $space-s;
 }
@@ -208,8 +208,7 @@
 }
 
 .with-sidebar-blog-layout.with-sidebar-on-left > * > :last-child,
-.with-sidebar-media-object.with-sidebar-on-left > * > :last-child
- {
+.with-sidebar-media-object.with-sidebar-on-left > * > :last-child {
   min-width: calc(50% - 1rem);
 }
 

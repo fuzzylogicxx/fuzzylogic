@@ -205,7 +205,11 @@ form,
   @include stack();
 }
 
-$flow-space-compact: ($body-line-height-min/2);
+.stack-recursive {
+  @include stack_recursive();
+}
+
+$flow-space-compact: (scale-value(-6));
 
 .stack-compact {
   --flow-space: #{$flow-space-compact}rem;
@@ -419,7 +423,8 @@ h3 {
   line-height: scale-value(1);
 }
 
-h2 {
+h2,
+.h2 {
 
   // Within flowing prose, increase the margin preceding h2s.
   .prose & {
