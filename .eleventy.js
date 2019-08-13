@@ -31,12 +31,14 @@ module.exports = (function(eleventyConfig) {
       "liquid",
       "md",
       "njk",
-      // Now list any non-11ty-recognized-template-extensions, and files of these types will just be copied directly through to /dist. Feels a bit hacky but documentation advocates it!
+      // Now list any non-11ty-recognized template extensions, and files of those types will just be copied directly through to /dist. Feels a bit hacky but documentation advocates it!
       "png"
     ],
     dir: {
       input: 'src',
-      output: 'dist'
+      output: 'dist',
+      includes: "_includes",
+      layouts: "_layouts"
     }
   }
 

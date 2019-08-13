@@ -1,4 +1,4 @@
 {
-    "layout": "layout.liquid", 
-    "tags": ["posts"]
+    "layout": "blog_article_layout.liquid",
+    "tags": ["post"]
 }

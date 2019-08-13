@@ -1,0 +1,45 @@
+---
+layout: single_column_layout.liquid
+myOtherData: hello
+---
+
+<div class="container">
+
+  <article class="h-entry prose centre" itemtype="http://schema.org/BlogPosting">
+
+    <header class="entry-header">
+      <h1 class="p-name" itemprop="headline">{{ pageTitle }}</h1>
+      <div class="entry-meta">
+        <span class="byline"> by
+          <span class="author vcard" itemprop="author" itemscope="" itemtype="http://schema.org/Person"><a class="url fn n" href="https://alistapart.com/author/larahogan/" itemprop="url"><span itemprop="name">Laurence Hughes</span></a></span>
+        </span>
+        <span class="posted-on">
+          <time class="dt-published" datetime="2019-06-06T09:30:51-04:00" itemprop="dateCreated pubdate datePublished">June 06, 2019</time>
+        </span>
+      </div> <!-- .entry-meta -->
+    </header>
+
+    <div class="e-content" itemprop="articleBody">
+
+      {{ content | safe }}
+
+    </div> <!-- /.e-content -->
+
+    <footer class="box">
+
+      <div class="cluster">
+        <ul class="tags">
+          <li><a rel="tag" style="display: inline-block; padding: 1rem; border: 1px solid;" href="#">Layout</a></li>
+          <li><a rel="tag" style="display: inline-block; padding: 1rem; border: 1px solid;" href="#">CSS</a></li>
+          <li><a rel="tag" style="display: inline-block; padding: 1rem; border: 1px solid;" href="#">Web Design</a></li>
+          <li><a rel="tag" style="display: inline-block; padding: 1rem; border: 1px solid;" href="#">Code</a></li>
+          <li><a rel="tag" style="display: inline-block; padding: 1rem; border: 1px solid;" href="#">Front-end</a></li>
+          <li><a rel="tag" style="display: inline-block; padding: 1rem; border: 1px solid;" href="#">Development</a></li>
+        </ul>
+      </div>
+
+    </footer>
+
+  </article>
+
+</div> <!-- /.container -->
