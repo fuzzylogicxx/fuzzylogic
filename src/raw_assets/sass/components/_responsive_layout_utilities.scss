@@ -58,33 +58,32 @@
 
 // Purpose: horizontal centring (as a composable unit)
 // Create a horizontally centered column, capping its width at a reasonable measure.
-// Optionally include gutter so that in narrower contexts the centred column is not cramped flush against its parent’s sides.
+// Options:
+// - include gutter so that in narrower contexts the centred column is not cramped flush against its parent’s sides.
+// - text centring
+// - intrinsic centring: centres the elements within the centred column based on their natural, content-based widths. Good for small buttons, or elements with own max-width under our max. measure.
+
 // Set box-sizing such that any included gutter does not make the element’s width narrower.
 
-@mixin centre() {
+@mixin centre($with-gutter: false, $with-centred-text: false, $with-intrinsic-centring: false) {
   box-sizing: content-box;
   margin-left: auto;
   margin-right: auto;
   max-width: var(--measure); //$text-measure-max-in-ems+rem;
-  padding-left: $space-s;
-  padding-right: $space-s;
-}
-
-@mixin centre-no-gutter() {
-  padding-left: 0;
-  padding-right: 0;
-}
-
-@mixin centre-with-centred-text() {
-  text-align: center;
-}
-
-@mixin centre-with-centre-intrinsic() {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-left: 0;
-  padding-right: 0;
+  @if $with-gutter {
+    padding-left: $space-s;
+    padding-right: $space-s;
+  }
+  @if $with-centred-text {
+    text-align: center;
+  }
+  @if $with-intrinsic-centring {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 // Apply and re-use the styles via the above mixins, or by adding the following classes directly to HTML elements.
@@ -93,20 +92,16 @@
   @include centre();
 }
 
-.centre.centre-no-gutter {
-  @include centre-no-gutter();
+.centre-with-gutter {
+  @include centre(true);
 }
 
-.centre.centre-with-centred-text {
-  @include centre-with-centred-text();
+.centre-with-centred-text {
+  @include centre(true, false);
 }
 
-// .centre-intrinsic
-// Purpose: builds on .centre, going further by also centring the elements within the centred column based on their natural, content-based widths.
-// Useful for naturally small elements like buttons, or elements with their own max-width set under our max. measure.
-
-.centre.centre-intrinsic {
-  @include centre-with-centre-intrinsic();
+.centre-with-intrinsic-centring {
+  @include centre(true, false, true);
 }
 
 
@@ -114,7 +109,7 @@
 // I could have created dedicated styles but instead I’m creating an instance of .centre (slightly customised) so as to inherit .centre’s goodness.
 
 .container {
-  @include centre();
+  @include centre(true);
 
   // set a generous but sensible final max-width (something bigger than just our text measure (.centre’s default max-width)
   // But intervene with media queries on the way up to that final max-width to avoid too-wide content / too narrow gutters on narrower resolutions.

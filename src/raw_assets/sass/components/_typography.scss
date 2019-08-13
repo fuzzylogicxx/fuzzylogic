@@ -228,7 +228,7 @@ $space-l: scale-value(3)+rem;
 }
 
 // Nested, non-recursive stacks
-// Often we want stacks within the nest to use different spacing from their parents/children.
+// Often we want the stacks within the nest to use different spacing from their parents/children.
 // This requires additional override rules at the *+* level.
 
 [class^='stack-in-nest'] {
@@ -257,9 +257,6 @@ $space-l: scale-value(3)+rem;
 .e-content > * + * {
   --flow-space: 1em;
 }
-
-
-
 
 
 
@@ -322,6 +319,7 @@ body {
 a {
   color: $color-accent;
   text-decoration: underline solid lighten($color-accent, 25%);
+  text-decoration-skip-ink: auto;
 }
 
 a:hover {
