@@ -6,38 +6,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="author" content="Laurence Hughes">
 
-  <title>Sofrito – a front-end base for web developers.</title>
-  <meta name="description" content="Sofrito is a front-end boilerplate with tasty typographic, layout, performance and build ingredients.">
-
-  <meta name="keywords" content="front-end, frontend, boilerplate, front-end boilerplate, web typography, grid layout, flexbox, cssgrid, a11y, accessibility, performance" />
+  <title>{{ title }} | Fuzzy Logic</title>
+  <meta name="description" content="{{ metaDescription }}">
+  <meta name="keywords" content="front-end, frontend, front-end developer, web developer, web developer glasgow, html, css, javascript, vanilla javascript, accessibility, sofrito" />
 
   <!-- Avoid Google’s "duplicate content" penalties -->
-  <link rel="canonical" href="https://fuzzylogicxx.github.io/sofrito/" />
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
 
   <!-- Meta robots default for staging sites: block everything. -->
   <!-- When production-ready, update per page as appropriate. -->
-  <!-- Favour quality over quantity. We may want articles indexed but perhaps not listing pages. -->
+  <!-- Favour quality over quantity. We may want articles indexed but perhaps not listing pages. Instead they might want noindex, follow -->
   <meta name="robots" content="noindex, nofollow">
 
   <!-- OG (Open Graph) tags -->
-  <!-- Change og:type as appropriate to page type -->
-  <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="Sofrito" />
-  <meta property="og:locale" content="en_gb" />
-  <meta property="og:url" content="https://fuzzylogicxx.github.io/sofrito/" />
-  <meta property="og:title" content="Sofrito – a front-end base for web developers." />
-  <meta property="og:description" content="A savoury front-end base with tasty typographic, layout, performance and build ingredients" />
-  <meta property="og:image" content="http://static01.nyt.com/images/2015/02/19/arts/international/19iht-btnumbers19A/19iht-btnumbers19A-facebookJumbo-v2.jpg" />
-  <meta property="og:image:type" content="image/jpg" />
-  <meta property="og:image:width" content="971" />
-  <meta property="og:image:height" content="509" />
+
+  <!-- Most important OG tags -->
+  <meta property="og:title" content="{{ title }}" />
+  <meta property="og:description" content="{{ metaDescription }}" />
+  <meta property="og:image" content="{{ site.url }}{{ ogImagePath }}" />
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+
+  <!-- Extra credit OG tags -->
+  <meta property="og:site_name" content="{{ site.title }}" />
 
   <!-- Twitter -->
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Sofrito – a savoury front-end base" />
-  <meta name="twitter:description" content="A savoury front-end base with tasty typographic, layout, performance and build ingredients" />
-  <!-- ref: https://sproutsocial.com/insights/social-media-image-sizes-guide/#twitter. Min 440 x 220 pixels (a 2:1 ratio). Max: 1024 x 512 -->
-  <meta name="twitter:image" content="https://fuzzylogicxx.github.io/sofrito/assets/img/logo-400x400.png" />
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Extra credit Twitter tags -->
+  <meta name="twitter:image:alt" content="{{ ogImageAlt }}">
 
   <!-- Advice for devices which can 'install' this website on their home scren -->
   <link rel="manifest" href="site.webmanifest">
@@ -164,7 +159,7 @@
   </script>
 
   <!-- Global Styles -->
-  <link rel="stylesheet" href="/assets/css/main_v2.0.0.min.css">
+  <link rel="stylesheet" href="/assets/css/main_v{{ pkg.version}}.min.css">
 
   <!-- Page-Specific Styles -->
   <!-- If any, add here using <style></style> -->
@@ -194,9 +189,9 @@
       <a href="#global-footer">Footer and Navigation</a>
     </nav>
 
-    <!-- using an aria label because there is a menu before this so it‘s not the only menu therefore does not imply that it is primary/"site" -->
     <nav aria-label="site" class="header-menu">
       <ul class="list-custom">
+        <li class="header-menu-hidden"><a aria-current="page" href="/">Home</a></li> <!-- non-devs don’t intuitively know to click the logo, and Obvious Always Wins -->
         <li class="header-menu-hidden"><a href="/guidance.html">Typical Page</a></li>
         <li class="header-menu-hidden"><a href="/blog-index.html">Blog Index</a></li>
         <li class="header-menu-hidden"><a href="/blog-article.html">Blog Article</a></li>
@@ -225,31 +220,54 @@
   {{ content }}
 
   <!-- Footer begins -->
+
   <footer aria-label="site" id="global-footer" class="global-footer">
 
     <div class="container">
 
-      <h3 class="h4">Browse pages and patterns</h3>
+      <div class="global-footer-contents-wrap">
 
-      <nav id="footer-menu">
-        <ul class="list-custom footer-menu-list">
-          <li><a href="guidance.html">Typical Page</a></li>
-          <li><a href="blog-index.html">Blog Index</a></li>
-          <li><a href="blog-article.html">Blog Article</a></li>
-          <li><a href="corporate.html">Corporate</a></li> <!-- use Cl4 inspiration -->
-          <li><a href="form.html">Forms</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="svg.html">SVG</a></li>
-          <li><a href="team.html">The Team</a></li>
-          <li><a href="all.html">Miscellaneous</a></li>
-          <li><a href="test-polyfills.html">Testing</a></li>
-          <li><a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Ffuzzylogicxx.github.io%2Fsofrito%2F">Validate HTML</a></li>
-        </ul>
-      </nav>
+        <div class="cluster footer-menu">
+          <div> <!-- style="justify-content: space-between;" -->
+            <h3>Browse</h3>
+            <div class="cluster">
+            <ul id="footer-menu" class="footer-menu">
+              <li><a href="/">Home</a></li>
+              <li><a href="/thoughts/">Thoughts</a></li>
+              <li><a href="/labs/">Labs</a></li>
+              <li><a href="/sounds/">Sounds</a></li>
+              <li><a href="/bytes/">Bytes</a></li>
+              <li><a href="/links/">Links</a></li>
+            </ul>
+            </div>
+          </div>
+        </div>
 
-      <p>This version (v2) is based on <a href="https://fuzzylogicxx.github.io/sofrito/">Sofrito</a>, statically generated with <a href="https://www.11ty.io/">Eleventy</a>, and hosted on <a href="https://www.netlify.com/">Netlify</a>.</p>
+        <div class="footer-grid">
 
-      <p class="copyright">&copy; 2017–2019 <a href="https://fuzzylogic.me">Laurence Hughes</a></p>
+          <section>
+            <h3>About</h3>
+            <p><a href="https://fuzzylogic.me">Fuzzy Logic</a> is the personal website of Laurence Hughes, a Glasgow-based front-end web developer and producer in <a href="http://nuclearfami.ly">The Nuclear Family</a>.</p>
+            <p>If you’re interested, read more <a href="/about/">about me</a>.</p>
+          </section>
+
+          <section>
+            <h3>Hangouts and contact</h3>
+            <p><em>You’ll find me in da club…</em> increasingly rarely and more likely tweeting on <a rel="me" href="https://twitter.com/fuzzylogicx">Twitter</a>; coding on <a rel="me" href="https://github.com/fuzzylogicxx">Github</a> and <a rel="me" href="https://codepen.io/fuzzylogicx/">CodePen</a>; or <a rel="me" href="https://soundcloud.com/the_nuclear_family">sharing</a> <a rel="me" href="https://soundcloud.com/fuzzylogicx">music</a> on Soundcloud.</p>
+            <p>You can also <a href="mailto:&#108;&#097;&#117;&#114;&#101;&#110;&#099;&#101;&#064;&#102;&#117;&#122;&#122;&#121;&#108;&#111;&#103;&#105;&#099;&#046;&#109;&#101;">send me an email</a>.</p>
+          </section>
+
+          <section>
+            <h3>Colophon</h3>
+            <p>This is v3 of this website: hand-coded with love, made from a base of <a href="https://fuzzylogicxx.github.io/sofrito/">Sofrito</a>, statically generated using <a href="https://www.11ty.io/">Eleventy</a>, and hosted on <a href="https://www.netlify.com/">Netlify</a>.</p>
+            <p>Type is set in Source Sans Pro.</p>
+          </section>
+
+        </div>
+
+        <p class="copyright centre-with-centred-text">&copy; 2017–2019 <a href="https://fuzzylogic.me">Laurence Hughes</a></p>
+
+      </div>
 
     </div>
 
@@ -261,7 +279,7 @@
   <script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
 
   <!-- website’s global javascript file including any globally required polyfills (that aren’t provided by polyfill.io) -->
-  <script src="/assets/js/main.polyfills_v2.0.0.min.js"></script>
+  <script src="/assets/js/main.polyfills_v{{ pkg.version}}.min.js"></script>
 
   <!-- add any page-specific JS here (files or inline) -->
 

@@ -1,6 +1,11 @@
 ---
-pageTitle: Saying bye-bye to autoprefixer
 date: 2019-08-08 09:00:00.00
+pageTitle: Saying bye-bye to autoprefixer
+title: Saying bye-bye to autoprefixer
+permalink: thoughts/saying-bye-bye-to-autoprefixer/index.html
+metaDescription: For a while now I’ve been using gulp-autoprefixer as part of my front-end build system. However, I’ve just removed it from my boilerplate. Here’s why.
+ogImagePath: /assets/img/open_graph_share_example_1200x630.jpg
+ogImageAlt: A photo of a country landscape
 ---
 For a while now I’ve been using gulp-autoprefixer as part of my front-end build system. It’s a means of writing standard CSS then having the system automatically parse the rules and generate any necessary vendor-prefixed versions (such as ::-webkit-input-placeholder).
 
