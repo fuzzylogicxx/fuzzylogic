@@ -25,16 +25,15 @@ myOtherData: hello
 
     </div> <!-- /.e-content -->
 
-    <footer class="box">
+    <footer class="stack">
+
+      <h3>Tagged:</h3>
 
       <div class="cluster">
         <ul class="tags">
-          <li><a rel="tag" style="display: inline-block; padding: 1rem; border: 1px solid;" href="#">Layout</a></li>
-          <li><a rel="tag" style="display: inline-block; padding: 1rem; border: 1px solid;" href="#">CSS</a></li>
-          <li><a rel="tag" style="display: inline-block; padding: 1rem; border: 1px solid;" href="#">Web Design</a></li>
-          <li><a rel="tag" style="display: inline-block; padding: 1rem; border: 1px solid;" href="#">Code</a></li>
-          <li><a rel="tag" style="display: inline-block; padding: 1rem; border: 1px solid;" href="#">Front-end</a></li>
-          <li><a rel="tag" style="display: inline-block; padding: 1rem; border: 1px solid;" href="#">Development</a></li>
+          {% for tag in tags %}
+          <li><a rel="tag" href="#">{{ tag }}</a></li>
+          {% endfor %}
         </ul>
       </div>
 
