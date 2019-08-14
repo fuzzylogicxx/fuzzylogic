@@ -171,7 +171,7 @@ $space-l: scale-value(3)+rem;
   --flow-space: 1em;
 }
 
-// As Sass mixin, so we can include a custom version on demand
+// As Sass mixin, so we can create and include a custom version on demand
 
 @mixin stack($flow-space: 1em, $recursive: false, $nthchild-index-to-split-after: false) {
   --flow-space: #{$flow-space};

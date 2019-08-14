@@ -97,7 +97,7 @@
 }
 
 .centre-with-centred-text {
-  @include centre(true, false);
+  @include centre(true, true);
 }
 
 .centre-with-intrinsic-centring {
