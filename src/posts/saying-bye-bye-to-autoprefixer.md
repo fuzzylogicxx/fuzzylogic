@@ -1,6 +1,7 @@
 ---
 date: 2019-08-08 09:00:00.00
 pageTitle: Saying bye-bye to autoprefixer
+tags: ['post', 'css', 'gulp', 'tools']
 title: Saying bye-bye to autoprefixer
 permalink: thoughts/saying-bye-bye-to-autoprefixer/index.html
 metaDescription: For a while now I’ve been using gulp-autoprefixer as part of my front-end build system. However, I’ve just removed it from my boilerplate. Here’s why.
