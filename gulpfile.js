@@ -243,7 +243,12 @@ var buildSVGs = function (done) {
 
 	// Optimize SVG files
 	src(paths.svgs.input)
-		.pipe(svgmin())
+		.pipe(svgmin({
+      plugins: [{
+        removeViewBox: false
+      }]
+    }
+    ))
 		.pipe(dest(paths.svgs.output));
 
 	// Signal completion
