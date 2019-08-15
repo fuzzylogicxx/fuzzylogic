@@ -173,47 +173,47 @@
 
 </head>
 
-<!-- Header begins -->
-<header id="global-header" class="global-header">
+<body{% if bodyClass %} class="{{ bodyClass }}"{% endif %}>
 
-  <div class="header-content container">
+  <!-- Header begins -->
+  <header id="global-header" class="global-header">
 
-    <a class="logo" href="https://fuzzylogicxx.github.io/sofrito/">
-      <svg width="6em" height="6em" viewBox="0 0 214 214" xmlns="http://www.w3.org/2000/svg"><path fill="#F2F1F0" d="M.432 107.264C.432 48.556 48.027.966 106.728.966c58.71 0 106.304 47.59 106.304 106.298 0 58.713-47.594 106.304-106.304 106.304C48.027 213.568.432 165.977.432 107.264" /><path fill="#343534" d="M148.82 113.583V81.63l27.658 15.981-27.658 15.972zm-3.854-31.953v35.29c0 .687.368 1.325.967 1.668.295.181.626.257.956.257.339 0 .67-.076.968-.257l30.55-17.646.014 34.177-63.058 36.41-.005-72.809 29.608-17.09zm-41.765 7.841L50.39 58.978 79.98 41.89l63.06 36.407-29.605 17.089-10.234-5.915zm6.364 46.756l-27.657 15.974v-31.958l27.657 15.984zm-28.623-20.984a1.947 1.947 0 00-1.924 0 1.95 1.95 0 00-.961 1.673v35.285l-29.604-17.082.007-72.808 63.049 36.409-.014 34.175-30.553-17.652zm103.487-17.635c0-1.468-.78-2.816-2.054-3.548L82.031 36.117a4.115 4.115 0 00-2.051-.544c-.706 0-1.412.178-2.046.544L44.605 55.361a4.089 4.089 0 00-2.169 3.612l-.012 77.257c0 1.46.779 2.819 2.055 3.548l33.455 19.315c.634.362 1.34.542 2.046.542.706 0 1.412-.18 2.051-.542l27.294-15.767.019 31.544a4.086 4.086 0 004.094 4.087c.713 0 1.413-.178 2.051-.543l66.904-38.636a4.107 4.107 0 002.051-3.551l-.015-38.619z" /></svg>
-    </a>
+    <div class="header-content container">
 
-    <nav aria-label="page" id="skip-links" class="skip-links" >
-      <a href="#primary-content">Main content</a>
-      <a href="#global-footer">Footer and Navigation</a>
-    </nav>
+      <a class="logo" href="https://fuzzylogicxx.github.io/sofrito/">
+        <svg width="6em" height="6em" viewBox="0 0 214 214" xmlns="http://www.w3.org/2000/svg"><path fill="#F2F1F0" d="M.432 107.264C.432 48.556 48.027.966 106.728.966c58.71 0 106.304 47.59 106.304 106.298 0 58.713-47.594 106.304-106.304 106.304C48.027 213.568.432 165.977.432 107.264" /><path fill="#343534" d="M148.82 113.583V81.63l27.658 15.981-27.658 15.972zm-3.854-31.953v35.29c0 .687.368 1.325.967 1.668.295.181.626.257.956.257.339 0 .67-.076.968-.257l30.55-17.646.014 34.177-63.058 36.41-.005-72.809 29.608-17.09zm-41.765 7.841L50.39 58.978 79.98 41.89l63.06 36.407-29.605 17.089-10.234-5.915zm6.364 46.756l-27.657 15.974v-31.958l27.657 15.984zm-28.623-20.984a1.947 1.947 0 00-1.924 0 1.95 1.95 0 00-.961 1.673v35.285l-29.604-17.082.007-72.808 63.049 36.409-.014 34.175-30.553-17.652zm103.487-17.635c0-1.468-.78-2.816-2.054-3.548L82.031 36.117a4.115 4.115 0 00-2.051-.544c-.706 0-1.412.178-2.046.544L44.605 55.361a4.089 4.089 0 00-2.169 3.612l-.012 77.257c0 1.46.779 2.819 2.055 3.548l33.455 19.315c.634.362 1.34.542 2.046.542.706 0 1.412-.18 2.051-.542l27.294-15.767.019 31.544a4.086 4.086 0 004.094 4.087c.713 0 1.413-.178 2.051-.543l66.904-38.636a4.107 4.107 0 002.051-3.551l-.015-38.619z" /></svg>
+      </a>
 
-    <nav aria-label="site" class="header-menu">
-      <ul class="list-custom">
-        <li class="header-menu-hidden"><a aria-current="page" href="/">Home</a></li> <!-- non-devs don’t intuitively know to click the logo, and Obvious Always Wins -->
-        <li class="header-menu-hidden"><a href="/guidance.html">Typical Page</a></li>
-        <li class="header-menu-hidden"><a href="/blog-index.html">Blog Index</a></li>
-        <li class="header-menu-hidden"><a href="/blog-article.html">Blog Article</a></li>
-        <li class="header-menu-hidden"><a href="/corporate.html">Corporate</a></li>
-        <li class="header-menu-hidden"><a href="/form.html">Forms</a></li>
-        <li class="header-menu-hidden"><a href="/contact.html">Contact</a></li>
-        <li class="header-menu-hidden"><a href="/svg.html">SVG</a></li>
-        <li class="header-menu-hidden"><a href="/team.html">The Team</a></li>
-        <li class="header-menu-hidden"><a href="/all.html">Miscellaneous</a></li>
-        <li class="header-menu-hidden"><a href="/test-polyfills.html">Testing</a></li>
-        <li class="header-menu-toggle"><a href="#footer-menu">Menu</a></li>
-      </ul>
-    </nav>
+      <nav aria-label="page" id="skip-links" class="skip-links" >
+        <a href="#primary-content">Main content</a>
+        <a href="#global-footer">Footer and Navigation</a>
+      </nav>
 
-    <!-- <a href="https://github.com/fuzzylogicxx/sofrito" class="text-icon-pair">
-      <span>Source Code</span>
-      <svg class="text-icon-pair-icon" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>
-    </a> -->
+      <nav aria-label="site" class="header-menu">
+        <ul class="list-custom">
+          <li class="header-menu-hidden"><a href="/">Home</a></li> <!-- non-devs don’t intuitively know to click the logo, and Obvious Always Wins -->
+          <li><a {% if section == 'thoughts' %}aria-current="page"{% endif %} href="/thoughts/">Thoughts</a></li>
+          <li class="header-menu-hidden"><a href="/blog-index.html">Blog Index</a></li>
+          <li class="header-menu-hidden"><a href="/blog-article.html">Blog Article</a></li>
+          <li class="header-menu-hidden"><a href="/corporate.html">Corporate</a></li>
+          <li class="header-menu-hidden"><a href="/form.html">Forms</a></li>
+          <li class="header-menu-hidden"><a href="/contact.html">Contact</a></li>
+          <li class="header-menu-hidden"><a href="/svg.html">SVG</a></li>
+          <li class="header-menu-hidden"><a href="/team.html">The Team</a></li>
+          <li class="header-menu-hidden"><a href="/all.html">Miscellaneous</a></li>
+          <li class="header-menu-hidden"><a href="/test-polyfills.html">Testing</a></li>
+          <li class="header-menu-toggle"><a href="#footer-menu">Menu</a></li>
+        </ul>
+      </nav>
 
-  </div>
+      <!-- <a href="https://github.com/fuzzylogicxx/sofrito" class="text-icon-pair">
+        <span>Source Code</span>
+        <svg class="text-icon-pair-icon" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>
+      </a> -->
 
-</header>
+    </div>
 
-<body {% if bodyClass %}class="{{ bodyClass }}"{% endif %}>
+  </header>
 
   {{ content }}
 
@@ -251,14 +251,14 @@
 
           <section>
             <h3>Hangouts and contact</h3>
-            <p><em>You’ll find me in da club…</em> increasingly rarely and more likely tweeting on <a rel="me" href="https://twitter.com/fuzzylogicx">Twitter</a>; coding on <a rel="me" href="https://github.com/fuzzylogicxx">Github</a> and <a rel="me" href="https://codepen.io/fuzzylogicx/">CodePen</a>; or <a rel="me" href="https://soundcloud.com/the_nuclear_family">sharing</a> <a rel="me" href="https://soundcloud.com/fuzzylogicx">music</a> on Soundcloud.</p>
+            <p><em>You’ll find me in the club…</em> increasingly rarely and more likely tweeting on <a rel="me" href="https://twitter.com/fuzzylogicx">Twitter</a>; coding on <a rel="me" href="https://github.com/fuzzylogicxx">Github</a> and <a rel="me" href="https://codepen.io/fuzzylogicx/">CodePen</a>; or <a rel="me" href="https://soundcloud.com/the_nuclear_family">sharing</a> <a rel="me" href="https://soundcloud.com/fuzzylogicx">music</a> on Soundcloud.</p>
             <p>You can also <a href="mailto:&#108;&#097;&#117;&#114;&#101;&#110;&#099;&#101;&#064;&#102;&#117;&#122;&#122;&#121;&#108;&#111;&#103;&#105;&#099;&#046;&#109;&#101;">send me an email</a>.</p>
           </section>
 
           <section>
             <h3>Colophon</h3>
-            <p>This is v3 of this website: hand-coded with love, made from a base of <a href="https://fuzzylogicxx.github.io/sofrito/">Sofrito</a>, statically generated using <a href="https://www.11ty.io/">Eleventy</a>, and hosted on <a href="https://www.netlify.com/">Netlify</a>.</p>
-            <p>Type is set in Source Sans Pro.</p>
+            <p>This is Fuzzy Logic v3: a labour of hand-coding love, based on <a href="https://fuzzylogicxx.github.io/sofrito/">Sofrito</a>, statically generated using <a href="https://www.11ty.io/">Eleventy</a>, and hosted on <a href="https://www.netlify.com/">Netlify</a>.</p>
+            <p>Type is set in <a href="https://github.com/adobe-fonts/source-sans-pro">Source Sans Pro</a>.</p>
           </section>
 
         </div>
