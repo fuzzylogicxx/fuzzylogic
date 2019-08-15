@@ -132,21 +132,26 @@
 // Note: requires an inner wrapper with -ve margins. Soon we’ll replace with "gap". But a.t.m. there’s only grid-gap support (none for flex), and cluster can’t be achieved with Grid.
 // Use cases: i) Buttons that appear together at the end of forms; ii) lists of tags, keywords, or other meta information; iii) page header.
 
-.cluster {
-  --space: 1rem;
+@mixin cluster($space: 1rem, $justify-content: flex-start, $align-items: center) {
+  --space: #{$space};
   overflow: hidden;
+
+  & > * {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: $justify-content;
+    align-items: $align-items;
+    margin: calc(var(--space) / 2 * -1);
+  }
+
+  & > * > * {
+    margin: calc(var(--space) / 2);
+  }
+
 }
 
-.cluster > * {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: center;
-  margin: calc(var(--space) / 2 * -1);
-}
-
-.cluster > * > * {
-  margin: calc(var(--space) / 2);
+.cluster {
+  @include cluster();
 }
 
 
