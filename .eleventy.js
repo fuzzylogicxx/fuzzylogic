@@ -1,6 +1,9 @@
 const fs = require("fs");
 const filesize = require("file-size");
 
+const markdownIt = require('markdown-it')
+//const markdownItAnchor = require('markdown-it-anchor')
+
 
 module.exports = (function(eleventyConfig) {
 
@@ -15,6 +18,72 @@ module.exports = (function(eleventyConfig) {
     }
     return "";
   });
+
+  // Markdown Parsing
+  eleventyConfig.setLibrary(
+      'md',
+      markdownIt({
+          html: true,
+          breaks: true,
+          typographer: true
+      })
+      // .use(markdownItAnchor, {
+      //     permalink: true,
+      //     permalinkSymbol: '#',
+      //     permalinkClass: 'heading-anchor',
+      //     permalinkBefore: true,
+      //     level: 2,
+      //     slugify: s =>
+      //         encodeURIComponent(
+      //             'h-' +
+      //                 String(s)
+      //                     .trim()
+      //                     .toLowerCase()
+      //                     .replace(/[.,\/#!$%\^&\*;:{}=_`~()]/g, '')
+      //                     .replace(/\s+/g, '-')
+      //         )
+      // })
+  )
+
+  // // Filter using `Array.filter`
+  // eleventyConfig.addCollection("thoughts", function(collection) {
+  //   return collection.getAll().filter(function(item) {
+  //     // Side-step tags and do your own filtering
+  //     return "thoughts" in item.data;
+  //   });
+  // });
+
+  // Collections: Thoughts
+  eleventyConfig.addCollection('thoughts', function(collection) {
+    return collection
+      getFilteredByTag("post")
+      .filter(item => item.inputPath.match(/\/thoughts\//) !== null)
+      //.reverse()
+  })
+
+  // Collections: Bytes
+  eleventyConfig.addCollection('bytes', function(collection) {
+    return collection
+      getFilteredByTag("post")
+      .filter(item => item.inputPath.match(/\/bytes\//) !== null)
+      //.reverse()
+  })
+
+  // Collections: Links
+  eleventyConfig.addCollection('links', function(collection) {
+    return collection
+      getFilteredByTag("post")
+      .filter(item => item.inputPath.match(/\/links\//) !== null)
+      //.reverse()
+  })
+
+  // Collections: Sounds
+  eleventyConfig.addCollection('sounds', function(collection) {
+    return collection
+      getFilteredByTag("post")
+      .filter(item => item.inputPath.match(/\/sounds\//) !== null)
+      //.reverse()
+  })
 
   // We’ll use a dedicated .eleventyignore file to tell 11ty what not to process, rather than .gitignore
   eleventyConfig.setUseGitIgnore(false);
