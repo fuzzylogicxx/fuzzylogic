@@ -4,6 +4,9 @@ const filesize = require("file-size");
 
 module.exports = (function(eleventyConfig) {
 
+  // don’t want to have to set tags: post at directory level then have to repeat the post tag on each individual post
+  eleventyConfig.setDataDeepMerge(true);
+
   //
   eleventyConfig.addFilter("filesize", function(path) {
     let stat = fs.statSync(path);
