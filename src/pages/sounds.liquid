@@ -1,0 +1,38 @@
+---
+layout: single_column_layout.liquid
+pageTitle: Sounds
+section: sounds
+pagination:
+  data: collections.sounds
+  size: 10
+  reverse: true
+  alias: sounds
+title: Sounds
+metaDescription: A selection of my music and DJ mixes.
+permalink: sounds/index.html
+ogImagePath: /assets/img/open_graph_share_example_1200x630.jpg
+ogImageAlt: A photo of a country landscape
+---
+
+<div class="centre-with-gutter stack">
+
+  <h1>Sounds</h1>
+
+  <section class="h-feed centre">
+
+    {% for post in sounds %}
+      <article class="h-entry prose">
+        <header>
+          <h3 class="feed-entry-title"><a rel="bookmark" class="p-name u-url" href="{{ post.url | url }}">{{ post.data.pageTitle }}</a></h3>
+          <p class="entry-meta"><span class="dt-published">{{ post.date | date: "%A, %b %d, %Y" }}</span> in <a class="p-category" href="/">{{ post.data.section }}</a></p>
+        </header>
+        <div class="e-content">
+          {{ post.templateContent }}
+        </div>
+        <!-- <footer>more meta stuff</footer> -->
+      </article>
+    {% endfor %}
+
+  </section>
+
+</div>

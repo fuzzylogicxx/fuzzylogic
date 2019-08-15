@@ -1,0 +1,38 @@
+---
+layout: single_column_layout.liquid
+pageTitle: Thoughts
+section: thoughts
+pagination:
+  data: collections.thoughts
+  size: 10
+  reverse: true
+  alias: thoughts
+title: Thoughts
+metaDescription: Longer-form articles on web development, music and more
+permalink: thoughts/index.html
+ogImagePath: /assets/img/open_graph_share_example_1200x630.jpg
+ogImageAlt: A photo of a country landscape
+---
+
+<div class="centre-with-gutter stack">
+
+  <h1>Thoughts</h1>
+
+  <section class="h-feed centre">
+
+    {% for thought in thoughts %}
+      <article class="h-entry prose">
+        <header>
+          <h3 class="feed-entry-title"><a rel="bookmark" class="p-name u-url" href="{{ thought.url | url }}">{{ thought.data.pageTitle }}</a></h3>
+          <p class="entry-meta"><span class="dt-published">{{ thought.date | date: "%A, %b %d, %Y" }}</span> in <a class="p-category" href="/">{{ thought.data.section }}</a></p>
+        </header>
+        <div class="e-content">
+          {{ thought.templateContent }}
+        </div>
+        <!-- <footer>more meta stuff</footer> -->
+      </article>
+    {% endfor %}
+
+  </section>
+
+</div>
