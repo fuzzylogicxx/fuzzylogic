@@ -45,7 +45,7 @@ module.exports = (function(eleventyConfig) {
       // })
   )
 
-  // // Filter using `Array.filter`
+  // Filter using `Array.filter`
   // eleventyConfig.addCollection("thoughts", function(collection) {
   //   return collection.getAll().filter(function(item) {
   //     // Side-step tags and do your own filtering
@@ -56,7 +56,7 @@ module.exports = (function(eleventyConfig) {
   // Collections: Thoughts
   eleventyConfig.addCollection('thoughts', function(collection) {
     return collection
-      getFilteredByTag("post")
+      .getFilteredByTag("post")
       .filter(item => item.inputPath.match(/\/thoughts\//) !== null)
       //.reverse()
   })
@@ -64,7 +64,7 @@ module.exports = (function(eleventyConfig) {
   // Collections: Bytes
   eleventyConfig.addCollection('bytes', function(collection) {
     return collection
-      getFilteredByTag("post")
+      .getFilteredByTag("post")
       .filter(item => item.inputPath.match(/\/bytes\//) !== null)
       //.reverse()
   })
@@ -72,7 +72,7 @@ module.exports = (function(eleventyConfig) {
   // Collections: Links
   eleventyConfig.addCollection('links', function(collection) {
     return collection
-      getFilteredByTag("post")
+      .getFilteredByTag("post")
       .filter(item => item.inputPath.match(/\/links\//) !== null)
       //.reverse()
   })
@@ -80,7 +80,7 @@ module.exports = (function(eleventyConfig) {
   // Collections: Sounds
   eleventyConfig.addCollection('sounds', function(collection) {
     return collection
-      getFilteredByTag("post")
+      .getFilteredByTag("post")
       .filter(item => item.inputPath.match(/\/sounds\//) !== null)
       //.reverse()
   })
