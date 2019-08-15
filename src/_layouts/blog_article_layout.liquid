@@ -32,7 +32,9 @@ myOtherData: hello
       <div class="cluster">
         <ul class="tags">
           {% for tag in tags %}
+          {%- if tag != "post" -%}
           <li><a rel="tag" href="#">{{ tag }}</a></li>
+          {%- endif -%}
           {% endfor %}
         </ul>
       </div>
