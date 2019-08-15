@@ -2,9 +2,9 @@
 // Colour
 ///////////////////////////////////
 
-$selected-text-background: rgba(82,32,85,.25);
 $text-color: rgb(18,18,18); // like the Guardian // alternatively rgb(34,34,34) i.e. #222, not quite black.
 $color-accent: hsl(8, 62%, 58%);
+$selected-text-background: lighten($color-accent, 30%);
 $color-complimentary: hsl(166, 19%, 32%);
 $color-light: hsl(0, 0%, 95%);
 $border-color: hsl(0, 0%, 86%);
