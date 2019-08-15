@@ -4,4 +4,4 @@
 
 This repository contains the source code for https://fuzzylogic.me, the personal website of Laurence Hughes. 
 
-The current version of the site is statically generated using 11ty, uses my own gulp-based build system and front-end boilerplate Sofrito (https://github.com/fuzzylogicxx/sofrito), and is continuously deplyed by and hosted on Netlify (https://www.netlify.com/).
+The current version of the site is statically generated using 11ty, uses my own gulp-based build system and front-end boilerplate Sofrito (https://github.com/fuzzylogicxx/sofrito), and is hosted on and continuously deployed by Netlify (https://www.netlify.com/).
