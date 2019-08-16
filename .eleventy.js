@@ -45,7 +45,7 @@ module.exports = (function(eleventyConfig) {
       // })
   )
 
-  // Filter using `Array.filter`
+  // Filter (by front-matter key) using `Array.filter`
   // eleventyConfig.addCollection("thoughts", function(collection) {
   //   return collection.getAll().filter(function(item) {
   //     // Side-step tags and do your own filtering
