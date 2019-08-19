@@ -9,7 +9,7 @@ myOtherData: hello
 
     <header>
       <time class="dt-published" itemprop="datePublished" datetime="">{{ page.date | date: "%A, %b %d, %Y" }}</time>
-      <h1 class="p-name" itemprop="headline">{{ pageTitle }}</h1>
+      {%- if pageTitle -%}<h1 class="p-name" itemprop="headline">{{ pageTitle }}</h1>{%- endif -%}
     </header>
 
     <div class="e-content" itemprop="articleBody">
