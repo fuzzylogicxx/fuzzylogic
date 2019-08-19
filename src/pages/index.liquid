@@ -18,9 +18,9 @@ ogImageAlt: A photo of a country landscape
 
   <section class="intro prose">
 
-    <h1>Hi, I’m Laurence Hughes, a <span class="nobreak">web developer</span> based in Glasgow.</h1>
+    <h1>Fuzzy Logic</h1>
 
-    <p class="no-hyphens">I’m a front-end developer creating responsive websites which balance design, technology, user experience and accessibility. I also make music, play records and ping pongs. <a href="https://fuzzylogic.me">Fuzzy Logic</a> is my online home, where I try out web stuff and ramble about code, music and more.</p>
+    <p class="no-hyphens">Hi – I’m Laurence Hughes, a Glaswegian web developer, maker of music and pinger of pongs. I work creating responsive websites which balance design, technology, user experience and accessibility. This is my online home, where I try out web stuff and write about code, music and more.</p>
 
   </section>
 
@@ -33,8 +33,8 @@ ogImageAlt: A photo of a country landscape
     {% for post in posts %}
       <article class="h-entry prose">
         <header>
+          <time class="dt-published">{{ post.date | date: "%A, %b %d, %Y" }}</time>
           <h3 class="feed-entry-title"><a rel="bookmark" class="p-name u-url" href="{{ post.url | url }}">{{ post.data.pageTitle }}</a></h3>
-          <p class="entry-meta"><span class="dt-published">{{ post.date | date: "%A, %b %d, %Y" }}</span> in <a class="p-category" href="/">{{ post.data.section }}</a></p>
         </header>
         <div class="e-content">
           {{ post.templateContent }}

@@ -14,25 +14,27 @@ ogImagePath: /assets/img/open_graph_share_example_1200x630.jpg
 ogImageAlt: A photo of a country landscape
 ---
 
-<div class="centre-with-gutter stack">
+<section class="centre-with-gutter stack">
 
-  <h1>Thoughts</h1>
+  <header class="section-index-header">
+    <h1>Thoughts</h1>
+  </header>
 
-  <section class="h-feed centre">
+  <div class="h-feed">
 
-    {% for thought in thoughts %}
+    {% for post in thoughts %}
       <article class="h-entry prose">
         <header>
-          <h3 class="feed-entry-title"><a rel="bookmark" class="p-name u-url" href="{{ thought.url | url }}">{{ thought.data.pageTitle }}</a></h3>
-          <p class="entry-meta"><span class="dt-published">{{ thought.date | date: "%A, %b %d, %Y" }}</span> in <a class="p-category" href="/">{{ thought.data.section }}</a></p>
+          <time class="dt-published">{{ post.date | date: "%A, %b %d, %Y" }}</time>
+          <h3 class="feed-entry-title"><a rel="bookmark" class="p-name u-url" href="{{ post.url | url }}">{{ post.data.pageTitle }}</a></h3>
         </header>
         <div class="e-content">
-          {{ thought.templateContent }}
+          {{ post.templateContent }}
         </div>
         <!-- <footer>more meta stuff</footer> -->
       </article>
     {% endfor %}
 
-  </section>
+  </div>
 
-</div>
+</section>

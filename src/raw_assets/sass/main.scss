@@ -35,6 +35,19 @@
 // Common patterns
 ///////////////////////////////////
 
+// Index pages
+
+.section-index-header {
+  background: linear-gradient($color-accent, $color-accent) no-repeat bottom left/2.4em 0.2ch;
+  padding-bottom: scale-value(4)+rem;
+
+  // Add a generous gap after the section-index-header, overriding any generic stack spacing
+  & + * {
+    margin-top: 2rem;
+  }
+
+}
+
 
 // Blog stuff
 
@@ -44,12 +57,11 @@
 }
 
 .h-entry header > * + * {
-  --flow-space: #{scale-value(-6)}rem;
+  --flow-space: #{(scale-value(-5) - scale-value(-6))}rem;
 }
 
-.entry-meta {
+.dt-published {
   font-size: scale-value(-1)+rem;
-  font-style: italic;
   color: #999;
 
   a {

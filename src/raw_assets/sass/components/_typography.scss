@@ -258,6 +258,11 @@ $space-l: scale-value(3)+rem;
   --flow-space: 1em;
 }
 
+// extra margin for .e-content when on the article page
+.e-content[itemprop] {
+  margin-top: 2rem;
+}
+
 
 
 

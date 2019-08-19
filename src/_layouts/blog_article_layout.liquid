@@ -7,16 +7,9 @@ myOtherData: hello
 
   <article class="h-entry prose centre" itemtype="http://schema.org/BlogPosting">
 
-    <header class="entry-header">
+    <header>
+      <time class="dt-published" itemprop="datePublished" datetime="">{{ page.date | date: "%A, %b %d, %Y" }}</time>
       <h1 class="p-name" itemprop="headline">{{ pageTitle }}</h1>
-      <div class="entry-meta">
-        <span class="byline"> by
-          <span class="author vcard" itemprop="author" itemscope="" itemtype="http://schema.org/Person"><a class="url fn n" href="https://alistapart.com/author/larahogan/" itemprop="url"><span itemprop="name">Laurence Hughes</span></a></span>
-        </span>
-        <span class="posted-on">
-          <time class="dt-published" datetime="2019-06-06T09:30:51-04:00" itemprop="dateCreated pubdate datePublished">June 06, 2019</time>
-        </span>
-      </div> <!-- .entry-meta -->
     </header>
 
     <div class="e-content" itemprop="articleBody">
