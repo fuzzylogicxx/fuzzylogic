@@ -392,13 +392,13 @@
   h1 {
     font-weight: 600;
     font-size: scale-value(3)+rem;
-    line-height: ( ((scale-value(-4) * 3) + (scale-value(-5))) / (scale-value(3)) ); // 1.848rem; //.482*3 + .402
+    line-height: ( ((scale-value(-4) * 3) + (scale-value(-5))) / (scale-value(3)) );
     @include at-least($width-pressure-point-one) {
       font-size: scale-value(4)+rem;
     }
     @include at-least($bp-wide-four) {
       font-size: (2 + scale-value(-6))+rem;
-      line-height: 1.015; // this time by eye-balling; feels right.
+      line-height: 1.015; // just by eye-balling because it wants to be just above 1.
     }
   }
 
