@@ -53,11 +53,24 @@ module.exports = (function(eleventyConfig) {
   //   });
   // });
 
+  // Collections
+
+  const now = new Date();
+  const livePosts = post => post.date <= now && !post.data.draft;
+
+  eleventyConfig.addCollection('feed', function(collection) {
+    return collection
+      .getFilteredByTag("post")
+      .filter(livePosts)
+      //.reverse()
+  })
+
   // Collections: Thoughts
   eleventyConfig.addCollection('thoughts', function(collection) {
     return collection
       .getFilteredByTag("post")
       .filter(item => item.inputPath.match(/\/thoughts\//) !== null)
+      .filter(livePosts)
       //.reverse()
   })
 
@@ -66,6 +79,7 @@ module.exports = (function(eleventyConfig) {
     return collection
       .getFilteredByTag("post")
       .filter(item => item.inputPath.match(/\/bytes\//) !== null)
+      .filter(livePosts)
       //.reverse()
   })
 
@@ -74,6 +88,7 @@ module.exports = (function(eleventyConfig) {
     return collection
       .getFilteredByTag("post")
       .filter(item => item.inputPath.match(/\/links\//) !== null)
+      .filter(livePosts)
       //.reverse()
   })
 
@@ -82,6 +97,7 @@ module.exports = (function(eleventyConfig) {
     return collection
       .getFilteredByTag("post")
       .filter(item => item.inputPath.match(/\/sounds\//) !== null)
+      .filter(livePosts)
       //.reverse()
   })
 
