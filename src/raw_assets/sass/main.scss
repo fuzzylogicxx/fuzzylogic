@@ -53,7 +53,7 @@
 
 .h-entry header {
   @include stack();
-  position: relative;
+  //position: relative;
 }
 
 .h-entry header > * + * {

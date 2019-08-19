@@ -259,7 +259,8 @@ $space-l: scale-value(3)+rem;
 }
 
 // extra margin for .e-content when on the article page
-.e-content[itemprop] {
+.e-content[itemprop],
+.h-entry footer {
   margin-top: 2rem;
 }
 
