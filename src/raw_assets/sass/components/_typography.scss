@@ -268,7 +268,7 @@ $space-l: scale-value(3)+rem;
 // Body Text
 
 :root {
-  font-size: 1.0625rem;
+  font-size: 1.0625rem; // for fallback font
   &.fonts-loaded {
     font-size: $ms-base-rem;
   }
@@ -276,7 +276,7 @@ $space-l: scale-value(3)+rem;
   // Increase the font-size on desktop computers where text will feel smaller due to the greater reading distance.
   // We’re bumping up the base of our modular scale but keeping the same ratio. All our font-sizes are scale-based variables so we’re still keeping to a scale.
   @include at-least($bp-wide-four) {
-    font-size: 1.18rem;
+    font-size: 1.18rem; // for fallback font
     &.fonts-loaded {
       font-size: 1.1875rem;
     }

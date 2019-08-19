@@ -5,12 +5,12 @@
 [[headers]]
   for = "*.otf"
   [headers.values]
-    Cache-Control = "public, max-age=7200"
+    Cache-Control = "public, max-age=86400" # = 1 day (while still experimenting with this)
 [[headers]]
   for = "*.woff"
   [headers.values]
-    Cache-Control = "public, max-age=7200"
+    Cache-Control = "public, max-age=86400" # = 1 day (while still experimenting with this)
 [[headers]]
   for = "*.woff2"
   [headers.values]
-    Cache-Control = "public, max-age=7200"
+    Cache-Control = "public, max-age=86400" # = 1 day (while still experimenting with this)
