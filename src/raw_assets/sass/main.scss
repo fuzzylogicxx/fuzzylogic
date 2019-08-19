@@ -234,19 +234,20 @@
 
   svg {
     display: block;
+    @include at-least($bp-wide-one) {
+      font-size: (scale-value(9) + scale-value(-6))+rem;
+    }
   }
 }
 
 .header-menu {
-  @include cluster(2rem);
+  @include cluster(); //2rem
   text-transform: uppercase;
   font-weight: 600;
-  //font-size: scale-value(-2)+rem;
-  //@include at-least($bp-wide-one) {
-    font-size: (scale-value(-6) + scale-value(-5))+rem;
-  //}
-
-
+  font-size: (scale-value(-6) + scale-value(-5))+rem;
+  @include at-least($bp-wide-one) {
+    --space: 2rem;
+  }
 }
 
 .header-menu-toggle a::after {
@@ -391,14 +392,12 @@
   h1 {
     font-weight: 600;
     font-size: scale-value(3)+rem;
+    line-height: ( ((scale-value(-4) * 3) + (scale-value(-5))) / (scale-value(3)) ); // 1.848rem; //.482*3 + .402
     @include at-least($width-pressure-point-one) {
       font-size: scale-value(4)+rem;
     }
     @include at-least($bp-wide-four) {
-      font-size: scale-value(5)+rem;
-      .fonts-loaded & {
-        letter-spacing: -.015em;
-      }
+      font-size: (2 + scale-value(-6))+rem;
     }
   }
 
