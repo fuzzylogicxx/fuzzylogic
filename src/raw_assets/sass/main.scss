@@ -398,6 +398,7 @@
     }
     @include at-least($bp-wide-four) {
       font-size: (2 + scale-value(-6))+rem;
+      line-height: 1.015; // this time by eye-balling; feels right.
     }
   }
 
