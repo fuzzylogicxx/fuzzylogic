@@ -19,13 +19,16 @@ Why?
 - Eleventy
   - Curiosity. I wanted to try it. 
   - Performance (static files, quicker TTFB)
+  - Database-less: all content is centralised in the repo
+  - Work in code: i.e. write articles in code (remove the middleman).
 - Netlify
   - Curiosity. I wanted to try it. 
-  - Performance
-  - Fits a modern open source workflow
+  - Performance – hmmm....  although not sure about the FOUT issue   with self-hosted fonts.
   - Free hosting, so far
+  - Does the deployment and hosting stuff on top of your existing Open Source build and repo hosting workflow
+  - Provides a CDN so better worldwide performance
   - Convenience (d)
-    - Takes the sys-admin and most of the dev-ops stuff out of the loop.
+    - Takes the sys-admin and most of the dev-ops stuff off your plate.
       - didn’t have to build a server nor worry about security
       - Didn’t have to have a build step for compliling static assets (I previously used Buddy for that)
       - Auto Let’s encrypt

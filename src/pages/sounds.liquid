@@ -25,8 +25,8 @@ ogImageAlt: A photo of a country landscape
     {% for post in sounds %}
       <article class="h-entry prose">
         <header>
+          <time class="dt-published">{{ post.date | date: "%A, %b %d, %Y" }}</time>
           <h3 class="feed-entry-title"><a rel="bookmark" class="p-name u-url" href="{{ post.url | url }}">{{ post.data.pageTitle }}</a></h3>
-          <p class="entry-meta"><span class="dt-published">{{ post.date | date: "%A, %b %d, %Y" }}</span> in <a class="p-category" href="/">{{ post.data.section }}</a></p>
         </header>
         <div class="e-content">
           {{ post.templateContent }}
