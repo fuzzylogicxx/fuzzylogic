@@ -274,18 +274,12 @@ $space-l: scale-value(3)+rem;
 // Body Text
 
 :root {
-  font-size: 1.0625rem; // for fallback font
-  &.fonts-loaded {
-    font-size: $ms-base-rem;
-  }
+  font-size: $ms-base-rem;
 
   // Increase the font-size on desktop computers where text will feel smaller due to the greater reading distance.
   // We’re bumping up the base of our modular scale but keeping the same ratio. All our font-sizes are scale-based variables so we’re still keeping to a scale.
   @include at-least($bp-wide-four) {
-    font-size: 1.18rem; // for fallback font
-    &.fonts-loaded {
-      font-size: 1.1875rem;
-    }
+    font-size: 1.1875rem;
   }
 }
 
@@ -491,25 +485,15 @@ h1 {
   font-weight: 700;
   line-height: 1;
   letter-spacing: -0.01em;
-
-  font-size: 1.4rem; // fallback font value
-  .fonts-loaded & {
-    font-size: scale-value(2)+rem;
-  }
+  font-size: scale-value(2)+rem;
 
   // On wider screens increase typographic contrast.
   @include at-least($width-pressure-point-one) {
-    font-size: 2rem; // fallback font value
-    .fonts-loaded & {
-      font-size: ( scale-value(3) + scale-value(-6) )+rem;
-    }
+    font-size: ( scale-value(3) + scale-value(-6) )+rem;
   }
 
   @include at-least($bp-wide-four) {
-    font-size: 2rem; // fallback font value
-    .fonts-loaded & {
-      font-size: scale-value(4)+rem;
-    }
+    font-size: scale-value(4)+rem;
   }
 }
 

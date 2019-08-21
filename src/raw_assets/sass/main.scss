@@ -404,24 +404,15 @@
   h1 {
     font-weight: 600;
     line-height: ( ((scale-value(-4) * 3) + (scale-value(-5))) / (scale-value(3)) );
-    font-size: 1.7rem; // for fallback font
-    .fonts-loaded & {
-      font-size: scale-value(3)+rem;
-      letter-spacing: -.016em;
-    }
+    font-size: scale-value(3)+rem;
+    letter-spacing: -.016em;
 
     @include at-least($width-pressure-point-one) {
-      font-size: 2rem; // for fallback font
-      .fonts-loaded & {
-        font-size: scale-value(4)+rem;
-      }
+      font-size: scale-value(4)+rem;
     }
     @include at-least($bp-wide-four) {
-      font-size: 2.2rem; // for fallback font
-      .fonts-loaded & {
-        font-size: (2 + scale-value(-6))+rem;
-        line-height: 1.015; // just by eye-balling because it wants to be just above 1.
-      }
+      font-size: (2 + scale-value(-6))+rem;
+      line-height: 1.015; // just by eye-balling because it wants to be just above 1.
     }
   }
 
