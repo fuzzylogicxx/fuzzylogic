@@ -111,6 +111,7 @@ module.exports = (function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy('src/safari-pinned-tab.svg');
   eleventyConfig.addPassthroughCopy('src/robots.txt');
   eleventyConfig.addPassthroughCopy('src/_headers');
+  eleventyConfig.addPassthroughCopy('src/serviceworker.js');
 
 
   // Base Config
@@ -120,7 +121,8 @@ module.exports = (function(eleventyConfig) {
       "liquid",
       "md",
       "njk",
-      // Now list any non-11ty-recognized template extensions, and files of those types will just be copied directly through to /dist. Feels a bit hacky but documentation advocates it!
+      // Now list any non-11ty-recognized template extensions, and files of those types will just be copied directly through to /dist.
+      // Feels a bit hacky but documentation advocates it!
       "png"
     ],
     dir: {
