@@ -2,18 +2,16 @@
 # Read about how to use .gitignore: https://help.github.com/articles/ignoring-files
 # Useful .gitignore templates: https://github.com/github/gitignore
 
+#
 .DS_Store
 
-# Ignore image/media uploaded through Perch CMS
-dist/console/resources/*
-#dist/console/config/config.php
+#
 node_modules
 
 # Docker: stuff to ignore (ref: https://github.com/PerchCMS/simple-docker)
 db/*
 !db/.gitkeep
 
-
-
+#
 dist/*
 src/assets

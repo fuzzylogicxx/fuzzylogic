@@ -10,7 +10,7 @@ ogImageAlt: The Sorrow of Derdriu – an LP on Firecracker – photo by Oli Brei
 
 <figure class="post-main-image">
   <div class="frame">
-    <img loading="lazy" src="/assets/img/sorrow-of-derdriu-w1200.jpg">
+    <a href="{{ post.url | url }}"><img loading="lazy" clas="u-photo" src="/assets/img/sorrow-of-derdriu-w1200.jpg"></a>
   </div>
   <figcaption>The Sorrow of Derdriu. Photo by Oli Breidfjord.</figcaption>
 </figure>
