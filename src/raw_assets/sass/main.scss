@@ -35,6 +35,15 @@
 // Common patterns
 ///////////////////////////////////
 
+// Captions
+
+figcaption {
+  font-size: scale-value(-2)+rem;
+  color: #999;
+  margin-top: scale-value(-6)+rem;
+}
+
+
 // Index pages
 
 .section-index-header {
@@ -45,7 +54,6 @@
   & + * {
     margin-top: 2rem;
   }
-
 }
 
 
@@ -103,6 +111,11 @@
   --flow-space: 1rem;
   margin-top: var(--flow-space);
 }*/
+
+.prose footer h3 + *,
+.prose footer h2 + * {
+  --flow-space: 1em;
+}
 
 // Posts in List
 

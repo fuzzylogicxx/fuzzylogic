@@ -1,3 +1,7 @@
 [build]
 	command = "gulp && eleventy"
 	publish = "dist"
+
+[[redirects]]
+  from = "/bytes/mac-talla-nan-creag-the-sorrow-of-derdiu"
+  to = "/bytes/mac-talla-nan-creag-the-sorrow-of-derdriu"
