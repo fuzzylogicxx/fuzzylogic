@@ -6,8 +6,6 @@ title: Cookie Consent by Osano | The most popular solution to the EU cookie law
 linkTarget: https://cookieconsent.insites.com/
 permalink: links/cookie-consent-by-osano-the-most-popular-solution-to-the-eu-cookie-law/index.html
 metaDescription: Cookie Consent by Osano is a great free resource which handles the requisite GDPR requirements (and more) and offers a number of customisation options.
-ogImagePath: /assets/img/open_graph_share_example_1200x630.jpg
-ogImageAlt: A photo of a country landscape
 ---
 
 This utility adds a banner to the bottom (or top) of your website, asking the visitor to explicitly give or decline consent for the cookies your website uses. It’s a great free resource which handles the requisite GDPR requirements (and more) and offers a number of customisation options.
