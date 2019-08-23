@@ -326,11 +326,26 @@ a {
   color: $color-accent;
   text-decoration: underline solid lighten($color-accent, 25%);
   text-decoration-skip-ink: auto;
+
+  &.text-icon-pair {
+    text-decoration: none;
+    span {
+      text-decoration: underline solid lighten($color-accent, 25%);
+      text-decoration-skip-ink: auto;
+    }
+  }
 }
 
 a:hover {
   color: darken($color-accent, 25%);
   text-decoration: underline solid darken($color-accent, 25%);
+
+  &.text-icon-pair {
+    text-decoration: none;
+    span {
+      text-decoration: underline solid darken($color-accent, 25%);
+    }
+  }
 }
 
 

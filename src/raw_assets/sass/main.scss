@@ -125,6 +125,12 @@ figcaption {
     //font-size: scale-value(2)+rem;
     font-size: (scale-value(1) + scale-value(-5))+rem;
   }
+  a {
+    text-decoration: none;
+  }
+  a.text-icon-pair span {
+    text-decoration: none;
+  }
 }
 
 /*.home-feed-wrap {

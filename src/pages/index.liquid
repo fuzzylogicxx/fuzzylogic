@@ -34,7 +34,15 @@ ogImageAlt: A photo of a country landscape
       <article class="h-entry prose">
         <header>
           <time class="dt-published">{{ post.date | date: "%A, %b %d, %Y" }}</time>
-          {%- if post.data.pageTitle -%}<h3 class="feed-entry-title"><a rel="bookmark" class="p-name u-url" href="{{ post.url | url }}">{{ post.data.pageTitle }}</a></h3>{%- endif -%}
+          {%- if post.data.pageTitle -%}
+          <h3 class="feed-entry-title">
+            {%- if post.data.linkTarget %}
+            <a href="{{ post.data.linkTarget | url }}" class="text-icon-pair offsite"><span class="p-name">{{ post.data.pageTitle }}</span> <svg class="text-icon-pair-icon" aria-hidden="true" focusable="false" width="1em" height="1em"><use xlink:href="#icon-offsite"></use></svg></a>
+            {%- else if -%}
+            <a rel="bookmark" class="p-name u-url" href="{{ post.url | url }}">{{ post.data.pageTitle }}</a>
+            {%- endif -%}
+          </h3>
+          {%- endif -%}
         </header>
         <div class="e-content">
           {{ post.templateContent }}
