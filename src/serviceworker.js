@@ -1,6 +1,6 @@
 'use strict';
 
-const version = 'v4::';
+const version = 'v5::';
 const staticCacheName = version + 'static';
 const pagesCacheName = 'pages';
 const imagesCacheName = 'images';
@@ -30,7 +30,7 @@ function updateStaticCache() {
             '/assets/type/sans/SourceSansPro-It-subset.woff2',
             '/assets/type/sans/source-sans-pro-v12-latin-600.woff2',
             '/assets/type/sans/source-sans-pro-v12-latin-700.woff2',
-            '/offline'
+            '/offline/'
         ]);
     });
 }
@@ -153,7 +153,7 @@ addEventListener('fetch', event => {
                     caches.match(request)
                     .then( responseFromCache => {
                         resolveWithResponse(
-                            responseFromCache || caches.match('/offline')
+                            responseFromCache || caches.match('/offline/')
                         );
                     });
                 });

@@ -216,6 +216,20 @@
   <!-- website’s global javascript file including any globally required polyfills (that aren’t provided by polyfill.io) -->
   <script src="/assets/js/main.polyfills_v{{ pkg.version}}.min.js"></script>
 
+  <!-- Service Worker for improved resilience and performance -->
+  <script>
+  if (navigator.serviceWorker) {
+      window.addEventListener('load', function() {
+          navigator.serviceWorker.register('/serviceworker.js', {
+              scope: '/'
+          });
+          if (navigator.serviceWorker.controller) {
+              navigator.serviceWorker.controller.postMessage({'command': 'trimCaches'});
+          }
+      });
+  }
+  </script>
+
   <!-- add any page-specific JS here (files or inline) -->
 
   <!-- Use this on a page which contains a .grid. Patch support for CSS’s min() in our auto-grid (.grid) pattern -->
