@@ -1,16 +1,53 @@
 <!doctype html>
 <html dir="ltr" lang="en-GB">
 <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ title }} | Fuzzy Logic</title>
   <link rel="preload" href="/assets/type/sans/SourceSansPro-Regular-subset.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/assets/type/sans/source-sans-pro-v12-latin-600.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/assets/type/sans/source-sans-pro-v12-latin-700.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/type/sans/SourceSansPro-It-subset.woff2" as="font" type="font/woff2" crossorigin>
+  <style>
+  @font-face {
+    font-family: Source Sans Pro;
+    src: url(/assets/type/sans/SourceSansPro-Regular-subset.woff2) format("woff2"),
+         url(/assets/type/sans/SourceSansPro-Regular-subset.zopfli.woff) format("woff");
+    font-weight: 400;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: Source Sans Pro;
+    src: url(/assets/type/sans/SourceSansPro-It-subset.woff2) format("woff2"),
+         url(/assets/type/sans/SourceSansPro-It-subset.zopfli.woff) format("woff");
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: Source Sans Pro;
+    src: url(/assets/type/sans/source-sans-pro-v12-latin-600.woff2) format("woff2"),
+         url(/assets/type/sans/source-sans-pro-v12-latin-600.woff) format("woff");
+    font-weight: 600;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: Source Sans Pro;
+    src: url(/assets/type/sans/source-sans-pro-v12-latin-700.woff2) format("woff2"),
+         url(/assets/type/sans/source-sans-pro-v12-latin-700.woff) format("woff");
+    font-weight: 700;
+    font-display: swap;
+  }
+  body {
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+  .logo svg {
+    font-size: 5rem;
+  }
+  </style>
+  <link rel="stylesheet" href="/assets/css/main_v{{ pkg.version }}.min.css">
 
-  <meta charset="utf-8">
-
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="author" content="Laurence Hughes">
-
-  <title>{{ title }} | Fuzzy Logic</title>
   <meta name="description" content="{{ metaDescription }}">
   <meta name="keywords" content="front-end, frontend, front-end developer, web developer, web developer glasgow, html, css, javascript, vanilla javascript, accessibility, sofrito" />
 
@@ -48,55 +85,6 @@
   <meta name="application-name" content="Sofrito">
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
-
-  <!-- Web Font Loading and Critical CSS -->
-
-  <style>
-  @font-face {
-    font-family: Source Sans Pro;
-    src: url(/assets/type/sans/SourceSansPro-Regular-subset.woff2) format("woff2"),
-         url(/assets/type/sans/SourceSansPro-Regular-subset.zopfli.woff) format("woff");
-    font-weight: 400;
-    font-display: swap;
-  }
-  @font-face {
-    font-family: Source Sans Pro;
-    src: url(/assets/type/sans/SourceSansPro-It-subset.woff2) format("woff2"),
-         url(/assets/type/sans/SourceSansPro-It-subset.zopfli.woff) format("woff");
-    font-weight: 400;
-    font-style: italic;
-    font-display: swap;
-  }
-  @font-face {
-    font-family: Source Sans Pro;
-    src: url(/assets/type/sans/source-sans-pro-v12-latin-600.woff2) format("woff2"),
-         url(/assets/type/sans/source-sans-pro-v12-latin-600.woff) format("woff");
-    font-weight: 600;
-    font-display: swap;
-  }
-  @font-face {
-    font-family: Source Sans Pro;
-    src: url(/assets/type/sans/source-sans-pro-v12-latin-700.woff2) format("woff2"),
-         url(/assets/type/sans/source-sans-pro-v12-latin-700.woff) format("woff");
-    font-weight: 700;
-    font-display: swap;
-  }
-  body {
-    font-family: 'Source Sans Pro', sans-serif;
-  }
-
-  .logo svg {
-    font-size: 5rem;
-  }
-  </style>
-
-  <!-- Global Styles -->
-  <link rel="stylesheet" href="/assets/css/main_v{{ pkg.version}}.min.css">
-
-  <!-- Page-Specific Styles -->
-
-  <!-- Service Worker -->
-  <!-- <link rel="serviceworker" href="/serviceworker.js"> -->
 
   <!-- RSS feeds -->
   <!-- <link href="https://fuzzylogicxx.github.io/sofrito/news/rss" rel="alternate" type="application/rss+xml" title="Sofrito News RSS feed">
