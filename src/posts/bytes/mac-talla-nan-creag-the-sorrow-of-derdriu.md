@@ -1,10 +1,11 @@
 ---
 date: 2019-01-17 13:00:00.00
 tags: ['music', 'albums', 'otherlands', 'firecracker', 'scottish']
-title: Mac-Talla Nan Creag – The Sorrow of Derdiu
+title: Mac-Talla Nan Creag – The Sorrow of Derdriu
+pageTitle: Mac-Talla Nan Creag – The Sorrow of Derdriu
 permalink: /bytes/{{ page.fileSlug }}/index.html
 metaDescription: Other Lands, Lord Of The Isles and friends on this feast for the eyes and ears from Firecracker Recordings.
-ogImagePath: /assets/img/sorrow-of-derdriu-w1200.jpg
+ogImagePath: /assets/img/sorrow-of-derdriu-w1400.jpg
 ogImageAlt: The Sorrow of Derdriu – an LP on Firecracker – photo by Oli Breidfjord
 ---
 
