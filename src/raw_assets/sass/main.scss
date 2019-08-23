@@ -127,9 +127,9 @@ figcaption {
   }
   a {
     text-decoration: none;
-  }
-  a.text-icon-pair span {
-    text-decoration: none;
+    &.text-icon-pair span {
+      text-decoration: none;
+    }
   }
 }
 
