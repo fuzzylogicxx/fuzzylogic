@@ -18,7 +18,7 @@
   border-radius: $global-border-radius;
   color: #fff;
   display: inline-block;
-  font-weight: 700;
+  font-weight: 600;
   white-space: nowrap;
   padding: scale-value(-6)+em scale-value(-3)+em scale-value(-5)+em;
   transition: all 0.3s ease;
@@ -146,7 +146,7 @@ form {
 
   label {
     display: block;
-    font-weight: 700;
+    font-weight: 600;
   }
 
   input[type=text],
