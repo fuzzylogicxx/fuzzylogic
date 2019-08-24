@@ -110,8 +110,8 @@ module.exports = (function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy('src/site.webmanifest');
   eleventyConfig.addPassthroughCopy('src/safari-pinned-tab.svg');
   eleventyConfig.addPassthroughCopy('src/robots.txt');
-  eleventyConfig.addPassthroughCopy('src/_headers');
   eleventyConfig.addPassthroughCopy('src/serviceworker.js');
+  //eleventyConfig.addPassthroughCopy('src/_headers');
 
 
   // Base Config
