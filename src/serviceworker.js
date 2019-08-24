@@ -1,6 +1,6 @@
 'use strict';
 
-const version = 'v5::';
+const version = 'v7::';
 const staticCacheName = version + 'static';
 const pagesCacheName = 'pages';
 const imagesCacheName = 'images';
@@ -29,7 +29,6 @@ function updateStaticCache() {
             '/assets/type/sans/SourceSansPro-Regular-subset.woff2',
             '/assets/type/sans/SourceSansPro-It-subset.woff2',
             '/assets/type/sans/source-sans-pro-v12-latin-600.woff2',
-            '/assets/type/sans/source-sans-pro-v12-latin-700.woff2',
             '/offline/'
         ]);
     });

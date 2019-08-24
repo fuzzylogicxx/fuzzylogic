@@ -35,6 +35,13 @@
 // Common patterns
 ///////////////////////////////////
 
+// Icons in menus
+
+.footer-menu svg,
+.header-menu svg {
+  display: block;
+}
+
 // Captions
 
 figcaption {
@@ -246,11 +253,9 @@ figcaption {
 .global-header {
   padding-top: $space-xxs;
   padding-bottom: $space-xxs;
-
   a {
     text-decoration: none;
   }
-
   a[aria-current] {
     border-bottom: 1px solid $color-accent;
   }
@@ -262,7 +267,6 @@ figcaption {
 
 .logo {
   line-height: 1;
-
   svg {
     display: block;
     @include at-least($bp-wide-one) {
@@ -281,17 +285,24 @@ figcaption {
   }
 }
 
+.header-menu-home {
+  display: none;
+  @include at-least($bp-wide-one) {
+    display: block;
+  }
+}
+
 .header-menu-toggle a::after {
-    display: inline-block;
-    width: 0;
-    height: 0;
-    margin-left: .2em;
-    vertical-align: .2em;
-    content: "";
-    border-top: .3em solid;
-    border-right: .3em solid transparent;
-    border-bottom: 0;
-    border-left: .3em solid transparent;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: .2em;
+  vertical-align: .2em;
+  content: "";
+  border-top: .3em solid;
+  border-right: .3em solid transparent;
+  border-bottom: 0;
+  border-left: .3em solid transparent;
 }
 
 
