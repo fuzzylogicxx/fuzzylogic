@@ -11,7 +11,7 @@ ogImageAlt: A photo of a country landscape
 
 <div class="aspect-ratio-wide">
   <!-- retain width and height attributes as a baseline before progressively enhancing -->
-  <iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/jYojCT6F_fs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <iframe loading="lazy" width="560" height="315" src="https://www.youtube-nocookie.com/embed/jYojCT6F_fs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 On reflection this one was pretty naive and raw but I can live with that! I was 25 when I made it and listening to a lot of [John Tejada](https://youtu.be/ZmJhs20Wkog), and you can definitely hear that influence alongside other typical Detroit Techno stylings.
