@@ -106,9 +106,10 @@ module.exports = (function(eleventyConfig) {
 
   // Copy (without processing) the following directories and file types to the compiled site folder
   eleventyConfig.addPassthroughCopy('src/assets');
+  eleventyConfig.addPassthroughCopy('src/browserconfig.xml');
   eleventyConfig.addPassthroughCopy('src/favicon.ico');
-  eleventyConfig.addPassthroughCopy('src/site.webmanifest');
   eleventyConfig.addPassthroughCopy('src/safari-pinned-tab.svg');
+  eleventyConfig.addPassthroughCopy('src/site.webmanifest');
   eleventyConfig.addPassthroughCopy('src/robots.txt');
   eleventyConfig.addPassthroughCopy('src/serviceworker.js');
   //eleventyConfig.addPassthroughCopy('src/_headers');
@@ -121,7 +122,7 @@ module.exports = (function(eleventyConfig) {
       "liquid",
       "md",
       "njk",
-      // Now list any non-11ty-recognized template extensions, and files of those types will just be copied directly through to /dist.
+      // Now list any non-11ty-recognized template extensions, and files of those types (e.g. icon PNGs) will just be copied directly through to /dist.
       // Feels a bit hacky but documentation advocates it!
       "png"
     ],
