@@ -200,16 +200,16 @@
 
   <!-- Service Worker for improved resilience and performance -->
   <script>
-  if (navigator.serviceWorker) {
-      window.addEventListener('load', function() {
-          navigator.serviceWorker.register('/serviceworker.js', {
-              scope: '/'
-          });
-          if (navigator.serviceWorker.controller) {
-              navigator.serviceWorker.controller.postMessage({'command': 'trimCaches'});
-          }
-      });
-  }
+  // if (navigator.serviceWorker) {
+  //     window.addEventListener('load', function() {
+  //         navigator.serviceWorker.register('/serviceworker.js', {
+  //             scope: '/'
+  //         });
+  //         if (navigator.serviceWorker.controller) {
+  //             navigator.serviceWorker.controller.postMessage({'command': 'trimCaches'});
+  //         }
+  //     });
+  // }
   </script>
 
   <!-- add any page-specific JS here (files or inline) -->

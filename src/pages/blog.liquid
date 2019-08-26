@@ -4,11 +4,11 @@ section: blog
 pagination:
   data: collections.feed
   size: 10
-  reverse: true
   alias: posts
 title: Blog
 metaDescription: My latest thoughts and notes
-permalink: blog/index.html
+permalink: blog/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber }}/{% endif %}index.html
+
 ---
 
 <section class="centre-with-gutter stack">
@@ -39,6 +39,11 @@ permalink: blog/index.html
         <!-- <footer>more meta stuff</footer> -->
       </article>
     {% endfor %}
+
+    <nav class="traverse">
+      {%- if pagination.previousPageHref %}<a rel="next" href="{{ pagination.previousPageHref }}">Newer Posts <span aria-hidden="true">→</span></a>{%- endif %}
+      {%- if pagination.nextPageHref %}<a rel="prev" href="{{ pagination.nextPageHref }}"><span aria-hidden="true">←</span> Older Posts</a>{%- endif %}
+    </nav>
 
   </div>
 

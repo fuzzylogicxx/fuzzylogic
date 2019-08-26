@@ -35,11 +35,23 @@
 // Common patterns
 ///////////////////////////////////
 
-// Icons in menus
+// Icons in menus (e.g. search magnifying glass)
 
 .footer-menu svg,
 .header-menu svg {
   display: block;
+}
+
+// Navigation for list/index pages
+
+.traverse {
+  display: flex;
+  a[rel~=prev] {
+    margin-right: auto;
+  }
+  a[rel~=next] {
+    margin-left: auto;
+  }
 }
 
 // Captions

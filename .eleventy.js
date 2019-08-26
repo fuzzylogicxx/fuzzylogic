@@ -62,7 +62,7 @@ module.exports = (function(eleventyConfig) {
     return collection
       .getFilteredByTag("post")
       .filter(livePosts)
-      //.reverse()
+      .reverse()
   })
 
   // Collections: Thoughts
