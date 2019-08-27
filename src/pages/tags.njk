@@ -1,0 +1,23 @@
+---
+permalink: /tags/
+---
+<div class="centre-with-gutter stack">
+
+    <header class="section-index-header">
+        <h1>Tags</h1>
+    </header>
+
+    <section class="centre">
+
+        <div class="cluster">
+            <ul class="tags">
+            {%- for tag in collections.tagList -%}
+                {%- set tagUrl %}/tagged/{{ tag }}/{% endset -%}
+                <li><a rel="tag" href="{{ tagUrl | url }}">{{ tag }}</a></li>
+            {%- endfor -%}
+            </ul>
+        </div>
+
+    </section>
+
+</div>

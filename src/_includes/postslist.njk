@@ -1,0 +1,16 @@
+{% for post in postslist %}
+  <article class="h-entry prose">
+    <header>
+      <time class="dt-published" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
+      {%- if post.data.pageTitle -%}
+      <h3 class="feed-entry-title">
+      {%- if post.data.linkTarget %}
+      <a href="{{ post.data.linkTarget | url }}" class="text-icon-pair offsite"><span class="p-name">{{ post.data.pageTitle }}</span> <svg class="text-icon-pair-icon" aria-hidden="true" focusable="false" width="1em" height="1em"><use xlink:href="#icon-offsite"></use></svg></a>
+      {%- else -%}
+      <a rel="bookmark" class="p-name u-url" href="{{ post.url | url }}">{{ post.data.pageTitle }}</a>
+      {%- endif -%}
+      {%- endif -%}
+      </h3>
+    </header>
+  </article>
+{% endfor %}

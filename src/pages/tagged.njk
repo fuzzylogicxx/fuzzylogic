@@ -1,0 +1,33 @@
+---
+pagination:
+  data: collections
+  size: 1
+  alias: tag
+  filter:
+    - all
+    - nav
+    - post
+    - posts
+    - tagList
+  addAllPagesToCollections: true
+renderData:
+  title: Tagged “{{ tag }}”
+permalink: /tagged/{{ tag }}/
+section: blog
+---
+<div class="centre-with-gutter stack">
+
+  <header class="section-index-header">
+    <h1>Tagged “{{ tag }}”</h1>
+  </header>
+
+  <section class="h-feed centre">
+
+    {% set postslist = collections[ tag ] %}
+    {% include "postslist.njk" %}
+
+    <p>See <a href="{{ '/tags/' | url }}">all tags</a>.</p>
+
+  </section>
+
+</div>

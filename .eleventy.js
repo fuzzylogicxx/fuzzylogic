@@ -1,3 +1,4 @@
+const { DateTime } = require("luxon");
 const fs = require("fs");
 const filesize = require("file-size");
 
@@ -9,6 +10,16 @@ module.exports = (function(eleventyConfig) {
 
   // don’t want to have to set tags: post at directory level then have to repeat the post tag on each individual post
   eleventyConfig.setDataDeepMerge(true);
+
+  eleventyConfig.addFilter("readableDate", dateObj => {
+    return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat("cccc, LLL dd, yyyy");
+  });
+
+  // https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
+  eleventyConfig.addFilter('htmlDateString', (dateObj) => {
+    return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat('yyyy-LL-dd');
+  });
+
 
   //
   eleventyConfig.addFilter("filesize", function(path) {
@@ -55,6 +66,10 @@ module.exports = (function(eleventyConfig) {
 
   // Collections
 
+  // For page which lists all tags
+  eleventyConfig.addCollection("tagList", require("./_11ty/getTagList"));
+
+  //
   const now = new Date();
   const livePosts = post => post.date <= now && !post.data.draft;
 

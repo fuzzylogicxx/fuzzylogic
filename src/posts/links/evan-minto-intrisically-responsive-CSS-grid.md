@@ -1,7 +1,7 @@
 ---
 date: 2019-07-31 18:14:00.00
 pageTitle: Intrinsically Responsive CSS Grid with minmax and min
-tags: ['web', 'grid', 'cssgrid', 'css', layout']
+tags: ['web', 'grid', 'cssgrid', 'css', 'layout']
 title: Intrinsically Responsive CSS Grid with minmax and min
 permalink: /links/intrinsically-responsive-css-grid-with-minmax-and-min/index.html
 linkTarget: http://evanminto.com/blog/intrinsically-responsive-css-grid-minmax-min/
