@@ -1,7 +1,7 @@
 ---
 date: 2019-18-08 08:00:00.00
 pageTitle: Switching to serverless
-tags: ['eleventy', 'netlify', 'JAMstack', 'serverless']
+tags: ['something']
 title: Switching to serverless
 permalink: thoughts/switching-to-serverless/index.html
 draft: true
