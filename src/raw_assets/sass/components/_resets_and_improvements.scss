@@ -7,9 +7,10 @@
   width: device-width;
 }
 
-// 2) Contrary to normalize.css, please DO zoom text on rotate. TB suggests using * {} but I’m using html {} which is where normalize apply their -webkit-text-size-adjust rule.
+// 2) Per normalize.css, do NOT zoom on rotate (but allow text to still be zoomed)
+// Note: TB suggests enabling zoom on rotate but my testing revealed i) janky font size adjustments on orientation change in iOS; and ii) wrong pre>code font sizes.
 html {
-  -webkit-text-size-adjust: auto;
+  -webkit-text-size-adjust: 100%;
 }
 
 // End Tim Brown advice
