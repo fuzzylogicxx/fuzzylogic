@@ -21,7 +21,7 @@ The format of this show was just Tony and comedy historian Robert Ross sat at a 
 
 Overall I really enjoyed this. Despite having problems which have taken their toll, Tony Slattery is still a funny and engaging performer and is also doing his bit to help raise awareness of bipolar disorder. He seems like a good egg.
 
-Onwards to Darren McGarvey’s show at The Stand’s New Town Theatre, and he unexpectedly begins with a TED Talk style discussion on space and quantum mechanics, setting up the idea that their are two contradictory versions of himself. 
+Onwards to Darren McGarvey’s show at The Stand’s New Town Theatre, and he unexpectedly begins with a TED Talk style discussion on space and quantum mechanics, setting up the idea that there are two contradictory versions of himself. 
 
 There’s the pre- _Poverty Safari_, lower working class _CDE2_ Darren; and the new, “poster child for working class politics”, middle-class, _ABC1_ Darren.
 
