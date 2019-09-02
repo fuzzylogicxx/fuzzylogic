@@ -5,8 +5,6 @@ tags: ['book', 'music', 'celebrity', 'influencers', 'dystopian']
 title: A Visit from the Goon Squad, by Jennifer Egan
 permalink: thoughts/{{ page.fileSlug }}/index.html
 metaDescription: Great book taking in themes of youth and ageing, loss and regret, insecurity, celebrity and image.
-ogImagePath: /assets/img/open_graph_share_example_1200x630.jpg
-ogImageAlt: A photo of a country landscape
 ---
 
 <figure class="post-main-image">
