@@ -42,18 +42,6 @@
   display: block;
 }
 
-// Navigation for list/index pages
-
-.traverse {
-  display: flex;
-  a[rel~=prev] {
-    margin-right: auto;
-  }
-  a[rel~=next] {
-    margin-left: auto;
-  }
-}
-
 // Captions
 
 figcaption {
@@ -63,13 +51,12 @@ figcaption {
 }
 
 
-// Index pages
+// Index pages (e.g. Work, Labs)
 
 .section-index-header {
   background: linear-gradient($color-accent, $color-accent) no-repeat bottom left/2.4em 0.2ch;
   padding-bottom: scale-value(4)+rem;
-
-  // Add a generous gap after the section-index-header, overriding any generic stack spacing
+  // Add a generous whitespace after, overriding any generic stack spacing
   & + * {
     margin-top: 2rem;
   }
@@ -253,7 +240,15 @@ figcaption {
   min-width: calc(50% - 1rem);
 }*/
 
-
+.traverse {
+  display: flex;
+  a[rel~=prev] {
+    margin-right: auto;
+  }
+  a[rel~=next] {
+    margin-left: auto;
+  }
+}
 
 
 
@@ -434,15 +429,13 @@ figcaption {
 // Intro
 
 .intro {
-  --measure: 36rem; // to suit a larger h1
+  --measure: 32rem; // tighter
   background: linear-gradient($color-accent, $color-accent) no-repeat bottom left/2.4em 0.2ch;
   padding-bottom: scale-value(4)+rem;
-
   @include stack();
   & > * + * {
     --flow-space: #{scale-value(2)}rem;
   }
-
   h1 {
     font-weight: 600;
     line-height: ( ((scale-value(-4) * 3) + (scale-value(-5))) / (scale-value(3)) );
@@ -456,11 +449,6 @@ figcaption {
       font-size: (2 + scale-value(-6))+rem;
       line-height: 1.015; // just by eye-balling because it wants to be just above 1.
     }
-  }
-
-  p {
-    // reset to normal measure
-    --measure: 34rem;
   }
 }
 

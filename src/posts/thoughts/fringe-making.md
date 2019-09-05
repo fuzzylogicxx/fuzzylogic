@@ -9,7 +9,7 @@ permalink: /thoughts/{{ page.fileSlug }}/index.html
 
 Last Tuesday, 20/8/19 I made the train trip east for a day at the Edinburgh Festival Fringe. 
 
-There’s always a variety of interesting shows to catch in the month-long festival and this year I was particularly looking foward to Darren McGarvey <abbr>AKA</abbr> Loki’s _Scotland Today_. Having [read and enjoyed](https://previous.fuzzylogic.me/thoughts/poverty-safari-by-darren-mcgarvey) McGarvey’s book _Poverty Safari_ last year I was keen to see and hear him in the flesh.
+There are always a variety of interesting shows to catch in the month-long festival and this year I was particularly looking foward to Darren McGarvey <abbr>AKA</abbr> Loki’s _Scotland Today_. Having [read and enjoyed](https://previous.fuzzylogic.me/thoughts/poverty-safari-by-darren-mcgarvey) McGarvey’s book _Poverty Safari_ last year I was keen to see and hear him in the flesh.
 
 Another reason for the trip was that during a recent stint working with [Bright Signals](https://brightsignals.co.uk/) I developed the _FringeMaker_ web app – a Pokémon Go style game where you win points by “checking into” Fringe gig venues – so I was excited to hit the Edinburgh streets to give it a spin for real.
 
