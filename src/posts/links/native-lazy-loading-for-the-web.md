@@ -1,7 +1,7 @@
 ---
 date: 2019-08-30 15:02:00.00
 pageTitle: Native lazy-loading for the web | web.dev
-tags: ['web', 'development', 'performance', chrome', 'media', 'images']
+tags: ['web', 'development', 'performance', 'chrome', 'media', 'images']
 title: Native lazy-loading for the web | web.dev
 permalink: /links/{{ page.fileSlug }}/index.html
 linkTarget: https://web.dev/native-lazy-loading
