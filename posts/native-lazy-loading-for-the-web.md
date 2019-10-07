@@ -9,7 +9,6 @@ tags:
 - chrome
 - media
 - images
-layout: layouts/post.njk
 linkTarget: https://web.dev/native-lazy-loading
 ---
 Now that we have the HTML attribute `loading` we can set `loading="lazy"` on our website’s media, and the loading of non-critical, _below-the-fold_ media will be deferred until the user scrolls to them.

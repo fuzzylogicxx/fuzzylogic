@@ -6,7 +6,6 @@ tags:
   - web
   - 11ty
   - solution
-layout: layouts/post.njk
 ---
 I have an open-source, Eleventy-based project where the posts are restaurants, each of which is located in a particular city, and contributors to the repo can add a new restaurant as a simple markdown file. 
 

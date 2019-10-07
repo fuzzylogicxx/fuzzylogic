@@ -8,7 +8,6 @@ tags:
   - colour
   - css
   - design
-layout: layouts/post.njk
 linkTarget: https://image-color.com
 ---
 A handy tool for identifying colours – provided in numerous different CSS-ready formats – and creating a complimentary colour palette from an image you upload or provide as a URL.

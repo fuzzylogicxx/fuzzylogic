@@ -7,7 +7,6 @@ tags:
   - fringe
   - arts
   - development
-layout: layouts/post.njk
 ---
 Last Tuesday, 20/8/19 I made the train trip east for a day at the Edinburgh Festival Fringe. 
 

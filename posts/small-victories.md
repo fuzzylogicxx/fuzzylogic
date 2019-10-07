@@ -5,7 +5,6 @@ date: 2018-09-09 10:40:00
 tags: 
   - web
   - personalsites
-layout: layouts/post.njk
 linkTarget: https://www.smallvictori.es/
 ---
 > No CMS, no installation, no server, no coding required.
