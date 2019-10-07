@@ -1,18 +1,17 @@
 const { DateTime } = require("luxon");
 const fs = require("fs");
-const filesize = require("file-size");
+const pluginRss = require("@11ty/eleventy-plugin-rss");
+const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 
-const markdownIt = require('markdown-it')
-//const markdownItAnchor = require('markdown-it-anchor')
-
-
-module.exports = (function(eleventyConfig) {
-
-  // don’t want to have to set tags: post at directory level then have to repeat the post tag on each individual post
+module.exports = function(eleventyConfig) {
+  eleventyConfig.addPlugin(pluginRss);
+  eleventyConfig.addPlugin(pluginSyntaxHighlight);
   eleventyConfig.setDataDeepMerge(true);
 
+  eleventyConfig.addLayoutAlias("post", "layouts/post.njk");
+
   eleventyConfig.addFilter("readableDate", dateObj => {
-    return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat("cccc, LLL dd, yyyy");
+    return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat("dd LLL yyyy");
   });
 
   // https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
@@ -20,133 +19,75 @@ module.exports = (function(eleventyConfig) {
     return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat('yyyy-LL-dd');
   });
 
-
-  //
-  eleventyConfig.addFilter("filesize", function(path) {
-    let stat = fs.statSync(path);
-    if( stat ) {
-      return filesize(stat.size).human();
+  // Get the first `n` elements of a collection.
+  eleventyConfig.addFilter("head", (array, n) => {
+    if( n < 0 ) {
+      return array.slice(n);
     }
-    return "";
+
+    return array.slice(0, n);
   });
 
-  // Markdown Parsing
-  eleventyConfig.setLibrary(
-      'md',
-      markdownIt({
-          html: true,
-          breaks: true,
-          typographer: true
-      })
-      // .use(markdownItAnchor, {
-      //     permalink: true,
-      //     permalinkSymbol: '#',
-      //     permalinkClass: 'heading-anchor',
-      //     permalinkBefore: true,
-      //     level: 2,
-      //     slugify: s =>
-      //         encodeURIComponent(
-      //             'h-' +
-      //                 String(s)
-      //                     .trim()
-      //                     .toLowerCase()
-      //                     .replace(/[.,\/#!$%\^&\*;:{}=_`~()]/g, '')
-      //                     .replace(/\s+/g, '-')
-      //         )
-      // })
-  )
-
-  // Filter (by front-matter key) using `Array.filter`
-  // eleventyConfig.addCollection("thoughts", function(collection) {
-  //   return collection.getAll().filter(function(item) {
-  //     // Side-step tags and do your own filtering
-  //     return "thoughts" in item.data;
-  //   });
-  // });
-
-  // Collections
-
-  // For page which lists all tags
   eleventyConfig.addCollection("tagList", require("./_11ty/getTagList"));
 
-  //
-  const now = new Date();
-  const livePosts = post => post.date <= now && !post.data.draft;
+  eleventyConfig.addPassthroughCopy("img");
+  eleventyConfig.addPassthroughCopy("css");
 
-  eleventyConfig.addCollection('feed', function(collection) {
-    return collection
-      .getFilteredByTag("post")
-      .filter(livePosts)
-      .reverse()
-  })
+  /* Markdown Plugins */
+  let markdownIt = require("markdown-it");
+  let markdownItAnchor = require("markdown-it-anchor");
+  let options = {
+    html: true,
+    breaks: true,
+    linkify: true
+  };
+  let opts = {
+    permalink: true,
+    permalinkClass: "direct-link",
+    permalinkSymbol: "#"
+  };
 
-  // Collections: Thoughts
-  eleventyConfig.addCollection('thoughts', function(collection) {
-    return collection
-      .getFilteredByTag("post")
-      .filter(item => item.inputPath.match(/\/thoughts\//) !== null)
-      .filter(livePosts)
-      //.reverse()
-  })
+  eleventyConfig.setLibrary("md", markdownIt(options)
+    .use(markdownItAnchor, opts)
+  );
 
-  // Collections: Bytes
-  eleventyConfig.addCollection('bytes', function(collection) {
-    return collection
-      .getFilteredByTag("post")
-      .filter(item => item.inputPath.match(/\/bytes\//) !== null)
-      .filter(livePosts)
-      //.reverse()
-  })
+  eleventyConfig.setBrowserSyncConfig({
+    callbacks: {
+      ready: function(err, browserSync) {
+        const content_404 = fs.readFileSync('_site/404.html');
 
-  // Collections: Links
-  eleventyConfig.addCollection('links', function(collection) {
-    return collection
-      .getFilteredByTag("post")
-      .filter(item => item.inputPath.match(/\/links\//) !== null)
-      .filter(livePosts)
-      //.reverse()
-  })
+        browserSync.addMiddleware("*", (req, res) => {
+          // Provides the 404 content without redirect.
+          res.write(content_404);
+          res.end();
+        });
+      }
+    }
+  });
 
-  // Collections: Sounds
-  eleventyConfig.addCollection('sounds', function(collection) {
-    return collection
-      .getFilteredByTag("post")
-      .filter(item => item.inputPath.match(/\/sounds\//) !== null)
-      .filter(livePosts)
-      //.reverse()
-  })
-
-  // We’ll use a dedicated .eleventyignore file to tell 11ty what not to process, rather than .gitignore
-  eleventyConfig.setUseGitIgnore(false);
-
-  // Copy (without processing) the following directories and file types to the compiled site folder
-  eleventyConfig.addPassthroughCopy('src/assets');
-  eleventyConfig.addPassthroughCopy('src/browserconfig.xml');
-  eleventyConfig.addPassthroughCopy('src/favicon.ico');
-  eleventyConfig.addPassthroughCopy('src/safari-pinned-tab.svg');
-  eleventyConfig.addPassthroughCopy('src/site.webmanifest');
-  eleventyConfig.addPassthroughCopy('src/robots.txt');
-  eleventyConfig.addPassthroughCopy('src/serviceworker.js');
-  //eleventyConfig.addPassthroughCopy('src/_headers');
-
-
-  // Base Config
   return {
     templateFormats: [
-      "html",
-      "liquid",
       "md",
       "njk",
-      // Now list any non-11ty-recognized template extensions, and files of those types (e.g. icon PNGs) will just be copied directly through to /dist.
-      // Feels a bit hacky but documentation advocates it!
-      "png"
+      "html",
+      "liquid"
     ],
-    dir: {
-      input: 'src',
-      output: 'dist',
-      includes: "_includes",
-      layouts: "_layouts"
-    }
-  }
 
-});
+    // If your site lives in a different subdirectory, change this.
+    // Leading or trailing slashes are all normalized away, so don’t worry about it.
+    // If you don’t have a subdirectory, use "" or "/" (they do the same thing)
+    // This is only used for URLs (it does not affect your file structure)
+    pathPrefix: "/",
+
+    markdownTemplateEngine: "liquid",
+    htmlTemplateEngine: "njk",
+    dataTemplateEngine: "njk",
+    passthroughFileCopy: true,
+    dir: {
+      input: ".",
+      includes: "_includes",
+      data: "_data",
+      output: "_site"
+    }
+  };
+};

@@ -1,6 +1,0 @@
-{
-    "layout": "blog_article_layout.liquid",
-    "tags": ["post"],
-    "ogImagePath": "/assets/img/social_share_default_1200x630.png",
-    "ogImageAlt": "Fuzzy Logic logo"
-}
