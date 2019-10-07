@@ -33,7 +33,50 @@ module.exports = function(eleventyConfig) {
     return array.slice(0, n);
   });
 
-  eleventyConfig.addCollection("tagList", require("./_11ty/getTagList"));
+  // Collections
+
+  // Function for use as a callback in Array.filter() to exclude any posts
+  // with date in the future and or marked as draft.
+  const now = new Date();
+  const returnIfLive = post => post.date <= now && !post.data.draft;
+
+  // Live Posts
+  eleventyConfig.addCollection('liveposts', function(collection) {
+    return collection
+      .getFilteredByTag("posts")
+      .filter(returnIfLive)
+  })
+  
+  // Collection of Tags in use (on Live Posts only)
+  eleventyConfig.addCollection("tagList", function(collection) {
+    let tagSet = new Set();
+    collection.getFilteredByTag("posts").filter(returnIfLive).forEach(function(item) {
+      if( "tags" in item.data ) {
+        let tags = item.data.tags;
+  
+        tags = tags.filter(function(item) {
+          switch(item) {
+            // this list should match the `filter` list in tags.njk
+            case "all":
+            case "nav":
+            case "post":
+            case "posts":
+              return false;
+          }
+
+          return true;
+        });
+  
+        for (const tag of tags) {
+          tagSet.add(tag);
+        }
+      }
+    });
+  
+    // returning an array in addCollection works in Eleventy 0.5.3
+    return [...tagSet];
+  })
+  
 
   eleventyConfig.addPassthroughCopy("img");
   eleventyConfig.addPassthroughCopy("css");
