@@ -4,6 +4,13 @@ templateClass: tmpl-post
 ---
 <h1>{{ title }}</h1>
 
+{% if linkTarget %}
+<a class="btn btn-icon" href="{{ linkTarget }}">
+    <span class="btn-icon-text">Direct Link</span>
+    <svg class="text-icon-pair-icon" aria-hidden="true" focusable="false" width="1em" height="1em"><use xlink:href="#icon-offsite"></use></svg>
+</a>
+{% endif %}
+
 {{ content | safe }}
 
 <p><a href="{{ '/' | url }}">← Home</a></p>
