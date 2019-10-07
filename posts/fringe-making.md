@@ -16,11 +16,15 @@ Another reason for the trip was that during a recent stint working with [Bright 
 
 First port of call was to meet my friends Mick and Laura at George Square for a catch up and pre-gig beer. Having made it through the festival crowds and pouring rain to find them, we took temporary refuge with a pint and some tasty pizza from the nearby stalls, before setting off for our first gig: <span class="nobreak">Tony Slattery’s _Slattery Will Get You Nowhere_</span>.
 
+## Slattery will get you nowhere
+
 In the early nineties I enjoyed watching Tony on _Whose Line is it Anyway?_ and I was moved by a recent [Guardian interview](https://www.theguardian.com/lifeandstyle/2019/apr/29/tony-slattery-had-very-happy-time-went-slightly-barmy) which revealed that in the years following the show ending he fell off the rails somewhat due to his bipolar disorder allied to alcohol and drug addictions, and was now looking for an agent and new opportunities.
 
 The format of this show was just Tony and comedy historian Robert Ross sat at a table, with Tony answering a series of unscripted questions. Over the course of an hour he stepped through his career, from winning the Fringe’s inaugural Perrier Award with Cambridge Footlights pals Stephen Fry, Hugh Laurie and Emma Thompson (“yeah but where are they _now_?”), to pant-splitting (literally) and deleted scenes on _Whose Line is it Anyway?_, to acting roles in films such as _Peter’s Friends_. It was filled with funny anecdotes involving the likes of Rik Mayall and Kenneth Branagh, plus a few might-have-been stories such as when he narrowly missed out (to Sylvester McCoy) on the role of Doctor Who. 
 
 Overall I really enjoyed this. Despite having problems which have taken their toll, Tony Slattery is still a funny and engaging performer and is also doing his bit to help raise awareness of bipolar disorder. He seems like a good egg.
+
+## Scotland Today
 
 Onwards to Darren McGarvey’s show at The Stand’s New Town Theatre, and he unexpectedly begins with a TED Talk style discussion on space and quantum mechanics, setting up the idea that there are two contradictory versions of himself. 
 

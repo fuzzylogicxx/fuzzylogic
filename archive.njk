@@ -3,10 +3,21 @@ layout: layouts/home.njk
 tags:
   - nav
 navtitle: Blog
-permalink: /posts/
+pagination:
+  data: collections.liveposts
+  size: 10
+  reverse: true
+  alias: posts
+permalink: posts/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber }}/{% endif %}index.html
 ---
 
 <h1>Archive</h1>
 
-{% set postslist = collections.liveposts %}
+{% set postslist = posts %}
 {% include "postslist.njk" %}
+
+<nav class="traverse">
+  {%- if pagination.previousPageHref %}<a rel="next" href="{{ pagination.previousPageHref }}">Newer Posts <span aria-hidden="true">→</span></a>{%- endif %}
+  {%- if pagination.nextPageHref %}<a rel="prev" href="{{ pagination.nextPageHref }}"><span aria-hidden="true">←</span> Older Posts</a>{%- endif %}
+</nav>
+
