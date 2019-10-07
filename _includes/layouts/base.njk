@@ -31,7 +31,9 @@
       {{ content | safe }}
     </main>
 
-    <footer></footer>
+    <footer>
+    <a href="{{ metadata.feed.url | url }}">RSS</a>
+    </footer>
 
     <!-- Current page: {{ page.url | url }} -->
   </body>
