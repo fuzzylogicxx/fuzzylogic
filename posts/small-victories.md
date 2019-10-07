@@ -3,6 +3,7 @@ title: Small Victories
 description: Small Victories takes files in a Dropbox folder and turns them into a website.
 date: 2018-09-09 10:40:00
 tags: 
+  - link
   - web
   - personalsites
 linkTarget: https://www.smallvictori.es/

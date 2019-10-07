@@ -3,6 +3,7 @@ title: Namecheap
 description: Cheap domain names from a reliable source
 date: 2018-08-30 18:51:00
 tags: 
+  - link
   - web
   - domains
   - service

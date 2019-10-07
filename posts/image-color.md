@@ -3,6 +3,7 @@ title: Image Color
 description: Online Color Picker From Image
 date: 2018-09-09 10:51:00
 tags: 
+  - link
   - web
   - tool
   - colour

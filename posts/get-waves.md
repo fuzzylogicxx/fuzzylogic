@@ -3,6 +3,7 @@ title: Get Waves
 description: A tool for generating SVG waves
 date: 2019-08-25 15:02:00
 tags: 
+  - link
   - web
   - svg
   - tool

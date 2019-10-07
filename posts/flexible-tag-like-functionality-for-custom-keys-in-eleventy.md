@@ -3,6 +3,7 @@ title: Flexible tag-like functionality for custom keys in Eleventy
 description: Achieving tag-like functionality without using tags in Eleventy
 date: 2019-08-26 13:49:00
 tags: 
+  - thought
   - web
   - 11ty
   - solution

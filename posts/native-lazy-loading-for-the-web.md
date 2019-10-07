@@ -3,6 +3,7 @@ title: Native lazy-loading for the web | web.dev
 description: Native lazy-loading without the need for JavaScript is now here.
 date: 2019-08-30 15:02:00
 tags: 
+- link
 - web
 - development
 - performance

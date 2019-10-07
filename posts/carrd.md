@@ -3,6 +3,7 @@ title: Carrd - simple, free, fully responsive one-page sites for pretty much any
 description: Free (or cheap premium) single-page profile websites
 date: 2018-09-06 18:51:00
 tags: 
+- link
 - web
 - personalsites
 linkTarget: https://carrd.co/

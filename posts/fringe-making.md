@@ -3,6 +3,7 @@ title: Fringe Making
 description: A day at the Edinburgh Fringe Festival seeing shows and catching up with old friends 
 date: 2019-08-27 13:32:00
 tags: 
+  - thought
   - edinburgh
   - fringe
   - arts
