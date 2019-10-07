@@ -1,3 +1,4 @@
 {
-    "section": "links"
+    "section": "links",
+    "permalink": "/links/{{ page.fileSlug }}/index.html"
 }
