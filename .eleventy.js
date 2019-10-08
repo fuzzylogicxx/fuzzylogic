@@ -3,6 +3,7 @@ const fs = require("fs");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const CleanCSS = require("clean-css");
+const Terser = require('terser');
 
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);
@@ -11,14 +12,62 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.addLayoutAlias("post", "layouts/post.njk");
 
+  //
+  // Eleventy Filters (we pass stuff through them to get them out the way we want)
+  //
+
+  // Readable Date filter
   eleventyConfig.addFilter("readableDate", dateObj => {
     return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat("dd LLL yyyy");
   });
 
+  // cssmin filter
   eleventyConfig.addFilter("cssmin", (code) => {
     return new CleanCSS({}).minify(code).styles;
   });
-  
+
+  // jsmin filter
+  eleventyConfig.addFilter('jsmin', (code) => {
+    let minified = Terser.minify(code);
+    if ( minified.error ) {
+        console.log("Terser error: ", minified.error);
+        return code;
+    }
+    return minified.code;
+  });
+
+  // 'squash' filter (used when creating the search index)
+  // credit Phil Hawksworth
+  // Make a search index string by removing duplicated words
+  // and removing less useful, common short words
+  // @param {String} text
+
+  eleventyConfig.addFilter("squash", (text) => {
+    var content = new String(text);
+
+    // all lower case, please
+    var content = content.toLowerCase();
+
+    // remove all html elements and new lines
+    var re = /(&lt;.*?&gt;)/gi;
+    var plain = unescape(content.replace(re, ''));
+
+    // remove duplicated words
+    var words = plain.split(' ');
+    var deduped = [...(new Set(words))];
+    var dedupedStr = deduped.join(' ')
+
+    // remove short and less meaningful words
+    var result = dedupedStr.replace(/\b(\.|\,|the|a|an|and|am|you|I|to|if|of|off|me|my|on|in|it|is|at|as|we|do|be|has|but|was|so|no|not|or|up|for)\b/gi, '');
+    //remove newlines, and punctuation
+    result = result.replace(/\.|\,|\?|-|—|\n/g, '');
+    //remove repeated spaces
+    result = result.replace(/[ ]{2,}/g, ' ');
+
+    return result;
+  });
+
+
   // https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
   eleventyConfig.addFilter('htmlDateString', (dateObj) => {
     return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat('yyyy-LL-dd');
@@ -46,14 +95,14 @@ module.exports = function(eleventyConfig) {
       .getFilteredByTag("posts")
       .filter(returnIfLive)
   })
-  
+
   // Collection of Tags in use (on Live Posts only)
   eleventyConfig.addCollection("tagList", function(collection) {
     let tagSet = new Set();
     collection.getFilteredByTag("posts").filter(returnIfLive).forEach(function(item) {
       if( "tags" in item.data ) {
         let tags = item.data.tags;
-  
+
         tags = tags.filter(function(item) {
           switch(item) {
             // this list should match the `filter` list in tags.njk
@@ -69,17 +118,17 @@ module.exports = function(eleventyConfig) {
 
           return true;
         });
-  
+
         for (const tag of tags) {
           tagSet.add(tag);
         }
       }
     });
-  
+
     // returning an array in addCollection works in Eleventy 0.5.3
     return [...tagSet];
   })
-  
+
 
   eleventyConfig.addPassthroughCopy("img");
   eleventyConfig.addPassthroughCopy("css");
