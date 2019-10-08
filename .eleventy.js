@@ -111,8 +111,8 @@ module.exports = function(eleventyConfig) {
             case "post":
             case "posts":
             case "link":
-            case "thought":
-            case "byte":
+            case "entry":
+            case "note":
               return false;
           }
 

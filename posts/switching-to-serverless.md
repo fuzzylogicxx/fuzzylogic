@@ -2,7 +2,8 @@
 title: Switching to Serverless
 description: Moving from a Perch site on the LAMP stack to an 11ty-based site on Netlify
 date: 2019-08-18 08:00:00
-tags: 
+tags:
+- entry
 - web
 - development
 - eleventy
@@ -19,12 +20,12 @@ Continuous deployment
 
 Why?
 - Eleventy
-  - Curiosity. I wanted to try it. 
+  - Curiosity. I wanted to try it.
   - Performance (static files, quicker TTFB)
   - Database-less: all content is centralised in the repo
   - Work in code: i.e. write articles in code (remove the middleman).
 - Netlify
-  - Curiosity. I wanted to try it. 
+  - Curiosity. I wanted to try it.
   - Performance – hmmm....  although not sure about the FOUT issue   with self-hosted fonts.
   - Free hosting, so far
   - Does the deployment and hosting stuff on top of your existing Open Source build and repo hosting workflow

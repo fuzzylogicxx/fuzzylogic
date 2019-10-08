@@ -2,25 +2,25 @@
 title: Flexible tag-like functionality for custom keys in Eleventy
 description: Achieving tag-like functionality without using tags in Eleventy
 date: 2019-08-26 13:49:00
-tags: 
-  - thought
+tags:
+  - entry
   - web
   - 11ty
   - solution
 ---
-I have an open-source, Eleventy-based project where the posts are restaurants, each of which is located in a particular city, and contributors to the repo can add a new restaurant as a simple markdown file. 
+I have an open-source, Eleventy-based project where the posts are restaurants, each of which is located in a particular city, and contributors to the repo can add a new restaurant as a simple markdown file.
 
-I just had to solve a conundrum wherein I wanted a custom front matter key, _city_, to have similar features as _tags_, namely: 
+I just had to solve a conundrum wherein I wanted a custom front matter key, _city_, to have similar features as _tags_, namely:
 
-1. it takes arbitrary values (e.g. _Glasgow_, or _London_, or _Cañon City_, or anything a contributor might choose); 
-2. there is a corresponding _cityList_ [collection](https://www.11ty.io/docs/collections/); 
-3. there is a page which lists all cities in the _cityList_ collection as links; and 
-4. there’s a page for each city which lists all restaurants in that city (much like a “Tagged _Glasgow_” page). 
+1. it takes arbitrary values (e.g. _Glasgow_, or _London_, or _Cañon City_, or anything a contributor might choose);
+2. there is a corresponding _cityList_ [collection](https://www.11ty.io/docs/collections/);
+3. there is a page which lists all cities in the _cityList_ collection as links; and
+4. there’s a page for each city which lists all restaurants in that city (much like a “Tagged _Glasgow_” page).
 
 You could be forgiven for asking: why didn’t I just implement the cities as tags? I could have tagged posts with "glasgow", or "edinburgh" for example. Well, here was my rationale:
-- for cities, I need the proper, correctly spelled, spaced and punctuated name so I can display it as a page title. A lowercased, squashed together “tag” version wouldn’t cut it; 
+- for cities, I need the proper, correctly spelled, spaced and punctuated name so I can display it as a page title. A lowercased, squashed together “tag” version wouldn’t cut it;
 - I list “all tags” elsewhere and wouldn’t want the cities amongst them. Although Eleventy allows you to filter given tag values out, in this case that would be a pain to achieve because the city values are not known up front;
-- Lastly it just _felt right_ for ease of future data manipulation that city should be a separate entity. 
+- Lastly it just _felt right_ for ease of future data manipulation that city should be a separate entity.
 
 This task was a bit of a head-scratcher and sent me down a few blind alleys at first. Rightly or wrongly, it took me a while to realise that only all posts for _tag values_ are automatically available as collections in Eleventy. So any other collections you need, you have to DIY. Once I worked that out, I arrived at a strategy of:
 
@@ -41,7 +41,7 @@ module.exports = function(collection) {
   let citySet = new Set();
   collection.getAll().forEach(function(item) {
     if( "city" in item.data ) {
-      let city = item.data.city;  
+      let city = item.data.city;
       citySet.add(city);
     }
   });
