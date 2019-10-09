@@ -4,6 +4,7 @@ const pluginRss = require("@11ty/eleventy-plugin-rss");
 const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const CleanCSS = require("clean-css");
 const Terser = require('terser');
+//const pluginRespimg = require('eleventy-plugin-respimg');
 
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);
@@ -67,7 +68,6 @@ module.exports = function(eleventyConfig) {
     return result;
   });
 
-
   // https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
   eleventyConfig.addFilter('htmlDateString', (dateObj) => {
     return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat('yyyy-LL-dd');
@@ -78,11 +78,12 @@ module.exports = function(eleventyConfig) {
     if( n < 0 ) {
       return array.slice(n);
     }
-
     return array.slice(0, n);
   });
 
+  //
   // Collections
+  //
 
   // Function for use as a callback in Array.filter() to exclude any posts
   // with date in the future and or marked as draft.
@@ -129,11 +130,31 @@ module.exports = function(eleventyConfig) {
     return [...tagSet];
   })
 
+  // Cloudinary
+  eleventyConfig.cloudinaryCloudName = 'fuzzylogic';
+	eleventyConfig.srcsetWidths = [320, 640, 960, 1280, 1600, 1920, 2240, 2560];
+  eleventyConfig.fallbackWidth = 640;
+  //eleventyConfig.addPlugin(pluginRespimg);
+
+  eleventyConfig.addShortcode( 'respimg', function( src, alt, sizes ) {
+    const fetchBase = `https://res.cloudinary.com/${ eleventyConfig.cloudinaryCloudName }/image/fetch/`;
+
+    return `<img
+    srcset="${eleventyConfig.srcsetWidths.map( ( w ) => { return `${ fetchBase }q_auto,f_auto,w_${ w }/${ src } ${ w }w` } ).join( ', ' )}"
+    sizes="${ sizes ? sizes : '100vw' }"
+    src="${ fetchBase }q_auto,f_auto,w_${ eleventyConfig.fallbackWidth }/${ src }"
+    ${ alt ? `alt="${ alt }"` : '' }
+    />`;
+
+  } );
+
 
   eleventyConfig.addPassthroughCopy("img");
   eleventyConfig.addPassthroughCopy("css");
 
-  /* Markdown Plugins */
+  //
+  // Markdown Plugins
+  //
   let markdownIt = require("markdown-it");
   let markdownItAnchor = require("markdown-it-anchor");
   let options = {
@@ -151,6 +172,9 @@ module.exports = function(eleventyConfig) {
     .use(markdownItAnchor, opts)
   );
 
+  //
+  // BrowserSync Config
+  //
   eleventyConfig.setBrowserSyncConfig({
     callbacks: {
       ready: function(err, browserSync) {
