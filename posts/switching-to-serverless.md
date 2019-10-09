@@ -38,7 +38,11 @@ Why?
       - Auto performance
       - Auto cache busting
 
-
+I started off without starting from the Eleventy base blog before learning the error of my ways. With it, you get:
+- RSS
+- Permalink anchors for your markdown headers
+- Tag pages
+- In general the elegant simplicity that comes from something made by the creators
 
 
 
@@ -46,6 +50,7 @@ Why?
 However I had to find a solution to issue of FOUT on _repeat_ visits. Why was it happening? https://stackoverflow.com/questions/52308658/netlify-headers-cache-control-for-static-assets
 
 References / inspiration:
+hawksworx search
 https://www.filamentgroup.com/lab/build-a-blog/
 https://keepinguptodate.com/pages/2019/06/creating-blog-with-eleventy/ (note this also has stuff re. moment dates and blog article excerpts I might want to revisit)
 https://github.com/11ty/eleventy-base-blog
