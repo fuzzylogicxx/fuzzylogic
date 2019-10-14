@@ -9,6 +9,7 @@ tags:
   - solution
 ---
 I have an open-source, Eleventy-based project where the posts are restaurants, each of which is located in a particular city, and contributors to the repo can add a new restaurant as a simple markdown file.
+---
 
 I just had to solve a conundrum wherein I wanted a custom front matter key, _city_, to have similar features as _tags_, namely:
 

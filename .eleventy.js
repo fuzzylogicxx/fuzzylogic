@@ -149,6 +149,12 @@ module.exports = function(eleventyConfig) {
   } );
 
 
+  // Excerpts (https://www.11ty.io/docs/data-frontmatter/#example%3A-parse-excerpts-from-content)
+  eleventyConfig.setFrontMatterParsingOptions({
+    excerpt: true
+  });
+
+
   eleventyConfig.addPassthroughCopy("img");
   eleventyConfig.addPassthroughCopy("css");
 
@@ -171,6 +177,9 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.setLibrary("md", markdownIt(options)
     .use(markdownItAnchor, opts)
   );
+
+  // Be able to render a markdown post excerpt with the target HTML in Nunjucks
+  eleventyConfig.addNunjucksFilter("markdownify", markdownString => markdownIt(options).render(markdownString));
 
   //
   // BrowserSync Config
