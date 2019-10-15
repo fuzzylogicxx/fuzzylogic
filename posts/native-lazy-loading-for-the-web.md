@@ -12,7 +12,8 @@ tags:
 - images
 linkTarget: https://web.dev/native-lazy-loading
 ---
-Now that we have the HTML attribute `loading` we can set `loading="lazy"` on our website’s media, and the loading of non-critical, _below-the-fold_ media will be deferred until the user scrolls to them.---
+Now that we have the HTML attribute `loading` we can set `loading="lazy"` on our website’s media, and the loading of non-critical, _below-the-fold_ media will be deferred until the user scrolls to them.
+---
 
 This can really improve performance so I’ve implemented it on images and iframes (youtube video embeds etc) throughout this site.
 

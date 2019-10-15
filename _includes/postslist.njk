@@ -3,7 +3,7 @@
   <li class="postlist-item{% if post.url == url %} postlist-item-active{% endif %}">
     <header>
       {% if (post.data.tags[1] === 'link') -%}
-        <svg aria-hidden="true" focusable="false" width="1em" height="1em"><use xlink:href="#icon-offsite"></use></svg> <span class="post-type">Link</span>
+        <svg aria-hidden="true" focusable="false" width="1em" height="1em"><use xlink:href="#icon-bookmark"></use></svg> <span class="post-type">Bookmark</span>
       {% elif(post.data.tags[1] === 'note') -%}
         <span class="post-type">Note</span>
       {% else -%}
@@ -11,9 +11,19 @@
       {% endif -%}
       <time class="postlist-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
     </header>
-    <a href="{{ post.url | url }}" class="postlist-link">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a>
+    <a {% if (post.data.linkTarget) -%}href="{{ post.data.linkTarget | url }}"{% else %}href="{{ post.url | url }}"{% endif %} class="postlist-link">
+      {% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}
+    </a>
     <div>
-      {% if (post.data.page.excerpt) -%}{%- set excerpt = post.data.page.excerpt -%}{{ excerpt | markdownify | safe }}{%- endif %}
+      {% if (post.data.page.excerpt) -%}
+      {%- set excerpt = post.data.page.excerpt -%}{{ excerpt | markdownStringToHTML | safe }}
+      {%- else -%}
+      {{ post.templateContent | markdownStringToHTML | safe }}
+      {%- endif %}
+
+      {% if (post.data.linkTarget) -%}
+      <a href="{{ post.url | url }}">Read my notes</a> / <a href="{{ post.data.linkTarget | url }}">Visit original</a>
+      {% endif %}
     </div>
     {% for tag in post.data.tags %}
       {%- if (tag != "posts") and (tag != "link") and (tag != "note") and (tag != "entry") -%}

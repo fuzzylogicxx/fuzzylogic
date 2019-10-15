@@ -13,6 +13,7 @@ tags:
 draft: true
 ---
 SEe https://trello.com/c/DJOVkciy/87-write-and-publish-a-debrief-blog-post-i-got-help-from and "Notes > My Blog"
+---
 
 From dynamic Perch and LAMP to static 11ty and Netlify
 Continuous deployment

@@ -14,7 +14,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addLayoutAlias("post", "layouts/post.njk");
 
   //
-  // Eleventy Filters (we pass stuff through them to get them out the way we want)
+  // Eleventy Filters (functions we use elsewhere to modify strings, dates, file contents etc to get what we want)
   //
 
   // Readable Date filter
@@ -37,8 +37,7 @@ module.exports = function(eleventyConfig) {
     return minified.code;
   });
 
-  // 'squash' filter (used when creating the search index)
-  // credit Phil Hawksworth
+  // 'squash' filter (used when creating the search index) | credit Phil Hawksworth
   // Make a search index string by removing duplicated words
   // and removing less useful, common short words
   // @param {String} text
@@ -85,7 +84,7 @@ module.exports = function(eleventyConfig) {
   // Collections
   //
 
-  // Function for use as a callback in Array.filter() to exclude any posts
+  // returnIfLive: a function for use as a callback in Array.filter() to exclude any posts...
   // with date in the future and or marked as draft.
   const now = new Date();
   const returnIfLive = post => post.date <= now && !post.data.draft;
@@ -174,12 +173,12 @@ module.exports = function(eleventyConfig) {
     permalinkSymbol: "#"
   };
 
-  eleventyConfig.setLibrary("md", markdownIt(options)
-    .use(markdownItAnchor, opts)
-  );
+  mdi = new markdownIt(options);
 
-  // Be able to render a markdown post excerpt with the target HTML in Nunjucks
-  eleventyConfig.addNunjucksFilter("markdownify", markdownString => markdownIt(options).render(markdownString));
+  eleventyConfig.setLibrary("md", mdi.use(markdownItAnchor, opts));
+
+  // Render a markdown string from a .md file (e.g. a post excerpt) as the target HTML in Nunjucks
+  eleventyConfig.addNunjucksFilter("markdownStringToHTML", markdownString => mdi.render(markdownString));
 
   //
   // BrowserSync Config

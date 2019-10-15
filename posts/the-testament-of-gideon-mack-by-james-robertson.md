@@ -7,3 +7,4 @@ description: Strange, otherwordly and often funny tale of a Scottish minister’
 draft: true
 ---
 I’ve just finished reading this book which was recommended to me by my pal, Mick.
+---

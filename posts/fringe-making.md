@@ -9,7 +9,8 @@ tags:
   - arts
   - development
 ---
-Last Tuesday, 20/8/19 I made the train trip east for a day at the Edinburgh Festival Fringe.---
+Last Tuesday, 20/8/19 I made the train trip east for a day at the Edinburgh Festival Fringe.
+---
 
 There are always a variety of interesting shows to catch in the month-long festival and this year I was particularly looking foward to Darren McGarvey <abbr>AKA</abbr> Loki’s _Scotland Today_. Having <a href="{{ '/posts/poverty-safari-by-darren-mcgarvey/' | url }}">read and enjoyed</a> McGarvey’s book _Poverty Safari_ last year I was keen to see and hear him in the flesh.
 
