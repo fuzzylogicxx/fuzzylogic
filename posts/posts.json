@@ -1,6 +1,8 @@
 {
   "tags": [
     "posts"
-  ], 
-  "layout": "layouts/post.njk"
+  ],
+  "layout": "layouts/post.njk",
+  "ogImagePath": "/assets/img/social_share_default_1200x630.png",
+  "ogImageAlt": "Fuzzy Logic logo"
 }
