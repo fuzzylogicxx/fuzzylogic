@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
       {%- if (renderData.title) -%}
-      {{ metadata.title }}: {{ renderData.title }}
+      {{ renderData.title }} | {{ metadata.name }}
       {%- elif (title) -%}
-      {{ metadata.title }}: {{ title }}
+      {{ title }} | {{ metadata.name }}
       {%- else -%}
       {{ metadata.title }}
       {%- endif -%}
@@ -23,11 +23,11 @@
       {{ css | cssmin | safe }}
     </style>
 
-    <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
+    <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.name }}">
   </head>
   <body>
     <header>
-      <h1 class="home"><a href="{{ '/' | url }}">{{ metadata.title }}</a></h1>
+      <h1 class="home"><a href="{{ '/' | url }}">{{ metadata.name }}</a></h1>
       <ul class="nav">
         {%- for nav in collections.nav | reverse -%}
         <li {% if nav.data.navID %}id="{{ nav.data.navID }}"{% endif %} class="nav-item{% if nav.url == page.url %} nav-item-active{% endif %}"><a href="{{ nav.url | url }}">{{ nav.data.navtitle }}</a></li>
