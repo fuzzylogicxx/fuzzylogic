@@ -22,6 +22,16 @@ module.exports = function(eleventyConfig) {
     return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat("dd LLL yyyy");
   });
 
+  // Readable Time filter
+  eleventyConfig.addFilter("readableTime", dateObj => {
+    return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat("h:mm a");
+  });
+
+  // https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
+  eleventyConfig.addFilter('htmlDateString', (dateObj) => {
+    return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat('yyyy-LL-dd');
+  });
+
   // cssmin filter
   eleventyConfig.addFilter("cssmin", (code) => {
     return new CleanCSS({}).minify(code).styles;
@@ -67,11 +77,6 @@ module.exports = function(eleventyConfig) {
     return result;
   });
 
-  // https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
-  eleventyConfig.addFilter('htmlDateString', (dateObj) => {
-    return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat('yyyy-LL-dd');
-  });
-
   // Get the first `n` elements of a collection.
   eleventyConfig.addFilter("head", (array, n) => {
     if( n < 0 ) {
@@ -84,8 +89,8 @@ module.exports = function(eleventyConfig) {
   // Collections
   //
 
-  // returnIfLive: a function for use as a callback in Array.filter() to exclude any posts...
-  // with date in the future and or marked as draft.
+  // returnIfLive: function for use as callback in Array.filter()
+  // to exclude any posts with date in the future or marked as draft.
   const now = new Date();
   const returnIfLive = post => post.date <= now && !post.data.draft;
 

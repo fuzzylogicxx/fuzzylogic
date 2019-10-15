@@ -11,9 +11,13 @@
       {% endif -%}
       <time class="postlist-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
     </header>
+    {% if(post.data.tags[1] !== 'note') -%}
     <a {% if (post.data.linkTarget) -%}href="{{ post.data.linkTarget | url }}"{% else %}href="{{ post.url | url }}"{% endif %} class="postlist-link">
-      {% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}
+      {{ post.data.title }}
     </a>
+    {% else -%}
+    <a href="{{ post.url | url }}">{{ post.date | readableTime }}</a> <span>·</span> {{ post.data.location }}</span>
+    {% endif -%}
     <div>
       {% if (post.data.page.excerpt) -%}
       {%- set excerpt = post.data.page.excerpt -%}{{ excerpt | markdownStringToHTML | safe }}
