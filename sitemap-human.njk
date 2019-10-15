@@ -1,0 +1,11 @@
+---
+layout: layouts/home.njk
+permalink: /sitemap/index.html
+eleventyExcludeFromCollections: true
+---
+<ul>
+{% set entries = collections.all %}
+{%- for entry in entries %}
+  <li><a href="{{ entry.url }}">{{ entry.data.title or 'Untitled' }}</a></li>
+{%- endfor %}
+</ul>
