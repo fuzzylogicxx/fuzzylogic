@@ -13,4 +13,15 @@ templateClass: tmpl-post
 
 {{ content | safe }}
 
+{% if tags %}
+<ul class="tags">
+{% for tag in tags %}
+  {%- if (tag != "posts") and (tag != "link") and (tag != "note") and (tag != "entry") -%}
+  {% set tagUrl %}/tags/{{ tag }}/{% endset %}
+  <li><a href="{{ tagUrl | url }}" class="tag">{{ tag }}</a></li>
+  {%- endif -%}
+{% endfor %}
+</ul>
+{% endif %}
+
 <p><a href="{{ '/' | url }}">← Home</a></p>
