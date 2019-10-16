@@ -134,22 +134,19 @@ module.exports = function(eleventyConfig) {
     return [...tagSet];
   })
 
-  // Cloudinary
+  // Cloudinary / Responsive Images
   eleventyConfig.cloudinaryCloudName = 'fuzzylogic';
 	eleventyConfig.srcsetWidths = [320, 640, 960, 1280, 1600, 1920, 2240, 2560];
   eleventyConfig.fallbackWidth = 640;
-  //eleventyConfig.addPlugin(pluginRespimg);
 
-  eleventyConfig.addShortcode( 'respimg', function( src, alt, sizes ) {
+  eleventyConfig.addShortcode( 'respimg', function( src, alt, srcsetWidthRange=eleventyConfig.srcsetWidths, sizes ) {
     const fetchBase = `https://res.cloudinary.com/${ eleventyConfig.cloudinaryCloudName }/image/fetch/`;
-
     return `<img
-    srcset="${eleventyConfig.srcsetWidths.map( ( w ) => { return `${ fetchBase }q_auto,f_auto,w_${ w }/${ src } ${ w }w` } ).join( ', ' )}"
+    srcset="${srcsetWidthRange.map( ( w ) => { return `${ fetchBase }q_auto,f_auto,w_${ w }/${ src } ${ w }w` } ).join( ', ' )}"
     sizes="${ sizes ? sizes : '100vw' }"
     src="${ fetchBase }q_auto,f_auto,w_${ eleventyConfig.fallbackWidth }/${ src }"
     ${ alt ? `alt="${ alt }"` : '' }
-    />`;
-
+    loading="lazy" />`;
   } );
 
 
@@ -216,7 +213,7 @@ module.exports = function(eleventyConfig) {
     // This is only used for URLs (it does not affect your file structure)
     pathPrefix: "/",
 
-    markdownTemplateEngine: "liquid",
+    markdownTemplateEngine: "njk",
     htmlTemplateEngine: "njk",
     dataTemplateEngine: "njk",
     passthroughFileCopy: true,

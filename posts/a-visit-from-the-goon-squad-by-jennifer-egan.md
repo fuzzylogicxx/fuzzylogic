@@ -14,15 +14,15 @@ tags:
 I really enjoyed this book, recommended to me by <a href="https://twitter.com/Gilco80">Gillian</a> and <a href="https://twitter.com/mrtomchurchill">Tom</a>.
 ---
 
+{% if app.environment == "prod" %}
+{% set srcsetWidthRange = [320, 640, 960, 1280, 1600] %}
 <figure>
-  <img
-  srcset="https://res.cloudinary.com/fuzzylogic/image/fetch/q_auto,f_auto,w_320/https://previous.fuzzylogic.me/console/resources/a881d547-b147-43ef-bc5d-a7c41e937dec.jpeg 320w, https://res.cloudinary.com/fuzzylogic/image/fetch/q_auto,f_auto,w_640/https://previous.fuzzylogic.me/console/resources/a881d547-b147-43ef-bc5d-a7c41e937dec.jpeg 640w, https://res.cloudinary.com/fuzzylogic/image/fetch/q_auto,f_auto,w_960/https://previous.fuzzylogic.me/console/resources/a881d547-b147-43ef-bc5d-a7c41e937dec.jpeg 960w, https://res.cloudinary.com/fuzzylogic/image/fetch/q_auto,f_auto,w_1280/https://previous.fuzzylogic.me/console/resources/a881d547-b147-43ef-bc5d-a7c41e937dec.jpeg 1280w, https://res.cloudinary.com/fuzzylogic/image/fetch/q_auto,f_auto,w_1280/https://previous.fuzzylogic.me/console/resources/a881d547-b147-43ef-bc5d-a7c41e937dec.jpeg 1600w"
-  sizes="(min-width: 48em) 48em, 100vw"
-  src="https://res.cloudinary.com/fuzzylogic/image/fetch/q_auto,f_auto,w_640/https://previous.fuzzylogic.me/console/resources/a881d547-b147-43ef-bc5d-a7c41e937dec.jpeg"
-  alt="A photo of the book “A Visit from the Goon Squad” by Jennifer Egan"
-  loading="lazy" />
+  {% respimg
+    "https://previous.fuzzylogic.me/console/resources/a881d547-b147-43ef-bc5d-a7c41e937dec.jpeg", "A photo of the book “A Visit from the Goon Squad” by Jennifer Egan", srcsetWidthRange, "(min-width: 48em) 48em, 100vw"
+  %}
   <figcaption>A Visit from the Goon Squad</figcaption>
 </figure>
+{% endif %}
 
 It’s set primarily in New York and tells the stories of a cast of interconnected characters (and their children) linked by the music industry, taking in themes of youth and ageing, loss and regret, insecurity, celebrity and image.
 
