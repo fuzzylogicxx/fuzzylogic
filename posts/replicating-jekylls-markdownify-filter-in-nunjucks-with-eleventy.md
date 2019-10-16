@@ -13,4 +13,6 @@ linkTarget: https://edjohnsonwilliams.co.uk/2019/05/04/replicating-jekyll-s-mark
 Here, [Ed](https://edjohnsonwilliams.co.uk/) provides some handy code to convert a Markdown-formatted string into HTML in Nunjucks via an Eleventy shortcode.
 ---
 
-This performs the same role as the [markdownify Liquid filter in Jekyll](https://jekyllrb.com/docs/liquid/filters/)).
+This performs the same role as the [_markdownify_ filter in Jekyll](https://jekyllrb.com/docs/liquid/filters/).
+
+I’m now using it on this site in listings, using the shortcode to convert blog entry _excerpts_ written in markdown (which might contain code or italics, etc) into the target HTML.

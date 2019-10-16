@@ -14,14 +14,7 @@
     </title>
     <meta name="description" content="{{ renderData.description or description or metadata.description }}">
 
-    <!-- Improve performance by inlining Critical CSS -->
-    {%- set css %}
-      {% include "../../css/index.css" %}
-      {% include "../../css/prism-base16-monokai.dark.css" %}
-    {% endset %}
-    <style>
-      {{ css | cssmin | safe }}
-    </style>
+    <style>{% include "css/main.css" %}</style>
 
     <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.name }}">
   </head>
@@ -68,13 +61,7 @@
       </symbol>
     </svg>
 
-    {% set js %}
-      {% include "sample.js" %}
-      {% include "sample2.js" %}
-    {% endset %}
-    <script>
-      {{ js | jsmin | safe }}
-    </script>
+    <script>{% include "js/fuzzylogic.js" %}</script>
 
   </body>
 </html>
