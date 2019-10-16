@@ -5,9 +5,9 @@
   "scripts": {
     "serve": "gulp build & gulp watch & ELEVENTY_ENV=dev npx @11ty/eleventy --serve",
     "serve:prod": "gulp build & gulp watch & ELEVENTY_ENV=prod npx @11ty/eleventy --serve",
-    "build": "gulp build & ELEVENTY_ENV=prod npx @11ty/eleventy",
     "watch": "npx eleventy --watch",
-    "debug": "DEBUG=* npx eleventy"
+    "debug": "DEBUG=* npx eleventy",
+    "build": "gulp build & ELEVENTY_ENV=prod npx eleventy"
   },
   "repository": {
     "type": "git",
