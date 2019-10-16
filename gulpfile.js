@@ -1,7 +1,19 @@
 const gulp   = require("gulp");
 const sass   = require("gulp-sass");
-const terser = require('gulp-terser'); //const uglify  = require('gulp-uglify');
 const concat = require('gulp-concat');
+const babel  = require('gulp-babel');
+const uglify = require('gulp-uglify');
+
+
+
+gulp.task('default', () =>
+    gulp.src('src/app.js')
+        .pipe(babel({
+            presets: ['@babel/env']
+        }))
+        .pipe(gulp.dest('dist'))
+);
+
 
 /*
   generate .css from .scss with sass
@@ -24,7 +36,10 @@ gulp.task('css', function() {
 gulp.task('js', function() {
   return gulp.src("./js/**/*.js")
     .pipe(concat('fuzzylogic.js'))
-    .pipe(terser()) //.pipe(uglify())
+    .pipe(babel({
+      presets: ['@babel/env']
+    }))
+    .pipe(uglify())
     .pipe(gulp.dest('./_includes/js'));
 });
 

@@ -3,7 +3,6 @@ const fs = require("fs");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const CleanCSS = require("clean-css");
-const Terser = require('terser');
 //const pluginRespimg = require('eleventy-plugin-respimg');
 
 module.exports = function(eleventyConfig) {
@@ -30,21 +29,6 @@ module.exports = function(eleventyConfig) {
   // https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
   eleventyConfig.addFilter('htmlDateString', (dateObj) => {
     return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat('yyyy-LL-dd');
-  });
-
-  // cssmin filter
-  eleventyConfig.addFilter("cssmin", (code) => {
-    return new CleanCSS({}).minify(code).styles;
-  });
-
-  // jsmin filter
-  eleventyConfig.addFilter('jsmin', (code) => {
-    let minified = Terser.minify(code);
-    if ( minified.error ) {
-        console.log("Terser error: ", minified.error);
-        return code;
-    }
-    return minified.code;
   });
 
   // 'squash' filter (used when creating the search index) | credit Phil Hawksworth
