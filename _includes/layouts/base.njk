@@ -17,8 +17,6 @@
     <style>{% include "css/main.css" %}</style>
 
     <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.name }}">
-
-    <!-- trigger a deploy -->
   </head>
   <body>
     <header>
@@ -47,11 +45,11 @@
 
     <!-- Current page: {{ page.url | url }} -->
 
-    <!-- SVGs used repeatedly on the page are better defined as symbols then <use>d -->
+    <!-- SVGs used repeatedly on the page are better defined as symbols, then <use>d -->
     <svg width="0" height="0" style="display: none;">
       <symbol id="icon-offsite" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
         <title>External Link</title>
-        <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"></path>
       </symbol>
       <symbol id="icon-bookmark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
         <title>Bookmark</title>

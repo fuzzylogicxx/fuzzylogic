@@ -12,9 +12,14 @@
       <time class="postlist-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
     </header>
     {% if(post.data.tags[1] !== 'note') -%}
-    <a {% if (post.data.linkTarget) -%}href="{{ post.data.linkTarget | url }}"{% else %}href="{{ post.url | url }}"{% endif %} class="postlist-link">
-      {{ post.data.title }}
+    {% if (post.data.linkTarget) -%}
+    <a href="{{ post.data.linkTarget | url }}">
+      <span>{{ post.data.title }}</span>
+      <svg aria-hidden="true" focusable="false" width="1em" height="1em"><use xlink:href="#icon-offsite"></use></svg>
     </a>
+    {% else %}
+    <a href="{{ post.url | url }}">{{ post.data.title }}</a>
+    {% endif %}
     {% else -%}
     <a href="{{ post.url | url }}">{{ post.date | readableTime }}</a> <span>·</span> {{ post.data.location }}</span>
     {% endif -%}
@@ -26,7 +31,7 @@
       {%- endif %}
 
       {% if (post.data.linkTarget) -%}
-      <a href="{{ post.url | url }}">Read my notes</a> / <a href="{{ post.data.linkTarget | url }}">Visit original</a>
+      <a href="{{ post.url | url }}">Read my notes</a> / <a href="{{ post.data.linkTarget | url }}">Visit original <svg aria-hidden="true" focusable="false" width="1em" height="1em"><use xlink:href="#icon-offsite"></use></svg></a>
       {% endif %}
     </div>
     {% for tag in post.data.tags %}
