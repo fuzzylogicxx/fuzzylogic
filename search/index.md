@@ -5,6 +5,7 @@ description: Seek and ye might find.
 tags:
   - nav
 navtitle: Search
+navpos: 4
 navID: nav-search
 templateClass: tmpl-post
 ---

@@ -118,6 +118,13 @@ module.exports = function(eleventyConfig) {
     return [...tagSet];
   })
 
+  // Navigation Items, Sorted
+  eleventyConfig.addCollection("navItems", function(collection) {
+    return collection.getFilteredByTag("nav").sort(function(a, b) {
+      return b.data.navpos - a.data.navpos;
+    });
+  });
+
   // Cloudinary / Responsive Images
   eleventyConfig.cloudinaryCloudName = 'fuzzylogic';
 	eleventyConfig.srcsetWidths = [320, 640, 960, 1280, 1600, 1920, 2240, 2560];
@@ -152,7 +159,7 @@ module.exports = function(eleventyConfig) {
   };
   let opts = {
     permalink: true,
-    permalinkClass: "direct-link",
+    permalinkClass: "section-link",
     permalinkSymbol: "#"
   };
 
