@@ -140,9 +140,6 @@ module.exports = function(eleventyConfig) {
   });
 
 
-  eleventyConfig.addPassthroughCopy("img");
-  eleventyConfig.addPassthroughCopy("css");
-
   //
   // Markdown Plugins
   //
@@ -182,6 +179,20 @@ module.exports = function(eleventyConfig) {
       }
     }
   });
+
+  // Don’t process these; just copy them as-is into the output directory.
+  eleventyConfig.addPassthroughCopy("img");
+  eleventyConfig.addPassthroughCopy("css");
+  eleventyConfig.addPassthroughCopy("android-chrome-192x192.png");
+  eleventyConfig.addPassthroughCopy("android-chrome-256x256.png");
+  eleventyConfig.addPassthroughCopy("apple-touch-icon.png");
+  eleventyConfig.addPassthroughCopy("favicon-16x16.png");
+  eleventyConfig.addPassthroughCopy("favicon-32x32.png");
+  eleventyConfig.addPassthroughCopy("favicon.ico");
+  eleventyConfig.addPassthroughCopy("mstile-150x150.png");
+  eleventyConfig.addPassthroughCopy("pwa_icon-512x512.png");
+  eleventyConfig.addPassthroughCopy("safari-pinned-tab.svg");
+
 
   return {
     templateFormats: [
