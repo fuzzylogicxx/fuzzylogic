@@ -17,25 +17,71 @@
     <link rel="preload" href="/fonts/sans/source-sans-pro-v12-latin-600.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/fonts/sans/SourceSansPro-It-subset.woff2" as="font" type="font/woff2" crossorigin>
 
-    <meta name="description" content="{{ renderData.description or description or metadata.description }}">
-
     <style>{% include "css/main.css" %}</style>
+
+    <meta name="author" content="{{ metadata.author.name }}">
+    <meta name="description" content="{{ renderData.description or description or metadata.description }}">
+    <meta name="keywords" content="front-end, frontend, front-end developer, web developer, web developer glasgow, html, css, javascript, vanilla javascript, accessibility, sofrito" />
+
+    <link rel="canonical" href="{{ metadata.url_base }}{{ page.url }}" />
+
+    <meta name="robots" content="{{ pageSpecificRobotsDirective or 'index, follow' }}">
+
+    <!-- OG tags: most important -->
+    <meta property="og:title" content="{{ renderData.title or title or metadata.title }}" />
+    <meta property="og:description" content="{{ renderData.description or description or metadata.description }}" />
+    <meta property="og:image" content="{{ metadata.open_graph.image }}" />
+    <meta property="og:url" content="{{ metadata.url_base }}{{ page.url }}" />
+
+    <!-- OG tags: extra credit -->
+    <meta property="og:site_name" content="{{ metadata.url }}" />
+
+    <!-- Twitter-specific -->
+    <meta name="twitter:card" content="summary"> <!-- summary_large_image -->
+    <meta name="twitter:image:alt" content="{{ metadata.open_graph.image_alt_text }}">
+
+    <!-- Advice for devices which can 'install' this website on their home scren -->
+    <link rel="manifest" href="/site.webmanifest">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="apple-mobile-web-app-title" content="{{ metadata.name }}">
+    <meta name="application-name" content="{{ metadata.name }}">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
 
     <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.name }}">
   </head>
-  <body>
-    <header>
-      <h1 class="home"><a href="{{ '/' | url }}">{{ metadata.name }}</a></h1>
-      <ul class="nav">
-        {%- for nav in collections.navItems | reverse -%}
-        <li {% if nav.data.navID %}id="{{ nav.data.navID }}"{% endif %} class="nav-item{% if nav.url == page.url %} nav-item-active{% endif %}"><a href="{{ nav.url | url }}">{{ nav.data.navtitle }}</a></li>
-        {%- endfor -%}
-      </ul>
+  <body{% if bodyclass %} class="{{ bodyclass }}"{% endif %}>
 
-      <div class="search-ui invisible">
-        <input type="text" id="search-str" class="search-str">
-        <ol class="search-results">
-        </ol>
+    <!-- Header begins -->
+    <header id="global-header" class="global-header">
+      <div class="container">
+        <div class="cluster">
+          <div class="logo-and-header-menu-wrap">
+            <a class="logo" href="{{ '/' | url }}">
+              <svg aria-label="Fuzzy Logic logo" width="1em" height="1em" viewBox="0 0 214 214" xmlns="http://www.w3.org/2000/svg"><path fill="#F2F1F0" d="M.432 107.264C.432 48.556 48.027.966 106.728.966c58.71 0 106.304 47.59 106.304 106.298 0 58.713-47.594 106.304-106.304 106.304C48.027 213.568.432 165.977.432 107.264" /><path fill="#343534" d="M148.82 113.583V81.63l27.658 15.981-27.658 15.972zm-3.854-31.953v35.29c0 .687.368 1.325.967 1.668.295.181.626.257.956.257.339 0 .67-.076.968-.257l30.55-17.646.014 34.177-63.058 36.41-.005-72.809 29.608-17.09zm-41.765 7.841L50.39 58.978 79.98 41.89l63.06 36.407-29.605 17.089-10.234-5.915zm6.364 46.756l-27.657 15.974v-31.958l27.657 15.984zm-28.623-20.984a1.947 1.947 0 00-1.924 0 1.95 1.95 0 00-.961 1.673v35.285l-29.604-17.082.007-72.808 63.049 36.409-.014 34.175-30.553-17.652zm103.487-17.635c0-1.468-.78-2.816-2.054-3.548L82.031 36.117a4.115 4.115 0 00-2.051-.544c-.706 0-1.412.178-2.046.544L44.605 55.361a4.089 4.089 0 00-2.169 3.612l-.012 77.257c0 1.46.779 2.819 2.055 3.548l33.455 19.315c.634.362 1.34.542 2.046.542.706 0 1.412-.18 2.051-.542l27.294-15.767.019 31.544a4.086 4.086 0 004.094 4.087c.713 0 1.413-.178 2.051-.543l66.904-38.636a4.107 4.107 0 002.051-3.551l-.015-38.619z" /></svg>
+            </a>
+            <nav aria-label="page" id="skip-links" class="skip-links">
+              <a href="#primary-content">Main content</a>
+              <a href="#global-footer">Footer and Navigation</a>
+            </nav>
+            <nav aria-label="site" class="header-menu">
+              <ul class="list-custom">
+                {%- for nav in collections.navItems | reverse -%}
+                <li{% if nav.data.navID %} id="{{ nav.data.navID }}"{% endif %}{% if nav.data.navclass %} class="{{ nav.data.navclass }}"{% endif %}{% if nav.url == page.url %} aria-current="page"{% endif %}><a href="{{ nav.url | url }}">{{ nav.data.navtitle }}</a></li>
+                {%- endfor -%}
+              </ul>
+            </nav>
+            <div class="search-ui invisible">
+              <input type="text" id="search-str" class="search-str">
+              <ol class="search-results">
+              </ol>
+            </div>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -47,8 +93,6 @@
     <a href="{{ metadata.feed.url | url }}">RSS</a>
     <a href="{{ '/sitemap/' | url }}">Sitemap</a>
     </footer>
-
-    <!-- Current page: {{ page.url | url }} -->
 
     <!-- SVGs used repeatedly on the page are better defined as symbols, then <use>d -->
     <svg width="0" height="0" style="display: none;">

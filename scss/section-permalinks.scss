@@ -1,0 +1,21 @@
+/* Direct Links / Markdown Headings */
+
+.section-link {
+  font-family: sans-serif;
+  text-decoration: none;
+  font-style: normal;
+  margin-left: .1em;
+}
+
+a[href].section-link,
+a[href].section-link:visited {
+  color: transparent;
+}
+
+a[href].section-link:focus,
+a[href].section-link:focus:visited,
+:hover > a[href].section-link,
+:hover > a[href].section-link:visited {
+  color: #aaa;
+}
+
