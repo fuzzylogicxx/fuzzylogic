@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html dir="ltr" lang="en-GB">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,6 +12,11 @@
       {{ metadata.title }}
       {%- endif -%}
     </title>
+
+    <link rel="preload" href="/fonts/sans/SourceSansPro-Regular-subset-v2.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/sans/source-sans-pro-v12-latin-600.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/sans/SourceSansPro-It-subset.woff2" as="font" type="font/woff2" crossorigin>
+
     <meta name="description" content="{{ renderData.description or description or metadata.description }}">
 
     <style>{% include "css/main.css" %}</style>

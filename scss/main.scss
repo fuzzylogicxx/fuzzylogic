@@ -1,3 +1,17 @@
+@import 'fonts';
+
 //@import 'index';
 //@import 'prism-base16-monokai.dark';
 
+
+// Logo
+
+.logo svg {
+  font-size: 5rem;
+}
+
+// Hawkswork’s Search
+
+.invisible {
+  display: none;
+}

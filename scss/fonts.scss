@@ -1,0 +1,28 @@
+@font-face {
+  font-family: Source Sans Pro;
+  src: url(/fonts/sans/SourceSansPro-Regular-subset-v2.woff2) format("woff2"),
+       url(/fonts/sans/SourceSansPro-Regular-subset-v2.zopfli.woff) format("woff");
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Source Sans Pro;
+  src: url(/fonts/sans/SourceSansPro-It-subset.woff2) format("woff2"),
+       url(/fonts/sans/SourceSansPro-It-subset.zopfli.woff) format("woff");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Source Sans Pro;
+  src: url(/fonts/sans/source-sans-pro-v12-latin-600.woff2) format("woff2"),
+       url(/fonts/sans/source-sans-pro-v12-latin-600.woff) format("woff");
+  font-weight: 600;
+  font-display: swap;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+}
