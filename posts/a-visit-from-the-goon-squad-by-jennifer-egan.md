@@ -3,17 +3,18 @@ date: 2019-08-01
 title: A Visit from the Goon Squad, by Jennifer Egan
 description: Great book telling the stories of a cast of interconnected characters linked by the music industry.
 tags: [entry, book, music, dystopian, celebrity, influencers, newyork]
+mainImage:
+  url: https://res.cloudinary.com/fuzzylogic/image/upload/v1571418924/IMG_2430_pgzfhc.jpg
+  alt: A photo of the book “A Visit from the Goon Squad” by Jennifer Egan
+  figcaption: A Visit from the Goon Squad
 ---
-I really enjoyed this book, recommended to me by <a href="https://twitter.com/Gilco80">Gillian</a> and <a href="https://twitter.com/mrtomchurchill">Tom</a>.
+I really enjoyed this book, recommended to me by [Gillian](https://twitter.com/Gilco80) and [Tom](https://twitter.com/mrtomchurchill).
 ---
 
 {% if app.environment == "prod" %}
-{% set srcsetWidthRange = [320, 640, 960, 1280, 1600] %}
 <figure>
-  {% respimg
-    "https://previous.fuzzylogic.me/console/resources/a881d547-b147-43ef-bc5d-a7c41e937dec.jpeg", "A photo of the book “A Visit from the Goon Squad” by Jennifer Egan", srcsetWidthRange, "(min-width: 48em) 48em, 100vw"
-  %}
-  <figcaption>A Visit from the Goon Squad</figcaption>
+  {% respimg "" + mainImage.url + "", "" + mainImage.alt + "", "(min-width: 48em) 48em, 100vw" %}
+  <figcaption>{{ mainImage.figcaption }}</figcaption>
 </figure>
 {% endif %}
 

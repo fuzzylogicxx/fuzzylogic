@@ -29,15 +29,22 @@
       {% endif -%}
     </header>
     <div class="e-content">
-      {% if (post.data.page.excerpt) -%}
+    {% if (post.data.page.excerpt) -%}
       {%- set excerpt = post.data.page.excerpt -%}{{ excerpt | markdownStringToHTML | safe }}
-      {%- else -%}
-      {{ post.templateContent | markdownStringToHTML | safe }}
-      {%- endif %}
-
+      {% if (app.environment == "prod") and post.data.mainImage %}
+      <figure>
+      {% respimg "" + post.data.mainImage.url + "", "" + post.data.mainImage.alt + "", "(min-width: 48em) 48em, 100vw" %}
+      <figcaption>{{ post.data.mainImage.figcaption }}</figcaption>
+      </figure>
+      {% endif %}
       {% if (post.data.linkTarget) -%}
       <p class="bookmark-options"><a href="{{ post.url | url }}">Read my notes</a> / <a class="text-icon-pair offsite" href="{{ post.data.linkTarget | url }}"><span>Visit original</span> <svg aria-hidden="true" focusable="false" width="1em" height="1em"><use xlink:href="#icon-offsite"></use></svg></a></p>
+      {%- else -%}
+      <p><a href="{{ post.url | url }}">Read entry »</a></p>
       {% endif %}
+    {%- else -%}
+      {{ post.templateContent | markdownStringToHTML | safe }}
+    {%- endif %}
     </div>
     {# <footer class="stack">
       <div class="cluster">

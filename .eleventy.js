@@ -130,7 +130,7 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig.srcsetWidths = [320, 640, 960, 1280, 1600, 1920, 2240, 2560];
   eleventyConfig.fallbackWidth = 640;
 
-  eleventyConfig.addShortcode( 'respimg', function( src, alt, srcsetWidthRange=eleventyConfig.srcsetWidths, sizes ) {
+  eleventyConfig.addShortcode( 'respimg', function( src, alt, sizes, srcsetWidthRange=eleventyConfig.srcsetWidths ) {
     const fetchBase = `https://res.cloudinary.com/${ eleventyConfig.cloudinaryCloudName }/image/fetch/`;
     return `<img
     srcset="${srcsetWidthRange.map( ( w ) => { return `${ fetchBase }q_auto,f_auto,w_${ w }/${ src } ${ w }w` } ).join( ', ' )}"
