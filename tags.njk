@@ -13,13 +13,11 @@ pagination:
     - note
     - tagList
 addAllPagesToCollections: true
-layout: layouts/home.njk
+layout: layouts/page.njk
 renderData:
   title: Tagged “{{ tag }}”
 permalink: /tags/{{ tag }}/
 ---
-<h1>Tagged “{{ tag }}”</h1>
-
 {% set postslist = collections[ tag ] | reverse %}
 {% include "postslist.njk" %}
 

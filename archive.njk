@@ -1,5 +1,5 @@
 ---
-layout: layouts/home.njk
+layout: layouts/page.njk
 tags:
   - nav
 navtitle: Journal
@@ -12,9 +12,6 @@ pagination:
 permalink: posts/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber }}/{% endif %}index.html
 title: Journal
 ---
-
-<h1>Journal</h1>
-
 {% set postslist = posts %}
 {% include "postslist.njk" %}
 

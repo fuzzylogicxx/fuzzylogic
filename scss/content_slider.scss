@@ -1,0 +1,35 @@
+/* Ref: https://inclusive-components.design/a-content-slider/ */
+
+
+/*.slider {
+  overflow-x: scroll;
+}
+
+.slider li {
+  display: inline-block;
+  white-space: nowrap;
+}*/
+
+[aria-label="gallery"] {
+  border: 2px solid;
+  padding: 1rem;
+  overflow-x: scroll;
+}
+
+[aria-label="gallery"]:focus {
+  outline: 4px solid DodgerBlue;
+  outline-offset: -6px;
+}
+
+[aria-label="gallery"] ul {
+  white-space: nowrap;
+}
+
+[aria-label="gallery"] li {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+[aria-label="gallery"] img {
+  max-height: 60vh;
+}

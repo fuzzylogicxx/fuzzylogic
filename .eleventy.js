@@ -189,7 +189,7 @@ module.exports = function(eleventyConfig) {
 
   // Don’t process these; just copy them as-is into the output directory.
   eleventyConfig.addPassthroughCopy("img");
-  eleventyConfig.addPassthroughCopy("css");
+  //eleventyConfig.addPassthroughCopy("css");
   eleventyConfig.addPassthroughCopy("fonts");
   eleventyConfig.addPassthroughCopy("android-chrome-192x192.png");
   eleventyConfig.addPassthroughCopy("android-chrome-256x256.png");

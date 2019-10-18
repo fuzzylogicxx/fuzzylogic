@@ -26,3 +26,9 @@
 body {
   font-family: 'Source Sans Pro', sans-serif;
 }
+
+// Not fonts, but equally 'critical CSS'
+
+.logo svg {
+  font-size: 5rem;
+}

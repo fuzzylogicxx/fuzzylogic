@@ -18,7 +18,7 @@ I just had to solve a conundrum wherein I wanted a custom front matter key, _cit
 3. there is a page which lists all cities in the _cityList_ collection as links; and
 4. there’s a page for each city which lists all restaurants in that city (much like a “Tagged _Glasgow_” page).
 
-You could be forgiven for asking: why didn’t I just implement the cities as tags? I could have tagged posts with "glasgow", or "edinburgh" for example. Well, here was my rationale:
+You could be forgiven for asking: why didn’t I just implement the cities as tags? I could have tagged posts with “glasgow”, or “edinburgh” for example. Well, here was my rationale:
 - for cities, I need the proper, correctly spelled, spaced and punctuated name so I can display it as a page title. A lowercased, squashed together “tag” version wouldn’t cut it;
 - I list “all tags” elsewhere and wouldn’t want the cities amongst them. Although Eleventy allows you to filter given tag values out, in this case that would be a pain to achieve because the city values are not known up front;
 - Lastly it just _felt right_ for ease of future data manipulation that city should be a separate entity.

@@ -13,9 +13,9 @@
       {%- endif -%}
     </title>
 
-    <link rel="preload" href="/fonts/sans/SourceSansPro-Regular-subset-v2.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/sans/SourceSansPro-Regular-subset-v3.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/fonts/sans/source-sans-pro-v12-latin-600.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/fonts/sans/SourceSansPro-It-subset.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/sans/SourceSansPro-It-subset-v3.woff2" as="font" type="font/woff2" crossorigin>
 
     <style>{% include "css/main.css" %}</style>
 
@@ -71,7 +71,7 @@
             <nav aria-label="site" class="header-menu">
               <ul class="list-custom">
                 {%- for nav in collections.navItems | reverse -%}
-                <li{% if nav.data.navID %} id="{{ nav.data.navID }}"{% endif %}{% if nav.data.navclass %} class="{{ nav.data.navclass }}"{% endif %}{% if nav.url == page.url %} aria-current="page"{% endif %}><a href="{{ nav.url | url }}">{{ nav.data.navtitle }}</a></li>
+                <li{% if nav.data.navID %} id="{{ nav.data.navID }}"{% endif %}{% if nav.data.navclass %} class="{{ nav.data.navclass }}"{% endif %}><a href="{{ nav.url | url }}" {% if nav.url == page.url %} aria-current="page"{% endif %}>{{ nav.data.navtitle }}</a></li>
                 {%- endfor -%}
               </ul>
             </nav>
@@ -85,13 +85,58 @@
       </div>
     </header>
 
-    <main{% if templateClass %} class="{{ templateClass }}"{% endif %}>
+    <main id="primary-content" class="primary-content{% if templateClass %} {{ templateClass }}{% endif %}">
       {{ content | safe }}
     </main>
 
-    <footer>
-    <a href="{{ metadata.feed.url | url }}">RSS</a>
-    <a href="{{ '/sitemap/' | url }}">Sitemap</a>
+    <footer aria-label="site" id="global-footer" class="global-footer">
+
+      <div class="container">
+
+        <div class="global-footer-contents-wrap">
+
+          <div class="cluster footer-menu">
+            <div> <!-- style="justify-content: space-between;" -->
+              <div class="cluster">
+                <ul id="footer-menu" class="footer-menu">
+                  <li><a href="/">Home</a></li>
+                  <li><a href="/posts/">Journal</a></li>
+                  <li><a href="/about/">About</a></li>
+                  <li><a href="{{ '/sitemap/' | url }}">Sitemap</a></li>
+                  <li><a href="{{ metadata.feed.url | url }}">RSS</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-grid">
+
+            <section>
+              <h3>About</h3>
+              <p><a href="{{ metadata.url | url }}">Fuzzy Logic</a> is the personal website of Laurence Hughes, a Glasgow-based front-end web developer and producer in <a href="http://nuclearfami.ly">The Nuclear Family</a>.</p>
+              <p>If you’re interested, read more <a href="{{ '/about/' | url }}">about me</a>.</p>
+            </section>
+
+            <section>
+              <h3>How to reach me</h3>
+              <p><em>You’ll find me in the club…</em> increasingly rarely and more likely tweeting on <a rel="me" href="https://twitter.com/fuzzylogicx">Twitter</a>; coding on <a rel="me" href="https://github.com/fuzzylogicxx">Github</a> and <a rel="me" href="https://codepen.io/fuzzylogicx/">CodePen</a>; or <a rel="me" href="https://soundcloud.com/the_nuclear_family">sharing</a> <a rel="me" href="https://soundcloud.com/fuzzylogicx">music</a> on Soundcloud.</p>
+              <p>You can also <a href="mailto:&#108;&#097;&#117;&#114;&#101;&#110;&#099;&#101;&#064;&#102;&#117;&#122;&#122;&#121;&#108;&#111;&#103;&#105;&#099;&#046;&#109;&#101;">email me</a>.</p>
+            </section>
+
+            <section>
+              <h3>Colophon</h3>
+              <p>This is Fuzzy Logic v3: hand-coded from a base of <a href="https://fuzzylogicxx.github.io/sofrito/">Sofrito</a>, statically generated using <a href="https://www.11ty.io/">Eleventy</a>, open sourced <a href="https://github.com/fuzzylogicxx/fuzzylogic">on Github</a> and hosted on <a href="https://www.netlify.com/">Netlify</a>.</p>
+              <p>Type is set in <a href="https://github.com/adobe-fonts/source-sans-pro">Source Sans Pro</a>.</p>
+            </section>
+
+          </div>
+
+          <p class="copyright centre-with-centred-text">&copy; 2017–2019 <a href="{{ metadata.url | url }}">Laurence Hughes</a></p>
+
+        </div>
+
+      </div>
+
     </footer>
 
     <!-- SVGs used repeatedly on the page are better defined as symbols, then <use>d -->
@@ -104,13 +149,21 @@
         <title>Bookmark</title>
         <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
       </symbol>
+      <symbol id="icon-note" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <title>Note</title>
+        <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12" y2="18"></line>
+      </symbol>
+      <symbol id="icon-entry" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <title>Entry</title>
+        <path d="M20.24 12.24a6 6 0 0 0-8.49-8.49L5 10.5V19h8.5z"></path><line x1="16" y1="8" x2="2" y2="22"></line><line x1="17.5" y1="15" x2="9" y2="15"></line>
+      </symbol>
       <symbol id="icon-search" viewBox="0 0 56.966 56.966">
         <title>Search</title>
           <path fill="currentColor" d="M55.146 51.887L41.588 37.786A22.926 22.926 0 0 0 46.984 23c0-12.682-10.318-23-23-23s-23 10.318-23 23 10.318 23 23 23c4.761 0 9.298-1.436 13.177-4.162l13.661 14.208c.571.593 1.339.92 2.162.92.779 0 1.518-.297 2.079-.837a3.004 3.004 0 0 0 .083-4.242zM23.984 6c9.374 0 17 7.626 17 17s-7.626 17-17 17-17-7.626-17-17 7.626-17 17-17z"></path>
       </symbol>
     </svg>
 
-    <!-- polyfills first so that subsequent scripts (which might use matches() and so on) etc are polyfilled -->
+    <!-- Polyfills before any other scripts so that subsequent JS (which might use matches() and so on) is polyfilled -->
     <script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
 
     <script>{% include "js/fuzzylogic.js" %}</script>

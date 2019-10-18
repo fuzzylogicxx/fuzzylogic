@@ -1,29 +1,35 @@
-<ol reversed class="postlist" style="counter-reset: start-from {{ postslist.length + 1 }}">
+<section class="h-feed centre">
 {% for post in postslist %}
-  <li class="postlist-item{% if post.url == url %} postlist-item-active{% endif %}">
+  <article class="h-entry prose">
     <header>
-      {% if (post.data.tags[1] === 'link') -%}
-        <svg aria-hidden="true" focusable="false" width="1em" height="1em"><use xlink:href="#icon-bookmark"></use></svg> <span class="post-type">Bookmark</span>
-      {% elif(post.data.tags[1] === 'note') -%}
-        <span class="post-type">Note</span>
-      {% else -%}
-        <span class="post-type">Entry</span>
-      {% endif -%}
-      <time class="postlist-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
+      <div>
+        <span class="post-type text-icon-pair">
+        {% if (post.data.tags[1] === 'link') -%}
+          <svg aria-hidden="true" focusable="false" width="1em" height="1em"><use xlink:href="#icon-bookmark"></use></svg>
+          <span>Bookmark</span>
+        {% elif(post.data.tags[1] === 'note') -%}
+          <svg aria-hidden="true" focusable="false" width="1em" height="1em"><use xlink:href="#icon-note"></use></svg>
+          <span>Note</span>
+        {% else -%}
+          <svg aria-hidden="true" focusable="false" width="1em" height="1em"><use xlink:href="#icon-entry"></use></svg>
+          <span>Entry</span>
+        {% endif -%}
+        </span>
+        <time class="dt-published" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
+      </div>
+      <h3 class="feed-entry-title">
+        {% if(post.data.tags[1] !== 'note') -%}
+        {% if (post.data.linkTarget) -%}
+        <a href="{{ post.data.linkTarget | url }}" class="text-icon-pair offsite">{{ post.data.title }}</a>
+        {% else %}
+        <a rel="bookmark" class="p-name u-url" href="{{ post.url | url }}">{{ post.data.title }}</a>
+        {% endif %}
+        {% else -%}
+        <a href="{{ post.url | url }}">{{ post.date | readableTime }}</a> <span>·</span> {{ post.data.location }}</span>
+        {% endif -%}
+      </h3>
     </header>
-    {% if(post.data.tags[1] !== 'note') -%}
-    {% if (post.data.linkTarget) -%}
-    <a href="{{ post.data.linkTarget | url }}">
-      <span>{{ post.data.title }}</span>
-      <svg aria-hidden="true" focusable="false" width="1em" height="1em"><use xlink:href="#icon-offsite"></use></svg>
-    </a>
-    {% else %}
-    <a href="{{ post.url | url }}">{{ post.data.title }}</a>
-    {% endif %}
-    {% else -%}
-    <a href="{{ post.url | url }}">{{ post.date | readableTime }}</a> <span>·</span> {{ post.data.location }}</span>
-    {% endif -%}
-    <div>
+    <div class="e-content">
       {% if (post.data.page.excerpt) -%}
       {%- set excerpt = post.data.page.excerpt -%}{{ excerpt | markdownStringToHTML | safe }}
       {%- else -%}
@@ -31,15 +37,21 @@
       {%- endif %}
 
       {% if (post.data.linkTarget) -%}
-      <a href="{{ post.url | url }}">Read my notes</a> / <a href="{{ post.data.linkTarget | url }}">Visit original <svg aria-hidden="true" focusable="false" width="1em" height="1em"><use xlink:href="#icon-offsite"></use></svg></a>
+      <p class="bookmark-options"><a href="{{ post.url | url }}">Read my notes</a> / <a class="text-icon-pair offsite" href="{{ post.data.linkTarget | url }}"><span>Visit original</span> <svg aria-hidden="true" focusable="false" width="1em" height="1em"><use xlink:href="#icon-offsite"></use></svg></a></p>
       {% endif %}
     </div>
-    {% for tag in post.data.tags %}
-      {%- if (tag != "posts") and (tag != "link") and (tag != "note") and (tag != "entry") -%}
-      {% set tagUrl %}/tags/{{ tag }}/{% endset %}
-      <a href="{{ tagUrl | url }}" class="tag">{{ tag }}</a>
-      {%- endif -%}
-    {% endfor %}
-  </li>
+    {# <footer class="stack">
+      <div class="cluster">
+        <ul class="tags">
+        {% for tag in post.data.tags %}
+          {%- if (tag != "posts") and (tag != "link") and (tag != "note") and (tag != "entry") -%}
+          {% set tagUrl %}/tags/{{ tag }}/{% endset %}
+          <li><a rel="tag" href="{{ tagUrl | url }}" class="tag">{{ tag }}</a></li>
+          {%- endif -%}
+        {% endfor %}
+        </ul>
+      </div>
+    </footer> #}
+  </article>
 {% endfor %}
-</ol>
+</section>

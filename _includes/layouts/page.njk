@@ -7,7 +7,7 @@ layout: layouts/base.njk
   <article class="prose">
 
     <header class="section-index-header">
-      <h1>{{ title }}</h1>
+      <h1>{{ renderData.title or title }}</h1>
     </header>
 
     {{ content | safe }}
