@@ -1,0 +1,10 @@
+// Slats
+
+div.slat {
+  display: flex;
+  align-items: flex-start;
+}
+div.slat div.slat-copy {
+  flex: 1;
+  margin-left: 1rem;
+}

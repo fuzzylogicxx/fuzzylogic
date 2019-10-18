@@ -1,0 +1,17 @@
+[build]
+  publish = "_site"
+  command = "npm run build"
+
+[[redirects]]
+  from = "/blog/"
+  to = "/journal/"
+
+[[headers]]
+  for = "*.woff"
+  [headers.values]
+    Cache-Control = "public, max-age=18144000"
+
+[[headers]]
+  for = "*.woff2"
+  [headers.values]
+    Cache-Control = "public, max-age=18144000"

@@ -1,0 +1,46 @@
+---
+layout: layouts/base.njk
+templateClass: post-main
+---
+<div class="container">
+
+  <article class="h-entry prose centre" itemtype="http://schema.org/BlogPosting">
+
+    <header>
+      <time class="dt-published" itemprop="datePublished" datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time>
+      {%- if title -%}<h1 class="p-name" itemprop="headline">{{ title }}</h1>{%- endif -%}
+    </header>
+
+    <div class="e-content" itemprop="articleBody">
+
+      {% if linkTarget %}
+      <a class="btn btn-icon" href="{{ linkTarget }}">
+        <span class="btn-icon-text">Direct Link</span>
+        <svg class="text-icon-pair-icon" aria-hidden="true" focusable="false" width="1em" height="1em"><use xlink:href="#icon-offsite"></use></svg>
+      </a>
+      {% endif %}
+
+      {{ content | safe }}
+
+    </div> <!-- /.e-content -->
+
+    <footer class="full-article-footer stack">
+
+      <h3>Tagged:</h3>
+
+      <div class="cluster">
+        <ul class="tags">
+        {% for tag in tags %}
+          {%- if (tag != "posts") and (tag != "link") and (tag != "note") and (tag != "entry") -%}
+          {% set tagUrl %}/tags/{{ tag }}/{% endset %}
+          <li><a rel="tag" href="{{ tagUrl | url }}" class="tag">{{ tag }}</a></li>
+          {%- endif -%}
+        {% endfor %}
+        </ul>
+      </div>
+
+    </footer>
+
+  </article>
+
+</div> <!-- /.container -->
