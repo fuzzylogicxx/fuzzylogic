@@ -6,7 +6,7 @@ tags: [note, music, record, funk]
 location: Glasgow
 ---
 
-_Everybody’s on a Trip_ by Garden of Eden (original 1979 copies of which regularly sell for £200+) has just been reissued on Backatcha records… and I’ve managed to snag a copy.
+Original 1979 copies of Garden of Eden’s _Everybody’s on a Trip_ regularly sell for £200+ so I was pretty happy to hear that it had just been reissued on Backatcha records… and even happier when I managed to snag a copy.
 
 {% if app.environment == "prod" %}
 <figure>
@@ -15,7 +15,7 @@ _Everybody’s on a Trip_ by Garden of Eden (original 1979 copies of which regul
 </figure>
 {% endif %}
 
-I first heard this deep funk nugget a few years back on Kon and Amir’s compilation _Off Track Volume One: The Bronx_, and have been hankering after a proper copy ever since.
+I first heard this stellar slice of deep funk a few years back on Kon and Amir’s compilation _Off Track Volume One: The Bronx_, and have been hankering after a proper copy ever since.
 
 Check it out!
 
