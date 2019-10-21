@@ -8,6 +8,9 @@ bodyclass: page-home
 ---
 
 {% set postslist = collections.liveposts | head(-5) | reverse %}
+
+<h2 class="posts-list-group-heading">Latest Posts</h2>
+
 {% include "postslist.njk" %}
 
 {# <p>Browse more posts in <a href="{{ '/posts/' | url }}">the archive</a>.</p> #}

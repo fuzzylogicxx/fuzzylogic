@@ -74,6 +74,14 @@ figcaption {
 
 // Blog stuff
 
+.posts-list-group-heading {
+  margin-bottom: 2rem;
+  font-size: scale-value(0)+rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #333;
+}
+
 .h-entry header {
   @include stack();
   //position: relative;
