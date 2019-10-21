@@ -131,11 +131,13 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.fallbackWidth = 640;
 
   eleventyConfig.addShortcode( 'respimg', function( src, alt, sizes, srcsetWidthRange=eleventyConfig.srcsetWidths ) {
-    const fetchBase = `https://res.cloudinary.com/${ eleventyConfig.cloudinaryCloudName }/image/fetch/`;
+    const cloudinaryBase = `https://res.cloudinary.com/${ eleventyConfig.cloudinaryCloudName }/image/upload/`;
+    var cloudinaryImgPath = src.replace(cloudinaryBase, "");
     return `<img
-    srcset="${srcsetWidthRange.map( ( w ) => { return `${ fetchBase }q_auto,f_auto,w_${ w }/${ src } ${ w }w` } ).join( ', ' )}"
+    srcset="${srcsetWidthRange.map( ( w ) => { return `${ cloudinaryBase }q_auto,f_auto,w_${ w }/${ cloudinaryImgPath } ${ w }w` } ).join( ', ' )}"
     sizes="${ sizes ? sizes : '100vw' }"
-    src="${ fetchBase }q_auto,f_auto,w_${ eleventyConfig.fallbackWidth }/${ src }"
+    src="${ cloudinaryBase }q_auto,f_auto,w_${ eleventyConfig.fallbackWidth }/${ cloudinaryImgPath }"
+    width="320" height="240"
     ${ alt ? `alt="${ alt }"` : '' }
     loading="lazy" />`;
   } );
