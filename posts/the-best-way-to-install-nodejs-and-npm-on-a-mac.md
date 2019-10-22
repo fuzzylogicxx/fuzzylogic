@@ -21,7 +21,7 @@ Just open your Terminal app and type `brew install node`.
 
 ## Updating Node and NPM
 
-First, check whether or not Homebrew has the latest version of the Node package. In your Terminal type `brew update`.
+First, check whether or not Homebrew has the latest version of Node. In your Terminal type `brew update`.
 
 Then, to Upgrade Node type: `brew upgrade node`.
 
