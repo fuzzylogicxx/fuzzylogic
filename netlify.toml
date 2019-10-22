@@ -5,6 +5,28 @@
 [[redirects]]
   from = "/blog/"
   to = "/posts/"
+  status = 301
+  
+# Redirect old blog URLs to new Journal URLs
+[[redirects]]
+  from = "/thoughts/*"
+  to = "/posts/:splat/"
+  status = 301
+  
+[[redirects]]
+  from = "/bytes/*"
+  to = "/posts/:splat/"
+  status = 301
+  
+[[redirects]]
+  from = "/links/*"
+  to = "/posts/:splat/"
+  status = 301
+
+[[redirects]]
+  from = "/sounds/*"
+  to = "/posts/:splat/"
+  status = 301
 
 [[headers]]
   for = "*.woff"
