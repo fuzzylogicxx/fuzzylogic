@@ -17,9 +17,9 @@ However there was a side-effect in that browsers load text first and images late
 
 The other day I was testing [this website](https://fuzzylogic.me/) in Chrome and noticed that if you don’t provide images with inline width and height attributes, Chrome will actually show a console warning that this is negatively affecting performance.
 
-Based on that, I updated my images in as follows:
+Based on that, I made the following updates:
 
-1. I added width and height HTML attributes; and 
+1. I added width and height HTML attributes to all images; and 
 2. I changed my CSS from `img { max-width: 100%; }` to `img { width: 100%; height: auto; }`.
 
 NB the reasoning behind #2 was that I found it works better with an image with inline dimensions than `max-width`.
