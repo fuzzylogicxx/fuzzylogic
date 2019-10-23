@@ -1,3 +1,4 @@
+---
 title: Jank-free Responsive Images
 description: Here’s how to improve performance and prevent jank when browsers load responsive images
 date: 2019-10-23
