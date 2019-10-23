@@ -7,7 +7,7 @@ tags: [web, development, rwd, images, jensimmons, firefox, chrome]
 Here’s how to improve performance and prevent layout _jank_ when browsers load responsive images.
 ---
 
-Since the dawn of the Responsive Web Design era many of us (including me) – in our rush to make image flexible and adaptive – stopped applying the HTML `width` and `height` attributes to our images. Instead we’d just let CSS handle the image, setting a `width` or `max-width` of 100% i.e. the width of its nearest containing element.
+Since the dawn of the Responsive Web Design era many of us (including me) – in our rush to make image flexible and adaptive – stopped applying the HTML `width` and `height` attributes to our images. Instead we’d just let CSS handle the image, setting a `width` or `max-width` of 100% so that our images could grow and shrink but not grow beyond the width of their nearest containing element.
 
 However there was a side-effect in that browsers load text first and images later, and if an image’s dimensions are not specified in the HTML then the browser can’t assign appropriate space to it before it loads. Then, when the image finally loads, this _bumps_ the layout – affecting surrounding elements in a nasty, _janky_ way.
 
