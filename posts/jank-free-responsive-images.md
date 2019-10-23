@@ -7,7 +7,7 @@ tags: [web, development, rwd, images, jensimmons, firefox, chrome]
 Here’s how to improve performance and prevent layout _jank_ when browsers load responsive images.
 ---
 
-Since the dawn of the Responsive Web Design era many of us – in our rush to make images flexible and adaptive – stopped applying the HTML `width` and `height` attributes to our images. Instead we’ve let CSS handle the image, setting a `width` or `max-width` of 100% so that our images can grow and shrink but not extend beyond the width of their parent container.
+Since the advent of the Responsive Web Design era many of us, in our rush to make images flexible and adaptive, stopped applying the HTML `width` and `height` attributes to our images. Instead we’ve let CSS handle the image, setting a `width` or `max-width` of 100% so that our images can grow and shrink but not extend beyond the width of their parent container.
 
 However there was a side-effect in that browsers load text first and images later, and if an image’s dimensions are not specified in the HTML then the browser can’t assign appropriate space to it before it loads. Then, when the image finally loads, this _bumps_ the layout – affecting surrounding elements in a nasty, _janky_ way.
 
@@ -36,9 +36,13 @@ Jen Simmons of Mozilla has [just posted a video](https://www.youtube.com/watch?v
 
 Essentially, we should start re-applying HTML width and height attributes to our images, because in soon-to-drop Firefox and Chrome updates the browser will use these dimensions to calculate the image’s _aspect ratio_ and thereby be able to allocate the exact required space.
 
-Also, if we use the modern responsive image syntax `srcset` and `sizes` syntax to offer the browser different image options (like I do on this site), so long as the different images are the same aspect ratio then this solution will continue to work well.
+The actual dimensions we provide don’t matter too much so long as they represent the correct aspect ratio.
+
+Also, if we use the modern `srcset` and `sizes` syntax to offer the browser different image options (like I do on this site), so long as the different images are the same aspect ratio then this solution will continue to work well.
 
 There’s no solution at present for the [Art Direction use case](https://cloudfour.com/thinks/responsive-images-101-definitions/#artdirection) – where we want to provide different aspect ratios dependent on viewport size – but hopefully that will come along next.
+
+I just tested this new feature in Firefox Nightly 72, using the Inspector’s Network tab to set “throttling” to 2G to simulate a slow-loading connection, and it worked really well!
 
 ## Lazy Loading
 
