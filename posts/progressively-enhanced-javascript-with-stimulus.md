@@ -20,9 +20,9 @@ We don’t always need a nuclear solution that:
 
 Instead, Simulus suggests a more “modest” solution – using an existing server-rendered HTML document as its basis (either from the initial HTTP response or from an AJAX call), and then progressively enhancing.
 
-It promotes _readable markup_ – being able to read a fragment of HTML and know what’s going on.
+It advocates _readable markup_ – being able to read a fragment of HTML which includes sprinkles of Stimulus and being able to easily understand what’s going on.
 
-Interestingly, Stimulus stores state in the HTML/DOM.
+And interestingly, Stimulus proposes storing state in the HTML/DOM.
 
 ## How it works
 
