@@ -38,7 +38,7 @@ The key elements are:
 
 ## Some nice touches
 
-I like the way you can use the `connect()` method – a _lifecycle callback_ invoked whenever a given component is connected to the DOM - as a place to test browser support for a given feature before applying a JS-based enhancement.
+I like the way you can use the `connect()` method – a _lifecycle callback_ invoked whenever a given controller is connected to the DOM - as a place to test browser support for a given feature before applying a JS-based enhancement.
 
 Stimulus also readily supports the ability to have multiple instances of a controller on the page.
 
