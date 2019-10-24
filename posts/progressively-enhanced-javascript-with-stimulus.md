@@ -36,19 +36,20 @@ The key elements are:
 
 ## Some nice touches
 
-I like the way you can use the `connect()` method as a place to check for support for a given feature before applying a JS-based enhancement.
+I like the way you can use the `connect()` method – a _lifecycle callback_ invoked whenever a given component is connected to the DOM - as a place to check for support for a given feature before applying a JS-based enhancement.
 
-It also readily supports having multiple instances of a controller on the page.
+Stimulus also readily supports the ability to have multiple instances of a controller on the page.
 
-Also, actions and targets can be added to any type of element without the controller JavaScript needing to know or care, which supports _loose coupling_ between HTML and JavaScript.
+Furthermore, actions and targets can be added to any type of element without the controller JavaScript needing to know or care about the specific element, promoting _loose coupling_ between HTML and JavaScript.
 
 ## Managing State in Stimulus
 
-- initial state can be read in from the HTML (from a DOM attribute)
-- In the controller object we have a this.data API with has(), get(), and set() methods.
-- we can use those methods to set new values back into our DOM attribute, so that state lives entirely in the DOM without the need for a JavaScript state object
+Initial state can be read in from our DOM element via a `data-` attribute, e.g. `data-slideshow-index`.
+
+Then in our controller object we have access to a `this.data` API with `has()`, `get()`, and `set()` methods. We can use those methods to set new values back into our DOM attribute, so that state lives entirely in the DOM without the need for a JavaScript state object.
 
 ## Possible Limitations
 
-Feels a bit restrictive if dealing with elements that don’t just do one (or two) things; say, for example, a table with lots of rows and columns, each differing in multiple ways. 
-And if element has a lot of child elements, it feels like there might be more of a performance hit to update each one individually rather than replace the lot with new `innerHTML` in one fell swoop.
+Stimulus feels a little restrictive if dealing with less simple elements – say, for example, a data table with lots of rows and columns, each differing in multiple ways. 
+
+And if, like in our data table example, that element has lots of child elements, it feels like there might be more of a performance hit to update each one individually rather than replace the contents with new `innerHTML` in one fell swoop.
