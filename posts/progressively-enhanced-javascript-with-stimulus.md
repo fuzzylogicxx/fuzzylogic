@@ -4,7 +4,7 @@ description: I’m dipping my toes into the JavaScript micro-framework from Base
 date: 2019-10-24
 tags: [web, development, javascript, framework, progressiveenhancement]
 ---
-I’m dipping my toes into the JavaScript micro-framework from Basecamp. Here’s my initial notes.
+I’m dipping my toes into Stimulus, the JavaScript micro-framework from Basecamp. Here’s my initial notes.
 ---
 
 I immediately like the ethos of [Stimulus](https://stimulusjs.org/handbook/introduction).
