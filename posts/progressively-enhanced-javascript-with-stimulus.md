@@ -26,7 +26,7 @@ And interestingly, Stimulus proposes storing state in the HTML/DOM.
 
 ## How it works
 
-Stimulus’ technical purpose is to automatically connect DOM elements to JavaScript objects which are implemented via ES6 classes. The connection is made by `data–` attributes (rather than CSS classes). 
+Stimulus’ technical purpose is to automatically connect DOM elements to JavaScript objects which are implemented via ES6 classes. The connection is made by `data–` attributes (rather than `id` or `class` attributes). 
 
 `data-controller` values connect and disconnect Stimulus controllers.
 
