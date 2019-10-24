@@ -4,10 +4,10 @@ description: I’m dipping my toes into the JavaScript micro-framework from Base
 date: 2019-10-24
 tags: [web, development, javascript, framework, progressiveenhancement]
 ---
-I’m dipping my toes into Stimulus, the JavaScript micro-framework from Basecamp. Here’s my initial notes.
+I’m dipping my toes into [Stimulus](https://stimulusjs.org/handbook/introduction), the JavaScript micro-framework from Basecamp. Here’s my initial notes.
 ---
 
-I immediately like the ethos of [Stimulus](https://stimulusjs.org/handbook/introduction).
+I immediately like the ethos of Stimulus.
 
 The creators’ take is that in many cases, using one of the popular contemporary JavaScript frameworks is overkill.
 
@@ -20,13 +20,15 @@ We don’t always need a nuclear solution that:
 
 Instead, Simulus suggests a more “modest” solution – using an existing server-rendered HTML document as its basis (either from the initial HTTP response or from an AJAX call), and then progressively enhancing.
 
-Interestingly, it stores state in the HTML/DOM.
-
 It promotes _readable markup_ – being able to read a fragment of HTML and know what’s going on.
+
+Interestingly, Stimulus stores state in the HTML/DOM.
 
 ## How it works
 
-Stimulus’ technical purpose is to automatically connect DOM elements to JavaScript objects which are implemented via ES6 classes. The connection is made by `data–` attributes (rather than CSS classes). `data-controller` values connect and disconnect Stimulus controllers.
+Stimulus’ technical purpose is to automatically connect DOM elements to JavaScript objects which are implemented via ES6 classes. The connection is made by `data–` attributes (rather than CSS classes). 
+
+`data-controller` values connect and disconnect Stimulus controllers.
 
 The key elements are:
 
@@ -36,7 +38,7 @@ The key elements are:
 
 ## Some nice touches
 
-I like the way you can use the `connect()` method – a _lifecycle callback_ invoked whenever a given component is connected to the DOM - as a place to check for support for a given feature before applying a JS-based enhancement.
+I like the way you can use the `connect()` method – a _lifecycle callback_ invoked whenever a given component is connected to the DOM - as a place to test browser support for a given feature before applying a JS-based enhancement.
 
 Stimulus also readily supports the ability to have multiple instances of a controller on the page.
 
@@ -53,3 +55,7 @@ Then in our controller object we have access to a `this.data` API with `has()`, 
 Stimulus feels a little restrictive if dealing with less simple elements – say, for example, a data table with lots of rows and columns, each differing in multiple ways. 
 
 And if, like in our data table example, that element has lots of child elements, it feels like there might be more of a performance hit to update each one individually rather than replace the contents with new `innerHTML` in one fell swoop.
+
+## Summing Up
+
+I love Stimulus’s modest and progressive enhancement friendly approach. I can see me adopting it as a means of writing modern, modular JavaScript which fits well in a [webpack](https://webpack.js.org/) context in situations where the interactive elements are relatively simple and not composed of complex, multidimensional data. 
