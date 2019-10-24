@@ -13,9 +13,9 @@ It’s great to be able to get these certificates for free and the whole process
 
 This is a note to “future me” (and anyone else it might help) with answers to the questions I’ve pondered in the past.
 
-## How do I safely upgrade from the 2015/2016 LE system to Certbot?
+## How do I safely upgrade from the old LE system to Certbot?
 
-For servers where you previously used the old, pre-Certbot Let’s Encrypt system for installing SSL certs, you can just [install Certbot](https://certbot.eff.org/) on top and it will _just work_. It will supersede the old certificates without conflict.
+For servers where you previously used the 2015/2016, pre-Certbot Let’s Encrypt system for installing SSL certs, you can just [install Certbot](https://certbot.eff.org/) on top and it will _just work_. It will supersede the old certificates without conflict.
 
 ## How do I upgrade Certbot now that Let’s Encrypt have removed support for domain validation with TLS-SNI-01?
 
