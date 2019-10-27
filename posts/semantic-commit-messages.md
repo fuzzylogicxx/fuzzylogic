@@ -1,6 +1,6 @@
 ---
 title: Semantic Commit Messages
-description: I’ve noticed that my git commit messages could benefit from greater consistency. So I’m going to try adopting Sparkbox’s approach.
+description: A fairly rigid commit format (`chore`, `fix`, `feat` etc) which should lead to your git log being an easy-to-skim changelog.
 date: 2019-10-16 15:51:00
 tags:
 - link
@@ -9,7 +9,8 @@ tags:
 - codingstyle
 linkTarget: https://seesparkbox.com/foundry/semantic_commit_messages
 ---
-I’ve noticed that my git commit messages could benefit from greater consistency. So I’m going to try adopting Sparkbox’s approach.
+A fairly rigid commit format (`chore`, `fix`, `feat` etc) which should lead to your git log being an easy-to-skim changelog.
+---
 
 Here’s how to use the different commit types:
 
@@ -22,3 +23,5 @@ refactor: share logic between 4d3d3d3 and flarhgunnstow
 style: convert tabs to spaces
 test: ensure Tayne retains clothing
 ```
+
+I’d noticed that my git commit messages could benefit from greater consistency. So I’m started adopting Sparkbox’s approach.
