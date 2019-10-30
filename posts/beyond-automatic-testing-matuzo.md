@@ -1,7 +1,7 @@
 ---
 title: Beyond Automatic Testing (matuzo.at)
 description: Six accessibility tests Viennese Front-end Developer Manuel Matusovic runs on every website he develops
-date: 2019-07-25 15:02:00
+date: 2019-10-20 15:02:00
 tags:
   - link
   - web
