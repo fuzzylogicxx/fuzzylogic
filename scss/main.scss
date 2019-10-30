@@ -290,12 +290,18 @@ figcaption {
 
 .traverse {
   display: flex;
+  margin-top: 5rem;
   a[rel~=prev] {
     margin-right: auto;
   }
   a[rel~=next] {
     margin-left: auto;
   }
+}
+
+.browse-more {
+  margin-top: 5rem;
+  text-align: center;
 }
 
 

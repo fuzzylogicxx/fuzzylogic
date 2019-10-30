@@ -16,7 +16,7 @@ title: Journal
 {% include "postslist.njk" %}
 
 <nav class="traverse">
-  {%- if pagination.previousPageHref %}<a rel="next" href="{{ pagination.previousPageHref }}">Newer Posts <span aria-hidden="true">→</span></a>{%- endif %}
   {%- if pagination.nextPageHref %}<a rel="prev" href="{{ pagination.nextPageHref }}"><span aria-hidden="true">←</span> Older Posts</a>{%- endif %}
+  {%- if pagination.previousPageHref %}<a rel="next" href="{{ pagination.previousPageHref }}">Newer Posts <span aria-hidden="true">→</span></a>{%- endif %}
 </nav>
 
