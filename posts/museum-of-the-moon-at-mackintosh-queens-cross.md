@@ -7,7 +7,7 @@ tags: [entry, moon, family, mackintosh]
 Today I and my brother Martin and two nieces Sophie and Mia, made a first visit to the [Mackintosh Church](http://www.mackintoshchurch.com/) in Maryhill, Glasgow.
 ---
 
-We were there to visit _Museum of the Moon_, a new touring artwork by UK artist [Luke Jerram](https://www.lukejerram.com/). I’d first heard about this exhibition when watching the BBC documentary _[Wonders of the Moon]_(https://www.bbc.co.uk/programmes/b09qjl7g).
+We were there to visit _Museum of the Moon_, a new touring artwork by UK artist [Luke Jerram](https://www.lukejerram.com/). I’d first heard about this exhibition when watching the BBC documentary [_Wonders of the Moon_](https://www.bbc.co.uk/programmes/b09qjl7g).
 
 The installation is a fusion of lunar imagery, moonlight and surround sound composition created by BAFTA and Ivor Novello award winning composer Dan Jones. Measuring seven metres in diameter, the sculpture features 120dpi detailed NASA imagery of the lunar surface. At an approximate scale of 1:500,000, each centimetre represents 5km of the moon’s surface.
 
