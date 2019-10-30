@@ -8,7 +8,7 @@ mainImage:
   alt: Attendees take their seats at Ampersand Conference 2018
   figcaption: Attendees take their seats at Ampersand 2018
 ---
-I’m just back from a fantastic couple of days in Brighton attending Ampersand – The Web Typography Conference – and also a Responsive Web Typography workshop with [Richard Rutter](http://clagnut.com/) at [Clearleft](https://clearleft.com).
+I’m just back from a fantastic couple of days in Brighton attending [Ampersand](https://2018.ampersandconf.com) – The Web Typography Conference – and also a Responsive Web Typography workshop with [Richard Rutter](http://clagnut.com/) at [Clearleft](https://clearleft.com).
 ---
 {% if app.environment == "prod" %}
 <figure>
