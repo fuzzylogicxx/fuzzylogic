@@ -1,5 +1,5 @@
 ---
-date: 2019-11-02
+date: 2019-10-31
 title: “Gil Scott-Heron Saved Me”
 description: A moving account of how musical legend Gil Scott-Heron offered hope and mentorship to a young man from Liverpool.
 tags: [link, music]
