@@ -39,29 +39,29 @@
 
   // Listen for "Search" nav item being clicked.
   document.addEventListener('click', (e) => {
-    // if (!event.target.closest('#nav-search')) return;
-    // e.preventDefault();
+    if (!event.target.closest('#nav-search')) return;
+    e.preventDefault();
 
-    // // get the data
-    // fetch('/search.json').then(function(response) {
-    //   return response.json();
-    // }).then(function(response) {
-    //   searchIndex = response.search;
-    // });
+    // get the data
+    fetch('/search.json').then(function(response) {
+      return response.json();
+    }).then(function(response) {
+      searchIndex = response.search;
+    });
 
-    // // Show the enhanced UI
-    // searchUI.classList.toggle('invisible');
-    // searchInput.focus();
+    // Show the enhanced UI
+    searchUI.classList.toggle('invisible');
+    searchInput.focus();
 
-    // // listen for input changes in the enhanced UI
-    // searchInput.addEventListener('keyup', function(event) {
-    //   var str = searchInput.value;
-    //   if(str.length > 2) {
-    //     find(str);
-    //   } else {
-    //     clearResults();
-    //   }
-    // });
+    // listen for input changes in the enhanced UI
+    searchInput.addEventListener('keyup', function(event) {
+      var str = searchInput.value;
+      if(str.length > 2) {
+        find(str);
+      } else {
+        clearResults();
+      }
+    });
   }, false);
 
 })();

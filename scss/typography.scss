@@ -45,7 +45,7 @@ $ms-base: 1.125; // aka 18px. Tip: avoid sub-pixel base font size (at least if a
 
 // Part 2: Generate a modular scale (ms)
 // Use https://www.modularscale.com/ and set to our chosen base font-size and a sensible/appropriate ratio (for example 5:6 (1.2), the minor third)
-// Sofrito modular scale: https://www.modularscale.com/?1.125&em&1.2
+// Our modular scale: https://www.modularscale.com/?1.125&em&1.2
 
 $ms-ratio: 1.2;
 
