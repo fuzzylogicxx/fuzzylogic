@@ -7,7 +7,8 @@
     "serve:prod": "gulp build & gulp watch & ELEVENTY_ENV=prod npx @11ty/eleventy --serve",
     "watch": "npx eleventy --watch",
     "debug": "DEBUG=* npx eleventy",
-    "build": "gulp build & ELEVENTY_ENV=prod npx eleventy"
+    "build": "gulp build & ELEVENTY_ENV=prod npx eleventy",
+    "build:lambda": "netlify-lambda build _lambda"
   },
   "repository": {
     "type": "git",
@@ -39,6 +40,7 @@
     "gulp-babel": "^8.0.0",
     "gulp-concat": "^2.6.1",
     "gulp-sass": "^4.0.2",
-    "gulp-uglify": "^3.0.2"
+    "gulp-uglify": "^3.0.2",
+    "netlify-lambda": "^1.6.3"
   }
 }

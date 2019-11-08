@@ -5,3 +5,6 @@ package-lock.json
 
 # Local Netlify folder
 .netlify
+
+# Serverless Functions (compiled folder; source remains under version control)
+functions
