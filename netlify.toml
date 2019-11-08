@@ -1,29 +1,30 @@
 [build]
   publish = "_site"
   command = "npm run build"
+  functions = "functions"
 
 # Redirect old blog URLs to new Journal URLs
 
 [[redirects]]
   from = "/thoughts/current-reading-1984-by-george-orwell"
   to = "/posts/1984-by-george-orwell/"
-  status = 301  
+  status = 301
 
 [[redirects]]
   from = "/blog/"
   to = "/posts/"
-  status = 301  
+  status = 301
 
 [[redirects]]
   from = "/thoughts/*"
   to = "/posts/:splat/"
   status = 301
-  
+
 [[redirects]]
   from = "/bytes/*"
   to = "/posts/:splat/"
   status = 301
-  
+
 [[redirects]]
   from = "/links/*"
   to = "/posts/:splat/"
