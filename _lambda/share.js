@@ -22,7 +22,7 @@ const sanitize = str => {
 }
 
 // generate the frontmatter string
-const getFrontmatter = yaml => {
+const generateFrontmatter = yaml => {
   let fm = []
   fm.push('---')
   Object.keys(yaml).forEach(key => {
@@ -39,10 +39,9 @@ const getFrontmatter = yaml => {
 // generate the new md file content
 const generateFileContent = data => {
   const { title, url, body } = data
-  //const date = DateTime.utc().toISO({ suppressMilliseconds: true })
-  const date = '2019-11-08';
+  const date = DateTime.utc().toISO({ suppressMilliseconds: true })
 
-  const frontMatter = getFrontmatter({
+  const frontMatter = generateFrontmatter({
     date: `"${date}"`,
     title: `"${sanitize(title)}"`,
     description: `This is a bookmark`,
@@ -64,24 +63,26 @@ const generateFileContent = data => {
 
 // generate the new md file name
 const generateFileName = title => {
-  //const date = DateTime.utc()
-  //const unixSeconds = date.toSeconds()
-  const unixSeconds = '';
-  //let filename = date.toFormat('yyyy-LL-dd')
-  let filename = 'yyyy-LL-dd';
+  // const date = DateTime.utc()
+  // const unixSeconds = date.toSeconds()
+  // let filename = date.toFormat('yyyy-LL-dd')
 
-  if (!title) {
-      //filename = `${filename}-${unixSeconds}`
-      filename = `${filename}-12345678`
-  } else {
-      // const slug = slugify(title, {
-      //     remove: /[^a-z0-9 ]/gi,
-      //     lower: true
-      // })
-      const slug = 'the-slug'
-      filename += slug.length > 1 ? `-${slug}` : `-${unixSeconds}`
-  }
+  // if (!title) {
+  //     filename = `${filename}-${unixSeconds}`
+  // } else {
+  //     const slug = slugify(title, {
+  //         remove: /[^a-z0-9 ]/gi,
+  //         lower: true
+  //     })
+  //     filename += slug.length > 1 ? `-${slug}` : `-${unixSeconds}`
+  // }
 
+  const filename = slugify(title, {
+      remove: /[^a-z0-9 ]/gi,
+      lower: true
+  })
+
+  console.log(filename)
   return `${filename}.md`
 }
 
@@ -90,7 +91,7 @@ const createFileInGithub = async params => {
   const { title, token } = params
   const fileName = generateFileName(title)
   const fileContent = generateFileContent(params)
-  const url = API_FILE_TARGET + fileName
+  /*const url = API_FILE_TARGET + fileName
 
   const payload = {
       message: 'create bookmark using browser bookmarklet',
@@ -112,6 +113,7 @@ const createFileInGithub = async params => {
   }
 
   return await fetch(url, options)
+  */
 }
 
 // helper function to handle API responses
@@ -133,11 +135,6 @@ const handleResponse = response => {
 
 // Main Lambda function
 exports.handler = async (event, context) => {
-  // return {
-  //   statusCode: 200,
-  //   body: "Hello, LH2"
-  // };
-
   try {
       const params = JSON.parse(event.body)
 
@@ -152,7 +149,7 @@ exports.handler = async (event, context) => {
       }
 
       const response = await createFileInGithub(params)
-      return handleResponse(response)
+      //return handleResponse(response)
   } catch (err) {
       console.log(err)
       return {
@@ -160,5 +157,4 @@ exports.handler = async (event, context) => {
           body: err.toString()
       }
   }
-
 };
