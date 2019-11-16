@@ -38,25 +38,34 @@ const generateFrontmatter = yaml => {
 
 // generate the new md file content
 const generateFileContent = data => {
-  const { title, url, body } = data
+  const { title, description, url, via, body, additionalTags } = data
   const date = DateTime.utc().toISO({ suppressMilliseconds: true })
 
   const frontMatter = generateFrontmatter({
     date: `"${date}"`,
     title: `"${sanitize(title)}"`,
-    description: `This is a bookmark`,
+    description: `"${description}"`,
+    tags: `[link, ${additionalTags}]`,
     linkTarget: `"${url}"`,
-    tags: 'link',
     draft: `true`
   })
 
-  console.log(frontMatter)
+  //console.log(frontMatter)
 
   let content = frontMatter
   if (body) {
-      content += '\n\n' + sanitize(body)
+      content += '\n' + body
+  }
+  if (via) {
+    const vialink =
+        via.charAt(0) === '@'
+            ? `[${via}](https://twitter.com/${via.substring(1)})`
+            : via
+    content += ` (via ${vialink})`
   }
   //content += '\n\n' + `[${url}](${url})`
+
+  console.log(content)
 
   return unescape(encodeURIComponent(content))
 }
