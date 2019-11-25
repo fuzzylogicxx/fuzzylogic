@@ -3,16 +3,26 @@ const sass   = require("gulp-sass");
 const concat = require('gulp-concat');
 const babel  = require('gulp-babel');
 const uglify = require('gulp-uglify');
-
+const del = require('del');
 
 
 gulp.task('default', () =>
-    gulp.src('src/app.js')
-        .pipe(babel({
-            presets: ['@babel/env']
-        }))
-        .pipe(gulp.dest('dist'))
+  gulp.src('src/app.js')
+      .pipe(babel({
+          presets: ['@babel/env']
+      }))
+      .pipe(gulp.dest('dist'))
 );
+
+
+/*
+  clear out eleventy-generated files so that no old blog posts are hanging around and showing up where they shouldn’t
+*/
+gulp.task('wipe', function() {
+  return del([
+    '_site/*'
+  ]);
+});
 
 
 /*
@@ -47,7 +57,7 @@ gulp.task('js', function() {
 
 
 /*
-  Watch folders for changess
+  Watch folders for changes
 */
 gulp.task("watch", function() {
   gulp.watch('./scss/**/*.scss', gulp.parallel('css'));
