@@ -1,0 +1,92 @@
+---
+excludeFromSitemap: true
+permalink: bookmarker/index.html
+layout:
+---
+<!doctype html>
+<html dir="ltr" lang="en-GB">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmarker | Fuzzy Logic</title>
+
+    <link rel="preload" href="/fonts/sans/SourceSansPro-Regular-subset-v4.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/sans/source-sans-pro-v12-latin-600.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/sans/SourceSansPro-It-subset-v4.woff2" as="font" type="font/woff2" crossorigin>
+
+    <style>{% include "css/main.css" %}</style>
+
+    <meta name="robots" content="noindex, nofollow">
+
+    <!-- Advice for devices which can 'install' this website on their home screen -->
+    <link rel="manifest" href="/site.webmanifest">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="apple-mobile-web-app-title" content="{{ metadata.name }}">
+    <meta name="application-name" content="{{ metadata.name }}">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+  </head>
+  <body{% if bodyclass %} class="{{ bodyclass }}"{% endif %}>
+
+    <main id="primary-content" class="primary-content">
+      <p>Just a bunch of stuff</p>
+    </main>
+
+    <!-- Polyfills before any other scripts so that subsequent JS (which might use matches() and so on) is polyfilled -->
+    <script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+
+    <script>
+
+    console.log("bookmarker yo!");
+
+    {# const SHARING_ENDPOINT =
+    process.env.NODE_ENV === 'production'
+        ? '/.netlify/functions/share'
+        : 'http://localhost:9000/share' #}
+
+
+    {# http://localhost:8888/.netlify/functions/share #}
+
+    {# fetch(action, {
+      method: 'POST',
+      body: JSON.stringify(data),
+      headers: {
+          'Content-Type': 'application/json'
+      }
+    })
+    .then(this.handleResponse)
+    .catch(err => {
+      console.error(err)
+    }) #}
+
+    const url = 'http://localhost:8888/.netlify/functions/share';
+
+    fetch(url, {
+        method: 'POST',
+        body: JSON.stringify({
+          token: 'bac50522d5e4f39affbb201c7b58722c1a06eefa',
+          title: 'Test Title 4',
+          description: 'Here is a desc',
+          body: 'This is the body',
+          url: 'https://myurl.com/',
+          via: '@mxbck',
+          additionalTags: 'music, soul'
+        }),
+        headers: {
+            'Content-Type': 'application/json'
+        }
+    }).then((response) => {
+      console.log(response);
+    }).catch((err) => {
+      console.log(err);
+    });
+
+    </script>
+
+  </body>
+</html>
+
