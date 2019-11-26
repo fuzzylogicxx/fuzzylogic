@@ -42,8 +42,30 @@ layout:
           }
 
           greet() {
-            this.outputTarget.textContent =
-              `Hello, ${this.titleTarget.value}!`
+            //this.outputTarget.textContent = `Hello, ${this.titleTarget.value}!`
+
+            const url = 'http://localhost:8888/.netlify/functions/share';
+
+            fetch(url, {
+                method: 'POST',
+                body: JSON.stringify({
+                  token: this.tokenTarget.value,
+                  title: this.titleTarget.value,
+                  description: this.descriptionTarget.value,
+                  body: this.bodyTarget.value,
+                  url: this.urlTarget.value,
+                  via: this.viaTarget.value,
+                  additionalTags: this.tagsTarget.value
+                }),
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            }).then((response) => {
+              console.log(response);
+            }).catch((err) => {
+              console.log(err);
+            });
+
           }
 
         })
@@ -63,7 +85,10 @@ layout:
           <label for="token">Token</label>
           <input id="token" data-target="hello.token" type="text">
         </div>
-        <input data-target="hello.title" type="text">
+        <div>
+          <label for="title">Title</label>
+          <input id="title" data-target="hello.title" type="text">
+        </div>
         <input data-target="hello.description" type="text">
         <input data-target="hello.body" type="text">
         <input data-target="hello.url" type="text">
@@ -113,7 +138,7 @@ layout:
     fetch(url, {
         method: 'POST',
         body: JSON.stringify({
-          token: '3a5d71bbb222552c7226e13c7ead535ce0c2e514',
+          token: '',
           title: 'Test Title 4',
           description: 'Here is a desc',
           body: 'This is the body',
