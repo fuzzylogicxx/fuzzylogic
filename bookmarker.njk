@@ -29,11 +29,56 @@ layout:
     <meta name="application-name" content="{{ metadata.name }}">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
+
+    <script src="https://unpkg.com/stimulus/dist/stimulus.umd.js"></script>
+    <script>
+      (() => {
+        const application = Stimulus.Application.start()
+
+        application.register("hello", class extends Stimulus.Controller {
+
+          static get targets() {
+            return [ "token", "title", "description", "body", "url", "via", "tags", "output" ]
+          }
+
+          greet() {
+            this.outputTarget.textContent =
+              `Hello, ${this.titleTarget.value}!`
+          }
+
+        })
+      })()
+    </script>
+
+
   </head>
   <body{% if bodyclass %} class="{{ bodyclass }}"{% endif %}>
 
     <main id="primary-content" class="primary-content">
-      <p>Just a bunch of stuff</p>
+      <p>Just a bunch of stuff3</p>
+
+      <div data-controller="hello">
+
+        <div>
+          <label for="token">Token</label>
+          <input id="token" data-target="hello.token" type="text">
+        </div>
+        <input data-target="hello.title" type="text">
+        <input data-target="hello.description" type="text">
+        <input data-target="hello.body" type="text">
+        <input data-target="hello.url" type="text">
+        <input data-target="hello.via" type="text">
+        <input data-target="hello.tags" type="text">
+
+        <button data-action="click->hello#greet">Greet</button>
+
+        <span data-target="hello.output"></span>
+
+      </div>
+
+      {# <form id=""></form> #}
+
+
     </main>
 
     <!-- Polyfills before any other scripts so that subsequent JS (which might use matches() and so on) is polyfilled -->
@@ -41,7 +86,7 @@ layout:
 
     <script>
 
-    console.log("bookmarker yo!");
+    console.log("bookmarker yo2!");
 
     {# const SHARING_ENDPOINT =
     process.env.NODE_ENV === 'production'
@@ -63,12 +108,12 @@ layout:
       console.error(err)
     }) #}
 
-    const url = 'http://localhost:8888/.netlify/functions/share';
+    {# const url = 'http://localhost:8888/.netlify/functions/share';
 
     fetch(url, {
         method: 'POST',
         body: JSON.stringify({
-          token: 'bac50522d5e4f39affbb201c7b58722c1a06eefa',
+          token: '3a5d71bbb222552c7226e13c7ead535ce0c2e514',
           title: 'Test Title 4',
           description: 'Here is a desc',
           body: 'This is the body',
@@ -83,7 +128,7 @@ layout:
       console.log(response);
     }).catch((err) => {
       console.log(err);
-    });
+    }); #}
 
     </script>
 

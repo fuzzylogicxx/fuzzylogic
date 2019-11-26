@@ -72,24 +72,24 @@ const generateFileContent = data => {
 
 // generate the new md file name
 const generateFileName = title => {
-  // const date = DateTime.utc()
-  // const unixSeconds = date.toSeconds()
-  // let filename = date.toFormat('yyyy-LL-dd')
+  const date = DateTime.utc()
+  const unixSeconds = date.toSeconds()
+  let filename = date.toFormat('yyyy-LL-dd')
 
-  // if (!title) {
-  //     filename = `${filename}-${unixSeconds}`
-  // } else {
-  //     const slug = slugify(title, {
-  //         remove: /[^a-z0-9 ]/gi,
-  //         lower: true
-  //     })
-  //     filename += slug.length > 1 ? `-${slug}` : `-${unixSeconds}`
-  // }
+  if (!title) {
+      filename = `${filename}-${unixSeconds}`
+  } else {
+      const slug = slugify(title, {
+          remove: /[^a-z0-9 ]/gi,
+          lower: true
+      })
+      filename += slug.length > 1 ? `-${slug}` : `-${unixSeconds}`
+  }
 
-  const filename = slugify(title, {
-      remove: /[^a-z0-9 ]/gi,
-      lower: true
-  })
+  // const filename = slugify(title, {
+  //     remove: /[^a-z0-9 ]/gi,
+  //     lower: true
+  // })
 
   console.log(filename)
   return `${filename}.md`
@@ -100,7 +100,7 @@ const createFileInGithub = async params => {
   const { title, token } = params
   const fileName = generateFileName(title)
   const fileContent = generateFileContent(params)
-  /*const url = API_FILE_TARGET + fileName
+  const url = API_FILE_TARGET + fileName
 
   const payload = {
       message: 'create bookmark using browser bookmarklet',
@@ -122,7 +122,6 @@ const createFileInGithub = async params => {
   }
 
   return await fetch(url, options)
-  */
 }
 
 // helper function to handle API responses
@@ -158,7 +157,7 @@ exports.handler = async (event, context) => {
       }
 
       const response = await createFileInGithub(params)
-      //return handleResponse(response)
+      return handleResponse(response)
   } catch (err) {
       console.log(err)
       return {
