@@ -41,11 +41,12 @@ layout:
             return [ "token", "title", "description", "body", "url", "via", "tags", "output" ]
           }
 
-          greet() {
+          greet(e) {
+            e.preventDefault()
             //this.outputTarget.textContent = `Hello, ${this.titleTarget.value}!`
 
-            //const url = 'http://localhost:8888/.netlify/functions/share';
-            const url = '/.netlify/functions/share';
+            const url = '/.netlify/functions/share'; //http://localhost:8888
+            //const url = '/.netlify/functions/share';
 
             fetch(url, {
                 method: 'POST',
@@ -62,8 +63,10 @@ layout:
                     'Content-Type': 'application/json'
                 }
             }).then((response) => {
+              console.log("foo");
               console.log(response);
             }).catch((err) => {
+              console.log("bar");
               console.log(err);
             });
 
