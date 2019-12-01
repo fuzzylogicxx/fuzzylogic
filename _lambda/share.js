@@ -135,7 +135,7 @@ const handleResponse = response => {
 
   return {
       statusCode: response.status,
-      body: `bobby ${response.statusText}`
+      body: `${response.statusText}`
   }
 }
 
