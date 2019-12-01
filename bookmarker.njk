@@ -30,6 +30,70 @@ layout:
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 
+  </head>
+  <body{% if bodyclass %} class="{{ bodyclass }}"{% endif %}>
+
+    <main id="primary-content" class="primary-content">
+
+      <h1>Create Bookmark</h1>
+
+      <div data-controller="hello">
+
+        <form class="form-custom">
+
+          <div class="form-group">
+            <label for="title">Title</label>
+            <input id="title" data-target="hello.title" type="text">
+          </div>
+
+          <div class="form-group">
+            <label for="description">Description</label>
+            <textarea data-target="hello.description" type="text"></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="body">Body</label>
+            <input data-target="hello.body" type="text">
+          </div>
+
+          <div class="form-group">
+            <label for="url">URL</label>
+            <input data-target="hello.url" type="text">
+          </div>
+
+          <div class="form-group">
+            <label for="via">Via</label>
+            <input data-target="hello.via" type="text">
+          </div>
+
+          <div class="form-group">
+            <label for="tags">Tags</label>
+            <input data-target="hello.tags" type="text">
+          </div>
+
+          <div class="form-group">
+            <label for="token">Token</label>
+            <input id="token" data-target="hello.token" type="text" name="token" autocomplete="current-password">
+          </div>
+
+          <div class="form-group a11y-only" aria-hidden="true" style="visibility: hidden;">
+            <label for="h0neep0ot">Strictly for non-people</label>
+            <input id="h0neep0ot" name="h0neep0ot" data-target="hello.h0neep0ot" type="text">
+          </div>
+
+          <div class="form-group">
+            <button data-action="click->hello#greet">Save</button>
+          </div>
+
+        </form>
+
+      </div>
+
+    </main>
+
+    <!-- Polyfills before any other scripts so that subsequent JS (which might use matches() and so on) is polyfilled -->
+    <script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+
     <script src="https://unpkg.com/stimulus/dist/stimulus.umd.js"></script>
     <script>
       (() => {
@@ -38,15 +102,18 @@ layout:
         application.register("hello", class extends Stimulus.Controller {
 
           static get targets() {
-            return [ "token", "title", "description", "body", "url", "via", "tags", "output" ]
+            return [ "token", "title", "description", "body", "url", "via", "tags", "h0neep0ot" ]
           }
 
-          greet(e) {
-            e.preventDefault()
-            //this.outputTarget.textContent = `Hello, ${this.titleTarget.value}!`
+          greet() {
+            e.preventDefault();
 
-            const url = '/.netlify/functions/share'; //http://localhost:8888
-            //const url = '/.netlify/functions/share';
+            const url = '/.netlify/functions/share'; // http://localhost:8888/.netlify/functions/share
+
+            if (this.h0neep0otTarget.value.length) {
+              console.log("Bad robot");
+              return;
+            }
 
             fetch(url, {
                 method: 'POST',
@@ -63,10 +130,8 @@ layout:
                     'Content-Type': 'application/json'
                 }
             }).then((response) => {
-              console.log("foo");
               console.log(response);
             }).catch((err) => {
-              console.log("bar");
               console.log(err);
             });
 
@@ -75,70 +140,5 @@ layout:
         })
       })()
     </script>
-
-
-  </head>
-  <body{% if bodyclass %} class="{{ bodyclass }}"{% endif %}>
-
-    <main id="primary-content" class="primary-content">
-
-      <h1>Create Bookmark</h1>
-
-      <div data-controller="hello">
-
-        <form class="form-custom">
-
-        <div class="form-group">
-          <label for="token">Token</label>
-          <input id="token" data-target="hello.token" type="text">
-        </div>
-
-        <div class="form-group">
-          <label for="title">Title</label>
-          <input id="title" data-target="hello.title" type="text">
-        </div>
-
-        <div class="form-group">
-          <label for="description">Description</label>
-          <textarea data-target="hello.description" type="text"></textarea>
-        </div>
-
-        <div class="form-group">
-          <label for="body">Body</label>
-          <input data-target="hello.body" type="text">
-        </div>
-
-        <div class="form-group">
-          <label for="url">URL</label>
-          <input data-target="hello.url" type="text">
-        </div>
-
-        <div class="form-group">
-          <label for="via">Via</label>
-          <input data-target="hello.via" type="text">
-        </div>
-
-        <div class="form-group">
-          <label for="tags">Tags</label>
-          <input data-target="hello.tags" type="text">
-        </div>
-
-        <div class="form-group">
-          <button data-action="click->hello#greet">Save</button>
-        </div>
-
-        </form>
-
-      </div>
-
-      {# <form id=""></form> #}
-
-
-    </main>
-
-    <!-- Polyfills before any other scripts so that subsequent JS (which might use matches() and so on) is polyfilled -->
-    <script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-
   </body>
 </html>
-

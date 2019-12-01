@@ -63,7 +63,7 @@ const generateFileContent = data => {
             : via
     content += ` (via ${vialink})`
   }
-  //content += '\n\n' + `[${url}](${url})`
+  content += '\n---'
 
   console.log(content)
 
