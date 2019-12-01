@@ -46,8 +46,7 @@ const generateFileContent = data => {
     title: `"${sanitize(title)}"`,
     description: `"${description}"`,
     tags: `[link, ${additionalTags}]`,
-    linkTarget: `"${url}"`,
-    draft: `true`
+    linkTarget: `"${url}"`
   })
 
   //console.log(frontMatter)
