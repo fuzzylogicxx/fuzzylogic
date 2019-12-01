@@ -44,7 +44,8 @@ layout:
           greet() {
             //this.outputTarget.textContent = `Hello, ${this.titleTarget.value}!`
 
-            const url = 'http://localhost:8888/.netlify/functions/share';
+            //const url = 'http://localhost:8888/.netlify/functions/share';
+            const url = '/.netlify/functions/share';
 
             fetch(url, {
                 method: 'POST',
@@ -77,27 +78,53 @@ layout:
   <body{% if bodyclass %} class="{{ bodyclass }}"{% endif %}>
 
     <main id="primary-content" class="primary-content">
-      <p>Just a bunch of stuff3</p>
+
+      <h1>Create Bookmark</h1>
 
       <div data-controller="hello">
 
-        <div>
+        <form class="form-custom">
+
+        <div class="form-group">
           <label for="token">Token</label>
           <input id="token" data-target="hello.token" type="text">
         </div>
-        <div>
+
+        <div class="form-group">
           <label for="title">Title</label>
           <input id="title" data-target="hello.title" type="text">
         </div>
-        <input data-target="hello.description" type="text">
-        <input data-target="hello.body" type="text">
-        <input data-target="hello.url" type="text">
-        <input data-target="hello.via" type="text">
-        <input data-target="hello.tags" type="text">
 
-        <button data-action="click->hello#greet">Greet</button>
+        <div class="form-group">
+          <label for="description">Description</label>
+          <textarea data-target="hello.description" type="text"></textarea>
+        </div>
 
-        <span data-target="hello.output"></span>
+        <div class="form-group">
+          <label for="body">Body</label>
+          <input data-target="hello.body" type="text">
+        </div>
+
+        <div class="form-group">
+          <label for="url">URL</label>
+          <input data-target="hello.url" type="text">
+        </div>
+
+        <div class="form-group">
+          <label for="via">Via</label>
+          <input data-target="hello.via" type="text">
+        </div>
+
+        <div class="form-group">
+          <label for="tags">Tags</label>
+          <input data-target="hello.tags" type="text">
+        </div>
+
+        <div class="form-group">
+          <button data-action="click->hello#greet">Save</button>
+        </div>
+
+        </form>
 
       </div>
 
