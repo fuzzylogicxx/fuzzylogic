@@ -38,7 +38,7 @@ const generateFrontmatter = yaml => {
 
 // generate the new md file content
 const generateFileContent = data => {
-  const { title, description, url, via, body, additionalTags } = data
+  const { title, description, url, via, excerpt, body, additionalTags } = data
   const date = DateTime.utc().toISO({ suppressMilliseconds: true })
 
   const frontMatter = generateFrontmatter({
@@ -52,6 +52,9 @@ const generateFileContent = data => {
   //console.log(frontMatter)
 
   let content = frontMatter
+  if (excerpt) {
+    content += '\n' + excerpt + '\n---'
+  }
   if (body) {
       content += '\n' + body
   }
@@ -62,7 +65,6 @@ const generateFileContent = data => {
             : via
     content += ` (via ${vialink})`
   }
-  content += '\n---'
 
   console.log(content)
 

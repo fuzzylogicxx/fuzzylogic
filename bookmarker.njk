@@ -42,27 +42,32 @@ layout:
         <form class="form-custom">
 
           <div class="form-group">
-            <label for="title">Title</label>
+            <label for="title">Post Title</label>
             <input id="title" data-target="hello.title" type="text">
           </div>
 
           <div class="form-group">
-            <label for="description">Description</label>
-            <textarea data-target="hello.description" type="text"></textarea>
+            <label for="description">Post Meta Description</label>
+            <textarea data-target="hello.description"></textarea>
           </div>
 
           <div class="form-group">
-            <label for="body">Body</label>
-            <input data-target="hello.body" type="text">
+            <label for="excerpt">Post Excerpt</label>
+            <textarea data-target="hello.excerpt"></textarea>
           </div>
 
           <div class="form-group">
-            <label for="url">URL</label>
+            <label for="body">Post Body</label>
+            <textarea data-target="hello.body"></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="url">3rd Party URL</label>
             <input data-target="hello.url" type="text">
           </div>
 
           <div class="form-group">
-            <label for="via">Via</label>
+            <label for="via">Via (optional)</label>
             <input data-target="hello.via" type="text">
           </div>
 
@@ -82,7 +87,7 @@ layout:
           </div>
 
           <div class="form-group">
-            <button data-action="click->hello#greet">Save</button>
+            <button data-action="click->hello#save">Save</button>
           </div>
 
         </form>
@@ -90,6 +95,9 @@ layout:
       </div>
 
     </main>
+
+    {# <p>Bookmarklet: <a class="bookmarklet" href="javascript:(function(){var title = document.getElementsByTagName('title')[0].innerHTML;title = encodeURIComponent(title);var selection = '';if (window.getSelection) {selection = window.getSelection().toString();} else if (document.selection &amp;&amp; document.selection.type != 'Control') {selection = document.selection.createRange().text;}selection = encodeURIComponent(selection);new_window=window.open('https://fuzzylogic.me/bookmarker/?title='+title+'&amp;body='+selection+'&amp;url='+encodeURIComponent(document.location.href),'Bookmarker','resizable,scrollbars,status=0,toolbar=0,menubar=0,titlebar=0,width=680,height=700,location=0');})();">Boob</a></p> #}
+
 
     <!-- Polyfills before any other scripts so that subsequent JS (which might use matches() and so on) is polyfilled -->
     <script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
@@ -101,11 +109,21 @@ layout:
 
         application.register("hello", class extends Stimulus.Controller {
 
+          // define stimulus DOM elements
           static get targets() {
-            return [ "token", "title", "description", "body", "url", "via", "tags", "h0neep0ot" ]
+            return [ "token", "title", "description", "excerpt", "body", "url", "via", "tags", "h0neep0ot" ]
           }
 
-          greet(e) {
+          // When main form element loads, pre-populate some fields
+          connect() {
+            const queryParams = new URLSearchParams(window.location.search);
+            this.titleTarget.value = queryParams.get("title");
+            this.excerptTarget.value = `> ${queryParams.get("body")}`;
+            this.urlTarget.value = queryParams.get("url");
+          }
+
+          // Save Bookmark function
+          save(e) {
             e.preventDefault();
 
             const url = '/.netlify/functions/share'; // http://localhost:8888/.netlify/functions/share
@@ -121,6 +139,7 @@ layout:
                   token: this.tokenTarget.value,
                   title: this.titleTarget.value,
                   description: this.descriptionTarget.value,
+                  excerpt: this.excerptTarget.value,
                   body: this.bodyTarget.value,
                   url: this.urlTarget.value,
                   via: this.viaTarget.value,
