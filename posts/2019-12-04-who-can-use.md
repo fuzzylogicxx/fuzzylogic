@@ -7,5 +7,4 @@ linkTarget: "https://whocanuse.com/"
 ---
 > It's a tool that brings attention and understanding to how color contrast can affect different people with visual impairments.
 ---
-What’s interesting about this resource is that sheds light on the many different _types_ of visual impairment, from 
-_Protanomaly_ (trouble distinguishing reds) to _Achromatopsia_ (complete colour blindness; only being able to see shades) and how your website’s colour scheme fares for each. (via http://paddyduke.com/)
+What’s interesting about this resource is that sheds light on the many different _types_ of visual impairment, from _Protanomaly_ (trouble distinguishing reds) to _Achromatopsia_ (complete colour blindness; only being able to see shades) and how your website’s colour scheme fares for each. (via http://paddyduke.com/)
