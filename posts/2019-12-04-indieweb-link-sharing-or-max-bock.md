@@ -10,7 +10,7 @@ linkTarget: "https://mxb.dev/blog/indieweb-link-sharing/"
 
 This was a fantastic walkthrough by [Max](https://twitter.com/mxbck). And based on this, I’ve just finished implementing my own version. 
 
-I already had a _Bookmarks_ section so I’m posting new entries into that. For the bookmark-saving form, I’ve used [Stimulus](https://stimulusjs.org/) rather than [Preact](https://preactjs.com/). But otherwise this is very much based on Max’s superb tutorial.
+I already use this site to save _Bookmarks_ so I’m hooking into that. For the bookmark-saving form, I’ve used [Stimulus](https://stimulusjs.org/) rather than [Preact](https://preactjs.com/). But otherwise this is very much based on Max’s superb tutorial.
 
 This also provided a great way to dip my toes into using the world of Netlify Functions and their supporting tools, [netlify-dev](https://www.netlify.com/products/dev/) and [netlify-lambda](https://github.com/netlify/netlify-lambda).
 
