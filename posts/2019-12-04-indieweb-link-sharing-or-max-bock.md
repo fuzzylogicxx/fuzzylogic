@@ -8,6 +8,12 @@ linkTarget: "https://mxb.dev/blog/indieweb-link-sharing/"
 > A pain point of the IndieWeb is that it's sometimes not as convenient to share content as it is on the common social media platforms… That’s why I wanted to improve this process for my site.
 ---
 
-This was a fantastic walkthrough by Max. And using this, I’ve just finished implementing my own tweaked version. I think of the saved resources as Bookmarks rather than "shared links", and I’ve used [Stimulus](https://stimulusjs.org/) rather than [Preact](https://preactjs.com/) for my  bookmark-saving form, but otherwise this is very much based on this superb tutorial. 
+This was a fantastic walkthrough by Max. And based on this, I’ve just finished implementing my own, slightly tweaked, version. 
 
-In fact, I’ve just bookmarked this page using my shiny new system. Many thanks, [Max](https://twitter.com/mxbck)! 
+I already had a _Bookmarks_ section so I’m adding new posts into that. For the bookmark-saving form, I’ve used [Stimulus](https://stimulusjs.org/) rather than [Preact](https://preactjs.com/). But otherwise this is very much based on Max’s superb tutorial.
+
+This also provided a great way to dip my toes into using the world of Netlify Functions and their supporting tools, [netlify-dev](https://www.netlify.com/products/dev/) and [netlify-lambda](https://github.com/netlify/netlify-lambda)
+
+There’s more to be done but I wanted the first bookmark created with my shiny new system to be Max’s original tutorial – and this is it. 
+
+Many thanks, [Max]!(https://twitter.com/mxbck)! 
