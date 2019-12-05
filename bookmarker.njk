@@ -119,10 +119,11 @@ layout:
             const queryParams = new URLSearchParams(window.location.search);
             this.titleTarget.value = queryParams.get("title");
             this.excerptTarget.value = `> ${queryParams.get("body")}`;
+
             this.urlTarget.value = queryParams.get("url");
           }
 
-          // Save Bookmark function
+          // Save Bookmark
           save(e) {
             e.preventDefault();
 
@@ -153,7 +154,6 @@ layout:
             }).catch((err) => {
               console.log(err);
             });
-
           }
 
         })

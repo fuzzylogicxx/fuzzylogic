@@ -49,11 +49,9 @@ const generateFileContent = data => {
     linkTarget: `"${url}"`
   })
 
-  //console.log(frontMatter)
-
   let content = frontMatter
   if (excerpt) {
-    content += '\n' + excerpt + '\n---'
+    content += '\n' + excerpt + '\n---\n'
   }
   if (body) {
       content += '\n' + body
@@ -65,8 +63,6 @@ const generateFileContent = data => {
             : via
     content += ` (via ${vialink})`
   }
-
-  console.log(content)
 
   return unescape(encodeURIComponent(content))
 }
@@ -87,12 +83,6 @@ const generateFileName = title => {
       filename += slug.length > 1 ? `-${slug}` : `-${unixSeconds}`
   }
 
-  // const filename = slugify(title, {
-  //     remove: /[^a-z0-9 ]/gi,
-  //     lower: true
-  // })
-
-  console.log(filename)
   return `${filename}.md`
 }
 
