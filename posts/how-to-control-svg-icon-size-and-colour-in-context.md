@@ -4,7 +4,7 @@ description: Setting an SVG’s icon size relative to the font-size of its adjac
 date: 2019-04-01 13:25:00
 tags: [development,svg,css,viewbox,currentColor,aria]
 ---
-A while back I read [a great SVG icon tip from Andy Bell](https://twitter.com/andybelldesign/status/1098915626050117633) which I’d been meaning to try and finally did so today. Andy recommended that for icons with text labels we set the `width` and `height` of the icons to `1em` since that will size them proportionately to the adjacent text and _additionally_ lets us use `font-size` to make any further sizing tweaks.
+A while back I read [a great SVG icon tip from Andy Bell](https://twitter.com/andybelldesign/status/1098915626050117633) which I’d been meaning to try and finally did so today. Andy recommended that for icons with text labels we set the `width` and `height` of the icons to `1em` since that will size them proportionately to the adjacent text and additionally lets us use `font-size` to make any further sizing tweaks.
 ---
 
 As [previously mentioned](https://fuzzylogic.me/thoughts/grey-scales-something-fishy-with-svg], I’ve recently been working on my SVG skills.
