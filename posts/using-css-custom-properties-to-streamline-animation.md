@@ -11,9 +11,9 @@ tags:
 Thanks to [a great tip from Lucas Hugdahl on Twitter](https://twitter.com/LucasHugdahl/status/1190438217482264576), here’s how to use CSS custom properties (variables) in your transforms so you don't need to rewrite the whole `transform` rule in order to `transition` (animate) a single property.
 ---
 
-Let’s take the simple example of a button that we want to increase in size when hovered.
+Let’s take the simple example of a `button` that we want to increase in size when hovered.
 
-By using a custom property for the `scale` value, We can keep things <abbr title="Don’t Repeat Yourself">DRY</abbr>er in our `:hover` rule by only updating that variable rather than rewriting the entire `transform` rule.
+By using a custom property for the `scale` value, we can keep things <abbr title="Don’t Repeat Yourself">DRY</abbr>er in our `:hover` rule by only updating that variable rather than rewriting the entire `transform` rule.
 
 The button HTML: 
 
@@ -34,4 +34,4 @@ button:hover {
 }
 ```
 
-[Check out my full demo on Codepen](https://codepen.io/fuzzylogicx/pen/PowPRwK).
+[See it in action on Codepen](https://codepen.io/fuzzylogicx/pen/PowPRwK).
