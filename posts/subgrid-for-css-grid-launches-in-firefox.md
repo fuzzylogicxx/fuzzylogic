@@ -2,7 +2,7 @@
 title: Subgrid for CSS Grid launches in Firefox 71
 date: 2019-12-08 11:39:00
 description: Subgrid for CSS Grid layout has arrived.
-tags: development, css, grid, layout
+tags: [development,css,grid,layout]
 ---
 Subgrid for CSS Grid Layout has [arrived in Firefox](https://hacks.mozilla.org/2019/12/firefox-71-a-year-end-arrival/) and it looks great. Here’s how I wrapped my head around the new concepts.
 ---
