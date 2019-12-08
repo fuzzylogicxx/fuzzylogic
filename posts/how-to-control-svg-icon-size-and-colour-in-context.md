@@ -9,9 +9,9 @@ A while back I read [a great SVG icon tip from Andy Bell](https://twitter.com/an
 
 As [previously mentioned](https://fuzzylogic.me/thoughts/grey-scales-something-fishy-with-svg), I’ve recently been working on my SVG skills.
 
-Andy Bell’s SVG icon-sizing technique is really clever and feels like it adds of lots of flexibility and future-friendliness so I was keen to try it out.
+Andy Bell’s SVG icon-sizing technique is really clever and feels like it adds lots of flexibility and future-friendliness so I was keen to try it out.
 
-Here’s a pen I created this morning to test-drive the technique.
+Here’s a pen I created to test-drive the technique.
 
 <p class="codepen" data-height="265" data-theme-id="default" data-default-tab="html,result" data-user="fuzzylogicx" data-slug-hash="QPwjyZ" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Control SVG icon size with font-size and match colour to parent text">
   <span>See the Pen <a href="https://codepen.io/fuzzylogicx/pen/QPwjyZ">
