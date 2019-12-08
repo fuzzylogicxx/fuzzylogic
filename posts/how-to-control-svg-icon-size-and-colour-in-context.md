@@ -7,7 +7,7 @@ tags: [development,svg,css,viewbox,currentColor,aria]
 A while back I read [a great SVG icon tip from Andy Bell](https://twitter.com/andybelldesign/status/1098915626050117633) which I’d been meaning to try and finally did so today. Andy recommended that for icons with text labels we set the `width` and `height` of the icons to `1em` since that will size them proportionately to the adjacent text and additionally lets us use `font-size` to make any further sizing tweaks.
 ---
 
-As [previously mentioned](https://fuzzylogic.me/thoughts/grey-scales-something-fishy-with-svg], I’ve recently been working on my SVG skills.
+As [previously mentioned](https://fuzzylogic.me/thoughts/grey-scales-something-fishy-with-svg), I’ve recently been working on my SVG skills.
 
 Andy Bell’s SVG icon-sizing technique is really clever and feels like it adds of lots of flexibility and future-friendliness so I was keen to try it out.
 
@@ -22,11 +22,11 @@ Here’s a pen I created this morning to test-drive the technique.
 
 And here’s some key points I’ve noted:
 
-- By applying width and height of 1em to our icon it is predictably sized by default.
-- It can now have its size further tweaked in CSS using font-size, for example with ems (where 1em = the font-size of the parent anchor element).
-- This technique requires the “viewbox” attribute being present on the svg.
-- Apply the width and height =1em as inline attributes on the svg. We <em>could</em> apply them using CSS, however the inline approach avoids potentially massive icons showing in cases where CSS doesn’t load.
-- To get the colour matching, apply fill="currentColor" as an inline attribute on the svg’s path.
+- By applying `width` and `height` of `1em` to our icon it is predictably sized by default.
+- It can now have its size further tweaked in CSS using `font-size`, for example with ems (where `1em` = the font-size of the parent anchor element).
+- This technique requires the `viewbox` attribute being present on the svg.
+- Apply the width and height =1em as inline attributes on the svg. We _could_ apply them using CSS, however the inline approach avoids potentially massive icons showing in cases where CSS doesn’t load.
+- To get the colour matching, apply `fill="currentColor"` as an inline attribute on the svg’s path.
 - Now, when you apply a hover colour to the anchor in CSS, the icon will just pick that up. Nice!
-- Applying inline-flex to the anchor makes the vertical-alignment of text and icon easier.
-- Add aria-hidden on the icon because it’s mainly decorative so we don’t want it read out by screen readers.
+- Applying `inline-flex` to the anchor makes the vertical-alignment of text and icon easier.
+- Apply `aria-hidden` to the icon because it’s mainly decorative so we don’t want it read out by screen readers.
