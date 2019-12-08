@@ -1,7 +1,7 @@
 ---
 date: "2019-12-01T16:58:08.051Z"
 title: "FS Split Sans and FS Split Serif (fontsmith.com)"
-description: "Attractive, “split personalityâ” sans and serif typeface pairing"
+description: "Attractive, “split personality” sans and serif typeface pairing"
 tags: [link, typography, typeface, sans, serif]
 linkTarget: "https://www.fontsmith.com/blog/2019/11/20/typeface-duo-fs-split-sans-and-fs-split-serif-are-the-contrasting-types"
 ---
