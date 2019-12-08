@@ -11,4 +11,4 @@ While MDN has [some nice examples](https://wiki.developer.mozilla.org/en-US/docs
 
 For example, I always need to remind myself that parts of the syntax – e.g. in `grid-template-columns` selectors – refer to grid _lines_ rather than the columns themselves. 
 
-So I created a [Subgrid example pen with guideline notes](https://codepen.io/fuzzylogicx/pen/eYmpowG?editors=1100) for future reference.
+So I created a [Subgrid example pen with guideline notes](https://codepen.io/fuzzylogicx/pen/eYmpowG?editors=1100) for future reference. Note: make sure to open the pen in Firefox rather than any other browser, because at the time of writing only Firefox supports Subgrid!
