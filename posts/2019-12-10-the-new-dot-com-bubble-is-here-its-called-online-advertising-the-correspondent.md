@@ -1,6 +1,6 @@
 ---
 date: "2019-12-10T07:45:58.133Z"
-title: "The new dot com bubble is here: it's called online advertising (The Correspondent)"
+title: "The new dot com bubble is here: it’s called online advertising (The Correspondent)"
 description: "An article which delves into the world of clicks, banners and keywords to find out if any of it is real."
 tags: [link, advertising, web]
 linkTarget: "https://thecorrespondent.com/100/the-new-dot-com-bubble-is-here-its-called-online-advertising"
