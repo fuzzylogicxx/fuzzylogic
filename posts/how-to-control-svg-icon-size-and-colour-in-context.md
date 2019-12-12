@@ -11,14 +11,63 @@ As [previously mentioned](https://fuzzylogic.me/thoughts/grey-scales-something-f
 
 Andy Bell’s SVG icon-sizing technique is really clever and feels like it adds lots of flexibility and future-friendliness so I was keen to try it out.
 
-Here’s a pen I created to test-drive the technique.
+Here’s how it works.
 
-<p class="codepen" data-height="265" data-theme-id="default" data-default-tab="html,result" data-user="fuzzylogicx" data-slug-hash="QPwjyZ" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Control SVG icon size with font-size and match colour to parent text">
-  <span>See the Pen <a href="https://codepen.io/fuzzylogicx/pen/QPwjyZ">
-  Control SVG icon size with font-size and match colour to parent text</a> by Laurence Hughes (<a href="https://codepen.io/fuzzylogicx">@fuzzylogicx</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+``` html
+<a class="call-to-action" href="/">
+  <span>I’m a link</span>
+  <svg 
+    class="cta-icon" 
+    aria-hidden="true" 
+    width="1em" 
+    height="1em" 
+    viewBox="0 0 14 13"
+    xmlns="http://www.w3.org/2000/svg">
+    <path 
+      fill="currentColor" 
+      fill-rule="evenodd" 
+      d="M3.49.868l7.683 3.634a2 2 0 0 1 .052 3.59l-7.682 3.913a2 2 0 0 1-2.908-1.782V2.676A2 2 0 0 1 3.49.868z">
+    </path>
+  </svg>
+</a>
+
+<a class="call-to-action call-to-action-alt" href="/">
+  <span>I’m a large link</span>
+  <svg 
+    class="cta-icon" aria-hidden="true" 
+    width="1em" height="1em" 
+    viewBox="0 0 14 13"
+    xmlns="http://www.w3.org/2000/svg">
+    <path 
+      fill="currentColor" fill-rule="evenodd" 
+      d="M3.49.868l7.683 3.634a2 2 0 0 1 .052 3.59l-7.682 3.913a2 2 0 0 1-2.908-1.782V2.676A2 2 0 0 1 3.49.868z">
+    </path>
+  </svg>
+</a>
+```
+
+``` css
+a { color: rgb(183, 65, 14); }
+
+a:hover { color: #6A2000; }
+
+.call-to-action {
+  display: inline-flex;
+  align-items: center;
+  font-weight: bold;
+}
+
+.call-to-action-alt {
+  font-size: 2rem; 
+}
+
+.cta-icon {
+  margin-left: .5em;
+  font-size: .8em;
+}
+```
+
+[Here’s a demo I created to test-drive the technique](https://codepen.io/fuzzylogicx/pen/QPwjyZ).
 
 And here’s some key points I’ve noted:
 
