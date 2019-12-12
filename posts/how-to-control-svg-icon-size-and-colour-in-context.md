@@ -23,7 +23,7 @@ The HTML:
     aria-hidden="true" 
     width="1em" 
     height="1em" 
-    viewBox="0 0 14 13"
+    viewBox="0 0 14 13" 
     xmlns="http://www.w3.org/2000/svg">
     <path 
       fill="currentColor" 
@@ -38,7 +38,7 @@ The HTML:
   <svg 
     class="cta-icon" aria-hidden="true" 
     width="1em" height="1em" 
-    viewBox="0 0 14 13"
+    viewBox="0 0 14 13" 
     xmlns="http://www.w3.org/2000/svg">
     <path 
       fill="currentColor" fill-rule="evenodd" 
