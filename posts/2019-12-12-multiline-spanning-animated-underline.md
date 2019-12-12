@@ -1,5 +1,5 @@
 ---
-date: "2019-12-12T08:12:37.003Z"
+date: "2019-09-01T08:12:37.003Z"
 title: "Animating the underlining of multi-line text"
 description: "Cassie Evans shows us how to animate underline on a multi-line text by animating the background-size of a linear gradient background."
 tags: [link, animation, css]
