@@ -18,14 +18,14 @@ The HTML:
 ``` html
 <a class="call-to-action" href="/">
   <span>I’m a link</span>
-  <svg 
+    <svg 
     class="cta-icon" 
     aria-hidden="true" 
     width="1em" 
     height="1em" 
     viewBox="0 0 14 13" 
-    xmlns="http://www.w3.org/2000/svg">
-    <path 
+      xmlns="http://www.w3.org/2000/svg">
+      <path 
       fill="currentColor" 
       fill-rule="evenodd" 
       d="M3.49.868l7.683 3.634a2 2 0 0 1 .052 3.59l-7.682 3.913a2 2 0 0 1-2.908-1.782V2.676A2 2 0 0 1 3.49.868z">
@@ -35,12 +35,12 @@ The HTML:
 
 <a class="call-to-action call-to-action-alt" href="/">
   <span>I’m a large link</span>
-  <svg 
+    <svg 
     class="cta-icon" aria-hidden="true" 
     width="1em" height="1em" 
     viewBox="0 0 14 13" 
-    xmlns="http://www.w3.org/2000/svg">
-    <path 
+      xmlns="http://www.w3.org/2000/svg">
+      <path 
       fill="currentColor" fill-rule="evenodd" 
       d="M3.49.868l7.683 3.634a2 2 0 0 1 .052 3.59l-7.682 3.913a2 2 0 0 1-2.908-1.782V2.676A2 2 0 0 1 3.49.868z">
     </path>
@@ -71,7 +71,7 @@ a:hover { color: #6A2000; }
 }
 ```
 
-Here are the key takeaways:
+Here are my key takeaways:
 
 - By applying `width` and `height` of `1em` to our icon it is predictably sized by default.
 - It can now have its size further tweaked in CSS using `font-size`, for example with ems (where `1em` = the font-size of the parent anchor element).
