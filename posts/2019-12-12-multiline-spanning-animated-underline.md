@@ -10,7 +10,11 @@ linkTarget: "https://codepen.io/cassie-codes/pen/rNNGdmw"
 
 Here’s the gist of it:
 
+``` html
+<h2>This is a multi-line spanning animated underline. This took an annoyingly long time to figure out.</h2>
 ```
+
+``` css
 body {
   padding: 40vh 30vw;
   font-family: cursive;
