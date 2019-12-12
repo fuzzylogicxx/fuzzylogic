@@ -41,7 +41,8 @@ The HTML:
     viewBox="0 0 14 13" 
       xmlns="http://www.w3.org/2000/svg">
       <path 
-      fill="currentColor" fill-rule="evenodd" 
+      fill="currentColor" 
+      fill-rule="evenodd" 
         d="M3.49.868l7.683 3.634a2 2 0 0 1 .052 3.59l-7.682 3.913a2 2 0 0 1-2.908-1.782V2.676A2 2 0 0 1 3.49.868z">
     </path>
   </svg>
