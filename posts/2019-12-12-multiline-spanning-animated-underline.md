@@ -5,7 +5,7 @@ description: "Cassie Evans shows us how to animate underline on a multi-line tex
 tags: [link, animation, css]
 linkTarget: "https://codepen.io/cassie-codes/pen/rNNGdmw"
 ---
-Cassie Evans shows us how to combine `background–size`, a `linear-gradient` based `background-image` and a keyframe animatation (all in HTML and CSS) to for a lovely progressive underline effect on multi-line text.
+Cassie Evans shows us how to combine `background–size`, a `linear-gradient` based `background-image` and a keyframe animatation (all in HTML and CSS) for a lovely progressive underline effect on multi-line text.
 ---
 
 (via [@cassiecodes](https://twitter.com/cassiecodes))
