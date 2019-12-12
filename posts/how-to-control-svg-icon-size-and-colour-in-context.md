@@ -13,6 +13,8 @@ Andy Bell’s SVG icon-sizing technique is really clever and feels like it adds 
 
 Here’s how it works.
 
+The HTML:
+
 ``` html
 <a class="call-to-action" href="/">
   <span>I’m a link</span>
@@ -46,6 +48,8 @@ Here’s how it works.
 </a>
 ```
 
+The CSS:
+
 ``` css
 a { color: rgb(183, 65, 14); }
 
@@ -67,9 +71,7 @@ a:hover { color: #6A2000; }
 }
 ```
 
-[Here’s a demo I created to test-drive the technique](https://codepen.io/fuzzylogicx/pen/QPwjyZ).
-
-And here’s some key points I’ve noted:
+Here are the key takeaways:
 
 - By applying `width` and `height` of `1em` to our icon it is predictably sized by default.
 - It can now have its size further tweaked in CSS using `font-size`, for example with ems (where `1em` = the font-size of the parent anchor element).
@@ -79,3 +81,5 @@ And here’s some key points I’ve noted:
 - Now, when you apply a hover colour to the anchor in CSS, the icon will just pick that up. Nice!
 - Applying `inline-flex` to the anchor makes the vertical-alignment of text and icon easier.
 - Apply `aria-hidden` to the icon because it’s mainly decorative so we don’t want it read out by screen readers.
+
+[And here’s a demo I created to test-drive the technique](https://codepen.io/fuzzylogicx/pen/QPwjyZ).
