@@ -36,8 +36,9 @@ Alternatively, you might have begun by working locally before creating the repo 
 
 ``` bash
 mkdir dummy && cd dummy
-echo "some text" >> README.md
+echo "# Welcome to DummyRepo" >> README.md
 git init
+git add README.md
 git commit -m "first commit"
 
 # when ready, create empty repo on Github, then add as a remote
