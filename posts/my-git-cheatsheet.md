@@ -152,33 +152,6 @@ Return code’s state to how it was at a given commit:
 git checkout 591672e
 ```
 
-## Reviewing
-
-Show commit history (most recent first; `q` to quit):
-
-``` bash
-git log
-
-# limit the scope
-git log branchname
-
-# compact version
-git log --oneline
-```
-
-Check if your feature branch is trailing behind. 
-
-``` bash
-# show commits in master that are not yet in my feature branch
-git log --oneline my-feature..master										
-
-# show commits on remote branch that are not yet in my local branch
-git log --pretty='format:%h - %an: %s' new-homepage..origin/new-homepage		
-
-# show commits by me that included “heroku” and that changed file Gemfile
-git log --author=Demaree --grep=heroku --oneline Gemfile	
-```
-
 ## Staying current and compatible
 
 `fetch` remote branch and `merge` simultaneously:
@@ -218,7 +191,8 @@ I might also want to bring in `master` to ensure synchronicity and compatibility
 
 While it’s a good idea to `rebase` _before_ making a <abbr title="Pull Request">PR</abbr>, <strong>don’t use it after making a PR</strong> because from that point on the branch is _public_ and rebasing a public branch can cause problems for collaborators on the branch.
 
-Rebuild your feature branch’s changes on top of master
+Rebuild your feature branch’s changes on top of master:
+
 ``` bash
 git checkout master
 git pull origin master
@@ -226,7 +200,8 @@ git checkout myfeaturebranch
 git rebase master
 ```
 
-Tidy a feature branch before making a PR
+Tidy a feature branch before making a PR:
+
 ``` bash
 git checkout myfeaturebranch
 git rebase -i master
@@ -234,7 +209,7 @@ git rebase -i master
 # just tidy the last few (e.g. 3) commits
 git rebase -i HEAD~3
 
-# this opens a text editor listing all commits due to be moved:
+# this opens a text editor listing all commits due to be moved, e.g.:
 pick 33d5b7a Message for commit #1
 pick 9480b3d Message for commit #2
 pick 5c67e61 Message for commit #3
@@ -246,6 +221,46 @@ pick 5c67e61 Message for commit #3
 ```
 
 For more detail, read [Atlassian’s guide to rebasing](https://www.atlassian.com/git/tutorials/merging-vs-rebasing).
+
+## Reviewing
+
+Show commit history (most recent first; `q` to quit):
+
+``` bash
+git log
+
+# compact version
+git log --oneline
+
+# limit scope to commits on a branch
+git log branchname
+```
+
+Check if your feature branch is trailing behind:
+
+``` bash
+# show commits in master that are not yet in my feature branch
+git log --oneline my-feature..master										
+
+# show commits on remote branch that are not yet in my local branch
+git log --pretty='format:%h - %an: %s' new-homepage..origin/new-homepage		
+
+# show commits by me that included “heroku” and that changed file Gemfile
+git log --author=Demaree --grep=heroku --oneline Gemfile	
+```
+
+Review differences between staged changes and last commit:
+
+``` bash
+git diff --cached
+```
+
+Review changes between a given version/commit and the latest:
+
+``` bash
+git diff 591672e..master
+```
+
 
 ## Fixing Things
 
@@ -261,18 +276,6 @@ Alter the previous commit (change the message and and/or include further updates
 # assuming there are no staged files, this amends the commit message only.
 # if files are staged, it combines the staged changes with the previous commit.
 git commit --amend
-```
-
-Review differences between staged changes and last commit:
-
-``` bash
-git diff --cached
-```
-
-Review changes between a given version/commit and the latest:
-
-``` bash
-git diff 591672e..master
 ```
 
 Move current branch tip backward to a given commit, reset the staging area to match, but leave the working directory alone
