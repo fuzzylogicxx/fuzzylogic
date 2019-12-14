@@ -17,12 +17,12 @@ Configure your favourite editor to be used for commit messages:
 git config --global core.editor "nano"
 ```
 
-That’s based on the general pattern for config settings, which is:
+Configure a setting:
 ``` bash
 git config [--global] <key> <value>
 ```
 
-Commit using your editor to write [a multi-line message](https://thoughtbot.com/blog/5-useful-tips-for-a-better-commit-message)
+Commit with [a multi-line message](https://thoughtbot.com/blog/5-useful-tips-for-a-better-commit-message)
 ``` bash
 git commit
 ```
@@ -30,12 +30,12 @@ git commit
 
 Commit with short message:
 ``` bash
-git commit -m
+git commit -m "fix: typo in heading"
 ```
 
 Stage and commit all changes in one command (note: doesn’t work with new, untracked files):
 ``` bash
-git commit -am
+git commit -am "fix: typo in heading"
 ```
 
 Show all local branches
@@ -75,4 +75,4 @@ git checkout -b mynewbranch
 - [Tips, tutorials and Cheat Sheets from Atlassian](https://www.atlassian.com/git/tutorials/atlassian-git-cheatsheet)
 - Need to undo an old commit? Committed to master by mistake? Get out of trouble with [_Oh Shit, Git!_](https://ohshitgit.com/)
 - [The original Pro Git reference](https://git-scm.com/book/en/v2)
-- [_Git for Humans_](https://abookapart.com/products/git-for-humans) by David Demaree from _A List Apart_ is a great intro to the concepts and basic commands
+- [_Git for Humans_](https://abookapart.com/products/git-for-humans) by David Demaree from _A List Apart_ is a great intro to the concepts and basic commands.
