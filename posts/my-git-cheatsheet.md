@@ -66,7 +66,7 @@ git remote rename oldname newname
 
 ## Staging, unstaging and deleting files
 
-Unstage with reset (the opposite of `git add`):
+Unstage with `reset` (the opposite of `git add`):
 
 ``` bash
 # unstage all staged files
@@ -143,14 +143,6 @@ git branch -u fuzzylogic/v3
 #  now there’s no need to type origin master
 git pull
 ```  
-
-## Time Travel
-
-Return code’s state to how it was at a given commit:
-
-``` bash
-git checkout 591672e
-```
 
 ## Staying current and compatible
 
