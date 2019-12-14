@@ -7,7 +7,7 @@ tags: [development, git, cheatsheet]
 I’ve used Git for many years but it still trips me up. At times I’ve worked primarily in a GUI (like Sourcetree or Fork), and other times directly on the command line. I’ve worked on projects where I’ve been the sole developer and others where I’m part of a large team. Regardless of the tools or context, I’ve learned there are certain _need-to-knows_. Here’s a list of useful Git commands for my reference and yours.
 ---
 
-The following is not an exhaustive list but rather the Git commands I keep coming back to and/or regularly forget. (However, a list of excellent, more comprehensive external resources follows at the foot of the article).
+Note: the following is not an exhaustive list but rather the Git commands I keep coming back to and/or regularly forget. For deeper explanations, see the list of resources at the foot of the article.
 
 ## Configuration
 
@@ -17,7 +17,7 @@ Configure your favourite editor to be used for commit messages:
 git config --global core.editor "nano"
 ```
 
-Configure a setting:
+Configure any setting:
 
 ``` bash
 git config [--global] <key> <value>
@@ -25,14 +25,14 @@ git config [--global] <key> <value>
 
 ## Start work on a repo
 
-In Github, grab an existing repo’s URL, or create a new repo then grab its URL. Then `clone` it from the command line:
+In Github, visit an existing repo or create a new repo then grab its URL. Next, `clone` it from the command line:
 
 ``` bash
 cd mycodedir
 git clone https://github.com/fuzzylogicxx/dummy.git optionaldirname
 ```
 
-Alternatively, you might have started off working locally before creating the repo in Github:
+Alternatively, you might have begun by working locally before creating the repo in Github:
 
 ``` bash
 mkdir dummy && cd dummy
@@ -66,7 +66,7 @@ git remote rename oldname newname
 
 ## Staging, unstaging and deleting files
 
-Unstage with reset (the opposite of git add):
+Unstage with reset (the opposite of `git add`):
 
 ``` bash
 git reset .
@@ -93,7 +93,7 @@ Commit with short message:
 git commit -m "fix: typo in heading"
 ```
 
-Stage and commit all changes in one command (note: doesn’t work with new, untracked files):
+Stage and commit all changes in a single command (note: doesn’t work with new, untracked files):
 
 ``` bash
 git commit -am "fix: typo in heading"
@@ -131,7 +131,7 @@ Switch to an existing branch:
 git checkout branchname
 ```
 
-Save typing by setting the upstream remote branch for your local branch (NB this is generally already in place):
+Save typing by setting the upstream remote branch for your local branch:
 
 ``` bash
   # git branch -u remotename/branchname
@@ -151,7 +151,7 @@ git checkout 591672e
 
 ## Reviewing
 
-Show commit history (most recent first; q to quit):
+Show commit history (most recent first; `q` to quit):
 
 ``` bash
 git log
@@ -169,7 +169,7 @@ Check if your feature branch is trailing behind.
 # show commits in master that are not yet in my feature branch
 git log --oneline my-feature..master										
 
-# show commits on remote branch that are not yet in my local feature branch
+# show commits on remote branch that are not yet in my local branch
 git log --pretty='format:%h - %an: %s' new-homepage..origin/new-homepage		
 
 # show commits by me that included “heroku” and that changed file Gemfile
@@ -178,7 +178,7 @@ git log --author=Demaree --grep=heroku --oneline Gemfile
 
 ## Staying current and compatible
 
-Fetch remote branch and merge simultaneously (NB `fetch` would not perform a merge):
+`fetch` remote branch and `merge` simultaneously:
 
 ``` bash
 git pull remotename branchname
@@ -190,7 +190,7 @@ git pull origin master
 git pull
 ```
 
-Merge other branch (e.g. master) into current branch:
+Merge another branch (e.g. master) into current branch:
 
 ``` bash
 git merge otherbranch
@@ -209,13 +209,13 @@ Because I’ve often found it confusing, `git rebase` warrants its own section.
 
 As an alternative to merge its main pro is that it leads to a more linear therefore easier-to-read history. Note however that it is potentially more disruptive therefore not right for every situation.
 
-Say we’re on a feature branch and think it’s ready.
+Say I’ve been working on a feature branch and I think it’s ready.
 
-We might want to just tidy up our feature branch’s commits and can do this with an “interactive rebase”. This technique allows us to tidy our feature branch work to remove trivial, “initial exploration” and generally less relevant commits so as to keep the commit history clean. 
+I might want to just tidy up my feature branch’s commits and can do this with an “interactive rebase”. This technique allows me to tidy my feature branch work to remove trivial, “initial exploration” and generally less relevant commits so as to keep the commit history clean. 
 
-We might also want to bring in `master` to ensure synchronicity and compatibility. `rebase` sets the head of our feature branch to the head of `master` then adds our feature branch’s commits on top.
+I might also want to bring in `master` to ensure synchronicity and compatibility. `rebase` sets the head of my feature branch to the head of `master` then adds my feature branch’s commits on top.
 
-While it’s a good idea to `rebase` before making a <abbr title="Pull Request">PR</abbr>, <strong>don’t use it after making a PR</strong> because from that point on the branch is _public_ and rebasing a public branch can cause problems for collaborators on the branch.
+While it’s a good idea to `rebase` _before_ making a <abbr title="Pull Request">PR</abbr>, <strong>don’t use it after making a PR</strong> because from that point on the branch is _public_ and rebasing a public branch can cause problems for collaborators on the branch.
 
 Rebuild your feature branch’s changes on top of master
 ``` bash
@@ -238,7 +238,7 @@ pick 33d5b7a Message for commit #1
 pick 9480b3d Message for commit #2
 pick 5c67e61 Message for commit #3
 
-Change 'pick' to ‘fixup’ to condense commits, say if #2 was just a small fix to #1
+# change 'pick' to ‘fixup’ to condense commits, say if #2 was just a small fix to #1
 pick 33d5b7a Message for commit #1
 fixup 9480b3d Message for commit #2
 pick 5c67e61 Message for commit #3
@@ -283,11 +283,9 @@ git reset 591672e
 git reset --hard 591672e
 ```
 
-See what the app/site was like (e.g. whether things worked or were broken) at a given previous commit:
-
-Notes: 
+See what the app/site was like (e.g. whether things worked or were broken) at a given previous commit, noting the following: 
 - You’re now “detatched”, in that your computer’s HEAD is pointing at a commit rather than a branch.
-- You’re expected to merely review, not to make commits. Any commits you make would be ‘homeless’, since commits are supposed to go in branches. (However you could then branch off.
+- You’re expected to merely review, not to make commits. Any commits you make would be ‘homeless’, since commits are supposed to go in branches. (However you could then branch off.)
 
 ``` bash
 git checkout 591672e
