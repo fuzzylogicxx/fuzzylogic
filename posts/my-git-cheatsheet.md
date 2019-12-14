@@ -41,7 +41,8 @@ git init
 git add README.md
 git commit -m "first commit"
 
-# when ready, create empty repo on Github, then add as a remote
+# when ready, go to Github and create empty repo.
+# then add as a remote
 git remote add origin https://github.com/fuzzylogicxx/dummy.git
 
 # push up, passing -u to set the remote branch as the default upstream branch our local branch will track
