@@ -25,7 +25,7 @@ git config [--global] <key> <value>
 
 ## Start work on a repo
 
-In Github, visit an existing repo or create a new repo then grab its URL. Next, `clone` it from the command line:
+In Github, find an existing repo (or create a new repo) and grab its URL. Next, `clone` it from the command line:
 
 ``` bash
 cd mycodedir
@@ -69,7 +69,10 @@ git remote rename oldname newname
 Unstage with reset (the opposite of `git add`):
 
 ``` bash
+# unstage all staged files
 git reset .
+
+# unstage individual file/s
 git reset filename.txt
 ```
 
@@ -134,11 +137,11 @@ git checkout branchname
 Save typing by setting the upstream remote branch for your local branch:
 
 ``` bash
-  # git branch -u remotename/branchname
-	git branch -u fuzzylogic/v3
+# git branch -u remotename/branchname
+git branch -u fuzzylogic/v3
 
-  #  now there’s no need to type origin master
-  git pull
+#  now there’s no need to type origin master
+git pull
 ```  
 
 ## Time Travel
@@ -199,11 +202,9 @@ git merge otherbranch
 git merge master
 ```
 
-## Rebasing
+### Rebasing
 
-Because I’ve often found it confusing, `git rebase` warrants its own section.
-
-`rebase` can be used as: 
+`git rebase` can be used as: 
 1. an alternative to merge; and
 2. a means of tidying up our recent commits.
 
@@ -211,7 +212,7 @@ As an alternative to merge its main pro is that it leads to a more linear theref
 
 Say I’ve been working on a feature branch and I think it’s ready.
 
-I might want to just tidy up my feature branch’s commits and can do this with an “interactive rebase”. This technique allows me to tidy my feature branch work to remove trivial, “initial exploration” and generally less relevant commits so as to keep the commit history clean. 
+I might want to just tidy up my feature branch’s commits and can do this with an “interactive rebase”. This technique allows me to tidy my feature branch work to remove trivial, exploratory and generally less relevant commits so as to keep the commit history clean. 
 
 I might also want to bring in `master` to ensure synchronicity and compatibility. `rebase` sets the head of my feature branch to the head of `master` then adds my feature branch’s commits on top.
 
@@ -285,7 +286,7 @@ git reset --hard 591672e
 
 See what the app/site was like (e.g. whether things worked or were broken) at a given previous commit, noting the following: 
 - You’re now “detatched”, in that your computer’s HEAD is pointing at a commit rather than a branch.
-- You’re expected to merely review, not to make commits. Any commits you make would be ‘homeless’, since commits are supposed to go in branches. (However you could then branch off.)
+- You’re expected to merely review, not to make commits. Any commits you make would be “homeless”, since commits are supposed to go in branches. (However you could then branch off.)
 
 ``` bash
 git checkout 591672e
