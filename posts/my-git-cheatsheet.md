@@ -36,6 +36,7 @@ Alternatively, you might have begun by working locally before creating the repo 
 
 ``` bash
 mkdir dummy && cd dummy
+echo "some text" >> README.md
 git init
 git commit -m "first commit"
 
