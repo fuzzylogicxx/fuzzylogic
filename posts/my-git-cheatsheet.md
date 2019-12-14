@@ -36,14 +36,13 @@ Alternatively, you might have begun by working locally before creating the repo 
 
 ``` bash
 mkdir dummy && cd dummy
-# Add a readme file and start it with a heading
-echo "# Welcome to test” >> README.md
+echo "# Welcome to test” >> README.txt
 git init
-git add README.md
+git add README.txt
 git commit -m "first commit"
 
-# when you’re ready, create an empty repo (no README.md) on Github
-git remote add origin https://github.com/Wondworld/wonderworldwebsite.git
+# when ready, create empty repo on Github, then add as a remote
+git remote add origin https://github.com/fuzzylogicxx/dummy.git
 
 # push up, passing -u to set the remote branch as the default upstream branch our local branch will track
 # this saves typing out ‘origin master’ repeatedly in future.
