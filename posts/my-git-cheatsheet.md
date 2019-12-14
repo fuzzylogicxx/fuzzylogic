@@ -22,7 +22,7 @@ Configure a setting:
 git config [--global] <key> <value>
 ```
 
-Commit with [a multi-line message](https://thoughtbot.com/blog/5-useful-tips-for-a-better-commit-message)
+Commit with [a multi-line message](https://thoughtbot.com/blog/5-useful-tips-for-a-better-commit-message):
 ``` bash
 git commit
 ```
@@ -38,12 +38,12 @@ Stage and commit all changes in one command (note: doesn’t work with new, untr
 git commit -am "fix: typo in heading"
 ```
 
-Show all local branches
+Show all local branches:
 ``` bash
 git branch
 ```
 
-Show all local _and remote_ branches
+Show all local _and remote_ branches:
 ``` bash
 git branch -a
 ```
@@ -53,16 +53,41 @@ Create new branch but don’t yet switch to it (useful when fixing something):
 git branch newbranchname
 ```
 
-Switch to an existing branch 
+Switch to an existing branch:
 ``` bash
 git checkout branchname
 ```
 
-Create and switch to new branch
+Create and switch to new branch:
 ``` bash
 git checkout -b mynewbranch
 ```
 
+Return code’s state to a given commit:
+``` bash
+git checkout 591672e
+```
+
+Remove a remote from your local settings:
+``` bash
+git remote rm <name>
+```
+
+Rename a remote:
+``` bash
+git remote rename oldname newname
+```
+
+Merge other branch (such as master) into current branch:
+``` bash
+git merge otherbranch
+
+# commonly you’ll want to merge in master
+git merge master
+```
+
+	
+	
 
 
 
