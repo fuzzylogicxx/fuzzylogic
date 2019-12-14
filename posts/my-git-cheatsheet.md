@@ -1,5 +1,5 @@
 ---
-title: My Git Cheatsheet 
+title: My Git Cheatsheet
 description: Useful Git commands for my reference and yours
 date: "2018-12-01T16:58:08.051Z"
 tags: [development, git, cheatsheet]
@@ -142,7 +142,7 @@ git branch -u fuzzylogic/v3
 
 #  now there’s no need to type origin master
 git pull
-```  
+```
 
 ## Staying current and compatible
 
@@ -151,7 +151,7 @@ git pull
 ``` bash
 git pull remotename branchname
 
-# common use case is to update our local copy of master 
+# common use case is to update our local copy of master
 git pull origin master
 
 # shorthand when a default upstream branch has been set
@@ -169,7 +169,7 @@ git merge master
 
 ### Rebasing
 
-`git rebase` can be used as: 
+`git rebase` can be used as:
 1. an alternative to merge; and
 2. a means of tidying up our recent commits.
 
@@ -177,7 +177,7 @@ As an alternative to merge its main pro is that it leads to a more linear theref
 
 Say I’ve been working on a feature branch and I think it’s ready.
 
-I might want to just tidy up my feature branch’s commits and can do this with an “interactive rebase”. This technique allows me to tidy my feature branch work to remove trivial, exploratory and generally less relevant commits so as to keep the commit history clean. 
+I might want to just tidy up my feature branch’s commits and can do this with an “interactive rebase”. This technique allows me to tidy my feature branch work to remove trivial, exploratory and generally less relevant commits so as to keep the commit history clean.
 
 I might also want to bring in `master` to ensure synchronicity and compatibility. `rebase` sets the head of my feature branch to the head of `master` then adds my feature branch’s commits on top.
 
@@ -232,13 +232,13 @@ Check if your feature branch is trailing behind:
 
 ``` bash
 # show commits in master that are not yet in my feature branch
-git log --oneline my-feature..master										
+git log --oneline my-feature..master
 
 # show commits on remote branch that are not yet in my local branch
-git log --pretty='format:%h - %an: %s' new-homepage..origin/new-homepage		
+git log --pretty='format:%h - %an: %s' new-homepage..origin/new-homepage
 
 # show commits by me that included “heroku” and that changed file Gemfile
-git log --author=Demaree --grep=heroku --oneline Gemfile	
+git log --author=Demaree --grep=heroku --oneline Gemfile
 ```
 
 Review differences between staged changes and last commit:
@@ -279,7 +279,7 @@ git reset 591672e
 git reset --hard 591672e
 ```
 
-See what the app/site was like (e.g. whether things worked or were broken) at a given previous commit, noting the following: 
+See what the app/site was like (e.g. whether things worked or were broken) at a given previous commit, noting the following:
 - You’re now “detatched”, in that your computer’s HEAD is pointing at a commit rather than a branch.
 - You’re expected to merely review, not to make commits. Any commits you make would be “homeless”, since commits are supposed to go in branches. (However you could then branch off.)
 
@@ -289,7 +289,7 @@ git checkout 591672e
 
 Grab one or more commits from elsewhere and drop into your current branch
 ``` bash
-git cherry-pick 591672e	
+git cherry-pick 591672e
 
 # grab the last commit from a branch e.g. master
 git cherry-pick master
