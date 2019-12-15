@@ -13,13 +13,13 @@ Pascal Laliberté has written a short, free, web-based book which advocates a mo
 Pascal’s philosophy includes the following ideals:
 
 - __prefer server-generated HTML over JavaScript-generated HTML__. If we need to add more complex JavaScript layers we may deviate from that ideal, but this should be the starting point;
-- __we should be able to swap and replace the HTML on a page on a whim__. We can then support techniques like _pjax_ – replacing the whole body of a page with new HTML such as with [Turbolinks](https://github.com/turbolinks/turbolinks) – and _ahah_ ([asynchronous HTML over HTTP](http://microformats.org/wiki/rest/ahah)) – replacing parts of a page with new HTML – so as to make our app feel really fast while still using server-generated HTML; 
-- __favour native Browser APIs over proprietary libraries__. Use the History API, Custom Event handlers, native form elements, CSS with its cascade, and polyfill for older browsers.
+- __we should be able to swap and replace the HTML on a page on a whim__. We can then support techniques like _pjax_ – replacing the whole body of a page with new HTML such as with [Turbolinks](https://github.com/turbolinks/turbolinks) – and _ahah_ (asynchronous HTML over HTTP) – replacing parts of a page with new HTML – so as to make our app feel really fast while still using server-generated HTML; 
+- __favour native Browser APIs over proprietary libraries__. Use the modern tools the browser gives us (History API, Custom Event handlers, native form elements, CSS and the cascade) and polyfill older browsers.
 
 He argues that a single application can _combine_ the options along the JS Gradient as follows:
 
-- Global Sprinkles: general app-level enhancements that occur on most pages, achieved by adding event listeners (ideally at document level) to catch user interactions and respond with small updates. Examples might include dropdowns, fetching and inserting HTML fragments, and Ajax form submission. This could be achieved by DIY-building a small, single library or importing something like [Trimmings](https://postlight.github.io/trimmings/) which perhaps provides reusable utilities via `data-` attributes, and including that library globally; 
-- Component Sprinkles: specific page component behaviour defined in a single .js file; 
+- __Global Sprinkles__: general app-level enhancements that occur on most pages, achieved by adding event listeners (ideally at document level) to catch user interactions and respond with small updates. Examples might include dropdowns, fetching and inserting HTML fragments, and Ajax form submission. This could be achieved by DIY-building a small, single library or importing something like [Trimmings](https://postlight.github.io/trimmings/) which perhaps provides reusable utilities via `data-` attributes, and including that library globally; 
+- __Component Sprinkles__: specific page component behaviour defined in a single .js file; 
 
 
 
@@ -32,6 +32,6 @@ Also of particular interest to me was his Shopping Cart page demo using [Stimulu
 - controller action methods which use `document.dispatchEvent` to dispatch Custom Events as a means of communicating changes up to other components;
 - an element with an action which listens for the above custom event occurring on the `document` (as opposed to an event on the element itself).
 
-He also makes the interesting point that one of the unique aspects of Stimulus is that by virtue of its lifecycle methods it supports xxxxx being replaced or cloned without having to manually re-add global event listeners.
+He also makes the interesting point that one of Stimulus‘s USPs is that it is set up so that as elements appear or disappear from the DOM, event handlers are automatically added and removed. This lets you swap and replace HTML as required without having to manually define and redefine event handlers.
 
 I’ve [written about Stimulus before](https://fuzzylogic.me/posts/progressively-enhanced-javascript-with-stimulus/) and noted a few potential cons when considering complex interfaces, however Pascal’s demo has opened my eyes to additional possibilities.
