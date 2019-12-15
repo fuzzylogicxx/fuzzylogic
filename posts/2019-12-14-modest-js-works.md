@@ -13,8 +13,8 @@ Pascal Laliberté has written a short, free, web-based book which advocates a mo
 Pascal’s philosophy starts with the following ideals:
 
 - __prefer server-generated HTML over JavaScript-generated HTML__. If we need to add more complex JavaScript layers we may deviate from that ideal, but this should be the starting point;
-- __we should be able to swap and replace the HTML on a page on a whim__. We can then support techniques like _pjax_ – replacing the whole body of a page with new HTML such as with [Turbolinks](https://github.com/turbolinks/turbolinks) – and _ahah_ (asynchronous HTML over HTTP) – replacing parts of a page with new HTML – so as to make our app feel really fast while still using server-generated HTML; 
-- __favour native Browser APIs over proprietary libraries__. Use the modern tools the browser gives us (History API, Custom Event handlers, native form elements, CSS and the cascade) and polyfill older browsers.
+- __we should be able to swap and replace the HTML on a page on a whim__. We can then support techniques like _pjax_ (replacing the _whole body_ of a page with new HTML such as with [Turbolinks](https://github.com/turbolinks/turbolinks)) and _ahah_ (asynchronous HTML over HTTP: replacing _parts_ of a page with new HTML, so as to make our app feel really fast while still favouring server-generated HTML; 
+- __favour native Browser APIs over proprietary libraries__. Use the tools the browser gives us (History API, Custom Event handlers, native form elements, CSS and the cascade) and polyfill older browsers.
 
 He argues that a single application can _combine_ the options along the JS Gradient, but also that we need only move to a new  level if and when we reach the current level’s threshold.
 
