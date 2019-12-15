@@ -13,7 +13,7 @@ Pascal Laliberté has written a short, free, web-based book which advocates a mo
 Of particular interest to me was his Shopping Cart page demo using [Stimulus](https://stimulusjs.org/), where he employs some pretty cool techniques such as:
 
 - using multiple controllers within the same block of HTML; 
-- adding multiple Stimulus actions, for different controllers, to a single element;  
+- adding multiple Stimulus actions to a single element;  
 - controller action methods which use `document.dispatchEvent` to dispatch custom events as a means of communicating changes to other components; 
 - an element with a `data-action` which listens for the above custom event occurring on the `document` as opposed to a typical event (such as click) on the element itself.
 
