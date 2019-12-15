@@ -16,7 +16,9 @@ Pascal’s philosophy starts with the following ideals:
 - __we should be able to swap and replace the HTML on a page on a whim__. We can then support techniques like _pjax_ – replacing the whole body of a page with new HTML such as with [Turbolinks](https://github.com/turbolinks/turbolinks) – and _ahah_ (asynchronous HTML over HTTP) – replacing parts of a page with new HTML – so as to make our app feel really fast while still using server-generated HTML; 
 - __favour native Browser APIs over proprietary libraries__. Use the modern tools the browser gives us (History API, Custom Event handlers, native form elements, CSS and the cascade) and polyfill older browsers.
 
-He argues that a single application can _combine_ the options along the JS Gradient, but that we need only move to a new  level if and when we reach the current level’s threshold. He defines the levels as follows:
+He argues that a single application can _combine_ the options along the JS Gradient, but also that we need only move to a new  level if and when we reach the current level’s threshold.
+
+He defines the levels as follows:
 
 - __Global Sprinkles__: general app-level enhancements that occur on most pages, achieved by adding event listeners at `document` level to catch user interactions and respond with small updates. Such updates might include dropdowns, fetching and inserting HTML fragments, and Ajax form submission. This might be achieved via a single, DIY script (or something like [Trimmings](https://postlight.github.io/trimmings/)) that is available globally and provides reusable utilities via `data-` attributes; 
 - __Component Sprinkles__: specific page component behaviour defined in individual `.js` files, where event listeners are still ideally set on the `document`; 
