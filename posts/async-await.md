@@ -1,0 +1,62 @@
+---
+date: "2019-12-14T23:49:56.471Z"
+title: Async and Await
+description: A more elegant way of handling promises
+tags: [development, javascript, asynchronous]
+---
+My notes and reminders for handling promises with `async` and `await` In Real Life.
+---
+
+## `async` functions
+
+The `async` function declaration defines an _asynchronous function_ i.e. a function whose processes can operate independently of other processes and can respond at its own convenience.
+
+`async` functions always returns a promise. Regardless of what it looks like it is returning, rest assured that this will be implicitly wrapped in a resolved promise.
+
+## The `await` keyword
+
+Notes:
+
+- `await` only works only inside `async` functions.
+- It’s used on functions which return promises (e.g. `await fetch(url)`).
+- It makes JavaScript _wait_ until that promise settles and returns its result.
+- It’s a more elegant syntax for getting a promise‘s result than `promise.then`.
+- If a promise resolves normally, then `await promise` returns the result.
+- But in case of a rejection, it throws the error, just as if there were a throw statement at that line.
+- That throw will mean that execution of the current function will stop (the next statements won't be executed), and control will be passed to the first catch block in the call stack. If no catch block exists among caller functions, the program will terminate.
+- Wrapping an `await` in a `try...catch` is a nice pattern for including error handling.
+
+Here’s an example using a `try...catch` pattern. (NB for this example assume that function `load()` is triggered by clicking a “load more posts” button and  that the `fetchURL` endpoint returns some HTML):
+
+``` js
+export default class LoadMore {
+
+  async load() {
+    const fetchURL "https://mysite.com/products/"
+    try {
+      const newItems = await this.fetchItems(fetchURL);
+      // Render our new HTML items into the DOM.
+      // ...
+    } catch (err) {
+      this.displayError(err);
+    }
+  }
+
+  async fetchItems(url) {
+    const response = await fetch(url, { method: "GET" });
+    if (response.ok) {
+      return response.text();
+    }
+    throw new Error("Sorry, there was a problem fetching additional items.");
+  }
+
+  displayError(err) {
+    const errorMsgContainer = document.querySelector("[data-target='error-msg']");
+    errorMsg.innerHTML = `<span class="error">${err}</span>`;
+  }
+
+}
+```
+
+References:
+- [Explanation and patterns on javascript.info](https://javascript.info/async-await)
