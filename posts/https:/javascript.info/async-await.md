@@ -3,7 +3,6 @@ date: "2019-12-14T23:49:56.471Z"
 title: Async and Await
 description: A more elegant way of handling promises
 tags: [development, javascript, asynchronous]
-linkTarget: "https://modestjs.works/"
 ---
 My notes and reminders for handling promises with `async` and `await` In Real Life.
 ---
