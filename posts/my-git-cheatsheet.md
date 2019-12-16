@@ -156,6 +156,12 @@ git pull origin master
 
 # shorthand when a default upstream branch has been set
 git pull
+
+# an alternative is to update (fetch) which does not auto-merge, then 'reset' to the latest commit on the remote
+# https://stackoverflow.com/questions/55731891/effects-of-git-remote-update-origin-prune-on-local-changes
+git checkout master
+git remote update --prune
+git reset --hard origin/master
 ```
 
 Merge another branch (e.g. master) into current branch:
