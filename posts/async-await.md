@@ -11,7 +11,7 @@ My notes and reminders for handling promises with `async` and `await` In Real Li
 
 The `async` function declaration defines an _asynchronous function_ i.e. a function whose processes can operate independently of other processes and can respond at its own convenience.
 
-`async` functions always returns a promise. Regardless of what it looks like it is returning, rest assured that this will be implicitly wrapped in a resolved promise.
+`async` functions always returns a promise. So regardless of what it might appear to be returning, rest assured this this return value will be implicitly wrapped in a resolved promise.
 
 ## The `await` keyword
 
@@ -21,9 +21,9 @@ Notes:
 - It’s used on functions which return promises (e.g. `await fetch(url)`).
 - It makes JavaScript _wait_ until that promise settles and returns its result.
 - It’s a more elegant syntax for getting a promise‘s result than `promise.then`.
-- If a promise resolves normally, then `await promise` returns the result.
-- But in case of a rejection, it throws the error, just as if there were a throw statement at that line.
-- That throw will mean that execution of the current function will stop (the next statements won't be executed), and control will be passed to the first catch block in the call stack. If no catch block exists among caller functions, the program will terminate.
+- If the promise resolves successfully, then `await promise` returns the result.
+- But in the case of promise rejection, it throws the error, just as if there were a `throw` statement at that line.
+- That `throw` will mean that execution of the current function will stop (the next statements won't be executed), and control will be passed to the first `catch` block in the call stack. If no `catch` block exists among caller functions, the program will terminate.
 - Wrapping an `await` in a `try...catch` is a nice pattern for including error handling.
 
 Here’s an example using a `try...catch` pattern. (NB for this example assume that function `load()` is triggered by clicking a “load more posts” button and  that the `fetchURL` endpoint returns some HTML):
