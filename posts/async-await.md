@@ -11,15 +11,15 @@ My notes and reminders for handling promises with `async` and `await` In Real Li
 
 The `async` function declaration defines an _asynchronous function_ i.e. a function whose processes can operate independently of other processes and can respond at its own convenience.
 
-`async` functions always returns a promise. So regardless of what it might appear to be returning, rest assured this this return value will be implicitly wrapped in a resolved promise.
+`async` functions always returns a promise. So regardless of what it might appear to be returning, rest assured that this return value will be implicitly wrapped in a resolved promise.
 
 ## The `await` keyword
 
 Notes:
 
-- `await` only works only inside `async` functions.
-- It’s used on functions which return promises (e.g. `await fetch(url)`).
+- `await` is used on functions which return promises (e.g. `await fetch(url)`).
 - It makes JavaScript _wait_ until that promise settles and returns its result.
+- It only works only inside `async` functions.
 - It’s a more elegant syntax for getting a promise‘s result than `promise.then`.
 - If the promise resolves successfully, then `await promise` returns the result.
 - But in the case of promise rejection, it throws the error, just as if there were a `throw` statement at that line.
