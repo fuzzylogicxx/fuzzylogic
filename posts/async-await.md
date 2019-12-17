@@ -19,7 +19,7 @@ Notes:
 
 - `await` is used on functions which return promises (e.g. `await fetch(url)`).
 - It makes JavaScript _wait_ until that promise settles and returns its result.
-- It only works only inside `async` functions.
+- It may only be used inside `async` functions.
 - It’s a more elegant syntax for getting a promise‘s result than `promise.then`.
 - If the promise resolves successfully, then `await promise` returns the result.
 - But in the case of promise rejection, it throws the error, just as if there were a `throw` statement at that line.
