@@ -15,19 +15,20 @@ Notes:
 - It makes JavaScript _wait_ until that promise settles and returns its result.
 - It may only be used inside `async` functions.
 - It’s a more elegant syntax for getting a promise‘s result than `promise.then`.
-- If the promise resolves successfully, then `await promise` returns the result.
-- But in the case of promise rejection, it throws the error, just as if there were a `throw` statement at that line.
+- If the promise resolves successfully, it returns the result.
+- if the promise rejects, it throws the error, just as if there were a `throw` statement at that line.
 - That `throw` will cause execution of the current function to stop (so the next statements won't be executed), with control passed to the first `catch` block in the call stack. If no `catch` block exists among caller functions, the program will terminate.
 - Wrapping an `await` in a `try...catch` is a really nice and well-suited pattern for including error handling, providing flexibility and aiding readability.
 
 ## `async` functions
 
 Using the `async` function declaration (i.e. `async function f()`):
+
 - defines an _asynchronous function_ i.e. a function whose processes can operate independently of other processes and can respond at its own convenience.
 - always returns a promise. So regardless of what it might appear to be returning, rest assured that this return value will be implicitly wrapped in a resolved promise.
 - allows us to use `await`.
 
-Here’s a `try...catch` -based example. (NB let’s assume that we have an HTML list and that function `load()` is triggered by clicking a “load more posts” button and that the `fetchURL` endpoint returns some HTML):
+Here’s a `try...catch` -based example. (NB let’s assume that we have a list of blog articles, and that function `load()` is triggered by clicking a “load more articles” button, and that the `fetchURL` endpoint returns more articles as HTML):
 
 ``` js
 export default class LoadMore {
@@ -61,7 +62,7 @@ export default class LoadMore {
 }
 ```
 
-Let’s say that we needed to wait for multiple promises to resolve:
+Here’s another example. Let’s say that we needed to wait for multiple promises to resolve:
 
 ``` js
 const allUsers = async () => {
@@ -72,6 +73,9 @@ const allUsers = async () => {
       fetch(userUrl3),
       ...
     ]);
+    // we’ll get here if the promise returned by await resolved successfully.
+    // We can output a success message.
+    // ...
   } catch (err) {
     this.displayError(err);
   }
