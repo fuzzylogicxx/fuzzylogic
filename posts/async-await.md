@@ -47,7 +47,6 @@ export default class LoadMore {
       const newItems = await this.fetchItems(fetchURL);
       // If we’re here, we know our promise fulfilled.
       // Render our new HTML items into the DOM.
-      // ...
       this.renderItems(newItems);
     } catch (err) {
       this.displayError(err);
@@ -70,10 +69,10 @@ const allUsers = async () => {
     let results = await Promise.all([
       fetch(userUrl1),
       fetch(userUrl2),
-      fetch(userUrl3),
-      ...
+      fetch(userUrl3)
     ]);
-    // we’ll get here if the promise returned by await resolved successfully.
+    // we’ll get here if the promise returned by await
+    // resolved successfully.
     // We can output a success message.
     // ...
   } catch (err) {
@@ -102,7 +101,7 @@ loadUser('no-user-here.json')
     // ...
   })
   .catch((err) => {
-    // then() returns a promise, so is chainable
+    // then() returns a promise, so is chainable.
     // rejected promise, so do something with the json
     document.body.innerHTML = "foo";
   });
