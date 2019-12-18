@@ -7,12 +7,6 @@ tags: [development, javascript, asynchronous]
 My notes and reminders for handling promises with `async` and `await` In Real Life.
 ---
 
-## `async` functions
-
-The `async` function declaration defines an _asynchronous function_ i.e. a function whose processes can operate independently of other processes and can respond at its own convenience.
-
-`async` functions always returns a promise. So regardless of what it might appear to be returning, rest assured that this return value will be implicitly wrapped in a resolved promise.
-
 ## The `await` keyword
 
 Notes:
@@ -25,6 +19,13 @@ Notes:
 - But in the case of promise rejection, it throws the error, just as if there were a `throw` statement at that line.
 - That `throw` will cause execution of the current function to stop (so the next statements won't be executed), with control passed to the first `catch` block in the call stack. If no `catch` block exists among caller functions, the program will terminate.
 - Wrapping an `await` in a `try...catch` is a really nice and well-suited pattern for including error handling, providing flexibility and aiding readability.
+
+## `async` functions
+
+Using the `async` function declaration (i.e. `async function f()`):
+- defines an _asynchronous function_ i.e. a function whose processes can operate independently of other processes and can respond at its own convenience.
+- always returns a promise. So regardless of what it might appear to be returning, rest assured that this return value will be implicitly wrapped in a resolved promise.
+- allows us to use `await`.
 
 Here’s a `try...catch` -based example. (NB let’s assume that we have an HTML list and that function `load()` is triggered by clicking a “load more posts” button and that the `fetchURL` endpoint returns some HTML):
 
@@ -60,7 +61,48 @@ export default class LoadMore {
 }
 ```
 
+Let’s say that we needed to wait for multiple promises to resolve:
 
+``` js
+const allUsers = async () => {
+  try {
+    let results = await Promise.all([
+      fetch(userUrl1),
+      fetch(userUrl2),
+      fetch(userUrl3),
+      ...
+    ]);
+  } catch (err) {
+    this.displayError(err);
+  }
+}
+```
+
+Using `await` within a `try...catch` is my favourite approach but sometimes it’s not an option because we’re at the topmost level of the code therefore not in an `async` function. In these cases it’s good to remember that we can call an `async` function and work with its returned value like any promise, i.e. using `then` and `catch`.
+
+For example:
+
+``` js
+async function loadUser(url) {
+  const response = await fetch(url);
+  if (response.status == 200) {
+    const json = await response.json();
+    return json;
+  }
+  throw new Error(response.status);
+}
+
+loadUser('no-user-here.json')
+  .then((json) => {
+    // resolved promise, so do something with the json
+    // ...
+  })
+  .catch((err) => {
+    // then() returns a promise, so is chainable
+    // rejected promise, so do something with the json
+    document.body.innerHTML = "foo";
+  });
+```
 
 References:
 - [Explanation and patterns on javascript.info](https://javascript.info/async-await)
