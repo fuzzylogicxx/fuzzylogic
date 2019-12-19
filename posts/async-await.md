@@ -18,9 +18,9 @@ Notes:
 - It may only be used inside `async` functions.
 - It’s a more elegant syntax for getting a promise‘s result than `promise.then`.
 - If the promise resolves successfully, it returns the result.
-- if the promise rejects, it throws the error, just as if there were a `throw` statement at that line.
+- If the promise rejects, it throws the error, just as if there were a `throw` statement at that line.
 - That `throw` causes execution of the current function to stop (so the next statements won't be executed), with control passed to the first `catch` block in the call stack. If no `catch` block exists among caller functions, the program will terminate.
-- Given that “continue or throw” behaviour, wrapping an `await` in a `try...catch` is a really nice and well-suited pattern for including error handling, providing flexibility and aiding readability.
+- Given this “continue or throw” behaviour, wrapping an `await` in a `try...catch` is a really nice and well-suited pattern for including error handling, providing flexibility and aiding readability.
 
 ## `async` functions
 
