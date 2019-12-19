@@ -7,25 +7,27 @@ tags: [development, javascript, asynchronous]
 My notes and reminders for handling promises with `async` and `await` In Real Life.
 ---
 
+As I see it, the gist of this is to switch to using `await` when working with promise-returning, asynchronous operations (such as `fetch()`) because it lends itself to more flexible and readable code.
+
 ## The `await` keyword
 
 Notes:
 
-- `await` is used on functions which return promises (e.g. `await fetch(url)`).
-- It makes JavaScript _wait_ until that promise settles and returns its result.
+- `await` is for use on functions which return promises (e.g. `const users = await fetch('/users')`).
+- It makes JavaScript _wait_ until that promise settles and returns its result. 
 - It may only be used inside `async` functions.
 - It’s a more elegant syntax for getting a promise‘s result than `promise.then`.
 - If the promise resolves successfully, it returns the result.
 - if the promise rejects, it throws the error, just as if there were a `throw` statement at that line.
-- That `throw` will cause execution of the current function to stop (so the next statements won't be executed), with control passed to the first `catch` block in the call stack. If no `catch` block exists among caller functions, the program will terminate.
-- Wrapping an `await` in a `try...catch` is a really nice and well-suited pattern for including error handling, providing flexibility and aiding readability.
+- That `throw` causes execution of the current function to stop (so the next statements won't be executed), with control passed to the first `catch` block in the call stack. If no `catch` block exists among caller functions, the program will terminate.
+- Given that “continue or throw” behaviour, wrapping an `await` in a `try...catch` is a really nice and well-suited pattern for including error handling, providing flexibility and aiding readability.
 
 ## `async` functions
 
-Using the `async` function declaration (i.e. `async function f()`):
+The `async` function declaration (i.e. `async function f()`):
 
-- defines an _asynchronous function_ i.e. a function whose processes can operate independently of other processes and can respond at its own convenience.
-- always returns a promise. So regardless of what it might appear to be returning, rest assured that this return value will be implicitly wrapped in a resolved promise.
+- defines an _asynchronous function_ i.e. a function whose processes run after the main call stack and can respond at its own convenience.
+- always returns a promise. (Its return value is implicitly wrapped in a resolved promise.)
 - allows us to use `await`.
 
 Here’s a `try...catch` -based example. (NB let’s assume that we have a list of blog articles, and that function `load()` is triggered by clicking a “load more articles” button, and that the `fetchURL` endpoint returns more articles as HTML):
