@@ -8,7 +8,8 @@ linkTarget: "https://gomakethings.com/when-should-you-add-the-defer-attribute-to
 For many years I’ve placed my `<script>` in the `<footer>` rather than the `<head>`, so as to:
 
 1. optimise performance by not having something render-blocking at the top of the document; and 
-2. remove the need for a parent `DOMContentLoaded` listener by virtue of the <script> being positioned after the body of the page.
+2. remove the need for a parent `DOMContentLoaded` listener by virtue of the `<script>` being positioned after the body of the page.
+
 It turns out that my time-honoured default is OK, but not the best approach.
 ---
 
