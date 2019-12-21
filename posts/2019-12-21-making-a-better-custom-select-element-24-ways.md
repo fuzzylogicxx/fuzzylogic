@@ -10,7 +10,7 @@ linkTarget: "https://24ways.org/2019/making-a-better-custom-select-element/"
 
 Julie Grundy argues here that despite us having [greater ability to style the standard `select`](https://fuzzylogic.me/posts/2019-12-21-styling-a-select-like-its-2019-or-filament-group-inc/) in 2019 there are times when that element doesn’t quite meet modern expectations.
 
-This is a lovely, full-featured and fully accessible component. It could perhaps be improved by not showing the arrow SVGs until JavaScript is loaded, but otherwise it’s great.
+This is a lovely, full-featured and fully accessible component. It could perhaps be improved by not showing the down-arrow icon until JavaScript is loaded, but otherwise it’s great.
 
 Julie’s code currently exists solely as a Github repo, but for ease here’s [an editable version I’ve created on Codepen](https://codepen.io/fuzzylogicx/pen/rNamaYJ).
 
