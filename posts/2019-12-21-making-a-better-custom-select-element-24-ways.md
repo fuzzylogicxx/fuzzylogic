@@ -12,6 +12,6 @@ Julie Grundy argues here that despite us having [greater ability to style the st
 
 This is a lovely, full-featured and fully accessible component. It could perhaps be improved by not showing the down-arrow icon until JavaScript is loaded, but otherwise it’s great.
 
-Julie’s code currently exists solely as a Github repo, but for ease here’s [an editable version I’ve created on Codepen](https://codepen.io/fuzzylogicx/pen/rNamaYJ).
+Julie’s code currently exists solely as a Github repo, but for ease here’s I’ve created [this editable version on Codepen](https://codepen.io/fuzzylogicx/pen/rNamaYJ).
 
 Will I use this in place of the `select` element? Not if I can help it, because after years of experience working with form elements I still trust native elements to work better cross-platform than custom alternatives. However if a design requires dropdown options to employ custom patterns such as media objects, then I’ll definitely reach for this component.
