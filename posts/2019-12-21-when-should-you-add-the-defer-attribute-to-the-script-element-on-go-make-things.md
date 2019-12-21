@@ -13,7 +13,7 @@ For many years I’ve placed my `<script>` in the `<footer>` rather than the `<h
 It turns out that my time-honoured default is OK, but not the best approach.
 ---
 
-Chris has done the research for us and ascertained that placing the `<script>` in the `<head>` and adding the `defer` attribute has the same effect as putting that <script> in the footer but offers improved performance. 
+Chris has done the research for us and ascertained that placing the `<script>` in the `<head>` and adding the `defer` attribute has the same effect as putting that `<script>` in the footer but offers improved performance. 
 
 This treads fairly complex territory but my general understanding is this:
 
