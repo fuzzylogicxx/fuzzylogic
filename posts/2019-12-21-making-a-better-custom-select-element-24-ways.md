@@ -10,9 +10,9 @@ linkTarget: "https://24ways.org/2019/making-a-better-custom-select-element/"
 
 Despite us being able to [better style the standard `select`](https://fuzzylogic.me/posts/2019-12-21-styling-a-select-like-its-2019-or-filament-group-inc/) in 2019, like Julie Grundy says there are times when that element doesn’t quite match our requirements.
 
-This is a lovely tutorial and component but in my opinion requires just a few additions. I think it would benefit from:
+This is a lovely, full-featured and fully accessible component but in my opinion requires just a few additions. I think it would benefit from:
 
 - being progressively enhanced from a JavaScript-free baseline; and
-- including discussion around and code for submitting the selected option.
+- including code for submitting the selected option.
 
 Julie’s code currently exists solely as a Github repo, but for ease here’s [an editable version I’ve created on Codepen](https://codepen.io/fuzzylogicx/pen/rNamaYJ).
