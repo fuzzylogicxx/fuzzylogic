@@ -9,8 +9,7 @@ For many years I’ve placed my `<script>` in the `<footer>` rather than the `<h
 
 1. optimise performance by not having something render-blocking at the top of the document; and 
 2. remove the need for a parent `DOMContentLoaded` listener by virtue of the <script> being positioned after the body of the page.
-
-It turns out that my time-honoured default is OK, but not the best approach. 
+It turns out that my time-honoured default is OK, but not the best approach.
 ---
 
 Chris has done the research for us and ascertained that placing the `<script>` in the `<head>` and adding the `defer` attribute has the same effect as putting that <script> in the footer but offers improved performance. 
