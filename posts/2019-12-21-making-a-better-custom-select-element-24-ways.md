@@ -12,7 +12,7 @@ Despite us being able to [better style the standard `select`](https://fuzzylogic
 
 This is a lovely, full-featured and fully accessible component but in my opinion requires just a few additions. I think it would benefit from:
 
-- being progressively enhanced from a JavaScript-free baseline; and
-- including code for submitting the selected option.
+- not showing the arrow SVGs until JavaScript is loaded; and
+- including code which populates the input’s `value` with the selected item.
 
 Julie’s code currently exists solely as a Github repo, but for ease here’s [an editable version I’ve created on Codepen](https://codepen.io/fuzzylogicx/pen/rNamaYJ).
