@@ -1,6 +1,6 @@
 ---
 date: "2019-01-09T19:06:04.859Z"
-title: "Styling a Select Like It's 2019 | Filament Group, Inc."
+title: "Styling a Select Like It’s 2019 (Filament Group, Inc.)"
 description: "In 2019, a reasonable set of styles can be applied to create a consistent and attractive select across new browsers, while remaining just fine in older ones too."
 tags: [link, select, form, html, css]
 linkTarget: "https://www.filamentgroup.com/lab/select-css.html"
