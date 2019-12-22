@@ -5,12 +5,9 @@ description: "Adding the defer attribute on a script element in the <head> has t
 tags: [link, javascript, performance, defer, head]
 linkTarget: "https://gomakethings.com/when-should-you-add-the-defer-attribute-to-the-script-element/"
 ---
-For many years I’ve placed my `<script>` in the `<footer>` rather than the `<head>`, so as to:
+For many years I’ve placed script elements in the `<footer>` rather than the `<head>`. Since a standard `<script>` element is render-blocking, the theory is that by putting it in the `footer` – after the main content of the page – you’re no longer blocking anything, and don’t have to bother wrapping it in a `DOMContentLoaded` event listener.
 
-1. optimise performance by not having something render-blocking at the top of the document; and 
-2. remove the need for a parent `DOMContentLoaded` listener by virtue of the `<script>` being positioned after the body of the page.
-
-It turns out that my time-honoured default is OK, but not the best approach.
+It turns out that my time-honoured default is OK, but there is a better approach.
 ---
 
 Chris has done the research for us and ascertained that placing the `<script>` in the `<head>` and adding the `defer` attribute has the same effect as putting that `<script>` in the footer but offers improved performance. 
