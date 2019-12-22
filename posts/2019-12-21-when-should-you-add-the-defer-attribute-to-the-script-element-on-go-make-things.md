@@ -10,7 +10,7 @@ For many years I’ve placed script elements just before the closing `body` tag 
 It turns out that my time-honoured default is OK, but there is a better approach.
 ---
 
-Chris has done the research for us and ascertained that placing the `<script>` in the `<head>` and adding the `defer` attribute has the same effect as putting that `<script>` just before the closing body tag but offers improved performance. 
+[Chris](https://gomakethings.com/) has done the research for us and ascertained that placing the `<script>` in the `<head>` and adding the `defer` attribute has the same effect as putting that `<script>` just before the closing body tag but offers improved performance. 
 
 This treads fairly complex territory but my general understanding is this:
 
