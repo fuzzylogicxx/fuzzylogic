@@ -1,5 +1,5 @@
 ---
-date: 2019-12-13
+date: "2019-12-13T07:45:58.133Z"
 description: Christmas Jumper Day
 noteTitle: 1531418045
 tags: [note, work, christmas]
