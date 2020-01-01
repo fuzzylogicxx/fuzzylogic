@@ -18,8 +18,8 @@ The second Phillp K Dick I’ve read this year is his alternative-history sci-fi
 </figure>
 {% endif %}
 
-In this book, Dick protrays an alternate scenario where the Axis powers have won the second world and America is under the rule of Imperial Japan and Nazi Germany. 
+In this book, Dick protrays an alternate reality where the Axis powers have won the second world war and America is under the rule of Imperial Japan and Nazi Germany.
 
-Interestingly, many of the characters use the ancient Chinese text the _I Ching_ for guidance, and there’s also a clever “book within a book” subplot in which the book _The Grasshopper Lies Heavy_ depicts an alternate history in which the Allied forces prevailed.
+Interestingly, many of the characters use the ancient Chinese text the _I Ching_ for guidance, and there’s also a clever “book within a book” subplot in which the novel _The Grasshopper Lies Heavy_ depicts an alternate history in which the Allied forces prevailed.
 
-Having now read a couple of Philip K. Dick books this year, I’m arriving at the conclusion that while I don’t love his writing style, this is compensated by his creativity and his ideas which stay with you long after you finish reading.
+Having now read a couple of Philip K. Dick books this year, I’m arriving at the conclusion that while I don’t love his writing style, this is counterbalanced by his creativity and the interesting ideas which stay with you long afterwards.
