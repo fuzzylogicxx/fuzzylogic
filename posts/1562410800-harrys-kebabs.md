@@ -6,7 +6,7 @@ tags: [note, book, music, london]
 location: "Parque la Carolina, Marbella, Spain"
 ---
 
-I’ll tell you wot – that woz a propa’ poolside page-turner and no mistake. Nice work [https://www.facebook.com/harryskebabsbook/](Russ Forman).
+I’ll tell you wot – that woz a propa’ poolside page-turner and no mistake. Nice work [Russ Forman](https://www.facebook.com/harryskebabsbook/).
 
 {% if app.environment == "prod" %}
 <figure>
