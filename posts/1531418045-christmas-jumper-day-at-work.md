@@ -3,7 +3,7 @@ date: "2019-12-13T16:00:58.133Z"
 description: Christmas Jumper Day
 noteTitle: 1531418045
 tags: [note, work, christmas]
-location: Edinburgh
+location: "Fountainbridge, Edinburgh"
 ---
 
 My first Christmas working at FreeAgent. Strong Christmas Jumper game!
