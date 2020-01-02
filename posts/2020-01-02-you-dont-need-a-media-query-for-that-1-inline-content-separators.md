@@ -12,6 +12,6 @@ Here, [Mandy Michael](http://batmandy.com/) explores similar territory to [Every
 
 The example here is a pipe-separated text pair (I could imagine an _author_ and _publish date_ meta line) which Mandy wants to wrap (with pipe separator hidden) only when the content and container require it, rather than based on the less-relevant _viewport width_.
 
-She uses a clever combination of `flex-wrap: wrap;`, generated content, padding, `transform` and `overflow-y: hidden` to achieve her goal. 
+She uses a clever combination of `flex-wrap:wrap`, generated content, padding, `transform` and `overflow-y:hidden` to achieve her goal. 
 
 (Via [@Mandy_Kerr](https://twitter.com/Mandy_Kerr))
