@@ -1,5 +1,5 @@
 ---
-date: "2020-11-16T15:55:39.494Z"
+date: "2019-11-16T15:55:39.494Z"
 title: "You don’t need a media query for that: #1 Inline content separators"
 description: "Mandy Michael explores similar territory to [Every Layout](https://every-layout.dev/) in suggesting that not all responsive pattern challenges are best served by media queries."
 tags: [link, responsive, css, mediaqueries, flexbox, overflow]
