@@ -5,5 +5,5 @@ description: "Here’s Rob Weychert advocating a combination of CSS custom prope
 tags: [link, css, typography, scale, sass, calc, customproperties]
 linkTarget: "https://24ways.org/2019/a-modern-typographic-scale/"
 ---
-Here’s [Rob Weychert](https://robweychert.com/) advocating a combination of CSS custom properties, calc() and Sass to automate the construction of a flexible typographic scale in CSS.
+Here’s [Rob Weychert](https://robweychert.com/) advocating a combination of CSS custom properties, `calc()` and Sass to automate the construction of a flexible typographic scale in CSS.
 ---
