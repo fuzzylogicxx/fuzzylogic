@@ -66,6 +66,14 @@ git remote rename oldname newname
 
 ## Staging, unstaging and deleting files
 
+``` bash
+# stage all unstaged files
+git add .
+
+# stage individual file/s
+git add filename.txt
+```
+
 Unstage with `reset` (the opposite of `git add`):
 
 ``` bash
@@ -187,7 +195,7 @@ I might want to just tidy up my feature branch’s commits and can do this with 
 
 I might also want to bring in `master` to ensure synchronicity and compatibility. `rebase` sets the head of my feature branch to the head of `master` then adds my feature branch’s commits on top.
 
-While it’s a good idea to `rebase` _before_ making a <abbr title="Pull Request">PR</abbr>, <strong>don’t use it after making a PR</strong> because from that point on the branch is _public_ and rebasing a public branch can cause problems for collaborators on the branch.
+While it’s a good idea to `rebase` _before_ making a <abbr title="Pull Request">PR</abbr>, <strong>don’t use it after making a PR</strong> because from that point on the branch is _public_ and rebasing a public branch can cause problems for collaborators on the branch. (The only exception to the previous rule is if you’re likely to be the only person working on the PR branch)
 
 Rebuild your feature branch’s changes on top of master:
 
@@ -196,6 +204,12 @@ git checkout master
 git pull origin master
 git checkout myfeaturebranch
 git rebase master
+```
+
+Force push your rebased branch (again, only when you’re unlikely to have/require collaborators on the PR):
+
+``` bash
+git push --force origin myfeaturebranch
 ```
 
 Tidy a feature branch before making a PR:
@@ -276,7 +290,7 @@ Alter the previous commit (change the message and and/or include further updates
 git commit --amend
 ```
 
-Move current branch tip backward to a given commit, reset the staging area to match, but leave the working directory alone
+Move current branch tip backward to a given commit, reset the staging area to match, but leave the working directory alone:
 
 ``` bash
 git reset 591672e
@@ -293,12 +307,35 @@ See what the app/site was like (e.g. whether things worked or were broken) at a 
 git checkout 591672e
 ```
 
-Grab one or more commits from elsewhere and drop into your current branch
+Grab one or more commits from elsewhere and drop into your current branch:
+
 ``` bash
 git cherry-pick 591672e
 
 # grab the last commit from a branch e.g. master
 git cherry-pick master
+```
+
+Fix a pull that went wrong / shouldn’t have been done:
+
+``` bash
+git pull origin branchname
+# whoops!
+
+git reflog
+# shows a list of every thing you've
+# done in git, across all branches!
+# each one has an index HEAD@{index}
+# find the one before you broke everything
+
+git reset HEAD@{index}
+# magic time machine
+```
+
+# you will see a list of every thing you've
+# done in git, across all branches!
+# each one has an index HEAD@{index}
+# find the one before you broke everything
 ```
 
 ## Useful external resources
