@@ -332,12 +332,6 @@ git reset HEAD@{index}
 # magic time machine
 ```
 
-# you will see a list of every thing you've
-# done in git, across all branches!
-# each one has an index HEAD@{index}
-# find the one before you broke everything
-```
-
 ## Useful external resources
 
 - [Tips, tutorials and Cheat Sheets from Atlassian](https://www.atlassian.com/git/tutorials/atlassian-git-cheatsheet)
