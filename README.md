@@ -6,7 +6,14 @@ This repository contains the source code for https://fuzzylogic.me, the personal
 
 The current version of the site is statically generated using 11ty, uses my own front-end boilerplate Sofrito https://github.com/fuzzylogicxx/sofrito, and is hosted on Netlify.
 
+## Serve locally
+
+cd into your project directory and from the command line run `npm run serve`
+
+
 ## Netlify Serverless (Lambda) Functions
+
+This is currently being used for a “Create Bookmark Post” function and for more functions in future.
 
 ### Prerequisites
 - install netlify-cli
