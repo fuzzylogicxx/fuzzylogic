@@ -1,6 +1,6 @@
 ---
 date: "2020-01-14T09:09:08.918Z"
-title: "Not every Design System Pattern should be represented by a component"
+title: "Not every Design System Pattern should be represented by a component (CSS-Tricks)"
 description: "Thoughts from Robin Rendle of Gousto on Design System maintainability"
 tags: [link, designsystems, component, pattern]
 linkTarget: "https://css-tricks.com/newsletter/181/"
