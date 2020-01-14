@@ -43,4 +43,3 @@ Basically I like the idea of reducing the amount of
 2. margin for divergence/inconsistency
 
 …by having less components.
-Food for thought anyway. 
