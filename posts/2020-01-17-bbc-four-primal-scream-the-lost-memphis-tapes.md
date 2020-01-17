@@ -10,6 +10,6 @@ linkTarget: "https://www.bbc.co.uk/programmes/b0brzps8"
 
 A great watch telling an unlikely, touching and at times hilarious story of how the Glasgow band temporarily escaped the madness of the early 90’s scene for Memphis to record an album which was out of step with the time and only revealed its true quality with the benefit of hindsight and maturity. 
 
-The production on The Memphis Sessions sounded absolutely amazing and there are some great vinyl mastering scenes for those – like myself – who are into that kind of thing. 
+The production on The Memphis Sessions sounded absolutely amazing and there are some great vinyl mastering scenes for those – like myself – who are into that kind of thing! 
 
-On the strength of this, I think Clair and I will grab a copy on the black stuff.
+On the strength of this, I think Clair and I will grab a copy of the record.
