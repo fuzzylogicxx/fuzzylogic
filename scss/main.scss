@@ -525,5 +525,19 @@ figcaption {
 }
 
 
+
+///////////////////
+// Bookshelf
+///////////////////
+
+.book {
+  --flow-space: #{scale-value(-4)}rem;
+}
+
+.book img {
+  // height: 270px;
+  // object-fit: contain;
+}
+
 // Print styles
 @import 'print';

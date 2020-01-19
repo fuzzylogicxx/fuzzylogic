@@ -307,19 +307,20 @@
   grid-template-columns: 100%;
 
   &.aboveMin {
-    grid-template-columns: repeat(auto-fit, minmax($min_trigger, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax($min_trigger, 1fr));
   }
 
   // Add min() into the mix to avoid overflows within narrow containers.
   // To Do: find a way of getting gulp/node-sass to allow CSS’s min() without the hack of replacing "min" with "m#{i}n".
   @supports (width: m#{i}n(20rem, 100%)) {
-    grid-template-columns: repeat(auto-fit, minmax(m#{i}n(20rem, 100%), 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(m#{i}n($min_trigger, 100%), 1fr));
   }
 }
 
 .grid {
-  @include grid();
+  @include grid(20ch, 1rem);
 }
+
 
 
 
