@@ -295,7 +295,7 @@
 ///////////////////////////////////
 
 // Purpose: create basic, context-independent grids which are automatically responsive (non-reliant on media queries) therefore more suited to design systems.
-// Note 1: favour CSS Grid over Flexbox because we can make items grow, shrink, and wrap together but importantly without breaching column boundaries (unlike last items in flexbox).
+// Note 1: favour CSS Grid over Flexbox because we can make items grow, shrink, and wrap together but importantly without breaching column boundaries (unlike last child in flexbox).
 // Note 2: minmax() without min() is flawed and requires setting "fixed minimums" (e.g. minmax(250px, 1fr)) that result in overflow when in narrow contexts.
 // Note 3: we use i) mixmax() with min(); or if min() not supported ii) JS’s ResizeObserver... to trigger changes based on the width of the container and without "fixed minimums".
 // Note 4: if they are not supported, the fallback one-column layout is applied perpetually. (Could fallback to a flexbox grid but note would need -ve margin soln for gaps).
