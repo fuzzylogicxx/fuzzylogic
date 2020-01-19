@@ -1,0 +1,38 @@
+---
+permalink: /bookshelf/
+layout: layouts/container_width.njk
+title: Bookshelf
+---
+{% if books %}
+
+  <div class="stack">
+    {% for years in books %}
+      <h2>{{ years.year }}</h2>
+      <div class="grid" data-min="20ch">
+        {% for book in years.books %}
+          <div class="stack book">
+            <a href="{{ book.url | url }}" aria-label="Buy {{ book.title }}">
+              <img src="{{ book.img }}" alt="{{ book.title }}">
+            </a>
+            <div class="book-info">
+              <h3>{{ book.title }}</h3>
+              {% if book.subtitle %}<p>{{ book.subtitle }}</p>{% endif %}
+              <p>{{ book.author }}</p>
+              {% if book.notes %}
+              <details>
+                  <summary>{{ book.rating }}</summary>
+                  <div class="notes">{{ book.notes | markdownStringToHTML }}</div>
+              </details>
+              {% else %}
+              {% if book.rating %}<p>{{ book.rating }}</p>{% endif %}
+              {% endif %}
+            </div>
+          </div>
+        {% endfor %}
+      </div> <!-- /.grid -->
+    {% endfor %}
+  </div> <!-- /.stack -->
+
+{% else %}
+  No books.
+{% endif %}

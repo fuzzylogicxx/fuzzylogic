@@ -530,13 +530,32 @@ figcaption {
 // Bookshelf
 ///////////////////
 
-.book {
-  --flow-space: #{scale-value(-4)}rem;
-}
+// .book {
+//   --flow-space: #{scale-value(-4)}rem;
+// }
+
+// .book img {
+//   // height: 270px;
+//   // object-fit: contain;
+// }
+
+// .books {
+//   display: grid;
+//   grid-gap: calc(1em + 2vw);
+//   grid-template-columns: 1fr 1fr;
+
+//   // font-size: 0.875em;
+//   // margin-bottom: calc(1em + 2vw);
+//   // line-height: 1.2;
+// }
 
 .book img {
-  // height: 270px;
-  // object-fit: contain;
+  height: 270px;
+  width: 180px;
+  object-fit: contain;
+  // max-width: 100%;
+  // height: 200px;
+
 }
 
 // Print styles
