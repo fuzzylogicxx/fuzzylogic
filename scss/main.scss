@@ -549,11 +549,26 @@ figcaption {
 //   // line-height: 1.2;
 // }
 
+.books {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(12em, 1fr));
+  grid-gap: 1.5em;
+  font-size: .833em;
+  line-height: 1.2;
+
+  h3 {
+    font-size: 1.2em;
+    line-height: 1;
+  }
+}
+
 .book img {
   height: 270px;
-  width: 180px;
+  width: unset;
+  max-width: 100%;
   object-fit: contain;
-  // max-width: 100%;
+
+  //width: 180px;
   // height: 200px;
 
 }

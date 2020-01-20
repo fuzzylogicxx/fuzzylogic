@@ -8,13 +8,13 @@ title: Bookshelf
   <div class="stack">
     {% for years in books %}
       <h2>{{ years.year }}</h2>
-      <div class="grid" data-min="20ch">
+      <div class="books" data-min="18ch">
         {% for book in years.books %}
           <div class="stack book">
-            <a href="{{ book.url | url }}" aria-label="Buy {{ book.title }}">
+            <a class="book-cover" href="{{ book.url | url }}" aria-label="Buy {{ book.title }}">
               <img src="{{ book.img }}" alt="{{ book.title }}">
             </a>
-            <div class="book-info">
+            <div class="stack book-info">
               <h3>{{ book.title }}</h3>
               {% if book.subtitle %}<p>{{ book.subtitle }}</p>{% endif %}
               <p>{{ book.author }}</p>
