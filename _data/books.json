@@ -38,39 +38,39 @@
       {
         "title": "Sleeping Giants",
         "author": "Sylvain Neuvel",
-        "img": "https://images-na.ssl-images-amazon.com/images/P/0307591557.01._SCLZZZZZZZ_.jpg",
-        "url": "https://www.amazon.com/Showa-1953-1989-History-Japan/dp/1770462015/"
+        "img": "https://images-na.ssl-images-amazon.com/images/I/51xpjQ3LXYL._AC_SY400_.jpg",
+        "url": "https://www.amazon.co.uk/Sleeping-Giants-Themis-Files-Book/dp/1405921889"
       },
       {
         "title": "Galapagos",
         "author": "Kurt Vonnegut",
-        "img": "https://images-na.ssl-images-amazon.com/images/P/0307591557.01._SCLZZZZZZZ_.jpg",
-        "url": "https://www.amazon.com/Showa-1953-1989-History-Japan/dp/1770462015/"
+        "img": "https://images-na.ssl-images-amazon.com/images/I/61ZxwPwnJdL._AC_SY400_.jpg",
+        "url": "https://www.amazon.co.uk/Galapagos-Polska-wersja-jezykowa/dp/B00BTNBAP6"
       },
       {
         "title": "The Catcher in the Rye",
         "author": "J D Salinger",
-        "img": "https://images-na.ssl-images-amazon.com/images/P/0307591557.01._SCLZZZZZZZ_.jpg",
-        "url": "https://www.amazon.com/Showa-1953-1989-History-Japan/dp/1770462015/"
+        "img": "https://images-na.ssl-images-amazon.com/images/I/31LnZ3DHu9L._AC_SY400_.jpg",
+        "url": "https://www.amazon.co.uk/Catcher-Rye-J-D-Salinger/dp/0241950430"
       },
       {
         "title": "Poverty Safari",
         "subtitle": "Understanding the anger of Britain’s underclass",
         "author": "Darren McGarvey",
-        "img": "https://images-na.ssl-images-amazon.com/images/P/0307591557.01._SCLZZZZZZZ_.jpg",
-        "url": "https://www.amazon.com/Showa-1953-1989-History-Japan/dp/1770462015/"
+        "img": "https://images-na.ssl-images-amazon.com/images/I/51O%2BMPGfNkL._AC_SY400_.jpg",
+        "url": "https://www.amazon.co.uk/Poverty-Safari-Understanding-Britains-Underclass/dp/1529006341"
       },
       {
         "title": "Harry’s Kebabs",
         "author": "DJ Dribbler",
-        "img": "https://images-na.ssl-images-amazon.com/images/P/0307591557.01._SCLZZZZZZZ_.jpg",
-        "url": "https://www.amazon.com/Showa-1953-1989-History-Japan/dp/1770462015/"
+        "img": "https://images-na.ssl-images-amazon.com/images/I/51W-DtgompL._AC_SY400_.jpg",
+        "url": "https://www.amazon.co.uk/Harry%60s-Kebabs-DJ-Dribbler/dp/1717721656"
       },
       {
         "title": "The Science of Interstellar",
         "author": "Kip Thorne",
-        "img": "https://images-na.ssl-images-amazon.com/images/P/0307591557.01._SCLZZZZZZZ_.jpg",
-        "url": "https://www.amazon.com/Showa-1953-1989-History-Japan/dp/1770462015/"
+        "img": "https://images-na.ssl-images-amazon.com/images/I/41oLlat3X0L._AC_SY400_.jpg",
+        "url": "https://www.amazon.co.uk/Science-Interstellar-Kip-Thorne/dp/0393351378/"
       }
     ]
   },
@@ -81,10 +81,8 @@
         "title": "Blink",
         "subtitle": "The Power of Thinking Without Thinking",
         "author": "Malcolm Gladwell",
-        "img": "",
-        "url": "",
-        "rating": "In Progress",
-        "notes": "asdsada"
+        "img": "https://images-na.ssl-images-amazon.com/images/I/51dzRONdWzL._AC_SY400_.jpg",
+        "url": "https://www.amazon.co.uk/Blink-Thinking-Gladwell-Publisher-Paperback/dp/B002WMZNXS/"
       }
     ]
   }

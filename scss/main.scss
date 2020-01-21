@@ -530,6 +530,10 @@ figcaption {
 // Bookshelf
 ///////////////////
 
+.reading-years {
+  --flow-space: 3em;
+}
+
 .books {
   display: flex;
   flex-direction: column;
@@ -537,17 +541,17 @@ figcaption {
   grid-gap: 1em;
   grid-template-columns: 1fr;
 
-  @include at-least($bp-wide-four) {
+  @include at-least(30em) {
     @include grid(18ch, 2rem);
   }
 }
 
 .book {
   display: grid;
-  grid-template-columns: 80px 1fr;
+  grid-template-columns: 18ch 1fr;
   grid-gap: 1em;
 
-  @include at-least($bp-wide-four) {
+  @include at-least(30em) {
     display: block;
   }
 }
