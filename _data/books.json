@@ -5,15 +5,23 @@
       {
         "title": "The Goldfinch",
         "author": "Donna Tartt",
-        "img": "https://images-na.ssl-images-amazon.com/images/I/71ol9DUQorL.jpg",
+        "img": "https://images-na.ssl-images-amazon.com/images/I/51rlWf-pXtL._AC_SY400_.jpg",
         "url": "https://www.amazon.co.uk/Goldfinch-Donna-Tartt/dp/0349139636/",
         "rating": "In Progress"
       },
       {
         "title": "Tall Tales and Wee Stories",
         "author": "Billy Connolly",
-        "img": "https://images-na.ssl-images-amazon.com/images/I/81o%2Bflbn1cL.jpg",
+        "img": "https://images-na.ssl-images-amazon.com/images/I/41HzBY8TyQL._AC_SY400_.jpg",
         "url": "https://www.amazon.co.uk/Tall-Tales-Wee-Stories-Connolly/dp/1529361338",
+        "rating": "In Progress"
+      },
+      {
+        "title": "Accelerate",
+        "subtitle": "The Science of Lean Software and Devops",
+        "author": "Forsgren, Humble, Kim",
+        "img": "https://images-na.ssl-images-amazon.com/images/I/41TLwbsl8eL._AC_SY400_.jpg",
+        "url": "https://www.amazon.co.uk/Accelerate-Software-Performing-Technology-Organizations/dp/1942788339",
         "rating": "In Progress"
       }
     ]
@@ -24,8 +32,8 @@
       {
         "title": "A Clockwork Orange",
         "author": "Anthony Burgess",
-        "img": "https://images-na.ssl-images-amazon.com/images/P/0307591557.01._SCLZZZZZZZ_.jpg",
-        "url": "https://www.amazon.com/Showa-1953-1989-History-Japan/dp/1770462015/"
+        "img": "https://images-na.ssl-images-amazon.com/images/I/4179fEHUIML._AC_SY400_.jpg",
+        "url": "https://www.amazon.co.uk/Clockwork-Orange-Restored-Penguin-Classics/dp/0141197536"
       },
       {
         "title": "Sleeping Giants",

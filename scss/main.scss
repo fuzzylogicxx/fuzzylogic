@@ -530,48 +530,40 @@ figcaption {
 // Bookshelf
 ///////////////////
 
-// .book {
-//   --flow-space: #{scale-value(-4)}rem;
-// }
-
-// .book img {
-//   // height: 270px;
-//   // object-fit: contain;
-// }
-
-// .books {
-//   display: grid;
-//   grid-gap: calc(1em + 2vw);
-//   grid-template-columns: 1fr 1fr;
-
-//   // font-size: 0.875em;
-//   // margin-bottom: calc(1em + 2vw);
-//   // line-height: 1.2;
-// }
-
 .books {
+  display: flex;
+  flex-direction: column;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(12em, 1fr));
-  grid-gap: 1.5em;
-  font-size: .833em;
-  line-height: 1.2;
+  grid-gap: 1em;
+  grid-template-columns: 1fr;
 
-  h3 {
-    font-size: 1.2em;
-    line-height: 1;
+  @include at-least($bp-wide-four) {
+    @include grid(18ch, 2rem);
   }
 }
 
-.book img {
-  height: 270px;
-  width: unset;
-  max-width: 100%;
-  object-fit: contain;
+.book {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  grid-gap: 1em;
 
-  //width: 180px;
-  // height: 200px;
-
+  @include at-least($bp-wide-four) {
+    display: block;
+  }
 }
+
+.book-info {
+  --flow-space: #{scale-value(-6)}rem;
+  margin-top: #{scale-value(-2)}rem;
+  line-height: 1.2;
+  font-size: #{scale-value(-1)}rem;
+
+  h3 {
+    font-size: #{scale-value(0)}rem;
+    line-height: ( ((scale-value(-4) * 3) + (scale-value(-5))) / (scale-value(3)) );
+  }
+}
+
 
 // Print styles
 @import 'print';

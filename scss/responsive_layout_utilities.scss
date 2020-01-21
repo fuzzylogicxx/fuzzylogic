@@ -317,9 +317,9 @@
   }
 }
 
-.grid {
-  @include grid(18ch, 2rem);
-}
+// .grid {
+//   @include grid(18ch, 2rem);
+// }
 
 
 
@@ -362,21 +362,21 @@
 // Use cases: when we don’t know what aspect ratio an image will be and want to control it.
 
 .frame {
-  --n: 6;
-  --d: 9;
-  padding-bottom: calc(var(--n) / var(--d) * 100%);
+  --numerator: 8;
+  --denomenator: 5;
+  padding-bottom: calc(var(--numerator) / var(--denomenator) * 100%);
   position: relative;
 
   // support inline elements like <a> as the .frame
   display: block;
 }
 
-@media (orientation: portrait) {
-  .frame {
-    --n: 1;
-    --d: 1;
-  }
-}
+// @media (orientation: portrait) {
+//   .frame {
+//     --numerator: 3;
+//     --denomenator: 4;
+//   }
+// }
 
 .frame > * {
   overflow: hidden;
