@@ -5,7 +5,7 @@ description: "A nice online tool for testing RegEx patterns in a safe place befo
 tags: [link, regex, development, tool]
 linkTarget: "https://regexr.com/"
 ---
-> RegExr is an online tool to learn, build, & test Regular Expressions (RegEx / RegExp).
+> RegExr is an online tool to learn, build, & test Regular Expressions.
 ---
 
 This handy, interactive tool is a bit like [Postman](https://www.getpostman.com/) but for RegEx. You can create RegEx patterns and save them for easy retrieval later. 
