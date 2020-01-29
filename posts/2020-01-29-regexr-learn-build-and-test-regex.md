@@ -10,4 +10,4 @@ linkTarget: "https://regexr.com/"
 
 This handy, interactive tool is a bit like [Postman](https://www.getpostman.com/) but for RegEx. You can create RegEx patterns and save them for easy retrieval later. 
 
-I also like the way you can start by making a list of example text strings you want your pattern to i) match and ii) not match before starting work on your RegEx pattern, so that you’re working in a sort of “Test Driven RegExâ” style.
+I also like the way you can start by making a list of example text strings you want your pattern to i) match and ii) not match before starting work on your RegEx pattern, adopting a sort-of “Test Driven RegEx” approach.
