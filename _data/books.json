@@ -30,6 +30,24 @@
     "year": 2019,
     "books": [
       {
+        "title": "The Man in the High Castle",
+        "author": "Phillip K. Dick",
+        "img": "https://images-na.ssl-images-amazon.com/images/I/51COudJwZaL._AC_SY400_.jpg",
+        "url": "https://www.amazon.co.uk/Man-High-Castle-Phillip-Dick/dp/B001EOFLPU"
+      },
+      {
+        "title": "Do Androids Dream of Electric Sheep",
+        "author": "Phillip K. Dick",
+        "img": "https://images-na.ssl-images-amazon.com/images/I/61PdPMshCdL._AC_SY400_.jpg",
+        "url": "https://www.amazon.co.uk/Androids-Dream-Electric-Sheep-Masterworks/dp/0575079932"
+      },
+      {
+        "title": "A Visit from the Goon Squad",
+        "author": "Jennifer Egan",
+        "img": "https://images-na.ssl-images-amazon.com/images/I/51-j0d3fSAL._AC_SY400_.jpg",
+        "url": "https://www.amazon.co.uk/Visit-Goon-Squad-Jennifer-Egan/dp/1780330960/"
+      },
+      {
         "title": "A Clockwork Orange",
         "author": "Anthony Burgess",
         "img": "https://images-na.ssl-images-amazon.com/images/I/4179fEHUIML._AC_SY400_.jpg",
@@ -83,6 +101,19 @@
         "author": "Malcolm Gladwell",
         "img": "https://images-na.ssl-images-amazon.com/images/I/51dzRONdWzL._AC_SY400_.jpg",
         "url": "https://www.amazon.co.uk/Blink-Thinking-Gladwell-Publisher-Paperback/dp/B002WMZNXS/"
+      },
+      {
+        "title": "1984",
+        "author": "George Orwell",
+        "img": "https://images-na.ssl-images-amazon.com/images/I/51vPhzn7XGL._AC_SY400_.jpg",
+        "url": "https://www.amazon.co.uk/Nineteen-Eighty-four-Written-Publisher-Paperback/dp/B00SLVLODC"
+      },
+      {
+        "title": "Stasiland",
+        "subtitle": "Stories from Behind the Berlin Wall",
+        "author": "Anna Funder",
+        "img": "https://images-na.ssl-images-amazon.com/images/I/41Aj8%2BeGKZL._AC_SY400_.jpg",
+        "url": "https://www.amazon.co.uk/Stasiland-Stories-Behind-Berlin-Wall/dp/1847083358"
       }
     ]
   }
