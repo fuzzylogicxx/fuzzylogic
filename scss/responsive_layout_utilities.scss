@@ -317,9 +317,9 @@
   }
 }
 
-// .grid {
-//   @include grid(18ch, 2rem);
-// }
+.grid {
+  @include grid(18ch, 2rem);
+}
 
 
 
@@ -357,13 +357,13 @@
 // Frame
 ///////////////////////////////////
 
-// Purpose: draw a rectangle-based container with an aspect-ratio of our choosing and use it as a window to an image or video.
+// Purpose: draw a rectangle-based container with an aspect-ratio of our choosing and use it as a window to an image (of unknown size) or video.
 // We use object-fit: cover to crop the media. The default object-position value is 50% 50%, therefore the media is cropped around its center point.
 // Use cases: when we don’t know what aspect ratio an image will be and want to control it.
 
 .frame {
-  --numerator: 8;
-  --denomenator: 5;
+  --numerator: 6;
+  --denomenator: 9;
   padding-bottom: calc(var(--numerator) / var(--denomenator) * 100%);
   position: relative;
 
@@ -371,12 +371,12 @@
   display: block;
 }
 
-// @media (orientation: portrait) {
-//   .frame {
-//     --numerator: 3;
-//     --denomenator: 4;
-//   }
-// }
+@media (orientation: portrait) {
+  .frame {
+    --numerator: 1;
+    --denomenator: 1;
+  }
+}
 
 .frame > * {
   overflow: hidden;
@@ -386,7 +386,7 @@
   bottom: 0;
   left: 0;
 
-  // for alignment of normal, non-replaced elements (note that these flexbox styles won’t have any effect on <img> and <video>)
+  // for alignment of normal, non-replaced elements e.g. text ”Image coming soon” (note that these flexbox styles won’t have any effect on <img> and <video>)
   display: flex;
   justify-content: center;
   align-items: center;

@@ -535,8 +535,12 @@ figcaption {
 }
 
 .books {
-  display: flex;
-  flex-direction: column;
+  > * + * {
+    margin-top: 2rem;
+    @supports (display: grid) {
+      margin-top: 0;
+    }
+  }
   display: grid;
   grid-gap: 1em;
   grid-template-columns: 1fr;
@@ -547,6 +551,10 @@ figcaption {
 }
 
 .book {
+  max-width: 250px;
+  @supports (display: grid) {
+    max-width: none;
+  }
   display: grid;
   grid-template-columns: 18ch 1fr;
   grid-gap: 1em;
@@ -556,11 +564,16 @@ figcaption {
   }
 }
 
+.book-cover {
+  --numerator: 8;
+  --denomenator: 5;
+}
+
 .book-info {
   --flow-space: #{scale-value(-6)}rem;
-  margin-top: #{scale-value(-2)}rem;
-  line-height: 1.2;
   font-size: #{scale-value(-1)}rem;
+  line-height: 1.2;
+  margin-top: #{scale-value(-2)}rem;
 
   h3 {
     font-size: #{scale-value(0)}rem;
