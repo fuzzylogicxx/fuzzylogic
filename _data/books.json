@@ -30,6 +30,18 @@
     "year": 2019,
     "books": [
       {
+        "title": "A Visit from the Goon Squad",
+        "author": "Jennifer Egan",
+        "img": "https://images-na.ssl-images-amazon.com/images/I/51-j0d3fSAL._AC_SY400_.jpg",
+        "url": "https://www.amazon.co.uk/Visit-Goon-Squad-Jennifer-Egan/dp/1780330960/"
+      },
+      {
+        "title": "The Testament of Gideon Mack",
+        "author": "James Robertson",
+        "img": "https://images-na.ssl-images-amazon.com/images/I/51%2BzXE5v1OL._AC_SY400_.jpg",
+        "url": "https://www.amazon.co.uk/Testament-Gideon-Mack-James-Robertson/dp/014102335X"
+      },
+      {
         "title": "The Man in the High Castle",
         "author": "Phillip K. Dick",
         "img": "https://images-na.ssl-images-amazon.com/images/I/51COudJwZaL._AC_SY400_.jpg",
@@ -42,10 +54,10 @@
         "url": "https://www.amazon.co.uk/Androids-Dream-Electric-Sheep-Masterworks/dp/0575079932"
       },
       {
-        "title": "A Visit from the Goon Squad",
-        "author": "Jennifer Egan",
-        "img": "https://images-na.ssl-images-amazon.com/images/I/51-j0d3fSAL._AC_SY400_.jpg",
-        "url": "https://www.amazon.co.uk/Visit-Goon-Squad-Jennifer-Egan/dp/1780330960/"
+        "title": "Normal People",
+        "author": "Sally Rooney",
+        "img": "https://images-na.ssl-images-amazon.com/images/I/41TwkGhukGL._AC_SY400_.jpg",
+        "url": "https://www.amazon.co.uk/Normal-People-Sally-Rooney/dp/0571334652"
       },
       {
         "title": "A Clockwork Orange",
@@ -60,23 +72,10 @@
         "url": "https://www.amazon.co.uk/Sleeping-Giants-Themis-Files-Book/dp/1405921889"
       },
       {
-        "title": "Galapagos",
-        "author": "Kurt Vonnegut",
-        "img": "https://images-na.ssl-images-amazon.com/images/I/61ZxwPwnJdL._AC_SY400_.jpg",
-        "url": "https://www.amazon.co.uk/Galapagos-Polska-wersja-jezykowa/dp/B00BTNBAP6"
-      },
-      {
         "title": "The Catcher in the Rye",
         "author": "J D Salinger",
         "img": "https://images-na.ssl-images-amazon.com/images/I/31LnZ3DHu9L._AC_SY400_.jpg",
         "url": "https://www.amazon.co.uk/Catcher-Rye-J-D-Salinger/dp/0241950430"
-      },
-      {
-        "title": "Poverty Safari",
-        "subtitle": "Understanding the anger of Britain’s underclass",
-        "author": "Darren McGarvey",
-        "img": "https://images-na.ssl-images-amazon.com/images/I/51O%2BMPGfNkL._AC_SY400_.jpg",
-        "url": "https://www.amazon.co.uk/Poverty-Safari-Understanding-Britains-Underclass/dp/1529006341"
       },
       {
         "title": "Harry’s Kebabs",
@@ -96,11 +95,31 @@
     "year": 2018,
     "books": [
       {
+        "title": "Poverty Safari",
+        "subtitle": "Understanding the anger of Britain’s underclass",
+        "author": "Darren McGarvey",
+        "img": "https://images-na.ssl-images-amazon.com/images/I/51O%2BMPGfNkL._AC_SY400_.jpg",
+        "url": "https://www.amazon.co.uk/Poverty-Safari-Understanding-Britains-Underclass/dp/1529006341"
+      },
+      {
         "title": "Blink",
         "subtitle": "The Power of Thinking Without Thinking",
         "author": "Malcolm Gladwell",
         "img": "https://images-na.ssl-images-amazon.com/images/I/51dzRONdWzL._AC_SY400_.jpg",
         "url": "https://www.amazon.co.uk/Blink-Thinking-Gladwell-Publisher-Paperback/dp/B002WMZNXS/"
+      },
+      {
+        "title": "Galapagos",
+        "author": "Kurt Vonnegut",
+        "img": "https://images-na.ssl-images-amazon.com/images/I/61ZxwPwnJdL._AC_SY400_.jpg",
+        "url": "https://www.amazon.co.uk/Galapagos-Polska-wersja-jezykowa/dp/B00BTNBAP6"
+      },
+      {
+        "title": "Rise",
+        "subtitle": "Life Lessons in Speaking Out, Standing Tall & Leading the Way",
+        "author": "Gina Miller",
+        "img": "https://images-na.ssl-images-amazon.com/images/I/41xIXl5wWIL._AC_SY400_.jpg",
+        "url": "https://www.amazon.co.uk/Rise-Lessons-Speaking-Standing-Leading/dp/1786892901"
       },
       {
         "title": "1984",
@@ -114,6 +133,17 @@
         "author": "Anna Funder",
         "img": "https://images-na.ssl-images-amazon.com/images/I/41Aj8%2BeGKZL._AC_SY400_.jpg",
         "url": "https://www.amazon.co.uk/Stasiland-Stories-Behind-Berlin-Wall/dp/1847083358"
+      }
+    ]
+  },
+  {
+    "year": 2016,
+    "books": [
+      {
+        "title": "What I Talk About When I Talk About Running",
+        "author": "Haruki Murakami",
+        "img": "https://images-na.ssl-images-amazon.com/images/I/41-AujivN3L._AC_SY400_.jpg",
+        "url": "https://www.amazon.co.uk/What-Talk-About-When-Running/dp/0099526158"
       }
     ]
   }
