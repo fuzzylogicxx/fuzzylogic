@@ -2,7 +2,7 @@
 date: "2020-02-02T10:44:27.647Z"
 title: "Let’s Learn Eleventy! (with Zach Leatherman) - Learn With Jason (YouTube)"
 description: "A tutorial video on Eleventy by Jason Lengstorf with guest Zach Leatherman, creator of Eleventy"
-tags: [link, jamstack, 11ty, nodejs, javascript, api, module]
+tags: [link, jamstack, 11ty, nodejs, javascript, api, module, axios]
 linkTarget: "https://www.youtube.com/watch?v=j8mJrhhdHWc"
 ---
 <div class="aspect-ratio-wide">
