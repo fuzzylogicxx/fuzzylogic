@@ -2,7 +2,7 @@
 date: 2017-01-19
 title: The best way to Install Node.js and NPM on a Mac
 description: I’ve found that although the NodeJs website includes an installer, using Homebrew is a better way to install Node and NPM on a Mac.
-tags: [web, development, node, nodejs, npm, homebrew, brew]
+tags: [web, development, nodejs, npm, homebrew, brew]
 ---
 In modern front-end development, we tend to use a number of JavaScript-based build tools (such as task runners like Gulp) which have been created using Node.js and which we install using NPM. Here’s the best way I’ve found for installing and maintaining Node and NPM on a Mac.
 ---
