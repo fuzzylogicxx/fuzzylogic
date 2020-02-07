@@ -10,3 +10,6 @@ Blah
 
 Command-D
 edit multiple rows simultaneously
+
+Alt–click on a file in the Explorer.
+Open file to the side (side editing)
