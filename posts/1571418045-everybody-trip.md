@@ -1,5 +1,5 @@
 ---
-date: 2019-10-18
+date: 2019-10-18T19:03:21+00:00
 description: I got my filthy mitts on a funk gem.
 noteTitle: 1571418045
 tags: [note, music, record, funk]

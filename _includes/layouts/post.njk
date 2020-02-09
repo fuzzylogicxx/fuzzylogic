@@ -7,11 +7,26 @@ templateClass: post-main
   <article class="h-entry prose centre" itemtype="http://schema.org/BlogPosting">
 
     <header>
-      <time class="dt-published" itemprop="datePublished" datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time>
+      <div>
+        <span class="post-type text-icon-pair">
+        {% if (tags[1] === 'link') -%}
+          <svg aria-hidden="true" focusable="false" width="1em" height="1em"><use xlink:href="#icon-bookmark"></use></svg>
+          <span>Bookmark</span>
+        {% elif(tags[1] === 'note') -%}
+          <svg aria-hidden="true" focusable="false" width="1em" height="1em"><use xlink:href="#icon-note"></use></svg>
+          <span>Note</span>
+        {% else -%}
+          <svg aria-hidden="true" focusable="false" width="1em" height="1em"><use xlink:href="#icon-entry"></use></svg>
+          <span>Entry</span>
+        {% endif -%}
+        </span>
+        <time class="dt-published" itemprop="datePublished" datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time>
+        {% if(tags[1] === 'note') -%} <span>·</span> {{ page.date | readableTime }} <span>·</span> {{ location }}</span>{% endif -%}
+      </div>
       {%- if title -%}<h1 class="p-name" itemprop="headline">{{ title }}</h1>{%- endif -%}
     </header>
 
-    <div class="e-content" itemprop="articleBody">
+    <div class="e-content {{ "article-type-listing" if isList }}" itemprop="articleBody">
 
       {% if linkTarget %}
       <a class="btn btn-icon" href="{{ linkTarget }}">

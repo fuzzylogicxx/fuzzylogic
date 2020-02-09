@@ -31,10 +31,12 @@
     <div class="e-content">
     {% if (post.data.page.excerpt) -%}
       {%- set excerpt = post.data.page.excerpt -%}{{ excerpt | markdownStringToHTML | safe }}
-      {% if post.data.mainImage %} {#and (app.environment == "prod")#}
+      {% if post.data.mainImage.url and (app.environment == "prod") %}
       <figure>
+      {%- if post.data.mainImage.isAnchor %}<a href="{{ post.url | url }}">{%- endif %}
       {% respimg "" + post.data.mainImage.url + "", "" + post.data.mainImage.alt + "", "(min-width: 48em) 48em, 100vw", post.data.mainImage.aspectRatioWidth, post.data.mainImage.aspectRatioHeight %}
-      <figcaption>{{ post.data.mainImage.figcaption }}</figcaption>
+      {%- if post.data.mainImage.isAnchor %}</a>{%- endif %}
+      {%- if post.data.mainImage.figcaption %}<figcaption>{{ post.data.mainImage.figcaption }}</figcaption>{%- endif %}
       </figure>
       {% endif %}
       {% if (post.data.linkTarget) -%}

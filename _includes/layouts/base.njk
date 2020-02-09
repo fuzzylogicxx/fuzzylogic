@@ -32,7 +32,12 @@
     <!-- OG tags: most important -->
     <meta property="og:title" content="{{ renderData.title or title or metadata.title }}" />
     <meta property="og:description" content="{{ renderData.description or description or metadata.description }}" />
-    <meta property="og:image" content="{{ metadata.open_graph.image }}" />
+
+
+    <meta property="og:image" content="{{ openGraphImage or metadata.open_graph.image }}" />
+
+
+
     <meta property="og:url" content="{{ metadata.url_base }}{{ page.url }}" />
 
     <!-- OG tags: extra credit -->
