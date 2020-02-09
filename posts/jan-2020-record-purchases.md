@@ -22,13 +22,13 @@ openGraphImage: "https://res.cloudinary.com/fuzzylogic/image/upload/q_auto,f_aut
   {% respimg "" + mainImage.url + "", "" + mainImage.alt + "", "(min-width: 48em) 48em, 100vw", 320, mainImage.aspectRatioHeight %}
 </figure>
 
-Last month I scooped some brand new music, a couple of great releases I’d missed in 2019, and some killer reissues.
+Last month’s vinyl haul included brand new music, a couple of great releases I’d missed in 2019, and some killer reissues.
 
 Let’s dive in!
 
 ## Roy Ayers – Searching / One Sweet Love To Remember
 
-Vibes legend Roy Ayers’s beautiful 1976 rare groove classic _Searching_ gets a welcome, loud 7″ reissue from UK label Dynamite Cuts. _One Sweet Love_ on the flip – also from the Vibrations LP – sees Roy in more upbeat mode with great swinging, syncopated drums.
+Vibes legend Roy Ayers’ 1976 rare groove classic _Searching_ gets a welcome 7″ reissue from UK label Dynamite Cuts. _One Sweet Love_ on the flip – also from the Vibrations LP – sees Roy in more upbeat mode with great swinging, syncopated drums.
 
 <b>Current Favourite Track:</b> Searching
 
