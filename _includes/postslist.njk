@@ -31,9 +31,9 @@
     <div class="e-content">
     {% if (post.data.page.excerpt) -%}
       {%- set excerpt = post.data.page.excerpt -%}{{ excerpt | markdownStringToHTML | safe }}
-      {% if (app.environment == "prod") and post.data.mainImage %}
+      {% if post.data.mainImage %} {#and (app.environment == "prod")#}
       <figure>
-      {% respimg "" + post.data.mainImage.url + "", "" + post.data.mainImage.alt + "", "(min-width: 48em) 48em, 100vw" %}
+      {% respimg "" + post.data.mainImage.url + "", "" + post.data.mainImage.alt + "", "(min-width: 48em) 48em, 100vw", post.data.mainImage.aspectRatioWidth, post.data.mainImage.aspectRatioHeight %}
       <figcaption>{{ post.data.mainImage.figcaption }}</figcaption>
       </figure>
       {% endif %}

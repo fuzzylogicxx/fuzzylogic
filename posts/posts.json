@@ -2,5 +2,9 @@
   "tags": [
     "posts"
   ],
-  "layout": "layouts/post.njk"
+  "layout": "layouts/post.njk",
+  "mainImage": {
+    "aspectRatioWidth": 320,
+    "aspectRatioHeight": 240
+  }
 }
