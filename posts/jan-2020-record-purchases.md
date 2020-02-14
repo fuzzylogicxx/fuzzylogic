@@ -100,7 +100,7 @@ Another excellent release from Edinburgh’s Unthank (sister label of Firecracke
 
 ## Various ‎– DB12 002
 
-Obscure and limited various artists release from Rimini-based label Duca Bianco, featuring a variety of electronic sounds; some poppier than others. The track _Sequence Fiction_ I bought it for is a 100 BPM chugging John Carpenter-esque instrumental that came to my attention via [Joe’s excellent mix for Crack Magazine](https://soundcloud.com/crackmagazine/2019-mix-joe) (at [7:05](https://soundcloud.com/crackmagazine/2019-mix-joe#t=7:05)).
+Obscure and limited various artists release from Rimini-based label Duca Bianco, featuring a variety of electronic sounds; some poppier than others. The track _Sequence Fiction_ I bought it for is a 100 BPM chugging John Carpenter-esque instrumental that came to my attention via [Joe’s excellent mix for Crack Magazine](https://soundcloud.com/crackmagazine/2019-mix-joe) (appearing at [7:05](https://soundcloud.com/crackmagazine/2019-mix-joe#t=7:05)).
 
 <b>Current Favourite Track:</b> Guillaume De Bois – _Sequence Fiction_
 
