@@ -24,7 +24,31 @@ openGraphImage: "https://res.cloudinary.com/fuzzylogic/image/upload/q_auto,f_aut
 
 Last month’s vinyl haul included brand new music, a couple of great releases I’d missed in 2019, and some killer reissues.
 
-Let’s dive in!
+Let’s dive in.
+
+## Sleep D – Rebel Force
+
+I’ve noticed that a lot of my recent favourites are from Australia: artists like Ewan Jansen, Rings Around Saturn and Turner Street Sound; labels like Ken Oath Records. This LP from Sleep D – who contributed _Connexion Dub_ on the excellent [Sweet Echoes Vol 1](https://www.discogs.com/Various-Sweet-Echoes-Vol-1-/release/12873209) – was produced in Melbourne but released on Anthony Naples’ NY-based Incensio label toward the end of 2019. It’s on the deep, heady techno and electro tip (but also features a lush deep house remix from Kuniyuki) and has been getting some plays from Hessle Audio luminaries Ben UFO and Joe.
+
+<b>Current Favourite Track:</b> Twin Turbo
+
+<div class="aspect-ratio-wide">
+  <iframe title="Sleep D – Twin Turbo" loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/IpvqnMpaV28" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+[Grab a copy on Discogs](https://www.discogs.com/sell/release/14298261?ev=rb)
+
+## Bella Vista – Mister Wong
+
+Originally released in 1982, this electronic pop oddity has been reissued by <span class="nobreak">Adelaide</span>-based label Isle of Jura. The original with its quirky vocals, synths and guitars is a bit like a French _Genius of Love_, while there’s also a lovely stripped-back and effects-laden dub version.
+
+<b>Current Favourite Track:</b> Disco Dub (Jura Soundsystem Extended Edit)
+
+<div class="aspect-ratio-wide">
+  <iframe title="Bella Vista – Mister Wong" loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/b9zHwx-i7KM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+[Grab a copy on Bandcamp](https://isleofjura.bandcamp.com/album/mister-wong-2)
 
 ## Roy Ayers – Searching / One Sweet Love To Remember
 
@@ -40,7 +64,7 @@ Vibes legend Roy Ayers’ 1976 rare groove classic _Searching_ gets a welcome 7�
 
 ## Oscar Weathers – We're Running Out Of Time / Countdown
 
-I heard this slice of reissued eighties electrofunk while tuned in to Radio 6 Music. The original is a much-sought after rarity but fortunately it’s now available once again thanks to Fantasy Love Records. This features a great vocal accompanied by Funkadelic-style synths, live bass and horns, for something pretty unique.
+A stellar slice of reissued eighties electrofunk which I heard while tuned in to 6Music. The original is a much-sought after rarity but fortunately it’s now available once again thanks to Fantasy Love Records. It features a cool vocal accompanied by Funkadelic-style synths, live bass and horns, resulting in something pretty unique.
 
 <b>Current Favourite Track:</b> We're Running Out Of Time
 
@@ -52,7 +76,7 @@ I heard this slice of reissued eighties electrofunk while tuned in to Radio 6 Mu
 
 ## Skinshape ‎– I Didn't Know
 
-A lovely dubbed out slice of psychedelic soul from Will Dorey aka _Skinshape_, whose work I first encountered on the [Riddim Box Dub / Soul Groove](https://www.discogs.com/Stally-The-Breadwinners-Skinshape-Riddim-Box-Dub-Soul-Groove/release/4772794) 7″ on Horus back in 2013. The version of _I Didn’t Know_ I heard first (on Gilles Peterson’s radio show) is the dub, however I’m warming to the vocal too. I’ve also noticed that he’s [released a few albums](https://www.discogs.com/artist/3395378-Skinshape) which I plan to check out.
+A lovely 7″ slab of dubbed out, psychedelic soul from Will Dorey aka _Skinshape_, whose work I first encountered on the [Riddim Box Dub / Soul Groove](https://www.discogs.com/Stally-The-Breadwinners-Skinshape-Riddim-Box-Dub-Soul-Groove/release/4772794) release on Horus back in 2013. The version of _I Didn’t Know_ I heard first (on Gilles Peterson’s radio show) is the dub, however I’m warming to the vocal too. I’ve also noticed that he’s [released a few albums](https://www.discogs.com/artist/3395378-Skinshape) which I plan to check out.
 
 <b>Current Favourite Track:</b> IDK Dub
 
@@ -61,19 +85,6 @@ A lovely dubbed out slice of psychedelic soul from Will Dorey aka _Skinshape_, w
 </div>
 
 [Grab a copy on Discogs](https://www.discogs.com/sell/release/14263749?ev=rb)
-
-## Sleep D – Rebel Force
-
-I’ve noticed that a lot of my recent favourites originate from Australia: artists like Ewan Jansen, Rings Around Saturn and Turner Street Sound; labels like Ken Oath Records. This LP from Sleep D – who previously contributed
-_Connexion Dub_ on the excellent [Sweet Echoes Vol 1](https://www.discogs.com/Various-Sweet-Echoes-Vol-1-/release/12873209) – was produced in Melbourne but released on Anthony Naples’ NY-based Incensio label toward the end of 2019. It’s on the deep, heady techno and electro tip and has been getting some plays from Hessle Audio luminaries Ben UFO and Joe.
-
-<b>Current Favourite Track:</b> Twin Turbo
-
-<div class="aspect-ratio-wide">
-  <iframe title="Sleep D – Twin Turbo" loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/IpvqnMpaV28" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-
-[Grab a copy on Discogs](https://www.discogs.com/sell/release/14298261?ev=rb)
 
 ## Benoit B – Caution 9′6″ High
 
@@ -87,21 +98,9 @@ Another excellent release from Edinburgh’s Unthank (sister label of Firecracke
 
 [Grab a copy at Boomkat](https://boomkat.com/products/unthank-13-caution-9-6-high)
 
-## Bella Vista – Mister Wong
-
-Originally released in 1982, this electronic pop oddity has been reissued by Adelaide-based label Isle of Jura. The original with its quirky vocals, synths and guitars is a bit like a French _Genius of Love_, while there’s also a lovely stripped-back and effects-laden dub version.
-
-<b>Current Favourite Track:</b> Disco Dub (Jura Soundsystem Extended Edit)
-
-<div class="aspect-ratio-wide">
-  <iframe title="Bella Vista – Mister Wong" loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/b9zHwx-i7KM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-
-[Grab a copy on Bandcamp](https://isleofjura.bandcamp.com/album/mister-wong-2)
-
 ## Various ‎– DB12 002
 
-Obscure and limited various artists release from Rimini featuring a variety of electronic sounds; some poppier than others. The track _Sequence Fiction_ I bought it for is a 100 BPM chugging John Carpenter-esque instrumental that came to my attention via [Joe’s excellent mix for Crack Magazine](https://soundcloud.com/crackmagazine/2019-mix-joe) (appearing at [7:05](https://soundcloud.com/crackmagazine/2019-mix-joe#t=7:05)).
+Obscure and limited various artists release from Rimini-based label Duca Bianco, featuring a variety of electronic sounds; some poppier than others. The track _Sequence Fiction_ I bought it for is a 100 BPM chugging John Carpenter-esque instrumental that came to my attention via [Joe’s excellent mix for Crack Magazine](https://soundcloud.com/crackmagazine/2019-mix-joe) (at [7:05](https://soundcloud.com/crackmagazine/2019-mix-joe#t=7:05)).
 
 <b>Current Favourite Track:</b> Guillaume De Bois – _Sequence Fiction_
 
@@ -111,7 +110,7 @@ Obscure and limited various artists release from Rimini featuring a variety of e
 
 ## Joy O – Slipping
 
-I’m really enjoying Joy Orbison’s journey as a producer and loved the 2018 7″ _Diamonds_  under his Sin Falta pseudonym. This occupies a similar glitchy and heady space and showcases some really interesting sounds and ideas while still having enough oomph for club play.
+I’m really enjoying Joy Orbison’s journey as a producer and loved the 2018 7″ _Diamonds_  under his Sin Falta pseudonym. This occupies a similar glitchy and heady space and showcases some really interesting sounds and ideas while still having enough oomph for DJs and dancefloors of taste.
 
 <div class="aspect-ratio-wide">
   <iframe title="Joy O – Burn" loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/dMRMZLqlVaw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
