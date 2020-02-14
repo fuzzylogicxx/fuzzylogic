@@ -28,7 +28,7 @@ Let’s dive in.
 
 ## Sleep D – Rebel Force
 
-I’ve noticed that a lot of my recent favourites are from Australia: artists like Ewan Jansen, Rings Around Saturn and Turner Street Sound; labels like Ken Oath Records. This LP from Sleep D – who contributed _Connexion Dub_ on the excellent [Sweet Echoes Vol 1](https://www.discogs.com/Various-Sweet-Echoes-Vol-1-/release/12873209) – was produced in Melbourne but released on Anthony Naples’ NY-based Incensio label toward the end of 2019. It’s on the deep, heady techno and electro tip (but also features a lush deep house remix from Kuniyuki) and has been getting some plays from Hessle Audio luminaries Ben UFO and Joe.
+I’ve noticed that a lot of my recent favourites are from Australia: artists like Ewan Jansen, Rings Around Saturn and Turner Street Sound; labels like Ken Oath Records. This LP from Sleep D – who contributed _Connexion Dub_ on the excellent [Sweet Echoes Vol 1](https://www.discogs.com/Various-Sweet-Echoes-Vol-1-/release/12873209) – was produced in Melbourne but released on Anthony Naples’ NY-based Incensio label toward the end of 2019. It’s on the deep, heady techno and electro tip (but also features a lush house remix from Kuniyuki) and has been getting some plays from Hessle Audio luminaries Ben UFO and Joe.
 
 <b>Current Favourite Track:</b> Twin Turbo
 
