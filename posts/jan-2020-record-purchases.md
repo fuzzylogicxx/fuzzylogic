@@ -14,7 +14,7 @@ mainImage:
   alt: Laurence’s record purchases in January 2020
   aspectRatioHeight: 180
   isAnchor: true
-openGraphImage: "https://res.cloudinary.com/fuzzylogic/image/upload/q_auto,f_auto,w_1280/v1581756788/jan_2020_record_shopping_v6_x7rfb5.jpg"
+openGraphImage: "https://res.cloudinary.com/fuzzylogic/image/upload/q_95,f_auto,w_1280/v1581756788/jan_2020_record_shopping_v6_x7rfb5.jpg"
 ---
 
 ---
