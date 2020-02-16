@@ -8,7 +8,7 @@ linkTarget: "https://adactio.com/journal/16404"
 > The situation we have now is the worst of both worlds: server-side rendering followed by a tsunami of hydration. It has a whiff of progressive enhancement to it (because there’s a cosmetic separation of concerns) but it has none of the user benefits.
 ---
 
-Jeremy Keith notes that these days JavaScript frameworks like React can be used in different ways: not solely for creating an SPA or for complex client-site state management, but perhaps for JavaScript that is run on the server. A developer might choose React because they like the way it encourages modularity and componentisation. This could be a good thing if frameworks like Gatsby and Next.js were to use progressive enhancement properly.
+Jeremy Keith notes that these days JavaScript frameworks like React can be used in different ways: not solely for creating an SPA or for complex client-site state management, but perhaps for JavaScript that is run on the server. A developer might choose React because they like the way it encourages modularity and componentisation. This could be a good thing if frameworks like Gatsby and <span class="nobreak">Next.js</span> were to use progressive enhancement properly.
 
 In reality, the system of _server-side rendering_ of non-interactive HTML that is reliant on a further payload of JavaScript for _hydration_ leads to an initial loading experience that is “jagged and frustrating”.
 
