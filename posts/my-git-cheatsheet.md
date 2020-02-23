@@ -282,11 +282,12 @@ Undo all the changes in a given commit:
 git revert 591672e
 ```
 
-Alter the previous commit (change the message and and/or include further updates):
+Alter the previous commit (change the message and/or include further updates):
 
 ``` bash
-# assuming there are no staged files, this amends the commit message only.
-# if files are staged, it combines the staged changes with the previous commit.
+# we are amending the previous commit rather than creating a new commit.
+# if file changes are staged, it amends previous commit to include those.
+# if there are no staged changes, it lets us amend the previous commit’s message only.
 git commit --amend
 ```
 
