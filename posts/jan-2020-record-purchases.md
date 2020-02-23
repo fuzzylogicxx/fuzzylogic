@@ -10,11 +10,11 @@ tags:
   - shopping
 isList: true
 mainImage:
-  url: https://res.cloudinary.com/fuzzylogic/image/upload/v1581241203/jan_2020_record_shopping_v3_cmxyxw.jpg
+  url: https://res.cloudinary.com/fuzzylogic/image/upload/v1581756788/jan_2020_record_shopping_v6_x7rfb5.jpg
   alt: Laurence’s record purchases in January 2020
   aspectRatioHeight: 180
   isAnchor: true
-openGraphImage: "https://res.cloudinary.com/fuzzylogic/image/upload/q_auto,f_auto,w_1280/v1581241203/jan_2020_record_shopping_v3_cmxyxw.jpg"
+openGraphImage: "https://res.cloudinary.com/fuzzylogic/image/upload/q_95,f_auto,w_1280/v1581756788/jan_2020_record_shopping_v6_x7rfb5.jpg"
 ---
 
 ---
@@ -28,7 +28,7 @@ Let’s dive in.
 
 ## Sleep D – Rebel Force
 
-I’ve noticed that a lot of my recent favourites are from Australia: artists like Ewan Jansen, Rings Around Saturn and Turner Street Sound; labels like Ken Oath Records. This LP from Sleep D – who contributed _Connexion Dub_ on the excellent [Sweet Echoes Vol 1](https://www.discogs.com/Various-Sweet-Echoes-Vol-1-/release/12873209) – was produced in Melbourne but released on Anthony Naples’ NY-based Incensio label toward the end of 2019. It’s on the deep, heady techno and electro tip (but also features a lush deep house remix from Kuniyuki) and has been getting some plays from Hessle Audio luminaries Ben UFO and Joe.
+I’ve noticed that a lot of my recent favourites are from Australia: artists like Ewan Jansen, Rings Around Saturn and Turner Street Sound; labels like Ken Oath Records. This LP from Sleep D – who contributed _Connexion Dub_ on the excellent [Sweet Echoes Vol 1](https://www.discogs.com/Various-Sweet-Echoes-Vol-1-/release/12873209) – was produced in Melbourne but released on Anthony Naples’ NY-based Incensio label toward the end of 2019. It’s on the deep, heady techno and electro tip (but also features a lush house remix from Kuniyuki) and has been getting some plays from Hessle Audio luminaries Ben UFO and Joe.
 
 <b>Current Favourite Track:</b> Twin Turbo
 
@@ -100,7 +100,7 @@ Another excellent release from Edinburgh’s Unthank (sister label of Firecracke
 
 ## Various ‎– DB12 002
 
-Obscure and limited various artists release from Rimini-based label Duca Bianco, featuring a variety of electronic sounds; some poppier than others. The track _Sequence Fiction_ I bought it for is a 100 BPM chugging John Carpenter-esque instrumental that came to my attention via [Joe’s excellent mix for Crack Magazine](https://soundcloud.com/crackmagazine/2019-mix-joe) (at [7:05](https://soundcloud.com/crackmagazine/2019-mix-joe#t=7:05)).
+Obscure and limited various artists release from Rimini-based label Duca Bianco, featuring a variety of electronic sounds; some poppier than others. The track _Sequence Fiction_ I bought it for is a 100 BPM chugging John Carpenter-esque instrumental that came to my attention via [Joe’s excellent mix for Crack Magazine](https://soundcloud.com/crackmagazine/2019-mix-joe) (appearing at [7:05](https://soundcloud.com/crackmagazine/2019-mix-joe#t=7:05)).
 
 <b>Current Favourite Track:</b> Guillaume De Bois – _Sequence Fiction_
 
