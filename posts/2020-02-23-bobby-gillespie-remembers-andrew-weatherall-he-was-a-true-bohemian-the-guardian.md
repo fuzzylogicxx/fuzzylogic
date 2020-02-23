@@ -1,6 +1,6 @@
 ---
 date: "2020-02-23T15:56:50.841Z"
-title: "Bobby Gillespie remembers Andrew Weatherall: “He was a true bohemian” (The Guardian)"
+title: "Bobby Gillespie remembers Andrew Weatherall (The Guardian)"
 description: "Primal Scream’s frontman pays tribute to his friend who died last week"
 tags: [link, music, primalscream, dj]
 linkTarget: "https://www.theguardian.com/music/2020/feb/23/bobby-gillespie-on-screamadelica-producer-andrew-weatherall?fbclid=IwAR35FdtbJmzOcb_Fzh19jacBBcMANJU_z7fLOEy9biF8tWoe9MLIAiyUoGo"
