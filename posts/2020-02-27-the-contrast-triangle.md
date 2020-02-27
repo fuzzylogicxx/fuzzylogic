@@ -10,11 +10,11 @@ linkTarget: "https://contrast-triangle.com/"
 
 It’s interesting that Chip says that this level of contrast is needed “when we don’t use underlines on links”.
 
-> By not using underlines, a design has to rely on contrast alone to achieve this 
+> By not using underlines, a design has to rely on contrast alone to achieve this. 
 
 So this seems to be yet another good reason to include underlines in links, i.e. if you underline your links then you don’t need to worry quite as much about a third level of contrast.
 
-Indeed, when you toggle on the ”Show underlines” option on this tool, it then removes the requirement to ensure additional contrast between hyperlinks and standard body text.
+Indeed, when you toggle on the “Show underlines” option on this tool, it then removes the requirement to ensure additional contrast between hyperlinks and standard body text.
 
 However, even if your links in flowing prose are underlined, there’s always likely to be places (Navigation, Footer, CTAs etc) where you’ve probably disabled underlines on links for design effect, so I reckon this is useful for most websites.
 
