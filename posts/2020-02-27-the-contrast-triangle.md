@@ -2,7 +2,7 @@
 date: "2020-02-27T12:26:39.651Z"
 title: "The Contrast Triangle"
 description: "If we remove the underline from hyperlinks by design, we introduce a third contrast requirement – the contrast between link text and standard body text. "
-tags: [link, css, accessibility, contrast, underline, links]
+tags: [link, css, a11y, contrast, underline, links]
 linkTarget: "https://contrast-triangle.com/"
 ---
 > Removing underlines from links in HTML text presents an accessibility challenge. In order for a design to be considered accessible, there is now a three-sided design contraint - or what I call "The Contrast Triangle". Your text, links and background colors must now all have sufficient contrast from each other. Links must have a contrast ratio of 3:1 from their surrounding text. By not using underlines, a design has to rely on contrast alone to achieve this.
