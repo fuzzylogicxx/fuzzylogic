@@ -1,6 +1,6 @@
 ---
 date: "2020-02-28T11:11:30.101Z"
-title: "Are My Colours Accessible"
+title: "Are My Colours Accessible?"
 description: "An easy to use tool for checking text-against-background contrast for accessibility."
 tags: [link, a11y, contrast, text, colour, tools]
 linkTarget: "https://www.aremycoloursaccessible.com/"
