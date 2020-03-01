@@ -12,6 +12,11 @@
   from = "/thoughts/current-reading-1984-by-george-orwell"
   to = "/posts/1984-by-george-orwell/"
   status = 301
+  
+[[redirects]]
+  from = "/thoughts/flexible-tag-style-collections-and-pages-for-non-tag-key-in-eleventy/"
+  to = "/flexible-tag-like-functionality-for-custom-keys-in-eleventy/"
+  status = 301
 
 [[redirects]]
   from = "/blog/"
