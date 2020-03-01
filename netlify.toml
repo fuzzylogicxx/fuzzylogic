@@ -15,7 +15,7 @@
   
 [[redirects]]
   from = "/thoughts/flexible-tag-style-collections-and-pages-for-non-tag-key-in-eleventy/"
-  to = "/flexible-tag-like-functionality-for-custom-keys-in-eleventy/"
+  to = "/posts/flexible-tag-like-functionality-for-custom-keys-in-eleventy/"
   status = 301
 
 [[redirects]]
