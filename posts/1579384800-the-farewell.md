@@ -1,6 +1,6 @@
 ---
 date: 2020-01-18T22:00:00+00:00
-description: Lovely fim which handles a difficult subject really nicely
+description: Lovely film which handles a difficult subject really nicely
 noteTitle: 1579384800
 tags: [note, family, illness, china, tradition, death]
 location: Glasgow
