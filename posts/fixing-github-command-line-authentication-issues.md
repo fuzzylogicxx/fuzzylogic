@@ -13,7 +13,7 @@ Essentially the problem relates to Github expecting a _personal access token_ ra
 
 This might be because your Github account has <abbr title="Two-Factor Authentication">2FA</abbr> enabled, and/or for security purposes because your account is part of an organisation that uses SAML single sign-on (SSO). 
 
-In my case, I already had a personal access token with the requisite privileges so I was able to just use that. However, if need be I could have created a new one.
+In my case, I had previously created a personal access token with the requisite privileges (in my Github account’s [Developer Settings > Tokens](https://github.com/settings/tokens) section) for the purposes of API access, so I was able to just reuse that. However, if need be I could have created a new one.
 
 Thanks to Ginny Fahs who had the same problem and [documented her solution](https://medium.com/@ginnyfahs/github-error-authentication-failed-from-command-line-3a545bfd0ca8).
 
