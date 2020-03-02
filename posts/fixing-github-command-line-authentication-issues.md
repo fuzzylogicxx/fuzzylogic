@@ -17,5 +17,4 @@ In my case, I already had a personal access token with the requisite privileges 
 
 Thanks to Ginny Fahs who had the same problem and [documented her solution](https://medium.com/@ginnyfahs/github-error-authentication-failed-from-command-line-3a545bfd0ca8).
 
-This Github Help page is also useful: 
-[https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line](https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line).
+Github’s Help page [Creating a personal access token for the command line](https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line) is also useful.
