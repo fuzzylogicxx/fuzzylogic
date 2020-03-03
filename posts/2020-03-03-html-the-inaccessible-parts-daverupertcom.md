@@ -1,6 +1,6 @@
 ---
 date: "2020-03-03T14:46:39.613Z"
-title: "HTML: The Inaccessible Parts - daverupert.com"
+title: "HTML: The Inaccessible Parts (daverupert.com)"
 description: "Dave Rupert rounds up the accessibility shortfalls of native HTML elements."
 tags: [link, a11y, forms, html, dialog, details, aria]
 linkTarget: "https://daverupert.com/2020/02/html-the-inaccessible-parts/"
