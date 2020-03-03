@@ -4,9 +4,9 @@ title: Fixing Github Command Line Authentication Issues
 description: If your push to Github is failing, it’s probably because you have 2FA turned on in your Github account and should be using a personal access token in place of your password.
 tags: [development, git, github, commandline, fix]
 ---
-On at least two ocassions I’ve found myself scratching my head when trying to push to a Github repo for the first time and being met with authentication failures – despite being positive I’m using the correct credentials.
+On at least two ocassions I’ve found myself scratching my head when an attempted push to a newly-created Github repo is met with authentication failures, despite me being sure I’m using the correct credentials.
 
-Here’s how to resolve the issue.
+Here’s the lowdown on the issue and how to resolve it.
 ---
 
 Essentially the problem relates to Github expecting a _personal access token_ rather than a password (although it provides no helpful hints that this is the case).
