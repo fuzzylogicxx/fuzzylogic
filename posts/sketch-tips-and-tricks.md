@@ -4,7 +4,7 @@ description: Useful Sketch commands for my reference and yours
 date: "2019-06-23T16:58:08.051Z"
 tags: [design, sketch, cheatsheet]
 ---
-I’ve used Sketch for a few years, having followed the lead of my designer colleagues who gravitated to it from Photoshop. But my level has been pretty basic, as a web developer content to simply inspect and grab things from other folks’ designs. However I’ve decided to up my game and get more creative. As I learn the ropes, here’s a list of useful (Mac-based) Sketch tips for my reference and yours.
+I’ve used Sketch for a few years, having followed the lead of my designer colleagues who gravitated to it from Photoshop. My level has been pretty basic, as a web developer content to simply inspect and grab things from other folks’ designs. However I’ve decided to up my game and get more creative. As I learn the ropes, here’s a list of useful (Mac-based) Sketch tips for my reference and yours.
 ---
 
 ## Create an Artboard
@@ -21,14 +21,22 @@ For manual zoom, pinch trackpad.
 
 Centre screen on element we’re working on: <kbd>Cmd</kbd>+<kbd>2</kbd>.
 
-Make current object full-size (zoomed 100%): <kbd>Cmd</kbd>+<kbd>0</kbd>.
+Zoom in on current object to 100% screen size: <kbd>Cmd</kbd>+<kbd>0</kbd>.
 
-Zoom out, centred, on artboard: <kbd>Escape</kbd> then <kbd>Cmd</kbd>+<kbd>2</kbd> then <kbd>Cmd</kbd>+<kbd>0</kbd>.
+Zoom out, centred on artboard: <kbd>Escape</kbd> then <kbd>Cmd</kbd>+<kbd>2</kbd> then <kbd>Cmd</kbd>+<kbd>0</kbd>.
 
 ## Text
 
 Insert text element: <kbd>T</kbd>.
 
-Adjust text size using the _size_ field (on the right). 
+On the right:
+- Change typeface
+- Adjust text size using the _size_ field (on the right). 
+- Adjust text size by decimal increments: press <kbd>Option</kbd> while adjusting the size.
 
-Adjust text size by decimal increments: press <kbd>Option</kbd> while adjusting the size.
+## Add Rulers
+
+Start by showing default rules using the toggle: <kbd>Control</kbd>+<kbd>R</kbd>
+
+Create gutters each side (e.g. 32px) by dragging rulers.
+
