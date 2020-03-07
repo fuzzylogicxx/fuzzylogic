@@ -57,6 +57,10 @@ Create a custom shape like a tick:
 
 Lock a layer to make it unselectable and unmovable: <kbd>Command</kbd>+<kbd>⇧</kbd>+<kbd>L</kbd>.
 
+See space between sibling layers: press and hold <kbd>Option</kbd> and select layer.
+
+Move layer up or down by 10px: press and hold <kbd>Shift</kbd> and up/down arrow key while layer is selected.
+
 Make layer see-through: change its opacity by typing (e.g.) 5 for 50% or by controls on right-hand-side.
 
 Use a blend mode to mix a layer’s background colour with it’s parent’s background colour: 
@@ -98,9 +102,5 @@ Select a layer or layers and use the Alignment tools at the top-right.
 - Click __Export Selected__.
 
 ## Miscellaneous
-
-See space between sibling layers: press and hold <kbd>Option</kbd> and select layer.
-
-Move layer up or down by 10px: press and hold <kbd>Shift</kbd> and up/down arrow key while layer is selected.
 
 Add dummy data: select one or more layers then from top-right select __Data__ and insert names, cities or images.  
