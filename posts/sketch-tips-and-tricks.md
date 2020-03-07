@@ -19,11 +19,11 @@ The initial _canvas_ is infinite so we need a fixed frame (representing a device
 
 For manual zoom, pinch trackpad.
 
-Centre screen on element we’re working on: <kbd>Cmd</kbd>+<kbd>2</kbd>.
+Centre screen on element we’re working on: <kbd>Command</kbd>+<kbd>2</kbd>.
 
-Zoom in on current object to 100% screen size: <kbd>Cmd</kbd>+<kbd>0</kbd>.
+Zoom in on current object to 100% screen size: <kbd>Command</kbd>+<kbd>0</kbd>.
 
-Zoom out, centred on artboard: <kbd>Escape</kbd> then <kbd>Cmd</kbd>+<kbd>2</kbd> then <kbd>Cmd</kbd>+<kbd>0</kbd>.
+Zoom out, centred on artboard: <kbd>Escape</kbd> then <kbd>Command</kbd>+<kbd>2</kbd> then <kbd>Command</kbd>+<kbd>0</kbd>.
 
 ## Text
 
@@ -33,6 +33,14 @@ Then control it on the right:
 - Change typeface
 - Adjust text size using the _size_ field. 
 - Adjust text size by decimal increments: press <kbd>Option</kbd> while adjusting the size.
+
+## Duplicate an element
+
+Hold down <kbd>Option</kbd> then select and drag element.
+
+Hold down <kbd>⇧</kbd> to ensure alignment.
+
+Keyboard shortcut: <kbd>Command</kbd>+<kbd>D</kbd>
 
 ## Add Rulers
 
