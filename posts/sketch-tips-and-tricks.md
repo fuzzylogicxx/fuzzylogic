@@ -32,15 +32,53 @@ Insert text element: <kbd>T</kbd>.
 Then control it on the right:
 - Change typeface
 - Adjust text size using the _size_ field. 
-- Adjust text size by decimal increments: press <kbd>Option</kbd> while adjusting the size.
+- Adjust text size by decimal increments: press and hold <kbd>Option</kbd> while adjusting the size.
 
-## Duplicate an element
+## Adding Shapes
 
-Hold down <kbd>Option</kbd> then select and drag element.
+Insert shape: at top-left, choose __Insert > Shape__ > ….
 
-Hold down <kbd>⇧</kbd> to ensure alignment.
+Insert a rectangle (shortcut): <kbd>R</kbd>.
+
+Round a rectangle’s corners: select it, then on the right change its border radius, e.g. to 3.
+
+For a perfect circle: insert an oval with <kbd>O</kbd> then press and hold <kbd>⇧</kbd> while clicking and dragging.
+
+Change shape dimensions: Press and hold <kbd>Command</kbd> and the up or down arrow key. Press and hold <kbd>Option</kbd> to do so in decimal increments.
+
+Change background: edit _fill_ on the right, selecting a solid colour or a gradient fill.
+
+Create a custom shape like a tick: 
+- at top-left, __Insert > Vector__
+- draw lines using a series of points
+- Use the tools on the right to tweak thickness, roundedness etc.
+
+## Layers
+
+Lock a layer to make it unselectable and unmovable: <kbd>Command</kbd>+<kbd>⇧</kbd>+<kbd>L</kbd>.
+
+Make layer see-through: change its opacity by typing (e.g.) 5 for 50% or by controls on right-hand-side.
+
+Use a blend mode to mix a layer’s background colour with it’s parent’s background colour: 
+- select your layer
+- select the _Colour Fill_ box on the right
+- Select a blend mode such as _overlay_ or _soft light_.
+
+## Duplicate a layer
+
+Press and hold <kbd>Option</kbd> then select and drag element.
+
+Additionally press and hold <kbd>⇧</kbd> to ensure alignment.
 
 Keyboard shortcut: <kbd>Command</kbd>+<kbd>D</kbd>
+
+## Combine layers
+
+We group layers together in order to select them as one and move them together. 
+
+Select layers, then <kbd>Option</kbd>+<kbd>Command</kbd>+<kbd>U</kbd> (for _Union_).
+
+Right-click and __group selection__.
 
 ## Add Rulers
 
@@ -48,3 +86,21 @@ Start by showing default rules using the toggle: <kbd>Control</kbd>+<kbd>R</kbd>
 
 Create gutters each side (e.g. 32px) by dragging markers.
 
+## Alignment
+
+Select a layer or layers and use the Alignment tools at the top-right.
+
+## Share your work
+
+- Select artboard
+- On right panel, __Make Exportable__.
+- Use 1x and .png.
+- Click __Export Selected__.
+
+## Miscellaneous
+
+See space between sibling layers: press and hold <kbd>Option</kbd> and select layer.
+
+Move layer up or down by 10px: press and hold <kbd>Shift</kbd> and up/down arrow key while layer is selected.
+
+Add dummy data: select one or more layers then from top-right select __Data__ and insert names, cities or images.  
