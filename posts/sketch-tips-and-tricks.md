@@ -84,11 +84,11 @@ Select layers, then <kbd>Option</kbd>+<kbd>Command</kbd>+<kbd>U</kbd> (for _Unio
 
 Right-click and __group selection__.
 
-## Add Rulers
+## Use Rulers
 
-Start by showing default rules using the toggle: <kbd>Control</kbd>+<kbd>R</kbd>
+Toggle ruler visibility: <kbd>Control</kbd>+<kbd>R</kbd>
 
-Create gutters each side (e.g. 32px) by dragging markers.
+Create gutters/margins (e.g. 32px) by dragging markers.
 
 ## Alignment
 
