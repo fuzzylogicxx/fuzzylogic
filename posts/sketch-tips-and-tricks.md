@@ -38,5 +38,5 @@ Then control it on the right:
 
 Start by showing default rules using the toggle: <kbd>Control</kbd>+<kbd>R</kbd>
 
-Create gutters each side (e.g. 32px) by dragging rulers.
+Create gutters each side (e.g. 32px) by dragging markers.
 
