@@ -74,7 +74,7 @@ Keyboard shortcut: <kbd>Command</kbd>+<kbd>D</kbd>
 
 ## Combine layers
 
-We group layers together in order to select them as one and move them together. 
+We group layers together in order to be able to select and move them as one. 
 
 Select layers, then <kbd>Option</kbd>+<kbd>Command</kbd>+<kbd>U</kbd> (for _Union_).
 
