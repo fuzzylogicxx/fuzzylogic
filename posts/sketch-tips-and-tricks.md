@@ -29,9 +29,9 @@ Zoom out, centred on artboard: <kbd>Escape</kbd> then <kbd>Cmd</kbd>+<kbd>2</kbd
 
 Insert text element: <kbd>T</kbd>.
 
-On the right:
+Then control it on the right:
 - Change typeface
-- Adjust text size using the _size_ field (on the right). 
+- Adjust text size using the _size_ field. 
 - Adjust text size by decimal increments: press <kbd>Option</kbd> while adjusting the size.
 
 ## Add Rulers
