@@ -25,7 +25,7 @@ Zoom in on current object to 100% screen size: <kbd>Command</kbd>+<kbd>0</kbd>.
 
 Zoom out, centred on artboard: <kbd>Escape</kbd> then <kbd>Command</kbd>+<kbd>2</kbd> then <kbd>Command</kbd>+<kbd>0</kbd>.
 
-## Text
+## Adding Text
 
 Insert text element: <kbd>T</kbd>.
 
