@@ -17,4 +17,18 @@ The initial _canvas_ is infinite so we need a fixed frame (representing a device
 
 ## Zooming and centring
 
-Centre the screen on the element we’re working on: <kbd>Cmd</kbd>+<kbd>2</kbd>.
+Pinch trackpad for manual zoom.
+
+Centre screen on element we’re working on: <kbd>Cmd</kbd>+<kbd>2</kbd>.
+
+Make current object full-size (zoomed 100%): <kbd>Cmd</kbd>+<kbd>0</kbd>.
+
+Zoom out, centred, on artboard: <kbd>Escape</kbd> then <kbd>Cmd</kbd>+<kbd>2</kbd> then <kbd>Cmd</kbd>+<kbd>0</kbd>.
+
+## Text
+
+<kbd>T</kbd> to insert text.
+
+Adjust text size using the _size_ field (on the right). 
+
+Adjust text size by decimal increments: press <kbd>Option</kbd> while adjusting the size.
