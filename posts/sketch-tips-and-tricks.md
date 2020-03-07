@@ -4,7 +4,7 @@ description: Useful Sketch commands for my reference and yours
 date: "2019-06-23T16:58:08.051Z"
 tags: [design, sketch, cheatsheet]
 ---
-I’ve used Sketch for a few years, following the lead of my designer colleagues who gravitated to it from Photoshop. But my level has been pretty basic, as a web developer pretty much just inspecting and grabbing things from other peoples’ designs. Now though, I’ve decided to up my game so and get a bit more creative myself. As I learn the ropes, here’s a list of useful Sketch actions and commands for my reference and yours.
+I’ve used Sketch for a few years, following the lead of my designer colleagues who gravitated to it from Photoshop. But my level has been pretty basic, as a web developer pretty much just inspecting and grabbing things from other folks’ designs. Now, though, I’ve decided to up my game and get more creative. As I learn the ropes, here’s a list of useful Sketch tips for my reference and yours.
 ---
 
 ## Getting started
