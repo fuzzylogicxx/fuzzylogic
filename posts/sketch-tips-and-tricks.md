@@ -27,7 +27,7 @@ Zoom out, centred, on artboard: <kbd>Escape</kbd> then <kbd>Cmd</kbd>+<kbd>2</kb
 
 ## Text
 
-<kbd>T</kbd> to insert text.
+Insert text element: <kbd>T</kbd>.
 
 Adjust text size using the _size_ field (on the right). 
 
