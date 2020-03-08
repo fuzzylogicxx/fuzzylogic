@@ -1,6 +1,6 @@
 ---
 title: "Storm Music: February 2020 Records"
-description: My vinyl haul in February 2020
+description: Staving of S.A.D. like it ain’t no thang
 date: 2020-03-08 09:30:00
 tags:
   - entry
@@ -45,7 +45,7 @@ Amidst the rocky parts, February also provided a couple of nice moments. On a vi
 
 ## Bibio – Ribbons (LP)
 
-Okay, I’m late with this one – it was released in April ‘19 – but who cares. _Ribbons_ has been a Spotify staple of my morning commute for some time; its pastoral vibes setting the perfect laid-back mood before a day writing code. Eventually I liked it so much that I needed a physical copy! The vibe is pretty folky and in places you can imagine being at a live jam session in your favourite traditional pub. Stephen Wilkinson is a fantastic musician with a lovely voice but if all this is sounding too _nice_ then rest assured that, being on Warp Records, it’s served with a generous side-helping of analogue synths and quirky electronics to steer things left of centre.
+Okay, I’m late with this one – it was released in April ‘19 – but who cares. _Ribbons_ has been a Spotify staple of my morning commute for some time; its pastoral vibes setting the perfect laid-back mood before a day writing code. Eventually I had to own a physical copy. The vibe is pretty folky and in places you can imagine being at a live jam session in your favourite traditional pub. Stephen Wilkinson is a fantastic musician with a lovely voice but if all this is sounding too _nice_ then rest assured that, being on Warp Records, it’s served with a generous side-helping of analogue synths and quirky electronics to steer things left of centre.
 
 <b>Current Favourite Track:</b> Curls
 
@@ -85,7 +85,7 @@ Sydney–born, Melbourne–based producer Samantha Poulter aka Logic1000 is a ne
 
 ## Perko – The City Rings
 
-I loved Glaswegian Perko’s first release, NV Auto; its blend of dubbed out synth chords juxtaposed with deep sub-bass and hard broken-electro beats really hitting the spot. His latest release, also on [Numbers](http://nmbrs.net/), ploughs a similar furrow. It spans 8 tracks in which he at times ratchets up the BPMs even further into Drum and Bass territory whilst also offering respite in the form of some lovely ambient interludes.
+I loved Glaswegian Perko’s first release, NV Auto; its blend of dubbed out synth chords juxtaposed with deep sub-bass and hard broken-electro beats really hitting the spot. His latest release, also on [Numbers](http://nmbrs.net/), ploughs a similar furrow. It spans 8 tracks including moments when he ratchets up the BPMs further still into Drum ‘n’ Bass territory and others offering respite in the form of delicate ambient interludes.
 
 <b>Current Favourite Track:</b> Stutter
 
