@@ -1,6 +1,6 @@
 ---
 title: "Storm Music: February 2020 Records"
-description: Staving of S.A.D. like it ain’t no thang
+description: Staving off S.A.D. like it ain’t no thang
 date: 2020-03-08 09:30:00
 tags:
   - entry
