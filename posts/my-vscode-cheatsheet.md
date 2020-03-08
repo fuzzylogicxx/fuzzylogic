@@ -1,8 +1,8 @@
 ---
 title: My VS Code Cheatsheet
 description: Useful VS Code tips and tricks for my reference and yours
-date: "2020-01-24T09:58:08.051Z"
-tags: [development, git, cheatsheet]
+date: "2020-02-24T09:58:08.051Z"
+tags: [development, editor, cheatsheet]
 draft: true
 ---
 Blah
@@ -13,3 +13,12 @@ edit multiple rows simultaneously
 
 Alt–click on a file in the Explorer.
 Open file to the side (side editing)
+
+## Heading
+
+Do a thing:
+
+``` bash
+command
+```
+

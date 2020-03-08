@@ -6,7 +6,7 @@ tags: [note, glasgow, family, violence, shipyards, greenock, play]
 location: Glasgow
 ---
 
-Every time I watch nostalgic TV documentaries about Scottish films I see _Just a Boys’ Game_ and _Just Another Saturday_ – both written by Peter McDougall – come up. I just watched _Just a Boys’ Game_ ([available on Google Play](https://play.google.com/store/tv/show?id=_bzLqTe-WRBxrpWy_fmy_A&cdid=tvseason-qaN9iaVu8JDd3aM-jtghkg&gdid=tvepisode-1zSwUxBSlf8)) and loved it. A gritty story with refreshingly great acting which really captures the finer points and nuances of the social and economical mood of life in Glasgow at the time.
+Every time I watch nostalgic TV documentaries about Scottish films I see _Just a Boys’ Game_ and _Just Another Saturday_ – both written by Peter McDougall – come up. I just watched _Just a Boys’ Game_ ([available on Google Play](https://play.google.com/store/tv/show?id=_bzLqTe-WRBxrpWy_fmy_A&cdid=tvseason-qaN9iaVu8JDd3aM-jtghkg&gdid=tvepisode-1zSwUxBSlf8)) and loved it. A gritty story with refreshingly good acting which really captures the finer points of the social and economic mood in Glasgow at the time.
 
 <div class="aspect-ratio-wide">
   <iframe title="Clip of TV programme “Just a Boys’ Game”" loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/WsVYudrpriI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
