@@ -109,7 +109,7 @@ This is the dub remix version of the Texas band’s second LP, _Con Todo El Mond
 
 ## Lo Kindre – Chlorophytum
 
-This has been on my wants list for an age but every time I tried to get a copy last year, I couldn’t find one. I’m not sure if the original release was maybe delayed? Fortunately on a recent visit to Rubadub (all too infrequent these days which I mean to rectify) the guys hooked me up. This is on the slow, low and out-there electronic tip with little Kraftwekian influences in amongst the haze of dub. Apparently it’s also from the south side of Glasgow so if I ever see this dude in the Allison Arms I should jolly well like to buy him a pint. Lovely sleeve art too.
+This has been on my wants list for an age but every time I tried to get a copy last year, I couldn’t find one. I’m not sure if the original release was maybe delayed? Fortunately on a recent visit to Rubadub (all too infrequent these days which I mean to rectify) the guys hooked me up. This is on the slow, low and out-there electronic tip with little Kraftwerkian influences in amongst the haze of dub. Apparently it’s also from the south side of Glasgow so if I ever see this dude in the Allison Arms I should jolly well like to buy him a pint. Lovely sleeve art too.
 
 <div class="aspect-ratio-wide">
   <iframe title="Lo Kindre – I Don’t Really" loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/iN9I3TPG12w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
