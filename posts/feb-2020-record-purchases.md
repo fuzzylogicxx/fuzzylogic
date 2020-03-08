@@ -85,7 +85,7 @@ Sydney–born, Melbourne–based producer Samantha Poulter aka Logic1000 is a ne
 
 ## Perko – The City Rings
 
-I loved Glaswegian Perko’s first release, _NV Auto_; its blend of dubbed out synth chords, deep sub-bass and hard broken-electro beats really hitting the spot. His latest release, also on [Numbers](http://nmbrs.net/), ploughs a similar furrow. It spans 8 tracks including moments when he ratchets up the BPMs into Drum ‘n’ Bass territory and others offering respite in the form of delicate ambient interludes.
+I loved Glaswegian Perko’s first release, _NV Auto_; its blend of dubbed out synth chords, deep sub-bass and tough broken-electro beats really hitting the spot. His latest release, also on [Numbers](http://nmbrs.net/), ploughs a similar furrow. It spans 8 tracks including moments when he ratchets up the BPMs into Drum ‘n’ Bass territory and others offering respite in the form of delicate ambient interludes.
 
 <b>Current Favourite Track:</b> Stutter
 
