@@ -3,6 +3,7 @@ title: My Codepen Cheatsheet
 description: Useful Codepen tricks for my reference and yours
 date: "2020-02-24T20:52:08.051Z"
 tags: [development, git, cheatsheet]
+draft: true
 ---
 I’m finding Codepen to be more and more valuable for not only playing with code and testing out ideas, but also – when working on large applications – as a time-saving rapid prototyping step that sidesteps backend concerns. Here are some tips which I’ve found useful, for future reference.
 ---
