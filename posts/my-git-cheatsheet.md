@@ -17,7 +17,7 @@ Configure your favourite editor to be used for commit messages:
 git config --global core.editor "nano"
 ```
 
-Use `git st` as a shortcut for `git status` to stop me mistyping as ”statsu”:
+Use `git st` as a shortcut for `git status` (to stop me mistyping as “statsu”):
 
 ``` bash
 git config --global alias.st status
