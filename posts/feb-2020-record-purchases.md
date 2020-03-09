@@ -62,12 +62,11 @@ Who knew there was a reggae version of The Gap Band’s early eighties classic, 
 
 > Quite simply, "outstanding" reggae funk fusion! My mam's toyboy, Gavin, likes to play this one after I have gone to bed, when he smokes his special pipe full of jazzy cabbage.
 
+<b>Current Favourite Track:</b> Outstanding
+
 <div class="aspect-ratio-wide">
   <iframe title="Al Charles – Outstanding" loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/ZQIkpRWjREU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
-
-<b>Current Favourite Track:</b> Outstanding
-
 
 [Grab a copy at Rubadub](https://www.rubadub.co.uk/records/outstanding)
 
@@ -99,11 +98,11 @@ I loved Glaswegian Perko’s first release, _NV Auto_; its blend of dubbed out s
 
 This is the dub remix version of the Texas band’s second LP, _Con Todo El Mondo_. Released in 2019, I don’t know why I didn’t pick it up sooner given that I love Khruangbin and I love dub, except perhaps that records ain’t cheap and I wasn’t sure a remix LP constituted an essential purchase. However, after a few months of blissful headphone listening I realised the error of my ways. The band’s sound lends itself perfectly to this treatment and the addition of two mixes by legendary engineer Scientist seals the deal. Also – check this band live if you ever get the chance. I did [a couple of years back](https://www.theskinny.co.uk/music/live-music/reviews/khruangbin-cca-glasgow-4-feb) and they were amazing.
 
+<b>Current Favourite Track:</b> Four of Five
+
 <div class="aspect-ratio-wide">
   <iframe title="Khruangbin – Four of Five" loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/i2keZMh7x9w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
-
-<b>Current Favourite Track:</b> Four of Five
 
 [Grab a copy on Bandcamp](https://khruangbin.bandcamp.com/album/hasta-el-cielo-con-todo-el-mundo-in-dub-excluding-n-s-america)
 
@@ -111,10 +110,10 @@ This is the dub remix version of the Texas band’s second LP, _Con Todo El Mond
 
 This has been on my wants list for an age but every time I tried to get a copy last year, I couldn’t find one. I’m not sure if the original release was maybe delayed? Fortunately on a recent visit to Rubadub (all too infrequent these days which I mean to rectify) the guys hooked me up. This is on the slow, low and out-there electronic tip with little Kraftwerkian influences in amongst the haze of dub. Apparently it’s also from the south side of Glasgow so if I ever see this dude in the Allison Arms I should jolly well like to buy him a pint. Lovely sleeve art too.
 
+<b>Current Favourite Track:</b> I Don’t Really
+
 <div class="aspect-ratio-wide">
   <iframe title="Lo Kindre – I Don’t Really" loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/iN9I3TPG12w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
-
-<b>Current Favourite Track:</b> I Don’t Really
 
 [Grab a copy at Rubadub](https://www.rubadub.co.uk/records/chlorophytum)
