@@ -72,7 +72,7 @@ Who knew there was a reggae version of The Gap Band’s early eighties classic, 
 
 ## Logic1000 – Logic1000
 
-Sydney–born, Melbourne–based producer Samantha Poulter aka Logic1000 is a new name to me. Her sound is a spacey, percussive blend of hip-hop, Bass, Dancehall and House, with all sorts of other interesting samples and influences thrown into the pot. Lots of great stuff on here.
+Sydney–born, Melbourne–based producer Samantha Poulter aka Logic1000 is a new name on me. Her sound is a spacey, percussive blend of hip-hop, Bass, Dancehall and House, with all sorts of other interesting samples and influences thrown into the pot. Lots of great stuff on here.
 
 <b>Current Favourite Track:</b> Na feat. DJ Plead
 
