@@ -58,7 +58,7 @@ Okay, I’m late with this one – it was released in April ‘19 – but who ca
 
 ## Al Charles – Outstanding
 
-Who knew there was a reggae version of The Gap Band’s early eighties classic, _Outstanding_? Not me, anyway. This has been lovingly reissued by Edinburgh’s Athens of the North and features a great squelchy bassline, shimmering synths and that killer, catchy song. All this plus great dub sensibilities which really shine halfway through. At this point I’ll hand over to Discogs legend [midnightrunner](https://www.discogs.com/user/midnightrunner)’s review which puts it much better than I ever could:
+Who knew there was a reggae version of The Gap Band’s early eighties classic, _Outstanding_? Not me, anyway. This has been lovingly reissued by Edinburgh’s Athens of the North and features a great squelchy bassline, shimmering synths, dub FX and that killer, hooky vocal. And now I’ll hand over to Discogs legend [midnightrunner](https://www.discogs.com/user/midnightrunner) whose review puts it much better than I ever could:
 
 > Quite simply, "outstanding" reggae funk fusion! My mam's toyboy, Gavin, likes to play this one after I have gone to bed, when he smokes his special pipe full of jazzy cabbage.
 
