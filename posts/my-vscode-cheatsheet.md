@@ -3,7 +3,6 @@ title: My VS Code Cheatsheet
 description: Useful VS Code tips and tricks for my reference and yours
 date: "2020-02-24T09:58:08.051Z"
 tags: [development, editor, cheatsheet]
-draft: true
 ---
 Here’s a list of useful (Mac-based) VS Code tips for my reference and yours.
 ---
