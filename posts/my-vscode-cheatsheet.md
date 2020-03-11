@@ -5,20 +5,17 @@ date: "2020-02-24T09:58:08.051Z"
 tags: [development, editor, cheatsheet]
 draft: true
 ---
-Blah
+Here’s a list of useful (Mac-based) VS Code tips for my reference and yours.
 ---
 
-Command-D
-edit multiple rows simultaneously
+## Toggle sidebar visibility
 
-Alt–click on a file in the Explorer.
-Open file to the side (side editing)
+<kbd>Command-B</kbd>
 
-## Heading
+## Edit multiple rows simultaneously
 
-Do a thing:
+<kbd>Command-D</kbd>
 
-``` bash
-command
-```
+## Open file to side (for side-by-side editing)
 
+<kbd>Option–click</kbd> on a file in the Explorer.
