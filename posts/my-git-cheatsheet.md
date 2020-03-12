@@ -238,6 +238,12 @@ fixup 9480b3d Message for commit #2
 pick 5c67e61 Message for commit #3
 ```
 
+Undo a rebase:
+
+``` bash
+git reset --hard ORIG_HEAD
+```
+
 For more detail, read [Atlassian’s guide to rebasing](https://www.atlassian.com/git/tutorials/merging-vs-rebasing).
 
 ## Reviewing
@@ -343,5 +349,6 @@ git reset HEAD@{index}
 
 - [Tips, tutorials and Cheat Sheets from Atlassian](https://www.atlassian.com/git/tutorials/atlassian-git-cheatsheet)
 - Need to undo an old commit? Committed to master by mistake? Get out of trouble with [_Oh Shit, Git!_](https://ohshitgit.com/)
+- More getting out of trouble: [Git Flight Rules](https://github.com/k88hudson/git-flight-rules)
 - [The original Pro Git reference](https://git-scm.com/book/en/v2)
 - [_Git for Humans_](https://abookapart.com/products/git-for-humans) by David Demaree from _A List Apart_ is a great intro to the concepts and basic commands.
