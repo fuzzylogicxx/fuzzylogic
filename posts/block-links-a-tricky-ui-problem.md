@@ -1,5 +1,5 @@
 ---
-date: "2020-03-12T09:18:02+00:00"
+date: "2020-03-12T09:18:02"
 title: Block Links: A tricky UI Problem
 description: A problem to solve or just a bad idea?
 tags: [development, links, buttons]
