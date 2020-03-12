@@ -9,6 +9,8 @@ You have a card with a link or a button and it works great. But a design or UX r
 
 I’ve been thinking about this challenge a lot recently and so it seems have a lot of other people.
 
+Here are some interesting articles on the subject:
+
 Adrian Roselli: 
 [Block Links, Cards, Clickable Regions etc](https://adrianroselli.com/2020/02/block-links-cards-clickable-regions-etc.html)
 
