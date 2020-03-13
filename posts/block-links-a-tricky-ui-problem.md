@@ -28,7 +28,7 @@ Here are some interesting articles on the subject:
 Adrian Roselli:
 [Block Links, Cards, Clickable Regions etc](https://adrianroselli.com/2020/02/block-links-cards-clickable-regions-etc.html)
 
-Heydon Pickering:
+Heydon Pickering (in _Inclusive Components_):
 [Cards](https://inclusive-components.design/cards/)
 
 Chris Coyier:
