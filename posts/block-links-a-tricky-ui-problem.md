@@ -17,6 +17,7 @@ I recently implemented a tailored version of Heydon Pickering’s _Redundant Cli
 
 Here’s the thing – since the dawn of HTML5 we’ve been able to wrap the inline anchor (`<a>`) element around block-level content such as headings, paragraphs, and `<div>`s, so isn’t the solution as easy as just doing that?
 
+<div>
 ``` html
 <a href="/">
   <h2>Card Title</h2>
@@ -24,6 +25,7 @@ Here’s the thing – since the dawn of HTML5 we’ve been able to wrap the inl
   <p>This is the body copy for the card. It it is comprised of a few sentences.</p>
 </a>
 ```
+</div>
 
 ### Stuffing everything inside the anchor
 
