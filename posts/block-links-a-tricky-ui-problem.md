@@ -37,7 +37,7 @@ Some might say that this is OK. Personally I feel that it is a fundamental usabi
 
 If we’re still determined to make the full card clickable, there’s one further option. 
 
-## The Redundant Click Trick
+### The Redundant Click Trick
 
 This technique, conceived by Heydon Pickering, uses JavaScript rather than CSS to make the card clickable.
 
