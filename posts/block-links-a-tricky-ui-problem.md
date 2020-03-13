@@ -28,7 +28,7 @@ I’ve been thinking about this challenge a lot recently and so, it seems, have 
 
 ## TL;DR
 
-I was recently faced with this challenge while building a component at work and chose to implement a tailored version of Heydon Pickering’s _Redundant Click Trick_ , because I felt like it’s the best approach, or perhaps more accurately the lesser of three evils. I’m going to monitor how that performs, but following my R&D I’ve also started politely suggesting to colleagues that – like Chris Coyier argues – [maybe full-card clickable regions are a bad idea](https://css-tricks.com/block-links-are-a-pain-and-maybe-just-a-bad-idea/).
+I was recently faced with this challenge while building a component at work and chose to implement a tailored version of Heydon Pickering’s _Redundant Click Trick_, because I felt like it’s the best approach, or perhaps more accurately the lesser of three evils. I’m going to monitor how that performs, but following my R&D I’ve also started politely suggesting to colleagues that – like Chris Coyier argues – [maybe full-card clickable regions are a bad idea](https://css-tricks.com/block-links-are-a-pain-and-maybe-just-a-bad-idea/).
 
 ## The Background
 
