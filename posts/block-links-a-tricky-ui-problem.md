@@ -35,15 +35,30 @@ The problem with this approach is that any text in the card is no longer selecta
 
 Some might say that this is OK. Personally I feel that it is a fundamental usability requirement that text on a web page be selectable. Not being able to do so calls to mind the bad old days before web fonts where we used images for headings, and I like to think we’ve evolved from those kind of practices. Also, I feel any statement by us developers and designers that “losing the ability to select text is acceptable” lacks validity because we are _biased_; happy to justify taking away something fundamental from our users, potentially confusing and frustrating them, in a blind desire to get a non-essential feature over the line.
 
+If we’re still determined to make the full card clickable, there’s one further option. 
+
+## The Redundant Click Trick
+
+This technique, conceived by Heydon Pickering, uses JavaScript rather than CSS to make the card clickable.
+
+Essentially we add an `EventListener` for a click on the Card and when one is detected, trigger a faux click on the actual anchor or button. 
+
+One challenge inherent in this approach is that a user attempting to select text would trigger a link click, however we can again use JavaScript to detect the length of their press to infer whether they are selecting text or clicking.
+
+The pros of this approach are that we avoid the screen reader problems and the inability to select text. 
+
+The cons are that it requires a more complicated, JavaScript-based approach, and that the need for a “check how long the mouse has been pressed down” part isn’t ideal.
+
+With this approach, if Analytics tracking is part of the mix I’d be keen to check that it works across browsers and devices as expected.
+
+## Summing up
+
+So there we go – three ways to achieve a “block link” or button. But given the compromises they involve, perhaps the question should be – is it worth it? And given the tools we currently have available think I lean towards “no”.
+
 ## References
 
-Here are some interesting articles on the subject:
+[Block Links, Cards, Clickable Regions etc](https://adrianroselli.com/2020/02/block-links-cards-clickable-regions-etc.html) by Adrian Roselli.
 
-Adrian Roselli:
-[Block Links, Cards, Clickable Regions etc](https://adrianroselli.com/2020/02/block-links-cards-clickable-regions-etc.html)
+[Cards](https://inclusive-components.design/cards/) by Heydon Pickering (in _Inclusive Components_).
 
-Heydon Pickering (in _Inclusive Components_):
-[Cards](https://inclusive-components.design/cards/)
-
-Chris Coyier:
-[Block Links are a pain and maybe just a bad idea](https://css-tricks.com/block-links-are-a-pain-and-maybe-just-a-bad-idea/)
+[Block Links are a pain and maybe just a bad idea](https://css-tricks.com/block-links-are-a-pain-and-maybe-just-a-bad-idea/) by Chris Coyier on CSS-Tricks.
