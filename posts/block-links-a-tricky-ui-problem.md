@@ -17,7 +17,7 @@ I’ve just implemented a tailored version of Heydon Pickering’s _Redundant Cl
 
 Here’s the thing – since the dawn of HTML5 we’ve been able to wrap the inline anchor (`<a>`) element around block-level content such as headings, paragraphs, and `<div>`, so isn’t it as easy as that? 
 
-Well, as with many HTML challenges, just because you _can_ do something doesn’t mean you should. I always had a nagging doubt about stuffing all that disparate content inside a single link, and Adrian Roselli has recently confirmed that for screen reader users this approach is harmful.
+Well, as with many HTML challenges, just because you _can_ do something doesn’t mean you should. I always had a nagging doubt about stuffing all that disparate content inside a single anchor, and Adrian Roselli has recently confirmed that for screen reader users this approach is harmful.
 
 > Perhaps the worst thing you can do for a block link is to wrap everything in the `<a href>`… for a screen reader user the entire string is read when tabbing through controls… without declaring (the image) as an image… taking about 25 seconds to read before announcing it as a link.
 
