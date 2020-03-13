@@ -53,7 +53,7 @@ With this approach, if Analytics tracking is part of your mix I’d make sure to
 
 ## Summing up
 
-So there we go – three ways to achieve a “block link” or button. But given the compromises they involve, perhaps the question should be – is it worth it? And given the tools we currently have available think I lean towards “no”.
+So there we go – three ways to achieve a “block link” or button. But given the compromises they involve, perhaps the question should be – is it worth it? And given the tools we currently have available, I lean towards “no”.
 
 ## References
 
