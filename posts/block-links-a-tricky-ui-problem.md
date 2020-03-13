@@ -49,7 +49,7 @@ The pros of this approach are that we avoid the screen reader problems and the i
 
 The cons are that it requires a more complicated, JavaScript-based approach, and that the need for a “check how long the mouse has been pressed down” part isn’t ideal.
 
-With this approach, if Analytics tracking is part of the mix I’d be keen to check that it works across browsers and devices as expected.
+With this approach, if Analytics tracking is part of your mix I’d be keen to check that it works as expected across browsers and devices.
 
 ## Summing up
 
