@@ -1,10 +1,10 @@
 ---
 date: "2020-03-12T09:18:02"
 title: "Block Links: A tricky UI Problem"
-description: A problem to solve or just a bad idea?
+description: "A problem to solve or just a bad idea?"
 tags: [development, links, buttons]
 ---
-You have a card with a link or a button and it works great. But a design or UX requirement arrives from elsewhere in your team that the full card (not just the button or the link) should be clickable.  This is where it gets gnarly.
+You have a card with a link or a button and it works great. But a design or UX requirement arrives from elsewhere in your team that the full card (not just the button or the link) should be clickable. This is where things get complicated.
 ---
 
 I’ve been thinking about this challenge a lot recently and so it seems have a lot of other people.
