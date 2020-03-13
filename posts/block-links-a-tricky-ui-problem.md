@@ -41,7 +41,7 @@ If we’re still determined to make the full card clickable, there’s one furth
 
 This technique, conceived by Heydon Pickering, uses JavaScript rather than CSS to make the card clickable.
 
-Essentially we add an `EventListener` for a click on the Card and when one is detected, trigger a faux click on the actual anchor or button. 
+Essentially we add an `EventListener` for a click on the Card and when one is detected, trigger a faux click on the inner anchor or button. 
 
 One challenge inherent in this approach is that a user attempting to select text would trigger a link click, however we can again use JavaScript to detect the length of their press to infer whether they are selecting text or clicking.
 
