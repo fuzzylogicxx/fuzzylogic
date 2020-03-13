@@ -15,9 +15,9 @@ I recently implemented a tailored version of Heydon Pickering’s _Redundant Cli
 
 ## The Background
 
-Here’s the thing – since the dawn of HTML5 we’ve been able to wrap the inline anchor (`<a>`) element around block-level content such as headings, paragraphs, and `<div>`, so isn’t it as easy as that?
+Here’s the thing – since the dawn of HTML5 we’ve been able to wrap the inline anchor (`<a>`) element around block-level content such as headings, paragraphs, and `<div>`, so isn’t the solution as easy as just doing that?
 
-### Everything inside the anchor
+### Stuffing everything inside the anchor
 
 Well, as with many HTML challenges, just because you _can_ do something doesn’t mean you should. I always had a nagging doubt about stuffing all that disparate content inside a single anchor, and Adrian Roselli has recently confirmed that for screen reader users this approach is harmful.
 
