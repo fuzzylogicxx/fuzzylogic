@@ -21,7 +21,7 @@ Here’s the thing – since the dawn of HTML5 we’ve been able to wrap the inl
 
 Well, as with many HTML challenges, just because you _can_ do something doesn’t mean you should. I always had a nagging doubt about stuffing all that disparate content inside a single anchor, and Adrian Roselli has recently confirmed that for screen reader users this approach is harmful.
 
-> Perhaps the worst thing you can do for a block link is to wrap everything in the `<a href>`… for a screen reader user the entire string is read when tabbing through controls… without declaring (the image) as an image… taking about 25 seconds to read before announcing it as a link.
+> Perhaps the worst thing you can do for a block link is to wrap everything in the `<a href>`… for a screen reader user the entire string is read when tabbing through controls… taking about 25 seconds to read before announcing it as a link.
 
 So if you care about the user experience for those people, this feels like a no-no. 
 
