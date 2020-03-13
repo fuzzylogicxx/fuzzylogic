@@ -21,9 +21,11 @@ Here’s the thing – since the dawn of HTML5 we’ve been able to wrap the inl
   
 ``` html
 <a href="/">
-  <h2>Card Title</h2>
-  <img src="/path/to/img.jpg" />
-  <p>This is the body copy for the card. It it is comprised of a few sentences.</p>
+  <div class="card">
+    <h2>Card Title</h2>
+    <img src="/path/to/img.jpg" />
+    <p>This is the body copy for the card. It it is comprised of a few sentences.</p>
+  </div>
 </a>
 ```
 
