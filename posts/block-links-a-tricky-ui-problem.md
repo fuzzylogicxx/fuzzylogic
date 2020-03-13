@@ -1,6 +1,6 @@
 ---
 date: "2020-03-12T09:18:02"
-title: Block Links: A tricky UI Problem
+title: "Block Links: A tricky UI Problem"
 description: A problem to solve or just a bad idea?
 tags: [development, links, buttons]
 ---
@@ -11,11 +11,11 @@ I’ve been thinking about this challenge a lot recently and so it seems have a 
 
 Here are some interesting articles on the subject:
 
-Adrian Roselli: 
+Adrian Roselli:
 [Block Links, Cards, Clickable Regions etc](https://adrianroselli.com/2020/02/block-links-cards-clickable-regions-etc.html)
 
-Heydon Pickering: 
+Heydon Pickering:
 [Cards](https://inclusive-components.design/cards/)
 
-Chris Coyier: 
+Chris Coyier:
 [Block Links are a pain and maybe just a bad idea](https://css-tricks.com/block-links-are-a-pain-and-maybe-just-a-bad-idea/)
