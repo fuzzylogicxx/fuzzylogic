@@ -11,7 +11,7 @@ I’ve been thinking about this challenge a lot recently and so, it seems, have 
 
 ## TL;DR
 
-I’ve just implemented a tailored version of Heydon Pickering’s “redundant click trick” technique for a component at work, because I felt like it’s the best approach, or perhaps more accurately the lesser of three evils. I’m going to monitor how that performs, but I’ve also started politely making the case to others on the team that – like Chris Coyier argues – [maybe full-card clickable regions and a bad idea](https://css-tricks.com/block-links-are-a-pain-and-maybe-just-a-bad-idea/).
+I’ve just implemented a tailored version of Heydon Pickering’s _Redundant Click Trick_ on a component at work, because I felt like it’s the best approach, or perhaps more accurately the lesser of three evils. I’m going to monitor how that performs, but I’ve also started politely making the case to others on the team that – like Chris Coyier argues – [maybe full-card clickable regions and a bad idea](https://css-tricks.com/block-links-are-a-pain-and-maybe-just-a-bad-idea/).
 
 ## The Background
 
