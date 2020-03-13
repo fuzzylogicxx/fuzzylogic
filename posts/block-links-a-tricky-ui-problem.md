@@ -15,7 +15,7 @@ I recently implemented a tailored version of Heydon Pickering’s _Redundant Cli
 
 ## The Background
 
-Here’s the thing – since the dawn of HTML5 we’ve been able to wrap the inline anchor (`<a>`) element around block-level content such as headings, paragraphs, and `<div>`, so isn’t the solution as easy as just doing that?
+Here’s the thing – since the dawn of HTML5 we’ve been able to wrap the inline anchor (`<a>`) element around block-level content such as headings, paragraphs, and `<div>`s, so isn’t the solution as easy as just doing that?
 
 ### Stuffing everything inside the anchor
 
