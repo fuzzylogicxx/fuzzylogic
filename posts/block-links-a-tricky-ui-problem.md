@@ -4,7 +4,7 @@ title: "Block Links: A tricky UI Problem"
 description: "A problem to solve or just a bad idea?"
 tags: [development, design, links, buttons, a11y]
 ---
-You have a “card” component which includes some text content, an image, and a link or button, and it’s working great. Then along comes a design or UX requirement that the _full card_ (not just the button or link) should be clickable. This is where things get complicated.
+You have a “card” component which includes a heading, some body content, an image, and a link which takes you to the full article, and it’s working great. Then along comes a design or UX requirement that the _full card_ (not just the button or link) should be clickable. This is where things get complicated.
 ---
 
 I’ve been thinking about this challenge a lot recently and so, it seems, have many others.
@@ -16,6 +16,14 @@ I recently implemented a tailored version of Heydon Pickering’s _Redundant Cli
 ## The Background
 
 Here’s the thing – since the dawn of HTML5 we’ve been able to wrap the inline anchor (`<a>`) element around block-level content such as headings, paragraphs, and `<div>`s, so isn’t the solution as easy as just doing that?
+
+``` html
+<a href="/">
+  <h2>Card Title</h2>
+  <img src="/path/to/img.jpg" />
+  <p>This is the body copy for the card. It it is comprised of a few sentences.</p>
+</a>
+```
 
 ### Stuffing everything inside the anchor
 
