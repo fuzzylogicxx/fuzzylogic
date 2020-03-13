@@ -7,11 +7,28 @@ tags: [development, design, links, buttons, a11y]
 You have a “card” component which includes a heading, some body content, an image, and a link which takes you to the full article, and it’s working great. Then along comes a design or UX requirement that the _full card_ (not just the button or link) should be clickable. This is where things get complicated.
 ---
 
+So our starting HTML is this:
+
+<div>
+  
+``` html
+<div class="card">
+  <h2>Card Title</h2>
+  <img src="/path/to/img.jpg" />
+  <p>This is the body copy for the card. It it is comprised of a few sentences.</p>
+  <a href="/">Read more</a>
+</div>
+```
+
+</div>
+
+And we have been asked to make the whole card clickable, rather than just the “Read more” link.
+
 I’ve been thinking about this challenge a lot recently and so, it seems, have many others.
 
 ## TL;DR
 
-I recently implemented a tailored version of Heydon Pickering’s _Redundant Click Trick_ on a component at work, because I felt like it’s the best approach, or perhaps more accurately the lesser of three evils. I’m going to monitor how that performs, but I’ve also started politely pointing out that – like Chris Coyier argues – [maybe full-card clickable regions are a bad idea](https://css-tricks.com/block-links-are-a-pain-and-maybe-just-a-bad-idea/).
+I was recently faced with this challenge while building a component at work and chose to implement a tailored version of Heydon Pickering’s _Redundant Click Trick_ , because I felt like it’s the best approach, or perhaps more accurately the lesser of three evils. I’m going to monitor how that performs, but following my R&D I’ve also started politely suggesting to colleagues that – like Chris Coyier argues – [maybe full-card clickable regions are a bad idea](https://css-tricks.com/block-links-are-a-pain-and-maybe-just-a-bad-idea/).
 
 ## The Background
 
