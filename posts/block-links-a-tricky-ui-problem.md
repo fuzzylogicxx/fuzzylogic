@@ -9,7 +9,7 @@ You have a “card” component which includes a heading, some body content, an 
 
 So our starting HTML is this:
 
-<div>
+<figure>
   
 ``` html
 <div class="card">
@@ -20,7 +20,7 @@ So our starting HTML is this:
 </div>
 ```
 
-</div>
+</figure>
 
 And we have been asked to make the whole card clickable, rather than just the “Read more” link.
 
@@ -28,13 +28,13 @@ I’ve been thinking about this challenge a lot recently and so, it seems, have 
 
 ## TL;DR
 
-I was recently faced with this challenge while building a component at work and opted to implement a tailored version of Heydon Pickering’s _Redundant Click Trick_. This felt like the best approach, or perhaps more accurately “the lesser of three evils”. I’ll be monitoring how that performs, but in light of the R&D carried out during the task I’ve also started politely suggesting to colleagues that – like Chris Coyier argues – [maybe full-card clickable regions are a bad idea](https://css-tricks.com/block-links-are-a-pain-and-maybe-just-a-bad-idea/).
+I was recently faced with this challenge while building a component at work and opted to implement a tailored version of Heydon Pickering’s _Redundant Click Trick_. This felt like the best approach, or perhaps more accurately “the lesser of three evils”. I’ll be monitoring how that performs, but in light of the R&D carried out during the task I’ve also started politely suggesting to colleagues that – [like Chris Coyier recently suggested](https://css-tricks.com/block-links-are-a-pain-and-maybe-just-a-bad-idea/) – maybe full-card clickable regions are a bad idea.
 
 ## The Background
 
-Here’s the thing – since the dawn of HTML5 we’ve been able to wrap the inline anchor (`<a>`) element around block-level content such as headings, paragraphs, and `<div>`s, so isn’t the solution as easy as just doing that?
+Here’s the thing – since the dawn of HTML5 we’ve been able to wrap the inline anchor (`<a>`) element around block-level content such as headings, paragraphs, and `<div>`s… so isn’t the solution as easy as just doing that?
 
-<div>
+<figure>
   
 ``` html
 <a href="/">
@@ -46,7 +46,7 @@ Here’s the thing – since the dawn of HTML5 we’ve been able to wrap the inl
 </a>
 ```
 
-</div>
+</figure>
 
 ### Stuffing everything inside the anchor
 
