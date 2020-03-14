@@ -66,7 +66,7 @@ The problem with this approach is that any text in the card is no longer selecta
 
 Some might say that this is OK. Personally I feel that it is a fundamental usability requirement that text on a web page be selectable. Not being able to do so calls to mind the bad old days before web fonts where we used images for headings, and I like to think we’ve evolved from those kind of practices. Also, I feel any statement by us developers and designers that “losing the ability to select text is OK” lacks validity because we are _biased_; happy to justify taking away something fundamental from our users because we’re more concerned with getting a (frankly non-essential) feature over the line.
 
-If we’re still determined to make the full card clickable, there’s one further option. 
+If we don’t like this compromise but are still determined to make the full card clickable, there’s one further option. 
 
 ### The Redundant Click Trick
 
