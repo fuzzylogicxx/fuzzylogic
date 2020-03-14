@@ -24,8 +24,6 @@ So our starting HTML is this:
 
 And we have been asked to make the whole card clickable, rather than just the “Read more” link.
 
-I’ve been thinking about this challenge a lot recently and so, it seems, have many others.
-
 ## TL;DR
 
 I was recently faced with this challenge while building a component at work and opted to implement a tailored version of Heydon Pickering’s _Redundant Click Trick_. This felt like the best approach, or perhaps more accurately “the lesser of three evils”. I’ll be monitoring how that performs, but in light of the R&D carried out during the task I’ve also started politely suggesting to colleagues that – [like Chris Coyier recently suggested](https://css-tricks.com/block-links-are-a-pain-and-maybe-just-a-bad-idea/) – maybe full-card clickable regions are a bad idea.
