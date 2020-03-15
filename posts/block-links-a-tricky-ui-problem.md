@@ -72,11 +72,11 @@ This technique, conceived by Heydon Pickering, uses JavaScript rather than CSS t
 
 Essentially we add an `EventListener` for a click on the Card and when one is detected, trigger a faux click on the inner anchor or button. 
 
-One challenge inherent in this approach is that a user attempting to select text would trigger a link click, however we can again use JavaScript to detect the length of their press to infer whether they are selecting text or clicking.
+One challenge inherent in this approach is that a user attempting to select text would unintentionally trigger our faux link click. However we can again use JavaScript (using the `onmousedown` and `onmouseup` events) to detect the length of their press to infer whether they are selecting text or clicking, then take appropriate action.
 
 The pros of this approach are that we avoid the screen reader problems and the inability to select text. 
 
-The cons are that it requires a more complicated, JavaScript-based approach, and that the need for a “check how long the mouse has been pressed down” part isn’t ideal.
+The cons are i) that it requires a more complicated, JavaScript-based approach; and ii) that the need for a “check how long the mouse has been pressed down” part isn’t ideal.
 
 With this approach, if Analytics tracking is part of your mix I’d make sure to check that that works as expected across browsers and devices.
 
