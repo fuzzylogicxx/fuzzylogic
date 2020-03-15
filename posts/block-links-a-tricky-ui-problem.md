@@ -7,7 +7,13 @@ tags: [development, design, links, buttons, a11y]
 You have a “card” component which includes a heading, some text, an image, and a link to the full article, and it’s working great. Then along comes a design or UX requirement that the _full card_ (not just the button or link) should be clickable. This is where things get complicated.
 ---
 
-So our starting HTML is this:
+## TL;DR
+
+I was recently faced with this challenge while building a component at work and opted to implement a tailored version of Heydon Pickering’s _Redundant Click Trick_. This felt like the best approach, or perhaps more accurately “the lesser of three evils”. I’ll be monitoring how that performs, but in light of the R&D carried out during the task I’ve also started politely suggesting to colleagues that – [like Chris Coyier recently suggested](https://css-tricks.com/block-links-are-a-pain-and-maybe-just-a-bad-idea/) – maybe full-card clickable regions are a bad idea.
+
+## Setting the Scene
+
+Let’s say our starting HTML is this:
 
 <figure>
   
@@ -22,13 +28,9 @@ So our starting HTML is this:
 
 </figure>
 
-And we have been asked to make the whole card clickable, rather than just the “Read more” link.
+And the requirement we’ve been given is to make the whole card clickable rather than just the “Read more” link.
 
-## TL;DR
-
-I was recently faced with this challenge while building a component at work and opted to implement a tailored version of Heydon Pickering’s _Redundant Click Trick_. This felt like the best approach, or perhaps more accurately “the lesser of three evils”. I’ll be monitoring how that performs, but in light of the R&D carried out during the task I’ve also started politely suggesting to colleagues that – [like Chris Coyier recently suggested](https://css-tricks.com/block-links-are-a-pain-and-maybe-just-a-bad-idea/) – maybe full-card clickable regions are a bad idea.
-
-## The Background
+## Stuffing everything inside the anchor
 
 Here’s the thing – since the dawn of HTML5 we’ve been able to wrap the inline anchor (`<a>`) element around block-level content such as headings, paragraphs, and `<div>`s… so isn’t the solution as easy as just doing that?
 
@@ -45,8 +47,6 @@ Here’s the thing – since the dawn of HTML5 we’ve been able to wrap the inl
 ```
 
 </figure>
-
-### Stuffing everything inside the anchor
 
 Well, as with many HTML challenges, just because you _can_ do something doesn’t mean you should. I always had a nagging doubt about stuffing all that disparate content inside a single anchor, and Adrian Roselli has recently confirmed that for screen reader users this approach is harmful.
 
