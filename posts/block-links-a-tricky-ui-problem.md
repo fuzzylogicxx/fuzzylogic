@@ -4,12 +4,12 @@ title: "Block Links: A tricky UI Problem"
 description: "A problem to solve or just a bad idea?"
 tags: [development, design, links, buttons, a11y]
 ---
-You have a “card” component which includes a heading, some text, an image, and a link to the full article, and it’s working great. Then along comes a design or UX requirement that the _full card_ (not just the button or link) should be clickable. This is where things get complicated.
+You have a “card” component which includes a heading, some text, an image, and a link to the full article, and it’s working great. Then along comes a UX requirement that the _full card_ (not just the button or link) should be clickable. This is where things get complicated.
 ---
 
 ## TL;DR
 
-I was recently faced with this challenge while building a component at work and opted to implement a tailored version of Heydon Pickering’s _Redundant Click Trick_. This felt like the best approach, or perhaps more accurately “the lesser of three evils”. I’ll be monitoring how that performs, but in light of the knowledge and experience gained carrying out this task I’ve also started politely suggesting to colleagues that – [like Chris Coyier recently suggested](https://css-tricks.com/block-links-are-a-pain-and-maybe-just-a-bad-idea/) – maybe full-card clickable regions are a bad idea.
+I was recently faced with this challenge while building a component at work and opted to implement a tailored version of Heydon Pickering’s _Redundant Click Trick_. This felt like the best approach, or perhaps more accurately “the lesser of three evils”. I’ll be monitoring how that performs, but in light of the knowledge and experience gained carrying out this task I’ve also started politely suggesting that – [like Chris Coyier recently suggested](https://css-tricks.com/block-links-are-a-pain-and-maybe-just-a-bad-idea/) – maybe full-card clickable regions are a bad idea.
 
 ## Setting the Scene
 
@@ -30,9 +30,9 @@ Let’s say our starting HTML is this:
 
 And the requirement we’ve been given is to make the whole card clickable rather than just the “Read more” link.
 
-## Stuffing everything inside the anchor
+## Option 1: Stuff everything inside an anchor
 
-Here’s the thing – since the dawn of HTML5 we’ve been able to wrap the inline anchor (`<a>`) element around block-level content such as headings, paragraphs, and `<div>`s… so isn’t the solution as easy as just doing that?
+Here’s the thing – since the dawn of HTML5 we’ve been able to wrap the inline anchor (`<a>`) element around block-level content such as headings, paragraphs, and `<div>`s… so isn’t the answer just to do that?
 
 <figure>
   
@@ -48,15 +48,15 @@ Here’s the thing – since the dawn of HTML5 we’ve been able to wrap the inl
 
 </figure>
 
-Well, as with many HTML challenges, just because you _can_ do something doesn’t mean you should. I always had a nagging doubt about stuffing all that disparate content inside a single anchor, and Adrian Roselli has recently confirmed that for screen reader users this approach is harmful.
+Well, as with many HTML challenges, just because you _can_ do something doesn’t mean you should. I always had a nagging doubt about stuffing all that disparate content inside a single anchor, and [Adrian Roselli has recently confirmed](https://adrianroselli.com/2020/02/block-links-cards-clickable-regions-etc.html) that for screen reader users this approach is harmful.
 
 > Perhaps the worst thing you can do for a block link is to wrap everything in the `<a href>`… for a screen reader user the entire string is read when tabbing through controls… taking about 25 seconds to read before announcing it as a link.
 
-Furthermore, images nested in this way are not announced as they normally would be.
+Furthermore, images nested in this way are not clearly announced as they normally would be.
 
 So if you care about the user experience for those people, this feels like a no-no. 
 
-### Stretching the anchor with pseudo-content
+### Option 2: Stretch a standard anchor using pseudo-content
 
 An alternate approach that’s gained traction over the last couple of years involves leaving the anchor or button in its initial position _within_ the card (thereby avoiding the above mentioned accessibility problem) and using pseudo-content to stretch it to cover the entire card. This CSS-only trick involves setting the card to `position:relative` then giving the anchor (or button) `:after` pseudo-content and absolutely positioning that to the card’s four corners. This makes the whole card clickable like a button.
 
@@ -66,7 +66,7 @@ Some might say that this is OK. Personally I feel that it is a fundamental usabi
 
 If we don’t like this compromise but are still determined to make the full card clickable, there’s one further option. 
 
-### The Redundant Click Trick
+### Option 3: The Redundant Click Trick
 
 This technique, conceived by Heydon Pickering, uses JavaScript rather than CSS to make the card clickable.
 
