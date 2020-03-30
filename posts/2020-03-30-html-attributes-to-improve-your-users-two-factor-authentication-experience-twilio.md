@@ -8,4 +8,4 @@ linkTarget: "https://www.twilio.com/blog/html-attributes-two-factor-authenticati
 > In this post we have seen that with just a sprinkling of HTML attributes we can improve the login experience for our users, particularly on mobile devices.
 ---
 
-By adding certain attributes to the HTML input element â such as `inputmode`, `pattern` and `autocomplete="current-password"` we can improve the user experience when logging in.
+By adding certain attributes to the HTML `input` element – such as `inputmode`, `pattern` and `autocomplete="current-password"` – we can improve the user experience when logging in.
