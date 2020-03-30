@@ -6,5 +6,5 @@ tags: [link, performance, css, animation]
 linkTarget: "https://csstriggers.com/"
 ---
 Check whether or not a CSS property is a good candidate for smooth animation based on whether updates to its value trigger expensive changes (to, for example, “element geometry”) causing layout updates and repaints.
-
+---
 `width` and `height` are both poor candidates whereas `transform` is good.
