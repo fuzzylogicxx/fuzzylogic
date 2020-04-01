@@ -14,40 +14,58 @@ Note: the following is not an exhaustive list but rather the Git commands I keep
 Configure your favourite editor to be used for commit messages:
 
 <figure>
+  
 ``` bash
 git config --global core.editor "nano"
 ```
+
 </figure>
 
 Use `git st` as a shortcut for `git status` (to stop me mistyping as “statsu”):
 
+<figure>
+  
 ``` bash
 git config --global alias.st status
 ```
 
 Configure any setting:
 
+<figure>
+  
 ``` bash
 git config [--global] <key> <value>
 ```
 
+</figure>
+  
 ## Start work on a repo
 
 In Github, create a new repo or find an existing repo and grab its URL. Next, `clone` it from the command line:
 
+<figure>
+  
 ``` bash
 cd projects
 git clone https://github.com/fuzzylogicxx/myproject.git optionaldirname
 ```
 
+</figure>
+  
 This will set up that Github repo as your default `remote`. By default your changes would be contributed/pushed to that repo. However if you’re just looking to use it as a starting point for your own, separate project, then you should remove its git history and tracking and start your own.
 
+<figure>
+  
 ``` bash
 rm -rf .git
 git init
 ```
 
+</figure>
+  
 Alternatively, you might have begun by working locally before creating the repo in Github:
+
+<figure>  
 
 ``` bash
 mkdir myproject && cd myproject
@@ -65,22 +83,34 @@ git remote add origin https://github.com/fuzzylogicxx/myproject.git
 git push -u origin master
 ```
 
+</figure>
+  
 ## Remotes
 
 Remove a remote from your local settings:
 
+<figure>
+  
 ``` bash
 git remote rm <name>
 ```
 
+</figure>
+  
 Rename a remote:
 
+<figure>
+  
 ``` bash
 git remote rename oldname newname
 ```
 
+</figure>
+  
 ## Staging, unstaging and deleting files
 
+<figure>
+  
 ``` bash
 # stage all unstaged files
 git add .
@@ -89,8 +119,12 @@ git add .
 git add filename.txt
 ```
 
+</figure>
+  
 Unstage with `reset` (the opposite of `git add`):
 
+<figure>
+  
 ``` bash
 # unstage all staged files
 git reset .
@@ -99,66 +133,106 @@ git reset .
 git reset filename.txt
 ```
 
+</figure>
+  
 Delete a physical file and stage the deletion for the next commit:
 
+<figure>
+  
 ``` bash
 git rm folder/filename.txt
 ```
 
+</figure>
+  
 ## Committing updates
 
 Commit with [a multi-line message](https://thoughtbot.com/blog/5-useful-tips-for-a-better-commit-message):
 
+<figure>
+  
 ``` bash
 git commit
 ```
 
+</figure>
+  
 Commit with short message:
 
+<figure>
+  
 ``` bash
 git commit -m "fix: typo in heading"
 ```
 
+</figure>
+  
 Stage and commit all changes in a single command (note: doesn’t work with new, untracked files):
 
+<figure>
+  
 ``` bash
 git commit -am "fix: typo in heading"
 ```
 
+</figure>
+  
 ## Branches
 
 Show all local branches:
 
+<figure>
+  
 ``` bash
 git branch
 ```
 
+</figure>
+  
 Show all local _and remote_ branches:
 
+<figure>
+  
 ``` bash
 git branch -a
 ```
 
+</figure>
+  
 Save current state to new branch but don’t yet switch to it (useful after committing to wrong branch):
 
+<figure>
+  
 ``` bash
 git branch newbranchname
 ```
 
+</figure>
+  
 Create and switch to new branch:
 
+<figure>
+  
 ``` bash
 git checkout -b mynewbranch
 ```
 
+</figure>
+  
 Switch to an existing branch:
 
+<figure>
+  
 ``` bash
 git checkout branchname
 ```
 
+</figure>
+  
 Save typing by setting the upstream remote branch for your local branch:
 
+<figure>
+  
 ``` bash
 # git branch -u remotename/branchname
 git branch -u fuzzylogic/v3
@@ -167,10 +241,16 @@ git branch -u fuzzylogic/v3
 git pull
 ```
 
+</figure>
+  
 ## Staying current and compatible
 
+
+  
 `fetch` remote branch and `merge` simultaneously:
 
+<figure>
+  
 ``` bash
 git pull remotename branchname
 
@@ -187,8 +267,12 @@ git remote update --prune
 git reset --hard origin/master
 ```
 
+</figure>
+
 Merge another branch (e.g. master) into current branch:
 
+<figure>
+  
 ``` bash
 git merge otherbranch
 
@@ -196,6 +280,8 @@ git merge otherbranch
 git merge master
 ```
 
+</figure>
+  
 ### Rebasing
 
 `git rebase` can be used as:
@@ -214,6 +300,8 @@ While it’s a good idea to `rebase` _before_ making a <abbr title="Pull Request
 
 Rebuild your feature branch’s changes on top of master:
 
+<figure>
+  
 ``` bash
 git checkout master
 git pull origin master
@@ -221,14 +309,22 @@ git checkout myfeaturebranch
 git rebase master
 ```
 
+</figure>
+  
 Force push your rebased branch (again, only when you’re unlikely to have/require collaborators on the PR):
 
+<figure>
+  
 ``` bash
 git push --force origin myfeaturebranch
 ```
 
+</figure>
+  
 Tidy a feature branch before making a PR:
 
+<figure>
+  
 ``` bash
 git checkout myfeaturebranch
 git rebase -i master
@@ -247,18 +343,26 @@ fixup 9480b3d Message for commit #2
 pick 5c67e61 Message for commit #3
 ```
 
+</figure>
+  
 Undo a rebase:
 
+<figure>
+  
 ``` bash
 git reset --hard ORIG_HEAD
 ```
 
+</figure>
+  
 For more detail, read [Atlassian’s guide to rebasing](https://www.atlassian.com/git/tutorials/merging-vs-rebasing).
 
 ## Reviewing
 
 Show commit history (most recent first; `q` to quit):
 
+<figure>
+  
 ``` bash
 git log
 
@@ -269,8 +373,12 @@ git log --oneline
 git log branchname
 ```
 
+</figure>
+  
 Check if your feature branch is trailing behind:
 
+<figure>
+  
 ``` bash
 # show commits in master that are not yet in my feature branch
 git log --oneline my-feature..master
@@ -282,29 +390,44 @@ git log --pretty='format:%h - %an: %s' new-homepage..origin/new-homepage
 git log --author=Demaree --grep=heroku --oneline Gemfile
 ```
 
+</figure>
+  
 Review differences between staged changes and last commit:
 
+<figure>
+  
 ``` bash
 git diff --cached
 ```
 
+</figure>
+  
 Review changes between a given version/commit and the latest:
 
+<figure>
+  
 ``` bash
 git diff 591672e..master
 ```
 
+</figure>
 
 ## Fixing Things
 
 Undo all the changes in a given commit:
 
+<figure>
+  
 ``` bash
 git revert 591672e
 ```
 
+</figure>
+  
 Alter the previous commit (change the message and/or include further updates):
 
+<figure>
+  
 ``` bash
 # we are amending the previous commit rather than creating a new commit.
 # if file changes are staged, it amends previous commit to include those.
@@ -312,8 +435,12 @@ Alter the previous commit (change the message and/or include further updates):
 git commit --amend
 ```
 
+</figure>
+  
 Move current branch tip backward to a given commit, reset the staging area to match, but leave the working directory alone:
 
+<figure>
+  
 ``` bash
 git reset 591672e
 
@@ -321,16 +448,24 @@ git reset 591672e
 git reset --hard 591672e
 ```
 
+</figure>
+  
 See what the app/site was like (e.g. whether things worked or were broken) at a given previous commit, noting the following:
 - You’re now “detatched”, in that your computer’s HEAD is pointing at a commit rather than a branch.
 - You’re expected to merely review, not to make commits. Any commits you make would be “homeless”, since commits are supposed to go in branches. (However you could then branch off.)
 
+<figure>
+  
 ``` bash
 git checkout 591672e
 ```
 
+</figure>
+  
 Grab one or more commits from elsewhere and drop into your current branch:
 
+<figure>
+  
 ``` bash
 git cherry-pick 591672e
 
@@ -338,8 +473,12 @@ git cherry-pick 591672e
 git cherry-pick master
 ```
 
+</figure>
+  
 Fix a pull that went wrong / shouldn’t have been done:
 
+<figure>
+  
 ``` bash
 git pull origin branchname
 # whoops!
@@ -353,6 +492,8 @@ git reflog
 git reset HEAD@{index}
 # magic time machine
 ```
+
+</figure>
 
 ## Useful external resources
 
