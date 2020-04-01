@@ -34,8 +34,8 @@ git config [--global] <key> <value>
 In Github, create a new repo or find an existing repo and grab its URL. Next, `clone` it from the command line:
 
 ``` bash
-cd mycodedir
-git clone https://github.com/fuzzylogicxx/myproj.git optionaldirname
+cd projects
+git clone https://github.com/fuzzylogicxx/myproject.git optionaldirname
 ```
 
 This will set up that Github repo as your default `remote`. By default your changes would be contributed/pushed to that repo. However if you’re just looking to use it as a starting point for your own, separate project, then you should remove its git history and tracking and start your own.
@@ -48,7 +48,7 @@ git init
 Alternatively, you might have begun by working locally before creating the repo in Github:
 
 ``` bash
-mkdir myproj && cd myproj
+mkdir myproject && cd myproject
 echo "# Welcome to My Project Repo" >> README.md
 git init
 git add README.md
@@ -56,7 +56,7 @@ git commit -m "first commit"
 
 # when ready, go to Github and create empty repo.
 # then add as a remote
-git remote add origin https://github.com/fuzzylogicxx/myproj.git
+git remote add origin https://github.com/fuzzylogicxx/myproject.git
 
 # push up, passing -u to set the remote branch as the default upstream branch our local branch will track
 # this saves typing out ‘origin master’ repeatedly in future.
