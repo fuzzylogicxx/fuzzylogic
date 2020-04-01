@@ -29,6 +29,8 @@ Use `git st` as a shortcut for `git status` (to stop me mistyping as â€œstatsuâ€
 git config --global alias.st status
 ```
 
+</figure>
+
 Configure any setting:
 
 <figure>
