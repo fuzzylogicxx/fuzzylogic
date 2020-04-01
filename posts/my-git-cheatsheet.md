@@ -13,9 +13,11 @@ Note: the following is not an exhaustive list but rather the Git commands I keep
 
 Configure your favourite editor to be used for commit messages:
 
+<figure>
 ``` bash
 git config --global core.editor "nano"
 ```
+</figure>
 
 Use `git st` as a shortcut for `git status` (to stop me mistyping as “statsu”):
 
