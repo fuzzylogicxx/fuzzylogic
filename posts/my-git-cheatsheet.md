@@ -9,38 +9,6 @@ I’ve used Git for many years but it still trips me up. At times I’ve worked 
 
 Note: the following is not an exhaustive list but rather the Git commands I keep coming back to and/or regularly forget. For deeper explanations, see the list of resources at the foot of the article.
 
-## Configuration
-
-Configure your favourite editor to be used for commit messages:
-
-<figure>
-  
-``` bash
-git config --global core.editor "nano"
-```
-
-</figure>
-
-Use `git st` as a shortcut for `git status` (to stop me mistyping as “statsu”):
-
-<figure>
-  
-``` bash
-git config --global alias.st status
-```
-
-</figure>
-
-Configure any setting:
-
-<figure>
-  
-``` bash
-git config [--global] <key> <value>
-```
-
-</figure>
-  
 ## Start work on a repo
 
 In Github, create a new repo or find an existing repo and grab its URL. Next, `clone` it from the command line:
@@ -109,6 +77,38 @@ git remote rename oldname newname
 
 </figure>
   
+## Configuration
+
+Configure your favourite editor to be used for commit messages:
+
+<figure>
+  
+``` bash
+git config --global core.editor "nano"
+```
+
+</figure>
+
+Use `git st` as a shortcut for `git status` (to stop me mistyping as “statsu”):
+
+<figure>
+  
+``` bash
+git config --global alias.st status
+```
+
+</figure>
+
+Configure any setting:
+
+<figure>
+  
+``` bash
+git config [--global] <key> <value>
+```
+
+</figure>
+
 ## Staging, unstaging and deleting files
 
 <figure>
