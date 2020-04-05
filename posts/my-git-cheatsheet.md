@@ -88,7 +88,7 @@ git pull upstream master
 
 </figure>
 
-#### The source repo is my fork of an open source repo to which I want to contribute
+#### The source repo is my fork of a project to which I want to contribute
 
 See [Working with forks](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/working-with-forks) for how best to stay in sync and open PRs.
 
