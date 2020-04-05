@@ -9,31 +9,33 @@ I’ve used Git for many years but it still trips me up. At times I’ve worked 
 
 Note: the following is not an exhaustive list but rather the Git commands I keep coming back to and/or regularly forget. For deeper explanations, see the list of resources at the foot of the article.
 
-## Start work on a repo
+## Create a remotely-hosted repo
 
-In Github, create a new repo or find an existing repo and grab its URL. Next, `clone` it from the command line:
+### Option 1: Create a new repo in your own account 
 
-<figure>
-  
-``` bash
-cd projects
-git clone https://github.com/fuzzylogicxx/myproject.git optionaldirname
-```
+This generates a new, empty repo (optionally initialised with a README). 
 
-</figure>
-  
-This will set up that Github repo as your default `remote`. By default your changes would be contributed/pushed to that repo. However if you’re just looking to use it as a starting point for your own, separate project, then you should remove its git history and tracking and start your own.
+Do this when you will be working on a new, dedicated project rather than contributing changes to a pre-existing one.
 
-<figure>
-  
-``` bash
-rm -rf .git
-git init
-```
+### Option 2: Create repo from a “template repository” (owned by you or someone else)
 
-</figure>
-  
-Alternatively, you might have begun by working locally before creating the repo in Github:
+This generates a new repo with the same directory structure and files as the template. It’s a good option for starting your own new, potentially long-lived project from a solid starting point.
+
+Unlike a fork it does not include the entire commit history of the parent repository. Instead it starts with a single commit.
+
+Github Reference: [Creating a repository from a template](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template)
+
+### Option 3: Fork an existing repo (usually owned by someone else)
+
+This generates a new repo which is a copy of another repo, including its commit history. Your commits will update your copy rather than the original repo. 
+
+Do it by clicking the Fork button in the header of a repository.
+
+This is good for (often short-lived) collaboration on an existing repo. You can contribute code to someone else’s project, via PRs. (Note: while working you can also pull in changes from the OG branch via PRs.)
+   
+Github Reference: [Working with forks](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/working-with-forks)
+
+## Starting locally from a blank slate
 
 <figure>  
 
@@ -44,9 +46,9 @@ git init
 git add README.md
 git commit -m "first commit"
 
-# when ready, go to Github and create empty repo.
+# go to Github and create an empty repo, if you haven’t already.
 # then add as a remote
-git remote add origin https://github.com/fuzzylogicxx/myproject.git
+git remote add origin https://github.com/mygitusername/myproject.git
 
 # push up, passing -u to set the remote branch as the default upstream branch our local branch will track
 # this saves typing out ‘origin master’ repeatedly in future.
@@ -54,6 +56,70 @@ git push -u origin master
 ```
 
 </figure>
+
+
+## Cloning
+
+As an alternative to starting from scratch locally, you might start by cloning.
+
+`clone` creates a _local copy_ on your computer of a remote (Github-hosted) repo.
+
+<figure>
+  
+``` bash
+cd projects
+git clone https://github.com/githubusername/projectname.git optionallocaldirectoryname
+```
+
+</figure>
+
+You might be cloning a repo you own, or one owned by someone else (to use its features in your project).
+
+Your local copy will, by default, have its `origin` remote set to the Github repo you cloned. 
+
+### I cloned an empty new project
+
+Easy-peasy – the default `origin` remote is set exactly as you want it. Just write code, `push` at your leisure, and `pull` if/when you need to.
+
+### I cloned a pre-existing project (owned by me or someone else):
+
+#### I plan to use it in my own, separate project
+
+You might want to cut all ties and have a clean slate, git-wise.
+  
+<figure>
+  
+``` bash
+rm -rf .git
+git init
+git remote add origin https://github.com/mygithubusername/mynewproject.git
+git push -u origin master
+```
+
+</figure>
+  
+Alternatively you might want to keep the original `remote` available so you can pull in its future project updates, but reset the `origin` remote to your new/target repo.
+
+<figure>
+  
+``` bash
+git remote rename origin upstream
+git remote add origin https://github.com/mygithubusername/mynewproject.git
+git push origin master
+git pull origin master
+# in the future the original repo gets an update
+git pull upstream master
+```
+
+</figure>
+
+#### The source repo is my fork of an open source repo to which I want to contribute
+
+See [Working with forks](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/working-with-forks) for how best to stay in sync and open PRs.
+
+### Duplicating (also knows as “duplicate without forking”)
+
+This is a special type of clone. I know this is an option, but it‘s not one I’m familiar with or have had call to use. I can refer to [Duplicating a repository](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/duplicating-a-repository) if need be.
   
 ## Remotes
 
