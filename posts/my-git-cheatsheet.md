@@ -29,7 +29,7 @@ Github Reference: [Creating a repository from a template](https://help.github.co
 
 This generates a new repo which is a copy of another repo, including its commit history. Your commits will update your copy rather than the original repo. 
 
-Do it by clicking the Fork button in the header of a repository.
+Do this by clicking the _Fork_ button in the header of a repository.
 
 This is good for (often short-lived) collaboration on an existing repo. You can contribute code to someone else’s project, via PRs.
    
