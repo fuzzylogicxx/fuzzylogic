@@ -35,32 +35,7 @@ This is good for (often short-lived) collaboration on an existing repo. You can 
    
 Github Reference: [Working with forks](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/working-with-forks)
 
-## Starting locally from a blank slate
-
-<figure>  
-
-``` bash
-mkdir myproject && cd myproject
-echo "# Welcome to My Project Repo" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-
-# go to Github and create an empty repo, if you haven’t already.
-# then add as a remote
-git remote add origin https://github.com/mygitusername/myproject.git
-
-# push up, passing -u to set the remote branch as the default upstream branch our local branch will track
-# this saves typing out ‘origin master’ repeatedly in future.
-git push -u origin master
-```
-
-</figure>
-
-
 ## Cloning
-
-As an alternative to starting from scratch locally, you might start by cloning.
 
 `clone` creates a _local copy_ on your computer of a remote (Github-hosted) repo.
 
@@ -121,6 +96,30 @@ See [Working with forks](https://help.github.com/en/github/collaborating-with-is
 
 This is a special type of clone. I know this is an option, but it‘s not one I’m familiar with or have had call to use. I can refer to [Duplicating a repository](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/duplicating-a-repository) if need be.
   
+## Starting locally from a blank slate
+
+Cloning is the easiest way to get started locally, but ocassionally I start by coding from a blank slate.
+
+<figure>  
+
+``` bash
+mkdir myproject && cd myproject
+echo "# Welcome to My Project Repo" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+
+# go to Github and create an empty repo, if you haven’t already.
+# then add as a remote
+git remote add origin https://github.com/mygitusername/myproject.git
+
+# push up, passing -u to set the remote branch as the default upstream branch our local branch will track
+# this saves typing out ‘origin master’ repeatedly in future.
+git push -u origin master
+```
+
+</figure>
+
 ## Remotes
 
 Remove a remote from your local settings:
