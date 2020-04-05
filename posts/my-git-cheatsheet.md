@@ -31,7 +31,7 @@ This generates a new repo which is a copy of another repo, including its commit 
 
 Do it by clicking the Fork button in the header of a repository.
 
-This is good for (often short-lived) collaboration on an existing repo. You can contribute code to someone else’s project, via PRs. (Note: while working you can also pull in changes from the OG branch via PRs.)
+This is good for (often short-lived) collaboration on an existing repo. You can contribute code to someone else’s project, via PRs.
    
 Github Reference: [Working with forks](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/working-with-forks)
 
