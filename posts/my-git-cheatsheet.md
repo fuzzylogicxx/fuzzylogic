@@ -54,7 +54,7 @@ Your local copy will, by default, have its `origin` remote set to the Github rep
 
 ### I cloned an empty new project
 
-Easy-peasy – the default `origin` remote is set exactly as you want it. Just write code, `push` at your leisure, and `pull` if/when you need to.
+We’re in easy streets. The default remote is set exactly as you want it. Just write code, `push` at your leisure, and `pull` if/when you need to.
 
 ### I cloned a pre-existing project (owned by me or someone else):
 
