@@ -10,4 +10,4 @@ linkTarget: "https://multicrosser.chriszetter.com/"
 
 _Several People are Solving_ is a lovely [React app](https://chriszetter.com/blog/2018/12/02/multiplayer-crosswords/) started from a fork of The Guardian’s _Frontend_ repo then extending [their crossword component](https://github.com/guardian/frontend/tree/3bff64c9093be3fae823eb7c1b5572d777fbf2ef/static/src/javascripts/projects/common/modules/crosswords) by introducing WebSockets to facilitate real-time collaboration.
 
-It’s updated regularly so what are you waiting for? [Get solving!](https://multicrosser.chriszetter.com/)
+The crosswords are updated regularly so what are you waiting for? [Get solving!](https://multicrosser.chriszetter.com/)
