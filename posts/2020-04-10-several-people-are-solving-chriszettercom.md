@@ -1,6 +1,6 @@
 ---
 date: "2020-04-10T15:50:43.969Z"
-title: "Several People are Solving (chriszetter.com)"
+title: "Multiplayer Crosswords – Several People are Solving (chriszetter.com)"
 description: "A lovely React app for real-time collaboration on online crossword puzzles"
 tags: [link, crosswords, game, puzzle, javascript, react, websockets]
 linkTarget: "https://multicrosser.chriszetter.com/"
