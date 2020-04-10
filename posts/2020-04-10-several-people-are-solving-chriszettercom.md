@@ -8,8 +8,8 @@ linkTarget: "https://multicrosser.chriszetter.com/"
 > I wanted there to be an easy way to complete crosswords together that didn’t need people to pass a phone back and forth or for a copy of the crossword to be made in a shared Google Spreadsheet.
 ---
 
-_Several People are Solving_ is a lovely [React app](https://github.com/zetter/react-crossword) which started as a fork of The Guardian’s _Frontend_ repo.
+_Several People are Solving_ is a lovely [React app](https://github.com/zetter/react-crossword) which started as a fork of The Guardian’s _Frontend_ repo in order to further develop their crossword component.
 
-See author [Chris Zetter’s article](https://chriszetter.com/blog/2018/12/02/multiplayer-crosswords/) on how he then extended [The Guardian‘s crossword component](https://github.com/guardian/frontend/tree/3bff64c9093be3fae823eb7c1b5572d777fbf2ef/static/src/javascripts/projects/common/modules/crosswords) by [introducing WebSockets within a Rails application](https://github.com/zetter/multicrosser) to facilitate real-time collaboration.
+See author [Chris Zetter’s article](https://chriszetter.com/blog/2018/12/02/multiplayer-crosswords/) on how he then introduced WebSockets (within a Rails application) to facilitate real-time collaboration.
 
 The crosswords are updated regularly so what are you waiting for? [Get solving!](https://multicrosser.chriszetter.com/)
