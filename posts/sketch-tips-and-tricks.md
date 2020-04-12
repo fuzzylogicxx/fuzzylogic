@@ -16,7 +16,7 @@ Here’s a list of useful (Mac-based) Sketch tips for my reference and yours.
 | Zoom in on current element to 100% of screen size | `Command`+`0`               | |
 | Zoom out, centred on artboard | `Escape` then `Command`+`2` then `Command`+`0`               | |
 | Insert text element | `t`               | |
-| Adjust text size by decimal increments | `Option` which adjust size via right-hand panel               | |
+| Adjust text size by decimal increments | Hold `Option` while adjust size via right-hand panel               | |
 
 
 
