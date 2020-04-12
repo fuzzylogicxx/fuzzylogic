@@ -12,7 +12,7 @@ I’ve used Sketch for a few years, having followed the lead of my designer coll
 The initial _canvas_ is infinite so we need a fixed frame (representing a device screen) on which to work. 
 
 | Task            |      Command      |  Notes              |
-|-----------------|-------------------|--------------------:|
+|-----------------|-------------------|---------------------|
 | Add an artboard | `a`               | or `Insert > Artboard` |
 
 From the top-right choose preset dimensions (e.g. _Desktop_) or create custom.
