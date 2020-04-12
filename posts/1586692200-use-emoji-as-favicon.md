@@ -1,9 +1,9 @@
 ---
 description: Use an emoji as a favicon
-date: 2020-04-12T13:29:21+00:00
+date: 2020-04-12T11:50:21+00:00
 tags: [note, favicon, html, svg]
 location: Glasgow
-noteTitle: 1586694625
+noteTitle: 1586692200
 ---
 Here’s a neat trick. You can use an emoji as a favicon! I’ve written before about how to do favicons properly, but for short-lived hack project you tend to just need something quick and dirty. Chris Coyier has also shared [a nice lil’ Codepen website](https://000458870.codepen.website/) showing the technique in action.
 
