@@ -10,7 +10,7 @@ I’ve used Sketch for a few years, having followed the lead of my designer coll
 ## Commands Quick Reference
 
 | Task            |      Command      |  Notes              |
-|-----------------|-------------------|---------------------|
+|:----------------|:------------------|:--------------------|
 | Add an artboard | `a`               | or `Insert > Artboard` |
 | Centre screen on current element | `Command`+`2`               | |
 | Zoom in on current element to 100% of screen size | `Command`+`0`               | |
