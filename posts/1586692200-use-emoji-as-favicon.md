@@ -5,7 +5,7 @@ tags: [note, favicon, html, svg]
 location: Glasgow
 noteTitle: 1586692200
 ---
-Here’s a neat trick. You can use an emoji as a favicon! I’ve written previously about how to do favicons properly, but for short-lived hack projects you tend to just need something quick and dirty. Chris Coyier has also shared [a nice lil’ Codepen website](https://000458870.codepen.website/) showing the technique in action.
+Here’s a neat trick. You can use an emoji as a favicon! I’ve written previously about how to do favicons properly, but for a short-lived hack project you tend to just need something quick and dirty. Chris Coyier has also shared [a nice lil’ Codepen website](https://000458870.codepen.website/) showing the technique in action.
 
 <figure>
 
