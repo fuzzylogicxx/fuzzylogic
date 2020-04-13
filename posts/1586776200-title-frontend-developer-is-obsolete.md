@@ -5,7 +5,7 @@ tags: [note, frontend, skills, community, web, development, javascript]
 location: Glasgow
 noteTitle: 1586776200
 ---
-I have to reluctanctly agree on this one. I’ve interviewed quite a few candidates for “front-end developer” (or similar) over recent years and the recurring pattern is that they are strong on JavaScript (though not necessarily the right time to use it) and weak on HTML, CSS and the “bigger picture”.
+I have to reluctanctly agree on this one. I’ve interviewed quite a few candidates for “front-end developer” (or similarly named) positions over recent years and the recurring pattern is that they are strong on JavaScript (though not necessarily the right time to use it) and weak on HTML, CSS and the “bigger picture”.
 
 <figure>
 
