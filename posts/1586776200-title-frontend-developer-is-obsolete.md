@@ -1,7 +1,7 @@
 ---
 description: Benjamin de Cock of Stripe reckons the term Frontend Developer is obsolete 
 date: 2020-04-13T11:10:21+00:00
-tags: [note, frontend, skills, community, web, development]
+tags: [note, frontend, skills, community, web, development, javascript]
 location: Glasgow
 noteTitle: 1586776200
 ---
