@@ -13,7 +13,7 @@ In my ongoing quest to catch up on books I should have read years ago, I recentl
 
 {% if app.environment == "prod" %}
 <figure>
-  {% respimg "" + mainImage.url + "", "" + mainImage.alt + "", "(min-width: 48em) 48em, 100vw" %}
+  {% respimg "" + mainImage.url + "", "" + mainImage.alt + "", "(min-width: 1600px) 646px, (min-width: 700px) 612px, 91.58vw" %}
   <figcaption>{{ mainImage.figcaption }}</figcaption>
 </figure>
 {% endif %}

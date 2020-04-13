@@ -34,7 +34,7 @@
       {% if post.data.mainImage.url and (app.environment == "prod") %}
       <figure>
       {%- if post.data.mainImage.isAnchor %}<a href="{{ post.url | url }}">{%- endif %}
-      {% respimg "" + post.data.mainImage.url + "", "" + post.data.mainImage.alt + "", "(min-width: 48em) 48em, 100vw", post.data.mainImage.aspectRatioWidth, post.data.mainImage.aspectRatioHeight %}
+      {% respimg "" + post.data.mainImage.url + "", "" + post.data.mainImage.alt + "", "(min-width: 1600px) 646px, (min-width: 700px) 612px, 91.58vw", post.data.mainImage.aspectRatioWidth, post.data.mainImage.aspectRatioHeight %}
       {%- if post.data.mainImage.isAnchor %}</a>{%- endif %}
       {%- if post.data.mainImage.figcaption %}<figcaption>{{ post.data.mainImage.figcaption }}</figcaption>{%- endif %}
       </figure>

@@ -10,7 +10,7 @@ I’ll tell you wot – that woz a propa’ poolside page-turner and no mistake.
 
 {% if app.environment == "prod" %}
 <figure>
-  {% respimg "https://res.cloudinary.com/fuzzylogic/image/upload/v1577820760/7613D088-D977-4551-ABAF-CC43637E44E4_znpbi4.jpg", "Laurence with a copy of “Harry’s Kebabs” by Russ Forman", "(min-width: 48em) 48em, 100vw" %}
+  {% respimg "https://res.cloudinary.com/fuzzylogic/image/upload/v1577820760/7613D088-D977-4551-ABAF-CC43637E44E4_znpbi4.jpg", "Laurence with a copy of “Harry’s Kebabs” by Russ Forman", "(min-width: 1600px) 646px, (min-width: 700px) 612px, 91.58vw" %}
   <figcaption>Me with my copy of “Harry’s Kebabs” by DJ Dribbler</figcaption>
 </figure>
 {% endif %}

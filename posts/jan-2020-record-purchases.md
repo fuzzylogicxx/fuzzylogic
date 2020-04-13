@@ -19,7 +19,7 @@ openGraphImage: "https://res.cloudinary.com/fuzzylogic/image/upload/q_95,f_auto,
 
 ---
 <figure>
-  {% respimg "" + mainImage.url + "", "" + mainImage.alt + "", "(min-width: 48em) 48em, 100vw", 320, mainImage.aspectRatioHeight %}
+  {% respimg "" + mainImage.url + "", "" + mainImage.alt + "", "(min-width: 1600px) 646px, (min-width: 700px) 612px, 91.58vw", 320, mainImage.aspectRatioHeight %}
 </figure>
 
 Last month’s vinyl haul included brand new music, a couple of great releases I’d missed in 2019, and some killer reissues.

@@ -10,7 +10,7 @@ Original 1979 copies of Garden of Eden’s _Everybody’s on a Trip_ regularly s
 
 {% if app.environment == "prod" %}
 <figure>
-  {% respimg "https://res.cloudinary.com/fuzzylogic/image/upload/v1571416676/83F1E10C-7525-4574-8E80-49989103A25A_et3f0f.jpg", "A photo of the 7″ record “Everybody’s on a Trip” by Garden of Eden on Backatcha records", "(min-width: 48em) 48em, 100vw" %}
+  {% respimg "https://res.cloudinary.com/fuzzylogic/image/upload/v1571416676/83F1E10C-7525-4574-8E80-49989103A25A_et3f0f.jpg", "A photo of the 7″ record “Everybody’s on a Trip” by Garden of Eden on Backatcha records", "(min-width: 1600px) 646px, (min-width: 700px) 612px, 91.58vw" %}
   <figcaption>My copy of “Everybody’s on a Trip” by Garden of Eden</figcaption>
 </figure>
 {% endif %}
