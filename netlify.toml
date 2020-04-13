@@ -5,6 +5,7 @@
 
 [build.environment]
     NODE_VERSION = "10.15"
+    TZ = "Europe/London"
 
 # Redirect old blog URLs to new Journal URLs
 
@@ -12,7 +13,7 @@
   from = "/thoughts/current-reading-1984-by-george-orwell"
   to = "/posts/1984-by-george-orwell/"
   status = 301
-  
+
 [[redirects]]
   from = "/thoughts/flexible-tag-style-collections-and-pages-for-non-tag-key-in-eleventy/"
   to = "/posts/flexible-tag-like-functionality-for-custom-keys-in-eleventy/"
