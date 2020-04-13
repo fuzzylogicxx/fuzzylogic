@@ -19,7 +19,7 @@ openGraphImage: "https://res.cloudinary.com/fuzzylogic/image/upload/q_auto,f_aut
 
 ---
 <figure>
-  {% respimg "" + mainImage.url + "", "" + mainImage.alt + "", "(min-width: 48em) 48em, 100vw", 320, mainImage.aspectRatioHeight %}
+  {% respimg "" + mainImage.url + "", "" + mainImage.alt + "", "(min-width: 1600px) 646px, (min-width: 700px) 612px, 91.58vw", 320, mainImage.aspectRatioHeight %}
 </figure>
 
 February ‘20 proved to be a challenging month on a number of fronts. As if storms [Ciara](https://www.bbc.co.uk/news/uk-51436720) and [Dennis](https://youtu.be/XoPiZEmttwg) weren’t enough to contend with, life chucked in some additional turbulence just for good measure.
