@@ -5,7 +5,7 @@ description: "A brilliant discussion between Gerry McGovern and Jeremy Keith on 
 tags: [link, performance, a11y, podcast, javascript, progressiveenhancement]
 linkTarget: "https://www.thisishcd.com/episodes/world-wide-waste-with-gerry-mcgovern/jeremy-keith-weve-ruined-the-web-heres-how-we-fix-it/"
 ---
-During the COVID situation, people have an urgent need to access critical information online. But in 2020, the average webpage is rammed full of large JavaScript files, huge images etc, and as a result is slow to load. This problem is likely to be most keenly felt by those who don’t have the luxury of fast internetâ¦ potentially the same people who need access to that critical information the most. Here’s a brilliant discussion between Gerry McGovern and Jeremy Keith on that problem, suggesting tactics to help fix things such as performance budgets, introducing tactics at the design stage to mimic slow connections and other access constraints, optimising for return visits, progressive enhancement and more.
+During the COVID situation, people have an urgent need to access critical information online. But in 2020, the average webpage is rammed full of large JavaScript files, huge images etc, and as a result is slow to load. This problem is likely to be most keenly felt by those who don’t have the luxury of fast internet – potentially the same people who need access to that critical information the most. Here’s a brilliant discussion between Gerry McGovern and Jeremy Keith on that problem, suggesting tactics to help fix things such as performance budgets, introducing tactics at the design stage to mimic slow connections and other access constraints, optimising for return visits, progressive enhancement and more.
 
 ---
 
