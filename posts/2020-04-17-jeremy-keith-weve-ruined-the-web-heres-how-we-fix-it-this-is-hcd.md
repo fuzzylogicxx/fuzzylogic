@@ -1,6 +1,6 @@
 ---
 date: "2020-04-17T08:54:40.612Z"
-title: "We've ruined the Web. Here’s how we fix it (This is HCD podcast)"
+title: "We’ve ruined the Web. Here’s how we fix it (This is HCD podcast)"
 description: "A brilliant discussion between Gerry McGovern and Jeremy Keith on how to fix the problem of bloated, slow-loading web pages and digital waste in general"
 tags: [link, performance, a11y, podcast, javascript, progressiveenhancement]
 linkTarget: "https://www.thisishcd.com/episodes/world-wide-waste-with-gerry-mcgovern/jeremy-keith-weve-ruined-the-web-heres-how-we-fix-it/"
