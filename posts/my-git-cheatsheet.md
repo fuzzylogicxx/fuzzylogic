@@ -19,15 +19,18 @@ This generates a new, empty repo (optionally initialised with a README).
 Do this when you will be working on a new, dedicated project rather than contributing changes to a pre-existing one.
 </details>
 
-### Option 2: Create repo from a “template repository” (owned by you or someone else)
+<details>
+  <summary>Option 2: Create repo from a “template repository” (owned by you or someone else)</summary>
 
 This generates a new repo with the same directory structure and files as the template. It’s a good option for starting your own new, potentially long-lived project from a solid starting point.
 
 Unlike a fork it does not include the entire commit history of the parent repository. Instead it starts with a single commit.
 
 Github Reference: [Creating a repository from a template](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template)
+</details>
 
-### Option 3: Fork an existing repo (usually owned by someone else)
+<details>
+  <summary>Option 3: Fork an existing repo (usually owned by someone else)</summary>
 
 This generates a new repo which is a copy of another repo, including its commit history. Your commits will update your copy rather than the original repo. 
 
@@ -36,6 +39,7 @@ Do this by clicking the _Fork_ button in the header of a repository.
 This is good for (often short-lived) collaboration on an existing repo. You can contribute code to someone else’s project, via PRs.
    
 Github Reference: [Working with forks](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/working-with-forks)
+</details>
 
 ## Cloning
 
