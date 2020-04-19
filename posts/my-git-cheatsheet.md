@@ -43,7 +43,7 @@ This is good for (often short-lived) collaboration on an existing repo. You can 
 Github Reference: [Working with forks](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/working-with-forks)
 </details>
 
-### Cloning
+### Start locally by cloning
 
 `clone` creates a _local copy_ on your computer of a remote (Github-hosted) repo.
 
@@ -114,7 +114,7 @@ This is a special type of clone. I know this is an option, but itâ€˜s not one Iâ
   </details>
 </details>
 
-### Starting locally from a blank slate
+### Start locally from a blank slate
 
 Although cloning is the easiest way to get started locally, ocassionally I start by coding from scratch instead.
 
