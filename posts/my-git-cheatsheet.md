@@ -114,7 +114,7 @@ This is a special type of clone. I know this is an option, but itâ€˜s not one Iâ
 
 ## Starting locally from a blank slate
 
-Although cloning is the easiest way to get started locally, ocassionally I start by coding from a blank slate instead.
+Although cloning is the easiest way to get started locally, ocassionally I start by coding from scratch instead.
 
 <figure>  
 
