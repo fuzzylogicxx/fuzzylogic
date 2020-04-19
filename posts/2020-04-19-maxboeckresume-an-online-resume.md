@@ -1,7 +1,7 @@
 ---
 date: "2020-04-19T13:16:41.609Z"
 title: Online Résumé (maxboeck on Github)
-description: Lovely responsive, print-friendly r%C3%A9sum%C3%A9 template
+description: Lovely responsive, print-friendly résumé template
 tags: [link, print, resume, cv, spellcheck, netlify, 11ty]
 linkTarget: "https://github.com/maxboeck/resume"
 ---
