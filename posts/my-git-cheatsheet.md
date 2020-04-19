@@ -11,11 +11,13 @@ Note: the following is not an exhaustive list but rather the Git commands I keep
 
 ## Create a remotely-hosted repo
 
-### Option 1: Create a new repo in your own account 
+<details>
+  <summary>Option 1: Create a new repo in your own account</summary>
 
 This generates a new, empty repo (optionally initialised with a README). 
 
 Do this when you will be working on a new, dedicated project rather than contributing changes to a pre-existing one.
+</details>
 
 ### Option 2: Create repo from a “template repository” (owned by you or someone else)
 
