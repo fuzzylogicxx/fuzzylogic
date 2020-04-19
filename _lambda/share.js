@@ -43,8 +43,8 @@ const generateFileContent = data => {
 
   const frontMatter = generateFrontmatter({
     date: `"${date}"`,
-    title: `"${sanitize(title)}"`,
-    description: `"${description}"`,
+    title: encodeURIComponent(`"${sanitize(title)}"`),
+    description: encodeURIComponent(`"${description}"`),
     tags: `[link, ${additionalTags}]`,
     linkTarget: `"${url}"`
   })
