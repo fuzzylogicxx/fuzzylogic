@@ -12,7 +12,7 @@ Note: the following is not an exhaustive list but rather the Git commands I keep
 ## Create a remotely-hosted repo
 
 <details>
-  <summary>Option 1: Create a new repo in your own account</summary>
+  <summary>Option 1: Create a new repo in your Github account</summary>
 
 This generates a new, empty repo (optionally initialised with a README). 
 
@@ -58,53 +58,63 @@ You might be cloning a repo you own, or one owned by someone else (to use its fe
 
 Your local copy will, by default, have its `origin` remote set to the Github repo you cloned. 
 
-### I cloned an empty new project
+<details>
+  <summary>I cloned an empty new project</summary>
 
 We’re in easy streets. The default remote is set exactly as you want it. Just write code, `push` at your leisure, and `pull` if/when you need to.
+</details>
 
-### I cloned a pre-existing project (owned by me or someone else):
+<details>
+  <summary>I cloned a pre-existing project (owned by me or someone else):</summary>
 
-#### I plan to use it in my own, separate project
+  <details>
+    <summary>I plan to use it in my own, separate project</summary>
 
-You might want to cut all ties and have a clean slate, git-wise.
+  You might want to cut all ties and have a clean slate, git-wise.
+
+  <figure>
+
+  ``` bash
+  rm -rf .git
+  git init
+  git remote add origin https://github.com/mygithubusername/mynewproject.git
+  git push -u origin master
+  ```
+
+  </figure>
+
+  Alternatively you might want to keep the original `remote` available so you can pull in its future project updates, but reset the `origin` remote to your new/target repo.
+
+  <figure>
+
+  ``` bash
+  git remote rename origin upstream
+  git remote add origin https://github.com/mygithubusername/mynewproject.git
+  git push origin master
+  git pull origin master
+  # in the future the original repo gets an update
+  git pull upstream master
+  ```
+
+  </figure>
+  </details>
   
-<figure>
-  
-``` bash
-rm -rf .git
-git init
-git remote add origin https://github.com/mygithubusername/mynewproject.git
-git push -u origin master
-```
-
-</figure>
-  
-Alternatively you might want to keep the original `remote` available so you can pull in its future project updates, but reset the `origin` remote to your new/target repo.
-
-<figure>
-  
-``` bash
-git remote rename origin upstream
-git remote add origin https://github.com/mygithubusername/mynewproject.git
-git push origin master
-git pull origin master
-# in the future the original repo gets an update
-git pull upstream master
-```
-
-</figure>
-
-#### The source repo is my fork of a project to which I want to contribute
+  <details>
+    <summary>The source repo is my fork of a project to which I want to contribute</summary>
 
 See [Working with forks](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/working-with-forks) for how best to stay in sync and open PRs.
+  </details
 
-### Duplicating (also knows as “duplicate without forking”)
+  <details>
+    <summary>Duplicating (also knows as “duplicate without forking”)</summary>
 
 This is a special type of clone. I know this is an option, but it‘s not one I’m familiar with or have had call to use. I can refer to [Duplicating a repository](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/duplicating-a-repository) if need be.
-  
+  </details>
+</details>
+
 ## Starting locally from a blank slate
 
-Cloning is the easiest way to get started locally, but ocassionally I start by coding from a blank slate.
+Although cloning is the easiest way to get started locally, ocassionally I start by coding from a blank slate instead.
 
 <figure>  
 
