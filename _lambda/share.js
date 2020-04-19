@@ -10,14 +10,14 @@ const API_FILE_TARGET = 'https://api.github.com/repos/fuzzylogicxx/fuzzylogic/co
 const sanitize = str => {
 
   // replace endash and emdash with hyphens
-  // str = str.replace(/–/g, '-')
-  // str = str.replace(/—/g, '-')
+  str = str.replace(/–/g, '-')
+  str = str.replace(/—/g, '-')
 
   // replace double quotes and apostrophes
-  // str = str.replace(/"/g, "'")
-  // str = str.replace(/“/g, "'")
-  // str = str.replace(/”/g, "'")
-  // str = str.replace(/’/g, "'")
+  str = str.replace(/"/g, "'")
+  str = str.replace(/“/g, "'")
+  str = str.replace(/”/g, "'")
+  str = str.replace(/’/g, "'")
 
   return str.trim()
 }
@@ -44,8 +44,8 @@ const generateFileContent = data => {
 
   const frontMatter = generateFrontmatter({
     date: `"${date}"`,
-    title: encodeURIComponent(`"${sanitize(title)}"`),
-    description: encodeURIComponent(`"${description}"`),
+    title: `"${sanitize(title)}"`,
+    description: `"${description}"`,
     tags: `[link, ${additionalTags}]`,
     linkTarget: `"${url}"`
   })
