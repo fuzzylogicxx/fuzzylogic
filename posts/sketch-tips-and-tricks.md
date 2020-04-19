@@ -12,25 +12,19 @@ Here’s a list of useful (Mac-based) Sketch tips for my reference and yours.
 | Task            |      Command      |  Notes              |
 |:----------------|:------------------|:--------------------|
 | Add an artboard | `a`               | or `Insert > Artboard` |
+| Adjust text size by decimal increments | Hold `Option` while adjust size via right-hand panel               | |
 | Centre screen on current element | `Command`+`2`               | |
+| Insert text element | `t`               | |
 | Zoom in on current element to 100% of screen size | `Command`+`0`               | |
 | Zoom out, centred on artboard | `Escape` then `Command`+`2` then `Command`+`0`               | |
-| Insert text element | `t`               | |
-| Adjust text size by decimal increments | Hold `Option` while adjust size via right-hand panel               | |
-
-
-
 
 ## Key Concepts
 
-### Create an Artboard
+### Starting with an Artboard
 
 The initial _canvas_ is infinite so we need a fixed frame (representing a device screen) on which to work. 
 
-| Task            |      Command      |  Notes              |
-|-----------------|-------------------|---------------------|
-| Add an artboard | `a`               | or `Insert > Artboard` |
-
-From the top-right choose preset dimensions (e.g. _Desktop_) or create custom.
-
-Rename your layer to something appropriate for the overall task, e.g. News Article.
+Steps: 
+1. Add an artboard. 
+1. From the top-right choose preset dimensions (e.g. _Desktop_) or create custom.
+1. Rename your layer to something appropriate for the overall task, e.g. News Article.
