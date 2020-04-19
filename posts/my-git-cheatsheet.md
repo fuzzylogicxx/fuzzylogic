@@ -9,7 +9,9 @@ I’ve used Git for many years but it still trips me up. At times I’ve worked 
 
 Note: the following is not an exhaustive list but rather the thing I keep coming back to and/or regularly forget. For deeper explanations, see the list of resources at the foot of the article.
 
-## Create a remotely-hosted repo
+## Starting work
+
+### Create a remotely-hosted repo
 
 <details>
   <summary>Option 1: Create a new repo in your Github account</summary>
@@ -41,7 +43,7 @@ This is good for (often short-lived) collaboration on an existing repo. You can 
 Github Reference: [Working with forks](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/working-with-forks)
 </details>
 
-## Cloning
+### Cloning
 
 `clone` creates a _local copy_ on your computer of a remote (Github-hosted) repo.
 
@@ -112,7 +114,7 @@ This is a special type of clone. I know this is an option, but it‘s not one I�
   </details>
 </details>
 
-## Starting locally from a blank slate
+### Starting locally from a blank slate
 
 Although cloning is the easiest way to get started locally, ocassionally I start by coding from scratch instead.
 
