@@ -31,7 +31,7 @@ openGraphImage: "https://res.cloudinary.com/fuzzylogic/image/upload/q_auto,f_aut
 
 So sang D-Train on _Music_ in 1983 and never has it been more apt than during the Coronavirus situation.
 
-Here’s the bumper stack of wax that has been keeping me (mostly) sane during the lockdown.
+Let’s dive into the bumper stack of wax that has been keeping me (mostly) sane during lockdown.
 
 ## The Stance Brothers - Minor Minor
 
