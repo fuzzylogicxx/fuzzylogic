@@ -109,7 +109,7 @@ I’d urge any fans of serious electro to get on this tout suite – you won’t
 
 ## Max D - Many Any (LP)
 
-Solid LP from one half of Beautiful Swimmers, taking in house/techno cuts that evoke vintage Morgan Geist and Ferox, interspersed with hip hop influences. Shout out to my man Gav aka Other Lands at [Underground Solu’shn](https://www.undergroundsolushn.com/) for the hot tip!
+Solid LP from one half of Beautiful Swimmers, taking in house/techno cuts that evoke vintage Morgan Geist and Ferox, interspersed with hip hop influences. Big up my man Gav aka Other Lands at [Underground Solu’shn](https://www.undergroundsolushn.com/) for the hot tip!
 
 <b>Current Favourite Track:</b> Shoutout Seefeel
 
