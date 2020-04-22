@@ -23,7 +23,15 @@ openGraphImage: "https://res.cloudinary.com/fuzzylogic/image/upload/q_auto,f_aut
   {% respimg "" + mainImage.url + "", "" + mainImage.alt + "", "(min-width: 1600px) 646px, (min-width: 700px) 612px, 91.58vw", 320, mainImage.aspectRatioHeight %}
 </figure>
 
-The bumper stack of wax that has been keeping me (mostly) sane during the COVID-19 lockdown.
+<figure>
+
+> What would you do without your music?
+
+</figure>
+
+So sang D-Train on _Music_ in 1983 and never has it been more apt than during the Coronavirus situation.
+
+Here’s the bumper stack of wax that has been keeping me (mostly) sane during the lockdown.
 
 ## The Stance Brothers - Minor Minor
 
