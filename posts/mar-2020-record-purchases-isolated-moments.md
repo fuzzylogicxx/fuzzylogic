@@ -29,9 +29,11 @@ openGraphImage: "https://res.cloudinary.com/fuzzylogic/image/upload/q_auto,f_aut
 
 </figure>
 
-So sang D-Train on _Music_ in 1983 and never has it been more apt than during the Coronavirus situation.
+So sang D-Train on _Music_ in 1983 and never has the sentiment been more apt than during the current Coronavirus situation.
 
-Let’s dive into the bumper stack of wax that has been keeping me (mostly) sane during lockdown.
+Cooped up at home and deprived of face-to-face contact with our friends and family, I’ve been finding that music can really help lift the spirits.
+
+Let’s dive into the stack of wax that has been keeping me (mostly) sane during lockdown.
 
 ## The Stance Brothers - Minor Minor
 
