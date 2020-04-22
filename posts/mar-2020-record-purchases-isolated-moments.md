@@ -85,7 +85,7 @@ My favourite release to date from Parisian producer D.K. was [his stellar collab
 
 ## Various - Gazillions
 
-I try not to buy records for one track these days, but this is something special. Top cut _Lotus Turbo_ by Russian duo Formally Unknown is a hard-hitting blend of electro and bass that sounds pretty fresh to these ears. This one is screaming to be played loud.
+These days I try not to buy records for just one track, but this is something special. Top cut _Lotus Turbo_ by Russian duo Formally Unknown is a hard-hitting blend of electro and bass that sounds pretty fresh to these ears. This one is screaming to be played loud.
 
 <b>Current Favourite Track:</b> Formally Unknown – Lotus Turbo
 
