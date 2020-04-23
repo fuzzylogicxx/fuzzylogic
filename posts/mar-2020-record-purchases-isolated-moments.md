@@ -33,7 +33,7 @@ So sang D-Train on _Music_ and never has the sentiment resonated more than durin
 
 Cooped up at home and deprived of face-to-face contact with friends and family, I’ve found that music can really lift the spirits.
 
-Fortunately, the supply of great records hasn‘t stopped and there are a number of trusty online stores to keep us connected. 
+Fortunately, the supply of great records hasn’t stopped and there are a number of trusty online stores to keep us connected. 
 
 Let’s dive into the stack of wax that has been keeping me (mostly) sane during lockdown.
 
