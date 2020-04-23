@@ -99,7 +99,7 @@ These days I try not to buy records for just one track, but this is something sp
 
 ## Various - Bubble Chamber (LP)
 
-I’d urge any fans of serious electro to get on this tout suite – you won’t be disappointed. It boasts a formidable line-up, featuring tracks by Gerald Donald, The Exaltics and Plant43 to name but three. The music comes from a variety of locations and eras; we get Montreal-based Iko’s 1983 track _Approach on Tokyo_ nestling alongside new music from Detroit. Kuldaboli from Reykjavík is a new name on me but offers up the pick of the bunch. Oh, and the vinyl also comes with a 56-page booklet containing unseen and unreleased Drexciyan art by Abdul Haqq… which is nice.
+I’d urge any fans of serious electro to get on this tout suite – you won’t be disappointed. It boasts a formidable line-up, featuring tracks by Gerald Donald, The Exaltics and Plant43 to name but three. The music comes from a variety of locations and eras; we get Montreal-based Iko’s 1983 track _Approach on Tokyo_ nestling alongside new music from Detroit. Kuldaboli from Reykjavík is a new name on me but offers up the pick of the bunch. Oh, and the vinyl also comes with a 56-page booklet containing previously unseen Drexciyan art by Abdul Haqq… which is nice.
 
 <b>Favourite Track:</b> Kuldaboli – Draumur inní heilann þinn
 
