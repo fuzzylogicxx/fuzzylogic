@@ -39,7 +39,7 @@ Let’s dive into the stack of wax that has been keeping me (mostly) sane during
 
 ## The Stance Brothers - Minor Minor
 
-Here’s a pair of jazzy hip hop instrumentals on 7″ from Finland, both riffing on the bassline from Bob James’ classic Nautilus. This one was introduced to me by [Tom](https://nothinbutmagic.com/) a couple of years back and has just had a welcome repress. Fans of Marc Mac’s Visioneers project, Kenny Dope and BadBadNotGood won’t go wrong here.
+Here’s a pair of jazzy hip hop instrumentals from Finland, both riffing on the bassline from Bob James’ classic Nautilus. This 7″ was introduced to me by [Tom](https://nothinbutmagic.com/) a couple of years back and has just had a welcome repress. Fans of Marc Mac’s Visioneers project, Kenny Dope and BadBadNotGood won’t go wrong here.
 
 <b>Current Favourite Track:</b> Minor Minor
 
