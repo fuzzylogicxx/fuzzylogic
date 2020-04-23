@@ -29,9 +29,11 @@ openGraphImage: "https://res.cloudinary.com/fuzzylogic/image/upload/q_auto,f_aut
 
 </figure>
 
-So sang D-Train on _Music_ in 1983 and never has the sentiment been more apt than during the current Coronavirus situation.
+So sang D-Train on _Music_ and never has the sentiment resonated more than during the current Coronavirus situation.
 
-Cooped up at home and deprived of face-to-face contact with our friends and family, I’ve been finding that music can really help lift the spirits.
+Cooped up at home and deprived of face-to-face contact with friends and family, I’ve found that music can really lift the spirits.
+
+Fortunately, the supply of great records hasn‘t stopped and there are a number of trusty online stores to keep us connected. 
 
 Let’s dive into the stack of wax that has been keeping me (mostly) sane during lockdown.
 
