@@ -3,19 +3,22 @@ title: My Codepen Cheatsheet
 description: Useful Codepen tricks for my reference and yours
 date: "2020-02-24T20:52:08.051Z"
 tags: [development, git, cheatsheet]
-draft: true
 ---
-I’m finding Codepen to be more and more valuable for not only playing with code and testing out ideas, but also – when working on large applications – as a time-saving rapid prototyping step that sidesteps backend concerns. Here are some tips which I’ve found useful, for future reference.
+I’m finding Codepen to be more and more valuable not only for trying out new code, but also – when working on large applications – as a time-saving rapid prototyping step that sidesteps backend set-up concerns. Here are some tips which I’ve found useful, for future reference.
 ---
 
-## Heading
+## Control the Editor View layout
 
-Create blog post codepen cheatsheet (inc mode/view info from Hack Day Trello card):
+Add ?editors=1111 (change numbers as appropriate) to the URL to set which panels are maximised (in order of HTML, CSS, JavaScript, and console).
 
-``` bash
-https://blog.codepen.io/documentation/api/url-extensions/
-```
+Add left, right, or top to the URL to set where the panels appear.
 
-``` bash
-https://www.hongkiat.com/blog/codepen-tips-beginners/
-```
+For example:
+
+https://codepen.io/fuzzylogicx/pen/BEEYQL/left/?editors=1100
+
+## References
+
+- https://blog.codepen.io/documentation/api/url-extensions/
+- https://www.hongkiat.com/blog/codepen-tips-beginners/
+
