@@ -3,26 +3,37 @@
     "year": 2020,
     "books": [
       {
+        "title": "The Age of Surveillance Capitalism",
+        "author": "Shoshana Zuboff",
+        "img": "https://hive.dmmserver.com/media/640/97817812/9781781256855.jpg",
+        "url": "https://www.hive.co.uk/Product/Shoshana-Zuboff/The-Age-of-Surveillance-Capitalism--The-Fight-for-a-Human/23976886", 
+        "rating": "In Progress"
+      },
+      {
+        "title": "Lost at Sea",
+        "author": "Jon Ronson",
+        "img": "https://hive.dmmserver.com/media/640/97814472/9781447264712.jpg",
+        "url": "https://www.hive.co.uk/Product/Jon-Ronson/Lost-at-Sea--The-Jon-Ronson-Mysteries/15785979", 
+        "rating": "In Progress"
+      },
+      {
         "title": "The Goldfinch",
         "author": "Donna Tartt",
         "img": "https://images-na.ssl-images-amazon.com/images/I/51rlWf-pXtL._AC_SY400_.jpg",
-        "url": "https://www.amazon.co.uk/Goldfinch-Donna-Tartt/dp/0349139636/",
-        "rating": "In Progress"
+        "url": "https://www.amazon.co.uk/Goldfinch-Donna-Tartt/dp/0349139636/"
       },
       {
         "title": "Tall Tales and Wee Stories",
         "author": "Billy Connolly",
         "img": "https://images-na.ssl-images-amazon.com/images/I/41HzBY8TyQL._AC_SY400_.jpg",
-        "url": "https://www.amazon.co.uk/Tall-Tales-Wee-Stories-Connolly/dp/1529361338",
-        "rating": "In Progress"
+        "url": "https://www.amazon.co.uk/Tall-Tales-Wee-Stories-Connolly/dp/1529361338"
       },
       {
         "title": "Accelerate",
         "subtitle": "The Science of Lean Software and Devops",
         "author": "Forsgren, Humble, Kim",
         "img": "https://images-na.ssl-images-amazon.com/images/I/41TLwbsl8eL._AC_SY400_.jpg",
-        "url": "https://www.amazon.co.uk/Accelerate-Software-Performing-Technology-Organizations/dp/1942788339",
-        "rating": "In Progress"
+        "url": "https://www.amazon.co.uk/Accelerate-Software-Performing-Technology-Organizations/dp/1942788339"
       }
     ]
   },
