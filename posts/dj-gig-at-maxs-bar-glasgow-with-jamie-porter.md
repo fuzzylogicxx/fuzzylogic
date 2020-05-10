@@ -22,7 +22,7 @@ Jamie (<abbr>aka</abbr> [Bud Burroughs](https://twitter.com/burroughsbud) of Sti
 
 We played from 9pm–3am. Max’s was rammed to the rafters as usual and it was fun to have six hours to play with, going through the gears and playing different styles and tempos. We also had some friendly faces for company – not only was it Jason Brunton’s birthday but we also had Chris Reid over from Italia and on the birras!
 
-Music-wise, it was cool to mix on the <abbr>DJR</abbr>-400 and I particularly enjoyed playing <abbr><em>EXU</em></abbr>, the new one from Patrick Pulsinger & Irl:</p>
+Music-wise, it was cool to mix on the <abbr>DJR</abbr>-400 and I particularly enjoyed playing _EXU_, the new one from Patrick Pulsinger & Irl:</p>
 
 <div class="aspect-ratio-wide">
   <iframe title="EXU by Patrick Pulsinger & Irl" loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/iZ2TgelxvtU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
