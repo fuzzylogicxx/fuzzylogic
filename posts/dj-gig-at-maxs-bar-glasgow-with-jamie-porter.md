@@ -1,6 +1,6 @@
 ---
 title: "DJ Gig at Max’s Bar, Glasgow with Jamie Porter (21-07-18)"
-description: 
+description: Playing records at high volume with friends is good for the soul.
 date: 2018-07-23 09:43:00
 tags:
   - entry
