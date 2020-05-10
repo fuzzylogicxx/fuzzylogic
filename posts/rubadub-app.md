@@ -9,6 +9,7 @@ linkTarget: https://www.rubadub.co.uk/rubadub-app/
 ---
 
 At a time when lots of vinyl releases are highly limited, this gets you early access to the latest heat before it disappears. It should also generally save untold hours browsing/searching since in their recommendations Rubadub have already done the job of separating the wheat from the chaff.
+
 The app was developed by me and the team at [Greenhill](https://www.greenhilldigital.com/).
 
 It was quite tricky, because aside from developing the mobile app itself there was a lot of API work needed to integrate it with Rubadub’s stock and e-commerce systems. We also built middleware specifically for machine-learning customer tastes.
