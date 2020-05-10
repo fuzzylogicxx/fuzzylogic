@@ -17,6 +17,10 @@ openGraphImage: "https://res.cloudinary.com/fuzzylogic/image/upload/q_auto,f_aut
 ---
 
 ---
+<figure>
+  {% respimg "" + mainImage.url + "", "" + mainImage.alt + "", "(min-width: 1600px) 646px, (min-width: 700px) 612px, 91.58vw", 320, mainImage.aspectRatioHeight %}
+</figure>
+
 Jamie (<abbr>aka</abbr> [Bud Burroughs](https://twitter.com/burroughsbud) of Stirling’s [Jelly Roll Soul](https://www.facebook.com/jrsscotland/) crew) kindly invited me to DJ with him at [Max’s Bar](http://maxsbar.co.uk/) last Saturday night (21st July ‘18).
 </p>
 
