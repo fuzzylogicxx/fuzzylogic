@@ -10,7 +10,7 @@ The most popular drop-in solution to the EU Cookie Law requirements.
 
 Over the last year I’ve been successfully using Cookie Consent by Osano on a number of commercial websites. Essentially this is a banner which appears at the bottom (or top) of your website and asks the visitor to explicitly give (or decline to give) consent for the cookies your website uses. It’s a great free resource which handles the requisite GDPR requirements (and more) and offers a number of customisation options.
 
-it’s very simple to include and use – you just step through their WYSIWYG generator, include the generated JavaScript-based settings in your site, and point to their CSS and JavaScript libraries. I like self-hosting my own static assets so I integrate the libraries into my code rather than linking to their externally hosted files, but that’s just my personal preference.
+it’s very simple to include and use – you just step through their WYSIWYG generator, include the generated JavaScript-based settings in your site, and point to their CSS and JavaScript libraries. I like [self-hosting my own static assets](https://csswizardry.com/2019/05/self-host-your-static-assets/) so I integrate the libraries into my code rather than linking to their externally hosted files, but that’s just my personal preference.
 
 ## Why do we need this?
 
