@@ -5,4 +5,4 @@ description: "A handy tool that generates the HTML and CSS required for several 
 tags: [link, css, development, background, separator]
 linkTarget: "https://wweb.dev/resources/css-separator-generator"
 ---
-A handy tool that generates the required HTML and CSS (cleverly manipulating backgrounds and generated content) for several content separator effects such as diagonal lines, spikes, and waves.
+A handy tool that generates the required HTML and CSS for various section separator effects (including diagonal lines, spikes, and waves) by cleverly manipulating backgrounds and generated content.
