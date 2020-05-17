@@ -1,7 +1,7 @@
 ---
 title: "Surface Noise"
 description: After a few wilderness years, me and Tom have a new record ready to drop.
-date: 2020-04-20 09:30:00
+date: 2018-11-14 09:30:00
 tags:
   - entry
   - music
