@@ -12,7 +12,7 @@ Over the last year I’ve been successfully using Cookie Consent by Osano on a n
 
 it’s very simple to include and use – you just step through their WYSIWYG generator, include the generated JavaScript-based settings in your site, and point to their CSS and JavaScript libraries. I like self-hosting my own static assets so I integrate the libraries into my code rather than linking to their externally hosted files, but that’s just my personal preference.
 
-Why do we need this?
+## Why do we need this?
 
 It’s because In 2018, the European Union’s General Data Protection Regulation (GDPR) went into effect, establishing a number of principles governing the collection of personal information. Any company or individual that processes personal information of European Union citizens must comply with the GDPR, regardless of where data is stored or processed.
 
