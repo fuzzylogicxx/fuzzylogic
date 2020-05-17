@@ -18,7 +18,7 @@ mainImage:
 
 ---
 <figure>
-  {% respimg "" + mainImage.url + "", "" + mainImage.alt + "", "(min-width: 1600px) 646px, (min-width: 700px) 612px, 91.58vw", 320, mainImage.aspectRatioHeight %}
+  {% respimg "" + mainImage.url + "", "" + mainImage.alt + "", "(min-width: 1600px) 646px, (min-width: 700px) 612px, 91.58vw", 320, mainImage.aspectRatioHeight, [320, 640, 960, 1250] %}
   <figcaption>TNF003: Side B artwork
 </figure>
 
