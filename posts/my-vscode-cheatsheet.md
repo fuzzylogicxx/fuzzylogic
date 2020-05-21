@@ -18,3 +18,9 @@ Here’s a list of useful (Mac-based) VS Code tips for my reference and yours.
 ## Open file to side (for side-by-side editing)
 
 <kbd>Option–click</kbd> on a file in the Explorer.
+
+## Use the Command Palette
+
+<kbd>Command-Shift-P</kbd>
+
+Then type your search term, for example “workspace settings”.
