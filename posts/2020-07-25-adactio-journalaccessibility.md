@@ -1,6 +1,6 @@
 ---
 date: "2020-07-25T10:44:04.604Z"
-title: "Adactio: Journal-Accessibility"
+title: "Accessibility (on adactio.com)"
 description: "Jeremy Keith makes the moral argument for considering accessibility as a prerequisite rather than a potential feature."
 tags: [link, a11y, web]
 linkTarget: "https://adactio.com/journal/17132"
