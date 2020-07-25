@@ -8,4 +8,6 @@ linkTarget: "https://www.svgbackgrounds.com/"
 > SVGs enable full-screen hi-res visuals with a file-size near 5KB and
 are well-supported by all modern browsers. What's not to love?
 ---
- (via [@css](https://twitter.com/css))
+A neat tool for selecting, customising and applying SVG backgrounds.
+
+(via [@css](https://twitter.com/css))
