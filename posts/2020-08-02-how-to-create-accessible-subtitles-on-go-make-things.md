@@ -8,7 +8,7 @@ linkTarget: "https://gomakethings.com/how-to-create-accessible-subtitles/"
 Here’s Chris Ferdinandi, introducing the ARIA <code>doc-subtitle</code> role.
 ---
 
-He sets the scene by describing the popular design pattern where we have a title with a subtitle directly underneath, and that subtitle is set to be visually distinct via its font size being larger than the body text while remaining smaller than the main heading. Developers have typically marked up the subtitle using either another heading element, or using a dedicated class. He suggests that the former is bad because headings in HTML are for conveying structure (with the inference that a subtitle is not structural) while the latter is suboptimal because it provides sighted users with additional information that visually impaired users don’t get.
+He sets the scene by describing the popular design pattern where we have a title with a subtitle directly underneath, and that subtitle is set to be visually distinct via its font size being larger than the body text while remaining smaller than the main heading. Developers have typically marked up the subtitle using either another heading element, or a dedicated class. He suggests that the former is bad because headings in HTML are for conveying structure (with the inference that a subtitle is not structural) while the latter is suboptimal because it provides sighted users with additional information that visually impaired users don’t get.
 
 A better approach is coming; the new `role=doc-subtitle` will convey to screen readers that the element is a subheading.
 
