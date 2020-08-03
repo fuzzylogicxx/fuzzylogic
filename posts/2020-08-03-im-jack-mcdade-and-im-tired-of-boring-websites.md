@@ -8,6 +8,6 @@ linkTarget: "https://jackmcdade.com/"
 > I’m tired of boring websites.
 ---
 
-So many fun touches in this design! It gave me quite a few chuckles when browsing it over the weekend.
+So many fun touches in the design for Jack’s personal website! It gave me plenty of chuckles while browsing over the weekend.
 
 My favourite bits were the “Email Deposit Box” on the [Radical Design Course section](https://radicaldesigncourse.com/) (make sure to have sound turned on) and the entire [Design Work](https://jackmcdade.com/design) page (keep scrolling)!
