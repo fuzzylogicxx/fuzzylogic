@@ -1,11 +1,11 @@
 ---
 date: "2020-08-03T08:50:24.186Z"
-title: "I'm Jack McDade and I'm tired of boring websites."
+title: "Jack McDade’s personal website"
 description: "So many fun touches in this website design"
 tags: [link, design, web, fun, inspiration, audio]
 linkTarget: "https://jackmcdade.com/"
 ---
-> I’m tired of boring websites.
+> I’m Jack McDade and I’m tired of boring websites.
 ---
 
 So many fun touches in the design for Jack’s personal website! It gave me plenty of chuckles while browsing over the weekend.
