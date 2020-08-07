@@ -2,7 +2,7 @@
 date: "2020-08-07T16:47:58.866Z"
 title: "Sass and clamp (on Adactio: Journal)"
 description: "A post which starts talking about new CSS functions then veers into questioning whether we still need Sass"
-tags: [link, development, css, sass, clamp, tools]
+tags: [link, development, css, sass, clamp, tools, customproperties]
 linkTarget: "https://adactio.com/journal/16887"
 ---
 Given what we can now do with CSS, do we still need Sass?
