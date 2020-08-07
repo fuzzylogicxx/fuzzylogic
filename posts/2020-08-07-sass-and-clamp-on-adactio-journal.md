@@ -10,4 +10,4 @@ Given what we can now do with CSS, do we still need Sass?
 > Sass was the hare. CSS is the tortoise. Sass blazed the trail, but now native CSS can achieve much the same result.
 ---
 
-Jeremyâs post starts by talking about the new CSS `clamp` function and how it can be used for scalable type, then veers into a question of whether we still need Sass or if modern CSS now covers our needs.
+Jeremy’s post starts by talking about the new CSS `clamp` function and how it can be used for scalable type, then veers into a question of whether we still need Sass or if modern CSS now covers our needs.
