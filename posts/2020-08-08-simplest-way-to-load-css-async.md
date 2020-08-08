@@ -10,7 +10,11 @@ Scott Jehl of Filament Group demonstrates a one-liner technique for loading exte
 <figure>
   
 ``` html
-<link rel="stylesheet" href="/path/to/my.css" media="print" onload="this.media='all'">
+<link 
+      rel="stylesheet" 
+      href="/path/to/my.css" 
+      media="print" 
+      onload="this.media='all'">
 ```
 
 </figure>
