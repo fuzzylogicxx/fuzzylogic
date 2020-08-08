@@ -20,4 +20,4 @@ This isn’t really necessary in situations where your (minified and compressed)
 
 </figure>
 
-Note that if JavaScript is disabled or otherwise not available your stylesheet will only load for print and not for screen, so you’ll want to [follow up with a “normal” (non-print specific) stylesheet within `<noscript>` tags](https://twitter.com/nhoizey/status/1152330563082227712).
+Note that if JavaScript is disabled or otherwise not available your stylesheet will only load for print and not for screen, so you’ll want to follow up with [a “normal” (non-print-specific) stylesheet within `<noscript>` tags](https://twitter.com/nhoizey/status/1152330563082227712).
