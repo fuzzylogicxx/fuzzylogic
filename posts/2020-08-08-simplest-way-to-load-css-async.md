@@ -1,10 +1,10 @@
 ---
-date: "2020-08-08T18:04:40.428Z"
-title: "The Simplest Way to Load CSS Asynchronously (Filament Group)"
-description: "Scott Jehl of Filament Group demonstrates a one-liner technique for loading external CSS files without them delaying page rendering"
+date: "2020-08-08T11:01:21.100Z"
+title: "Simplest Theme Switcher"
+description: "Max shows us how to let users customise your website via a colour theme switcher"
 tags: [link, development, css, javascript, tool, nunjucks, customproperties, 11ty]
-linkTarget: "https://www.filamentgroup.com/lab/load-css-simpler/"
+linkTarget: "https://mxb.dev/blog/color-theme-switcher/"
 ---
-Scott Jehl of Filament Group demonstrates a one-liner technique for loading external CSS files without them delaying page rendering.
+Max shows us how to build a colour theme switcher to let users customise your website. He uses a combination of Eleventy, JSON, Nunjucks with macros, a data attribute on the html element, CSS custom properties and a JavaScript based switcher.
 ---
-> Today, armed with a little knowledge of how the browser handles various link element attributes, we can achieve the effect of loading CSS asynchronously with a short line of HTML. Here it is, the simplest way to load a stylesheet asynchronously:
+Thanks, [Max](https://twitter.com/mxbck)!
