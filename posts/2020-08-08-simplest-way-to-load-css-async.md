@@ -7,14 +7,12 @@ linkTarget: "https://mxb.dev/blog/color-theme-switcher/"
 ---
 Scott Jehl of Filament Group demonstrates a one-liner technique for loading external CSS files without them delaying page rendering.
 ---
+> Today, armed with a little knowledge of how the browser handles various link element attributes, we can achieve the effect of loading CSS asynchronously with a short line of HTML. Here it is, the simplest way to load a stylesheet asynchronously:
+
 <figure>
   
 ``` html
-<link 
-      rel="stylesheet" 
-      href="/path/to/my.css" 
-      media="print" 
-      onload="this.media='all'">
+<link rel="stylesheet" href="my.css" media="print" onload="this.media='all'">
 ```
 
 </figure>
