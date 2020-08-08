@@ -7,4 +7,5 @@ linkTarget: "https://mxb.dev/blog/color-theme-switcher/"
 ---
 Max shows us how to build a colour theme switcher to let users customise your website. He uses a combination of Eleventy, JSON, Nunjucks with macros, a data attribute on the html element, CSS custom properties and a JavaScript based switcher.
 ---
+
 Thanks, [Max](https://twitter.com/mxbck)!
