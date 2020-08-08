@@ -2,7 +2,7 @@
 date: "2020-08-08T19:24:39.353Z"
 title: "Three CSS Alternatives to JavaScript Navigation (on CSS-Tricks)"
 description: "A fun post on mobile navigation options that includes a nugget about handling navigation with a dedicated page"
-tags: [link, mobile, navigation, development, css, html, javascript]
+tags: [link, mobile, navigation, development, css, html, javascript, offcanvas, progressiveenhancement]
 linkTarget: "https://css-tricks.com/three-css-alternatives-to-javascript-navigation/"
 ---
 In general this is a decent article on non-JavaScript-based mobile navigation options, but the thing I liked most is the idea that you could use a separate page (perhaps at the URL /menu) for your navigation menu. 
