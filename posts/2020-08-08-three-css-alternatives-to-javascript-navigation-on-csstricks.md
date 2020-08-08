@@ -5,7 +5,7 @@ description: "A fun post on mobile navigation options that includes a nugget abo
 tags: [link, mobile, navigation, development, css, html, javascript, offcanvas, progressiveenhancement]
 linkTarget: "https://css-tricks.com/three-css-alternatives-to-javascript-navigation/"
 ---
-In general this is a decent article on non-JavaScript-based mobile navigation options, but the thing I liked most is the idea that you could use a separate page (perhaps at the URL /menu) for your navigation menu. 
+In general this is a decent article on non-JavaScript-based mobile navigation options, but the thing I liked most is the idea that you could use a separate page for your navigation menu (at the URL /menu, for example). 
 
 > Who said navigation has to be in the header of every page? If your front end is extremely lightweight or if you have a long list of menu items to display in your navigation, the most practical method might be to create a separate page to list them all.
 ---
