@@ -6,5 +6,5 @@ tags: [link, development, css, javascript, tool, nunjucks, customproperties, 11t
 linkTarget: "https://mxb.dev/blog/color-theme-switcher/"
 ---
 Max shows us how to let users customise your website by building a colour theme switcher using a combination of Eleventy, JSON, Nunjucks with macros, a data attribute on the html element, CSS custom properties and a JavaScript based switcher.
-
+---
 Thanks, [Max](https://twitter.com/mxbck)!
