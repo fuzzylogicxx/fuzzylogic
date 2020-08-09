@@ -1,5 +1,5 @@
 ---
-date: "2020-08-09T13:03:29.799Z"
+date: "2020-07-14T13:03:29.799Z"
 title: "Debouncing vs. throttling with vanilla JS (on Go Make Things)"
 description: "Chris Ferdinandi describes two techniques for improving performance when working with frequently invoked JavaScript event handlers"
 tags: [link, development, javascript]
