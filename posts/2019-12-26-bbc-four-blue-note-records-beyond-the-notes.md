@@ -1,6 +1,6 @@
 ---
 date: "2019-11-17T20:19:00.231Z"
-title: "BBC Four - Blue Note Records: Beyond the Notes"
+title: "Blue Note Records: Beyond the Notes (on BBC Four)"
 description: "The story behind Blue Note Records."
 tags: [link, music, jazz]
 linkTarget: "https://www.bbc.co.uk/programmes/m000b8pd"
