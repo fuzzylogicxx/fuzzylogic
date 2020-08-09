@@ -8,4 +8,8 @@ linkTarget: "https://web.dev/sign-in-form-best-practices/#new-password"
 Sam Dutton advises how to use cross-platform browser features to build sign-in forms that are secure, accessible and easy to use.
 ---
 
-The tips of greatest interest to me were on using `autocomplete="new-password"` and `autocomplete="current-password"` where appropriate to tap into browser password suggestion and password manager features; on how best to provide “Show password” functionality; and on using and `aria-describedby` when providing guidance on password rules.
+The tips of greatest interest to me were:
+
+- on using `autocomplete="new-password"` and `autocomplete="current-password"` where appropriate to tap into browser password suggestion and password manager features; 
+- on how best to provide “Show password” functionality; and 
+- on using and `aria-describedby` when providing guidance on password rules.
