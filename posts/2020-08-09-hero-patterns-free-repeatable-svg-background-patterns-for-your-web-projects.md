@@ -9,3 +9,5 @@ From Steve Schoger:
 
 > A collection of repeatable SVG background patterns for you to use on your web projects.
 ---
+
+This was recommended by Chris Coyier in his post [Websites to Generate SVG Patterns](https://css-tricks.com/websites-generate-svg-patterns/).
