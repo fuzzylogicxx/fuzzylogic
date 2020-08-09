@@ -10,6 +10,6 @@ Sam Dutton advises how to use cross-platform browser features to build sign-in f
 
 The tips of greatest interest to me were:
 
-- on using `autocomplete="new-password"` and `autocomplete="current-password"` where appropriate to tap into browser password suggestion and password manager features; 
+- on using `autocomplete="new-password"` on registration forms and `autocomplete="current-password"` on sign-in forms to tap into browser password suggestion and password manager features; 
 - on how best to provide “Show password” functionality; and 
-- on using and `aria-describedby` when providing guidance on password rules.
+- on using `aria-describedby` when providing guidance on password rules.
