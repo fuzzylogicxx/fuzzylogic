@@ -1,9 +1,8 @@
 ---
-description: Inline javascript event handlers 
 date: 2020-08-10T21:16:21+00:00
-tags: [note, head, javascript, resilience, development, javascript]
-location: Glasgow
-noteTitle: 1597093543
+title: TIL about inline JavaScript event handlers in the `<head>`
+description: Inline javascript event handlers
+tags: [head, javascript, events, performance, resilience, development]
 ---
 I’ve been thinking about [Scott Jehl’s simple way to load external CSS asynchronously technique](https://fuzzylogic.me/posts/2020-08-08-simplest-way-to-load-css-async/). 
 I’m interested in its use of an inline event handler to run JavaScript in the `<head>`, as I mull over some broader thoughts on how to apply JavaScript-based UI enhancements in a way that is both resilient and fast enough to avoid noticeable layout jank.
