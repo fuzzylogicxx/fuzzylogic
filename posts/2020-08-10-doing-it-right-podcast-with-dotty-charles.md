@@ -10,6 +10,6 @@ An interview with Ashley ‘Dotty’ Charles, a writer and broadcaster, on the t
 > By shouting about the little things, are we neglecting to talk about the bigger issues in modern society? We discuss performative outrage, the role of the social media provocateur and the strange case of Rachel Dolezal.
 ---
 
-I really enjoyed this – it totally chimed with how I currently feel about the state of online discourse – and Dotty has some great ideas and insights. I’ve already bought [her book, Outraged](https://www.waterstones.com/book/outraged/ashley-dotty-charles/9781526605030) and am looking forward to reading that soon.
+I really enjoyed this. It totally chimed with how I currently feel about the state of online discourse, and Dotty has some great ideas and insights. I’ve already bought [her book, Outraged](https://www.waterstones.com/book/outraged/ashley-dotty-charles/9781526605030) and am looking forward to reading that soon.
 
 Thanks to Rita (Kelly) for the tip!
