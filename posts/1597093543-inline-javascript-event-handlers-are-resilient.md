@@ -1,6 +1,6 @@
 ---
 date: 2020-08-10T21:16:21+00:00
-title: TIL about inline JavaScript event handlers in the &lt;head&gt;
+title: TIL about inline JavaScript event handlers in the <head>
 description: Inline javascript event handlers are useful for avoiding some typical JavaScript resilience pitfalls 
 tags: [head, javascript, events, performance, resilience, development]
 ---
