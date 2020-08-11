@@ -49,7 +49,7 @@ It probably makes more sense to do:
 
 
 // H5BP’s main.css: Hide only visually, but make available to screen readers.
-// Now includes Joe Watkins’s suggested updates (ref https://zellwk.com/blog/hide-content-accessibly/)
+// Now includes Joe Watkins’s suggested updates (ref https://zellwk.com/blog/hide-content-accessibly/ and https://github.com/h5bp/main.css/issues/12)
 // NB .a11y-only (meaning "for accessibility aids only" - credit @wilto) feels like a better class name than ".visually-hidden".
 
 .a11y-only {
@@ -89,5 +89,24 @@ It probably makes more sense to do:
 
 https://www.scottohara.me/blog/2017/04/14/inclusively-hidden.html
 
+There are three categories of hidden content:
+Completely Hidden.
+Visually Hidden.
+Only Hidden from Assistive Technology.
+Depending on the type of content, you will need to use an appropriate technique to hide it, via:
+Using CSS or [hidden] to hide content completely.
+Using visually-hidden class to visually hide content, but keep it available for assistive technologies.
+Or using aria-hidden="true" to hide content specifically from screen readers.
+Going back to my initial question “why are we hiding content?”, it’s apparent that there are some elements of a UI that truly need to be hidden. And while we have techniques to hide content, but still make it accessible for assistive technology users, I wouldn’t necessarily jump to these techniques as design solutions.
+
+The goal should be to craft interfaces and experiences that are accessible and understandable to as many people as possible. Not to create interfaces where we can shoe horn in additional context by visually hiding it by default.
+
+------
+
+CSS-Tricks:
 What about animation? 
 - display cannot be animated
+
+https://gomakethings.com/revisting-aria-label-versus-a-visually-hidden-class/
+
+aria-hidden
