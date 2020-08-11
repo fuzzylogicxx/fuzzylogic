@@ -50,6 +50,8 @@ It probably makes more sense to do:
 
 // H5BP’s main.css: Hide only visually, but make available to screen readers.
 // Now includes Joe Watkins’s suggested updates (ref https://zellwk.com/blog/hide-content-accessibly/ and https://github.com/h5bp/main.css/issues/12)
+// It’s worth checking in on the current state of H5BP’s .visuallyhidden class. 
+// Or might want to go with this Gov.UK approach: https://github.com/h5bp/main.css/issues/12#issuecomment-451965809
 // NB .a11y-only (meaning "for accessibility aids only" - credit @wilto) feels like a better class name than ".visually-hidden".
 
 .a11y-only {
