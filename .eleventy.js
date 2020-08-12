@@ -3,6 +3,7 @@ const fs = require('fs');
 const pluginRss = require('@11ty/eleventy-plugin-rss');
 const pluginSyntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
 const CleanCSS = require('clean-css');
+const { PurgeCSS } = require('purgecss');
 //const pluginRespimg = require('eleventy-plugin-respimg');
 
 module.exports = function(eleventyConfig) {
@@ -15,6 +16,20 @@ module.exports = function(eleventyConfig) {
   //
   // Eleventy Filters (functions we use elsewhere to modify strings, dates, file contents etc to get what we want)
   //
+
+  eleventyConfig.addTransform('purge-and-inline-css', async (content, outputPath) => {
+    if (!outputPath.endsWith('.html')) {
+      return content;
+    }
+
+    const purgeCSSResults = await new PurgeCSS().purge({
+      content: [{ raw: content }],
+      css: ['_includes/css/main.css'],
+      keyframes: true,
+    });
+
+    return content.replace('<!-- THIS WILL BE REPLACED WITH INLINE CSS -->', '<style>' + purgeCSSResults[0].css + '</style>');
+  });
 
   // Readable Date filter
   eleventyConfig.addFilter('readableDate', dateObj => {
