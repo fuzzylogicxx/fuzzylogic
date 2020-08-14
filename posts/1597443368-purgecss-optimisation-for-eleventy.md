@@ -14,6 +14,6 @@ Here’s a cool performance-optimisation trick for Eleventy I spotted on Twitter
 
 </figure>
 
-I’ve just installed this on my personal site. I was already inlining my CSS into the `<head> but the idea of only including the CSS each specific page needs was too good to resist. 
+I’ve just installed this on my personal site. I was already inlining my CSS into the `<head>` but the promise of only including the minimum CSS that each specific page needs was too good to resist.
 
 Turned out it was a breeze to get working, a nice introduction to Eleventy transforms, and – so far – it’s working great!
