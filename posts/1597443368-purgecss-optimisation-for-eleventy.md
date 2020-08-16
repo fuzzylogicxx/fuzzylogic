@@ -6,7 +6,7 @@ location: Glasgow
 noteTitle: 1597443368
 ---
 
-Daniel Post shared a really cool performance-optimisation trick for Eleventy on Twitter the other day. You can use PurgeCSS to minimize and inline the CSS of each individual page, so that each page’s `<head>` contains only CSS it needs and nothing else.
+Daniel Post shared a really cool performance-optimisation trick for Eleventy on Twitter the other day. You can use PurgeCSS to minimize and inline the CSS of each individual page, so that each page’s `<head>` contains only the CSS it needs and no more.
 
 Here‘s a gist: [https://t.co/LaF3ACB07n](https://t.co/LaF3ACB07n)
 
