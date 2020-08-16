@@ -8,7 +8,7 @@ noteTitle: 1597443368
 
 [Daniel Post shared](https://twitter.com/danielpost/status/1293286796604956673) a really cool performance-optimisation trick for Eleventy on Twitter the other day. You can use PurgeCSS to minimize and inline the CSS of each individual page, so that each page’s `<head>` contains only the CSS it needs and no more.
 
-[Check out the code.](https://t.co/LaF3ACB07n](https://t.co/LaF3ACB07n)
+[Check out the code.](https://t.co/LaF3ACB07n)
 
 I’ve just installed this on my personal site. I was already inlining my CSS into the `<head>` but the promise of only including the minimum CSS that each specific page needs was too good to resist.
 
