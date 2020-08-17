@@ -5,7 +5,7 @@ description: "Nice-looking Open Source font"
 tags: [link, typeface, typography, opensource]
 linkTarget: "https://tokotype.github.io/plusjakarta-sans/#page-top"
 ---
-Jakarta Sans is a nice-looking Open Source font which I reckon I could use at some point. 
+Jakarta Sans is a nice-looking Open Source (so free to use) typeface which I reckon I could use at some point. 
 ---
 
 (via [@css](https://twitter.com/css))
