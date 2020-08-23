@@ -11,7 +11,6 @@ Lorem ipsum
 ## TL;DR
 
 https://www.scottohara.me/blog/2017/04/14/inclusively-hidden.html
-
 There are three categories of hidden content:
 - Completely Hidden.
 - Visually Hidden.
@@ -117,8 +116,8 @@ It probably makes more sense to do:
 
 CSS-Tricks:
 What about animation? 
-- display cannot be animated
+- `display` cannot be animated
 
-https://gomakethings.com/revisting-aria-label-versus-a-visually-hidden-class/
+Read also and pull out anything interesting: https://gomakethings.com/revisting-aria-label-versus-a-visually-hidden-class/
 
-aria-hidden
+Also mention: aria-hidden
