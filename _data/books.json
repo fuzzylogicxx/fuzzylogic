@@ -3,17 +3,36 @@
     "year": 2020,
     "books": [
       {
+        "title": "Outraged",
+        "author": "Ashley ‘Dotty’ Charles",
+        "img": "https://hive.dmmserver.com/media/640/97815266/9781526605030.jpg",
+        "url": "https://www.hive.co.uk/Product/Ashley-Dotty-Charles/Outraged--Why-Everyone-is-Shouting-and-No-One-is-Talking/23096760",
+        "rating": "Up Next"
+      },
+      {
         "title": "The Age of Surveillance Capitalism",
         "author": "Shoshana Zuboff",
         "img": "https://hive.dmmserver.com/media/640/97817812/9781781256855.jpg",
-        "url": "https://www.hive.co.uk/Product/Shoshana-Zuboff/The-Age-of-Surveillance-Capitalism--The-Fight-for-a-Human/23976886", 
+        "url": "https://www.hive.co.uk/Product/Shoshana-Zuboff/The-Age-of-Surveillance-Capitalism--The-Fight-for-a-Human/23976886",
         "rating": "In Progress"
+      },
+      {
+        "title": "Talking to Strangers",
+        "author": "Malcolm Gladwell",
+        "img": "https://hive.dmmserver.com/media/640/97802413/9780241351567.jpg",
+        "url": "https://www.hive.co.uk/Product/Malcolm-Gladwell/Talking-to-Strangers--What-We-Should-Know-about-the-People-We-Dont-Know/23940791"
+      },
+      {
+        "title": "The Plot Against America",
+        "author": "Phillip Roth",
+        "img": "https://hive.dmmserver.com/media/640/97815291/9781529110814.jpg",
+        "url": "https://www.hive.co.uk/Product/Philip-Roth/The-Plot-Against-America/22888003"
       },
       {
         "title": "Lost at Sea",
         "author": "Jon Ronson",
         "img": "https://hive.dmmserver.com/media/640/97814472/9781447264712.jpg",
-        "url": "https://www.hive.co.uk/Product/Jon-Ronson/Lost-at-Sea--The-Jon-Ronson-Mysteries/15785979", 
+        "url": "https://www.hive.co.uk/Product/Jon-Ronson/Lost-at-Sea--The-Jon-Ronson-Mysteries/15785979",
         "rating": "In Progress"
       },
       {
@@ -168,7 +187,7 @@
         "author": "Haruki Murakami",
         "img": "https://images-na.ssl-images-amazon.com/images/I/41-AujivN3L._AC_SY400_.jpg",
         "url": "https://www.amazon.co.uk/What-Talk-About-When-Running/dp/0099526158"
-      }, 
+      },
       {
         "title": "The Contortionist’s Handbook",
         "author": "Craig Clevenger",
