@@ -12,10 +12,10 @@ draft: true
     - If blank slate, yarn/npm init
     - If established project, “yarn” or “npm I”
 - Adding
-    - yarn add, or npm i
+    - yarn add <package…>, or npm i
     - can add specific version, and can be a good idea to do so
 - Removing
-    - yarn remove
+    - yarn remove <package…>
     - use this rather than manually deleting because this way it will update `yarn.lock`, too.
 - Updating
     - npm i (same command as to add/install)
