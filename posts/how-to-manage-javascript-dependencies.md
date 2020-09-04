@@ -14,9 +14,12 @@ draft: true
 - Adding
     - yarn add, or npm i
     - can add specific version, and can be a good idea to do so
+- Removing
+    - yarn delete
+    - use this rather than manually deleting because this way it will update `yarn.lock`, too.
 - Updating
     - npm i (same command as to add/install)
-    - yarn upgrade, or  “yarn upgrade-interactive”
+    - yarn upgrade, or “yarn upgrade-interactive”
 - Maintaining
     - Security vulnerabilities
         - Note that this might be in:
@@ -28,6 +31,7 @@ draft: true
             - Dependabot https://github.blog/2020-06-01-keep-all-your-packages-up-to-date-with-dependabot/ 
             - You can configure Github Dependabot to send automated security updates (NB this is not just for JS, i.e. in a Rails project it might suggest a bump to your Gemfile)
             - dependabot will often automatically open a PR in your repo, updating the relevant dependency (thus addressing the vulnerability) with PR title e.g. “Bump lodash from 4.17.11 to 4.17.19”
+            - (note however that if you work on a (corporate) repo that is not set up to automatically open PRs, you can still often take advantage of this on each individual dependabot security alert, at the push of a button.
                 - Hopefully you also get a round-up email for all affected repos “A new security advisory on lodash affects 8 of your repositories” with links to the alert for each repo
             - You generally just need to follow the link in the email then merge the PR and delete the branch from the PR page 
         - Manual
