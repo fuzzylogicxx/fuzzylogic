@@ -15,7 +15,7 @@ draft: true
     - yarn add, or npm i
     - can add specific version, and can be a good idea to do so
 - Removing
-    - yarn delete
+    - yarn remove
     - use this rather than manually deleting because this way it will update `yarn.lock`, too.
 - Updating
     - npm i (same command as to add/install)
