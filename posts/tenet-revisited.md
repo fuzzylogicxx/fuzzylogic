@@ -8,8 +8,8 @@ tags:
   - review
   - christophernolan
 ---
-
 I watched [Tenet](https://www.imdb.com/title/tt6723592/) again last night (in IMAX with [Jamie](@jamiethomsonno1)) and second time round it all made sense. 
+---
 
 My initial viewing was good but really confusing; but this time I knew what was going on and loved it! Based on the plot, it actually makes sense that you need to see it twice, too. 
 
