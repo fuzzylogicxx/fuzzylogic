@@ -9,11 +9,11 @@ draft: true
 - https://classic.yarnpkg.com/en/docs/yarn-workflow/
 - And here’s a good explanation of the purpose of lock files (it’s to lock down the exact version to be used (rather than a range like package.json) https://www.robertcooper.me/how-yarn-lock-files-work-and-upgrading-dependencies)
 - Getting started
-    - If blank slate, yarn/npm init
-    - If established project, “yarn” or “npm I”
+    - If blank slate, yarn (or npm) init
+    - If established project, “yarn” (or “npm i”)
 - Adding
-    - yarn add <package…>, or npm i
-    - can add specific version, and can be a good idea to do so
+    - yarn add <package…> (or …)
+    - can add specific version or [semver range](https://devhints.io/semver), and it can be a good idea to do so, e.g. yarn add <package…>@^1.3.1
 - Removing
     - yarn remove <package…>
     - use this rather than manually deleting because this way it will update `yarn.lock`, too.
