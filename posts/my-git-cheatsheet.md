@@ -585,5 +585,6 @@ git reset HEAD@{index}
 - [Tips, tutorials and Cheat Sheets from Atlassian](https://www.atlassian.com/git/tutorials/atlassian-git-cheatsheet)
 - Need to undo an old commit? Committed to master by mistake? Get out of trouble with [_Oh Shit, Git!_](https://ohshitgit.com/)
 - More getting out of trouble: [Git Flight Rules](https://github.com/k88hudson/git-flight-rules)
+- [Oh-my-zsh Git aliases](https://jasonm23.github.io/oh-my-git-aliases.html) and [how to add your own](https://github.com/ohmyzsh/ohmyzsh/issues/6266)
 - [The original Pro Git reference](https://git-scm.com/book/en/v2)
 - [_Git for Humans_](https://abookapart.com/products/git-for-humans) by David Demaree from _A List Apart_ is a great intro to the concepts and basic commands.
