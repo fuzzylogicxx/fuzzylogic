@@ -17,6 +17,6 @@ This film has its flaws, no doubt, but for sheer invention, visuals you’ve gen
 
 Footnote: I’ve been joying some internet rabbit-holing to squeeze out every last nuance of the plot I might have missed. Here are some great articles and resources which have helped (with the usual “heavy spoilers” caveat):
 
-- [Adactio’s fantastic review](https://adactio.com/journal/17379) and learned insights
+- [Adactio’s fantastic review](https://adactio.com/journal/17379) and insights
 - [Vulture’s humorous plot appraisal](https://www.vulture.com/2020/09/tenet-explained-whats-going-on-in-the-plot-of-this-movie.html)
 - [Transcript on Scraps from the Loft](https://scrapsfromtheloft.com/2020/09/05/tenet-transcript/). It’s neither official nor 100% accurate but does a job.
