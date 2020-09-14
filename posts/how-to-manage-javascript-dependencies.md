@@ -6,6 +6,8 @@ tags: [development, javascript, yarn]
 draft: true
 ---
 
+It can pay to add tried-and-tested existing functionality to your application via NPM packages; that way, you can concentrate on your application’s unique features rather than reinventing the wheel for other stuff.
+
 - https://classic.yarnpkg.com/en/docs/yarn-workflow/
 - And here’s a good explanation of the purpose of lock files (it’s to lock down the exact version to be used (rather than a range like package.json) https://www.robertcooper.me/how-yarn-lock-files-work-and-upgrading-dependencies)
 - Getting started
