@@ -1,7 +1,7 @@
 ---
 title: "The Social Dilemma"
 description: Thoughts after watching Netflix’s new documentary about the dangerous impact of social networking
-date: 2020-09-19 10:48:00
+date: 2020-09-19 09:48:00
 tags:
   - entry
   - film
