@@ -114,10 +114,15 @@ It probably makes more sense to do:
 
 ------
 
-CSS-Tricks:
-What about animation? 
+CSS-Tricks: What about animation? 
 - `display` cannot be animated
 
+----
 Read also and pull out anything interesting: https://gomakethings.com/revisting-aria-label-versus-a-visually-hidden-class/
 
-Also mention: aria-hidden
+Also mention: 
+- aria-hidden. With values true and false it can remove an element from and re-add one to the Accessibility Tree, respectively. 
+It functions in much the same way as CSS’s display:none. You might use it on icons.
+
+- role: presentation removes semantics of the relevant element, but not to nested content or focusable elements such as anchors. The examples which apply it to a table that has been used for layout should hopefully never be needed in 2020 (although never say never). The best example I’ve seen is Inclusive Components list items in Tabs. They do want a list, but it’s a special type of list (a role=tablist) so they don’t want the items to be treated as plain old list-items, a11y-wise. https://inclusive-components.design/tabbed-interfaces/, https://timwright.org/blog/2016/11/19/difference-rolepresentation-aria-hiddentrue/
+
