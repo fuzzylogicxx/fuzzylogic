@@ -13,7 +13,7 @@ Sometimes I follow a page’s title (usually an `h1` element) with a subtitle wh
 
 However [a recent article on subtitles by Chris Ferdinandi](https://fuzzylogic.me/posts/2020-08-02-how-to-create-accessible-subtitles-on-go-make-things/) and now this article by Hidde have made me reconsider. 
 
-HTML headings are essentially ”names for a section of content”. On screen readers they operate like a Table of Contents – the user can use them to navigate to content.
+HTML headings are essentially ”names for content sections”. On screen readers they operate like a Table of Contents – the user can use them to navigate to content.
 
 Therefore I now reckon I should only use a `hx` heading when it will be immediately followed by (non-heading) content – paragraphs and so on – otherwise I should choose a different element. 
 
