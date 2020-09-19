@@ -5,11 +5,10 @@ description: "Hidde de Vries explains that a heading should not be followed by a
 tags: [link, html, web, development, subtitle, heading, accessibility]
 linkTarget: "https://hiddedevries.nl/en/blog/2020-09-05-when-there-is-no-content-between-headings"
 ---
-> When you use a heading element, you set the expectation of content
+> When you use a heading element, you set the expectation of content.
 ---
 
-I have always prided myself on using appropriate, semantic HTML, however it’s recently become clear to me that there’s one thing I occasionally do wrongly. 
-Sometimes I follow a page’s title (usually an `h1` element) with a subtitle which I mark up as an `h2`. I considered this the right element for the job and my choice had nothing to do with aesthetics. 
+I have always prided myself on using appropriate, semantic HTML, however it’s recently become clear to me that there’s one thing I occasionally do wrongly. Sometimes I follow a page’s title (usually an `h1` element) with a subtitle which I mark up as an `h2`. I considered this the right element for the job and my choice had nothing to do with aesthetics. 
 
 However [a recent article on subtitles by Chris Ferdinandi](https://fuzzylogic.me/posts/2020-08-02-how-to-create-accessible-subtitles-on-go-make-things/) and now this article by Hidde have made me reconsider. 
 
