@@ -13,8 +13,7 @@ tags:
 I watched Netflix’s documentary [The Social Dilemma](https://www.netflix.com/gb/title/81254224) the other night. 
 ---
 
-While I totally agree with the sentiment that Facebook and Google (amongst others) don’t act in our best interests, there were more than a few aspects 
-of this film that didn’t sit quite right. 
+While I totally agree with the sentiment that Facebook and Google (amongst others) don’t act in our best interests, there were more than a few aspects of this film that didn’t sit quite right. 
 
 Firstly, Netflix themselves are no angels (their CEO once said “sleep is their main competitor”) so for them to suddenly dress this up as “breaking news”, act as heroic whistleblower and deliver it all with the shiny Netflix aesthetic, felt really disingenuous and nasty. 
 
