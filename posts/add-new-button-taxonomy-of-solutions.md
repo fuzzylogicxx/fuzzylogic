@@ -1,15 +1,13 @@
 ---
-title: "The Social Dilemma"
-description: Thoughts after watching Netflix’s new documentary about the dangerous impact of social networking
-date: 2020-09-19 09:48:00
+title: "The Add new button: a taxonomy of solutions"
+description: Assessing design patterns for the Add new item pattern with their pros and cons
+date: 2020-09-26 08:48:00
 draft: true
 tags:
   - entry
-  - film
-  - documentary
-  - netflix
-  - facebook
-  - socialmedia
+  - ux
+  - pattern
+  - mobile
 ---
 Collecting and categorising design patterns for the “Add new item” pattern, including their pros and cons.
 ---
