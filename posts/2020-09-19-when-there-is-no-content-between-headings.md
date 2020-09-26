@@ -5,6 +5,8 @@ description: "Hidde de Vries explains that a heading should not be followed by a
 tags: [link, html, web, development, subtitle, heading, accessibility]
 linkTarget: "https://hiddedevries.nl/en/blog/2020-09-05-when-there-is-no-content-between-headings"
 ---
+Hidde de Vries explains why an HTML heading should never by immediately followed by another.
+
 > When you use a heading element, you set the expectation of content.
 ---
 
