@@ -1,6 +1,6 @@
 ---
-title: "The 'Add new' button: a taxonomy of solutions"
-description: "Assessing design patterns for the 'Add new item' pattern with their pros and cons"
+title: The 'Add new' button: a taxonomy of solutions
+description: Assessing design patterns for the 'Add new item' pattern with their pros and cons
 date: 2020-09-26 08:48:00
 tags:
   - entry
