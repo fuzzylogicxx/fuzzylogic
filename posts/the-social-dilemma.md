@@ -10,7 +10,7 @@ tags:
   - facebook
   - socialmedia
 ---
-I watched Netflix’s documentary [The Social Dilemma](https://www.netflix.com/gb/title/81254224) the other night. 
+I watched Netflix’s documentary [The Social Dilemma](https://www.netflix.com/gb/title/81254224) the other night. It’s been generating a bit of a buzz, and its subject matter – the effects of social media – is one I’m generally interested in, however I wasn’t a fan.
 ---
 
 While I totally agree with the sentiment that Facebook and Google (amongst others) don’t act in our best interests, there were more than a few aspects of this film that didn’t sit quite right. 
