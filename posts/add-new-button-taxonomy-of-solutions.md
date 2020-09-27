@@ -8,7 +8,6 @@ tags:
   - ux
   - pattern
   - mobile
-draft: true
 ---
 Collecting and categorising design patterns for the “Add new item” pattern, including their pros and cons.
 ---
