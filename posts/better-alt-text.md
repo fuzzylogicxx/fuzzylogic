@@ -9,12 +9,12 @@ tags:
   - alt
   - a11y
 ---
-I’ve just read [The A11Y Project’s page on `alt` text.](https://www.a11yproject.com/posts/2013-01-14-alt-text/). 
+I’ve just read [The A11Y Project’s page on `alt` text](https://www.a11yproject.com/posts/2013-01-14-alt-text/).
 
-As most of us know, the alt attribute is meant to provide "alternate text" descriptions of images to help ensure people do not miss out on information conveyed by graphics. Alternative text can help people using assistive technology, such as screen readers, or people who have images turned off on their mobile devices (to save data, for instance). Additionally, alt text can be useful to everyone in instances of poor Internet service, or your CDN of choice having a service hiccup (or attack), and images are slow or fail to load.
+As most of us know, the alt attribute is for providing “alternate text” descriptions of images to help ensure people do not miss out on information conveyed by graphics. This can help people using assistive technology, such as screen readers, and in situtations where (for whatever reason) images are slow or fail to load.
 ---
 
-I found three common cases where I could improve how I do things. 
+The article made some interesting points and even though I’ve been using the `alt` attribute for years I found three common cases where I could improve how I do things. 
 
 ## Avoid including the word “logo” in logo images
 
