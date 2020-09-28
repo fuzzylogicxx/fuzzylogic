@@ -11,7 +11,7 @@ tags:
 ---
 I’ve just read [The A11Y Project’s page on `alt` text](https://www.a11yproject.com/posts/2013-01-14-alt-text/).
 
-As most of us know, the HTML `alt` attribute is for providing “alternate text” descriptions of images to help ensure people do not miss out on information conveyed by graphics. This can help people using assistive technology, such as screen readers, and in situtations where (for whatever reason) images are slow or fail to load.
+As most of us know, the HTML `alt` attribute is for providing “alternate text” descriptions of images to help ensure people do not miss out on information conveyed by graphics. This can help people using assistive technology such as screen readers, and in situtations where images are slow or fail to load.
 
 The article made some interesting points and even though I’ve been using the `alt` attribute for years I found three common cases where I could improve how I do things.
 
@@ -21,7 +21,7 @@ The article made some interesting points and even though I’ve been using the `
 
 If the image is of a company’s logo, the `alt` should be the company’s name. The word “logo” is neither necessary nor _useful_ as part of the alternative text.
 
-## If using an image multiple times, consider using different `alt` text
+## If using an image multiple times on the page, consider using different `alt` text
 
 Using an image several times in a website doesn't necessarily mean the alt attribute will be the same for each instance. For example, a logo within a website’s header often doubles a link back to the home page. In this example, the `alt` would be most useful as "Company’s name - home". If that same logo were used in the footer of the site alongside the text “Company’s name, copyright 20XX", then the logo should have an empty alt (alt="") so as to not create a redundant announcement of the company’s name.
 
