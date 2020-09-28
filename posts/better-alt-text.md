@@ -1,7 +1,7 @@
 ---
 title: "Better Alt Text"
 description: X Ways I was coding alt attributes wrongly
-date: 2020-09-28 19:48:00
+date: 2020-09-28 19:22:00
 tags:
   - entry
   - development
