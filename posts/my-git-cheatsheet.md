@@ -580,6 +580,16 @@ git reset HEAD@{index}
 
 </figure>
 
+## Miscellaneous handy commands
+
+Revert to the previous branch you were on
+
+<figure>
+  
+``` bash
+git checkout -
+```
+
 ## Useful external resources
 
 - [Tips, tutorials and Cheat Sheets from Atlassian](https://www.atlassian.com/git/tutorials/atlassian-git-cheatsheet)
