@@ -590,6 +590,8 @@ Revert to the previous branch you were on
 git checkout -
 ```
 
+</figure>
+
 ## Useful external resources
 
 - [Tips, tutorials and Cheat Sheets from Atlassian](https://www.atlassian.com/git/tutorials/atlassian-git-cheatsheet)
