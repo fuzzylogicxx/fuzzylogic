@@ -1,6 +1,6 @@
 ---
 title: "Better Alt Text"
-description: X Ways I was coding alt attributes wrongly
+description: Three ways in which I could improve my handling of alternative text for graphics
 date: 2020-09-28 19:22:00
 tags:
   - entry
