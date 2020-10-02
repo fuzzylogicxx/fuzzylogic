@@ -17,14 +17,14 @@ The article made some interesting points and even though I’ve been using the `
 
 ---
 
-## Avoid including the word “logo” in logo images
-
-If the image is of a company’s logo, the `alt` should be the company’s name. The word “logo” is neither necessary nor _useful_ as part of the alternative text.
-
-## If using an image multiple times on the page, tailor the `alt` text
-
-Using an image several times in a website doesn't necessarily mean the alt attribute will be the same for each instance. For example, a logo within a website’s header often doubles a link back to the home page. In this example, the `alt` would be most useful as “Company’s name - home”. If that same logo were used in the footer of the site alongside the text “Company’s name, copyright 20XX”, then the logo should have an empty alt (alt="") so as to not create a redundant announcement of the company’s name.
-
 ## Avoid starting with “photo of…”
 
 Don’t begin alternative text with “photo of…” or “picture of…”. Assistive technologies already indicate the role of the element as an “image” or “graphic”. Redundancy makes for a poor user experience.
+
+## Avoid including the word “logo” in logo images
+
+If the image is a company’s logo, the `alt` should be the company’s name. Adding the word “logo” as part of the alternative text is neither necessary nor useful. (One thing I found helpful here is to think of the way I, a sighted person, perceive looking at Apple’s logo. I just think “Apple”, not “Apple’s logo”, so I guess the same principle applies.)
+
+## If using an image multiple times on the page, tailor the `alt` text
+
+Using an image several times in a website doesn't necessarily mean the alt attribute should be the same for each instance. For example, when using a logo in the website’s header this often doubles as a link back to the home page. In this example, the `alt` would be most useful as “Apple - Homepage”. If that same logo were used in the footer of the site alongside the text “Apple, copyright 20XX”, then the logo should have an empty alt (alt="") so as to avoid creating a redundant announcement of the company’s name.
