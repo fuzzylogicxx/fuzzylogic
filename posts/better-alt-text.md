@@ -23,7 +23,7 @@ Don’t begin alternative text with “photo of…” or “picture of…”. As
 
 ## Avoid including the word “logo” in logo images
 
-If the image is a company’s logo, the `alt` should be the company’s name. Adding the word “logo” as part of the alternative text is neither necessary nor useful. (One thing I found helpful here is to think of the way I, a sighted person, perceive looking at Apple’s logo. I just think “Apple”, not “Apple’s logo”, so I guess the same principle applies.)
+If the image is a company’s logo, the `alt` should be the company’s name. Adding the word “logo” as part of the alternative text is neither necessary nor useful. (One thing I found helpful here is to think of the way I, as a sighted person, perceive Apple’s logo. I just think “Apple”, not “Apple’s logo”, so I guess the same principle applies.)
 
 ## If using an image multiple times on the page, tailor the `alt` text
 
