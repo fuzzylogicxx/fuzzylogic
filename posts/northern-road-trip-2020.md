@@ -51,7 +51,7 @@ Sidenote: this wee search and the relief of finding somewhere prompted me to con
 
 With happy bellies we retired to the Hotel for a rest, before it was time to head for dinner at the [Pierhouse Hotel](https://www.pierhousehotel.co.uk/about/hotel/whos-who). Our pal Fiona is General Manager and it had been on our visit-list for ages. 
 
-Despite having a canine companion we were graciously accommodated (thanks David!), however as it began sinking in just how refined the place was, we secretly prayed that the hairy ninja would be on his best behaviour.
+Despite having a canine companion we were graciously accommodated (thanks David!), however as it dawned on us just how refined the place was, we secretly began praying that the hairy ninja would be on his best behaviour.
 
 The Pierhouse lived up to its reputation. 
 
