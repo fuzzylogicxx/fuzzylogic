@@ -31,7 +31,7 @@ Following a quick stop to collect our hire car, we set off for Connel, near Oban
 
 The weather was decent, and there were early signs that Rudy would be a happy traveller. We needed only one brief stop during the 2 hour drive; at lovely Luss for a short walk to allow Rudy some shits and giggles (mainly shits).
 
-By mid-afternoon, we arrived at our destination, The Oyster Inn, donned our Covid masks and dropped off our stuff. We drove into Oban and had a saunter around, stopping to eat scallops at the harbourside Seafood Hut.
+By mid-afternoon, we arrived at our destination, [The Oyster Inn](http://www.oysterinn.co.uk/), donned our Covid masks and dropped off our stuff. We drove into Oban and had a saunter around, stopping to eat scallops at the harbourside Seafood Hut.
 
 That night we ate dinner in our hotel restaurant: Fish Pie and a beer for me, Scampi and a glass of wine for Clair. Perfectly decent pub fare all round. Holiday started!
 
