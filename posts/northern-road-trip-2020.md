@@ -1,5 +1,5 @@
 ---
-title: "Northern Road Trip, 2020"
+title: "Northern Road Trip, September 2020"
 description: 2020 staycation and a first holiday for Rudy
 date: 2020-09-27 07:48:00
 draft: true
