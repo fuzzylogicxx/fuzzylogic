@@ -21,37 +21,38 @@ tags:
   {% respimg "" + mainImage.url + "", "" + mainImage.alt + "", "(min-width: 1600px) 646px, (min-width: 700px) 612px, 91.58vw", 320, mainImage.aspectRatioHeight %}
 </figure>
 
-In 2020 it was pretty difficult to holiday abroad for two reasons: firstly, the small matter of a global pandemic; and secondly, the arrival of our Border Terrier puppy, Rudy. So we decided to make the most of our beautiful homeland (Scotland) and go on a road trip, primarily on the west coast.
+In 2020 it was pretty difficult to holiday abroad for two reasons: firstly, the small matter of a global pandemic; and secondly, the arrival of our Border Terrier puppy, Rudy. So we decided to make the most of our beautiful homeland, Scotland, and go on a road trip. We’d head primarily up the west coast, taking in some places we’d been before and some we hadn’t, and we’d eat ourselves into a coma.
 
-## Monday:
+## Monday
 
-Following a quick stop to pick our hire car, we set off for Connel, near Oban.
+Following a quick stop to pick up our hire car, we set off for Connel, near Oban.
 
 The weather was decent, and there were early signs that Rudy would be a happy traveller. We needed only one brief stop during the 2 hour drive; at lovely Luss for a short walk to allow Rudy some shits and giggles (mainly shits).
 
-By mid-afternoon, we arrived at our destination, The Oyster Inn, donned our Covid masks and dropped off our stuff. We drove into Oban and had a saunter around, stopping to eat scallops at the stall at the harbour.
+By mid-afternoon, we arrived at our destination, The Oyster Inn, donned our Covid masks and dropped off our stuff. We drove into Oban and had a saunter around, stopping to eat scallops at the harbourside Seafood Hut.
 
-That night we ate dinner in our hotel restaurant: Fish Pie and a beer for me, Scampi and a glass of wine for Clair. Perfectly decent pub grub. Holiday started!
+That night we ate dinner in our hotel restaurant: Fish Pie and a beer for me, Scampi and a glass of wine for Clair. Perfectly decent pub fare all round. Holiday started!
 
 ## Tuesday
 
-We had breakfast in the hotel and it was a good ’un: a full Scottish for Clair, and Eggs Royal (poached eggs, salmon, spinach, hollandaise) for me. It was raining fairly heavily (the only day of bad weather all trip) so the fuel was welcome.
+We had breakfast in the hotel and it was a good’un: Clair went for a full Scottish, and I had Eggs Royal (poached eggs, salmon, spinach, hollandaise). The tasty fuel was welcome as there were ominous clouds gathering outside (this was to be the only day of bad weather all trip).
 
-We headed for Ganavan beach and played and had some good fun throwing tennis balls for Rudy on his long leash. He also got a chance to wear his new Hi-Vis outfit, which gave us a good laugh!
+We headed for Ganavan beach by which time it was raining pretty heavily. This gave Rudy a chance to show off his new Hi-Vis jacket, which gave us a good laugh! We played fetch-ball with Rudy on his long leash for a while and he got his first experience of playing in the sea.
 
-After that we headed for McCaig’s tower, but stopped half-way when we realised we’d need to walk the remainer in the rain, like the amateur outdoor people we are.
+After that we headed for local attraction McCaig’s tower, although stopped half-way when we realised we’d need to walk the remainer in the rain, like the amateur outdoor folk we are. Instead we got out in Oban and began looking for lunch while the rain continued unabated but it was slim pickings for pet-friendly places. Fortunately after some cold-fingered Googling we found Markie Dan’s, like an oasis in the desert. Clair ate fish and chips (which was tremendous) while I had chicken and rice soup and a smoked haddock and mozarella fish cake. Big up Markie Dan’s and shout out to the toilet vending machine for unexpected X-rated weirdness.
 
-We looked for lunch in Oban but it was slim pickings for pet-friendly places. We found Markie Dan’s. C ate fish and chips. L ate chicken and rice soup and a smoked haddock and mozarella fish cake – it was decent.
+We got back to the Hotel for a rest, then it was time to head for dinner at the [Pierhouse Hotel](https://www.pierhousehotel.co.uk/about/hotel/whos-who) where our pal Fiona is General Manager and which has been on our must-visit list for ages. Despite our canine companion we managed to find a table (thanks David!) and as it sunk in how refined the place was, secretly began praying that the hairy ninja would be on his best behaviour.
 
-Shout out to the toilet vending machine for total weirdness.
+For starters and main we had: 
 
-We got back for a rest. 
+- smoked salmon on cripy salmon skin; 
+- breaded oysters with squid ink mayo;
+- a seafood platter; 
+- lemon sole; and on the side…
+- samphire; and 
+- chips (obvs)
 
-We went to the Pierhouse Hotel and managed to get a table, thanks to David. We prayed R would be on his best behaviour.
-
-We ate smoked salmon on cripy salmon skin; breaded oysters with squid ink mayo. A seafood platter and lemon sole. Samphire on the side (plus chips; obvs)
-
-For dessert, C had the burnt cream. L had the Buckthorn sorbet and orange chocolate Cremeux signature dessert and it was amazing. 
+For dessert, Clair had the burnt cream, where I had their signature orange chocolate cremeux with buckthorn sorbet. (NB: Despite the other amazing food I’ve still to mention, as I look back I hereby award that dessert the “best dish of the holiday” – it was amazing. 
 
 We retired for a whisky (Balvenie Port cask) in the snug with Fiona. It was great!
 
