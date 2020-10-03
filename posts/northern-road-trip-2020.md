@@ -5,7 +5,7 @@ date: 2020-09-27 07:48:00
 draft: true
 mainImage:
   url: https://res.cloudinary.com/fuzzylogic/image/upload/v1601731291/IMG_2723_iuli8z.heic
-  alt: Laurence, Clair and Rudy in Glenmorist, September 2020
+  alt: Laurence, Clair and Rudy in Glenmoriston, September 2020
   aspectRatioHeight: 320
   isAnchor: true
 openGraphImage: "https://res.cloudinary.com/fuzzylogic/image/upload/q_auto,f_auto,w_1200/v1601731291/IMG_2723_iuli8z.jpg"
@@ -17,26 +17,25 @@ tags:
 ---
 
 ---
-
 <figure>
   {% respimg "" + mainImage.url + "", "" + mainImage.alt + "", "(min-width: 1600px) 646px, (min-width: 700px) 612px, 91.58vw", 320, mainImage.aspectRatioHeight %}
 </figure>
 
-In 2020 it was pretty difficult to holiday abroad for two reasons: firstly, a global pandemic; and secondly, the arrival of our Border Terrier puppy, Rudy. So we decided to make the most of our beautiful homeland (Scotland) and go on a road trip, mainly on the west coast.
+In 2020 it was pretty difficult to holiday abroad for two reasons: firstly, the small matter of a global pandemic; and secondly, the arrival of our Border Terrier puppy, Rudy. So we decided to make the most of our beautiful homeland (Scotland) and go on a road trip, primarily on the west coast.
 
 ## Monday:
 
-Our first stop was Connel.
+Our first stop was Connel, near Oban.
 
-We picked up our hire car and got going. 
+A quick stop to pick our hire car, then we were off.
 
-We stopped at Luss for pee-pees and poo-poos.
+The weather was decent, and we only stopped once briefly, at lovely Luss for a little walk to allow Rudy a chance for shits and giggles (mainly shits).
 
-We arrived at The Oyster Inn. 
+By mid-afternoon, we arrived at our destination, The Oyster Inn, and dropped off our stuff.
 
-We drove into Oban and had a saunter around. We ate scallops at the van. 
+We drove into Oban and had a saunter around, stopping to eat scallops at the stall at the harbour.
 
-We ate dinner in our hotel restaurant: Fish Pie for Laurence, Scampi for Clair.
+That night we ate dinner in our hotel restaurant: Fish Pie for Laurence, Scampi for Clair.
 
 ## Tuesday
 
