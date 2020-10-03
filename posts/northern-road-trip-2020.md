@@ -45,7 +45,7 @@ We headed for Ganavan beach and by the time we arrived it was raining pretty hea
 
 After that we headed for local attraction McCaig’s tower, although stopped half-way when we realised we’d need to walk the remainer in the rain, like the amateur outdoor adventurers we are. Instead we got out in Oban and began looking for lunch while the rain continued unabated but it was slim pickings for pet-friendly places. Fortunately, after some cold-fingered Googling, we found Markie Dan’s – a pooch-friendly oasis in the desert. Clair ate fish and chips (which was tremendous) while I had chicken and rice soup and a smoked haddock and mozarella fish cake. Big up Markie Dan’s and shout out to the toilet vending machine for unexpected X-rated weirdness.
 
-Sidenote: this wee challenge and the relief of finding somewhere prompted me to consider restarting work on a side-project called FamJam that’s a directory of quality family and pet-friendly bars, restaurants and maybe hotels too, following the tricky time we had trying to book accommodation for this trip.
+Sidenote: this wee challenge and the relief of finding somewhere prompted me to consider restarting work on a side-project called FamJam that’s an online directory of quality family and pet-friendly bars, restaurants (and maybe hotels too, following the tricky time we had trying to book accommodation for this trip).
 
 With happy bellies we retired to the Hotel for a rest, before it was time to head for dinner at the [Pierhouse Hotel](https://www.pierhousehotel.co.uk/about/hotel/whos-who). Our pal Fiona is General Manager and it had been on our visit-list for ages. 
 
