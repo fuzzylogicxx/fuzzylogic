@@ -29,21 +29,17 @@ Following a quick stop to pick our hire car, we set off for Connel, near Oban.
 
 The weather was decent, and there were early signs that Rudy would be a happy traveller. We needed only one brief stop during the 2 hour drive; at lovely Luss for a short walk to allow Rudy some shits and giggles (mainly shits).
 
-By mid-afternoon, we arrived at our destination, The Oyster Inn, donned our Covid masks and dropped off our stuff.
+By mid-afternoon, we arrived at our destination, The Oyster Inn, donned our Covid masks and dropped off our stuff. We drove into Oban and had a saunter around, stopping to eat scallops at the stall at the harbour.
 
-We drove into Oban and had a saunter around, stopping to eat scallops at the stall at the harbour.
-
-That night we ate dinner in our hotel restaurant: Fish Pie for Laurence, Scampi for Clair.
+That night we ate dinner in our hotel restaurant: Fish Pie and a beer for me, Scampi and a glass of wine for Clair. Perfectly decent pub grub. Holiday started!
 
 ## Tuesday
 
-Breakfast: C: full scottish – nice. L: Eggs Royal (poached eggs, salmon, spinach, hollandaise)
+We had breakfast in the hotel and it was a good ’un: a full Scottish for Clair, and Eggs Royal (poached eggs, salmon, spinach, hollandaise) for me. It was raining fairly heavily (the only day of bad weather all trip) so the fuel was welcome.
 
-It was pouring with rain.
+We headed for Ganavan beach and played and had some good fun throwing tennis balls for Rudy on his long leash. He also got a chance to wear his new Hi-Vis outfit, which gave us a good laugh!
 
-We went to Ganavan beach and played with the ball with Rudy on his long leash.
-
-We drove part-way to McCaig’s tower.
+After that we headed for McCaig’s tower, but stopped half-way when we realised we’d need to walk the remainer in the rain, like the amateur outdoor people we are.
 
 We looked for lunch in Oban but it was slim pickings for pet-friendly places. We found Markie Dan’s. C ate fish and chips. L ate chicken and rice soup and a smoked haddock and mozarella fish cake – it was decent.
 
