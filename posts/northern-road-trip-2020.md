@@ -25,7 +25,9 @@ tags:
 
 In 2020 it was pretty difficult to holiday abroad for two reasons: firstly, the small matter of a global pandemic; and secondly, the arrival of our Border Terrier puppy, Rudy. So we decided to make the most of our beautiful homeland, Scotland, and go on a road trip. 
 
-We’d head primarily up the west coast, taking in new places and familiar favourites; we’d enjoy some first-holiday fun with our furry pal; and we’d eat ourselves into a seafood-induced coma.
+We’d head primarily up the west coast, taking in new places and familiar favourites; we’d enjoy some first-holiday fun with our furry pal; and over five nights we’d eat ourselves into a seafood-induced coma.
+
+Here’s how it happened.
 
 ## Monday
 
