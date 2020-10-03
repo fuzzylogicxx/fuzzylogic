@@ -23,7 +23,7 @@ tags:
 
 In 2020 it was pretty difficult to holiday abroad for two reasons: firstly, the small matter of a global pandemic; and secondly, the arrival of our Border Terrier puppy, Rudy. So we decided to make the most of our beautiful homeland, Scotland, and go on a road trip. 
 
-We’d head primarily up the west coast, taking in some places we’d visited and enjoyed before and others we hadn’t; we’d have some fun with our furry pal; and we’d eat ourselves into a coma.
+We’d head primarily up the west coast, taking in some places we’d visited and enjoyed before and others we hadn’t; we’d have some fun with our furry pal; and we’d eat ourselves into a seafood-induced coma.
 
 ## Monday
 
@@ -43,9 +43,13 @@ We headed for Ganavan beach and by the time we arrived it was raining pretty hea
 
 After that we headed for local attraction McCaig’s tower, although stopped half-way when we realised we’d need to walk the remainer in the rain, like the amateur outdoor adventurers we are. Instead we got out in Oban and began looking for lunch while the rain continued unabated but it was slim pickings for pet-friendly places. Fortunately, after some cold-fingered Googling, we found Markie Dan’s – a pooch-friendly oasis in the desert. Clair ate fish and chips (which was tremendous) while I had chicken and rice soup and a smoked haddock and mozarella fish cake. Big up Markie Dan’s and shout out to the toilet vending machine for unexpected X-rated weirdness.
 
-We got back to the Hotel for a rest, then it was time to head for dinner at the [Pierhouse Hotel](https://www.pierhousehotel.co.uk/about/hotel/whos-who) where our pal Fiona is General Manager and which has been on our must-visit list for ages. Despite our canine companion we managed to find a table (thanks David!) and as it sunk in how refined the place was, secretly began praying that the hairy ninja would be on his best behaviour.
+With happy bellies we retired to the Hotel for a rest, before it was time to head for dinner at the [Pierhouse Hotel](https://www.pierhousehotel.co.uk/about/hotel/whos-who). Our pal Fiona is General Manager and it had been on our visit-list for ages. 
 
-For starters and main we had: 
+Despite having a canine companion we were graciously accommodated (thanks David!), although as it began sinking in just how refined the place was, we secretly prayed that the hairy ninja would be on his best behaviour.
+
+The Pierhouse lived up to its reputation. 
+
+For starters and mains we had:
 
 - smoked salmon on cripy salmon skin; 
 - breaded oysters with squid ink mayo;
