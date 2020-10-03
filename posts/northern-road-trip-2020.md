@@ -27,7 +27,7 @@ In 2020 it was pretty difficult to holiday abroad for two reasons: firstly, the 
 
 We’d head primarily up the west coast, taking in new places and familiar favourites; we’d enjoy some first-holiday fun with our furry pal; and over five nights we’d eat ourselves into a seafood-induced coma.
 
-Here’s how it happened.
+Here’s how it went.
 
 ## Monday
 
@@ -35,15 +35,15 @@ Following a quick stop to collect our hire car, we set off for Connel, near Oban
 
 The weather was decent, and there were early signs that Rudy would be a happy traveller. We needed only one brief stop during the 2 hour drive; at lovely Luss for a short walk to allow Rudy some shits and giggles (mainly shits).
 
-By mid-afternoon we had arrived at our destination, [The Oyster Inn](http://www.oysterinn.co.uk/), donned our Covid masks and dropped off our stuff. 
+By mid-afternoon we had arrived at our destination, [The Oyster Inn](http://www.oysterinn.co.uk/); donned our Covid masks; and dropped off our bags. 
 
-We drove into Oban and enjoyed a saunter around, stopping to eat scallops at the harbourside Seafood Hut.
+We drove into Oban then enjoyed a saunter around the shops overlooking the bay, stopping to eat scallops at the harbourside Seafood Hut.
 
-That night we ate dinner in our hotel restaurant: Fish Pie and a beer for me, Scampi and a glass of wine for Clair. Perfectly decent pub fare all round. Holiday started!
+Later that night we ate dinner in our hotel restaurant: Fish Pie and a beer for me, Scampi and a glass of wine for Clair. And perfectly decent pub fare all round. Holiday underway!
 
 ## Tuesday
 
-We started the day with breakfast in the hotel and it was a good’un: Clair went for a full Scottish, and I had Eggs Royal (poached eggs, salmon, spinach, hollandaise). The tasty fuel was welcome as there were ominous clouds gathering outside (this was to be the only day of bad weather all trip).
+We started the day with breakfast in the hotel and it was a good’un: Clair plumped for a “full Scottish”, and I had Eggs Royal (poached eggs, salmon, spinach, hollandaise). With clouds gathering ominously outside, this tasty fuel was exactly what was needed (it was the only day of bad weather during the entire trip).
 
 We headed for Ganavan beach and by the time we arrived it was raining pretty heavily. This gave Rudy a chance to show off his new Hi-Vis jacket, which gave us a good laugh! We played fetch-ball with Rudy on his long leash for a while and he got his first experience of playing in the sea.
 
@@ -68,11 +68,11 @@ For starters and mains we had:
 
 For dessert, Clair had the burnt cream, where I had their signature orange chocolate cremeux with buckthorn sorbet. (NB: Despite the other amazing food I’ve still to mention, as I look back on the overall trip I’m moved to award that dessert the “best dish of the holiday” – it was off-the-scale!)
 
-We retired for a whisky (Balvenie Port cask) in the snug with Fiona. It was great!
+Fiona arrived to greet us as we were finishing and ushered us into the snug area for a whisky (Balvenie Port cask) to cap the night. It was great!
 
 ## Wednesday
 
-Breakfast: C: veggie full scottish – nice. L: Scrambled and SS.
+Breakfast: C: veggie scottish – nice. L: Scrambled and SS.
 
 Heading for Glenmoriston. Following last night’s challenges, stopped in at the Pet Shop in Oban to hopefully pick up some superior chews to keep Rudy occupied.
 
