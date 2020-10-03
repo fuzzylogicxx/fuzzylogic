@@ -39,7 +39,7 @@ That night we ate dinner in our hotel restaurant: Fish Pie and a beer for me, Sc
 
 We had breakfast in the hotel and it was a good’un: Clair went for a full Scottish, and I had Eggs Royal (poached eggs, salmon, spinach, hollandaise). The tasty fuel was welcome as there were ominous clouds gathering outside (this was to be the only day of bad weather all trip).
 
-We headed for Ganavan beach by which time it was raining pretty heavily. This gave Rudy a chance to show off his new Hi-Vis jacket, which gave us a good laugh! We played fetch-ball with Rudy on his long leash for a while and he got his first experience of playing in the sea.
+We headed for Ganavan beach and by the time we arrived it was raining pretty heavily. This gave Rudy a chance to show off his new Hi-Vis jacket, which gave us a good laugh! We played fetch-ball with Rudy on his long leash for a while and he got his first experience of playing in the sea.
 
 After that we headed for local attraction McCaig’s tower, although stopped half-way when we realised we’d need to walk the remainer in the rain, like the amateur outdoor folk we are. Instead we got out in Oban and began looking for lunch while the rain continued unabated but it was slim pickings for pet-friendly places. Fortunately after some cold-fingered Googling we found Markie Dan’s, like an oasis in the desert. Clair ate fish and chips (which was tremendous) while I had chicken and rice soup and a smoked haddock and mozarella fish cake. Big up Markie Dan’s and shout out to the toilet vending machine for unexpected X-rated weirdness.
 
