@@ -39,7 +39,7 @@ That night we ate dinner in our hotel restaurant: Fish Pie and a beer for me, Sc
 
 ## Tuesday
 
-We had breakfast in the hotel and it was a good’un: Clair went for a full Scottish, and I had Eggs Royal (poached eggs, salmon, spinach, hollandaise). The tasty fuel was welcome as there were ominous clouds gathering outside (this was to be the only day of bad weather all trip).
+We started the day with breakfast in the hotel and it was a good’un: Clair went for a full Scottish, and I had Eggs Royal (poached eggs, salmon, spinach, hollandaise). The tasty fuel was welcome as there were ominous clouds gathering outside (this was to be the only day of bad weather all trip).
 
 We headed for Ganavan beach and by the time we arrived it was raining pretty heavily. This gave Rudy a chance to show off his new Hi-Vis jacket, which gave us a good laugh! We played fetch-ball with Rudy on his long leash for a while and he got his first experience of playing in the sea.
 
