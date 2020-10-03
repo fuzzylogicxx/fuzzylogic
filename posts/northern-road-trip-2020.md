@@ -21,7 +21,9 @@ tags:
   {% respimg "" + mainImage.url + "", "" + mainImage.alt + "", "(min-width: 1600px) 646px, (min-width: 700px) 612px, 91.58vw", 320, mainImage.aspectRatioHeight %}
 </figure>
 
-In 2020 it was pretty difficult to holiday abroad for two reasons: firstly, the small matter of a global pandemic; and secondly, the arrival of our Border Terrier puppy, Rudy. So we decided to make the most of our beautiful homeland, Scotland, and go on a road trip. We’d head primarily up the west coast, taking in some places we’d been before and some we hadn’t, and we’d eat ourselves into a coma.
+In 2020 it was pretty difficult to holiday abroad for two reasons: firstly, the small matter of a global pandemic; and secondly, the arrival of our Border Terrier puppy, Rudy. So we decided to make the most of our beautiful homeland, Scotland, and go on a road trip. 
+
+We’d head primarily up the west coast, taking in some places we’d visited and enjoyed before and others we hadn’t; we’d have some fun with our furry pal; and we’d eat ourselves into a coma.
 
 ## Monday
 
