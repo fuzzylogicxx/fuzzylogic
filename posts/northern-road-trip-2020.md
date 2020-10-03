@@ -27,7 +27,7 @@ We’d head primarily up the west coast, taking in some places we’d visited an
 
 ## Monday
 
-Following a quick stop to pick up our hire car, we set off for Connel, near Oban.
+Following a quick stop to collect our hire car, we set off for Connel, near Oban.
 
 The weather was decent, and there were early signs that Rudy would be a happy traveller. We needed only one brief stop during the 2 hour drive; at lovely Luss for a short walk to allow Rudy some shits and giggles (mainly shits).
 
