@@ -31,7 +31,9 @@ Following a quick stop to collect our hire car, we set off for Connel, near Oban
 
 The weather was decent, and there were early signs that Rudy would be a happy traveller. We needed only one brief stop during the 2 hour drive; at lovely Luss for a short walk to allow Rudy some shits and giggles (mainly shits).
 
-By mid-afternoon, we arrived at our destination, [The Oyster Inn](http://www.oysterinn.co.uk/), donned our Covid masks and dropped off our stuff. We drove into Oban and had a saunter around, stopping to eat scallops at the harbourside Seafood Hut.
+By mid-afternoon we had arrived at our destination, [The Oyster Inn](http://www.oysterinn.co.uk/), donned our Covid masks and dropped off our stuff. 
+
+We drove into Oban and enjoyed a saunter around, stopping to eat scallops at the harbourside Seafood Hut.
 
 That night we ate dinner in our hotel restaurant: Fish Pie and a beer for me, Scampi and a glass of wine for Clair. Perfectly decent pub fare all round. Holiday started!
 
@@ -42,6 +44,8 @@ We had breakfast in the hotel and it was a good’un: Clair went for a full Scot
 We headed for Ganavan beach and by the time we arrived it was raining pretty heavily. This gave Rudy a chance to show off his new Hi-Vis jacket, which gave us a good laugh! We played fetch-ball with Rudy on his long leash for a while and he got his first experience of playing in the sea.
 
 After that we headed for local attraction McCaig’s tower, although stopped half-way when we realised we’d need to walk the remainer in the rain, like the amateur outdoor adventurers we are. Instead we got out in Oban and began looking for lunch while the rain continued unabated but it was slim pickings for pet-friendly places. Fortunately, after some cold-fingered Googling, we found Markie Dan’s – a pooch-friendly oasis in the desert. Clair ate fish and chips (which was tremendous) while I had chicken and rice soup and a smoked haddock and mozarella fish cake. Big up Markie Dan’s and shout out to the toilet vending machine for unexpected X-rated weirdness.
+
+This wee challenge and the relief of finding somewhere prompted me to consider restarting work on a side-project called FamJam that’s a directory of quality family and pet-friendly bars, restaurants and maybe hotels too, following the tricky time we had trying to book accommodation for this trip.
 
 With happy bellies we retired to the Hotel for a rest, before it was time to head for dinner at the [Pierhouse Hotel](https://www.pierhousehotel.co.uk/about/hotel/whos-who). Our pal Fiona is General Manager and it had been on our visit-list for ages. 
 
