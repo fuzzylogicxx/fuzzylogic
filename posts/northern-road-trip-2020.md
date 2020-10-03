@@ -72,7 +72,7 @@ Breakfast: C: veggie full scottish – nice. L: Scrambled and SS.
 
 Heading for Glenmoriston. Following last night’s challenges, stopped in at the Pet Shop in Oban to hopefully pick up some superior chews to keep Rudy occupied.
 
-Enter _Dynoroad_:  a stick of Himilayan Yak Milk that would bring us peace at meal times we would never have dreamed possible.
+Enter _Dynoroad_:  a stick of Himilayan Yak Milk (yes, really) that would bring us a peace at mealtimes we had hithero dreamed possible.
 
 The most amazing drive in the sunshine from Oban to Kentallen (stopping at Holly House Hotel for a great burger / breaded brie) through Ballachulish to Fort William. 
 
