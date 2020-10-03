@@ -5,7 +5,7 @@ date: 2020-09-27 07:48:00
 draft: true
 mainImage:
   url: https://res.cloudinary.com/fuzzylogic/image/upload/v1601734993/IMG_2723_wa3cmm.jpg
-  alt: Laurence, Clair and Rudy in Glenmoriston, September 2020
+  alt: Laurence, Clair and Rudy at the Cluanie Inn, Glenmoriston, in September 2020
   aspectRatioHeight: 320
   isAnchor: true
 openGraphImage: "https://res.cloudinary.com/fuzzylogic/image/upload/q_auto,f_auto,w_1200/v1601734993/IMG_2723_wa3cmm.jpg"
@@ -19,6 +19,7 @@ tags:
 ---
 <figure>
   {% respimg "" + mainImage.url + "", "" + mainImage.alt + "", "(min-width: 1600px) 646px, (min-width: 700px) 612px, 91.58vw", 320, mainImage.aspectRatioHeight %}
+  <figcaption>{{ mainImage.figcaption }}</figcaption>
 </figure>
 
 In 2020 it was pretty difficult to holiday abroad for two reasons: firstly, the small matter of a global pandemic; and secondly, the arrival of our Border Terrier puppy, Rudy. So we decided to make the most of our beautiful homeland, Scotland, and go on a road trip. 
