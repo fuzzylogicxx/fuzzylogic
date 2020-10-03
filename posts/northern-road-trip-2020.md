@@ -1,6 +1,6 @@
 ---
 title: "Northern Road Trip, 2020"
-description: Thoughts after watching Netflix’s new documentary about the dangerous impact of social networking
+description: 2020 staycation and a first holiday for Rudy
 date: 2020-09-27 07:48:00
 draft: true
 tags:
@@ -9,22 +9,22 @@ tags:
   - travel
   - food
 ---
-We couldn’t go abroad for two reasons: firstly, a global pandemic; and secondly, our Border Terrier pupoy, Rudy.
+In 2020 it was pretty difficult to holiday abroad for two reasons: firstly, a global pandemic; and secondly, the arrival of our Border Terrier puppy, Rudy. So we decided to make the most of our beautiful homeland (Scotland) and go on a road trip, mainly on the west coast.
 ---
 
 ## Monday:
 
 Our first stop was Connel.
 
-We picked up a car. 
+We picked up our hire car and got going. 
 
 We stopped at Luss for pee-pees and poo-poos.
 
 We arrived at The Oyster Inn. 
 
-We drove into Oban and had a walk around. We ate scallops at the van. 
+We drove into Oban and had a saunter around. We ate scallops at the van. 
 
-We ate dinner in our hotel restaurant. Fish Pie for L, Scampi for Clair.
+We ate dinner in our hotel restaurant: Fish Pie for Laurence, Scampi for Clair.
 
 ## Tuesday
 
