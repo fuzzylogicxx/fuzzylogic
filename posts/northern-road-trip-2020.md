@@ -4,11 +4,11 @@ description: 2020 staycation and a first holiday for Rudy
 date: 2020-09-27 07:48:00
 draft: true
 mainImage:
-  url: https://res.cloudinary.com/fuzzylogic/image/upload/v1601731291/IMG_2723_iuli8z.heic
+  url: https://res.cloudinary.com/fuzzylogic/image/upload/v1601734993/IMG_2723_wa3cmm.jpg
   alt: Laurence, Clair and Rudy in Glenmoriston, September 2020
   aspectRatioHeight: 320
   isAnchor: true
-openGraphImage: "https://res.cloudinary.com/fuzzylogic/image/upload/q_auto,f_auto,w_1200/v1601731291/IMG_2723_iuli8z.jpg"
+openGraphImage: "https://res.cloudinary.com/fuzzylogic/image/upload/q_auto,f_auto,w_1200/v1601734993/IMG_2723_wa3cmm.jpg"
 tags:
   - entry
   - holiday
@@ -25,13 +25,11 @@ In 2020 it was pretty difficult to holiday abroad for two reasons: firstly, the 
 
 ## Monday:
 
-Our first stop was Connel, near Oban.
+Following a quick stop to pick our hire car, we set off for Connel, near Oban.
 
-A quick stop to pick our hire car, then we were off.
+The weather was decent, and there were early signs that Rudy would be a happy traveller. We needed only one brief stop during the 2 hour drive; at lovely Luss for a short walk to allow Rudy some shits and giggles (mainly shits).
 
-The weather was decent, and we only stopped once briefly, at lovely Luss for a little walk to allow Rudy a chance for shits and giggles (mainly shits).
-
-By mid-afternoon, we arrived at our destination, The Oyster Inn, and dropped off our stuff.
+By mid-afternoon, we arrived at our destination, The Oyster Inn, donned our Covid masks and dropped off our stuff.
 
 We drove into Oban and had a saunter around, stopping to eat scallops at the stall at the harbour.
 
