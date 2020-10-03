@@ -47,13 +47,13 @@ We started the day with breakfast in the hotel and it was a good’un: Clair plu
 
 We headed for Ganavan beach and by the time we arrived it was raining pretty heavily. This gave Rudy a chance to show off his new Hi-Vis jacket, which gave us a good laugh! We played fetch-ball with Rudy on his long leash for a while and he got his first experience of playing in the sea.
 
-After that we headed for local attraction McCaig’s tower, although stopped half-way when we realised we’d need to walk the remainer in the rain, like the amateur outdoor adventurers we are. Instead we got out in Oban and began looking for lunch while the rain continued unabated but it was slim pickings for pet-friendly places. Fortunately, after some cold-fingered Googling, we found Markie Dan’s – a pooch-friendly oasis in the desert. Clair ate fish and chips (which was tremendous) while I had chicken and rice soup and a smoked haddock and mozarella fish cake. Big up Markie Dan’s and shout out to the toilet vending machine for unexpected X-rated weirdness.
+After that we drove toward local attraction McCaig’s tower, although when half-way there it became apparent we’d need to get out and walk the remainder in the rain, we axed the idea, like the amateur outdoor adventurers we are. Instead we got out in Oban and began looking for lunch while the rain continued unabated, however it was slim pickings for pet-friendly venues. Fortunately, after some frozen-fingered Googling, we found Markie Dan’s – a pooch-friendly oasis in the desert. Clair ate fish and chips (which was tremendous) while I had chicken and rice soup and a smoked haddock and mozarella fish cake. Big up Markie Dan’s and shout out to their toilet vending machine for unexpected X-rated weirdness.
 
-Sidenote: this wee search and the relief of finding somewhere prompted me to consider restarting work on a side-project called FamJam that’s an online directory of quality family and pet-friendly bars, restaurants, and perhaps hotels too, following the tricky time we had trying to book accommodation for this trip. Someday, maybe.
+Sidenote: this wee lunchtime search and the relief of finding somewhere prompted me to consider restarting work on a side-project I’d previously put on ice. The idea is an online directory of quality family and pet-friendly bars, restaurants, and perhaps also hotels given the challenges we had booking accommodation, and it would list which of these are near your current location. Maybe someday I’ll get around to it.
 
-With happy bellies we retired to the Hotel for a rest, before it was time to head for dinner at the [Pierhouse Hotel](https://www.pierhousehotel.co.uk/about/hotel/whos-who). Our pal Fiona is General Manager and it had been on our visit-list for ages. 
+With happy bellies we retired to the Hotel for a rest, before it was time to head for dinner at the [Pierhouse Hotel](https://www.pierhousehotel.co.uk/about/hotel/whos-who). Our pal Fiona is General Manager there and it had been on our visit-list for ages. 
 
-Despite having a canine companion we were graciously accommodated (thanks David!), however as it dawned on us just how refined the place was, we secretly began praying that the hairy ninja would be on his best behaviour.
+Despite having a canine companion we were graciously accommodated (thanks David!), although as it dawned on us just how refined the place was, we secretly began praying that the hairy ninja would be on his best behaviour.
 
 The Pierhouse lived up to its reputation. 
 
@@ -66,15 +66,15 @@ For starters and mains we had:
 - samphire; and 
 - chips (obvs)
 
-For dessert, Clair had the burnt cream, where I had their signature orange chocolate cremeux with buckthorn sorbet. (NB: Despite the other amazing food I’ve still to mention, as I look back on the overall trip I’m moved to award that dessert the “best dish of the holiday” – it was off-the-scale!)
+For dessert, Clair had the burnt cream, while I had their signature orange chocolate cremeux with buckthorn sorbet. (NB: Despite the cast of other amazing dishes I’ve still to mention, as I look back on the overall trip I’m moved to award that dessert “Dish of the Holiday” – it really was off-the-scale!)
 
-Fiona arrived to greet us as we were finishing and ushered us into the snug area for a whisky (Balvenie Port cask) to cap the night. It was great!
+As we were finished our meal, Fiona arrived to greet us and ushered us into “The Snug” room for a whisky to cap the night. (Balvenie Port cask, since you ask, and it fairly warmed the cockles.) It was lovely to catch up and a brilliant night overall.
 
 ## Wednesday
 
-Breakfast: C: veggie scottish – nice. L: Scrambled and SS.
+We had time for one more breakfast at The Oyster Inn before leaving, and once again it was great. Clair went for the veggie scottish breakfast, and I for scrambled eggs and smoked salmon.
 
-Heading for Glenmoriston. Following last night’s challenges, stopped in at the Pet Shop in Oban to hopefully pick up some superior chews to keep Rudy occupied.
+Our next stop was Glenmoriston, but before leaving Oban we had matters to attend to. Following last night’s challenges with Rudy we stopped in at the Pet Shop in Oban to hopefully pick up some superior chews to keep Rudy occupied.
 
 Enter _Dynoroad_:  a stick of Himilayan Yak Milk (yes, really) that would bring us a peace at mealtimes we had hithero dreamed possible.
 
