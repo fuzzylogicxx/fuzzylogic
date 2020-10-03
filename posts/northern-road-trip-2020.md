@@ -8,6 +8,7 @@ mainImage:
   alt: Laurence, Clair and Rudy at the Cluanie Inn, Glenmoriston, in September 2020
   aspectRatioHeight: 320
   isAnchor: true
+  figcaption: Laurence, Clair and Rudy at the Cluanie Inn, Glenmoriston, in September 2020
 openGraphImage: "https://res.cloudinary.com/fuzzylogic/image/upload/q_auto,f_auto,w_1200/v1601734993/IMG_2723_wa3cmm.jpg"
 tags:
   - entry
