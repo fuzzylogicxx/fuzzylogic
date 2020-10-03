@@ -3,14 +3,26 @@ title: "Northern Road Trip, 2020"
 description: 2020 staycation and a first holiday for Rudy
 date: 2020-09-27 07:48:00
 draft: true
+mainImage:
+  url: https://res.cloudinary.com/fuzzylogic/image/upload/v1601731291/IMG_2723_iuli8z.heic
+  alt: Laurence, Clair and Rudy in Glenmorist, September 2020
+  aspectRatioHeight: 320
+  isAnchor: true
+openGraphImage: "https://res.cloudinary.com/fuzzylogic/image/upload/q_auto,f_auto,w_1200/v1601731291/IMG_2723_iuli8z.jpg"
 tags:
   - entry
   - holiday
   - travel
   - food
 ---
-In 2020 it was pretty difficult to holiday abroad for two reasons: firstly, a global pandemic; and secondly, the arrival of our Border Terrier puppy, Rudy. So we decided to make the most of our beautiful homeland (Scotland) and go on a road trip, mainly on the west coast.
+
 ---
+
+<figure>
+  {% respimg "" + mainImage.url + "", "" + mainImage.alt + "", "(min-width: 1600px) 646px, (min-width: 700px) 612px, 91.58vw", 320, mainImage.aspectRatioHeight %}
+</figure>
+
+In 2020 it was pretty difficult to holiday abroad for two reasons: firstly, a global pandemic; and secondly, the arrival of our Border Terrier puppy, Rudy. So we decided to make the most of our beautiful homeland (Scotland) and go on a road trip, mainly on the west coast.
 
 ## Monday:
 
