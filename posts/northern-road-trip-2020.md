@@ -64,7 +64,7 @@ For starters and mains we had:
 - samphire; and 
 - chips (obvs)
 
-For dessert, Clair had the burnt cream, where I had their signature orange chocolate cremeux with buckthorn sorbet. (NB: Despite the other amazing food I’ve still to mention, as I look back I hereby award that dessert the “best dish of the holiday” – it was off-the-scale.)
+For dessert, Clair had the burnt cream, where I had their signature orange chocolate cremeux with buckthorn sorbet. (NB: Despite the other amazing food I’ve still to mention, as I look back on the overall trip I’m moved to award that dessert the “best dish of the holiday” – it was off-the-scale!)
 
 We retired for a whisky (Balvenie Port cask) in the snug with Fiona. It was great!
 
