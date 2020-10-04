@@ -85,7 +85,7 @@ As we finished our meal, Fiona arrived to greet us and ushered us into “The Sn
 
 We had time for one more breakfast at The Oyster Inn before leaving, and once again it hit the target. Clair went for the veggie scottish breakfast, while I had scrambled eggs and smoked salmon.
 
-Our next stop was Glenmoriston, but before leaving Oban we had important matters to address. Following last night’s challenges with Rudy we resolved to find some superior chew-chews to keep him occupied during the remaining meal-times, so stopped in at a wee Pet Shop we‘d noticed in town the previous day.
+Our next stop was Glenmoriston, but before leaving Oban we had important matters to address. Following last night’s challenges with Rudy we resolved to find some superior chew-chews to keep him occupied during the remaining meal-times, so stopped in at a wee Pet Shop we’d noticed in town the previous day.
 
 Enter _Dynorod_ (not real name) – a stick of “Himilayan Yak Milk” that would usher in a zen-like peace at mealtimes we had hitherto thought impossible.
 
