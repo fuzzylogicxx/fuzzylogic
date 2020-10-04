@@ -23,13 +23,13 @@ tags:
   <figcaption>{{ mainImage.figcaption }}</figcaption>
 </figure>
 
-In 2020 it was pretty difficult to holiday abroad for two reasons: firstly, the small matter of a global pandemic; and secondly, the arrival of our Border Terrier puppy, Rudy. So we decided to make the most of our beautiful homeland, Scotland, and go on a road trip. 
+In 2020 it's been pretty difficult to holiday abroad for two reasons: firstly, the small matter of a global pandemic; and secondly, the arrival of our Border Terrier puppy, Rudy. So we decided to make the most of our beautiful homeland, Scotland, and go on a road trip. 
 
-We’d head primarily up the west coast, taking in new places and familiar favourites; we’d enjoy some first-holiday fun with our furry pal; and over five nights we’d eat ourselves into a seafood-induced coma.
+The plan was straightforward: we’d head primarily up the west coast, taking in new places and familiar favourites; we’d enjoy some “first holiday” fun with our furry pal; and over five nights we’d eat ourselves into a seafood-induced coma.
 
-The organising of this holiday was a bit trickier than it might otherwise have been, as it involved our first experience of searching for pet-friendly accommodation, compounded by many places running at lower capacity due to covid precautions. But thanks to some great recommendations by friends, we found a handful of suitable spots.
+In reality the organising of this holiday was a bit trickier than it might otherwise have been, in that it was our first experience of searching for pet-friendly accommodation, which was compounded by many venues running at lower capacity due to covid considerations. But thanks to some great recommendations from friends, we found a handful of suitable spots.
 
-Here’s the lowdown on our trip, including everywhere we ate and stayed in case it helps you, too.
+Here’s the lowdown on our trip, including everywhere we ate and stayed in case it sparks any inspiration for you, too.
 
 ## Monday
 
