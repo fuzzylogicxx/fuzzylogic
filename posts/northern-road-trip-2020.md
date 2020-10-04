@@ -49,11 +49,6 @@ We started the day with breakfast in the hotel and it was a good’un: Clair opt
 
 We headed for [Ganavan Sands](https://www.visitscotland.com/info/towns-villages/ganavan-sands-p315601) and by the time we arrived it was raining pretty heavily. However every cloud has a silver lining and this gave Rudy a chance to strut his stuff in his new Hi-Vis, waterproof jacket. We played fetch for a wee while and he had his first experience of paddling in the sea.
 
-<figure>
-  {% respimg "" + https://res.cloudinary.com/fuzzylogic/image/upload/v1601818757/IMG_1288_zrcnox.jpg + "", "Rudy on Ganavan Sands", "(min-width: 1600px) 646px, (min-width: 700px) 612px, 91.58vw", 320, mainImage.aspectRatioHeight %}
-  <figcaption>Rudy on Ganavan Sands</figcaption>
-</figure>
-
 We left for local historic attraction [McCaig’s Tower](https://www.visitscotland.com/info/see-do/mccaigs-tower-p255141), although when it became apparent that the final climb is on foot and we’d need to get back out in the rain we axed the idea, like the amateur adventurers we are. Instead we parked up in Oban and began hunting for lunch, while the rain continued unabated. Frustratingly it was slim pickings for pet-friendly venues and we endured a couple of knock-backs. Finally, after some frozen-fingered Googling, we found [Markie Dan’s](https://markiedans.co.uk/), like a pooch-friendly oasis in the desert. Clair ate fish and chips (which was dynamite) while I had chicken and rice soup and a smoked haddock and mozarella fish cake, washed down with a tasty pint of something local. Big up Markie Dan’s! (And shout out to their toilet vending machine for unexpected X-rated weirdness.)
 
 Sidenote: this wee lunchtime challenge prompted me to consider restarting a side-project I’d previously put on ice. The idea is an online directory of quality child and pet-friendly bars, restaurants, accommodation which – if you give it your current location – would list the nearest places to you. That would’ve been handy that day. Maybe someday I’ll get around to it.
