@@ -29,7 +29,7 @@ The plan was straightforward: we’d head primarily up the west coast, taking in
 
 In reality the organising of this holiday was a bit trickier than it might otherwise have been, in that it was our first experience of searching for pet-friendly accommodation, which was compounded by many venues running at lower capacity due to covid considerations. But thanks to some great recommendations from friends, we found a handful of suitable spots.
 
-Here’s the lowdown on our trip, including everywhere we ate and stayed in case it sparks any inspiration for you, too.
+Here’s the lowdown on our trip, including everywhere we ate and stayed in case it helps anyone.
 
 ## Monday
 
