@@ -35,13 +35,13 @@ Here’s the lowdown on our trip, including everywhere we ate and stayed in case
 
 Following a quick stop to collect our hire car, we set off for Connel, near Oban.
 
-The weather was decent, and there were early signs that Rudy would be a happy traveller. In fact we needed only one brief stop during the 2 hour drive; at lovely Luss for a breath of fresh air and some shits and giggles (mainly shits).
+The weather was decent, and there were early signs that Rudy would be a happy traveller. In fact we needed only one brief stop during the two and a half hour drive; at lovely Luss for a breath of fresh air and some shits and giggles (mainly shits).
 
-By mid-afternoon we had arrived at our destination, [The Oyster Inn](http://www.oysterinn.co.uk/), donned our Covid masks; and dropped off our bags. 
+By mid-afternoon we had arrived at our destination, [The Oyster Inn](http://www.oysterinn.co.uk/), taken a moment to admire the view over Loch Etive, then donned our Covid masks to check-in and ditch our bags. 
 
-We drove into Oban then enjoyed a saunter around the shops overlooking the bay, stopping to eat scallops at the harbourside Seafood Hut.
+We made the 10 minute drive into Oban then enjoyed a saunter around the shops overlooking the bay, stopping to eat scallops at the harbourside [Green Shack Seafood Hut](https://www.tripadvisor.co.uk/Restaurant_Review-g186501-d2091037-Reviews-Oban_Seafood_Hut-Oban_Argyll_and_Bute_Scotland.html). Aside from Rudy trying to eat _everything_ on the ground around us, this was magic.
 
-Later that night we ate dinner in our hotel restaurant: Fish Pie and a beer for me, Scampi and a glass of wine for Clair. Perfectly decent pub fare all round. Holiday underway!
+Later that night we ate dinner in our hotel bar-restaurant: Fish Pie and a beer for me, Scampi and a glass of wine for Clair. Perfectly decent pub fare all round. Holiday underway!
 
 ## Tuesday
 
