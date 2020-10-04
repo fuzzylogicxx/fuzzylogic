@@ -41,23 +41,28 @@ By mid-afternoon we had arrived at our destination, [The Oyster Inn](http://www.
 
 We made the 10 minute drive into Oban then enjoyed a saunter around the shops overlooking the bay, stopping to eat scallops at the harbourside [Green Shack Seafood Hut](https://www.tripadvisor.co.uk/Restaurant_Review-g186501-d2091037-Reviews-Oban_Seafood_Hut-Oban_Argyll_and_Bute_Scotland.html). Aside from Rudy trying to eat _everything_ on the ground around us, this was magic.
 
-Later that night we ate dinner in our hotel bar-restaurant: Fish Pie and a beer for me, Scampi and a glass of wine for Clair. Perfectly decent pub fare all round. Holiday underway!
+Later that night we ate dinner in The Glue Pot, [our hotel bar-restaurant](http://www.oysterinn.co.uk/glue-pot.html): Fish Pie and a beer for me, Scampi and a glass of wine for Clair. Perfectly good pub fare all round. The holiday was underway!
 
 ## Tuesday
 
-We started the day with breakfast in the hotel and it was a good’un: Clair plumped for a “full Scottish”, and I had Eggs Royal (poached eggs, salmon, spinach, hollandaise sauce). With black clouds gathering ominously outside (it was the only day of bad weather during the entire trip), this tasty fuel was exactly what was required.
+We started the day with breakfast in the hotel and it was a good’un: Clair opted t for a “full Scottish”, and I had Eggs Royal (poached eggs, salmon, spinach, hollandaise sauce). With black clouds gathering ominously outside (it was the only day of bad weather during the entire trip), this tasty fuel was exactly what was required.
 
-We headed for Ganavan beach and by the time we arrived it was raining pretty heavily. This gave Rudy a chance to strut his stuff in a new Hi-Vis, waterproof jacket. We played fetch-ball for a while and he had his first experience of paddling in the sea.
+We headed for [Ganavan Sands](https://www.visitscotland.com/info/towns-villages/ganavan-sands-p315601) and by the time we arrived it was raining pretty heavily. However every cloud has a silver lining and this gave Rudy a chance to strut his stuff in his new Hi-Vis, waterproof jacket. We played fetch for a wee while and he had his first experience of paddling in the sea.
 
-After that we drove toward local attraction McCaig’s tower, although when it became apparent we’d need to get out and walk the second half in the rain we axed the idea, like the amateur outdoor adventurers we are. Instead we parked up in Oban and began looking for lunch while the rain continued unabated. It was slim pickings for pet-friendly venues and we suffered a couple of knock-backs. Fortunately, after some frozen-fingered Googling, we found Markie Dan’s – a pooch-friendly oasis in the desert. Clair ate fish and chips (which was tremendous) while I had chicken and rice soup and a smoked haddock and mozarella fish cake. Big up Markie Dan’s and shout out to their toilet vending machine for unexpected X-rated weirdness.
+<figure>
+  {% respimg "" + https://res.cloudinary.com/fuzzylogic/image/upload/v1601818757/IMG_1288_zrcnox.jpg + "", "Rudy on Ganavan Sands", "(min-width: 1600px) 646px, (min-width: 700px) 612px, 91.58vw", 320, mainImage.aspectRatioHeight %}
+  <figcaption>Rudy on Ganavan Sands</figcaption>
+</figure>
 
-Sidenote: this wee lunchtime challenge and the relief of finally finding somewhere prompted me to consider restarting work on a side-project I’d previously put on ice. The idea is an online directory of quality family and pet-friendly bars, restaurants, and perhaps also hotels given the challenges we had booking accommodation, and it would list which of these are near your current location. Maybe someday I’ll get around to it.
+We left for local historic attraction [McCaig’s Tower](https://www.visitscotland.com/info/see-do/mccaigs-tower-p255141), although when it became apparent that the final climb is on foot and we’d need to get back out in the rain we axed the idea, like the amateur adventurers we are. Instead we parked up in Oban and began hunting for lunch, while the rain continued unabated. Frustratingly it was slim pickings for pet-friendly venues and we endured a couple of knock-backs. Finally, after some frozen-fingered Googling, we found [Markie Dan’s](https://markiedans.co.uk/), like a pooch-friendly oasis in the desert. Clair ate fish and chips (which was dynamite) while I had chicken and rice soup and a smoked haddock and mozarella fish cake, washed down with a tasty pint of something local. Big up Markie Dan’s! (And shout out to their toilet vending machine for unexpected X-rated weirdness.)
 
-With happy bellies we retired to the Hotel for a rest, before it was time to head for dinner at the [Pierhouse Hotel](https://www.pierhousehotel.co.uk/about/hotel/whos-who). Our pal Fiona is General Manager there and it had been on our visit-list for ages. 
+Sidenote: this wee lunchtime challenge prompted me to consider restarting a side-project I’d previously put on ice. The idea is an online directory of quality child and pet-friendly bars, restaurants, accommodation which – if you give it your current location – would list the nearest places to you. That would’ve been handy that day. Maybe someday I’ll get around to it.
 
-Despite having a canine companion we were graciously accommodated (thanks David!), although as it dawned on us how refined our surroundings were, we secretly began praying that the hairy ninja would be on his best behaviour.
+With happy bellies we retired to the Hotel for a rest, before it was time to head to Port Appin for dinner at the [Pierhouse Hotel](https://www.pierhousehotel.co.uk/about/hotel/whos-who). Our pal [Fiona](https://twitter.com/missfionamclean) is General Manager there and it had been on our visit-list for ages. 
 
-The Pierhouse lived up to its reputation. 
+Despite bringing a canine companion we were graciously accommodated (thanks David!), although as it dawned on us how refined our surroundings were, we secretly began praying that the tiny terrier would be on his best behaviour.
+
+The Pierhouse is beautifully located and the restaurant certainly lived up to its reputation.
 
 For starters and mains we had:
 
@@ -70,23 +75,23 @@ For starters and mains we had:
 
 For dessert, Clair had the burnt cream, while I had their signature orange chocolate cremeux with buckthorn sorbet. (NB: Despite the cast of other amazing dishes I’ve still to mention, as I look back on the overall trip I’m moved to award this dessert “Dish of the Holiday” – it really was off-the-scale!)
 
+While dining, Rudy (stashed away under our table) was a bit of handful. In COVID-times, Scottish venues have no background music and are sparser than usual, so we were on high alert to catch any unacceptable doggy behaviours before they happened and marked us out as “the pain in the ass couple with the dog”. Fortunately aside from a bit of potted plant nibbling and numerous escape attempts he didn’t do anything too visibly embarassing, although keeping one hand on him while trying to eat a plate of seafood was a bit like The Krypton Factor.
+
 As we finished our meal, Fiona arrived to greet us and ushered us into “The Snug” for a whisky to cap the night. (Balvenie Port cask, since you ask, and it fairly warmed the cockles.) It was lovely to catch up and a brilliant night overall.
 
 ## Wednesday
 
-We had time for one more breakfast at The Oyster Inn before leaving, and once again it hit the target. Clair went for the veggie scottish breakfast, and I for scrambled eggs and smoked salmon.
+We had time for one more breakfast at The Oyster Inn before leaving, and once again it hit the target. Clair went for the veggie scottish breakfast, while I had scrambled eggs and smoked salmon.
 
-Our next stop was Glenmoriston, but before leaving Oban we had important matters to attend to. Following last night’s challenges with Rudy we stopped in at the Pet Shop in Oban to hopefully pick up some superior chews to keep Rudy occupied.
+Our next stop was Glenmoriston, but before leaving Oban we had important matters to address. Following last night’s challenges with Rudy we resolved to find some superior chew-chews to keep him occupied during the remaining meal-times, so stopped in at a wee Pet Shop we‘d noticed in Oban the previous day.
 
-Enter _Dynoroad_ (not real name):  a stick of “Himilayan Yak Milk” (yes, really) that would bring us a meal-time peace we had hitherto thought impossible.
+Enter _Dynorod_ (not real name) – a stick of “Himilayan Yak Milk” (yes, really) that would usher in zen-like peace at mealtimes we had hitherto thought impossible.
 
-The most amazing drive in the sunshine from Oban to Kentallen (stopping at Holly House Hotel for a great burger / breaded brie) through Ballachulish to Fort William. 
+Tooled up and ready, we embarked on the most amazing sunshine drive from Oban to Kentallen (stopping at the [Holly Tree Hotel](https://hollytreehotel.co.uk/) for a great burger and walk along the pier) through Ballachulish to Fort William. We’d travelled this route many times before, but this time the scenery looked even more incredible (especially at the point just around Ballachulish). It was Scotland at its bonniest.
 
-Scenery incredible (especially at the point just before and after Ballachulish); Scotland at its bonniest.
+We then climbed over 1200 feet through the hills before settling at our destination, [The Cluanie Inn](https://www.blacksheephotels.com/cluanie-inn-home/). I can’t over-emphasise this: this location is stunning. You are literally right in the middle of the hills, with deer roaming freely around you.
 
-We climbed over 1200 feet through the hills and settled at The Cluanie Inn. 
-
-Stunning location. Literally right in the middle of the hills. Deer roaming free. 
+The sun was still out and 
 
 Rudy going a bit stir-crazy with the space he had available and shattering our picturesque “beer in the hills” vision by eating deer-jobbies.
 
