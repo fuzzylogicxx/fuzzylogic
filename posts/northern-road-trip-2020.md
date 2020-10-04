@@ -41,13 +41,18 @@ By mid-afternoon we had arrived at our destination, [The Oyster Inn](http://www.
 
 We made the 10 minute drive into Oban then enjoyed a saunter around the shops overlooking the bay, stopping to eat scallops at the harbourside [Green Shack Seafood Hut](https://www.tripadvisor.co.uk/Restaurant_Review-g186501-d2091037-Reviews-Oban_Seafood_Hut-Oban_Argyll_and_Bute_Scotland.html). Aside from Rudy trying to eat _everything_ on the ground around us, this was magic.
 
-Later that night we ate dinner in The Glue Pot, [our hotel bar-restaurant](http://www.oysterinn.co.uk/glue-pot.html): Fish Pie and a beer for me, Scampi and a glass of wine for Clair. Perfectly good pub fare all round. The holiday was underway!
+Later that night we ate dinner in The [Glue Pot](http://www.oysterinn.co.uk/glue-pot.html), our hotel bar-restaurant – Fish Pie and a beer for me, Scampi and a glass of wine for Clair. Good pub fare all round. The holiday was off to a fine start!
 
 ## Tuesday
 
 We started the day with breakfast in the hotel and it was a good’un: Clair opted t for a “full Scottish”, and I had Eggs Royal (poached eggs, salmon, spinach, hollandaise sauce). With black clouds gathering ominously outside (it was the only day of bad weather during the entire trip), this tasty fuel was exactly what was required.
 
 We headed for [Ganavan Sands](https://www.visitscotland.com/info/towns-villages/ganavan-sands-p315601) and by the time we arrived it was raining pretty heavily. However every cloud has a silver lining and this gave Rudy a chance to strut his stuff in his new Hi-Vis, waterproof jacket. We played fetch for a wee while and he had his first experience of paddling in the sea.
+
+<figure>
+  {% respimg "https://res.cloudinary.com/fuzzylogic/image/upload/v1601818757/IMG_1288_zrcnox.jpg", "Rudy on Ganavan Sands", "(min-width: 1600px) 646px, (min-width: 700px) 612px, 91.58vw" %}
+  <figcaption>Rudy on Ganavan Sands</figcaption>
+</figure>
 
 We left for local historic attraction [McCaig’s Tower](https://www.visitscotland.com/info/see-do/mccaigs-tower-p255141), although when it became apparent that the final climb is on foot and we’d need to get back out in the rain we axed the idea, like the amateur adventurers we are. Instead we parked up in Oban and began hunting for lunch, while the rain continued unabated. Frustratingly it was slim pickings for pet-friendly venues and we endured a couple of knock-backs. Finally, after some frozen-fingered Googling, we found [Markie Dan’s](https://markiedans.co.uk/), like a pooch-friendly oasis in the desert. Clair ate fish and chips (which was dynamite) while I had chicken and rice soup and a smoked haddock and mozarella fish cake, washed down with a tasty pint of something local. Big up Markie Dan’s! (And shout out to their toilet vending machine for unexpected X-rated weirdness.)
 
