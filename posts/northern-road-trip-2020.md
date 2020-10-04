@@ -93,15 +93,15 @@ We then climbed over 1200 feet through the hills before settling at our destinat
 
 Spotting trestle tables behind the hotel we decided to resolved to check-in quickly then enjoy the last of the day’s sunshine with an al fresco beer. Unfortunately by the time I had returned with the beers, Clair was engaged in a battle of wills with the wee fella, who was going a bit stir-crazy with all the space he had available. He kinda shattered our “beer in the hills” moment by relentlessly eating deer jobbies, but still, the thought was there…
 
-That night we had a lovely dinner: I went for South Indian Garlic Chicken (I understand that the owners are Indian, so it seemed like a good choice and change from seafood) while Clair had a roast pork stir fry. For desert we shared a Rhubarb and Apple Crumble with ice cream. Before bed we had a whisky and a game of Connect 4 in the lounge area, while Rudy munched on _Dynorod_. Bliss.
+That night we had a lovely dinner: I went for South Indian Garlic Chicken (the owners are Indian, so it seemed like a good time to change tack from seafood) while Clair had a roast pork stir fry. For desert we shared a Rhubarb and Apple Crumble with ice cream. Before bed we had a whisky and a game of Connect 4 in the lounge area, while Rudy munched on _Dynorod_. Bliss.
 
 ## Thursday
 
 Breakfast at the Cluanie was great. Clair scratched a nostalgia itch with a bowl of Coco Pops, followed up by a full Scottish. I had yogurt and muesli then scrambled eggs on toast.
 
-Our next stop was Ullapool. Clair was really excited about this part, mainly as she’d be reunited with [The Seafood Shack](https://www.seafoodshack.co.uk/) and its owners, having really enjoyed visiting to work on food photography for [their forthcoming recipe book] earlier in the year.
+Our next stop was Ullapool. Clair was really excited about this part, mainly as she’d be reunited with [The Seafood Shack](https://www.seafoodshack.co.uk/) and its owners, having enjoyed visiting to work on food photography for [their forthcoming recipe book] earlier in the year.
 
-The drive from Glenmoriston to Ullapool was beautiful, too. The stunning scenery was musically accompanied by Clair’s “alternative 80s” mixtape (taking in Television, Echo and The Bunnymen, Cocteau Twins) followed by our friend Andy McColgan’s excellent [_Go mild in the country_](https://open.spotify.com/playlist/1cR2YZGpu7ZdDDf6Y5y8qh?si=GASKD91gQJyNwBMrpL5fsg), and I must say all three travellers were pretty contented.
+The drive from Glenmoriston to Ullapool was beautiful, too. The stunning scenery was musically accompanied by Clair’s “alternative 80s” mixtape (taking in Television, Echo and The Bunnymen, Cocteau Twins) followed by our friend Andy’s excellent [_Go mild in the country_ playlist](https://open.spotify.com/playlist/1cR2YZGpu7ZdDDf6Y5y8qh?si=GASKD91gQJyNwBMrpL5fsg), and I must say all three travellers were pretty contented.
 
 2 x lunch at the Seafood Shack. Haddock Wraps. Cullen Skink. Langoustine in Butter.
 
