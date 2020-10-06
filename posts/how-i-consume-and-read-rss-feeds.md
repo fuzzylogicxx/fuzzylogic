@@ -1,7 +1,7 @@
 ---
 title: "How I Consume and Read RSS Feeds"
 description: I’m interested in going old school and having content from people I follow brought to me, and into one place
-date: 2020-10-09 20:40:00
+date: 2020-10-06 20:40:00
 tags:
   - entry
   - rss
@@ -16,7 +16,9 @@ If I want to browse my feeds elsewhere (on my iPhone, or on another computer), I
 
 NewsNetWire and Feedbin sync pretty seemlessly together. 
 
-Feedbin is paid (I currently pay 5 USD per month). It has a slick UI and, since it’s available from anywhere, could be treated as your “central hub” for reading. It also offers a couple of interesting features.
+Feedbin is paid (I currently pay 5 USD per month). It has a slick UI and, since it’s available from anywhere, could be treated as your “central hub” for reading. 
+
+Feedbin also offers a couple of interesting features.
 
 Firstly, you can use it to subscribe to email newsletters, because it provides you with an email address for that purpose.
 
