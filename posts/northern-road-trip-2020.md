@@ -101,39 +101,35 @@ That night we enjoyed a lovely dinner: I went for South Indian Garlic Chicken (t
 
 Breakfast at the Cluanie was great. Clair scratched a nostalgia itch with a bowl of Coco Pops, followed by a full Scottish. I had yogurt and muesli then scrambled eggs on toast.
 
-Our next stop was Ullapool, way up north beyond Skye. Clair was really excited about this leg of the trip because she’d be reunited with [The Seafood Shack](https://www.seafoodshack.co.uk/) and its owners, having enjoyed visiting earlier in the year as food photographer for [their forthcoming recipe book].
+Our next stop was Ullapool, way up north beyond Skye. Clair was really excited about this leg of the trip because she’d be reunited with [The Seafood Shack](https://www.seafoodshack.co.uk/) and its owners, having enjoyed visiting earlier in the year as food photographer for [their forthcoming recipe book](https://www.kitchenpress.co.uk/portfolio-item/the-seafood-shack-food-tales-from-ullapool/).
 
 The drive from Glenmoriston to Ullapool was beautiful, too, and sountracked perfectly by Clair’s “Alternative 80s” mixtape (taking in Television, Echo and The Bunnymen, Cocteau Twins) followed by our friend Andy’s excellent [_Go mild in the country_ playlist](https://open.spotify.com/playlist/1cR2YZGpu7ZdDDf6Y5y8qh?si=GASKD91gQJyNwBMrpL5fsg). Good times!
 
-Arriving in Ullapool we made a beeline for The Seafood Shack and on arrival ordered 2 × Haddock Wrap (which Clair had been raving about for months). They were delicious. This gave us the necessary fuel to walk the Ullapool Hill Path which on a beautiful day like this one offers fantastic views over the village, Loch Broom and the mountains beyond.
+Arriving in Ullapool we made a beeline for The Seafood Shack and on arrival ordered 2 × Haddock Wrap (which Clair had been raving about for months). They were delicious. This gave us the necessary fuel to walk the Ullapool Hill Path which on a clear day such as it was offers fantastic views over the village, Loch Broom and the mountains beyond.
 
-Back in the village we stopped back in at The Seafood Shack for Cullen Skink and Langoustines before it was time to check in at our home for the night, [The Ceilidh Place](https://www.theceilidhplace.com/). This hotel had been recommended by three separate friends and from the warm welcome (for us and Rudy) and the lovely, cosy vibe, we could see straight away why people love it.
+Back in the village we stopped back in at The Seafood Shack for Cullen Skink and Langoustines before it was time to check in to our home for the night, [The Ceilidh Place](https://www.theceilidhplace.com/). This hotel had been recommended by three separate friends and from the warm welcome (for both us and Rudy) and the lovely, cosy vibe, we could see straight away why people love it.
 
-After check-in we had just enough time for a beer in their beer garden and a quick rummage around their bookshop before it was a time for a nap (this holiday business is pretty tiring…)
+After check-in we had just enough time for a drink in their beer garden and a quick rummage around their bookshop before it was a time for a nap (this holiday business is pretty tiring…)
 
-Later we enjoyed a lovely dinner (in the bar) of Venison Stew (for me) and Fish and Chips (for Clair), sharing a baked cheesecake with berries for dessert. We chatted about some of our all-time favourite “long tracks” – Clair offering The Doors’ _Riders on the Storm_ (no arguments from me) while I chipped in The Temptations’ classic _Papa was a Rolling Stone_ (which is epic).
+Later we headed to the hotel bar for a lovely dinner of Venison Stew (for me) and Fish and Chips (for Clair), sharing home-made baked cheesecake with berries for dessert. We chatted about some of our all-time favourite “long tracks” – Clair offering The Doors’ _Riders on the Storm_ (no arguments from me) while I chipped in The Temptations’ classic _Papa was a Rolling Stone_.
+
+Today was our wedding anniversary, and it had been nigh-on perfect.
 
 ## Friday
 
-Breakfast: porridge with prunes: a wee bit salty. C had a full Scottish. Breakfast not the highlight but otherwise we loved this place.
+Following a hearty breakfast (porridge for me; cooked breakfast for Clair) we had a wander around Ullapool. This was my first time visiting and I really liked the place. It’s a lovely, picturesque harbour village and, although quite small, has plenty of good shops, great local food and drink, and friendly people of all ages.
 
-Had a lie-in.
+Although it was bordering on the ridiculous, we popped our head into The Seafood Shack for a third time in the space of twenty hours for a farewell lunch. Clair had spineys (squat lobster) while I had mackeral paté with oatcakes. It was fantastic, yet again. What can I say? These folks really know their fish.
 
-Wander around Ullapool.
+Vowing to come back to Ullapool again soon, we set off for Craigellachie, the final stop on our tour.
 
-Final lunch at seafood shack: C got spineys; L had mackeral paté with oatcakes. Delicious!
+This was another enjoyable drive, switching between countryside and busier roads and including drive-bys of not one but two football stadia: The Tulloch Stadium, home of Inverness Caley Thistle; and Mosset Park, home of the mighty Forres Mechanics. Sean Keveney’s 6 Music radio show was on the car stereo, and by pure coincidence the _Uncle Frank’s Friday Floor Fillers_ section featured “Papa was a Rolling Stone” – which was as good as I remembered it.
 
-Set off for Craigenallechie.
-
-Passed Forres Mechanics football ground.
-
-Sean Keveney the perfect travelling companion, especially Uncle Frank’s Friday Floor Fillers (Papa was a Rolling Stone).
-
-This place is great.
+By 4:00 <abbr class="time" title="post meridiem">pm</abbr> we arrived at our destination, The Craigellachie Hotel. This place is great.
 
 Dinner: Starters: L had haggis bon-bons; Clair had scallops with cauliflower pureé. C fish special which was Cod with sweetcorn and crab. Side of mac and cheese. LH Ribeye steak. 
 
-L drank a Spey Valley 1814 then a Windwept APA. Both lovely. C had Edinburgh gin.
+L drank a Spey Valley 1814 then a Windswept APA. Both lovely. C had Edinburgh gin.
 
 Zero room for dessert.
 
