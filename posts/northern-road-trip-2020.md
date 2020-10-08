@@ -103,7 +103,7 @@ Breakfast at the Cluanie was great. Clair scratched a nostalgia itch with a bowl
 
 Our next stop was Ullapool, way up north beyond Skye. Clair was really excited about this part, mainly as she’d be reunited with [The Seafood Shack](https://www.seafoodshack.co.uk/) and its owners, having enjoyed visiting to work on food photography for [their forthcoming recipe book] earlier in the year.
 
-The drive from Glenmoriston to Ullapool was beautiful, too. The scenery was musically accompanied by Clair’s “alternative 80s” mixtape (taking in Television, Echo and The Bunnymen, Cocteau Twins) followed by our friend Andy’s excellent [_Go mild in the country_ playlist](https://open.spotify.com/playlist/1cR2YZGpu7ZdDDf6Y5y8qh?si=GASKD91gQJyNwBMrpL5fsg), and I must say all three travellers were pretty contented.
+The drive from Glenmoriston to Ullapool was beautiful, too, and sountracked perfectly by Clair’s “alternative 80s” mixtape (taking in Television, Echo and The Bunnymen, Cocteau Twins) followed by our friend Andy’s excellent [_Go mild in the country_ playlist](https://open.spotify.com/playlist/1cR2YZGpu7ZdDDf6Y5y8qh?si=GASKD91gQJyNwBMrpL5fsg). Good times!
 
 Arriving in Ullapool we made a beeline for The Seafood Shack and once there ordered 2 x Haddock Wraps (which Clair had been raving about for months). They were delicious.
 
