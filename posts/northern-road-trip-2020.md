@@ -27,9 +27,9 @@ In 2020 it's been pretty difficult to holiday abroad for two reasons: firstly, t
 
 The plan was straightforward: we’d head primarily up the west coast, taking in new places and familiar favourites; we’d enjoy some “first holiday” fun with our furry pal; and over five nights we’d eat ourselves into a seafood-induced coma.
 
-In reality the organising of this holiday was a bit trickier than it might otherwise have been, in that it was our first experience of searching for pet-friendly accommodation, which was compounded by many venues running at lower capacity due to covid considerations. But thanks to some great recommendations from friends, we found a handful of suitable spots.
+In reality, organising this holiday was trickier than we were used to, due to it being our first time searching for pet-friendly accommodation, a challenge which was compounded by many venues running at lower capacity due to covid considerations. However with the help of some great recommendations from friends, we found a handful of suitable spots.
 
-Here’s the lowdown on our trip, including everywhere we ate and stayed in case it helps anyone.
+In the end it worked out perfectly, and was a lovely way for us to celebrate our fourth wedding anniversary. Here’s the lowdown.
 
 ## Monday
 
@@ -101,25 +101,17 @@ That night we enjoyed a lovely dinner: I went for South Indian Garlic Chicken (t
 
 Breakfast at the Cluanie was great. Clair scratched a nostalgia itch with a bowl of Coco Pops, followed by a full Scottish. I had yogurt and muesli then scrambled eggs on toast.
 
-Our next stop was Ullapool, way up north beyond Skye. Clair was really excited about this part, mainly as she’d be reunited with [The Seafood Shack](https://www.seafoodshack.co.uk/) and its owners, having enjoyed visiting to work on food photography for [their forthcoming recipe book] earlier in the year.
+Our next stop was Ullapool, way up north beyond Skye. Clair was really excited about this leg of the trip because she’d be reunited with [The Seafood Shack](https://www.seafoodshack.co.uk/) and its owners, having enjoyed visiting earlier in the year as food photographer for [their forthcoming recipe book].
 
-The drive from Glenmoriston to Ullapool was beautiful, too, and sountracked perfectly by Clair’s “alternative 80s” mixtape (taking in Television, Echo and The Bunnymen, Cocteau Twins) followed by our friend Andy’s excellent [_Go mild in the country_ playlist](https://open.spotify.com/playlist/1cR2YZGpu7ZdDDf6Y5y8qh?si=GASKD91gQJyNwBMrpL5fsg). Good times!
+The drive from Glenmoriston to Ullapool was beautiful, too, and sountracked perfectly by Clair’s “Alternative 80s” mixtape (taking in Television, Echo and The Bunnymen, Cocteau Twins) followed by our friend Andy’s excellent [_Go mild in the country_ playlist](https://open.spotify.com/playlist/1cR2YZGpu7ZdDDf6Y5y8qh?si=GASKD91gQJyNwBMrpL5fsg). Good times!
 
-Arriving in Ullapool we made a beeline for The Seafood Shack and once there ordered 2 x Haddock Wraps (which Clair had been raving about for months). They were delicious.
+Arriving in Ullapool we made a beeline for The Seafood Shack and on arrival ordered 2 × Haddock Wrap (which Clair had been raving about for months). They were delicious. This gave us the necessary fuel to walk the Ullapool Hill Path which on a beautiful day like this one offers fantastic views over the village, Loch Broom and the mountains beyond.
 
-Walk up Ullapool Hill.
+Back in the village we stopped back in at The Seafood Shack for Cullen Skink and Langoustines before it was time to check in at our home for the night, [The Ceilidh Place](https://www.theceilidhplace.com/). This hotel had been recommended by three separate friends and from the warm welcome (for us and Rudy) and the lovely, cosy vibe, we could see straight away why people love it.
 
-Seafood Shack: Cullen Skink. Langoustine in Butter.
+After check-in we had just enough time for a beer in their beer garden and a quick rummage around their bookshop before it was a time for a nap (this holiday business is pretty tiring…)
 
-Checked into Celidh Place. Warm welcome.
-
-Beer outside.
-
-Dinner. L: Venison Stew. C: Fish and Chips. For dessert we shared baked cheesecake with berries. Rudy ate Dynorod. 
-
-C had Harris gin.
-
-Talked about our all-time favourite long tracks. C said Riders on the Storm. L said Papa was a Rolling Stone.
+Later we enjoyed a lovely dinner (in the bar) of Venison Stew (for me) and Fish and Chips (for Clair), sharing a baked cheesecake with berries for dessert. We chatted about some of our all-time favourite “long tracks” – Clair offering The Doors’ _Riders on the Storm_ (no arguments from me) while I chipped in The Temptations’ classic _Papa was a Rolling Stone_ (which is epic).
 
 ## Friday
 
