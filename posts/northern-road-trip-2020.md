@@ -123,7 +123,7 @@ Although it was bordering on the ridiculous, we popped our head into The Seafood
 
 Vowing to come back to Ullapool again soon, we set off for Craigellachie, the final stop on our tour.
 
-This was another enjoyable drive, switching between countryside and busier roads and including drive-bys of not one but two football stadia: The Tulloch Stadium, home of Inverness Caley Thistle; and Mosset Park, home of the mighty Forres Mechanics. Sean Keveney’s 6 Music radio show was on the car stereo, and by pure coincidence the _Uncle Frank’s Friday Floor Fillers_ section featured “Papa was a Rolling Stone” – which was as good as I remembered it.
+This was another enjoyable drive, switching between countryside and busier roads and including drive-bys of not one but two football stadia: The Tulloch Stadium, home of Inverness Caley Thistle; and Mosset Park, home of the mighty Forres Mechanics. Sean Keveney’s 6 Music radio show was on the car stereo, and by pure coincidence the _Uncle Frank’s Friday Floor Fillers_ section featured “Papa was a Rolling Stone” – which was every bit as good (and long) as I remembered it.
 
 By 4:00 <abbr class="time" title="post meridiem">pm</abbr> we arrived at our destination, The Craigellachie Hotel. This place is great.
 
