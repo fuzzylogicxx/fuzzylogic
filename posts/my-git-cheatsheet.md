@@ -4,7 +4,7 @@ description: Useful Git commands for my reference and yours
 date: "2018-12-01T16:58:08.051Z"
 tags: [development, git, cheatsheet]
 ---
-I’ve used Git for many years but it still trips me up. At times I’ve worked primarily in a GUI (like Sourcetree or Fork), and other times directly on the command line. I’ve worked on projects where I’ve been the sole developer and others where I’m part of a large team. Regardless of the tools or context, I’ve learned there are certain _need-to-knows_. Here’s a list of useful Git concepts and commands for my reference and yours.
+I’ve used Git for many years but it can still trip me up. At times I’ve worked primarily in a GUI (like Sourcetree or Fork), and other times directly on the command line. I’ve worked on projects where I’ve been the sole developer and others where I’m part of a large team. Regardless of the tools or context, I’ve learned there are certain _need-to-knows_. Here’s a list of useful Git concepts and commands for my reference and yours.
 ---
 
 Note: the following is not an exhaustive list but rather the thing I keep coming back to and/or regularly forget. For deeper explanations, see the list of resources at the foot of the article.
