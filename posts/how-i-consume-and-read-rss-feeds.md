@@ -1,10 +1,13 @@
 ---
-title: "How I consume and read RSS Feeds (and more)"
+title: "How I assemble and read web content"
 description: I’m interested in going old–school and having content from people I follow brought to me, and into one place
 date: 2020-10-06 20:40:00
 tags:
   - entry
   - rss
+  - email
+  - newsletter
+  - twitter
   - personalsites
 ---
 I’m currently interested in how to spend less time on social media platforms so as to be less at the mercy of their algorithms. One means of doing so might be to go back to the old school and pull in content from the people I follow via RSS, allowing me to review it in a central place rather than having to go browsing. There are many means of consuming RSS feeds – here’s what I’m using.
