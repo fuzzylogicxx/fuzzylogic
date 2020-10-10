@@ -81,7 +81,7 @@ For starters and mains we had:
   <figcaption>Seafood Platter at The Pierhouse Hotel</figcaption>
 </figure>
 
-For dessert, Clair had the burnt cream, while I had their signature orange chocolate cremeux with buckthorn sorbet. (NB: Despite the cast of other amazing dishes I’ve still to mention, as I look back on the overall trip I’m moved to award this dessert “Dish of the Holiday” – it really was off-the-scale!)
+For dessert, Clair had the burnt cream, while I had their signature orange chocolate cremeux with buckthorn sorbet. (NB: despite the cast of other amazing dishes I’ve still to mention, as I look back on the overall trip I’m moved to award this dessert “Dish of the Holiday” – it really was off-the-scale!)
 
 While dining, Rudy (who was stashed away under our table) was a bit of handful. In COVID-times, Scottish venues have no background music and are sparser than usual, so we were on high alert to catch any unacceptable doggy behaviours before they happened and marked us out as “the pain in the ass couple with the dog”. Fortunately, aside from a bit of potted plant nibbling and numerous escape attempts he didn’t do anything too visibly embarassing, although keeping one hand on him while trying to eat a plate of seafood was a bit like The Krypton Factor.
 
