@@ -1,7 +1,7 @@
 ---
 title: "Northern Road Trip, September 2020"
 description: 2020 staycation and a first holiday for Rudy
-date: 2020-09-27 07:48:00
+date: 2020-10-10 07:30:00
 mainImage:
   url: https://res.cloudinary.com/fuzzylogic/image/upload/v1601734993/IMG_2723_wa3cmm.jpg
   alt: Laurence, Clair and Rudy at the Cluanie Inn, Glenmoriston, in September 2020
