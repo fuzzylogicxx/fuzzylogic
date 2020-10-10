@@ -22,7 +22,7 @@ tags:
   <figcaption>{{ mainImage.figcaption }}</figcaption>
 </figure>
 
-(Note: as I type this three weeks later, we’re about to re-enter tighter Covid restrictions, so I feel very grateful to have had the opportunity for a much-needed change of scenery when we did, as it wouldn’t be possible now. I’m also thankful to everywhere we stayed for their care in taking the appropriate precautions for the benefit of their guests and generally for keeping going under trying cicumstances.)
+_Note: as I type this three weeks later, we’re about to re-enter tighter Covid restrictions, so I feel grateful to have had the opportunity for a much-needed change of scenery when we did, as it wouldn’t be possible now. I’m also thankful to everywhere we stayed for their care in taking appropriate precautions for their guests and generally for keeping going under trying cicumstances._
 
 In 2020 it's been pretty difficult to holiday abroad for two reasons: firstly, the small matter of a global pandemic; and secondly, the arrival of our Border Terrier puppy, Rudy. So we decided to make the most of our beautiful homeland, Scotland, and go on a road trip. 
 
