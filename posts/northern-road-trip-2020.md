@@ -85,7 +85,9 @@ For dessert, Clair had the burnt cream, while I had their signature orange choco
 
 While dining, Rudy (who was stashed away under our table) was a bit of handful. In COVID-times, Scottish venues have no background music and are sparser than usual, so we were on high alert to catch any unacceptable doggy behaviours before they happened and marked us out as “the pain in the ass couple with the dog”. Fortunately, aside from a bit of potted plant nibbling and numerous escape attempts he didn’t do anything too visibly embarassing, although keeping one hand on him while trying to eat a plate of seafood was a bit like The Krypton Factor.
 
-As we finished our meal, Fiona arrived to greet us and ushered us into “The Snug” for a whisky to cap the night (a Balvenie Port cask, and it fairly warmed the cockles.) Fiona and crew are doing great things at The Pierhouse. It was lovely to catch up and a brilliant night overall.
+As we finished our meal, Fiona arrived to greet us and ushered us into “The Snug” for a whisky to cap the night (a Balvenie Port cask, and it fairly warmed the cockles.) 
+
+Fiona and crew are doing great things at The Pierhouse. It was lovely to catch up and a brilliant night overall.
 
 ## Wednesday
 
