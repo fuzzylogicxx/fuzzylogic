@@ -95,7 +95,7 @@ We had time for one more breakfast at The Oyster Inn before leaving, and once ag
 
 Our next stop was Glenmoriston, but before leaving Oban we had important matters to address. Following last night’s challenges with Rudy we resolved to find some superior chew-chews to keep him occupied during the remaining meal-times, so stopped in at a wee Pet Shop we’d noticed in town the previous day.
 
-Enter _Dynorod_ (not real name) – a stick of “Himilayan Yak Milk” that would usher in a zen-like peace at mealtimes we had hitherto thought impossible.
+Enter _Dynorod_ (not real name) – a stick of “Himilayan Yak Milk” that would usher in a zen-like mealtime peace we had hitherto thought impossible.
 
 Tooled up and ready, we embarked on the most amazing sunshine drive from Oban to Kentallen (stopping at the [Holly Tree Hotel](https://hollytreehotel.co.uk/) for a great burger and walk along the pier) then through Ballachulish to Fort William. We’d travelled this route many times before, but this time the scenery looked even more incredible (especially just around Ballachulish). It was Scotland at its bonniest.
 
