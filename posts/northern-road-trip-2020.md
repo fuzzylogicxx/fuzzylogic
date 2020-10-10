@@ -99,6 +99,11 @@ Enter _Dynorod_ (not real name) – a stick of “Himilayan Yak Milk” that wou
 
 Tooled up and ready, we embarked on the most amazing sunshine drive from Oban to Kentallen (stopping at the [Holly Tree Hotel](https://hollytreehotel.co.uk/) for a great burger and walk along the pier) then through Ballachulish to Fort William. We’d travelled this route many times before, but this time the scenery looked even more incredible (especially just around Ballachulish). It was Scotland at its bonniest.
 
+<figure>
+  {% respimg "https://res.cloudinary.com/fuzzylogic/image/upload/v1602318984/IMG_1297_cvb6ze.jpg", "Scenery on the drive from Oban to Ullapool", "(min-width: 1600px) 646px, (min-width: 700px) 612px, 91.58vw" %}
+  <figcaption>Scenery on the drive from Oban to Ullapool</figcaption>
+</figure>
+
 We then climbed over 1200 feet through the hills before settling at our destination, [The Cluanie Inn](https://www.blacksheephotels.com/cluanie-inn-home/). I can’t over-emphasise this: this location is stunning. You are literally right in the middle of the hills, with deer roaming free around you.
 
 Spotting trestle tables behind the hotel we decided to check-in quickly then enjoy the last of the day’s sunshine with an al fresco beer. Unfortunately by the time I had returned with said beers, Clair was engaged in a battle of wills with the wee fella, who was going stir-crazy with all the space he found himself in. By relentlessly eating deer jobbies he kinda shattered our picture-perfect “beer in the hills” moment, but still, the thought was there…
