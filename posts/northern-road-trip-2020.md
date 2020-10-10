@@ -46,9 +46,9 @@ Later that night we ate dinner in [The Glue Pot](http://www.oysterinn.co.uk/glue
 
 ## Tuesday
 
-We started the day with breakfast in the hotel and it was a good’un: Clair opted for a “full Scottish”, and I had Eggs Royal (poached eggs, salmon, spinach, hollandaise sauce). With black clouds gathering ominously outside (it was the only day of bad weather during the entire trip), this was exactly the kind of tasty fuel we needed.
+We started the day with breakfast in the hotel and it was a good’un: Clair opted for a “full Scottish”, and I had Eggs Royal (poached eggs, salmon, spinach, hollandaise sauce). With black clouds gathering ominously outside, this was exactly the kind of tasty fuel we needed.
 
-We headed for [Ganavan Sands](https://www.visitscotland.com/info/towns-villages/ganavan-sands-p315601) and by arrival it was raining pretty heavily. However every cloud has a silver lining as this gave Rudy a chance to strut his stuff in his new Hi-Vis, waterproof jacket. We played fetch for a wee while and he had his first experience of paddling in the sea.
+We headed for [Ganavan Sands](https://www.visitscotland.com/info/towns-villages/ganavan-sands-p315601) and on arrival it was raining pretty heavily. However every cloud has a silver lining as this gave Rudy a chance to strut his stuff in his new Hi-Vis, waterproof jacket. We played fetch for a wee while and he had his first experience of paddling in the sea.
 
 <figure>
   {% respimg "https://res.cloudinary.com/fuzzylogic/image/upload/v1601818757/IMG_1288_zrcnox.jpg", "Rudy on Ganavan Sands", "(min-width: 1600px) 646px, (min-width: 700px) 612px, 91.58vw" %}
