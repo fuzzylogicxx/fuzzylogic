@@ -151,15 +151,15 @@ This place is great! It was definitely the poshest of our trip. It’s in a beau
 
 That night we had probably our favourite dinner of the holiday. For starter, Clair chose scallops with cauliflower pureé while I had haggis bon-bons in a home-made brown sauce. For our mains, Clair had their fish special: cod with sweetcorn and crab, with a side of mac and cheese. I dediced to push the boat out for our last night and had a ribeye steak. Every dish was amazing and unsurprisingly we had zero room for dessert.
 
-To drink I had a [Spey Valley 1814](http://www.speyvalleybrewery.co.uk/beers/1814-lager/index.html) then a [Windswept APA](https://windsweptbrewing.com/beer/apa/). Both local and great. Clair had an Edinburgh gin.
+To wash it down I had a [Spey Valley 1814](http://www.speyvalleybrewery.co.uk/beers/1814-lager/index.html) lager then a [Windswept APA](https://windsweptbrewing.com/beer/apa/). Both local and great. Clair had an Edinburgh gin.
 
-A special shout out to the staff in the Copper Dog; they were all super-friendly and great with Rudy, including director Kevin who came over to chat before finding us a wee post-dinner table at The Quaich, their upstairs whisky bar. It would have been rude not to, so we retired there for a wee dram. With over 900 whiskys from around the world on order it was tough to choose, but with Rudy getting tired and threatening to drag the family name through the mud in such a plush environment, we made it quick and I grabbed an Aberlour 12 (while I love) while Clair had a Glenrothes. This is a room you could definitely spend some time in, though!
+A special shout out to the staff in the Copper Dog; they were all super-friendly and great with Rudy, including director Kevin who came over to chat before finding us a wee post-dinner table at The Quaich, their upstairs whisky bar. It would have been rude not to, so we retired there for a wee dram. With over 900 whiskys from around the world on offer it was tough to choose, but with Rudy getting tired and threatening to drag the family name through the mud in such a plush environment, we made it quick and I grabbed an Aberlour 12 (while I love) while Clair had a Glenrothes. This is a room you could definitely spend some time in, though!
 
 ## Saturday
 
 It was time to head home. 
 
-After a lovely breakfast at The Craigellachie, we made a brief stop at the nearby Aberlour distillery where I nipped into the shop to pick up a bottle of the same drop I’d had the previous night, with a wee branded glass as a sourvenir.
+After a lovely breakfast at The Craigellachie, we made a brief stop at the nearby Aberlour distillery where I nipped into the shop to pick up a bottle of the same drop I’d had the previous night, with a wee branded glass as a souvenir.
 
 We arrived home happy. It’s great to know you can have such an amazing holiday on your doorstep. 
 
