@@ -153,7 +153,7 @@ That night we had probably our favourite dinner of the holiday. For starter, Cla
 
 To drink I had a [Spey Valley 1814](http://www.speyvalleybrewery.co.uk/beers/1814-lager/index.html) then a [Windswept APA](https://windsweptbrewing.com/beer/apa/). Both local and great. Clair had an Edinburgh gin.
 
-A special shout out to the staff in the Copper Dog; they were all super-friendly and great with Rudy, including director Kevin who came ofer to chat before finding us a wee post-dinner table at The Quaich, their upstairs whisky bar. It would have been rude not to, so we retired there for a wee dram. With over 900 whiskys from around the world on order it was tough to choose, but with Rudy getting tired and threatening to drag the family name through the mud in such a plush environment, we made it quick and I grabbed an Aberlour 12 (while I love) while Clair had a Glenrothes. This is a room you could definitely spend some time in, though!
+A special shout out to the staff in the Copper Dog; they were all super-friendly and great with Rudy, including director Kevin who came over to chat before finding us a wee post-dinner table at The Quaich, their upstairs whisky bar. It would have been rude not to, so we retired there for a wee dram. With over 900 whiskys from around the world on order it was tough to choose, but with Rudy getting tired and threatening to drag the family name through the mud in such a plush environment, we made it quick and I grabbed an Aberlour 12 (while I love) while Clair had a Glenrothes. This is a room you could definitely spend some time in, though!
 
 ## Saturday
 
