@@ -113,6 +113,11 @@ The drive from Glenmoriston to Ullapool was beautiful, too, and sountracked perf
 
 Arriving in Ullapool we made a beeline for The Seafood Shack and on arrival ordered 2 × Haddock Wrap (which Clair had been raving about for months). They were delicious. This gave us the necessary fuel to walk the Ullapool Hill Path which on a clear day such as it was offers fantastic views over the village, Loch Broom and the mountains beyond.
 
+<figure>
+  {% respimg "https://res.cloudinary.com/fuzzylogic/image/upload/v1602318308/IMG_1305_oy3f7h.jpg", "Haddock Wrap at The Seafood Shack, Ullapool", "(min-width: 1600px) 646px, (min-width: 700px) 612px, 91.58vw" %}
+  <figcaption>Haddock Wrap at The Seafood Shack, Ullapool</figcaption>
+</figure>
+
 Back in the village we stopped back in at The Seafood Shack for Cullen Skink and Langoustines before it was time to check in to our home for the night, [The Ceilidh Place](https://www.theceilidhplace.com/). This hotel had been recommended by three separate friends and from the warm welcome (for both us and Rudy) and the lovely, cosy vibe, we could see straight away why people love it.
 
 After check-in we had just enough time for a drink in their beer garden and a quick rummage around their bookshop before it was a time for a nap (this holiday business is pretty tiring…)
