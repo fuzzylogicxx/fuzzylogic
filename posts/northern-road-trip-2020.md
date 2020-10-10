@@ -149,7 +149,7 @@ By 4:00 <abbr class="time" title="post meridiem">pm</abbr> we arrived at our des
 
 This place is great! It was definitely the poshest of our trip. It’s in a beautiful countryside location, has a lovely reception area and comfortable rooms, and an amazing bar-restaurant, _The Copper Dog_.
 
-That night we had probably our favourite dinner of the holiday. For starter, Clair chose scallops with cauliflower pureé while I had haggis bon-bons in a home-made brown sauce. For our mains, Clair had their fish special: cod with sweetcorn and crab with a side of mac and cheese. I dediced to push the boat out for our last night and had a ribeye steak. Every dish was amazing and unsurprisingly we had zero room for dessert.
+That night we had probably our favourite dinner of the holiday. For starter, Clair chose scallops with cauliflower pureé while I had haggis bon-bons in a home-made brown sauce. For our mains, Clair had their fish special: cod with sweetcorn and crab, with a side of mac and cheese. I dediced to push the boat out for our last night and had a ribeye steak. Every dish was amazing and unsurprisingly we had zero room for dessert.
 
 To drink I had a [Spey Valley 1814](http://www.speyvalleybrewery.co.uk/beers/1814-lager/index.html) then a [Windswept APA](https://windsweptbrewing.com/beer/apa/). Both local and great. Clair had an Edinburgh gin.
 
