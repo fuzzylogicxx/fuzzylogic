@@ -2,7 +2,6 @@
 title: "Northern Road Trip, September 2020"
 description: 2020 staycation and a first holiday for Rudy
 date: 2020-09-27 07:48:00
-draft: true
 mainImage:
   url: https://res.cloudinary.com/fuzzylogic/image/upload/v1601734993/IMG_2723_wa3cmm.jpg
   alt: Laurence, Clair and Rudy at the Cluanie Inn, Glenmoriston, in September 2020
@@ -22,6 +21,8 @@ tags:
   {% respimg "" + mainImage.url + "", "" + mainImage.alt + "", "(min-width: 1600px) 646px, (min-width: 700px) 612px, 91.58vw", 320, mainImage.aspectRatioHeight %}
   <figcaption>{{ mainImage.figcaption }}</figcaption>
 </figure>
+
+(Note: as I type this three weeks later, we’re about to re-enter tighter Covid restrictions, so I feel very grateful to have had the opportunity for a break  away from the house when we did, as it wouldn’t be possible now. I’m also thankful to everywhere we stayed for their care in taking the appropriate precautions for the benefit of their guests.)
 
 In 2020 it's been pretty difficult to holiday abroad for two reasons: firstly, the small matter of a global pandemic; and secondly, the arrival of our Border Terrier puppy, Rudy. So we decided to make the most of our beautiful homeland, Scotland, and go on a road trip. 
 
@@ -117,24 +118,32 @@ Today was our wedding anniversary, and it had been nigh-on perfect.
 
 ## Friday
 
-Following a hearty breakfast (porridge for me; cooked breakfast for Clair) we had a wander around Ullapool. This was my first time visiting and I really liked the place. It’s a lovely, picturesque harbour village and, although quite small, has plenty of good shops, great local food and drink, and friendly people of all ages.
+Following a hearty breakfast (porridge for me; cooked breakfast for Clair) we had a wander around Ullapool. This was my first time visiting and I really liked the place. It’s a lovely, picturesque harbour village and, although fairly small, has plenty of good shops, great local food and drink, and friendly people of all ages.
 
-Although it was bordering on the ridiculous, we popped our head into The Seafood Shack for a third time in the space of twenty hours for a farewell lunch. Clair had spineys (squat lobster) while I had mackeral paté with oatcakes. It was fantastic, yet again. What can I say? These folks really know their fish.
+Although you might think that visiting The Seafood Shack for a third time within twenty hours was bordering on the ridiculous, we popped our head in yet again for a farewell lunch. Clair had spineys (squat lobster) while I had mackeral paté with oatcakes. It was fantastic, yet again. What can I say – these folks really know their fish.
 
-Vowing to come back to Ullapool again soon, we set off for Craigellachie, the final stop on our tour.
+After vowing to come back to Ullapool again soon, we set off for Craigellachie, the final stop on our tour.
 
-This was another enjoyable drive, switching between countryside and busier roads and including drive-bys of not one but two football stadia: The Tulloch Stadium, home of Inverness Caley Thistle; and Mosset Park, home of the mighty Forres Mechanics. Sean Keveney’s 6 Music radio show was on the car stereo, and by pure coincidence the _Uncle Frank’s Friday Floor Fillers_ section featured “Papa was a Rolling Stone” – which was every bit as good (and long) as I remembered it.
+This was another enjoyable drive, alternating between countryside and busier roads and taking in not one but two football stadia: The Tulloch Stadium, home of Inverness Caley Thistle; and Mosset Park, home of the mighty Forres Mechanics. Sean Keveney’s 6 Music show was on the radio, and by pure coincidence the _Uncle Frank’s Friday Floor Fillers_ section featured “Papa was a Rolling Stone” – which was every bit as good (and long) as I remembered it.
 
-By 4:00 <abbr class="time" title="post meridiem">pm</abbr> we arrived at our destination, The Craigellachie Hotel. This place is great.
+As we entered Moray Speyside we were deep within Malt Whisky country, and as fans of a dram it was exciting to pass one well-known distillery after another: Aberlour, Glenlivet, Cragganmore, Balvenie, Macallan, and more.
 
-Dinner: Starters: L had haggis bon-bons; Clair had scallops with cauliflower pureé. C fish special which was Cod with sweetcorn and crab. Side of mac and cheese. LH Ribeye steak. 
+By 4:00 <abbr class="time" title="post meridiem">pm</abbr> we arrived at our destination, [The Craigellachie Hotel](http://www.craigellachiehotel.co.uk/).
 
-L drank a Spey Valley 1814 then a Windswept APA. Both lovely. C had Edinburgh gin.
+This place is great! It was definitely the poshest of our trip. It’s in a beautiful countryside location, has a lovely reception area and comfortable rooms, and an amazing bar-restaurant, _The Copper Dog_.
 
-Zero room for dessert.
+That night we had probably our favourite dinner of the holiday. For starter, Clair chose scallops with cauliflower pureé while I had haggis bon-bons in a home-made brown sauce. For our mains, Clair had their fish special: cod with sweetcorn and crab with a side of mac and cheese. I dediced to push the boat out for our last night and had a ribeye steak. Every dish was amazing and unsurprisingly we had zero room for dessert.
 
-Staff were lovely inc Director Kevin who found us a table at the Quaich. Retired there for a whisky. LH Aberlour 12 yo. Clair had a Glenrothes.
+To drink I had a [Spey Valley 1814](http://www.speyvalleybrewery.co.uk/beers/1814-lager/index.html) then a [Windswept APA](https://windsweptbrewing.com/beer/apa/). Both local and great. Clair had an Edinburgh gin.
+
+A special shout out to the staff in the Copper Dog; they were all super-friendly and great with Rudy, including director Kevin who came ofer to chat before finding us a wee post-dinner table at The Quaich, their upstairs whisky bar. It would have been rude not to, so we retired there for a wee dram. With over 900 whiskys from around the world on order it was tough to choose, but with Rudy getting tired and threatening to drag the family name through the mud in such a plush environment, we made it quick and I grabbed an Aberlour 12 (while I love) while Clair had a Glenrothes. This is a room you could definitely spend some time in, though!
 
 ## Saturday
 
-Headed home. LH picked up whisky at the Aberlour distillery shop.
+It was time to head home. 
+
+After a lovely breakfast at The Craigellachie, we made a brief stop at the nearby Aberlour distillery where I nipped into the shop to pick up a bottle of the same drop I’d had the previous night, with a wee branded glass as a sourvenir.
+
+We arrived home happy. It’s great to know you can have such an amazing holiday on your doorstep. 
+
+Thanks again to all the friends who provided recommendations.
