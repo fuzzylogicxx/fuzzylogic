@@ -1,22 +1,20 @@
 {
-  "name": "Fuzzy Logic",
-  "title": "Fuzzy Logic",
-  "url": "https://fuzzylogic.me/",
-  "url_base": "https://fuzzylogic.me",
-  "description": "Fuzzy Logic is the personal website of Laurence Hughes, a web developer based in Glasgow, Scotland.",
+  "title": "Your Blog Name",
+  "url": "https://example.com/",
+  "description": "I am writing about my experiences as a naval navel-gazer.",
   "feed": {
-    "subtitle": "Fuzzy Logic is the personal website of Laurence Hughes, a web developer based in Glasgow, Scotland.",
+    "subtitle": "I am writing about my experiences as a naval navel-gazer.",
     "filename": "feed.xml",
     "path": "/feed/feed.xml",
-    "url": "https://fuzzylogic.me/feed/feed.xml",
-    "id": "https://fuzzylogic.me/"
+    "id": "https://example.com/"
+  },
+  "jsonfeed": {
+    "path": "/feed/feed.json",
+    "url": "https://example.com/feed/feed.json"
   },
   "author": {
-    "name": "Laurence Hughes",
-    "email": "laurence@fuzzylogic.me"
-  },
-  "open_graph": {
-    "image": "https://fuzzylogic.me/img/social_share_default_1200x630.png",
-    "image_alt_text": "Fuzzy Logic logo"
+    "name": "Your Name Here",
+    "email": "youremailaddress@example.com",
+    "url": "https://example.com/about-me/"
   }
 }

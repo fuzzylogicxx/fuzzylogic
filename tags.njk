@@ -8,17 +8,16 @@ pagination:
     - nav
     - post
     - posts
-    - link
-    - entry
-    - note
     - tagList
-addAllPagesToCollections: true
-layout: layouts/page.njk
-renderData:
+  addAllPagesToCollections: true
+layout: layouts/home.njk
+eleventyComputed:
   title: Tagged “{{ tag }}”
 permalink: /tags/{{ tag }}/
 ---
-{% set postslist = collections[ tag ] | reverse %}
+<h1>Tagged “{{ tag }}”</h1>
+
+{% set postslist = collections[ tag ] %}
 {% include "postslist.njk" %}
 
 <p>See <a href="{{ '/tags/' | url }}">all tags</a>.</p>
