@@ -10,7 +10,7 @@ tags:
   - twitter
   - personalsites
 ---
-I’m currently interested in how to spend less time on social media platforms so as to be less exposed to ads, algorithms and general ill-effects. One approach might be to go back to the old school and use <a href="https://en.wikipedia.org/wiki/RSS">RSS</a> to receive and aggregate updates from the people I follow, allowing me to read it in a central, noise-free place and not have to use the social platform websites and apps.
+I’m currently interested in how to spend less time on social media platforms so as to be less exposed to ads, algorithms and general ill-effects. One approach might be to go back to the old school and use <a href="https://en.wikipedia.org/wiki/RSS">RSS</a> to receive and aggregate updates from the people I follow, allowing me to read them in a central, noise-free place and not have to use the social platform websites and apps.
 
 There are many means of consuming RSS feeds; here’s what I’m doing.
 ---
