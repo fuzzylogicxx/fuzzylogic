@@ -15,9 +15,9 @@ I’m currently interested in how to spend less time on social media platforms s
 There are many means of consuming RSS feeds; here’s what I’m doing.
 ---
 
-I use the free, open source Mac and iOS app [NetNewsWire](https://ranchero.com/netnewswire/) on my MacBook. This is where I tend to organise my RSS feeds as it has a good UI, for example for arranging feeds into suitable folders.
+I use the free, open source Mac and iOS app [NetNewsWire](https://ranchero.com/netnewswire/) on my MacBook. This is where I tend to add and organise my RSS feeds as it has a good UI, for example for arranging feeds into suitable folders.
 
-If I want to browse feed content away from my Mac (on my phone, or on another computer), I use [Feedbin](https://feedbin.com/) – either the website or the iOS app. NewsNetWire and Feedbin sync pretty seemlessly so any organisation I’ve done in NetNewsWire is visible in Feedbin.
+If I want to read new items away from my Mac (on my phone, or on another computer), I use [Feedbin](https://feedbin.com/) – either the website or the iOS app. NewsNetWire and Feedbin sync pretty seemlessly so any organisation I’ve done in NetNewsWire is visible in Feedbin.
 
 Feedbin is paid (I currently pay 5 USD per month). It has a slick UI and, since it’s a website accessible from anywhere, could be treated as your “central hub” for reading. 
 
