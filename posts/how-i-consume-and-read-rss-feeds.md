@@ -10,7 +10,7 @@ tags:
   - twitter
   - personalsites
 ---
-I’m currently interested in how to spend less time on social media platforms so as to be less at the mercy of their algorithms. One means of doing so might be to go back to the old school and pull in content from the people I follow via RSS, allowing me to review it in a central place rather than having to go browsing. There are many means of consuming RSS feeds – here’s what I’m using.
+I’m currently interested in how to spend less time on social media platforms so as to be less at the mercy of their algorithms. One means of doing so might be to go back to the old school and use RSS to pull in content from the people I follow, allowing me to review it in a central place rather than having to go browsing. There are many means of consuming RSS feeds – here’s what I’m using.
 ---
 
 I use the free, open source Mac and iOS app [NetNewsWire](https://ranchero.com/netnewswire/) on my MacBook. This is where I tend to organise my RSS feeds as it has a good UI, for example for arranging feeds into relevant folders.
