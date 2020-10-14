@@ -31,4 +31,4 @@ Feedbin also offers a few very interesting features.
 
 I’m also currently trialling [RSS.app](https://rss.app/) for its ability to let me type in an Instagram user profile URL then give me back an RSS feed URL which I can add into Feedbin, and that’s working well so far, too.
 
-Note: many thanks to Chris Coyier whose post [NetNewsWire and Feedbin](https://css-tricks.com/netnewswire-and-feedbin/) pointed me toward these excellent feed clients.
+Note: many thanks to Chris Coyier whose post [NetNewsWire and Feedbin](https://css-tricks.com/netnewswire-and-feedbin/) pointed me toward these excellent RSS clients.
