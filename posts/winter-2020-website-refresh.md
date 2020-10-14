@@ -27,3 +27,4 @@ Created a "build hook" on that Netlify app (its an API URL that can be hit which
 
 Set up a Github action on my speedlify Github repo, scheduling a run of the netlify build (by hitting the build hook) every morning.
 
+Need to consider if I want the lighthouse scores in the footer. If I do, I probably don’t want or need to do this by client-side javascript.
