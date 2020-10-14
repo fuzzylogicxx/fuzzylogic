@@ -19,12 +19,14 @@ Added [11ty-base-blog](https://github.com/11ty/eleventy-base-blog). I started fr
 
 Checked my lighthouse score manually in Chrome. 
 
-Netlify > Domain Management > Branch Subdomains > create ”v4” subdomain for branch v4 deploys (and blocked search engine robots) 
+Netlify > Domain Management > Branch Subdomains > create ”v4” subdomain for branch v4 deploys (and blocked search engine robots) https://v4.fuzzylogic.me/
 
-Deployed Zach’s speedlify to Netlify which also creates a new Github repo
+Deployed Zach’s speedlify to Netlify which also creates a new Github repo.
 
 Created a "build hook" on that Netlify app (its an API URL that can be hit which triggers a build)
 
-Set up a Github action on my speedlify Github repo, scheduling a run of the netlify build (by hitting the build hook) every morning.
+Set up a Github action on my speedlify Github repo, scheduling a run of the netlify build (by hitting the build hook) every morning. (refs https://github.com/Jinksi/netlify-build-github-actions, https://twitter.com/iign/status/1288933337478975504
 
-Need to consider if I want the lighthouse scores in the footer. If I do, I probably don’t want or need to do this by client-side javascript.
+Working custom speedlify on Netlify https://zen-hoover-34d28b.netlify.app/fuzzylogic.me/
+
+Need to consider if I want the lighthouse scores in the footer (https://github.com/zachleat/speedlify-score/). If I do, I probably don’t want or need to do this by client-side javascript.
