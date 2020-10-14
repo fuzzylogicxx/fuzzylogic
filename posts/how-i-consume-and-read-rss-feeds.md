@@ -27,4 +27,6 @@ Feedbin also offers a few very interesting features.
 - You can “star” (i.e. save) items you’ve read but want to revisit, which is handy when browsing your “Unread” list away from your laptop; and
 - You can “share” items to well-known services (Twitter, Facebook etc) but interestingly also to a “custom service” by providing a URL. I could see me using this in future to bookmark an article on my own website.
 
+I’m also currently trialling [RSS.ap](https://rss.app/) for its facility to let me type in an Instagram user profile URL then give me back an RSS feed URL which I can add into Feedbin, and that’s working well so far, too.
+
 Note: many thanks to Chris Coyier whose post [NetNewsWire and Feedbin](https://css-tricks.com/netnewswire-and-feedbin/) pointed me toward these excellent feed clients.
