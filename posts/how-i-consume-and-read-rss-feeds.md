@@ -1,6 +1,6 @@
 ---
-title: "How I assemble and read web content"
-description: I’m interested in going old–school and having content from people I follow brought to me, and into one place
+title: "How I read the web"
+description: I’m interested in going old–school and aggregating updates from those I follow in one, safe place
 date: 2020-10-06 20:40:00
 tags:
   - entry
