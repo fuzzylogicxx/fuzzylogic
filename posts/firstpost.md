@@ -1,9 +1,10 @@
 ---
-title: This is my first post.
+title: This is my first post, alright?
 description: This is a post on My Blog about agile frameworks.
 date: 2018-05-01
 tags:
   - another-tag
+  - new-tag
 layout: layouts/post.njk
 featuredImage: /img/uploads/lh_photo.jpg
 ---
