@@ -17,6 +17,6 @@ collections:
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Location", name: "location", widget: "string", required: false }
       - { label: "Body", name: "body", widget: "markdown" }
-      - { label: "Featured Image", name: "featuredImage", widget: "image" }
+      - { label: "Featured Image", name: "featuredImage", widget: "image", required: false }
       - { label: "Tags", name: "tags", widget: "list", allow_add: true }
       - { label: "Draft", name: "draft", widget: "boolean", default: false }
