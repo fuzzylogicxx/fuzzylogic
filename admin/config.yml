@@ -14,14 +14,10 @@ collections:
     folder: "posts"
     create: true
     fields:
+      - { label: "Layout", name: "layout", widget: "hidden", default: "layouts/post.njk" }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Body", name: "body", widget: "markdown" }
       - { label: "Featured Image", name: "featuredImage", widget: "image" }
-      - widget: select
-        label: "tags"
-        name: "tags"
-        multiple: true
-        create: true
-        options: ["Tags", "created", "from", "config.yml"]
+      - {label: "Tags", name: "tags", widget: "list", allow_add: true}
