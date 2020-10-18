@@ -1,3 +1,12 @@
 [build]
   publish = "_site"
   command = "DEBUG=* eleventy"
+  
+[[plugins]]
+  package = "netlify-plugin-minify-html"
+
+  # Optionally, override the default options for the minification
+  # https://github.com/kangax/html-minifier#options-quick-reference
+  [plugins.inputs.minifierOptions]
+    collapseInlineTagWhitespace = false
+    collapseWhitespace = false
