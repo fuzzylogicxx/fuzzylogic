@@ -35,3 +35,6 @@ Added two Netlify plugins
 
 - [Lighthouse])https://github.com/netlify-labs/netlify-plugin-lighthouse#readme)
 - [Minify HTML](https://github.com/philhawksworth/netlify-plugin-minify-html#readme)
+
+Added Netlify CMS, with help from https://www.youtube.com/watch?v=WEApDhZMAL4
+Note that 1) I don’t really like having the CMS Admin javascript in my base layout; it’d be good to move that into an admin-specific layout. 2) When I accessed /admin at first it kept failing, 404ing the config.yml. This might have been because I had a blank line at the end of the file or maybe it was the HTML minify plugin (which I’ve disabled for now).
