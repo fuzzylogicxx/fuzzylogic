@@ -9,7 +9,7 @@ media_folder: "_site/img/uploads"
 
 # publish_mode: editorial_workflow
 collections:
-  - label: "Blog"
+  - label: "Blogyo"
     name: "blog"
     folder: "posts"
     create: true
