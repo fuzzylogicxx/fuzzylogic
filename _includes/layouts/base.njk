@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
     <!-- Meta robots default for staging sites: block everything. -->
     <!-- When production-ready, update per page as appropriate. -->
@@ -49,5 +50,18 @@
     </footer>
 
     <!-- Current page: {{ page.url | url }} -->
+
+    <script>
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", user => {
+          if (!user) {
+            window.netlifyIdentity.on("login", () => {
+              document.location.href = "/admin/";
+            });
+          }
+        });
+      }
+    </script>
+
   </body>
 </html>
