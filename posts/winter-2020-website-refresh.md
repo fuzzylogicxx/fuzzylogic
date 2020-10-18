@@ -30,3 +30,8 @@ Set up a Github action on my speedlify Github repo, scheduling a run of the netl
 Working custom speedlify on Netlify https://zen-hoover-34d28b.netlify.app/fuzzylogic.me/
 
 Need to consider if I want the lighthouse scores in the footer (https://github.com/zachleat/speedlify-score/). If I do, I probably don’t want or need to do this by client-side javascript.
+
+Added two Netlify plugins
+
+- [Lighthouse])https://github.com/netlify-labs/netlify-plugin-lighthouse#readme)
+- [Minify HTML](https://github.com/philhawksworth/netlify-plugin-minify-html#readme)
