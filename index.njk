@@ -5,18 +5,20 @@ eleventyNavigation:
   order: 1
 ---
 
-<h2>Recently I’ve been…</h2>
+<h2>Recently, I’ve been…</h2>
 
 <ul>
-<li>hanging out with Clair and Rudy</li>
+<li>listening to <a href="/records/{{ records[0].basic_information.title | slug }}">{{ records[0].basic_information.artists[0].name }} – {{ records[0].basic_information.title }}</a> and other [new records](/records/)</li>
+<li>reading Outraged by Dotty Charles</li>
+<li>watching Michael Palin – Travels of a Lifetime on iPlayer</li>
+<li>thinking about the Indieweb</li>
+{# <li>hanging out with Clair and Rudy</li>
 <li>[working](https://www.freeagent.com/)</li>
 <li>[playing with animation](https://codepen.io/fuzzylogicx/pen/vYKGJQW)</li>
-<li>listening to Suso Sáiz &amp; Suzanne Kraft ‎– Between No Things</li>
-<li>buying records</li>
-<li>reading Outraged by Dotty Charles</li>
+
 <li>watching TENƎT (twice)</li>
 <li>using Feedbin</li>
-<li>weaning myself off Facebook.</li>
+<li>weaning myself off Facebook.</li> #}
 {# <li>Working at Z, Learning from A, Making: B".</li> #}
 </ul>
 
