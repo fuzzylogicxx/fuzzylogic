@@ -15,7 +15,7 @@ module.exports = async function() {
   return fetch("https://rickandmortyapi.com/api/character")
     .then(res => res.json()) // node-fetch option to transform to json
     .then(json => {
-      console.log(json.results);
+      //console.log(json.results);
       // prune the data to return only what we want
       return json.results;
     });
