@@ -1,9 +1,13 @@
 ---
-date: "2019-12-13T16:00:58.133Z"
-description: Christmas Jumper Day
+description: My first Christmas working at FreeAgent. Strong Christmas Jumper game!
+date: 2019-12-13T16:00:58.133Z
 noteTitle: 1531418045
-tags: [note, work, christmas]
-location: "Fountainbridge, Edinburgh"
+title: "Note 2019-12-13T16:00:58: Christmas Jumper Day"
+location: Fountainbridge, Edinburgh
+tags:
+  - note
+  - work
+  - christmas
 ---
 
 My first Christmas working at FreeAgent. Strong Christmas Jumper game!
