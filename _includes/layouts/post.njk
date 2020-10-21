@@ -23,7 +23,7 @@ templateClass: post-main
         <time class="dt-published" itemprop="datePublished" datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time>
         {% if(tags[1] === 'note') -%} <span>·</span> {{ page.date | readableTime }} <span>·</span> {{ location }}</span>{% endif -%}
       </div>
-      {%- if title -%}<h1 class="p-name" itemprop="headline">{{ title }}</h1>{%- endif -%}
+      {%- if (tags[1] !== 'note') and (title) -%}<h1 class="p-name" itemprop="headline">{{ title }}</h1>{%- endif -%}
     </header>
 
     <div class="e-content {{ "article-type-listing" if isList }}" itemprop="articleBody">
