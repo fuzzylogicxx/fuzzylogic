@@ -19,4 +19,4 @@ collections:
       - { label: "Body", name: "body", widget: "markdown" }
       - { label: "Featured Image", name: "featuredImage", widget: "image", required: false }
       - { label: "Tags", name: "tags", widget: "list", allow_add: true }
-      - { label: "Draft", name: "draft", widget: "boolean", default: false }
+      - { label: "Draft", name: "draft", widget: "boolean", default: false, required: false }
