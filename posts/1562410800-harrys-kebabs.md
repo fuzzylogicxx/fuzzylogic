@@ -1,9 +1,14 @@
 ---
-date: "2019-07-06T11:00:00.070Z"
 description: Just finished reading Harry’s Kebab’s by DJ Dribbler
+date: 2019-07-06T11:00:00.070Z
 noteTitle: 1562410800
-tags: [note, book, music, london]
-location: "Parque la Carolina, Marbella, Spain"
+title: "Note 2019-07-06T11:00:00: Finished Harry’s Kebabs on ‘oliday"
+location: Parque la Carolina, Marbella, Spain
+tags:
+  - note
+  - book
+  - music
+  - london
 ---
 
 I’ll tell you wot – that woz a propa’ poolside page-turner and no mistake. Nice work [Russ Forman](https://www.facebook.com/harryskebabsbook/).
