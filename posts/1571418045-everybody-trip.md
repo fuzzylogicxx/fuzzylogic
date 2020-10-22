@@ -1,9 +1,14 @@
 ---
-date: 2019-10-18T19:03:21+00:00
 description: I got my filthy mitts on a funk gem.
+date: 2019-10-18T19:03:21+00:00
 noteTitle: 1571418045
-tags: [note, music, record, funk]
+title: "Note 2019-10-18T19:03:21: Everybody’s on a trip"
 location: Glasgow
+tags:
+  - note
+  - music
+  - record
+  - funk
 ---
 
 Original 1979 copies of Garden of Eden’s _Everybody’s on a Trip_ regularly sell for £200+ so I was pretty happy to hear that it had just been reissued on Backatcha records… and even happier when I managed to snag a copy.
