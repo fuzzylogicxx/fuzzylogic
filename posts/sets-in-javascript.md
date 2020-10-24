@@ -14,7 +14,7 @@ The fact it will only store *unique values* makes it pretty handy.
 
 ---
 
-One place I do currently use it is for that reason is for the \`TagList\` in my 11ty-based personal website. After defining \`TagList\` as a new, empty \`Set\` I iterate each blog post and add its associated tags to \`TagList\`, safe in the knowledge that all duplicates will be removed automatically.
+One place I do currently use it for the above benefit is for the `TagList` in my 11ty-based personal website. After defining `TagList` as a new, empty `Set` I iterate each blog post and add its associated tags to `TagList`, safe in the knowledge that all duplicates will be removed automatically.
 
 `Set` has built-in methods for adding, deleting and iterating. And if you need to do something else, you can easily turn it into an array, for example by:
 
