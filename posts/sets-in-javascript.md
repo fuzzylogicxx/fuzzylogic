@@ -10,7 +10,7 @@ draft: false
 ---
 I don’t often store things in a `Set` in JavaScript, but perhaps I should. 
 
-The fact it will only store *unique values* is pretty handy.
+The fact it will only store *unique values* makes it pretty handy.
 
 ---
 
