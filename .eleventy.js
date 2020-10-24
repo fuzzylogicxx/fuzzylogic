@@ -101,8 +101,9 @@ module.exports = function(eleventyConfig) {
     return collection.getFilteredByTag('posts').filter(returnIfLive);
   });
 
-  // Collection of Tags in use (on Live Posts only)
+  // Collection of Tags (those for “Live Posts” only)
   eleventyConfig.addCollection('tagList', function(collection) {
+    // use a Set because values have to be unique so it deals with that out of the box
     let tagSet = new Set();
     collection
       .getFilteredByTag('posts')
@@ -111,9 +112,10 @@ module.exports = function(eleventyConfig) {
         if ('tags' in item.data) {
           let tags = item.data.tags;
 
+          // filter out tags that we don’t want to show in tag lists
           tags = tags.filter(function(item) {
             switch (item) {
-              // this list should match the `filter` list in tags.njk
+              // this and the `filter` list in posts-tagged-with-tag.njk should be the same
               case 'all':
               case 'nav':
               case 'post':
@@ -133,8 +135,10 @@ module.exports = function(eleventyConfig) {
         }
       });
 
-    // returning an array in addCollection works in Eleventy 0.5.3
-    return [...tagSet];
+    // returning an array in addCollection works from Eleventy 0.5.3
+    // use spread operator on our set within array braces to convert set to array
+    // also sort array of tags alphabetically
+    return [...tagSet].sort();
   });
 
   // Navigation Items, Sorted
