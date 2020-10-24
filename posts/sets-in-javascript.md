@@ -8,11 +8,9 @@ tags:
   - syntax
 draft: false
 ---
-I don’t often store things in a `Set` in JavaScript, but perhaps I should. 
+I don’t often store things in a `Set` in JavaScript, but perhaps I should. The fact it will only store *unique values* makes it pretty handy.
 
-The fact it will only store *unique values* makes it pretty handy.
-
----
+- - -
 
 One place I do currently use it for the above benefit is for the `TagList` in my 11ty-based personal website. After defining `TagList` as a new, empty `Set` I iterate each blog post and add its associated tags to `TagList`, safe in the knowledge that all duplicates will be removed automatically.
 
