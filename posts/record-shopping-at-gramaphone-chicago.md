@@ -7,6 +7,7 @@ tags:
   - records
   - music
   - house
+  - chicago
 draft: false
 ---
 When in Chicago, buy #house
