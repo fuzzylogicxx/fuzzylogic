@@ -12,7 +12,7 @@ I don’t often store things in a `Set` in JavaScript, but maybe I should. The f
 
 ---
 
-One place I do currently use a `Set` for the above benefit is for the `TagList` in my 11ty-based personal website. I start by defining `TagList` as a new, empty `Set`. I then need to assemble all possible tags so iterate blog posts and for each add its associated tags to `TagList`. This means I can be sure that all duplicates will be removed automatically.
+One place I do currently use a `Set` is for the `TagList` in my 11ty-based personal website. I start by defining `TagList` as a new, empty `Set`. I then need to assemble all possible tags so iterate blog posts and for each add its associated tags to `TagList`. This means I can be sure that all duplicates will be removed automatically.
 
 As you would imagine, `Set` has built-in methods for adding, deleting and iterating items. But if you need to do something beyond that, you can easily turn it into an array, for example by:
 
