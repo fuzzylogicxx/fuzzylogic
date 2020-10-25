@@ -1,5 +1,5 @@
 ---
-date: "2020-10-25T15:41:41.311Z"
+date: "2018-09-03T21:00:41.311Z"
 title: "Gifox 2 for Mac - Delightful GIF Recording and Sharing App"
 description: "Gifox is a menu bar app that records your screen into animated GIFs"
 tags: [link, tool, gif, animation]
