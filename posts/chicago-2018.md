@@ -28,49 +28,41 @@ Thanks also to [Davie](https://www.instagram.com/daviec7/) for jetting in from <
 
 I also got the chance to catch up with old friend Nick Calingaert <abbr>AKA</abbr> <a href="https://www.discogs.com/artist/173-Common-Factor">Common Factor</a>, a lovely guy and talented producer who DJed for me and my friends at a couple of our club nights back in the early 00s.
 
-Here’s some of the things we did. I hope that these tips are useful to someone else.
+We only had a few days, but I felt we managed to cram in some good stuff. Here’s a summary of the highlights.
 
 ## Eating out
 
-<ul>
-<li><a href="https://www.swiftandsonschicago.com/">Swift & Sons</a></li>
-<li><a href="https://www.momotarochicago.com/">Momataro</a></li>
-<li><a href="https://www.chicagoathletichotel.com/restaurants/cherry-circle">Chicago Athletic Club</a> (“Dine and Libate” :-))</li>
-</ul>
+* [Swift & Sons](https://www.swiftandsonschicago.com/)
+* [Momataro](https://www.momotarochicago.com/)
+* [Chicago Athletic Club](https://www.chicagoathletichotel.com/restaurants/cherry-circle) (with its appropriately posh tag-line “Dine and Libate”…)
 
-<h2>Bars</h2>
-<ul>
-<li><a href="https://www.facebook.com/pages/Dannys-Bar-Wicker-Park/292381780773679">Danny’s Bar</a></li>
-<li><a href="https://www.chibarproject.com/Reviews/RainboClub/RainboClub.html">Rainbo Bar</a></li>
-</ul>
+## Bars
 
-<h2>Record Shopping</h2>
-<ul>
-<li><a href="http://gramaphonerecords.com/">Gramaphone Records</a></li>
-<li><a href="https://www.dustygroove.com/">Dusty Groove</a></li>
-<li><a href="https://www.shugarecords.com/">Shuga Records</a>, 1272 N. Milwaukee Ave</li>
-<li><a href="https://reckless.com/">Reckless Records</a></li>
-</ul>
+* [Danny’s Bar](https://www.facebook.com/pages/Dannys-Bar-Wicker-Park/292381780773679)
+* [Rainbo Bar](https://www.chibarproject.com/Reviews/RainboClub/RainboClub.html)
 
-<h2>Culture / History</h2>
-<ul>
-<li><a href="https://architecturetourchicago.com/">Architecture Boat Tour</a></li>
-<li><a href="http://www.artic.edu/">The Art Institute of Chicago</a></li>
-</ul>
+## Record Shopping
 
-<h2>Cool Neighbourhoods</h2>
-<ul>
-<li><a href="https://www.timeout.com/chicago/wicker-park-bucktown">Wicker Park area</a></li>
-</ul>
+* [Gramaphone Records](http://gramaphonerecords.com/)
+* [Dusty Groove](https://www.dustygroove.com/)
+* [Shuga Records](https://www.shugarecords.com/), 1272 N. Milwaukee Ave</li>
+* [Reckless Records](https://reckless.com/)
 
-<h2>Things to do</h2>
-<ul>
-<li><a href="https://www.tripsavvy.com/chicagos-millennium-park-1492258">Millenium Park</a></li>
-<li><a href="https://millenniumparkfoundation.org/art-architecture/cloud-gate/">Cloud Gate (<abbr>AKA</abbr> The Bean)</a></li>
-</ul>
+## Cool Neighbourhoods
 
-<h2>If we’d had more time</h2>
-<ul>
-<li><a href="https://www.mlb.com/cubs/ballpark">Go see the Cubs playing baseball at Wrigley Field</a></li>
-<li><a href="http://greenmilljazz.com/">Green Mill Jazz Club</a></li>
-</ul>
+* [Wicker Park area](https://www.timeout.com/chicago/wicker-park-bucktown)
+
+## Culture / History
+
+* [Architecture Boat Tour](https://architecturetourchicago.com/)
+* [The Art Institute of Chicago](http://www.artic.edu/)
+
+## Things to do
+
+* [Millenium Park](https://www.tripsavvy.com/chicagos-millennium-park-1492258)
+* [Cloud Gate (<abbr>AKA</abbr> The Bean)](https://millenniumparkfoundation.org/art-architecture/cloud-gate/)
+
+## And if we’d had more time…
+
+* [Go see the Cubs playing baseball at Wrigley Field](https://www.mlb.com/cubs/ballpark)
+* [Green Mill Jazz Club](http://greenmilljazz.com/)
