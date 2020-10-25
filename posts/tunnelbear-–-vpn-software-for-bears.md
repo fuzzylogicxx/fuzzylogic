@@ -17,7 +17,7 @@ tags:
   - bear
 draft: false
 ---
-I was introduced to this website and service by Val Head’s An Event Apart Talk “Building more expressive projects”.
+I was introduced to this smile-inducing website by Val Head’s An Event Apart Talk “Building more expressive projects”.
 
 --- 
 
