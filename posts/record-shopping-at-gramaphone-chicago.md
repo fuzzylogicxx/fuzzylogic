@@ -2,7 +2,7 @@
 title: Record Shopping at Gramaphone, Chicago
 description: "When in Chicago, buy #house"
 date: 2018-08-26T21:13:00.000Z
-location: 2843 N Clark St, Chicago, IL
+location: Chicago, IL
 tags:
   - note
   - records
