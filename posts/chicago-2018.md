@@ -22,6 +22,8 @@ draft: false
 
 I just made a first visit to Chicago. It was primarily to attend [An Event Apart](https://aneventapart.com/) but I was lucky enough to have a little time to check out the city, too.
 
+---
+
 Firstly I have to thank all the friends who provided tips for things to do and see in The Windy City – Aleks, Susan, Jenny, Lucy, Alan and Karen, Collette etc – cheers!
 
 Thanks also to [Davie](https://www.instagram.com/daviec7/) for jetting in from <abbr>NYC</abbr> to join me and [Liam](https://twitter.com/liamjnugent) for a couple of days. I doff my cap to your knowledge of beautifully designed restaurants with really expensive menus 😉.
