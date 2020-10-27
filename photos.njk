@@ -1,0 +1,28 @@
+---
+layout: layouts/page.njk
+pagination:
+  data: collections.photos
+  size: 10
+  reverse: true
+  alias: photos
+permalink: photos/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber }}/{% endif %}index.html
+title: Photos
+---
+
+<section class="centre">
+  <div class="grid" data-min="18ch">
+    {% for photo in photos %}
+      <a href="{{ photo.url }}">
+        <img
+          src="https://res.cloudinary.com/fuzzylogic/image/upload/w_600,ar_1:1,c_fill,g_auto,e_art:hokusai/{{ photo.data.photoURLend }}"
+        />
+      </a>
+    {% endfor %}
+  </div>
+</section>
+
+<nav class="traverse">
+  {%- if pagination.nextPageHref %}<a rel="prev" href="{{ pagination.nextPageHref }}"><span aria-hidden="true">←</span> Older Photos</a>{%- endif %}
+  {%- if pagination.previousPageHref %}<a rel="next" href="{{ pagination.previousPageHref }}">Newer Photos <span aria-hidden="true">→</span></a>{%- endif %}
+</nav>
+
