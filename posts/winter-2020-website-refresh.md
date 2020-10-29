@@ -34,6 +34,7 @@ Added two Netlify plugins
 
 * \[Lighthouse])https://github.com/netlify-labs/netlify-plugin-lighthouse#readme)
 * [Minify HTML](https://github.com/philhawksworth/netlify-plugin-minify-html#readme)
+** removed this because for some reason or another my closing body and html tags were being removed!
 
 Added Netlify CMS, with help from https://www.youtube.com/watch?v=WEApDhZMAL4 and https://www.netlifycms.org/docs/add-to-your-site/ and https://www.netlifycms.org/docs/backends-overview/.
 Note that 1) I don’t really like having the CMS Admin javascript in my base layout. I could wrap a check for the page being the homepage and only loading the JS on there. Better still might be to separate the Admin from the main site. 2) When I accessed /admin at first it kept failing, 404ing the config.yml. The key is to make sure you have a trailing slash after admin/ and also ensure the URL is correct (your custom domain) and hasn’t flipped over to the Netlify URL.
