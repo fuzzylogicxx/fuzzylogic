@@ -1,69 +1,10 @@
 <!doctype html>
 <html dir="ltr" lang="en-GB">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>
-      {%- if (renderData.title) -%}
-      {{ renderData.title }} | {{ metadata.name }}
-      {%- elif (noteTitle) -%}
-      {{ metadata.name }} Note #{{ noteTitle }} | {{ metadata.name }}
-      {%- elif (title) -%}
-      {{ title }} | {{ metadata.name }}
-      {%- else -%}
-      {{ metadata.title }}
-      {%- endif -%}
-    </title>
-
-    <link rel="preload" href="/fonts/sans/SourceSansPro-Regular-subset-v4.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/fonts/sans/source-sans-pro-v12-latin-600.woff2" as="font" type="font/woff2" crossorigin>
-
-    <!-- THIS WILL BE REPLACED WITH INLINE CSS -->
-
-    <meta name="author" content="{{ metadata.author.name }}">
-    <meta name="description" content="{{ renderData.description or description or metadata.description }}">
-    <meta name="keywords" content="front-end, frontend, front-end developer, web developer, web developer glasgow, html, css, javascript, vanilla javascript, accessibility, sofrito" />
-
-    <link rel="canonical" href="{{ metadata.url_base }}{{ page.url }}" />
-
-    {% if (draft) %}
-    <meta name="robots" content="noindex, nofollow">
-    {% else %}
-    <meta name="robots" content="{{ pageSpecificRobotsDirective or 'index, follow' }}">
-    {% endif %}
-
-    <!-- OG tags: most important -->
-    <meta property="og:title" content="{{ renderData.title or title or metadata.title }}" />
-    <meta property="og:description" content="{{ renderData.description or description or metadata.description }}" />
-
-    <meta property="og:image" content="{{ openGraphImage or metadata.open_graph.image }}" />
-
-    <meta property="og:url" content="{{ metadata.url_base }}{{ page.url }}" />
-
-    <!-- OG tags: extra credit -->
-    <meta property="og:site_name" content="{{ metadata.url }}" />
-
-    <!-- Twitter-specific -->
-    <meta name="twitter:card" content="summary"> <!-- summary_large_image -->
-    <meta name="twitter:image:alt" content="{{ metadata.open_graph.image_alt_text }}">
-
-    <!-- Advice for devices which can 'install' this website on their home screen -->
-    <link rel="manifest" href="/site.webmanifest">
-
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="apple-mobile-web-app-title" content="{{ metadata.name }}">
-    <meta name="application-name" content="{{ metadata.name }}">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
-
-    <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.name }}">
   </head>
-  <body{% if bodyclass %} class="{{ bodyclass }}"{% endif %}>
+  <body>
 
-
+hello world
 
   </body>
 </html>
