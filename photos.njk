@@ -1,25 +1,26 @@
 ---
-layout: layouts/page.njk
+layout: layouts/container_width.njk
 pagination:
-  data: collections.photos
+  data: photos
   size: 10
-  reverse: true
   alias: photos
 permalink: photos/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber }}/{% endif %}index.html
 title: Photos
 ---
 
-<section class="centre">
-  <div class="grid" data-min="18ch">
-    {% for photo in photos %}
-      <a href="{{ photo.url }}">
-        <img
-          src="https://res.cloudinary.com/fuzzylogic/image/upload/w_600,ar_1:1,c_fill,g_auto,e_art:hokusai/{{ photo.data.photoURLend }}"
-        />
-      </a>
-    {% endfor %}
-  </div>
-</section>
+<header class="section-index-header">
+  <h1>{{ renderData.title or title }}</h1>
+</header>
+
+<div class="grid" data-min="18ch">
+  {% for photo in photos %}
+    <a href="{{ photo.secure_url }}">
+      <img
+        src="https://res.cloudinary.com/fuzzylogic/image/upload/w_600,ar_1:1,c_fill,g_auto/v{{ photo.version }}/{{ photo.public_id }}.{{ photo.format }}"
+      />
+    </a>
+  {% endfor %}
+</div>
 
 <nav class="traverse">
   {%- if pagination.nextPageHref %}<a rel="prev" href="{{ pagination.nextPageHref }}"><span aria-hidden="true">←</span> Older Photos</a>{%- endif %}
