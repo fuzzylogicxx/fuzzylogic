@@ -35,6 +35,7 @@
     "purgecss": "^2.3.0"
   },
   "dependencies": {
+    "@11ty/eleventy-cache-assets": "^2.0.3",
     "@babel/core": "^7.6.4",
     "@babel/preset-env": "^7.6.3",
     "eleventy-plugin-respimg": "^0.1.2",
