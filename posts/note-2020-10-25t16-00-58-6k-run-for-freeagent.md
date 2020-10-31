@@ -7,7 +7,6 @@ location: Queen’s Park, Glasgow
 featuredImage: ""
 tags:
   - note
-  - ""
 draft: false
 ---
 Just finished my 6K run for FreeAgent’s “Big Strides for Tiny Changes” charity campaign.
