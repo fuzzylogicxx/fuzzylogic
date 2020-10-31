@@ -1,9 +1,0 @@
-{
-  "tags": [
-    "photos"
-  ],
-  "layout": "layouts/photo.njk",
-  "pageSpecificRobotsDirective": "noindex, nofollow",
-  "aspectRatioWidth": 320,
-  "aspectRatioHeight": 240
-}
