@@ -1,6 +1,4 @@
 ---
-title: "{{photo.asset_id}}"
-description: Photo
 layout: layouts/photo.njk
 pagination:
   data: photos
@@ -8,8 +6,12 @@ pagination:
   alias: photo
 permalink: "/photos/{{photo.asset_id}}/"
 pageSpecificRobotsDirective: "noindex, nofollow"
-aspectRatioWidth: 320
-aspectRatioHeight: 240
+eleventyComputed:
+  title: "Photo {{ photo.asset_id }}"
+  description: "Photo {{ photo.asset_id }}"
+  date: "{{ photo.created_at }}"
+  aspectRatioWidth: "{{ photo.width }}"
+  aspectRatioHeight: "{{ photo.height }}"
 ---
 
 ---
