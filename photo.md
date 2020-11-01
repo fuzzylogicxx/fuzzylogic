@@ -7,6 +7,9 @@ pagination:
   size: 1
   alias: photo
 permalink: "/photos/{{photo.asset_id}}/"
+pageSpecificRobotsDirective: "noindex, nofollow"
+aspectRatioWidth: 320
+aspectRatioHeight: 240
 ---
 
 ---
