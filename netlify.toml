@@ -6,7 +6,7 @@
 [build.environment]
     NODE_VERSION = "10.15"
     TZ = "Europe/London"
-    
+
 # Redirect old blog URLs to new Journal URLs
 
 [[redirects]]
