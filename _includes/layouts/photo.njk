@@ -6,10 +6,7 @@ layout: layouts/base.njk
 
   <article>
 
-    <figure>
-      {% respimg "" + photoURL + "", "" + title + "", "(min-width: 1600px) 646px, (min-width: 700px) 612px, 91.58vw", aspectRatioWidth, aspectRatioHeight %}
-      <figcaption>{{ title }}</figcaption>
-    </figure>
+    {{ content | safe }}
 
   </article>
 

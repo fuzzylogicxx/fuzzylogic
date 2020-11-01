@@ -14,7 +14,7 @@ title: Photos
 
 <div class="grid" data-min="18ch">
   {% for photo in photos %}
-    <a href="{{ photo.secure_url }}">
+    <a href="/photos/{{ photo.asset_id }}/">
       <img
         src="https://res.cloudinary.com/fuzzylogic/image/upload/w_600,ar_1:1,c_fill,g_auto/v{{ photo.version }}/{{ photo.public_id }}.{{ photo.format }}"
       />
