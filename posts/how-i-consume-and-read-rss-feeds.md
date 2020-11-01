@@ -1,6 +1,7 @@
 ---
-title: "How I read the web"
-description: I’m interested in going old–school and aggregating updates from those I follow in one, safe place
+title: How I read the web
+description: I’m interested in going old–school and aggregating updates from
+  those I follow in one, safe place
 date: 2020-10-06 20:40:00
 tags:
   - entry
@@ -10,9 +11,8 @@ tags:
   - twitter
   - personalsites
 ---
-I’m currently interested in how to spend less time on social media platforms so as to be less exposed to ads, algorithms and general ill-effects. One approach might be to go back to the old school and use <a href="https://en.wikipedia.org/wiki/RSS">RSS</a> to receive and aggregate updates from the people I follow, allowing me to read them in a central, noise-free place and not have to use social platform websites and apps.
+I’m currently interested in how to spend less time on social media platforms so as to be less exposed to ads, algorithms and general ill-effects. One approach I’m trialling is going back to the old school and using [RSS](https://en.wikipedia.org/wiki/RSS) to receive and aggregate updates from the people I follow, allowing me to read them in a central, noise-free place and not have to use social platform websites and apps.
 
-There are many means of consuming RSS feeds; here’s what I’m doing.
 ---
 
 I use the free, open source Mac and iOS app [NetNewsWire](https://ranchero.com/netnewswire/) on my MacBook. This is where I tend to add and organise my RSS feeds as it has a good UI, for example for arranging feeds into suitable folders.
