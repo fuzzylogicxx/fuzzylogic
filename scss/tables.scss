@@ -25,14 +25,17 @@ table {
   border-collapse: collapse;
   border-top: 1px solid #999;
   border-left: 1px solid #999;
-}
-
-caption {
-  color: #933;
+  min-width: 100%;
 }
 
 th, td {
   padding: 10px;
   border-right: 1px solid #999;
   border-bottom: 1px solid #999;
+  font-size: scale-value(-1)+rem;
+}
+
+caption {
+  max-width: 100%;
+  margin-bottom: 0.5em;
 }
