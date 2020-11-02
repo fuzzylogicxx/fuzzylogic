@@ -1,0 +1,58 @@
+---
+layout: layouts/container_width.njk
+pagination:
+  data: records_for_sale
+  size: 100
+  alias: records_for_sale
+permalink: records-for-sale/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber }}/{% endif %}index.html
+title: Records for sale
+---
+<div class="stack">
+
+  <h1>Records for sale</h1>
+
+  <ul>
+    <li>From discogs seller <a href="https://www.discogs.com/seller/laurence/profile">laurence</a></li>
+    <li>Minimum 5 records per order</li>
+    <li>Collection (Glasgow) preferred</li>
+    <li>Email orders and offers to <a href="mailto:laurence@fuzzylogic.me">laurence@fuzzylogic.me</a></li>
+    <li>Pay <a href="https://www.paypal.com/paypalme/laurencehughes76">by PayPal</a>, Friends and Family option only</li>
+  </ul>
+
+  <div class="table-container" role="group">
+    <table aria-labelledby="caption-9b6k0m3tt">
+      <caption id="caption-9b6k0m3tt">Page {{ pagination.pageNumber +1 }} of {{ pagination.pages | length }}</caption>
+      <tbody>
+        <tr>
+          <th role="columnheader" scope="col">Artist</th>
+          <th role="columnheader" scope="col">Title</th>
+          <th role="columnheader" scope="col">Label</th>
+          <th role="columnheader" scope="col">Cat. No.</th>
+          <th role="columnheader" scope="col">Media Condition</th>
+          <th role="columnheader" scope="col">Cover Condition</th>
+          <th role="columnheader" scope="col">Price (£)</th>
+        </tr>
+        {% for record in records_for_sale %}
+        <tr>
+          <td>{{ record.artist }}</td>
+          <td>
+            {% set discogsUrl %}https://www.discogs.com/release/{{ record.release_id }}{% endset %}
+            <a target="_blank" href="{{ discogsUrl }}">{{ record.title }}</a>
+          </td>
+          <td>{{ record.label }}</td>
+          <td>{{ record.catno }}</td>
+          <td>{{ record.media_condition }}</td>
+          <td>{{ record.sleeve_condition }}</td>
+          <td>{{ record.price }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+
+</div>
+
+<nav class="traverse">
+  {%- if pagination.previousPageHref %}<a rel="prev" href="{{ pagination.previousPageHref }}"><span aria-hidden="true">←</span> Previous Page</a>{%- endif %}
+  {%- if pagination.nextPageHref %}<a rel="next" href="{{ pagination.nextPageHref }}"> Next Page <span aria-hidden="true">→</span></a>{%- endif %}
+</nav>
