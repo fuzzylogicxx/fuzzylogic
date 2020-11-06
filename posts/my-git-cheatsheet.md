@@ -580,7 +580,7 @@ git reset HEAD@{index}
 
 </figure>
 
-## Miscellaneous handy commands
+## Miscellaneous handy things
 
 Revert to the previous branch you were on
 
@@ -591,6 +591,10 @@ git checkout -
 ```
 
 </figure>
+
+### Tip
+
+If you are fixing something that originated from a GitHub issue, link the issue in your PR’s sidebar under _Linked Issues_ (rather than just mentioning it in the PR) and it will automatically close the issue when you merge.
 
 ## Useful external resources
 
