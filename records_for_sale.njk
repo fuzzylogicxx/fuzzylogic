@@ -42,11 +42,56 @@ title: Records for sale
           </td>
           <td>{{ record.label }}</td>
           <td>{{ record.catno }}</td>
-          <td>{{ record.media_condition }}</td>
-          <td>{{ record.sleeve_condition }}</td>
+          <td>
+            {% switch record.media_condition %}
+            {% case "Near Mint (NM or M-)" %}
+            <p>NM</p>
+            {% case "Very Good Plus (VG+)" %}
+            <p>VG+</p>
+            {% case "Very Good (VG)" %}
+            <p>VG</p>
+            {% case "Good Plus (G+)" %}
+            <p>G+</p>
+            {% case "Good (G)" %}
+            <p>G</p>
+            {% default %}
+            <p>{{ record.media_condition }}</p>
+            {% endswitch %}
+          </td>
+          <td>
+            {% switch record.sleeve_condition %}
+            {% case "Near Mint (NM or M-)" %}
+            <p>NM</p>
+            {% case "Very Good Plus (VG+)" %}
+            <p>VG+</p>
+            {% case "Very Good (VG)" %}
+            <p>VG</p>
+            {% case "Good Plus (G+)" %}
+            <p>G+</p>
+            {% case "Good (G)" %}
+            <p>G</p>
+            {% default %}
+            <p>{{ record.sleeve_condition }}</p>
+            {% endswitch %}
+          </td>
           <td>{{ record.price }}</td>
         </tr>
         {% endfor %}
+
+        {%- if not pagination.nextPageHref %}
+          <!-- Additional records that are blocked from sale on Discogs marketplace -->
+          <tr>
+            <td>Kraftwerk</td>
+            <td>
+              <a target="_blank" href="https://www.discogs.com/Kraftwerk-Computer-World/release/498865">Computer World LP</a>
+            </td>
+            <td>Warner Bros</td>
+            <td>HS 3549</td>
+            <td>VG+ / NM-</td>
+            <td>NM</td>
+            <td>8</td>
+          </tr>
+        {%- endif %}
       </tbody>
     </table>
   </div>
