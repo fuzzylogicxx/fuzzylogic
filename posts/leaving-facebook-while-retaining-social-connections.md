@@ -13,6 +13,8 @@ This is still in draft.
 
 This is still in draft.
 
-Some friends suggested trying alternatives:
+Some friends on Facebook suggested trying alternatives:
 - https://www.mightynetworks.com/
 - https://discord.com/ for groups
+
+The cool web kids (Heydon, Hank, Cassie) use https://buttondown.email/ for their newsletters.
