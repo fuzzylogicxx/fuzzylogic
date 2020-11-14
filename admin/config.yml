@@ -26,6 +26,7 @@ collections:
       - { label: "Featured Image", name: "featuredImage", widget: "image", required: false }
       - { label: "Main Image", name: "mainImage.url", widget: "image", required: false }
       - { label: "Main Image Alt", name: "mainImage.alt", widget: "string", required: false }
+      - { label: "Main Image Is Anchor", name: "mainImage.isAnchor", widget: "boolean", default: false, required: false }
       - { label: "Main Image Aspect Ratio Width", name: "mainImage.aspectRatioWidth", widget: "number", required: false }
       - { label: "Main Image Aspect Ratio Height", name: "mainImage.aspectRatioHeight", widget: "number", required: false }
       - { label: "Main Image Caption", name: "mainImage.caption", widget: "string", required: false }
