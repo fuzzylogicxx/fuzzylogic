@@ -5,7 +5,8 @@ date: 2020-10-10 07:30:00
 mainImage:
   url: https://res.cloudinary.com/fuzzylogic/image/upload/v1601734993/IMG_2723_wa3cmm.jpg
   alt: Laurence, Clair and Rudy at the Cluanie Inn, Glenmoriston, in September 2020
-  aspectRatioHeight: 320
+  aspectRatioWidth: 386
+  aspectRatioHeight: 290
   isAnchor: true
   figcaption: Laurence, Clair and Rudy at the Cluanie Inn, Glenmoriston, in September 2020
 openGraphImage: "https://res.cloudinary.com/fuzzylogic/image/upload/q_auto,f_auto,w_1200/v1601734993/IMG_2723_wa3cmm.jpg"
@@ -18,7 +19,7 @@ tags:
 
 ---
 <figure>
-  {% respimg "" + mainImage.url + "", "" + mainImage.alt + "", "(min-width: 1600px) 646px, (min-width: 700px) 612px, 91.58vw", 320, mainImage.aspectRatioHeight %}
+  {% respimg "" + mainImage.url + "", "" + mainImage.alt + "", "(min-width: 1600px) 646px, (min-width: 700px) 612px, 91.58vw", mainImage.aspectRatioWidth, mainImage.aspectRatioHeight %}
   <figcaption>{{ mainImage.figcaption }}</figcaption>
 </figure>
 
