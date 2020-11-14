@@ -1,14 +1,16 @@
 ---
-title: "Leaving Facebook, while retaining social connections"
+title: Leaving Facebook, while retaining social connections
 description: Thoughts
 date: 2020-10-03 09:48:00
-draft: true
 tags:
   - entry
   - facebook
   - socialmedia
+draft: true
 ---
 This is still in draft.
+
+“or breaking out of habitual facebook use"
 ---
 
 This is still in draft.
