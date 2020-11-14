@@ -13,4 +13,4 @@ tags:
   - firecracker
 draft: false
 ---
-* Thanks
+Lovely show inc interview with [@firecracker_rec](https://twitter.com/firecracker_rec) and mix from [@WeeDjs](https://twitter.com/WeeDjs)
