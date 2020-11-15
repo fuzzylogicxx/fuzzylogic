@@ -20,4 +20,4 @@ I just watched “Larry’s Garage” – a film by Corrada Rizza about the visi
 </div>
 ---
 
-Unfortunately there’s precious little footage of this infamous New York club and the stuff they included I’d seen before, but there was some nice previously unseen interview footage with Larry Levan and overall, although I wasn’t blown away, I enjoyed it.
+Unfortunately there’s generally precious little footage of the infamous New York club and what they included I’d seen before, but there was some nice previously unseen interview footage with Larry Levan and overall, although I wasn’t blown away, I enjoyed it.
