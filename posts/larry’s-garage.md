@@ -13,7 +13,7 @@ tags:
   - larrylevan
 draft: false
 ---
-I just watched “Larry’s Garage” – a film about the visionary New York DJ, Larry Levan and the legendary nightclub he called home.
+I just watched “Larry’s Garage” – a film by Corrada Rizza about the visionary New York DJ, Larry Levan and the legendary nightclub he called home.
 
 <div class="aspect-ratio-wide">
   <iframe title="Larry’s Garage – Larry Levan & The Paradise Garage" loading="lazy" width="640" height="360" src="https://player.vimeo.com/video/470933551" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
