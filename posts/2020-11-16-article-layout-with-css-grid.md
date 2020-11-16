@@ -13,6 +13,7 @@ Very clever responsive `<article>` layout  (with gutters and breakout images) ac
 The gist of it is this:
 
 <figure>
+
 ``` css
 .post {
   display: grid;
@@ -22,6 +23,7 @@ The gist of it is this:
     minmax(1.2rem, 1fr);
 }
 ```
+
 </figure>
 
 Simple and deadly.
