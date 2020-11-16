@@ -5,7 +5,7 @@ description: "Very clever article (with gutters) layout achieved using CSS Grid,
 tags: [link, cssgrid, layout, article, minmax, breakout]
 linkTarget: "https://mastery.games/post/article-grid-layout/"
 ---
-Very clever responsive `<article>` layout  (with gutters and breakout images) achieved using CSS Grid, `minmax()`, the `ch` unit and a minimum of fuss. No `auto` margins, `max-width` or media queries in sight, and it scales from narrow to wide viewports.
+Very clever responsive `<article>` layout  (with gutters and breakout images) achieved using CSS Grid, `minmax()`, the `ch` unit and a minimum of fuss. It scales automatically from narrow to wide viewports with no `auto` margins, `max-width` or media query manual overrides in sight.
 
 > For the blog post page (the page you're looking at right now) I wanted a mobile-friendly layout where the text was centered and readable, where the images/code examples are wide.
 ---
@@ -24,6 +24,8 @@ The gist of it is this:
 ```
 </figure>
 
-Simple and deadly. 
+Simple and deadly.
 
-And I can potentially see use for this is a pattern, or [layout primitive](https://every-layout.dev/rudiments/composition/), rather than just as something you might use at the top-level of the page for overall layout. Iâm looking forward to trying it out! (via Ahmad Shadeed)
+I can potentially see this as a pattern, or [layout primitive](https://every-layout.dev/rudiments/composition/), rather than just as something you might use at the top-level of the page for overall layout. I’m looking forward to trying it out! 
+
+(via [Ahmad Shadeed](https://mastery.games/post/article-grid-layout/)
