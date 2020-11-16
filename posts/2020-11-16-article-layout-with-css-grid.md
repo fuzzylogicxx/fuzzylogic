@@ -1,6 +1,6 @@
 ---
 date: "2020-11-16T21:34:45.513Z"
-title: "Article Layout with CSS Grid"
+title: "Article Layout with CSS Grid (on mastery.games)"
 description: "Very clever article (with gutters) layout achieved using CSS Grid, minmax and a minimum of fuss"
 tags: [link, cssgrid, layout, article, minmax, breakout]
 linkTarget: "https://mastery.games/post/article-grid-layout/"
