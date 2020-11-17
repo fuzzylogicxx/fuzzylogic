@@ -335,9 +335,10 @@ git pull
 <figure>
 
 ``` bash
+# Before changing branch, save changes you’re not ready to commit
 git stash
 
-# change branch, do other stuff. Then when return
+# change branch, do other stuff. Then when return:
 git stash pop
 ```
 
