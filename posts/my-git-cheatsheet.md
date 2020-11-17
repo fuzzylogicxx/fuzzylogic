@@ -328,9 +328,22 @@ git pull
 
 </figure>
   
+## Save changes temporarily
+
+`stash` is like a clipboard for git.
+
+<figure>
+
+``` bash
+git stash
+
+# change branch, do other stuff. Then when return
+git stash pop
+```
+
+</figure>
+
 ## Staying current and compatible
-
-
   
 `fetch` remote branch and `merge` simultaneously:
 
