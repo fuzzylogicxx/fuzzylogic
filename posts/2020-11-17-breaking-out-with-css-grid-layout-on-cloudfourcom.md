@@ -5,7 +5,7 @@ description: "The original and best CSS Grid “article with full-width images�
 tags: [link, cssgrid, breakout, image, responsive, layout, article, minmax]
 linkTarget: "https://cloudfour.com/thinks/breaking-out-with-css-grid-layout/"
 ---
-As I was bookmarking the [mastery.games article](https://fuzzylogic.me/posts/2020-11-16-article-layout-with-css-grid/) yesterday, I started getting the feeling that something was awfully familiar. It was! I’ve seen this layout before – from Tyler Sticka back in 2017 to be precise – but failed to bookmark it at the time.
+While [bookmarking the mastery.games article](https://fuzzylogic.me/posts/2020-11-16-article-layout-with-css-grid/) yesterday, I started getting the feeling that something was awfully familiar. It was! I’ve seen this layout before – from Tyler Sticka back in 2017 to be precise – but failed to bookmark it at the time.
 ---
 
 Here, then, is the original and still the best CSS Grid “article with breakout images” layout! 
