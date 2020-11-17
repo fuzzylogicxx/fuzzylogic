@@ -30,4 +30,4 @@ Simple and deadly.
 
 I can potentially see this as a pattern, or [layout primitive](https://every-layout.dev/rudiments/composition/), rather than just as something you might use at the top-level of the page for overall layout. I’m looking forward to trying it out! 
 
-(via [Ahmad Shadeed](https://mastery.games/post/article-grid-layout/)
+(via [Ahmad Shadeed](https://mastery.games/post/article-grid-layout/))
