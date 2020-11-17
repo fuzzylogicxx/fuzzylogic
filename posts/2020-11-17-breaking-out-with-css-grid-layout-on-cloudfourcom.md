@@ -1,15 +1,20 @@
 ---
 date: "2020-11-17T21:21:00.629Z"
 title: "Breaking Out With CSS Grid Layout (on cloudfour.com)"
-description: "The original and best CSS Grid âarticle with full-width imagesâ layout"
-tags: [link, cssgrid, breakout, image, responsive, layout]
+description: "The original and best CSS Grid “article with full-width images” layout"
+tags: [link, cssgrid, breakout, image, responsive, layout, article, minmax]
 linkTarget: "https://cloudfour.com/thinks/breaking-out-with-css-grid-layout/"
 ---
-As I was bookmarking the mastery.games article yesterday, I started getting the feeling that something was awfully familiar. It was! Iâve seen this layout before, from Tyler Stickler back in 2017, but failed to bookmark it at the time.
+As I was bookmarking the [mastery.games article](https://fuzzylogic.me/posts/2020-11-16-article-layout-with-css-grid/) yesterday, I started getting the feeling that something was awfully familiar. It was! I’ve seen this layout before, from Tyler Stickler back in 2017, but failed to bookmark it at the time.
 ---
 
-Here, then, is the original and still the best CSS Grid âarticle with full-width imagesâ layout! I love the way that, by naming the lines and appending `-start` and `-end` as appropriate you can then target the area between the lines using its short name.
+Here, then, is the original and still the best CSS Grid “article with breakout images” layout! 
 
+I particularly love the way that, by naming the lines and appending `-start` and `-end` as appropriate you can then target the area between those lines using its short name.
+
+<figure>
+  
+``` css
 .Prose {
   display: grid;
   grid-template-columns: 
@@ -17,3 +22,14 @@ Here, then, is the original and still the best CSS Grid âarticle with full-
     [main-start] minmax(0, 40em) [main-end]
     minmax(1em, 1fr) [full-end];
 }
+
+.Prose > * {
+  grid-column: main;
+}
+
+.Prose-splash {
+  grid-column: full;
+}
+```
+
+</figure>
