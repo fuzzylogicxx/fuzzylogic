@@ -22,7 +22,7 @@ A recent issue of the [dConstruct](https://tinyletter.com/clearleft) newsletter 
 
 ---
 
-[ClearLeft](https://clearleft.com/) produce an excellent regular technology-based newsletter – [dConstruct](https://tinyletter.com/clearleft) – to which I heartily recommend subscribing.
+[Clearleft](https://clearleft.com/) produce an excellent regular technology-based newsletter – [dConstruct](https://tinyletter.com/clearleft) – to which I heartily recommend subscribing.
 
 A recent issue compared online services in the [gig economy](https://www.bbc.co.uk/news/business-389300480) – such as Uber, Deliveroo and AirBnB – plus music services Spotify and Bandcamp, and considered the relative ethics of each with respect to the extent they exploit the sellers in their “marketplace”. For example, which services let the seller set the price? AirBnB do, and so do Bandcamp. But not so Uber and Spotify.
 
