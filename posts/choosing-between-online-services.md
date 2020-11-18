@@ -18,7 +18,9 @@ tags:
   - dconstruct
 draft: false
 ---
-## A recent issue of the [dConstruct](https://tinyletter.com/clearleft) newsletter on choosing more ethical and positive online services chimed with some recent thoughts I’ve been having about how to improve my online habits and choices.
+A recent issue of the [dConstruct](https://tinyletter.com/clearleft) newsletter on choosing more ethical and positive online services chimed with some recent thoughts I’ve been having about how to improve my online habits and choices.
+
+---
 
 [ClearLeft](https://clearleft.com/) produce an excellent regular technology-based newsletter – [dConstruct](https://tinyletter.com/clearleft) – to which I heartily recommend subscribing.
 
