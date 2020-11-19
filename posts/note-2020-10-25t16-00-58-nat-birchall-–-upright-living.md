@@ -7,16 +7,16 @@ mainImage.isAnchor: false
 tags:
   - note
   - music
+  - record
   - vinyl
+  - lp
   - dub
   - reggae
   - natbirchall
 draft: false
 ---
-Just received and now listening to Nat Birchall meets Al Breadwinner – Upright Living LP.
-
-Quality reggae plus dub versions, from sunny Manchester.
+Just got my copy of Nat Birchall meets Al Breadwinner – Upright Living LP. Quality roots reggae and dub instrumentals from sunny Manchester. Current pick: Wise man style / Dub of the prophet. Grab it direct from the artist’s Bandcamp store <https://bit.ly/3feSzRP>
 
 <div class="aspect-ratio-wide">
-  <iframe title="Nat Birchall meets Al Breadwinner – Upright Living" style="width: 350px; height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/album=3481634564/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless></iframe>
+<iframe title="Nat Birchall meets Al Breadwinner – Wise Man Style / Dub of the Prophet" width="560" height="315" src="https://www.youtube-nocookie.com/embed/101Ygbe8U50" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
