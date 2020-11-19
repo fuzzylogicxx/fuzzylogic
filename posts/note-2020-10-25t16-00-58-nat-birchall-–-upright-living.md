@@ -1,9 +1,8 @@
 ---
 title: Nat Birchall meets Al Breadwinner – Upright Living LP
-description: Tonight’s listening: Nat Birchall – Upright Living LP
+description: "Tonight’s listening: Nat Birchall – Upright Living LP"
 date: 2020-11-19T20:53:18.615Z
 location: Glasgow
-mainImage.isAnchor: false
 tags:
   - note
   - music
