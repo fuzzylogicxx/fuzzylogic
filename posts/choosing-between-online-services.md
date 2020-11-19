@@ -18,7 +18,7 @@ tags:
   - dconstruct
 draft: false
 ---
-A [recent issue of the dConstruct newsletter](https://tinyletter.com/clearleft) about choosing more ethical and positive online services really chimed with me and my recent thoughts on improving my online habits.
+A [recent issue of the dConstruct newsletter](https://tinyletter.com/clearleft/letters/dconstruct-from-clearleft-musique-non-stop) about choosing more ethical and positive online services really chimed with me and my recent thoughts on improving my online habits.
 
 ---
 
