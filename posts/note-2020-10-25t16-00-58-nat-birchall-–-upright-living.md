@@ -5,6 +5,7 @@ date: 2020-11-19T20:53:18.615Z
 location: Glasgow
 mainImage.isAnchor: false
 tags:
+  - note
   - music
   - vinyl
   - dub
