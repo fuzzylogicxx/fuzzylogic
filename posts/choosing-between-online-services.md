@@ -34,6 +34,6 @@ I’m currently typing this post in a Firefox tab and have been making an effort
 
 I use DuckDuckGo rather than Google search when I remember, and have recently made it the default “address bar search” tool in Firefox which should help break old habits.
 
-As for Facebook, Twitter and other time-draining, sometimes harmful social media platforms, well, I’m weaning myself off those and recently [wrote about how I’m using Feedbin to read news and updates](https://fuzzylogic.me/posts/how-i-consume-and-read-rss-feeds/).
+As for Facebook, Twitter and other time-draining, sometimes harmful social media platforms, well, I’m weaning myself off those and recently [wrote about how I’m using Feedbin to aggregate news and updates](https://fuzzylogic.me/posts/how-i-consume-and-read-rss-feeds/).
 
-I don’t know about you, but I find it good to do a periodic health check on how I’m using the internet, and see where I can make better choices.
+I don’t know about you, but I find it helpful to do a periodic health check on how I’m using the internet, and see where I can make better choices.
