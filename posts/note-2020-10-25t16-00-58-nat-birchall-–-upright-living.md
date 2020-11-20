@@ -8,6 +8,7 @@ tags:
   - music
   - record
   - vinyl
+  - shopping
   - lp
   - dub
   - reggae
