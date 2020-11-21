@@ -32,3 +32,23 @@ collections:
       - { label: "Main Image Caption", name: "mainImage.caption", widget: "string", required: false }
       - { label: "Tags", name: "tags", widget: "list", allow_add: true }
       - { label: "Draft", name: "draft", widget: "boolean", default: false, required: false }
+  - label: "New Record Note"
+    name: "record"
+    folder: "posts"
+    create: true
+    fields:
+      - { label: "Title", name: "title", widget: "string", default: "Artist – Title" }
+      - { label: "Description", name: "description", widget: "New record: Artist – Title" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Location", name: "location", widget: "string", required: false, default: "Glasgow" }
+      - { label: "Link Target", name: "linkTarget", widget: "string", required: false, comment: "For bookmarks only" }
+      - { label: "Body", name: "body", widget: "markdown", default: "Roots reggae and dub instrumentals from sunny Manchester. Current jam: Wise man style / Dub of the Prophet. <https://bit.ly/3feSzRP> <div class=\"aspect-ratio-wide\"><iframe title=\"Nat Birchall meets Al Breadwinner – Wise Man Style / Dub of the Prophet\" width=\"560\" height=\"315\" src=\"https://www.youtube-nocookie.com/embed/101Ygbe8U50\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe></div>" }
+      - { label: "Featured Image", name: "featuredImage", widget: "image", required: false }
+      - { label: "Main Image", name: "mainImage.url", widget: "image", required: false }
+      - { label: "Main Image Alt", name: "mainImage.alt", widget: "string", required: false }
+      - { label: "Main Image Is Anchor", name: "mainImage.isAnchor", widget: "boolean", default: false, required: false }
+      - { label: "Main Image Aspect Ratio Width", name: "mainImage.aspectRatioWidth", widget: "number", required: false }
+      - { label: "Main Image Aspect Ratio Height", name: "mainImage.aspectRatioHeight", widget: "number", required: false }
+      - { label: "Main Image Caption", name: "mainImage.caption", widget: "string", required: false }
+      - { label: "Tags", name: "tags", widget: "list", allow_add: true, default: "note, record, vinyl, shopping" }
+      - { label: "Draft", name: "draft", widget: "boolean", default: false, required: false }
