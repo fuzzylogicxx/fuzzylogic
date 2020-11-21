@@ -32,3 +32,14 @@ collections:
       - { label: "Main Image Caption", name: "mainImage.caption", widget: "string", required: false }
       - { label: "Tags", name: "tags", widget: "list", allow_add: true }
       - { label: "Draft", name: "draft", widget: "boolean", default: false, required: false }
+
+  - label: "Record"
+    name: "record"
+    folder: "posts"
+    create: true
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Location", name: "location", widget: "string", required: false }
+      - { label: "Body", name: "body", widget: "markdown" }
