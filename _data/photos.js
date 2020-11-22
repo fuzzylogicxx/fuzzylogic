@@ -1,11 +1,11 @@
 const fetch = require("node-fetch");
 require('dotenv').config();
 
-const apiUrl = `https://389853243577723:${process.env.CLOUDINARY_API_SECRET}@api.cloudinary.com/v1_1/fuzzylogic/resources/image`;
+const apiUrl = `https://389853243577723:${process.env.CLOUDINARY_API_SECRET}@api.cloudinary.com/v1_1/fuzzylogic/resources/image?max_results=12`;
 
 const getPhotos = async function(url) {
   console.log(url);
-  return fetch(url, { method: 'GET' })
+  return fetch(url, { method: 'GET', max_results: 11 })
     .then(res => res.json())
     .then(json => {
       console.log(json);
