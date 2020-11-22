@@ -44,4 +44,4 @@ collections:
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Location", name: "location", widget: "string", required: false, default: "Glasgow" }
       - { label: "Body", name: "body", widget: "markdown", default: "Nat Birchall meets Al Breadwinner – Upright Living LP: Roots reggae and dub instrumentals from sunny Manchester. Current jam: Wise man style / Dub of the Prophet. <https://bit.ly/3feSzRP> <div class=\"aspect-ratio-wide\"><iframe title=\"Nat Birchall meets Al Breadwinner – Wise Man Style / Dub of the Prophet\" width=\"560\" height=\"315\" src=\"https://www.youtube-nocookie.com/embed/101Ygbe8U50\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe></div>" }
-      - { label: "Tags", name: "tags", widget: "list", allow_add: true }
+      - { label: "Tags", name: "tags", widget: "list", allow_add: true, default: [ "note", "music" ] }
