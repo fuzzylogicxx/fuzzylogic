@@ -14,8 +14,9 @@ tags:
   - reggae
   - natbirchall
 draft: false
+noteWithTitle: true
 ---
-Tonight’s listening: Nat Birchall meets Al Breadwinner – Upright Living LP. Real nice roots reggae and dub from sunny Manchester. Favourite track: African Village Dance / Village Dub. <https://bit.ly/3feSzRP>
+Real nice roots reggae and dub from sunny Manchester. Favourite track: African Village Dance / Village Dub. <https://bit.ly/3feSzRP>
 
 <div class="aspect-ratio-wide">
 <iframe title="Nat Birchall meets Al Breadwinner – Wise Man Style / Dub of the Prophet" width="560" height="315" src="https://www.youtube-nocookie.com/embed/oo35Duhy-8c" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
