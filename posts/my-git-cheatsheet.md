@@ -560,6 +560,19 @@ git checkout 591672e
 ```
 
 </figure>
+
+Return one or more files to the state they were in at a previous commit, without reverting everything else.
+
+<figure>
+  
+``` bash
+git checkout 3aa647dac9a8a251ca223a693d4c140fd3c1db11 /path/to/file.md /path/to/file2.erb
+
+# if happy you then need to commit those changes
+git commit
+```
+
+</figure>
   
 Grab one or more commits from elsewhere and drop into your current branch:
 
