@@ -11,5 +11,6 @@ tags:
   - vinyl
   - shopping
   - recordshopping
+  - dub
 ---
-Was pretty excited to hear this collab and it doesn’t disappoint. Deep digi-dub bass alongside instrumentals from sunny Manchester. Favourite track: trackname. Grab one (fast) opy on Bandcamp <https://bit.ly/3feSzRP> <div class="aspect-ratio-wide"><iframe title="Artist – Title" width="560" height="315" src="https://www.youtube-nocookie.com/embed/101Ygbe8U50" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+Was pretty excited when I heard about this collab and it doesn’t disappoint. A heady mix of deep, digi-dub bass, hazy textures and dancehall samples over 7 tracks. Favourite track: Krnch. <https://bit.ly/3feSzRP>https://bit.ly/33g6xOE> <div class="aspect-ratio-wide"><iframe title="Om Unit meets Seekers International – Krnch" width="560" height="315" src="https://www.youtube-nocookie.com/embed/3Ys-dGm5Bu4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
