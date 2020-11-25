@@ -5,8 +5,14 @@ description: Just finished my 6K run for FreeAgent’s “Big Strides for Tiny
 date: 2020-10-25T16:00:44.850Z
 location: Queen’s Park, Glasgow
 featuredImage: ""
+mainImage.aspectRatioWidth: 1000
+mainImage.aspectRatioHeight: 667
 tags:
   - note
+  - running
+  - charity
+  - freeagent
+  - park
 draft: false
 ---
 Just finished my 6K run for FreeAgent’s “Big Strides for Tiny Changes” charity campaign.
