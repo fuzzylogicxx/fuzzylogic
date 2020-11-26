@@ -28,11 +28,11 @@ Earlier this month [I heard about Bookshelf](https://fuzzylogic.me/posts/2020-11
 
 I think when I buy books online in future, if I’m not buying direct from a shop then I’ll buy from Bookshelf.
 
-I’m also going to suggest to The Outwith Agency that they look into setting up on Bookshop. They don’t currently have an e-commerce store so this could be some low-hanging fruit.
+I’m also going to mention to The Outwith Agency about Bookshop. They don’t currently have an e-commerce store so this could be some low-hanging fruit.
 
 I’ve also enrolled in Bookshop’s [affiliate programme](https://uk.bookshop.org/affiliates/profile/introduction) because it’s an attractive proposition:
 
-\> We also support anyone who advocates for books through our affiliate programme, which pays a 10% commission on every sale, and gives a matching 10% to independent bookshops.
+> We also support anyone who advocates for books through our affiliate programme, which pays a 10% commission on every sale, and gives a matching 10% to independent bookshops.
 
 Can’t argue with that! It feels like a pretty win-win way to recommend books.
 
