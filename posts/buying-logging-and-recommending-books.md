@@ -20,7 +20,7 @@ I have a [Bookshelf](https://fuzzylogic.me/bookshelf/) section of my website whi
 
 On my virtual bookshelf, each book links to a product details page on a third party website so that a visitor can easily buy that book if so inclined. This is a feature which I added without too much deeper thought.
 
-On Dave Rupert’s bookshelf, each book links to its counterpart on Amazon. This is likely for two reasons: firstly, Amazon tend to have _everything_; and secondly, he is enrolled in Amazon’s affiliate scheme, so can make a small commission from each recommendation that leads to a purchase. Makes sense!
+On Dave Rupert’s bookshelf, each book links to its counterpart on Amazon. This is likely for two reasons: firstly, Amazon are likely to have it because they have _everything_; and secondly, he is enrolled in Amazon’s affiliate scheme, so can make a small commission from each recommendation that leads to a purchase. Makes sense!
 
 Even though I’m not an Amazon affiliate I started by linking to Amazon almost by default, until a few months ago when I began linking to [Hive](https://www.hive.co.uk/) instead. Upon hearing that Hive give a small percentage of each sale to an independent book shop I realised I’d rather support that effort than simply boost Amazon’s profits. (Also: Amazon don’t need my money, and I’m not a big fan of their attitude toward privacy).
 
