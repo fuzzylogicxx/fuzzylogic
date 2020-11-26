@@ -18,7 +18,7 @@ I currently buy books from a mix of physical and online stores including Waterst
 
 I have a [Bookshelf](https://fuzzylogic.me/bookshelf/) section of my website which lists a number of books I’ve read, including what I’m currently reading. The idea was very much inspired by [Dave Rupert’s bookshelf](https://daverupert.com/bookshelf/).
 
-On my virtual bookshelf, each book links to a product details page on a third party website so the visitor can easily buy that book if they desire, a feature which I added without too much deeper thought. 
+On my virtual bookshelf, each book links to a product details page on a third party website so that a visitor can easily buy that book if so inclined. This is a feature which I added without too much deeper thought.
 
 On Dave Rupert’s bookshelf, each book links to its counterpart on Amazon. This is likely for two reasons: firstly, Amazon tend to have _everything_; and secondly, he is enrolled in Amazon’s affiliate scheme, so can make a small commission from each recommendation that leads to a purchase. Makes sense!
 
