@@ -36,6 +36,6 @@ I’ve also enrolled in Bookshop’s [affiliate programme](https://uk.bookshop.o
 
 Can’t argue with that! It feels like a pretty win-win way to recommend books.
 
-As for my website: I’m now going to link any books I mention to the corresponding product on Bookshelf (I’ve already started with my note on [A Promised Land](https://fuzzylogic.me/posts/note-2020-10-25t16-00-58-barack-obama-a-promised-land/)) and see if I can’t take advantage of that affilliate scheme. I’ll need to do a little work on my Bookshelf page, however Bookshop helpfully use a consistent URL structure which includes each book’s ISBN so that should make it easier to template my links and thumbnails. 
+As for my website: I’m now going to link any books I mention to the corresponding product on Bookshelf (I’ve already started with my note on [A Promised Land](https://fuzzylogic.me/posts/note-2020-10-25t16-00-58-barack-obama-a-promised-land/)) and see if I can’t take advantage of that affilliate scheme. I’ll need to do a little work, however Bookshop helpfully use a consistent URL structure which includes each book’s ISBN so that should make it easier to template my links and thumbnails. 
 
-Footnote: a big thank-you to Adactio’s post [Bookshop](https://adactio.com/journal/17596) which shared some great insights on setting up with Bookshop.
+Footnote: a big thank-you to Adactio’s post [Bookshop](https://adactio.com/journal/17596) which is full of great tips and insights on setting up with Bookshop.
