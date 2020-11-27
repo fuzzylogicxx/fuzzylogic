@@ -11,6 +11,8 @@ tags:
   - vinyl
   - shopping
   - recordshopping
+  - linkwood
+  - otherlands
 draft: false
 ---
 Lovely double-vinyl LP that sees three of Auld Reekie’s finest producers and labels join forces. Breezy laid-back jams with smooth keys rub up next to darker, Theo Parrish-eque moments to give it a fine balance. Favourite track: Shapes. [Grab a copy on Bandcamp](https://aotns.bandcamp.com/album/face-the-facts) [](https://bit.ly/3feSzRP) 
