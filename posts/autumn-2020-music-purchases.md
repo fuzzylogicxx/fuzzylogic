@@ -1,5 +1,5 @@
 ---
-title: "Autumn 2020 Record Shopping"
+title: "Autumn 2020 Records Round-up"
 description: The music I bought in Autumn 2020
 date: 2020-11-27 22:00:00
 tags:
@@ -23,11 +23,11 @@ openGraphImage: "https://res.cloudinary.com/fuzzylogic/image/upload/q_auto,f_aut
   {% respimg "" + mainImage.url + "", "" + mainImage.alt + "", "(min-width: 1600px) 646px, (min-width: 700px) 612px, 91.58vw", 320, mainImage.aspectRatioHeight %}
 </figure>
 
-Here’s a round-up of the records I bought in Autumn 2020.
+As the leaves began to fall and the nights drew in, here’s the records I blew all my cash on.
 
 ## Linkwood & Other Lands – Face the Facts
 
-Lovely gatefold double-vinyl LP that sees two of Auld Reekie’s finest join forces on the excellent Athens of the North. Breezy laid-back jams with smooth keys rub up against rougher, Theo Parrish-eque joints and spacey textures for a well balanced listen.
+Lovely gatefold double-vinyl LP that sees two of Auld Reekie’s finest join forces on the excellent Athens of the North. Breezy laid-back jams with smooth keys lead into rougher, Theo Parrish -esque joints and spacey textures, making for a really well-balanced listen.
 
 <b>Favourite Track:</b> Shapes
 
