@@ -1,8 +1,7 @@
 ---
-title: "Summer 2020 Sounds"
-description: The music I bought in Summer 2020
+title: "Autumn 2020 Sounds"
+description: The music I bought in Autumn 2020
 date: 2020-09-28 09:30:00
-draft: true
 tags:
   - entry
   - music
@@ -11,11 +10,11 @@ tags:
   - shopping
 isList: true
 mainImage:
-  url: https://res.cloudinary.com/fuzzylogic/image/upload/v1587511766/Mar_2020_Record_Shopping_v2_lyvlu2.jpg
-  alt: Laurence’s record purchases in Summer 2020
+  url: https://res.cloudinary.com/fuzzylogic/image/upload/v1606517861/Mar_2020_Record_Shopping_b8looq.jpg
+  alt: Laurence’s record purchases in November 2020
   aspectRatioHeight: 320
   isAnchor: true
-openGraphImage: "https://res.cloudinary.com/fuzzylogic/image/upload/q_auto,f_auto,w_1200/v1587511766/Mar_2020_Record_Shopping_v2_lyvlu2.jpg"
+openGraphImage: "https://res.cloudinary.com/fuzzylogic/image/upload/q_auto,f_auto,w_1200/v1606517861/Mar_2020_Record_Shopping_b8looq.jpg"
 ---
 
 ---
@@ -23,21 +22,22 @@ openGraphImage: "https://res.cloudinary.com/fuzzylogic/image/upload/q_auto,f_aut
   {% respimg "" + mainImage.url + "", "" + mainImage.alt + "", "(min-width: 1600px) 646px, (min-width: 700px) 612px, 91.58vw", 320, mainImage.aspectRatioHeight %}
 </figure>
 
-The music I bought in Summer 2020.
+Here’s a round-up of the records I bought in Autumn 2020.
 
-Let’s dive in.
+Let’s go.
 
-## Pub - Summer
+## Linkwood & Other Lands – Face the Facts
 
 Lorem ipsum dolor sit amet.
+Lovely gatefold double-vinyl LP that sees two of Auld Reekie’s finest join forces on the excellent Athens of the North. Breezy laid-back jams with smooth keys rub up against rougher, Theo Parrish-eque joints and spacey textures for a well balanced listen.
 
-<b>Favourite Track:</b> Summer
+<b>Favourite Track:</b> Shapes
 
 <div class="aspect-ratio-wide">
-  <iframe title="Pub – Summer" loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/X0TipwfTZnU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <iframe title="Linkwood & Other Lands – Shapes" loading="lazy" width="560" height="315" src="https://www.youtube-nocookie.com/embed/oCdHPH77b5c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-[Grab a copy on Bandcamp](https://ampoulerecords.bandcamp.com/album/summer-2)
+[Grab a copy on Bandcamp](Linkwood & Other Lands)
 
 ## Golden Ivy - Kläppen (LP)
 
