@@ -1,7 +1,7 @@
 ---
 title: "Autumn 2020 Sounds"
 description: The music I bought in Autumn 2020
-date: 2020-09-28 09:30:00
+date: 2020-11-27 22:00:00
 tags:
   - entry
   - music
