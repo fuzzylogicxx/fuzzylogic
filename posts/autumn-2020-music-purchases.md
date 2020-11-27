@@ -23,11 +23,11 @@ openGraphImage: "https://res.cloudinary.com/fuzzylogic/image/upload/q_auto,f_aut
   {% respimg "" + mainImage.url + "", "" + mainImage.alt + "", "(min-width: 1600px) 646px, (min-width: 700px) 612px, 91.58vw", 320, mainImage.aspectRatioHeight %}
 </figure>
 
-As the leaves began to fall and the nights drew in, here’s the records I blew all my cash on.
+As the leaves fell and the nights drew in, here’s the records I blew all my cash on.
 
 ## Linkwood & Other Lands – Face the Facts
 
-Lovely gatefold double-vinyl LP that sees two of Auld Reekie’s finest join forces on the excellent Athens of the North. Breezy laid-back jams with smooth keys lead into rougher, Theo Parrish -esque joints and spacey textures, making for a really well-balanced listen.
+Lovely gatefold double-vinyl LP that sees two of Auld Reekie’s finest join forces on the excellent Athens of the North label. Breezy laid-back jams with smooth keys lead into rougher, Theo Parrish -esque joints and spacey textures, making for a really well-balanced listen.
 
 <b>Favourite Track:</b> Shapes
 
@@ -39,7 +39,7 @@ Lovely gatefold double-vinyl LP that sees two of Auld Reekie’s finest join for
 
 ## Om Unit meets Seekers International – Secret Location
 
-Was excited to hear about this collab, and it doesn’t disappoint. 7 dollops of deep, digi-dub bass, hazy textures and dancehall samples, and the pressing sounds amazing. 
+I was excited to hear about this collab, and it doesn’t disappoint. 7 dollops of deep, digi-dub bass, hazy textures and dancehall samples, and it sounds amazing.
 
 <b>Favourite Track:</b> Nu Killa
 
@@ -48,3 +48,45 @@ Was excited to hear about this collab, and it doesn’t disappoint. 7 dollops of
 </div>
 
 [Grab a copy on Bandcamp](https://berceuseheroique.bandcamp.com/album/bh-063-om-unit-meets-seekers-international-secret-location)
+
+## Nat Birchall meets Al Breadwinner - Upright Living
+
+## Satoshi & Makoto - CZ-5000 Sounds & Sequences Vol. II
+
+## Sansibar - Targeted Individuals
+
+## Art Crime - Distanced
+
+## Rance Allen Group* - Reason To Survive
+
+## Deenamic - Out Of My Mind
+
+## Sad City - images-nov-20
+
+## Das Ding - Your Content Will Arrive Shortly
+
+## Ando Laj - Dog Insight
+
+## Various - Buena Onda Balearic Beats
+
+## Rance Allen Group - Reason to Survive
+
+## Midnight Tenderness - Digi Modes
+
+I love these guys, whether they’re working under this alias or as Turner Street Sound whose Bunsens was one of my favourites of 2018.
+
+## Jon Hassell - Seeing Through Sound (Pentimento Volume Two)
+
+## Linton Kwesi Johnson - Bass Culture / LKJ In Dub 
+
+## Sedgwick - Rhythm And Isolation
+
+## Various - Various Lurkers
+
+## STR4TA - Aspects
+
+## Also:
+
+### Sad City - images-nov-20
+
+### Tasha Larae & Jihad Muhammad - Till You Get There
