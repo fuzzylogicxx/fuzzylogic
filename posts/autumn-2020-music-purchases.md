@@ -16,6 +16,7 @@ mainImage:
   aspectRatioHeight: 167
   isAnchor: true
 openGraphImage: "https://res.cloudinary.com/fuzzylogic/image/upload/q_auto,f_auto,w_1200/v1606525894/facefacts_crop_lwnd6i.jpg"
+draft: true
 ---
 
 ---
