@@ -23,19 +23,19 @@ openGraphImage: "https://res.cloudinary.com/fuzzylogic/image/upload/q_auto,f_aut
   {% respimg "" + mainImage.url + "", "" + mainImage.alt + "", "(min-width: 1600px) 646px, (min-width: 700px) 612px, 91.58vw", 320, mainImage.aspectRatioHeight %}
 </figure>
 
-As the leaves fell and the nights drew in, here’s the records I blew all my cash on.
+<p style="margin-top: 3rem;">As the leaves fell and the nights drew in, here’s the records I blew all my cash on.</p>
 
-## Linkwood & Other Lands – Face the Facts
+## Nat Birchall meets Al Breadwinner - Upright Living
 
-Lovely gatefold double-vinyl LP that sees two of Auld Reekie’s finest join forces on the excellent Athens of the North label. Breezy laid-back jams with smooth keys lead into rougher, Theo Parrish -esque joints and spacey textures, making for a really well-balanced listen.
+Real nice roots reggae and dub from sunny Manchester. 
 
-<b>Favourite Track:</b> Shapes
+<b>Favourite track(s):</b> African Village Dance / Village Dub. 
 
 <div class="aspect-ratio-wide">
-  <iframe title="Linkwood & Other Lands – Shapes" loading="lazy" width="560" height="315" src="https://www.youtube-nocookie.com/embed/oCdHPH77b5c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <iframe title="Nat Birchall meets Al Breadwinner – African Village Dance" loading="lazy" width="560" height="315" src="https://www.youtube-nocookie.com/embed/oo35Duhy-8c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-[Grab a copy on Bandcamp](https://aotns.bandcamp.com/album/face-the-facts)
+[Grab a copy on Bandcamp](https://natbirchallmusic.bandcamp.com/album/upright-living-nat-birchall-meets-al-breadwinner)
 
 ## Om Unit meets Seekers International – Secret Location
 
@@ -49,7 +49,17 @@ I was excited to hear about this collab, and it doesn’t disappoint. 7 dollops 
 
 [Grab a copy on Bandcamp](https://berceuseheroique.bandcamp.com/album/bh-063-om-unit-meets-seekers-international-secret-location)
 
-## Nat Birchall meets Al Breadwinner - Upright Living
+## Linkwood & Other Lands – Face the Facts
+
+Lovely gatefold double-vinyl LP that sees two of Auld Reekie’s finest join forces on the excellent Athens of the North label. Breezy laid-back jams with smooth keys lead into rougher, Theo Parrish -esque joints and spacey textures, making for a really well-balanced listen.
+
+<b>Favourite Track:</b> Shapes
+
+<div class="aspect-ratio-wide">
+  <iframe title="Linkwood & Other Lands – Shapes" loading="lazy" width="560" height="315" src="https://www.youtube-nocookie.com/embed/oCdHPH77b5c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+[Grab a copy on Bandcamp](https://aotns.bandcamp.com/album/face-the-facts)
 
 ## Satoshi & Makoto - CZ-5000 Sounds & Sequences Vol. II
 
