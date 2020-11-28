@@ -227,7 +227,7 @@ Killer reggae reissue: beaut packaging, lovely red and green vinyl, and sounds t
 
 ## Sedgwick - Rhythm And Isolation
 
-Big up [Jamie](https://twitter.com/jamiethomsonno1) who brought this one to my attention via a [great episode of his Saturday Manatee show](https://www.mixcloud.com/RadioMagnetic/saturday-manatee-ep-57-jamie-thomson/). There’s a lot of electro around at the moment, and perhaps a few opportunistic types jumping on the bandwagon, but this is a good one.
+Big up [Jamie](https://twitter.com/jamiethomsonno1) who brought this one to my attention via a [great episode of his Saturday Manatee show](https://www.mixcloud.com/RadioMagnetic/saturday-manatee-ep-57-jamie-thomson/). There’s a lot of electro around at the moment, and perhaps also a few opportunistic producers and labels jumping on the bandwagon, but this is a good one.
 
 <b>Favourite track:</b> Exit
 
