@@ -16,7 +16,6 @@ mainImage:
   aspectRatioHeight: 167
   isAnchor: true
 openGraphImage: "https://res.cloudinary.com/fuzzylogic/image/upload/q_auto,f_auto,w_1200/v1606525894/facefacts_crop_lwnd6i.jpg"
-draft: true
 ---
 
 ---
@@ -214,10 +213,10 @@ A quirky long-player from a Toronto-based artist who is new to me but seems to h
 
 Killer reggae reissue: beaut packaging, lovely red and green vinyl, and sounds tremendous.
 
-<b>Favourite track:</b> Name
+<b>Favourite track:</b> Inglan is a Bitch
 
 <div class="aspect-ratio-wide">
-  <iframe title="Linkwood & Other Lands – Shapes" loading="lazy" width="560" height="315" src="https://www.youtube-nocookie.com/embed/oCdHPH77b5c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <iframe title="Linton Kwesi Johnson – Inglan is a Bitch" loading="lazy" width="560" height="315" src="https://www.youtube-nocookie.com/embed/oJ4UBztigF0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 [Grab a copy at Honest Jon’s](https://honestjons.com/shop/artist/Linton_Kwesi_Johnson/release/Bass_Culture_LKJ_In_Dub)
