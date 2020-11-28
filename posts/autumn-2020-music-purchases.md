@@ -26,13 +26,13 @@ draft: true
 
 <p style="margin-top: 3rem;">As the leaves fell and the nights drew in, I chose to fall forward by blowing all my hard-earned on a lovely mixed bag of dub, ambient, soul, house and electro records. Now, if I could just find some puppy-safe time to actually listen to them…</p>
 
-<p>One wee thought before we dig in: I’m finding that I’m buying more from Bandcamp now that a lot of the records I want seem to appear there first. That’s great for the artists (they get most of the profit minus Bandcamp’s cut) so it’s a positive thing, but what about physical record shops? This got me thinking: now that we have [Bookshop](https://uk.bookshop.org/) supporting independent, _bricks and mortar_ book shops by spreading profits among them, could a similar online enterprise maybe exist for record shops?</p>
+<p>One wee thought before we dig in: I’m finding that I’m buying from Bandcamp more and more now that a many (most?) of the records I want seem to appear there first. That’s great for the artists (they get most of the profit minus Bandcamp’s cut) so it’s a positive thing, but what about physical record shops? This got me thinking: now that we have [Bookshop](https://uk.bookshop.org/) supporting independent, _bricks and mortar_ book shops by spreading profits among them, could a similar online enterprise maybe exist for record shops?</p>
 
 <p>OK, enough pontificating – here’s the music.</p>
 
 ## Nat Birchall meets Al Breadwinner - Upright Living
 
-Real nice roots reggae and dub instrumentals from sunny Manchester. Mr Birchall is, by all accounts, an amazing musician, and in Al Breadwinner on drums and Vin Gordon on trumpet he’s assembled a stellar band. When I first heard this I thought it was some vintage Augustus Pablo so it was a nice surprise to find out that it was in fact made in 2020 in Stockport.
+Real nice roots reggae and dub instrumentals from sunny Manchester. Mr Birchall is, by all accounts, an amazing musician, and in Al Breadwinner on drums and Vin Gordon on trumpet he’s assembled a stellar band. When I first heard this I thought it was some vintage Augustus Pablo so it was funny to find out that it was in fact made in 2020 in Stockport.
 
 <b>Favourite track(s):</b> African Village Dance / Village Dub. 
 
@@ -83,7 +83,7 @@ Lovely four-tracker of slow and atmospheric late-night grooves from Italy and el
 <b>Favourite track:</b> Lucas Croon – Japon.
 
 <div class="aspect-ratio-wide">
-  <iframe title="Linkwood & Other Lands – Shapes" loading="lazy" width="560" height="315" src="https://www.youtube-nocookie.com/embed/oCdHPH77b5c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <iframe title="Lucas Croon – Japon" loading="lazy" width="560" height="315" src="https://www.youtube-nocookie.com/embed/QVt99311d4A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 [Grab a copy on Bandcamp](https://hellyeahrec.bandcamp.com/album/buena-onda-balearic-beats)
@@ -100,21 +100,19 @@ A nice surprise from Gilles Peterson’s label, this is a brand new, authentic j
 
 [Grab a copy on Bandcamp](https://str4ta.bandcamp.com/album/aspects)
 
-### Tasha Larae & Jihad Muhammad - Till You Get There
+## Midnight Tenderness - Digi Modes
 
-Proper New Jersey style garage from Baltimore’s DJ Spen (able assisted on remix duties by Bristol’s Sean McCabe) that I could imagine raising the roof at Shelter in NYC or even closer to home at Glasgow’s Melting Pot. It just has that magic forumula of slamming beats, gospel chords and a soaring, positive vocal which will never fail to push my buttons. One that if you hear at the right time will make your night, and which makes me long for clubs to reopen. 
-
-<b>Favourite track:</b> Till You Get There (DJ Spen and Sean McCabe remix)
+Another beauty from Melbourne-based Ryan Hunter whose previous releases – whether under this alias for the [Refresco EP](https://www.discogs.com/Midnight-Tenderness-Refresco-/release/11909269), or as Turner Street Sound for 2018’s amazing [Bunsens](https://www.discogs.com/Turner-Street-Sound-Bunsens-Vol-1/release/11577583) as Turner Street Sound – have been much appreciated ‘round these parts. This one, on lovely transparent golden 7″, offers a speedy, skanking and soulful update to the traditional dub techno blueprint.
 
 <div class="aspect-ratio-wide">
-  <iframe title="Linkwood & Other Lands – Shapes" loading="lazy" width="560" height="315" src="https://www.youtube-nocookie.com/embed/PvXmr-0qIXU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <iframe title="Sansibar – Technology" loading="lazy" width="560" height="315" src="https://www.youtube-nocookie.com/embed/hEnv0MTYB64" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-[Buy (digital-only) from Bandcamp](https://quantizerecordings.bandcamp.com/album/till-you-get-there-1)
+[Grab a copy on Bandcamp](https://buttersessions.bandcamp.com/album/digi-modes)
 
 ## Sansibar - Targeted Individuals
 
-No-messin’, pacey, but cinematic electro which sounds like it’s from Detroit but is actually from the hand of one Sunny Seppä of Helsinki. Nothing ground-breaking on display here but what it does, it does really well. If you dig ERP or classic Dopplereffekt you’ll love this.
+No-messin’, pacey, but cinematic electro which sounds like it’s from Detroit but is actually from the hand of one Sunny Seppa of Helsinki. Nothing ground-breaking on display here but what it does, it does really well. If you dig ERP or classic Dopplereffekt you’ll love this.
 
 <b>Favourite track:</b> Technology
 
@@ -132,9 +130,11 @@ Limited edition moody drone/ambient 7″ from Russia, with accompanying [drone m
   <iframe title="Art Crime – Blocks" loading="lazy" width="560" height="315" src="https://www.youtube-nocookie.com/embed/SDzs-BPplP0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
+[Grab a copy on Bandcamp](https://dawnrecords.bandcamp.com/album/distanced-dawn011)
+
 ## Jon Hassell - Seeing Through Sound (Pentimento Volume Two)
 
-Fairly amazing leftfield ambient sounds, and even moreso given that the producer is 83 (yes, 83) years old. This is a real trip and needs the kind of time which I’ve not generally been able to give it just yet, but even the first track alone is worth the admission. The vinyl also sounds amazing. Stunning!
+Fairly amazing leftfield ambient sounds, and even moreso given that the producer is 83 (yes, 83) years old. This is a real trip and deserves the kind of attention which I’ve not generally been able to give it just yet, but the first track alone is worth the admission. The vinyl also sounds amazing. Stunning!
 
 <b>Favourite track:</b> Fearless
 
@@ -151,7 +151,7 @@ Shout out to [Gav](https://linktr.ee/0ther_Lands) who played this wonderful 1977
 <b>Favourite track:</b> Name
 
 <div class="aspect-ratio-wide">
-  <iframe title="Linkwood & Other Lands – Shapes" loading="lazy" width="560" height="315" src="https://www.youtube-nocookie.com/embed/oCdHPH77b5c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <iframe title="Linkwood & Other Lands – Shapes" loading="lazy" width="560" height="315" src="https://www.youtube-nocookie.com/embed/l7VDC6_KJm4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 [Grab a copy on Juno](https://www.juno.co.uk/products/rance-allen-group-reason-to-survive/696650-01/)
@@ -166,6 +166,18 @@ Another cracker heard on Gav’s show, this is new from Italian label Neroli who
 
 [Grab a copy on Juno](https://www.juno.co.uk/products/deenamic-out-of-my-mind/790619-01/)
 
+### Tasha Larae & Jihad Muhammad - Till You Get There
+
+Proper New Jersey style garage from Baltimore’s DJ Spen (ably assisted on remix duties by Bristol’s Sean McCabe) that I could imagine raising the roof at Shelter in NYC or even closer to home at Glasgow’s Melting Pot. It just has that magic forumula of slamming beats, gospel chords and a soaring, positive vocal which will never fail to push my buttons. One that if you hear at the right time will make your night, and which makes me long for clubs to reopen. 
+
+<b>Favourite track:</b> Till You Get There (DJ Spen and Sean McCabe remix)
+
+<div class="aspect-ratio-wide">
+  <iframe title="Linkwood & Other Lands – Shapes" loading="lazy" width="560" height="315" src="https://www.youtube-nocookie.com/embed/PvXmr-0qIXU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+[Buy (digital-only) from Bandcamp](https://quantizerecordings.bandcamp.com/album/till-you-get-there-1)
+
 ## Das Ding - Your Content Will Arrive Shortly
 
 My first encounter with Das Ding was his track [H.S.T.A.](https://www.youtube.com/watch?v=HeLUoCSNu_k) on the excellent 2012 Stones Throw comp [The Minimal Wave Tapes Volume Two](https://www.discogs.com/Various-The-Minimal-Wave-Tapes-Volume-Two/master/417585). That comp was focused on tracks from the eighties so it’s cool to see that Mr Ding is still releasing music today. These four tracks are electro-based and retain that eighties character with New Beat and EBM influences, but updated with 2020 sounds and production.
@@ -173,7 +185,7 @@ My first encounter with Das Ding was his track [H.S.T.A.](https://www.youtube.co
 <b>Favourite track:</b> Category Collapse (Heap Remix)
 
 <div class="aspect-ratio-wide">
-  <iframe title="Linkwood & Other Lands – Shapes" loading="lazy" width="560" height="315" src="https://www.youtube-nocookie.com/embed/oCdHPH77b5c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <iframe title="Das Ding – Category Collapse (Heap Remix)" loading="lazy" width="560" height="315" src="https://www.youtube-nocookie.com/embed/_3v1SZwgEaY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 [Grab a copy on Bandcamp](https://mechatronica.bandcamp.com/album/your-content-will-arrive-shortly)
@@ -197,12 +209,6 @@ A quirky long-player from a Toronto-based artist who is new to me but seems to h
 <iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=1727123950/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://andolaj.com/album/dog-insight">Dog Insight by Ando Laj</a></iframe>
 
 [Grab a copy on Bandcamp](https://andolaj.com/album/dog-insight)
-
-## Midnight Tenderness - Digi Modes
-
-Another beauty from Melbourne-based Ryan Hunter whose previous releases – whether under this alias for the [Refresco EP](https://www.discogs.com/Midnight-Tenderness-Refresco-/release/11909269), or as Turner Street Sound for 2018’s amazing [Bunsens](https://www.discogs.com/Turner-Street-Sound-Bunsens-Vol-1/release/11577583) as Turner Street Sound – have been much appreciated ‘round these parts. This one, on lovely transparent golden 7″, offers a speedy, skanking and soulful update to the traditional dub techno blueprint.
-
-[Grab a copy on Bandcamp](https://buttersessions.bandcamp.com/album/digi-modes)
 
 ## Linton Kwesi Johnson - Bass Culture / LKJ In Dub 
 
