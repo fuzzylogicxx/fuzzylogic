@@ -164,7 +164,7 @@ Another cracker heard on Gav’s show, this is new from Italian label Neroli who
 
 <b>Favourite track:</b> Sambu
 
-<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=1014917879/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://nerolirecords.bandcamp.com/album/deenamic-ep-vinyl-only-no-digital-download">Deenamic EP [Vinyl only - no digital download] by NEROLI</a></iframe>
+<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=1014917879/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=3128915588/transparent=true/" seamless><a href="https://nerolirecords.bandcamp.com/album/deenamic-ep-vinyl-only-no-digital-download">Deenamic EP [Vinyl only - no digital download] by NEROLI</a></iframe>
 
 [Grab a copy on Juno](https://www.juno.co.uk/products/deenamic-out-of-my-mind/790619-01/)
 
