@@ -119,6 +119,9 @@ No-messin’, pacey, but cinematic electro which sounds like it’s from Detroit
   <iframe title="Sansibar – Technology" loading="lazy" width="560" height="315" src="https://www.youtube-nocookie.com/embed/xIqqBlIysN4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
+[Grab a copy from Rubadub](https://www.rubadub.co.uk/records/targeted-individuals)
+
+
 ## Art Crime - Distanced
 
 Limited edition moody drone/ambient 7″ from Russia, with accompanying [drone movie](https://www.youtube.com/watch?v=BfJQfn4pcNU).
