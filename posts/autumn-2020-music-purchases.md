@@ -194,7 +194,7 @@ My first encounter with Das Ding was his track [H.S.T.A.](https://www.youtube.co
 
 ## Sad City - images-nov-20
 
-Two long, atmospheric ambient tracks, self-released (digital-only) by Gary Caruth who I believe resides in Edinburgh (or Glasow; I’m not quite sure). I remember really enjoying his release [You Will Soon Find That Life Is Wonderful](https://www.discogs.com/Sad-City-You-Will-Soon-Find-That-Life-Is-Wonderful/release/4483895) in 2013. Anyway – these are very nice, so much so that I listened to them as I feel asleep the other night and I can report that it was quite pleasant.
+Two long, atmospheric ambient tracks, self-released (digital-only) by Gary Caruth who I believe resides in Edinburgh (or Glasow; I’m not quite sure). I remember really enjoying his release [You Will Soon Find That Life Is Wonderful](https://www.discogs.com/Sad-City-You-Will-Soon-Find-That-Life-Is-Wonderful/release/4483895) in 2013. Anyway – these are very nice, so much so that I listened to them as I feel asleep the other night and I can report that it was quite pleasant!
 
 <b>Favourite track:</b> image1
 
