@@ -11,11 +11,11 @@ tags:
   - recordshopping
 isList: true
 mainImage:
-  url: https://res.cloudinary.com/fuzzylogic/image/upload/v1606517861/Mar_2020_Record_Shopping_b8looq.jpg
+  url: https://res.cloudinary.com/fuzzylogic/image/upload/v1606525894/facefacts_crop_lwnd6i.jpg
   alt: Laurence’s record purchases in November 2020
-  aspectRatioHeight: 320
+  aspectRatioHeight: 167
   isAnchor: true
-openGraphImage: "https://res.cloudinary.com/fuzzylogic/image/upload/q_auto,f_auto,w_1200/v1606517861/Mar_2020_Record_Shopping_b8looq.jpg"
+openGraphImage: "https://res.cloudinary.com/fuzzylogic/image/upload/q_auto,f_auto,w_1200/v1606525894/facefacts_crop_lwnd6i.jpg"
 ---
 
 ---
