@@ -208,7 +208,7 @@ A quirky long-player from a Toronto-based artist who is new to me but seems to h
 
 <b>Favourite track:</b> Yukon
 
-<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=1727123950/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://andolaj.com/album/dog-insight">Dog Insight by Ando Laj</a></iframe>
+<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=1727123950/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=2678063031/transparent=true/" seamless><a href="https://andolaj.com/album/dog-insight">Dog Insight by Ando Laj</a></iframe>
 
 [Grab a copy on Bandcamp](https://andolaj.com/album/dog-insight)
 
