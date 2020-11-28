@@ -24,7 +24,11 @@ draft: true
   {% respimg "" + mainImage.url + "", "" + mainImage.alt + "", "(min-width: 1600px) 646px, (min-width: 700px) 612px, 91.58vw", 320, mainImage.aspectRatioHeight %}
 </figure>
 
-<p style="margin-top: 3rem;">As the leaves fell and the nights drew in, here’s the records I blew all my cash on.</p>
+<p style="margin-top: 3rem;">As the leaves fell and the nights drew in, here’s the records I blew all my cash on. Now, if I could just find some puppy-safe time to enjoy them… I live in hope.</p>
+
+<p>One final thought before we dig in: I’m finding that I’m buying more from Bandcamp now that a lot of the records I want seem to appear there first. That’s great for the artists (they get most of the profit minus Bandcamp’s cut), but what about physical record shops? Which got me thinking: now that we have [Bookshop] supporting independent, _bricks and mortar_ book shops, could a similar online enterprise maybe exist for record shops?</p>
+
+<p>Right, enough waffle – here’s the music.</p>
 
 ## Nat Birchall meets Al Breadwinner - Upright Living
 
