@@ -23,7 +23,7 @@ openGraphImage: "https://res.cloudinary.com/fuzzylogic/image/upload/q_auto,f_aut
   {% respimg "" + mainImage.url + "", "" + mainImage.alt + "", "(min-width: 1600px) 646px, (min-width: 700px) 612px, 91.58vw", 320, mainImage.aspectRatioHeight %}
 </figure>
 
-<p style="margin-top: 3rem;">As the leaves fell and the nights drew in, I chose to fall forward by blowing all my hard-earned on a lovely mixed bag of dub, ambient, soul, house and electro records. Now, if I could just find some puppy-safe time to actually listen to them…</p>
+<p style="margin-top: 3rem;">As the leaves fell and the nights drew in, I chose to fall forward by blowing all my hard-earned on a lovely mixed bag of dub, ambient, soul, house and electro records. Now, if I could just find some puppy-free time to actually listen to them…</p>
 
 One wee thought before we dig in: I’m finding that I’m buying from Bandcamp more and more now that many (most?) of the records I want seem to appear there first. That’s great for the artists (they get most of the profit minus Bandcamp’s cut) so it’s a positive thing, but what about physical record shops? This got me thinking: now that we have <a href="https://uk.bookshop.org/">Bookshop</a> supporting independent, _bricks and mortar_ book shops by spreading profits among them, could a similar online enterprise maybe exist for record shops?
 
