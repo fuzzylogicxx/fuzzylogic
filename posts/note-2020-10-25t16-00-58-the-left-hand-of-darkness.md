@@ -80,7 +80,7 @@ tags:
   - gender
 draft: false
 ---
-I’ve started reading The Left Hand of Darkness by Ursula K. Le Guin
+I’ve started reading The Left Hand of Darkness by Ursula K. Le Guin.
 ---
 
 If you’re interested in this book, it’s available on [Bookshop](https://uk.bookshop.org/a/4340/9781473225947). Buying there supports local, independent bookstores.
