@@ -1,7 +1,7 @@
 ---
 title: My Screen Reader Cheatsheet
 description: Useful Screen Reader tips and tricks (VoiceOver and more) for my reference and yours
-date: "2020-02-24T09:58:08.051Z"
+date: "2020-12-02T15:58:08.051Z"
 tags: [entry, development, cheatsheet, a11y, tool, voiceover]
 ---
 Here’s a list of useful Screen Reader commands and tips for my reference and yours. This is a work in progress and I’ll update it as I go.
