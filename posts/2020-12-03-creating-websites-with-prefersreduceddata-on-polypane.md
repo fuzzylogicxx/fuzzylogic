@@ -1,6 +1,6 @@
 ---
 date: "2020-12-03T08:57:41.246Z"
-title: "Creating websites with prefers-reduced-data (on Polypane)"
+title: "Creating websites with prefers-reduced-data (on polypane.app)"
 description: "A media query and related API which allows web developers to keep websites accessible to everyone."
 tags: [link, performance, a11y, mediaqueries, connection, css, javascript]
 linkTarget: "https://polypane.app/blog/creating-websites-with-prefers-reduced-data/"
