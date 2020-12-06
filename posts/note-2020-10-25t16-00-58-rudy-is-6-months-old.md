@@ -4,6 +4,7 @@ description: Our wee Border Terrier, Rudy, is six months old
 date: 2020-12-06T19:56:16.232Z
 mainImage.isAnchor: false
 tags:
+  - note
   - rudy
   - borderterrier
   - dogs
