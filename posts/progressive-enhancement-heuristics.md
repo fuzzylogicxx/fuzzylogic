@@ -29,7 +29,7 @@ This weekend I did some unplanned rabbit-holing on the current state of (and bes
 
 > any browser that supports `<script type="module">` also supports `let` and `const`, `async/await`, the spread operator, etc.
 
-One implication of this is that if you currently build a large JavaScript bundle (due to being transpiled down to ES 3/5 and including lots of polyfills) and ship this to _all_ browsers including the modern ones… you could instead configure your bundler to generate _two_ bundles from your code then do:
+One implication of this is that if you currently build a large JavaScript bundle (due to being transpiled down to ES 3/5 and including lots of polyfills) and ship this to _all_ browsers including the modern ones… you could instead improve performance for the majority of your visitors by configuring your bundler to generate _two_ bundles from your code then doing:
 
 <figure>
 
