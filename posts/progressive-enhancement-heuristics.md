@@ -23,7 +23,7 @@ There was a small lightbulb moment at work earlier this year when we worked out 
 
 Knowing this means that if you wrap some CSS in an `@supports(display:grid) {` then you can also safely use custom properties within that block.
 
-I love wee rules of thumb like that! It saves you looking up [caniuse.com](https://caniuse.com/) for each feature and comparing the browser support. 
+I love this rule of thumb! It saves you looking up [caniuse.com](https://caniuse.com/) for each feature and comparing the browser support. 
 
 This weekend I did some unplanned rabbit-holing on the current state of (and best practices for using) ES modules in the browser, as-is and untranspiled. That revealed another interesting rule of thumb:
 
