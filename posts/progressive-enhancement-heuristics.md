@@ -38,3 +38,5 @@ One implication of this is that if you currently build a large JavaScript bundl
 <script nomodule src="bulky-alternative-for-old-browsers.js"></script>
 ```
 </figure>
+
+I might make a little page or microsite for these rules of thumb / techniques. They’re pretty handy!
