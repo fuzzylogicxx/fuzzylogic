@@ -2,6 +2,7 @@
 title: "Note 2020-10-25T16:00:58: Rudy is 6 months old"
 description: Our wee Border Terrier, Rudy, is six months old
 date: 2020-12-06T19:56:16.232Z
+location: Glasgow
 mainImage.isAnchor: false
 tags:
   - note
