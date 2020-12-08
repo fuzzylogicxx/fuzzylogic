@@ -1,5 +1,5 @@
 ---
-title: Progressive Enhancement Heuristics
+title: Browser Support Heuristics
 description: In web development it’s useful when we can say “if the browser
   supports X, then we know it also supports Y”
 date: 2020-12-07T20:33:37.159Z
