@@ -21,7 +21,7 @@ There was a small lightbulb moment at work earlier this year when we worked out 
 
 > if the user’s browser supports CSS Grid, then you know you it also supports custom properties. 
 
-Knowing this means that if you wrap some CSS in an `@supports(display:grid) {` then you can also safely use custom properties within that block.
+Knowing this means that if you wrap some CSS in an `@supports(display:grid)` then you can also safely use custom properties within that block.
 
 I love this rule of thumb! It saves you looking up [caniuse.com](https://caniuse.com/) for each feature and comparing the browser support. 
 
