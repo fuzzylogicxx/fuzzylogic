@@ -5,6 +5,8 @@ date: 2019-12-05T21:45:00.000Z
 mainImage.isAnchor: false
 draft: true
 ---
+If you’ve been splitting JavaScript into modules then pulling these (or third party modules) into your code on-demand, then chances are you’re either working in a server/build context with Node.js and `require`, or in a front-end application with a bundler which turns modern ES “module” syntax into “old” code for browsers.
+
 ES6 Modules work in all modern browsers (but not IE) and let us _split up_ our client-side JavaScript code into separate files making it, well, _modular_. This helps us make large or complex applications more maintainable, robust and scalable. We can include a script which imports modules in our HTML by using `<script type="module">`. This, however, is where things get complicated, with many factors to consider and competing suggestions for best practice.
 
 ## Competing philosophies/options
