@@ -1,6 +1,8 @@
 ---
 title: "Images on the web: collecting and demystifying the options"
-description: "Images on the web: collecting and demystifying the options"
+description: In 2020 there are a lot of different ways to handle including an
+  image on a web page. In this post I step through each option and describe
+  where it is appropriate.
 date: 2020-12-09 11:30:00
 tags:
   - entry
@@ -9,6 +11,22 @@ tags:
   - rwd
 draft: true
 ---
+In 2020 there are a lot of different ways to handle rendering an image on a web page. In this post I step through each option and describe where it is appropriate.
+
+Let’s start by going back to the basics. I can include an image on a web page like so:
+
+<figure>
+
+```html
+<img src="https://source.unsplash.com/WLUHO9A_xik/400x225" alt="A mountain range" />
+```
+
+</figure>
+
+<img src="https://source.unsplash.com/WLUHO9A_xik/400x225" alt="A mountain range" />
+
+<!--
+
 This all started from:
 
 I should change image CSS to no longer set images to width: 100% by default. (this is also a trello card)
@@ -31,7 +49,7 @@ However in the past (the pre-responsive days) this was only needed to reserve sp
 
 To achieve the combination of 1) setting width and height HTML attributes and 2) using CSS to make your image fluid: as I understand it from https://www.chromestatus.com/feature/5695266130755584 and Firefox Jen Simmons, you’re going to need to then set:
 
-```
+```css
 img { 
   width: 100%; 
   height: auto;
@@ -63,3 +81,5 @@ https://www.youtube.com/watch?app=desktop&feature=youtu.be&v=5CZyxnCdXuk
 MDN say “The object-fit CSS property sets how the content of a replaced element, such as an <img> or <video>, should be resized to fit its container. You can alter the alignment of the replaced element's content object within the element's box using the object-position property.”
 
 So in summary: object-fit *resizes* an image to *fit*
+
+-->
