@@ -1,8 +1,8 @@
 ---
 title: "Images on the web: collecting and demystifying the options"
-description: In 2020 there are a lot of different ways to handle including an
-  image on a web page. In this post I step through each option and describe
-  where it is appropriate.
+description: In 2020 there are a brain-frazzling number of different ways to
+  render an image on a web page. In this post I step through them, how they have
+  evolved, and where they are appropriate.
 date: 2020-12-09 11:30:00
 tags:
   - entry
@@ -11,7 +11,7 @@ tags:
   - rwd
 draft: true
 ---
-In 2020 there are a lot of different ways to handle rendering an image on a web page. In this post I step through each option and describe where it is appropriate.
+In 2020 there are a brain-frazzling number of different ways to render an image on a web page. In this post I step through them, how they have evolved, and where they are appropriate.
 
 Let’s start by going back to the basics. I can include an image on a web page like so:
 
