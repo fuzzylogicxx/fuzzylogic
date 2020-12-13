@@ -1,8 +1,8 @@
 ---
-title: "Images on the web: collecting and demystifying the options"
-description: In 2020 there are a brain-frazzling number of different ways to
-  render an image on a web page. In this post I step through them, how they have
-  evolved, and where they are appropriate.
+title: "Images on the web: the big picture"
+description: In modern web development there are a brain-frazzling number of
+  different ways to include an image on a web page. In this post I step through
+  these methods, discussing how they evolved and where they are appropriate.
 date: 2020-12-09 11:30:00
 tags:
   - entry
@@ -11,7 +11,9 @@ tags:
   - rwd
 draft: true
 ---
-In 2020 there are a brain-frazzling number of different ways to render an image on a web page. In this post I step through them, how they have evolved, and where they are appropriate.
+In modern web development there are a brain-frazzling number of different ways to include an image on a web page. In this post I step through these methods, discussing how they evolved and where they are appropriate.
+
+## A basic img
 
 Let’s start by going back to the basics. I can include an image on a web page like so:
 
@@ -24,6 +26,10 @@ Let’s start by going back to the basics. I can include an image on a web page 
 </figure>
 
 <img src="https://source.unsplash.com/WLUHO9A_xik/400x225" alt="A mountain range" />
+
+## Fitting an image into a known space
+
+Add an object-fit example here using an image at the top of a card.
 
 <!--
 
