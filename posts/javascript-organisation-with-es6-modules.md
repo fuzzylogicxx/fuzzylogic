@@ -5,28 +5,37 @@ date: 2019-12-05T21:45:00.000Z
 mainImage.isAnchor: false
 draft: true
 ---
-If you’ve been splitting JavaScript into modules then pulling these (or third party modules) into your code on-demand, then chances are you’re either working in a server/build context with Node.js and `require`, or in a front-end application with a bundler which turns modern ES “module” syntax into “old” code for browsers.
+If you’ve been writing JavaScript which includes other JS code on-demand, the chances are you were either working outside the browser with Node.js or on a web application where a bundler compiles ECMAScript `import` and `export` down to “old” code for browsers. However since Spring 2017, ES modules work _natively_ in all modern browsers (but not IE). Our HTML can employ `<script type="module">` to include a script which uses ES modules. This, however, is where things get complicated, 
+with many factors to consider and competing suggestions for best practice.
 
-ES6 Modules work in all modern browsers (but not IE) and let us _split up_ our client-side JavaScript code into separate files making it, well, _modular_. This helps us make large or complex applications more maintainable, robust and scalable. We can include a script which imports modules in our HTML by using `<script type="module">`. This, however, is where things get complicated, with many factors to consider and competing suggestions for best practice.
+
+- https://www.rollupjs.org/guide/en/
+- https://blog.logrocket.com/benchmarking-bundlers-2020-rollup-parcel-webpack/
+- https://philipwalton.com/articles/using-native-javascript-modules-in-production-today/
+- and PW’s demo https://rollup-native-modules-boilerplate.glitch.me/ based on https://github.com/philipwalton/rollup-native-modules-boilerplate
+- https://philipwalton.com/articles/deploying-es2015-code-in-production-today/
+- https://michaelallenwarner.github.io/webdev/2019/05/22/how-to-serve-es6+-to-modern-browsers-and-es5-to-legacy-browsers.html
+- ES Modules High Water Mark https://codepen.io/samthor/pen/MmvdOM
+- https://v8.dev/features/modules
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules
+
+
+
+
+ES modules let us _split up_ our client-side JavaScript code into separate files making it, well, _modular_. This helps us make large or complex applications more maintainable, robust and scalable. 
 
 ## Competing philosophies/options
 
-- Use ES6 modules and stop using module bundlers like Webpack (https://formidable.com/blog/2019/no-build-step/)
-- Use ES6 modules in combination with a bundler because of the benefits bundlers bring vis-a-vis performance and outputting code for old browsers. Include your built output using a standard `<script>` rather than `<script type="module">`.
-- Use `<script type="module">` and `<script nomodule="true"> in combination. Take advantage of the fact that `type="module"` support also means modern JS support to safely include only modern code for modern browsers (`async/await` etc), and avoid shipping the weight of workarounds and polyfills to browsers that don’t need it. Use `<script nomodule="true">` for fallback code. One or other script will be used but not both.
-- Set up a bundler to output both sets of code in the above.
+- At the lean / progressive-enhancement end: Use ES6 modules natively and stop using module bundlers like Webpack (https://formidable.com/blog/2019/no-build-step/). We don’t even need `node_modules` because we can get npm packages elsewhere.
+- Use `<script type="module">` and `<script nomodule="true">` in combination. Take advantage of the fact that `type="module"` support also means modern JS support to safely include only modern code for modern browsers (`async/await` etc), and avoid shipping the weight of workarounds and polyfills to browsers that don’t need it. Use `<script nomodule="true">` for fallback code. One or other script will be used but not both. Set up your bundler to output both scripts automatically from your single codebase.
+- Use ES6 modules but don’t include natively. Instead bundle because of the benefits bundlers bring vis-a-vis performance and outputting code for old browsers. Include your built output using a standard `<script>` rather than `<script type="module">`.
+- Phillip Walton: "You should deploy native JavaScript modules". Use a bundler (e.g. Rollup), setting "modules" as output format (https://philipwalton.com/articles/using-native-javascript-modules-in-production-today/)
+-- Use a bundler, but make sure your output format is ES2015 modules
+-- Code-split aggressively (all the way down to the node package if possible)
+-- Preload all the modules in your static dependency graph (via modulepreload)
+-- Use a polyfill to support browsers that don’t support dynamic import()
+-- Use <script nomodule> to support browsers that don’t support modules at all
 
-- If you’re Heydon Pickering, list 
-Put polyfills and fallback code if necessary 
-don’t ship `<script type="module">` to production due to issues of performance and 
-
-- Develop with ES6 modules. Maybe even _develop_ with `<script type="module">`. But 
-don’t ship `<script type="module">` to production due to issues of performance and 
-
-
-
-It’s fairly straightforward to use the `export` and `import` syntax however 
-presents some practical considerations and leads to some interesting thoughts.
 
 ## Performance
 
