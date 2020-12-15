@@ -11,15 +11,16 @@ Here’s a list of useful Screen Reader commands and tips for my reference and y
 
 ### Initial setup:
 
-Open Safari > Preferences > Advanced then check “press tab to highlight each item on a webpage”.
+1. Open Safari > Preferences > Advanced; then 
+1. check “press tab to highlight each item on a webpage”.
 
 ### Usage
 
-- Open target page in Safari as normal.
+- Open target page in your browser as normal (you might favour Safari for VO).
 - <kbd>Cmd-F5</kbd> to turn VoiceOver on.
 - <kbd>Cmd-F5</kbd> (again) to turn VoiceOver off.
 
-Get “toggling on and off” via the keyboard shortcut into your muscle memory.
+Get <kbd>Cmd-F5</kbd> for “toggling on and off” into your muscle memory!
 
 Then:
 
