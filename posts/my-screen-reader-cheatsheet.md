@@ -12,11 +12,11 @@ Here’s a list of useful Screen Reader commands and tips for my reference and y
 ### Initial setup:
 
 1. Open Safari > Preferences > Advanced; then 
-1. check “press tab to highlight each item on a webpage”.
+1. check the checkbox “Press tab to highlight each item on a webpage”.
 
 ### Usage
 
-- Open target page in your browser as normal (you might favour Safari for VO).
+- Open the page you want to test in your web browser (you might favour Safari for VoiceOver).
 - <kbd>Cmd-F5</kbd> to turn VoiceOver on.
 - <kbd>Cmd-F5</kbd> (again) to turn VoiceOver off.
 
@@ -33,6 +33,7 @@ Then:
 - <kbd>Ctrl-Option-U</kbd> to open Rotor
 - Browse categories using left and right arrows. This includes the _Landmarks_ menu.
 - Down arrow to browse within the categories
+- press Return to select an item
 
 ### Tables
 - Navigate to a table using <kbd>Ctrl-Option-Cmd-T<kbd>
