@@ -7,7 +7,7 @@ tags: [development, cheatsheet, terminal, iterm, iterm2, zsh, ohmyzsh]
 Here’s a list of useful terminal commands for my reference and yours.
 ---
 
-## iTerm2
+## Using iTerm2 (Terminal Emulator)
 
 ### Composer
 
@@ -25,7 +25,15 @@ git commit -am "A very long commit message"
 
 </figure>
 
-Send Composer command to terminal: <kbd class="block">Shift-Return</kbd> 
+Send Composer command to terminal: <kbd class="block">Shift-Return</kbd>
+
+### Snippets
+
+<kbd class="block">Toolbelt > Show Toolbelt</kbd>
+
+Then add, edit and delete commands.
+
+Select a command then use `Send` to insert it on the terminal.
 
 
 ## References
