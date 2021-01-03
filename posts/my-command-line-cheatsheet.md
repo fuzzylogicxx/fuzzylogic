@@ -13,7 +13,7 @@ Here’s a list of useful terminal commands for my reference and yours.
 
 Make editing long lines easier by using Composer. 
 
-Open Composer: <kbd>Shift-Cmd-.</kbd>
+Open Composer: <kbd class="block">Shift-Cmd-.</kbd>
 
 Type your long command and enjoy using standard text editing controls:
 
@@ -25,7 +25,7 @@ git commit -am "A very long commit message"
 
 </figure>
 
-Send Composer command to terminal: <kbd>Shift-Return</kbd> 
+Send Composer command to terminal: <kbd class="block">Shift-Return</kbd> 
 
 
 ## References
