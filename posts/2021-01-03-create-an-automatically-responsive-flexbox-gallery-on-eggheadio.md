@@ -5,7 +5,7 @@ description: "An intrinsically responsive (i.e. no media queries) photo gallery 
 tags: [link, development, css, codepen, objectfit, images, flexbox, layout, intrinsic]
 linkTarget: "https://egghead.io/lessons/flexbox-create-an-automatically-responsive-flexbox-gallery"
 ---
-Hereâs a lovely intrinsically responsive (i.e. requires no media queries) photo gallery solution from Stephanie Eckles. It can accommodate differently sized images and achieves its goal using a combination of flexbox features (such as `wrap`, and squishy items with an ideal width via `flex-basis`) plus `object-fit: cover` to tell images to fully _cover_ their parent list items.
+Here’s a lovely intrinsically responsive (i.e. requires no media queries) photo gallery solution from [Stephanie Eckles](https://twitter.com/5t3ph). It can accommodate differently sized images and achieves its layout using a combination of flexbox features (such as `wrap`, and squishy items with an ideal width via `flex-basis`) plus `object-fit: cover` to tell images to fully _cover_ their parent list items.
 ---
 
-I had a crack at implementing this â [check out my Codepen](https://codepen.io/fuzzylogicx/pen/QWKmBOp). 
+[Here’s my crack at it on Codepen.](https://codepen.io/fuzzylogicx/pen/QWKmBOp)
