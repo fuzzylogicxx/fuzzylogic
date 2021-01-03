@@ -20,4 +20,4 @@ npx lighthouse-parade https://fuzzylogic.me
 
 </figure>
 
-However it was taking a _long_ time to run over all the pages of my statically generated site (there are lots of pages), so much so that I felt I needed to stop it when due to my laptop sounding like it was about to take off. So if running again, I’d probably only do so on a smaller site or check [their documentation](https://github.com/cloudfour/lighthouse-parade) to see if either scope-limiting or sitemap-based crawling support have been added.
+However it was taking a _long_ time to run over all the pages of my statically generated site (there are lots of pages), so much so that I felt I needed to stop it due to my laptop sounding like it was about to take off. So if running it again, I’d probably only do so on a smaller site, or first check [the tool’s documentation](https://github.com/cloudfour/lighthouse-parade) to see if either scope-limiting or sitemap-based crawling support have been added.
