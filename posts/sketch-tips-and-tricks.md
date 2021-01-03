@@ -12,11 +12,12 @@ Here’s a list of useful (Mac-based) Sketch tips for my reference and yours.
 | Task            |      Command      |  Notes              |
 |:----------------|:------------------|:--------------------|
 | Add an artboard | `a`               | or `Insert > Artboard` |
+| Zoom out, centred on artboard | `Escape` then `Command`+`2` then `Command`+`0`               | |
+| Insert text element | `t`               | |
 | Adjust text size by decimal increments | Hold `Option` while adjust size via right-hand panel               | |
 | Centre screen on current element | `Command`+`2`               | |
-| Insert text element | `t`               | |
 | Zoom in on current element to 100% of screen size | `Command`+`0`               | |
-| Zoom out, centred on artboard | `Escape` then `Command`+`2` then `Command`+`0`               | |
+
 
 ## Key Concepts
 
