@@ -12,7 +12,9 @@ I like the sound of this tool, especially because it analyses your entire site r
 
 <figure>
 
+``` bash
 npx lighthouse-parade https://fuzzylogic.me
+```
 
 </figure>
 
