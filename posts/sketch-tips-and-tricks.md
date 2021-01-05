@@ -13,11 +13,14 @@ Here’s a list of useful (Mac-based) Sketch tips for my reference and yours.
 |:----------------|:------------------|:--------------------|
 | Add an artboard | <kbd>a</kbd>               | or Insert > Artboard |
 | Insert text element | <kbd>t</kbd>               | |
+| Insert rectangle | <kbd>r</kbd>               | |
 | Centre screen on current element | <kbd>Command-2</kbd>               | |
 | Zoom out, centred on artboard | <kbd>Escape</kbd> then <kbd>Command-2</kbd> then <kbd>Command-0</kbd>               | |
-| Adjust text size by decimal increments | Hold <kbd>Option</kbd> while adjust size via right-hand panel               | |
 | Zoom in on current element to 100% of screen size | <kbd>Command-0</kbd>               | |
 | Show and hide rulers | <kbd>Control-R</kbd> | or use “View” dropdown at top-right |
+| Duplicate element | Hold <kbd>Option</kbd> while drag from original. Hold <kbd>Shift</kbd> for alignment               | |
+| Check distances | Select one layer then hold down <kbd>Option</kbd> then hover over the other layer               | |
+| Adjust text size by decimal increments | Hold <kbd>Option</kbd> while adjust size via right-hand panel               | |
 
 
 
