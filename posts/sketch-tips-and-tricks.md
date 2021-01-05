@@ -11,13 +11,13 @@ Here’s a list of useful (Mac-based) Sketch tips for my reference and yours.
 
 | Task            |      Command      |  Notes              |
 |:----------------|:------------------|:--------------------|
-| Add an artboard | `a`               | or `Insert > Artboard` |
-| Insert text element | `t`               | |
-| Centre screen on current element | `Command`+`2`               | |
-| Zoom out, centred on artboard | `Escape` then `Command`+`2` then `Command`+`0`               | |
-| Adjust text size by decimal increments | Hold `Option` while adjust size via right-hand panel               | |
-| Zoom in on current element to 100% of screen size | `Command`+`0`               | |
-| Show and hide rulers | `Control-R` | or use `View` dropdown at top-right |
+| Add an artboard | <kbd>a</kbd>               | or Insert > Artboard |
+| Insert text element | <kbd>t</kbd>               | |
+| Centre screen on current element | <kbd>Command</kbd>+<kbd>2</kbd>               | |
+| Zoom out, centred on artboard | <kbd>Escape</kbd> then <kbd>Command</kbd>+<kbd>2</kbd> then <kbd>Command</kbd>+<kbd>0</kbd>               | |
+| Adjust text size by decimal increments | Hold <kbd>Option</kbd> while adjust size via right-hand panel               | |
+| Zoom in on current element to 100% of screen size | <kbd>Command</kbd>+<kbd>0</kbd>               | |
+| Show and hide rulers | <kbd>Control-R</kbd> | or use “View” dropdown at top-right |
 
 
 
@@ -29,14 +29,14 @@ The initial _canvas_ is infinite so we need a fixed frame (representing a device
 
 Steps: 
 1. Add an artboard. 
-1. From the top-right choose one of the options (presets) e.g. `Responsive Web > Desktop (1024 × 1024)` or select `Custom`.
+1. From the top-right choose one of the options (presets) e.g. Responsive Web > Desktop (1024 × 1024) or select “Custom”.
 1. Rename your layer to something appropriate for the overall task, e.g. News Article.
 
 ### Creating something
 
 - Show rulers.
 - Add markers by clicking in the horizontal ruler at the top to provide gutters. Create them at, say, 32px from each side.
-- Add a text element, with lateral boundaries snapped to your markers. If it’s for body text, use my `lorem0` shortcut <sup>1</sup>.
+- Add a text element, with lateral boundaries snapped to your markers. If it’s for body text, type my <kbd>lorem0</kbd> shortcut <sup>1</sup>.
 
 ## Appendix
 
