@@ -13,10 +13,10 @@ Here’s a list of useful (Mac-based) Sketch tips for my reference and yours.
 |:----------------|:------------------|:--------------------|
 | Add an artboard | <kbd>a</kbd>               | or Insert > Artboard |
 | Insert text element | <kbd>t</kbd>               | |
-| Centre screen on current element | <kbd>Command</kbd>+<kbd>2</kbd>               | |
-| Zoom out, centred on artboard | <kbd>Escape</kbd> then <kbd>Command</kbd>+<kbd>2</kbd> then <kbd>Command</kbd>+<kbd>0</kbd>               | |
+| Centre screen on current element | <kbd>Command-2</kbd>               | |
+| Zoom out, centred on artboard | <kbd>Escape</kbd> then <kbd>Command-2</kbd> then <kbd>Command-0</kbd>               | |
 | Adjust text size by decimal increments | Hold <kbd>Option</kbd> while adjust size via right-hand panel               | |
-| Zoom in on current element to 100% of screen size | <kbd>Command</kbd>+<kbd>0</kbd>               | |
+| Zoom in on current element to 100% of screen size | <kbd>Command-0</kbd>               | |
 | Show and hide rulers | <kbd>Control-R</kbd> | or use “View” dropdown at top-right |
 
 
