@@ -29,15 +29,15 @@ The initial _canvas_ is infinite so we need a fixed frame (representing a device
 
 Steps: 
 1. Add an artboard. 
-1. From the top-right choose one of the options (presets) e.g. `Responsive Web > Desktop (1024 × 1024)`) or select `Custom`.
+1. From the top-right choose one of the options (presets) e.g. `Responsive Web > Desktop (1024 × 1024)` or select `Custom`.
 1. Rename your layer to something appropriate for the overall task, e.g. News Article.
 
 ### Creating something
 
 - Show rulers.
 - Add markers by clicking in the horizontal ruler at the top to provide gutters. Create them at, say, 32px from each side.
-- Add a text element, with lateral boundaries snapped to your markers. If for body text, use the `lorem0` shortcut.
+- Add a text element, with lateral boundaries snapped to your markers. If it’s for body text, use my `lorem0` shortcut <sup>1</sup>.
 
 ## Appendix
 
-- the `lorem0` shortcut accesses “lorem ipsum” text which I previously saved into Mac > Preferences > Keyboard > Text.
+1. the `lorem0` shortcut accesses “lorem ipsum” text which I previously saved into Mac > Preferences > Keyboard > Text.
