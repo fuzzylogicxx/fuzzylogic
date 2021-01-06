@@ -26,6 +26,12 @@ Then you can execute its methods or inspect its attribute values, for example:
 
 <kbd>$0.offsetParent</kbd>
 
+## Firefox
+
+### Get responsive `img` element’s `currentSrc`
+
+Inspect the element, right click and select Show DOM Properties from the context menu.
+
 ## Google Chrome
 
 ### Open the Command Menu
@@ -36,3 +42,6 @@ Then you can execute its methods or inspect its attribute values, for example:
 
 Open the Command Menu then type “disable” and you’ll see the option.
 
+### Get responsive `img` element’s `currentSrc`
+
+Inspect the element, click the properties tab, toggle open the top item.
