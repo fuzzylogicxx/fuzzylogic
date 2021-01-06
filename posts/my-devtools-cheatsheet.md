@@ -16,6 +16,16 @@ draft: true
 Here’s a list of useful (Mac) Browser DevTools tips, tricks and keyboard shortcuts for my reference and yours. This is a work in progress and I’ll update it as I go.
 ---
 
+## Console Panel
+
+### Return currently selected element to work with
+
+<kbd>$0</kbd>
+
+Then you can execute its methods or inspect its attribute values, for example: 
+
+<kbd>$0.offsetParent</kbd>
+
 ## Google Chrome
 
 ### Open the Command Menu
