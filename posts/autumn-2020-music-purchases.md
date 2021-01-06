@@ -23,12 +23,12 @@ openGraphImage: "https://res.cloudinary.com/fuzzylogic/image/upload/q_auto,f_aut
 <figure>
 <img 
   sizes="(min-width: 1600px) 646px, (min-width: 700px) 612px, 91.58vw" 
-  srcset="https://res.cloudinary.com/fuzzylogic/image/upload/q_auto,f_auto,w_414/v1609971455/facefacts_1300_qzkqwh.jpg 414w, 
-  srcset="https://res.cloudinary.com/fuzzylogic/image/upload/q_auto,f_auto,w_480/v1609971455/facefacts_1300_qzkqwh.jpg 480w, 
-  srcset="https://res.cloudinary.com/fuzzylogic/image/upload/q_auto,f_auto,w_646/v1609971455/facefacts_1300_qzkqwh.jpg 646w, 
-  srcset="https://res.cloudinary.com/fuzzylogic/image/upload/q_auto,f_auto,w_828/v1609971455/facefacts_1300_qzkqwh.jpg 828w, 
-  srcset="https://res.cloudinary.com/fuzzylogic/image/upload/q_auto,f_auto,w_960/v1609971455/facefacts_1300_qzkqwh.jpg 960w, 
-  srcset="https://res.cloudinary.com/fuzzylogic/image/upload/q_auto,f_auto,w_1292/v1609971455/facefacts_1300_qzkqwh.jpg 1292w" 
+  https://res.cloudinary.com/fuzzylogic/image/upload/q_auto,f_auto,w_414/v1609971455/facefacts_1300_qzkqwh.jpg 414w, 
+  https://res.cloudinary.com/fuzzylogic/image/upload/q_auto,f_auto,w_480/v1609971455/facefacts_1300_qzkqwh.jpg 480w, 
+  https://res.cloudinary.com/fuzzylogic/image/upload/q_auto,f_auto,w_646/v1609971455/facefacts_1300_qzkqwh.jpg 646w, 
+  https://res.cloudinary.com/fuzzylogic/image/upload/q_auto,f_auto,w_828/v1609971455/facefacts_1300_qzkqwh.jpg 828w, 
+  https://res.cloudinary.com/fuzzylogic/image/upload/q_auto,f_auto,w_960/v1609971455/facefacts_1300_qzkqwh.jpg 960w, 
+  https://res.cloudinary.com/fuzzylogic/image/upload/q_auto,f_auto,w_1292/v1609971455/facefacts_1300_qzkqwh.jpg 1292w" 
   src="https://res.cloudinary.com/fuzzylogic/image/upload/q_auto,f_auto,w_646/v1609971455/facefacts_1300_qzkqwh.jpg" 
   alt="Laurence’s record purchases in Autumn 2020" 
   width="646" height="338"
