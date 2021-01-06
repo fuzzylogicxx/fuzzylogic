@@ -11,6 +11,7 @@ tags:
   - shortcuts
   - development
   - tool
+  - cheatsheet
 ---
 Here’s a (work in progress) list of useful (Mac) Browser DevTools tips, tricks and keyboard shortcuts for my reference and yours. This is a work in progress and I’ll update it as I go.
 ---
