@@ -22,7 +22,7 @@ Here’s a list of useful (Mac-based) Sketch tips for my reference and yours.
 | Check distances | Select one layer then hold down <kbd>Option</kbd> then hover over the other layer               | |
 | Adjust text size by decimal increments | Hold <kbd>Option</kbd> while adjust size via right-hand panel               | |
 | Resize an image | Drag from sides or corners to your target size, holding shift to maintain aspect ratio               | |
-| Crop an image | Select then double-click the image to go into image mode        | Drag the shape you want to crop then select “crop” from top-right |
+| Crop an image | Select then double-click image to go into image mode. Draw the rectangular shape you want to crop over the image, then select “crop” from top-right         |  |
 
 
 
