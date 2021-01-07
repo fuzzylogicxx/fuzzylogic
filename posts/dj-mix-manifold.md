@@ -1,5 +1,4 @@
 ---
-date: 
 date: "2021-01-07T21:26:38.588Z"
 title: 07/01/21 DJ Mix – Manifold
 description: First in a series of mainly short, off the cuff mixes where I just hit record and see where it goes.
