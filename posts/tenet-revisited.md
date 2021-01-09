@@ -15,7 +15,7 @@ My initial viewing was good but really confusing; but this time I knew what was 
 
 This film has its flaws, no doubt, but for sheer invention, visuals you’ve genuinely never seen before, combined with the overall look, sound and mood, Mr Nolan has me hook, line and sinker and TBH I will likely never tire of watching his films. I expect to revisit this one roughly another ten times in the next year!
 
-Footnote: I’ve been joying some internet rabbit-holing to squeeze out every last nuance of the plot I might have missed. Here are some great articles and resources which have helped (with the usual “heavy spoilers” caveat):
+Footnote: I’ve been enjoying some internet rabbit-holing to squeeze out every last nuance of the plot I might have missed. Here are some great articles and resources which have helped (with the usual “heavy spoilers” caveat):
 
 - [Adactio’s fantastic review](https://adactio.com/journal/17379) and insights
 - [Vulture’s humorous plot appraisal](https://www.vulture.com/2020/09/tenet-explained-whats-going-on-in-the-plot-of-this-movie.html)
