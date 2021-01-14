@@ -16,9 +16,9 @@ In modern web development there are a brain-frazzling number of ways to include 
 
 ## Scope
 
-This is about the HTML `img` element. I might mention CSS background images at some point, but by and large we’re dealing with images as _content_ rather than decoration.
+This article is primarily about the HTML `img` element. I might mention CSS background images at some point, but by and large I’m focusing on images as _content_ rather than decoration.
 
-I probably won’t mention icons at all – I see these as a separate issue again – and I recommend you use inline SVG for those.
+Similarly I probably won’t mention _icons_ at all – I see them as a separate issue too – and I recommend you use inline SVG for those.
 
 ## Assumptions
 
@@ -47,60 +47,69 @@ img {
 
 ### Aspect Ratio
 
-You get the aspect ratio by dividing the width of an image by its height. This characteristic of the image is outside of our CSS-based control – it is determined when the image was originally created and cropped.
+You get an image’s aspect ratio by dividing its width by its height.
 
 An image which is 160px wide × 90px tall can be represented as 16:9, or 1.777.
 
+It’s important to state that aspect ratio is an intrinsic characteristic of an image therefore outside of our control as developers. It is determined when the image was originally created and cropped.
 
-## Basic image
+## A basic image
 
-Let’s start by getting back to basics. I can include an image on a web page like so:
+Let’s start by going back to basics. I can include an image on a web page like so:
 
 <figure>
 
 ```html
-<img src="/img/250x377.jpg" alt="“A Visit…” by Jennifer Egan" />
+<img src="/img/250x377.jpg" alt="A Visit… by Jennifer Egan" />
 ```
 
 </figure>
 
-Note that there are no `width` or `height` attributes, just an `alt` for accessibility. Without those size attributes (and assuming there’s no CSS acting on the `img`’s width or height) the image simply displays at its intrinsic dimensions i.e. the dimensions at which the file was saved, in this case 250 × 377 pixels. The image is output as follows:
+Note that our markup contains no `width` or `height` attributes, just an `alt` for accessibility. Without those size attributes (and in the absence of any CSS acting on the `img`’s width or height) the image simply displays at its intrinsic dimensions i.e. the dimensions at which the file was saved, in this case 250 × 377 pixels. The image is output as follows:
 
 <img src="https://images-eu.bookshop.org/product-images/images/9781780330969.jpg?width=250" alt="“A Visit from the Goon Squad“ by Jennifer Egan" />
 
-Narrow and static images like this now feel pretty old-school. The Responsive Web Design movement ushered in a trend for i) full-column-width media; and ii) [fluid media](https://alistapart.com/article/fluid-images/) where very wide images scale down for narrow contexts too.
+Narrow and static images like this now feel pretty old-school. In these days since the Responsive Web Design movement we’re much more used to seeing full container-width media and complex code for intelligently delivering flexible media.
 
-However I still encounter use cases for displaying a relatively narrow image _as-is_.
+However I still occasionally encounter use cases for displaying a relatively narrow image _as-is_.
 
-Sticking with the above book image example, given its aspect ratio you probably wouldn’t want it to be full-column-width on anything other than the narrowest screens simply because of how tall it could become at the expense of the reading experience. You might also be loading your images from a third party bookshop with which you have an affiliate scheme, and therefore have little control over file size and other factors influencing performance and responsive behaviour. As such you might do well to keep it simple by just loading a sensibly-sized thumbnail.
+Sticking with the above book image example, given its aspect ratio you probably wouldn’t want it to be full-column-width on anything other than the narrowest screens simply because of how tall it could become at the expense of the reading experience. You might also be loading your images from a third party bookshop with which you have an affiliate scheme, and therefore have little control over file size and other factors influencing performance and responsive behaviour. As such you might do well to just keep it simple by loading a sensibly-sized thumbnail.
 
-For those and more reasons, there remain occasions when you might need a small, fixed-size image.
+In summary, there remain times when you might need a narrow, fixed-size image.
 
 ## Include size attributes
 
-When we know the dimensions of our image in advance, we can improve upon our previous markup by explicitly setting the `width` and `height`.
+When we know the dimensions of our image in advance, we can improve upon our previous markup by explicitly adding the `width` and `height` attributes.
 
 <figure>
 
 ```html
-<img src="/img/250x377.jpg" width="250" height="377" alt="“A Visit…” by Jennifer Egan" />
+<img src="/img/250x377.jpg" width="250" height="377" alt="…" />
 ```
 
 </figure>
 
-By including these size attributes, we allow the browser to reserve the appropriate space in the page for the image while it loads. Otherwise, we risk a situation where text that immediately follows our image renders higher up the page than it should while the image is still loading, only to _shift_ jarringly after the image loads.
+This renders the image exactly as before.
 
-At this stage we’re still not adding any overrides with CSS (I say overrides because CSS rules have greater specificity than HTML attributes) so our HTML size attributes rule the roost and will cause the browser to render the image based on whatever values we provide, regardless of the image’s intrinsic dimensions. As such we should ensure that our size attribute values match the image’s real dimensions. You _could_ set either or both differently and the browser would respect that, however you’re likely to squash or stretch the image unnaturally or break its aspect ratio, ending up with a poor result.
+<img width="250" height="377" src="https://images-eu.bookshop.org/product-images/images/9781780330969.jpg?width=250" alt="“A Visit from the Goon Squad“ by Jennifer Egan" />
+
+However, this addition allows the browser to reserve the appropriate space in the page for the image before it has loaded. If we don’t do this, we risk a situation where text that immediately follows our image renders higher up the page than it should while the image is still loading, only to _shift_ jarringly after the image loads.
+
+At this stage we’re still not adding any overrides with CSS (remember CSS rules trump HTML attributes because attributes have no specificity) so the browser will render the image at whatever size values we provide, regardless of the image’s intrinsic dimensions. As such, to avoid squashing and distortion we should ensure that our size attribute values match the image’s real dimensions.
 
 ## Enter flexible images
 
 At the dawn of the mobile web, many authors sought to handle mobile devices by creating a separate, dedicated mobile website. However this meant duplication of cost, code, content and maintenance. Responsive Web Design provided a counterpoint with a “create once, publish everywhere” philosophy which embraced the fluidity of the web and suggested we could serve desktop and mobile devices alike from a single codebase.
 
-RWD proposed making layout and content _adaptable_. This included the idea of _flexble images_ which suggested that for any given image you need just a single, wide version plus some clever CSS to allow the image to work not only on desktop but also adapt its size to narrower contexts and still look good.
+RWD proposed making layout and content _adaptable_. This included the idea of _flexible images_ – that for any given image you need just a single, wide version plus some clever CSS to enable it to work not only on desktop but also to adapt its size for narrower contexts and still look good.
 
 By default when a wide image is rendered within a narrower container it will overflow that container, breaking the layout. The key to avoiding this is to set a _tolerance_ for how wide the image is permitted to go. Generally, we’ll tolerate the image being 100% as wide as its container but no wider. We can achieve this using `max-width`.
 
 <figure>
+
+```html
+<img src="/img/wide.png" alt="…" />
+```
 
 ```css
 img {
@@ -110,23 +119,9 @@ img {
 
 </figure>
 
-Here’s an example of a fluid image. Note that although it is 2000 pixels wide, it shrinks to fit within a narrower container.
+The eagle-eyed will have noticed that the markup in the above snippet once again excluded the HTML `width` and `height` attributes. The reason for this is that when working responsively, many of us stopped adding those size attributes, feeling that for flexible images the practice was redundant given that the space needing reserved for the image was now variable rather than fixed. And true enough, browsers were not capable of reserving space for a moving target, so including the attributes served no real purpose.
 
-<img src="https://via.placeholder.com/2000x1500/272822/FFFFFF" />
-
-Note: the CSS code used in this example assumes no HTML `width` and `height` attributes being present on our `img` element.
-
-<figure>
-
-```html
-<img src="/img/wide.png" alt="…" />
-```
-
-</figure>
-
-By this point many of us had stopped adding those size attributes, feeling that for flexible images the practice had become redundant given that the space needing reserved for the image was now variable rather than fixed. Modern browsers, when applying our simple `max-width` declaration, would also implicitly apply `height:auto` thereby preserving a shrunken image’s aspect ratio.
-
-Some content management systems such as Wordpress, however, continued to output images with HTML `width` and `height` attributes as standard. To keep the height in proportion in those cases we had to use the following amended CSS:
+However some content management systems (most notably Wordpress) continued to output images with HTML `width` and `height` attributes as standard. This introduced a small challenge. Without the attributes we could rely on the browser to take our simple `max-width:100%` declaration and also implicitly apply `height:auto` thereby always preserving the image‘s aspect ratio when scaling it down. To achieve the same goal when the HTML `height` attribute is present, we needed the following revised CSS:
 
 <figure>
 
@@ -139,28 +134,79 @@ img {
 
 </figure>
 
+Here’s an example of a flexible image. Note that although it is 2000 pixels wide, it shrinks to fit inside its narrower parent. Magic!
+
+<img src="https://via.placeholder.com/2000x1500/272822/FFFFFF" />
+
 ## Jank-free responsive images
 
-There has been a recent development in modern browsers’ wherein they can now reserve appropriate space for not just fixed images but also fluid images.
+There’s been a recent development wherein modern browsers can now reserve appropriate space for flexible images while they are loading rather than only fixed images.
 
-If you know the image’s aspect ratio in advance, add the `width` and `height` attributes, using any values which provide the correct ratio.
+This means that adding the `width` and `height` attributes is once again a good idea.
 
+If you know the image’s aspect ratio in advance, you can now use any combination of `width` and `height` attribute values which represent that ratio, and the browser will dynamically calculate and reserve the appropriate required space in the layout while the image loads, once again avoiding those jarring layout shifts I mentioned before.
 
+However this presents a couple of challenges.
 
-## Fitting images into spaces
+Firstly, having the `height` HTML attribute once again puts us in the position where, for any image we want to be flexibly scaled, we’ll need to explicitly add `height:auto;` in our CSS.
 
-### Make an image fill its parent
+Secondly, having the `width` attribute is problematic when the image is one which we want to be _full-container-width_. The problem arises when the `width` attribute value provided is less than the parent element’s current width. If the only CSS you have on your image is `max-width:100%` then the image will simply use its `width` attribute value and will be narrower than its parent. One approach might be to always use a high `width` value but that feels a tad brittle; I’d rather employ a solution that is more explicit and decisive.
 
-One way to set an image to cover its parent’s shape is to supply it as a background image, and use `background-size: cover`.
-
-However in this article we are assuming that our image should be considered as content rather than decoration and therefore should also be accessible via alternative text.
-
-We can make an image fill its parent as follows:
+To solve both of the above challenges, we can apply some CSS.
 
 <figure>
 
 ```css
-img {
+  /*
+  Ensures aspect ratio is respected when image
+  is being scaled responsively
+  (e.g. when max-width: 100% is triggered)
+  while doing no harm if image is fixed.
+  */
+img[height] {
+  height: auto;
+}
+
+  /*
+  Ensure an image is 100% parent-width even if it
+  has a 'width' attribute
+  set to something narrower.
+  */
+.img-full-parent-width {
+  width: 100%;
+}
+```
+
+</figure>
+
+NB these problems might go away in future if another means of providing the image’s aspect ratio becomes available, but until then, they’re real.
+
+## Pros and cons of large images
+
+I’d like to quickly take stock.
+
+Let’s say we have a source image which is 1200px wide. Let’s also say that it’s the featured image for a blog post and therefore will be placed in our main content column, and that this column is never wider than 600px.
+
+If we make the image flexible using `max-width:100%`, it’ll work on wide viewports and narrow viewports (such as a mobile phone) alike.
+
+On the plus-side, we only need to create one image for our blog post and we’re done.
+
+Another positive is that on devices with retina screens – capable of displaying a comparatively greater density of pixel information in the same physical space – our oversized image will appear at higher quality and look great.
+
+On the downside, we are delivering a _much_ larger image and therefore file size than is required for, for example, a 320px wide context. This has performance implications since bigger files mean longer download times, and this is excarbated when the device is not connected to high-speed wifi (as is often the case with a mobile phone). We’ll discuss ways to address this challenge later.
+
+## Fitting images into spaces
+
+So far we haven’t considered any complexity with regard to the layout in which a image lives. However as developers we’re not just dropping images into body content columns; often we need to set an image as a _hero_, or create image galleries, or add an image to each card in a row of cards. These are situations where we’re defining a particular shape which the image must fit into and fill completely. And in the modern era, these layouts are responsive and fluid, so our images need to be adaptable. We require techniques which give us higher degree of control and which can produce reliable results irrespective of the source image’s characteristics.
+
+### Make an image fill its parent
+
+We can make an `img` fill its parent as follows:
+
+<figure>
+
+```css
+.img-fill-parent {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -169,11 +215,13 @@ img {
 
 </figure>
 
-Declaring `object-fit: cover` on an image allows us to make it _cover_ all or some of its parent’s shape. Under the hood the image is dynamically recropped around a given point (its middle, by default) to the target size. So, rather than setting the image’s width and height to some unnatural shape which no longer respects its aspect ratio, what we are instead in effect doing is making its parent a “window” onto the undistorted image.
+Declaring `object-fit: cover` on an image allows us to make it _cover_ all or some of its parent’s shape. Under the hood the image is dynamically recropped around a given point (its middle, by default) to the target size, with its aspect ratio unchanged. So, rather than setting the image’s width and height to some unnatural shape which would squash or distort it, we instead in effect make its parent a “window” onto the undistorted image.
 
 Flexbox Gallery example (inspired by Stephanie Eckles) https://codepen.io/fuzzylogicx/pen/QWKmBOp
 
 Note: you don’t have to make the image fill _all_ of its parent. I could alternatively have set `height: 25vh` (for example) rather than `height: 100%`. I might do that to, say, set an image within a card to only take up a certain amount of the card’s height, leaving space for title and description below.
+
+Note 2: one other way to set an image to cover its parent’s shape is to supply it as a background image, and use `background-size:cover`. However in this article we are assuming that our image should be considered as content rather than decoration and accessible via alternative text, and this precludes the background-image approach.
 
 ### Scale down to be completely visible within a parent
 
@@ -204,16 +252,70 @@ Following on from the previous section…
 
 ## Modern Responsive Images
 
-In https://cloudfour.com/thinks/responsive-images-101-definitions/ Jason Grigsby defines Responsive Images as:
+In his fantastic series [Responsive Images 101](https://cloudfour.com/thinks/responsive-images-101-definitions/) Jason Grigsby defines Responsive Images as:
 
 > A method for providing the browser with multiple image sources depending on display density, size of the image element in the page, or any number of other factors.
 
-
-
 ### Automate with a 3rd party tool
 
+Cloudinary lets you do lots of stuff.
 
+Includes transformations https://cloudinary.com/documentation/image_transformations#scale
+
+For the following code below, also see my Note I made (in Notes) which might have some good stuff/links.
+
+```
+<figure>
+<img
+  sizes="(min-width: 1600px) 646px, (min-width: 700px) 612px, 91.58vw"
+  srcset="…/q_auto,f_auto,w_414/foo.jpg 414w,
+  …/q_auto,f_auto,w_480/foo.jpg 480w,
+  …/q_auto,f_auto,w_646/foo.jpg 646w,
+  …/q_auto,f_auto,w_828/foo.jpg 828w,
+  …/q_auto,f_auto,w_960/foo.jpg 960w,
+  …/q_auto,f_auto,w_1292/foo.jpg 1292w"
+  src="…/q_auto,f_auto,w_646/foo.jpg"
+  alt="Laurence’s record purchases in Autumn 2020"
+  width="646" height="338"
+  loading="lazy">
+</figure>
+```
+
+Notes:
+To deliver the above effectively, I need a source image with a minimum width of 1292px. It could be wider if you want, giving you flexibility in case in future your layout changes and you need your image to go wider. Actually, mine will soon when I implement breakout images.
+
+I currently host my source images on Cloudinary too. You don’t have to do that with Cloudinary, but it means I don’t need to mess around with Git Large File Storage and so on. I might change this at some point but so far it works and isn’t racking up costs.
+
+Our image code is offering x differently sized versions of the same image.
+
+** Update this as it needs tweaked since I’ve added my new Autumn 2020 records post image. **
+They range from 320px wide to 2560px wide.
+For each image we also explicitly tell the browser how wide it is (for example 320w means 320px wide).
+320px makes sense because there are/were mobile phone viewports that width which were non-HD/retina, so serving that size of image would be ideal for them.
+	These type of phones may be dying out. Perhaps adding an image (or replacing as lowest-width-image with one) that’s ~414px or 480px wide would be better.
+640px makes sense because that’s (kind of) the widest my centre column goes (34rem at 1rem=19px assuming user hasn’t resized text = 646). It’s also 2x320 so works for 320px viewports that are HD/retina displays.
+	So actually it’d make more sense for me to set that at 646
+There’s also a high chance of a need for a 612px image (non-HD) because that’s the max-width of the column before the final media query which bumps the font-size and therefore the column width.
+One at ~828 (2x414px (or 480px, whichever I choose as my lowest)) would make sense.
+One at 1224 (2*612) makes sense
+One at 1292 (646*2) would make sense
+Beyond that, there’s no current need for anything more!
+So my source image needs to be a minimum width of 1292px.
+	But other than cost of storage, no probs with source image being wider. The source is never going to get used.
+We also need to decided which image should be used as fallback for browsers such as IE11 which don’t support srcset. To be safe, probably go for one at the main col’s widest I.e. 646, safe in the knowledge that IE11 supports max-width so if the col is narrower, the image will scale down.
+
+*** What code would I use if my source image was smaller, like one of the ones the Logan’s Run guys took? ***
+
+
+
+### Check that you’re doing it right
+
+1. Linting tool https://ausi.github.io/respimagelint/
+1. or quick and dirty, just ocassionally check currentSrc in devtools
 ## Miscellaneous
+
+### Targeting speed of internet connection
+
 
 ### Lazy loading
 
@@ -224,7 +326,7 @@ It can be difficult to know when to use the CSS stuff and when to use the HTML s
 
 Here’s what I’m using:
 
-- allow basic, narrow, non-resized images by default, because ocassionally you need them
+- allow basic, fixed-size, narrow images by default, because ocassionally you need them
 - max-width by default, because I can see no reason not to
 - when I know an image’s dimensions in advance (for example when it’s not hosted elsewhere, or not within a grid of uneven photos) I’ll add the HTML size attributes
 - ?? class that applies width: 100% and height: auto ??
@@ -236,16 +338,25 @@ Here’s what I’m using:
 - Art Direction syntax pretty sparingly
 - a frame, allowing me to easily create a “window” of any aspect ratio onto any given image. Handy for fitting images into responsive layouts.
 - other manual `object-fit` only where required over and above what frame provides.
-- loading=lazy
+- `loading=lazy`
+
+## Further thoughts and questions
+
+I’m temptated to _always_ use a frame (even when the image’s own aspect ratio fits the bill) so that the frame container (rather than the image) takes up the required space therefore I don’t need to include `width` and `height` HTML attributes and CSS to override them. I’m reluctanct though as I like using native standards where possible.
 
 ## What have I missed?
 
-Let me know at @leroy022823 or laurence@fuzzylogic.me
+Let me know at @leroy022823 or laurence@fuzzylogic.me.
 
 
 
 
 ## References
+
+Inspiration:
+
+- [Every Layout’s _Frame_](https://every-layout.dev/layouts/frame/)
+
 
 Stock images and other resources I’ve used:
 
