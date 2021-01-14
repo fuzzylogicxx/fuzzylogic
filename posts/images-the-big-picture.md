@@ -12,7 +12,7 @@ tags:
 permalink: /posts/images-on-the-web-the-big-picture/
 draft: true
 ---
-In modern web development there are a brain-frazzling number of ways to include an image on a web page. In this post I step through the various approaches, discussing how they evolved and try to unpick where they are appropriate.
+In modern web development there are a bamboozling number of ways to include an image on a web page. In this post I step through the various approaches, discussing how they evolved and try to unpick where they are appropriate.
 
 ## Scope
 
@@ -51,7 +51,7 @@ You get an image’s aspect ratio by dividing its width by its height.
 
 An image which is 160px wide × 90px tall can be represented as 16:9, or 1.777.
 
-It’s important to state that aspect ratio is an intrinsic characteristic of an image therefore outside of our control as developers. It is determined when the image was originally created and cropped.
+It’s important to state that aspect ratio is an _intrinsic_ characteristic of an image therefore outside of our control as developers. We can change the dimensions of the rendered image on our web page, however its aspect ratio was determined when the image was originally created and cropped.
 
 ## A basic image
 
