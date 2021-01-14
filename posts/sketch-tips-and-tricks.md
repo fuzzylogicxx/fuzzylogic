@@ -11,12 +11,21 @@ Here’s a list of useful (Mac-based) Sketch tips for my reference and yours.
 
 | Task            |      Command      |  Notes              |
 |:----------------|:------------------|:--------------------|
-| Add an artboard | `a`               | or `Insert > Artboard` |
-| Adjust text size by decimal increments | Hold `Option` while adjust size via right-hand panel               | |
-| Centre screen on current element | `Command`+`2`               | |
-| Insert text element | `t`               | |
-| Zoom in on current element to 100% of screen size | `Command`+`0`               | |
-| Zoom out, centred on artboard | `Escape` then `Command`+`2` then `Command`+`0`               | |
+| Add an artboard | <kbd>a</kbd>               | or Insert > Artboard |
+| Insert text element | <kbd>t</kbd>               | |
+| Insert rectangle | <kbd>r</kbd>               | |
+| Centre screen on current element | <kbd>Command-2</kbd>               | |
+| Zoom out, centred on artboard | <kbd>Escape</kbd> then <kbd>Command-2</kbd> then <kbd>Command-0</kbd>               | |
+| Zoom in on current element to 100% of screen size | <kbd>Command-0</kbd>               | |
+| Show and hide rulers | <kbd>Control-R</kbd> | or use “View” dropdown at top-right |
+| Duplicate element | Hold <kbd>Option</kbd> while drag from original. Hold <kbd>Shift</kbd> for alignment               | |
+| Check distances | Select one layer then hold down <kbd>Option</kbd> then hover over the other layer               | |
+| Adjust text size by decimal increments | Hold <kbd>Option</kbd> while adjust size via right-hand panel               | |
+| Resize an image | Drag from sides or corners to your target size, holding shift to maintain aspect ratio               | |
+| Crop an image | Select then double-click image to go into image mode. Draw the rectangular shape you want to crop over the image, then select “crop” from top-right         |  |
+
+
+
 
 ## Key Concepts
 
@@ -26,5 +35,15 @@ The initial _canvas_ is infinite so we need a fixed frame (representing a device
 
 Steps: 
 1. Add an artboard. 
-1. From the top-right choose preset dimensions (e.g. _Desktop_) or create custom.
+1. From the top-right choose one of the options (presets) e.g. Responsive Web > Desktop (1024 × 1024) or select “Custom”.
 1. Rename your layer to something appropriate for the overall task, e.g. News Article.
+
+### Creating something
+
+- Show rulers.
+- Add markers by clicking in the horizontal ruler at the top to provide gutters. Create them at, say, 32px from each side.
+- Add a text element, with lateral boundaries snapped to your markers. If it’s for body text, type my <kbd>lorem0</kbd> shortcut <sup>1</sup>.
+
+## Appendix
+
+1. the `lorem0` shortcut accesses “lorem ipsum” text which I previously saved into Mac > Preferences > Keyboard > Text.

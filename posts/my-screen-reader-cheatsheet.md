@@ -38,7 +38,7 @@ Then:
 ### Tables
 - Navigate to a table using <kbd>Ctrl-Option-Cmd-T<kbd>
 - It should read a caption and give you info about the size of the table
-- <kbd>Ctrl-Cmd-{arrowkey}<kbd> to navigate inside the table.
+- <kbd>Ctrl-Cmd-{arrowkey}</kbd> to navigate inside the table.
 
 ### References
 

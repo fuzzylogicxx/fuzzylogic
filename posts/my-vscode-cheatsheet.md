@@ -7,6 +7,16 @@ tags: [development, editor, cheatsheet, vscode, tool]
 Here’s a list of useful (Mac-based) VS Code tips for my reference and yours.
 ---
 
+## Open current terminal directory in VS Code
+
+<figure>
+  
+```bash
+code .
+```
+
+</figure>
+
 ## Toggle sidebar visibility
 
 <kbd>Command-B</kbd>
