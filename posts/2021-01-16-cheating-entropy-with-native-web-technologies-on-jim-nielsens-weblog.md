@@ -1,5 +1,5 @@
 ---
-date: "2021-01-16T18:09:51.858Z"
+date: "2020-10-15T18:09:51.858Z"
 title: "Cheating Entropy with Native Web Technologies (on Jim Nielsen's Weblog)"
 description: ""
 tags: [link, bundler, stack, entropy, web, development, css, html, javascript, maintainability]
@@ -16,4 +16,4 @@ This is why, over years of building for the web, I have learned that I can signi
 </blockquote>
 ---
 
-Fantastic post from Jim Neilson about how your future self will thank you and be more productive if you keep your stack simple now. (via [@adactio](https://twitter.com/adactio))
+Fantastic post from Jim Neilson about how your future self will thank you if you keep your technology stack simple now. (via [@adactio](https://twitter.com/adactio))
