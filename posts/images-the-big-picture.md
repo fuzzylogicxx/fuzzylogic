@@ -1,6 +1,6 @@
 ---
 title: "Images on the web: the big picture"
-description: In modern web development there are a brain-frazzling number of
+description: In modern web development there are a bamboozling number of
   different ways to include an image on a web page. In this post I step through
   these methods, discussing how they evolved and where they are appropriate.
 date: 2020-12-09 11:30:00
@@ -19,6 +19,20 @@ In modern web development there are a bamboozling number of ways to include an i
 This article is primarily about the HTML `img` element. I might mention CSS background images at some point, but by and large I’m focusing on images as _content_ rather than decoration.
 
 Similarly I probably won’t mention _icons_ at all – I see them as a separate issue too – and I recommend you use inline SVG for those.
+
+## Terminology
+
+### Replaced element
+
+Lorem.
+
+### Aspect Ratio
+
+You get an image’s aspect ratio by dividing its width by its height.
+
+An image which is 160px wide × 90px tall can be represented as 16:9, or 1.777.
+
+It’s important to state that aspect ratio is an _intrinsic_ characteristic of an image – i.e. it is “part of the image” – therefore outside of our control as developers. We can apply _extrinsic_ settings which change the dimensions of the rendered image on our web page, however its aspect ratio was determined when the image was originally created and cropped.
 
 ## Assumptions
 
@@ -43,16 +57,6 @@ img {
 
 </figure>
 
-## Terminology
-
-### Aspect Ratio
-
-You get an image’s aspect ratio by dividing its width by its height.
-
-An image which is 160px wide × 90px tall can be represented as 16:9, or 1.777.
-
-It’s important to state that aspect ratio is an _intrinsic_ characteristic of an image therefore outside of our control as developers. We can change the dimensions of the rendered image on our web page, however its aspect ratio was determined when the image was originally created and cropped.
-
 ## A basic image
 
 Let’s start by going back to basics. I can include an image on a web page like so:
@@ -74,6 +78,8 @@ Narrow and static images like this now feel pretty old-school. In these days sin
 However I still occasionally encounter use cases for displaying a relatively narrow image _as-is_.
 
 Sticking with the above book image example, given its aspect ratio you probably wouldn’t want it to be full-column-width on anything other than the narrowest screens simply because of how tall it could become at the expense of the reading experience. You might also be loading your images from a third party bookshop with which you have an affiliate scheme, and therefore have little control over file size and other factors influencing performance and responsive behaviour. As such you might do well to just keep it simple by loading a sensibly-sized thumbnail.
+
+See also [this figure illustrating a simple database schema](https://railstutorial.org/book/toy_app#sec-modeling_demo_microposts) on the _Ruby on Rails Tutorial_ website. On wide viewports, the author’s preference is to simply display the image at its natural, small size and centre it, rather than blowing it up unnecessarily.
 
 In summary, there remain times when you might need a narrow, fixed-size image.
 
