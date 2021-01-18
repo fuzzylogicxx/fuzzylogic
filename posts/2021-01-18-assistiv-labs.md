@@ -5,7 +5,7 @@ description: "A tool for testing how accessible your experience is on various as
 tags: [link, tool, testing, a11y, accessibility, screenreader, nvda]
 linkTarget: "https://assistivlabs.com/"
 ---
-A tool for testing how accessible your experience is on various assistive technologies – perhaps like BrowserStack but for screen readers?
+A tool for testing how accessible your experience is on various assistive technologies – perhaps “like BrowserStack but for screen readers”?
 
 > Assistiv Labs remotely connects you to real assistive technologies, like NVDA, VoiceOver, and TalkBack, using any modern web browser. 
 ---
