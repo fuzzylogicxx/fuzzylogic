@@ -29,13 +29,13 @@ We say a pending promise can either be fulfilled with a value, or rejected with 
 
 We also talk about a promise being _settled_ which essentially means the operation has finished so the promise is ready to be acted on accordingly.
 
-One memorable analogy was provided in Mariko Kosaka’s [_The Promise of a Burger Party_](https://web.archive.org/web/20190212114232/http://kosamari.com/notes/the-promise-of-a-burger-party). In it she describes the situation of ordering a burger from, say, Burger King. It goes as follows:
+One memorable analogy was provided in Mariko Kosaka’s [_The Promise of a Burger Party_](https://web.archive.org/web/20190212114232/http://kosamari.com/notes/the-promise-of-a-burger-party). In it she describes the scenario of ordering a burger from, say, Burger King. It goes as follows:
 
 - you place your order for a Whopper; 
 - they give you a tray with a buzzer. The tray is a _promise_ that they will provide your burger as soon as it has been cooked, and the buzzer is the promise‘s _state_; 
-- the buzzer (the promise‘s state) is not buzzing to start with: it’s in the _pending_ state;
+- the buzzer is not buzzing to start with: it’s in the _pending_ state;
 - the buzzer buzzes: the promise is now _settled_;
-- if their flame-grill broke down half-way they inform you of this. The cooking operation has failed, and the promise of a burger has been rejected with that reason. You’ll likely want to act on that (by getting a refund);
+- they might inform you that their flame-grill broke down half-way through. The cooking operation has failed, and the promise of a burger has been rejected with that reason. You’ll likely want to act on that (by getting a refund);
 - alternatively all goes to plan, you go the counter and they fulfil their promise of a tasty burger placed onto your tray.
 
 Note that if in the success case (within a `.then()` in code) you decide you want to do another thing (say, buy a coke) you could do that too, and return its result. You could then chain a further `.then()` to work with the result of your snowballing result. Note that regardless of whether your second operation was asynchronous or synchronous, a `.then()` always returns another promise.
