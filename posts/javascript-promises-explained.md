@@ -35,7 +35,6 @@ One memorable analogy was provided in Mariko Kosaka’s [_The Promise of a Burge
 - they give you a tray with a buzzer. The tray is a _promise_ that they will provide your burger as soon as it has been cooked, and the buzzer is the promise‘s _state_; 
 - the buzzer is not buzzing to start with: it’s in the _pending_ state;
 - the buzzer buzzes: the promise is now _settled_;
-- they might inform you that their flame-grill broke down half-way through. The cooking operation has failed, and the promise of a burger has been rejected with that reason. You’ll likely want to act on that (by getting a refund);
+- they might inform you that their flame-grill broke down half-way through. The cooking operation failed, and the promise of a burger has been rejected with that reason. You’ll likely want to act on that (by getting a refund);
 - alternatively all goes to plan, you go the counter and they fulfil their promise of a tasty burger placed onto your tray.
-
-Note that if in the success case (within a `.then()` in code) you decide you want to do another thing (say, buy a coke) you could do that too, and return its result. You could then chain a further `.then()` to work with the result of your snowballing result. Note that regardless of whether your second operation was asynchronous or synchronous, a `.then()` always returns another promise.
+- you decide you want to act on the success of getting your tasty burger by doing another thing, namely buying a coke. In code you’ll be within the `.then()` that’s for the promise’s success state and in there you can just return a call to `buyCoke()`. You could then chain a further `.then()` to the original `.then()` to work with your snowballing data value. Note that regardless of whether your second operation was asynchronous or synchronous, a `.then()` always returns another promise.
