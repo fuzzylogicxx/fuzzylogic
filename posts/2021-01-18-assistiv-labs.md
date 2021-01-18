@@ -10,7 +10,7 @@ A tool for testing how accessible your experience is on various assistive techno
 > Assistiv Labs remotely connects you to real assistive technologies, like NVDA, VoiceOver, and TalkBack, using any modern web browser. 
 ---
 
-I use a Mac for development which means that when I do screen reader testing I use the Macâs VoiceOver tool. However the majority of screen reader users are using NVDA via Firefox on a PC. Perhaps this tool might let me test on that stack without buying a PC.
+I use a Mac for development which means that when I do screen reader testing [I use the Mac’s VoiceOver tool](https://fuzzylogic.me/posts/my-screen-reader-cheatsheet/). However the majority of screen reader users are using NVDA via Firefox on a PC. Perhaps this tool might let me test on that stack without buying a PC.
 
 Next action: sign up for a free trial and give it a go! 
 
