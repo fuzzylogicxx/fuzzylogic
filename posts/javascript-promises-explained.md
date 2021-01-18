@@ -15,7 +15,7 @@ draft: true
 A brief explainer (for future-me and anyone else it helps) on what promises are and how to use them. Note: this is not an _official_ definition, but rather something that works for me.
 ---
 
-In the normal run of things, JavaScript code is _synchronous_. When line 1 has run (perhaps defining a new variable) and the operation has completed, line 2 runs (perhaps operating on the variable we just defined). However sometimes in line 1 we need to do something which will take longer – maybe an unknown amount of time – for example to call a function which make an API call to an external source. In many cases we want that potentially lengthy task to execute _separately_ from the main thread so as not to hold up the execution of line 2. So instead of waiting for the task to complete and return its value, we instead return a _promise_ to supply that value in the future.
+In the normal run of things, JavaScript code is _synchronous_. When line 1 has run (perhaps defining a new variable) and the operation has completed, line 2 runs (perhaps operating on the variable we just defined). However sometimes in line 1 we need to do something which will take longer – maybe an unknown amount of time – for example to call a function which makes an API call to an external source. In many cases we want that potentially lengthy task to execute _separately_ from the main thread so as not to hold up the execution of line 2. So instead of waiting for the task to complete and return its value, we instead return a _promise_ to supply that value in the future.
 
 A Promise is an object we use for asynchronous operations. It’s a proxy for the success value or failure reason of the asynchronous operation, which at the time the promise is created is not yet known.
 
@@ -38,4 +38,4 @@ One memorable analogy was provided in Mariko Kosaka’s [_The Promise of a Burge
 - they might inform you that their flame-grill broke down half-way through. The cooking operation failed, and the promise of a burger has been rejected with that reason. You’ll likely want to act on that (by getting a refund);
 - alternatively all goes to plan, you go the counter and they fulfil their promise of a tasty burger placed onto your tray.
 - you decide you want to act on the success of getting your tasty burger by doing another thing, namely buying a coke. In code you’ll be within the `.then()` which is the success handler for your promise and in there you can just call `buyCoke()`. You might then return an object containing your burger and your coke. 
-- You could then chain a further `.then()` to the original `.then()` to work with your snowballing data value. Note that a `.then()` always returns a promise.
+- You could then chain a further `.then()` to the original `.then()` to work with your snowballing data value. Note that a `.then()` always returns a promise, even the operation which happened within was not asynchronous.
