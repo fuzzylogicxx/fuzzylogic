@@ -1,5 +1,5 @@
 ---
-title: JavaScript Promises explained
+title: Promises in JavaScript
 description: A brief explainer (for future-me and anyone else it helps) on what
   promises are and how to use them.
 date: 2019-12-13T17:07:38.868Z
