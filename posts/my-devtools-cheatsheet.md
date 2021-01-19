@@ -26,7 +26,7 @@ Then you can execute its methods or inspect its attribute values, for example:
 
 <kbd>$0.offsetParent</kbd>
 
-## Pause Execution
+## Pause JavaScript execution
 
 <kbd>Cmd+\</kbd>
 
