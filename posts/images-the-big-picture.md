@@ -12,19 +12,19 @@ tags:
 permalink: /posts/images-on-the-web-the-big-picture/
 draft: true
 ---
-In modern web development there are a bamboozling number of ways to include an image on a web page. In this post I step through the various approaches, discussing how they evolved and try to unpick where they are appropriate.
+In modern web development there are a bamboozling number of ways to structure and style an image on a web page. In this post I step through the various approaches, discuss how they evolved and try to unpick where they are appropriate.
 
 ## Scope
 
 This article is primarily about the HTML `img` element. I might mention CSS background images at some point, but by and large I’m focusing on images as _content_ rather than decoration.
 
-Similarly I probably won’t mention _icons_ at all – I see them as a separate issue too – and I recommend you use inline SVG for those.
+Similarly I probably won’t mention _icons_ at all. I see them as a separate issue too and I recommend you use inline SVG rather than any image-based approach for those.
 
 ## Terminology
 
 ### Replaced element
 
-Lorem.
+The image element is a replaced element which means that the element is replaced by the resource pointed to by its `src` attribute.
 
 ### Aspect Ratio
 
