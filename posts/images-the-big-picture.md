@@ -262,9 +262,9 @@ In his fantastic series [Responsive Images 101](https://cloudfour.com/thinks/res
 
 > A method for providing the browser with multiple image sources depending on display density, size of the image element in the page, or any number of other factors.
 
-## Some ways we can use new CSS
+## Using new CSS on images
 
-Andy Bell uses the CSS `min` function “for setting sensible image sizes” in his blog posts. The image gets a max-width of either 100% or 55rem, whichever is smaller. That means it’ll never overflow the container, and on wide screens it’ll not stretch too wide.
+On [Picalilli](https://piccalil.li/quick-tip/use-css-clamp-to-create-a-more-flexible-wrapper-utility) Andy Bell uses the CSS `min` function “for setting sensible image sizes” in his blog posts. The image gets a `max-width` of either 100% or 55rem, whichever is smaller. That means it’ll never overflow the container, and on wide screens it’ll not stretch too wide.
 
 ```.post figure img {
     max-width: min(55rem,100%);
