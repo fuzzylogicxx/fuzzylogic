@@ -13,7 +13,7 @@ As I see it, the gist of this is to switch to using `await` when working with pr
 
 Notes:
 
-- `await` is for use on functions which return promises (e.g. `const users = await fetch('/users')`).
+- `await` is for use on functions which return [promises](https://fuzzylogic.me/posts/javascript-promises-explained/) (e.g. `const users = await fetch('/users')`).
 - It makes JavaScript _wait_ until that promise settles and returns its result. 
 - It may only be used inside `async` functions.
 - It’s a more elegant syntax for getting a promise‘s result than `promise.then`.
