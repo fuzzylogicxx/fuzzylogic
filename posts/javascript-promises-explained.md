@@ -10,7 +10,6 @@ tags:
   - javascript
   - burger
   - asynchronous
-draft: true
 ---
 ## A brief explainer (for future-me and anyone else it helps) on what promises are and how to use them. Note: this is not an *official* definition, but rather something that works for me.
 
