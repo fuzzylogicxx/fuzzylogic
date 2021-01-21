@@ -266,10 +266,15 @@ In his fantastic series [Responsive Images 101](https://cloudfour.com/thinks/res
 
 On [Picalilli](https://piccalil.li/quick-tip/use-css-clamp-to-create-a-more-flexible-wrapper-utility) Andy Bell uses the CSS `min` function “for setting sensible image sizes” in his blog posts. The image gets a `max-width` of either 100% or 55rem, whichever is smaller. That means it’ll never overflow the container, and on wide screens it’ll not stretch too wide.
 
-```.post figure img {
+<figure>
+
+```
+.post figure img {
     max-width: min(55rem,100%);
 }
 ```
+
+</figure>
 
 ### Automate with a 3rd party tool
 
