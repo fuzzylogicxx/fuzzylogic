@@ -28,7 +28,7 @@ Then you can execute its methods or inspect its attribute values, for example:
 
 ## Pause JavaScript execution
 
-<kbd>Cmd+&#92;</kbd>
+<kbd>Cmd + backslash</kbd>
 
 ## Firefox
 
