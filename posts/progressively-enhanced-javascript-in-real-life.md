@@ -19,9 +19,9 @@ The search function on my website wasn’t working optimally. You usually click/
 
 The problem was that although the search box was appearing, no suggestions were coming up as you typed.
 
-Fortunately, back when I built it I was reading Phil Hawksworth’s [Adding Search to a Jamstack site](https://www.hawksworx.com/blog/adding-search-to-a-jamstack-site/) which begins with creating a baseline without JavaScript, including making the (non-enhanced) search a standard form which submits to a Google search scoped to your website and the search term you just typed. For example last night I looked up a bookmark about aria-label on my website while reviewing a PR and—because the JS enhancement wasn’t available—it just posted me to a Google search site:https://fuzzylogic.me/ aria-label with the exact article I needed at the top of the search results. Not a rolls-royce experience, but perfectly serviceable.
+Fortunately, back when I built it I was reading Phil Hawksworth’s [Adding Search to a Jamstack site](https://www.hawksworx.com/blog/adding-search-to-a-jamstack-site/) which begins with creating a baseline without JavaScript, including making the (non-enhanced) search a standard form which submits to a Google search scoped to your website and the search term you just typed. For example last night I looked up a bookmark about aria-label on my website while reviewing a PR and—because the JS enhancement wasn’t available—it just posted me to a Google search site:https://fuzzylogic.me/ aria-label with the exact article I needed coming top of the search results. Not a rolls-royce experience, but perfectly serviceable.
 
-This was great because I use that search many times a day.
+This was great because I rely on that search many times a day.
 
 Why had the enhanced solution failed? Because the .json file which is the source for the lookahead search (and is re-generated every commit) had somehow got a weird character into it which had malformed the file. Although all the rest of the JS was otherwise fine, this prevented the enhanced search working.
 
