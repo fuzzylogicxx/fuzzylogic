@@ -18,7 +18,7 @@ A few days ago I noticed that the search function on [my website](https://fuzzyl
 
 The problem was that although the search input was appearing, the search result suggestions were no longer appearing as I typed.
 
-Fortunately, back when I built the feature I had just read Phil Hawksworth’s [Adding Search to a Jamstack site](https://www.hawksworx.com/blog/adding-search-to-a-jamstack-site/) which begins by creating a non-JavaScript baseline using a standard `form` which submits to Google Search (scoped to your website), passing as search query the search term you just typed. This is how I built mine, too. 
+Fortunately, back when I built the feature I had just read Phil Hawksworth’s [Adding Search to a Jamstack site](https://www.hawksworx.com/blog/adding-search-to-a-jamstack-site/) which begins by creating a non-JavaScript baseline using a standard `form` which submits to [Google Search](https://www.google.co.uk/) (scoped to your website), passing as search query the search term you just typed. This is how I built mine, too. 
 
 So, just yesterday at work I was reviewing a PR which prompted me to search for a specific article on my website by using the term “aria-label”. And although the enhanced search wasn’t working, the baseline search functionally was there to deliver me to a Google search result page (`site:https://fuzzylogic.me/ aria-label`) with the exact article I needed appearing top of the search results. Not a rolls-royce experience, but perfectly serviceable!
 
@@ -26,7 +26,7 @@ Why had the enhanced search solution failed? It was because the `.json` file whi
 
 JavaScript is brittle and fails for many reasons and in many ways, making it different from the rest of the stack. Added to that there’s the “unavailable until loaded” aspect (or [as Jake Archibald put it](https://twitter.com/jaffathecake/status/207096228339658752)):
 
-> all your users are non-JS while they're downloading your JS
+> all your users are non-JS while they’re downloading your JS
 
 The best practices that we as web developers have built up for years are not just theoretical. Go watch a screen reader user browse the web if you want proof that providing descriptive link text rather than “click here”, or employing headings and good document structure, or describing images properly with `alt` attributes are worthwhile endeavours. Those users _depend_ on those good practices. 
 
