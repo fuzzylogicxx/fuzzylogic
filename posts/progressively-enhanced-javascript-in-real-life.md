@@ -10,21 +10,22 @@ tags:
   - development
   - javascript
   - accessibility
-draft: true
 ---
-Over the last couple of days I saw a little “In Real Life” example of progressive enhancement doing its job with regard to JavaScript. I’m currently really into logging and sharing these real-life validations of good practices so that the benefit of those practices (usually making people’s life easier) are seen to be real rather than theoretical.
+Over the last couple of days I’ve witnessed a good example of progressive enhancement “In Real Life”. And I think it’s good to log and share these validations of web development best practices when they happen so that their benefits can be seen as real rather than theoretical.
 ---
 
-The search function on my website wasn’t working optimally. You usually click/tap search, the JS responds by revealing a search box and setting keyboard focus to it, then you type your search term and it “looks ahead”, searching the website as you type characters, and presents a list of options.
+A few days ago I noticed that the search function on [my website](https://fuzzylogic.me/) wasn’t working optimally. As usual, I’d click the navigation link “Search” then some JavaScript would reveal a search input and set keyboard focus to it, prompting me to enter a search term. Normally, the JavaScript would then “look ahead” as I type characters, searching the website for matching content and presenting (directly underneath) a list of search result links to choose from.
 
-The problem was that although the search box was appearing, no suggestions were coming up as you typed.
+The problem was that although the search input was appearing, the search result suggestions were no longer appearing as I typed.
 
-Fortunately, back when I built it I was reading Phil Hawksworth’s [Adding Search to a Jamstack site](https://www.hawksworx.com/blog/adding-search-to-a-jamstack-site/) which begins with creating a baseline without JavaScript, including making the (non-enhanced) search a standard form which submits to a Google search scoped to your website and the search term you just typed. For example last night I looked up a bookmark about aria-label on my website while reviewing a PR and—because the JS enhancement wasn’t available—it just posted me to a Google search site:https://fuzzylogic.me/ aria-label with the exact article I needed coming top of the search results. Not a rolls-royce experience, but perfectly serviceable.
+Fortunately, back when I built the feature I had just read Phil Hawksworth’s [Adding Search to a Jamstack site](https://www.hawksworx.com/blog/adding-search-to-a-jamstack-site/) which begins by creating a non-JavaScript baseline using a standard `form` which submits to Google Search (scoped to your website), passing as search query the search term you just typed. This is how I built mine, too. 
 
-This was great because I rely on that search many times a day.
+So, just yesterday at work I was reviewing a PR which prompted me to search for a specific article on my website by using the term “aria-label”. And although the enhanced search wasn’t working, the baseline search functionally was there to deliver me to a Google search [site:https://fuzzylogic.me/ aria-label])(https://www.google.com/search?q=site%3Ahttps%3A%2F%2Ffuzzylogic.me%2F+aria-label&oq=site%3Ahttps%3A%2F%2Ffuzzylogic.me%2F+aria-label&aqs=chrome..69i57j69i58.462j0j7&sourceid=chrome&ie=UTF-8) with the exact article I needed at the top of the search results. Not a rolls-royce experience, but perfectly serviceable!
 
-Why had the enhanced solution failed? Because the .json file which is the source for the lookahead search (and is re-generated every commit) had somehow got a weird character into it which had malformed the file. Although all the rest of the JS was otherwise fine, this prevented the enhanced search working.
+Why had the enhanced search solution failed? It was because the `.json` file which is the data source for the lookahead search had at some point allowed in a weird character and become malformed. And although the site’s JS was otherwise fine, this malformed data file was preventing the enhanced search from working.
 
-JS is brittle and fails in many ways, making it different from the rest of the stack. Then there’s the “unavailable until loaded” aspect (or as Jake Archibald put it “"We don't have any non-JavaScript users" No, all your users are non-JS while they're downloading your JS”). https://twitter.com/jaffathecake/status/207096228339658752
+JavaScript is brittle and fails for many reasons and in many ways, making it different from the rest of the stack. Added to that there’s the “unavailable until loaded” aspect (or as Jake Archibald put it [“all your users are non-JS while they're downloading your JS”](https://twitter.com/jaffathecake/status/207096228339658752)).
 
-There were lots of those moments with Léonie’s session. And this search issue was another one for me. I’m glad on our mobbing session yesterday we got the time to include chat about “what’s the baseline before/without JS”. And it’s great to build things that are resilient.
+The best practices that we as web developers have built up for years are not just theoretical. Go watch a screen reader user browse the web if you want proof that providing descriptive link text rather than “click here”, or employing headings and good document structure, or describing images properly with `alt` attributes are worthwhile endeavours. Those users _depend_ on those good practices. 
+
+Likewise, JavaScript _will_ fail to be available on ocassion, so building a baseline no-JS solution will ensure that when it does, the show still goes on. 
