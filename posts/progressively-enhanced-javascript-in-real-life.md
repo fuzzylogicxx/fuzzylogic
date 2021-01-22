@@ -12,7 +12,7 @@ tags:
   - accessibility
 draft: true
 ---
-Over the last couple of days I saw a little “In Real Life” example of progressive enhancement doing its job with regard to JavaScript. Right now, when I see these real-life examples which back up good practices,  I’m very into noting and sharing them so that their benefits are seen to be real rather than theoretical.
+Over the last couple of days I saw a little “In Real Life” example of progressive enhancement doing its job with regard to JavaScript. I’m currently very into noting and sharing these real-life examples which back up good practices so that the benefit of those practices are seen to be real rather than theoretical.
 ---
 
 The search function on my website wasn’t working optimally. You usually click/tap search, the JS responds by revealing a search box and setting keyboard focus to it, then you type your search term and it “looks ahead”, searching the website as you type characters, and presents a list of options.
