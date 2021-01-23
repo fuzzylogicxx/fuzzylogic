@@ -30,39 +30,38 @@ The `async` function declaration (i.e. `async function f()`):
 - always returns a promise. (Its return value is implicitly wrapped in a resolved promise.)
 - allows us to use `await`.
 
-Here’s a `try...catch` -based example. (NB let’s assume that we have a list of blog articles, and that function `load()` is triggered by clicking a “load more articles” button, and that the `fetchURL` endpoint returns more articles as HTML):
+Here’s a `try...catch` -based example. (NB let’s assume that we have a list of blog articles and a “Load more articles” button which triggers the `loadMore()` function):
 
 <figure>
   
 ``` js
-export default class LoadMore {
+export default class ArticleLoader {
 
-  async fetchItems(url) {
-    const response = await fetch(url, { method: "GET" });
-    if (response.ok) {
-      return response.text();
-    }
-    throw new Error("Sorry, there was a problem fetching additional items.");
-  }
-
-  async load() {
-    const fetchURL = "https://mysite.com/products/";
+  async loadMore() {
+    const fetchURL = "https://mysite.com/blog/";
     try {
       const newItems = await this.fetchItems(fetchURL);
       // If we’re here, we know our promise fulfilled.
-      // We might add some other `await` (because async/await is useful for this kind of sequencing), or just…
+      // We might add some additional `await`, or just…
       // Render our new HTML items into the DOM.
       this.renderItems(newItems);
     } catch (err) {
       this.displayError(err);
     }
   }
+  
+  async fetchArticles(url) {
+    const response = await fetch(url, { method: "GET" });
+    if (response.ok) {
+      return response.text();
+    }
+    throw new Error("Sorry, there was a problem fetching additional articles.");
+  }
 
   displayError(err) {
     const errorMsgContainer = document.querySelector("[data-target='error-msg']");
     errorMsgContainer.innerHTML = `<span class="error">${err}</span>`;
   }
-
 }
 ```
 
