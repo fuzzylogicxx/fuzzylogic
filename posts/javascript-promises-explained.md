@@ -24,9 +24,9 @@ A promise is in one of three states:
 - fulfilled (the operation completed successfully)
 - rejected (the operation failed)
 
-We say a pending promise can either be fulfilled with a value, or rejected with a reason (error).
+We say a pending promise can go on to be either fulfilled with a value, or rejected with a reason (error).
 
-We also talk about a promise being _settled_ when it is no longer pending therefore is either fulfilled or rejected, and is ready to be acted upon accordingly.
+We also talk about a promise being _settled_ when it is no longer pending.
 
 One memorable analogy was provided in Mariko Kosaka’s _[The Promise of a Burger Party](https://web.archive.org/web/20190212114232/http://kosamari.com/notes/the-promise-of-a-burger-party)_. In it she describes the scenario of ordering a burger from, say, Burger King. It goes something like this:
 
@@ -52,8 +52,7 @@ When you create a promise you pass a function known as the executor to it, which
 
 <figure>
 
-```
-
+``` js
 let promise = new Promise(function(resolve, reject) {
   // do a thing, possibly async, then…
 
@@ -72,7 +71,7 @@ let promise = new Promise(function(resolve, reject) {
 
 <figure>
 
-```
+``` js
 let story_promise = getStory('story.json');
 story_promise
 .then(function(response) {
