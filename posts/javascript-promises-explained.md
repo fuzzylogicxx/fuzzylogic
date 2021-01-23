@@ -53,7 +53,7 @@ When you create a promise you pass a function known as the executor to it, which
 <figure>
 
 ``` js
-let promise = new Promise(function(resolve, reject) {
+let examplePromise = new Promise(function(resolve, reject) {
   // do a thing, possibly async, then…
 
   if (/* everything turned out fine */) {
@@ -72,15 +72,12 @@ let promise = new Promise(function(resolve, reject) {
 <figure>
 
 ``` js
-let story_promise = getStory('story.json');
-story_promise
-.then(function(response) {
+examplePromise.then(function(response) {
   console.log("Success!", response);
 })
 .catch(function(error) {
   console.log("Failed!", error);
 })
-
 ```
 
 </figure>
