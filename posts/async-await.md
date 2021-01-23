@@ -7,15 +7,15 @@ tags: [development, javascript, asynchronous]
 My notes and reminders for handling promises with `async` and `await` In Real Life.
 ---
 
-As I see it, the gist of this is to switch to using `await` when working with promise-returning, asynchronous operations (such as `fetch`) because it lends itself to more flexible and readable code.
+As I see it, the idea is to switch to using `await` when working with promise-returning, asynchronous operations (such as `fetch`) because it lends itself to more flexible and readable code.
 
 ## The `await` keyword
 
 Notes:
 
 - `await` is for use on functions which return [promises](https://fuzzylogic.me/posts/javascript-promises-explained/) (e.g. `const users = await fetch('/users')`).
-- It makes JavaScript _wait_ until that promise settles and returns its result. 
-- It may only be used inside `async` functions.
+- It makes the next line of JavaScript _wait_ until that promise settles and returns its result. 
+- It may only be used inside `async` functions. This make sense as you’d only want the “waiting” behaviour to happen within that limited context. 
 - It’s a more elegant syntax for getting a promise‘s result than `promise.then`.
 - If the promise resolves successfully, it returns the result.
 - If the promise rejects, it throws the error, just as if there were a `throw` statement at that line.
