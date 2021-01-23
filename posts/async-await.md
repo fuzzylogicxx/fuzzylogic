@@ -32,6 +32,8 @@ The `async` function declaration (i.e. `async function f()`):
 
 Here’s a `try...catch` -based example. (NB let’s assume that we have a list of blog articles, and that function `load()` is triggered by clicking a “load more articles” button, and that the `fetchURL` endpoint returns more articles as HTML):
 
+<figure>
+  
 ``` js
 export default class LoadMore {
 
@@ -48,6 +50,7 @@ export default class LoadMore {
     try {
       const newItems = await this.fetchItems(fetchURL);
       // If we’re here, we know our promise fulfilled.
+      // We might add some other `await` (because async/await is useful for this kind of sequencing), or just…
       // Render our new HTML items into the DOM.
       this.renderItems(newItems);
     } catch (err) {
@@ -63,7 +66,11 @@ export default class LoadMore {
 }
 ```
 
+</figure>
+
 Here’s another example. Let’s say that we needed to wait for multiple promises to resolve:
+
+<figure>
 
 ``` js
 const allUsers = async () => {
@@ -83,9 +90,13 @@ const allUsers = async () => {
 }
 ```
 
+</figure>
+
 Using `await` within a `try...catch` is my favourite approach but sometimes it’s not an option because we’re at the topmost level of the code therefore not in an `async` function. In these cases it’s good to remember that we can call an `async` function and work with its returned value like any promise, i.e. using `then` and `catch`.
 
 For example:
+
+<figure>
 
 ``` js
 async function loadUser(url) {
@@ -108,6 +119,8 @@ loadUser('no-user-here.json')
     document.body.innerHTML = "foo";
   });
 ```
+
+</figure>
 
 References:
 - [Explanation and patterns on javascript.info](https://javascript.info/async-await)
