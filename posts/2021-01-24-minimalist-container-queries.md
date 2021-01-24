@@ -10,6 +10,35 @@ Scott Jehl’s experimental take on a container/element query aimed at letting u
 > I made a quick and minimal take on approximating Container/Element Queries using a web component and basic CSS selectors.
 ---
 
-See also [Scott’s tweet announcing this](https://twitter.com/scottjehl/status/1319724488339214336) which contains some interesting comments. 
+The idea is that for any given instance of the `<c-q>` component you would define a scoped custom property which sets the pixel min-widths you’re interested in, like so:
+
+<figure>
+  
+``` css
+c-q {
+  --breakpoints: "400 600 800";
+  background: black;
+}
+```
+
+</figure>
+
+Zero to many of those numeric `min-width` values will appear in the element’s `data-min-width` attribute based on which (if any) the element’s width is equal to or greater than. You can style the element based on their presence using the ~= attribute selector, like this:
+
+
+<figure>
+  
+``` css
+c-q[data-min-width~="400"] { 
+  background: green; 
+}
+c-q[data-min-width~="600"] {
+  background: blue;
+}
+```
+
+</figure>
+
+See also [Scott’s tweet announcing this](https://twitter.com/scottjehl/status/1319724488339214336) which contains some interesting contributions including [Heydon’s watched-box](https://github.com/Heydon/watched-box).
 
 (via [@scottjehl](https://twitter.com/scottjehl))
