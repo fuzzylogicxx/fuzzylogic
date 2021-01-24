@@ -2,7 +2,7 @@
 date: "2020-09-10T18:49:42.706Z"
 title: "Under the Cloud (on BBC Radio 4)"
 description: "An interesting BBC podcast on the true nature of the cloud"
-tags: [link, technology, privacy, legal, ethics, data, environment, power, computing, storage]
+tags: [link, technology, privacy, legal, ethics, data, environment, power, computing, storage, cloud]
 linkTarget: "https://www.bbc.co.uk/programmes/m000nc1n"
 ---
 An interesting BBC podcast on the history and true nature of the cloud.
