@@ -1,5 +1,5 @@
 ---
-date: "2021-01-24T22:44:22.089Z"
+date: "2020-12-20T22:44:22.089Z"
 title: "The Race for a Vaccine (on BBC One - Panorama)"
 description: "Panorama tells the inside story of the development of the Oxford vaccine against Covid-19."
 tags: [link, coronavirus, vaccine, health]
