@@ -16,4 +16,4 @@ A `button` is generally a solid choice as it’s built for general interactivity
 
 In the case of a progressively-enhanced modal dialogue, for example, all of the above might be true.
 
-In such cases you might choose to use a link with a fragment identifier so that it works well via old-school page anchors without JavaScript, then when JavaScript is available intercept and enhance into the fancier disclosure element.
+In such cases you might choose to use a link with a fragment identifier (`&lt;a href="#login-modal"&gt;Log in&lt;/a&gt;`) so that it works well via old-school page anchors without JavaScript, then when JavaScript is available intercept and enhance into the fancier disclosure element.
