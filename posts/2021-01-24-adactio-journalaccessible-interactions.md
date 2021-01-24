@@ -1,6 +1,6 @@
 ---
 date: "2021-01-24T13:12:43.921Z"
-title: "Accessible interactions (on adactio.com)"
+title: "Accessible interactions (on Adactio)"
 description: "Jeremy Keith takes us through his thought process regarding the choice of link or button when considering accessible interactive disclosure elements"
 tags: [link, web, development, modal, javascript, a11y, accessibility, aria, fragment, anchor, button, disclosure]
 linkTarget: "https://adactio.com/journal/17546"
