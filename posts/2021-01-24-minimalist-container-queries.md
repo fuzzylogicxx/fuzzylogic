@@ -10,7 +10,7 @@ Scott Jehl’s experimental take on a container/element query aimed at letting u
 > I made a quick and minimal take on approximating Container/Element Queries using a web component and basic CSS selectors.
 ---
 
-The idea is that for any given instance of the `<c-q>` component you would define a scoped custom property which sets the pixel min-widths you’re interested in, like so:
+The idea is that for any given instance of the `<c-q>` custom element / web component you would define a scoped custom property which sets the pixel min-widths you’re interested in, like so:
 
 <figure>
   
@@ -23,8 +23,9 @@ c-q {
 
 </figure>
 
-Zero to many of those numeric `min-width` values will appear in the element’s `data-min-width` attribute based on which (if any) the element’s width is equal to or greater than. You can style the element based on their presence using the ~= attribute selector, like this:
+Zero to many of those numeric `min-width` values will appear in the element’s `data-min-width` HTML attribute based on which (if any) of them the element’s width is equal to or greater than. 
 
+You can style the element based on their presence using the `~=` attribute selector, like this:
 
 <figure>
   
