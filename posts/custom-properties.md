@@ -18,8 +18,8 @@ https://adactio.com/journal/17106 A bridge between JavaScript and CSS, JK did so
 
 ## Setting on Selector vs root
 
-- https://bathdigitalfestival.co.uk/events/tech:builders/custom-properties-the-secret-ingredients-for-css-magic.html MB says setting only where you need them might be better for performance, but also setting on a selector makes them inherited by the descendents of the selectors
-- EveryLayout says?
+- https://bathdigitalfestival.co.uk/events/tech:builders/custom-properties-the-secret-ingredients-for-css-magic.html MB says setting as close to where you need them (rather than blanket on `:root`) might 1) be better for performance, and 2) also setting on a selector makes them inherited by the descendents of the selectors
+- EveryLayout says…?
 - if we see a CP _locally_ (e.g. a `--rows` CP on a `.grid` class) then we can reuse it elsewhere too.
 - So you’ll want to define _some_ CPs globally (but keep lean) and then specific CPs set _locally_.
 
