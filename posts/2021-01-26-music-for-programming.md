@@ -2,7 +2,7 @@
 date: "2021-01-26T20:05:02.466Z"
 title: "Music For Programming"
 description: "A website dedicated to mixtapes intended to be listened to while programming"
-tags: [link, electronic, music, mix, djmix, ]
+tags: [link, electronic, music, mix, djmix, datassette]
 linkTarget: "https://www.musicforprogramming.net/"
 ---
 Here’s a website dedicated to mixtapes intended to be listened to while programming.
