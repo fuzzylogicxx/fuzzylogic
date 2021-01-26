@@ -42,4 +42,6 @@ c-q[data-min-width~="600"] {
 
 See also [Scott’s tweet announcing this](https://twitter.com/scottjehl/status/1319724488339214336) which contains some interesting contributions including [Heydon’s watched-box](https://github.com/Heydon/watched-box).
 
+All of the various JavaScript approaches/experiments are summarised in CSS-Tricks’s article [_Minimal Takes on Faking Container Queries_](https://css-tricks.com/minimal-takes-on-faking-container-queries/).
+
 (via [@scottjehl](https://twitter.com/scottjehl))
