@@ -5,7 +5,7 @@ description: "Andy Bell recommends using CSS clamp() to control your wrapper/con
 tags: [link, css, web, development, tip, layout, width, constraints, responsive, clamp]
 linkTarget: "https://piccalil.li/quick-tip/use-css-clamp-to-create-a-more-flexible-wrapper-utility"
 ---
-Here’s Andy Bell recommending using CSS `clamp()` to control your wrapper/container `width` because it supports setting a _preferred value_ in `vw` to ensure sensible gutters combined with a maximum tolerance in `rem`—all in a single line of code.
+Here’s Andy Bell recommending using CSS `clamp()` to control your wrapper/container `width` because it supports setting a preferred value in `vw` to ensure sensible gutters combined with a maximum tolerance in `rem`—all in a single line of code.
 
 > If we use clamp() to use a viewport unit as the ideal and use what we would previously use as the max-width as the clamp’s maximum value, we get a much more flexible setup.
 ---
