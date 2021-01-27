@@ -12,6 +12,6 @@ Here’s Andy Bell recommending using CSS `clamp()` to control your wrapper/cont
 
 This is pretty cool because I know from experience that coding responsive solutions for wrappers can be tricky and you can end up with a complex arrangement of padding, margin, max-width and media queries but still—like Andy says—not always hitting optimal readability for medium-sized viewports. [Using CSS Grid with minmax()](https://fuzzylogic.me/posts/2020-11-17-breaking-out-with-css-grid-layout-on-cloudfourcom/) is one possible approach to controlling wrappers however this is another (potentially better) tool to have in your kit.
 
-It’s also worth noting that Andy could probably have just used `width: min(90vw, 70rem)` here ([as Christopher suggests](https://twitter.com/c__beck/status/1351515957034889219), because setting the _lower bound_ provided by `clamp()` is only necessary if your element is likely to shrink unexpectedly (and a regular block-level element wouldn’t do that). The `clamp` approach might be handy for flex items, though. 
+It’s also worth noting that Andy could probably have just used `width: min(90vw, 70rem)` here ([as Christopher suggests](https://twitter.com/c__beck/status/1351515957034889219)) because setting the _lower bound_ provided by `clamp()` is only necessary if your element is likely to shrink unexpectedly (and a regular block-level element wouldn’t do that). The `clamp` approach might be handy for flex items, though. 
 
 (via [@piccalilli_](https://twitter.com/piccalilli_))
