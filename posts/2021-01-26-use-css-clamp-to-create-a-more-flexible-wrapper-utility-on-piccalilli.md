@@ -28,6 +28,6 @@ This is pretty cool because I know from experience that coding responsive soluti
 
 [Using CSS Grid with minmax()](https://fuzzylogic.me/posts/2020-11-17-breaking-out-with-css-grid-layout-on-cloudfourcom/) is one possible approach to controlling wrappers however this article offers another (potentially better) tool for your kit.
 
-It’s worth noting that Andy could probably have just used `width: min(90vw, 70rem)` here ([as Christopher suggested](https://twitter.com/c__beck/status/1351515957034889219)) because setting the _lower bound_ provided by `clamp()` is only necessary if your element is likely to shrink unexpectedly (and a regular block-level element wouldn’t do that). The `clamp` approach might be handy for flex items, though. 
+It’s worth noting that Andy could probably have just used `width: min(90vw, 70rem)` here ([as Christopher suggested](https://twitter.com/c__beck/status/1351515957034889219)) because setting the _lower bound_ provided by `clamp()` is only necessary if your element is likely to shrink unexpectedly and a regular block-level element wouldn’t do that. The `clamp` approach might be handy for flex items, though. 
 
 (via [@piccalilli_](https://twitter.com/piccalilli_))
