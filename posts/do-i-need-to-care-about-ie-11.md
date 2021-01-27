@@ -11,6 +11,8 @@ tags:
   - progressiveenhancement
 draft: true
 ---
+Microsoft are sunsetting IE 11 for xyz.
+
 Stats
 - Number of visitors using IE 11 is likely very small
 - but note that for my personal website I don’t track people so I’ll never know.
