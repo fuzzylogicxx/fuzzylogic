@@ -52,7 +52,13 @@ or lighter-weight http://featurejs.com/
 
 ## JavaScript modules
 
-https://briefs.video/videos/is-progressive-enhancement-dead-yet/
+[Heydon recommends](https://briefs.video/videos/is-progressive-enhancement-dead-yet/):
+- use ES6 modules natively using script type=module. This means you don’t need to mess around with bundlers, transpilers etc
+- if you really need to, you could also create a script including polyfills and transpiled JS, and include using `script nomodule`
+
+There are many more gradations of how you can use modules – see my article on ES6 modules. However I’d be inclined to K.I.S.S.
+
+
 
 ## Polyfills
 
