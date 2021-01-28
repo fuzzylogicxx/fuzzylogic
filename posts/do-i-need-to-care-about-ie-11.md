@@ -13,7 +13,7 @@ draft: true
 ---
 Microsoft are sunsetting IE 11 for xyz.
 
-Great—IE is on the way out. This is good news for reasons A, B and C. More people are likely to have a richer experience.
+Great—IE is on the way out. This is good news. Less people will use it, instead upgrading to a newer browser and benefitting from a richer experience.
 
 However it doesn’t change the fact that people now and for a few years into the future may still want to access my site on IE 11. They’ll do this for reasons I can’t anticipate.
 
@@ -23,7 +23,9 @@ Is it a number worth caring about? Could look at stats:
 - Number of visitors using IE 11 is likely very small
 - but note that for my personal website I don’t track people so I’ll never know.
 
-My take on it is that it’ll be right to care about that browser’s users for a few years yet. Of course there’ll come a point where using it will be ridiculous and it’ll probably be completely incompatible with all the software and hardware that has moved on since it stopped being developed, but that’s a while away yet.
+My take on it is that it’ll be right to care about IE 11 users for a few years yet. Of course there’ll come a point where using it will be deemed ridiculous and it’ll be completely incompatible with any semi-modern set-up, but that’s a while away yet.
+
+Right now, we kind of jump through hoops for IE 11. For example whenever we want to use CSS Grid, if we have to maintain some kind of visual parity in IE 11 we need to first write a flexbox baseline. It’d be great to be able to ignore IE 11! 
 
 ## What _can_ we do?
 
