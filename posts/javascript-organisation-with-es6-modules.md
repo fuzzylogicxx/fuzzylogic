@@ -5,7 +5,7 @@ date: 2019-12-05T21:45:00.000Z
 mainImage.isAnchor: false
 draft: true
 ---
-If you’ve been writing JavaScript which includes other JS code on-demand (y’know, using `import` or `require`) the chances are you were either working outside the browser with Node.js or on a web application where a bundler compiles ECMAScript `import` and `export` down to ES5 code for browsers. However since Spring 2017, ES modules work _natively_ in all modern browsers. That means an HTML file can use `<script type="module">` to include a script which uses ES modules. This, however, is where things get complicated, with many factors to consider and many competing opinions on best practice.
+It’s beneficial for any non-trivially sized JavaScript codebase to be organised into small, maintainable “modules” rather than monolithic files. To date, though, to write JavaScript which includes other JS code on-demand (y’know, using `import` or `require`) you had to be either working in a non-browser context with Node.js or on a web application that uses a bundler to compile ES6 `import` and `export` down to ES5 code that browsers understand. However since Spring 2017, ES module functionality works _natively_ in all modern browsers. That means an HTML file can use `<script type="module">` to include a script which uses ES modules. It’s complicated though, with many factors to consider and many competing opinions on best practice.
 
 - https://gomakethings.com/why-combine-javascript-files/ (“f you’re using imports (either CSS or JS) for dependency management, even if you have HTTP/2 enabled you should still combine your files for performance reasons.”)
 - https://www.rollupjs.org/guide/en/
