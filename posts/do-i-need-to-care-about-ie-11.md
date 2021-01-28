@@ -11,6 +11,9 @@ tags:
   - progressiveenhancement
 draft: true
 ---
+TL;DR: yes, but with a Minimum Viable Experience. 
+---
+
 Microsoft are sunsetting IE 11 for xyz.
 
 Great—IE is on the way out. This is good news. Less people will use it, instead upgrading to a newer browser and benefitting from a richer experience.
@@ -25,18 +28,20 @@ Is it a number worth caring about? Could look at stats:
 
 My take on it is that it’ll be right to care about IE 11 users for a few years yet. Of course there’ll come a point where using it will be deemed ridiculous and it’ll be completely incompatible with any semi-modern set-up, but that’s a while away yet.
 
-Right now, we kind of jump through hoops for IE 11. For example whenever we want to use CSS Grid, if we have to maintain some kind of visual parity in IE 11 we need to first write a flexbox baseline. It’d be great to be able to ignore IE 11! 
+The thing is, right now, we kind of jump through hoops for IE 11. For example whenever we want to use CSS Grid, if we have to maintain some kind of visual parity in IE 11 we need to first write a flexbox baseline. 
+
+Surely with Microsoft’s announcement the time is right to go _some way_ toward throwing off these shackles?
 
 ## What _can_ we do?
 
-There might be a temptation to distill this to a single, simple question “Do I/we _support_ IE 11?”, however I think this question is too simple (a bit like the EU referendum question!) and a simple answer could lead to confusion at both the support and engineering levels down the line. 
+There might be a temptation to distill this to a single, simple question “Do we now _support_ IE 11?”, however I think this question is too simple and won’t empower either support or engineering teams to know exactly how to go forward. 
 
-Both the question and the strategy are a bit more nuanced. To me we need to ask: 
+Both the question and required strategy are in reality a little more nuanced. To me we need to ask: 
 
-- should IE 11 remain on my supported browsers list?
-- should I feel the need to work on queries and bugfix requests relating to IE 11?
-- should I continue to provide a “non-broken” experience in IE 11?; and 
-- does it need to offer the same experience as a modern browser?
+- should IE 11 remain on my official “supported browsers” list?
+- should I action customer queries and bug reports relating to IE 11?
+- should I provide a “non-broken” experience in IE 11?; 
+- does that experience need to be the same as on a modern browser?
 
 Should IE 11 remain on my supported browsers list? No, take it off (after date X).
 
