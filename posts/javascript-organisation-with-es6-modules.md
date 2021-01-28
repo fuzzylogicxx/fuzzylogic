@@ -5,9 +5,11 @@ date: 2019-12-05T21:45:00.000Z
 mainImage.isAnchor: false
 draft: true
 ---
-It’s beneficial for any non-trivially sized JavaScript codebase to be organised into small, maintainable “modules” rather than monolithic files. To date, though, to write JavaScript which includes other JS code on-demand (y’know, using `import` or `require`) you had to be either working in a non-browser context with Node.js or on a web application that uses a bundler to compile ES6 `import` and `export` down to ES5 code that browsers understand. However since Spring 2017, ES module functionality works _natively_ in all modern browsers. That means an HTML file can use `<script type="module">` to include a script which uses ES modules. It’s complicated though, with many factors to consider and many competing opinions on best practice.
+It’s beneficial for any non-trivially sized JavaScript codebase to be organised into small, maintainable “modules” rather than monolithic files. To date, though, to write JavaScript which includes other JS code on-demand (y’know, using `import` or `require`) you had to be either working in a non-browser context with Node.js or on a web application which includes a _bundler_ in order to compile ES6 `import` and `export` down to ES5 code that browsers understand. 
 
-- https://gomakethings.com/why-combine-javascript-files/ (“f you’re using imports (either CSS or JS) for dependency management, even if you have HTTP/2 enabled you should still combine your files for performance reasons.”)
+However since Spring 2017, ES module functionality works _natively_ in all modern browsers. That means an HTML file can use `<script type="module">` to include a script which uses ES modules. It’s complicated though, with many factors to consider and many competing opinions on best practice.
+
+- https://gomakethings.com/why-combine-javascript-files/ (“if you’re using imports (either CSS or JS) for dependency management, even if you have HTTP/2 enabled you should still combine your files for performance reasons.”)
 - https://www.rollupjs.org/guide/en/
 - https://blog.logrocket.com/benchmarking-bundlers-2020-rollup-parcel-webpack/
 - https://philipwalton.com/articles/using-native-javascript-modules-in-production-today/
@@ -35,7 +37,11 @@ ES modules let us _split up_ our client-side JavaScript code into separate files
 -- the downsides are you give up: i)  minified output (or at least would need to set up a toolchain for it so why not bundle too then?); the ability to write super-modern JavaScript (like the optional chaining operator), likewise non-JavaScript syntax (React, TypeScript, etc.), npm modules, and you lose improved performance via hash-in-filename-based caching (you’d need to move to header-based with ETags); ii) 
 -- instead he suggests just bundling, and he uses Parcel. 
 - At the lean / progressive-enhancement end: 
--- Use ES6 modules natively and stop using module bundlers like Webpack (https://formidable.com/blog/2019/no-build-step/). We don’t even need `node_modules` because we can get npm packages (in es6 rather than CommonJS versions) elsewhere (e.g. from CDNs).
+-- Heydon
+--- use ES6 modules natively using script type=module. This means you don’t need to mess around with bundlers, transpilers etc
+--- if you really need to, you could also create a script including polyfills and transpiled JS, and include using `script nomodule`
+-- asda
+--- Use ES6 modules natively and stop using module bundlers like Webpack (https://formidable.com/blog/2019/no-build-step/). We don’t even need `node_modules` because we can get npm packages (in es6 rather than CommonJS versions) elsewhere (e.g. from CDNs).
 - Use `<script type="module">` and `<script nomodule="true">` in combination. Take advantage of the fact that `type="module"` support also means modern JS support to safely include only modern code for modern browsers (`async/await` etc), and avoid shipping the weight of workarounds and polyfills to browsers that don’t need it. Use `<script nomodule="true">` for fallback code. One or other script will be used but not both. Set up your bundler to output both scripts automatically from your single codebase.
 - Phillip Walton: "You should deploy native JavaScript modules". Use a bundler (e.g. Rollup), setting "modules" as output format (https://philipwalton.com/articles/using-native-javascript-modules-in-production-today/)
 -- Use a bundler, but make sure your output format is ES2015 modules
