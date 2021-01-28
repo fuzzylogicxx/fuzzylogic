@@ -40,9 +40,9 @@ ES modules let us _split up_ our client-side JavaScript code into separate files
 -- Heydon
 --- use ES6 modules natively using script type=module. This means you don’t need to mess around with bundlers, transpilers etc
 --- if you really need to, you could also create a script including polyfills and transpiled JS, and include using `script nomodule`
--- asda
---- Use ES6 modules natively and stop using module bundlers like Webpack (https://formidable.com/blog/2019/no-build-step/). We don’t even need `node_modules` because we can get npm packages (in es6 rather than CommonJS versions) elsewhere (e.g. from CDNs).
-- Use `<script type="module">` and `<script nomodule="true">` in combination. Take advantage of the fact that `type="module"` support also means modern JS support to safely include only modern code for modern browsers (`async/await` etc), and avoid shipping the weight of workarounds and polyfills to browsers that don’t need it. Use `<script nomodule="true">` for fallback code. One or other script will be used but not both. Set up your bundler to output both scripts automatically from your single codebase.
+-- slight variant: Use `<script type="module">` and `<script nomodule="true">` in combination. Take advantage of the fact that `type="module"` support also means modern JS support to safely include only modern code for modern browsers (`async/await` etc), and avoid shipping the weight of workarounds and polyfills to browsers that don’t need it. Use `<script nomodule="true">` for fallback code. One or other script will be used but not both. Set up your bundler to output both scripts automatically from your single codebase.
+-- Luke Jackson https://formidable.com/blog/2019/no-build-step/
+--- Use ES6 modules natively and stop using module bundlers like Webpack. We don’t even need `node_modules` because we can get npm packages (in es6 rather than CommonJS versions) elsewhere (e.g. from CDNs).
 - Phillip Walton: "You should deploy native JavaScript modules". Use a bundler (e.g. Rollup), setting "modules" as output format (https://philipwalton.com/articles/using-native-javascript-modules-in-production-today/)
 -- Use a bundler, but make sure your output format is ES2015 modules
 -- Code-split aggressively (all the way down to the node package if possible)
