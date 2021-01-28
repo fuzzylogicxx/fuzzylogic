@@ -13,12 +13,21 @@ draft: true
 ---
 Microsoft are sunsetting IE 11 for xyz.
 
-Stats
+Great—IE is on the way out. This is good news for reasons A, B and C. More people are likely to have a richer experience.
+
+However it doesn’t change the fact that people now and for a few years into the future may still want to access my site on IE 11. They’ll do this for reasons I can’t anticipate.
+
+To put it another way: IE 11 being sunset does not change the requirement for a site to be accessible (in the traditional sense of the word) in IE 11 if you care about those users.
+
+Is it a number worth caring about? Could look at stats:
 - Number of visitors using IE 11 is likely very small
 - but note that for my personal website I don’t track people so I’ll never know.
 
+My take on it is that it’ll be a number worth caring about for a few years yet. There’ll come a point where using that browser will be ridiculous and completely incompatible with everything with all the software and hardware that has moved on since it stopping being developed, but that’s a while away yet.
 
-There’s might be a temptation to distill this to a single, simple question “Do I/we _support_ IE 11?”, however I think this question is too simple (a bit like a referendum question!) and a simple answer could lead to confusion (at both the support and engineering levels) down the line. 
+## What _can_ we do?
+
+There might be a temptation to distill this to a single, simple question “Do I/we _support_ IE 11?”, however I think this question is too simple (a bit like the EU referendum question!) and a simple answer could lead to confusion at both the support and engineering levels down the line. 
 
 Both the question and the strategy are a bit more nuanced. To me we need to ask: 
 
