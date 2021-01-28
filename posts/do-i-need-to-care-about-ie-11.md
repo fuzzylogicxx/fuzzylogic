@@ -17,13 +17,13 @@ Great—IE is on the way out. This is good news for reasons A, B and C. More peo
 
 However it doesn’t change the fact that people now and for a few years into the future may still want to access my site on IE 11. They’ll do this for reasons I can’t anticipate.
 
-To put it another way: IE 11 being sunset does not change the requirement for a site to be accessible (in the traditional sense of the word) in IE 11 if you care about those users.
+To put it another way: IE 11 being sunset does not change the requirement for a site to be accessible (in the traditional sense of the word) in IE 11 assuming you care about those users.
 
 Is it a number worth caring about? Could look at stats:
 - Number of visitors using IE 11 is likely very small
 - but note that for my personal website I don’t track people so I’ll never know.
 
-My take on it is that it’ll be a number worth caring about for a few years yet. There’ll come a point where using that browser will be ridiculous and completely incompatible with everything with all the software and hardware that has moved on since it stopping being developed, but that’s a while away yet.
+My take on it is that it’ll be right to care about that browser’s users for a few years yet. Of course there’ll come a point where using it will be ridiculous and it’ll probably be completely incompatible with all the software and hardware that has moved on since it stopped being developed, but that’s a while away yet.
 
 ## What _can_ we do?
 
