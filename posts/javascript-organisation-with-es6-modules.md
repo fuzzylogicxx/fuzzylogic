@@ -5,7 +5,7 @@ date: 2019-12-05T21:45:00.000Z
 mainImage.isAnchor: false
 draft: true
 ---
-It’s beneficial for any non-trivially sized JavaScript codebase to be organised into small, maintainable “modules” rather than monolithic files. To date, though, the ability to write JavaScript which includes other JS code on-demand (y’know, using `import` or `require`) has been confined to non-browser contexts with Node.js and web applications which include a _bundler_ that compiles ES6 `import` and `export` down to ES5 code supported by web browsers. 
+It’s beneficial for any non-trivially sized JavaScript codebase to be organised into small, maintainable “modules” rather than monolithic files. To date, though, the ability to write JavaScript which includes other JS code on-demand (y’know, using `import` or `require`) has been confined to non-browser contexts with Node.js and web applications which include a _bundler_ with a transpilation step that compiles ES6 `import` and `export` down to ES5 code a web browser can work with. 
 
 However in Spring 2017, ES6 module functionality became available _natively_ in all modern browsers. With `<script type="module">` an HTML page can include a script which uses `import` and `export`. The question of “should we use it?” is another matter; it’s complicated, with a variety of factors to consider and many competing opinions regarding best practice.
 
