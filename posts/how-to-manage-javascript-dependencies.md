@@ -1,13 +1,37 @@
 ---
 title: How to manage JavaScript Dependencies
 description: How to manage JavaScript Dependencies
-date: "2020-10-23T16:58:08.051Z"
+date: "2019-10-23T16:58:08.051Z"
 tags: [development, javascript, yarn]
 draft: true
 ---
 
-It can pay to add tried-and-tested functionality to your application via third-party NPM packages. That way, you can concentrate on your application’s unique features rather than reinventing the wheel for lower-level requirements.
+In modern JavaScript applications, we can add tried-and-tested open source libraries and utilities to our build pipeline or application via third-party packages from the [NPM registry](https://www.npmjs.com/). The idea is that this lets you can concentrate on your application’s unique features rather than reinventing the wheel for already-solved problems at the lower-level.
 
+The process might go something like this (using [Yarn](https://yarnpkg.com/)).
+
+<figure>
+  
+```
+# this 1st step is only required if it’s a blank slate or no dependency manager has yet been added.
+yarn    # or npm init
+
+# Established project with a package.json that lists dependencies? Install dependencies.
+yarn    # or npm i
+
+# Add a 3rd-party library to your project
+yarn add <package…>     # or npm i <package…>
+
+# As above but a specific version or [semver range](https://devhints.io/semver).
+# It’s often a good idea to do this to ensure predictable results.
+yarn add <package…>@^1.3.1
+
+
+```
+
+</figure>
+
+## References
 - https://classic.yarnpkg.com/en/docs/yarn-workflow/
 - And here’s a good explanation of the purpose of lock files (it’s to lock down the exact version to be used (rather than a range like package.json) https://www.robertcooper.me/how-yarn-lock-files-work-and-upgrading-dependencies)
 - Getting started
