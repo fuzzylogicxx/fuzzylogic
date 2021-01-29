@@ -1,5 +1,5 @@
 ---
-title: JavaScript organisation with ES6 modules
+title: JavaScript strategies with ES6 modules
 description: JavaScript organisation with ES6 modules
 date: 2019-12-05T21:45:00.000Z
 mainImage.isAnchor: false
