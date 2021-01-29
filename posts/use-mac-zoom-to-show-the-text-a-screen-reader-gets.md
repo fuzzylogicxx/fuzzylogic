@@ -4,6 +4,7 @@ noteWithTitle: true
 description: Use Mac Zoom to show the text a screen reader gets
 date: 2021-01-26T14:31:02.818Z
 mainImage.isAnchor: false
+location: Glasgow
 tags:
   - note
   - a11y
