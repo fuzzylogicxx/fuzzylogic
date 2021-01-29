@@ -5,11 +5,11 @@ description: Use Mac Zoom to show the text a screen reader gets
 date: 2021-01-26T14:31:02.818Z
 mainImage.isAnchor: false
 tags:
+  - note
   - a11y
   - accessibility
   - tip
   - testing
-  - note
 draft: false
 ---
 I picked up a good accessibility testing tip from my work colleague Max today. 
