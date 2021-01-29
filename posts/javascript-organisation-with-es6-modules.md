@@ -9,6 +9,7 @@ It’s beneficial for any non-trivially sized JavaScript codebase to be organise
 
 However since Spring 2017, ES module functionality works _natively_ in all modern browsers. That means an HTML file can use `<script type="module">` to include a script which uses ES modules. It’s complicated though, with many factors to consider and many competing opinions on best practice.
 
+- Heydon Making Future Interfaces https://www.youtube.com/watch?v=dAIckpwW9ds
 - https://gomakethings.com/why-combine-javascript-files/ (“if you’re using imports (either CSS or JS) for dependency management, even if you have HTTP/2 enabled you should still combine your files for performance reasons.”)
 - https://www.rollupjs.org/guide/en/
 - https://blog.logrocket.com/benchmarking-bundlers-2020-rollup-parcel-webpack/
