@@ -16,4 +16,3 @@ draft: false
 I picked up a good accessibility testing tip from my work colleague Max today. 
 
 On a Mac, if you open System > Accessibility > Zoom, you can enable “hover text”. This allows you to hold down command (cmd) and then whatever is under the mouse will be shown. This shows the same text that a screen reader sees so it’s good for checking if bits of the page respond to a screen reader. It doesn’t show any sort of ordering, unfortunately.
----
