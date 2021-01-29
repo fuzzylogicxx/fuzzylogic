@@ -30,6 +30,8 @@ Note: script type=module does not work in IE.
 
 ES modules let us _split up_ our client-side JavaScript code into separate files making it, well, _modular_. This helps us make large or complex applications more maintainable, robust and scalable. 
 
+It also keeps modules within their own scope so no chance of leaks or clashes.
+
 ## Competing philosophies/options
 
 - “Don’t do it” https://medium.com/@david.gilbertson/es6-modules-in-the-browser-are-they-ready-yet-715ca2c94d09. He says:
