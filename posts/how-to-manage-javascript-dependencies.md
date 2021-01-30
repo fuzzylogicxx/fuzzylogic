@@ -1,15 +1,17 @@
 ---
 title: How to manage JavaScript dependencies
 description: How to manage JavaScript Dependencies
-date: "2018-10-23T16:58:08.051Z"
+date: "2019-10-23T16:58:08.051Z"
 tags: [entry. development, javascript, yarn]
 draft: true
 ---
-In modern JavaScript applications, we can add tried-and-tested open source libraries and utilities by downloading and installing [packages](https://docs.npmjs.com/about-packages-and-modules) from the [NPM registry](https://www.npmjs.com/). This can be handy by letting you concentrate on your application’s _unique features_ rather than reinventing the wheel for already-solved common problems.
+In modern JavaScript applications, we can add tried-and-tested open source libraries and utilities by installing [packages](https://docs.npmjs.com/about-packages-and-modules) from the [NPM registry](https://www.npmjs.com/). This can be helpful by letting you concentrate on your application’s _unique features_ rather than reinventing the wheel for already-solved common tasks.
 
-We can use a _package manager_ such as yarn or npm to install packages. When our package manager installs a package it lists it as a project _dependency_ which is to say that the project depends upon its presence to function properly. Anyone attempting to run the project should first install its dependencies. And the project owner is responsible for _managing_ its dependencies over time by updating packages to install security updates or stay on the upgrade path, and removing installed packages when they are no longer necessary.
+We can use a _package manager_ such as yarn or npm to install packages. When our package manager installs a package it lists it as a project _dependency_ which is to say that the project depends upon its presence to function properly. Anyone attempting to run the project should first install its dependencies. And the project owner is responsible for _managing_ its dependencies over time by updating packages to get security updates and stay on the upgrade path, and removing installed packages when they are no longer necessary.
 
-While it’s important to keep your dependencies updated, in a recent survey by Sonatype [52% of developers said they find dependency management painful](https://www.sonatype.com/resources/white-paper-state-of-the-software-supply-chain-2019). 
+While it’s important to keep your dependencies updated, in a recent survey by Sonatype [52% of developers said they find dependency management painful](https://www.sonatype.com/resources/white-paper-state-of-the-software-supply-chain-2019). And I have to agree that it’s not something I generally relish. However over the years I’ve gotten used to the process and found some things that work for me, which I’ll note here.
+
+## Simplified process
 
 The whole process might go something like this (using [Yarn](https://yarnpkg.com/)).
 
@@ -45,20 +47,26 @@ yarn upgrade-interactive
 
 </figure>
 
-## Some common maintenance scenarios
+## Common maintenance scenarios
 
 ### Responding to a security vulnerability in a dependency
 
-If you host your source code on GitHub it’s a good idea to enable Dependabot. It provides a great help of 
- Dependabot https://github.blog/2020-06-01-keep-all-your-packages-up-to-date-with-dependabot/ 
-            - You can configure Github Dependabot to send automated security updates (NB this is not just for JS, i.e. in a Rails project it might suggest a bump to your Gemfile)
-            - dependabot will often automatically open a PR in your repo, updating the relevant dependency (thus addressing the vulnerability) with PR title e.g. “Bump lodash from 4.17.11 to 4.17.19”
-            - (note however that if you work on a (corporate) repo that is not set up to automatically open PRs, you can still often take advantage of this on each individual de
+If you host your source code on GitHub it’s a good idea to enable [Dependabot](https://github.blog/2020-06-01-keep-all-your-packages-up-to-date-with-dependabot/). Essentially Dependabot has your back with regard to any dependencies that need updated. 
+You can configure Dependabot to send automated security updates (NB this is not just for JS, i.e. in a Rails project it might suggest a bump to your Gemfile)
+
+The vulnerability might be in a package you installed, but on other occasions might sound unfamiliar due to not affecting a package you explicitly installed but rather a _sub-dependency_. Even more confusingly, it might be in a package which appears several times in your lock file’s dependency tree.
+
+Often you need to upgrade to a patch version. (To minimise risk you usually want to update to the closest non-vulnerable version)
+This may not require a change to package.json 
 
 
-## References
-- https://classic.yarnpkg.com/en/docs/yarn-workflow/
-- A [good explanation of the purpose of a lock file](https://www.robertcooper.me/how-yarn-lock-files-work-and-upgrading-dependencies)) (it’s to lock down the exact version to be used (rather than a range like package.json)
+Dependabot will often automatically open a PR in your repo, updating the relevant dependency (thus addressing the vulnerability) with PR title e.g. “Bump lodash from 4.17.11 to 4.17.19”
+Note however that if you work on a (corporate) repo that is not set up to automatically open PRs, you can still often take advantage of this on each individual dependabot security alert, at the push of a button.
+You generally just need to follow the link in the email then merge the PR and delete the branch from the PR page 
+
+It can also be set to do automatic version updates even when the versions do not have known vulnerabilities, but I’ve tended to just stick with security updates.
+If you have multiple Github repos and multiple use the vulnerable dependency you also get a round-up email for all affected repos “A new security advisory on lodash affects 8 of your repositories” with links to the alert for each repo.
+
 
 - Maintaining
     - Security vulnerabilities
@@ -104,3 +112,10 @@ If you host your source code on GitHub it’s a good idea to enable Dependabot. 
 - Files
     - package.json; and yarn.lock or (package.lock or package-lock.json)
     - You don’t really want to be manually maintaining the lock files. And you don’t necessarily need to manually update package.json either, since you can use “yarn upgrade-interactive”
+
+
+
+
+## References
+- https://classic.yarnpkg.com/en/docs/yarn-workflow/
+- A [good explanation of the purpose of a lock file](https://www.robertcooper.me/how-yarn-lock-files-work-and-upgrading-dependencies)) (it’s to lock down the exact version to be used (rather than a range like package.json)
