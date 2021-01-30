@@ -5,17 +5,19 @@ date: "2018-10-23T16:58:08.051Z"
 tags: [entry. development, javascript, yarn]
 draft: true
 ---
-In modern JavaScript applications, we can add tried-and-tested open source libraries and utilities by downloading and installing [packages](https://docs.npmjs.com/about-packages-and-modules) from the [NPM registry](https://www.npmjs.com/). The idea is that this lets you can concentrate on your application’s unique features rather than reinventing the wheel for already-solved lower-level problems. 
+In modern JavaScript applications, we can add tried-and-tested open source libraries and utilities by downloading and installing [packages](https://docs.npmjs.com/about-packages-and-modules) from the [NPM registry](https://www.npmjs.com/). This can be handy by letting you concentrate on your application’s _unique features_ rather than reinventing the wheel for already-solved common problems.
 
-We can use a _package manager_ such as yarn or npm to install packages. When our package manager installs a package it logs it as a project _dependency_ which is to say that the project depends upon its presence to function properly. Anyone attempting to run the project should first install its dependencies. And the project owner should _manage_ their dependencies over time by installing security updates, staying on current and reliable versions, and removing installed packages when they are no longer necessary.
+We can use a _package manager_ such as yarn or npm to install packages. When our package manager installs a package it lists it as a project _dependency_ which is to say that the project depends upon its presence to function properly. Anyone attempting to run the project should first install its dependencies. And the project owner is responsible for _managing_ its dependencies over time by updating packages to install security updates or stay on the upgrade path, and removing installed packages when they are no longer necessary.
+
+While it’s important to keep your dependencies updated, in a recent survey by Sonatype [52% of developers said they find dependency management painful](https://www.sonatype.com/resources/white-paper-state-of-the-software-supply-chain-2019). 
 
 The whole process might go something like this (using [Yarn](https://yarnpkg.com/)).
 
 <figure>
   
-```
-# start managing dependencies
-# only required if your project doesn’t already have a package.json
+``` js
+# Start installing and managing 3rd-party packages.
+# (only required if your project doesn’t already have a package.json)
 yarn # or npm init
 
 # Install dependencies (in a project which already has a package.json)
@@ -26,29 +28,38 @@ yarn # or npm i
 yarn add <package…> # or npm i <package…>
 
 # Add package but specify a particular version or [semver range](https://devhints.io/semver).
-# It’s often a good idea to do this to ensure predictable results.
+# It’s often wise to do this to ensure predictable results.
 yarn add <package…>@^1.3.1
 
+# Remove a package
+# use this rather than manually deleting from package.json because this method updates `yarn.lock` too.
+yarn remove <package…>
 
+# Update one package (optionally to specific version/range)
+yarn upgrade <package…>
+yarn upgrade <package…>@^1.3.2
+
+# Update anything needing it
+yarn upgrade-interactive
 ```
 
 </figure>
 
+## Some common maintenance scenarios
+
+### Responding to a security vulnerability in a dependency
+
+If you host your source code on GitHub it’s a good idea to enable Dependabot. It provides a great help of 
+ Dependabot https://github.blog/2020-06-01-keep-all-your-packages-up-to-date-with-dependabot/ 
+            - You can configure Github Dependabot to send automated security updates (NB this is not just for JS, i.e. in a Rails project it might suggest a bump to your Gemfile)
+            - dependabot will often automatically open a PR in your repo, updating the relevant dependency (thus addressing the vulnerability) with PR title e.g. “Bump lodash from 4.17.11 to 4.17.19”
+            - (note however that if you work on a (corporate) repo that is not set up to automatically open PRs, you can still often take advantage of this on each individual de
+
+
 ## References
 - https://classic.yarnpkg.com/en/docs/yarn-workflow/
-- And here’s a good explanation of the purpose of lock files (it’s to lock down the exact version to be used (rather than a range like package.json) https://www.robertcooper.me/how-yarn-lock-files-work-and-upgrading-dependencies)
-- Getting started
-    - If blank slate, yarn (or npm) init
-    - If established project, “yarn” (or “npm i”)
-- Adding
-    - yarn add <package…> (or …)
-    - can add specific version or [semver range](https://devhints.io/semver), and it can be a good idea to do so, e.g. yarn add <package…>@^1.3.1
-- Removing
-    - yarn remove <package…>
-    - use this rather than manually deleting because this way it will update `yarn.lock`, too.
-- Updating
-    - npm i (same command as to add/install)
-    - yarn upgrade, or “yarn upgrade-interactive”
+- A [good explanation of the purpose of a lock file](https://www.robertcooper.me/how-yarn-lock-files-work-and-upgrading-dependencies)) (it’s to lock down the exact version to be used (rather than a range like package.json)
+
 - Maintaining
     - Security vulnerabilities
         - Note that this might be in:
