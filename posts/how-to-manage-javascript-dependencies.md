@@ -1,28 +1,31 @@
 ---
-title: How to manage JavaScript Dependencies
+title: How to manage JavaScript dependencies
 description: How to manage JavaScript Dependencies
-date: "2019-10-23T16:58:08.051Z"
-tags: [development, javascript, yarn]
+date: "2018-10-23T16:58:08.051Z"
+tags: [entry. development, javascript, yarn]
 draft: true
 ---
+In modern JavaScript applications, we can add tried-and-tested open source libraries and utilities by downloading and installing [packages](https://docs.npmjs.com/about-packages-and-modules) from the [NPM registry](https://www.npmjs.com/). The idea is that this lets you can concentrate on your application’s unique features rather than reinventing the wheel for already-solved lower-level problems. 
 
-In modern JavaScript applications, we can add tried-and-tested open source libraries and utilities to our build pipeline or application via third-party packages from the [NPM registry](https://www.npmjs.com/). The idea is that this lets you can concentrate on your application’s unique features rather than reinventing the wheel for already-solved problems at the lower-level.
+We can use a _package manager_ such as yarn or npm to install packages. When our package manager installs a package it logs it as a project _dependency_ which is to say that the project depends upon its presence to function properly. Anyone attempting to run the project should first install its dependencies. And the project owner should _manage_ their dependencies over time by installing security updates, staying on current and reliable versions, and removing installed packages when they are no longer necessary.
 
-The process might go something like this (using [Yarn](https://yarnpkg.com/)).
+The whole process might go something like this (using [Yarn](https://yarnpkg.com/)).
 
 <figure>
   
 ```
-# this 1st step is only required if it’s a blank slate or no dependency manager has yet been added.
-yarn    # or npm init
+# start managing dependencies
+# only required if your project doesn’t already have a package.json
+yarn # or npm init
 
-# Established project with a package.json that lists dependencies? Install dependencies.
-yarn    # or npm i
+# Install dependencies (in a project which already has a package.json)
+# yes, it’s the same yarn command as above.
+yarn # or npm i
 
 # Add a 3rd-party library to your project
-yarn add <package…>     # or npm i <package…>
+yarn add <package…> # or npm i <package…>
 
-# As above but a specific version or [semver range](https://devhints.io/semver).
+# Add package but specify a particular version or [semver range](https://devhints.io/semver).
 # It’s often a good idea to do this to ensure predictable results.
 yarn add <package…>@^1.3.1
 
