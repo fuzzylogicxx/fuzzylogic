@@ -9,7 +9,7 @@ Managing JavaScript dependencies is about as much fun as a poke in the eye. Howe
 
 In modern JavaScript applications, we can add tried-and-tested open source libraries and utilities by installing [packages](https://docs.npmjs.com/about-packages-and-modules) from the [NPM registry](https://www.npmjs.com/). This can aid development by letting you concentrate on your application’s _unique features_ rather than reinventing the wheel for already-solved common tasks.
 
-A typical example might be to add [axios](https://www.npmjs.com/package/axios) or [node-fetch](https://www.npmjs.com/package/node-fetch) to your project to provide a means of making API calls when the `fetch` Web API is not available, such as in a [Node.js](https://nodejs.org/en/) context.
+A typical example might be to add [axios](https://www.npmjs.com/package/axios) or [node-fetch](https://www.npmjs.com/package/node-fetch) to a Node.is project to provide a means of making API calls.
 
 We can use a _package manager_ such as yarn or npm to install packages. When our package manager installs a package it lists it as a project _dependency_ which is to say that the project depends upon its presence to function properly. It then follows that we advise anyone who wants to run the application to first install its dependencies. And the project owner (you and your team) is responsible for _managing_ its dependencies over time by:
 
