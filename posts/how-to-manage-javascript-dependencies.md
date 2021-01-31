@@ -11,7 +11,11 @@ In modern JavaScript applications, we can add tried-and-tested open source libra
 
 A common example might be to add [axios](https://www.npmjs.com/package/axios) or [node-fetch](https://www.npmjs.com/package/node-fetch) to your project to provide a means of making API calls when working in a [Node.js](https://nodejs.org/en/) context.
 
-We can use a _package manager_ such as yarn or npm to install packages. When our package manager installs a package it lists it as a project _dependency_ which is to say that the project depends upon its presence to function properly. Anyone attempting to run the project should first install its dependencies. And the project owner is responsible for _managing_ its dependencies over time by updating packages to get security updates and stay on the upgrade path, and removing installed packages when they are no longer necessary.
+We can use a _package manager_ such as yarn or npm to install packages. When our package manager installs a package it lists it as a project _dependency_ which is to say that the project depends upon its presence to function properly. It then follows that we advise anyone who wants to run the application to first install its dependencies. And the project owner (you and your team) is responsible for _managing_ its dependencies over time by:
+
+- updating packages when they release security patches; 
+- maintaining compatibility by staying on package upgrade paths; and
+- removing installed packages when they are no longer necessary for your project.
 
 While it’s important to keep your dependencies updated, in a recent survey by Sonatype [52% of developers said they find dependency management painful](https://www.sonatype.com/resources/white-paper-state-of-the-software-supply-chain-2019). And I have to agree that it’s not something I generally relish. However over the years I’ve gotten used to the process and found some things that work for me, which I’ll note here.
 
@@ -55,7 +59,7 @@ yarn upgrade-interactive
 
 ### Responding to a security vulnerability in a dependency
 
-If you host your source code on GitHub it’s a good idea to enable [Dependabot](https://github.blog/2020-06-01-keep-all-your-packages-up-to-date-with-dependabot/). Essentially Dependabot has your back with regard to any dependencies that need updated. You set it to send you automated security updates by email so that you know straight away if a vulnerability has been detected in one of your project dependencies and requires action. 
+If you host your source code on GitHub it’s a great idea to enable [Dependabot](https://github.blog/2020-06-01-keep-all-your-packages-up-to-date-with-dependabot/). Essentially Dependabot has your back with regard to any dependencies that need updated. You set it to send you automated security updates by email so that you know straight away if a vulnerability has been detected in one of your project dependencies and requires action. 
 
 Helpfully, if you have multiple Github repos and more than one of those include the vulnerable package you also get a round-up email with a message something like “A new security advisory on lodash affects 8 of your repositories” with links to the alert for each repo, letting you manage them all at once.
 
@@ -65,25 +69,25 @@ It’s also worth noting that Dependabot works for a variety of languages and te
 
 Sometimes the task is straightforward. The vulnerability is in a package you explicitly installed and the owner has already issued a patch release.
 
-A simple `yarn upgrade` to install the patch version would do the job, however Dependabot can even take care of that for you! Dependabot can automatically open a new Pull Request containing an update to the relevant dependency (thus addressing the vulnerability) with a PR title like “Bump `lodash` from `4.17.11` to `4.17.19`”. You just need to approve and merge that PR. This is great, really simple and takes care of lots of cases.
+A simple `yarn upgrade` to install the patch version would do the job, however [Dependabot can even take care of that for you](https://docs.github.com/en/github/managing-security-vulnerabilities/configuring-dependabot-security-updates)! Dependabot can automatically open a new Pull Request containing an update to the relevant dependency (thus addressing the vulnerability) with a PR title like “Bump `lodash` from `4.17.11` to `4.17.19`”. You just need to approve and merge that PR. This is great, really simple and takes care of lots of cases.
 
 Note: even if you work on a corporate repo that is not set up to “automatically open PRs” you can still often take advantage of Github’s intelligence with just one or two extra manual steps by following links included in your Github security alert email.
 
 #### Manual upgrades
 
-Other times Dependabot can’t suggest an automated upgrade. 
+Sometimes Dependabot will alert you to an issue but can’t recommend a fix. 
  
-This might be because the package owner has not addressed the security issue. In this case you might feel you need to take matters into your own hands and find another package which can do the same job. Having identified a replacement you’d then `remove` package A, `add` package B and make any required code updates (hopefully minimal).
+This might be because the package owner has not yet addressed the security issue. If you have time to wait, you could raise an issue on the package repo on Github asking the maintainer if they’d be willing to address it (or submit a PR containing a fix). If you don’t have the luxury of time, you’ll want to quickly find another package which can do the same job. Having identified a replacement you’d then `remove` package A, `add` package B and make any required code updates (hopefully minimal).
 
-Alternatively this might be because there’s a newer version (or versions) available but:
-1. its number is beyond the allowed range for it specified in your package.json settings; or 
-2. for some reason Dependabot can’t be sure that it wouldn’t break your application.
+Alternatively the package may have a newer version or versions available but Depandabot can’t suggest a fix because:
+1. the closest new version number is beyond the allowed range for the package you specified in package.json; or 
+2. Dependabot can’t be sure that it wouldn’t break your application.
 
-If the package maintainer has released newer versions then you need to decide which to upgrade to. Your first priority is to address the vulnerability, so often you’ll want to minimise upgrade risk by just going for the closest non-vulnerable version. So you might run `yarn upgrade <package…>@1.3.2`. Note also that you may not require specifying a specific version because `package.json` might already specify a semver range which includes your target version, and all that’s required is for you to run `yarn upgrade` or `yarn upgrade  <package>` so that the specific “locked” version (as specified in `yarn.lock`) gets updated. (Note: I need to double-check I’m right with that last bit.)
+If the package maintainer has released newer versions then you need to decide which to upgrade to. Your first priority is to address the vulnerability, so often you’ll want to minimise upgrade risk by just going for the closest non-vulnerable version. So you might run `yarn upgrade <package…>@1.3.2`. Note also that you may not need to specify a specific version because your `package.json` might already specify a semver range which includes your target version, and all that’s required is for you to run `yarn upgrade` or `yarn upgrade  <package>` so that the specific “locked” version (as specified in `yarn.lock`) gets updated. (Note: I need to double-check I’m right with that last bit.)
 
-On other occasions you’ll read your security advisory email and the affected package will sound unfamiliar… and that’s because it’s not one you explicitly installed but rather a _sub-dependency_. Y’see, your dependencies have their own `package.json` (that’s what defines something as a package) and own dependencies, too. 
+On other occasions you’ll read your security advisory email and the affected package will sound completely unfamiliar… likely because it’s not one you explicitly installed but rather a _sub-dependency_. Y’see, your dependencies have their own `package.json` and dependencies, too. It seems almost unfair to have to worry about these too, however sometimes you do.
 
-- your package A which depends on vulnerable package B hasn’t yet released an update which bumps its package B dependency to package’s B patch update
+if your top-level package “A” depends on vulnerable package B and A hasn’t yet released an update which bumps its package B dependency to package’s B patch update
 
 
 Even more confusingly, it might be in a package which appears several times in your lock file’s dependency tree.
