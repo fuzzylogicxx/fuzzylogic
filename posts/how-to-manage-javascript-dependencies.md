@@ -3,7 +3,6 @@ title: How to manage JavaScript dependencies
 description: How to manage JavaScript Dependencies
 date: "2019-10-23T16:58:08.051Z"
 tags: [entry, development, javascript, yarn, npm, nodejs, tooling, howto]
-draft: true
 ---
 Managing JavaScript dependencies is about as much fun as a poke in the eye. However even if—like me—you prefer to keep things [lean](https://leanweb.dev/) where possible, it’s something you’re going to need to do either in large work projects or as your personal side-project grows. In this post I tackle it head-on to reduce the problem to some simple concepts and practical techniques.
 ---
@@ -98,7 +97,7 @@ I wasn’t familar with `dot-prop` but saw that it’s a library that lets you �
 Github was telling me that it couldn’t automatically raise a fix PR, so I had to fix it manually. Here’s what I did.
 
 - looked in `package.json` and found no sign of `dot-prop`;
-- started thinking that it must be a sub-dependency of the packages I had installed, namely `express`, `hbs`, `request` or `nodemon`. 
+- started thinking that it must be a sub-dependency of one or more of the packages I had installed, namely `express`, `hbs`, `request` or `nodemon`. 
 - looked in `package-lock.json` and via a <kbd>Cmd-F</kbd> search for `dot-prop` I found that it appeared twice;
 - the first occurrence was as a top-level element of `package-lock.json`s top-level `dependencies` object. This object lists _all_ of the project’s dependencies and sub-dependencies in alphabetical order, providing for each the details of the _specific version_ that is actually installed and “locked”; 
 - I noted that the installed version of `dot-prop` was `4.2.0`, which made sense in the context of the Github security message;
