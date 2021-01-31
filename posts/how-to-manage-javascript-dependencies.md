@@ -5,7 +5,7 @@ date: "2019-10-23T16:58:08.051Z"
 tags: [entry. development, javascript, yarn]
 draft: true
 ---
-In modern JavaScript applications, we can add tried-and-tested open source libraries and utilities by installing [packages](https://docs.npmjs.com/about-packages-and-modules) from the [NPM registry](https://www.npmjs.com/). This can be helpful by letting you concentrate on your application’s _unique features_ rather than reinventing the wheel for already-solved common tasks.
+In modern JavaScript applications, we can add tried-and-tested open source libraries and utilities by installing [packages](https://docs.npmjs.com/about-packages-and-modules) from the [NPM registry](https://www.npmjs.com/). This can aid development by letting you concentrate on your application’s _unique features_ rather than reinventing the wheel for already-solved common tasks.
 
 We can use a _package manager_ such as yarn or npm to install packages. When our package manager installs a package it lists it as a project _dependency_ which is to say that the project depends upon its presence to function properly. Anyone attempting to run the project should first install its dependencies. And the project owner is responsible for _managing_ its dependencies over time by updating packages to get security updates and stay on the upgrade path, and removing installed packages when they are no longer necessary.
 
