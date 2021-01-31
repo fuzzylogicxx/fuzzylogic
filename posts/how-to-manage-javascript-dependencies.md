@@ -92,7 +92,7 @@ On other occasions you’ll read your security advisory email and the affected p
 
 #### Case Study
 
-Let’s put this into context. A while ago I received the following security notification about a vulnerability affecting a number of my personal repos.
+Let’s put this into context. A while ago I received the following security notification about a vulnerability affecting a side-project repo.
 
 > dot-prop < 4.2.1 “Prototype pollution vulnerability in dot-prop npm package before versions 4.2.1 and 5.1.1 allows an attacker to add arbitrary properties to JavaScript language constructs such as objects.
 
@@ -101,17 +101,17 @@ I wasn’t familar with `dot-prop` but saw that it’s a library that lets you �
 Github was telling me that it couldn’t automatically raise a fix PR, so I had to fix it manually. Here’s what I did.
 
 - looked in `package.json` and found no sign of `dot-prop`;
-- started thinking that it must be a sub-dependency of one or more of the packages I had installed, namely `express`, `hbs`, `request` or `nodemon`. 
+- started thinking that it must be a sub-dependency of one or more of the packages I had installed, namely `express`, `hbs`, `request` or `nodemon`;
 - looked in `package-lock.json` and via a <kbd>Cmd-F</kbd> search for `dot-prop` I found that it appeared twice;
 - the first occurrence was as a top-level element of `package-lock.json`s top-level `dependencies` object. This object lists _all_ of the project’s dependencies and sub-dependencies in alphabetical order, providing for each the details of the _specific version_ that is actually installed and “locked”; 
 - I noted that the installed version of `dot-prop` was `4.2.0`, which made sense in the context of the Github security message;
 - the other occurrence of `dot-prop` was buried deeper within the dependency tree as a dependency of `configstore`;
-- I was able to work backwards and see that `dot-prop` is required by `configstore` then <kbd>Cmd-F</kbd> search for `configstore` to find that it was required by `update-notifier`, which is turn is required by `nodemon`.
-- I had worked my way up to a top-level dependency and worked out that `nodemon` (installed version `1.19.2`) would need updated to a version that had resolved this vulnerability  (if such a version existed); 
-- I then googled “nodemon dot-prop” and found some fairly animated Github issue threads between [Remy](https://twitter.com/remysharp) the maintainer and some users of the package, culminating in [a fix]((https://github.com/remy/nodemon/issues/1682));
-- I checked [nodemon’s releases](https://github.com/remy/nodemon/releases) and ascertained that my only option if sticking with nodemon was to install `v2.0.3`—a new major version. I wouldn’t ideally install a version which might include breaking changes but in this case `nodemon` was just a `devDependency`, not something which should affect other parts of the application, and a developer convenience at that so I went for it safe in the knowledge that I could happily remove this package if necessary. If this was a more important repo and package, I’d have to do plenty of testing;
-- I opened `package.json` and within `devDependencies` updated `"nodemon": "^1.19.4"` to `"nodemon": "^2.0.4"` then ran `npm i nodemon` to apply that update. I was prompted to then run `npm audit fix`, but otherwise, I was done.
-- I pushed then change, checked my Github repo’s security section and noted that the alert (and a few others besides) had disappeared! Job’s a goodun!
+- I was able to work backwards and see that `dot-prop` is required by `configstore` then <kbd>Cmd-F</kbd> search for `configstore` to find that it was required by `update-notifier`, which is turn is required by `nodemon`;
+- I had worked my way up to a top-level dependency `nodemon` (installed version `1.19.2`) and worked out that I would need to update `nodemon` to a version that had resolved the `dot-prop` vulnerability  (if such a version existed); 
+- I then googled “nodemon dot-prop” and found some fairly animated Github issue threads between [Remy](https://twitter.com/remysharp) the maintainer of `nodemon` and some users of the package, culminating in [a fix]((https://github.com/remy/nodemon/issues/1682));
+- I checked [nodemon’s releases](https://github.com/remy/nodemon/releases) and ascertained that my only option if sticking with `nodemon` was to install `v2.0.3`—a new major version. I wouldn’t ideally install a version which might include breaking changes but in this case `nodemon` was just a `devDependency`, not something which should affect other parts of the application, and a developer convenience at that so I went for it safe in the knowledge that I could happily remove this package if necessary. If this was a more important project and package, I’d have to do plenty of testing;
+- I opened `package.json` and within `devDependencies` updated nodemon from `^1.19.4` to `^2.0.4` then ran `npm i nodemon` to apply that update. I was then prompted to run `npm audit fix` which I did, but otherwise, I was done;
+- I pushed the change, checked my Github repo’s security section and noted that the alert (and a few others besides) had disappeared! Job’s a goodun!
 
 ## A note on lock files
 
@@ -120,5 +120,5 @@ As well as `package.json`, you’re likely to also have `yarn.lock` (or `package
 You shouldn’t manually change a lock file.
 
 ## References
-- https://classic.yarnpkg.com/en/docs/yarn-workflow/
-- A [good explanation of the purpose of a lock file](https://www.robertcooper.me/how-yarn-lock-files-work-and-upgrading-dependencies)) (it’s to lock down the exact version to be used (rather than a range like package.json)
+- [Yarn workflow](https://classic.yarnpkg.com/en/docs/yarn-workflow/)
+- [Good explanation of the purpose of a lock file](https://www.robertcooper.me/how-yarn-lock-files-work-and-upgrading-dependencies))
