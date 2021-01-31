@@ -2,10 +2,14 @@
 title: How to manage JavaScript dependencies
 description: How to manage JavaScript Dependencies
 date: "2019-10-23T16:58:08.051Z"
-tags: [entry. development, javascript, yarn]
+tags: [entry, development, javascript, yarn, npm, nodejs, tooling, howto]
 draft: true
 ---
+Managing JavaScript dependencies is about as much fun as a poke in the eye. However even if—like me—you prefer to keep things [lean](https://leanweb.dev/) where possible, it’s something you’re going to need to do whether in work or as your personal side-project grows. So let’s tackle it head on break it down to some simple concepts and practical techniques.
+---
 In modern JavaScript applications, we can add tried-and-tested open source libraries and utilities by installing [packages](https://docs.npmjs.com/about-packages-and-modules) from the [NPM registry](https://www.npmjs.com/). This can aid development by letting you concentrate on your application’s _unique features_ rather than reinventing the wheel for already-solved common tasks.
+
+A common example might be to add [axios](https://www.npmjs.com/package/axios) or [node-fetch](https://www.npmjs.com/package/node-fetch) as a means of making API calls when working in a [Node.js](https://nodejs.org/en/) context.
 
 We can use a _package manager_ such as yarn or npm to install packages. When our package manager installs a package it lists it as a project _dependency_ which is to say that the project depends upon its presence to function properly. Anyone attempting to run the project should first install its dependencies. And the project owner is responsible for _managing_ its dependencies over time by updating packages to get security updates and stay on the upgrade path, and removing installed packages when they are no longer necessary.
 
