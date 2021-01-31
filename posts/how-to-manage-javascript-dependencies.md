@@ -74,7 +74,7 @@ A simple `yarn upgrade` to install the patch version would do the job, however [
 
 Note 1: if you work on a corporate repo that is not set up to “automatically open PRs”, often you can still take advantage of Github’s intelligence with just one or two extra manual steps. Just follow the links in your Github security alert email.
 
-Note 2: Dependabot can also be set to do automatic version updates even when the versions do not have known vulnerabilities. You can do this by [adding a `dependabot.yml` to your repo](https://github.blog/2020-06-01-keep-all-your-packages-up-to-date-with-dependabot/#keep-all-your-dependencies-updated). But so far I’ve tended to avoid unpredictability and excess noise by having it manage security updates only.
+Note 2: Dependabot can also be set to do automatic version updates even when your installed version does not have a vulnerability. You can enable this by [adding a `dependabot.yml` to your repo](https://github.blog/2020-06-01-keep-all-your-packages-up-to-date-with-dependabot/#keep-all-your-dependencies-updated). But so far I’ve tended to avoid unpredictability and excess noise by having it manage security updates only.
 
 ### Manual upgrades
 
