@@ -78,7 +78,7 @@ Note 2: Dependabot can also be set to do automatic version updates even when you
 
 ### Manual upgrades
 
-Sometimes Dependabot can only alert you to an issue but is unable recommend a fix. 
+Sometimes Dependabot will alert you to an issue but is unable to recommend a fix. 
  
 This might be because the package owner has not yet addressed the security issue. If you have time to wait, you could raise an issue on the package repo on Github asking the maintainer (nicely) if they’d be willing to address it… or submit a PR applying the fix for them. If you don’t have the luxury of time, you’ll want to quickly find another package which can do the same job. Having identified a replacement you’d then `remove` package A, `add` package B and make any required code updates (hopefully minimal).
 
