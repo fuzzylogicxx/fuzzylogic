@@ -83,8 +83,8 @@ Sometimes Dependabot will alert you to an issue but is unable to recommend a fix
 This might be because the package owner has not yet addressed the security issue. If the need to fix the sitatation is not super-urgent, you could raise an issue on the package repo on Github asking the maintainer (nicely) if they’d be willing to address it… or submit a PR applying the fix for them. If you don’t have the luxury of time, you’ll want to quickly find another package which can do the same job. Having identified a replacement you’d then `remove` package A, `add` package B and make any required code updates (hopefully minimal).
 
 Alternatively the package may have a newer version or versions available but Depandabot can’t suggest a fix because:
-1. the closest new version number is beyond the allowed range for the package you specified in package.json; or 
-2. Dependabot can’t be sure that it wouldn’t break your application.
+1. the closest new version’s version number is beyond the allowed range you specified in `package.json` for the package; or 
+2. Dependabot can’t be sure that upgrading wouldn’t break your application.
 
 If the package maintainer has released newer versions then you need to decide which to upgrade to. Your first priority is to address the vulnerability, so often you’ll want to minimise upgrade risk by identifying the closest non-vulnerable version. You might then run `yarn upgrade <package…>@1.3.2`. Note also that you may not need to specify a specific version because your `package.json` might already specify a semver range which includes your target version, and all that’s required is for you to run `yarn upgrade` or `yarn upgrade  <package>` so that the specific “locked” version (as specified in `yarn.lock`) gets updated. (Note: I need to double-check I’m right with that last bit.)
 
