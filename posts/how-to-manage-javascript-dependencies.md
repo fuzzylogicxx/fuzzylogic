@@ -115,10 +115,10 @@ Github was telling me that it couldn’t automatically raise a fix PR, so I had 
 
 ## A note on lock files
 
-As well as `package.json`, you’re likely to also have `yarn.lock` (or `package.lock` or `package-lock.json`). As described above, while `package.json` can suggest a semver range for a package, the lock file will lock down the currently installed version.
+As well as `package.json`, you’re likely to also have `yarn.lock` (or `package.lock` or `package-lock.json`). As described above, while `package.json` can suggest a semver range for a package, the lock file will lock down the specific version to be installed.
 
 You shouldn’t manually change a lock file.
 
 ## References
 - [Yarn workflow](https://classic.yarnpkg.com/en/docs/yarn-workflow/)
-- [Good explanation of the purpose of a lock file](https://www.robertcooper.me/how-yarn-lock-files-work-and-upgrading-dependencies))
+- [Good explanation of the purpose of a lock file](https://www.robertcooper.me/how-yarn-lock-files-work-and-upgrading-dependencies)
