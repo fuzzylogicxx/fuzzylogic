@@ -28,14 +28,14 @@ The whole process might go something like this (using [Yarn](https://yarnpkg.com
 ``` js
 // Start installing and managing 3rd-party packages.
 // (only required if your project doesn’t already have a package.json)
-yarn # or npm init
+yarn  // or npm init
 
 // Install dependencies (in a project which already has a package.json)
 // yes, it’s the same yarn command as above.
-yarn # or npm i
+yarn  // or npm i
 
 // Add a 3rd-party library to your project
-yarn add <package…> # or npm i <package…>
+yarn add <package…>   // or npm i <package…>
 
 // Add package but specify a particular version or [semver range](https://devhints.io/semver).
 // It’s often wise to do this to ensure predictable results.
