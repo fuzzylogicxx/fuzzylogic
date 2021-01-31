@@ -48,7 +48,7 @@ yarn remove <package…>
 yarn upgrade <package…>
 yarn upgrade <package…>@^1.3.2
 
-// Update all packages with pending updates
+// Review (in a nice UI) all packages with pending updates, with the option to upgrade them
 yarn upgrade-interactive
 ```
 
