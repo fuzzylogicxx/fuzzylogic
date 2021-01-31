@@ -37,19 +37,22 @@ yarn  // or npm i
 // Add a 3rd-party library to your project
 yarn add <package…>   // or npm i <package…>
 
-// Add package but specify a particular version or [semver range](https://devhints.io/semver).
+// Add package but specify a particular version or semver range
+// https://devhints.io/semver
 // It’s often wise to do this to ensure predictable results.
 yarn add <package…>@^1.3.1
 
 // Remove a package
-// use this rather than manually deleting from package.json because this method updates `yarn.lock` too.
+// use this rather than manually deleting from package.json 
+// because this method updates `yarn.lock` too.
 yarn remove <package…>
 
 // Update one package (optionally to a specific version/range)
 yarn upgrade <package…>
 yarn upgrade <package…>@^1.3.2
 
-// Review (in a nice UI) all packages with pending updates, with the option to upgrade them
+// Review (in a nice UI) all packages with pending updates, 
+// with the option to upgrade whichever you choose
 yarn upgrade-interactive
 ```
 
