@@ -18,30 +18,30 @@ The whole process might go something like this (using [Yarn](https://yarnpkg.com
 <figure>
   
 ``` js
-# Start installing and managing 3rd-party packages.
-# (only required if your project doesn’t already have a package.json)
+// Start installing and managing 3rd-party packages.
+// (only required if your project doesn’t already have a package.json)
 yarn # or npm init
 
-# Install dependencies (in a project which already has a package.json)
-# yes, it’s the same yarn command as above.
+// Install dependencies (in a project which already has a package.json)
+// yes, it’s the same yarn command as above.
 yarn # or npm i
 
-# Add a 3rd-party library to your project
+// Add a 3rd-party library to your project
 yarn add <package…> # or npm i <package…>
 
-# Add package but specify a particular version or [semver range](https://devhints.io/semver).
-# It’s often wise to do this to ensure predictable results.
+// Add package but specify a particular version or [semver range](https://devhints.io/semver).
+// It’s often wise to do this to ensure predictable results.
 yarn add <package…>@^1.3.1
 
-# Remove a package
-# use this rather than manually deleting from package.json because this method updates `yarn.lock` too.
+// Remove a package
+// use this rather than manually deleting from package.json because this method updates `yarn.lock` too.
 yarn remove <package…>
 
-# Update one package (optionally to specific version/range)
+// Update one package (optionally to a specific version/range)
 yarn upgrade <package…>
 yarn upgrade <package…>@^1.3.2
 
-# Update anything needing it
+// Update all packages with pending updates
 yarn upgrade-interactive
 ```
 
@@ -51,10 +51,29 @@ yarn upgrade-interactive
 
 ### Responding to a security vulnerability in a dependency
 
-If you host your source code on GitHub it’s a good idea to enable [Dependabot](https://github.blog/2020-06-01-keep-all-your-packages-up-to-date-with-dependabot/). Essentially Dependabot has your back with regard to any dependencies that need updated. 
-You can configure Dependabot to send automated security updates (NB this is not just for JS, i.e. in a Rails project it might suggest a bump to your Gemfile)
+If you host your source code on GitHub it’s a good idea to enable [Dependabot](https://github.blog/2020-06-01-keep-all-your-packages-up-to-date-with-dependabot/). Essentially Dependabot has your back with regard to any dependencies that need updated. You set it to send you automated security updates by email so that you know straight away if a vulnerability has been detected in one of your project dependencies and requires action. 
 
-The vulnerability might be in a package you installed, but on other occasions might sound unfamiliar due to not affecting a package you explicitly installed but rather a _sub-dependency_. Even more confusingly, it might be in a package which appears several times in your lock file’s dependency tree.
+Helpfully, if you have multiple Github repos and more than one of those include the vulnerable package you also get a round-up email with a message something like “A new security advisory on lodash affects 8 of your repositories” with links to the alert for each repo, letting you manage them all at once.
+
+It’s also worth noting that Dependabot works for a variety of languages and techologies—not just JavaScript—so for example in a Rails project it might email you to suggest bumping a package in your `Gemfile`.
+
+#### Automated upgrades
+
+Sometimes the task is straightforward. The vulnerability is in a package you explicitly installed (so the package name is familiar when you see it) and the owner has already issued a patch release.
+
+A simple `yarn upgrade` to the patch version would do the job, however Dependabot can even take care of that for you! Dependabot can automatically open a new Pull Request containing an update to the relevant dependency (thus addressing the vulnerability) with a PR title like “Bump `lodash` from `4.17.11` to `4.17.19`”. You just need to approve and merge that PR. This is great, really simple and takes care of lots of cases.
+
+Note: even if you work on a corporate repo that is not set up to “automatically open PRs” you can still often take advantage of Github’s intelligence with just one or two extra manual steps by following links included in your Github security alert email.
+
+#### Manual upgrades
+
+Other times Dependabot can’t suggest an automated upgrade. This might be because there’s a newer version available which contains a fix but also a bunch of other stuff and Dependabot can’t be sure that it wouldn’t break your application. Or it might be because the owner hasn’t addressed the vulnerability.
+
+If the owner has not addressed the security issue then you might feel you need to take matters into your own hands and find another package which can do the same job. You’d then `remove` package A, `add` package B and make any required code updates (hopefully minimal).
+
+If the package maintainer has released newer versions then you need to decide which to upgrade to. Your first priority is to address the vulnerability so often you’ll want to minimise upgrade risk by just going for the closest non-vulnerable version. So you might run `yarn upgrade <package…>@1.3.2`. Note also that you may not require specifying a specific version because `package.json` might already specify a semver range which includes your target version, and all that’s required is for you to run `yarn upgrade` or `yarn upgrade  <package>` so that the specific “locked” version (as specified in `yarn.lock`) gets updated. (Note: I need to double-check I’m right with that last bit.)
+
+On other occasions you’ll read your security advisory email and the affected package will sound unfamiliar… and that’s because it’s not one you explicitly installed but rather a _sub-dependency_. Y’see, your dependencies have their own `package.json` (that’s what defines it as a package) and dependencies, too. Even more confusingly, it might be in a package which appears several times in your lock file’s dependency tree.
 
 Often you need to upgrade to a patch version. (To minimise risk you usually want to update to the closest non-vulnerable version)
 This may not require a change to package.json 
