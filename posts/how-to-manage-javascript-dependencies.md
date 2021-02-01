@@ -4,7 +4,7 @@ description: How to manage JavaScript Dependencies
 date: "2019-10-23T16:58:08.051Z"
 tags: [entry, development, javascript, yarn, npm, nodejs, tooling, howto]
 ---
-Managing JavaScript dependencies is about as much fun as a poke in the eye. However even if—like me—you prefer to keep things [lean](https://leanweb.dev/) where possible, it’s something you’re going to need to do either in large work projects or as your personal side-project grows. In this post I tackle it head-on to reduce the problem to some simple concepts and practical techniques.
+Managing JavaScript dependencies is about as much fun as a poke in the eye. However even if—like me—you prefer to keep things [lean](https://leanweb.dev/) and dependency-free as far as possible, it’s something you’re going to need to do either in large work projects or as your personal side-project grows. In this post I tackle it head-on to reduce the problem to some simple concepts and practical techniques.
 ---
 
 In modern JavaScript applications, we can add tried-and-tested open source libraries and utilities by installing [packages](https://docs.npmjs.com/about-packages-and-modules) from the [NPM registry](https://www.npmjs.com/). This can aid development by letting you concentrate on your application’s _unique features_ rather than reinventing the wheel for already-solved common tasks.
