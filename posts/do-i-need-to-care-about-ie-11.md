@@ -41,7 +41,9 @@ Both the question and the required strategy are in reality a little more nuanced
 - should I provide a “non-broken” experience in IE 11?; 
 - does the IE 11 experience need to be the same as the experience on a modern browser?
 
-Let’s address those questions.
+Those questions need to be addressed in order that we fully know how to proceed. 
+
+Here’s how I’d answer them.
 
 ## Should IE 11 remain on my supported browsers list?
 
