@@ -9,19 +9,23 @@ Managing JavaScript dependencies is about as much fun as a poke in the eye. Howe
 
 In modern JavaScript applications, we can add tried-and-tested open source libraries and utilities by installing [packages](https://docs.npmjs.com/about-packages-and-modules) from the [NPM registry](https://www.npmjs.com/). This can aid development by letting you concentrate on your application’s _unique features_ rather than reinventing the wheel for already-solved common tasks.
 
-A typical example might be to add [axios](https://www.npmjs.com/package/axios) or [node-fetch](https://www.npmjs.com/package/node-fetch) to a Node.is project to provide a means of making API calls.
+A typical example might be to add [axios](https://www.npmjs.com/package/axios) or [node-fetch](https://www.npmjs.com/package/node-fetch) to a Node.js project to provide a means of making API calls.
 
-We can use a _package manager_ such as yarn or npm to install packages. When our package manager installs a package it lists it as a project _dependency_ which is to say that the project depends upon its presence to function properly. It then follows that we advise anyone who wants to run the application to first install its dependencies. And the project owner (you and your team) is responsible for _managing_ its dependencies over time by:
+We can use a _package manager_ such as [yarn](https://yarnpkg.com/) or [npm](https://www.npmjs.com/get-npm) to install packages. When our package manager installs a package it logs it as a project _dependency_ which is to say that the project depends upon its presence to function properly. 
+
+It then follows that anyone who wants to run the application should first install its dependencies. 
+
+And it’s the responsibility of the project owner (you and your team) to manage the project’s dependencies over time. This involves:
 
 - updating packages when they release security patches; 
 - maintaining compatibility by staying on package upgrade paths; and
 - removing installed packages when they are no longer necessary for your project.
 
-While it’s important to keep your dependencies updated, in a recent survey by Sonatype [52% of developers said they find dependency management painful](https://www.sonatype.com/resources/white-paper-state-of-the-software-supply-chain-2019). And I have to agree that it’s not something I generally relish. However over the years I’ve gotten used to the process and found some things that work for me, which I’ll note here.
+While it’s important to keep your dependencies updated, in a recent survey by Sonatype [52% of developers said they find dependency management painful](https://www.sonatype.com/resources/white-paper-state-of-the-software-supply-chain-2019). And I have to agree that it’s not something I generally relish. However over the years I’ve gotten used to the process and found some things that work for me.
 
-## Simplified process
+## A simplified process
 
-The whole process might go something like this (using [Yarn](https://yarnpkg.com/)).
+The whole process might go something like this (using [yarn](https://yarnpkg.com/)).
 
 <figure>
   
