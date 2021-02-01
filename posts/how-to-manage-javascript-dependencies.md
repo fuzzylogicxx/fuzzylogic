@@ -68,13 +68,17 @@ If you host your source code on GitHub it’s a great idea to enable [Dependabot
 
 Helpfully, if you have multiple Github repos and more than one of those include the vulnerable package you also get a round-up email with a message something like “A new security advisory on lodash affects 8 of your repositories” with links to the alert for each repo, letting you manage them all at once.
 
-It’s also worth noting that Dependabot works for a variety of languages and techologies—not just JavaScript—so for example in a Rails project it might email you to suggest bumping a package in your `Gemfile`.
+Dependabot also works for a variety of languages and techologies—not just JavaScript—so for example in a Rails project it might email you to suggest bumping a package in your `Gemfile`.
 
 ### Automated upgrades
 
-Sometimes the task is straightforward. The vulnerability is in a package you explicitly installed and the owner has already issued a patch release.
+Sometimes the task is straightforward. The Dependabot alert email tells you about a vulnerability in a package you explicitly installed and the diligent maintainer has already made a patch release available.
 
-A simple `upgrade` to the relevant patch version would do the job, however [Dependabot can even take care of that for you](https://docs.github.com/en/github/managing-security-vulnerabilities/configuring-dependabot-security-updates)! Dependabot can automatically open a new Pull Request containing an update to the relevant dependency (thus addressing the vulnerability) with a PR title like “Bump `lodash` from `4.17.11` to `4.17.19`”. You just need to approve and merge that PR. This is great, really simple and takes care of lots of cases.
+A simple `upgrade` to the relevant patch version would do the job, however [Dependabot can even take care of that for you!](https://docs.github.com/en/github/managing-security-vulnerabilities/configuring-dependabot-security-updates) Dependabot can automatically open a new Pull Request which addresses the vulnerability by updating the relevant dependency. It’ll give the PR a title like
+
+> Bump `lodash` from `4.17.11` to `4.17.19`”
+
+You just need to approve and merge that PR. This is great; it’s really simple and takes care of lots of cases.
 
 Note 1: if you work on a corporate repo that is not set up to “automatically open PRs”, often you can still take advantage of Github’s intelligence with just one or two extra manual steps. Just follow the links in your Github security alert email.
 
@@ -82,9 +86,9 @@ Note 2: Dependabot can also be set to do automatic version updates even when you
 
 ### Manual upgrades
 
-Sometimes Dependabot will alert you to an issue but is unable to recommend a fix. 
+Sometimes Dependabot will alert you to an issue but is unable to fix it for you. Bummer.
  
-This might be because the package owner has not yet addressed the security issue. If the need to fix the sitatation is not super-urgent, you could raise an issue on the package repo on Github asking the maintainer (nicely) if they’d be willing to address it… or submit a PR applying the fix for them. If you don’t have the luxury of time, you’ll want to quickly find another package which can do the same job. Having identified a replacement you’d then `remove` package A, `add` package B and make any required code updates (hopefully minimal).
+This might be because the package owner has not yet addressed the security issue. If your need to fix the situtation is not super-urgent, you could raise an issue on the package’s Github repo asking the maintainer (nicely) if they’d be willing to address it… or even submit a PR applying the fix for them. If you don’t have the luxury of time, you’ll want to quickly find another package which can do the same job. An example here might be that you look for a new CSS minifier package because your current one has a longstanding security issue. Having identified a replacement you’d then `remove` package A, `add` package B, then update your code which previously used package A to make it work with package B. Hopefully only minimal changes will be required.
 
 Alternatively the package may have a newer version or versions available but Depandabot can’t suggest a fix because:
 1. the closest new version’s version number is beyond the allowed range you specified in `package.json` for the package; or 
@@ -113,9 +117,9 @@ Github was telling me that it couldn’t automatically raise a fix PR, so I had 
 1. I was able to work backwards and see that `dot-prop` is required by `configstore` then <kbd>Cmd-F</kbd> search for `configstore` to find that it was required by `update-notifier`, which is turn is required by `nodemon`;
 1. I had worked my way up to a top-level dependency `nodemon` (installed version `1.19.2`) and worked out that I would need to update `nodemon` to a version that had resolved the `dot-prop` vulnerability  (if such a version existed); 
 1. I then googled “nodemon dot-prop” and found some fairly animated Github issue threads between [Remy](https://twitter.com/remysharp) the maintainer of `nodemon` and some users of the package, culminating in [a fix]((https://github.com/remy/nodemon/issues/1682));
-1. I checked [nodemon’s releases](https://github.com/remy/nodemon/releases) and ascertained that my only option if sticking with `nodemon` was to install `v2.0.3`—a new major version. I wouldn’t ideally install a version which might include breaking changes but in this case `nodemon` was just a `devDependency`, not something which should affect other parts of the application, and a developer convenience at that so I went for it safe in the knowledge that I could happily remove this package if necessary. If this was a more important project and package, I’d have to do plenty of testing;
-1. I opened `package.json` and within `devDependencies` updated nodemon from `^1.19.4` to `^2.0.4` then ran `npm i nodemon` to apply that update. I was then prompted to run `npm audit fix` which I did, but otherwise, I was done;
-1. I pushed the change, checked my Github repo’s security section and noted that the alert (and a few others besides) had disappeared! Job’s a goodun!
+1. I checked [nodemon’s releases](https://github.com/remy/nodemon/releases) and ascertained that my only option if sticking with `nodemon` was to install `v2.0.3`—a new major version. I wouldn’t ideally install a version which might include breaking changes but in this case `nodemon` was just a `devDependency`, not something which should affect other parts of the application, and a developer convenience at that so I went for it safe in the knowledge that I could happily remove this package if necessary;
+1. I opened `package.json` and within `devDependencies` manually updated `nodemon` from `^1.19.4` to `^2.0.4`. (If I was in a `yarn` context I’d probably have done this at the command line). I then ran `npm i nodemon` to reinstall the package based on its new version rage which would also update the lock file. I was then prompted to run `npm audit fix` which I did, but otherwise, I was done;
+1. I pushed the change, checked my Github repo’s security section and noted that the alert (and a few others besides) had disappeared. Job’s a goodun!
 
 ## A note on lock files
 
@@ -125,4 +129,5 @@ You shouldn’t manually change a lock file.
 
 ## References
 - [Yarn workflow](https://classic.yarnpkg.com/en/docs/yarn-workflow/)
+- [Semver cheatsheet](https://devhints.io/semver)
 - [Good explanation of the purpose of a lock file](https://www.robertcooper.me/how-yarn-lock-files-work-and-upgrading-dependencies)
