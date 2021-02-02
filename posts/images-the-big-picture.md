@@ -187,6 +187,11 @@ img[height] {
 
 NB these problems might go away in future if another means of providing the image’s aspect ratio becomes available, but until then, they’re real.
 
+(
+LH: Check this https://web.dev/aspect-ratio/ and see if any insights, not just re. aspect-ratio.
+But note that I think una might be wrong in intimating that using aspect-ratio (alone) fixes the “tell the browser to reserve space before image has downloaded issue”. See Jen S’s reply to me https://twitter.com/fuzzylogicx/status/1347307685826469894)
+)
+
 ## Pros and cons of large images
 
 I’d like to quickly take stock.
@@ -489,6 +494,6 @@ https://www.youtube.com/watch?app=desktop&feature=youtu.be&v=5CZyxnCdXuk
 
 MDN say “The object-fit CSS property sets how the content of a replaced element, such as an <img> or <video>, should be resized to fit its container. You can alter the alignment of the replaced element's content object within the element's box using the object-position property.”
 
-So in summary: object-fit *resizes* an image to *fit*
+So in summary: object-fit *resizes* an object (e.g. an image) to *fit*
 
 -->
