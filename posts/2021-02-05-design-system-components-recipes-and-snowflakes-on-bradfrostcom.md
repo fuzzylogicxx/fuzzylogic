@@ -6,8 +6,6 @@ tags: [link, web, development, components, designsystems, composition]
 linkTarget: "https://bradfrost.com/blog/post/design-system-components-recipes-and-snowflakes/"
 ---
 An excellent article from Brad Frost in which he gives us some vocabulary for separating context-agnostic components intended for maximal use from specific variants and one-offs.
-
-> This structure embraces the notion of composition (React talks about this a lot). In our design systems, our Card components are incredibly basic. They are basically boxes that have slots for a CardHeader, CardBody, and CardFooter. 
 ---
 
 In light of some recent conversations at work, this was in equal measure interesting, reassuring, and thought-provoking.
