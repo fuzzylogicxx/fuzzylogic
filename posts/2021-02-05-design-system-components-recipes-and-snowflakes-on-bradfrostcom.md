@@ -18,7 +18,7 @@ On the surface, a design system and process can seem generally intuitive but in 
 - should we enshrine a rule that even though something might be appropriate to be built as a component in programming terms under-the-hood, if it’s not a reusable thing then it doesn’t also need to be a Design System component?
 - isn’t it better for components to be really _simple_ because the less opinionated one is, the more reusable it is, therefore the more we can build things by composition?
 
-Brad’s article last night kind of felt like it was speaking to me!
+When I read Brad’s article last night it kind of felt like it was speaking to many of those questions directly!
 
 Some key points he makes:
 
