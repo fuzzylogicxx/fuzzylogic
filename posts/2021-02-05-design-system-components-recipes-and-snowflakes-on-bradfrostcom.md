@@ -22,7 +22,7 @@ When I read Brad’s article last night it kind of felt like it was speaking to 
 
 Some key points he makes:
 
-- If in doubt: everything should be a component (in design system terms)
+- If in doubt: everything should be a component
 - The key thing is that the only ones you should designate as “Design System Components” are the ones for maximal reuse which are content and context-agnostic.
 - After that you have 1) Recipes—specific variants which are composed of existing stuff for a specific purpose rather than being context-agnostic; and 2) Snowflakes (the one-offs).
 
