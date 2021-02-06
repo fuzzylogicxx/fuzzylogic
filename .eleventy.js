@@ -166,6 +166,7 @@ module.exports = function(eleventyConfig) {
     const cloudinaryBase = `https://res.cloudinary.com/${eleventyConfig.cloudinaryCloudName}/image/upload/`;
     var cloudinaryImgPath = src.replace(cloudinaryBase, '');
     return `<img
+    class="img-full-parent-width"
     srcset="${srcsetWidthRange
       .map(w => {
         return `${cloudinaryBase}q_auto,f_auto,w_${w}/${cloudinaryImgPath} ${w}w`;

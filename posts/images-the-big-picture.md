@@ -158,17 +158,17 @@ To solve both of the above challenges, we can apply some CSS.
 
 ```css
   /*
-  Ensures aspect ratio is respected when image
-  is being scaled responsively
-  (e.g. when max-width: 100% is triggered)
-  while doing no harm if image is fixed.
+  Ensure correct aspect ratio is preserved when
+  max-width: 100% is triggered and image
+  has the HTML height attribute set,
+  while doing no harm otherwise.
   */
 img[height] {
   height: auto;
 }
 
   /*
-  Ensure an image is 100% parent-width even if it
+  Make an image 100% parent-width even if it
   has a 'width' attribute
   set to something narrower.
   */
