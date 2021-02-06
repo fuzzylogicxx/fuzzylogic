@@ -1,6 +1,6 @@
 ---
 title: "Images on the web: the big picture"
-description: In modern web development there are a brain-frazzling number of
+description: In modern web development there are a bamboozling number of
   different ways to include an image on a web page. In this post I step through
   these methods, discussing how they evolved and where they are appropriate.
 date: 2020-12-09 11:30:00
@@ -12,13 +12,27 @@ tags:
 permalink: /posts/images-on-the-web-the-big-picture/
 draft: true
 ---
-In modern web development there are a brain-frazzling number of ways to include an image on a web page. In this post I step through the various approaches, discussing how they evolved and try to unpick where they are appropriate.
+In modern web development there are a bamboozling number of ways to structure and style an image on a web page. In this post I step through the various approaches, discuss how they evolved and try to unpick where they are appropriate.
 
 ## Scope
 
 This article is primarily about the HTML `img` element. I might mention CSS background images at some point, but by and large I’m focusing on images as _content_ rather than decoration.
 
-Similarly I probably won’t mention _icons_ at all – I see them as a separate issue too – and I recommend you use inline SVG for those.
+Similarly I probably won’t mention _icons_ at all. I see them as a separate issue too and I recommend you use inline SVG rather than any image-based approach for those.
+
+## Terminology
+
+### Replaced element
+
+The image element is a replaced element which means that the element is replaced by the resource pointed to by its `src` attribute.
+
+### Aspect Ratio
+
+You get an image’s aspect ratio by dividing its width by its height.
+
+An image which is 160px wide × 90px tall can be represented as 16:9, or 1.777.
+
+It’s important to state that aspect ratio is an _intrinsic_ characteristic of an image – i.e. it is “part of the image” – therefore outside of our control as developers. We can apply _extrinsic_ settings which change the dimensions of the rendered image on our web page, however its aspect ratio was determined when the image was originally created and cropped.
 
 ## Assumptions
 
@@ -43,16 +57,6 @@ img {
 
 </figure>
 
-## Terminology
-
-### Aspect Ratio
-
-You get an image’s aspect ratio by dividing its width by its height.
-
-An image which is 160px wide × 90px tall can be represented as 16:9, or 1.777.
-
-It’s important to state that aspect ratio is an intrinsic characteristic of an image therefore outside of our control as developers. It is determined when the image was originally created and cropped.
-
 ## A basic image
 
 Let’s start by going back to basics. I can include an image on a web page like so:
@@ -74,6 +78,8 @@ Narrow and static images like this now feel pretty old-school. In these days sin
 However I still occasionally encounter use cases for displaying a relatively narrow image _as-is_.
 
 Sticking with the above book image example, given its aspect ratio you probably wouldn’t want it to be full-column-width on anything other than the narrowest screens simply because of how tall it could become at the expense of the reading experience. You might also be loading your images from a third party bookshop with which you have an affiliate scheme, and therefore have little control over file size and other factors influencing performance and responsive behaviour. As such you might do well to just keep it simple by loading a sensibly-sized thumbnail.
+
+See also [this figure illustrating a simple database schema](https://railstutorial.org/book/toy_app#sec-modeling_demo_microposts) on the _Ruby on Rails Tutorial_ website. On wide viewports, the author’s preference is to simply display the image at its natural, small size and centre it, rather than blowing it up unnecessarily.
 
 In summary, there remain times when you might need a narrow, fixed-size image.
 
@@ -181,6 +187,11 @@ img[height] {
 
 NB these problems might go away in future if another means of providing the image’s aspect ratio becomes available, but until then, they’re real.
 
+(
+LH: Check this https://web.dev/aspect-ratio/ and see if any insights, not just re. aspect-ratio.
+But note that I think una might be wrong in intimating that using aspect-ratio (alone) fixes the “tell the browser to reserve space before image has downloaded issue”. See Jen S’s reply to me https://twitter.com/fuzzylogicx/status/1347307685826469894)
+)
+
 ## Pros and cons of large images
 
 I’d like to quickly take stock.
@@ -255,6 +266,20 @@ Following on from the previous section…
 In his fantastic series [Responsive Images 101](https://cloudfour.com/thinks/responsive-images-101-definitions/) Jason Grigsby defines Responsive Images as:
 
 > A method for providing the browser with multiple image sources depending on display density, size of the image element in the page, or any number of other factors.
+
+## Using new CSS on images
+
+On [Picalilli](https://piccalil.li/quick-tip/use-css-clamp-to-create-a-more-flexible-wrapper-utility) Andy Bell uses the CSS `min` function “for setting sensible image sizes” in his blog posts. The image gets a `max-width` of either 100% or 55rem, whichever is smaller. That means it’ll never overflow the container, and on wide screens it’ll not stretch too wide.
+
+<figure>
+
+```
+.post figure img {
+    max-width: min(55rem,100%);
+}
+```
+
+</figure>
 
 ### Automate with a 3rd party tool
 
@@ -469,6 +494,6 @@ https://www.youtube.com/watch?app=desktop&feature=youtu.be&v=5CZyxnCdXuk
 
 MDN say “The object-fit CSS property sets how the content of a replaced element, such as an <img> or <video>, should be resized to fit its container. You can alter the alignment of the replaced element's content object within the element's box using the object-position property.”
 
-So in summary: object-fit *resizes* an image to *fit*
+So in summary: object-fit *resizes* an object (e.g. an image) to *fit*
 
 -->

@@ -1,13 +1,16 @@
 ---
-title: JavaScript organisation with ES6 modules
+title: JavaScript organisation and strategies with ES6 modules
 description: JavaScript organisation with ES6 modules
 date: 2019-12-05T21:45:00.000Z
 mainImage.isAnchor: false
 draft: true
 ---
-If you’ve been writing JavaScript which includes other JS code on-demand (y’know, `import` or `require`) the chances are you were either working outside the browser with Node.js or on a web application where a bundler compiles ECMAScript `import` and `export` down to ES5 code for browsers. However since Spring 2017, ES modules work _natively_ in all modern browsers. That means an HTML file can use `<script type="module">` to include a script which uses ES modules. This, however, is where things get complicated, with many factors to consider and many competing opinions on best practice.
+It’s beneficial for any non-trivially sized JavaScript codebase to be organised into small, maintainable “modules” rather than monolithic files. To date, though, the ability to write JavaScript which includes other JS code on-demand (y’know, using `import` or `require`) has been confined to non-browser contexts with Node.js and web applications which include a _bundler_ with a transpilation step that compiles ES6 `import` and `export` down to ES5 code a web browser can work with. 
 
-- https://gomakethings.com/why-combine-javascript-files/ (“f you’re using imports (either CSS or JS) for dependency management, even if you have HTTP/2 enabled you should still combine your files for performance reasons.”)
+However in Spring 2017, ES6 module functionality became available _natively_ in all modern browsers. With `<script type="module">` an HTML page can include a script which uses `import` and `export`. The question of “should we use it?” is another matter; it’s complicated, with a variety of factors to consider and many competing opinions regarding best practice.
+
+- Heydon Making Future Interfaces https://www.youtube.com/watch?v=dAIckpwW9ds
+- https://gomakethings.com/why-combine-javascript-files/ (“if you’re using imports (either CSS or JS) for dependency management, even if you have HTTP/2 enabled you should still combine your files for performance reasons.”)
 - https://www.rollupjs.org/guide/en/
 - https://blog.logrocket.com/benchmarking-bundlers-2020-rollup-parcel-webpack/
 - https://philipwalton.com/articles/using-native-javascript-modules-in-production-today/
@@ -28,11 +31,21 @@ Note: script type=module does not work in IE.
 
 ES modules let us _split up_ our client-side JavaScript code into separate files making it, well, _modular_. This helps us make large or complex applications more maintainable, robust and scalable. 
 
+It also keeps modules within their own scope so no chance of leaks or clashes.
+
 ## Competing philosophies/options
 
+- “Don’t do it” https://medium.com/@david.gilbertson/es6-modules-in-the-browser-are-they-ready-yet-715ca2c94d09. He says:
+-- because while the benefits are: i) it’s vanilla JS; and ii) you don’t need a build pipeline, so your application will much be less complex.
+-- the downsides are you give up: i)  minified output (or at least would need to set up a toolchain for it so why not bundle too then?); the ability to write super-modern JavaScript (like the optional chaining operator), likewise non-JavaScript syntax (React, TypeScript, etc.), npm modules, and you lose improved performance via hash-in-filename-based caching (you’d need to move to header-based with ETags); ii) 
+-- instead he suggests just bundling, and he uses Parcel. 
 - At the lean / progressive-enhancement end: 
--- Use ES6 modules natively and stop using module bundlers like Webpack (https://formidable.com/blog/2019/no-build-step/). We don’t even need `node_modules` because we can get npm packages (in es6 rather than CommonJS versions) elsewhere (e.g. from CDNs).
-- Use `<script type="module">` and `<script nomodule="true">` in combination. Take advantage of the fact that `type="module"` support also means modern JS support to safely include only modern code for modern browsers (`async/await` etc), and avoid shipping the weight of workarounds and polyfills to browsers that don’t need it. Use `<script nomodule="true">` for fallback code. One or other script will be used but not both. Set up your bundler to output both scripts automatically from your single codebase.
+-- Heydon
+--- use ES6 modules natively using script type=module. This means you don’t need to mess around with bundlers, transpilers etc
+--- if you really need to, you could also create a script including polyfills and transpiled JS, and include using `script nomodule`
+-- slight variant: Use `<script type="module">` and `<script nomodule="true">` in combination. Take advantage of the fact that `type="module"` support also means modern JS support to safely include only modern code for modern browsers (`async/await` etc), and avoid shipping the weight of workarounds and polyfills to browsers that don’t need it. Use `<script nomodule="true">` for fallback code. One or other script will be used but not both. Set up your bundler to output both scripts automatically from your single codebase.
+-- Luke Jackson https://formidable.com/blog/2019/no-build-step/
+--- Use ES6 modules natively and stop using module bundlers like Webpack. We don’t even need `node_modules` because we can get npm packages (in es6 rather than CommonJS versions) elsewhere (e.g. from CDNs).
 - Phillip Walton: "You should deploy native JavaScript modules". Use a bundler (e.g. Rollup), setting "modules" as output format (https://philipwalton.com/articles/using-native-javascript-modules-in-production-today/)
 -- Use a bundler, but make sure your output format is ES2015 modules
 -- Code-split aggressively (all the way down to the node package if possible)
@@ -40,7 +53,7 @@ ES modules let us _split up_ our client-side JavaScript code into separate files
 -- Use a polyfill to support browsers that don’t support dynamic import()
 -- Use <script nomodule> to support browsers that don’t support modules at all
 - Use ES6 modules but don’t include natively. Instead bundle (inc outputting as ES5) because of the benefits bundlers bring vis-a-vis performance and outputting code for old browsers. Include your built output using a standard `<script>` rather than `<script type="module">`.
-- Don’t do it. https://medium.com/@david.gilbertson/es6-modules-in-the-browser-are-they-ready-yet-715ca2c94d09
+
 
 
 ## Performance

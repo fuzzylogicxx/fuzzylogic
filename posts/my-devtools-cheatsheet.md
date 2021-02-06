@@ -26,6 +26,10 @@ Then you can execute its methods or inspect its attribute values, for example:
 
 <kbd>$0.offsetParent</kbd>
 
+## Pause JavaScript execution
+
+<kbd>Cmd + backslash</kbd>
+
 ## Firefox
 
 ### Get responsive `img` element’s `currentSrc`
