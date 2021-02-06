@@ -97,11 +97,34 @@ footer, header, hgroup, menu, nav, section {
 
 img {
   display: block;
-  width: 100%; // grow and shrink in a RWD-stylee
-  height: auto;
+
+  // make images responsive by ensuring they don’t overflow their container.
+  // Now the image’s width will match one of three values:
+  // 1. Its own intrinsic/natural width, based on the file data; OR
+  // 2. An explicit HTML width attribute value, if present; OR
+  // 3. The width of the horizontal space afforded by the container element
+  max-width: 100%;
+
+  //width: 100%; // grow and shrink in a RWD-stylee
+  //height: auto;
 
   // normalize.css says "Remove the border on images inside links in IE 10."
   border-style: none;
+}
+
+/*
+Ensure correct aspect ratio is preserved when
+max-width: 100% is triggered and image
+has the HTML height attribute set,
+while doing no harm otherwise.
+*/
+img[height] {
+  height: auto;
+}
+
+/* ensure an image is 100% parent-width even if it has a width attribute (present for performance reasons) set to something narrower */
+.img-full-parent-width {
+  width: 100%;
 }
 
 
