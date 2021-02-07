@@ -2,6 +2,7 @@
 title: My Ruby and Rails Cheatsheet
 description: My Ruby and Rails Cheatsheet
 date: 2019-12-13T15:07:34.165Z
+pageSpecificRobotsDirective: "noindex, nofollow"
 mainImage.isAnchor: false
 tags:
   - ruby
