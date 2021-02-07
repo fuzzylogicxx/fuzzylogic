@@ -193,7 +193,7 @@ expect(rendered_component).to have_css(".fe-CardV2", text: "Content")
 
 The above two lines really just construct a “string” of the component and let you test for the presence of things in it.
 
-## rendering HTML
+## Rendering HTML
 
 We have the `content_tag` helper method for rendering HTML elements. However you are arguably just as well coding the actual HTML rather than bothering with it, especially for the likes of `div` and `span` elements.
 
