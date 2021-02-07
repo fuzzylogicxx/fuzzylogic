@@ -10,6 +10,14 @@ tags:
   - lighthouse
 draft: true
 ---
+## Updated version started in Feb 2020
+
+Started by branching off and cleaning out everything (except `.git` and `.gitignore`).
+
+Added [11ty-base-blog](https://github.com/11ty/eleventy-base-blog). I wanted to get up to date with the latest version of 11ty and bring in examples of the latest 11ty goodness (navigation etc).
+
+
+
 ## Winter 2020 website refresh, Part #1
 
 Started by branching off and cleaning out everything (except `.git`).
