@@ -58,7 +58,7 @@ ALLOWED_SIZES = [nil, :medium, :large].freeze
 
 ## ViewComponents
 
-ViewComponents are just controllers that are not accessing the db.
+[ViewComponents](https://viewcomponent.org/) (specifically the `my_component.rb` file) are just controllers which do not access the database.
 
 They use _constructors_ like the following:
 
@@ -75,13 +75,13 @@ end
 
 </figure>
 
-Not that you would never include a constructor in a _Rails_ controller or model.
+(Note that you would never include a constructor in a _Rails_ controller or model.)
 
 ## Instance variables
 
 In the previous example `@size` is an `instance variable`. 
 
-These are available to an instance of the controller and private to the component.
+These are available to an instance of the controller (i.e. the ViewComponent) and private to the component.
 
 ### Making instance variables publicly available
 
@@ -113,11 +113,11 @@ end
 
 ### Naming conventions
 
-The convention I have worked with is that any method that returns a `boolean` should end with a question mark. This saves having to add prefixes like “is-” to method names. Conversely if a method does not return a boolean, its name should not end with a question mark.
+The convention I have worked with is that any method that returns a `boolean` should end with a question mark. This saves having to add prefixes like “is-” to method names. If a method does not return a boolean, its name should not end with a question mark.
 
 ### Named Parameters
 
-Here’s an example of using _named parameters_. This means that when the method is called (in this case when the ViewComponent is instantiated), none of the parameters are mandatory.
+Here’s an example of using _named parameters_. When this method is called (or in this case when the ViewComponent is instantiated), none of the parameters are mandatory.
 
 <figure>
   
@@ -137,7 +137,7 @@ The shovel operator (`<<`) lets you add elements to an array. Here’s an exampl
 def classes
   classes = []
   classes << "card--#{size}" if size
-  classes << "u-flexGrow--1" if full_height
+  classes << "card--tall" if full_height
   classes.join(" ")
 end
 ```
@@ -161,12 +161,6 @@ The `do…end` structure in Ruby is called a “block”, and more specifically 
 ```
 
 </figure>
-
-
-
-    - Line 46 expect {
-        - Should be a do…end because it’s a multiline block
-
 
 Blocks are essentially methods (functions).
 
