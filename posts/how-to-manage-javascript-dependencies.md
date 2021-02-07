@@ -123,7 +123,7 @@ Github was telling me that it couldn’t automatically raise a fix PR, so I had 
 
 ## A note on lock files
 
-As well as `package.json`, you’re likely to also have `yarn.lock` (or `package.lock` or `package-lock.json`). As described above, while `package.json` can suggest a semver range for a package, the lock file will lock down the specific version to be installed.
+As well as `package.json`, you’re likely to also have `yarn.lock` (or `package.lock` or `package-lock.json`) under source control too. As described above, while `package.json` can be less specific about a package’s version and suggest a semver range, the lock file will lock down the specific version to be installed by the package manager when someone runs `yarn` or `npm install`.
 
 You shouldn’t manually change a lock file.
 
