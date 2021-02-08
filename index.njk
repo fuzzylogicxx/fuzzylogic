@@ -1,15 +1,11 @@
 ---
 layout: layouts/home.njk
+title: Hi, I’m Laurence.
 eleventyNavigation:
   key: Home
   order: 1
 ---
 
-{% set maxPosts = collections.posts.length | min(3) %}
-<h1>Latest {% if maxPosts == 1 %}Post{% else %}{{ maxPosts }} Posts{% endif %}</h1>
+<p class="no-hyphens">I’m a Glaswegian web developer creating responsive websites which balance design, technology and accessibility. I also make music, play records and ping pongs. This is my online home, where I experiment with code and share thoughts on the web, music and more.</p>
 
-{% set postslist = collections.posts | head(-3) %}
-{% set postslistCounter = collections.posts | length %}
-{% include "postslist.njk" %}
-
-<p>More posts can be found in <a href="{{ '/posts/' | url }}">the archive</a>.</p>
+<a href="{{ '/posts/' | url }}">Browse more posts</a>
