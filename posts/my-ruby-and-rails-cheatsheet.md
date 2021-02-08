@@ -12,7 +12,7 @@ tags:
   - cheatsheet
 draft: false
 ---
-I’m no Ruby engineer however even as a front-end developer I’m sometimes called to work on [Rails](https://rubyonrails.org/) applications that require me to know my way around. Here are my notes and reminders. 
+I’m no Ruby engineer however even as a front-end developer I’m sometimes called upon to work on [Rails](https://rubyonrails.org/) applications that require me to know my way around. Here are my notes and reminders. 
 ---
 
 This is not intended to be an authoritative guide but merely my notes from various lessons. It’s also a work-in-progress and a living, changing document.
@@ -47,7 +47,7 @@ ALLOWED_SIZES = [nil, :medium, :large]
 
 </figure>
 
-Interestingly it’s only the array itself that’s constant, not the elements. My understanding is that while the array itself is constant, the elements can still be added to or removed which we don’t want. The following would be better because it locks things down which is likely what we want.
+Interestingly while the constant cannot be redefined later—i.e. it could not later be set to something other than an array—elements can still be added or removed. We don’t want that here. The following would be better because it locks things down which is likely what we want.
 
 <figure>
   
