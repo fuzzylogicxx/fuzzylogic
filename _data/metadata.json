@@ -1,20 +1,20 @@
 {
-  "title": "Your Blog Name",
-  "url": "https://example.com/",
-  "description": "I am writing about my experiences as a naval navel-gazer.",
+  "title": "Fuzzy Logic",
+  "url": "https://fuzzylogic.me/",
+  "description": "Fuzzy Logic is the personal website of Laurence Hughes, a web developer based in Glasgow, Scotland",
   "feed": {
-    "subtitle": "I am writing about my experiences as a naval navel-gazer.",
+    "subtitle": "Fuzzy Logic is the personal website of Laurence Hughes, a web developer based in Glasgow, Scotland.",
     "filename": "feed.xml",
     "path": "/feed/feed.xml",
-    "id": "https://example.com/"
+    "id": "https://fuzzylogic.me/"
   },
   "jsonfeed": {
     "path": "/feed/feed.json",
-    "url": "https://example.com/feed/feed.json"
+    "url": "https://fuzzylogic.me/feed/feed.json"
   },
   "author": {
-    "name": "Your Name Here",
-    "email": "youremailaddress@example.com",
-    "url": "https://example.com/about-me/"
+    "name": "Laurence Hughes",
+    "email": "laurence@fuzzylogic.me",
+    "url": "https://example.com/about/"
   }
 }
