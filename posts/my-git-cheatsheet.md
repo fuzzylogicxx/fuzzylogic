@@ -327,6 +327,19 @@ git pull
 ```
 
 </figure>
+
+Delete local branch:
+
+<figure>
+  
+```
+git branch -d name_of_branch
+
+# need to force it because of some merge issue or similar?
+git branch -D name_of_branch
+```
+
+</figure>
   
 ## Save changes temporarily
 
@@ -491,6 +504,19 @@ git log --author=Demaree --grep=heroku --oneline Gemfile
 
 </figure>
   
+Show changes that occurred in the most recent commit or a given commit.
+
+<figure>
+  
+```
+git show
+
+# show changes in a given commit
+git show 591672e
+```
+
+</figure>
+
 Review differences between staged changes and last commit:
 
 <figure>
