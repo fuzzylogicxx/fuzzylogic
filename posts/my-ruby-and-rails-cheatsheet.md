@@ -208,6 +208,60 @@ If you have logic you need to use in a view, this would tend to live in a _helpe
 
 You might create a method such as `allowed_to?` for purposes of authorisation.
 
+
+## Start (local) Rails server
+
+Note: the following is shorthand for `bin/rails server -b 0.0.0.0`.
+
+<figure>
+  
+``` bash
+rails s
+```
+
+</figure>
+
+## Miscellaneous
+
+Use Ruby to create a local web server.
+
+<figure>
+  
+``` bash
+# to serve your site at localhost:5000 run this in the project’s document root
+ruby -run -e httpd . -p 5000
+```
+
+</figure>
+
+## Web fonts: where to place them and how to access them
+
+See https://gist.github.com/anotheruiguy/7379570.
+
+## The Database 
+
+Reset/wipe the database.
+
+<figure>
+  
+``` bash
+bundle exec rake db:reset
+```
+
+</figure>
+
+## Test ViewComponent on Rails console
+
+<figure>
+  
+``` bash
+view = ActionView::Base.new
+view.render(CardComponent.new)
+view.render(CardComponent.new)
+```
+
+</figure>
+
 ## References
 
 - [ViewComponent by GitHub](https://viewcomponent.org/)
