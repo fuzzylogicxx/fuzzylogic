@@ -15,16 +15,24 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.addLayoutAlias("post", "layouts/post.njk");
 
+  /*
+  * Convert date to a human-readable string.
+  */
   eleventyConfig.addFilter("readableDate", dateObj => {
     return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat("dd LLL yyyy");
   });
 
-  // https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
+  /*
+  * Convert date to the appropriate format for HTML "time" (etc) attributes, and XML sitemaps.
+  * https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
+  */
   eleventyConfig.addFilter('htmlDateString', (dateObj) => {
     return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat('yyyy-LL-dd');
   });
 
-  // Get the first `n` elements of a collection.
+  /*
+  * Get the first `n` elements of a collection.
+  */
   eleventyConfig.addFilter("head", (array, n) => {
     if( n < 0 ) {
       return array.slice(n);
@@ -33,10 +41,21 @@ module.exports = function(eleventyConfig) {
     return array.slice(0, n);
   });
 
+  /*
+  * Given an array of numbers, return the lowest.
+  * Useful for saying “Latest X posts” where X will be
+  * one of a) a limit you pass; or b) the number of existing posts
+  * if that number is lower than the limit.
+  */
   eleventyConfig.addFilter("min", (...numbers) => {
+    console.log(numbers);
     return Math.min.apply(null, numbers);
   });
 
+  /*
+  * Create "tagList" collection (so it can be iterated on the “Tags” page etc).
+  * Exclude the tags with generic names such as "post" and "all".
+  */
   eleventyConfig.addCollection("tagList", function(collection) {
     let tagSet = new Set();
     collection.getAll().forEach(function(item) {

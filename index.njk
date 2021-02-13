@@ -8,4 +8,11 @@ eleventyNavigation:
 
 <p class="no-hyphens">I’m a Glaswegian web developer creating responsive websites which balance design, technology and accessibility. I also make music, play records and ping pongs. This is my online home, where I experiment with code and share thoughts on the web, music and more.</p>
 
+{% set maxPosts = collections.posts.length | min(5) %}
+<h1>Latest {% if maxPosts == 1 %}Post{% else %} Posts{% endif %}</h1>
+
+{% set postslist = collections.posts | head(-3) %}
+{% set postslistCounter = collections.posts | length %}
+{% include "postslist.njk" %}
+
 <a href="{{ '/posts/' | url }}">Browse more posts</a>
