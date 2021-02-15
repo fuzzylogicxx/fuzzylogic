@@ -189,7 +189,7 @@ NB these problems might go away in future if another means of providing the imag
 
 (
 LH: Check this https://web.dev/aspect-ratio/ and see if any insights, not just re. aspect-ratio.
-But note that I think una might be wrong in intimating that using aspect-ratio (alone) fixes the “tell the browser to reserve space before image has downloaded issue”. See Jen S’s reply to me https://twitter.com/fuzzylogicx/status/1347307685826469894)
+But note that I think Una might be wrong in intimating that using aspect-ratio (alone) fixes the “tell the browser to reserve space before image has downloaded issue”. See Jen S’s reply to me https://twitter.com/fuzzylogicx/status/1347307685826469894)
 )
 
 ## Pros and cons of large images
@@ -258,6 +258,10 @@ Here, we’re setting a sensible height for each logo. We’re then fitting (or 
 ### Dictate the aspect ratio “frame”
 
 Following on from the previous section…
+
+Talk about Every layout’s Frame.
+
+Then, that we can now use (as a prog.enh) CSS `aspect-ratio` to set the aspect ratio of a frame without needing to do the maths ourselves. Reference _Smol Aspect Ratio Gallery_ section on https://smolcss.dev/
 
 
 
@@ -367,7 +371,7 @@ Here’s what I’m using:
 
 ## Further thoughts and questions
 
-I’m temptated to _always_ use a frame (even when the image’s own aspect ratio fits the bill) so that the frame container (rather than the image) takes up the required space therefore I don’t need to include `width` and `height` HTML attributes and CSS to override them. I’m reluctanct though as I like using native standards where possible.
+I’m temptated to _always_ use a frame (even when the image’s own aspect ratio fits the bill) so that the frame container (rather than the image) takes up the required space therefore I don’t need to include `width` and `height` HTML attributes and CSS to override them. I’m reluctant though as I like using native standards where possible.
 
 ## What have I missed?
 
