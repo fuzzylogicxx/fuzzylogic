@@ -5,7 +5,7 @@ description: "The Great Divide is real: here, Brad Frost proposes some role defi
 tags: [link, web, roles, frontend, development, css, javascript]
 linkTarget: "https://bradfrost.com/blog/post/front-of-the-front-end-and-back-of-the-front-end-web-development/"
 ---
-[The Great Divide](https://css-tricks.com/the-great-divide/) is real: here, Brad Frost proposes some role definitions.
+[The Great Divide](https://css-tricks.com/the-great-divide/) between so-called front-end developers is real! Here, Brad Frost proposes some modern role definitions.
 
 > A definition: A front-of-the-front-end developer is a web developer who specializes in writing HTML, CSS, and presentational JavaScript code.
 
