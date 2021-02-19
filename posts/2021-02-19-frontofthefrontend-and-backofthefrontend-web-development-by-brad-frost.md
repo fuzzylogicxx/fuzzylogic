@@ -14,8 +14,8 @@ linkTarget: "https://bradfrost.com/blog/post/front-of-the-front-end-and-back-of-
 
 Brad also offers:
 
-> A succinct way Iâve framed the split is that a front-of-the-front-end developer determines the look and feel of a button, while a back-of-the-front-end developer determines what happens when that button is clicked.
+> A succinct way I’ve framed the split is that a front-of-the-front-end developer determines the look and feel of a button, while a back-of-the-front-end developer determines what happens when that button is clicked.
 
-Iâm not sure I completely agree with his definitionsâI see a bit more nuance in it. Then again, maybe Iâm biased by my own career experience. Iâm _sort-of_ a FOTFE developer, but one who has always (and continues to) do BOFTFE and actual back-end work.
+I’m not sure I completely agree with his definitions—I see a bit more nuance in it. Then again, maybe I’m biased by my own career experience. I’m _sort-of_ a FOTFE developer, but one who has also always done both BOFTFE and “actual” back-end work (building Laravel applications, or working in Ruby on Rails etc).
 
 I like the fact that we are having this discussion, though. The expectations on developers are too great and employers and other tech people need to realise that.
