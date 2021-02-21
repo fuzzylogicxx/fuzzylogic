@@ -144,7 +144,7 @@ As well as `package.json`, you’re likely to also have `yarn.lock` (or `package
 
 You shouldn’t manually change a lock file.
 
-## Upgrading Best Practices
+## Upgrading best practices
 
 - Check the package CHANGELOG or releases on Github to see what has changed between versions and if there have been any breaking changes (especially when upgrading to the latest version).
 - Use a dedicated PR (Pull Request) for upgrading packages. Keep the tasks separate from new features and bug fixes.
