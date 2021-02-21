@@ -194,13 +194,12 @@ end
 
 (Note that you would never include a constructor in a _Rails_ controller or model.)
 
-## ViewComponents on Rails 
+### ViewComponents in the Rails console 
 
 <figure>
   
 ``` bash
 view = ActionView::Base.new
-view.render(CardComponent.new)
 view.render(CardComponent.new)
 ```
 
@@ -284,9 +283,9 @@ The `do…end` structure in Ruby is called a “block”, and more specifically 
 <figure>
   
 ``` ruby
-<%= render CardComponent.new do |c| %>
+  <%= render CardComponent.new do |c| %>
   Card stuff in here.
-<% end %>
+  <% end %>
 ```
 
 </figure>
