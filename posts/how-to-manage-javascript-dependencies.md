@@ -45,15 +45,11 @@ yarn add package_name   # or npm i <package…>
 # Useful for build & testing-related tools.
 yarn add -D package_name  # or npm i package_name --save-dev 
 
-
-
 # Add package but specify a particular version or semver range
 # https://devhints.io/semver
 # It’s often wise to do this to ensure predictable results.
 # caret (^) is useful: allows packages to be upgraded to next minor versions.
 yarn add package_name@^1.3.1
-
-
 
 # Remove a package
 # use this rather than manually deleting from package.json.
