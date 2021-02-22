@@ -2,7 +2,7 @@
 title: Testing Stimulus Controllers
 description: Stimulus JS is great but doesn’t provide any documentation for
   testing controllers, so here’s some of my own
-date: 2021-02-21T23:47:51.548Z
+date: 2020-02-06T23:47:51.548Z
 mainImage.isAnchor: false
 tags:
   - web
