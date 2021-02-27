@@ -188,7 +188,11 @@ img[height] {
 NB these problems might go away in future if another means of providing the image’s aspect ratio becomes available, but until then, they’re real.
 
 (
-LH: Check this https://web.dev/aspect-ratio/ and see if any insights, not just re. aspect-ratio.
+LH: 
+
+1. Check the Zach post which has good additions to the above for when you combine HTML with and height attrs, srcset and max-width: 100%. It seems that width: 100% trumps the HTML width. But max-width:100% will not go 100% even if there are images in sizes to allow it to IF the width attribute is a value which is less than than 100% container width. You can get around this by picking a large/r width and height or by including width: auto. 
+2. Check the industrial empathy post which suggests new attrs like `decoding` 
+3. Check this https://web.dev/aspect-ratio/ and see if any insights, not just re. aspect-ratio.
 But note that I think Una might be wrong in intimating that using aspect-ratio (alone) fixes the “tell the browser to reserve space before image has downloaded issue”. See Jen S’s reply to me https://twitter.com/fuzzylogicx/status/1347307685826469894)
 )
 
