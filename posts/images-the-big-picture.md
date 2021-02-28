@@ -173,9 +173,11 @@ img[width][height] {
   height: auto;
 }
 
-// Allow an <img> which is wide enough to fill its container
-// but has a small HTML width value to extend to 100% container width, 
-// while leaving “basic images” unaffected.
+  /*
+  Allow an <img> which is wide enough to fill its container
+  but has a small HTML width value to extend to 100% container width, 
+  while leaving “basic images” unaffected.
+  */
 img[width] {
   width: auto;
 }
