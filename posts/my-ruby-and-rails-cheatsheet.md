@@ -17,6 +17,99 @@ I’m no Ruby engineer however even as a front-end developer I’m sometimes cal
 
 This is not intended to be an authoritative guide but merely my notes from various lessons. It’s also a work-in-progress and a living, changing document.
 
+## The Rails Console
+
+The `console` command lets you interact with your Rails application from the command line.
+
+<figure>
+  
+``` bash
+# launch a console (short version)
+rails c
+
+# long version
+bundle exec rails console
+```
+
+</figure>
+
+Quickly find where a method is located:
+
+<figure>
+  
+``` bash
+Myobj.method(:methodname).source_location
+
+# Returns a file and line which you can command-click
+=> ["/local/path/to/mymodelname/model.rb", 99]
+```
+
+</figure>
+
+See an object’s methods:
+
+<figure>
+  
+``` bash
+Myobj.methods
+
+# Search for a method using a search string
+# this returns all of the object methods containing string “/pay/“
+Myobj.methods.grep(/pay/) 
+```
+
+</figure>
+
+## Rspec
+
+Run it like so:
+
+<figure>
+  
+``` bash
+bin/rspec spec/path/to/foo_spec.rb
+
+# Run a particular line/method
+bin/rspec spec/path/to/foo_spec.rb:195
+```
+
+</figure>
+
+## Helper methods
+
+Helper methods are for use in views. They become available to all your views automatically.
+
+Unlike object methods (e.g. `myobj.do_something`) helper methods (e.g. `render_something`) are not available for us to use in the Rails console.
+
+If you want to debug a helper method by running it and stepping through it at the command line you should lean on a test to get into the method’s context. 
+
+<figure>
+
+``` bash
+# in foo_helper.rb, insert above line of interest
+binding.pry # or byebug 
+
+# at command line, run helper’s spec (at relevant line/assertion)
+bin/rspec spec/path/to/foo_helper_spec.rb:195
+
+# the “debugger” drops you in at the line where you added your breakpoint
+# and shows the body of the function being run by the line of the spec we requested.
+From: /path/to/app/helpers/foo_helper.rb:26 FooHelper#render_foo:
+
+# you’re now debugging in the context of the running helper method…
+# with the arguments passed in by the test available to manipulate.
+# this means you can run constituent parts of the method at the debugger prompt…
+# for example…
+# run this to get back the HTML being rendered.
+render_user_profile(user)
+```
+
+</figure>
+
+## blank? versus empty?
+
+If you want to test whether something is “empty” you might use `empty?` if you’re testing a string, however it’s not appropriate for testing object properties (such as `person.nickname`) because objects can be `nil` and the `nil` object has no `empty?` method. (Run `nil.empty?` at the console for proof.) Instead use `blank?` e.g. `person.nickname.blank?`.
+
 ## frozen_string_literal: true
 
 I’ll often see this at the top of files, for example Ruby classes. This is just a good practice. It makes things more efficient and thereby improves performance.
@@ -57,6 +150,29 @@ ALLOWED_SIZES = [nil, :medium, :large].freeze
 
 </figure>
 
+## Symbols
+
+They’re not variables. They’re more like strings than variables however Strings are used to work with data whereas Symbols are identifiers.
+
+You should use symbols as names or labels for things (for example methods). They are often used to represent method & instance variable names:
+
+<figure>
+  
+``` ruby
+# here :title is a symbol representing the @title instance variable
+attr_reader :title
+
+# refer to the render_foo method using a symbol
+Myobj.method(:render_foo).source_location
+
+# you can also use symbols as hash keys
+hash = {a: 1, b: 2, c: 3}
+```
+
+</figure>
+
+From what I can gather, colons identify something as a Symbol and the colon is at the beginning when its a method name or instance variable but at the end when its a hash key.
+
 ## ViewComponents
 
 [ViewComponents](https://viewcomponent.org/) (specifically the `my_component.rb` file) are just controllers which do not access the database.
@@ -77,6 +193,17 @@ end
 </figure>
 
 (Note that you would never include a constructor in a _Rails_ controller or model.)
+
+### ViewComponents in the Rails console 
+
+<figure>
+  
+``` bash
+view = ActionView::Base.new
+view.render(CardComponent.new)
+```
+
+</figure>
 
 ## Instance variables
 
@@ -156,9 +283,9 @@ The `do…end` structure in Ruby is called a “block”, and more specifically 
 <figure>
   
 ``` ruby
-<%= render CardComponent.new do |c| %>
+  <%= render CardComponent.new do |c| %>
   Card stuff in here.
-<% end %>
+  <% end %>
 ```
 
 </figure>
@@ -208,7 +335,6 @@ If you have logic you need to use in a view, this would tend to live in a _helpe
 
 You might create a method such as `allowed_to?` for purposes of authorisation.
 
-
 ## Start (local) Rails server
 
 Note: the following is shorthand for `bin/rails server -b 0.0.0.0`.
@@ -234,7 +360,7 @@ ruby -run -e httpd . -p 5000
 
 </figure>
 
-## Web fonts: where to place them and how to access them
+## Web fonts: where to put them in the Rails file structure
 
 See https://gist.github.com/anotheruiguy/7379570.
 
@@ -250,18 +376,10 @@ bundle exec rake db:reset
 
 </figure>
 
-## Test ViewComponent on Rails console
-
-<figure>
-  
-``` bash
-view = ActionView::Base.new
-view.render(CardComponent.new)
-view.render(CardComponent.new)
-```
-
-</figure>
-
 ## References
 
+- [Symbols](https://www.rubyguides.com/2018/02/ruby-symbols/)
 - [ViewComponent by GitHub](https://viewcomponent.org/)
+- [Debugging with Pry](https://learn.co/lessons/debugging-with-pry)
+- [Why Byebug will be your best friend](https://blog.usejournal.com/why-byebug-will-be-your-best-friend-when-programming-in-rails-98e06f46bdb6)
+

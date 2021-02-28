@@ -23,7 +23,7 @@ code .
 
 ## Edit multiple rows simultaneously
 
-<kbd>Command-D</kbd>
+Select one instance of the text that appears in multiple locations. Use <kbd>Command-D</kbd> to select all, then edit.
 
 ## Open file to side (for side-by-side editing)
 

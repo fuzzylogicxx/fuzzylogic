@@ -2,7 +2,7 @@
 title: Progressively Enhanced JavaScript with Stimulus
 description: I’m dipping my toes into the JavaScript micro-framework from Basecamp
 date: 2019-10-24
-tags: [web, development, javascript, framework, progressiveenhancement]
+tags: [web, development, javascript, framework, progressiveenhancement, stimulus]
 ---
 I’m dipping my toes into [Stimulus](https://stimulusjs.org/handbook/introduction), the JavaScript micro-framework from Basecamp. Here are my initial thoughts.
 ---

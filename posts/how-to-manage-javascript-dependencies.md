@@ -29,35 +29,44 @@ The whole process might go something like this (using [yarn](https://yarnpkg.com
 
 <figure>
   
-``` js
-// Start installing and managing 3rd-party packages.
-// (only required if your project doesn’t already have a package.json)
-yarn  // or npm init
+``` bash
+# Start installing and managing 3rd-party packages.
+# (only required if your project doesn’t already have a package.json)
+yarn  # or npm init
 
-// Install dependencies (in a project which already has a package.json)
-// yes, it’s the same yarn command as above.
-yarn  // or npm i
+# Install dependencies (in a project which already has a package.json)
+# yes, it’s the same yarn command as above.
+yarn  # or npm i
 
-// Add a 3rd-party library to your project
-yarn add <package…>   // or npm i <package…>
+# Add a 3rd-party library to your project
+yarn add package_name   # or npm i <package…>
 
-// Add package but specify a particular version or semver range
-// https://devhints.io/semver
-// It’s often wise to do this to ensure predictable results.
-yarn add <package…>@^1.3.1
+# Add package as a devDependency.
+# Useful for build & testing-related tools.
+yarn add -D package_name  # or npm i package_name --save-dev 
 
-// Remove a package
-// use this rather than manually deleting from package.json 
-// because this method updates `yarn.lock` too.
-yarn remove <package…>
+# Add package but specify a particular version or semver range
+# https://devhints.io/semver
+# It’s often wise to do this to ensure predictable results.
+# caret (^) is useful: allows packages to be upgraded to next minor versions.
+yarn add package_name@^1.3.1
 
-// Update one package (optionally to a specific version/range)
-yarn upgrade <package…>
-yarn upgrade <package…>@^1.3.2
+# Remove a package
+# use this rather than manually deleting from package.json.
+# Updates yarn.lock, package.json and removes from node_modules.
+yarn remove package_name
 
-// Review (in a nice UI) all packages with pending updates, 
-// with the option to upgrade whichever you choose
+# Update one package (optionally to a specific version/range)
+yarn upgrade package_name
+yarn upgrade package_name@^1.3.2
+
+# Review (in a nice UI) all packages with pending updates, 
+# with the option to upgrade whichever you choose
 yarn upgrade-interactive
+
+# Upgrade to latest versions rather than
+# semver ranges you’ve defined in package.json.
+yarn upgrade-interactive -—latest
 ```
 
 </figure>
@@ -121,11 +130,26 @@ Github was telling me that it couldn’t automatically raise a fix PR, so I had 
 1. I opened `package.json` and within `devDependencies` manually updated `nodemon` from `^1.19.4` to `^2.0.4`. (If I was in a `yarn` context I’d probably have done this at the command line). I then ran `npm i nodemon` to reinstall the package based on its new version range which would also update the lock file. I was then prompted to run `npm audit fix` which I did, and then I was done;
 1. I pushed the change, checked my Github repo’s security section and noted that the alert (and a few others besides) had disappeared. Job’s a goodun!
 
-## A note on lock files
+## Files and directories
+
+When managing dependencies, you can expect to see the following files and directories.
+
+- `package.json`
+- `yarn.lock`
+- `node_modules` (this is the directory into which packages are installed)
+
+### A note on lock files
 
 As well as `package.json`, you’re likely to also have `yarn.lock` (or `package.lock` or `package-lock.json`) under source control too. As described above, while `package.json` can be less specific about a package’s version and suggest a semver range, the lock file will lock down the specific version to be installed by the package manager when someone runs `yarn` or `npm install`.
 
 You shouldn’t manually change a lock file.
+
+## Upgrading best practices
+
+- Check the package CHANGELOG or releases on Github to see what has changed between versions and if there have been any breaking changes (especially when upgrading to the latest version).
+- Use a dedicated PR (Pull Request) for upgrading packages. Keep the tasks separate from new features and bug fixes.
+- Upgrade to the latest minor version (using `yarn upgrade-interactive`) and merge that before upgrading to major versions (using `yarn upgrade-interactive -—latest`).
+- Test your work on a staging server (or Netlify preview build) before deploying to production.
 
 ## References
 - [Yarn workflow](https://classic.yarnpkg.com/en/docs/yarn-workflow/)

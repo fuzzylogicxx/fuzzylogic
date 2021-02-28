@@ -188,8 +188,12 @@ img[height] {
 NB these problems might go away in future if another means of providing the image’s aspect ratio becomes available, but until then, they’re real.
 
 (
-LH: Check this https://web.dev/aspect-ratio/ and see if any insights, not just re. aspect-ratio.
-But note that I think una might be wrong in intimating that using aspect-ratio (alone) fixes the “tell the browser to reserve space before image has downloaded issue”. See Jen S’s reply to me https://twitter.com/fuzzylogicx/status/1347307685826469894)
+LH: 
+
+1. Check the Zach post  https://www.zachleat.com/web/fluid-images/?utm_campaign=CSS%2BLayout%2BNews&utm_medium=email&utm_source=CSS_Layout_News_291 which has good additions to the above for when you combine HTML width and height attrs, srcset and max-width: 100%. It seems that while width: 100% trumps the HTML width, max-width:100% will not go 100% even if there are images in sizes to allow it to IF the width attribute is a value which is less than than 100% container width. You can get around this by setting large/r width and height attribute values or by including width: auto. 
+2. Check the industrial empathy post which suggests new attrs like `decoding` 
+3. Check this https://web.dev/aspect-ratio/ and see if any insights, not just re. aspect-ratio.
+But note that I think Una might be wrong in intimating that using aspect-ratio (alone) fixes the “tell the browser to reserve space before image has downloaded issue”. See Jen S’s reply to me https://twitter.com/fuzzylogicx/status/1347307685826469894)
 )
 
 ## Pros and cons of large images
@@ -258,6 +262,10 @@ Here, we’re setting a sensible height for each logo. We’re then fitting (or 
 ### Dictate the aspect ratio “frame”
 
 Following on from the previous section…
+
+Talk about Every layout’s Frame.
+
+Then, that we can now use (as a prog.enh) CSS `aspect-ratio` to set the aspect ratio of a frame without needing to do the maths ourselves. Reference _Smol Aspect Ratio Gallery_ section on https://smolcss.dev/
 
 
 
@@ -367,7 +375,7 @@ Here’s what I’m using:
 
 ## Further thoughts and questions
 
-I’m temptated to _always_ use a frame (even when the image’s own aspect ratio fits the bill) so that the frame container (rather than the image) takes up the required space therefore I don’t need to include `width` and `height` HTML attributes and CSS to override them. I’m reluctanct though as I like using native standards where possible.
+I’m temptated to _always_ use a frame (even when the image’s own aspect ratio fits the bill) so that the frame container (rather than the image) takes up the required space therefore I don’t need to include `width` and `height` HTML attributes and CSS to override them. I’m reluctant though as I like using native standards where possible.
 
 ## What have I missed?
 
