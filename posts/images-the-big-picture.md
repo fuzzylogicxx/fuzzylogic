@@ -158,7 +158,7 @@ Firstly, having the `height` HTML attribute once again puts us in the position w
 
 Secondly, having the `width` attribute can be problematic when the image is one which we explicitly want to be full-container-width, for example the featured image in a blog post. The problem arises when the `width` attribute value provided is less than the containing element’s current width. If the only CSS you have on your image is `max-width:100%` then the image will simply use its `width` attribute value and will be narrower than its parent. One approach might be to always use a sufficiently high `width` value but that feels a tad brittle; I’d rather employ a solution that is more explicit and decisive.
 
-To solve both of the above challenges, we can apply some CSS.
+To solve both of the above challenges, we can apply some additional CSS.
 
 <figure>
 
@@ -173,13 +173,11 @@ img[width][height] {
   height: auto;
 }
 
-  /*
-  Optional class for making an image 100% container-width
-  which will override any 'width' attribute value set to
-  something narrower.
-  */
-.img-full-parent-width {
-  width: 100%;
+// Allow an <img> which is wide enough to fill its container
+// but has a small HTML width value to extend to 100% container width, 
+// while leaving “basic images” unaffected.
+img[width] {
+  width: auto;
 }
 ```
 
@@ -203,6 +201,9 @@ Dealing with these challenges using modern _Responsive Images_ will be the subje
 
 ## References
 
-- [Every Layout’s _Frame_](https://every-layout.dev/layouts/frame/)
-- [Jen Simmons: Do this to improve image loading](https://www.youtube.com/watch?v=4-d_SoCHeWE&feature=youtu.be)
 - [Ethan Marcotte: Responsive Web Design](https://alistapart.com/article/responsive-web-design/)
+- [Jen Simmons: Do this to improve image loading](https://www.youtube.com/watch?v=4-d_SoCHeWE&feature=youtu.be)
+- [Every Layout’s _Frame_](https://every-layout.dev/layouts/frame/)
+- [Zach Leatherman—Barebones CSS for Fluid Images](https://www.zachleat.com/web/fluid-images/)
+
+
