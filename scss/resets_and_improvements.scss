@@ -121,7 +121,7 @@ img {
 // max-width: 100% is triggered and image
 // has the HTML height attribute set,
 // while doing no harm otherwise.
-img[width][height] {
+img[height] {
   height: auto;
 }
 
@@ -135,17 +135,17 @@ img[width][height] {
 // I’m deciding to make it a default for now because
 // it also leaves “basic images” unaffected.
 // The alternative is to scope it to .responsive-img[width] but doesn’t seem necessary.
-img[width] {
-  width: auto;
-}
+// img[width] {
+//   width: auto;
+// }
 
 // explictly set an image to 100% container-width even if
 // it has a width attribute (present for performance reasons) set to something narrower.
 // Note: I have not included height: auto. It’s only required when the image has the
 // HTML height attribute set, and I already have a rule dealing with that scenario above.
-// .img-full-parent-width {
-//   width: 100%;
-// }
+.img-full-parent-width {
+  width: 100%;
+}
 
 
 

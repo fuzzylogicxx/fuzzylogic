@@ -1,5 +1,5 @@
 ---
-title: "Images on The Web: The Big Picture, Part 1"
+title: "Images on the Web: The Big Picture, Part 1"
 description: In modern web development there are a myriad ways to include an image on a web page. In this post I step through
   the various methods, discussing how they evolved and where they are appropriate.
 date: 2021-02-28 11:30:00
@@ -10,7 +10,7 @@ tags:
   - rwd
 permalink: /posts/images-on-the-web-the-big-picture/
 ---
-In modern web development there are a myriad ways to structure and style an image on a web page and it can often feel a bit baffling. In this series I step through the various methods starting with the basics, moving on to flexible images, then modern responsive images, then newer techniques for fitting images into shapes without distorting their aspect ratio. I’ll discuss how the approaches evolved and suggest where they are appropriate. I’ll mention some performance enhancements and practical measures. My overall aim is to arrive at a modern boilerplate and toolkit for images.
+In modern web development there are a myriad ways to structure and style an image on a web page and it can often feel pretty baffling. In this series I step through the various methods from basic to flexible images; modern responsive images to new techniques for fitting images into other shapes without distorting aspect ratio. My goal is to arrive at a flexible modern boilerplate and toolkit for images.
 ---
 
 ## Scope
@@ -156,7 +156,7 @@ However this presents a couple of challenges.
 
 Firstly, having the `height` HTML attribute once again puts us in the position where, for any image we want to be flexibly scaled and safely limited by `max-width`, we’ll need to explicitly add `height:auto;` in our CSS.
 
-Secondly, having the `width` attribute can be problematic when the image is one which we explicitly want to be full-container-width, for example the featured image in a blog post. The problem arises when the `width` attribute value provided is less than the containing element’s current width. If the only CSS you have on your image is `max-width:100%` then the image will simply use its `width` attribute value and will be narrower than its parent. One approach might be to always use a sufficiently high `width` value but that feels a tad brittle; I’d rather employ a solution that is more explicit and decisive.
+Secondly, having the `width` attribute can be problematic when the image is one which we explicitly want to be full-container-width, for example the featured image in a blog post. The problem arises when the `width` attribute value provided is less than the containing element’s current width. If the only CSS you have on your image is `max-width:100%` then the image will adopt the value from its `width` attribute and consequently be narrower than its parent. One approach might be to always use a sufficiently high `width` value but that feels a tad brittle; I’d rather employ a solution that is more explicit and decisive.
 
 To solve both of the above challenges, we can apply some additional CSS.
 
@@ -169,17 +169,20 @@ To solve both of the above challenges, we can apply some additional CSS.
   has the HTML height attribute set,
   while doing no harm otherwise.
   */
-img[width][height] {
+img[height] {
   height: auto;
 }
 
   /*
-  Allow an <img> which is wide enough to fill its container
-  but has a small HTML width value to extend to 100% container width, 
-  while leaving “basic images” unaffected.
+  Optional class to make an image 100% container-width.
+  Overrides the 'width' attribute, avoiding the risk of the image
+  being too narrow because its width value is narrower than the container.
+  When using this try to ensure your image’s intrinsic width is at least as
+  wide as its container’s maximum width because otherwise on wide
+  viewports the image would stretch and the results might not be great.
   */
-img[width] {
-  width: auto;
+.img-full-parent-width {
+  width: 100%;
 }
 ```
 

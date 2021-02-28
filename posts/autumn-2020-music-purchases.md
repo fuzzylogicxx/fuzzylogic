@@ -22,6 +22,7 @@ openGraphImage: "https://res.cloudinary.com/fuzzylogic/image/upload/q_auto,f_aut
 ---
 <figure>
 <img
+  class="img-full-parent-width"
   sizes="(min-width: 1600px) 646px, (min-width: 700px) 612px, 91.58vw"
   srcset="https://res.cloudinary.com/fuzzylogic/image/upload/q_auto,f_auto,w_414/v1609971455/facefacts_1300_qzkqwh.jpg 414w,
   https://res.cloudinary.com/fuzzylogic/image/upload/q_auto,f_auto,w_480/v1609971455/facefacts_1300_qzkqwh.jpg 480w,
@@ -35,6 +36,8 @@ openGraphImage: "https://res.cloudinary.com/fuzzylogic/image/upload/q_auto,f_aut
   loading="lazy"
   decoding="async">
 </figure>
+
+<!-- 646 338-->
 
 <p style="margin-top: 3rem;">As the leaves fell and the nights drew in, I chose to fall forward by blowing all my hard-earned on a lovely mixed bag of dub, ambient, soul, house and electro records. Now, if I could just find some puppy-free time to actually listen to them…</p>
 
