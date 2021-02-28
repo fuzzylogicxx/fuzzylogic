@@ -9,9 +9,8 @@ tags:
   - images
   - rwd
 permalink: /posts/images-on-the-web-the-big-picture/
-draft: true
 ---
-In modern web development there are a myriad ways to structure and style an image on a web page and it can often feel a bit baffling. In this series I step through the various approaches, discuss how they evolved and try to suggest where they are appropriate. My aim is to arrive at a modern boilerplate and toolkit for images.
+In modern web development there are a myriad ways to structure and style an image on a web page and it can often feel a bit baffling. In this series I step through the various methods starting with the basics, moving on to flexible images, then modern responsive images, then newer techniques for fitting images into shapes without distorting their aspect ratio. I’ll discuss how the approaches evolved and suggest where they are appropriate. I’ll mention some performance enhancements and practical measures. My overall aim is to arrive at a modern boilerplate and toolkit for images.
 ---
 
 ## Scope
@@ -201,3 +200,9 @@ Another positive is that on devices with retina screens – capable of displayin
 On the downside, we are delivering a _much_ larger image and therefore file size than is required for, for example, a 320px wide context. This has performance implications since bigger files mean longer download times, and this is excarbated when the device is not connected to high-speed wifi (as is often the case with a mobile phone).
 
 Dealing with these challenges using modern _Responsive Images_ will be the subject of Part #2.
+
+## References
+
+- [Every Layout’s _Frame_](https://every-layout.dev/layouts/frame/)
+- [Jen Simmons: Do this to improve image loading](https://www.youtube.com/watch?v=4-d_SoCHeWE&feature=youtu.be)
+- [Ethan Marcotte: Responsive Web Design](https://alistapart.com/article/responsive-web-design/)
