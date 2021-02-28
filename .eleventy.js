@@ -141,7 +141,7 @@ module.exports = function(eleventyConfig) {
     return [...tagSet].sort();
   });
 
-  // Navigation Items, Sorted
+  // Navigation Items, sorted by navpos property
   eleventyConfig.addCollection('navItems', function(collection) {
     return collection.getFilteredByTag('nav').sort(function(a, b) {
       return b.data.navpos - a.data.navpos;
@@ -166,7 +166,6 @@ module.exports = function(eleventyConfig) {
     const cloudinaryBase = `https://res.cloudinary.com/${eleventyConfig.cloudinaryCloudName}/image/upload/`;
     var cloudinaryImgPath = src.replace(cloudinaryBase, '');
     return `<img
-    class="img-full-parent-width"
     srcset="${srcsetWidthRange
       .map(w => {
         return `${cloudinaryBase}q_auto,f_auto,w_${w}/${cloudinaryImgPath} ${w}w`;
@@ -178,7 +177,8 @@ module.exports = function(eleventyConfig) {
     }/${cloudinaryImgPath}"
     width="${aspectRatioWidth}" height="${aspectRatioHeight}"
     ${alt ? `alt="${alt}"` : ''}
-    loading="lazy" />`;
+    loading="lazy"
+    decoding="async" />`;
   });
 
   // Excerpts (https://www.11ty.io/docs/data-frontmatter/#example%3A-parse-excerpts-from-content)

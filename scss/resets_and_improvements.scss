@@ -93,39 +93,59 @@ footer, header, hgroup, menu, nav, section {
 // Images
 ///////////////////////////////////
 
-// Set to display block globally because can’t currently think of anywhere you wouldn’t want this to be the case.
-
 img {
+  // normalize.css says "Remove the border on images inside links in IE 10."
+  border-style: none;
+
+  // Set images to display block globally because can’t think
+  // of anywhere you wouldn’t want this to be the case.
   display: block;
 
-  // make images responsive by ensuring they don’t overflow their container.
+  // Support responsive images.
+  // We can make large <img>s available to wide and narrow viewports alike,
+  // safe in the knowledge that even if an image is wider than its container,
+  // it will not overflow.
   // Now the image’s width will match one of three values:
   // 1. Its own intrinsic/natural width, based on the file data; OR
-  // 2. An explicit HTML width attribute value, if present; OR
-  // 3. The width of the horizontal space afforded by the container element
+  // 2. An explicit HTML width attribute value, if present;
+  // 3. The width of the horizontal space afforded by the container element; OR
+  // 4. 55rem (a sensible image width limit) if the container is wider than that.
   max-width: 100%;
+  max-width: m#{i}n(60rem, 100%); // 1) To Do: remove workaround syntax for gulp/node-sass asap. 2) 60rem seems a reasonable limit. Can tweak later.
 
   //width: 100%; // grow and shrink in a RWD-stylee
   //height: auto;
-
-  // normalize.css says "Remove the border on images inside links in IE 10."
-  border-style: none;
 }
 
-/*
-Ensure correct aspect ratio is preserved when
-max-width: 100% is triggered and image
-has the HTML height attribute set,
-while doing no harm otherwise.
-*/
-img[height] {
+// Ensure correct aspect ratio is preserved when
+// max-width: 100% is triggered and image
+// has the HTML height attribute set,
+// while doing no harm otherwise.
+img[width][height] {
   height: auto;
 }
 
-/* ensure an image is 100% parent-width even if it has a width attribute (present for performance reasons) set to something narrower */
-.img-full-parent-width {
-  width: 100%;
+// Our <img>s with multiple file options via srcset (with sizes)
+// likely include HTML width and height attributes for the paint/perf benefits.
+// However if the width attr value is smaller than 100% container-width,
+// max-width: 100% stops the image growing at THAT width
+// EVEN IF srcset includes wider images which could fill
+// 100%-container-width.
+// This rule fixes that.
+// I’m deciding to make it a default for now because
+// it also leaves “basic images” unaffected.
+// The alternative is to scope it to .responsive-img[width] but doesn’t seem necessary.
+img[width] {
+  width: auto;
 }
+
+// explictly set an image to 100% container-width even if
+// it has a width attribute (present for performance reasons) set to something narrower.
+// Note: I have not included height: auto. It’s only required when the image has the
+// HTML height attribute set, and I already have a rule dealing with that scenario above.
+// .img-full-parent-width {
+//   width: 100%;
+// }
 
 
 

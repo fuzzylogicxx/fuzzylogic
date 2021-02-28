@@ -21,18 +21,19 @@ openGraphImage: "https://res.cloudinary.com/fuzzylogic/image/upload/q_auto,f_aut
 
 ---
 <figure>
-<img 
-  sizes="(min-width: 1600px) 646px, (min-width: 700px) 612px, 91.58vw" 
-  srcset="https://res.cloudinary.com/fuzzylogic/image/upload/q_auto,f_auto,w_414/v1609971455/facefacts_1300_qzkqwh.jpg 414w, 
-  https://res.cloudinary.com/fuzzylogic/image/upload/q_auto,f_auto,w_480/v1609971455/facefacts_1300_qzkqwh.jpg 480w, 
-  https://res.cloudinary.com/fuzzylogic/image/upload/q_auto,f_auto,w_646/v1609971455/facefacts_1300_qzkqwh.jpg 646w, 
-  https://res.cloudinary.com/fuzzylogic/image/upload/q_auto,f_auto,w_828/v1609971455/facefacts_1300_qzkqwh.jpg 828w, 
-  https://res.cloudinary.com/fuzzylogic/image/upload/q_auto,f_auto,w_960/v1609971455/facefacts_1300_qzkqwh.jpg 960w, 
-  https://res.cloudinary.com/fuzzylogic/image/upload/q_auto,f_auto,w_1292/v1609971455/facefacts_1300_qzkqwh.jpg 1292w" 
-  src="https://res.cloudinary.com/fuzzylogic/image/upload/q_auto,f_auto,w_646/v1609971455/facefacts_1300_qzkqwh.jpg" 
-  alt="Laurence’s record purchases in Autumn 2020" 
-  width="646" height="338"
-  loading="lazy">
+<img
+  sizes="(min-width: 1600px) 646px, (min-width: 700px) 612px, 91.58vw"
+  srcset="https://res.cloudinary.com/fuzzylogic/image/upload/q_auto,f_auto,w_414/v1609971455/facefacts_1300_qzkqwh.jpg 414w,
+  https://res.cloudinary.com/fuzzylogic/image/upload/q_auto,f_auto,w_480/v1609971455/facefacts_1300_qzkqwh.jpg 480w,
+  https://res.cloudinary.com/fuzzylogic/image/upload/q_auto,f_auto,w_646/v1609971455/facefacts_1300_qzkqwh.jpg 646w,
+  https://res.cloudinary.com/fuzzylogic/image/upload/q_auto,f_auto,w_828/v1609971455/facefacts_1300_qzkqwh.jpg 828w,
+  https://res.cloudinary.com/fuzzylogic/image/upload/q_auto,f_auto,w_960/v1609971455/facefacts_1300_qzkqwh.jpg 960w,
+  https://res.cloudinary.com/fuzzylogic/image/upload/q_auto,f_auto,w_1292/v1609971455/facefacts_1300_qzkqwh.jpg 1292w"
+  src="https://res.cloudinary.com/fuzzylogic/image/upload/q_auto,f_auto,w_646/v1609971455/facefacts_1300_qzkqwh.jpg"
+  alt="Laurence’s record purchases in Autumn 2020"
+  width="480" height="251"
+  loading="lazy"
+  decoding="async">
 </figure>
 
 <p style="margin-top: 3rem;">As the leaves fell and the nights drew in, I chose to fall forward by blowing all my hard-earned on a lovely mixed bag of dub, ambient, soul, house and electro records. Now, if I could just find some puppy-free time to actually listen to them…</p>
@@ -45,7 +46,7 @@ One wee thought before we dig in: I’m finding that I’m buying from Bandcamp 
 
 Real nice roots reggae and dub instrumentals from sunny Manchester. Mr Birchall is, by all accounts, an amazing musician, and in Al Breadwinner on drums and Vin Gordon on trumpet he’s assembled a stellar band. When I first heard this I thought it was some vintage Augustus Pablo so it was funny to find out that it was in fact made in 2020 in Stockport.
 
-<b>Favourite track(s):</b> African Village Dance / Village Dub. 
+<b>Favourite track(s):</b> African Village Dance / Village Dub.
 
 <div class="aspect-ratio-wide">
   <iframe title="Nat Birchall meets Al Breadwinner – African Village Dance" loading="lazy" width="560" height="315" src="https://www.youtube-nocookie.com/embed/oo35Duhy-8c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -89,7 +90,7 @@ Beautiful ambient textures and downtempo electronics with that typically quirky 
 
 ## Various - Buena Onda Balearic Beats
 
-Lovely four-tracker of slow and atmospheric late-night grooves from Italy and elsewhere, first heard on [Denise’s radio show](https://dublab.de/broadcasts/watching-like-nobodys-dancing-din-daa-daa-october-2020/). 
+Lovely four-tracker of slow and atmospheric late-night grooves from Italy and elsewhere, first heard on [Denise’s radio show](https://dublab.de/broadcasts/watching-like-nobodys-dancing-din-daa-daa-october-2020/).
 
 <b>Favourite track:</b> Lucas Croon – Japon.
 
@@ -182,7 +183,7 @@ Another cracker heard on Gav’s show, this is new from Italian label Neroli who
 
 ## Tasha Larae & Jihad Muhammad - Till You Get There
 
-Proper New Jersey style garage from Baltimore’s DJ Spen (ably assisted on remix duties by Bristol’s Sean McCabe) that I could imagine raising the roof at Shelter in NYC or even closer to home at Glasgow’s Melting Pot. It just has that magic formula of slamming beats, gospel chords and a soaring, life-affirming vocal which will never fail to push my buttons. One that if you hear at the right time will make your night, and which makes me long for clubs to reopen. 
+Proper New Jersey style garage from Baltimore’s DJ Spen (ably assisted on remix duties by Bristol’s Sean McCabe) that I could imagine raising the roof at Shelter in NYC or even closer to home at Glasgow’s Melting Pot. It just has that magic formula of slamming beats, gospel chords and a soaring, life-affirming vocal which will never fail to push my buttons. One that if you hear at the right time will make your night, and which makes me long for clubs to reopen.
 
 <b>Favourite track:</b> Till You Get There (DJ Spen and Sean McCabe remix)
 
@@ -224,7 +225,7 @@ A quirky long-player from a Toronto-based artist who is new to me but seems to h
 
 [Grab a copy on Bandcamp](https://andolaj.com/album/dog-insight)
 
-## Linton Kwesi Johnson - Bass Culture / LKJ In Dub 
+## Linton Kwesi Johnson - Bass Culture / LKJ In Dub
 
 Killer reggae reissue: beaut packaging, lovely red and green vinyl, and sounds tremendous.
 
