@@ -10,7 +10,7 @@ tags:
   - rwd
 permalink: /posts/images-on-the-web-the-big-picture/
 ---
-In modern web development there are a myriad ways to present an image on a web page and it can often feel pretty baffling. In this series I step through the options, moving from basic to flexible images; then from modern responsive images to the new CSS for fitting different sized images into a common shape. By the end I'll arrive at a flexible, modern boilerplate and toolkit for images.
+In modern web development there are a myriad ways to present an image on a web page and it can often feel pretty baffling. In this series I step through the options, moving from basic to flexible images; then from modern responsive images to the new CSS for fitting different sized images into a common shape. By the end I'll arrive at a flexible, modern boilerplate for images.
 ---
 
 ## Scope
@@ -23,15 +23,15 @@ Similarly I probably won’t mention _icons_ at all. I see them as a separate co
 
 ### Replaced element
 
-The image element is a replaced element which means that the element is replaced by the resource pointed to by its `src` attribute.
+The image element is a replaced element which means that the element is replaced by the resource (file) referenced in its `src` attribute.
 
 ### Aspect Ratio
 
 You get an image’s aspect ratio by dividing its width by its height.
 
-An image which is 160px wide × 90px tall can be represented as 16:9, or 1.777.
+A 160px wide × 90px tall image can be represented as 16:9, or 1.777.
 
-It’s important to state that aspect ratio is an _intrinsic_ characteristic of an image – i.e. it is “part of the image” – therefore outside of our control as developers. We can apply _extrinsic_ settings which change the dimensions of the rendered image on our web page, however its aspect ratio was determined when the image was originally created and cropped.
+Aspect Ratio is an _intrinsic_ characteristic of an image—i.e. it is “part of the image”—therefore outside of our control as developers. We can apply _extrinsic_ settings which change the dimensions of the rendered image on our web page, however its aspect ratio was determined when the image was originally created and cropped.
 
 ## Assumptions
 
@@ -51,7 +51,6 @@ html {
 img {
   border-style: none;
   display: block;
-  vertical-align: middle;
 }
 ```
 
@@ -69,19 +68,19 @@ Let’s start by going back to basics. I can include an image on a web page like
 
 </figure>
 
-Note that our markup contains no `width` or `height` attributes, just an `alt` for accessibility. Without those size attributes (and in the absence of any CSS acting on the `img`’s width or height) the image simply displays at its intrinsic dimensions i.e. the dimensions at which the file was saved, in this case 250 × 377 pixels. The image is output as follows:
+Note that our markup contains no `width` or `height` attributes, just an `alt` for accessibility. With no size-related attributes (and in the absence of any CSS acting on its width or height) the image simply displays at its intrinsic dimensions i.e. the dimensions at which the file was saved, in this case 250 × 377 pixels. The image is output as follows:
 
 <img src="https://images-eu.bookshop.org/product-images/images/9781780330969.jpg?width=250" alt="“A Visit from the Goon Squad“ by Jennifer Egan" />
 
-Now I know that narrow and static images like this feel pretty old-school. In these days since the Responsive Web Design movement we’re much more used to seeing either full-container-width media or complex markup for intelligently delivering flexible media, or both.
+Now I know that narrow and static images like this feel pretty old-school. Since the Responsive Web Design movement we’re more accustomed to seeing full-container-width media and complex markup for intelligently selecting one file from many options.
 
 However I still occasionally encounter use cases for displaying a relatively narrow image _as-is_.
 
-Sticking with the above book image example, given its aspect ratio you probably wouldn’t want it to be full-column-width on anything other than the narrowest screens simply because of how tall it could become at the expense of the reading experience. You might also be loading your images from a third party bookshop with which you have an affiliate scheme, and therefore have little control over file size and other factors influencing performance and responsive behaviour. As such you might do well to just keep it simple by loading a sensibly-sized thumbnail.
+Sticking with the book image example, given its aspect ratio you probably wouldn’t want it to be full-column-width on anything other than the narrowest screens simply because of how tall it could become at the expense of the reading experience. You might also be loading your images from a third party bookshop with which you have an affiliate scheme, and therefore have little control over file size and other factors influencing performance and responsive behaviour. As such you might do well to keep things simple and just load a sensibly-sized thumbnail.
 
-See also [this figure illustrating a simple database schema](https://railstutorial.org/book/toy_app#sec-modeling_demo_microposts) on the _Ruby on Rails Tutorial_ website. On wide viewports, the author’s preference is to simply display the image at its natural, small size and centre it, rather than blowing it up unnecessarily.
+See also [this figure illustrating a simple database schema](https://railstutorial.org/book/toy_app#sec-modeling_demo_microposts) on the _Ruby on Rails Tutorial_ website. On wide viewports, the author’s preference is to simply display the image at its natural, small size and centre it rather than blowing it up unnecessarily.
 
-In summary, there remain times when you might need a narrow, fixed-size image.
+In summary, there remain times when you might need a narrow, fixed-size image so I want to keep that option open.
 
 ## Include size attributes
 
