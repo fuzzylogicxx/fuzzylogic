@@ -10,7 +10,7 @@ tags:
   - rwd
 permalink: /posts/images-on-the-web-the-big-picture/
 ---
-In modern web development there are a myriad ways to present an image on a web page and it can often feel pretty baffling. In this series I step through the options, moving from basic to flexible images; then from modern responsive images to the new CSS for fitting different sized images into a common shape. By the end I'll arrive at a flexible, modern boilerplate for images.
+In modern web development there are a myriad ways to present an image on a web page and it can often feel pretty baffling. In this series I step through the options, moving from basic to flexible images; then from modern responsive images to the new CSS for fitting different sized images into a common shape. By the end I’ll arrive at a flexible, modern boilerplate for images.
 ---
 
 ## Scope
@@ -94,15 +94,15 @@ When we know the dimensions of our image in advance, we can improve upon our pre
 
 </figure>
 
-This renders the image exactly as before.
+Don’t expect fireworks; this renders the image exactly as before.
 
 <img width="250" height="377" src="https://images-eu.bookshop.org/product-images/images/9781780330969.jpg?width=250" alt="“A Visit from the Goon Squad“ by Jennifer Egan" />
 
-However, this addition allows the browser to reserve the appropriate space in the page for the image before it has loaded. If we don’t do this, we risk a situation where text that immediately follows our image renders higher up the page than it should while the image is still loading, only to _shift_ jarringly after the image loads.
+However, this addition allows the browser to reserve the appropriate space in the page for the image before it has loaded. If we don’t do this, we risk a situation where text immediately after our image renders higher up the page than it should while the image is loading, only to _shift_ jarringly after the image loads.
 
-We’re not overriding width or height with CSS (remember CSS rules would trump HTML attributes because attributes have no specificity) so the browser will render the image at whatever size attribute values we provide, regardless of the image’s intrinsic dimensions. As such, to avoid squashing and distortion we should ensure that our size attribute values match the image’s real dimensions.
+We’re not overriding width or height with CSS (remember CSS rules would trump HTML attributes because attributes have no specificity) so the browser will render the image at whatever size attribute values we provide, regardless of the image’s intrinsic dimensions. As such, to avoid squashing and distortion we had to ensure that our size attribute values matched the image’s real dimensions.
 
-## Enter flexible images
+## Flexible Images
 
 At the dawn of the mobile web, many authors sought to handle mobile devices by creating a separate, dedicated mobile website. However this meant duplication of cost, code, content and maintenance. Responsive Web Design provided a counterpoint with a “create once, publish everywhere” philosophy which embraced the fluidity of the web and suggested we could serve desktop and mobile devices alike from a single codebase.
 
@@ -124,7 +124,7 @@ img {
 
 </figure>
 
-The eagle-eyed will have noticed that the markup in the above snippet once again excluded the HTML `width` and `height` attributes. The reason for this is that when working responsively, many of us stopped adding those size attributes, feeling that for flexible images the practice was redundant. The image’s dimensions were now a moving target, and the space needing reserved for the image by the browser was now variable rather than fixed. And true enough, browsers were not capable of reserving space for a moving target, so including the attributes served no real purpose.
+The eagle-eyed will have noticed that the above snippet once again excludes the HTML `width` and `height` attributes. That’s because when we began working responsively many of us stopped adding those size attributes, feeling that for flexible images the practice was redundant. The image’s dimensions were now a moving target and the space needing reserved for the image by the browser was now variable rather than fixed. And true enough, browsers were not capable of reserving space for a moving target, so including the attributes served no real purpose.
 
 Regardless, some content management systems (most notably Wordpress) continued to output images with HTML `width` and `height` attributes as standard. This introduced a small challenge. Without the attributes we could rely on the browser to take our simple `max-width:100%` declaration and also implicitly apply `height:auto` thereby always preserving the image‘s aspect ratio when scaling it down. To achieve the same goal when the HTML `height` attribute is present, we needed the following revised CSS:
 
@@ -187,7 +187,7 @@ img[height] {
 
 </figure>
 
-## Pros and cons of large images
+## Pros and cons of the “one large image” approach
 
 I’d like to quickly take stock.
 
