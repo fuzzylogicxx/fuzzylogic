@@ -72,7 +72,7 @@ Note that our markup contains no `width` or `height` attributes, just an `alt` f
 
 <img src="https://images-eu.bookshop.org/product-images/images/9781780330969.jpg?width=250" alt="“A Visit from the Goon Squad“ by Jennifer Egan" />
 
-Now I know that narrow and static images like this feel pretty old-school. Since the Responsive Web Design movement we’re more accustomed to seeing full-container-width media and complex markup for intelligently selecting one file from many options.
+Now I know that narrow and static images like this feel pretty old-school. Since the Responsive Web Design movement we’re more accustomed to seeing full-column-width media and complex markup for intelligently selecting one file from many options.
 
 However I still occasionally encounter use cases for displaying a relatively narrow image _as-is_.
 
@@ -100,13 +100,13 @@ Don’t expect fireworks; this renders the image exactly as before.
 
 However, this addition allows the browser to reserve the appropriate space in the page for the image before it has loaded. If we don’t do this, we risk a situation where text immediately after our image renders higher up the page than it should while the image is loading, only to _shift_ jarringly after the image loads.
 
-We’re not overriding width or height with CSS (remember CSS rules would trump HTML attributes because attributes have no specificity) so the browser will render the image at whatever size attribute values we provide, regardless of the image’s intrinsic dimensions. As such, to avoid squashing and distortion we had to ensure that our size attribute values matched the image’s real dimensions.
+We’re not overriding width or height with CSS (remember CSS rules would trump HTML attributes because attributes have no specificity) so the browser will render the image at whatever size attribute values we provide, regardless of the image’s intrinsic dimensions. As such, to avoid squashing and distortion we would ensure that our size attribute values matched the image’s real dimensions.
 
 ## Flexible Images
 
 At the dawn of the mobile web, many authors sought to handle mobile devices by creating a separate, dedicated mobile website. However this meant duplication of cost, code, content and maintenance. Responsive Web Design provided a counterpoint with a “create once, publish everywhere” philosophy which embraced the fluidity of the web and suggested we could serve desktop and mobile devices alike from a single codebase.
 
-RWD proposed making layout and content _adaptable_. This included the idea of _flexible images_ – that for any given image you need just a single, wide version plus some clever CSS to enable it to work not only on desktop but also to adapt its size for narrower contexts and still look good.
+RWD proposed making layout and content _adaptable_. This included the idea of _flexible images_—that for any given image you need just a single, wide version plus some clever CSS to enable it to work not only on desktop but also to adapt its size for narrower contexts and still look good.
 
 By default when a wide image is rendered within a narrower container it will overflow that container, breaking the layout. The key to avoiding this is to set a _tolerance_ for how wide the image is permitted to go. Generally, we’ll tolerate the image being 100% as wide as its container but no wider. We can achieve this using `max-width`.
 
@@ -124,9 +124,9 @@ img {
 
 </figure>
 
-The eagle-eyed will have noticed that the above snippet once again excludes the HTML `width` and `height` attributes. That’s because when we began working responsively many of us stopped adding those size attributes, feeling that for flexible images the practice was redundant. The image’s dimensions were now a moving target and the space needing reserved for the image by the browser was now variable rather than fixed. And true enough, browsers were not capable of reserving space for a moving target, so including the attributes served no real purpose.
+The eagle-eyed will have noticed that the above snippet once again excludes the HTML `width` and `height` attributes. That’s because when we began working responsively many of us stopped adding those size attributes, feeling that for flexible images the practice was redundant. The image’s dimensions were now a moving target so the space needing reserved by the browser while the image loaded was variable rather than fixed. And we were right: for a long time, browsers were not capable of reserving space for a moving target, so including the size attributes served no real purpose.
 
-Regardless, some content management systems (most notably Wordpress) continued to output images with HTML `width` and `height` attributes as standard. This introduced a small challenge. Without the attributes we could rely on the browser to take our simple `max-width:100%` declaration and also implicitly apply `height:auto` thereby always preserving the image‘s aspect ratio when scaling it down. To achieve the same goal when the HTML `height` attribute is present, we needed the following revised CSS:
+Regardless, some content management systems (most notably Wordpress) continued to output images with HTML `width` and `height` attributes as standard. This introduced a challenge. Without the attributes we could rely on the browser to take our simple `max-width:100%` declaration and also implicitly apply `height:auto` thereby always preserving the image‘s aspect ratio when scaling it down. To achieve the same goal when the HTML `height` attribute is present, we needed the following revised CSS:
 
 <figure>
 
@@ -153,9 +153,9 @@ If you know the image’s aspect ratio in advance, you can now use any combinati
 
 However this presents a couple of challenges.
 
-Firstly, having the `height` HTML attribute once again puts us in the position where, for any image we want to be flexibly scaled and safely limited by `max-width`, we’ll need to explicitly add `height:auto;` in our CSS.
+Firstly, having the `height` HTML attribute once again means that for any image we want flexibly scaled and safely constrained by CSS `max-width`, we’ll also need to override that explicit height attribute value with CSS.
 
-Secondly, having the `width` attribute can be problematic when the image is one which we explicitly want to be full-container-width, for example the featured image in a blog post. The problem arises when the `width` attribute value provided is less than the containing element’s current width. If the only CSS you have on your image is `max-width:100%` then the image will adopt the value from its `width` attribute and consequently be narrower than its parent. One approach might be to always use a sufficiently high `width` value but that feels a tad brittle; I’d rather employ a solution that is more explicit and decisive.
+Secondly, having the `width` attribute can be problematic when the image is one which we explicitly want to be full-container-width, such as the featured image in a blog post. The problem arises when the `width` attribute value is less than the containing element’s current width. If the only CSS you have on your image is `max-width:100%` then the image will adopt the value from its `width` attribute and consequently be narrower than its parent, ruining the effect. One approach might be to always use a sufficiently high `width` value but that feels a tad brittle; I’d rather employ a solution that is more explicit and decisive.
 
 To solve both of the above challenges, we can apply some additional CSS.
 
@@ -197,9 +197,9 @@ If we make the image flexible using `max-width:100%`, it’ll work on wide viewp
 
 On the plus-side, we only need to create one image for our blog post and we’re done.
 
-Another positive is that on devices with retina screens – capable of displaying a comparatively greater density of pixel information in the same physical space – our oversized image will appear at higher quality and look great.
+Another positive is that on devices with retina screens—capable of displaying a comparatively greater density of pixel information in the same physical space—our oversized image will appear at higher quality and look great.
 
-On the downside, we are delivering a _much_ larger image and therefore file size than is required for, for example, a 320px wide context. This has performance implications since bigger files mean longer download times, and this is excarbated when the device is not connected to high-speed wifi (as is often the case with a mobile phone).
+On the downside, we are delivering a _much_ larger image and therefore file size than is required for, say, a 320px wide context. This has performance implications since bigger files mean longer download times, and this is exacerbated when the device is not connected to high-speed wifi (as is often the case with a mobile phone).
 
 Dealing with these challenges using modern _Responsive Images_ will be the subject of Part #2.
 
