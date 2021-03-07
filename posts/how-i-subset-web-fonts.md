@@ -14,29 +14,29 @@ tags:
 ---
 On [my personal website](https://fuzzylogic.me) I currently use three web fonts from the _Source Sans 3_ group: regular, italic and semibold. I self-host my fonts because [that’s a good practice](https://csswizardry.com/2019/05/self-host-your-static-assets/). Additionally I use a variety of special characters to add some typographic life to the text.
 
-When self-hosting it’s important from a performance perspective to minimise the weight of the font files your visitors must download. To achieve this I subset my font files so as to include the characters my content uses but no more. Here’s how I do it.
+When self-hosting it’s important from a performance perspective to minimise the weight of the font files your visitors must download. To achieve this I subset my fonts so as to include only the characters my pages use but no more. Here’s how I do it.
 ---
 
-Note: to follow these steps, you’ll need [glyphhanger](https://github.com/filamentgroup/glyphhanger). The Github page includes installation and usage guidelines however there are a few common installation pitfalls so if you’re on a Mac I recommend checking Sara Souidean’s [_How I set up Glyphhanger on macOS_](https://www.sarasoueidan.com/blog/glyphhanger/) for some friendly assistance.
+Note: to follow these steps, you’ll need to install [glyphhanger](https://github.com/filamentgroup/glyphhanger). The Github page includes installation and usage guidelines however there are a few common installation pitfalls so if you’re on a Mac and run into trouble I recommend checking Sara Soueidan’s [_How I set up Glyphhanger on macOS_](https://www.sarasoueidan.com/blog/glyphhanger/) to get you back on track.
 
 For the purposes of this walkthrough I’ll assume you have a directory in your application named `fonts`.
 
-Start by deleting the custom font files from your application’s `fonts` directory.
+Start by deleting any existing custom font files from your application’s `fonts` directory.
 
 Run your site locally in an incognito browser window. For my Eleventy-based site, I run `npm run serve` which serves the site at `http://localhost:8080`.
 
-Visually check a page or two of your locally-running site to ensure it’s no longer serving your web fonts and is instead rendering text using system fonts.
+Visually check your locally-running site to ensure that now you’ve deleted your web fonts it’s no longer serving them and is instead rendering text using system fonts.
 
 Visit the source page for your custom fonts—in my case [the Github repository for Source Sans 3](https://github.com/adobe-fonts/source-sans). Download in `.ttf` format the latest versions of the fonts you need and place them in your `fonts` directory. For me these are:
 - Regular,
 - Italic; and
 - Semibold.
 
-Note the large file sizes of these `.ttf` files. Source Sans 3’s `Regular.ttf` font is `299 kb`.
+You’ll notice the large file sizes of these `.ttf` files. Source Sans 3’s `Regular.ttf` font is `299 kb`.
 
 At the command line, `cd` into your `fonts` directory.
 
-Now we’re going to run glyphhanger on one font/weight at a time. This tool will intelligenty crawl your website to check which glyphs are in use for the given weight then include those in your subset file which it will output in `.ttf`, `.woff` and `.woff2`. I use glyphhanger’s `spider` option so that it spiders multiple pages (rather than just one) at a time, meaning that it is more likely to catch all the special characters I’m using.
+Now we’re going to run glyphhanger on one font at a time. This fantastic tool will intelligenty crawl your website to check which glyphs are currently in use for the specified weight then include those in a subset file which it outputs in `.ttf`, `.woff` and `.woff2` formats. I use glyphhanger’s `spider` option so that it spiders multiple pages (rather than just one) at a time, meaning that it is more likely to catch all the special characters I’m using.
 
 <figure>
 
@@ -79,7 +79,7 @@ Update your CSS to point at the new `woff2` and `woff` subset files for your fon
 
 Check your locally running application to ensure that the relevant text (body copy in this case) is now being served using the web font rather than fallback font, and that special characters are also being served using the web font.
 
-I’ll usually crack open the Fonts panel in Firefox’s DevTools and check that, amongst other things, my pagination links which use the rightward pointing arrow character (→ or unicode `U+2192`) are rendering it using Source Sans Pro and not sticking out like a sore thumb by using Helvetica due to the glyph not being included in the subset.
+I’ll usually crack open the Fonts panel in Firefox’s DevTools and check that, amongst other things, my pagination links which use the rightward pointing arrow character (→ or unicode `U+2192`) are rendering it using Source Sans Pro and not sticking out like a sore thumb by using Helvetica due to the glyph not being present in the subset.
 
 Delete the `.ttf` file you started with and any `.ttf` subsets generated, because you won’t serve files in that format to your website visitors.
 
