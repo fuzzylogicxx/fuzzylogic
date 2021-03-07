@@ -10,12 +10,12 @@ tags:
   - typography
   - css
   - glyphhanger
-draft: false
+  - howto
 ---
 On [my personal website](https://fuzzylogic.me) I currently use three web fonts from the _Source Sans 3_ group: regular, italic and semibold. I self-host my fonts because that’s a good practice. Additionally I use a variety of special characters to add some typographic life to the text.
 
 When self-hosting it’s important from a performance perspective to minimise the weight of the font files your visitors must download. To achieve this I subset my font files so as to include the characters my content uses but no more. Here’s how I do it.
-- - -
+---
 
 Note: to follow these steps, you’ll need [glyphhanger](https://github.com/filamentgroup/glyphhanger). The Github page includes installation and usage guidelines however there are a few common installation pitfalls so if you’re on a Mac I recommend checking Sara Souidean’s [_How I set up Glyphhanger on macOS_](https://www.sarasoueidan.com/blog/glyphhanger/) for some friendly assistance. 
 
