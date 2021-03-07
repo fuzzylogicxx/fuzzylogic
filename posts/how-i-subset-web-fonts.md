@@ -32,7 +32,7 @@ Visit the source page for your custom fonts—in my case [the Github repository 
 - Italic; and
 - Semibold.
 
-You’ll notice the large file sizes of these `.ttf` files. Source Sans 3’s `Regular.ttf` font is `299 kb`.
+You’ll notice the large file sizes of these `.ttf` files. For example Source Sans 3’s `Regular.ttf` font is 299 kb.
 
 At the command line, `cd` into your `fonts` directory.
 
@@ -59,7 +59,7 @@ Subsetting SourceSans3-Regular.ttf to SourceSans3-Regular-subset.woff2 (was 292.
 
 </figure>
 
-The `.woff2` subset file has reduced the file size from `299 kb` to `17.77 kb` which is pretty impressive!
+The `.woff2` subset file has reduced the file size from 299 kb to 17.77 kb which is pretty impressive!
 
 Update your CSS to point at the new `woff2` and `woff` subset files for your font. My updated CSS looks like this:
 
