@@ -12,7 +12,7 @@ tags:
   - glyphhanger
   - howto
 ---
-On [my personal website](https://fuzzylogic.me) I currently use three web fonts from the _Source Sans 3_ group: regular, italic and semibold. I self-host my fonts because that’s a good practice. Additionally I use a variety of special characters to add some typographic life to the text.
+On [my personal website](https://fuzzylogic.me) I currently use three web fonts from the _Source Sans 3_ group: regular, italic and semibold. I self-host my fonts because [that’s a good practice](https://csswizardry.com/2019/05/self-host-your-static-assets/). Additionally I use a variety of special characters to add some typographic life to the text.
 
 When self-hosting it’s important from a performance perspective to minimise the weight of the font files your visitors must download. To achieve this I subset my font files so as to include the characters my content uses but no more. Here’s how I do it.
 ---
@@ -85,4 +85,4 @@ Delete the `.ttf` file you started with and any `.ttf` subsets generated, becaus
 
 Repeat the glyphhanger subsetting and CSS updating process for any other weights (italic, semibold) or custom fonts you want to subset.
 
-One last handy tip: if there’s a weight for which I don’t need a fancy character set (for example the Semibold I use for headings), I might just grab default _latin_ charset `woff` and `woff2` files from the [Google Webfonts Helper](https://google-webfonts-helper.herokuapp.com/fonts/source-sans-pro). The files tend to be small and well-optimised and this can save a little time. (This is only possible if the font is available from Google Fonts which is true in the case of _Source Sans Pro_.)
+One last handy tip: if there’s a weight for which I don’t need a fancy character set (for example the Semibold I use for headings), I might just grab default _latin_ charset `woff` and `woff2` files from the [Google Webfonts Helper](https://google-webfonts-helper.herokuapp.com/fonts/source-sans-pro). The files tend to be small and well-optimised and this can save a little time. (This is only possible if the font is available from Google Fonts which is true in the case of _Source Sans 3_.)
