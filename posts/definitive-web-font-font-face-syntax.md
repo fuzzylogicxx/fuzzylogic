@@ -15,7 +15,7 @@ These days, whenever I’m about to use a web font on a new site I generally fin
 
 For a long time I headed straight for [Paul Irish’s Bulletproof @font-face Syntax](https://www.paulirish.com/2009/bulletproof-font-face-implementation-syntax/) but I noted a few years back that he’d stopped updating it.
 
-Now, when buying webfonts from type foundries such as [Fontsmith](https://www.fontsmith.com/), the foundries do tend to provide their own guidelines. However, I’m not convinced that these are sufficiently cross-platform compatible.
+When buying web fonts from type foundries such as [Fontsmith](https://www.fontsmith.com/) the foundries do tend to provide their own guidelines. However, I’m not convinced that these are sufficiently cross-platform compatible.
 
 Recently I’ve been reading [Flexible Typesetting](https://abookapart.com/products/flexible-typesetting) by Tim Brown and in it he recommends [Webfont Handbook](https://abookapart.com/products/webfont-handbook) by Bram Stein. That’s now next on my reading list, however in the meantime I found [an excerpt on *A List Apart*](https://alistapart.com/article/using-webfonts/) which specifically covers the best modern `@font-face` syntax.
 
