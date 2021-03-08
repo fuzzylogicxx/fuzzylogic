@@ -23,7 +23,7 @@ Based on Stein’s advice, here’s what I’m now using.
 
 <figure>
 
-```
+``` css
 @font-face {
     font-family: Elena;
     src: url(elena.woff2) format("woff2"),
@@ -38,7 +38,7 @@ Soon, when all browsers support the `woff` format we’ll be able to reduce this
 
 <figure>
 
-```
+``` css
 @font-face {
     font-family: Elena;
     src: url(elena.woff2) format("woff2"),
