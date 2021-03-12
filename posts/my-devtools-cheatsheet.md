@@ -49,3 +49,7 @@ Open the Command Menu then type “disable” and you’ll see the option.
 ### Get responsive `img` element’s `currentSrc`
 
 Inspect the element, click the properties tab, toggle open the top item.
+
+### Throttle network/bandwidth
+
+Go to tab _Network_ then change _Throttling_ to your desired setting, for example “Slow 3G”, or “offline”.
