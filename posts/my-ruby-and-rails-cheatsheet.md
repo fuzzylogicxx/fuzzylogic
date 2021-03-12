@@ -382,4 +382,4 @@ bundle exec rake db:reset
 - [ViewComponent by GitHub](https://viewcomponent.org/)
 - [Debugging with Pry](https://learn.co/lessons/debugging-with-pry)
 - [Why Byebug will be your best friend](https://blog.usejournal.com/why-byebug-will-be-your-best-friend-when-programming-in-rails-98e06f46bdb6)
-
+- [Capybara cheatsheet](https://devhints.io/capybara)
