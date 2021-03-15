@@ -75,6 +75,24 @@ bin/rspec spec/path/to/foo_spec.rb:195
 
 </figure>
 
+If adding data variables to use in tests, declare them in a let block so as to keep them isolated and avoid them leaking elsewhere.
+
+<figure>
+  
+``` ruby
+let(:example_data_obj) {
+  {
+    foo: "bar",
+    baz: "bat", 
+    …
+  }
+}
+```
+
+</figure>
+
+Note: if you need multiple data variables so as to handle different scenarios, it’s generally more readable to define the data being tested right next to the test.
+
 ## Helper methods
 
 Helper methods are for use in views. They become available to all your views automatically.
@@ -239,6 +257,12 @@ end
 
 </figure>
 
+### Define private methods
+
+Add `private` above the instance methods which are only called from within the class in which they are defined and not from outside. This makes it clear for other developers that they are internal and don’t affect the external interface. This lets them know, for example, that these method names could be changed without breaking things elsewhere.
+
+Also: keep your public interface small.
+
 ### Naming conventions
 
 The convention I have worked with is that any method that returns a `boolean` should end with a question mark. This saves having to add prefixes like “is-” to method names. If a method does not return a boolean, its name should not end with a question mark.
@@ -251,6 +275,18 @@ Here’s an example of using _named parameters_. When this method is called (or 
   
 ``` ruby
 def initialize(size: nil, full_height: false, data: nil)
+```
+
+</figure>
+
+## Check if thing is an array and is non-empty
+
+You can streamline this to:
+
+<figure>
+  
+``` ruby
+thing.is_a?(Array) && thing.present?
 ```
 
 </figure>
@@ -325,7 +361,19 @@ The above two lines really just construct a “string” of the component and le
 
 We have the `content_tag` helper method for rendering HTML elements. However you are arguably just as well coding the actual HTML rather than bothering with it, especially for the likes of `div` and `span` elements.
 
-`link_to` is a little more useful and makes more sense to use. 
+`link_to` is a little more useful and makes more sense to use.
+
+### tag.send()
+
+`send()` is not just for use on `tag`. It’s a means of calling a method dynamically i.e. using a variable. I’ve used it so as to have a single line create either a `th` or a `td` dymamically dependent on context. 
+
+Only use it when you are in control of the arguments. Never use it with user input or something coming from a database.
+
+## Random IDs or strings
+
+`object_id` gives you the internal ruby object id for what you’re working on. I used this in the past to append a unique id to an HTML `id` attribute value so as to automate an accessibility feature. However don’t use it unintentionally like I did there.
+
+It’s better to use something like `rand`, or `secure_random` or `secure_random_hex`.
 
 ## Views
 
