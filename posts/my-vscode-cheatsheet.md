@@ -7,6 +7,13 @@ tags: [development, editor, cheatsheet, vscode, tool]
 Here’s a list of useful (Mac-based) VS Code tips for my reference and yours.
 ---
 
+## Settings
+
+My preferences:
+
+- "explorer.compactFolders": false
+- "explorer.autoReveal": false
+
 ## Open current terminal directory in VS Code
 
 <figure>
@@ -16,6 +23,10 @@ code .
 ```
 
 </figure>
+
+## Toggle Terminal
+
+<kbd>Ctrl-`</kbd>
 
 ## Toggle sidebar visibility
 
