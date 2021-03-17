@@ -15,9 +15,9 @@ Chris is using:
 <figure>
 
 ``` html
-<link rel="icon" href="/favicon.ico"><!-- 32Ã32 -->
+<link rel="icon" href="/favicon.ico"><!-- 32x32 -->
 <link rel="icon" href="/icon.svg" type="image/svg+xml">
-<link rel="apple-touch-icon" href="/apple-touch-icon.png"><!-- 180Ã180 -->
+<link rel="apple-touch-icon" href="/apple-touch-icon.png"><!-- 180x180 -->
 <link rel="manifest" href="/manifest.webmanifest">
 ```
 
