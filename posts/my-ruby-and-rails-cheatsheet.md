@@ -373,7 +373,7 @@ Only use it when you are in control of the arguments. Never use it with user inp
 
 `object_id` gives you the internal ruby object id for what you’re working on. I used this in the past to append a unique id to an HTML `id` attribute value so as to automate an accessibility feature. However don’t use it unintentionally like I did there.
 
-It’s better to use something like `rand`, or `secure_random` or `secure_random_hex`.
+It’s better to use something like `rand`, or `SecureRandom` or `SecureRandom.hex`.
 
 ## Views
 
