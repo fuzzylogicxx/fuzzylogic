@@ -11,7 +11,7 @@ tags:
   - preferences
  draft: true
 ---
-My notes on which CSS units to use when in order to work with user preferences and browser behaviours, and how to test your efforts are working correctly.
+As a front-end developer I’m called upon both to test that web pages support user font-size preferences, and to build pages that offer that support. Here are my notes on how to do both.
 ---
 
 ## Testing
