@@ -14,21 +14,26 @@ tags:
 My notes on which CSS units to use when in order to work with user preferences and browser behaviours, and how to test your efforts are working correctly.
 ---
 
-## Update browser’s default font-size
+## Testing
+
+### Update browser’s default font-size
 
 Chrome > Kebab icon (top-right) > Settings > Appearance > Font size > Medium (Recommended) or one of various options
 chrome://settings/appearance
 
 Does all of the text change or does some obstinately stay at the same size? It’s probably using `px` or some other absolute value.
 
-## Zoom the page
+### Zoom the page
 
-Cmd and plus or minus icon. Try going up to 200%. Is everything OK? It probably will be, however the previous item (browser’s default font-size and whether that has been blocked) has 
-an impact here on _how_ it works.
+Cmd and plus or minus icon. Try going up to 200%. Is everything OK? It probably will be, however the previous item (browser’s default font-size and whether that has been blocked) has an impact here on _how_ it works.
 
-[Pixels vs. Relative Units in CSS: why it’s still a big deal](https://www.24a11y.com/2019/pixels-vs-relative-units-in-css-why-its-still-a-big-deal/) by Kathleen McMahon explains why using relative values for font-sizes and unitless values for line-heights really gives control back to the user for the experience they want in terms of their zooming and font-size preferences.
+## Developing 
 
-## Dial `em` for media queries
+### Absolute vs Relative Units
+
+Pixels vs. Relative Units in CSS: why it’s still a big deal](https://www.24a11y.com/2019/pixels-vs-relative-units-in-css-why-its-still-a-big-deal/) by Kathleen McMahon explains why using relative values for font-sizes and unitless values for line-heights really gives control back to the user for the experience they want in terms of their zooming and font-size preferences.
+
+### Dial `em` for media queries
 
 For media query values it’s best to set values in `em` rather than `px` or `rem`. This gives results which are i) flexible; and ii) work best across browsers.
 
