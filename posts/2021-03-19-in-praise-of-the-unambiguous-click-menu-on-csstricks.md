@@ -20,7 +20,6 @@ From the US Web Design System:
 
 From popular frontend framework [Bootstrap](https://getbootstrap.com/docs/3.4/):
 
-> What it really boils down to is user intent. The purpose of a hover state is to indicate something is clickable (underlined text)â¦ The purpose of a click is to actually do something, to take an explicit action. Opening a dropdown is an explicit action and should only happen on click.
-—Bootstrap 
+> What it really boils down to is user intent. The purpose of a hover state is to indicate something is clickable (underlined text). The purpose of a click is to actually do something, to take an explicit action. Opening a dropdown is an explicit action and should only happen on click.
 
 (via [@jamesmockett](https://twitter.com/jamesmockett))
