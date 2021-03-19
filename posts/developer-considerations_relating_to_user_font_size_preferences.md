@@ -2,6 +2,7 @@
 title: Developer considerations relating to user font size preferences
 description: When to use which CSS units to work with rather than against with user preferences and browser behaviour.
 date: 2021-03-18T16:14:27.659Z
+draft: true
 tags:
   - fonts
   - a11y
@@ -9,7 +10,6 @@ tags:
   - css
   - mediaqueries
   - preferences
- draft: true
 ---
 As a front-end developer I’m called upon both to test that web pages support user font-size preferences, and to build pages which offer that support. Here are my notes on how to do both.
 ---
@@ -18,8 +18,7 @@ As a front-end developer I’m called upon both to test that web pages support u
 
 ### Update browser’s default font-size
 
-Chrome > Kebab icon (top-right) > Settings > Appearance > Font size > Medium (Recommended) or one of various options
-chrome://settings/appearance
+Chrome > Kebab icon (top-right) > Settings > [Appearance](chrome://settings/appearance) > Font size > Medium (Recommended) or one of various options.
 
 Does all of the text change or does some obstinately stay at the same size? It’s probably using `px` or some other absolute value.
 
@@ -31,7 +30,7 @@ Cmd and plus or minus icon. Try going up to 200%. Is everything OK? It probably 
 
 ### Absolute vs Relative Units
 
-Pixels vs. Relative Units in CSS: why it’s still a big deal](https://www.24a11y.com/2019/pixels-vs-relative-units-in-css-why-its-still-a-big-deal/) by Kathleen McMahon explains why using relative values for font-sizes and unitless values for line-heights really gives control back to the user for the experience they want in terms of their zooming and font-size preferences.
+[Pixels vs. Relative Units in CSS: why it’s still a big deal](https://www.24a11y.com/2019/pixels-vs-relative-units-in-css-why-its-still-a-big-deal/) by Kathleen McMahon explains why using relative values for font-sizes and unitless values for line-heights gives control back to the user. It lets them choose the experience they want in terms of zoom-level and text size.
 
 ### Dial `em` for media queries
 
