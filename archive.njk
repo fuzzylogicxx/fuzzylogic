@@ -1,16 +1,15 @@
 ---
 layout: layouts/page.njk
-tags:
-  - nav
-navtitle: Journal
-navpos: 2
+title: Journal
+permalink: posts/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber }}/{% endif %}index.html
+eleventyNavigation:
+  key: Journal
+  order: 2
 pagination:
   data: collections.liveposts
   size: 10
   reverse: true
   alias: posts
-permalink: posts/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber }}/{% endif %}index.html
-title: Journal
 ---
 {% set postslist = posts %}
 {% include "postslist.njk" %}

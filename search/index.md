@@ -2,11 +2,9 @@
 layout: layouts/page.njk
 title: Search
 description: Seek and ye might find.
-tags:
-  - nav
-navtitle: Search
-navpos: 4
-navID: nav-search
+eleventyNavigation:
+  key: Search
+  order: 4
 ---
 
 <form action="https://www.google.co.uk/search" method="get" class="search">
