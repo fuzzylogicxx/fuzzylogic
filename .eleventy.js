@@ -1,6 +1,5 @@
 const {DateTime} = require('luxon');
 const fs = require('fs');
-const pluginNavigation = require("@11ty/eleventy-navigation");
 const pluginRss = require('@11ty/eleventy-plugin-rss');
 const pluginSyntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
 const CleanCSS = require('clean-css');
@@ -8,7 +7,6 @@ const { PurgeCSS } = require('purgecss');
 //const pluginRespimg = require('eleventy-plugin-respimg');
 
 module.exports = function(eleventyConfig) {
-  eleventyConfig.addPlugin(pluginNavigation);
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(pluginSyntaxHighlight);
   eleventyConfig.setDataDeepMerge(true);
@@ -119,6 +117,7 @@ module.exports = function(eleventyConfig) {
             switch (item) {
               // this and the `filter` list in posts-tagged-with-tag.njk should be the same
               case 'all':
+              case 'nav':
               case 'post':
               case 'posts':
               case 'link':
@@ -140,6 +139,13 @@ module.exports = function(eleventyConfig) {
     // use spread operator on our set within array braces to convert set to array
     // also sort array of tags alphabetically
     return [...tagSet].sort();
+  });
+
+  // Navigation Items, sorted by navpos property
+  eleventyConfig.addCollection('navItems', function(collection) {
+    return collection.getFilteredByTag('nav').sort(function(a, b) {
+      return b.data.navpos - a.data.navpos;
+    });
   });
 
   // Cloudinary / Responsive Images

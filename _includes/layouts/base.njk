@@ -80,16 +80,14 @@
               <a href="#global-footer">Footer and Navigation</a>
             </nav>
             <nav aria-label="site" class="header-menu">
-              {% set navPages = collections.all | eleventyNavigation %}
               <ul class="list-custom">
-              {%- for entry in navPages %}
-                <li id="nav-{{ entry.title | lower }}">
-                  <a{% if entry.url == page.url %} aria-current="page"{% endif %} href="{{ entry.url | url }}">{{ entry.title }}</a>
-                </li>
-              {%- endfor %}
+                {%- for nav in collections.navItems | reverse -%}
+                <li{% if nav.data.navID %} id="{{ nav.data.navID }}"{% endif %}{% if nav.data.navclass %} class="{{ nav.data.navclass }}"{% endif %}><a href="{{ nav.url | url }}" {% if nav.url == page.url %} aria-current="page"{% endif %}>{{ nav.data.navtitle }}</a></li>
+                {%- endfor -%}
               </ul>
             </nav>
             <div class="search-ui invisible">
+
               <form class="form-custom global-search-form" role="search" aria-label="Unique identifier goes here" action="https://www.google.co.uk/search" method="get">
                 <input type="hidden" name="q" id="q" value="site:{{metadata.url}}" />
                 <div class="form-group">
@@ -188,9 +186,9 @@
     <script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
 
     <script>{% include "js/fuzzylogic.js" %}</script>
-
-    {% block main %}
-    <!-- page-specific scripts are placed here -->
+    
+    {% block main %}	
+    <!-- page-specific scripts are placed here -->	
     {% endblock %}
 
   </body>

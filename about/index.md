@@ -1,9 +1,10 @@
 ---
 layout: layouts/page.njk
 title: About
-eleventyNavigation:
-  key: About
-  order: 3
+tags:
+  - nav
+navtitle: About
+navpos: 3
 ---
 ## Web
 
