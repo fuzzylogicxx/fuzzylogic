@@ -39,7 +39,7 @@ yarn  # or npm init
 yarn  # or npm i
 
 # Add a 3rd-party library to your project
-yarn add package_name   # or npm i <package…>
+yarn add package_name   # or npm i package_name
 
 # Add package as a devDependency.
 # Useful for build & testing-related tools.
@@ -54,7 +54,7 @@ yarn add package_name@^1.3.1
 # Remove a package
 # use this rather than manually deleting from package.json.
 # Updates yarn.lock, package.json and removes from node_modules.
-yarn remove package_name
+yarn remove package_name   # or npm r package_name
 
 # Update one package (optionally to a specific version/range)
 yarn upgrade package_name
