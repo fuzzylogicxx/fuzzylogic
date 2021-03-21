@@ -10,7 +10,14 @@ tags:
   - lighthouse
 draft: true
 ---
-## Updated version started in Feb 2020
+## Updated version started in Mar 2021
+
+Stopped doing it in branch v4.1 because starting from a nice blank canvas and pulling in / reconciling the old with the new is a pipedream. It’s not practical, and also I need to get better at “upgrading”. 
+
+Got rid of gulp-built JS, babel, polyfill.io. Switched to https://www.11ty.dev/docs/quicktips/inline-js/ and script type=module.
+
+
+## Updated version started in Feb 2021
 
 Started by branching off and cleaning out everything (except `.git` and `.gitignore`).
 
