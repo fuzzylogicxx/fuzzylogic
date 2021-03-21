@@ -1,9 +1,7 @@
-;(function () {
-
 /*!
- * Use ResizeObserver to apply the class .aboveMin to a given grid container (.grid) when its width is greater than it’s "data-min" value.
- *
- */
+  * Use ResizeObserver to apply the class .aboveMin to a given grid container (.grid) when its width is greater than it’s "data-min" value.
+  *
+  */
 function observeGrid(gridNode) {
   // Feature detect ResizeObserver
   if ('ResizeObserver' in window && !CSS.supports('width', `min(20rem, 100%)`)) {
@@ -37,5 +35,3 @@ var grids = document.querySelectorAll('.grid');
 for (var i = 0; i < grids.length; i++) {
   observeGrid(grids[i]);
 }
-
-})();

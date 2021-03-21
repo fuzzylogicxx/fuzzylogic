@@ -184,14 +184,19 @@
       </symbol>
     </svg>
 
-    <!-- Polyfills before any other scripts so that subsequent JS (which might use matches() and so on) is polyfilled -->
-    <script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-
-    <script>{% include "js/fuzzylogic.js" %}</script>
+    {# inlined, minified JS #}
+    {# 1. assign contents of our JS scripts to a Nunjucks variable #}
+    {% set js %}
+      {% include "js/search.js" %}
+      {% include "js/patch_css_min_for_grids.js" %}
+    {% endset %}
+    {# 2. feed variable through our jsmin filter to minify it #}
+    <script type="module">
+      {{ js | jsmin | safe }}
+    </script>
 
     {% block main %}
-    <!-- page-specific scripts are placed here -->
+    {# page-specific scripts are placed here #}
     {% endblock %}
-
   </body>
 </html>
