@@ -5,7 +5,7 @@ const pluginRss = require('@11ty/eleventy-plugin-rss');
 const pluginSyntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
 const CleanCSS = require('clean-css');
 const { PurgeCSS } = require('purgecss');
-//const pluginRespimg = require('eleventy-plugin-respimg');
+const { minify } = require("terser");
 
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(pluginNavigation);
@@ -16,7 +16,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addLayoutAlias('post', 'layouts/post.njk');
 
   //
-  // Eleventy Filters (functions we use elsewhere to modify strings, dates, file contents etc to get what we want)
+  // Eleventy Transforms
   //
 
   eleventyConfig.addTransform('purge-and-inline-css', async (content, outputPath) => {
@@ -31,6 +31,24 @@ module.exports = function(eleventyConfig) {
     });
 
     return content.replace('<!-- THIS WILL BE REPLACED WITH INLINE CSS -->', '<style>' + purgeCSSResults[0].css + '</style>');
+  });
+
+  //
+  // Eleventy Filters (functions we use elsewhere to modify strings, dates, file contents etc to get what we want)
+  //
+
+  eleventyConfig.addNunjucksAsyncFilter("jsmin", async function (
+    code,
+    callback
+  ) {
+    try {
+      const minified = await minify(code);
+      callback(null, minified.code);
+    } catch (err) {
+      console.error("Terser error: ", err);
+      // Fail gracefully.
+      callback(null, code);
+    }
   });
 
   // Readable Date filter

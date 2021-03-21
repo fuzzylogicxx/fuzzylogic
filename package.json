@@ -37,18 +37,14 @@
   },
   "dependencies": {
     "@11ty/eleventy-cache-assets": "^2.0.3",
-    "@babel/core": "^7.6.4",
-    "@babel/preset-env": "^7.6.3",
     "dotenv": "^8.2.0",
     "eleventy-plugin-respimg": "^0.1.2",
     "encoding": "^0.1.12",
     "gulp": "^4.0.2",
-    "gulp-babel": "^8.0.0",
-    "gulp-concat": "^2.6.1",
     "gulp-sass": "^4.0.2",
-    "gulp-uglify": "^3.0.2",
     "netlify-lambda": "^1.6.3",
     "node-fetch": "^2.6.1",
-    "slugify": "^1.4.7"
+    "slugify": "^1.4.7",
+    "terser": "^5.6.1"
   }
 }
