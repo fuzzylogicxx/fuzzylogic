@@ -15,6 +15,6 @@ Trys’s solution allows us to render components like so:
   text: 'Press me'
 }) }}
 
-{# Output  #}
+{# Output #}
 <button type="button">Press me</button>
 ```
