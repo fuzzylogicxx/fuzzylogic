@@ -5,7 +5,7 @@ description: "Trys shows us how to use macros in Nunjucks (rather than set follo
 tags: [link, nunjucks, templatelanguages, javascript, jamstack]
 linkTarget: "https://www.trysmudford.com/blog/encapsulated-11ty-components/"
 ---
-Trys shows us how to use the Nunjucks `macro` to create encapsulated components. This works out less leaky and more predictable than an `include` preceded by variables set with `set`.
+Trys shows us how to use the Nunjucks `macro` to create encapsulated components. This works out less leaky and more predictable than an `include` preceded by variables assigned with `set`.
 ---
 
 Trys’s solution allows us to render components like so:
@@ -14,9 +14,9 @@ Trys’s solution allows us to render components like so:
   
 ``` twig
 {% raw %}
-{{ component('button', {
-  text: 'Press me'
-}) }}
+  {{ component('button', {
+    text: 'Press me'
+  }) }}
 
 {# Output #}
 {% endraw %}
