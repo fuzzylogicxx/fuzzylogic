@@ -13,11 +13,11 @@ Trys’s solution allows us to render components like so:
 <figure>
   
 ``` twig
-{{ component('button', {
+&#123;&#123; component('button', &#123;
   text: 'Press me'
-}) }}
+&#125;) &#125;&#125;
 
-{# Output #}
+&#123;# Output #&#125;
 <button type="button">Press me</button>
 ```
 
