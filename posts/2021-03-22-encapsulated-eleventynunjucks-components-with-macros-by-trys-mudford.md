@@ -10,7 +10,9 @@ Trys shows us how to use the Nunjucks `macro` to create encapsulated components.
 
 Trys’s solution allows us to render components like so:
 
-``` nunjucks
+<figure>
+  
+``` twig
 {{ component('button', {
   text: 'Press me'
 }) }}
@@ -18,3 +20,5 @@ Trys’s solution allows us to render components like so:
 {# Output #}
 <button type="button">Press me</button>
 ```
+
+</figure>
