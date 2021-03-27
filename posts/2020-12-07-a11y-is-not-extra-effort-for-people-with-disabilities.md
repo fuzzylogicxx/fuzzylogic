@@ -15,5 +15,3 @@ From Andrey:
 To which Max replies:
 
 > This. A11y is not “extra effort for people with disabilities”, it‘s just part of a well-crafted UI.
-
-Couldn’t agree more, fellas.
