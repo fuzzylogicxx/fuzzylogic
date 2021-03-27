@@ -42,7 +42,8 @@ yarn  # or npm i
 yarn add package_name   # or npm i package_name
 
 # Add package as a devDependency.
-# For tools you need for local dev but not for prod builds (e.g. CLI and hot reload tools) 
+# For tools only required in the local dev environment
+# e.g. CLIs, hot reload.
 yarn add -D package_name  # or npm i package_name --save-dev 
 
 # Add package but specify a particular version or semver range
@@ -138,11 +139,23 @@ When managing dependencies, you can expect to see the following files and direct
 - `yarn.lock`
 - `node_modules` (this is the directory into which packages are installed)
 
-### A note on lock files
+### Lock files
 
 As well as `package.json`, you’re likely to also have `yarn.lock` (or `package.lock` or `package-lock.json`) under source control too. As described above, while `package.json` can be less specific about a package’s version and suggest a semver range, the lock file will lock down the specific version to be installed by the package manager when someone runs `yarn` or `npm install`.
 
 You shouldn’t manually change a lock file.
+
+## Choosing between `dependencies` and `devDependencies`
+
+Whether you save an included package under `dependencies` (the default) or `devDependencies` comes down to how the package will be used and the type of website you’re working on.
+
+The important practical consideration here is whether the package is necessary in the production environment. By production environment I don’t just mean the customer-facing website/application but also the enviroment that _builds_ the application for production.
+
+In a production build environment (i.e. one which likely has the environment variable `NODE_ENV` set to `production`) the `devDependencies` are _not installed_. `devDependencies` are packages considered only necessary for development and so to keep production builds fast and their output lean, they are ignored.
+
+As an example, my personal site is JAMstack-based using the SSG _Eleventy_ (11ty) and is hosted on Netlify. On Netlify I have an environment variable setting `NODE_ENV=production` rather than the default `development` because I want fast builds. Netlify builds the site on each push therefore 11ty (as the static site generator) must be installed and available therefore I have 11ty under `dependencies`.
+
+As for tools such as Netlify CLI and linters, they go under `devDependencies`. Netlify’s build does not require them, nor does any client-side JavaScript.
 
 ## Upgrading best practices
 
