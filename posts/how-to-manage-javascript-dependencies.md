@@ -42,7 +42,7 @@ yarn  # or npm i
 yarn add package_name   # or npm i package_name
 
 # Add package as a devDependency.
-# Useful for build & testing-related tools.
+# For tools you need for local dev but not for prod builds (e.g. CLI and hot reload tools) 
 yarn add -D package_name  # or npm i package_name --save-dev 
 
 # Add package but specify a particular version or semver range
