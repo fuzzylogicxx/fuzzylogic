@@ -1,6 +1,6 @@
 ---
 date: "2020-12-07T10:35:47.465Z"
-title: "A11y is not 'extra effort for people with disabilities'"
+title: "A11y is not “extra effort for people with disabilities”"
 description: "Strong agree with these sentiments on accessibility expressed by Max Böck and Andrey Okonetchnikov on Twitter."
 tags: [link, a11y, accessibility, keyboard, twitter]
 linkTarget: "https://twitter.com/mxbck/status/1335522161776332800"
@@ -14,6 +14,6 @@ From Andrey:
 
 Max follows up with:
 
-> This. A11y is not "extra effort for people with disabilities", it's just part of a well-crafted UI.
+> This. A11y is not “extra effort for people with disabilities”, it‘s just part of a well-crafted UI.
 
 Couldn’t agree more, fellas.
