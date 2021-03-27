@@ -12,7 +12,7 @@ From Andrey:
 > If you’re building UI, it’s your responsibility to make it work for everyone. Clients often tell me “we don’t care about accessibility” but in reality they do want keyboard support at the very least. So I just build my UI in a way it works without discussing it. It’s my job.
 ---
 
-Max follows up with:
+To which Max replies:
 
 > This. A11y is not “extra effort for people with disabilities”, it‘s just part of a well-crafted UI.
 
