@@ -1,11 +1,11 @@
 ---
 date: "2020-12-07T10:35:47.465Z"
 title: "A11y is not 'extra effort for people with disabilities'"
-description: "Strong agree with these sentiments on accessibility expressed by Max BÃ¶ck and Andrey Okonetchnikov on Twitter."
+description: "Strong agree with these sentiments on accessibility expressed by Max Böck and Andrey Okonetchnikov on Twitter."
 tags: [link, a11y, accessibility, keyboard, twitter]
 linkTarget: "https://twitter.com/mxbck/status/1335522161776332800"
 ---
-Strong agree with these sentiments on accessibility expressed by Max BÃ¶ck and Andrey Okonetchnikov on Twitter.
+Strong agree with these sentiments regarding accessibility expressed by Max Böck and Andrey Okonetchnikov on Twitter.
 
 From Andrey:
 
