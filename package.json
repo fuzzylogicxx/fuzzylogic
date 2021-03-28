@@ -3,13 +3,12 @@
   "version": "5.0.0",
   "description": "A starter repository for a blog web site using the Eleventy static site generator.",
   "scripts": {
-    "serve": "gulp build & gulp watch & ELEVENTY_ENV=dev npx @11ty/eleventy --serve",
-    "serve:prod": "gulp build & gulp watch & ELEVENTY_ENV=prod npx @11ty/eleventy --serve",
-    "watch": "npx eleventy --watch",
-    "debug": "DEBUG=* npx eleventy",
-    "wipe": "gulp wipe",
-    "build": "gulp wipe && gulp build & ELEVENTY_ENV=prod eleventy && npm run build:lambda",
-    "build:lambda": "netlify-lambda build _lambda"
+    "watch:sass": "sass --watch --style=compressed src/sass:_includes/css",
+    "build:sass": "sass --style=compressed src/sass:_includes/css",
+    "watch:eleventy": "eleventy --serve",
+    "build:eleventy": "eleventy",
+    "start": "npm-run-all build:sass --parallel watch:*",
+    "build": "npm-run-all build:*"
   },
   "repository": {
     "type": "git",
@@ -41,7 +40,9 @@
     "markdown-it-anchor": "^7.1.0",
     "netlify-lambda": "^1.6.3",
     "node-fetch": "^2.6.1",
+    "npm-run-all": "^4.1.5",
     "purgecss": "^4.0.3",
+    "sass": "^1.32.8",
     "slugify": "^1.4.7",
     "terser": "^5.6.1"
   }

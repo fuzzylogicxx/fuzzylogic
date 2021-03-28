@@ -4,6 +4,8 @@ node_modules/
 .cache
 .env
 
+_includes/css
+
 # Local Netlify folder
 .netlify
 
