@@ -11,12 +11,12 @@ Trys shows us how to use the Nunjucks `macro` to create encapsulated components.
 Trys’s solution allows us to render components like so:
 
 <figure>
-  
+
 ``` twig
-{% raw %}
-  {{ component('button', {
-    text: 'Press me'
-  }) }}
+{%- raw -%}
+{{ component('button', {
+  text: 'Press me'
+}) }}
 
 {# Output #}
 {% endraw %}
