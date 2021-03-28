@@ -3,7 +3,6 @@ const fs = require('fs');
 const pluginNavigation = require("@11ty/eleventy-navigation");
 const pluginRss = require('@11ty/eleventy-plugin-rss');
 const pluginSyntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
-const CleanCSS = require('clean-css');
 const { PurgeCSS } = require('purgecss');
 const { minify } = require("terser");
 
@@ -17,8 +16,13 @@ module.exports = function(eleventyConfig) {
 
   //
   // Eleventy Transforms
+  // Transforms can modify a template’s output.
+  // For example, use a transform to format/prettify an HTML file with proper whitespace.
   //
 
+  // For each .html file replace a placeholder line in the <head> with a inlined <style> block.
+  // Include only the CSS required by the page, thanks to the purgecss NPM package.
+  // Note: it’s all defined and set into action here; it’s not invoked elsewhere.
   eleventyConfig.addTransform('purge-and-inline-css', async (content, outputPath) => {
     if (!outputPath.endsWith('.html')) {
       return content;
@@ -30,7 +34,10 @@ module.exports = function(eleventyConfig) {
       keyframes: true,
     });
 
-    return content.replace('<!-- THIS WILL BE REPLACED WITH INLINE CSS -->', '<style>' + purgeCSSResults[0].css + '</style>');
+    return content.replace(
+      '<!-- THIS WILL BE REPLACED WITH INLINE CSS -->',
+      '<style>' + purgeCSSResults[0].css + '</style>'
+    );
   });
 
   //
