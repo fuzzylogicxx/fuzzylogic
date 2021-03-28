@@ -41,7 +41,7 @@ templateClass: post-main
 
     <footer class="full-article-footer stack">
 
-      <h3>Related topics:</h3>
+      <h3>Related topics</h3>
 
       <div class="cluster">
         <ul class="tags">
@@ -53,6 +53,13 @@ templateClass: post-main
         {% endfor %}
         </ul>
       </div>
+
+      <nav class="traverse">
+        {%- set previousPost = collections.liveposts | getPreviousCollectionItem(page) %}
+        {%- if previousPost %}<a rel="prev" href="{{ previousPost.url | url }}"><span aria-hidden="true">← </span>Previous post</a></li>{% endif %}
+        {%- set nextPost = collections.liveposts | getNextCollectionItem(page) %}
+        {%- if nextPost %}<a rel="next" href="{{ nextPost.url | url }}">Next post<span aria-hidden="true"> →</span></a>{% endif %}
+      </nav>
 
     </footer>
 
