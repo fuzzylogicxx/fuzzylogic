@@ -151,11 +151,11 @@ Whether you save an included package under `dependencies` (the default) or `devD
 
 The important practical consideration here is whether the package is necessary in the production environment. By production environment I don’t just mean the customer-facing website/application but also the enviroment that _builds_ the application for production.
 
-In a production build environment (i.e. one which likely has the environment variable `NODE_ENV` set to `production`) the `devDependencies` are _not installed_. `devDependencies` are packages considered only necessary for development and so to keep production builds fast and their output lean, they are ignored.
+In a production “build process” environment (i.e. one which likely has the environment variable `NODE_ENV` set to `production`) the `devDependencies` are _not installed_. `devDependencies` are packages considered necessary for development only and therefore to keep production build time fast and output lean, they are ignored.
 
-As an example, my personal site is JAMstack-based using the SSG _Eleventy_ (11ty) and is hosted on Netlify. On Netlify I have an environment variable setting `NODE_ENV=production` rather than the default `development` because I want fast builds. Netlify builds the site on each push therefore 11ty (as the static site generator) must be installed and available therefore I have 11ty under `dependencies`.
+As an example, my personal site is JAMstack-based using the static site generator (SSG) _Eleventy_ and is hosted on Netlify. On Netlify I added a `NODE_ENV` environment variable and set it to `production` (to override Netlify’s default setting of `development`) because I want to take advantage of faster build times where appropriate. To allow Netlify to build the site on each push I have Eleventy under `dependencies` so that it will be installed and is available to generate my static site.
 
-As for tools such as Netlify CLI and linters, they go under `devDependencies`. Netlify’s build does not require them, nor does any client-side JavaScript.
+By contrast, tools such as Netlify’s CLI and linters go under `devDependencies`. Netlify’s build prorcess does not require them, nor does any client-side JavaScript.
 
 ## Upgrading best practices
 
