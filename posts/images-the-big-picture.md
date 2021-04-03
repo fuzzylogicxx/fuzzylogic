@@ -141,7 +141,7 @@ img {
 
 Here’s an example of a flexible image. It’s 2000 pixels wide, but shrinks to fit inside its narrower parent. Magic!
 
-<img src="https://via.placeholder.com/2000x1500/272822/FFFFFF" />
+<img src="https://via.placeholder.com/2000x1500.png/000" />
 
 ## Jank-free responsive images
 
