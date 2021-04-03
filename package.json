@@ -7,8 +7,9 @@
     "build:sass": "sass --style=compressed src/sass:_includes/css",
     "watch:eleventy": "eleventy --serve",
     "build:eleventy": "eleventy",
+    "build:lambda": "netlify-lambda build _lambda",
     "start": "npm-run-all build:sass --parallel watch:*",
-    "build": "npm-run-all build:*"
+    "build": "ELEVENTY_ENV=prod npm-run-all build:*"
   },
   "repository": {
     "type": "git",
