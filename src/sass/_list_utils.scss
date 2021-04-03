@@ -4,7 +4,9 @@ ul[class],
 ol[class] {
   list-style: none;
   padding-left: 0;
-  //margin-left: 0; // this causes problems. The selector’s specificity overrides utilities (such as our cluster) which need to affect margin. Do we need margin-left: 0; to reset lists?
+  // margin-left: 0; // this causes problems.
+    // The selector’s specificity overrides utilities (such as our cluster) which need to affect margin.
+    // Do we need margin-left: 0; to reset lists?
 }
 
 // Unbulleted, vertically-stacked list

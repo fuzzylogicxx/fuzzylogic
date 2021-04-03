@@ -1,3 +1,6 @@
+@use 'variables_general';
+@use 'typography';
+
 // modified version of Hawkswork’s Search
 
 .invisible {
@@ -14,18 +17,18 @@
 }
 
 .search-results {
-  margin-top: $space-xxs;
+  margin-top: typography.$space-xxs;
   margin-left: auto;
   margin-right: auto;
 }
 
 .search-results li {
   background: #F2F1F0; // same as logo roundel background
-  border-radius: $global-border-radius;
-  padding: scale-value(-5)+rem $space-xxs;
+  border-radius: variables_general.$global-border-radius;
+  padding: typography.scale-value(-5)+rem typography.$space-xxs;
   line-height: 1.2rem;
 }
 
 .search-results li+li {
-  margin-top: scale-value(-5)+rem;
+  margin-top: typography.scale-value(-5)+rem;
 }

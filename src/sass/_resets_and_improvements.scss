@@ -1,3 +1,5 @@
+@use 'variables_general';
+
 ///////////////////////////////////
 // Tim Brown advice
 ///////////////////////////////////
@@ -101,17 +103,20 @@ img {
   // of anywhere you wouldn’t want this to be the case.
   display: block;
 
-  // Support responsive images.
+  // Support flexible images.
   // We can make large <img>s available to wide and narrow viewports alike,
   // safe in the knowledge that even if an image is wider than its container,
   // it will not overflow.
-  // Now the image’s width will match one of three values:
+  // The result is that the image’s width will match one of three values:
   // 1. Its own intrinsic/natural width, based on the file data; OR
   // 2. An explicit HTML width attribute value, if present;
   // 3. The width of the horizontal space afforded by the container element; OR
-  // 4. 55rem (a sensible image width limit) if the container is wider than that.
+  // 4. 60rem (a sensible image width limit) if the container is wider than that.
+
+  // 60rem seems a reasonable limit, where min() is supported. Can tweak later.
   max-width: 100%;
-  max-width: m#{i}n(60rem, 100%); // 1) To Do: remove workaround syntax for gulp/node-sass asap. 2) 60rem seems a reasonable limit. Can tweak later.
+  max-width: min(60rem, 100%);
+
 
   //width: 100%; // grow and shrink in a RWD-stylee
   //height: auto;
@@ -162,7 +167,7 @@ iframe,
 img,
 svg,
 video {
-    vertical-align: middle;
+  vertical-align: middle;
 }
 
 
@@ -175,7 +180,7 @@ video {
 // Customized to match the site’s design.
 
 ::selection {
-  background: $selected-text-background;
+  background: variables_general.$selected-text-background;
   text-shadow: none;
 }
 
