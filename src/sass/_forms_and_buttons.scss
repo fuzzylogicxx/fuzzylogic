@@ -1,3 +1,6 @@
+@use 'variables_general';
+@use 'typography';
+
 // Starting position is just the browser default form styles (i.e. forms haven’t been reset and borders removed etc), which means:
   // 1) all inputs have borders and look like inputs, which is good.
   // 2) Webkit search inputs have a special webkit-appearance and cancel (x) button
@@ -13,19 +16,19 @@
 // Define button styles that we’ll use for buttons inside custom forms and call-to-action links
 
 @mixin button_style() {
-  background: $color-accent;
+  background: variables_general.$color-accent;
   border: 0;
-  border-radius: $global-border-radius;
+  border-radius: variables_general.$global-border-radius;
   color: #fff;
   display: inline-block;
   font-weight: 600;
   white-space: nowrap;
-  padding: scale-value(-6)+em scale-value(-3)+em scale-value(-5)+em;
+  padding: typography.scale-value(-6)+em typography.scale-value(-3)+em typography.scale-value(-5)+em;
   transition: all 0.3s ease;
 }
 
 @mixin button_hover_style() {
-  background: darken($color-accent, 10%);
+  background: darken(variables_general.$color-accent, 10%);
   color: darken(#fff, 10%);
 }
 
@@ -35,7 +38,7 @@
 //}
 
 @mixin large_button_style() {
-  padding: scale-value(-4)+em 1em scale-value(-3)+em;
+  padding: typography.scale-value(-4)+em 1em typography.scale-value(-3)+em;
 }
 
 .btn-wrap {
@@ -156,7 +159,7 @@ form {
   input[type=search],
   textarea,
   select {
-    border: 1px solid $border-color;
+    border: 1px solid variables_general.$border-color;
   }
 
   input[type=text],
@@ -173,7 +176,7 @@ form {
   input[type=email],
   input[type=search],
   textarea {
-    border-radius: $global-border-radius;
+    border-radius: variables_general.$global-border-radius;
     width: 100%;
   }
 
@@ -250,12 +253,12 @@ form {
 
     input[type="checkbox"] + label,
     label + input[type="checkbox"] {
-      margin-left: scale-value(-4)+em;
+      margin-left: typography.scale-value(-4)+em;
     }
 
     input[type="radio"],  {
       border-radius: 100%;
-      margin-right: scale-value(-4)+em;
+      margin-right: typography.scale-value(-4)+em;
     }
 
     label {
@@ -279,7 +282,7 @@ form {
 
     input:not([type=submit]) {
       min-width: 0; // allows text (etc) input to shrink on narrow screens. Inputs are weird. They don’t respond to the default flex-shrink:1 like other elements
-      margin-right: $space-s;
+      margin-right: typography.$space-s;
     }
   }
 
@@ -309,8 +312,8 @@ form {
   select {
     // set some font settings explicitly on this element, and not using inherit, just for safety
     font-size: 1rem;
-    font-family: $base-font-family-fonts-loaded;
-    color: $text-color;
+    font-family: typography.$base-font-family-fonts-loaded;
+    color: variables_general.$text-color;
     display: block;
     max-width: 100%;
     width: 100%;
@@ -318,7 +321,7 @@ form {
     margin-left: 0;
     margin-right: 0;
     margin-bottom: 0;
-    border-radius: $global-border-radius;
+    border-radius: variables_general.$global-border-radius;
     -moz-appearance: none;
     -webkit-appearance: none;
     appearance: none;
@@ -390,6 +393,6 @@ form {
 }
 
 .btn-icon > * + * {
-  margin-left: scale-value(-6)+em;
+  margin-left: typography.scale-value(-6)+em;
 }
 

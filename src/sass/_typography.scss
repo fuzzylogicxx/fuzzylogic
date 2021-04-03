@@ -1,8 +1,11 @@
+@use 'variables_general';
+@use 'mixins_general';
+
 ///////////////////////////////////
 // Chosen Typefaces
 ///////////////////////////////////
 
-$base-font-family: Helvetica Neue, sans-serif;
+$base-font-family: 'Helvetica Neue', sans-serif;
 $base-font-family-fonts-loaded: 'Source Sans Pro', sans-serif;
 
 //$alt-font-family: serif;
@@ -53,7 +56,7 @@ $ms-ratio: 1.2;
   @if $step-number == 0 {
     @return 1;
   }
-  @return pow($ms-ratio, $step-number);
+  @return mixins_general.pow($ms-ratio, $step-number);
 }
 //@debug scale-value(-2);
 
@@ -280,22 +283,22 @@ $space-l: scale-value(3)+rem;
   // Increase the font-size on desktop computers where text will feel smaller due to the greater reading distance.
   // We’re bumping up the base of our modular scale but keeping the same ratio.
   // All our font-sizes are scale-based variables so we’re still keeping to a scale.
-  @include at-least($bp-wide-four) {
+  @include mixins_general.at-least($bp-wide-four) {
     font-size: 1.1875rem;
   }
 }
 
 // Note: font-family declarations are now in the <head> together with JS-based font-loading strategy.
 body {
-  color: $text-color;
+  color: variables_general.$text-color;
 
   // set leading on body per Tim Brown rather than on html/root per normalize.css
   //line-height: $body-line-height-min;
-  //@include at-least($width-pressure-point-one) {
+  //@include mixins_general.at-least($width-pressure-point-one) {
     line-height: $body-line-height-max;
   //}
 
-  @include at-least($bp-wide-four) {
+  @include mixins_general.at-least($bp-wide-four) {
     line-height: 1.5;
   }
 }
@@ -306,7 +309,7 @@ body {
 .prose {
   hyphens: auto;
   font-feature-settings: "kern", "liga", "clig", "calt", "onum", "pnum";
-  //max-width: $text-measure-max-in-ems+rem;
+  //max-width: variables_general.$text-measure-max-in-ems+rem;
 }
 
 @supports (font-kerning: normal) and (font-variant-ligatures: common-ligatures contextual) and (font-variant-numeric: oldstyle-nums proportional-nums) {
@@ -325,29 +328,29 @@ body {
 // Note 2: if base link styles become elaborate, consider applying them to a:not([class])
 
 a {
-  color: $color-accent;
+  color: variables_general.$color-accent;
   text-decoration: underline;
-  text-decoration: underline solid lighten($color-accent, 25%);
+  text-decoration: underline solid lighten(variables_general.$color-accent, 25%);
   text-decoration-skip-ink: auto;
 
   &.text-icon-pair {
     text-decoration: none;
     span {
       text-decoration: underline;
-      text-decoration: underline solid lighten($color-accent, 25%);
+      text-decoration: underline solid lighten(variables_general.$color-accent, 25%);
       text-decoration-skip-ink: auto;
     }
   }
 }
 
 a:hover {
-  color: darken($color-accent, 25%);
-  text-decoration: underline solid darken($color-accent, 25%);
+  color: darken(variables_general.$color-accent, 25%);
+  text-decoration: underline solid darken(variables_general.$color-accent, 25%);
 
   &.text-icon-pair {
     text-decoration: none;
     span {
-      text-decoration: underline solid darken($color-accent, 25%);
+      text-decoration: underline solid darken(variables_general.$color-accent, 25%);
     }
   }
 }
@@ -432,15 +435,15 @@ sup {
 // Quoting
 
 blockquote {
-  border-left: .1rem solid $color-accent;
-  color: lighten($text-color, 20%);
+  border-left: .1rem solid variables_general.$color-accent;
+  color: lighten(variables_general.$text-color, 20%);
   font-style: italic;
   margin-left: 0;
   padding-left: 1rem;
 
   /*margin: scale-value(4)+rem 0;
   margin-left: -($space-l);
-  padding-left: $space-s;*/
+  padding-left: variables_general.$space-s;*/
 
 }
 
@@ -504,18 +507,18 @@ h2,
 }
 
 h1 {
-  color: $color-accent;
+  color: variables_general.$color-accent;
   font-weight: 600;
   line-height: 1;
   letter-spacing: -0.01em;
   font-size: scale-value(2)+rem;
 
   // On wider screens increase typographic contrast.
-  @include at-least($width-pressure-point-one) {
+  @include mixins_general.at-least($width-pressure-point-one) {
     font-size: ( scale-value(3) + scale-value(-6) )+rem;
   }
 
-  @include at-least($bp-wide-four) {
+  @include mixins_general.at-least($bp-wide-four) {
     font-size: scale-value(4)+rem;
   }
 }

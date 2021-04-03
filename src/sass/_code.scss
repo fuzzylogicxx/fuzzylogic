@@ -1,3 +1,5 @@
+@use 'typography';
+
 // start with basic inline code element i.e. could appear within the running text of a paragraph or heading
 // Note: using ems so that any tweaked font-size scales up whether in a <p> or <h1>
 // Note 2: nice style treatments could be:
@@ -9,7 +11,7 @@
 pre,
 code {
   font-family: Consolas, Menlo, Monaco, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", "Courier New", Courier, monospace;
-  font-size: scale-value(-1)+rem;
+  font-size: typography.scale-value(-1)+rem;
   line-height: 1.5;
 }
 pre {

@@ -1,44 +1,41 @@
-@import 'fonts';
+@use 'fonts';
 
 // Presets, functions and resets
-@import 'variables_general';
-@import 'mixins_general';
-@import 'resets_and_improvements';
+@use 'variables_general';
+@use 'mixins_general';
+@use 'resets_and_improvements';
 
-// Typographic and other core HTML elements
-@import 'typography';
-@import 'list_utils';
-@import 'code';
-//@import 'index';
-@import 'section-permalinks';
-@import 'prism-base16-monokai.dark';
+// // Typographic and other core HTML elements
+@use 'typography';
+@use 'list_utils';
+@use 'code';
+@use 'section-permalinks';
+@use 'prism-base16-monokai.dark';
 
-@import 'tables';
+@use 'tables';
 
-// Layout and responsiveness
-@import 'responsive_layout_utilities';
-//@import 'media_objects';
-//@import 'breakout';
-@import 'rooted_footer';
-
-
-// Buttons, special links, and forms
-@import 'svg_and_text_pairs';
-@import 'forms_and_buttons';
-
-// Other components
-//@import 'profile_pic';
-//@import 'tabs';
-@import 'skiplinks';
-//@import 'modals';
-//@import 'show_and_hide';
-//@import 'content_slider';
-@import 'search';
-
-// Minimum required utility classes
-@import 'helpers';
+// // Layout and responsiveness
+@use 'responsive_layout_utilities';
+// //@import 'media_objects';
+// //@import 'breakout';
+@use 'rooted_footer';
 
 
+// // Buttons, special links, and forms
+@use 'svg_and_text_pairs';
+@use 'forms_and_buttons';
+
+// // Other components
+// //@import 'profile_pic';
+// //@import 'tabs';
+@use 'skiplinks';
+// //@import 'modals';
+// //@import 'show_and_hide';
+// //@import 'content_slider';
+@use 'search';
+
+// // Minimum required utility classes
+@use 'helpers';
 
 ///////////////////////////////////
 // Common patterns
@@ -54,9 +51,9 @@
 // Captions
 
 figcaption {
-  font-size: scale-value(-2)+rem;
+  font-size: typography.scale-value(-2)+rem;
   color: #999;
-  margin-top: scale-value(-6)+rem;
+  margin-top: typography.scale-value(-6)+rem;
 }
 
 
@@ -81,8 +78,8 @@ figcaption {
 // Index pages (e.g. Work, Labs)
 
 .section-index-header {
-  background: linear-gradient($color-accent, $color-accent) no-repeat bottom left/2.4em 0.2ch;
-  padding-bottom: scale-value(4)+rem;
+  background: linear-gradient(variables_general.$color-accent, variables_general.$color-accent) no-repeat bottom left/2.4em 0.2ch;
+  padding-bottom: typography.scale-value(4)+rem;
   // Add a generous whitespace after, overriding any generic stack spacing
   & + * {
     margin-top: 2rem;
@@ -94,33 +91,33 @@ figcaption {
 
 .posts-list-group-heading {
   margin-bottom: 2rem;
-  font-size: scale-value(0)+rem;
+  font-size: typography.scale-value(0)+rem;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   color: #333;
 }
 
 .h-entry header {
-  @include stack();
+  @include typography.stack();
   //position: relative;
 }
 
 .h-entry header > * + * {
-  --flow-space: #{(scale-value(-5) - scale-value(-6))}rem;
+  --flow-space: #{(typography.scale-value(-5) - typography.scale-value(-6))}rem;
 }
 
 .h-entry header div {
-  font-size: scale-value(-1)+rem;
+  font-size: typography.scale-value(-1)+rem;
   color: #999;
 }
 
 
 .h-entry header div > * + * {
-  margin-left: (scale-value(-1) - scale-value(-2))+rem;
+  margin-left: (typography.scale-value(-1) - typography.scale-value(-2))+rem;
 }
 
 .post-type {
-  font-size: scale-value(-1)+rem;
+  font-size: typography.scale-value(-1)+rem;
   color: #999;
   font-weight: 600;
 }
@@ -130,13 +127,13 @@ figcaption {
 }
 
 .dt-published {
-  font-size: scale-value(-1)+rem;
+  font-size: typography.scale-value(-1)+rem;
   color: #999;
   a {
     color: #999;
   }
 
-  /*@include at-least($bp-wide-two) {
+  /*@include mixins_general.at-least(typography.$bp-wide-two) {
     position: absolute;
     left: -10rem;
     top: 0;
@@ -145,7 +142,7 @@ figcaption {
 }
 
 /*.dt-published {
-  @include at-least($bp-wide-two) {
+  @include mixins_general.at-least(typography.$bp-wide-two) {
     display: block;
   }
 }*/
@@ -185,17 +182,17 @@ figcaption {
 //   // font-family: var(--font-special);
 //   color: #999;
 //   // background-color: black;
-//   padding: .2em scale-value(-1)+rem;
+//   padding: .2em typography.scale-value(-1)+rem;
 //   border: 1px solid #ccc;
 // }
 
 // Posts in List
 
 .feed-entry-title {
-  font-size: (scale-value(-2) + scale-value(-3))+rem;
-  @include at-least($bp-wide-two) {
-    //font-size: scale-value(2)+rem;
-    font-size: (scale-value(1) + scale-value(-5))+rem;
+  font-size: (typography.scale-value(-2) + typography.scale-value(-3))+rem;
+  @include mixins_general.at-least(typography.$bp-wide-two) {
+    //font-size: typography.scale-value(2)+rem;
+    font-size: (typography.scale-value(1) + typography.scale-value(-5))+rem;
   }
   a {
     text-decoration: none;
@@ -330,13 +327,13 @@ figcaption {
 ///////////////////////////////////
 
 .global-header {
-  padding-top: $space-xxs;
-  padding-bottom: $space-xxs;
+  padding-top: typography.$space-xxs;
+  padding-bottom: typography.$space-xxs;
   a {
     text-decoration: none;
   }
   a[aria-current] {
-    border-bottom: 1px solid $color-accent;
+    border-bottom: 1px solid variables_general.$color-accent;
   }
 }
 
@@ -348,25 +345,26 @@ figcaption {
   line-height: 1;
   svg {
     display: block;
-    @include at-least($bp-wide-one) {
-      font-size: (scale-value(9) + scale-value(-6))+rem;
+    @include mixins_general.at-least(typography.$bp-wide-one) {
+      width: (typography.scale-value(9) + typography.scale-value(-6))+rem;
+      height: (typography.scale-value(9) + typography.scale-value(-6))+rem;
     }
   }
 }
 
 .header-menu {
-  @include cluster(); //2rem
+  @include responsive_layout_utilities.cluster(); //2rem
   text-transform: uppercase;
   font-weight: 600;
-  font-size: (scale-value(-6) + scale-value(-5))+rem;
-  @include at-least($bp-wide-one) {
+  font-size: (typography.scale-value(-6) + typography.scale-value(-5))+rem;
+  @include mixins_general.at-least(typography.$bp-wide-one) {
     --space: 2rem;
   }
 }
 
 .header-menu-home {
   display: none;
-  @include at-least($bp-wide-one) {
+  @include mixins_general.at-least(typography.$bp-wide-one) {
     display: block;
   }
 }
@@ -398,8 +396,8 @@ figcaption {
 /////////////////
 
 .global-footer {
-  font-size: scale-value(-1)+rem;
-  background: $text-color;
+  font-size: typography.scale-value(-1)+rem;
+  background: variables_general.$text-color;
   color: #fff;
 
   a {
@@ -407,7 +405,7 @@ figcaption {
   }
 
   a[aria-current] {
-    border-bottom: 1px solid $color-accent;
+    border-bottom: 1px solid variables_general.$color-accent;
   }
 
   li a {
@@ -422,12 +420,12 @@ figcaption {
 .global-footer-contents-wrap {
   padding-top: 2em;
   padding-bottom: 2em;
-  @include stack(2em);
+  @include typography.stack(2em);
 }
 
 .footer-grid,
 .footer-grid section {
-  @include stack(2em);
+  @include typography.stack(2em);
 }
 
 // space between footer grid sections
@@ -444,7 +442,7 @@ figcaption {
 
   @supports (display: grid) {
 
-    @include at-least($bp-wide-two) {
+    @include mixins_general.at-least(typography.$bp-wide-two) {
       // deactivate the stack margins used when grid is not supported.
       & > * + * {
         margin-top: 0;
@@ -474,9 +472,9 @@ figcaption {
 ///////////////////
 
 .primary-content {
-  padding-top: $space-l;
+  padding-top: typography.$space-l;
   padding-bottom: 3rem;
-  @include at-least($width-pressure-point-one) {
+  @include mixins_general.at-least(typography.$width-pressure-point-one) {
     padding-bottom: 6rem;
   }
 
@@ -486,7 +484,7 @@ figcaption {
 
   // Page-specific element spacing within the <main> element
   .page-home & {
-    @include stack(4rem);
+    @include typography.stack(4rem);
   }
 
 }
@@ -502,23 +500,23 @@ figcaption {
 
 .intro {
   --measure: 32rem; // tighter
-  background: linear-gradient($color-accent, $color-accent) no-repeat bottom left/2.4em 0.2ch;
-  padding-bottom: scale-value(4)+rem;
-  @include stack();
+  background: linear-gradient(variables_general.$color-accent, variables_general.$color-accent) no-repeat bottom left/2.4em 0.2ch;
+  padding-bottom: typography.scale-value(4)+rem;
+  @include typography.stack();
   & > * + * {
-    --flow-space: #{scale-value(2)}rem;
+    --flow-space: #{typography.scale-value(2)}rem;
   }
   h1 {
     font-weight: 600;
-    line-height: ( ((scale-value(-4) * 3) + (scale-value(-5))) / (scale-value(3)) );
-    font-size: scale-value(3)+rem;
+    line-height: ( ((typography.scale-value(-4) * 3) + (typography.scale-value(-5))) / (typography.scale-value(3)) );
+    font-size: typography.scale-value(3)+rem;
     letter-spacing: -.016em;
 
-    @include at-least($width-pressure-point-one) {
-      font-size: scale-value(4)+rem;
+    @include mixins_general.at-least(typography.$width-pressure-point-one) {
+      font-size: typography.scale-value(4)+rem;
     }
-    @include at-least($bp-wide-four) {
-      font-size: (2 + scale-value(-6))+rem;
+    @include mixins_general.at-least(typography.$bp-wide-four) {
+      font-size: (2 + typography.scale-value(-6))+rem;
       line-height: 1.015; // just by eye-balling because it wants to be just above 1.
     }
   }
@@ -545,8 +543,8 @@ figcaption {
   grid-gap: 1em;
   grid-template-columns: 1fr;
 
-  @include at-least(30em) {
-    @include grid(18ch, 2rem);
+  @include mixins_general.at-least(30em) {
+    @include responsive_layout_utilities.grid(18ch, 2rem);
   }
 }
 
@@ -559,7 +557,7 @@ figcaption {
   grid-template-columns: 18ch 1fr;
   grid-gap: 1em;
 
-  @include at-least(30em) {
+  @include mixins_general.at-least(30em) {
     display: block;
   }
 }
@@ -570,17 +568,20 @@ figcaption {
 }
 
 .book-info {
-  --flow-space: #{scale-value(-6)}rem;
-  font-size: #{scale-value(-1)}rem;
+  --flow-space: #{typography.scale-value(-6)}rem;
+  font-size: #{typography.scale-value(-1)}rem;
   line-height: 1.2;
-  margin-top: #{scale-value(-2)}rem;
+  margin-top: #{typography.scale-value(-2)}rem;
 
   h3 {
-    font-size: #{scale-value(0)}rem;
-    line-height: ( ((scale-value(-4) * 3) + (scale-value(-5))) / (scale-value(3)) );
+    font-size: #{typography.scale-value(0)}rem;
+    line-height: ( ((typography.scale-value(-4) * 3) + (typography.scale-value(-5))) / (typography.scale-value(3)) );
   }
 }
 
 
 // Print styles
+// intentionally using @import rather than @use
+// because @use has to come at the top of the file.
+// todo: refactor to avoid using @import, because it’s deprecated.
 @import 'print';

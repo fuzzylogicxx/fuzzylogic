@@ -1,3 +1,6 @@
+@use 'mixins_general';
+@use 'typography';
+
 // Useful layout refs:
 // Grid: https://css-tricks.com/snippets/css/complete-guide-grid/, http://grid.malven.co/, https://cssgrid-generator.netlify.com/
 
@@ -15,6 +18,8 @@
 ///////////////////////////////////
 
 // Purpose: create a "visible box" which groups and demarcates some content.
+
+
 // Example use cases: i) a note/message to stand out among flow content; or ii) a card in a grid; or iii) inside a positioned alert.
 // It should have:
 // i) padding on all sides or none at all; and or
@@ -23,7 +28,7 @@
 // Ref: https://absolutely.every-layout.dev/layouts/box/
 
 .box {
-  padding: $space-s;
+  padding: typography.$space-s;
   border: var(--border-thin) solid;
   --color-light: #eee;
   --color-dark: #222;
@@ -71,8 +76,8 @@
   margin-right: auto;
   max-width: var(--measure); //$text-measure-max-in-ems+rem;
   @if $with-gutter {
-    padding-left: $space-s;
-    padding-right: $space-s;
+    padding-left: typography.$space-s;
+    padding-right: typography.$space-s;
   }
   @if $with-centred-text {
     text-align: center;
@@ -114,10 +119,10 @@
   // set a generous but sensible final max-width (something bigger than just our text measure (.centre’s default max-width)
   // But intervene with media queries on the way up to that final max-width to avoid too-wide content / too narrow gutters on narrower resolutions.
   // Avoiding media queries is great but they make sense here because the element’s parent will always be viewport-width.
-  max-width: ($text-measure-max-in-ems * 1.8)+rem;
-  @include at-least($bp-wide-one) {
-    padding-left: scale-value(2)+rem;;
-    padding-right: scale-value(2)+rem;;
+  max-width: (typography.$text-measure-max-in-ems * 1.8)+rem;
+  @include mixins_general.at-least(typography.$bp-wide-one) {
+    padding-left: typography.scale-value(2)+rem;;
+    padding-right: typography.scale-value(2)+rem;;
   }
 }
 
@@ -236,7 +241,7 @@
 
 .switcher > * > * {
   flex-grow: 1;
-  flex-basis: calc((#{$text-measure-max-in-ems}rem - (100% - 1rem)) * 999); // $text-measure-max-in-ems+rem (in place of var(--measure)): "break" when the container is narrower.
+  flex-basis: calc((#{typography.$text-measure-max-in-ems}rem - (100% - 1rem)) * 999); // $text-measure-max-in-ems+rem (in place of var(--measure)): "break" when the container is narrower.
   margin: calc(1rem / 2);
 }
 
@@ -311,9 +316,8 @@
   }
 
   // Add min() into the mix to avoid overflows within narrow containers.
-  // To Do: find a way of getting gulp/node-sass to allow CSS’s min() without the hack of replacing "min" with "m#{i}n".
-  @supports (width: m#{i}n(20rem, 100%)) {
-    grid-template-columns: repeat(auto-fill, minmax(m#{i}n($min_trigger, 100%), 1fr));
+  @supports (width: min(20rem, 100%)) {
+    grid-template-columns: repeat(auto-fill, minmax(min(#{$min_trigger}, 100%), 1fr));
   }
 }
 
