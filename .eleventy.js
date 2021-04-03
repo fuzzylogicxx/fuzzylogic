@@ -14,6 +14,11 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.addLayoutAlias('post', 'layouts/post.njk');
 
+  // Tell 11ty that when changes are made inside the src/sass dir, it should recompile.
+  // Needed so that the purge-and-inline-css transform runs every time we make a Sass update.
+  // …so that our updated styles get put into the <head> and we can check them.
+  eleventyConfig.addWatchTarget('./src/sass/');
+
   //
   // Eleventy Transforms
   // Transforms can modify a template’s output.
@@ -22,7 +27,8 @@ module.exports = function(eleventyConfig) {
 
   // For each .html file replace a placeholder line in the <head> with a inlined <style> block.
   // Include only the CSS required by the page, thanks to the purgecss NPM package.
-  // Note: it’s all defined and set into action here; it’s not invoked elsewhere.
+  // Note 1: this covers everything; it doesn’t need invoked/called elsewhere.
+  // Note 2: for each page, the page’s HTML content and its output path are available.
   eleventyConfig.addTransform('purge-and-inline-css', async (content, outputPath) => {
     if (!outputPath.endsWith('.html')) {
       return content;
@@ -248,9 +254,9 @@ module.exports = function(eleventyConfig) {
     }
   });
 
-  // Don’t process these; just copy them as-is into the output directory.
+  // Don’t process files of these types; just copy them as-is into the public directory.
+  // Note: no 'css' entry because we’re inlining CSS so don’t need any physical css files in the public dir.
   eleventyConfig.addPassthroughCopy('img');
-  //eleventyConfig.addPassthroughCopy("css");
   eleventyConfig.addPassthroughCopy('fonts');
   eleventyConfig.addPassthroughCopy('android-chrome-192x192.png');
   eleventyConfig.addPassthroughCopy('android-chrome-256x256.png');
