@@ -1,0 +1,8 @@
+---
+permalink: assets/js/patch_css_min_for_grids.js
+eleventyExcludeFromCollections: true
+---
+{% set js -%}
+{% include "../../src/js/patch_css_min_for_grids.js" -%}
+{% endset -%}
+{{ js | jsmin | safe }}

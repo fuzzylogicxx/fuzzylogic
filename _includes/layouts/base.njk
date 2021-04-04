@@ -184,14 +184,21 @@
       </symbol>
     </svg>
 
-    {# inlined, minified JS #}
-    {# 1. assign contents of our JS scripts to a Nunjucks variable #}
-    {% set js %}
-      {% include "js/search.js" %}
-      {% include "js/patch_css_min_for_grids.js" %}
-    {% endset %}
-    {# 2. feed variable through our jsmin filter to minify it #}
     <script type="module">
+      {% set js -%}
+      // Enhance the search experience with JS
+      import { enhanceSearch } from '/assets/js/search.js';
+      enhanceSearch();
+
+      // Patch browser support for CSS’s min() in .grid component instances.
+      import { patchMinForGrids } from '/assets/js/patch_css_min_for_grids.js';
+      const grids = document.querySelectorAll('.grid');
+      if (window.NodeList && NodeList.prototype.forEach) { // cuts-mustard check
+        grids.forEach(function (grid, index) {
+          patchMinForGrids(grid);
+        });
+      }
+      {% endset -%}
       {{ js | jsmin | safe }}
     </script>
 

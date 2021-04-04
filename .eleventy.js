@@ -19,6 +19,8 @@ module.exports = function(eleventyConfig) {
   // …so that our updated styles get put into the <head> and we can check them.
   eleventyConfig.addWatchTarget('./src/sass/');
 
+  eleventyConfig.addWatchTarget('./src/js/');
+
   //
   // Eleventy Transforms
   // Transforms can modify a template’s output.
@@ -47,15 +49,26 @@ module.exports = function(eleventyConfig) {
   });
 
   //
-  // Eleventy Filters (functions we use elsewhere to modify strings, dates, file contents etc to get what we want)
+  // Eleventy Filters
+  // (functions we use elsewhere to modify strings, dates, file contents etc to get what we want)
   //
 
+  /**
+   * jsmin()
+   * custom filter into which we pass some JavaScript and get it back minified.
+   * Uses terser for the minification.
+   * Terser config options: https://github.com/terser/terser#minify-options-structure
+   * Example Nunjucks call: {{ myjs | jsmin | safe }}
+   * @param  {String} "const mynum = 123;"
+   * @return {String} the minified JS or, if minification failed, the unminified JS.
+   */
   eleventyConfig.addNunjucksAsyncFilter("jsmin", async function (
     code,
     callback
   ) {
     try {
-      const minified = await minify(code);
+      var options = { mangle: { toplevel: true }, format: { comments: false } };
+      const minified = await minify(code, options);
       callback(null, minified.code);
     } catch (err) {
       console.error("Terser error: ", err);
@@ -256,6 +269,8 @@ module.exports = function(eleventyConfig) {
 
   // Don’t process files of these types; just copy them as-is into the public directory.
   // Note: no 'css' entry because we’re inlining CSS so don’t need any physical css files in the public dir.
+
+  // the easy stuff
   eleventyConfig.addPassthroughCopy('img');
   eleventyConfig.addPassthroughCopy('fonts');
   eleventyConfig.addPassthroughCopy('android-chrome-192x192.png');
@@ -268,8 +283,9 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy('pwa_icon-512x512.png');
   eleventyConfig.addPassthroughCopy('safari-pinned-tab.svg');
 
+  eleventyConfig.setTemplateFormats([ "md", "njk" ]);
+
   return {
-    templateFormats: ['md', 'njk', 'html', 'liquid'],
 
     // If your site lives in a different subdirectory, change this.
     // Leading or trailing slashes are all normalized away, so don’t worry about it.

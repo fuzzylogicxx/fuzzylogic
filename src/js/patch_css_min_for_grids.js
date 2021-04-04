@@ -1,8 +1,9 @@
 /*!
-  * Use ResizeObserver to apply the class .aboveMin to a given grid container (.grid) when its width is greater than it’s "data-min" value.
-  *
+  * Patch support for CSS’s min() so that our ".grid" components don’t suffer from fixed minimum widths.
+  * Use ResizeObserver to apply the class .aboveMin to a given grid container (.grid)…
+  * …when its width is greater than it’s "data-min" value.
   */
-function observeGrid(gridNode) {
+export const patchMinForGrids = (gridNode) => {
   // Feature detect ResizeObserver
   if ('ResizeObserver' in window && !CSS.supports('width', `min(20rem, 100%)`)) {
     // Get the min value from data-min="[min]"
@@ -28,10 +29,4 @@ function observeGrid(gridNode) {
 
     ro.observe(gridNode);
   }
-}
-
-// patch support for CSS’s min() so that our CSS Grid ".grid" components are intrinsically responsive.
-var grids = document.querySelectorAll('.grid');
-for (var i = 0; i < grids.length; i++) {
-  observeGrid(grids[i]);
 }
