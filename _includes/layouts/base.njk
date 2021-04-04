@@ -193,7 +193,7 @@
       // Patch browser support for CSS’s min() in .grid component instances.
       import { patchMinForGrids } from '/assets/js/patch_css_min_for_grids.js';
       const grids = document.querySelectorAll('.grid');
-      if (typeof grids.forEach === "function") { // cuts-mustard (NodeList.forEach) check
+      if (window.NodeList && NodeList.prototype.forEach) { // cuts-mustard check
         grids.forEach(function (grid, index) {
           patchMinForGrids(grid);
         });
