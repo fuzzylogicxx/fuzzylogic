@@ -1,25 +1,24 @@
 export default () => {
-
-  var searchIndex = null;
-  var searchUI = document.querySelector('.search-ui');
-  var resultsUI = document.querySelector('.search-results');
-  var searchInput = document.querySelector('#search-str');
+  let searchIndex = null;
+  const searchUI = document.querySelector('.search-ui');
+  const resultsUI = document.querySelector('.search-results');
+  const searchInput = document.querySelector('#search-str');
 
   // Clear current results (in the enhanced UI)
-  var clearResults = function(){
+  const clearResults = () => {
     while (resultsUI.firstChild) {
       resultsUI.removeChild(resultsUI.firstChild);
     }
   }
 
   // search and display (in the enhanced UI)
-  var find = function(str) {
+  const find = (str) => {
     str = str.toLowerCase();
 
     // look for matches in the search JSON
-    var results = [];
-    for (var item in searchIndex) {
-      var found = searchIndex[item].text.indexOf(str);
+    let results = [];
+    for (let item in searchIndex) {
+      const found = searchIndex[item].text.indexOf(str);
       if (found != -1) {
         results.push(searchIndex[item])
       }
@@ -27,9 +26,9 @@ export default () => {
 
     // build and insert the new result entries
     clearResults();
-    for (var item in results) {
-      var listItem = document.createElement('li');
-      var link = document.createElement('a');
+    for (let item in results) {
+      let listItem = document.createElement('li');
+      let link = document.createElement('a');
       link.textContent = results[item].title;
       link.setAttribute('href', results[item].url);
       listItem.appendChild(link);
@@ -54,8 +53,8 @@ export default () => {
     searchInput.focus();
 
     // listen for input changes in the enhanced UI
-    searchInput.addEventListener('keyup', function(event) {
-      var str = searchInput.value;
+    searchInput.addEventListener('keyup', () => {
+      const str = searchInput.value;
       if(str.length > 2) {
         find(str);
       } else {
@@ -63,5 +62,4 @@ export default () => {
       }
     });
   }, false);
-
 }
