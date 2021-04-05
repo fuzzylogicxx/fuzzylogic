@@ -25,7 +25,9 @@
     "url": "https://github.com/11ty/eleventy-base-blog/issues"
   },
   "homepage": "https://github.com/11ty/eleventy-base-blog#readme",
-  "devDependencies": {},
+  "devDependencies": {
+    "eslint": "^7.23.0"
+  },
   "dependencies": {
     "@11ty/eleventy": "^0.12.1",
     "@11ty/eleventy-cache-assets": "^2.0.3",

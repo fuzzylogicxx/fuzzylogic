@@ -60,6 +60,28 @@
     <meta name="theme-color" content="#ffffff">
 
     <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.name }}">
+
+    {# Module scripts are deferred (non render-blocking) by default. -#}
+    {# I place up here rather than at bottom to allow it to be DL’d early in parallel -#}
+    {# in order to be already available as soon as the DOM is ready -#}
+    <script type="module">
+      {%- set js -%}
+        import enhanceSearch from '/assets/js/search.js';
+        import patchMinForGrids from '/assets/js/patch_css_min_for_grids.js';
+
+        // Enhance the search experience with JS
+        enhanceSearch();
+
+        // Patch browser support for CSS’s min() in .grid component instances.
+        const grids = document.querySelectorAll('.grid');
+        if (window.NodeList && NodeList.prototype.forEach) { // cuts-mustard check
+          grids.forEach(function (grid, index) {
+            patchMinForGrids(grid);
+          });
+        }
+      {% endset -%}
+      {{ js | jsmin | safe }}
+    </script>
   </head>
   <body{% if bodyclass %} class="{{ bodyclass }}"{% endif %}>
 
@@ -183,24 +205,6 @@
           <path fill="currentColor" d="M55.146 51.887L41.588 37.786A22.926 22.926 0 0 0 46.984 23c0-12.682-10.318-23-23-23s-23 10.318-23 23 10.318 23 23 23c4.761 0 9.298-1.436 13.177-4.162l13.661 14.208c.571.593 1.339.92 2.162.92.779 0 1.518-.297 2.079-.837a3.004 3.004 0 0 0 .083-4.242zM23.984 6c9.374 0 17 7.626 17 17s-7.626 17-17 17-17-7.626-17-17 7.626-17 17-17z"></path>
       </symbol>
     </svg>
-
-    <script type="module">
-      {% set js -%}
-      // Enhance the search experience with JS
-      import { enhanceSearch } from '/assets/js/search.js';
-      enhanceSearch();
-
-      // Patch browser support for CSS’s min() in .grid component instances.
-      import { patchMinForGrids } from '/assets/js/patch_css_min_for_grids.js';
-      const grids = document.querySelectorAll('.grid');
-      if (window.NodeList && NodeList.prototype.forEach) { // cuts-mustard check
-        grids.forEach(function (grid, index) {
-          patchMinForGrids(grid);
-        });
-      }
-      {% endset -%}
-      {{ js | jsmin | safe }}
-    </script>
 
     {% block main %}
     {# page-specific scripts are placed here #}
