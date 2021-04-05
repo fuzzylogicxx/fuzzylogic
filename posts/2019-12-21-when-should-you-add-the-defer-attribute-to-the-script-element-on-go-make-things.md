@@ -15,3 +15,9 @@ It turns out that my time-honoured default is OK, but there is a better approach
 This treads fairly complex territory but my general understanding is this:
 
 Using `defer` on a `<script>` in the `<head>` allows the browser to download the script _earlier_, in parallel, so that it is ready to be used as soon as the DOM is ready rather than having to be downloaded and parsed at that point.
+
+Some additional points worth noting:
+
+- Only use the `defer` attribute when the `src` attribute is present. Don’t use it on inline scripts because it will have no effect.
+- The `defer` attribute has no effect on module scripts (`script type="module"`). They defer by default.
+
