@@ -1,6 +1,6 @@
 ---
 date: "2021-04-05T17:26:54.749Z"
-title: "Diffchecker - Online diff tool to compare text to find the difference between two text files"
+title: "Diffchecker - Online diff tool"
 description: "The best online diff tool I’ve come across to date."
 tags: [link, tool, diff]
 linkTarget: "https://www.diffchecker.com/"
