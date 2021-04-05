@@ -1,4 +1,4 @@
-export const enhanceSearch = () => {
+export default () => {
 
   var searchIndex = null;
   var searchUI = document.querySelector('.search-ui');
