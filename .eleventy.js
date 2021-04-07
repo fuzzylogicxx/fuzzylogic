@@ -32,7 +32,7 @@ module.exports = function(eleventyConfig) {
   // Note 1: this covers everything; it doesn’t need invoked/called elsewhere.
   // Note 2: for each page, the page’s HTML content and its output path are available.
   eleventyConfig.addTransform('purge-and-inline-css', async (content, outputPath) => {
-    if (!outputPath.endsWith('.html')) {
+    if ("string" !== typeof(outputPath) || !outputPath.endsWith('.html')) {
       return content;
     }
 
