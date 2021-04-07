@@ -32,7 +32,7 @@ module.exports = function(eleventyConfig) {
   // Note 1: this covers everything; it doesn’t need invoked/called elsewhere.
   // Note 2: for each page, the page’s HTML content and its output path are available.
   eleventyConfig.addTransform('purge-and-inline-css', async (content, outputPath) => {
-    if (!outputPath.endsWith('.html')) {
+    if ("string" !== typeof(outputPath) || !outputPath.endsWith('.html')) {
       return content;
     }
 
@@ -137,15 +137,10 @@ module.exports = function(eleventyConfig) {
   // Collections
   //
 
-  // returnIfLive: function for use as callback in Array.filter()
-  // to exclude any posts with date in the future or marked as draft.
+  // onlyHistoricPublishDates: function for use as callback in Array.filter()
+  // to exclude any posts with date in the future (i.e. scheduled posts).
   const now = new Date();
-  const returnIfLive = post => post.date <= now && !post.data.draft;
-
-  // Live Posts
-  eleventyConfig.addCollection('liveposts', function(collection) {
-    return collection.getFilteredByTag('posts').filter(returnIfLive);
-  });
+  const onlyHistoricPublishDates = post => post.date <= now;
 
   // Collection of Tags (those for “Live Posts” only)
   eleventyConfig.addCollection('tagList', function(collection) {
@@ -153,7 +148,7 @@ module.exports = function(eleventyConfig) {
     let tagSet = new Set();
     collection
       .getFilteredByTag('posts')
-      .filter(returnIfLive)
+      .filter(onlyHistoricPublishDates)
       .forEach(function(item) {
         if ('tags' in item.data) {
           let tags = item.data.tags;
