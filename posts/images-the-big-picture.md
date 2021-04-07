@@ -201,6 +201,8 @@ Another positive is that on devices with retina screens—capable of displaying 
 
 On the downside, we are delivering a _much_ larger image and therefore file size than is required for, say, a 320px wide context. This has performance implications since bigger files mean longer download times, and this is exacerbated when the device is not connected to high-speed wifi (as is often the case with a mobile phone).
 
+Another issue which is perhaps less obvious is that your content may not be read on your website with your CSS operating on it. For example if your website has an RSS feed (like mine does) then someone may well be reading your article in another environment (such as a feed reader application or website) and who is to say how that oversized image will look there?
+
 Dealing with these challenges using modern _Responsive Images_ will be the subject of Part #2.
 
 ## References
