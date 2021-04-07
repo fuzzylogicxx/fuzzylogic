@@ -2,7 +2,7 @@
 permalink: search.json
 ---
 {"search" : [
-{%- for item in collections.liveposts -%}
+{%- for item in collections.posts -%}
   {
     {% if item.data.externalurl %}"url" : "{{ item.data.externalurl }}",
     {% else %}"url" : "{{ item.url }}",{% endif %}

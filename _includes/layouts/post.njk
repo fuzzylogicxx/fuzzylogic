@@ -55,9 +55,9 @@ templateClass: post-main
       </div>
 
       <nav class="traverse">
-        {%- set previousPost = collections.liveposts | getPreviousCollectionItem(page) %}
+        {%- set previousPost = collections.posts | getPreviousCollectionItem(page) %}
         {%- if previousPost %}<a rel="prev" href="{{ previousPost.url | url }}"><span aria-hidden="true">← </span>Previous post</a></li>{% endif %}
-        {%- set nextPost = collections.liveposts | getNextCollectionItem(page) %}
+        {%- set nextPost = collections.posts | getNextCollectionItem(page) %}
         {%- if nextPost %}<a rel="next" href="{{ nextPost.url | url }}">Next post<span aria-hidden="true"> →</span></a>{% endif %}
       </nav>
 

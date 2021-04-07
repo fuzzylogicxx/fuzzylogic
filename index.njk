@@ -6,7 +6,7 @@ eleventyNavigation:
 bodyclass: page-home
 ---
 
-{% set postslist = collections.liveposts | head(-5) | reverse %}
+{% set postslist = collections.posts | head(-5) | reverse %}
 
 <h2 class="posts-list-group-heading">Latest Posts</h2>
 
