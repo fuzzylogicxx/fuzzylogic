@@ -5,17 +5,17 @@ description: "Ethan Marcotte recommends we concentrate not on patching things bu
 tags: [link, designsystems]
 linkTarget: "https://ethanmarcotte.com/wrote/designish-systems/"
 ---
-Hereâs an interesting new article from Ethan Marcotte, in which he muses on better ways to think about Design Systems based on his recent experience.
+Here’s an interesting new article from Ethan Marcotte, in which he muses on better ways to think about Design Systems based on his recent experience.
 
-> Once youâve identified the root causes, youâll be in a far, far better place to choose the right things â and, more importantly, to create a system that finally supports your design.
+> Once you’ve identified the root causes, you’ll be in a far, far better place to choose the right things — and, more importantly, to create a system that finally supports your design.
 ---
 
-Hereâs what I took from it:
+Here’s what I took from it:
 
 We can consider the difference between things, issues and broader goals.
-Itâs easy to focus on the things (design tokens, choice of design tool, programming language).
+It’s easy to focus on the things (design tokens, choice of design tool, programming language).
 
-But things are just elements of the system; they donât âsolveâ design systems.
+But things are just elements of the system; they don’t _solve_ design systems.
 
 Focusing too much or too early on the _things_ leads to a tendency to _patch_ problems.
 
