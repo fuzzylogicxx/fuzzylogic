@@ -12,8 +12,9 @@ Here’s an interesting new article from Ethan Marcotte, in which he muses on be
 
 Here’s what I took from it:
 
-We can consider the difference between things, issues and broader goals.
-It’s easy to focus on the things (design tokens, choice of design tool, programming language).
+We can consider the difference between _things_, _issues_ and _broader goals_.
+
+It’s easy to focus on the _things_ (design tokens, choice of design tool, programming language).
 
 But things are just elements of the system; they don’t _solve_ design systems.
 
