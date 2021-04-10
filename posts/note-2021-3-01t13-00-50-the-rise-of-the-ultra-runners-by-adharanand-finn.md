@@ -5,6 +5,7 @@ date: 2021-03-01T21:26:27.708Z
 location: Glasgow
 mainImage.isAnchor: false
 tags:
+  - note
   - book
   - running
   - sport
