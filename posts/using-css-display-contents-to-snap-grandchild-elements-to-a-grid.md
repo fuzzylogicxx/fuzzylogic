@@ -1,5 +1,5 @@
 ---
-title: Using CSS display: contents to snap grandchild elements to a grid 
+title: "Using CSS display: contents to snap grandchild elements to a grid"
 description: A nice way (in theory) to streamline CSS Grid layouts.
 date: 2019-04-05T11:14:27.659Z
 mainImage.isAnchor: false
