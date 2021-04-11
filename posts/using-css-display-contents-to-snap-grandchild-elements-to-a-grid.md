@@ -13,7 +13,7 @@ tags:
 I realised last night while watching a presentation by Lea Verou that I could streamline my CSS Grid layouts.
 ---
 
-I’d been creating an overall page grid by setting `body { display: grid; }`then some grid areas but realised that this only worked for direct children and didn’t help with aligning more deeply nested elements to that outer grid.
+I’d been creating an overall page grid by setting `body { display: grid; }` then some grid areas but realised that this only worked for direct children and didn’t help with aligning more deeply nested elements to that outer grid.
 
 For example in the case of the main `header` if I wanted its child logo, `nav` and search elements to snap to the `body` grid then I found myself having to duplicate the `display: grid` and `grid-template-areas` again on the `header`.
 
@@ -21,7 +21,7 @@ It didn’t feel very <abbr title="Don’t Repeat Yourself">DRY</abbr> but my un
 
 What I should have been using is `display: contents`.
 
-If you set this on your `header` then the parent (`body`) grid layout will apply to the header’s contents (logo, `nav`, etc) as if the header wasn’t there. This gives us the proper semantics without the need to redefine the grid on the `header`.
+If you set your `header` to `display: contents` then the parent (`body`) grid layout will apply to the header’s contents (logo, `nav`, etc) as if the `header` element (the “real” direct child of the grid) wasn’t there. This gives us good semantics without the need to redefine the grid on the `header`.
 
 [Here’s a codepen to illustrate.](https://codepen.io/fuzzylogicx/pen/WWwPrm)
 
@@ -41,4 +41,4 @@ For reference, see:
 
 Thanks to Rachel Andrew for the heads-up that [this issue is now fixed in both Firefox and Chrome](https://rachelandrew.co.uk/archives/2021/03/11/good-news-about-display-contents-and-chrome/).
 
-We’re now just waiting for Edge and Safari to roll out fixes before this becomes a safe option.
+We’re now just waiting for Edge and Safari to roll out fixes before we can regard this as a safe option.
