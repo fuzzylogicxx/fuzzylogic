@@ -82,6 +82,10 @@
       {% endset -%}
       {{ js | jsmin | safe }}
     </script>
+
+    <!-- webmentions -->
+    <link rel="pingback" href="https://webmention.io/fuzzylogic.me/xmlrpc">
+    <link rel="webmention" href="https://webmention.io/fuzzylogic.me/webmention">
   </head>
   <body{% if bodyclass %} class="{{ bodyclass }}"{% endif %}>
 
