@@ -13,8 +13,9 @@ A lovely post by Cassie Evans in which she demonstrates that SVG is not just for
 There are lots of interesting techniques in here such as:
 
 - layering an `<image>` on top of a shape such as a `<rect>`; 
-- using `preserveAspectRatio` to to make the image fully cover the shape when their aspect ratios differ;
+- using `preserveAspectRatio` to make the image fully cover and _fit_ the shape when their aspect ratios differ;
 - using `<clipPath>` as a custom-shaped window to an image (for example a `<circle>`); 
+- giving the `<clipPath>`’s nested shape a solid `fill` to _hide_ the `<image>` to which it’s applied; 
 - animating a rectangular `<clipPath>` applied to an image to give the effect of the image “sliding into view”; and
 - using Greensock to make sequencing multiple animations easy and to ensure they work consistently across browsers. 
 
