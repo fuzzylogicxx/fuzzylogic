@@ -12,12 +12,12 @@ tags:
   - css
 draft: false
 ---
-I’ve played with the various HTML5 Observer APIs (`IntersectionObserver`, `ResizeObserver` and `MutationObserver`) a little over the last few years—for example using `ResizeObserver` in a container query solution for responsive grids. However in all honesty their roles, abilities and differences haven’t yet fully _stuck_ in my brain. So I’ve put together a brief explainer for future reference. 
+I’ve played with the various HTML5 Observer APIs (`IntersectionObserver`, `ResizeObserver` and `MutationObserver`) a little over the last few years—for example using `ResizeObserver` in a container query solution for responsive grids. But in all honesty their roles, abilities and differences haven’t yet fully _stuck_ in my brain. So I’ve put together a brief explainer for future reference. 
 ---
 
 ## Intersection Observer
 
-Lets you watch for when an element of your choice intersects with a root element of your choice—typically the viewport—and then lets you handle that intersection event however you want.
+Lets you watch for when an element of your choice intersects with a root element of your choice—typically the viewport—and then take action in response.
 
 So you might watch for a `div` that’s way down the page entering the viewport as a result of the user scrolling, then act upon that by applying a class which animates that `div`’s opacity from `0` to `1` to make it fade in.
 
