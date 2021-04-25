@@ -20,9 +20,19 @@ Lorem
 
 > if the arrow function is encountered by a browser that doesn't support ES6 arrows, it'll cause a syntax error. If the site is following best practice and combining all their JavaScript into a single file, this means that all their JavaScript just broke.
 
-## Another recurring question
+## Another recurring question: how to avoid layout shift caused by enhancing?
 
 How best to enhance a basic thing _quickly_ so that the user doesn’t see a noticeable _switch_ (or in which situations (e.g. perhaps when JS already cached?) is this not even a problem?)
+
+This “banner with close button” example is good https://www.zachleat.com/web/layout-shift/. Combines:
+
+- banner markup is in the HTML by default. Includes button by default! (see opacity note later)
+- banner “theme” CSS (just for default “banner is displaying” context—the critical CSS?) is inlined in the `head`
+- but minimal JS runs early in the `head` (immediately after inlined CSS) and applies a `banner--hide` class to the HTML element if appropriate based on a localStorage check (equiv of cookies)
+- additional, external CSS includes contextual selector for hiding the banner if `banner--hide` or `hidden` are presnt. Also sets the close button’s `opacity` to `0` by default. (“We use opacity to toggle the close button so that it doesn’t reflow the component when it’s enabled via JavaScript.) (LH note: he also uses `pointer-events: none;`. I wonder if this combined `opacity:0` and `pointer-events:none` approach is sufficient to hide the button from screen readers?)
+- uses a web component (class) to enhance the banner (keeping the overall approach lean and framework-free)
+- WC deals with showing the button, closing, applying `hidden` and setting localStorage
+- banner web component JS is loaded in a `script type=module`
 
 ## Feature detection
 
