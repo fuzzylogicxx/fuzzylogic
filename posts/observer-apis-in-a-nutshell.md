@@ -5,6 +5,8 @@ description: A quick explainer of what each of three HTML5 Observer APIs do and
 date: 2021-04-17T12:39:22.441Z
 mainImage.isAnchor: false
 tags:
+  - observer
+  - api
   - html5
   - browserapi
   - javascript
@@ -28,7 +30,7 @@ Here’s how it works:
 
 ## Mutation Observer
 
-Lets you watch for _changes_ to the attributes or content of DOM elements then take action in response.
+Lets you watch for changes to the attributes or content of DOM elements then take action in response.
 
 You might use this if you have code that you want to run if and when an element changes because of another script.
 
