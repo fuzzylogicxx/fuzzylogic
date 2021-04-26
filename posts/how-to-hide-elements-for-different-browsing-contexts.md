@@ -11,16 +11,21 @@ Lorem ipsum
 ## TL;DR
 
 https://www.scottohara.me/blog/2017/04/14/inclusively-hidden.html
-There are three categories of hidden content:
-- Completely Hidden.
-- Visually Hidden.
-- Only Hidden from Assistive Technology.
-Depending on the type of content, you will need to use an appropriate technique to hide it, via:
-Using CSS or [hidden] to hide content completely.
-Using visually-hidden class to visually hide content, but keep it available for assistive technologies.
-Or using aria-hidden="true" to hide content specifically from screen readers.
-Going back to my initial question “why are we hiding content?”, it’s apparent that there are some elements of a UI that truly need to be hidden. And while we have techniques to hide content, but still make it accessible for assistive technology users, I wouldn’t necessarily jump to these techniques as design solutions.
 
+(which spawned https://css-tricks.com/inclusively-hidden/ and in video form https://css-tricks.com/video-screencasts/142-hiding-things-with-css/)
+
+There are three categories of hidden content:
+- Hidden for everyone? 
+    - display: none; or visibility: hidden; or the hidden attribute. (But [watch out for that hidden attribute](https://meowni.ca/hidden.is.a.lie.html), says Monica Dinculescu.)
+- Hidden visually, but present for assistive tech 
+    - A .screen-reader-only class with a smattering of properties to do the job correctly.
+- Hidden for assistive tech, but not visually? 
+    - The aria-hidden="true" attribute/value.
+
+Depending on the type of content, you will need to use an appropriate technique to hide it, via:
+Using CSS or `[hidden]` to hide content completely.
+
+> Going back to my initial question “why are we hiding content?”, it’s apparent that there are some elements of a UI that truly need to be hidden. And while we have techniques to hide content, but still make it accessible for assistive technology users, I wouldn’t necessarily jump to these techniques as design solutions.
 The goal should be to craft interfaces and experiences that are accessible and understandable to as many people as possible. Not to create interfaces where we can shoe horn in additional context by visually hiding it by default.
 
 ---
