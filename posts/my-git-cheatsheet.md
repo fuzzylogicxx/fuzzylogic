@@ -283,6 +283,16 @@ git branch -a
 ```
 
 </figure>
+
+Show branches you last worked on (most recently commited to):
+
+<figure>
+
+``` bash
+git branch --sort=-committerdate
+```
+
+</figure>
   
 Save current state to new branch but don’t yet switch to it (useful after committing to wrong branch):
 
@@ -332,7 +342,7 @@ Delete local branch:
 
 <figure>
   
-```
+``` bash
 git branch -d name_of_branch
 
 # need to force it because of some merge issue or similar?
