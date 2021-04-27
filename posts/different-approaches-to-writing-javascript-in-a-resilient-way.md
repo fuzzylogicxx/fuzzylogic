@@ -78,11 +78,24 @@ Is Modernizr’s “.no-js replaced by .js” a safe way to
     - also it’s no-xyz-css-feature classes shouldn’t be replied upon because if JS is disabled then they won’t have been applied if even they should otherwise be present.
 
 Worth saying that 
-- `.js` is nowhere near as useful as `.cuts-the-mustard` 
+- `.js` is nowhere near as useful as `.cuts-the-mustard` (although note that that while JK’s responsive nav tutorial adds a `.cuts` class, I don’t think the BBC ever did. They just showed the JS they used as a smoke test before including more JS)
 - worse again than a class added by the actual JS performing the functionality esp. one that signals “we know that everything went OK with the JS”
 - I think it’s undercooked. 
 
 The benefit of it is that it’s there _early_ …however it’s insufficient. 
+
+Re. a `.cuts-the-mustard` CSS class, this is interesting from Manuel Matuzovic:
+
+> I’m cutting the mustard at JS module support. If a browser supports JavaScript modules, it means that it’s a browser that supports modern JavaScript, such as modules, ES 6 syntax, fetch, etc. I ship most JS only to these browsers and I use the js class in CSS, if the styling of a component is different, when JS is active.
+
+```
+<script type="module">
+  document.documentElement.classList.remove('no-js');
+  document.documentElement.classList.add('js');
+</script>
+```
+
+Personally I i) don’t like the vague class name “js”; and ii) still don’t like CSS acting on mustard-cutting alone rather than JS applying the classes only at the end of a completed function.
 
 ## JavaScript modules
 
@@ -91,8 +104,6 @@ The benefit of it is that it’s there _early_ …however it’s insufficient.
 - if you really need to, you could also create a script including polyfills and transpiled JS, and include using `script nomodule`
 
 There are many more gradations of how you can use modules – see my article on ES6 modules. However I’d be inclined to K.I.S.S.
-
-
 
 ## Polyfills
 
