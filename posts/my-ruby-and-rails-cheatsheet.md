@@ -146,7 +146,7 @@ RSpec.describe Foos::BarHelper do
 
     context "when bat is not true" do
       it "does a particular thing" do
-        expect(helper.foo_bars_sortable_link(baz, bat: "false")).to have_link(
+        expect(helper.foo_bars_sortable_link(foo, bat: "false")).to have_link(
           # …
         )
       end
@@ -154,7 +154,7 @@ RSpec.describe Foos::BarHelper do
 
     context "when bat is true" do
       it "does something else" do
-        expect(helper.foo_bars_sortable_link(baz, bat: "true")).to have_link(
+        expect(helper.foo_bars_sortable_link(foo, bat: "true")).to have_link(
           # …a different link from previous test
         )
       end
@@ -166,10 +166,8 @@ end
 </figure>
 
 Notes: 
-- start with `describe`: it’s a good top level.
-- Helper methods should not directly access controller instance variables because it makes them brittle and harder to move around.
-- If you’re doing that you might see it as an opportunity to refactor your helper. 
-- Setting things as params in the helper method rather than using controller instance variables makes the helper methods more reusable and easier to understand and maintain.
+- start with `describe`: it’s a good top-level.
+- Helper methods should not directly access controller instance variables because it makes them brittle, less reusable and less maintainable. If you find you’re doing that you might see it as an opportunity to refactor your helper method.
 
 ### Debugging Helper methods
 
