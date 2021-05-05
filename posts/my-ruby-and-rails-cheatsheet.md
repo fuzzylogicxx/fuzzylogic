@@ -21,7 +21,7 @@ This is not intended to be an authoritative guide but merely my notes from vario
 
 - [The Rails Console](#the-rails-console)
 - [Rspec](#rspec)
-- [Helper methods](#helper-methods)
+- [Helpers](#helpers)
 - [blank? vs empty?](#blank%3F-versus-empty%3F)
 - [frozen_string_literal](#frozen_string_literal%3A-true)
 - [Class-level methods](#class-level-methods)
@@ -42,6 +42,7 @@ This is not intended to be an authoritative guide but merely my notes from vario
 - [Miscellaneous](#miscellaneous)
 - [Web fonts location](#web-fonts%3A-where-to-put-them-in-the-rails-file-structure)
 - [Working with the Database](#the-database)
+- [Routing](#routing)
 - [References](#references)
 
 ## The Rails Console
@@ -120,11 +121,57 @@ let(:example_data_obj) {
 
 Note: if you need multiple data variables so as to handle different scenarios, it’s generally more readable to define the data being tested right next to the test.
 
-## Helper methods
+## Helpers
 
-Helper methods are for use in views. They become available to all your views automatically.
+Helper methods are to there to support your views. They’re for extracting into methods little code routines or logic that don’t belong in a controller and are too complex or reusable to be coded literally into your view. They’re reusable across views because they become available to all your views automatically.
+
+Don’t copy and reuse method names from other helpers. You’ll get conflicts because Helpers are leaky. Instead, start your helper methods with an appropriate namespace. 
 
 Unlike object methods (e.g. `myobj.do_something`) helper methods (e.g. `render_something`) are not available for us to use in the Rails console.
+
+## Helper specs
+
+Basic format:
+
+<figure>
+  
+``` ruby
+# frozen_string_literal: true
+require "rails_helper"
+
+RSpec.describe Foos::BarHelper do
+  let(:foo) { FactoryBot.create(:foo) }
+
+  describe "#foo_bars_sortable_link" do
+
+    context "when bat is not true" do
+      it "does a particular thing" do
+        expect(helper.foo_bars_sortable_link(baz, bat: "false")).to have_link(
+          # …
+        )
+      end
+    end
+
+    context "when bat is true" do
+      it "does something else" do
+        expect(helper.foo_bars_sortable_link(baz, bat: "true")).to have_link(
+          # …a different link from previous test
+        )
+      end
+    end
+  end
+end
+```
+
+</figure>
+
+Notes: 
+- start with `describe`: it’s a good top level.
+- Helper methods should not directly access controller instance variables because it makes them brittle and harder to move around.
+- If you’re doing that you might see it as an opportunity to refactor your helper. 
+- Setting things as params in the helper method rather than using controller instance variables makes the helper methods more reusable and easier to understand and maintain.
+
+### Debugging Helper methods
 
 If you want to debug a helper method by running it and stepping through it at the command line you should lean on a test to get into the method’s context. 
 
@@ -263,7 +310,7 @@ In the above example `@foo` is an `instance variable`. These are available to an
 
 In a view, you can refer to it using `@foo`.
 
-In a subsequent method within the controller, refer to it simply as `foo`. No preceding colon (i.e. not as a symbol) and no preceding `@`.
+In a subsequent method within the controller, refer to it simply as `foo`. There’s no preceding colon (it’s not a symbol; in a conditional a symbol would always evaluate to `true`) and no preceding `@`.
 
 ``` ruby
 def classes
@@ -313,7 +360,9 @@ The convention I have worked with is that any method that returns a `boolean` sh
 
 ### Named Parameters
 
-Here’s an example of using _named parameters_. When this method is called (or in this case when the ViewComponent is instantiated), none of the parameters are mandatory.
+When this method is called (in this case “when the ViewComponent is instantiated”)
+- none of the parameters are mandatory.
+- you need to add the parameter name before the value you’re passing e.g. `<%= render(CardComponent.new(size: :small, full_height: true)) do %>`
 
 <figure>
   
@@ -464,6 +513,22 @@ Reset/wipe the database.
   
 ``` bash
 bundle exec rake db:reset
+```
+
+</figure>
+
+## Routing
+
+## Get routes for model from terminal
+
+Let’s say you’re working on the index page for `pet_foods` and want to create a sort-by-column anchors where each link’s `src` points to the current page with some querystring parameters added. You’re first going to need the route for the current page and in the correct format.
+
+To find the existing routes for `pet_foods` you can run:
+
+<figure>
+  
+``` bash
+rails routes | grep pet_foods
 ```
 
 </figure>
