@@ -252,9 +252,26 @@ view.render(CardComponent.new)
 
 ## Instance variables
 
-In the previous example `@size` is an `instance variable`. 
+``` ruby
+def initialize(foo: nil)
+  super
+  @foo = foo
+end
+```
 
-These are available to an instance of the controller (i.e. the ViewComponent) and private to the component.
+In the above example `@foo` is an `instance variable`. These are available to an instance of the controller and private to the component. (This includes ViewComponents, which are also controllers.)
+
+In a view, you can refer to it using `@foo`.
+
+In a subsequent method within the controller, refer to it simply as `foo`. No preceding colon (i.e. not as a symbol) and no preceding `@`.
+
+``` ruby
+def classes
+  classes = ["myThing"]
+  classes << "myThing-foo" if foo
+  classes
+end
+```
 
 ### Making instance variables publicly available
 
