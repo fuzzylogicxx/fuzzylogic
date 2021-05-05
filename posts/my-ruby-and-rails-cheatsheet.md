@@ -17,6 +17,33 @@ I’m no Ruby engineer however even as a front-end developer I’m sometimes cal
 
 This is not intended to be an authoritative guide but merely my notes from various lessons. It’s also a work-in-progress and a living, changing document.
 
+## Table of contents
+
+- [The Rails Console](#the-rails-console)
+- [Rspec](#rspec)
+- [Helper methods](#helper-methods)
+- [blank? vs empty?](#blank%3F-versus-empty%3F)
+- [frozen_string_literal](#frozen_string_literal%3A-true)
+- [Class-level methods](#class-level-methods)
+- [Constants](#constants)
+- [Symbols](#symbols)
+- [ViewComponent](#viewcomponents)
+- [Instance Variables](#instance-variables)
+- [Methods](#methods)
+- [Empty-checking arrays](#check-if-thing-is-an-array-and-is-non-empty)
+- [The Shovel Operator](#the-shovel-operator)
+- [Require](#require)
+- [Blocks](#blocks)
+- [Rendering HTML](#rendering-html)
+- [Generating random IDs or strings](#random-ids-or-strings)
+- [Views](#views)
+- [Policies](#policies)
+- [Start local Rails server](#start-(local)-rails-server)
+- [Miscellaneous](#miscellaneous)
+- [Web fonts location](#web-fonts%3A-where-to-put-them-in-the-rails-file-structure)
+- [Working with the Database](#the-database)
+- [References](#references)
+
 ## The Rails Console
 
 The `console` command lets you interact with your Rails application from the command line.
