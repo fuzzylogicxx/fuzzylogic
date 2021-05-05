@@ -5,7 +5,7 @@ description: "A controversial new stance from Basecamp that has already led to m
 tags: [link, ethics, basecamp, work, tech, politics]
 linkTarget: "https://world.hey.com/jason/changes-at-basecamp-7f32afc5"
 ---
-Basecamp—makers of project management, team communication and email software—have taken a controversial new stance against (amongst other things) political discussion at work, ”paternalistic benefits” and 360 performance reviews.
+Basecamp—makers of project management, team communication and email software—have taken a controversial new stance against (amongst other things) political discussion at work, “paternalistic benefits” and 360 performance reviews.
 
 > These are difficult enough waters to navigate in life, but significantly more so at work. It's become too much. It's a major distraction. It saps our energy, and redirects our dialog towards dark places. It's not healthy, it hasn't served us well.
 ---
