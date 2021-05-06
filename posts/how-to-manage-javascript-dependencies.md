@@ -108,6 +108,18 @@ If the package maintainer has released newer versions then you need to decide wh
 
 On other occasions you’ll read your security advisory email and the affected package will sound completely unfamiliar… likely because it’s not one you explicitly installed but rather a _sub-dependency_. Y’see, your dependencies have their own `package.json` and dependencies, too. It seems almost unfair to have to worry about these too, however sometimes you do. The vulnerability might even appear several times as a sub-dependency in your lock file’s dependency tree. You need to check that lock file (it contains much more detail than `package.json`), work out which of your top-level dependencies are dependent on the sub-dependency, then go check your options.
 
+Here’s an example where I was alerted to a “high severity” vulnerability in package `xmlhttprequest-ssl`, a sub-subdependency which I currently had installed at `~1.5.4`.
+
+> Dependabot cannot update `xmlhttprequest-ssl` to a non-vulnerable version. The latest possible version that can be installed is `1.5.5` because of the following conflicting dependency: `@11ty/eleventy@0.12.1` requires `xmlhttprequest-ssl@~1.5.4` via a transitive dependency on `engine.io-client@3.5.1`. The earliest fixed version is `1.6.2`.
+
+So, breaking that down:
+- `xmlhttprequest-ssl` versions less than `1.6.2` have a security vulnerability;
+- that’s a problem because my project currently uses version `1.5.5` (via semver range `~1.5.4`);
+- I didn’t explicitly install `xmlhttprequest-ssl`. It’s at the end of a chain of dependencies which began at the `dependencies` of the package `@11ty/eleventy`, which I _did_ explicitly install;
+- To fix things I want to be able to install a version of Eleventy which has updated its own dependencies such there’s no longer a subdependency on the vulnerable version of `xmlhttprequest-ssl`; 
+-  But according to the Dependabot message that’s not possible because even the latest version of Eleventy ([0.12.1](https://github.com/11ty/eleventy/releases/tag/v0.12.1)) is indirectly dependent on a vulnerable version-range of `xmlhttprequest-ssl` (`~1.5.4`);
+-  based on this knowledge, Dependabot cannot recommend simply upgrading Eleventy as a quick fix.
+
 #### Case Study
 
 Let’s put this into context. A while ago I received the following security notification about a vulnerability affecting a side-project repo.
