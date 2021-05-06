@@ -117,8 +117,10 @@ So, breaking that down:
 - that’s a problem because my project currently uses version `1.5.5` (via semver range `~1.5.4`);
 - I didn’t explicitly install `xmlhttprequest-ssl`. It’s at the end of a chain of dependencies which began at the `dependencies` of the package `@11ty/eleventy`, which I _did_ explicitly install;
 - To fix things I want to be able to install a version of Eleventy which has updated its own dependencies such there’s no longer a subdependency on the vulnerable version of `xmlhttprequest-ssl`; 
--  But according to the Dependabot message that’s not possible because even the latest version of Eleventy ([0.12.1](https://github.com/11ty/eleventy/releases/tag/v0.12.1)) is indirectly dependent on a vulnerable version-range of `xmlhttprequest-ssl` (`~1.5.4`);
--  based on this knowledge, Dependabot cannot recommend simply upgrading Eleventy as a quick fix.
+- but according to the Dependabot message that’s not possible because even the latest version of Eleventy ([0.12.1](https://github.com/11ty/eleventy/releases/tag/v0.12.1)) is indirectly dependent on a vulnerable version-range of `xmlhttprequest-ssl` (`~1.5.4`);
+- based on this knowledge, Dependabot cannot recommend simply upgrading Eleventy as a quick fix.
+
+So I could decide it’s safe enough to wait some time for Eleventy to resolve it; or request a fix (or make a PR); or stop using Eleventy.
 
 #### Case Study
 
