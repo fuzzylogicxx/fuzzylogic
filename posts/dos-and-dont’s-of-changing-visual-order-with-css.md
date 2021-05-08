@@ -1,5 +1,5 @@
 ---
-title: Dos and dont’s of changing visual order with CSS
+title: Changing visual order with CSS
 description: When considering using Flexbox or CSS Grid to change the visual
   order of elements, remember that “with great power comes great
   responsibility”.
@@ -12,39 +12,65 @@ tags:
   - flexbox
   - visualorder
   - a11y
-draft: true
+  - focusable
+  - interactive
+draft: false
 ---
 When considering using Flexbox or CSS Grid to change the visual order of elements, remember that “with great power comes great responsibility”.
 ---
 
-Don’t Fix Source problems with grid or flexbox.
+Flexbox and CSS Grid have given us new powers to shuffle the visual order of elements on a web page such that it is different to their order in the source code.
 
-https://noti.st/rachelandrew/Mny9Vg/grid-content-re-ordering-and-accessibility#sd6FiEH 
+However many smart developers have rightly pointed out that although this is really convenient and can help in conquering gnarly design and responsive challenges, it’s often not a good idea. Rachel Andrew in particular has regularly offered the following advice:
 
----
+> Don’t fix source problems with Grid or Flexbox.
 
-This much we know: our web pages might be navigated by 
-- a thumb and fingers, or 
-- by a mouse, or 
-- by a keyboard.
+See Rachel’s talk [Grid, content re-ordering and accessibility](https://noti.st/rachelandrew/Mny9Vg/grid-content-re-ordering-and-accessibility#sd6FiEH) for more detail.
 
-(Maybe update previous article, removing the following stuff and linking to this new article?) 
+So, what’s the problem?
 
-For the navigation by keyboard case, we need to consider tabbing and tab order. [I’ve posted about tabindex and tabbing order before](https://fuzzylogic.me/posts/using-the-tabindex-attribute/). In some cases we might want to make a normally non-focusable element focusable, thus giving it a keyboard tab-stop. However we shouldn’t otherwise be messing with tabbing order.
+## People browse web pages in different ways
 
-Relatedly, it’s not a great idea to use our new CSS superpowers to move focusable elements around visually such that their visual order is different from their source order, because this creates a disconnect between tabbing order and visual order. This could be confusing for a sighted person who navigates by keyboard. CSS Grid and Flexbox offer this ability through properties such as order, flex-direction and grid-auto-flow however as Rachel Andrew and others have suggested, [creating this kind of disconnect is to be avoided](https://rachelandrew.co.uk/archives/2019/06/04/grid-content-re-ordering-and-accessibility/). It might be OK when the elements (and their children) are non-focusable (for example re-ordering two divs) but avoid applying it to focusable elements like navigation links.
+We know that a web page’s visitors are likely to have a range of different abilities. While some experience the full extent of our our visual design, others are visually-impaired or blind. Others still have motor impairments. The web was intended to be accessible and therefore web pages should cater appropriately to this range of user needs.
 
----
+Relatedly we also know that people will use one or more of the following methods to move around a web page:
 
+- a thumb and fingers; 
+- a mouse (or trackpad) and keyboard; 
+- a keyboard alone.
 
-`order: -1`
+There are probably other methods I’m forgetting, but those are the most common.
 
-I’m not sure this is a good idea. It’s a lovely solution in theory but in practice I think it might be one of those “with great power comes great responsibility” situations. It disconnects the visual order from the keyboard tabbing order, creating a potential accessibility issue.
+In order to cater to people who navigate a web page using a keyboard without a mouse (a.k.a. _keyboard users_), we must ensure that the page is tab-friendly. We want the page’s interactive elements to be navigable and focusable by pressing the <kbd>Tab</kbd> key. They should be focusable one by one in the same order as they are defined in the HTML document. 
 
-https://noti.st/rachelandrew/Mny9Vg/grid-content-re-ordering-and-accessibility#sd6FiEH
+Often, achieving tab-friendliness requires little or no additional development effort because the browser gives us so much of the necessary behaviour natively. Interactive HTML elements like anchors (links) and form controls are focusable by default. And for any custom interactions where we want to make a normally non-focusable element (such as a `div`) focusable (thus giving it a keyboard tab-stop) we can apply [the tabindex attribute](https://fuzzylogic.me/posts/using-the-tabindex-attribute/).
 
-James reply
+A simple, well-formed web page will natively offer a natural and predictable tabbing order.
 
-I think it might be okay in this case as there isn't anything in the chart or meta panels that you can navigate to with the keyboard so there's no disconnect?
+With CSS Grid and Flexbox we now have new CSS options such as `order`, `flex-direction: row-reverse` and `grid-auto-flow` which let us reorder elements on the page. This can be really handy for situations where a design spec calls for Element 1 to appear above Element 2 on narrow viewports but to the right of Element B on wider viewports. Using these new CSS properties we might let the elements follow the source order on narrow viewports but change their order within a media query for wider viewports.
 
-It could be done without order though by setting `flex-direction: column` in the parent style so the meta panel is shown first.
+However this means we are now messing with the natural order of things. And if we move _focusable_ elements around such that their visual order is different from their source order this creates a disconnect between tabbing order and visual order.
+
+The disconnect is unlikely to be apparent to sighted people on a tablet/phone or on a desktop setup and navigating with their mouse, because they are not using tab to navigate. Blind users using a screen reader will be similarly unaffected because they don’t experience the visual order. 
+
+We might assume that all keyboard (only) users are also blind, using a screen reader, and not perceiving visual order. However keyboard users also include sighted people who have trouble operating a pointing device such as a mouse or trackball, or whose mouse is currently not working, or who simply prefer to use a keyboard where possible. 
+
+For the sighted person who navigates by keyboard our change of order would be confusing. When you use tab and expect that to follow convention and set focus on one element but it actually sets focus on another you’ll likely (understandably) assume that something is broken.
+
+Rachel Andrew argues that [creating this kind of disconnect is to be avoided](https://rachelandrew.co.uk/archives/2019/06/04/grid-content-re-ordering-and-accessibility/). Léonie Watson suggests that in simple examples such a disconnect may only be mildly awkward, however in complex interfaces [it could make things horribly unusable](https://tink.uk/flexbox-the-keyboard-navigation-disconnect/).
+
+## Is it ever OK to change visual order with CSS?
+
+At work I recently reviewed a PR where the visual order of a Flexbox layout was being updated via `order: -1` in a media query for wide viewports. Although it was a really elegant solution on paper, I advised caution in light of the pitfalls mentioned above.
+
+However a colleague rightly pointed out that the elements being reordered were two `div`s. In this case and any others where the elements (and their children) are non-focusable and we’re not messing with the likes of navigation links or form elements, I _think_ we are safe.
+
+## The Future
+
+We’ve recently been given a few new CSS layout powers only to subsequently be [advised not to use them](https://fuzzylogic.me/posts/using-css-display-contents-to-snap-grandchild-elements-to-a-grid/).
+
+How do we move forward?
+
+Rachel Andrew argues that this problem needs addressed at a CSS level; that developers should be able to set the tab and reading order to follow the visual rather than source order under certain circumstances.
+
+Until that becomes a CSS reality we should continue to be judicious in our usage, to ensure we don’t break user expectations.
