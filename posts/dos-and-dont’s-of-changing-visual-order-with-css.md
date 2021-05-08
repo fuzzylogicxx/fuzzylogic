@@ -19,7 +19,7 @@ draft: false
 When considering using Flexbox or CSS Grid to change the visual order of elements, remember that “with great power comes great responsibility”.
 ---
 
-Flexbox and CSS Grid have given us new powers to shuffle the visual order of elements on a web page such that it is different to their order in the source code.
+Flexbox and CSS Grid have given us new powers to shuffle the visual order of elements on a web page such that it is different to the element order in the source code.
 
 However many smart developers have rightly pointed out that although this is really convenient and can help in conquering gnarly design and responsive challenges, it’s often not a good idea. Rachel Andrew in particular has regularly offered the following advice:
 
@@ -47,7 +47,7 @@ Often, achieving tab-friendliness requires little or no additional development e
 
 A simple, well-formed web page will natively offer a natural and predictable tabbing order.
 
-With CSS Grid and Flexbox we now have new CSS options such as `order`, `flex-direction: row-reverse` and `grid-auto-flow` which let us reorder elements on the page. This can be really handy for situations where a design spec calls for Element 1 to appear above Element 2 on narrow viewports but to the right of Element B on wider viewports. Using these new CSS properties we might let the elements follow the source order on narrow viewports but change their order within a media query for wider viewports.
+With CSS Grid and Flexbox we now have new CSS options such as `order`, `flex-direction: row-reverse` and `grid-auto-flow` which let us reorder elements on the page. This can be really handy for situations where a design spec calls for Element 1 to appear above Element 2 on narrow viewports but to its right on wider viewports. Using these new CSS properties we might let the elements follow the source order on narrow viewports but change their order within a media query for wider viewports.
 
 However this means we are now messing with the natural order of things. And if we move _focusable_ elements around such that their visual order is different from their source order this creates a disconnect between tabbing order and visual order.
 
