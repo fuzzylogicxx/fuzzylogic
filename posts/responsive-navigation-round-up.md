@@ -11,7 +11,10 @@ tags:
   - javascript
 draft: true
 ---
-The challenge is twofold: we need to provide effective navigation across a range of viewport sizes, and we need to make it resilient.
+The challenge is twofold: 
+
+1. provide responsive navigation that’s effective on multiple viewport sizes, and 
+2. ensure that it’s resilient.
 ---
 
 ## BBC (footer nav, duplication, and PE)
@@ -34,7 +37,7 @@ The above works when JS is not yet loaded, broken, or disabled. The JS happy pat
 
 Observations:
 1. interesting that they never show _all_ the nav items in the HHN even when the screen is super-wide. Although I guess by always having a “More” they maybe accept that you can’t keep adding horizontally forever, protect themselves from the a broken layout, and simultaneously afford themselves flexibility to keep adding new items if need be? Or maybe it was just easier to leave it this way.
-1. it’d be nice not to repeat the nav three times in the server-rendered markup! However the alternative is pretty challenging. You need to use JS to clone nodes and move them around but remove and re-add them again if the viewport width changes. When trying to reconcile that with existing complex responsive CSS styles this quickly gets pretty gnarly (I speak from experience).
+1. it’d be nice not to repeat the nav three times in the server-rendered markup! However the alternative is pretty challenging. You’d need to use JS to clone nodes and move them around but remove and re-add them again if the viewport width changes. When trying to reconcile that with existing complex responsive CSS styles this quickly gets pretty gnarly (I speak from experience). Then again perhaps you could clone the footer “full-nav” with JS rather than having that second header-nav be in the server-rendered markup. But is there any point to that rather than just having it there and hidden? 
 
 ## Alternatives to JS approaches
 
@@ -42,6 +45,7 @@ I previously blah https://fuzzylogic.me/posts/2020-08-08-three-css-alternatives-
 
 - Put the menu on a separate page.
 - Make the nav items horizontally scrollable
+- …
 
 ## UK Govt
 https://www.nhs.uk/conditions/coronavirus-covid-19/coronavirus-vaccination/coronavirus-vaccine/
