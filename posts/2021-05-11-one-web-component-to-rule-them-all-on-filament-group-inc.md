@@ -12,6 +12,6 @@ Scott Jehl has taken a refreshingly Progressive Enhancement -centric look at Web
 
 He goes further and creates a _factory_ for creating Web Components which allows adding to a single element many small behavioural script enhancements that may or may not relate to each other.
 
-There are also some great notes on the performance upgrade provided by lifecycle callbacks, and polyfilling amongst other things.
+There are also some great notes on polyfilling and the performance upgrade provided by lifecycle callbacks.
 
-And [Scottâs WC-experiments repo](https://github.com/filamentgroup/wc-experiments) contains some interesting demos.
+And [Scott’s wc-experiments repo](https://github.com/filamentgroup/wc-experiments) contains some interesting demos.
