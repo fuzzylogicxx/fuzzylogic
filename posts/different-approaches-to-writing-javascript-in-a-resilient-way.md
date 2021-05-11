@@ -20,19 +20,52 @@ Lorem
 
 > if the arrow function is encountered by a browser that doesn't support ES6 arrows, it'll cause a syntax error. If the site is following best practice and combining all their JavaScript into a single file, this means that all their JavaScript just broke.
 
-## Another recurring question: how to avoid layout shift caused by enhancing?
+## Recurring question: in progressively enhanced approaches, how to avoid layout shift caused by enhancing?
 
-How best to enhance a basic thing _quickly_ so that the user doesn’t see a noticeable _switch_ (or in which situations (e.g. perhaps when JS already cached?) is this not even a problem?)
+How best to enhance a basic thing _quickly_ so that the user doesn’t see a noticeable _switch_? Example: enhancing a table of contents containing links to sections _quickly_ into a _tabbed interface_).
+And are there situations (e.g. perhaps when JS already cached?) when this is perhaps not even a problem?
 
-This “banner with close button” example is good https://www.zachleat.com/web/layout-shift/ and also see linked Github repo and https://twitter.com/zachleat/status/1332353805451751430). Combines:
+### Making the JS run as early as is possible and sensible
 
-- banner markup is in the HTML by default. Includes button by default! (see opacity note later)
+If all you need to know is that _JS is available_, you could add class `js-available` to the `html` element in your second or so line of `head`. You could have some critical inline CSS following that which does, for example, `.js-available .disclosure-content { display: none; }`. 
+
+However because that hides the content before we’re sure that the JS which sets up the event handler on the disclosure element has loaded and is not broken, I’m not sure there are any cases in which that’ll ever feel resilient enough. But anyway, I’m putting it here just for reference. Who knows, I might think of cases where it’s useful.
+
+#### Inline it in the head?
+
+Inlining JS (some or all of it) avoids a few JS failure pitfalls and may improve speed.
+Doing it early in the `head` would mean it runs early… however it would run straight away before the DOM elements it’s due to operate on are even loaded. 
+We might be better:
+- putting it before closing `</body>` tag;
+- although we know that `script defer` from the `head` is better because it makes the script available earlier
+- and we might go better again by using `script type=module` in the `head` which has `defer` by default but skips IE 11, if that’s desirable.
+- perhaps `script type=module` with all the JS just literally inlined inside the `script` tags is a good option.
+- making sure it’s the first JS to run could be useful.
+
+An option I considered was whether—Scott Jehl/Filament style—we could use the `onload` attribute on an element in the middle of the document to run JS then and there. However before even getting into whether that’s a good or scalable idea, it’s perhaps a non-starter because `onload` is only available on elements like `iframe` and `img`… and not on `div` or `ul` etc.
+
+One other possibility is to use a Web Component (like Zach has below). 
+1. According to https://www.filamentgroup.com/lab/delegator/ it may offer a performance benefit in that the JS runs early or quicker (but I’m not sure; it might still be after the DOM is loaded).
+2. it wraps up the JS neatly so that a breakage in one place would break the whole class—which is a good thing as the enhancement would not be “part-added”.
+3. it’s a class-based approach (so nicely organised) to JS but one that is framework free.
+
+One other thing I’m thinking is that perhaps in PE approaches the baselines need to try to minimise the flicker impact. 
+One technique for doing this is by putting things which might otherwise flicker somewhere off-screen, be it on another page or in a footer section, and linking to them. 
+- In JK’s 24ways responsive navigation article he puts the navigation at the bottom and links to it from his “Menu” link at the top-right (the jump-to-footer pattern). But cleverly he makes the stuff before the footer nav have a min-height of 100%. However this isn’t always possible. We might be able to do it sometimes (navs, modals) but in other cases we might just need to make our JS as performant as poss and suck up any possible flicker.
+
+Zach Leatherman’s (for Netlify) “banner with close button” example is good https://www.zachleat.com/web/layout-shift/ and also see linked Github repo and https://twitter.com/zachleat/status/1332353805451751430). 
+Although the bits that are JS-dependent are just working with a `button` (applying a class to unhide it, adding a click event listener to it) and storing something in localStorage, so not too flicker-prone.
+
+It combines:
+
+- banner markup is in the HTML by default. Includes button by default! (see opacity note later). (NB Jake A might not approve of this client side stuff in the server render)
 - banner “theme” CSS (just for default “banner is displaying” context—the critical CSS?) is inlined in the `head`
 - but minimal JS runs early in the `head` (immediately after inlined CSS) and applies a `banner--hide` class to the HTML element if appropriate based on a localStorage check (equiv of cookies)
 - additional, external CSS includes contextual selector for hiding the banner if `banner--hide` or `hidden` are presnt. Also sets the close button’s `opacity` to `0` by default. (“We use opacity to toggle the close button so that it doesn’t reflow the component when it’s enabled via JavaScript.) (LH note: he also uses `pointer-events: none;`. I wonder if this combined `opacity:0` and `pointer-events:none` approach is sufficient to hide the button from screen readers? I’ve asked https://twitter.com/zachleat/status/1332353805451751430)
 - uses a web component (class) to enhance the banner (keeping the overall approach lean and framework-free)
 - WC deals with showing the button, closing, applying `hidden` and setting localStorage
 - banner web component JS is loaded in a `script type=module`
+- the value stored in localStorage allows doing something different on repeat visits.
 
 ## Feature detection
 
