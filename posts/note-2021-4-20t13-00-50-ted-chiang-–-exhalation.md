@@ -5,6 +5,7 @@ date: 2021-04-20T15:40:00.000Z
 location: Glasgow
 mainImage.isAnchor: false
 tags:
+  - note
   - book
   - scifi
   - freewill
