@@ -167,6 +167,7 @@ end
 
 Notes: 
 - start with `describe`: it’s a good top-level.
+- describe a helper method using hash (`describe "#project_link" do`)
 - Helper methods should not directly access controller instance variables because it makes them brittle, less reusable and less maintainable. If you find you’re doing that you might see it as an opportunity to refactor your helper method.
 
 ### Debugging Helper methods
@@ -249,7 +250,7 @@ You should use symbols as names or labels for things (for example methods). Th
 <figure>
   
 ``` ruby
-# here :title is a symbol representing the @title instance variable
+# here, :title is a symbol representing the @title instance variable
 attr_reader :title
 
 # refer to the render_foo method using a symbol
