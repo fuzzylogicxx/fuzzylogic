@@ -15,11 +15,11 @@ Some of the techniques I found interesting included:
 - starting with basic HTML for each book and its image, title, and author elements rather than an empty custom element, thereby providing a resilient baseline
 - wrapping each book in a custom `book-element` tag (which the browser would simply treat like a `div` in the worst case scenario)
 - applying the `slot` attribute to each of the nested elements, for example `slot="title"`
-- including a `template` with `id="book-element"` at the top of the HTML. This centralises the optimal book markup, which makes for quicker, easier, and less disruptive maintenance. A `template` is parsed but not rendered by the browser. It is available solely to be referenced and used by JavaScript
-- including _slots_ within the template, such as `<slot name="title">`
-- putting a `style` block within the `template`. This contains book styles only, including container query driven responsiveness
-- targetting the `<book-element>` wrapper in CSS via the `:host` selector, and applying `contain` to that
-- targetting `slots` in CSS using (for example) `::slotted(img)`
+- including a `template` with `id="book-element"` at the top of the HTML. This centralises the optimal book markup, which makes for quicker, easier, and less disruptive maintenance. (A `template` is parsed but not rendered by the browser. It is available solely to be referenced and used by JavaScript)
+- including _slots_ within the `template`, such as `<slot name="title">`
+- putting a `style` block within the `template`. These styles target the book component only, and include container query driven responsiveness
+- targetting the `<book-element>` wrapper element in CSS via the `:host` selector, and applying `contain` to set it as a container query context
+- targetting a `slot` in the component CSS using (for example) `::slotted(img)`
 
 ## Thoughts
 
