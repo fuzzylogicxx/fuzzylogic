@@ -22,3 +22,5 @@ That’s why sometimes the existing component is not a fit, because the meaning/
 This is great advice for comparing and choosing between components:
 
 > Focus on what components achieve rather than their appearance
+
+To me this also highlights one of the key benefits of modern [micro-layouts](https://every-layout.dev/). Separate the content (and purpose) from the layout…then you get maximum reusability because you have common presentations/layouts which are meaning-agnostic.
