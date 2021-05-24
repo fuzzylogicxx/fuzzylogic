@@ -8,6 +8,7 @@ linkTarget: "https://medium.com/bbc-design-engineering/shifting-left-how-introdu
 Absolute gold here regarding accessibility, bloated components, and purpose versus appearance.
 
 > It’s easy for a component to become bloated and its purpose increasingly ambiguous.
+
 ---
 
 The article also makes a fundamental point.
