@@ -8,5 +8,7 @@ linkTarget: "https://bevacqua.github.io/dragula/"
 Here’s a nice, lightweight and framework-free drag and drop UI solution, that’s sure to come in handy.
 
 > Drag and drop so simple it hurts
+
 ---
- (via [@mxbck](https://twitter.com/mxbck))
+
+(via [@mxbck](https://twitter.com/mxbck))
