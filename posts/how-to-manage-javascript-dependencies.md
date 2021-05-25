@@ -25,17 +25,16 @@ While it’s important to keep your dependencies updated, in a recent survey by 
 
 ## A simplified process
 
-The whole process might go something like this (NB if you haven’t already, install [yarn](https://yarnpkg.com/)).
+The whole process might go something like this (NB install [yarn](https://yarnpkg.com/) if you haven’t already).
 
 <figure>
   
 ``` bash
 # Start installing and managing 3rd-party packages.
 # (only required if your project doesn’t already have a package.json)
-yarn  # or npm init
+yarn init  # or npm init
 
 # Install dependencies (in a project which already has a package.json)
-# yes, it’s the same yarn command as above.
 yarn  # or npm i
 
 # Add a 3rd-party library to your project
