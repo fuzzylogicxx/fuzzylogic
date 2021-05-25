@@ -29,4 +29,4 @@ Additionally, this is great advice for comparing and choosing between components
 
 > Focus on what components achieve rather than their appearance
 
-To me this also highlights one of the key benefits of modern [micro-layouts](https://every-layout.dev/). Separate the content (and purpose) from the layout…then you get maximum reusability from those common, _workhorse_ layouts becaue they are meaning-agnostic.
+To me this also highlights one of the key benefits of modern [micro-layouts](https://every-layout.dev/). Separate the content (and purpose) from the layout…then you get maximum reusability from those common, _workhorse_ layouts because they are meaning-agnostic.
