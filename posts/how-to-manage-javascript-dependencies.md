@@ -25,7 +25,7 @@ While it’s important to keep your dependencies updated, in a recent survey by 
 
 ## A simplified process
 
-The whole process might go something like this (using [yarn](https://yarnpkg.com/)).
+The whole process might go something like this (NB if you haven’t already, install [yarn](https://yarnpkg.com/)).
 
 <figure>
   
