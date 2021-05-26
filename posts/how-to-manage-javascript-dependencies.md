@@ -48,8 +48,9 @@ yarn add -D package_name  # or npm i package_name --save-dev
 # Add package but specify a particular version or semver range
 # https://devhints.io/semver
 # It’s often wise to do this to ensure predictable results.
-# caret (^) is useful: allows packages to be upgraded to next minor versions.
-yarn add package_name@^1.3.1
+# caret (^) is useful: allows upgrade to minor but not major versions.
+# is >=1.2.3 <2.0.0
+yarn add package_name@^1.2.3
 
 # Remove a package
 # use this rather than manually deleting from package.json.
