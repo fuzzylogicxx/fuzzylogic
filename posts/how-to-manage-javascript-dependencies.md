@@ -107,6 +107,12 @@ If the package maintainer has released newer versions then you need to decide wh
 
 On other occasions you’ll read your security advisory email and the affected package will sound completely unfamiliar… likely because it’s not one you explicitly installed but rather a _sub-dependency_. Y’see, your dependencies have their own `package.json` and dependencies, too. It seems almost unfair to have to worry about these too, however sometimes you do. The vulnerability might even appear several times as a sub-dependency in your lock file’s dependency tree. You need to check that lock file (it contains much more detail than `package.json`), work out which of your top-level dependencies are dependent on the sub-dependency, then go check your options.
 
+Update: use `yarn why sockjs` (replacing `sockjs` as appropriate) to find out why a module you don’t recognise is installed. It’ll let you know what module depends upon it, to help save some time.
+
+When having to work out the required update to address a security vulnerability in a package that is a subdependency, I like to quickly get to a place where the task is framed in plain English, for example:
+
+> To address a vulnerability in `xmlhttprequest-ssl` we need to upgrade `karma` to the closest available version above `4.4.1` where its dependency on `xmlhttprequest-ssl` is `>=1.6.2` 
+
 #### Case Study 1
 
 I was recently alerted to a “high severity” vulnerability in package `xmlhttprequest-ssl`.
@@ -148,6 +154,25 @@ Github was telling me that it couldn’t automatically raise a fix PR, so I had 
 1. I checked [nodemon’s releases](https://github.com/remy/nodemon/releases) and ascertained that my only option if sticking with `nodemon` was to install `v2.0.3`—a new major version. I wouldn’t ideally install a version which might include breaking changes but in this case `nodemon` was just a `devDependency`, not something which should affect other parts of the application, and a developer convenience at that so I went for it safe in the knowledge that I could happily remove this package if necessary;
 1. I opened `package.json` and within `devDependencies` manually updated `nodemon` from `^1.19.4` to `^2.0.4`. (If I was in a `yarn` context I’d probably have done this at the command line). I then ran `npm i nodemon` to reinstall the package based on its new version range which would also update the lock file. I was then prompted to run `npm audit fix` which I did, and then I was done;
 1. I pushed the change, checked my Github repo’s security section and noted that the alert (and a few others besides) had disappeared. Job’s a goodun!
+
+## Proactively checking for security vulnerabilities
+
+It’s a good idea on any important project to not rely on automated alerts and proactively address vulnerabilities.
+
+Check for vulnerabilities like so:
+
+<figure>
+
+``` bash
+yarn audit --level critical
+
+# for specific levels
+yarn audit --level critical
+yarn audit --level high
+  
+```
+
+</figure>
 
 ## Files and directories
 
