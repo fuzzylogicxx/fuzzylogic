@@ -85,7 +85,7 @@ Sometimes the task is straightforward. The Dependabot alert email tells you abou
 
 A simple `upgrade` to the relevant patch version would do the job, however [Dependabot can even take care of that for you!](https://docs.github.com/en/github/managing-security-vulnerabilities/configuring-dependabot-security-updates) Dependabot can automatically open a new Pull Request which addresses the vulnerability by updating the relevant dependency. It’ll give the PR a title like
 
-> Bump `lodash` from `4.17.11` to `4.17.19`”
+> Bump `lodash` from `4.17.11` to `4.17.19`
 
 You just need to approve and merge that PR. This is great; it’s really simple and takes care of lots of cases.
 
