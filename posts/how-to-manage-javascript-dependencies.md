@@ -164,9 +164,9 @@ Check for vulnerabilities like so:
 <figure>
 
 ``` bash
-yarn audit --level critical
+yarn audit
 
-# for specific levels
+# for a specific level only
 yarn audit --level critical
 yarn audit --level high
   
