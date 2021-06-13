@@ -5,6 +5,7 @@ date: 2021-06-13T22:43:17.574Z
 location: Glasgow
 mainImage.isAnchor: false
 tags:
+  - note
   - cloning
   - mortality
   - humanity
@@ -12,7 +13,6 @@ tags:
   - love
   - book
   - film
-  - note
 draft: false
 ---
 I’ve just finished reading [Never Let Me Go](https://www.hive.co.uk/Product/Kazuo-Ishiguro/Never-Let-Me-Go/1518724) by Kazuo Isihiguro.
