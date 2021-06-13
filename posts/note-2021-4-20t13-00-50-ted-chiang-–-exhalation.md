@@ -13,4 +13,4 @@ tags:
   - physics
 draft: false
 ---
-I’ve started reading [Exhalation](https://uk.bookshop.org/books/exhalation/9781529014495) by Ted Chiang.
+I’ve started reading [Exhalation](https://uk.bookshop.org/a/4340/9781529014495) by Ted Chiang.
