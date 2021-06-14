@@ -8,9 +8,15 @@ tags:
   - article50
   - racism
   - sexism
+mainImage:
+  url: https://res.cloudinary.com/fuzzylogic/image/upload/v1623696669/img2jan2019at185002_fqghbo.jpg
+  alt: "A photo of the book Rise, by Gina Miller"
+  aspectRatioWidth: 320
+  aspectRatioHeight: 240
 draft: false
+
 ---
-I’ve just read <em>Rise</em> by Gina Miller.
+I’ve just read _Rise_ by Gina Miller.
 ---
 
 In 2016 Miller took the UK government to court for attempting to force through Article 50—the mechanism for starting Brexit—which would have lead to the nation leaving the EU without parliamentary consent.
