@@ -9,6 +9,10 @@ tags:
   - music
   - house
   - chicago
+mainImage:
+  url: https://res.cloudinary.com/fuzzylogic/image/upload/v1603638115/86f73c36-e6c1-4f89-9a69-e59b6a9666f4_aw0nsm.jpg
+  alt: "Records and slipmats purchased from Gramaphone Records, Chicago, in August 2018"
+  aspectRatioHeight: 240
 draft: false
 ---
 When in Chicago, buy #house
@@ -16,7 +20,11 @@ When in Chicago, buy #house
 {% if app.environment == "prod" %}
 
 <figure>
-  {% respimg "https://res.cloudinary.com/fuzzylogic/image/upload/v1603638115/86f73c36-e6c1-4f89-9a69-e59b6a9666f4_aw0nsm.jpg", "Records and slipmats purchased from Gramaphone Records, Chicago, in August 2018", "(min-width: 1600px) 646px, (min-width: 700px) 612px, 91.58vw" %}
+  {% respimg "" + mainImage.url + "", 
+  "" + mainImage.alt + "", 
+  "(min-width: 1600px) 646px, (min-width: 700px) 612px, 91.58vw", 
+  320, mainImage.aspectRatioHeight, 
+  [320, 640, 960, 1280, 1600] %}
   <figcaption>My haul from Gramaphone Records, Chicago, August 2018</figcaption>
 </figure>
 {% endif %}
