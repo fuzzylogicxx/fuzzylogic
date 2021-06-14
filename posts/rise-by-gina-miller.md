@@ -19,6 +19,18 @@ draft: false
 I’ve just read _Rise_ by Gina Miller.
 ---
 
+{% if app.environment == "prod" %}
+<figure>
+  {% respimg "" + mainImage.url + "", 
+  "" + mainImage.alt + "", 
+  "(min-width: 1600px) 646px, (min-width: 700px) 612px, 91.58vw", 
+  320, mainImage.aspectRatioHeight, 
+  [320, 640, 960, 1280, 1600] %}
+  <figcaption>Rise by Gina Miller</figcaption>
+</figure>
+{% endif %}
+
+
 In 2016 Miller took the UK government to court for attempting to force through Article 50—the mechanism for starting Brexit—which would have lead to the nation leaving the EU without parliamentary consent.
 
 Its title a reference to the Maya Angelou poem [Still I Rise](https://www.poetryfoundation.org/poems/46446/still-i-rise), the book is partly the author’s story of how she has been shaped by the successes and failures in her life, and partly a personal manifesto stating that every person can stand up and make a positive difference, even in the face of adversity.
