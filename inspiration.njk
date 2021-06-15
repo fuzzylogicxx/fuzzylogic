@@ -1,0 +1,28 @@
+---
+pageSpecificRobotsDirective: "noindex, nofollow"
+layout: layouts/container_width.njk
+pagination:
+  data: inspiration.websitedesign
+  size: 20
+  alias: inspiration
+permalink: inspiration/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber }}/{% endif %}index.html
+title: "Inspiration: Website Designs"
+---
+
+<header class="section-index-header">
+  <h1>{{ renderData.title or title }}</h1>
+</header>
+
+<div class="grid" data-min="18ch">
+  {% for item in inspiration %}
+    <div>
+      <a href="{{ item.url }}">{{ item.name }}</a>
+      <div>{{ item.notes }}</div>
+    </div>
+  {% endfor %}
+</div>
+
+<nav class="traverse">
+  {%- if pagination.nextPageHref %}<a rel="prev" href="{{ pagination.nextPageHref }}"><span aria-hidden="true">←</span> Older items</a>{%- endif %}
+  {%- if pagination.previousPageHref %}<a rel="next" href="{{ pagination.previousPageHref }}">Newer items <span aria-hidden="true">→</span></a>{%- endif %}
+</nav>
