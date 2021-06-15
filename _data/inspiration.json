@@ -1,0 +1,60 @@
+{
+  "websitedesign": [
+    {
+      "name": "Bram Stein’s website",
+      "url": "https://www.bramstein.com/",
+      "notes": "type, blog index, date styling, colours"
+    },
+    {
+      "name": "Sitepoint",
+      "url": "https://www.sitepoint.com/",
+      "notes": "sofrito, docs, corporate"
+    },
+    {
+      "name": "Fractal",
+      "url": "http://fractal.build",
+      "notes": "sofrito, docs, corporate"
+    },
+    {
+      "name": "Ben Brignell’s website",
+      "url": "https://benbrignell.com/",
+      "notes": "personalsite, structure, sections"
+    },
+    {
+      "name": "Brittany Chiang’s website",
+      "url": "https://brittanychiang.com/",
+      "notes": "colours, type, calibre"
+    },
+    {
+      "name": "New Adventures 2020",
+      "url": "https://newadventuresconf.com/2020/",
+      "notes": "colours, type"
+    },
+    {
+      "name": "toggl",
+      "url": "https://toggl.com/",
+      "notes": "animation"
+    },
+    {
+      "name": "CSS-IRL",
+      "url": "https://css-irl.info/how-to-accessibly-split-text/",
+      "notes": "typography, blog"
+    },
+    {
+      "name": "Dave Rupert’s website",
+      "url": "https://daverupert.com/2019/08/what-i-like-about-eleventy/",
+      "notes": "typography, blog"
+    }
+  ],
+  "music": [
+    {
+      "name": "foo",
+      "url": "https://www.hive.co.uk/Product/Ashley-Dotty-Charles/Outraged--Why-Everyone-is-Shouting-and-No-One-is-Talking/23096760"
+    },
+    {
+      "name": "bar",
+      "url": "https://www.hive.co.uk/Product/Ashley-Dotty-Charles/Outraged--Why-Everyone-is-Shouting-and-No-One-is-Talking/23096760"
+    }
+  ]
+}
+
