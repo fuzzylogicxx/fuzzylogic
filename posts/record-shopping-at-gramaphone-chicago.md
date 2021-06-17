@@ -17,13 +17,13 @@ draft: false
 ---
 When in Chicago, buy #house
 
-{% if app.environment == "prod" %}
+{% if app.environment == "production" %}
 
 <figure>
-  {% respimg "" + mainImage.url + "", 
-  "" + mainImage.alt + "", 
-  "(min-width: 1600px) 646px, (min-width: 700px) 612px, 91.58vw", 
-  320, mainImage.aspectRatioHeight, 
+  {% respimg "" + mainImage.url + "",
+  "" + mainImage.alt + "",
+  "(min-width: 1600px) 646px, (min-width: 700px) 612px, 91.58vw",
+  320, mainImage.aspectRatioHeight,
   [320, 640, 960, 1280, 1600] %}
   <figcaption>My haul from Gramaphone Records, Chicago, August 2018</figcaption>
 </figure>

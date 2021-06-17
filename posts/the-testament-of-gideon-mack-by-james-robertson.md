@@ -11,7 +11,7 @@ mainImage:
 A strange, otherwordly and often pretty funny tale of a Scottish minister’s dance with The Devil.
 ---
 
-{% if app.environment == "prod" %}
+{% if app.environment == "production" %}
 <figure>
   {% respimg "" + mainImage.url + "", "" + mainImage.alt + "", "(min-width: 1600px) 646px, (min-width: 700px) 612px, 91.58vw" %}
   <figcaption>{{ mainImage.figcaption }}</figcaption>

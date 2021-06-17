@@ -11,7 +11,7 @@ tags:
   - work
 draft: false
 ---
-{% if app.environment == "prod" %}
+{% if app.environment == "production" %}
 
 <figure>
   {% respimg "https://res.cloudinary.com/fuzzylogic/image/upload/v1603638280/bc15350c-a925-4713-a184-ebf695582f14_olylnd.jpg", "Chicago, North River, by night", "(min-width: 1600px) 646px, (min-width: 700px) 612px, 91.58vw" %}
