@@ -85,13 +85,14 @@
   </head>
   <body{% if bodyclass %} class="{{ bodyclass }}"{% endif %}>
 
-    <div class="banner">
-      <p class="banner__content">I’m updating my website. Apologies if things look a little rough temporarily.
+    <div class="box invert">
+      <p class="max-width-none">I’m currently updating my website. Apologies if things look a little rough temporarily.</p>
     </div>
 
-    <!-- Header begins -->
-    <header id="global-header" class="global-header">
-      <div class="container">
+    <div class="container">
+
+      <!-- Header begins -->
+      <header id="global-header" class="global-header">
         <div class="cluster">
           <div class="logo-and-header-menu-wrap">
             <a class="logo" href="{{ '/' | url }}" title="Home">
@@ -123,20 +124,18 @@
                   <input type="search" id="search-str" name="q" class="search-str" aria-label="Search for...">
                 </div>
               </form>
-              <ol class="search-results" aria-live="polite"></ol>
+              {# I don’t like the this empty element being in the server-rendered HTML #}
+              {# <ol class="search-results" aria-live="polite"></ol> #}
             </div>
           </div>
         </div>
-      </div>
-    </header>
+      </header>
 
-    <main id="primary-content" class="primary-content{% if templateClass %} {{ templateClass }}{% endif %}">
-      {{ content | safe }}
-    </main>
+      <main id="primary-content" class="primary-content{% if templateClass %} {{ templateClass }}{% endif %}">
+        {{ content | safe }}
+      </main>
 
-    <footer aria-label="site" id="global-footer" class="global-footer">
-
-      <div class="container">
+      <footer aria-label="site" id="global-footer" class="global-footer">
 
         <div class="global-footer-contents-wrap">
 
@@ -183,9 +182,9 @@
 
         </div>
 
-      </div>
+      </footer>
 
-    </footer>
+    </div> <!-- end .container -->
 
     <!-- SVGs used repeatedly on the page are better defined as symbols, then <use>d -->
     <svg width="0" height="0" style="display: none;">

@@ -1,3 +1,5 @@
+// ”Universal Styles” section
+
 // RESETS (using bits of https://piccalil.li/blog/a-modern-css-reset)
 
 *,
@@ -19,16 +21,13 @@ dd {
   margin: 0;
 }
 
+// Lists
+// Custom Lists
 // https://www.scottohara.me/blog/2019/01/12/lists-and-safari.html
+// if role=list required adding we can assume we don’t want bullets.
 ul[role='list'],
 ol[role='list'] {
   list-style: none;
-}
-
-/* Set core body defaults */
-body {
-  min-height: 100vh;
-  line-height: 1.5;
 }
 
 /* anchors that don't have a class get default styles */
@@ -40,21 +39,21 @@ img {
   // normalize.css says "Remove the border on images inside links in IE 10."
   border-style: none;
 
-  // Set images to display block globally because can’t think
+  // Set images to display block globally because I can’t think
   // of anywhere you wouldn’t want this to be the case.
   display: block;
 
   // Support flexible images.
-  // We can make large <img>s available to wide and narrow viewports alike,
-  // safe in the knowledge that even if an image is wider than its container,
+  // Provide the ability to reuse a single large <img> on wide and narrow viewports alike,
+  // with measures in place so that even if it is wider than its container,
   // it will not overflow.
   // The result is that the image’s width will match one of three values:
   // 1. Its own intrinsic/natural width, based on the file data; OR
-  // 2. An explicit HTML width attribute value, if present;
+  // 2. An explicit HTML width attribute value, if present; OR
   // 3. The width of the horizontal space afforded by the container element; OR
-  // 4. 60rem (a sensible image width limit) if the container is wider than that.
+  // 4. 60rem (a sensible image width limit) in cases where the container is wider than that.
 
-  // 60rem seems a reasonable limit, where min() is supported. Can tweak later.
+  // 60rem seems a reasonable limit and will apply where min() is supported. Can tweak later.
   max-width: 100%;
   max-width: min(60rem, 100%);
 }
@@ -95,7 +94,53 @@ select {
   }
 }
 
-// FONTS (FILE)
+// End RESETS
+
+// Tokens
+
+:root {
+  --ratio: 1.5;
+  --s-5: calc(var(--s-4) / var(--ratio));
+  --s-4: calc(var(--s-3) / var(--ratio));
+  --s-3: calc(var(--s-2) / var(--ratio));
+  --s-2: calc(var(--s-1) / var(--ratio));
+  --s-1: calc(var(--s0) / var(--ratio));
+  --s0: 1rem;
+  --s1: calc(var(--s0) * var(--ratio));
+  --s2: calc(var(--s1) * var(--ratio));
+  --s3: calc(var(--s2) * var(--ratio));
+  --s4: calc(var(--s3) * var(--ratio));
+  --s5: calc(var(--s4) * var(--ratio));
+
+  --font-size-base: var(--s0);
+  --font-size-biggish: var(--s2);
+  --font-size-big: var(--s5);
+
+  --measure: 60ch;
+
+  --border-thin: 1px;
+
+  --color-light: #fff;
+  --color-dark: #000;
+}
+
+// Sensible measure
+
+* {
+  max-width: var(--measure);
+}
+
+html,
+body,
+div,
+header,
+nav,
+main,
+footer {
+  max-width: none;
+}
+
+// FONTS
 
 @font-face {
   font-family: Source Sans Pro;
@@ -122,11 +167,105 @@ select {
   font-display: swap;
 }
 
-body {
-  font-family: 'Source Sans Pro', sans-serif;
+@media (min-width: 960px) {
+  :root {
+    // ↓ Upscale by 25% at 960px
+    // works because we use relative rather than px values for element font sizing.
+    // no need to update those elements individually.
+    // font-size: 125%;
+
+    // Experimental alternative approach
+    // I might go back to reading distance based thinking
+    font-size: calc(1rem + 0.5vw);
+  }
 }
 
-.banner {
-  background: #000;
-  color: #fff;
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  min-height: 100vh; // todo: check articles re. iPhone bottom bar
+  line-height: var(--ratio);
+}
+
+// Element styles
+
+h1 {
+  font-size: var(--s3);
+}
+h2 {
+  font-size: var(--s2);
+}
+h3 {
+  font-size: var(--s1);
+}
+
+// Components
+
+// Banner
+// .banner {
+//   background: #000;
+//   color: #fff;
+// }
+
+// Box
+.box {
+  // display: block; // needed if it’s a custom element
+  padding: var(--s1);
+  border-width: var(--border-thin);
+
+  // For high contrast mode, in case where we are not using a border.
+  // NB the outline won’t be seen if not in a "high contrast mode activated" environment
+  outline: var(--border-thin) solid transparent;
+  outline-offset: calc(var(--border-thin) * -1);
+}
+
+.box * {
+  color: inherit;
+}
+
+.box.invert {
+  color: var(--color-light);
+  background-color: var(--color-dark);
+}
+
+// Container
+.container {
+  width: 90vw;
+  width: min(90vw, 70rem); // if it’s a flex child, use instead: width: clamp(16rem, 90vw, 70rem);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+// Components/styles that are less reusable and more application-specific
+
+.global-header {
+  margin-top: var(--s1);
+  // remove this once we set a proper layout
+}
+
+// Utility classes
+
+.font-size\:base { // backslash to escape the colon
+  font-size: var(--font-size-base) !important;
+}
+
+.font-size\:biggish {
+  font-size: var(--font-size-biggish) !important;
+}
+
+.font-size\:big {
+  font-size: var(--font-size-big) !important;
+}
+
+.max-width\:measure {
+  max-width: var(--measure) !important;
+}
+
+.max-width\:measure\/2 {
+  max-width: calc(var(--measure) / 2) !important;
+}
+
+.max-width-none {
+  max-width: none !important;
 }
