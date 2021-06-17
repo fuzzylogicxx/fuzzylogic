@@ -10,7 +10,7 @@ mainImage:
 ---
 I’m just back from a fantastic couple of days in Brighton attending [Ampersand](https://2018.ampersandconf.com) – The Web Typography Conference – and also a Responsive Web Typography workshop with [Richard Rutter](http://clagnut.com/) at [Clearleft](https://clearleft.com).
 ---
-{% if app.environment == "prod" %}
+{% if app.environment == "production" %}
 <figure>
   {% respimg "" + mainImage.url + "", "" + mainImage.alt + "", "(min-width: 1600px) 646px, (min-width: 700px) 612px, 91.58vw" %}
   <figcaption>{{ mainImage.figcaption }}</figcaption>

@@ -17,7 +17,7 @@ draft: false
 ---
 Just finished my 6K run for FreeAgent’s “Big Strides for Tiny Changes” charity campaign.
 
-{% if app.environment == "prod" %}
+{% if app.environment == "production" %}
 
 <figure>
   {% respimg "https://res.cloudinary.com/fuzzylogic/image/upload/v1604167985/Larry_sRun_oil4hj.jpg", "Charity run for FreeAgent", "(min-width: 1600px) 646px, (min-width: 700px) 612px, 91.58vw" %}

@@ -12,7 +12,7 @@ tags:
 ---
 Original 1979 copies of Garden of Eden’s *Everybody’s on a Trip* regularly sell for £200+ so I was pretty happy to hear that it had just been reissued on Backatcha records… and even happier when I managed to snag a copy.
 
-{% if app.environment == "prod" %}
+{% if app.environment == "production" %}
 
 <figure>
   {% respimg "https://res.cloudinary.com/fuzzylogic/image/upload/v1571416676/83F1E10C-7525-4574-8E80-49989103A25A_et3f0f.jpg", "“Everybody’s on a Trip” by Garden of Eden, a 7″ vinyl release on Backatcha records", "(min-width: 1600px) 646px, (min-width: 700px) 612px, 91.58vw" %}

@@ -21,10 +21,10 @@ I’ve just read _Rise_ by Gina Miller.
 
 {% if app.environment == "production" %}
 <figure>
-  {% respimg "" + mainImage.url + "", 
-  "" + mainImage.alt + "", 
-  "(min-width: 1600px) 646px, (min-width: 700px) 612px, 91.58vw", 
-  320, mainImage.aspectRatioHeight, 
+  {% respimg "" + mainImage.url + "",
+  "" + mainImage.alt + "",
+  "(min-width: 1600px) 646px, (min-width: 700px) 612px, 91.58vw",
+  320, mainImage.aspectRatioHeight,
   [320, 640, 960, 1280, 1600] %}
   <figcaption>Rise by Gina Miller</figcaption>
 </figure>

@@ -11,7 +11,7 @@ mainImage:
 I really enjoyed this book, recommended to me by [Gillian](https://twitter.com/Gilco80) and [Tom](https://twitter.com/mrtomchurchill).
 ---
 
-{% if app.environment == "prod" %}
+{% if app.environment == "production" %}
 <figure>
   {% respimg "" + mainImage.url + "", "" + mainImage.alt + "", "(min-width: 1600px) 646px, (min-width: 700px) 612px, 91.58vw" %}
   <figcaption>{{ mainImage.figcaption }}</figcaption>

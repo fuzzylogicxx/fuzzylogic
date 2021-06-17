@@ -12,7 +12,7 @@ tags:
 
 My first Christmas working at FreeAgent. Strong Christmas Jumper game!
 
-{% if app.environment == "prod" %}
+{% if app.environment == "production" %}
 <figure>
   {% respimg "https://res.cloudinary.com/fuzzylogic/image/upload/v1577268847/FA_Xmas_mtddat.jpg", "Christmas Jumper Day 2019 at FreeAgent", "(min-width: 1600px) 646px, (min-width: 700px) 612px, 91.58vw" %}
   <figcaption>Christmas Jumper Day 2019 at FreeAgent</figcaption>
