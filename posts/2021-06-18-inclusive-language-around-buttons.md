@@ -25,7 +25,7 @@ I also offerered this alternative/remix:
 
 <blockquote>
   <p>Could another way to do this / work around the awkwardness be via the pattern “Do thing X by using the Y button”? i.e. describe the action/result, making the button itself less important so you can just use “using” as your verb. So… “Submit the form using the “Submit” button”.</p>
-  <p>“via” is another word/patter that’d similarly allow less need to worry about physical stuff. So “Launch a preview via the “Preview” button”. Same idea as “using”.</p>
+  <p>“via” is another word/pattern that’d similarly allow less need to worry about physical stuff. So “Launch a preview via the “Preview” button”. Same idea as “using”.</p>
 </blockquote>
 
 And I liked Craig Abbot’s observation:
