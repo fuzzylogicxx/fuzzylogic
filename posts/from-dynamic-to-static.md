@@ -1,7 +1,7 @@
 ---
 title: From dynamic to static
 description: From dynamic to static
-date: 2021-06-18T08:43:21.306Z
+date: 2019-08-11T10:53:00.000Z
 location: ""
 mainImage.isAnchor: false
 tags:
