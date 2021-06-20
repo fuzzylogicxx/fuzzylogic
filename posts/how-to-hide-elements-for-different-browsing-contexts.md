@@ -28,16 +28,32 @@ The most common categories of hiding are:
 
 We usually hide an element from everyone because the hidden element forms part of a component’s interface design. Typical examples are tab panels, off-screen navigation, and modal dialogues that are initially hidden until an event occurs which should bring them into view. Initially these elements should be _inaccessible_ but after the trigger event, they become available to everyone.
 
-Implementation involves using JavaScript to toggle an HTML attribute or class on the relevant element. 
+Implementation involves using JavaScript to toggle an HTML attribute or class on the relevant element. The HTML 
 
 For basic, non-animated show-and-hide interactions:
 
 1. if you want the content to be available in the event of CSS not loading, toggle a class which applies `display: none` in CSS.
 2. if you want the content to start hidden regardless of CSS being available or not, toggle the `hidden` attribute.
 
-I tend to keep it safe and simple and stick with a `.hide` class that applies `display: none`.
+For cases where you are animating or sliding the hidden content into view, toggle a class which applies `visibility: hidden` (because it respects CSS transitions) together with other CSS positioning and transform properties. Note that with `visibility: hidden` the physical space occupied by the element is still retained, therefore it’s best to pair it with `opacity: 0` or `max-height: 0px; overflow: hidden`. For example:
 
-For cases where you are animating or sliding the hidden content into view, toggle a class which applies `visibility: hidden` (because it respects CSS transitions) together with other CSS positioning and transform properties. Note that `visibility: hidden` does not remove the element from the DOM so its physical space is still retained, therefore it’s best to pair it with `opacity: 0` or `max-height: 0px; overflow: hidden`.
+<figure>
+
+``` scss
+.off-canvas-menu {
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.2s;
+  transform: translateX(20px);
+}
+[aria-expanded="true"] + off-canvas-menu {
+  visibility: visible;
+  opacity: 1;
+  transform: translateX(0);
+}
+```
+
+</figure>
 
 ## Hide visually (i.e. from sighted people)
 
