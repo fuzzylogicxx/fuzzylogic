@@ -1,133 +1,50 @@
 ---
-title: How to hide elements for different browsing contexts
-description: How to hide elements for different browsing contexts
-date: "2020-10-08T16:58:08.051Z"
-tags: [development, a11y, howto, css, aria]
-draft: true
----
-Lorem ipsum
----
-
-## TL;DR
-
-https://www.scottohara.me/blog/2017/04/14/inclusively-hidden.html
-
-(which spawned https://css-tricks.com/inclusively-hidden/ and in video form https://css-tricks.com/video-screencasts/142-hiding-things-with-css/)
-
-There are three categories of hidden content:
-- Hidden for everyone? 
-    - display: none; or visibility: hidden; or the hidden attribute. (But [watch out for that hidden attribute](https://meowni.ca/hidden.is.a.lie.html), says Monica Dinculescu.)
-- Hidden visually, but present for assistive tech 
-    - A .screen-reader-only class with a smattering of properties to do the job correctly.
-- Hidden for assistive tech, but not visually? 
-    - The aria-hidden="true" attribute/value.
-
-Depending on the type of content, you will need to use an appropriate technique to hide it, via:
-Using CSS or `[hidden]` to hide content completely.
-
-> Going back to my initial question “why are we hiding content?”, it’s apparent that there are some elements of a UI that truly need to be hidden. And while we have techniques to hide content, but still make it accessible for assistive technology users, I wouldn’t necessarily jump to these techniques as design solutions.
-The goal should be to craft interfaces and experiences that are accessible and understandable to as many people as possible. Not to create interfaces where we can shoe horn in additional context by visually hiding it by default.
+title: How to hide elements on a web page
+description: How and why we might hide elements from different browsing contexts
+date: 2020-10-08T10:58:00Z
+tags:
+- development
+- a11y
+- howto
+- css
+- aria
+- html
+draft: false
 
 ---
+## When hiding an element, accessibility should be front and centre in our thoughts. Typically we’ll be trying to reconcile some visual design effect with the need to keep things inclusive and part of that job involves identifying those users from whom the content can safely be hidden and those for whom it must remain accessible. Having established that we can then choose and use the appropriate best practice technique. Inspired by Scott O’Hara’s definitive guide [Inclusively Hidden](https://www.scottohara.me/blog/2017/04/14/inclusively-hidden.html), here’s my approach.
 
-LH: 
-Most common requirements are:
-- hide for everyone
-- hide only visually
-  -- providing additional text for screen readers but hiding visually
-  -- hide something off-screen
-- hide only from AT
-  -- icons: display visually but hide from AT (e.g. using aria-hidden=true; focusable=false)
-  -- UI elements that can be triggered open or shut
+Firstly, try to _avoid_ the need to hide stuff. With a bit more thought and by using existing fit-for-purpose HTML tools, we can perhaps create a single user interface and experience that works for all. That approach not only feels like a more equal experience for everyone but also probably removes margin for error and unnecessary additional code maintenance.
 
-display none, 
-the hidden attribute
-visibility: hidden, 
-inert, 
-aria-hidden=true, 
-role=presentation
+But if you do need to hide something…
 
----
+The most common categories of hiding are:
 
-Icon buttons: https://www.sarasoueidan.com/blog/accessible-icon-buttons/ (use techniques 1,2, or 3 but not 4 oR 5)
-Although note that it might be better to use a visually-hidden/a11y-only class than aria-label https://gomakethings.com/revisting-aria-label-versus-a-visually-hidden-class/
----
+1. Hide from everyone
+2. Hide visually (i.e. from sighted people)
+3. Hide from Assistive Technologies (such as screen readers)
 
-## The CSS display property (e.g. display: none):
+## Hide from everyone
 
-.hidden {
-  display: none;
-}
+We usually hide an element from everyone because the hidden element forms part of a component’s interface design. Typical examples are tab panels, off-screen navigation, and modal dialogues that are initially hidden until an event occurs which should bring them into view. Initially these elements should be _inaccessible_ but after the trigger event, they become available to everyone.
 
-## The `hidden` attribute
+Implementation involves using JavaScript to toggle an HTML attribute or class on the relevant element. 
 
-The `hidden` attribute hides things not just visually but also from assistive technologies. 
-So it’s similar to display: none but you can apply it in HTML. 
-It’s a boolean attribute indicating that an element is “not yet relevant, or no longer relevant”.
-It’s not supported under IE11. Not really a problem, however you can fix that like normalize.css do as follows:
-[hidden] {
-  display: none;
-}
+For basic, non-animated show-and-hide interactions:
 
-There are other issues, however. See https://css-tricks.com/the-hidden-attribute-is-visibly-weak/.
-It probably makes more sense to do:
-[hidden] { display: none !important; }
+1. if you want the content to be available in the event of CSS not loading, toggle a class which applies `display: none` in CSS.
+2. if you want the content to start hidden regardless of CSS being available or not, toggle the `hidden` attribute.
 
+I tend to keep it safe and simple and stick with a `.hide` class that applies `display: none`.
 
+For cases where you are animating or sliding the hidden content into view, toggle a class which applies `visibility: hidden` (because it respects CSS transitions) together with other CSS positioning and transform properties. Note that `visibility: hidden` does not remove the element from the DOM so its physical space is still retained, therefore it’s best to pair it with `opacity: 0` or `max-height: 0px; overflow: hidden`.
 
-// H5BP’s main.css: Hide only visually, but make available to screen readers.
-// Now includes Joe Watkins’s suggested updates (ref https://zellwk.com/blog/hide-content-accessibly/ and https://github.com/h5bp/main.css/issues/12)
-// It’s worth checking in on the current state of H5BP’s .visuallyhidden class. 
-// Or might want to go with this Gov.UK approach: https://github.com/h5bp/main.css/issues/12#issuecomment-451965809
-// NB .a11y-only (meaning "for accessibility aids only" - credit @wilto) feels like a better class name than ".visually-hidden".
+## Hide visually (i.e. from sighted people)
 
-.a11y-only {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: auto;
-  margin: 0;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
-  white-space: nowrap; /* 1 */
-  &.focusable:active,
-  &.focusable:focus {
-    clip: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto;
-    white-space: inherit;
-  }
-}
+We’ll usually want to hide an element visually when its purpose is to provide extra context to Assistive Technologies in a situation where a user interface design works _visually_ but is otherwise insufficient.
 
-## The CSS visibility property (e.g. visibility: hidden):
+An example might be adding visually-hidden text to accompany an element which is only represented by an icon.
 
-// H5BP’s main.css: hide visually AND from screen readers, but maintain layout.
-// NB can’t see me using this class directly but it does no harm to note here the role of "visibility: hidden;".
+## Hide from Assistive Technologies (such as screen readers)
 
-.invisible {
-  visibility: hidden;
-}
-
-
-## The CSS opacity property (e.g. visibility: hidden):
-
-
-
-------
-
-CSS-Tricks: What about animation? 
-- `display` cannot be animated
-
-----
-Read also and pull out anything interesting: https://gomakethings.com/revisting-aria-label-versus-a-visually-hidden-class/
-
-Also mention: 
-- aria-hidden. With values true and false it can remove an element from and re-add one to the Accessibility Tree, respectively. 
-It functions in much the same way as CSS’s display:none. You might use it on icons.
-
-- role: presentation removes semantics of the relevant element, but not to nested content or focusable elements such as anchors. The examples which apply it to a table that has been used for layout should hopefully never be needed in 2020 (although never say never). The best example I’ve seen is Inclusive Components list items in Tabs. They do want a list, but it’s a special type of list (a role=tablist) so they don’t want the items to be treated as plain old list-items, a11y-wise. https://inclusive-components.design/tabbed-interfaces/, https://timwright.org/blog/2016/11/19/difference-rolepresentation-aria-hiddentrue/
-
+We sometimes hide _visual elements_ from Assistive Technologies because they are decorative and accompanied by adjacent _text_, for example a “warning” icon with the text “warning” alongside. If we did not intervene then AT would read out the same text twice which is redundant.
