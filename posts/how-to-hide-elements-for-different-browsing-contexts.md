@@ -10,9 +10,9 @@ tags:
 - aria
 - html
 draft: false
-
 ---
-## When hiding an element, accessibility should be front and centre in our thoughts. Typically we’ll be trying to reconcile some visual design effect with the need to keep things inclusive and part of that job involves identifying those users from whom the content can safely be hidden and those for whom it must remain accessible. Having established that we can then choose and use the appropriate best practice technique. Inspired by Scott O’Hara’s definitive guide [Inclusively Hidden](https://www.scottohara.me/blog/2017/04/14/inclusively-hidden.html), here’s my approach.
+When hiding an element, accessibility should be front and centre in our thoughts. Typically we’ll be trying to reconcile some visual design effect with the need to keep things inclusive and part of that job involves identifying those users from whom the content can safely be hidden and those for whom it must remain accessible. Having established that we can then choose and use the appropriate best practice technique. Inspired by Scott O’Hara’s definitive guide [Inclusively Hidden](https://www.scottohara.me/blog/2017/04/14/inclusively-hidden.html), here’s my approach.
+---
 
 Firstly, try to _avoid_ the need to hide stuff. With a bit more thought and by using existing fit-for-purpose HTML tools, we can perhaps create a single user interface and experience that works for all. That approach not only feels like a more equal experience for everyone but also probably removes margin for error and unnecessary additional code maintenance.
 
