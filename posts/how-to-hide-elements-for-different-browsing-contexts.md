@@ -9,18 +9,13 @@ tags:
 - css
 - aria
 - html
-draft: false
-
 ---
-## In order to code modern component designs we often need to hide then reveal elements. At other times we want to provide content to one type of user but hide it from another because it’s not relevant to their mode of browsing. In all cases accessibility should be front and centre in our thoughts. Heavily inspired by Scott O’Hara’s definitive guide [Inclusively Hidden](https://www.scottohara.me/blog/2017/04/14/inclusively-hidden.html), here’s my approach.
-
-[Skip to the code, please!](/#summary-of-techniques)
+In order to code modern component designs we often need to hide then reveal elements. At other times we want to provide content to one type of user but hide it from another because it’s not relevant to their mode of browsing. In all cases accessibility should be front and centre in our thoughts. Heavily inspired by Scott O’Hara’s definitive guide [Inclusively Hidden](https://www.scottohara.me/blog/2017/04/14/inclusively-hidden.html), here’s my approach.
+---
 
 Firstly, try to _avoid_ the need to hide stuff. With a bit more thought and by using existing fit-for-purpose HTML tools, we can perhaps create a single user interface and experience that works for all. That approach not only feels like a more equal experience for everyone but also removes margin for error and code maintenance overhead.
 
-But if you do need to hide something…
-
-The most common categories of hiding are:
+With that said, here are the most common categories of hiding:
 
 1. Hide from everyone
 2. Hide visually (i.e. from sighted people)
@@ -115,6 +110,6 @@ To hide an element from AT we can apply `aria-hidden="true"` so that screen read
 </a>
 ```
 
-  <figcaption>[Contextually Marking up accessible images and SVGs](https://www.scottohara.me/blog/2019/05/22/contextual-images-svgs-and-a11y.html)
-</figcaption>
 </figure>
+
+Reference: [Contextually Marking up accessible images and SVGs](https://www.scottohara.me/blog/2019/05/22/contextual-images-svgs-and-a11y.html)
