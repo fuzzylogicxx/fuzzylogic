@@ -13,9 +13,9 @@ tags:
 In order to code modern component designs we often need to hide then reveal elements. At other times we want to provide content to one type of user but hide it from another because it’s not relevant to their mode of browsing. In all cases accessibility should be front and centre in our thoughts. Heavily inspired by Scott O’Hara’s definitive guide [Inclusively Hidden](https://www.scottohara.me/blog/2017/04/14/inclusively-hidden.html), here’s my approach.
 ---
 
-Firstly, try to _avoid_ the need to hide stuff. With a bit more thought and by using existing fit-for-purpose HTML tools, we can perhaps create a single user interface and experience that works for all. That approach not only feels like a more equal experience for everyone but also removes margin for error and code maintenance overhead.
+Firstly, _avoid_ the need to hide stuff. With a bit more thought and by using existing fit-for-purpose HTML tools, we can perhaps create a single user interface and experience that works for all. That approach not only feels like a more equal experience for everyone but also removes margin for error and code maintenance overhead.
 
-With that said, here are the most common categories of hiding:
+With that said, hiding is sometimes necessary and here are the most common categories:
 
 1. Hide from everyone
 2. Hide visually (i.e. from sighted people)
@@ -32,12 +32,15 @@ For basic, non-animated show-and-hide interactions you can either:
 1. toggle a class which applies `display: none` in CSS; or
 2. toggle the `hidden` attribute, which has the same effect but is native to HTML5.
 
-The first of those options works well, makes for a good utility class and offers a bit more predictability due to its higher specificity.
+Both options work well but for me using the `hidden` attribute feels a little simpler and more purposeful. My approach is to ensure resilience by making the content available in the first instance in case JavaScript should fail. Then, per [Inclusive Components’ Tabs example](https://inclusive-components.design/tabbed-interfaces/), JavaScript applies both the “first hide” and all subsequent toggling.
+
+Here’s some CSS that supports both methods. (The `hidden` attribute doesn’t strictly need this but it’s handy to regard both options as high-specifity, “trump-everything-else” overrides.)
 
 <figure>
 
 ``` scss
-.u-hidden-from-everyone {
+.u-hidden-from-everyone, 
+[hidden] {
   display: none !important;
 }
 ```
@@ -94,7 +97,7 @@ There are other CSS approaches to hiding visually. One approach is to not only a
 
 We sometimes hide _visual elements_ from Assistive Technologies because they are decorative and have accompanying text, for example a “warning” icon with the text “warning” alongside. If we did not intervene then Assistive Technologies would read out “warning” twice which is redundant.
 
-To hide an element from AT we can apply `aria-hidden="true"` so that screen readers know to ignore it. In the following examples we hide the SVG icons within buttons and links, safe in the knowledge that the adjacent text is providing the interactive elements with its “accessible name”.
+To achieve this we can apply `aria-hidden="true"` to our element so that screen readers know to ignore it. In the following examples we hide the SVG icons within buttons and links, safe in the knowledge that the included “Search” text is providing each interactive element with its _accessible name_.
 
 <figure>
 
