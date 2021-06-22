@@ -47,7 +47,7 @@ Here’s some CSS that supports both methods. (The `hidden` attribute doesn’t 
 
 </figure>
   
-For cases where you are animating or sliding the hidden content into view, toggle a class which applies `visibility: hidden` (because it respects CSS transitions) together with other CSS positioning and transform properties. Note that with `visibility: hidden` the physical space occupied by the element is still retained, therefore it’s best to pair it with `opacity: 0` or `max-height: 0px; overflow: hidden`. For example:
+For cases where you are animating or sliding the hidden content into view, toggle a class which applies `visibility: hidden` (because this also removes the element from the accessibility tree but unlike `display`, can be animated) together with other CSS positioning and transform properties. Note that with `visibility: hidden` the physical space occupied by the element is still retained, therefore it’s best to pair it with `opacity: 0` or `max-height: 0px; overflow: hidden`. For example:
 
 <figure>
 
