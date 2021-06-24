@@ -13,9 +13,9 @@ tags:
 Here’s how I’d handle various common SVG icon scenarios with accessibility in mind.
 ---
 
-## Icon alone, not within button or link
+## Just an icon 
 
-This might be, for example, an arrow icon in a `<td>` in a “league table” where the arrow is intended to indicate “The figure has increased” or “Moving up the table”.
+So this is an icon that’s not within a link or button and has no adjacent text. This might be, for example, an arrow icon in a `<td>` in a “league table” where the arrow is intended to indicate “The figure has increased” or “Moving up the table”.
 
 <figure>
   
@@ -57,6 +57,8 @@ This is easy. Hide the icon from Assistive Technology using `aria-hidden` to avo
 </figure>
 
 ## Button (or link) with icon alone
+  
+In this case the design spec is for a button with no accompanying text, therefore we must add the accessible name for Assistive Technologies ourselves.
 
 <figure>
   
@@ -74,9 +76,10 @@ This is easy. Hide the icon from Assistive Technology using `aria-hidden` to avo
   
 </figure>
   
-The reason I use text that’s [visually-hidden using CSS](https://fuzzylogic.me/posts/how-to-hide-elements-for-different-browsing-contexts/#hide-visually-(i.e.-from-sighted-people)) rather than `aria-label` for the accessible name is because I’ve heard that the former is a more reliable option right now. In greater detail: [aria-label is announced inconsistently and not always translated](https://gomakethings.com/revisting-aria-label-versus-a-visually-hidden-class/).
+The reason I use text that’s [visually-hidden using CSS](https://fuzzylogic.me/posts/how-to-hide-elements-for-different-browsing-contexts/#hide-visually-(i.e.-from-sighted-people)) for the accessible name rather than adding `aria-label` on the button or link is because I’ve heard that the former option is more reliable. In greater detail: [aria-label is announced inconsistently and not always translated](https://gomakethings.com/revisting-aria-label-versus-a-visually-hidden-class/).
 
 ## References
+- https://css-tricks.com/accessible-svg-icons/
 - https://www.sitepoint.com/tips-accessible-svg/
 - https://fizz.studio/blog/reliable-valid-svg-accessibility/
 - https://www.sarasoueidan.com/blog/accessible-icon-buttons/
