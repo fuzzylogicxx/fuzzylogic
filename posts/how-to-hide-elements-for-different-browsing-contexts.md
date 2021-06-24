@@ -101,7 +101,7 @@ To achieve this we can apply `aria-hidden="true"` to our element so that screen 
 
 <figure>
 
-``` scss
+``` html
 <button>
   <svg focusable="false" aria-hidden="true"><!--...--></svg>
   Search
