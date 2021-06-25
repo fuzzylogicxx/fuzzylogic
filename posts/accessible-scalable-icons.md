@@ -15,7 +15,9 @@ Here’s how I’d handle various common SVG icon scenarios with accessibility i
 
 ## Just an icon 
 
-So this is an icon that’s not within a link or button and has no adjacent text. This might be, for example, an arrow icon in a `<td>` in a “league table” where the arrow is intended to indicate “The figure has increased” or “Moving up the table”.
+So this is an icon that’s not within a link or button and has no adjacent text. This might be, for example, an upward-pointing arrow icon in a `<td>` in a “league table” where the arrow is intended to indicate a trend such as “The figure has increased” or “Moving up the table”.
+
+The point here is that in this scenario the SVG is content rather than decoration.
 
 <figure>
   
@@ -79,9 +81,9 @@ In this case the design spec is for a button with no accompanying text, therefor
 The reason I use text that’s [visually-hidden using CSS](https://fuzzylogic.me/posts/how-to-hide-elements-for-different-browsing-contexts/#hide-visually-(i.e.-from-sighted-people)) for the accessible name rather than adding `aria-label` on the button or link is because I’ve heard that the former option is more reliable. In greater detail: [aria-label is announced inconsistently and not always translated](https://gomakethings.com/revisting-aria-label-versus-a-visually-hidden-class/).
 
 ## References
-- https://css-tricks.com/accessible-svg-icons/
-- https://www.sitepoint.com/tips-accessible-svg/
-- https://fizz.studio/blog/reliable-valid-svg-accessibility/
+- [Accessible SVG Icons by Chris Coyier](https://css-tricks.com/accessible-svg-icons/)
+- [Tips for accessible SVG by Léonie Watson](https://www.sitepoint.com/tips-accessible-svg/)
+- [Reliable, valid SVG accessibility by Fizz Studio](https://fizz.studio/blog/reliable-valid-svg-accessibility/)
 - https://www.sarasoueidan.com/blog/accessible-icon-buttons/
 - https://fuzzylogic.me/posts/how-to-hide-elements-for-different-browsing-contexts/
 - https://absolutely.every-layout.dev/layouts/icon/
