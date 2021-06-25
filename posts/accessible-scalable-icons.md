@@ -81,9 +81,9 @@ In this case the design spec is for a button with no accompanying text, therefor
 The reason I use text that’s [visually-hidden using CSS](https://fuzzylogic.me/posts/how-to-hide-elements-for-different-browsing-contexts/#hide-visually-(i.e.-from-sighted-people)) for the accessible name rather than adding `aria-label` on the button or link is because I’ve heard that the former option is more reliable. In greater detail: [aria-label is announced inconsistently and not always translated](https://gomakethings.com/revisting-aria-label-versus-a-visually-hidden-class/).
 
 ## References
-- [Accessible SVG Icons by Chris Coyier](https://css-tricks.com/accessible-svg-icons/)
-- [Tips for accessible SVG by Léonie Watson](https://www.sitepoint.com/tips-accessible-svg/)
-- [Reliable, valid SVG accessibility by Fizz Studio](https://fizz.studio/blog/reliable-valid-svg-accessibility/)
-- https://www.sarasoueidan.com/blog/accessible-icon-buttons/
-- https://fuzzylogic.me/posts/how-to-hide-elements-for-different-browsing-contexts/
-- https://absolutely.every-layout.dev/layouts/icon/
+- [Accessible SVG Icons](https://css-tricks.com/accessible-svg-icons/), by Chris Coyier;
+- [Tips for accessible SVG](https://www.sitepoint.com/tips-accessible-svg/), by Léonie Watson;
+- [Reliable, valid SVG accessibility](https://fizz.studio/blog/reliable-valid-svg-accessibility/), by Fizz Studio;
+- [Accessible icon buttons](https://www.sarasoueidan.com/blog/accessible-icon-buttons/), by Sara Soueidan;
+- [Every Layout’s Icon component](https://absolutely.every-layout.dev/layouts/icon/); and 
+- [How to hide elements on a web page](https://fuzzylogic.me/posts/how-to-hide-elements-for-different-browsing-contexts/), by my bad self.
