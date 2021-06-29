@@ -30,7 +30,7 @@ Implementation involves using JavaScript to toggle an HTML attribute or class on
 For basic, non-animated show-and-hide interactions you can either:
 
 1. toggle a class which applies `display: none` in CSS; or
-2. toggle the `hidden` attribute, which has the same effect but is native to HTML5.
+2. toggle the boolean `hidden` attribute, which has the same effect but is native to HTML5.
 
 Both options work well but for me using the `hidden` attribute feels a little simpler and more purposeful. My approach is to ensure resilience by making the content available in the first instance in case JavaScript should fail. Then, per [Inclusive Components’ Tabs example](https://inclusive-components.design/tabbed-interfaces/), JavaScript applies both the “first hide” and all subsequent toggling.
 
