@@ -33,6 +33,19 @@ collections:
       - { label: "Tags", name: "tags", widget: "list", allow_add: true }
       - { label: "Draft", name: "draft", widget: "boolean", default: false, required: false }
 
+  - label: "Bookmark"
+    name: "bookmark"
+    folder: "posts"
+    create: true
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Link Target", name: "linkTarget", widget: "string", required: true }
+      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Tags", name: "tags", widget: "list", allow_add: true, default: [ "link" ] }
+      - { label: "Draft", name: "draft", widget: "boolean", default: false, required: false }
+
   - label: "Record"
     name: "record"
     folder: "posts"
