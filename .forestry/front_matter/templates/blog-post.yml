@@ -20,3 +20,8 @@ fields:
 - type: boolean
   name: draft
   label: draft
+- name: linkTarget
+  type: text
+  config:
+    required: false
+  label: Link Target
