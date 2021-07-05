@@ -1,8 +1,8 @@
 ---
 new_page_extension: md
 auto_deploy: false
-admin_path:
-webhook_url:
+admin_path: 
+webhook_url: 
 sections:
 - type: directory
   path: posts
@@ -15,6 +15,8 @@ sections:
 - type: document
   path: _data/inspiration.json
   label: Inspiration
+upload_dir: uploads
+public_path: "/uploads"
 front_matter_path: ''
 use_front_matter_path: false
 file_template: ":filename:"
