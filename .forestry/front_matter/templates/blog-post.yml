@@ -25,3 +25,5 @@ fields:
   config:
     required: false
   label: Link Target
+pages:
+- posts/relearn-css-layout-every-layout.md
