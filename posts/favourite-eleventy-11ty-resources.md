@@ -25,4 +25,6 @@ draft: false
 
 [11ty Netlify Jumpstart](https://11ty-netlify-jumpstart.netlify.app/) is another from Stephanie Eckles but this time a “quick-start boilerplate” rather than blank canvas. It includes a minimal Sass framework, generated sitemap, RSS feed and social share preview images. The [About page it generates](https://11ty-netlify-jumpstart.netlify.app/about/) contains lots of useful info on its features.
 
+[forestry.io settings for 11ty Base Blog](https://github.com/forestryio/eleventy-base-forestry/tree/forestry/.forestry) and [forestry.io settings for Hylia](https://github.com/DirtyF/hylia-forestry/tree/forestry/.forestry) (Andy Bell’s 11ty starter)
+
 More to follow…
