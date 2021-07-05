@@ -18,12 +18,12 @@ tags:
   - development
 draft: false
 ---
-Kieth Cirkel explains how using npm to run the `scripts` field of `package.json` is a great, simple alternative to more complex build tools. The article is now quite old but because it contains so many goodies, and since I’ve been using the approach more and more of late (for example to easy compile CSS on my personal website), it’s definitely worth bookmarking.
+Kieth Cirkel explains how using npm to run the `scripts` field of `package.json` is a great, simple alternative to more complex build tools. The article is now quite old but because it contains so many goodies, and since I’ve been using the approach more and more (for example to easily compile CSS on my personal website), it’s definitely worth bookmarking and sharing.
 
 > npm’s scripts directive can do everything that these build tools can, more succinctly, more elegantly, with less package dependencies and less maintenance overhead.
 --- 
 
-It’s worth mentioning that (as far as I can tell so far) Yarn also provides the same facility.
+It’s also worth mentioning that (as far as I can tell so far) Yarn also provides the same facility.
 
 ## Related references:
 
