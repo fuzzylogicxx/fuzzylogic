@@ -26,11 +26,7 @@
 
     <link rel="canonical" href="{{ metadata.url_base }}{{ page.url }}" />
 
-    {% if (draft) %}
-    <meta name="robots" content="noindex, nofollow">
-    {% else %}
     <meta name="robots" content="{{ pageSpecificRobotsDirective or 'index, follow' }}">
-    {% endif %}
 
     <!-- OG tags: most important -->
     <meta property="og:title" content="{{ renderData.title or title or metadata.title }}" />

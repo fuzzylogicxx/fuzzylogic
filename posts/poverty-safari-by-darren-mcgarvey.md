@@ -7,7 +7,6 @@ tags:
 - scotland
 description:
 draft: true
-eleventyExcludeFromCollections: true
 ---
 Content to follow.
 ---

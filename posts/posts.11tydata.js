@@ -25,7 +25,7 @@ module.exports = {
       return data.permalink;
     },
     eleventyExcludeFromCollections: data => {
-      if (data.draft) {
+      if (data.eleventyExcludeFromCollections || data.draft) {
         return true;
       }
 

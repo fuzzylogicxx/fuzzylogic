@@ -1,8 +1,8 @@
 ---
+pageSpecificRobotsDirective: "noindex, nofollow"
 title: My Ruby and Rails Cheatsheet
 description: My Ruby and Rails Cheatsheet
 date: 2019-12-13T15:07:34.165Z
-pageSpecificRobotsDirective: "noindex, nofollow"
 mainImage.isAnchor: false
 tags:
   - ruby
@@ -10,9 +10,8 @@ tags:
   - web
   - development
   - cheatsheet
-draft: false
 ---
-I’m no Ruby engineer however even as a front-end developer I’m sometimes called upon to work on [Rails](https://rubyonrails.org/) applications that require me to know my way around. Here are my notes and reminders. 
+I’m no Ruby engineer however even as a front-end developer I’m sometimes called upon to work on [Rails](https://rubyonrails.org/) applications that require me to know my way around. Here are my notes and reminders.
 ---
 
 This is not intended to be an authoritative guide but merely my notes from various lessons. It’s also a work-in-progress and a living, changing document.
@@ -50,7 +49,7 @@ This is not intended to be an authoritative guide but merely my notes from vario
 The `console` command lets you interact with your Rails application from the command line.
 
 <figure>
-  
+
 ``` bash
 # launch a console (short version)
 rails c
@@ -64,7 +63,7 @@ bundle exec rails console
 Quickly find where a method is located:
 
 <figure>
-  
+
 ``` bash
 Myobj.method(:methodname).source_location
 
@@ -77,13 +76,13 @@ Myobj.method(:methodname).source_location
 See an object’s methods:
 
 <figure>
-  
+
 ``` bash
 Myobj.methods
 
 # Search for a method using a search string
 # this returns all of the object methods containing string “/pay/“
-Myobj.methods.grep(/pay/) 
+Myobj.methods.grep(/pay/)
 ```
 
 </figure>
@@ -93,7 +92,7 @@ Myobj.methods.grep(/pay/)
 Run it like so:
 
 <figure>
-  
+
 ``` bash
 bin/rspec spec/path/to/foo_spec.rb
 
@@ -106,12 +105,12 @@ bin/rspec spec/path/to/foo_spec.rb:195
 If adding data variables to use in tests, declare them in a let block so as to keep them isolated and avoid them leaking elsewhere.
 
 <figure>
-  
+
 ``` ruby
 let(:example_data_obj) {
   {
     foo: "bar",
-    baz: "bat", 
+    baz: "bat",
     …
   }
 }
@@ -125,7 +124,7 @@ Note: if you need multiple data variables so as to handle different scenarios, i
 
 Helper methods are to there to support your views. They’re for extracting into methods little code routines or logic that don’t belong in a controller and are too complex or reusable to be coded literally into your view. They’re reusable across views because they become available to all your views automatically.
 
-Don’t copy and reuse method names from other helpers. You’ll get conflicts because Helpers are leaky. Instead, start your helper methods with an appropriate namespace. 
+Don’t copy and reuse method names from other helpers. You’ll get conflicts because Helpers are leaky. Instead, start your helper methods with an appropriate namespace.
 
 Unlike object methods (e.g. `myobj.do_something`) helper methods (e.g. `render_something`) are not available for us to use in the Rails console.
 
@@ -134,7 +133,7 @@ Unlike object methods (e.g. `myobj.do_something`) helper methods (e.g. `render_s
 Basic format:
 
 <figure>
-  
+
 ``` ruby
 # frozen_string_literal: true
 require "rails_helper"
@@ -165,20 +164,20 @@ end
 
 </figure>
 
-Notes: 
+Notes:
 - start with `describe`: it’s a good top-level.
 - describe a helper method using hash (`describe "#project_link" do`)
 - Helper methods should not directly access controller instance variables because it makes them brittle, less reusable and less maintainable. If you find you’re doing that you might see it as an opportunity to refactor your helper method.
 
 ### Debugging Helper methods
 
-If you want to debug a helper method by running it and stepping through it at the command line you should lean on a test to get into the method’s context. 
+If you want to debug a helper method by running it and stepping through it at the command line you should lean on a test to get into the method’s context.
 
 <figure>
 
 ``` bash
 # in foo_helper.rb, insert above line of interest
-binding.pry # or byebug 
+binding.pry # or byebug
 
 # at command line, run helper’s spec (at relevant line/assertion)
 bin/rspec spec/path/to/foo_helper_spec.rb:195
@@ -206,7 +205,7 @@ If you want to test whether something is “empty” you might use `empty?` if y
 I’ll often see this at the top of files, for example Ruby classes. This is just a good practice. It makes things more efficient and thereby improves performance.
 
 <figure>
-  
+
 ``` ruby
 frozen_string_literal: true
 ```
@@ -224,7 +223,7 @@ Examples include `attr_reader` and ViewComponent’s `renders_one`.
 Here’s an example where we define a new constant and assign an array to it.
 
 <figure>
-  
+
 ``` ruby
 ALLOWED_SIZES = [nil, :medium, :large]
 ```
@@ -234,7 +233,7 @@ ALLOWED_SIZES = [nil, :medium, :large]
 Interestingly while the constant cannot be redefined later—i.e. it could not later be set to something other than an array—elements can still be added or removed. We don’t want that here. The following would be better because it locks things down which is likely what we want.
 
 <figure>
-  
+
 ``` ruby
 ALLOWED_SIZES = [nil, :medium, :large].freeze
 ```
@@ -248,7 +247,7 @@ They’re not variables. They’re more like strings than variables however Stri
 You should use symbols as names or labels for things (for example methods). They are often used to represent method & instance variable names:
 
 <figure>
-  
+
 ``` ruby
 # here, :title is a symbol representing the @title instance variable
 attr_reader :title
@@ -271,7 +270,7 @@ From what I can gather, colons identify something as a Symbol and the colon is a
 They use _constructors_ like the following:
 
 <figure>
-  
+
 ``` ruby
 def initialize(size: nil, full_height: false, data: nil)
   super
@@ -285,10 +284,10 @@ end
 
 (Note that you would never include a constructor in a _Rails_ controller or model.)
 
-### ViewComponents in the Rails console 
+### ViewComponents in the Rails console
 
 <figure>
-  
+
 ``` bash
 view = ActionView::Base.new
 view.render(CardComponent.new)
@@ -324,7 +323,7 @@ end
 The following code makes some instance variables of a ViewComponent publicly available.
 
 <figure>
-  
+
 ``` ruby
 attr_reader :size, :full_height, :data
 ```
@@ -338,10 +337,10 @@ However although that’s the pattern employed by the [ViewComponent website](ht
 Every method returns a value. You don’t need to explicitly use `return`, because without it it will be assumed that you’re returning the last thing in the method.
 
 <figure>
-  
+
 ``` ruby
 def hello
-  "hello world” 
+  "hello world”
 end
 ```
 
@@ -364,7 +363,7 @@ When this method is called (in this case “when the ViewComponent is instantiat
 - you need to add the parameter name before the value you’re passing e.g. `<%= render(CardComponent.new(size: :small, full_height: true)) do %>`
 
 <figure>
-  
+
 ``` ruby
 def initialize(size: nil, full_height: false, data: nil)
 ```
@@ -376,7 +375,7 @@ def initialize(size: nil, full_height: false, data: nil)
 You can streamline this to:
 
 <figure>
-  
+
 ``` ruby
 thing.is_a?(Array) && thing.present?
 ```
@@ -388,7 +387,7 @@ thing.is_a?(Array) && thing.present?
 The shovel operator (`<<`) lets you add elements to an array. Here’s an example where we build up an HTML `class` attribute for a BEM-like structure:
 
 <figure>
-  
+
 ``` ruby
 def classes
   classes = []
@@ -409,7 +408,7 @@ end
 The `do…end` structure in Ruby is called a “block”, and more specifically a multi-line block.
 
 <figure>
-  
+
 ``` ruby
   <%= render CardComponent.new do |c| %>
   Card stuff in here.
@@ -423,7 +422,7 @@ Blocks are essentially methods (functions).
 We can specify that a block must be present. For example:
 
 <figure>
-  
+
 ``` ruby
 def has_block(param, &block)
 ```
@@ -434,12 +433,12 @@ Here, the ampersand (`&`) means that the block is required.
 
 ### Single-line block
 
-Sometimes we don’t need to use a multiline block. We can instead employ a single-line block. This uses curly braces rather than `do…end`. 
+Sometimes we don’t need to use a multiline block. We can instead employ a single-line block. This uses curly braces rather than `do…end`.
 
 For example in a spec we might use:
 
 <figure>
-  
+
 ``` ruby
 render_inline(CardComponent.new) { "Content" }
 expect(rendered_component).to have_css(".fe-CardV2", text: "Content")
@@ -457,7 +456,7 @@ We have the `content_tag` helper method for rendering HTML elements. However you
 
 ### tag.send()
 
-`send()` is not just for use on `tag`. It’s a means of calling a method dynamically i.e. using a variable. I’ve used it so as to have a single line create either a `th` or a `td` dymamically dependent on context. 
+`send()` is not just for use on `tag`. It’s a means of calling a method dynamically i.e. using a variable. I’ve used it so as to have a single line create either a `th` or a `td` dymamically dependent on context.
 
 Only use it when you are in control of the arguments. Never use it with user input or something coming from a database.
 
@@ -480,7 +479,7 @@ You might create a method such as `allowed_to?` for purposes of authorisation.
 Note: the following is shorthand for `bin/rails server -b 0.0.0.0`.
 
 <figure>
-  
+
 ``` bash
 rails s
 ```
@@ -492,7 +491,7 @@ rails s
 Use Ruby to create a local web server.
 
 <figure>
-  
+
 ``` bash
 # to serve your site at localhost:5000 run this in the project’s document root
 ruby -run -e httpd . -p 5000
@@ -504,12 +503,12 @@ ruby -run -e httpd . -p 5000
 
 See https://gist.github.com/anotheruiguy/7379570.
 
-## The Database 
+## The Database
 
 Reset/wipe the database.
 
 <figure>
-  
+
 ``` bash
 bundle exec rake db:reset
 ```
@@ -525,7 +524,7 @@ Let’s say you’re working on the index page for `pet_foods` and want to creat
 To find the existing routes for `pet_foods` you can run:
 
 <figure>
-  
+
 ``` bash
 rails routes | grep pet_foods
 ```
