@@ -1,20 +1,26 @@
 ---
 new_page_extension: md
 auto_deploy: false
-admin_path: 
-webhook_url: 
+admin_path:
+webhook_url:
 sections:
+- type: directory
+  path: posts
+  label: Posts
+  create: documents
+  match: "*.md"
 - type: document
-  path: posts/how-to-hide-elements-for-different-browsing-contexts.md
-  label: Hiding Things
-upload_dir: uploads
-public_path: "/uploads"
+  path: _data/metadata.json
+  label: Site metadata
+- type: document
+  path: _data/inspiration.json
+  label: Inspiration
 front_matter_path: ''
 use_front_matter_path: false
 file_template: ":filename:"
 build:
   preview_output_directory: _site
-  install_dependencies_command: npm install
+  install_dependencies_command: npm i
   preview_docker_image: forestryio/node:12
   mount_path: "/srv"
   working_dir: "/srv"
