@@ -12,7 +12,9 @@ draft: false
 linkTarget: https://www.duetds.com/using-components/
 
 ---
-Here’s a lovely Design System that interestingly was built using [Eleventy](https://www.11ty.dev/).
+Here’s a lovely Design System that interestingly uses [Eleventy](https://www.11ty.dev/) for its reference website and other generated artefacts:
+
+> We use Eleventy for both the static documentation and the dynamically generated parts like component playgrounds and design tokens. We don’t currently use a JavaScript framework on the website, except Duet’s own components.
 ---
 
-I find this one interesting both from the Design System perspective (it contains lots of interesting component techniques and options) but also in terms of how far 11ty can be taken.
+I find Duet interesting both from the Design System perspective (it contains lots of interesting component techniques and options) but also in terms of how far 11ty can be pushed.
