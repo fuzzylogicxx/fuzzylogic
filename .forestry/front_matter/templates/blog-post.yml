@@ -26,4 +26,5 @@ fields:
     required: false
   label: Link Target
 pages:
+- posts/duet-design-system.md
 - posts/relearn-css-layout-every-layout.md
