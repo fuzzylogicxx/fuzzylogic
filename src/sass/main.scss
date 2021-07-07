@@ -1,587 +1,132 @@
-@use 'fonts';
+// RESETS (using bits of https://piccalil.li/blog/a-modern-css-reset)
 
-// Presets, functions and resets
-@use 'variables_general';
-@use 'mixins_general';
-@use 'resets_and_improvements';
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
-// // Typographic and other core HTML elements
-@use 'typography';
-@use 'list_utils';
-@use 'code';
-@use 'section-permalinks';
-@use 'prism-base16-monokai.dark';
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
 
-@use 'tables';
+// https://www.scottohara.me/blog/2019/01/12/lists-and-safari.html
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
 
-// // Layout and responsiveness
-@use 'responsive_layout_utilities';
-// //@import 'media_objects';
-// //@import 'breakout';
-@use 'rooted_footer';
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
 
+/* anchors that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
 
-// // Buttons, special links, and forms
-@use 'svg_and_text_pairs';
-@use 'forms_and_buttons';
+img {
+  // normalize.css says "Remove the border on images inside links in IE 10."
+  border-style: none;
 
-// // Other components
-// //@import 'profile_pic';
-// //@import 'tabs';
-@use 'skiplinks';
-// //@import 'modals';
-// //@import 'show_and_hide';
-// //@import 'content_slider';
-@use 'search';
-
-// // Minimum required utility classes
-@use 'helpers';
-
-///////////////////////////////////
-// Common patterns
-///////////////////////////////////
-
-// Icons in menus (e.g. search magnifying glass)
-
-.footer-menu svg,
-.header-menu svg {
+  // Set images to display block globally because can’t think
+  // of anywhere you wouldn’t want this to be the case.
   display: block;
-}
 
-// Captions
+  // Support flexible images.
+  // We can make large <img>s available to wide and narrow viewports alike,
+  // safe in the knowledge that even if an image is wider than its container,
+  // it will not overflow.
+  // The result is that the image’s width will match one of three values:
+  // 1. Its own intrinsic/natural width, based on the file data; OR
+  // 2. An explicit HTML width attribute value, if present;
+  // 3. The width of the horizontal space afforded by the container element; OR
+  // 4. 60rem (a sensible image width limit) if the container is wider than that.
 
-figcaption {
-  font-size: typography.scale-value(-2)+rem;
-  color: #999;
-  margin-top: typography.scale-value(-6)+rem;
-}
-
-
-// Responsive Embedded Media (youtube videos etc)
-
-.embed-container {
-  position: relative;
-  padding-bottom: 56.25%;
-  height: 0;
-  overflow: hidden;
+  // 60rem seems a reasonable limit, where min() is supported. Can tweak later.
   max-width: 100%;
+  max-width: min(60rem, 100%);
 }
-.embed-container iframe, .embed-container object, .embed-container embed {
-  position: absolute;
-  top: 0;
-  left: 0;
+
+// Ensure correct aspect ratio is preserved when
+// i) current width is wider than 100% so max-width: 100% is being enforced; and
+// ii) image has the HTML height attribute set
+// while doing no harm otherwise.
+img[height] {
+  height: auto;
+}
+
+// explictly set an image to 100% container-width even if
+// it has a width attribute (present for performance reasons) set to something narrower.
+// Note: I have not included height: auto. It’s only required when the image has the
+// HTML height attribute set, and I already have a rule dealing with that scenario above.
+.img-full-parent-width {
   width: 100%;
-  height: 100%;
 }
 
+// Make inputs and buttons inherit fonts */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
 
-// Index pages (e.g. Work, Labs)
-
-.section-index-header {
-  background: linear-gradient(variables_general.$color-accent, variables_general.$color-accent) no-repeat bottom left/2.4em 0.2ch;
-  padding-bottom: typography.scale-value(4)+rem;
-  // Add a generous whitespace after, overriding any generic stack spacing
-  & + * {
-    margin-top: 2rem;
+// Remove all animations, transitions and smooth scroll for people that prefer not to see them
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
   }
 }
 
+// FONTS (FILE)
 
-// Blog stuff
-
-.posts-list-group-heading {
-  margin-bottom: 2rem;
-  font-size: typography.scale-value(0)+rem;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  color: #333;
+@font-face {
+  font-family: Source Sans Pro;
+  src: url(/fonts/sans/SourceSans3-Regular-subset.woff2) format("woff2"),
+       url(/fonts/sans/SourceSans3-Regular-subset.zopfli.woff) format("woff");
+  font-weight: 400;
+  font-display: swap;
 }
 
-.h-entry header {
-  @include typography.stack();
-  //position: relative;
+@font-face {
+  font-family: Source Sans Pro;
+  src: url(/fonts/sans/SourceSans3-It-subset.woff2) format("woff2"),
+       url(/fonts/sans/SourceSans3-It-subset.zopfli.woff) format("woff");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
 }
 
-.h-entry header > * + * {
-  --flow-space: #{(typography.scale-value(-5) - typography.scale-value(-6))}rem;
-}
-
-.h-entry header div {
-  font-size: typography.scale-value(-1)+rem;
-  color: #999;
-}
-
-
-.h-entry header div > * + * {
-  margin-left: (typography.scale-value(-1) - typography.scale-value(-2))+rem;
-}
-
-.post-type {
-  font-size: typography.scale-value(-1)+rem;
-  color: #999;
+@font-face {
+  font-family: Source Sans Pro;
+  src: url(/fonts/sans/SourceSans3-Semibold-subset.woff2) format("woff2"),
+       url(/fonts/sans/SourceSans3-Semibold-subset.zopfli.woff) format("woff");
   font-weight: 600;
+  font-display: swap;
 }
 
-.bookmark-options {
-  color: #999;
+body {
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
-.dt-published {
-  font-size: typography.scale-value(-1)+rem;
-  color: #999;
-  a {
-    color: #999;
-  }
-
-  /*@include mixins_general.at-least(typography.$bp-wide-two) {
-    position: absolute;
-    left: -10rem;
-    top: 0;
-    text-align: right;
-  }*/
-}
-
-/*.dt-published {
-  @include mixins_general.at-least(typography.$bp-wide-two) {
-    display: block;
-  }
-}*/
-
-/*.entry-meta {
-  color: #999;
-
-  a {
-    color: #999;
-    text-decoration: underline solid #999;
-  }
-}
-
-.published { //.dt-published
-  color: gray;
-}
-
-.entry-meta .posted-on::before {
-  content: " · ";
-}*/
-
-/*.h-entry > * + * {
-  --flow-space: 1rem;
-  margin-top: var(--flow-space);
-}*/
-
-.prose footer h3 + *,
-.prose footer h2 + * {
-  --flow-space: 1em;
-}
-
-// .tag {
-//   font-size: inherit;
-//   font-weight: 600;
-//   display: inline-block;
-//   // cursor: pointer;
-//   // font-family: var(--font-special);
-//   color: #999;
-//   // background-color: black;
-//   padding: .2em typography.scale-value(-1)+rem;
-//   border: 1px solid #ccc;
-// }
-
-// Posts in List
-
-.feed-entry-title {
-  font-size: (typography.scale-value(-2) + typography.scale-value(-3))+rem;
-  @include mixins_general.at-least(typography.$bp-wide-two) {
-    //font-size: typography.scale-value(2)+rem;
-    font-size: (typography.scale-value(1) + typography.scale-value(-5))+rem;
-  }
-  a {
-    text-decoration: none;
-    &.text-icon-pair span {
-      text-decoration: none;
-    }
-  }
-}
-
-/*.home-feed-wrap {
-  margin-top: 3rem;
-}*/
-
-/*.home-feed-wrap {
-  max-width: 45rem;
-}
-
-.hfeed, .hentry {
-  max-width: none;
-}
-
-.hentry {
-  overflow: hidden;
-}
-
-.hentry > * {
-  display: flex;
-  flex-wrap: wrap;
-  margin: calc(1rem / 2 * -1); // instead of var(--s1) I’ve just inserted 1rem for now.
-}
-
-.hentry > * > * {
-  flex-basis: 10rem;
-  flex-grow: 1;
-  margin: calc(1rem / 2);
-}
-
-.hentry > * > :last-child {
-  order: 1;
-}
-
-.hentry > * > :first-child {
-  order: 2;
-  flex-basis: 0;
-  flex-grow: 999;
-  min-width: calc(70% - 1rem);
-}
-
-.hentry footer {
-  display: block;
-  text-align: right;
-}*/
-
-
-
-/*.with-sidebar-on-left > * > :last-child {
-  flex-basis: 0;
-  flex-grow: 999;
-  min-width: calc(50% - 1rem);
-}*/
-
-/*.hentry > * > :last-child {
-  flex-basis: 0;
-  flex-grow: 999;
-  min-width: calc(50% - 0px);
-}*/
-
-
-/*.with-sidebar-blog-layout > *,
-.with-sidebar-media-object > * {
-  margin: calc(1rem / 2 * -1); // instead of var(--s1) I’ve just inserted 1rem for now.
-}
-
-.with-sidebar > * > * {
-  margin: calc(0px / 2);
-  flex-grow: 1;
-}
-
-.with-sidebar-blog-layout > * > * {
-  margin: calc(1rem / 2);
-  flex-basis: 20rem;
-}
-
-.with-sidebar-media-object > * > * {
-  margin: calc(1rem / 2);
-  flex-basis: 15rem;
-}
-
-.with-sidebar-on-left > * > :last-child {
-  flex-basis: 0;
-  flex-grow: 999;
-  min-width: calc(50% - 0px);
-}
-
-.with-sidebar-on-right > * > :first-child {
-  flex-basis: 0;
-  flex-grow: 999;
-  min-width: calc(50% - 0px);
-}
-
-.with-sidebar-blog-layout.with-sidebar-on-left > * > :last-child,
-.with-sidebar-media-object.with-sidebar-on-left > * > :last-child {
-  min-width: calc(50% - 1rem);
-}
-
-.with-sidebar-blog-layout.with-sidebar-on-right > * > :first-child,
-.with-sidebar-media-object.with-sidebar-on-right > * > :first-child {
-  min-width: calc(50% - 1rem);
-}*/
-
-.traverse {
-  display: flex;
-  margin-top: 5rem;
-  a[rel~=prev] {
-    margin-right: auto;
-  }
-  a[rel~=next] {
-    margin-left: auto;
-  }
-}
-
-.browse-more {
-  margin-top: 5rem;
-  text-align: center;
-}
-
-
-
-
-///////////////////////////////////
-// Global Header
-///////////////////////////////////
-
-.global-header {
-  padding-top: typography.$space-xxs;
-  padding-bottom: typography.$space-xxs;
-  a {
-    text-decoration: none;
-  }
-  a[aria-current] {
-    border-bottom: 1px solid variables_general.$color-accent;
-  }
-}
-
-.logo-and-header-menu-wrap {
-  justify-content: space-between;
-}
-
-.logo {
-  line-height: 1;
-  svg {
-    display: block;
-    @include mixins_general.at-least(typography.$bp-wide-one) {
-      width: (typography.scale-value(9) + typography.scale-value(-6))+rem;
-      height: (typography.scale-value(9) + typography.scale-value(-6))+rem;
-    }
-  }
-}
-
-.header-menu {
-  @include responsive_layout_utilities.cluster(); //2rem
-  text-transform: uppercase;
-  font-weight: 600;
-  font-size: (typography.scale-value(-6) + typography.scale-value(-5))+rem;
-  @include mixins_general.at-least(typography.$bp-wide-one) {
-    --space: 2rem;
-  }
-}
-
-.header-menu-home {
-  display: none;
-  @include mixins_general.at-least(typography.$bp-wide-one) {
-    display: block;
-  }
-}
-
-.header-menu-toggle a::after {
-  display: inline-block;
-  width: 0;
-  height: 0;
-  margin-left: .2em;
-  vertical-align: .2em;
-  content: "";
-  border-top: .3em solid;
-  border-right: .3em solid transparent;
-  border-bottom: 0;
-  border-left: .3em solid transparent;
-}
-
-
-// BBC-style greedy navigation
-
-.header-menu-hidden {
-  display: none;
-}
-
-
-
-/////////////////
-// Global Footer
-/////////////////
-
-.global-footer {
-  font-size: typography.scale-value(-1)+rem;
-  background: variables_general.$text-color;
+.banner {
+  background: #000;
   color: #fff;
-
-  a {
-    color: #fff;
-  }
-
-  a[aria-current] {
-    border-bottom: 1px solid variables_general.$color-accent;
-  }
-
-  li a {
-    text-decoration: none;
-    &:hover {
-      text-decoration: underline;
-    }
-  }
 }
-
-// Start nested stack styles
-.global-footer-contents-wrap {
-  padding-top: 2em;
-  padding-bottom: 2em;
-  @include typography.stack(2em);
-}
-
-.footer-grid,
-.footer-grid section {
-  @include typography.stack(2em);
-}
-
-// space between footer grid sections
-.footer-grid > * + * {
-  --flow-space: 2em;
-}
-
-// space between the elements within footer grid sections
-.footer-grid section > * + * {
-  --flow-space: 1em;
-}
-
-.footer-grid {
-
-  @supports (display: grid) {
-
-    @include mixins_general.at-least(typography.$bp-wide-two) {
-      // deactivate the stack margins used when grid is not supported.
-      & > * + * {
-        margin-top: 0;
-      }
-      display: grid;
-      grid-gap: 2em;
-      grid-template-columns: repeat(3, 1fr);
-    }
-  }
-}
-
-.copyright {
-  color: #999;
-  a {
-    color: #999;
-    text-decoration-color: #999;
-  }
-}
-
-
-
-
-
-
-///////////////////
-// Primary Content
-///////////////////
-
-.primary-content {
-  padding-top: typography.$space-l;
-  padding-bottom: 3rem;
-  @include mixins_general.at-least(typography.$width-pressure-point-one) {
-    padding-bottom: 6rem;
-  }
-
-  &.with-header-banner {
-    padding-top: 0;
-  }
-
-  // Page-specific element spacing within the <main> element
-  .page-home & {
-    @include typography.stack(4rem);
-  }
-
-}
-
-
-
-
-///////////////////
-// Index page
-///////////////////
-
-// Intro
-
-.intro {
-  --measure: 32rem; // tighter
-  background: linear-gradient(variables_general.$color-accent, variables_general.$color-accent) no-repeat bottom left/2.4em 0.2ch;
-  padding-bottom: typography.scale-value(4)+rem;
-  @include typography.stack();
-  & > * + * {
-    --flow-space: #{typography.scale-value(2)}rem;
-  }
-  h1 {
-    font-weight: 600;
-    line-height: ( ((typography.scale-value(-4) * 3) + (typography.scale-value(-5))) / (typography.scale-value(3)) );
-    font-size: typography.scale-value(3)+rem;
-    letter-spacing: -.016em;
-
-    @include mixins_general.at-least(typography.$width-pressure-point-one) {
-      font-size: typography.scale-value(4)+rem;
-    }
-    @include mixins_general.at-least(typography.$bp-wide-four) {
-      font-size: (2 + typography.scale-value(-6))+rem;
-      line-height: 1.015; // just by eye-balling because it wants to be just above 1.
-    }
-  }
-}
-
-
-
-///////////////////
-// Bookshelf
-///////////////////
-
-.reading-years {
-  --flow-space: 3em;
-}
-
-.books {
-  > * + * {
-    margin-top: 2rem;
-    @supports (display: grid) {
-      margin-top: 0;
-    }
-  }
-  display: grid;
-  grid-gap: 1em;
-  grid-template-columns: 1fr;
-
-  @include mixins_general.at-least(30em) {
-    @include responsive_layout_utilities.grid(18ch, 2rem);
-  }
-}
-
-.book {
-  max-width: 250px;
-  @supports (display: grid) {
-    max-width: none;
-  }
-  display: grid;
-  grid-template-columns: 18ch 1fr;
-  grid-gap: 1em;
-
-  @include mixins_general.at-least(30em) {
-    display: block;
-  }
-}
-
-.book-cover {
-  --numerator: 8;
-  --denomenator: 5;
-}
-
-.book-info {
-  --flow-space: #{typography.scale-value(-6)}rem;
-  font-size: #{typography.scale-value(-1)}rem;
-  line-height: 1.2;
-  margin-top: #{typography.scale-value(-2)}rem;
-
-  h3 {
-    font-size: #{typography.scale-value(0)}rem;
-    line-height: ( ((typography.scale-value(-4) * 3) + (typography.scale-value(-5))) / (typography.scale-value(3)) );
-  }
-}
-
-
-// Print styles
-// intentionally using @import rather than @use
-// because @use has to come at the top of the file.
-// todo: refactor to avoid using @import, because it’s deprecated.
-@import 'print';
