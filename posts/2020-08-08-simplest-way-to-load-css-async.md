@@ -2,7 +2,7 @@
 date: "2020-08-08T12:01:21.100Z"
 title: "The Simplest Way to Load CSS Asynchronously (Filament Group)"
 description: "Scott Jehl of Filament Group demonstrates a one-liner technique for loading external CSS files without them delaying page rendering"
-tags: [link, performance, development, css, javascript, tool, nunjucks, customproperties, 11ty]
+tags: [link, performance, development, css, javascript, tool, nunjucks, customproperties]
 linkTarget: "https://www.filamentgroup.com/lab/load-css-simpler/"
 ---
 Scott Jehl of Filament Group demonstrates a one-liner technique for loading external CSS files without them delaying page rendering.
