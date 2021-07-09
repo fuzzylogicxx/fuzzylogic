@@ -1,7 +1,7 @@
 ---
 title: BEM Methodology
 description: Documentation for the BEM component and CSS class-naming notation
-date: 2021-07-01T10:03:00Z
+date: 2020-04-06T10:03:00Z
 mainImage.isAnchor: false
 tags: [bem, css, html, components, documentation]
 draft: false
