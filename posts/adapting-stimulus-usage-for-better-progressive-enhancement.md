@@ -1,7 +1,6 @@
 ---
 title: Adapting Stimulus usage for better Progressive Enhancement
-description: Can we go a step further and also use Stimulus to render our script-triggering
-  elements?
+description: Can we go a step further and also use Stimulus to render our script-triggering elements?
 date: 2021-07-01T08:48:00Z
 mainImage.isAnchor: false
 tags:
@@ -9,15 +8,11 @@ tags:
 - button
 - javascript
 - stimulus
-draft: false
-linkTarget: ''
-
 ---
 A while back, [Jake Archibald tweeted](https://twitter.com/jaffathecake/status/1230388412806520833):
 
 > Don't render buttons on the server that require JS to work.
-
-***
+---
 
 The idea is that user interface elements which depend on JavaScript (such as buttons) should be rendered _on the client-side_, i.e. with JavaScript.
 
@@ -33,4 +28,4 @@ However in [their examples](https://stimulus.hotwired.dev/handbook/hello-stimulu
 
 My hunch was that I should use the `connect()` lifecycle method to render a `button` into the component (and introduce any other script-dependent markup adjustments) at the _earliest opportunity_. I wasn’t sure whether creating new DOM elements at this point and fitting them with Stimulus-related attributes such as `action` and `target` would make them available via the standard Stimulus APIs like server-rendered elements but was keen to try. I started by checking if anyone was doing anything similar and found a thread where [Stimulus contributor Javan suggested that DIY target creation is fine](https://github.com/hotwired/stimulus/issues/41#issuecomment-355961542).
 
-I then gave that a try and it worked! Check out my pen [Stimulus with true progressive enhancement (adds button with JavaScript)](https://codepen.io/fuzzylogicx/pen/oNWzgzO?editors=1111). It’s a pretty trivial example for now, but proves the concept.
+I then gave that a try and it worked! Check out my pen [Stimulus with true progressive enhancement](https://codepen.io/fuzzylogicx/pen/oNWzgzO?editors=1111). It’s a pretty trivial example for now, but proves the concept.
