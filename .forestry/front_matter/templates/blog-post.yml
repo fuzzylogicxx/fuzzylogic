@@ -26,6 +26,7 @@ fields:
     required: false
   label: Link Target
 pages:
+- posts/adapting-stimulus-usage-for-better-progressive-enhancement.md
 - posts/bem-methodology.md
 - posts/duet-design-system.md
 - posts/relearn-css-layout-every-layout.md
