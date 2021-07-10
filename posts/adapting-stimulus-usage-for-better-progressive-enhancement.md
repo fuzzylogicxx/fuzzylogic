@@ -16,7 +16,7 @@ A while back, [Jake Archibald tweeted](https://twitter.com/jaffathecake/status/1
 
 The idea is that user interface elements which depend on JavaScript (such as buttons) should be rendered _on the client-side_, i.e. with JavaScript.
 
-In the context of a progressive enhancement mindset, this makes perfect sense. Our _minimum viable experience_ should work without JavaScript due to the [fragility of a JavaScript-dependent approach](https://kryogenix.org/code/browser/everyonehasjs.html) so should not include script-triggering buttons which might not work. It then follows that if we add JavaScript-based interactivity as an enhancement then that layer should also be responsible for rendering the `button`s that trigger the interactivity.
+In the context of a progressive enhancement mindset, this makes perfect sense. Our _minimum viable experience_ should work without JavaScript due to the [fragility of a JavaScript-dependent approach](https://kryogenix.org/code/browser/everyonehasjs.html) so should not include script-triggering buttons which might not work. The JavaScript which applies the enhancements should not only listen for and act upon button events, but should also be responsible for actually rendering the button.
 
 This is how I used to build JavaScript interactions as standard, however sadly due to time constraints and framework conventions I don’t always follow this best practice on all projects.
 
