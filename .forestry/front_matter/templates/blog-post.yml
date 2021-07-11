@@ -12,9 +12,35 @@ fields:
   name: date
   label: date
   default: now
+- type: text
+  name: mainImage.url
+  label: Main Image URL
+  config:
+    required: false
+- type: text
+  name: mainImage.alt
+  label: Main Image Alt text
+  config:
+    required: false
+- type: text
+  name: mainImage.aspectRatioWidth
+  label: Main Image Aspect Ratio Width
+  config:
+    required: false
+- type: text
+  name: mainImage.aspectRatioHeight
+  label: Main Image Aspect Ratio Height
+  config:
+    required: false
+- type: text
+  name: mainImage.srcsetWidths
+  label: Main Image srcset widths
+  default: [320, 640, 960, 1280, 1600, 1920, 2240, 2560]
+  config:
+    required: false
 - type: boolean
   name: mainImage.isAnchor
-  label: mainImage.isAnchor
+  label: Main Image Is Anchor
 - type: list
   name: tags
   label: tags
