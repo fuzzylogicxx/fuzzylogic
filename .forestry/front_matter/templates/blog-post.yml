@@ -35,9 +35,10 @@ fields:
 - type: text
   name: mainImage.srcsetWidths
   label: Main Image srcset widths
-  default: [320, 640, 960, 1280, 1600, 1920, 2240, 2560]
+  default: ''
   config:
     required: false
+  description: For example 320,640,960,1200
 - type: boolean
   name: mainImage.isAnchor
   label: Main Image Is Anchor
