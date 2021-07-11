@@ -1,6 +1,11 @@
 {
   "websitedesign": [
     {
+      "name": "Katherine Kato’s website",
+      "url": "https://www.katherinekato.com/",
+      "notes": "cssgrid, colour"
+    },
+    {
       "name": "Bram Stein’s website",
       "url": "https://www.bramstein.com/",
       "notes": "type, blog index, date styling, colours"
@@ -57,4 +62,3 @@
     }
   ]
 }
-
