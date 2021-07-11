@@ -50,6 +50,7 @@ fields:
 - type: text
   name: mainImage.sizes
   label: Main Image Sizes
+  description: "For example (min-width: 1600px) 646px, (min-width: 700px) 612px, 91.58vw"
 - type: boolean
   name: mainImage.isAnchor
   label: Main Image Is Anchor
