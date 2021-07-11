@@ -5,13 +5,21 @@ fields:
 - type: text
   name: title
   label: title
-- type: text
-  name: description
-  label: description
 - type: datetime
   name: date
   label: date
   default: now
+- type: text
+  name: description
+  label: description
+- type: list
+  name: tags
+  label: tags
+- name: linkTarget
+  type: text
+  config:
+    required: false
+  label: Link Target
 - type: text
   name: mainImage.url
   label: Main Image URL
@@ -42,17 +50,9 @@ fields:
 - type: boolean
   name: mainImage.isAnchor
   label: Main Image Is Anchor
-- type: list
-  name: tags
-  label: tags
 - type: boolean
   name: draft
   label: draft
-- name: linkTarget
-  type: text
-  config:
-    required: false
-  label: Link Target
 pages:
 - posts/adapting-stimulus-usage-for-better-progressive-enhancement.md
 - posts/bem-methodology.md
