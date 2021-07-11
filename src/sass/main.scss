@@ -1,12 +1,59 @@
-// ”Universal Styles” section
+// Tokens
 
-// RESETS (using bits of https://piccalil.li/blog/a-modern-css-reset)
+// $gorko-size-scale: (
+//   '300': $gorko-base-size * 0.75,
+//   '400': $gorko-base-size,
+//   '500': $gorko-base-size * 1.33,
+//   '600': $gorko-base-size * 1.77,
+//   '700': $gorko-base-size * 2.36,
+//   '800': $gorko-base-size * 3.15,
+//   '900': $gorko-base-size * 4.2,
+//   'major': $gorko-base-size * 5.6
+// );
 
-*,
-*::before,
-*::after {
+:root {
+  --ratio: 1.5;
+  --s-5: calc(var(--s-4) / var(--ratio));
+  --s-4: calc(var(--s-3) / var(--ratio));
+  --s-3: calc(var(--s-2) / var(--ratio));
+  --s-2: calc(var(--s-1) / var(--ratio));
+  --s-1: calc(var(--s0) / var(--ratio));
+  --s0: 1rem;
+  --s1: calc(var(--s0) * var(--ratio));
+  --s2: calc(var(--s1) * var(--ratio));
+  --s3: calc(var(--s2) * var(--ratio));
+  --s4: calc(var(--s3) * var(--ratio));
+  --s5: calc(var(--s4) * var(--ratio));
+
+  --font-size-base: var(--s0);
+  --font-size-biggish: var(--s2);
+  --font-size-big: var(--s5);
+
+  --line-height-extra-tight: 1.1;
+
+  --measure: 60ch;
+
+  --border-thin: 1px;
+
+  --color-light: #fff;
+  --color-dark: #000;
+}
+
+// RESETS (using some of https://piccalil.li/blog/a-modern-css-reset)
+
+// Box-sizing
+// Inheriting box-sizing is best practice
+// https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+html {
   box-sizing: border-box;
 }
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+// end best box-sizing
 
 body,
 h1,
@@ -20,6 +67,14 @@ dl,
 dd {
   margin: 0;
 }
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+// BASE
 
 // Lists
 // Custom Lists
@@ -94,35 +149,7 @@ select {
   }
 }
 
-// End RESETS
-
-// Tokens
-
-:root {
-  --ratio: 1.5;
-  --s-5: calc(var(--s-4) / var(--ratio));
-  --s-4: calc(var(--s-3) / var(--ratio));
-  --s-3: calc(var(--s-2) / var(--ratio));
-  --s-2: calc(var(--s-1) / var(--ratio));
-  --s-1: calc(var(--s0) / var(--ratio));
-  --s0: 1rem;
-  --s1: calc(var(--s0) * var(--ratio));
-  --s2: calc(var(--s1) * var(--ratio));
-  --s3: calc(var(--s2) * var(--ratio));
-  --s4: calc(var(--s3) * var(--ratio));
-  --s5: calc(var(--s4) * var(--ratio));
-
-  --font-size-base: var(--s0);
-  --font-size-biggish: var(--s2);
-  --font-size-big: var(--s5);
-
-  --measure: 60ch;
-
-  --border-thin: 1px;
-
-  --color-light: #fff;
-  --color-dark: #000;
-}
+// End RESETS and BASE
 
 // Sensible measure
 
@@ -188,25 +215,46 @@ body {
 
 // Element styles
 
-h1 {
-  font-size: var(--s3);
+h1, h2, h3, h4 {
+  line-height: var(--line-height-extra-tight);
 }
-h2 {
+
+h1 {
   font-size: var(--s2);
 }
-h3 {
+h2 {
   font-size: var(--s1);
 }
+h3 {
+  font-size: var(--s0);
+}
 
-// Components
+// Utilities/Generics (Layouts etc)
 
-// Banner
-// .banner {
-//   background: #000;
-//   color: #fff;
-// }
+// Hide (https://fuzzylogic.me/posts/how-to-hide-elements-for-different-browsing-contexts/)
+
+.u-hidden-from-all,
+[hidden] {
+  display: none !important;
+}
+
+.u-visually-hidden:not(:focus):not(:active) {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.u-visually-hidden-revealable {
+  left: -100vw;
+  position: absolute;
+}
 
 // Box
+
 .box {
   // display: block; // needed if it’s a custom element
   padding: var(--s1);
@@ -227,7 +275,26 @@ h3 {
   background-color: var(--color-dark);
 }
 
+// Stack
+// Note: stack doesn’t strictly need flexbox, but having `gap` available enables nesting stacks which have different custom property values.
+.stack {
+  --space: var(--s1);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.stack > * {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.stack > * + * {
+  margin-top: var(--space);
+}
+
 // Container
+
 .container {
   width: 90vw;
   width: min(90vw, 70rem); // if it’s a flex child, use instead: width: clamp(16rem, 90vw, 70rem);
@@ -239,33 +306,103 @@ h3 {
 
 // Components/styles that are less reusable and more application-specific
 
+// Components
+
+// Banner
+// .banner {
+//   background: #000;
+//   color: #fff;
+// }
+
+// Header
+
 .global-header {
-  margin-top: var(--s1);
+  //margin-top: var(--s1);
   // remove this once we set a proper layout
 }
 
-// Utility classes
+// Logo
+.logo, .logo svg {
+  display: block;
+}
 
-.font-size\:base { // backslash to escape the colon
+// .skip-links {
+//   visibility: hidden;
+//   opacity: 0;
+//   transition: 0.2s;
+//   transform: translateX(20px);
+// }
+
+// .skip-links a:focus,
+// .skip-links a:focus ~ a {
+//   visibility: visible;
+//   opacity: 1;
+//   transform: translateX(0);
+// }
+
+// Scott O’Hara’s skip links.
+// https://codepen.io/scottohara/pen/QKmWJG
+// It’s ideal when we’re hiding visually-only but also
+// want our skip links layered/positioned ”on top” rather that in normal document flow, …
+// and we want to animate the reveal.
+// also: transform and opacity are good property choices for animation
+// https://developers.google.com/web/fundamentals/design-and-ux/animations/animations-and-performance
+
+// an alternative to .visually-hidden, preferable for
+// content that will transition from off-screen to within the viewport upon focus.
+// or maybe better to just say ”for visually-hidden content that also needs to be revealed”. (i.e. a subset of typical visually hidden reqts)
+// I think it’s preferable here because we’re dealing with hiding a group rather than a single element,
+// and where the contents of the group will need to be revealed.
+// The other approach would shrink the links container and hide overflow so break ability to reveal inner content.
+
+// Shift list left off-screen, and remove it from document layout flow.
+.skip-links { // .visually-hidden-transitionable
+  left: -100vw;
+  position: absolute;
+}
+
+// fix anchors to top of page, and set a negative initial Y-axis value.
+// (resulting in anchors starting ”above the page” so that they are animated downwards onto the page)
+.skip-links a {
+  background: #000;
+  color: #fff;
+  padding: .75em;
+  position: fixed; // so, positioned relative to the viewport rather than its parent.
+  left: 0;
+  top: 0;
+  opacity: 0;
+  transform: translateY(-10em);
+  transition: transform .2s ease-in-out,
+              opacity .2s ease-in-out;
+}
+
+.skip-links a:focus {
+  opacity: 1;
+  transform: translateY(0em);
+}
+
+// Overrides
+
+.u-font-size\:base {
   font-size: var(--font-size-base) !important;
 }
 
-.font-size\:biggish {
-  font-size: var(--font-size-biggish) !important;
+.u-font-size\:biggish {
+  font-size: var(--font-size-biggish);
 }
 
-.font-size\:big {
+.u-font-size\:big {
   font-size: var(--font-size-big) !important;
 }
 
-.max-width\:measure {
+.u-max-width\:measure {
   max-width: var(--measure) !important;
 }
 
-.max-width\:measure\/2 {
-  max-width: calc(var(--measure) / 2) !important;
+.u-max-width\:none {
+  max-width: none !important;
 }
 
-.max-width-none {
+.u-max-width\:foo {
   max-width: none !important;
 }

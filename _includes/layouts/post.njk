@@ -2,11 +2,11 @@
 layout: layouts/base.njk
 templateClass: post-main
 ---
-<div class="container">
+<div class=""> <!-- container -->
 
-  <article class="h-entry prose centre" itemtype="http://schema.org/BlogPosting">
+  <article class="h-entry stack prose centre" itemtype="http://schema.org/BlogPosting">
 
-    <header>
+    <header class="stack">
       <div>
         <span class="post-type text-icon-pair">
         {% if (tags[1] === 'link') -%}
@@ -26,7 +26,7 @@ templateClass: post-main
       {%- if (tags[1] !== 'note') and (title) -%}<h1 class="p-name" itemprop="headline">{{ title }}</h1>{%- endif -%}
     </header>
 
-    <div class="e-content {{ "article-type-listing" if isList }}" itemprop="articleBody">
+    <div class="e-content stack {{ "article-type-listing" if isList }}" itemprop="articleBody">
 
       {% if linkTarget %}
       <a class="btn btn-icon" href="{{ linkTarget }}">

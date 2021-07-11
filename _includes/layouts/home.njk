@@ -3,16 +3,17 @@ layout: layouts/base.njk
 templateClass: home-main
 ---
 
-<section class="intro prose">
-  <h1>Fuzzy Logic</h1>
-  <p class="no-hyphens">Hi—I’m Laurence Hughes, a Glaswegian web developer creating responsive websites which balance design, technology and accessibility. I also make music, play records and ping pongs. This is my online home; a playground for coding fun and place to share thoughts on the web, music and more.</p>
-</section>
+<div class="stack">
 
-<div class="centre-with-gutter">
+  <section class="intro prose stack">
+    <h1>Fuzzy Logic</h1>
+    <p class="no-hyphens">Hi—I’m Laurence Hughes, a Glaswegian web developer creating responsive websites which balance design, technology and accessibility. I also make music, play records and ping pongs. This is my online home; a playground for coding fun and place to share thoughts on the web, music and more.</p>
+  </section>
 
-    {# {{ content | safe }} #}
+  <div class="centre-with-gutter">
+
+      {{ content | safe }}
+
+  </div>
 
 </div>
-
-
-
