@@ -13,7 +13,7 @@ tags:
 - css
 - development
 - web
-linkTarget: ''
+linkTarget: 'https://www.katherinekato.com/'
 mainImage.url: ''
 mainImage.alt: ''
 mainImage.aspectRatioWidth: ''
@@ -22,7 +22,6 @@ mainImage.srcsetWidths: ''
 mainImage.sizes: ''
 mainImage.isAnchor: false
 draft: false
-
 ---
 Some simple but inspiring work here from Seattle-based web developer Katherine Kato. I really like the use of space, the typography, the colour palette and the use of CSS grid for layout.
 ---
