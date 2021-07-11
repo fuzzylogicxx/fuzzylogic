@@ -4,6 +4,7 @@ description: Excellent tutorials by David DeSandro
 date: 2019-07-23T12:25:00Z
 mainImage.isAnchor: false
 tags:
+- animation
 - development
 - web
 - link
