@@ -4,6 +4,7 @@ title: Katherine Kato’s personal website
 description: I really like the use of space, the typography, the colour palette and
   the use of CSS grid for layout.
 tags:
+- link
 - colour
 - design
 - inspiration
