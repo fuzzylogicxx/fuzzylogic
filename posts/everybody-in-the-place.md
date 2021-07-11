@@ -6,7 +6,7 @@ mainImage:
   url: https://res.cloudinary.com/fuzzylogic/image/upload/v1625998629/p07hsqny_wzkfgu.jpg
   alt: "Nightclub graphic from the documentary “Everybody in the place”"
   aspectRatioWidth: 160
-  aspectRatioWidth: 90
+  aspectRatioHeight: 90
 tags:
 - history
 - sociology
