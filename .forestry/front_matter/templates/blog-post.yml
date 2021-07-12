@@ -50,7 +50,7 @@ fields:
 - type: text
   name: mainImage.sizes
   label: Main Image Sizes
-  description: "For example (min-width: 1600px) 646px, (min-width: 700px) 612px, 91.58vw"
+  description: 'For example (min-width: 1600px) 646px, (min-width: 700px) 612px, 91.58vw'
 - type: boolean
   name: mainImage.isAnchor
   label: Main Image Is Anchor
@@ -65,6 +65,7 @@ pages:
 - posts/flickity-touch-responsive-flickable-carousels.md
 - posts/intro-to-css-3d-transforms.md
 - posts/katherine-kato-s-personal-website.md
+- posts/manage-design-tokens-in-eleventy.md
 - posts/real-favicon-generator.md
 - posts/relearn-css-layout-every-layout.md
 - posts/the-guardian-digital-design-style-guide.md
