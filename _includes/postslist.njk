@@ -31,7 +31,7 @@
     <div class="e-content">
     {% if (post.data.page.excerpt) -%}
       {%- set excerpt = post.data.page.excerpt -%}{{ excerpt | markdownStringToHTML | safe }}
-      {% if post.data.mainImage.url and (app.environment == "prod") %}
+      {% if post.data.mainImage.url and (app.environment == "production") %}
       <figure>
       {%- if post.data.mainImage.isAnchor %}<a href="{{ post.url | url }}">{%- endif %}
       {% respimg "" + post.data.mainImage.url + "", "" + post.data.mainImage.alt + "", "(min-width: 1600px) 646px, (min-width: 700px) 612px, 91.58vw", post.data.mainImage.aspectRatioWidth, post.data.mainImage.aspectRatioHeight %}
