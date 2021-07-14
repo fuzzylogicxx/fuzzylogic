@@ -1,5 +1,12 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
+// Organisation Plan
+  // Settings (Tokens etc),
+  // Base (Reset and Global styles),
+  // Utilities (Generics/Patterns/Layouts/Objects inc Stack, Box, ?VisuallyHidden?),
+  // Components (Specifics),
+  // Overrides
+
+//
+
 // Tokens
 
 // $gorko-size-scale: (
@@ -56,15 +63,6 @@ html {
   box-sizing: inherit;
 }
 // end best box-sizing
-=======
-// RESETS (using bits of https://piccalil.li/blog/a-modern-css-reset)
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
->>>>>>> Adds maintenance banner and begins CSS w. Andy Bell modern reset
 
 body,
 h1,
@@ -79,7 +77,6 @@ dd {
   margin: 0;
 }
 
-<<<<<<< HEAD
 ul,
 ol {
   margin-top: 0;
@@ -92,15 +89,11 @@ ol {
 // Custom Lists
 // https://www.scottohara.me/blog/2019/01/12/lists-and-safari.html
 // if role=list required adding we can assume we don’t want bullets.
-=======
-// https://www.scottohara.me/blog/2019/01/12/lists-and-safari.html
->>>>>>> Adds maintenance banner and begins CSS w. Andy Bell modern reset
 ul[role='list'],
 ol[role='list'] {
   list-style: none;
 }
 
-<<<<<<< HEAD
 /* anchors that don't have a class get default styles */
 a:not([class]) {
   text-decoration-skip-ink: auto;
@@ -422,112 +415,3 @@ h3 {
 .u-max-width\:foo {
   max-width: none !important;
 }
-=======
-=======
-/* Set core body defaults */
->>>>>>> Adds maintenance banner and begins CSS w. Andy Bell modern reset
-body {
-  min-height: 100vh;
-  line-height: 1.5;
-}
-
-/* anchors that don't have a class get default styles */
-a:not([class]) {
-  text-decoration-skip-ink: auto;
-}
-
-img {
-  // normalize.css says "Remove the border on images inside links in IE 10."
-  border-style: none;
-
-  // Set images to display block globally because can’t think
-  // of anywhere you wouldn’t want this to be the case.
-  display: block;
-
-  // Support flexible images.
-  // We can make large <img>s available to wide and narrow viewports alike,
-  // safe in the knowledge that even if an image is wider than its container,
-  // it will not overflow.
-  // The result is that the image’s width will match one of three values:
-  // 1. Its own intrinsic/natural width, based on the file data; OR
-  // 2. An explicit HTML width attribute value, if present;
-  // 3. The width of the horizontal space afforded by the container element; OR
-  // 4. 60rem (a sensible image width limit) if the container is wider than that.
-
-  // 60rem seems a reasonable limit, where min() is supported. Can tweak later.
-  max-width: 100%;
-  max-width: min(60rem, 100%);
-}
-
-// Ensure correct aspect ratio is preserved when
-// i) current width is wider than 100% so max-width: 100% is being enforced; and
-// ii) image has the HTML height attribute set
-// while doing no harm otherwise.
-img[height] {
-  height: auto;
-}
-
-// explictly set an image to 100% container-width even if
-// it has a width attribute (present for performance reasons) set to something narrower.
-// Note: I have not included height: auto. It’s only required when the image has the
-// HTML height attribute set, and I already have a rule dealing with that scenario above.
-.img-full-parent-width {
-  width: 100%;
-}
-
-// Make inputs and buttons inherit fonts */
-input,
-button,
-textarea,
-select {
-  font: inherit;
-}
-
-// Remove all animations, transitions and smooth scroll for people that prefer not to see them
-@media (prefers-reduced-motion: reduce) {
-  *,
-  *::before,
-  *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
-}
-
-// FONTS (FILE)
-
-@font-face {
-  font-family: Source Sans Pro;
-  src: url(/fonts/sans/SourceSans3-Regular-subset.woff2) format("woff2"),
-       url(/fonts/sans/SourceSans3-Regular-subset.zopfli.woff) format("woff");
-  font-weight: 400;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: Source Sans Pro;
-  src: url(/fonts/sans/SourceSans3-It-subset.woff2) format("woff2"),
-       url(/fonts/sans/SourceSans3-It-subset.zopfli.woff) format("woff");
-  font-weight: 400;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: Source Sans Pro;
-  src: url(/fonts/sans/SourceSans3-Semibold-subset.woff2) format("woff2"),
-       url(/fonts/sans/SourceSans3-Semibold-subset.zopfli.woff) format("woff");
-  font-weight: 600;
-  font-display: swap;
-}
-
-body {
-  font-family: 'Source Sans Pro', sans-serif;
-}
-
-.banner {
-  background: #000;
-  color: #fff;
-}
->>>>>>> Deleted all Sass partials
