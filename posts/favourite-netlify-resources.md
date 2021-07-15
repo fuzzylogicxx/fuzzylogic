@@ -42,6 +42,6 @@ Using Github as an Authentication (via OAuth) Provider, rather than using Netlif
 * noticed that my repo was set up to do authentication using Netlify Identity whereas the other website’s authentication uses “Github Backend”, which means using Github as an (OAuth) Authentication Provider;
 * In Netlify, removed Netlify Identity from my Netlify site (because I’m not going to use it for authentication any more)
 * Updated my site’s `admin/config.yml`, changing `name: git-gateway` to `name: github` and adding `repo: ownername/reponame`
-* Followed the Netlify docs page Using an authentication provider which provides guidance on registering a new OAuth application in Github
-* Created a new oauth application in my personal Github account. I plan to transfer ownership of that to the more appropriate owner soon, if possible.
+* Followed the Netlify docs page [Using an authentication provider](https://docs.netlify.com/visitor-access/oauth-provider-tokens/#using-an-authentication-provider) which provides guidance on registering a new OAuth application in Github
+* [Created a new oauth application](https://github.com/settings/developers) in my personal Github account. I plan to transfer ownership of that to the more appropriate owner soon, if possible.
 * The Netlify CMS dashboard is now accessible!
