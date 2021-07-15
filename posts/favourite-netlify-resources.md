@@ -32,4 +32,6 @@ Summary of all `config.yml` options [https://www.netlifycms.org/docs/configurati
 
 Collection Types: folder or file, and how they should be configured in `config.yml` [https://www.netlifycms.org/docs/collection-types/](https://www.netlifycms.org/docs/collection-types/ "https://www.netlifycms.org/docs/collection-types/")
 
-Working References, if needed [https://github.com/danurbanowicz/eleventy-netlify-boilerplate/](https://github.com/danurbanowicz/eleventy-netlify-boilerplate/ "https://github.com/danurbanowicz/eleventy-netlify-boilerplate/")
+Working References 
+
+* [https://github.com/danurbanowicz/eleventy-netlify-boilerplate/](https://github.com/danurbanowicz/eleventy-netlify-boilerplate/ "https://github.com/danurbanowicz/eleventy-netlify-boilerplate/")
