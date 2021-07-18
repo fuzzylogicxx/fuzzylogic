@@ -19,6 +19,30 @@ In his fantastic series [Responsive Images 101](https://cloudfour.com/thinks/res
 
 > A method for providing the browser with multiple image sources depending on display density, size of the image element in the page, or any number of other factors.
 
+### The Art Direction Use Case
+
+I rarely need this in practice. 
+Note that you can now avoid layout shifts after images load by specifying `width` and `height` attributes on your `picture`’s `source` elements. https://twitter.com/_zouhir/status/1414961958701305856
+
+## Serving sharp images to hi-density screens
+
+Jake’s lazy and long/proper approaches: https://jakearchibald.com/2021/serving-sharp-images-to-high-density-screens/
+
+Lazy:
+> Here's the technique I use for most images on this blog: I take the maximum size the image can be displayed in CSS pixels, and I multiply that by two, and I encode it at a lower quality, as it'll always be displayed at a 2x density or greater. Yep. That's it. For 'large' images in blog posts like this, they're at their biggest when the viewport is 799px wide, where they take up the full viewport width. So I encode the image 1,598 pixels wide.
+
+```
+<picture>
+  <source type="image/avif" srcset="red-panda.avif" />
+  <source type="image/webp" srcset="red-panda.webp" />
+  <img src="red-panda.jpg" width="1598" height="1026" alt="A red panda" />
+</picture>
+```
+
+> So, if you want your images to be as sharp as possible, you need to target images at the user's device pixels, rather than their CSS pixels.
+
+> To encode a 2x image, I throw it into Squoosh.app, and zoom it out until it's the size it'll be displayed on a page. Then I just drag the quality slider as low as it'll go before it starts looking bad.
+
 ## Fitting images into spaces
 
 So far we haven’t considered any complexity with regard to the layout in which an image lives. However as developers we’re not just dropping images into body content columns within flowing prose.
