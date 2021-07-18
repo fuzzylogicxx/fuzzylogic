@@ -28,6 +28,8 @@ Here are my current go-to resources when building a new site using Eleventy (11t
 
 [forestry.io settings for 11ty Base Blog](https://github.com/forestryio/eleventy-base-forestry/tree/forestry/.forestry) and [forestry.io settings for Hylia](https://github.com/DirtyF/hylia-forestry/tree/forestry/.forestry) (Andy Bell’s 11ty starter)
 
+[Add Netlify CMS to an 11ty-based website](https://www.netlifycms.org/docs/add-to-your-site/)
+
 [All my posts tagged “11ty”](https://fuzzylogic.me/tags/11ty/)
 
 More to follow…
