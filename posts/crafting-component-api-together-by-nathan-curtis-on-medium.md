@@ -19,7 +19,7 @@ mainImage.isAnchor: false
 draft: false
 
 ---
-Nathan (of EightShapes) discusses how to unify anatomy and props across code and design tools.
+Nathan (of [EightShapes](https://eightshapes.com/)) discusses how to unify anatomy and props across code and design tools.
 ---
 
 I love this article. It tackles some difficult, real problems that occur during the process of trying to align design and development but proposes interesting ways of mitigating them.
