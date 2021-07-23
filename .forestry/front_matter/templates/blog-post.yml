@@ -63,6 +63,7 @@ fields:
   name: draft
   label: draft
 pages:
+- posts/accessible-drop-down-navigation-3-ways.md
 - posts/adapting-stimulus-usage-for-better-progressive-enhancement.md
 - posts/bem-methodology.md
 - posts/crafting-component-api-together-by-nathan-curtis-on-medium.md
