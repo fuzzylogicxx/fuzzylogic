@@ -1,6 +1,6 @@
 ---
 date: 2019-07-03T13:30:04Z
-title: Using `aria-current` is a win-win situation
+title: Using aria-current is a win-win situation
 description: Using aria-current helps us create navigation experiences which work
   both visually and for screen readers.
 tags:
@@ -29,10 +29,10 @@ By using `[aria-current]` as your CSS selector (rather than a `.current` class) 
 
 [As Léonie Watson explains](https://tink.uk/using-the-aria-current-attribute/), according to [WAI-ARIA 1.1](https://www.w3.org/TR/wai-aria-1.1/#aria-current) there are a number of useful values that the `aria-current` attribute can take:
 
-* `page` for the link to the current page in a navigation menu or pagination section; 
-* `step` for a step-based process; 
-* `date` for a current date.
-* `time` for a current time.
+* `page` to indicate the current page within a navigation menu or pagination section; 
+* `step` for the current step in a step-based process; 
+* `date` for the current date.
+* `time` for the current time.
 
 I’ve been using the `aria-current="page"` technique on a couple of navigation menus recently and it’s working well. 
 
