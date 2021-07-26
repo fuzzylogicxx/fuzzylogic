@@ -1,7 +1,7 @@
 ---
 date: 2019-04-04T13:13:23Z
 title: 'The Art of DJing: Jeff Mills (on Resident Advisor)'
-description: ''
+description: 'A nice interview on DJing with the Detroit legend'
 tags:
 - electronic
 - music
