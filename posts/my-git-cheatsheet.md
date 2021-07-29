@@ -610,6 +610,20 @@ git commit
 
 </figure>
   
+When `git st` reveals a list of staged files including lots of strange files you don’t want there mixed with others you do…
+  
+<figure>
+  
+``` bash
+# add those you want to stay modified and staged
+git add path/to/file-I-want-1.rb path/to/file-I-want-2.md 
+
+# this will clear all others out of the stage
+git checkout .
+```
+
+</figure>
+  
 Grab one or more commits from elsewhere and drop into your current branch:
 
 <figure>
