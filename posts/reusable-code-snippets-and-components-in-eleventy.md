@@ -21,7 +21,8 @@ mainImage.isAnchor: false
 draft: false
 
 ---
-## There are (at least) three cunning ways in Eleventy to get “reusable snippet” or “reusable component” functionality.
+There are (at least) three cunning ways in Eleventy to get “reusable snippet” or “reusable component” functionality.
+---
 
 1. Nunjucks’s `include`:  Great for just including a common, static element in your template, say a `header` or `footer` partial. (Note that while you _can_ `set` a variable just before your `include` line to make that variable available to the included partial, it’s not really “passing in” and scoping the variable like a parameter, so it’s best to reserve `include` for simple stuff.)
 2. Nunjucks’s `macro`:  Takes things up a notch by supporting passing in parameters which are then locally scoped. You could use this to create a simple component. See Trys Mudford’s article [Encapsulated 11ty Components](https://www.trysmudford.com/blog/encapsulated-11ty-components/).
