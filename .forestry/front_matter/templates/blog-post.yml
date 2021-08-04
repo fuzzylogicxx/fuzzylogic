@@ -63,6 +63,7 @@ fields:
   name: draft
   label: draft
 pages:
+- posts/a-dao-of-web-design-on-a-list-apart.md
 - posts/accessible-drop-down-navigation-3-ways.md
 - posts/adapting-stimulus-usage-for-better-progressive-enhancement.md
 - posts/bem-methodology.md
