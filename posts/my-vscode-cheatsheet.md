@@ -37,10 +37,18 @@ My preferences (in `settings.json` or via Preferences→Settings):
     "emmet.triggerExpansionOnTab": true
 }
 ```
-  
-Note: the Emmet ones are _really_ useful for code autocompletion.
-  
+
 </figure>
+
+Note: the Emmet ones are _really_ useful for code autocompletion.
+
+## Additional Emmet Settings
+
+To add a keyboard shortcut for adding an arbitrary wrapper element (say, `div.wrap`) around some selected code:
+
+Open the Command Palette then search “emmet wrap”. When you see the option “Emmet: wrap with abbreviation”, click the settings icon beside it. Enter your preferred keyboard shortcut. I currently use:
+
+<kbd>Command-Shift-A</kbd>
 
 ## Open current terminal directory in VS Code
 
