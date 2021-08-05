@@ -6,19 +6,27 @@ linkTarget: https://developer.paciellogroup.com/blog/2014/08/using-the-tabindex-
 tags: [link, a11y, focus, tab, tabbingorder, keyboardnavigation, order, cssgrid, flexbox]
 ---
 Léonie Watson explains how the HTML tabindex attribute is used to manage keyboard focus. Of particular interest to me was a clarification of what `tabindex="-1"` does (because I always forget).
-
-> When tabindex is set to a negative integer like -1, (the element) becomes programmatically focusable but it isn’t included in the tab order. In other words, it can’t be reached by someone using the tab key to navigate through content, but it can be focused on with scripting.
 ---
+
+## tabindex="-1"
+
+The element becomes programmatically focusable but isn’t included in the tab order. It can’t be reached by someone using the tab key to navigate through content, but it can be focused on with scripting via the `focus()` method. 
+
+Léonie offers the example of a list of form errors which we might want to set focus to using a script. 
+
+An even better example might be a `div`-based modal dialogue.
+
+Incidentally, I sometimes see people including `tabindex="-1"` on their `main` element. This is a special use case in support of “skip links”, the solution for helping keyboard users and users of Assistive Technologies avoid having to tab through logo and navigation elements and instead skip directly to the main content. As [Ben Myers writes](https://benmyers.dev/blog/skip-links/), the addition of the `tabindex` attribute is a _belt and braces_ action to ensure the skip experience is not purely visual but actually sets focus properly so as to be predictable for keyboard and screen reader users.
+
+> When a user follows our skip link, we want their keyboard focus to move to our target. Modern browsers will move that focus for us, but some older browsers will only move the focus if the target is focusable. If it’s not focusable, the page will scroll down but the user's focus will still be at the top of the page.
+
+Given that [the browser issues seem to be mostly resolved](https://axesslab.com/skip-links/) and that GOV.UK found that including the `tabindex` attribute could be harmful, I’m inclined to go without it. Or if absolutely necessary, [use JavaScript to manage the `tabindex`-driven focusability of fragment-driven targets](https://github.com/selfthinker/dokuwiki_template_writr/blob/master/js/skip-link-focus-fix.js ) like Anika Henke from GOV.uk suggests.
 
 ## tabindex="0"
 
 Applying `tabindex="0"` to an element inserts it into the tabbing order based on its position in the source. It is not necessary to apply this to an interactive element such as a button or checkbox since they are focusable by default. You should use it sparingly (because it requires care to ensure accessibility) but you might use it on a custom element which needs to be interactive under certain circumstances such as [the horizontally scrollable container in a Data Table](https://inclusive-components.design/data-tables/).
 
-A related note on tabbing order is that it’s not a great idea to move elements around visually such that they are ordered differently from their source order, because this creates a disconnect between tabbing order and visual order. This could be confusing for a sighted person who navigates by keyboard. CSS Grid and Flexbox offer this ability through properties such as `order`, `flex-direction` and `grid-auto-flow` however as Rachel Andrew and others have suggested, [creating this kind of disconnect is to be avoided](https://rachelandrew.co.uk/archives/2019/06/04/grid-content-re-ordering-and-accessibility/). It might be OK when the elements (and their children) are non-focusable (for example re-ordering two `div`s) but avoid applying it to focusable elements like navigation links.
-
-## tabindex="-1"
-
-The element becomes programmatically focusable but isn’t included in the tab order. It can’t be reached by someone using the tab key to navigate through content, but it can be focused on with scripting. Léonie offers as an example a list of form errors which we might want to set focus to using a script. An even better example might be a `div`-based modal dialogue.
+A related note on tabbing order is that it’s not a great idea to move elements around with CSS such that their visual order differs from their source order, because this creates a disconnect between tabbing order and visual order. This could be confusing for a sighted person who navigates by keyboard. CSS Grid and Flexbox offer this ability through properties such as `order`, `flex-direction` and `grid-auto-flow` however as Rachel Andrew and others have suggested, [creating this kind of disconnect is to be avoided](https://rachelandrew.co.uk/archives/2019/06/04/grid-content-re-ordering-and-accessibility/). It might be OK when the elements (and their children) are non-focusable (for example re-ordering two `div`s) but avoid applying it to focusable elements like navigation links.
 
 ## tabindex="1+"
 
