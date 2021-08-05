@@ -6,6 +6,8 @@ date: 2020-12-07T20:33:37.159Z
 mainImage.isAnchor: false
 tags:
   - entry
+  - development
+  - heuristics
   - progressiveenhancement
   - modules
   - javascript
