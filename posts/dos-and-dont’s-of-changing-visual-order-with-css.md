@@ -35,7 +35,7 @@ Let’s dig into the detail.
 
 ## People browse web pages in different ways
 
-We know that a web page’s visitors are likely to have a range of different abilities. While some experience the full extent of our our visual design, others are visually-impaired or blind. Others still have motor impairments. The web was intended to be accessible and therefore web pages should cater appropriately to this range of user needs.
+We know that a web page’s visitors are likely to have a range of different abilities. While some experience the full extent of our visual design, others are visually-impaired or blind. Others still have motor impairments. The web was intended to be accessible and therefore web pages should cater appropriately to this range of user needs.
 
 Relatedly we also know that people will use one or more of the following methods to move around a web page:
 
@@ -45,7 +45,7 @@ Relatedly we also know that people will use one or more of the following methods
 
 There are probably other methods I’m forgetting, but those are the most common.
 
-In order to cater to people who navigate a web page using a keyboard without a mouse (a.k.a. _keyboard users_), we must ensure that the page is tab-friendly. We want the page’s interactive elements to be navigable and focusable by pressing the <kbd>Tab</kbd> key. They should be focusable one by one in the same order as they are defined in the HTML document. 
+In order to cater to people who navigate a web page using a keyboard without a mouse (a.k.a. _keyboard users_), we must ensure that the page is tab-friendly. We want the page’s interactive elements to be navigable and focusable by pressing the <kbd>Tab</kbd> key. Those elements should be focusable one by one in the same order as they are defined in the HTML document. 
 
 Often, achieving tab-friendliness requires little or no additional development effort because the browser gives us so much of the necessary behaviour natively. Interactive HTML elements like anchors (links) and form controls are focusable by default. And for any custom interactions where we want to make a normally non-focusable element (such as a `div`) focusable (thus giving it a keyboard tab-stop) we can apply [the tabindex attribute](https://fuzzylogic.me/posts/using-the-tabindex-attribute/).
 
