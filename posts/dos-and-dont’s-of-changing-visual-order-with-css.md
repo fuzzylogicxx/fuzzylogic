@@ -29,6 +29,10 @@ See Rachel’s talk [Grid, content re-ordering and accessibility](https://noti.s
 
 So, what’s the problem?
 
+Essentially we cause people problems when we create a disconnect between tabbing order and visual order. 
+
+Let’s dig into the detail.
+
 ## People browse web pages in different ways
 
 We know that a web page’s visitors are likely to have a range of different abilities. While some experience the full extent of our our visual design, others are visually-impaired or blind. Others still have motor impairments. The web was intended to be accessible and therefore web pages should cater appropriately to this range of user needs.
@@ -55,7 +59,7 @@ The disconnect is unlikely to be apparent to sighted people on a tablet/phone or
 
 We might assume that all keyboard (only) users are also blind, using a screen reader, and not perceiving visual order. However keyboard users also include sighted people who have trouble operating a pointing device such as a mouse or trackball, or whose mouse is currently not working, or who simply prefer to use a keyboard where possible. 
 
-For the sighted person who navigates by keyboard our change of order would be confusing. When you use tab and expect that to follow convention and set focus on one element but it actually sets focus on another you’ll likely (understandably) assume that something is broken.
+**For the sighted person who navigates by keyboard our change of order would be confusing.** When you use tab and expect that to follow convention and set focus on one element but it actually sets focus on another, you’ll likely assume that something is broken.
 
 Rachel Andrew argues that [creating this kind of disconnect is to be avoided](https://rachelandrew.co.uk/archives/2019/06/04/grid-content-re-ordering-and-accessibility/). Léonie Watson suggests that in simple examples such a disconnect may only be mildly awkward, however in complex interfaces [it could make things horribly unusable](https://tink.uk/flexbox-the-keyboard-navigation-disconnect/).
 
