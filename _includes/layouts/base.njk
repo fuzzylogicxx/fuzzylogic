@@ -88,23 +88,16 @@
     <p>I’m currently updating my website. Sorry for things looking a little rough temporarily.</p>
     <a class="skip-link" href="#primary-content">Skip to main content</a>
     <header class="global-header">
-      <a
-        href="{{ '/' | url }}"
-        aria-label="Fuzzy Logic - the personal website of Laurence Hughes, a web developer based in Glasgow, Scotland - home"
-        class="global-header__logo"
-      >
-        <svg
-          aria-hidden="true"
-          focusable="false"
-          width="5em" height="5em"
-          viewBox="0 0 214 214"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path fill="#F2F1F0" d="M.432 107.264C.432 48.556 48.027.966 106.728.966c58.71 0 106.304 47.59 106.304 106.298 0 58.713-47.594 106.304-106.304 106.304C48.027 213.568.432 165.977.432 107.264" />
-          <path fill="#343534" d="M148.82 113.583V81.63l27.658 15.981-27.658 15.972zm-3.854-31.953v35.29c0 .687.368 1.325.967 1.668.295.181.626.257.956.257.339 0 .67-.076.968-.257l30.55-17.646.014 34.177-63.058 36.41-.005-72.809 29.608-17.09zm-41.765 7.841L50.39 58.978 79.98 41.89l63.06 36.407-29.605 17.089-10.234-5.915zm6.364 46.756l-27.657 15.974v-31.958l27.657 15.984zm-28.623-20.984a1.947 1.947 0 00-1.924 0 1.95 1.95 0 00-.961 1.673v35.285l-29.604-17.082.007-72.808 63.049 36.409-.014 34.175-30.553-17.652zm103.487-17.635c0-1.468-.78-2.816-2.054-3.548L82.031 36.117a4.115 4.115 0 00-2.051-.544c-.706 0-1.412.178-2.046.544L44.605 55.361a4.089 4.089 0 00-2.169 3.612l-.012 77.257c0 1.46.779 2.819 2.055 3.548l33.455 19.315c.634.362 1.34.542 2.046.542.706 0 1.412-.18 2.051-.542l27.294-15.767.019 31.544a4.086 4.086 0 004.094 4.087c.713 0 1.413-.178 2.051-.543l66.904-38.636a4.107 4.107 0 002.051-3.551l-.015-38.619z" />
-        </svg>
-      </a>
-      <nav class="header-menu">
+      <a href="{{ '/' | url }}" class="global-header__logo">Fuzzy Logic</a>
+      <nav class="global-header__menu">
+        {% set navPages = collections.all | eleventyNavigation %}
+        <ul role="list">
+        {%- for entry in navPages %}
+          <li id="nav-{{ entry.title | lower }}">
+            <a{% if entry.url == page.url %} aria-current="page"{% endif %} href="{{ entry.url | url }}">{{ entry.title }}</a>
+          </li>
+        {%- endfor %}
+        </ul>
       </nav>
     </header>
 
