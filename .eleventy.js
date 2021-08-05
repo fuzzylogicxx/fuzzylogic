@@ -47,7 +47,7 @@ module.exports = function(eleventyConfig) {
     });
 
     return content.replace(
-      '<!-- THIS WILL BE REPLACED WITH INLINE CSS -->',
+      '<!-- THIS COMMENT WILL BE REPLACED WITH INLINED, MINIFIED CSS -->',
       '<style>' + purgeCSSResults[0].css + '</style>'
     );
   });

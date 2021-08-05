@@ -18,7 +18,7 @@
     <link rel="preload" href="/fonts/sans/SourceSans3-Regular-subset.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/fonts/sans/SourceSans3-Semibold-subset.woff2" as="font" type="font/woff2" crossorigin>
 
-    <!-- THIS WILL BE REPLACED WITH INLINE CSS -->
+    <!-- THIS COMMENT WILL BE REPLACED WITH INLINED, MINIFIED CSS -->
 
     <meta name="author" content="{{ metadata.author.name }}">
     <meta name="description" content="{{ renderData.description or description or metadata.description }}">
@@ -85,120 +85,34 @@
   </head>
   <body{% if bodyclass %} class="{{ bodyclass }}"{% endif %}>
 
-    <div class="stack">
+    <p>I’m currently updating my website. Sorry for things looking a little rough temporarily.</p>
 
-      <div class="box invert">
-        <p class="max-width-none">I’m currently updating my website. Sorry for things looking a little rough temporarily.</p>
-      </div>
+    <header class="global-header">
+      <a
+        href="{{ '/' | url }}"
+        aria-label="Fuzzy Logic - the personal website of Laurence Hughes, a web developer based in Glasgow, Scotland - home"
+        class="global-header__logo"
+      >
+        <svg
+          aria-hidden="true"
+          focusable="false"
+          width="5em" height="5em"
+          viewBox="0 0 214 214"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path fill="#F2F1F0" d="M.432 107.264C.432 48.556 48.027.966 106.728.966c58.71 0 106.304 47.59 106.304 106.298 0 58.713-47.594 106.304-106.304 106.304C48.027 213.568.432 165.977.432 107.264" />
+          <path fill="#343534" d="M148.82 113.583V81.63l27.658 15.981-27.658 15.972zm-3.854-31.953v35.29c0 .687.368 1.325.967 1.668.295.181.626.257.956.257.339 0 .67-.076.968-.257l30.55-17.646.014 34.177-63.058 36.41-.005-72.809 29.608-17.09zm-41.765 7.841L50.39 58.978 79.98 41.89l63.06 36.407-29.605 17.089-10.234-5.915zm6.364 46.756l-27.657 15.974v-31.958l27.657 15.984zm-28.623-20.984a1.947 1.947 0 00-1.924 0 1.95 1.95 0 00-.961 1.673v35.285l-29.604-17.082.007-72.808 63.049 36.409-.014 34.175-30.553-17.652zm103.487-17.635c0-1.468-.78-2.816-2.054-3.548L82.031 36.117a4.115 4.115 0 00-2.051-.544c-.706 0-1.412.178-2.046.544L44.605 55.361a4.089 4.089 0 00-2.169 3.612l-.012 77.257c0 1.46.779 2.819 2.055 3.548l33.455 19.315c.634.362 1.34.542 2.046.542.706 0 1.412-.18 2.051-.542l27.294-15.767.019 31.544a4.086 4.086 0 004.094 4.087c.713 0 1.413-.178 2.051-.543l66.904-38.636a4.107 4.107 0 002.051-3.551l-.015-38.619z" />
+        </svg>
+      </a>
+      <nav aria-label="page" class="skip-links">
+        <a href="#primary-content">Skip to main content</a>
+      </nav>
+      <nav aria-label="site" class="header-menu">
+      </nav>
+    </header>
 
-      <div class="container">
 
-        <div class="stack">
 
-          <!-- Header begins -->
-          <header id="global-header" class="global-header">
-            <div class="cluster">
-              <div class="stack logo-and-header-menu-wrap">
-                <a class="logo" href="{{ '/' | url }}" title="Home">
-                  <svg aria-labelledby="fuzzy-logic-logo" role="img" width="5em" height="5em" viewBox="0 0 214 214" xmlns="http://www.w3.org/2000/svg">
-                    <title id="fuzzy-logic-logo">Fuzzy Logic</title>
-                    <path fill="#F2F1F0" d="M.432 107.264C.432 48.556 48.027.966 106.728.966c58.71 0 106.304 47.59 106.304 106.298 0 58.713-47.594 106.304-106.304 106.304C48.027 213.568.432 165.977.432 107.264" />
-                    <path fill="#343534" d="M148.82 113.583V81.63l27.658 15.981-27.658 15.972zm-3.854-31.953v35.29c0 .687.368 1.325.967 1.668.295.181.626.257.956.257.339 0 .67-.076.968-.257l30.55-17.646.014 34.177-63.058 36.41-.005-72.809 29.608-17.09zm-41.765 7.841L50.39 58.978 79.98 41.89l63.06 36.407-29.605 17.089-10.234-5.915zm6.364 46.756l-27.657 15.974v-31.958l27.657 15.984zm-28.623-20.984a1.947 1.947 0 00-1.924 0 1.95 1.95 0 00-.961 1.673v35.285l-29.604-17.082.007-72.808 63.049 36.409-.014 34.175-30.553-17.652zm103.487-17.635c0-1.468-.78-2.816-2.054-3.548L82.031 36.117a4.115 4.115 0 00-2.051-.544c-.706 0-1.412.178-2.046.544L44.605 55.361a4.089 4.089 0 00-2.169 3.612l-.012 77.257c0 1.46.779 2.819 2.055 3.548l33.455 19.315c.634.362 1.34.542 2.046.542.706 0 1.412-.18 2.051-.542l27.294-15.767.019 31.544a4.086 4.086 0 004.094 4.087c.713 0 1.413-.178 2.051-.543l66.904-38.636a4.107 4.107 0 002.051-3.551l-.015-38.619z" />
-                  </svg>
-                </a>
-                <nav aria-label="page" class="skip-links">
-                  <a href="#primary-content">Main content</a>
-                  <a href="#global-footer">Footer and Navigation</a>
-                </nav>
-                <nav aria-label="site" class="header-menu">
-                  {% set navPages = collections.all | eleventyNavigation %}
-                  <ul class="list-custom">
-                  {%- for entry in navPages %}
-                    <li id="nav-{{ entry.title | lower }}">
-                      <a{% if entry.url == page.url %} aria-current="page"{% endif %} href="{{ entry.url | url }}">{{ entry.title }}</a>
-                    </li>
-                  {%- endfor %}
-                  </ul>
-                </nav>
-                <div class="search-ui invisible">
-                  <form class="form-custom global-search-form" role="search" aria-label="Unique identifier goes here" action="https://www.google.co.uk/search" method="get">
-                    <input type="hidden" name="q" id="q" value="site:{{metadata.url}}" />
-                    <div class="form-group">
-                      <label class="a11y-only" for="search-str">Search for</label>
-                      <input type="search" id="search-str" name="q" class="search-str" aria-label="Search for...">
-                    </div>
-                  </form>
-                  {# I don’t like the this empty element being in the server-rendered HTML #}
-                  {# <ol class="search-results" aria-live="polite"></ol> #}
-                </div>
-              </div>
-            </div>
-          </header>
-
-          <main id="primary-content" class="primary-content{% if templateClass %} {{ templateClass }}{% endif %}">
-            {{ content | safe }}
-          </main>
-
-          <footer aria-label="site" id="global-footer" class="global-footer">
-
-            <div class="stack global-footer-contents-wrap">
-
-              <div class="cluster footer-menu">
-                <div> <!-- style="justify-content: space-between;" -->
-                  <div class="cluster">
-                    <ul id="footer-menu" class="footer-menu">
-                      <li><a href="/">Home</a></li>
-                      <li><a href="/posts/">Journal</a></li>
-                      <li><a href="/about/">About</a></li>
-                      <li><a href="/bookshelf/">Bookshelf</a></li>
-                      <li><a href="/inspiration/">Inspiration</a></li>
-                      <li><a href="/photos/">Photos</a></li>
-                      <li><a href="{{ '/sitemap/' | url }}">Sitemap</a></li>
-                      <li><a href="{{ metadata.feed.url | url }}">RSS</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-
-              <div class="stack">
-
-                <div class="footer-grid">
-
-                  <div class="stack">
-                    <section>
-                      <h3>About</h3>
-                      <p><a href="{{ metadata.url | url }}">Fuzzy Logic</a> is the personal website of Laurence Hughes, a Glasgow-based front-end web developer and producer in <a href="http://nuclearfami.ly">The Nuclear Family</a>.</p>
-                      <p>If you’re interested, read more <a href="{{ '/about/' | url }}">about me</a>.</p>
-                    </section>
-
-                    <section>
-                      <h3>How to reach me</h3>
-                      <p><em>You’ll find me in the club…</em> increasingly rarely and more likely tweeting on <a rel="me" href="https://twitter.com/fuzzylogicx">Twitter</a>; coding on <a rel="me" href="https://github.com/fuzzylogicxx">Github</a> and <a rel="me" href="https://codepen.io/fuzzylogicx/">CodePen</a>; or <a rel="me" href="https://soundcloud.com/the_nuclear_family">sharing</a> <a rel="me" href="https://soundcloud.com/fuzzylogicx">music</a> on Soundcloud.</p>
-                      <p>Get in touch <a rel="me" href="https://twitter.com/fuzzylogicx">@fuzzylogicx</a> or <a href="mailto:&#108;&#097;&#117;&#114;&#101;&#110;&#099;&#101;&#064;&#102;&#117;&#122;&#122;&#121;&#108;&#111;&#103;&#105;&#099;&#046;&#109;&#101;">email me</a>.</p>
-                    </section>
-
-                    <section>
-                      <h3>Colophon</h3>
-                      <p>This is Fuzzy Logic v3: hand-coded from a base of <a href="https://fuzzylogicxx.github.io/sofrito/">Sofrito</a>, statically generated using <a href="https://www.11ty.io/">Eleventy</a>, open sourced on <a href="https://github.com/fuzzylogicxx/fuzzylogic">Github</a> (<a href="https://github.com/fuzzylogicxx/fuzzylogic/blob/v3/{{ page.inputPath }}">edit page?</a>) and hosted on <a href="https://www.netlify.com/">Netlify</a>.</p>
-                      <p>Type is set in <a href="https://github.com/adobe-fonts/source-sans-pro">Source Sans Pro</a>.</p>
-                    </section>
-                  </div>
-
-                </div>
-
-                <p class="copyright centre-with-centred-text">&copy; 2017–2021 <a href="{{ metadata.url | url }}">Laurence Hughes</a></p>
-
-              </div>
-
-            </div>
-
-          </footer>
-
-        </div> <!-- end .stack -->
-
-      </div> <!-- end .container -->
-
-    </div> <!-- end .stack -->
 
     <!-- SVGs used repeatedly on the page are better defined as symbols, then <use>d -->
     <svg width="0" height="0" style="display: none;">
