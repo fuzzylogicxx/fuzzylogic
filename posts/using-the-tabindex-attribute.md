@@ -31,8 +31,6 @@ Given that [the browser issues seem to be mostly resolved](https://axesslab.com/
 
 Applying `tabindex="0"` to an element inserts it into the tabbing order based on its position in the source. It is not necessary to apply this to an interactive element such as a button or checkbox since they are focusable by default. You should use it sparingly (because it requires care to ensure accessibility) but you might use it on a custom element which needs to be interactive under certain circumstances such as [the horizontally scrollable container in a Data Table](https://inclusive-components.design/data-tables/).
 
-A related note on tabbing order is that it’s not a great idea to move elements around with CSS such that their visual order differs from their source order, because this creates a disconnect between tabbing order and visual order. This could be confusing for a sighted person who navigates by keyboard. CSS Grid and Flexbox offer this ability through properties such as `order`, `flex-direction` and `grid-auto-flow` however as Rachel Andrew and others have suggested, [creating this kind of disconnect is to be avoided](https://rachelandrew.co.uk/archives/2019/06/04/grid-content-re-ordering-and-accessibility/). It might be OK when the elements (and their children) are non-focusable (for example re-ordering two `div`s) but avoid applying it to focusable elements like navigation links.
-
 ## tabindex="1+"
 
 This imposes a tab order on the content that bears no resemblance to the expected tab order. It’s an antipattern. Don’t do it.
