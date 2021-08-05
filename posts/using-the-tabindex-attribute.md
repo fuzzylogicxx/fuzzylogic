@@ -18,7 +18,7 @@ Léonie offers the example of a list of form errors which we might want to set f
   <details>
     <summary>Aside regarding Skip Links</summary>
 
-Incidentally, I sometimes see people including `tabindex="-1"` on their `main` element. This is a special use case in support of “skip links”, the solution for helping keyboard users and users of Assistive Technologies avoid having to tab through logo and navigation elements and instead skip directly to the main content. As [Ben Myers writes](https://benmyers.dev/blog/skip-links/), the inclusion of the `tabindex` attribute is a _belt and braces_ action to ensure the skip experience is not purely visual but actually sets focus properly so as to be predictable for keyboard and screen reader users.
+Incidentally, I sometimes see people including `tabindex="-1"` on their `main` element. This is a special use case in support of “skip links”, the solution for helping keyboard users and users of Assistive Technologies avoid having to tab through logo and navigation elements and instead skip directly to the main content. As [Ben Myers writes](https://benmyers.dev/blog/skip-links/), the inclusion of the `tabindex` attribute is a _belt and braces_ action to ensure the skip experience is not just a visual “jump” but actually sets focus properly.
 
 > When a user follows our skip link, we want their keyboard focus to move to our target. Modern browsers will move that focus for us, but some older browsers will only move the focus if the target is focusable. If it’s not focusable, the page will scroll down but the user's focus will still be at the top of the page.
 
