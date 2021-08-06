@@ -42,5 +42,5 @@ Here’s an example. Smashing Magazine’s blog articles begin with a _quick sum
 
 Refs:
 
-* [https://www.scottohara.me/blog/2021/07/16/section.html](https://www.scottohara.me/blog/2021/07/16/section.html "https://www.scottohara.me/blog/2021/07/16/section.html")
-* [https://www.smashingmagazine.com/2020/01/html5-article-section/](https://www.smashingmagazine.com/2020/01/html5-article-section/ "https://www.smashingmagazine.com/2020/01/html5-article-section/")
+* [Accessibility of the section element](https://www.scottohara.me/blog/2021/07/16/section.html), by Scott O’Hara
+* [Why you should choose HTML5 `article` over `section`](https://www.smashingmagazine.com/2020/01/html5-article-section/), by Bruce Lawson
