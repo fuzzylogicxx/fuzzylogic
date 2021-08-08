@@ -5,13 +5,31 @@
       <div>
         <span class="post-type text-icon-pair">
         {% if (post.data.tags[1] === 'link') -%}
-          <svg aria-hidden="true" focusable="false" width="1em" height="1em"><use xlink:href="#icon-bookmark"></use></svg>
+          <svg
+            class="icon"
+            aria-hidden="true"
+            focusable="false"
+            width="1em"
+            height="1em"
+          ><use xlink:href="#icon-bookmark"></use></svg>
           <span>Bookmark</span>
         {% elif(post.data.tags[1] === 'note') -%}
-          <svg aria-hidden="true" focusable="false" width="1em" height="1em"><use xlink:href="#icon-note"></use></svg>
+          <svg
+            class="icon"
+            aria-hidden="true"
+            focusable="false"
+            width="1em"
+            height="1em"
+          ><use xlink:href="#icon-note"></use></svg>
           <span>Note</span>
         {% else -%}
-          <svg aria-hidden="true" focusable="false" width="1em" height="1em"><use xlink:href="#icon-entry"></use></svg>
+          <svg
+            class="icon"
+            aria-hidden="true"
+            focusable="false"
+            width="1em"
+            height="1em"
+          ><use xlink:href="#icon-entry"></use></svg>
           <span>Entry</span>
         {% endif -%}
         </span>
@@ -40,7 +58,15 @@
       </figure>
       {% endif %}
       {% if (post.data.linkTarget) -%}
-      <p class="bookmark-options"><a href="{{ post.url | url }}">Read my notes</a> / <a class="text-icon-pair offsite" href="{{ post.data.linkTarget | url }}"><span>Visit original</span> <svg aria-hidden="true" focusable="false" width="1em" height="1em"><use xlink:href="#icon-offsite"></use></svg></a></p>
+      <p class="bookmark-options">
+        <a href="{{ post.url | url }}">Read my notes</a> / <a class="text-icon-pair offsite" href="{{ post.data.linkTarget | url }}"><span>Visit original</span>
+          <svg
+            class="icon"
+            aria-hidden="true"
+            focusable="false"
+            width="1em"
+            height="1em"
+          ><use xlink:href="#icon-offsite"></use></svg></a></p>
       {%- else -%}
       <p><a href="{{ post.url | url }}">Read entry »</a></p>
       {% endif %}
@@ -69,13 +95,31 @@
           <div>
             <span class="post-type text-icon-pair">
             {% if (post.data.tags[1] === 'link') -%}
-              <svg aria-hidden="true" focusable="false" width="1em" height="1em"><use xlink:href="#icon-bookmark"></use></svg>
+              <svg
+                class="icon"
+                aria-hidden="true"
+                focusable="false"
+                width="1em"
+                height="1em"
+              ><use xlink:href="#icon-bookmark"></use></svg>
               <span>Bookmark</span>
             {% elif(post.data.tags[1] === 'note') -%}
-              <svg aria-hidden="true" focusable="false" width="1em" height="1em"><use xlink:href="#icon-note"></use></svg>
+          <svg
+            class="icon"
+            aria-hidden="true"
+            focusable="false"
+            width="1em"
+            height="1em"
+          ><use xlink:href="#icon-note"></use></svg>
               <span>Note</span>
             {% else -%}
-              <svg aria-hidden="true" focusable="false" width="1em" height="1em"><use xlink:href="#icon-entry"></use></svg>
+          <svg
+            class="icon"
+            aria-hidden="true"
+            focusable="false"
+            width="1em"
+            height="1em"
+          ><use xlink:href="#icon-entry"></use></svg>
               <span>Entry</span>
             {% endif -%}
             </span>

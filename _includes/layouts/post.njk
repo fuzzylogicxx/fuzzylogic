@@ -10,13 +10,33 @@ templateClass: post-main
       <div>
         <span class="post-type text-icon-pair">
         {% if (tags[1] === 'link') -%}
-          <svg aria-hidden="true" focusable="false" width="1em" height="1em"><use xlink:href="#icon-bookmark"></use></svg>
+          <svg
+            class="icon"
+            aria-hidden="true"
+            focusable="false"
+            width="1em"
+            height="1em"
+          >
+            <use xlink:href="#icon-bookmark"></use>
+          </svg>
           <span>Bookmark</span>
         {% elif(tags[1] === 'note') -%}
-          <svg aria-hidden="true" focusable="false" width="1em" height="1em"><use xlink:href="#icon-note"></use></svg>
+          <svg
+            class="icon"
+            aria-hidden="true"
+            focusable="false"
+            width="1em"
+            height="1em"
+          ><use xlink:href="#icon-note"></use></svg>
           <span>Note</span>
         {% else -%}
-          <svg aria-hidden="true" focusable="false" width="1em" height="1em"><use xlink:href="#icon-entry"></use></svg>
+          <svg
+            class="icon"
+            aria-hidden="true"
+            focusable="false"
+            width="1em"
+            height="1em"
+          ><use xlink:href="#icon-entry"></use></svg>
           <span>Entry</span>
         {% endif -%}
         </span>
@@ -31,7 +51,13 @@ templateClass: post-main
       {% if linkTarget %}
       <a class="btn btn-icon" href="{{ linkTarget }}">
         <span class="btn-icon-text">Direct Link</span>
-        <svg class="text-icon-pair-icon" aria-hidden="true" focusable="false" width="1em" height="1em"><use xlink:href="#icon-offsite"></use></svg>
+          <svg
+            class="icon"
+            aria-hidden="true"
+            focusable="false"
+            width="1em"
+            height="1em"
+          ><use xlink:href="#icon-offsite"></use></svg>
       </a>
       {% endif %}
 

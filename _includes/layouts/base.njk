@@ -1,3 +1,4 @@
+{%- from "system/component.njk" import component -%}
 <!doctype html>
 <html dir="ltr" lang="en-GB">
   <head>
@@ -85,8 +86,15 @@
   </head>
   <body{% if bodyclass %} class="{{ bodyclass }}"{% endif %}>
 
+    {{ component('icon', {
+      name: 'note',
+      text: 'Note'
+    }) }}
+
     <p>I’m currently updating my website. Sorry for things looking a little rough temporarily.</p>
-    <a class="skip-link" href="#primary-content">Skip to main content</a>
+
+    <a class="skip-link" href="#skip-target">Skip to main content</a>
+
     <header class="global-header">
       <a href="{{ '/' | url }}" class="global-header__logo">Fuzzy Logic</a>
       <nav class="global-header__menu">
@@ -100,6 +108,65 @@
         </ul>
       </nav>
     </header>
+
+    <main id="skip-target" class="primary-content{% if templateClass %} {{ templateClass }}{% endif %}">
+      {{ content | safe }}
+    </main>
+
+    <footer aria-label="site" id="global-footer" class="global-footer">
+
+      <div class="stack global-footer-contents-wrap">
+
+        <div class="cluster footer-menu">
+          <div> <!-- style="justify-content: space-between;" -->
+            <div class="cluster">
+              <ul id="footer-menu" class="footer-menu">
+                <li><a href="/">Home</a></li>
+                <li><a href="/posts/">Journal</a></li>
+                <li><a href="/about/">About</a></li>
+                <li><a href="/bookshelf/">Bookshelf</a></li>
+                <li><a href="/inspiration/">Inspiration</a></li>
+                <li><a href="/photos/">Photos</a></li>
+                <li><a href="{{ '/sitemap/' | url }}">Sitemap</a></li>
+                <li><a href="{{ metadata.feed.url | url }}">RSS</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="stack">
+
+          <div class="footer-grid">
+
+            <div class="stack">
+              <section>
+                <h3>About</h3>
+                <p><a href="{{ metadata.url | url }}">Fuzzy Logic</a> is the personal website of Laurence Hughes, a Glasgow-based front-end web developer and producer in <a href="http://nuclearfami.ly">The Nuclear Family</a>.</p>
+                <p>If you’re interested, read more <a href="{{ '/about/' | url }}">about me</a>.</p>
+              </section>
+
+              <section>
+                <h3>How to reach me</h3>
+                <p><em>You’ll find me in the club…</em> increasingly rarely and more likely tweeting on <a rel="me" href="https://twitter.com/fuzzylogicx">Twitter</a>; coding on <a rel="me" href="https://github.com/fuzzylogicxx">Github</a> and <a rel="me" href="https://codepen.io/fuzzylogicx/">CodePen</a>; or <a rel="me" href="https://soundcloud.com/the_nuclear_family">sharing</a> <a rel="me" href="https://soundcloud.com/fuzzylogicx">music</a> on Soundcloud.</p>
+                <p>Get in touch <a rel="me" href="https://twitter.com/fuzzylogicx">@fuzzylogicx</a> or <a href="mailto:&#108;&#097;&#117;&#114;&#101;&#110;&#099;&#101;&#064;&#102;&#117;&#122;&#122;&#121;&#108;&#111;&#103;&#105;&#099;&#046;&#109;&#101;">email me</a>.</p>
+              </section>
+
+              <section>
+                <h3>Colophon</h3>
+                <p>This is Fuzzy Logic v3: hand-coded from a base of <a href="https://fuzzylogicxx.github.io/sofrito/">Sofrito</a>, statically generated using <a href="https://www.11ty.io/">Eleventy</a>, open sourced on <a href="https://github.com/fuzzylogicxx/fuzzylogic">Github</a> (<a href="https://github.com/fuzzylogicxx/fuzzylogic/blob/v3/{{ page.inputPath }}">edit page?</a>) and hosted on <a href="https://www.netlify.com/">Netlify</a>.</p>
+                <p>Type is set in <a href="https://github.com/adobe-fonts/source-sans-pro">Source Sans Pro</a>.</p>
+              </section>
+            </div>
+
+          </div>
+
+          <p class="copyright centre-with-centred-text">&copy; 2017–2021 <a href="{{ metadata.url | url }}">Laurence Hughes</a></p>
+
+        </div>
+
+      </div>
+
+    </footer>
 
 
 

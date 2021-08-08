@@ -1,1 +1,21 @@
+// Box-sizing
+// Inheriting box-sizing is best practice
+// https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+html {
+  box-sizing: border-box;
+}
 
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+// end best box-sizing
+
+.icon {
+  height: 0.75em;
+  height: 1cap;
+  width: 0.75em;
+  width: 1cap;
+  vertical-align: -0.1em;
+}
