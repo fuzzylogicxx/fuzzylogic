@@ -24,3 +24,5 @@ Trys’s solution allows us to render components like so:
 ```
 
 </figure>
+
+**Update, 8th Aug 2021**: when I tried implementing this I found that it results in errors when attempting to render components anywhere other than on the base template where Trys recommended including the `import` line. The workaround—as [Paul Salaets points out](https://github.com/trys/11ty-component-macro/issues/1)—is to include the `import` at the top of every page-level template (`index.njk`, `archive.njk` etc) that uses the component macro.
