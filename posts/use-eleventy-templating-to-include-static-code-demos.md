@@ -4,6 +4,7 @@ title: Use Eleventy templating to include static code demos
 description: Stephanie Eckles explains how to use Eleventy to create a page that displays
   multiple code demos
 tags:
+- link
 - demo
 - code
 - designsystems
