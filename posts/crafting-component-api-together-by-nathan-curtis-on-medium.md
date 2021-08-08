@@ -4,7 +4,7 @@ title: Crafting Component API, Together (by Nathan Curtis, on Medium)
 description: Nathan (of EightShapes) suggests how to unify anatomy and props across
   code and design tools
 tags:
-- note
+- link
 - components
 - design
 - designsystems
