@@ -18,6 +18,8 @@ renderData:
   title: Tagged “{{ tag }}”
 permalink: /tags/{{ tag }}/
 ---
+
+{%- from "system/component.njk" import component -%}
 {% set postslist = collections[ tag ] | reverse %}
 {% include "postslist.njk" %}
 

@@ -1,145 +1,42 @@
-<section class="h-feed centre">
-{% for post in postslist %}
-  <article class="h-entry prose">
-    <header>
-      <div>
-        <span class="post-type text-icon-pair">
-        {% if (post.data.tags[1] === 'link') -%}
-          <svg
-            class="icon"
-            aria-hidden="true"
-            focusable="false"
-            width="1em"
-            height="1em"
-          ><use xlink:href="#icon-bookmark"></use></svg>
-          <span>Bookmark</span>
-        {% elif(post.data.tags[1] === 'note') -%}
-          <svg
-            class="icon"
-            aria-hidden="true"
-            focusable="false"
-            width="1em"
-            height="1em"
-          ><use xlink:href="#icon-note"></use></svg>
-          <span>Note</span>
-        {% else -%}
-          <svg
-            class="icon"
-            aria-hidden="true"
-            focusable="false"
-            width="1em"
-            height="1em"
-          ><use xlink:href="#icon-entry"></use></svg>
-          <span>Entry</span>
-        {% endif -%}
-        </span>
-        <time class="dt-published" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
-        {% if(post.data.tags[1] === 'note') -%} <span>·</span> <a href="{{ post.url | url }}">{{ post.date | readableTime }}</a> <span>·</span> {{ post.data.location }}</span>{% endif -%}
-      </div>
-      {% if (post.data.tags[1] !== 'note' or post.data.noteWithTitle) -%}
-        {% if (post.data.linkTarget) -%}
-        <h3 class="feed-entry-title"><a href="{{ post.data.linkTarget | url }}" class="text-icon-pair offsite">{{ post.data.title }}</a></h3>
-        {% else %}
-        <h3 class="feed-entry-title"><a rel="bookmark" class="p-name u-url" href="{{ post.url | url }}">{{ post.data.title }}</a></h3>
-        {% endif %}
-      {% else -%}
-        {# <p><a href="{{ post.url | url }}">{{ post.date | readableTime }}</a> <span>·</span> {{ post.data.location }}</span></p> #}
-      {% endif -%}
-    </header>
-    <div class="e-content">
-    {% if (post.data.page.excerpt) -%}
-      {%- set excerpt = post.data.page.excerpt -%}{{ excerpt | markdownStringToHTML | safe }}
-      {% if post.data.mainImage.url and (app.environment == "production") %}
-      <figure>
-      {%- if post.data.mainImage.isAnchor %}<a href="{{ post.url | url }}">{%- endif %}
-      {% respimg "" + post.data.mainImage.url + "", "" + post.data.mainImage.alt + "", "(min-width: 1600px) 646px, (min-width: 700px) 612px, 91.58vw", post.data.mainImage.aspectRatioWidth, post.data.mainImage.aspectRatioHeight %}
-      {%- if post.data.mainImage.isAnchor %}</a>{%- endif %}
-      {%- if post.data.mainImage.figcaption %}<figcaption>{{ post.data.mainImage.figcaption }}</figcaption>{%- endif %}
-      </figure>
-      {% endif %}
-      {% if (post.data.linkTarget) -%}
-      <p class="bookmark-options">
-        <a href="{{ post.url | url }}">Read my notes</a> / <a class="text-icon-pair offsite" href="{{ post.data.linkTarget | url }}"><span>Visit original</span>
-          <svg
-            class="icon"
-            aria-hidden="true"
-            focusable="false"
-            width="1em"
-            height="1em"
-          ><use xlink:href="#icon-offsite"></use></svg></a></p>
-      {%- else -%}
-      <p><a href="{{ post.url | url }}">Read entry »</a></p>
-      {% endif %}
-    {%- else -%}
-      {{ post.templateContent | markdownStringToHTML | safe }}
-    {%- endif %}
-    </div>
-    {# <footer class="stack">
-      <div class="cluster">
-        <ul class="tags">
-        {% for tag in post.data.tags %}
-          {%- if (tag != "posts") and (tag != "link") and (tag != "note") and (tag != "entry") -%}
-          {% set tagUrl %}/tags/{{ tag }}/{% endset %}
-          <li><a rel="tag" href="{{ tagUrl | url }}" class="tag">{{ tag }}</a></li>
-          {%- endif -%}
-        {% endfor %}
-        </ul>
-      </div>
-    </footer> #}
-  </article>
-{% endfor %}
-  <div class="stack">
-    {% for post in postslist %}
-      <article class="h-entry stack prose">
+<div class="">
+  <ol role="list">
+  {% for post in postslist %}
+    <li>
+      <article itemscope itemtype="http://schema.org/BlogPosting">
         <header>
-          <div>
-            <span class="post-type text-icon-pair">
-            {% if (post.data.tags[1] === 'link') -%}
-              <svg
-                class="icon"
-                aria-hidden="true"
-                focusable="false"
-                width="1em"
-                height="1em"
-              ><use xlink:href="#icon-bookmark"></use></svg>
-              <span>Bookmark</span>
-            {% elif(post.data.tags[1] === 'note') -%}
-          <svg
-            class="icon"
-            aria-hidden="true"
-            focusable="false"
-            width="1em"
-            height="1em"
-          ><use xlink:href="#icon-note"></use></svg>
-              <span>Note</span>
-            {% else -%}
-          <svg
-            class="icon"
-            aria-hidden="true"
-            focusable="false"
-            width="1em"
-            height="1em"
-          ><use xlink:href="#icon-entry"></use></svg>
-              <span>Entry</span>
-            {% endif -%}
-            </span>
-            <time class="dt-published" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
-            {% if(post.data.tags[1] === 'note') -%} <span>·</span> <a href="{{ post.url | url }}">{{ post.date | readableTime }}</a> <span>·</span> {{ post.data.location }}</span>{% endif -%}
-          </div>
+          {% switch post.data.tags[1] %}
+            {% case "link" %}
+              {{ component('icon', {
+                name: 'bookmark',
+                text: 'Bookmark'
+              }) }}
+            {% case "note" %}
+              {{ component('icon', {
+                name: 'note',
+                text: 'Note'
+              }) }}
+            {% default %}
+              {{ component('icon', {
+                name: 'entry',
+                text: 'Entry'
+              }) }}
+          {% endswitch %}
+          <time itemprop="dateCreated pubdate datePublished" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
+          {% if(post.data.tags[1] === 'note') -%} <span>·</span> <a href="{{ post.url | url }}">{{ post.date | readableTime }}</a> <span>·</span> {{ post.data.location }}</span>{% endif -%}
           {% if (post.data.tags[1] !== 'note' or post.data.noteWithTitle) -%}
+          <h3 itemprop="headline">
             {% if (post.data.linkTarget) -%}
-            <h3 class="feed-entry-title"><a href="{{ post.data.linkTarget | url }}" class="text-icon-pair offsite">{{ post.data.title }}</a></h3>
+            <a href="{{ post.data.linkTarget | url }}" class="text-icon-pair offsite">{{ post.data.title }}</a>
             {% else %}
-            <h3 class="feed-entry-title"><a rel="bookmark" class="p-name u-url" href="{{ post.url | url }}">{{ post.data.title }}</a></h3>
+            <a rel="bookmark" href="{{ post.url | url }}">{{ post.data.title }}</a>
             {% endif %}
-          {% else -%}
-            {# <p><a href="{{ post.url | url }}">{{ post.date | readableTime }}</a> <span>·</span> {{ post.data.location }}</span></p> #}
+          </h3>
           {% endif -%}
         </header>
-        <div class="e-content stack">
+        <div itemprop="abstract">
         {% if (post.data.page.excerpt) -%}
           {%- set excerpt = post.data.page.excerpt -%}{{ excerpt | markdownStringToHTML | safe }}
-          {% if post.data.mainImage.url and (app.environment == "prod") %}
+          {% if post.data.mainImage.url and (app.environment == "production") %}
           <figure>
           {%- if post.data.mainImage.isAnchor %}<a href="{{ post.url | url }}">{%- endif %}
           {% respimg "" + post.data.mainImage.url + "", "" + post.data.mainImage.alt + "", "(min-width: 1600px) 646px, (min-width: 700px) 612px, 91.58vw", post.data.mainImage.aspectRatioWidth, post.data.mainImage.aspectRatioHeight %}
@@ -148,7 +45,13 @@
           </figure>
           {% endif %}
           {% if (post.data.linkTarget) -%}
-          <p class="bookmark-options"><a href="{{ post.url | url }}">Read my notes</a> / <a class="text-icon-pair offsite" href="{{ post.data.linkTarget | url }}"><span>Visit original</span> <svg aria-hidden="true" focusable="false" width="1em" height="1em"><use xlink:href="#icon-offsite"></use></svg></a></p>
+          <p class="bookmark-options">
+            <a href="{{ post.url | url }}">Read my notes</a> /
+            <a class="text-icon-pair offsite" href="{{ post.data.linkTarget | url }}">
+              <span>Visit original</span>
+              {{ component('icon', { name: 'offsite' }) }}
+            </a>
+          </p>
           {%- else -%}
           <p><a href="{{ post.url | url }}">Read entry »</a></p>
           {% endif %}
@@ -169,6 +72,7 @@
           </div>
         </footer> #}
       </article>
-    {% endfor %}
-  </div>
-</section>
+    </li>
+  {% endfor %}
+  </ol>
+</div>

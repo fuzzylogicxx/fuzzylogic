@@ -1,3 +1,27 @@
+// Theme
+
+:root {
+  --measure: 60ch;
+}
+
+// Ensuring a readable measure
+// Achieved via exception-based styling
+// Ref: https://every-layout.dev/rudiments/axioms/
+
+* {
+  max-width: var(--measure);
+}
+
+html,
+body,
+div,
+header,
+nav,
+main,
+footer {
+  max-width: none;
+}
+
 // Box-sizing
 // Inheriting box-sizing is best practice
 // https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
@@ -11,6 +35,21 @@ html {
   box-sizing: inherit;
 }
 // end best box-sizing
+
+// Fixing the accessibility of custom-styled lists
+// https://www.scottohara.me/blog/2019/01/12/lists-and-safari.html
+
+[role=list] {
+  list-style: none;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/***
+* Icon
+***/
 
 .icon {
   height: 0.75em;

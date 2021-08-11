@@ -11,6 +11,8 @@ pagination:
   reverse: true
   alias: posts
 ---
+
+{%- from "system/component.njk" import component -%}
 {% set postslist = posts %}
 {% include "postslist.njk" %}
 

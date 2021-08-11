@@ -6,14 +6,15 @@ eleventyNavigation:
 bodyclass: page-home
 ---
 
+{%- from "system/component.njk" import component -%}
 {% set postslist = collections.posts | head(-5) | reverse %}
 
 <div class="stack">
 
-  <h2 class="posts-list-group-heading">Latest Posts</h2>
+  <h2>Latest Posts</h2>
 
   {% include "postslist.njk" %}
 
-  <p class="browse-more"><a href="{{ '/posts/' | url }}">Browse more posts</a></p>
+  <p><a href="{{ '/posts/' | url }}">Browse more posts</a></p>
 
 </div>

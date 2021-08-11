@@ -2,48 +2,33 @@
 layout: layouts/base.njk
 templateClass: post-main
 ---
+{%- from "system/component.njk" import component -%}
+
 <div class=""> <!-- container -->
 
-  <article class="h-entry stack prose centre" itemtype="http://schema.org/BlogPosting">
+  <article class="" itemtype="http://schema.org/BlogPosting">
 
     <header class="stack">
-      <div>
-        <span class="post-type text-icon-pair">
-        {% if (tags[1] === 'link') -%}
-          <svg
-            class="icon"
-            aria-hidden="true"
-            focusable="false"
-            width="1em"
-            height="1em"
-          >
-            <use xlink:href="#icon-bookmark"></use>
-          </svg>
-          <span>Bookmark</span>
-        {% elif(tags[1] === 'note') -%}
-          <svg
-            class="icon"
-            aria-hidden="true"
-            focusable="false"
-            width="1em"
-            height="1em"
-          ><use xlink:href="#icon-note"></use></svg>
-          <span>Note</span>
-        {% else -%}
-          <svg
-            class="icon"
-            aria-hidden="true"
-            focusable="false"
-            width="1em"
-            height="1em"
-          ><use xlink:href="#icon-entry"></use></svg>
-          <span>Entry</span>
-        {% endif -%}
-        </span>
-        <time class="dt-published" itemprop="datePublished" datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time>
-        {% if(tags[1] === 'note') -%} <span>·</span> {{ page.date | readableTime }} <span>·</span> {{ location }}</span>{% endif -%}
-      </div>
-      {%- if (tags[1] !== 'note') and (title) -%}<h1 class="p-name" itemprop="headline">{{ title }}</h1>{%- endif -%}
+      {% switch post.data.tags[1] %}
+        {% case "link" %}
+          {{ component('icon', {
+            name: 'bookmark',
+            text: 'Bookmark'
+          }) }}
+        {% case "note" %}
+          {{ component('icon', {
+            name: 'note',
+            text: 'Note'
+          }) }}
+        {% default %}
+          {{ component('icon', {
+            name: 'entry',
+            text: 'Entry'
+          }) }}
+      {% endswitch %}
+      <time class="dt-published" itemprop="dateCreated pubdate datePublisheddatePublished" datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time>
+      {% if(tags[1] === 'note') -%} <span>·</span> {{ page.date | readableTime }} <span>·</span> {{ location }}</span>{% endif -%}
+      {%- if (tags[1] !== 'note') and (title) -%}<h1 itemprop="headline">{{ title }}</h1>{%- endif -%}
     </header>
 
     <div class="e-content stack {{ "article-type-listing" if isList }}" itemprop="articleBody">
@@ -51,13 +36,7 @@ templateClass: post-main
       {% if linkTarget %}
       <a class="btn btn-icon" href="{{ linkTarget }}">
         <span class="btn-icon-text">Direct Link</span>
-          <svg
-            class="icon"
-            aria-hidden="true"
-            focusable="false"
-            width="1em"
-            height="1em"
-          ><use xlink:href="#icon-offsite"></use></svg>
+        {{ component('icon', { name: 'offsite' }) }}
       </a>
       {% endif %}
 
@@ -70,7 +49,7 @@ templateClass: post-main
       <h2 class="h3">Related topics</h2>
 
       <div class="cluster">
-        <ul class="tags">
+        <ul role="list" class="tags">
         {% for tag in tags %}
           {%- if (tag != "posts") and (tag != "link") and (tag != "note") and (tag != "entry") -%}
           {% set tagUrl %}/tags/{{ tag }}/{% endset %}
@@ -80,7 +59,7 @@ templateClass: post-main
         </ul>
       </div>
 
-      <nav class="traverse">
+      <nav aria-label="Posts navigation" class="traverse">
         {%- set previousPost = collections.posts | getPreviousCollectionItem(page) %}
         {%- if previousPost %}<a rel="prev" href="{{ previousPost.url | url }}"><span aria-hidden="true">← </span>Previous post</a></li>{% endif %}
         {%- set nextPost = collections.posts | getNextCollectionItem(page) %}
