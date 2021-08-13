@@ -77,4 +77,4 @@ How do we move forward?
 
 Rachel Andrew argues that this problem needs addressed at a CSS level; that developers should be able to set the tab and reading order to follow the visual rather than source order under certain circumstances.
 
-Until that becomes a CSS reality we should continue to be judicious in our usage to ensure we don’t break user expectations. We can also use tools like Chrome DevTool’s Source Order checker (DevTools > Elements > Accessibility) to check our work.
+Until that becomes a CSS reality we should continue to be judicious in our usage to ensure we don’t break user expectations. We can also use tools like the Source Order Viewer in Chrome DevTools (DevTools > Elements > Accessibility) to check our work.
