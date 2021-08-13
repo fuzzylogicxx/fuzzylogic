@@ -1,8 +1,14 @@
-// Theme
+/****************
+* Theme
+*****************/
 
 :root {
   --measure: 60ch;
 }
+
+/****************
+* Element styles
+*****************/
 
 // Ensuring a readable measure
 // Achieved via exception-based styling
@@ -25,6 +31,7 @@ footer {
 // Box-sizing
 // Inheriting box-sizing is best practice
 // https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+
 html {
   box-sizing: border-box;
 }
@@ -34,7 +41,6 @@ html {
 *:after {
   box-sizing: inherit;
 }
-// end best box-sizing
 
 // Fixing the accessibility of custom-styled lists
 // https://www.scottohara.me/blog/2019/01/12/lists-and-safari.html
@@ -47,9 +53,78 @@ html {
   padding-right: 0;
 }
 
-/***
+/****************
+* Utilities
+*****************/
+
+// Text which should not be hyphenated
+
+.u-no-hyphens {
+  hyphens: none;
+}
+
+// Hiding elements
+// (https://fuzzylogic.me/posts/how-to-hide-elements-for-different-browsing-contexts/)
+
+// Hide from all contexts
+
+.u-hidden-from-all,
+[hidden] {
+  display: none !important;
+}
+
+// Hide visually but not from keyboard navigation nor from screen readers.
+// For now I’m sticking with the Scott O’Hara method
+// https://www.scottohara.me/blog/2017/04/14/inclusively-hidden.html
+// …rather than the .text-assistive method here https://css-tricks.com/a-deep-dive-on-skipping-to-content/
+
+.u-visually-hidden:not(:focus):not(:active) {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+// An alternative visually hidden technique.
+// …for special cases when we want to animate visually hidden content into view on focus.
+// The best example being a “Skip to content” pattern.
+// Apply this to the container (which might be a ul, or a div, depending on number of inner items)
+
+.u-hidden-off-screen {
+  left: -100vw;
+  position: absolute;
+
+  // Fix the container’s inner focusable elements (e.g. skip links) to top of the page,
+  // but with an initial negative Y-axis value so they’re off-screen until animated.
+
+  &__item {
+    background: #000;
+    color: #fff;
+    left: 0;
+    padding: .75em;
+    position: fixed;
+    top: 0;
+    transform: translateY(-10em);
+    transition: transform .2s ease-in-out;
+  }
+
+  // Upon focus of inner item, transition
+  // it into view by setting it's Y-axis to
+  // the default 0 value.
+
+  &__item:focus {
+    transform: translateY(0em);
+  }
+}
+
+
+
+/*****
 * Icon
-***/
+*****/
 
 .icon {
   height: 0.75em;
@@ -57,4 +132,12 @@ html {
   width: 0.75em;
   width: 1cap;
   vertical-align: -0.1em;
+}
+
+/****************
+* Overrides
+*****************/
+
+.o-font-size\:base {
+  font-size: var(--font-size-base) !important;
 }

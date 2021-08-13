@@ -88,7 +88,9 @@
 
     <p>I’m currently updating my website. Sorry for things looking a little rough temporarily.</p>
 
-    <a class="skip-link" href="#skip-target">Skip to main content</a>
+    <div class="u-hidden-off-screen">
+      <a class="u-hidden-off-screen__item" href="#skip-link-target">Skip to main content</a>
+    </div>
 
     <header class="global-header">
       <a href="{{ '/' | url }}" class="global-header__logo">Fuzzy Logic</a>
@@ -104,7 +106,7 @@
       </nav>
     </header>
 
-    <main id="skip-target" class="primary-content{% if templateClass %} {{ templateClass }}{% endif %}">
+    <main id="skip-link-target" class="primary-content{% if templateClass %} {{ templateClass }}{% endif %}">
       {{ content | safe }}
     </main>
 
