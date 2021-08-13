@@ -15,11 +15,11 @@ mainImage.isAnchor: false
 draft: true
 
 ---
-Quick blog post on template literals (Use Chris F, maybe a jest test from work too). 
+Fill this out as a quick how-to note on template literals (reference Chris F, maybe a jest test from work too).
 
-Browser support: 
+Browser support:
 
-* don’t work in IE and 
-* can’t be polyfilled 
+* don’t work in IE and
+* can’t be polyfilled
 
 so need to transpile or use as a PE e.g. inside script type=module
