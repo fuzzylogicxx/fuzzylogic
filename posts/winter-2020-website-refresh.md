@@ -41,7 +41,7 @@ Deployed Zach’s speedlify to Netlify which also creates a new Github repo.
 
 Created a "build hook" on that Netlify app (its an API URL that can be hit which triggers a build)
 
-Set up a Github action on my speedlify Github repo, scheduling a run of the netlify build (by hitting the build hook) every morning. (refs https://github.com/Jinksi/netlify-build-github-actions, https://twitter.com/iign/status/1288933337478975504
+Set up a Github action on my speedlify Github repo (https://github.com/fuzzylogicxx/fuzzy-speedlify/actions), and scheduled a run of the netlify build (by hitting the build hook) every morning. (refs https://github.com/Jinksi/netlify-build-github-actions, https://twitter.com/iign/status/1288933337478975504
 
 Working custom speedlify on Netlify https://zen-hoover-34d28b.netlify.app/fuzzylogic.me/
 
