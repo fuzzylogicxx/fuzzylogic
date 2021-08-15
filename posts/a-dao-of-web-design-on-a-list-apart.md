@@ -28,6 +28,8 @@ John Allsopp’s classic article in which he looks at the medium of web design t
 
 It’s choc-full of quotable lines, but here are a few of my favourites:
 
+> We must “accept the ebb and flow of things.”
+
 > Everything I’ve said so far could be summarized as: _make pages which are adaptable_.
 
 …and…
