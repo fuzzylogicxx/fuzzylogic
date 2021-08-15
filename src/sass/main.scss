@@ -4,11 +4,68 @@
 
 :root {
   --measure: 60ch;
+  --ratio: 1.5;
+
+  // colours
+
+  // contrasting bg and text colours.
+  --c-bg: #fff;
+  --c-text: #000;
+
+  @media (prefers-color-scheme: dark) {
+    --c-bg: #000;
+    --c-text: #fff;
+  }
+
+  // For browsers that support automatic dark/light mode
+  // plus system colors, adopt system colours.
+  @supports (color-scheme: light dark)
+    and (background-color: Canvas)
+    and (color: CanvasText) {
+    :root {
+      --c-bg: Canvas;
+      --c-text: CanvasText;
+    }
+  }
+
+
+  // Fix iOS Safari. Hacky, but works.
+  @supports (background-color: -apple-system-control-background)
+    and (color: text) {
+    :root {
+      --c-bg: -apple-system-control-background;
+      --c-text: text;
+    }
+  }
 }
 
-/****************
-* Element styles
+/*****************
+* Document Styles
 *****************/
+
+:root {
+  // Let the browser dictate the default text and background colour.
+  // https://blog.jim-nielsen.com/2021/css-system-colors/
+  color-scheme: light dark;
+
+  // Firefox doesn’t handle dark mode for you automatically
+  @supports not (color-scheme: light dark) {
+    background: var(--c-bg);
+    color: var(--c-text);
+  }
+
+  @media (min-width: 960px) {
+    // ↓ Upscale by 25% at 960px
+    // works because we use relative rather than px values for element font sizing.
+    // no need to update those elements individually.
+    font-size: 125%;
+  }
+}
+
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  line-height: var(--ratio);
+}
 
 // Ensuring a readable measure
 // Achieved via exception-based styling
@@ -40,6 +97,16 @@ html {
 *:before,
 *:after {
   box-sizing: inherit;
+}
+
+/****************
+* Element styles
+*****************/
+
+// Links
+
+a {
+  color: #d66351;
 }
 
 // Fixing the accessibility of custom-styled lists
