@@ -6,6 +6,130 @@
   --measure: 60ch;
   --ratio: 1.5;
 
+  --fluid-min-width: 320;
+  --fluid-max-width: 1140;
+
+  --fluid-screen: 100vw;
+  --fluid-bp: calc(
+    (var(--fluid-screen) - var(--fluid-min-width) / 16 * 1rem) /
+      (var(--fluid-max-width) - var(--fluid-min-width))
+  );
+
+  @media screen and (min-width: 1140px) {
+    --fluid-screen: calc(var(--fluid-max-width) * 1px);
+  }
+
+  // Type
+
+  --f--2-min: 11.11;
+  --f--2-max: 12.8;
+  --step--2: calc(
+    ((var(--f--2-min) / 16) * 1rem) + (var(--f--2-max) - var(--f--2-min)) *
+      var(--fluid-bp)
+  );
+
+  --f--1-min: 13.33;
+  --f--1-max: 16;
+  --step--1: calc(
+    ((var(--f--1-min) / 16) * 1rem) + (var(--f--1-max) - var(--f--1-min)) *
+      var(--fluid-bp)
+  );
+
+  --f-0-min: 16;
+  --f-0-max: 20;
+  --step-0: calc(
+    ((var(--f-0-min) / 16) * 1rem) + (var(--f-0-max) - var(--f-0-min)) *
+      var(--fluid-bp)
+  );
+
+  --f-1-min: 19.2;
+  --f-1-max: 25;
+  --step-1: calc(
+    ((var(--f-1-min) / 16) * 1rem) + (var(--f-1-max) - var(--f-1-min)) *
+      var(--fluid-bp)
+  );
+
+  --f-2-min: 23.04;
+  --f-2-max: 31.25;
+  --step-2: calc(
+    ((var(--f-2-min) / 16) * 1rem) + (var(--f-2-max) - var(--f-2-min)) *
+      var(--fluid-bp)
+  );
+
+  --f-3-min: 27.65;
+  --f-3-max: 39.06;
+  --step-3: calc(
+    ((var(--f-3-min) / 16) * 1rem) + (var(--f-3-max) - var(--f-3-min)) *
+      var(--fluid-bp)
+  );
+
+  --f-4-min: 33.18;
+  --f-4-max: 48.83;
+  --step-4: calc(
+    ((var(--f-4-min) / 16) * 1rem) + (var(--f-4-max) - var(--f-4-min)) *
+      var(--fluid-bp)
+  );
+
+  --f-5-min: 39.81;
+  --f-5-max: 61.04;
+  --step-5: calc(
+    ((var(--f-5-min) / 16) * 1rem) + (var(--f-5-max) - var(--f-5-min)) *
+      var(--fluid-bp)
+  );
+
+  // Space
+
+  --fc-3xs-min: (var(--fc-s-min) * 0.25);
+  --fc-3xs-max: (var(--fc-s-max) * 0.25);
+
+  --fc-2xs-min: (var(--fc-s-min) * 0.5);
+  --fc-2xs-max: (var(--fc-s-max) * 0.5);
+
+  --fc-xs-min: (var(--fc-s-min) * 0.75);
+  --fc-xs-max: (var(--fc-s-max) * 0.75);
+
+  --fc-s-min: (var(--f-0-min, 16));
+  --fc-s-max: (var(--f-0-max, 20));
+
+  --fc-m-min: (var(--fc-s-min) * 1.5);
+  --fc-m-max: (var(--fc-s-max) * 1.5);
+
+  --fc-l-min: (var(--fc-s-min) * 2);
+  --fc-l-max: (var(--fc-s-max) * 2);
+
+  --fc-xl-min: (var(--fc-s-min) * 3);
+  --fc-xl-max: (var(--fc-s-max) * 3);
+
+  --fc-2xl-min: (var(--fc-s-min) * 4);
+  --fc-2xl-max: (var(--fc-s-max) * 4);
+
+  --fc-3xl-min: (var(--fc-s-min) * 6);
+  --fc-3xl-max: (var(--fc-s-max) * 6);
+
+  /* T-shirt sizes */
+  --space-3xs: calc(((var(--fc-3xs-min) / 16) * 1rem) + (var(--fc-3xs-max) - var(--fc-3xs-min)) * var(--fluid-bp));
+  --space-2xs: calc(((var(--fc-2xs-min) / 16) * 1rem) + (var(--fc-2xs-max) - var(--fc-2xs-min)) * var(--fluid-bp));
+  --space-xs: calc(((var(--fc-xs-min) / 16) * 1rem) + (var(--fc-xs-max) - var(--fc-xs-min)) * var(--fluid-bp));
+  --space-s: calc(((var(--fc-s-min) / 16) * 1rem) + (var(--fc-s-max) - var(--fc-s-min)) * var(--fluid-bp));
+  --space-m: calc(((var(--fc-m-min) / 16) * 1rem) + (var(--fc-m-max) - var(--fc-m-min)) * var(--fluid-bp));
+  --space-l: calc(((var(--fc-l-min) / 16) * 1rem) + (var(--fc-l-max) - var(--fc-l-min)) * var(--fluid-bp));
+  --space-xl: calc(((var(--fc-xl-min) / 16) * 1rem) + (var(--fc-xl-max) - var(--fc-xl-min)) * var(--fluid-bp));
+  --space-2xl: calc(((var(--fc-2xl-min) / 16) * 1rem) + (var(--fc-2xl-max) - var(--fc-2xl-min)) * var(--fluid-bp));
+  --space-3xl: calc(((var(--fc-3xl-min) / 16) * 1rem) + (var(--fc-3xl-max) - var(--fc-3xl-min)) * var(--fluid-bp));
+
+  /* One-up pairs */
+  --space-3xs-2xs: calc(((var(--fc-3xs-min) / 16) * 1rem) + (var(--fc-2xs-max) - var(--fc-3xs-min)) * var(--fluid-bp));
+  --space-2xs-xs: calc(((var(--fc-2xs-min) / 16) * 1rem) + (var(--fc-xs-max) - var(--fc-2xs-min)) * var(--fluid-bp));
+  --space-xs-s: calc(((var(--fc-xs-min) / 16) * 1rem) + (var(--fc-s-max) - var(--fc-xs-min)) * var(--fluid-bp));
+  --space-s-m: calc(((var(--fc-s-min) / 16) * 1rem) + (var(--fc-m-max) - var(--fc-s-min)) * var(--fluid-bp));
+  --space-m-l: calc(((var(--fc-m-min) / 16) * 1rem) + (var(--fc-l-max) - var(--fc-m-min)) * var(--fluid-bp));
+  --space-l-xl: calc(((var(--fc-l-min) / 16) * 1rem) + (var(--fc-xl-max) - var(--fc-l-min)) * var(--fluid-bp));
+  --space-xl-2xl: calc(((var(--fc-xl-min) / 16) * 1rem) + (var(--fc-2xl-max) - var(--fc-xl-min)) * var(--fluid-bp));
+  --space-2xl-3xl: calc(((var(--fc-2xl-min) / 16) * 1rem) + (var(--fc-3xl-max) - var(--fc-2xl-min)) * var(--fluid-bp));
+
+  /* Custom pairs */
+  --space-s-l: calc(((var(--fc-s-min) / 16) * 1rem) + (var(--fc-l-max) - var(--fc-s-min)) * var(--fluid-bp));
+
   // colours
 
   // contrasting bg and text colours.
@@ -28,7 +152,6 @@
     }
   }
 
-
   // Fix iOS Safari. Hacky, but works.
   @supports (background-color: -apple-system-control-background)
     and (color: text) {
@@ -48,26 +171,41 @@
   // https://blog.jim-nielsen.com/2021/css-system-colors/
   color-scheme: light dark;
 
-  // Firefox doesn’t handle dark mode for you automatically
+  // Workaround for Firefox
   @supports not (color-scheme: light dark) {
     background: var(--c-bg);
     color: var(--c-text);
   }
 
-  @media (min-width: 960px) {
-    // ↓ Upscale by 25% at 960px
-    // works because we use relative rather than px values for element font sizing.
-    // no need to update those elements individually.
-    font-size: 125%;
-  }
-}
-
-body {
+  font-size: 1rem;
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
   line-height: var(--ratio);
 }
 
-// Ensuring a readable measure
+body {
+  font-size: var(--step-0);
+}
+
+
+/****************
+* Element styles
+*****************/
+
+// Box-sizing
+// Inheriting box-sizing is best practice
+// https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+// Ensure a readable measure
 // Achieved via exception-based styling
 // Ref: https://every-layout.dev/rudiments/axioms/
 
@@ -85,23 +223,26 @@ footer {
   max-width: none;
 }
 
-// Box-sizing
-// Inheriting box-sizing is best practice
-// https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+//  Remove margin from most block-level elements
 
-html {
-  box-sizing: border-box;
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
 }
 
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
+ol,
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
 }
-
-/****************
-* Element styles
-*****************/
 
 // Links
 
@@ -115,9 +256,41 @@ a {
 [role=list] {
   list-style: none;
   margin-left: 0;
-  margin-right: 0;
   padding-left: 0;
-  padding-right: 0;
+}
+
+h1 {
+  font-size: var(--step-3);
+  line-height: 1.05;
+}
+
+h2 {
+  font-size: var(--step-2);
+  line-height: 1.05;
+}
+
+h3 {
+  font-size: var(--step-1);
+}
+
+/******
+* Layouts
+*******/
+
+// Stack
+
+.l-stack > * + * {
+  margin-top: var(--space-s);
+}
+
+// Icon
+
+.l-icon {
+  height: 0.75em;
+  height: 1cap;
+  width: 0.75em;
+  width: 1cap;
+  vertical-align: -0.1em;
 }
 
 /****************
@@ -158,14 +331,13 @@ a {
 // An alternative visually hidden technique.
 // …for special cases when we want to animate visually hidden content into view on focus.
 // The best example being a “Skip to content” pattern.
-// Apply this to the container (which might be a ul, or a div, depending on number of inner items)
+// The container gets hidden off screen with position absolute (this might be a ul or div, depending on number of inner items)
+// (Perhaps the container is less necessary if there’s only one thing being hidden rather than a list therefore no <ul> needed semantically?)
+// Item(s) are positioned top but `transform`ed off-screen, then on-screen on focus. Transform = good because its performant for animations.
 
 .u-hidden-off-screen {
   left: -100vw;
   position: absolute;
-
-  // Fix the container’s inner focusable elements (e.g. skip links) to top of the page,
-  // but with an initial negative Y-axis value so they’re off-screen until animated.
 
   &__item {
     background: #000;
@@ -178,33 +350,15 @@ a {
     transition: transform .2s ease-in-out;
   }
 
-  // Upon focus of inner item, transition
-  // it into view by setting it's Y-axis to
-  // the default 0 value.
-
   &__item:focus {
     transform: translateY(0em);
   }
 }
 
-
-
-/*****
-* Icon
-*****/
-
-.icon {
-  height: 0.75em;
-  height: 1cap;
-  width: 0.75em;
-  width: 1cap;
-  vertical-align: -0.1em;
-}
-
 /****************
-* Overrides
+* Trumps
 *****************/
 
-.o-font-size\:base {
+.t-font-size\:base {
   font-size: var(--font-size-base) !important;
 }
