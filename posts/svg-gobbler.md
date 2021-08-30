@@ -5,6 +5,7 @@ description: SVG Gobbler is a browser extension that finds the vector content on
   page you're viewing and gives you the option to download, optimize, copy, view the
   code, or export it as an image.
 tags:
+- link
 - development
 - web
 - tool
