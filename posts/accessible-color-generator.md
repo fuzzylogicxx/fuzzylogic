@@ -22,5 +22,5 @@ mainImage.isAnchor: false
 draft: false
 
 ---
-There are many [colour contrast checking tools](https://fuzzylogic.me/tags/contrast/) but I like this one from Erik Kennedy (of Learn UI Design) a lot. It has a lovely, intuitive UI and crucially generates the closest match to your target colour that will meet accessibility guidelines.
+There are many [colour contrast checking tools](https://fuzzylogic.me/tags/contrast/) but I like this one from Erik Kennedy (of [Learn UI Design](https://learnui.design/)) a lot. It has a lovely, intuitive UI and crucially generates the closest match to your target colour that will meet accessibility guidelines.
 ---
