@@ -20,6 +20,7 @@
   }
 
   // Type
+  // https://utopia.fyi/type/calculator/?c=320,16,1.2,1140,20,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l
 
   --f--2-min: 11.11;
   --f--2-max: 12.8;
@@ -78,6 +79,7 @@
   );
 
   // Space
+  // https://utopia.fyi/space/calculator/?c=320,16,1.2,1140,20,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l
 
   --fc-3xs-min: (var(--fc-s-min) * 0.25);
   --fc-3xs-max: (var(--fc-s-max) * 0.25);
@@ -244,12 +246,6 @@ ul {
   margin-bottom: 0;
 }
 
-// Links
-
-a {
-  color: #d66351;
-}
-
 // Fixing the accessibility of custom-styled lists
 // https://www.scottohara.me/blog/2019/01/12/lists-and-safari.html
 
@@ -258,6 +254,14 @@ a {
   margin-left: 0;
   padding-left: 0;
 }
+
+// Links
+
+a {
+  color: #d66351;
+}
+
+// Headings
 
 h1 {
   font-size: var(--step-3);
@@ -273,6 +277,16 @@ h3 {
   font-size: var(--step-1);
 }
 
+// Form elements
+
+// Inherit fonts for inputs and buttons
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
 /******
 * Layouts
 *******/
@@ -283,15 +297,81 @@ h3 {
   margin-top: var(--space-s);
 }
 
+/**
+ * WRAPPER
+ * Sets a sensible element width for narrow and wide screens,
+ * adds a consistent gutter, and
+ * horizontally centers the contents
+ */
+ .l-wrapper {
+  max-width: none;
+  width: 90vw;
+  width: min(90vw, 70rem); //width: clamp(16rem, 90vw, 70rem);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--space-s);
+  padding-right: var(--space-s);
+  //position: relative;
+}
+
 // Icon
 
 .l-icon {
-  height: 0.75em;
-  height: 1cap;
   width: 0.75em;
   width: 1cap;
-  vertical-align: -0.1em;
+  height: 0.75em;
+  height: 1cap;
 }
+
+// Labelled Icon
+
+.l-labelled-icon {
+  display: inline-flex;
+  align-items: baseline;
+}
+
+.l-labelled-icon__icon {
+  margin-inline-end: 1rem;
+}
+
+// Page Grid
+
+// .l-page-grid {
+//   display: grid;
+//   min-height: 100vh;
+//   grid-template-columns:
+//     [full-start] minmax(1em, 1fr)
+//     [main-start] minmax(0, 40em) [main-end]
+//     minmax(1em, 1fr) [full-end];
+// }
+
+// .l-page-grid__temporary-banner {
+//   grid-column: full;
+// }
+
+// header {
+//   grid-column: full;
+// }
+
+// main {
+//   grid-column: main;
+// }
+
+footer {
+  grid-column: full;
+}
+
+/**********
+Components
+**********/
+
+// .c-post__meta {
+//   display: flex;
+//   align-items: center;
+// }
+// .c-post__meta * {
+//   flex: 1;
+// }
 
 /****************
 * Utilities
@@ -335,7 +415,7 @@ h3 {
 // (Perhaps the container is less necessary if there’s only one thing being hidden rather than a list therefore no <ul> needed semantically?)
 // Item(s) are positioned top but `transform`ed off-screen, then on-screen on focus. Transform = good because its performant for animations.
 
-.u-hidden-off-screen {
+.u-hidden-until-focused {
   left: -100vw;
   position: absolute;
 
@@ -348,10 +428,10 @@ h3 {
     top: 0;
     transform: translateY(-10em);
     transition: transform .2s ease-in-out;
-  }
 
-  &__item:focus {
-    transform: translateY(0em);
+    &:focus {
+      transform: translateY(0em);
+    }
   }
 }
 

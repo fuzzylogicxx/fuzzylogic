@@ -1,9 +1,9 @@
-<div class="">
-  <ol role="list">
+<div class="l-stack">
+  <ol role="list" class="l-stack">
   {% for post in postslist %}
     <li>
-      <article itemscope itemtype="http://schema.org/BlogPosting">
-        <header>
+      <article class="l-stack c-post" itemscope itemtype="http://schema.org/BlogPosting">
+        <div class="c-post__meta">
           {% switch post.data.tags[1] %}
             {% case "link" %}
               {{ component('icon', {
@@ -23,17 +23,17 @@
           {% endswitch %}
           <time itemprop="dateCreated pubdate datePublished" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
           {% if(post.data.tags[1] === 'note') -%} <span>·</span> <a href="{{ post.url | url }}">{{ post.date | readableTime }}</a> <span>·</span> {{ post.data.location }}</span>{% endif -%}
-          {% if (post.data.tags[1] !== 'note' or post.data.noteWithTitle) -%}
-          <h3 itemprop="headline">
-            {% if (post.data.linkTarget) -%}
-            <a href="{{ post.data.linkTarget | url }}" class="text-icon-pair offsite">{{ post.data.title }}</a>
-            {% else %}
-            <a rel="bookmark" href="{{ post.url | url }}">{{ post.data.title }}</a>
-            {% endif %}
-          </h3>
-          {% endif -%}
-        </header>
-        <div itemprop="abstract">
+        </div>
+        {% if (post.data.tags[1] !== 'note' or post.data.noteWithTitle) -%}
+        <h3 itemprop="headline">
+          {% if (post.data.linkTarget) -%}
+          <a href="{{ post.data.linkTarget | url }}" class="text-icon-pair offsite">{{ post.data.title }}</a>
+          {% else %}
+          <a rel="bookmark" href="{{ post.url | url }}">{{ post.data.title }}</a>
+          {% endif %}
+        </h3>
+        {% endif -%}
+        <div itemprop="abstract" class="l-stack">
         {% if (post.data.page.excerpt) -%}
           {%- set excerpt = post.data.page.excerpt -%}{{ excerpt | markdownStringToHTML | safe }}
           {% if post.data.mainImage.url and (app.environment == "production") %}
