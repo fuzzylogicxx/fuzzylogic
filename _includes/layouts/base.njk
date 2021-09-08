@@ -84,14 +84,13 @@
     <link rel="pingback" href="https://webmention.io/fuzzylogic.me/xmlrpc">
     <link rel="webmention" href="https://webmention.io/fuzzylogic.me/webmention">
   </head>
-  <body class="l-stack l-page-grid {% if bodyclass %}{{ bodyclass }}{% endif %}">
+  <body class="l-stack {% if bodyclass %}{{ bodyclass }}{% endif %}">
 
     <div class="c-banner">
       <div class="l-wrapper c-banner__message">
         <p>I’m currently updating my website. Sorry for things looking a little rough temporarily.</p>
       </div>
     </div>
-
 
     <div class="u-hidden-until-focused">
       <a class="u-hidden-until-focused__item" href="#skip-link-target">Skip to main content</a>
@@ -111,7 +110,7 @@
       </nav>
     </header>
 
-    <main id="skip-link-target" class="l-wrapper l-stack {% if templateClass %} {{ templateClass }}{% endif %}">
+    <main id="skip-link-target" class="l-stack {% if templateClass %} {{ templateClass }}{% endif %}">
       {{ content | safe }}
     </main>
 

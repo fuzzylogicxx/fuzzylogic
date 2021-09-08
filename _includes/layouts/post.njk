@@ -4,11 +4,11 @@ templateClass: post-main
 ---
 {%- from "system/component.njk" import component -%}
 
-<div class=""> <!-- container -->
+<div class="l-wrapper">
 
-  <article class="" itemtype="http://schema.org/BlogPosting">
+  <article class="l-stack c-post" itemscope itemtype="http://schema.org/BlogPosting">
 
-    <header class="stack">
+    <div class="c-post__meta">
       {% switch post.data.tags[1] %}
         {% case "link" %}
           {{ component('icon', {
@@ -26,12 +26,11 @@ templateClass: post-main
             text: 'Entry'
           }) }}
       {% endswitch %}
-      <time class="dt-published" itemprop="dateCreated pubdate datePublisheddatePublished" datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time>
-      {% if(tags[1] === 'note') -%} <span>·</span> {{ page.date | readableTime }} <span>·</span> {{ location }}</span>{% endif -%}
-      {%- if (tags[1] !== 'note') and (title) -%}<h1 itemprop="headline">{{ title }}</h1>{%- endif -%}
-    </header>
+      <time itemprop="dateCreated pubdate datePublished" datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time>
+      {%- if (tags[1] !== 'note') and (title) -%}<h1 class="c-post__title" itemprop="headline">{{ title }}</h1>{%- endif -%}
+    </div>
 
-    <div class="e-content stack {{ "article-type-listing" if isList }}" itemprop="articleBody">
+    <div itemprop="articleBody" class="l-stack {{ "article-type-listing" if isList }}">
 
       {% if linkTarget %}
       <a class="btn btn-icon" href="{{ linkTarget }}">
@@ -42,9 +41,9 @@ templateClass: post-main
 
       {{ content | safe }}
 
-    </div> <!-- /.e-content -->
+    </div> <!-- / [itemprop]=articleBody -->
 
-    <footer class="full-article-footer stack">
+    <footer class="l-stack full-article-footer">
 
       <h2 class="h3">Related topics</h2>
 
@@ -70,4 +69,4 @@ templateClass: post-main
 
   </article>
 
-</div> <!-- /.container -->
+</div> <!-- /.l-wrapper -->

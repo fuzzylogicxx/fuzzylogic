@@ -3,8 +3,12 @@ layout: layouts/base.njk
 templateClass: home-main
 ---
 
-<h1>Hi, I’m Laurence.</h1>
+<div class="l-wrapper l-stack">
 
-<p class="u-no-hyphens">I’m a Glaswegian web developer who makes fast, accessible, responsive websites. I also make music, play records and ping pongs. This is my online home; a space for coding fun and an avenue to share thoughts on the web, music and more.</p>
+  <h1>Hi, I’m Laurence.</h1>
 
-{{ content | safe }}
+  <p class="u-no-hyphens">I’m a Glaswegian web developer who makes fast, accessible, responsive websites. I also make music, play records and ping pongs. This is my online home; a space for coding fun and sharing thoughts on the web, music and more.</p>
+
+  {{ content | safe }}
+
+</div>

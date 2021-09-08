@@ -1,7 +1,7 @@
 <div class="l-stack">
-  <ol role="list" class="l-stack">
+  <ol role="list" class="l-stack c-feed">
   {% for post in postslist %}
-    <li>
+    <li class="c-feed__item">
       <article class="l-stack c-post" itemscope itemtype="http://schema.org/BlogPosting">
         <div class="c-post__meta">
           {% switch post.data.tags[1] %}
@@ -25,7 +25,7 @@
           {% if(post.data.tags[1] === 'note') -%} <span>·</span> <a href="{{ post.url | url }}">{{ post.date | readableTime }}</a> <span>·</span> {{ post.data.location }}</span>{% endif -%}
         </div>
         {% if (post.data.tags[1] !== 'note' or post.data.noteWithTitle) -%}
-        <h3 itemprop="headline">
+        <h3 class="c-post__title" itemprop="headline">
           {% if (post.data.linkTarget) -%}
           <a href="{{ post.data.linkTarget | url }}" class="text-icon-pair offsite">{{ post.data.title }}</a>
           {% else %}
@@ -33,7 +33,7 @@
           {% endif %}
         </h3>
         {% endif -%}
-        <div itemprop="abstract" class="l-stack">
+        <div itemprop="abstract" class="l-stack c-post__abstract">
         {% if (post.data.page.excerpt) -%}
           {%- set excerpt = post.data.page.excerpt -%}{{ excerpt | markdownStringToHTML | safe }}
           {% if post.data.mainImage.url and (app.environment == "production") %}

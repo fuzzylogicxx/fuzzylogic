@@ -3,7 +3,7 @@
 *****************/
 
 :root {
-  --measure: 60ch;
+  --measure: 58ch;
   --ratio: 1.5;
 
   --fluid-min-width: 320;
@@ -165,7 +165,7 @@
 }
 
 /*****************
-* Document Styles
+* Top-level styles
 *****************/
 
 :root {
@@ -187,11 +187,6 @@
 body {
   font-size: var(--step-0);
 }
-
-
-/****************
-* Element styles
-*****************/
 
 // Box-sizing
 // Inheriting box-sizing is best practice
@@ -263,14 +258,16 @@ a {
 
 // Headings
 
+h1, h2, h3 {
+  line-height: 1.2;
+}
+
 h1 {
   font-size: var(--step-3);
-  line-height: 1.05;
 }
 
 h2 {
   font-size: var(--step-2);
-  line-height: 1.05;
 }
 
 h3 {
@@ -294,23 +291,24 @@ select {
 // Stack
 
 .l-stack > * + * {
-  margin-top: var(--space-s);
+  --stack-space: var(--space-s);
+  margin-top: var(--stack-space);
 }
 
 /**
  * WRAPPER
- * Sets a sensible element width for narrow and wide screens,
- * adds a consistent gutter, and
- * horizontally centers the contents
+ * Sets a responsive width; ensures it’s sensible on narrow and wide screens;
+ * centres the wrapper via auto-margins on left and right; and
+ * adds lateral padding from our space scale.
+ * Inspiration: https://piccalil.li/quick-tip/use-css-clamp-to-create-a-more-flexible-wrapper-utility/
  */
- .l-wrapper {
-  max-width: none;
+.l-wrapper {
   width: 90vw;
-  width: min(90vw, 70rem); //width: clamp(16rem, 90vw, 70rem);
+  width: min(90vw, var(--measure)); //width: clamp(16rem, 90vw, 70rem);
   margin-left: auto;
   margin-right: auto;
-  padding-left: var(--space-s);
-  padding-right: var(--space-s);
+  // padding-left: var(--space-s);
+  // padding-right: var(--space-s);
   //position: relative;
 }
 
@@ -365,6 +363,20 @@ footer {
 Components
 **********/
 
+.c-post {
+
+  &__meta {
+    font-size: var(--step--1);
+  }
+
+  &__title {
+
+    .c-feed & {
+      margin-top: 0;
+    }
+  }
+}
+
 // .c-post__meta {
 //   display: flex;
 //   align-items: center;
@@ -372,6 +384,25 @@ Components
 // .c-post__meta * {
 //   flex: 1;
 // }
+
+// Feed (e.g. a list of posts)
+
+.c-feed {
+
+  & > * + * {
+    --stack-space: var(--space-l);
+  }
+}
+
+// Banner
+
+.c-banner__message {
+
+  * {
+    font-size: var(--step--1);
+    max-width: none;
+  }
+}
 
 /****************
 * Utilities
