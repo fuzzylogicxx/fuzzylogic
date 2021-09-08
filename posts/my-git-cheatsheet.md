@@ -9,6 +9,20 @@ I’ve used Git for many years but it can still trip me up. At times I’ve work
 
 Note: the following is not an exhaustive list but rather the thing I keep coming back to and/or regularly forget. For deeper explanations, see the list of resources at the foot of the article.
 
+## Table of contents
+
+- [Starting work](#starting-work)
+- [Remotes](#remotes)
+- [Committing updates](#committing-updates)
+- [Branches](#branches)
+- [Save changes temporarily](#save-changes-temporarily)
+- [Staying current and compatible](#staying-current-and-compatible)
+- [Reviewing your activity](#reviewing-your-activity)
+- [Fixing things](#fixing-things)
+- [Miscellaneous handy things](#miscellaneous-handy-things)
+- [Useful GitHub stuff](#useful-github-stuff)
+- [Useful external resources](#useful-external-resources)
+
 ## Starting work
 
 ### Create a remotely-hosted repo
@@ -332,7 +346,7 @@ Save typing by setting the upstream remote branch for your local branch:
 # git branch -u remotename/branchname
 git branch -u fuzzylogic/v3
 
-#  now there’s no need to type origin master
+# now there’s no need to type origin master
 git pull
 ```
 
@@ -479,7 +493,7 @@ git reset --hard ORIG_HEAD
   
 For more detail, read [Atlassian’s guide to rebasing](https://www.atlassian.com/git/tutorials/merging-vs-rebasing).
 
-## Reviewing
+## Reviewing your activity
 
 Show commit history (most recent first; `q` to quit):
 
@@ -549,6 +563,16 @@ git diff 591672e..master
 
 ## Fixing Things
 
+Discard all your as-yet uncommitted changes:
+  
+<figure>
+
+```bash
+git restore .
+```
+  
+</figure>
+  
 Undo all the changes in a given commit:
 
 <figure>
@@ -669,9 +693,12 @@ git checkout -
 
 </figure>
 
-### Tip
-
-If you are fixing something that originated from a GitHub issue, link the issue in your PR’s sidebar under _Linked Issues_ (rather than just mentioning it in the PR) and it will automatically close the issue when you merge.
+## Useful GitHub stuff
+  
+- [Review your branches on a repo](https://github.com/[user]/[repo]/branches/yours)
+- [Review PRs and issues you’re subscribed to]](https://github.com/notifications/subscriptions), i.e. ones on which you were active or mentioned
+- [Review your or another user’s PRs](https://github.com/pulls?q=is%3Apr+author%3Afuzzylogicxx+archived%3Afalse+)
+- If you are fixing something that was raised in a GitHub issue, link that issue in your fix PR’s sidebar under _Linked Issues_ (rather than just mentioning it in the PR) and it will automatically close the issue when you merge.
 
 ## Useful external resources
 
