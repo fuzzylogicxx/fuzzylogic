@@ -696,7 +696,7 @@ git checkout -
 ## Useful GitHub stuff
   
 - [Review your branches on a repo](https://github.com/[user]/[repo]/branches/yours)
-- [Review PRs and issues you’re subscribed to]](https://github.com/notifications/subscriptions), i.e. ones on which you were active or mentioned
+- [Review PRs and issues you’re subscribed to](https://github.com/notifications/subscriptions), i.e. ones on which you were active or mentioned
 - [Review your or another user’s PRs](https://github.com/pulls?q=is%3Apr+author%3Afuzzylogicxx+archived%3Afalse+)
 - If you are fixing something that was raised in a GitHub issue, link that issue in your fix PR’s sidebar under _Linked Issues_ (rather than just mentioning it in the PR) and it will automatically close the issue when you merge.
 
