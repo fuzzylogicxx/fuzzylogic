@@ -19,7 +19,7 @@ mainImage.aspectRatioHeight: ''
 mainImage.srcsetWidths: ''
 mainImage.sizes: ''
 mainImage.isAnchor: false
-draft: false
+draft: true
 
 ---
 I’ve been really interested in the subject of Web Performance since I read Steve Souders’ book _High Performance Websites_ back in 2007. Although some of the principles in that book are still relevant, it’s also fair to say that a lot has changed in the world of web development. So I’ve decided to pull together some current tips. Disclaimer: I’m a performance _enthusiast_ but not an expert. If I have anything wrong, please feel free to let me know.
