@@ -22,7 +22,8 @@ mainImage.isAnchor: false
 draft: false
 
 ---
-I really liked [Jeremy Keith’s recent journal entry on Accessibility Testing](https://adactio.com/journal/18458). Here’s my summary. 
+I really liked [Jeremy Keith’s recent journal entry on Accessibility Testing](https://adactio.com/journal/18458). Here’s my summary.
+---
 
 As I understood it, the main points were:
 
