@@ -64,6 +64,7 @@ fields:
   label: draft
 pages:
 - posts/a-dao-of-web-design-on-a-list-apart.md
+- posts/accessibility-testing-on-adactio.com.md
 - posts/accessible-color-generator.md
 - posts/accessible-drop-down-navigation-3-ways.md
 - posts/adapting-stimulus-usage-for-better-progressive-enhancement.md
