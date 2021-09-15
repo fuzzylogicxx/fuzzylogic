@@ -11,7 +11,7 @@ tags:
 - a11y-audit
 - a11y
 noteWithTitle: false
-linkTarget: ''
+linkTarget: 'https://adactio.com/journal/18458'
 mainImage.url: ''
 mainImage.alt: ''
 mainImage.aspectRatioWidth: ''
@@ -22,10 +22,10 @@ mainImage.isAnchor: false
 draft: false
 
 ---
-I really liked [Jeremy Keith’s recent journal entry on Accessibility Testing](https://adactio.com/journal/18458). Here’s my summary.
+In this journal entry, Jeremy Keith argues that when it comes to accessibility testing it’s not just about finding issues—it’s about finding the issues at the right time.
 ---
 
-As I understood it, the main points were:
+Here’s my summary:
 
 * Accessibility Audits performed by experts and real Assistive Technology users are _good!_
 * But try to get the most out of them by having them focus on the things that you can’t easily do yourself.
