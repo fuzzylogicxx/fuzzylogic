@@ -48,3 +48,4 @@ Unlike standard `<script>` elements, module scripts are deferred (non render-blo
 ## References
 
 - [Inlining literally everything](https://gomakethings.com/inlining-literally-everything-for-better-performance/) on Go Make Things
+- [MDN’s guide to native JavaScript modules](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules)
