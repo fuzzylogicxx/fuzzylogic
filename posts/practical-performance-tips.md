@@ -35,6 +35,16 @@ If you have a lean page and minimal CSS and or JavaScript to the extent that the
 
 If your page including CSS/JS is _over_ 14 kb after minifying and gzipping then you’d be better off not inlining those assets. It’d be better for performance to link to external assets and let them be _cached_ rather than having a bloated HTML file that requires multiple roundtrips and doesn’t get the benefit of static asset caching.
 
+## JavaScript Modules in the head
+
+Native JavaScript modules are included on a page using the following:
+
+``` html
+<script type="module" src="main.js"></script>
+```
+
+Unlike standard `<script>` elements, module scripts are deferred (non render-blocking) by default. Rather than placing them before the closing `</body>` tag I place them in the `<head>` so as to allow the script to be downloaded _early_ and in parallel with the DOM being processed. That way, the JavaScript is already available as soon as the DOM is ready.
+
 ## References
 
 - [Inlining literally everything](https://gomakethings.com/inlining-literally-everything-for-better-performance/) on Go Make Things
