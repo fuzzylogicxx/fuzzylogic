@@ -27,3 +27,5 @@ If you don’t have specific accessibility regulations that apply to your organi
 
 WCAG 2.1 in a nutshell and tools to use
 https://www.gov.uk/service-manual/helping-people-to-use-your-service/understanding-wcag
+
+WCAG 2.1 Official Docs: https://www.w3.org/TR/WCAG21/
