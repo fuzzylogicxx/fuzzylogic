@@ -3,6 +3,8 @@
 *****************/
 
 :root {
+  --border-thin: 1px;
+
   --measure: 58ch;
   --ratio: 1.5;
 
@@ -132,35 +134,41 @@
   /* Custom pairs */
   --space-s-l: calc(((var(--fc-s-min) / 16) * 1rem) + (var(--fc-l-max) - var(--fc-s-min)) * var(--fluid-bp));
 
-  // colours
+  // colour variables
 
-  // contrasting bg and text colours.
+  // Set contrasting bg and text colours:
+  // https://blog.jim-nielsen.com/2021/css-system-colors/
+
+  // Set background + text colours based on default preference of “light mode”.
   --c-bg: #fff;
   --c-text: #000;
 
+  // Switch those if user prefers “dark mode”.
   @media (prefers-color-scheme: dark) {
     --c-bg: #000;
     --c-text: #fff;
   }
 
-  // For browsers that support automatic dark/light mode
-  // plus system colors, adopt system colours.
-  @supports (color-scheme: light dark)
-    and (background-color: Canvas)
-    and (color: CanvasText) {
-    :root {
-      --c-bg: Canvas;
-      --c-text: CanvasText;
-    }
+  // Enhancement
+  // For browsers which i) support us indicating which colour schemes we support; and ii) support system colors,…
+  // set our bg and text colour vars to system colours rather than the previous arbitrary colours.
+  // We won’t need to apply these on :root because color-scheme: light dark; takes care of that, but…
+  // they’ll be useful when we need to set the bg and text colours of components and need to match the OS’s system colours.
+  @supports (color-scheme: light dark) and (background-color: Canvas) and
+  (color: CanvasText) {
+    --c-bg: Canvas;
+    --c-text: CanvasText;
   }
 
   // Fix iOS Safari. Hacky, but works.
+  // Safari says it supports system colour "Canvas", which it does on macOS but then doesn’t on iOS.
+  // To get around this, we can leverage webkit-specific color values (the same ones used in the Webkit UA stylesheet).
+  // NB I’ve added the -webkit-touch-callout part so that this media query is specific to iOS and doesn’t match MacOS
+  // https://stackoverflow.com/questions/30102792/css-media-query-to-target-only-ios-devices
   @supports (background-color: -apple-system-control-background)
-    and (color: text) {
-    :root {
-      --c-bg: -apple-system-control-background;
-      --c-text: text;
-    }
+    and (color: text) and (-webkit-touch-callout: none) {
+    --c-bg: -apple-system-control-background;
+    --c-text: text;
   }
 }
 
@@ -169,17 +177,20 @@
 *****************/
 
 :root {
-  // Let the browser dictate the default text and background colour.
-  // https://blog.jim-nielsen.com/2021/css-system-colors/
+  // Let the browser automatically set colours for
+  // dark text on a light background (light mode) and
+  // light text on a dark background (dark mode) AND
+  // make UI controls (such as radio buttons) blend in nicely
+  // without us needing to set colours manually and arbitrarily.
   color-scheme: light dark;
 
-  // Workaround for Firefox
+  // Firefox needs a workaround
   @supports not (color-scheme: light dark) {
     background: var(--c-bg);
     color: var(--c-text);
   }
 
-  font-size: 1rem;
+  font-size: 100%;
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
   line-height: var(--ratio);
 }
@@ -288,6 +299,28 @@ select {
 * Layouts
 *******/
 
+// Box
+
+.l-box {
+  --box-bg: var(--c-bg);
+  --box-text: var(--c-text);
+
+  // background-color: var(--box-bg);
+  // color: var(--box-text);
+
+  padding: var(--space-s);
+  border: var(--border-thin) solid;
+
+  &--invert {
+    background-color: var(--box-text);
+    color: var(--box-bg);
+  }
+
+  * {
+    color: inherit;
+  }
+}
+
 // Stack
 
 .l-stack > * + * {
@@ -295,21 +328,34 @@ select {
   margin-top: var(--stack-space);
 }
 
+// Cluster
+
+.l-cluster {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space, 1rem);
+  justify-content: flex-start;
+  align-items: center;
+
+  &--justify-sb {
+    justify-content: space-between;
+  }
+}
+
+
 /**
  * WRAPPER
- * Sets a responsive width; ensures it’s sensible on narrow and wide screens;
- * centres the wrapper via auto-margins on left and right; and
- * adds lateral padding from our space scale.
- * Inspiration: https://piccalil.li/quick-tip/use-css-clamp-to-create-a-more-flexible-wrapper-utility/
+ * Sets a viewport-relative max-width;
+ * ensures actual width is sensible on both narrow & wide screens; and
+ * centres the wrapper via auto-margins on left and right.
+ * NB opts for margin alone and no padding so as not to “double up” lateral space on narrow screens.
+ * Inspiration (but modified): https://piccalil.li/quick-tip/use-css-clamp-to-create-a-more-flexible-wrapper-utility/
  */
+
 .l-wrapper {
   width: 90vw;
-  width: min(90vw, var(--measure)); //width: clamp(16rem, 90vw, 70rem);
-  margin-left: auto;
-  margin-right: auto;
-  // padding-left: var(--space-s);
-  // padding-right: var(--space-s);
-  //position: relative;
+  width: min(90vw, var(--measure)); // width: clamp(16rem, 90vw, 70rem);
+  margin-inline: auto;
 }
 
 // Icon
@@ -326,10 +372,23 @@ select {
 .l-labelled-icon {
   display: inline-flex;
   align-items: baseline;
+
+  &__icon {
+    margin-inline-end: 1rem;
+  }
 }
 
-.l-labelled-icon__icon {
-  margin-inline-end: 1rem;
+// Page Body
+
+.l-body {
+
+  &__main {
+    margin-top: var(--space-l);
+  }
+
+  &__footer {
+    margin-top: var(--space-l);
+  }
 }
 
 // Page Grid
@@ -355,9 +414,9 @@ select {
 //   grid-column: main;
 // }
 
-footer {
-  grid-column: full;
-}
+// footer {
+//   grid-column: full;
+// }
 
 /**********
 Components

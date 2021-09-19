@@ -4,6 +4,17 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    {#
+      Specify that the page supports both dark and light color schemes, and the page author prefers light.
+      This is really a CSS thing (and can be specified in CSS) however the meta tag helps browsers
+      to do their thing *faster*.
+      (NB Ensure that the order of preference in the "content" attribute doesn’t go out of sync with
+      what I’m specifying in CSS.)
+      https://web.dev/color-scheme/
+    #}
+    <meta name="color-scheme" content="light dark">
+
     <title>
       {%- if (renderData.title) -%}
       {{ renderData.title }} | {{ metadata.name }}
@@ -61,7 +72,7 @@
     {# Module scripts are deferred (non render-blocking) by default. -#}
     {# I place in the head rather than at bottom to allow it to be DL’d early in parallel -#}
     {# so that the JS is already available as soon as the DOM is ready -#}
-    <script type="module">
+    {# <script type="module">
       {%- set js -%}
         import enhanceSearch from '/assets/js/search.js';
         import patchMinForGrids from '/assets/js/patch_css_min_for_grids.js';
@@ -78,13 +89,13 @@
         }
       {% endset -%}
       {{ js | jsmin | safe }}
-    </script>
+    </script> -#}
 
     <!-- webmentions -->
     <link rel="pingback" href="https://webmention.io/fuzzylogic.me/xmlrpc">
     <link rel="webmention" href="https://webmention.io/fuzzylogic.me/webmention">
   </head>
-  <body class="l-stack {% if bodyclass %}{{ bodyclass }}{% endif %}">
+  <body class="l-stack l-body {% if bodyclass %}{{ bodyclass }}{% endif %}">
 
     <div class="c-banner">
       <div class="l-wrapper c-banner__message">
@@ -97,43 +108,39 @@
     </div>
 
     <header class="l-wrapper">
-      <a href="{{ '/' | url }}" class="global-header__logo">Fuzzy Logic</a>
-      <nav class="global-header__menu">
-        {% set navPages = collections.all | eleventyNavigation %}
-        <ul role="list">
-        {%- for entry in navPages %}
-          <li id="nav-{{ entry.title | lower }}">
-            <a{% if entry.url == page.url %} aria-current="page"{% endif %} href="{{ entry.url | url }}">{{ entry.title }}</a>
-          </li>
-        {%- endfor %}
-        </ul>
-      </nav>
+      <div class="l-cluster l-cluster--justify-sb">
+        <a href="{{ '/' | url }}" class="global-header__logo">Fuzzy Logic</a>
+        <nav class="global-header__menu">
+          {% set navPages = collections.all | eleventyNavigation %}
+          <ul role="list" class="l-cluster">
+          {%- for entry in navPages %}
+            <li id="nav-{{ entry.title | lower }}">
+              <a{% if entry.url == page.url %} aria-current="page"{% endif %} href="{{ entry.url | url }}">{{ entry.title }}</a>
+            </li>
+          {%- endfor %}
+          </ul>
+        </nav>
+      </div>
     </header>
 
-    <main id="skip-link-target" class="l-stack {% if templateClass %} {{ templateClass }}{% endif %}">
+    <main id="skip-link-target" class="l-stack l-body__main {% if templateClass %} {{ templateClass }}{% endif %}">
       {{ content | safe }}
     </main>
 
-    <footer class="l-wrapper" aria-label="site">
+    <footer class="l-wrapper l-body__footer" aria-label="site">
 
       <div class="l-stack">
 
-        <div class="">
-          <div> <!-- style="justify-content: space-between;" -->
-            <div class="">
-              <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/posts/">Journal</a></li>
-                <li><a href="/about/">About</a></li>
-                <li><a href="/bookshelf/">Bookshelf</a></li>
-                <li><a href="/inspiration/">Inspiration</a></li>
-                <li><a href="/photos/">Photos</a></li>
-                <li><a href="{{ '/sitemap/' | url }}">Sitemap</a></li>
-                <li><a href="{{ metadata.feed.url | url }}">RSS</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
+          <ul role="list" class="l-cluster">
+            <li><a href="/">Home</a></li>
+            <li><a href="/posts/">Journal</a></li>
+            <li><a href="/about/">About</a></li>
+            <li><a href="/bookshelf/">Bookshelf</a></li>
+            <li><a href="/inspiration/">Inspiration</a></li>
+            <li><a href="/photos/">Photos</a></li>
+            <li><a href="{{ '/sitemap/' | url }}">Sitemap</a></li>
+            <li><a href="{{ metadata.feed.url | url }}">RSS</a></li>
+          </ul>
 
         <div class="l-stack">
 
