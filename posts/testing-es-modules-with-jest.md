@@ -68,3 +68,5 @@ test('adds 1 + 2 to equal 3', () => {
 </figure>
 
 Hopefully that’ll save you (and future me) some head-scratching.
+
+See also [Jest’s EcmaScript Modules docs page](jestjs.io)
