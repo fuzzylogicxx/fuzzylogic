@@ -26,6 +26,7 @@ Here are a few troubleshooting tips to enable Jest, the JavaScript testing frame
 `package.json`
 
 <figure>
+
 ```
 …,
 "scripts": {
@@ -36,6 +37,7 @@ Here are a few troubleshooting tips to enable Jest, the JavaScript testing frame
   "jest": "^27.2.2"
 }
 ```
+
 </figure>
 
 Note: take note of the crucial `"type": "module"` part as it’s the least-documented bit and your most likely omission!
