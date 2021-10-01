@@ -56,6 +56,7 @@ export const sum = (a, b) => {
 `spec/sum.test.js`
 
 <figure>
+
 ```
 import { sum } from "../javascript/sum.js";
     
@@ -63,6 +64,7 @@ test('adds 1 + 2 to equal 3', () => {
   expect(sum(1, 2)).toBe(3);
 });
 ```
+
 </figure>
 
 Hopefully that’ll save you (and future me) some head-scratching.
