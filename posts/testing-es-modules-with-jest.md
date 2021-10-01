@@ -25,30 +25,42 @@ Here are a few troubleshooting tips to enable Jest, the JavaScript testing frame
 
 `package.json`
 
-    …,
-    "scripts": {
-      "test": "NODE_ENV=test NODE_OPTIONS=--experimental-vm-modules jest"
-    },
-    "type": "module",
-    "dependencies": {},
-    "devDependencies": {
-      "jest": "^27.2.2"
-    }
+<figure>
+```
+…,
+"scripts": {
+  "test": "NODE_ENV=test NODE_OPTIONS=--experimental-vm-modules jest"
+},
+"type": "module",
+"devDependencies": {
+  "jest": "^27.2.2"
+}
+```
+</figure>
 
 Note: take note of the crucial `"type": "module"` part as it’s the least-documented bit and your most likely omission!
 
 `javascript/sum.js`
 
-    export const sum = (a, b) => {
-      return a + b;
-    }
+<figure>
+
+```
+export const sum = (a, b) => {
+  return a + b;
+}
+```    
+</figure>
 
 `spec/sum.test.js`
 
-    import { sum } from "../javascript/sum.js";
+<figure>
+```
+import { sum } from "../javascript/sum.js";
     
-    test('adds 1 + 2 to equal 3', () => {
-      expect(sum(1, 2)).toBe(3);
-    });
+test('adds 1 + 2 to equal 3', () => {
+  expect(sum(1, 2)).toBe(3);
+});
+```
+</figure>
 
 Hopefully that’ll save you (and future me) some head-scratching.
