@@ -42,6 +42,8 @@ Here are a few troubleshooting tips to enable Jest, the JavaScript testing frame
 
 Note: take note of the crucial `"type": "module"` part as it’s the least-documented bit and your most likely omission!
 
+After that set-up, you’re free to `import` and `export` to your heart’s content.
+
 `javascript/sum.js`
 
 <figure>
