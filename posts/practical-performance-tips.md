@@ -45,6 +45,12 @@ Native JavaScript modules are included on a page using the following:
 
 Unlike standard `<script>` elements, module scripts are deferred (non render-blocking) by default. Rather than placing them before the closing `</body>` tag I place them in the `<head>` so as to allow the script to be downloaded _early_ and in parallel with the DOM being processed. That way, the JavaScript is already available as soon as the DOM is ready.
 
+<!--
+Other stuff to add:
+- optimise font loading (WOFF2, …, …) ref https://www.zachleat.com/web/font-checklist/
+- Use HTTP2 which is now supported by all major browsers to optimise asset delivery to users’ devices
+-->
+
 ## References
 
 - [Inlining literally everything](https://gomakethings.com/inlining-literally-everything-for-better-performance/) on Go Make Things
