@@ -1,18 +1,17 @@
 ---
-title: 'Note 2021-4-20T13:00:50: Ted Chiang – Stories of your life and others-(copy)'
-description: I’ve started reading Stories of your life and others, by Ted Chiang
-date: 2021-08-01T15:40:00Z
+title: 'Note 2021-0-16T10:02:50: Octavia E. Butler – Kindred'
+description: I’ve started reading Kindred, by Octavia E. Butler
+date: 2021-09-15T23:00:00Z
 location: Glasgow
 mainImage.isAnchor: false
 tags:
 - note
 - book
 - scifi
-- physics
-- religion
-- technology
-- philosophy
+- race
+- slavery
+- usa
 draft: false
 
 ---
-I’ve started reading [Stories of your life and others](https://uk.bookshop.org/a/4340/9781529039436) by Ted Chiang.
+I’ve started reading [Kindred](https://uk.bookshop.org/a/4340/9781472258229), by Octavia E. Butler.
