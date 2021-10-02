@@ -1,7 +1,8 @@
 ---
 date: 2021-09-26T15:03:28Z
 title: gap versus margin in CSS
-description: ''
+description: gap is seriously handy but there are still cases where margin might be
+  preferential
 tags:
 - css
 - margin
@@ -21,22 +22,47 @@ mainImage.isAnchor: false
 draft: true
 
 ---
-gaps (via `gap`) are defined at the container level. This means we define them once for the entire layout and they are applied consistently within it.
+`gap` is great and in many ways feels _superior_ to margin. And now that all modern browsers support `gap` for both grid and flexbox it‘s tempting to want to use it for every multi-item layout that requires space between items, thus replacing our previous `margin`-based implementations. (I’m sure I’ve heard other developers say “I’m using grid here just to get access to `gap`”.)  But is `gap` _always_ the best choice?
 
-Advantages of gap:
+## Why `gap` is so attractive
 
-* `gap` allows terser code, less duplication, reduced scope for error, more predictable regardless of the nature of the components within the layout. 
-* Using margins would require a declaration on each and every item. This can get complicated when items are different in nature, or come from different reusable components.
-* gap introduces space _in between_ items, not around them. `margin` would require special cases to remove extra margins before the first item and after the last one. With gaps, we don’t need to do this. It’s good to have enabling selectors rather than a combination of enabling then disabling selectors.
+Spacing implemented via `gap` is defined at the _container_ level. This means we define spacing once for the entire layout and then it is automatically applied consistently within.
 
-Interesting things to consider:
+This brings a number of advantages:
 
-When working with reusable grid or flexbox components, it’s handy to use a custom property for setting the size of gaps because it’s highly flexible. Sometimes we may want to nest those components but this brings the risk of custom properties being unintentionally overridden.
+* by not requiring to target every item `gap` allows terser code, reduced scope for error, and is generally slightly more reliable and agnostic to the nature of the components within the layout;
+* We are styling the _context_—this can help when considering a _system_ and how its parts interrelate, rather than us always working at item level. For example it lets us consider the “between” state, and also that this between state might not exist if there are insufficient items.
+* `gap` introduces space _in between_ items, not around them.  `margin` would require special cases to remove extra margins before the first item and after the last one. With gaps, we don’t need to do this. It’s good to have “enabling selectors” only rather than a clumsier combination of enabling and disabling selectors;
+* in responsive layouts which need to appear in both vertical (stacked) and horizontal (linear) configurations, `gap` _just works._ By contrast if using margin you’d need to set it in all directions and supplement it with negative margin hacks then add an extra, insulating `div`;
+* `gap` tends to preserve the symmetry of layouts better than `margin` and to not affect overall `width` and `height` in unpredictable ways.
+
+## The interesting case of the Stack
+
+Should Stack be flexbox-based and use `gap`? Or more widely, what should and shouldn’t use `gap` for spacing out its items?
+
+`gap` isn’t the only way of putting space only _between_ items. Can also use the owl selector. It has zero specificity other than the initial class (the universal selector * has zero specificity). This makes it easier to override with `.exception` later, at either the `.stack` component level _or_ for a specific item within a stack.
+
+If we were to use `gap` there’d be no way of overriding the gap for one of the children in a stack; it isn’t possible. That’s why EL stuck with margin being set using the owl selector. 
+
+Just because something new comes along doesn’t automatically invalidate an older technique.
+
+The Stack is only for vertical layouts. It doesn’t _need_ flexbox unless you want to split the stack, for example to push the last item to the bottom of the container.  
+
+When working with reusable grid or flexbox components, it’s handy to use `gap` for spacing between items (for all the reasons above) and to set that via a custom property because it makes it easy to set that to a range of values (via inline `style` a bit like a prop) without needing a separate class for each. (Because Custom Properties also participate in CSS’s cascade they are great for writing a base component then overriding to create exceptions.) Sometimes we might want to nest our component, however this brings the risk of custom properties being unintentionally overridden.
 
 Every Layout’s Stack opts for `margin` via a `--space` custom property. This custom property is set and overridden on the _children_ rather than on the parent (unlike most of their other layouts which set `gap` on the parent):
 
 > **Custom property placement:** …we’re still setting the `--space` value on the children, not “hoisting” it up. If the parent is where the property is set, it will get overridden if the parent becomes a child in nesting (see Nested variants, above).
 
+Possible TL;DR:
+
+* Does it have to use flexbox or grid or is standard flow layout sufficient?
+* Perhaps it’s better to stick with flow (rule of least power) if possible? (I’ve previously ran into problems working with pages that over-use flexbox in column direction.)
+* is it a quantum layout?
+* is it using custom properties?
+* might one be nested inside another?
+
 ## References
 
 * [https://css-tricks.com/minding-the-gap/](https://css-tricks.com/minding-the-gap/ "https://css-tricks.com/minding-the-gap/")
+* [Stack of Stacks](https://www.youtube.com/watch?v=HrkWtRqpUwg) presented at CSS Café by Heydon Pickering 
