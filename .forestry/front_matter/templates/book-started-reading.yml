@@ -1,0 +1,25 @@
+---
+label: Book (started reading)
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+- type: text
+  name: description
+  label: description
+- type: datetime
+  name: date
+  label: date
+- type: text
+  name: location
+  label: location
+- type: boolean
+  name: mainImage.isAnchor
+  label: mainImage.isAnchor
+- type: list
+  name: tags
+  label: tags
+- type: boolean
+  name: draft
+  label: draft
