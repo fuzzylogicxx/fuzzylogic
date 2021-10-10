@@ -22,6 +22,7 @@ draft: false
 
 ---
 Here’s an accessibility tip that’s new to me. When the content of a heading, anchor, or other semantic HTML element contains smaller “chunks” of `span` and `em` (etc), the _VoiceOver_ screen reader on Mac and iOS annoyingly fails to announce the content as a single phrase and instead repeats the parent element’s role for each inner element. We can fix that by adding an inner “wrapper” element inside our parent and giving it `role=text`.
+---
 
 Make sure not to add this role directly to your parent element since it will override its original role causing it to lose its intended semantics.
 
