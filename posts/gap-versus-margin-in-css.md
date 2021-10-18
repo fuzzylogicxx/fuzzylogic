@@ -22,9 +22,7 @@ mainImage.isAnchor: false
 draft: true
 
 ---
-`gap` is great and in many ways feels _superior_ to margin. And now that all modern browsers support `gap` for both grid and flexbox it‘s tempting to want to use it on every multi-item layout that requires space between items, replacing our previous `margin`-based implementations. Adam Argyle in particular has popularised the concept of using CSS Grid [just for gap](https://web.dev/building-a-settings-component/#just-for-gap) and suggested that [gap will become the primary way we space elements on the web](https://dev.to/argyleink/5-css-predictions-for-2020-pl3).
-
-But is `gap` _always_ the best choice?
+`gap` is great and in many ways feels _superior_ to margin. And now that all modern browsers support `gap` for both grid and flexbox it‘s tempting to want to use it on every multi-item layout that requires space between items, replacing our previous `margin`-based implementations. Adam Argyle in particular has popularised the concept of using CSS Grid [just for gap](https://web.dev/building-a-settings-component/#just-for-gap) and suggested that [gap will become the primary way we space elements on the web](https://dev.to/argyleink/5-css-predictions-for-2020-pl3). But is `gap` _always_ the best choice?
 ---
 
 ## Why `gap` is so attractive
