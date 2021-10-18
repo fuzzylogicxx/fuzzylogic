@@ -22,25 +22,29 @@ mainImage.isAnchor: false
 draft: true
 
 ---
-`gap` is great and in many ways feels _superior_ to margin. And now that all modern browsers support `gap` for both grid and flexbox it‘s tempting to want to use it for every multi-item layout that requires space between items, thus replacing our previous `margin`-based implementations. (I’m sure I’ve heard other developers say “I’m using grid here just to get access to `gap`”.)  But is `gap` _always_ the best choice?
+`gap` is great and in many ways feels _superior_ to margin. And now that all modern browsers support `gap` for both grid and flexbox it‘s tempting to want to use it on every multi-item layout that requires space between items, replacing our previous `margin`-based implementations. Adam Argyle in particular has popularised the concept of using CSS Grid [just for gap](https://web.dev/building-a-settings-component/#just-for-gap) and suggested that [gap will become the primary way we space elements on the web](https://dev.to/argyleink/5-css-predictions-for-2020-pl3).
+
+But is `gap` _always_ the best choice?
+---
 
 ## Why `gap` is so attractive
 
-Spacing implemented via `gap` is defined at the _container_ level. This means we define spacing once for the entire layout and then it is automatically applied consistently within.
+Spacing implemented via `gap` is defined at the _container_ level. This means we define spacing once for the entire layout and it is automatically applied consistently within.
 
 This brings a number of advantages:
 
-* by not requiring to target every item `gap` allows terser code, reduced scope for error, and is generally slightly more reliable and agnostic to the nature of the components within the layout;
-* We are styling the _context_—this can help when considering a _system_ and how its parts interrelate, rather than us always working at item level. For example it lets us consider the “between” state, and also that this between state might not exist if there are insufficient items.
-* `gap` introduces space _in between_ items, not around them.  `margin` would require special cases to remove extra margins before the first item and after the last one. With gaps, we don’t need to do this. It’s good to have “enabling selectors” only rather than a clumsier combination of enabling and disabling selectors;
-* in responsive layouts which need to appear in both vertical (stacked) and horizontal (linear) configurations, `gap` _just works._ By contrast if using margin you’d need to set it in all directions and supplement it with negative margin hacks then add an extra, insulating `div`;
+* by not requiring us to target every item, `gap` permits terser code and reduced scope for error;
+* it’s generally slightly more reliable and agnostic to the nature of the components within the layout;
+* styling the _context_ helps when considering a _system_ and how its parts interrelate better than working at item level. For example it lets us consider the “between” state, and also that this between state might not exist if there are insufficient items.
+* `gap` introduces space _in between_ items, not around them. The `margin on items` alternative requires special cases to remove extra margins before the first item and after the last one whereas with `gap` this is not required. It’s good to have “enabling selectors” only;
+* in responsive, [quantum layouts](https://codepen.io/fuzzylogicx/pen/qBOmWbJ) which need to appear in both vertical (stacked) and horizontal (linear) configurations, `gap` _just works._ By contrast if using margin you’d need to set it in all directions and supplement it with negative margin hacks then add an extra, insulating `div`;
 * `gap` tends to preserve the symmetry of layouts better than `margin` and to not affect overall `width` and `height` in unpredictable ways.
 
 ## The interesting case of the Stack
 
-Should Stack be flexbox-based and use `gap`? Or more widely, what should and shouldn’t use `gap` for spacing out its items?
+Should Stack be flexbox-based and use `gap`? Or more generally, what should and shouldn’t use `gap` for spacing out its items?
 
-`gap` isn’t the only way of putting space only _between_ items. Can also use the owl selector. It has zero specificity other than the initial class (the universal selector * has zero specificity). This makes it easier to override with `.exception` later, at either the `.stack` component level _or_ for a specific item within a stack.
+`gap` isn’t the only way of putting space _between_ items. Can also use the owl selector. It has zero specificity other than the initial class (the universal selector `*` has zero specificity). This makes it easier to override with `.exception` later, at either the `.stack` component level _or_ for a specific item within a stack.
 
 If we were to use `gap` there’d be no way of overriding the gap for one of the children in a stack; it isn’t possible. That’s why EL stuck with margin being set using the owl selector. 
 
