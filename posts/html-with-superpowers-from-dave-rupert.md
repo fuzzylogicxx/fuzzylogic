@@ -4,6 +4,7 @@ title: HTML with Superpowers (from Dave Rupert)
 description: A new presentation on Web Components from Dave Rupert of the Shop Talk
   show
 tags:
+- link
 - css
 - presentation
 - talk
@@ -35,38 +36,42 @@ It starts off with the basics but goes on to mention how WC’s are
 I really like his _Tabs_ example where he explains how you can create an instance by providing a baseline of simple, semantic, resilient HTML:
 
 <figure>
-  ``` html
-    <generic-tabs>
-      <h2>About</h2>
-      <div>
-        <p>About content goes here. Lorem ipsum dolor sit amet…</p>
-      </div>
-    
-      <h2>Contact</h2>
-      <div>
-        <p>Contact content goes here. Lorem ipsum dolor sit amet…</p>
-      </div> 
-    </generic-tabs>
-  ```
+
+``` html
+<generic-tabs>
+  <h2>About</h2>
+  <div>
+    <p>About content goes here. Lorem ipsum dolor sit amet…</p>
+  </div>
+
+  <h2>Contact</h2>
+  <div>
+    <p>Contact content goes here. Lorem ipsum dolor sit amet…</p>
+  </div> 
+</generic-tabs>
+```
+
 </figure>
 
 …which the Web Component auto-converts into its javascript-dependent _Tabs_ template…
 
 <figure>
-  ``` html
-    <generic-tabs label="people">
-      <button slot="tab">About</button>
-      <button slot="tab">Contact</button>
+
+``` html
+<generic-tabs label="people">
+  <button slot="tab">About</button>
+  <button slot="tab">Contact</button>
     
-      <div slot="panel">
-        <p>About content goes here. Lorem ipsum dolor sit amet…</p>
-      </div>
+  <div slot="panel">
+    <p>About content goes here. Lorem ipsum dolor sit amet…</p>
+  </div>
     
-      <div slot="panel">
-        <p>Contact content goes here. Lorem ipsum dolor sit amet…</p>
-      </div>
-    </generic-tabs>
-  ```
+  <div slot="panel">
+    <p>Contact content goes here. Lorem ipsum dolor sit amet…</p>
+  </div>
+</generic-tabs>
+```
+
 </figure>
 
 …then the component’s JS handles all the [complex interactivity and accessibility requirements of Tabs](https://github.com/thepassle/generic-components/blob/master/generic-tabs/GenericTabs.js#L98) under the hood.
