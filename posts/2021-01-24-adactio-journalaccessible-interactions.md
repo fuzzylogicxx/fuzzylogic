@@ -8,9 +8,9 @@ linkTarget: "https://adactio.com/journal/17546"
 Jeremy Keith takes us through his thought process regarding the choice of link or `button` when planning accessible interactive disclosure elements.
 ---
 
-A `button` is generally a solid choice as it’s built for general interactivity and carries the expectation that when activated, something somewhere happens. However in some cases a link might be appropriate, for example when the _trigger_ and _target content_ are relatively far apart in the DOM and we should ensure the target is focused rather than making the user focus it.
+A `button` is generally a solid choice as it’s built for general interactivity and carries the expectation that when activated, something somewhere happens. However in some cases a link might be appropriate, for example when the _trigger_ and _target content_ are relatively far apart in the DOM and we feel the need move the user to the target / give it focus.
 
-For a typical disclosure pattern where some content is shown/hidden by an adjacent trigger, a `button` suits perfectly.  
+For a typical disclosure pattern where some content is shown/hidden by an adjacent trigger, a `button` suits perfectly. The DOM elements are right next to each other and flow into each other so there’s no need to move or focus anything.
 
 However in the case of a log-in link in a navigation menu which—when enhanced by JavaScript—opens a log-in form inside a modal dialogue, a link might be better. In this case you might use an anchor with a fragment identifier (`<a href="#login-modal">Log in</a>`) pointing to a login-form at the bottom of the page. This simple baseline will work if JavaScript is unavailable or fails, however when JavaScript _is_ available we can intercept the link’s default behaviour and enhance things. The expectation with links is that you’ll be taken somewhere and since modal dialogues are like faux pages, this feels appropriate. 
 
