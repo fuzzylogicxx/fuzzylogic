@@ -1,15 +1,15 @@
 ---
 title: I’ve started reading Uncanny Valley, by Anna Wiener
 description: I’ve started reading Uncanny Valley, by Anna Wiener
-date: 2021-09-30T23:00:00Z
+date: 2021-10-15T23:00:00Z
 location: Glasgow
 mainImage.isAnchor: false
 tags:
+- note
 - siliconvalley
 - startup
 - tech
 - book
-- note
 draft: false
 
 ---
