@@ -4,13 +4,13 @@ title: 'Buttons and links: definitions, differences and tips'
 description: How buttons and links work, the differences between them, and when to
   use each.
 tags:
+- entry
 - development
 - web
 - design
 - javascript
 - css
 - html
-- entry
 - anchor
 - link
 - button
@@ -28,6 +28,7 @@ draft: false
 
 ---
 Some of the web’s design and development practices have led to buttons and links becoming conceptually bundled together, confused and misunderstood. Practitioners can be guilty of seeing the surface-level commonality that “you click the thing, then something happens” and mistakenly thinking that they are interchangeable. Some might even regard the two as the same “component”. However this is wrong, harmful for effective web development; and causes our users problems. In this post I’ll address why buttons and links are different and exist separately, and when to use each.
+---
 
 ## Problematic patterns
 
