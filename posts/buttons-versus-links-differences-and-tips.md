@@ -22,11 +22,15 @@ draft: true
 ---
 Some of the web’s design and development practices have led to buttons and links becoming bundled together, confused and misunderstood. Practitioners are perhaps guilty of seeing the surface-level commonality between buttons and links that “you click the thing, then something happens” and mistakenly thinking that they are interchangeable. However this is wrong; harmful for effective web development; and most importantly causes our users problems. In this post I’ll address how buttons and links work, the differences between them, and when to use each.
 
-Designers often like to apply the appearance of a button to a link. 
+## Problematic patterns
 
-Developers have historically used [faux links](https://www.htmhell.dev/8-anchor-tag-used-as-button/) (`<a href="#">`) or worse, a DIY clickable `div` masquerading as a button, as a trigger for JavaScript-powered functionality where they should use native buttons. 
+Designers often like to apply the appearance of a button to a link. For some calls to action this can make sense, however it is overused and can uncertainty in developers implementing designs.
+
+Developers have historically used [faux links](https://www.htmhell.dev/8-anchor-tag-used-as-button/) (`<a href="#">`) or worse, a DIY clickable `div` masquerading as a button, as a trigger for JavaScript-powered functionality where they should instead use native buttons. 
 
 I think those patterns in combination have given rise to a collective confusion over buttons and links. We need to get back to basics and talk about foundational HTML.
+
+## Buttons and anchors in HTML
 
 There are two HTML elements of interest here.
 
