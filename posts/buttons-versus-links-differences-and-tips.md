@@ -24,7 +24,7 @@ Some of the web’s design and development practices have led to buttons and lin
 
 ## Problematic patterns
 
-Designers often like to apply the appearance of a button to a link. For some calls to action this can make sense, however it is overused and can uncertainty in developers implementing designs.
+Designers often like to apply the appearance of a button to a link. For some calls to action this can make sense, however it is overused, often under-thought, and can uncertainty in developers implementing designs.
 
 Developers have historically used [faux links](https://www.htmhell.dev/8-anchor-tag-used-as-button/) (`<a href="#">`) or worse, a DIY clickable `div` masquerading as a button, as a trigger for JavaScript-powered functionality where they should instead use native buttons. 
 
