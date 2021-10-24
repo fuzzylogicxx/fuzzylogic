@@ -20,9 +20,17 @@ mainImage.isAnchor: false
 draft: true
 
 ---
-Designers like to design _call to action_ links to look like buttons. And developers have historically used faux links (y’know, `<a href="#">` or some other element made clickable) as a trigger for JavaScript-powered functionality when they should be using buttons. Together these patterns have fostered a collective confusion about how buttons and links work, how they differ, and when to use each.
+Some of the web’s design and development practices have led to buttons and links becoming bundled together, confused and misunderstood. Practitioners are perhaps guilty of seeing the surface-level commonality between buttons and links that “you click the thing, then something happens” and mistakenly thinking that they are interchangeable. However this is wrong; harmful for effective web development; and most importantly causes our users problems. In this post I’ll address how buttons and links work, the differences between them, and when to use each.
 
-Let’s start with the basics: there are two HTML elements of interest here. 
+Designers often like to apply the appearance of a button to a link. 
+
+Developers have historically used [faux links](https://www.htmhell.dev/8-anchor-tag-used-as-button/) (`<a href="#">`) or worse, a DIY clickable `div` masquerading as a button, as a trigger for JavaScript-powered functionality where they should use native buttons. 
+
+I think those patterns in combination have given rise to a collective confusion over buttons and links. We need to get back to basics and talk about foundational HTML.
+
+There are two HTML elements of interest here.
+
+These patterns, perhaps allied to a lack of knowledge of the foundational HTML, have l
 
 What we refer to as a link is implemented using the HTML _anchor_ element (`<a>`).
 
@@ -57,6 +65,7 @@ Tips
 References
 
 * [Buttons vs. Links](https://yatil.net/blog/buttons-vs-links), by Eric Eggert
+* [https://www.buttoncheatsheet.com/](https://www.buttoncheatsheet.com/)
 
 \-
 
