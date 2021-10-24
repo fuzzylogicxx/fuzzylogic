@@ -1,8 +1,15 @@
 ---
 date: 2021-10-23T18:53:41.000+00:00
 title: 'Buttons and links: definitions, differences and tips'
-description: 'Buttons versus links: differences and tips'
+description: How buttons and links work, the differences between them, and when to
+  use each.
 tags:
+- development
+- web
+- design
+- javascript
+- css
+- html
 - entry
 - anchor
 - link
@@ -20,11 +27,11 @@ mainImage.isAnchor: false
 draft: true
 
 ---
-Some of the web’s design and development practices have led to buttons and links becoming bundled together, confused and misunderstood. Practitioners are perhaps guilty of seeing the surface-level commonality between buttons and links that “you click the thing, then something happens” and mistakenly thinking that they are interchangeable. However this is wrong; harmful for effective web development; and most importantly causes our users problems. In this post I’ll address how buttons and links work, the differences between them, and when to use each.
+Some of the web’s design and development practices have led to buttons and links becoming conceptually bundled together, confused and misunderstood. Practitioners can be guilty of seeing the surface-level commonality between them that “you click the thing, then something happens” and mistakenly thinking that they are interchangeable. Some might even regard the two as just the same “component”. However this is wrong, harmful for effective web development; and causes our users problems. In this post I’ll address why buttons and links are different and exist separately, how they work, and when to use each.
 
 ## Problematic patterns
 
-Designers often like to apply the appearance of a button to a link. For some calls to action this can make sense however as a pattern it is overused, often under-designed, and can cause lead to uncertainty and wrong decisions by developers implementing designs.
+Designers often like to apply the appearance of a button to a link. For some calls to action this can make sense however as a pattern it is overused, often under-designed, and can lead to uncertainty and wrong decisions by developers implementing designs.
 
 Meanwhile developers have historically used [faux links](https://www.htmhell.dev/8-anchor-tag-used-as-button/) (`<a href="#">`) or worse, a DIY clickable `div` masquerading as a button, as a trigger for JavaScript-powered functionality where they should instead use native buttons.
 
