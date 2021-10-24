@@ -47,29 +47,25 @@ What we refer to as a link is implemented using the HTML _anchor_ element (`<a>`
 
 Meanwhile buttons (by which I mean real buttons rather than links styled to appear as buttons) are implemented with the HTML _button_ element (`<button>`).
 
-A link:
+A link…
 
 * _goes somewhere_
-* normally links to another document (i.e. page) on the current website or an another website
-* can alternatively link to a
+* normally links to another document (i.e. page) on the current website or on another website
+* can alternatively link to a different section of the same page
+* offers specific right-click options to mouse users (open in new tab, copy linked URL and more)
+* is announced by screen readers as “Link”
 
-A button:
+A button…
 
 * _does something_
 * can be used to submit forms as a replacement for `<input type=submit />` and is the more modern and superior approach since it is easier to style, allows nested HTML and supports CSS pseudo-elements. 
-* can also—with assistance from JavaScript—…
+* can also—with assistance from JavaScript—be used for any type of functionality that happens in-place rather than leading a user somewhere else, for example revealing hidden content or performing a calculation 
+* is announced by screen readers as “Button” (no need to explicitly apply the [ARIA button role](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/button_role))
 
-Experiential differences
+Tip
 
-* announced differently
-* users have different expectations of the two—not only that “links go somewhere” and “buttons do something” but also in terms of their accessibility and interactivity.
-* asd
-* asd
-* asd
-
-Tips
-
-* I’ll normally use a `button` for JavaScript-powered interactions. However in disclosure patterns where the trigger and target element are far apart in the DOM [it can make sense to use a link as the trigger](https://fuzzylogic.me/posts/2021-01-24-adactio-journalaccessible-interactions/).
+* For triggering JavaScript-powered interactions I’ll typically use a `button`. However in disclosure patterns where the trigger and target element are far apart in the DOM [it can make sense to use a link as the trigger](https://fuzzylogic.me/posts/2021-01-24-adactio-journalaccessible-interactions/).
+* For buttons which are reliant on JavaScript, it’s best to use them within a strategy of progressive enhancement and render them with JavaScript. That way, if JavaScript fails or is unsupported, the user won’t be presented with a broken button.
 
 References
 
@@ -89,3 +85,10 @@ This lack of visual distinction can lead to people failing to appreciate the dif
 \-
 
 It seems that at least once a month there’s a new article about buttons and links, and it gets a bit tedious. However understanding them is important and I often see them misunderstood. So I’ve collected my thoughts here.
+
+In short:
+
+* they do different things
+* they offer different options
+* they are interacted with differently. 
+* they have different accessibility features
