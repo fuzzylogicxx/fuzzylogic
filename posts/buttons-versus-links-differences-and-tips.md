@@ -38,8 +38,6 @@ What we refer to as a link is implemented using the HTML _anchor_ element (`<a>`
 
 Meanwhile buttons—real buttons rather than links styled to appear as buttons—are implemented with the HTML _button_ element (`<button>`).
 
-These HTML elements may share the surface-level commonality that “you click it, then something happens” but that‘s where the similarity ends.
-
 A link:
 
 * _goes somewhere_
