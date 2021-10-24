@@ -73,7 +73,7 @@ A button…
 
 ## Our responsibilities
 
-It’s our job as designers and developers to use the purpose-built element for each situation, to present it in a way that respects conventions so that users know what it is, and to then meet their expectations of it.
+It’s our job as designers and developers to use the appropriate purpose-built element for each situation, to present it in a way that respects conventions so that users know what it is, and to then meet their expectations of it.
 
 ## Tips
 
@@ -87,24 +87,3 @@ It’s our job as designers and developers to use the purpose-built element for 
 
 * [Buttons vs. Links](https://yatil.net/blog/buttons-vs-links), by Eric Eggert
 * [https://www.buttoncheatsheet.com/](https://www.buttoncheatsheet.com/)
-
-\-
-
-On the modern web, links are often designed to look like buttons. That’s not necessarily a crime however the lack of visual distinction encourages people to simply see “a button”. For practitioners this can lead to forgetting that each has different use cases and different effects. 
-
-which always works the same way and does the same things, and that‘s not true. There’s also been a historic pattern of 
-
-This lack of visual distinction can lead to people failing to appreciate the difference.
-
- same, some designers and developers don’t appreciate the difference between the elements.
-
-\-
-
-It seems that at least once a month there’s a new article about buttons and links, and it gets a bit tedious. However understanding them is important and I often see them misunderstood. So I’ve collected my thoughts here.
-
-In short:
-
-* they do different things
-* they offer different options
-* they are interacted with differently. 
-* they have different accessibility features
