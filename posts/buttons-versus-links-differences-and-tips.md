@@ -86,4 +86,4 @@ It’s our job as designers and developers to use the appropriate purpose-built 
 ## References
 
 * [Buttons vs. Links](https://yatil.net/blog/buttons-vs-links), by Eric Eggert
-* [https://www.buttoncheatsheet.com/](https://www.buttoncheatsheet.com/)
+* [The Button Cheat Sheet](https://www.buttoncheatsheet.com/), by Manuel Matuzović
