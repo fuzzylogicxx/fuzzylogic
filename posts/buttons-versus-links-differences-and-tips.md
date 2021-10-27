@@ -27,18 +27,18 @@ mainImage.isAnchor: false
 draft: false
 
 ---
-Some of the web’s design and development practices have led to buttons and links becoming conceptually bundled together, confused and misunderstood. Practitioners can be guilty of seeing the surface-level commonality that “you click the thing, then something happens” and mistakenly thinking that they are interchangeable. Some might even consider this all in terms of a single “component”. However this mentality is harmful for effective web development and causes our users problems. In this post I’ll address why buttons and links are different and exist separately, and when to use each.
+Some of the web’s design and development practices have led to buttons and links becoming conceptually bundled together and misunderstood. Practitioners can be guilty of only seeing the surface-level commonality that “you click the thing, then something happens” and mistakenly thinking the two elements are interchangeable. Some might even consider them as a single “button component”. However this mentality is harmful for effective web development and causes our users problems. In this post I’ll address why buttons and links are different and exist separately, and when to use each.
 ---
 
 ## Problematic patterns
 
-Designers often like to apply the appearance of a button to a link. For some calls to action this can make sense however as a pattern it is often overused and under-designed, and can lead to uncertainty and bad decision-making by developers implementing designs.
+Modern website designs commonly apply the appearance of a button to a link. For isolated calls to action this can make sense however as a design pattern it is often overused and under-cooked, which can cause confusion to developers implementing the designs.
 
-Relatedly, it’s now common for Design Systems to have a _Button_ component which includes button-styled links that are referred to as buttons, while not including a corresponding _Link_ (or _Anchor_) component. Unless documented carefully this can lead to internal language and comprehension issues.
+Relatedly, it’s now common for Design Systems to have a _Button_ component which includes button-styled links that are referred to simply as buttons. Unless documented carefully this can lead to internal language and comprehension issues.
 
 Meanwhile developers have historically used [faux links](https://www.htmhell.dev/8-anchor-tag-used-as-button/) (`<a href="#">`) or worse, a DIY clickable `div`, as a trigger for JavaScript-powered functionality where they should instead use native buttons.
 
-These patterns in combination have given rise to a collective muddle over buttons and links. We need to get back to basics and talk about foundational HTML.
+These patterns in combination have given rise to a collective _muddle_ over buttons and links. We need to get back to basics and talk about foundational HTML.
 
 ## Buttons and anchors in HTML
 
