@@ -454,6 +454,37 @@ We have the `content_tag` helper method for rendering HTML elements. However you
 
 `link_to` is a little more useful and makes more sense to use.
 
+### Multi-line HTML string
+    
+Return a multi-line HTML string like so:
+    
+<figure>
+
+```
+output = "<p>As discussed on the phone, the additional work would involve:</p>
+<ol>
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+</ol>
+<p>This should get your historic accounts into a good shape.</p>".html_safe
+output
+```
+  
+</figure>
+    
+### Interpolation
+    
+Here’s an example where we use interpolation to return a string that has a text label alongside an inline SVG icon, both coming from variables.
+    
+<figure>
+
+```
+"#{link[:text]} #{icon_svg}".html_safe
+```
+  
+</figure>
+    
 ### tag.send()
 
 `send()` is not just for use on `tag`. It’s a means of calling a method dynamically i.e. using a variable. I’ve used it so as to have a single line create either a `th` or a `td` dymamically dependent on context.
