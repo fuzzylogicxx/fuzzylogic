@@ -87,3 +87,5 @@ It’s our job as designers and developers to use the appropriate purpose-built 
 
 * [Buttons vs. Links](https://yatil.net/blog/buttons-vs-links), by Eric Eggert
 * [The Button Cheat Sheet](https://www.buttoncheatsheet.com/), by Manuel Matuzović
+* [A complete guide to links and buttons](https://css-tricks.com/a-complete-guide-to-links-and-buttons/) on CSS-Tricks
+* [The Links vs Buttons Showdown](https://speakerdeck.com/marcysutton/the-links-vs-buttons-showdown), by Marcy Sutton
