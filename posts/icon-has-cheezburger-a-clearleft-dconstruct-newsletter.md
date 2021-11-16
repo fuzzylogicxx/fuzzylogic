@@ -2,7 +2,7 @@
 date: 2021-11-16T16:23:40Z
 title: Icon has Cheezburger (a Clearleft dConstruct newsletter)
 description: Jeremy Keith deconstructs the cheeseburger icon and argues that while
-  icons alone look tasty they risk users failing to understand and failing to engage.
+  icons alone look tasty they risk users failing to understand and engage.
 tags:
 - link
 - menu
