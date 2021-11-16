@@ -24,5 +24,5 @@ mainImage.isAnchor: false
 draft: false
 
 ---
-Jeremy Keith deconstructs the cheeseburger icon and—referencing Luke Wroblewski’s [Obvious Always Wins](https://vimeo.com/288882119) mantra—argues that while icons alone look tasty they risk users failing to understand and failing to engage.
+Jeremy Keith deconstructs the cheeseburger icon and—referencing Luke Wroblewski’s [Obvious Always Wins](https://vimeo.com/288882119) mantra—argues that while icons alone look tasty they risk users failing to understand and engage.
 ---
