@@ -33,9 +33,11 @@ Some of Web Components’ historical marketing problems are now behind them, sin
 1. the Shadow DOM, which is both powerful and frustrating. 
 2. you can use web components standalone, i.e. natively, without any frameworks, build tools, or package managers.
 
-Dave highlights an education gap where developers focused on HTML, CSS, and Design Systems don’t tend to use Web Components. He suggests that this is likely as a result of most web component tutorials focusing on JavaScript APIs for JavaScript developers. We can instead frame Web Components as involving a layered approach starting with HTML, moving on to CSS, and _ending_ by applying JavaScript. They are perfectly suited to progressive enhancement.
+Dave highlights an education gap where developers focused on HTML, CSS, and Design Systems don’t tend to use Web Components. He suggests that this is likely as a result of most web component tutorials focusing on JavaScript APIs for JavaScript developers. 
 
-I really like his _Tabs_ example where he explains how you can create an instance by providing a baseline of simple, semantic, resilient HTML:
+We can instead frame Web Components as involving a layered approach starting with HTML, moving on to CSS, and _ending_ by applying JavaScript. They are perfectly suited to progressive enhancement.
+
+And that progressive enhancement might for example apply lots of complicated ARIA-related accessibility considerations. I really like his _Tabs_ example where you create an instance by providing a baseline of simple, semantic, resilient HTML… 
 
 <figure>
 
