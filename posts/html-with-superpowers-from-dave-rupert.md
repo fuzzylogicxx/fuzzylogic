@@ -26,7 +26,7 @@ draft: false
 Here’s a new presentation on Web Components from Dave Rupert (of the [Shop Talk](https://shoptalkshow.com/) show).
 ---
 
-Dave begins by explaining that Web Components are not only a set of technologies but a set of _standards_. And a benefit of them being standards is that we can rely on them to endure and work into the future in comparison to proprietary technologies in JavaScript frameworks. The pace of technology change with web standards might be slower, but again that’s often a side-effect of cross-platform reliability and accessibility.
+Dave begins by explaining that Web Components are not only a set of technologies but a set of _standards_. And a benefit of them being standards is that we can rely on them to endure and work into the future in comparison to proprietary technologies in JavaScript frameworks. That’s good news for people who like to avoid the burnout-inducing churn of learning and relearning abstractions. Of course the pace of technology change with web standards tends to be slower, however again that’s often a side-effect of cross-platform reliability and accessibility.
 
 Some of Web Components’ historical marketing problems are now behind them, since they are supported by all major browsers and reaching maturity. Furthermore, web components have two superpowers not found in other JavaScript component approaches: 
 
