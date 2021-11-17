@@ -26,12 +26,14 @@ draft: false
 Here’s a new presentation on Web Components from Dave Rupert (of the [Shop Talk](https://shoptalkshow.com/) show).
 ---
 
-It starts off with the basics but goes on to mention how WC’s are
+Dave begins by explaining that Web Components are not only a set of technologies but a set of _standards_. And a benefit of them being standards is that we can rely on them to endure and work into the future in comparison to proprietary technologies in JavaScript frameworks. The pace of technology change with web standards might be slower, but again that’s often a side-effect of cross-platform reliability and accessibility.
 
-* supported by all major browsers,
-* reaching maturity,
-* work natively without build tooling, and
-* are perfectly suited to a layered, progressively-enhanced approach.
+Some of Web Components’ historical marketing problems are now behind them, since they are supported by all major browsers and reaching maturity. Furthermore, web components have two superpowers not found in other JavaScript component approaches: 
+
+1. the Shadow DOM, which is both powerful and frustrating. 
+2. you can use web components standalone, i.e. natively, without any frameworks, build tools, or package managers.
+
+Dave highlights an education gap where developers focused on HTML, CSS, and Design Systems don’t tend to use Web Components. He suggests that this is likely as a result of most web component tutorials focusing on JavaScript APIs for JavaScript developers. We can instead frame Web Components as involving a layered approach starting with HTML, moving on to CSS, and _ending_ by applying JavaScript. They are perfectly suited to progressive enhancement.
 
 I really like his _Tabs_ example where he explains how you can create an instance by providing a baseline of simple, semantic, resilient HTML:
 
