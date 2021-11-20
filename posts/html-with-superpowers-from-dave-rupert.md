@@ -23,7 +23,7 @@ mainImage.isAnchor: false
 draft: false
 
 ---
-Here’s a new presentation on Web Components from Dave Rupert (of the [Shop Talk](https://shoptalkshow.com/) show).
+In this new presentation on Web Components, Dave Rupert (of the [Shop Talk](https://shoptalkshow.com/) show) makes a compelling case for adopting Web Components. They provide the same benefits of encapsulation and reusability as components in a proprietary JavaScript frameworks, but also bring the reliability and portability of web standards, work without build tools, can be used like HTML in a progressively enhanced approach, and may pave the way for a better web. 
 ---
 
 Dave begins by explaining that Web Components are not only a set of technologies but a set of _standards_. And a benefit of them being standards is that we can rely on them to endure and work into the future in comparison to proprietary technologies in JavaScript frameworks. That’s good news for people who like to avoid the burnout-inducing churn of learning and relearning abstractions. Of course the pace of technology change with web standards tends to be slower, however again that’s often a side-effect of cross-platform reliability and accessibility.
@@ -31,11 +31,13 @@ Dave begins by explaining that Web Components are not only a set of technologies
 Some of Web Components’ historical marketing problems are now behind them, since they are supported by all major browsers and reaching maturity. Furthermore, web components have two superpowers not found in other JavaScript component approaches: 
 
 1. the Shadow DOM, which is both powerful and frustrating. 
-2. you can use web components standalone, i.e. natively, without any frameworks, build tools, or package managers.
+2. you can use web components _standalone_, i.e. natively, without any frameworks, build tools, or package managers.
+
+All that’s required to use a “standalone” is to include the `script` element for it and then use the relevant HTML on your page.
 
 Dave highlights an education gap where developers focused on HTML, CSS, and Design Systems don’t tend to use Web Components. He suggests that this is likely as a result of most web component tutorials focusing on JavaScript APIs for JavaScript developers. 
 
-We can instead frame Web Components as involving a layered approach starting with HTML, moving on to CSS, and _ending_ by applying JavaScript. They are perfectly suited to progressive enhancement.
+However we can instead frame Web Components as involving a layered approach that starts with HTML, adds some CSS, then _ends_ by applying JavaScript. They are perfectly suited to progressive enhancement.
 
 And that progressive enhancement might for example apply lots of complicated ARIA-related accessibility considerations. I really like his _Tabs_ example where you create an instance by providing a baseline of simple, semantic, resilient HTML… 
 
