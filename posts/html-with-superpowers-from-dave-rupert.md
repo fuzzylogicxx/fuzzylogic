@@ -23,23 +23,27 @@ mainImage.isAnchor: false
 draft: false
 
 ---
-Here’s a great new presentation by Dave Rupert (of the [Shop Talk](https://shoptalkshow.com/) show) in which he makes a compelling case for adopting Web Components. They provide the same benefits of encapsulation and reusability as components in proprietary JavaScript frameworks, but also bring the reliability and portability of web standards, work without build tools, can be used like HTML in a progressively enhanced approach, and may pave the way for a better web. 
+Here’s a great new presentation by Dave Rupert (of the [Shop Talk](https://shoptalkshow.com/) show) in which he makes a compelling case for adopting Web Components. Not only do they provide the same benefits of encapsulation and reusability as components in proprietary JavaScript frameworks, but they also bring the reliability and portability of web standards, work without build tools, are suited to progressive enhancement, and may pave the way for a better web. 
 ---
 
-Dave begins by explaining that Web Components are not only a set of technologies but a set of _standards_. And a benefit of them being standards is that we can rely on them to endure and work into the future in comparison to proprietary technologies in JavaScript frameworks. That’s good news for people who like to avoid the burnout-inducing churn of learning and relearning abstractions. Of course the pace of technology change with web standards tends to be slower, however again that’s often a side-effect of cross-platform reliability and accessibility.
+Dave begins by explaining that Web Components are based on not just a set of technologies but a set of _standards_, namely:
+
+- Custom Elements (like `<custom-alert>`)
+- Shadow DOM
+- ES Modules
+- the HTML `<template>` element
+
+Standards have the benefit that we can rely on them to endure and work into the future in comparison to proprietary technologies in JavaScript frameworks. That’s good news for people who like to avoid the burnout-inducing churn of learning and relearning abstractions. Of course the pace of technology change with web standards tends to be slower, however that’s arguably a price worth paying for cross-platform stability and accessibility.
 
 Some of Web Components’ historical marketing problems are now behind them, since they are supported by all major browsers and reaching maturity. Furthermore, web components have two superpowers not found in other JavaScript component approaches: 
 
-1. the Shadow DOM, which is both powerful and frustrating. 
-2. you can use web components _standalone_, i.e. natively, without any frameworks, build tools, or package managers.
+Firstly, the Shadow DOM (which is both powerful and frustrating). The Shadow DOM provides _encapsulation_ but furthermore in progressive enhancement terms it enables the final, _enhanced_ component output which serves as an upgrade from the baseline _Light DOM_ HTML we provided in our custom element instance. It can be a little tricky or confusing to style, however, although there are ways.
 
-All that’s required to use a “standalone” is to include the `script` element for it and then use the relevant HTML on your page.
+Secondly, you can use web components _standalone_, i.e. natively, without any frameworks, build tools, or package managers. All that’s required to use a “standalone” is to load the `<script type=module …>` element for it and then use the relevant custom element HTML on your page. This gets us closer to just writing HTML rather than wrestling with tools.
 
-Dave highlights an education gap where developers focused on HTML, CSS, and Design Systems don’t tend to use Web Components. He suggests that this is likely as a result of most web component tutorials focusing on JavaScript APIs for JavaScript developers. 
+Dave highlights an education gap where developers focused on HTML, CSS, and Design Systems don’t tend to use Web Components. He suggests that this is likely as a result of most web component tutorials focusing on JavaScript APIs for JavaScript developers. However we can instead frame Web Component authoring as involving a layered approach that starts with HTML, adds some CSS, then _ends_ by applying JavaScript.
 
-However we can instead frame Web Components as involving a layered approach that starts with HTML, adds some CSS, then _ends_ by applying JavaScript. They are perfectly suited to progressive enhancement.
-
-And that progressive enhancement might for example apply lots of complicated ARIA-related accessibility considerations. I really like his _Tabs_ example where you create an instance by providing a baseline of simple, semantic, resilient HTML… 
+Web Components are perfectly suited to progressive enhancement. And that progressive enhancement might for example apply lots of complicated ARIA-related accessibility considerations. I really like the _Tabs_ example where one would create a Tabs instance by providing a baseline of semantic and resilient HTML that simply renders headings and paragraphs… 
 
 <figure>
 
@@ -59,7 +63,7 @@ And that progressive enhancement might for example apply lots of complicated ARI
 
 </figure>
 
-…which the Web Component auto-converts into its javascript-dependent _Tabs_ template…
+…but the Web Component’s JavaScript would upgrade this into interactive tabs…
 
 <figure>
 
@@ -80,6 +84,8 @@ And that progressive enhancement might for example apply lots of complicated ARI
 
 </figure>
 
-…then the component’s JS handles all the [complex interactivity and accessibility requirements of Tabs](https://github.com/thepassle/generic-components/blob/master/generic-tabs/GenericTabs.js#L98) under the hood.
+The idea is that the component’s JS would handle all the [complex interactivity and accessibility requirements of Tabs](https://github.com/thepassle/generic-components/blob/master/generic-tabs/GenericTabs.js#L98) under the hood. I think if I were implementing something like Inclusive Components’ [Tabs component](https://inclusive-components.design/tabbed-interfaces/) these days I’d seriously consider doing this as a Web Component.
 
-I think if I were implementing something like Inclusive Components’ [Tabs component](https://inclusive-components.design/tabbed-interfaces/) these days I’d give a Web Component based approach serious consideration.
+Later, Dave discusses the JavaScript required to author a Custom Element. He advises that in order to avoid repeatedly writing the same lengthy, boilerplate code on each component we might use a lightweight library such as his favourite, [LitElement](https://lit-element.polymer-project.org/guide).
+
+Lastly, Dave argues that by building web components we are working with web standards rather than building with/for a proprietary library and creating compatible components which pave the cowpaths for those becoming future HTML standards (e.g. a `<tabs>` element!) And why is this important? Because an easier web lower barriers: less complexity, less tooling and setup, less gatekeeping—a web for everyone.  
