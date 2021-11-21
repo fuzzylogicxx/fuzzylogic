@@ -28,7 +28,7 @@ Here’s a great new presentation by Dave Rupert (of the [Shop Talk](https://sho
 
 Dave begins by explaining that Web Components are based on not just a set of technologies but a set of _standards_, namely:
 
-- Custom Elements (like `<custom-alert>`)
+- Custom Elements (for example `<custom-alert>`)
 - Shadow DOM
 - ES Modules
 - the HTML `<template>` element
