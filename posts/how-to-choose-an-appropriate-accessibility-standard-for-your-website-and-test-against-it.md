@@ -10,6 +10,8 @@ Lorem ipsum
 
 ## Which should I choose for a commercial website?
 
+WCAG 2.1 level AA
+
 You might argue that regardless of the law there is a moral imperative to do the right thing.
 But as to the law:
 
@@ -29,3 +31,6 @@ WCAG 2.1 in a nutshell and tools to use
 https://www.gov.uk/service-manual/helping-people-to-use-your-service/understanding-wcag
 
 WCAG 2.1 Official Docs: https://www.w3.org/TR/WCAG21/
+
+Additional references:
+https://siteimprove.com/en-gb/accessibility/uk-accessibility-laws/
