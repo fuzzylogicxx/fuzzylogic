@@ -47,7 +47,7 @@ There are probably other methods I’m forgetting, but those are the most common
 
 In order to cater to people who navigate a web page using a keyboard without a mouse (a.k.a. _keyboard users_), we must ensure that the page is tab-friendly. We want the page’s interactive elements to be navigable and focusable by pressing the <kbd>Tab</kbd> key. Those elements should be focusable one by one in the same order as they are defined in the HTML document. 
 
-Often, achieving tab-friendliness requires little or no additional development effort because the browser gives us so much of the necessary behaviour natively. Interactive HTML elements like anchors (links) and form controls are focusable by default. And for any custom interactions where we want to make a normally non-focusable element (such as a `div`) focusable (thus giving it a keyboard tab-stop) we can apply [the tabindex attribute](https://fuzzylogic.me/posts/using-the-tabindex-attribute/).
+Often, achieving tab-friendliness requires little or no additional development effort because the browser gives us so much of the necessary behaviour natively. Interactive HTML elements like anchors (links) and form controls are focusable by default. And for any custom interactions where we want to make a normally non-focusable element (such as a `div`) focusable (thus giving it a keyboard tab-stop) we can apply [the tabindex attribute](https://fuzzylogic.me/posts/using-the-tabindex-attribute/), setting its `tabindex="0"`.
 
 A simple, well-formed web page will natively offer a natural and predictable tabbing order.
 
