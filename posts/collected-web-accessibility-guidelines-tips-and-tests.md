@@ -17,7 +17,8 @@ mainImage.isAnchor: false
 draft: true
 
 ---
-## In work, I’m sometimes asked for accessibility guidelines or to help people who have less knowledge on the topic. I am most definitely not an accessibility expert however I have picked up lots of tips and knowledge since I began working on websites back in 2003. So I thought it’d be a handy resource if I collected my web accessibility guidelines, tips and tests in one place.
+## In work, I’m sometimes asked for accessibility guidelines or to help people who have less knowledge on the topic. I am most definitely not an accessibility expert however I try hard and have picked up lots of tips and knowledge since I began working on websites back in 2003. So for future reference I’m collecting here my general web accessibility guidelines, tips and tests.
+---
 
 ## Table of contents
 
