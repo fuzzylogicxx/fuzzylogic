@@ -35,12 +35,19 @@ draft: true
 * …
 * Semantic HTML
 * Hiding to aid accessibility
-* Keyboard navigation and focus
 * Misc
 
 ## Keyboard support
 
 Blah
+
+Extra credit:
+
+Remember that keyboard users may also be screen reader users.
+
+### Keyboard navigation and focus
+
+Optimising keyboard navigation on duplicate links using tabindex and ARIA: see the last part of Sara’s video.
 
 ## Semantic HTML
 
@@ -56,19 +63,15 @@ HTML that is descriptive and provides meaning and supports navigation on AT
 
 When adding additional information to a visible label, it must come _after_ what’s visually present, otherwise you might break the UI for users using Voice Commands.
 
-## Keyboard navigation and focus
-
-Optimising keyboard navigation on duplicate links using tabindex and ARIA: see the last part of Sara’s video.
-
 ## Misc
 
 > We’re all just temporarily abled
 
 (Cindy Li)
 
-Remember that some screen reader users are also keyboard users.
+
 
 ## References
 
 * Tetralogical’s [Quick Accessibility Tests](https://www.youtube.com/playlist?list=PLTqm2yVMMUKWTr9XWdW5hJ9tk512Ow0SE) YouTube playlist
-* [https://aneventapart.com/news/post/practical-tips-for-building-more-accessible-front-ends](https://aneventapart.com/news/post/practical-tips-for-building-more-accessible-front-ends "https://aneventapart.com/news/post/practical-tips-for-building-more-accessible-front-ends")
+* Sara Soueidan’s video tutorial [Practical tips for building more accessible front-ends](https://aneventapart.com/news/post/practical-tips-for-building-more-accessible-front-ends)
