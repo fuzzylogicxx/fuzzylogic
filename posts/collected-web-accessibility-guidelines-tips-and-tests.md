@@ -32,10 +32,9 @@ draft: true
 * Content structure
 * Typography
 * Captions
-* …
 * Semantic HTML
 * Hiding to aid accessibility
-* Misc
+* Miscellaneous notes
 
 ## Keyboard support
 
@@ -63,7 +62,7 @@ HTML that is descriptive and provides meaning and supports navigation on AT
 
 When adding additional information to a visible label, it must come _after_ what’s visually present, otherwise you might break the UI for users using Voice Commands.
 
-## Misc
+## Miscellaneous notes
 
 > We’re all just temporarily abled
 
