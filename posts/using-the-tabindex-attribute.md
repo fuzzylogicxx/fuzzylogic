@@ -10,9 +10,11 @@ Léonie Watson explains how the HTML tabindex attribute is used to manage keyboa
 
 ## tabindex="-1"
 
-The element becomes programmatically focusable but isn’t included in the tab order. It can’t be reached by someone using the tab key to navigate through content, but it can be focused on with scripting via the `focus()` method. 
+The element becomes programmatically focusable but isn’t included in the tab order. It can’t be reached by someone using the tab key to navigate through content, but it can be focused on with scripting via the `focus()` method.
 
-Léonie offers the example of a list of form errors which we might want to set focus to using a script.
+We might use this because we want to be able to set focus to a particular element via a script. Léonie offers the example of a list of form errors.
+
+Alternatively we might use this because we want to prevent a normally tabbable element from being tabbable. [Sara Souidean uses this technique](https://aneventapart.com/news/post/practical-tips-for-building-more-accessible-front-ends) (in combination with `aria-hidden=true`) on e-commerce product teaser “media objects” in order to limit the number of duplicate links that keyboard users must tab through.
 
 <aside>
   <details>
