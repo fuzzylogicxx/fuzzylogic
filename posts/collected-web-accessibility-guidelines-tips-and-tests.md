@@ -56,7 +56,8 @@ HTML that is descriptive and provides meaning and supports navigation on AT
 * Provide headings where needed and follow order
 * If a heading is not provided in the design, provide a visually hidden one for screen reader users
 * Don’t skip headings (use CSS to make the right heading look different if necessary)
-* A heading creates the expectation that content will follow
+
+A heading creates the expectation that content will follow. Do not use heading elements unless they introduce a section of content. If your card (for example) only has a heading element, don't use a heading. It should just be big text. 
 
 ## Hiding to aid accessibility
 
