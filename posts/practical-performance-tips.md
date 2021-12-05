@@ -30,7 +30,7 @@ If your page including CSS/JS is _over_ 14 kb after minifying and gzipping then 
 
 [CSS @import is really slow!](https://csswizardry.com/2018/11/css-and-network-performance/#avoid-import-in-css-files)
 
-## JavaScript Modules in the head
+## JavaScript modules in the head
 
 Native JavaScript modules are included on a page using the following:
 
@@ -42,11 +42,11 @@ Unlike standard `<script>` elements, module scripts are deferred (non render-blo
 
 ## Background images
 
-Sometimes developers implement an image as a CSS background image rather than a “content image”, either because they feel it’ll be easier to manipulate that way—a typical example being a responsive hero banner with overlaid text—or simply because it’s decorative rather than meaninful. However it’s worth being aware of how that impacts the way that image loads.
+Sometimes developers implement an image as a CSS background image rather than a “content image”, either because they feel it’ll be easier to manipulate that way—a typical example being a responsive hero banner with overlaid text—or simply because it’s decorative rather than meaningful. However it’s worth being aware of how that impacts the way that image loads.
 
 Outgoing requests for images defined in CSS rather than HTML won’t start until the browser has created the [Render Tree](https://developers.google.com/web/fundamentals/performance/critical-rendering-path/render-tree-construction). The browser must first download and parse the CSS then construct the CSSOM before it knows that “Element X” should be visible and has a background image specified, in order to then decide to download that image. For important images, that might feel too late. 
 
-[As Harry Roberts explains](https://csswizardry.com/2018/06/image-inconsistencies-how-and-when-browsers-download-images/#0) it’s worth considering whether the need might be served as well or better by a content image, since by comparison that allows the image to discover and request the image nice and early.
+[As Harry Roberts explains](https://csswizardry.com/2018/06/image-inconsistencies-how-and-when-browsers-download-images/#0) it’s worth considering whether the need might be served as well or better by a content image, since by comparison that allows the browser to discover and request the image nice and early.
 
 > By moving the images to <img /> elements… the browser can discover them far sooner—as they become exposed to the browser’s preload scanner—and dispatch their requests before (or in parallel to) CSSOM completion
 
@@ -66,3 +66,4 @@ Other stuff to add:
 
 - [Inlining literally everything](https://gomakethings.com/inlining-literally-everything-for-better-performance/) on Go Make Things
 - [MDN’s guide to native JavaScript modules](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules)
+- [How and when browsers download images](https://csswizardry.com/2018/06/image-inconsistencies-how-and-when-browsers-download-images/#0) by Harry Roberts
