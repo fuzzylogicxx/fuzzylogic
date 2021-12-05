@@ -10,19 +10,10 @@ tags:
 - web
 - tip
 - performance
-noteWithTitle: false
-linkTarget: ''
-mainImage.url: ''
-mainImage.alt: ''
-mainImage.aspectRatioWidth: ''
-mainImage.aspectRatioHeight: ''
-mainImage.srcsetWidths: ''
-mainImage.sizes: ''
-mainImage.isAnchor: false
 draft: true
 
 ---
-I’ve been really interested in the subject of Web Performance since I read Steve Souders’ book _High Performance Websites_ back in 2007. Although some of the principles in that book are still relevant, it’s also fair to say that a lot has changed since then so I decided to pull together some current tips. Disclaimer: I’m a performance _enthusiast_ but not an expert. If I have anything wrong, please let me know.
+I’ve been really interested in the subject of Web Performance since I read Steve Souders’ book _High Performance Websites_ back in 2007. Although some of the principles in that book are still relevant, it’s also fair to say that a lot has changed since then so I decided to pull together some current tips. Disclaimer: This is a living document which I’ll expand over time. Also: I’m a performance _enthusiast_ but not an expert. If I have anything wrong, please let me know.
 ---
 
 ## Inlining CSS and or JavaScript
@@ -35,6 +26,10 @@ If you have a lean page and minimal CSS and or JavaScript to the extent that the
 
 If your page including CSS/JS is _over_ 14 kb after minifying and gzipping then you’d be better off not inlining those assets. It’d be better for performance to link to external assets and let them be _cached_ rather than having a bloated HTML file that requires multiple roundtrips and doesn’t get the benefit of static asset caching.
 
+## Avoid CSS `@import`
+
+[CSS @import is really slow!](https://csswizardry.com/2018/11/css-and-network-performance/#avoid-import-in-css-files)
+
 ## JavaScript Modules in the head
 
 Native JavaScript modules are included on a page using the following:
@@ -45,10 +40,19 @@ Native JavaScript modules are included on a page using the following:
 
 Unlike standard `<script>` elements, module scripts are deferred (non render-blocking) by default. Rather than placing them before the closing `</body>` tag I place them in the `<head>` so as to allow the script to be downloaded _early_ and in parallel with the DOM being processed. That way, the JavaScript is already available as soon as the DOM is ready.
 
-## Avoid CSS `@import`
+## Background images
 
-It’s really slow!
-https://csswizardry.com/2018/11/css-and-network-performance/#avoid-import-in-css-files
+Sometimes developers implement an image as a CSS background image rather than a “content image”, either because they feel it’ll be easier to manipulate that way—a typical example being a responsive hero banner with overlaid text—or simply because it’s decorative rather than meaninful. However it’s worth being aware of how that impacts the way that image loads.
+
+Outgoing requests for images defined in CSS rather than HTML won’t start until the browser has created the [Render Tree](https://developers.google.com/web/fundamentals/performance/critical-rendering-path/render-tree-construction). The browser must first download and parse the CSS then construct the CSSOM before it knows that “Element X” should be visible and has a background image specified, in order to then decide to download that image. For important images, that might feel too late. 
+
+[As Harry Roberts explains](https://csswizardry.com/2018/06/image-inconsistencies-how-and-when-browsers-download-images/#0) it’s worth considering whether the need might be served as well or better by a content image, since by comparison that allows the image to discover and request the image nice and early.
+
+> By moving the images to <img /> elements… the browser can discover them far sooner—as they become exposed to the browser’s preload scanner—and dispatch their requests before (or in parallel to) CSSOM completion
+
+However if still makes sense to use a background image and performance is important [Harry recommends including an accompanying hidden image](https://twitter.com/csswizardry/status/1276854595382325248) either inline or via `link rel=preload`.
+
+
 
 
 
