@@ -5,6 +5,7 @@ description: Collected web accessibility nuggets
 tags:
 - web
 - a11y
+- howto
 noteWithTitle: false
 linkTarget: ''
 mainImage.url: ''
@@ -17,59 +18,22 @@ mainImage.isAnchor: false
 draft: true
 
 ---
-In work, I’m sometimes asked for accessibility guidelines or to help people who have less knowledge on the topic. I am most definitely not an accessibility expert however I try hard and have picked up lots of tips and knowledge since I began working on websites back in 2003. So for future reference I’m collecting here my general web accessibility guidelines, tips and tests.
+At work, I’m sometimes asked accessibility questions or even to provide guidelines. I am most definitely not an accessibility expert however I have picked up lots of tips and knowledge in nearly twenty years of developing websites. So I thought it’d be useful to collect some general web accessibility tips and tests in one place as a useful quick reference.
+
+Caveats: i) this is a living document which I’ll flesh out over time; and ii) if I’ve got anything wrong, please let me know.
 ---
 
 ## Table of contents
 
-* [Keyboard support](#keyboard-support)
-* Content resizing (zooming)
-* High Contrast Mode
-* Skip links
-* Link text
-* Visual presentation of links
-* Page titles
-* Content structure
-* Typography
-* Captions
-* Semantic HTML
-* Hiding to aid accessibility
-* Miscellaneous notes
+* [Ensure keyboard support](#ensure-keyboard-support)
 
-## Keyboard support
+## Ensure keyboard support
 
-Blah
+Web pages need to support those who access and navigate by keyboard. 
 
-Extra credit:
+Use the tab key to navigate your page and ensure that you can reach all actionable controls such as links, buttons and form controls. Press the enter key or space bar to activate each control. 
 
-Remember that keyboard users may also be screen reader users.
-
-### Keyboard navigation and focus
-
-Optimising keyboard navigation on duplicate links using tabindex and ARIA: see the last part of Sara’s video.
-
-## Semantic HTML
-
-HTML that is descriptive and provides meaning and supports navigation on AT
-
-* Use HTML5 landmarks
-* Provide headings where needed and follow order
-* If a heading is not provided in the design, provide a visually hidden one for screen reader users
-* Don’t skip headings (use CSS to make the right heading look different if necessary)
-
-A heading creates the expectation that content will follow. Do not use heading elements unless they introduce a section of content. If your card (for example) only has a heading element, don't use a heading. It should just be big text. 
-
-## Hiding to aid accessibility
-
-When adding additional information to a visible label, it must come _after_ what’s visually present, otherwise you might break the UI for users using Voice Commands.
-
-## Miscellaneous notes
-
-> We’re all just temporarily abled
-
-(Cindy Li)
-
-
+If during your test any actionable control is skipped, receives focus in an illogical order, or you cannot see where the focus is at any time, then keyboard support is not properly implemented.
 
 ## References
 
