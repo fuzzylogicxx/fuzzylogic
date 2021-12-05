@@ -46,7 +46,7 @@ Outgoing requests for images defined in CSS rather than HTML won’t start until
 
 [As Harry Roberts explains](https://csswizardry.com/2018/06/image-inconsistencies-how-and-when-browsers-download-images/#0) it’s worth considering whether the need might be served as well or better by a content image, since by comparison that allows the browser to discover and request the image nice and early.
 
-> By moving the images to <img /> elements… the browser can discover them far sooner—as they become exposed to the browser’s preload scanner—and dispatch their requests before (or in parallel to) CSSOM completion
+> By moving the images to &lt;img&gt; elements… the browser can discover them far sooner—as they become exposed to the browser’s preload scanner—and dispatch their requests before (or in parallel to) CSSOM completion
 
 However if still makes sense to use a background image and performance is important [Harry recommends including an accompanying hidden image](https://twitter.com/csswizardry/status/1276854595382325248) inline or preloading it in the `<head>` via `link rel=preload`.
 
