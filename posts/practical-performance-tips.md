@@ -48,10 +48,7 @@ Outgoing requests for images defined in CSS rather than HTML won’t start until
 
 > By moving the images to <img /> elements… the browser can discover them far sooner—as they become exposed to the browser’s preload scanner—and dispatch their requests before (or in parallel to) CSSOM completion
 
-However if still makes sense to use a background image and performance is important [Harry recommends including an accompanying hidden image](https://twitter.com/csswizardry/status/1276854595382325248) either inline or via `link rel=preload`.
-
-
-
+However if still makes sense to use a background image and performance is important [Harry recommends including an accompanying hidden image](https://twitter.com/csswizardry/status/1276854595382325248) inline or preloading it in the `<head>` via `link rel=preload`.
 
 
 <!--
