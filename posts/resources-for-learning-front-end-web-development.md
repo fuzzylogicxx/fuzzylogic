@@ -34,4 +34,4 @@ I recommended choosing a course or courses from CSS-Tricks’ post [Where do you
 
 ## Learning JavaScript
 
-I recommended choosing a course or courses from CSS-Tricks’ post [Beginner JavaScript notes](), especially as it includes Wes Bos’s [Beginner JavaScript Notes + Reference](https://wesbos.com/javascript).
+I recommended choosing a course or courses from CSS-Tricks’ post [Beginner JavaScript notes](https://css-tricks.com/beginner-javascript-notes/), especially as it includes Wes Bos’s [Beginner JavaScript Notes + Reference](https://wesbos.com/javascript).
