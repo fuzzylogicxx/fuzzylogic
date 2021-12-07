@@ -50,6 +50,27 @@ Outgoing requests for images defined in CSS rather than HTML won’t start until
 
 However if still makes sense to use a background image and performance is important [Harry recommends including an accompanying hidden image](https://twitter.com/csswizardry/status/1276854595382325248) inline or preloading it in the `<head>` via `link rel=preload`.
 
+## Preload
+
+From [MDN’s preload docs](https://developer.mozilla.org/en-US/docs/Web/HTML/Link_types/preload), preload allows:
+
+> specifying resources that your page will need very soon, which you want to start loading early in the page lifecycle, before browsers' main rendering machinery kicks in. This ensures they are available earlier and are less likely to block the page's render, improving performance.
+
+The benefits are most clearly seen on large and late-discovered resources. For example:
+
+- Resources that are pointed to from inside CSS, like fonts or images.
+- Resources that JavaScript can request such as JSON and imported scripts.
+- Larger images and videos.
+
+I’ve recently used the following to assist performance of a large CSS background image:
+
+<figure>
+  
+```
+<link rel="preload" href="bg-illustration.svg" as="image" media="(min-width: 60em)">
+```
+  
+</figure>
 
 <!--
 Other stuff to add:
