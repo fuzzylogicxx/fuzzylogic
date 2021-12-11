@@ -13,7 +13,7 @@ tags:
 - development
 - web
 noteWithTitle: false
-linkTarget: ''
+linkTarget: https://web.dev/learn/design/
 mainImage.url: ''
 mainImage.alt: ''
 mainImage.aspectRatioWidth: ''
