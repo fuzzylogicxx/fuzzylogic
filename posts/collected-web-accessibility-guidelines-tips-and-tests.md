@@ -15,7 +15,6 @@ mainImage.aspectRatioHeight: ''
 mainImage.srcsetWidths: ''
 mainImage.sizes: ''
 mainImage.isAnchor: false
-draft: true
 ---
 At work, I’m sometimes asked accessibility questions or to provide guidelines. I’m with Anna Cook in describing myself as an [accessibility advocate rather than an expert](https://twitter.com/annaecook/status/1468602342639431682) however I have picked up lots of tips and knowledge over many years of developing websites. So I thought it’d be useful to gather some general web accessibility tips and tests in one place as a useful reference.
 
@@ -27,11 +26,13 @@ Caveats: i) this is a living document which I’ll flesh out over time; and ii) 
 * [Ensure keyboard support](#ensure-keyboard-support)
 * [Content resizing](#content-resizing)
 * [Content structure](#content-structure)
+* [Supporting high contrast mode](#supporting-high-contrast-mode)
+* [Skip links](#skip-links)
 * [Navigation and menus](#navigation-and-menus)
 
 ## Ensure keyboard support
 
-Web pages need to support those who access and navigate by keyboard. 
+Web pages need to support those who navigate the page by keyboard.
 
 Use the tab key to navigate your page and ensure that you can reach all actionable controls such as links, buttons and form controls. Press the enter key or space bar to activate each control. 
 
@@ -53,9 +54,23 @@ The page’s content should be well-structured as this makes it easier to unders
 
 Check your page for any long passages of text with no structure. Ensure that sufficient prominence is given to the most important information and calls to action.
 
+## Supporting high contrast mode
+
+Some people find it easier to read content when it’s in a particular colour against a specific background colour. Operating systems provide options to allow users to configure this to their preference. Websites must support support the user’s ability to apply this.
+
+On a Windows computer go to Settings > Ease of access and turn on High contrast mode. On macOS go to System preferences > Accessibility settings > Display and select “Invert colours”.
+
+Having changed the contrast, check that your web page’s content is fully visible and understandable, that images are still visible and that buttons are still discernible.
+
+## Skip links
+
+Websites should provide a “Skip to content” link because they provide an important accessibility aid to keyboard users and those who use specialised input devices. For these users, having to step through all of the navigation links would be tiring and frustrating. Providing a skip link allows them to bypass the navigation and skip to the page’s main content.
+
+To test that a website contains a skip link, visit a page then press the tab key and the skip link should appear. Then activate it using the enter key and check that focus moves to the main content area. Press tab again to ensure that focus moves to the first actionable element in the main content. 
+
 ## Navigation and menus
 
-When creating a collapsible menu, place your menu button _within_ your `<nav>` element and hide the inner list rather than hiding the `nav` element itself. That way, we are not obscuring from Assistive Technologies the fact that a navigation still exists. ATs can still access the nav via landmark navigation. This is important because landmark discovery is one of the fundamental ways AT users scan, determine and navigate a site’s structure.
+When developing a collapsible menu, place your menu `<button>` _within_ your `<nav>` element and hide the inner list rather than hiding the `<nav>` element itself. That way, we are not obscuring from Assistive Technologies the fact that a navigation still exists. ATs can still access the nav via landmark navigation. This is important because landmark discovery is one of the fundamental ways AT users scan, determine and navigate a site’s structure.
 
 ## References
 
