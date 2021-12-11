@@ -26,6 +26,7 @@ Caveats: i) this is a living document which I’ll flesh out over time; and ii) 
 * [Ensure keyboard support](#ensure-keyboard-support)
 * [Content resizing](#content-resizing)
 * [Content structure](#content-structure)
+* [Better link text](#better-link-text)
 * [Supporting high contrast mode](#supporting-high-contrast-mode)
 * [Skip links](#skip-links)
 * [Navigation and menus](#navigation-and-menus)
@@ -47,6 +48,14 @@ Content must resize and be available and legible. Everything should reflow.
 Relative font settings and responsive design techniques are helpful in effectively handling this requirement. 
 
 Relatedly, setting font-sizes in `px` should be avoided because although a user can override the “fixed-ness” with zoom, it breaks the user’s ability to choose a larger or smaller _default font size_ (which users often prefer over having to zoom every single page).
+
+## Better link text
+
+Blind and visually impaired users use a [screen reader](https://en.wikipedia.org/wiki/Screen_reader) to browse web pages, and screen readers provide user-friendly access to all the links on the page via a Links menu. When links are encountered in that context, link text like “Click here” and “Read more” are useless. 
+
+Check your web page to ensure that links clearly describe the content they link to when read out of context.
+
+Better link text also improves the flow and clarity of your content and so improves the experience for everyone.
 
 ## Content structure
 
