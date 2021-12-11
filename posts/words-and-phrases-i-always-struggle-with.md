@@ -29,7 +29,7 @@ Hubris
 : excessive pride or self-confidence
 
 Pathos
-: a quality (e.g. of a person) that evokes pity or sadness
+: a quality (e.g. of a person) that evokes pity or sadness. For example an actor might inject pathos into a character.
 
 Single point of failure
 : a part of a system that, if it fails, the whole system fails.
