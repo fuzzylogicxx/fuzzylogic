@@ -24,4 +24,5 @@ mainImage.isAnchor: false
 draft: false
 
 ---
-Jeremy Keith’s new course for Google’s web.dev learning platform is fantastic and covers a variety of aspects of responsive design including layout (macro and micro), images, icons and typography. 
+Jeremy Keith’s new course for Google’s web.dev learning platform is fantastic and covers a variety of aspects of responsive design including layout (macro and micro), images, icons and typography.
+---
