@@ -11,7 +11,7 @@ tags:
 - development
 - web
 noteWithTitle: false
-linkTarget: https://previous.fuzzylogic.me/links/w3c-html-element-sampler
+linkTarget: https://www.w3.org/StyleSheets/Core/preview.html
 mainImage.url: ''
 mainImage.alt: ''
 mainImage.aspectRatioWidth: ''
@@ -22,4 +22,4 @@ mainImage.isAnchor: false
 draft: false
 
 ---
-In all my years of spinning up “HTML Typographic Elements” lists as a reference aid for designers, I didn’t realise that the W3C provide the very thing I needed in their _HTML Element Sampler page_. These pages provide great dummy content for ensuring that all HTML elements are covered when creating a website’s typographic styles and pattern library.
+In all my years of spinning up “HTML Typographic Elements” lists or pages as a reference for designers, I didn’t realise that the W3C provide the very thing I needed in their _HTML Element Sampler_. These pages provide comprehensive dummy content covering all the main typographic elements which is really handy when designing a website’s typographic styles and pattern library.
