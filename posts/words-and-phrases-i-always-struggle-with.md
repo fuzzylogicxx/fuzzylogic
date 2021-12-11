@@ -22,7 +22,7 @@ mainImage.isAnchor: false
 draft: true
 
 ---
-I’m not sure if it‘s just me, but there are certain words and phrases which—no matter how many times I look up—just seem to be beyond me! So I’m gonna note them down for quick reference. Hopefully that might help make the meanings stick.
+## I’m not sure if it‘s just me, but there are certain words and phrases which—no matter how many times I look up—just seem to be beyond me! So I’m gonna note them down for future reference. Hopefully that might help make the meanings stick.
 ---
 
 Hubris
@@ -33,4 +33,3 @@ Pathos
 
 Single point of failure
 : a part of a system that, if it fails, the whole system fails.
-
