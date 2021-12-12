@@ -1,10 +1,11 @@
 ---
-date: 2021-12-11T23:16:01Z
+date: 2020-12-12T00:00:00Z
 title: Words and phrases I always struggle with
 description: I’m jotting down the meanings of those words and phrases that I always
   forget
 tags:
 - entry
+- aidememoire
 - meanings
 - words
 - reference
@@ -19,7 +20,7 @@ mainImage.aspectRatioHeight: ''
 mainImage.srcsetWidths: ''
 mainImage.sizes: ''
 mainImage.isAnchor: false
-draft: true
+draft: false
 
 ---
 I’m not sure if it‘s just me, but there are certain words and phrases which—no matter how many times I look up—just seem to be beyond me! So I’ve decided to note their meanings for future reference. Hopefully this might help make the meanings stick.
