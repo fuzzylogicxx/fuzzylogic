@@ -32,4 +32,4 @@ Pathos
 : a quality (e.g. of a person) that evokes pity or sadness. For example an actor might inject pathos into a character.
 
 Single point of failure
-: a part of a system that, if it fails, the whole system fails.
+: a part of a system that, if it fails, the whole system fails. It’s a bad thing.
