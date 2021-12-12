@@ -1,5 +1,5 @@
 ---
-date: 2021-12-12T00:16:52Z
+date: 2021-11-12T00:16:52Z
 title: From designing interfaces to designing systems (on The history of the web)
 description: A history of Design Systems by Jay Hoffman
 tags:
