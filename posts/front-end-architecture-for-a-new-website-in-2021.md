@@ -26,7 +26,8 @@ mainImage.isAnchor: false
 draft: false
 
 ---
-Some musings on how the front-end wind is blowing (to my mind at least) and how that might practically impact my approach on the next small-ish website that I code.
+Just taking a moment for some musings on which way the front-end wind is blowing (from my perspective at least) and how that might practically impact my approach on the next small-ish website that I code.
+---
 
 ## I might lean into HTTP2
 
@@ -99,5 +100,3 @@ It’s also important to me that BEM has the concept of a _mix_ because this all
 Where I’ll happily deviate from BEM is to favour use of certain ARIA attributes as selectors (for example `[aria-current=page]` or `[aria-expanded=true]` because this _enforces_ good accessibility practice and helps create equivalence between the visual and non-visual experience. I’m also happy to use the universal selector (`*`) which is great for [owl selectors]() and I’m fine with adjacent sibling (and related) selectors.
 
 Essentially I’m glad of the structure and maintainability that BEM provides but I don’t want a straitjacket that stops me from using my brain and applying CSS properly.
-
-
