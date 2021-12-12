@@ -40,10 +40,14 @@ module.exports = function(eleventyConfig) {
       content: [{ raw: content }],
       css: ['_includes/css/main.css'],
       keyframes: true,
+      // safelist (i.e. always include) our ”single-rule utility classes”.
+      // They use a colon which needs escaped in CSS but not in HTML.
+      // This makes it difficult to get purgecss to match the HTML to the CSS, so safelisting them works around that.
+      safelist: [/\:/]
     });
 
     return content.replace(
-      '<!-- THIS WILL BE REPLACED WITH INLINE CSS -->',
+      '<!-- THIS COMMENT WILL BE REPLACED WITH INLINED, MINIFIED CSS -->',
       '<style>' + purgeCSSResults[0].css + '</style>'
     );
   });

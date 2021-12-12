@@ -5,3 +5,11 @@
 .no-hyphens {
   hyphens: none;
 }
+
+/****************
+* Trumps
+*****************/
+
+.t-font-size\:base {
+  font-size: var(--font-size-base) !important;
+}
