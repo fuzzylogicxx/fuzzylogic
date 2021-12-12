@@ -33,3 +33,6 @@ Pathos
 
 Single point of failure
 : a part of a system that, if it fails, the whole system fails. It’s a bad thing.
+
+Non-zero-sum game
+: in game theory, a situation where one player's gain is not necessarily another player's loss. There are actions from which everyone can benefit.
