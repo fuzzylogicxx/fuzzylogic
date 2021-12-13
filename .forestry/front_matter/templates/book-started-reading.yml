@@ -24,4 +24,5 @@ fields:
   name: draft
   label: draft
 pages:
+- posts/i-ve-started-reading-station-eleven-by-emily-st.john-mandel.md
 - posts/i-ve-started-reading-uncanny-valley-by-anna-wiener.md
