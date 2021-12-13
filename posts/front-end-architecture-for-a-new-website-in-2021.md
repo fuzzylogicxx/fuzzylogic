@@ -42,7 +42,7 @@ Breaking CSS into small modules then concatenating everything into a single file
 
 The same goes for browser-native JavaScript modules. 
 
-This isn’t something I’ve tried yet and it still feels pretty radical… but it‘s an option!
+This isn’t something I’ve tried yet and it’d feel like a pretty radical departure from the conventions of recent years… but it‘s an option!
 
 ## I’ll combine ES modules and classes
 
