@@ -14,7 +14,7 @@ tags:
 - a11y
 
 ---
-Here’s an interesting development in the [block link saga](https://fuzzylogic.me/posts/block-links-a-tricky-ui-problem/): GOV.UK have introduced one (named `.chevron-card`) on their Homepage, citing how [it’ll improve accessibility by increasing mobile touch targets](https://insidegovuk.blog.gov.uk/2021/12/13/updating-the-gov-uk-homepage/). It’s not yet been added to their Design System while they’re monitoring its to see if it is successful. They’ve chosen the approach which stretches a single anchor across the whole card using pseudo elements plus absolute positioning. I’m slightly surprised at this choice because it breaks the user’s ability to select text within the link. I’m [really interested in that choice of approach](https://twitter.com/fuzzylogicx/status/1470369635681943561) and how it pans out!
+Here’s an interesting development in the [block link saga](https://fuzzylogic.me/posts/block-links-a-tricky-ui-problem/): GOV.UK have introduced one (named `.chevron-card`) on their Homepage, citing how [it’ll improve accessibility by increasing mobile touch targets](https://insidegovuk.blog.gov.uk/2021/12/13/updating-the-gov-uk-homepage/). It’s not yet been added to their Design System while they’re monitoring it to see if it is successful. They’ve chosen the approach which starts with a standard, single, non-wrapping anchor then “stretches” it across the whole card via some pseudo elements and absolute positioning magic. I’m slightly surprised at this choice because it breaks the user’s ability to select text within the link. [Really interested to see how it pans out!](https://twitter.com/fuzzylogicx/status/1470369635681943561)
 
 <figure>
 
