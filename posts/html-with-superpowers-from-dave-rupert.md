@@ -43,7 +43,7 @@ Secondly, you can use web components _standalone_, i.e. natively, without any fr
 
 Dave highlights an education gap where developers focused on HTML, CSS, and Design Systems don’t tend to use Web Components. He suggests that this is likely as a result of most web component tutorials focusing on JavaScript APIs for JavaScript developers. However we can instead frame Web Component authoring as involving a layered approach that starts with HTML, adds some CSS, then _ends_ by applying JavaScript.
 
-Web Components are perfectly suited to progressive enhancement. And that progressive enhancement might for example apply lots of complicated ARIA-related accessibility considerations. I really like the _Tabs_ example where one would create a Tabs instance by providing a baseline of semantic and resilient HTML that simply renders headings and paragraphs… 
+Web Components are perfectly suited to progressive enhancement. And that progressive enhancement might for example apply lots of complicated ARIA-related accessibility considerations. I really like the [Tabs example](https://genericcomponents.netlify.app/generic-tabs/demo/index.html) where one would create a `<generic-tabs>` instance which starts off with simple, semantic, resilient HTML that renders headings and paragraphs… 
 
 <figure>
 
@@ -63,20 +63,18 @@ Web Components are perfectly suited to progressive enhancement. And that progres
 
 </figure>
 
-…but the Web Component’s JavaScript would upgrade this into interactive tabs…
+…but the Web Component’s JavaScript would include a `template` and use this to upgrade the Light DOM markup into the final interactive tab markup…
 
 <figure>
 
 ``` html
 <generic-tabs label="people">
-  <button slot="tab">About</button>
-  <button slot="tab">Contact</button>
-    
-  <div slot="panel">
+  <h2 slot="tab" aria-selected="true" tabindex="0" role="tab" id="generic-tab-3-0" aria-controls="generic-tab-3-0" selected="">About</h2>
+  <div role="tabpanel" aria-labelledby="generic-tab-3-0" slot="panel">
     <p>About content goes here. Lorem ipsum dolor sit amet…</p>
   </div>
-    
-  <div slot="panel">
+  <h2 slot="tab" aria-selected="false" tabindex="-1" role="tab" id="generic-tab-3-1" aria-controls="generic-tab-3-1">Contact</h2>
+  <div role="tabpanel" aria-labelledby="generic-tab-3-1" slot="panel" hidden>
     <p>Contact content goes here. Lorem ipsum dolor sit amet…</p>
   </div>
 </generic-tabs>
