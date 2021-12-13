@@ -68,7 +68,7 @@ Web Components are perfectly suited to progressive enhancement. And that progres
 <figure>
 
 ``` html
-<generic-tabs label="people">
+<generic-tabs>
   <h2 slot="tab" aria-selected="true" tabindex="0" role="tab" id="generic-tab-3-0" aria-controls="generic-tab-3-0" selected="">About</h2>
   <div role="tabpanel" aria-labelledby="generic-tab-3-0" slot="panel">
     <p>About content goes here. Lorem ipsum dolor sit amet…</p>
