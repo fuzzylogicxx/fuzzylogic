@@ -1,0 +1,22 @@
+---
+label: Embedded Tweet
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+- type: boolean
+  name: noteWithTitle
+  label: noteWithTitle
+- type: text
+  name: description
+  label: description
+- type: datetime
+  name: date
+  label: date
+- type: text
+  name: location
+  label: location
+- type: list
+  name: tags
+  label: tags
