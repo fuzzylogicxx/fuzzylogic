@@ -11,4 +11,4 @@ tags:
 draft: false
 
 ---
-I’ve started reading Station Eleven, by Emily St. John Mandel.
+I’ve started reading [Station Eleven](https://uk.bookshop.org/a/4340/9781447268970), by Emily St. John Mandel.
