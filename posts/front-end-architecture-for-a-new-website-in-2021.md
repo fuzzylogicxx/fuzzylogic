@@ -1,7 +1,7 @@
 ---
 date: 2021-12-12T00:41:22.000+00:00
 title: Front-end architecture for a new website (in 2021)
-description: ''
+description: 'The native, standards-based stack I might use for future website'
 tags:
 - entry
 - http2
@@ -40,7 +40,7 @@ Breaking CSS into small modules then concatenating everything into a single file
 <link href="/css/component_3.css" rel="stylesheet">
 ```
 
-The same goes for browser-native JavaScript modules. 
+The same goes for browser-native JavaScript modules.
 
 This isn’t something I’ve tried yet and it’d feel like a pretty radical departure from the conventions of recent years… but it‘s an option!
 
@@ -83,7 +83,7 @@ I’m now keen to create my own _custom elements_ for javascript-enhanced UI ele
 
 I’ve been using custom properties for a few years now, but at first it was just as a native replacement for Sass variables, which isn’t really exploiting their full potential. However at work we’ve recently been using them as the special sauce powering component variations (`--gap`, `--mode` etc). 
 
-In our server-rendered components we’ve been using inline `style` attributes to apply variations via those properties, and this brings the advantage of no longer needing to create a CSS class per variation (e.g. one for each value on a spacing scale), which in turn keeps code and specificity simpler. However as I start using web components, custom properties will prove really handy here too. They can not only be updated by JavaScript, but furthermore provide a bridge between the Light DOM and Shadow DOM to make styling custom elements easier. 
+In our server-rendered components we’ve been using inline `style` attributes to apply variations via those properties, and this brings the advantage of no longer needing to create a CSS class per variation (e.g. one CSS class for each padding variation based on a spacing scale), which in turn keeps code and specificity simpler. However as I start using web components, custom properties will prove really handy here too. Not only can they be updated by JavaScript, but furthermore they provide a bridge between your global CSS and your web component because they can “pierce the Shadow Boundary”,  make styling Shadow DOM HTML in custom elements easier. 
 
 ## I’ll use BEM, but loosely
 
