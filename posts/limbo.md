@@ -5,6 +5,7 @@ description: Enjoyed this film about a Syrian asylum seeker searching for happin
   on a remote Scottish island
 tags:
 - note
+- film
 - syria
 - scotland
 - zouk
