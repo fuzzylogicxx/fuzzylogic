@@ -39,8 +39,7 @@ Animation via the CSS `transition` shorthand property is the most performant met
 
 We can `transition` another property such as `transform` or `opacity` to move between two different element states that have been defined using that property. The first state would be in the element’s starting styles and the other in either its `:hover` or `:focus` styles or in a class that'd be applied by JavaScript following an event. Without the `transition` the state change would still happen (e.g. opacity change from 1 to 0) but would be instantaneous. 
 
-One good “entrance and exit” use case would be a “Skip to content” link. The anchor’s initial state would be positioned off-canvas above the viewport (`transform: translateY(-10em)`) while its `:focus` styles define another state where the intial `translate` has been undone so that the link is visible (`transform: translateY(0em)`). If we `transition` the `transform` property then we can animate the change of state over a duration of our choice and with our preferred timing function (the latter creating an _acceleration curve_).
-
+Here’s an example hover effect from Stephanie Eckles’s [Smol CSS](https://smolcss.dev) (with minor naming modifications).  
 <figure>
   
 ``` html
@@ -68,3 +67,5 @@ One good “entrance and exit” use case would be a “Skip to content” link.
 </figure>
 
 Note our use of custom properties to make it really easy to transition a different property without writing repetitious CSS.
+
+One good “entrance and exit” use case would be a “Skip to content” link. The anchor’s initial state would be positioned off-canvas above the viewport (`transform: translateY(-10em)`) while its `:focus` styles define another state where the intial `translate` has been undone so that the link is visible (`transform: translateY(0em)`). If we `transition` the `transform` property then we can animate the change of state over a duration of our choice and with our preferred timing function (the latter creating an _acceleration curve_).
