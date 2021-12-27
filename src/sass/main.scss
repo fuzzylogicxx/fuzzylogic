@@ -1,3 +1,9 @@
+// @use "settings/all" as settings;
+@use "base/all" as base;
+// @use "layouts/all" as layouts;
+// @use "components/all" as components;
+// @use "utilities/all" as utilities;
+
 @use 'fonts';
 
 // Presets, functions and resets
@@ -78,7 +84,7 @@ figcaption {
 // Index pages (e.g. Work, Labs)
 
 .section-index-header {
-  background: linear-gradient(variables_general.$color-accent, variables_general.$color-accent) no-repeat bottom left/2.4em 0.2ch;
+  background: linear-gradient(var(--color-highlight), var(--color-highlight)) no-repeat bottom left/2.4em 0.2ch;
   padding-bottom: typography.scale-value(4)+rem;
   // Add a generous whitespace after, overriding any generic stack spacing
   & + * {
@@ -94,7 +100,7 @@ figcaption {
   font-size: typography.scale-value(0)+rem;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  color: #333;
+  //color: #333;
 }
 
 .h-entry header {
@@ -108,7 +114,7 @@ figcaption {
 
 .h-entry header div {
   font-size: typography.scale-value(-1)+rem;
-  color: #999;
+  //color: #999;
 }
 
 
@@ -118,19 +124,19 @@ figcaption {
 
 .post-type {
   font-size: typography.scale-value(-1)+rem;
-  color: #999;
+  //color: #999;
   font-weight: 600;
 }
 
 .bookmark-options {
-  color: #999;
+  //color: #999;
 }
 
 .dt-published {
   font-size: typography.scale-value(-1)+rem;
-  color: #999;
+  //color: #999;
   a {
-    color: #999;
+    //color: #999;
   }
 
   /*@include mixins_general.at-least(typography.$bp-wide-two) {
@@ -333,7 +339,7 @@ figcaption {
     text-decoration: none;
   }
   a[aria-current] {
-    border-bottom: 1px solid variables_general.$color-accent;
+    border-bottom: 1px solid var(--color-highlight);
   }
 }
 
@@ -349,6 +355,18 @@ figcaption {
       width: (typography.scale-value(9) + typography.scale-value(-6))+rem;
       height: (typography.scale-value(9) + typography.scale-value(-6))+rem;
     }
+  }
+}
+
+.logo-roundel-background {
+  @media (prefers-color-scheme: dark) {
+    fill: var(--color-band);
+  }
+}
+
+.logo-logomark {
+  @media (prefers-color-scheme: dark) {
+    fill: white;
   }
 }
 
@@ -397,15 +415,15 @@ figcaption {
 
 .global-footer {
   font-size: typography.scale-value(-1)+rem;
-  background: variables_general.$text-color;
-  color: #fff;
+  background: var(--color-band);
+  color: var(--color-ink);
 
   a {
-    color: #fff;
+    color: var(--color-ink);
   }
 
   a[aria-current] {
-    border-bottom: 1px solid variables_general.$color-accent;
+    border-bottom: 1px solid var(--color-highlight);
   }
 
   li a {
@@ -455,10 +473,10 @@ figcaption {
 }
 
 .copyright {
-  color: #999;
+  color: var(--color-ink-offset);
   a {
-    color: #999;
-    text-decoration-color: #999;
+    color: var(--color-ink-offset);
+    text-decoration-color: var(--color-ink-offset);
   }
 }
 
@@ -500,7 +518,7 @@ figcaption {
 
 .intro {
   --measure: 32rem; // tighter
-  background: linear-gradient(variables_general.$color-accent, variables_general.$color-accent) no-repeat bottom left/2.4em 0.2ch;
+  background: linear-gradient(var(--color-highlight), var(--color-highlight)) no-repeat bottom left/2.4em 0.2ch;
   padding-bottom: typography.scale-value(4)+rem;
   @include typography.stack();
   & > * + * {

@@ -1,0 +1,28 @@
+/* ==========================================================================
+   # BOX-SIZING
+   ========================================================================== */
+
+/*
+ * With the browser default 'box-sizing: content-box' the element‘s declared `width`
+ * refers to its inner content only and does not include padding + border.
+ * Padding + border are added to width, increasing how much space the element takes up.
+ * This usually has unexpected results.
+ * Using 'box-sizing: content-box' puts the padding + border inside the box
+ * so the box is as wide as the width we declared.
+ *
+ * Also, inheriting box-sizing is best practice
+ * https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+ * …because if we need to include a 3rd-party component and don't want to mess with its box-model...
+ * then we can reset it to normal using .component { box-sizing: content-box; }
+ * and its child elements will work as expected too.
+*/
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}

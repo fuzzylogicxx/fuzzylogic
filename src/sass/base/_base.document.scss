@@ -1,0 +1,46 @@
+/* ==========================================================================
+   # DOCUMENT STYLES
+   ========================================================================== */
+
+/*
+ * 1. Raw vars
+ * 2. Accent colour (used by form controls etc)
+ * 3. Set default color scheme to light and configure settings appropriately
+ * 4. When user prefers dark mode at OS level, set color scheme, settings appropriately
+*/
+
+:root {
+  /* [1] */
+  --color-darker: rgb(26,26,26);
+  --color-grey: rgb(153,153,153);
+
+  --color-page-bg-light: white;
+  --color-page-bg-dark: rgb(38,38,38);
+  --color-ink-dark: black;
+  --color-ink-light: white;
+  --color-highlight: #9ed8d2;
+
+  /* [2] */
+  accent-color: var(--color-highlight);
+
+  /* [3] */
+  color-scheme: light;
+  --color-page-bg: var(--color-page-bg-light);
+  --color-band: var(--color-darker);
+  --color-ink: var(--color-ink-dark);
+  --color-ink-offset: var(--color-grey);
+
+  @media (prefers-color-scheme: dark) {
+    /* [4] */
+    color-scheme: dark;
+    --color-page-bg: var(--color-page-bg-dark);
+    --color-ink: var(--color-ink-light);
+    --color-band: var(--color-darker);
+    --color-ink-offset: var(--color-grey);
+  }
+}
+
+body {
+  background-color: var(--color-page-bg);
+  color: var(--color-ink);
+}
