@@ -18,6 +18,7 @@
     <link rel="preload" href="/fonts/sans/SourceSans3-Regular-subset.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/fonts/sans/SourceSans3-Semibold-subset.woff2" as="font" type="font/woff2" crossorigin>
 
+    <link href="css/theme.css" rel="stylesheet">
     <!-- THIS COMMENT WILL BE REPLACED WITH INLINED, MINIFIED CSS -->
 
     <meta name="author" content="{{ metadata.author.name }}">
@@ -44,7 +45,7 @@
     <meta name="twitter:image:alt" content="{{ metadata.open_graph.image_alt_text }}">
 
     <!-- Advice for devices which can 'install' this website on their home screen -->
-    <link rel="manifest" href="/site.webmanifest">
+    <link rel="manifest" href="/manifest.webmanifest">
 
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -53,7 +54,9 @@
     <meta name="apple-mobile-web-app-title" content="{{ metadata.name }}">
     <meta name="application-name" content="{{ metadata.name }}">
     <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
+
+    <meta name="theme-color" content="{{ tokens.colorLight }}" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="{{ tokens.colorDark }}" media="(prefers-color-scheme: dark)">
 
     <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.name }}">
 

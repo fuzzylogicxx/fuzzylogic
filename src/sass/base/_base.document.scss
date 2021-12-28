@@ -3,7 +3,7 @@
    ========================================================================== */
 
 /*
- * 1. Raw vars
+ * 1. vars
  * 2. Accent colour (used by form controls etc)
  * 3. Set default color scheme to light and configure settings appropriately
  * 4. When user prefers dark mode at OS level, set color scheme, settings appropriately
@@ -11,14 +11,10 @@
 
 :root {
   /* [1] */
-  --color-darker: rgb(26,26,26);
-  --color-grey: rgb(153,153,153);
-
-  --color-page-bg-light: white;
-  --color-page-bg-dark: rgb(38,38,38);
-  --color-ink-dark: black;
-  --color-ink-light: white;
-  --color-highlight: #9ed8d2;
+  --color-page-bg-light: var(--color-light);
+  --color-page-bg-dark: var(--color-dark);
+  --color-ink-dark: var(--color-text);
+  --color-ink-light: var(--color-light);
 
   /* [2] */
   accent-color: var(--color-highlight);
