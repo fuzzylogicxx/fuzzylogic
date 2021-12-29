@@ -58,7 +58,7 @@
 
 figcaption {
   font-size: typography.scale-value(-2)+rem;
-  color: #999;
+  color: var(--color-ink-offset);
   margin-top: typography.scale-value(-6)+rem;
 }
 
@@ -114,7 +114,7 @@ figcaption {
 
 .h-entry header div {
   font-size: typography.scale-value(-1)+rem;
-  //color: #999;
+  color: var(--color-ink-offset);
 }
 
 
@@ -124,19 +124,19 @@ figcaption {
 
 .post-type {
   font-size: typography.scale-value(-1)+rem;
-  //color: #999;
+  color: var(--color-ink-offset);
   font-weight: 600;
 }
 
 .bookmark-options {
-  //color: #999;
+  color: var(--color-ink-offset);
 }
 
 .dt-published {
   font-size: typography.scale-value(-1)+rem;
-  //color: #999;
+  color: var(--color-ink-offset);
   a {
-    //color: #999;
+    color: var(--color-ink-offset);
   }
 
   /*@include mixins_general.at-least(typography.$bp-wide-two) {
@@ -414,12 +414,16 @@ figcaption {
 /////////////////
 
 .global-footer {
+  --color-footer: var(--color-light);
+  @media (prefers-color-scheme: dark) {
+    --color-footer: var(--color-ink);
+  }
   font-size: typography.scale-value(-1)+rem;
   background: var(--color-band);
-  color: var(--color-ink);
+  color: var(--color-footer);
 
   a {
-    color: var(--color-ink);
+    color: var(--color-footer);
   }
 
   a[aria-current] {

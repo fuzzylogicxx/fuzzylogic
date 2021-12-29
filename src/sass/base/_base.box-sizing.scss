@@ -7,7 +7,7 @@
  * refers to its inner content only and does not include padding + border.
  * Padding + border are added to width, increasing how much space the element takes up.
  * This usually has unexpected results.
- * Using 'box-sizing: content-box' puts the padding + border inside the box
+ * Using 'box-sizing: border-box' puts the padding + border inside the box
  * so the box is as wide as the width we declared.
  *
  * Also, inheriting box-sizing is best practice

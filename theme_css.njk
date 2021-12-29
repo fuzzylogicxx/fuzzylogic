@@ -5,9 +5,18 @@ permalink: "css/theme.css"
 :root {
   --measure: {{ tokens.measure }};
   --color-dark: {{ tokens.colorDark }};
-  --color-darker: {{ tokens.colorLight }};
+  --color-darker: {{ tokens.colorDarker }};
   --color-light: {{ tokens.colorLight }};
   --color-grey: {{ tokens.colorGrey }};
-  --color-highlight: {{ tokens.colorHighlight }};
+  --color-grey-dark: {{ tokens.colorGreyDark }};
+  --color-highlight-light: {{ tokens.colorHighlightLight }};
+  --color-highlight-dark: {{ tokens.colorHighlightDark }};
+  --color-highlight-darker: {{ tokens.colorHighlightDarker }};
+  --color-highlight-darkest: {{ tokens.colorHighlightDarkest }};
   --color-text: {{ tokens.colorText }};
+
+  --color-page-bg-light: var(--color-light);
+  --color-page-bg-dark: var(--color-dark);
+  --color-ink-dark: var(--color-text);
+  --color-ink-light: var(--color-light);
 }
