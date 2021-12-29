@@ -14,12 +14,13 @@ layout:
     <link rel="preload" href="/fonts/sans/source-sans-pro-v12-latin-600.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/fonts/sans/SourceSansPro-It-subset-v4.woff2" as="font" type="font/woff2" crossorigin>
 
+    <link href="/css/theme.css" rel="stylesheet">
     <style>{% include "css/main.css" %}</style>
 
     <meta name="robots" content="noindex, nofollow">
 
     <!-- Advice for devices which can 'install' this website on their home screen -->
-    <link rel="manifest" href="/site.webmanifest">
+    <link rel="manifest" href="/manifest.webmanifest">
 
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -28,7 +29,19 @@ layout:
     <meta name="apple-mobile-web-app-title" content="{{ metadata.name }}">
     <meta name="application-name" content="{{ metadata.name }}">
     <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
+
+    <meta name="theme-color" content="{{ tokens.colorLight }}" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="{{ tokens.colorDark }}" media="(prefers-color-scheme: dark)">
+
+    {#
+      Specify that the page supports both dark and light color schemes, and the page author prefers light.
+      This is really a presentational thing (and can also be specified in CSS) however the meta tag helps browsers
+      to do their thing *faster*.
+      (NB Ensure that the order of preference in the "content" attribute doesn’t go out of sync with
+      what I’m specifying in CSS.)
+      https://web.dev/color-scheme/
+    #}
+    <meta name="color-scheme" content="light dark">
 
   </head>
   <body{% if bodyclass %} class="{{ bodyclass }}"{% endif %}>

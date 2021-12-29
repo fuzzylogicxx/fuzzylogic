@@ -11,6 +11,7 @@ tags:
 - zouk
 - asylum
 - mubi
+location: Glasgow
 noteWithTitle: true
 linkTarget: ''
 mainImage.url: ''

@@ -16,7 +16,7 @@
 // Define button styles that we’ll use for buttons inside custom forms and call-to-action links
 
 @mixin button_style() {
-  background: variables_general.$color-accent;
+  background: var(--color-highlight);
   border: 0;
   border-radius: variables_general.$global-border-radius;
   color: #fff;
@@ -28,8 +28,8 @@
 }
 
 @mixin button_hover_style() {
-  background: darken(variables_general.$color-accent, 10%);
-  color: darken(#fff, 10%);
+  //background: darken(var(--color-highlight), 10%);
+  //color: darken(#fff, 10%);
 }
 
 // is a smaller button style necessary if the default is pretty small?

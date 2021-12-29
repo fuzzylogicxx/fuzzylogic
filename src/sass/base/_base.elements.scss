@@ -1,0 +1,16 @@
+/* ==========================================================================
+   # ELEMENT STYLES
+   ========================================================================== */
+
+/*
+ * Base HTML element styles. No “component” styles.
+ *
+ * 1. tone down the brightness of photographic images when displayed in dark mode.
+*/
+
+/* [1] */
+@media (prefers-color-scheme: dark) {
+  img {
+    filter: brightness(.8) contrast(1.2);
+  }
+}

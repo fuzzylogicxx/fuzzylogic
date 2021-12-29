@@ -1,0 +1,39 @@
+/* ==========================================================================
+   # DOCUMENT STYLES
+   ========================================================================== */
+
+/*
+ * 1. Inform browser that default colour scheme for entire page is light.
+ * (It’ll use that info for default form styles). Also set custom page colour settings appropriately.
+ * 2. When user’s OS-level preference is for a dark appearance, inform browser
+ * to use a dark colour scheme e.g. for default form styles. Also set custom page colour settings.
+ * 3. Accent colour (used by some form controls e.g. radios and checkboxes)
+*/
+
+:root {
+  /* [1] */
+  color-scheme: light;
+  --color-highlight: var(--color-highlight-darker);
+  --color-page-bg: var(--color-page-bg-light);
+  --color-band: var(--color-darker);
+  --color-ink: var(--color-ink-dark);
+  --color-ink-offset: var(--color-grey);
+
+  @media (prefers-color-scheme: dark) {
+    /* [2] */
+    color-scheme: dark;
+    --color-highlight: var(--color-highlight-dark);
+    --color-page-bg: var(--color-page-bg-dark);
+    --color-ink: var(--color-ink-light);
+    --color-band: var(--color-darker);
+    --color-ink-offset: var(--color-grey);
+  }
+
+  /* [3] */
+  accent-color: var(--color-highlight);
+}
+
+body {
+  background-color: var(--color-page-bg);
+  color: var(--color-ink);
+}

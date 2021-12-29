@@ -290,7 +290,7 @@ $space-l: scale-value(3)+rem;
 
 // Note: font-family declarations are now in the <head> together with JS-based font-loading strategy.
 body {
-  color: variables_general.$text-color;
+  // color: variables_general.$text-color;
 
   // set leading on body per Tim Brown rather than on html/root per normalize.css
   //line-height: $body-line-height-min;
@@ -328,29 +328,29 @@ body {
 // Note 2: if base link styles become elaborate, consider applying them to a:not([class])
 
 a {
-  color: variables_general.$color-accent;
+  color: var(--color-highlight);
   text-decoration: underline;
-  text-decoration: underline solid lighten(variables_general.$color-accent, 25%);
+  //text-decoration: underline solid lighten(var(--color-highlight), 25%);
   text-decoration-skip-ink: auto;
 
   &.text-icon-pair {
     text-decoration: none;
     span {
       text-decoration: underline;
-      text-decoration: underline solid lighten(variables_general.$color-accent, 25%);
+      //text-decoration: underline solid lighten(var(--color-highlight), 25%);
       text-decoration-skip-ink: auto;
     }
   }
 }
 
 a:hover {
-  color: darken(variables_general.$color-accent, 25%);
-  text-decoration: underline solid darken(variables_general.$color-accent, 25%);
+  //color: darken(var(--color-highlight), 25%);
+  //text-decoration: underline solid darken(var(--color-highlight), 25%);
 
   &.text-icon-pair {
     text-decoration: none;
     span {
-      text-decoration: underline solid darken(variables_general.$color-accent, 25%);
+      //text-decoration: underline solid darken(var(--color-highlight), 25%);
     }
   }
 }
@@ -435,7 +435,7 @@ sup {
 // Quoting
 
 blockquote {
-  border-left: .1rem solid variables_general.$color-accent;
+  border-left: .1rem solid var(--color-highlight);
   color: lighten(variables_general.$text-color, 20%);
   font-style: italic;
   margin-left: 0;
@@ -508,7 +508,7 @@ h2,
 }
 
 h1 {
-  color: variables_general.$color-accent;
+  color: var(--color-highlight);
   font-weight: 600;
   line-height: 1;
   letter-spacing: -0.01em;
