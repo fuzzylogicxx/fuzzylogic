@@ -18,7 +18,7 @@
     <link rel="preload" href="/fonts/sans/SourceSans3-Regular-subset.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/fonts/sans/SourceSans3-Semibold-subset.woff2" as="font" type="font/woff2" crossorigin>
 
-    {# <link href="css/theme.css" rel="stylesheet"> #}
+    <link href="/css/theme.css" rel="stylesheet">
     <!-- THIS COMMENT WILL BE REPLACED WITH INLINED, MINIFIED CSS -->
 
     <meta name="author" content="{{ metadata.author.name }}">
@@ -57,6 +57,16 @@
 
     <meta name="theme-color" content="{{ tokens.colorLight }}" media="(prefers-color-scheme: light)">
     <meta name="theme-color" content="{{ tokens.colorDark }}" media="(prefers-color-scheme: dark)">
+
+    {#
+      Specify that the page supports both dark and light color schemes, and the page author prefers light.
+      This is really a presentational thing (and can also be specified in CSS) however the meta tag helps browsers
+      to do their thing *faster*.
+      (NB Ensure that the order of preference in the "content" attribute doesn’t go out of sync with
+      what I’m specifying in CSS.)
+      https://web.dev/color-scheme/
+    #}
+    <meta name="color-scheme" content="light dark">
 
     <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.name }}">
 
