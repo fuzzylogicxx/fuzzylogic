@@ -3,37 +3,65 @@
    ========================================================================== */
 
 /*
- * 1. Inform browser that default colour scheme for entire page is light.
- * (It’ll use that info for default form styles). Also set custom page colour settings appropriately.
- * 2. When user’s OS-level preference is for a dark appearance, inform browser
- * to use a dark colour scheme e.g. for default form styles. Also set custom page colour settings.
- * 3. Accent colour (used by some form controls e.g. radios and checkboxes)
+ * 1. Inform browser that the entire page can comfortably be rendered in both light and dark appearances.
+ * (This lets the browser set sensible colours for background, text, form styles, scroll bar etc).
+ * Also define some additional, custom colours.
+ * 2. Define 'fallback' background & ink colours. I hope these are not used. Where supported
+ * I’ll favour the OS-specific system colours 'Canvas' and 'CanvasText' instead.
+ * 3. Set additional custom colour settings.
+ * 4. When user’s OS-level preference is for a dark appearance, tweak colours where necessary.
+ * 5. If browser doesn’t support `color-scheme` therefore can’t set dark system colours itself,
+ * set them manually.
+ * 6. In browsers which i) support us indicating which colour schemes we support; and ii) support system colors,…
+ * assign the system colour values for 'Canvas', 'CanvasText' to our custom properties.
+ * We don’t need to apply these at root level because 'color-scheme: light dark;' already lets the browser handle that.
+ * We just have them handy for when we need to set a component’s bg & text colours to match OS system colours.
+ * 7. Fix iOS Safari. Hacky, but works.
+ * Safari says it supports system colour "Canvas", but in reality it only does on macOS Safari and not on iOS Safari.
+ * To get around this, we can leverage webkit-specific color values (the same ones used in the Webkit UA stylesheet).
+ * NB I’ve added the -webkit-touch-callout part so that this media query is specific to iOS and doesn’t match MacOS
+ * https://stackoverflow.com/questions/30102792/css-media-query-to-target-only-ios-devices
+ * 8. A “special colour” that can be used by some form controls e.g. radios, checkboxes.
 */
 
 :root {
   /* [1] */
-  color-scheme: light;
-  --color-highlight: var(--color-highlight-darker);
-  --color-page-bg: var(--color-page-bg-light);
-  --color-band: var(--color-darker);
+  color-scheme: light dark;
+
+  /* [2] */
+  --color-bg: var(--color-page-bg-light);
   --color-ink: var(--color-ink-dark);
+
+  /* [3] */
+  --color-highlight: var(--color-highlight-darker);
+  --color-band: var(--color-darker);
   --color-ink-offset: var(--color-grey);
 
   @media (prefers-color-scheme: dark) {
-    /* [2] */
-    color-scheme: dark;
-    --color-highlight: var(--color-highlight-dark);
-    --color-page-bg: var(--color-page-bg-dark);
+    /* [4] */
+    --color-bg: var(--color-page-bg-dark);
     --color-ink: var(--color-ink-light);
-    --color-band: var(--color-darker);
-    --color-ink-offset: var(--color-grey);
+    --color-highlight: var(--color-highlight-dark);
   }
 
-  /* [3] */
-  accent-color: var(--color-highlight);
-}
+  /* [5] */
+  @supports not (color-scheme: light dark) {
+    background: var(--color-bg);
+    color: var(--color-ink);
+  }
 
-body {
-  background-color: var(--color-page-bg);
-  color: var(--color-ink);
+  /* [6] */
+  @supports (color-scheme: light dark) and (background-color: Canvas) and (color: CanvasText) {
+    --color-bg: Canvas;
+    --color-ink: CanvasText;
+  }
+
+  /* [7] */
+  @supports (background-color: -apple-system-control-background) and (color: text) and (-webkit-touch-callout: none) {
+    --c-bg: -apple-system-control-background;
+    --c-text: text;
+  }
+
+  /* [8] */
+  accent-color: var(--color-highlight);
 }
