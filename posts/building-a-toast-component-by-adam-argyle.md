@@ -37,7 +37,7 @@ There are lots of interesting ideas and considerations in Adam’s tutorial, suc
 * combining `hsl` and percentages in custom properties to proportionately modify rather than redefine colours for dark mode
 * animation using `keyframes` and `animation`
 * native JavaScript modules
-* inserting an element _before_ the `<body>` element (TIL that this is a thing!)
+* inserting an element _before_ the `<body>` element (TIL that this is a viable option)
 
 Thanks for this, [Adam](@argyleink)!
 
