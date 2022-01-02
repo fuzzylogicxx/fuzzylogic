@@ -13,20 +13,20 @@
 :root {
   /* [1] */
   color-scheme: light;
-  --color-highlight: var(--color-highlight-darker);
   --color-page-bg: var(--color-page-bg-light);
-  --color-band: var(--color-darker);
   --color-ink: var(--color-ink-dark);
-  --color-ink-offset: var(--color-grey);
+  --color-ink-offset: var(--color-grey-dark);
+  --color-band: var(--color-darker);
+  --color-ink-on-band: var(--color-grey);
+  --color-highlight: var(--color-highlight-darker);
 
   @media (prefers-color-scheme: dark) {
     /* [2] */
     color-scheme: dark;
-    --color-highlight: var(--color-highlight-dark);
     --color-page-bg: var(--color-page-bg-dark);
     --color-ink: var(--color-ink-light);
-    --color-band: var(--color-darker);
     --color-ink-offset: var(--color-grey);
+    --color-highlight: var(--color-highlight-dark);
   }
 
   /* [3] */

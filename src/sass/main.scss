@@ -477,10 +477,10 @@ figcaption {
 }
 
 .copyright {
-  color: var(--color-ink-offset);
+  color: var(--color-ink-on-band);
   a {
-    color: var(--color-ink-offset);
-    text-decoration-color: var(--color-ink-offset);
+    color: var(--color-ink-on-band);
+    text-decoration-color: var(--color-ink-on-band);
   }
 }
 

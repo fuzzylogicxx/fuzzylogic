@@ -436,7 +436,7 @@ sup {
 
 blockquote {
   border-left: .1rem solid var(--color-highlight);
-  color: lighten(variables_general.$text-color, 20%);
+  color: var(--color-ink-offset);
   font-style: italic;
   margin-left: 0;
   padding-left: 1rem;
