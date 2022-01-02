@@ -23,7 +23,11 @@
 }
 
 .search-results li {
-  background: #F2F1F0; // same as logo roundel background
+  --search-item-background: var(--color-grey-light); // same as logo roundel background
+  @media (prefers-color-scheme: dark) {
+    --search-item-background: var(--color-band);
+  }
+  background: var(--search-item-background);
   border-radius: variables_general.$global-border-radius;
   padding: typography.scale-value(-5)+rem typography.$space-xxs;
   line-height: 1.2rem;
