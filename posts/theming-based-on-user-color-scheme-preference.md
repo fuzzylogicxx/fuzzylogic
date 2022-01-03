@@ -10,6 +10,8 @@ tags:
 - preferencequeries
 - darkmode
 - customproperties
+- rwd
+- responsive
 noteWithTitle: false
 linkTarget: ''
 mainImage.url: ''
@@ -21,7 +23,7 @@ mainImage.sizes: ''
 mainImage.isAnchor: false
 ---
 
-“Dark mode” has been a buzz-phrase in web development since around 2019. It refers to the ability provided by modern operating systems to set the user interface’s appearance to either light or dark. Web browsers and technologies support this by allowing developers to detect whether or not the OS provides such settings, and if so which mode the user prefers. Developers can create alternate light and dark _themes_ for their websites and switch between these intelligently in response to the user’s preference.
+“Dark mode” has been a buzz-phrase in web development since around 2019. It refers to the ability provided by modern operating systems to set the user interface’s appearance to either light or dark. Web browsers and technologies support this by allowing developers to detect whether or not the OS provides such settings, and if so which mode the user prefers. Developers can create alternate light and dark _themes_ for their websites and switch between these intelligently (responsively?) to fit with the user’s preference.
 
 I’ve been meaning to do some work on this front for a while and finally got around to it. (You might even be reading this post with your computer’s dark colour scheme enabled and seeing the fruits of my labour.) Here’s how I set things up and the lessons I learned along the way.
 ---
