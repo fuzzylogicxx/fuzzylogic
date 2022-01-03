@@ -44,6 +44,10 @@ On Android:
 
 <kbd class="block">Settings > Dark Theme</kbd>
 
+## Emulating this in browser DevTools
+
+In Chromium-based browsers you can open DevTools, then open the `Rendering` tool (which might be hidden behind _More Tools_). In the _Emulate CSS media feature prefers-color-scheme_ dropdown, select _prefers-color-scheme: dark_ or _prefers-color-scheme: light_.
+
 ## The theme-color HTML meta tag
 
 You can use the `theme-color` HTML meta tag to indicate to the browser a colour it can use to customise the display of the page and surrounding elements such as the address bar. The reason we have a meta tag solution to this rather than leaving it to CSS is _performance_; it allows the browser to make the relevant updates immediately.
@@ -69,9 +73,9 @@ Note: [the w3c manifest spec may support multiple theme colours in future.](http
 
 ## The color-scheme meta tag
 
-The `color-scheme` meta tag is used to specify one or more color schemes/modes with which the page is compatible. Unlike `theme-color` you don’t provide an arbitrary colour value, but rather one of `light` or `dark` or `light dark`. This tells the browser whether or not it can change default background, foreground and text colours to match the current system appearance. As Jim Nielsen notes in [Don’t forget the color-scheme property](https://blog.jim-nielsen.com/2020/color-scheme-property/), it gives the browser permission to change standard form controls, scroll bars, and other named system colors automatically.
+The `color-scheme` meta tag is used to specify one or more color schemes/modes with which the page is compatible. Unlike `theme-color` you don’t provide an arbitrary colour value, but rather one of `light` or `dark` or both in combination. This tells the browser whether it can change default background, foreground and text colours to match the current system appearance. As Jim Nielsen notes in [Don’t forget the color-scheme property](https://blog.jim-nielsen.com/2020/color-scheme-property/), it gives the browser permission to automatically change standard form controls, scroll bars, and other named system colors.
 
-I include this meta tag on each page (just after my `theme-color` meta tags) as follows. Here, I indicate that my styles have been prepped to handle the browser applying either light or dark colour schemes and—via the order of values in the content attribute—that I prefer light.
+I include this meta tag on each page (just after my `theme-color` meta tags). I indicate that my styles have been prepped to handle the browser applying either light or dark colour schemes and—via the order of values in the content attribute—that I prefer light.
 
 <figure>
 
@@ -213,6 +217,13 @@ I love this idea in principle! However in practice:
 - Firefox and iOS Safari are a little problematic in their support for the technologies involved, leading to writing a few hacky workarounds.
 
 For the combined reasons above I’m sticking with manually defined colours for now (however I have [a pull request](https://github.com/fuzzylogicxx/fuzzylogic/pull/33) I can revisit later if the mood takes).
+
+## What could I do better?
+
+With extra time, I might:
+
+- think more deeply about dark theme design, perhaps following some of the tips regarding shadows, depth and colour contrast in CSS Tricks’ [A complete guide to dark mode on the web](https://css-tricks.com/a-complete-guide-to-dark-mode-on-the-web/#design-considerations); 
+- consider providing a [theme switcher control](https://mxb.dev/blog/color-theme-switcher/) to allow the user to choose the website theme they want regardless of the current OS appearance. (But I probably won’t; I’m not sure it’s necessary)
 
 ## References
 
