@@ -69,7 +69,7 @@ Note: [the w3c manifest spec may support multiple theme colours in future.](http
 
 ## The color-scheme meta tag
 
-The `color-scheme` meta tag is used to specify one or more color schemes/modes with which the page is compatible. Unlike `theme-color` you don’t provide an arbitrary colour value, but rather one of `light` or `dark` or `light dark`. This information impacts the browser’s choice of default background, foreground and text colours to set on page elements, and how it presents form controls and scrollbars.
+The `color-scheme` meta tag is used to specify one or more color schemes/modes with which the page is compatible. Unlike `theme-color` you don’t provide an arbitrary colour value, but rather one of `light` or `dark` or `light dark`. This tells the browser whether or not it can change default background, foreground and text colours to match the current system appearance. As Jim Nielsen notes in [Don’t forget the color-scheme property](https://blog.jim-nielsen.com/2020/color-scheme-property/), it gives the browser permission to change standard form controls, scroll bars, and other named system colors automatically.
 
 I include this meta tag on each page (just after my `theme-color` meta tags) as follows. Here, I indicate that my styles have been prepped to handle the browser applying either light or dark colour schemes and—via the order of values in the content attribute—that I prefer light.
 
