@@ -69,3 +69,21 @@ Here’s an example hover effect adapted from Stephanie Eckles’s [Smol CSS](ht
 Note the use of custom properties to make it really easy to transition a different property than `transform` without writing repetitious CSS.
 
 One good use case for `transition` would be a “Skip to content” link. The anchor’s initial state would be positioned off-canvas above the viewport (`transform: translateY(-10em)`) while its `:focus` styles define a different state where the intial `translate` has been undone so that the link is visible (`transform: translateY(0em)`). If we `transition` the `transform` property then we can animate the change of state over a duration of our choice, and with our preferred timing function to create an _acceleration curve_.
+
+## Practical examples
+
+To be written.
+
+### Animated disclosure
+
+Like [BBC Sounds’ playlists](https://www.bbc.co.uk/sounds/play/m0012d93) on narrow viewports.
+
+To be written.
+
+### Ringing bell icon
+
+To be written.
+
+### Pulsing “radar” effect
+
+To be written.
