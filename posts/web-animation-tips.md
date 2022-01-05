@@ -80,6 +80,8 @@ Like [BBC Sounds’ playlists](https://www.bbc.co.uk/sounds/play/m0012d93) on na
 
 To be written.
 
+<!-- this might be relevant https://css-tricks.com/newsletter/277-animating-height/ -->
+
 ### Ringing bell icon
 
 To be written.
