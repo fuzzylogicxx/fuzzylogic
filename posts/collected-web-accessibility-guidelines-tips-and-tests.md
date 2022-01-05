@@ -16,7 +16,7 @@ mainImage.srcsetWidths: ''
 mainImage.sizes: ''
 mainImage.isAnchor: false
 ---
-At work, I’m sometimes asked accessibility questions or to provide guidelines. I’m with Anna Cook in describing myself as an [accessibility advocate rather than an expert](https://twitter.com/annaecook/status/1468602342639431682) however I have picked up lots of tips and knowledge over many years of developing websites. So I thought it’d be useful to gather some general web accessibility tips and tests in one place as a useful reference.
+At work, I’m sometimes asked accessibility questions or to provide guidelines. I’m with Anna Cook in considering myself an [accessibility advocate rather than an expert](https://twitter.com/annaecook/status/1468602342639431682) however I have picked up lots of tips and knowledge over many years of developing websites. So I thought it’d be useful to gather some general web accessibility tips and tests in one place as a useful reference.
 
 Caveats and notes: 
 1. this is a living document which I’ll expand over time; 
