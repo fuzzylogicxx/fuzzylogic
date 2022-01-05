@@ -89,3 +89,13 @@ To be written.
 ### Pulsing “radar” effect
 
 To be written.
+
+<!-- 
+My animation-related pens that might be handy
+- Auto slide-in (after delay) then slide out w. CSS and vanilla JS https://codepen.io/fuzzylogicx/pen/OYZmVQ
+- Animate a scrolled-to element w. vanilla JS and CSS https://codepen.io/fuzzylogicx/pen/vwjgbq
+- Fade in and out on page load with CSS https://codepen.io/fuzzylogicx/pen/ZNoLQB
+- Using Vanilla JS Animations Helper Function and animate.css https://codepen.io/fuzzylogicx/pen/gywbwr
+- Animate slide up like jQuery with just CSS & JS https://codepen.io/fuzzylogicx/pen/YMWRYB
+- Fade out on click with a JS-applied class to trigger CSS transition and opacity https://codepen.io/fuzzylogicx/pen/6cd1db274f5ff23233b50c6140e600fa
+-->
