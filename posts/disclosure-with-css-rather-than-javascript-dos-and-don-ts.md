@@ -9,6 +9,7 @@ tags:
 - a11y
 - css
 - html
+- howto
 noteWithTitle: false
 linkTarget: ''
 mainImage.url: ''
@@ -21,7 +22,7 @@ mainImage.isAnchor: false
 draft: true
 
 ---
-My understanding of creating accessible DIY disclosure widgets is that essentially you combine i) a `<button>` on which you toggle `aria-expanded`; immediately followed in the source order by ii) a content element (perhaps a `<div>`) on which you toggle the `hidden` attribute or CSS `display` property. This pattern is by necessity JavaScript-powered because we need a click event handler, within which we toggle attributes/properties. However for many years people have also triggered show/hide experiences using checkboxes and radio buttons, and some go further to also skip the ARIA and JavaScript and handle the effect with CSS alone. This makes knowing the right thing to do confusing so in this post I want to clarify what’s OK and what’s not.
+My understanding of creating accessible DIY disclosure widgets is that essentially you combine i) a `<button>` on which you toggle `aria-expanded`; immediately followed in the source order with ii) an element for the content on which you toggle the `hidden` attribute or CSS `display` property. This pattern is by necessity JavaScript-reliant because we need a click event handler, and within that to toggle attributes/properties. However for many years people have also triggered show/hide experiences using checkboxes and radio buttons, and some go further by also skipping the ARIA and JavaScript, handling the effect with CSS alone. This makes knowing the right thing to do a bit confusing so in this post I want to clarify what’s OK and what’s not.
 
 ## Scenario #1: conditionally revealed form fields
 
