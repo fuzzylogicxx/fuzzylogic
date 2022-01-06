@@ -22,13 +22,13 @@ mainImage.isAnchor: false
 draft: true
 
 ---
-My understanding of creating accessible DIY disclosure widgets is that essentially you combine i) a `<button>` on which you toggle `aria-expanded`; immediately followed in the source order with ii) an element for the content on which you toggle the `hidden` attribute or CSS `display` property. This pattern is by necessity JavaScript-reliant because we need a click event handler, and within that to toggle attributes/properties. However for many years people have also triggered show/hide experiences using checkboxes and radio buttons, and some go further by also skipping the ARIA and JavaScript, handling the effect with CSS alone. This makes knowing the right thing to do a bit confusing so in this post I want to clarify what’s OK and what’s not.
+My understanding of creating accessible DIY disclosure widgets is that essentially you combine i) a `<button>` on which you toggle `aria-expanded`; immediately followed in the source order with ii) an element for the content on which you toggle the `hidden` attribute or CSS `display` property. This pattern is by necessity JavaScript-reliant because we need a click event handler, and within that to toggle attributes/properties. However for many years people have also triggered show/hide experiences using checkboxes and radio buttons, and some go further to handle the effect with CSS alone, skipping the JavaScript and ARIA. It can be a bit confusing to know what’s a good practice and what’s not, so in this post I want to reach some clarify on that.
 
 ## Scenario #1: conditionally revealed form fields
 
 Scenario: radio or checkbox to show another form field(s). [GOV.UK’s design system pattern](https://design-system.service.gov.uk/components/radios/) (see _Conditionally revealing a related question_) …and maybe also the github issue that shows Wordpress, RBS etc. [Adrian Roselli shows that we could do this with just HTML and CSS](https://adrianroselli.com/2021/12/under-engineered-dependency-questions.html) …but the radio button needs to be at the same level as the conditionally-shown `<div>`. In GOV.UK’s case the radio button and div are not at the same level, which might explain why they went for JS and aria-expanded.
 
-### My thoughts: do it if you can!
+My thoughts: take the “HTML and CSS only” route if you can! But have a good JS-based pattern ready in your toolkit.
 
 If you can get away with a flat HTML structure which allows you to  conditionally reveal form fields using HTML and CSS alone, with no JavaScript or ARIA required, then great! Do it. Providing the right stuff with HTML alone and removing the need for JS and ARIA is an _improvement_. Just follow Adrian’s example.
 
@@ -36,7 +36,7 @@ However when you’re dealing with complex User Interface designs and responsive
 
 ## Scenario #2: checkbox hack
 
-Scenario: checkbox hack for all manner of disclosure.
+Scenario: checkbox hack for all manner of disclosure requirements.
 
 [An Event Apart](https://aneventapart.com/) use it for their “hamburger” navigation menu ([which I’ve adapted into a pen for posterity](https://codepen.io/fuzzylogicx/pen/LYNxZKb)). In their case the label is at the same level as the checkbox, just like Adrian advocates, so it seems accessible. Clever CSS selectors are employed to do the rest. Smart!
 
@@ -44,7 +44,7 @@ Although Stephanie Eckles talks about lots of UI patterns where `:focus` and `:h
 
 Another creative use of checkboxes and radio buttons is for toggle buttons [https://kittygiraudel.com/2021/04/05/an-accessible-toggle/](https://kittygiraudel.com/2021/04/05/an-accessible-toggle/ "https://kittygiraudel.com/2021/04/05/an-accessible-toggle/")
 
-### My thoughts: maybe avoid checkbox hacking for disclosure
+My thoughts: maybe just avoid checkbox hacking for disclosure.
 
 Personally I’m inclined to be pretty cautious about this approach. In particular I’m not sure I love the semantics or maintainability of using labels and inputs in a “clever” way rather than using a `<button>`. [As CSS-Tricks say about the checkbox hack](https://css-tricks.com/the-checkbox-hack/): 
 
