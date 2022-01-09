@@ -37,7 +37,9 @@ Animation lets us make something visually move between different states over a g
 
 Animation via the CSS `transition` shorthand property is the most performant method for subtle animations. It is suited to subtle hover and focus effects.
 
-We can `transition` another CSS property such as `transform` or `opacity` to move between two different element states that have been defined using that property. The first state would be in the element’s starting styles and the other in either its `:hover` or `:focus` styles or in a class that'd be applied by JavaScript following an event. Without the `transition` the state change would still happen (e.g. opacity change from 1 to 0) but would be instantaneous. 
+We can `transition` another CSS property such as `transform` or `opacity` to move between two different element states that have been defined using that property. The first state would be in the element’s starting styles and the other in either its `:hover` or `:focus` styles or in a class that'd be applied by JavaScript following an event. 
+
+Without the `transition` the state change would still happen (e.g. opacity change from 1 to 0) but would be instantaneous. 
 
 Here’s an example “move up on hover” effect adapted from Stephanie Eckles’s [Smol CSS](https://smolcss.dev/#smol-transitions).
 <figure>
@@ -69,6 +71,16 @@ Here’s an example “move up on hover” effect adapted from Stephanie Eckles�
 Note that 
 1. we use custom properties to make it really easy to transition a different property than `transform` without writing repetitious CSS.
 2. we have a parent and child (`<div>` and `<span>` respectively in this example) and we avoid the accidental flicker which can occur when the mouse is close to an animatable element’s border by having the child be the _effect_ which animates when the _trigger_ (the parent) is hovered.  
+
+## Animation versus transition
+
+If an animation needs to run on page load, or is more complex than a simple A to B state change, a CSS `animation` may be more appropriate than `transition`.
+
+Animations can 
+- include intermediate steps in the move from initial to final state
+- loop infinitely
+- run automatically or be triggered
+- run forwards, in reverse, or alternate directions
 
 ## Performance
 
