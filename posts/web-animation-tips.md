@@ -68,11 +68,7 @@ Here’s an example “move up on hover” effect adapted from Stephanie Eckles�
 
 Note that 
 1. we use custom properties to make it really easy to transition a different property than `transform` without writing repetitious CSS.
-2. we have a parent and child (`<div>` and `<span>` respectively in this example) and we avoid the accidental flicker which can occur when the mouse is close to an animatable element’s border by having the child be the _effect_ which animates when the `trigger` (the parent) is hovered.  
-
-### Skip to content
-
-One good use case for `transition` would be a “Skip to content” link. The anchor’s initial state would be positioned off-canvas above the viewport (`transform: translateY(-10em)`) while its `:focus` styles define a different state where the intial `translate` has been undone so that the link is visible (`transform: translateY(0em)`). If we `transition` the `transform` property then we can animate the change of state over a chosen duration, and with our preferred timing function to create an _acceleration curve_.
+2. we have a parent and child (`<div>` and `<span>` respectively in this example) and we avoid the accidental flicker which can occur when the mouse is close to an animatable element’s border by having the child be the _effect_ which animates when the _trigger_ (the parent) is hovered.  
 
 ## Performance
 
@@ -110,7 +106,15 @@ Test your animations on a popular low-end device.
 
 ## Practical examples
 
-To be written.
+Intro to be written.
+
+### Skip to content
+
+The anchor’s initial state would be positioned off-canvas above the viewport (`transform: translateY(-10em)`).
+
+Its `:focus` styles define a different state where the intial `translate` has been undone so that the link is visible (`transform: translateY(0em)`). 
+
+If we `transition` the `transform` property then we can animate the change of state over a chosen duration, and with our preferred timing function for the _acceleration curve_.
 
 ### Animated disclosure
 
