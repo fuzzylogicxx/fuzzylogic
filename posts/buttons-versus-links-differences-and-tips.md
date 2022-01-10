@@ -27,7 +27,7 @@ mainImage.isAnchor: false
 draft: false
 
 ---
-Some of the web’s design and development practices have led to buttons and links becoming conceptually bundled together and misunderstood. Practitioners can be guilty of only seeing the surface-level commonality that “you click the thing, then something happens” and mistakenly thinking the two elements are interchangeable. Some might even consider them as a single “button component”. However this mentality is harmful for effective web development and causes our users problems. In this post I’ll address why buttons and links are different and exist separately, and when to use each.
+Some of the web’s design and development practices have led to buttons and links becoming conceptually bundled together and misunderstood. Practitioners can fall into the trap of seeing the surface-level commonality that “you click the thing, then something happens” and mistakenly thinking the two elements are interchangeable. Some might even consider them as a single “button component” without considering the distinctions underneath. However this mentality is harmful for effective web development and causes our users problems. In this post I’ll address why buttons and links are different and exist separately, and when to use each.
 ---
 
 ## Problematic patterns
