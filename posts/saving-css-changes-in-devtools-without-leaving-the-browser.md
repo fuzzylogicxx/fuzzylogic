@@ -42,5 +42,5 @@ This is a _really_ interesting and efficient way of working in the browser and I
 
 There are also a couple of challenges which I’ll probably want to consider. Right now when I make a change to a Sass file, the browser takes a while to reflect that change, which diminishes the benefit of this approach. My site is set up such that Eleventy watches for changes to the sass folder as a trigger for rebuilding the static site. This is because for optimal performance I’m purging the compiled and combined CSS and inlining that into the `<head>` of every file… which unfortunately means that when the CSS is changed, every file needs rebuilt. So I need to wait for Eleventy to do its build thing until the page I’m viewing shows my CSS change.
 
-I might consider no longer inlining CSS, or only inlining a small amount of critical stuff… or maybe (as best of all worlds) only do the inlining for production builds but not in development. Yeah, I like that latter idea. Food for thought!
+To allow my SCSS changes to be built and reflected faster I might consider no longer inlining CSS, or only inlining a small amount of critical stuff… or maybe (as best of all worlds) only do the inlining for production builds but not in development. Yeah, I like that latter idea. Food for thought!
 
