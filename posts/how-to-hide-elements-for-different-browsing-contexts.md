@@ -47,21 +47,21 @@ Here’s some CSS that supports both methods. (The `hidden` attribute doesn’t 
 
 </figure>
   
-For cases where you are animating or sliding the hidden content into view, toggle a class which applies `visibility: hidden` (because this also removes the element from the accessibility tree but unlike `display`, can be animated) together with other CSS positioning and transform properties. Note that with `visibility: hidden` the physical space occupied by the element is still retained, therefore it’s best to pair it with `opacity: 0` or `max-height: 0px; overflow: hidden`. For example:
+For cases where you are animating or sliding the hidden content into view, toggle the application of CSS `visibility: hidden` because this also removes the element from the accessibility tree but unlike `display`, can be animated. Note that with `visibility: hidden` the physical space occupied by the element is still retained, therefore it’s best to pair it with `position: absolute` or `max-height: 0px; overflow: hidden` to prevent that “empty space while hidden” effect. For example:
 
 <figure>
 
 ``` scss
 .off-canvas-menu {
   visibility: hidden;
-  opacity: 0;
-  transition: 0.2s;
-  transform: translateX(20px);
+  position: absolute;
+  transform: translateX(-8em);
+  transition: 250ms ease-in;
 }
 [aria-expanded="true"] + off-canvas-menu {
   visibility: visible;
-  opacity: 1;
   transform: translateX(0);
+  transition: visibility 50ms, transform 250ms ease-out;
 }
 ```
 
