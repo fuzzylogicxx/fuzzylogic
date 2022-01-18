@@ -9,9 +9,9 @@ I’m finding Codepen to be more and more valuable not only for testing out new 
 
 ## Control the Editor View layout
 
-Add `?editors=1111` (change numbers as appropriate) to the URL to set which panels are maximised (in order of HTML, CSS, JavaScript, and console).
+Append `/left/`, `/right/`, or `/top/` to the URL to set the editor layout.
 
-Add `left`, `right`, or `top` to the URL to set the editor layout.
+Append `?editors=1111` (change numbers as appropriate) to the URL to set which panels are maximised (in order of HTML, CSS, JavaScript, and console).
 
 For example:
 
@@ -19,6 +19,8 @@ https://codepen.io/fuzzylogicx/pen/BEEYQL/left/?editors=1100
 
 ## References
 
-- https://blog.codepen.io/documentation/api/url-extensions/
+- https://blog.codepen.io/documentation/url-extensions/
+- [Adding external resources to a pen](https://blog.codepen.io/documentation/adding-external-resources/)
+- [ES Modules on codepen](https://blog.codepen.io/documentation/es-modules-on-codepen/)
 - https://www.hongkiat.com/blog/codepen-tips-beginners/
 
