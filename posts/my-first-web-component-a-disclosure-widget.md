@@ -25,9 +25,13 @@ draft: false
 After a couple of years of reading about web components (and a lot of head-scratching), I’ve finally got around to properly creating one… or at least a rough first draft!
 ---
 
-[Check out disclosure-widget on codepen.](https://codepen.io/fuzzylogicx/pen/MWERKQo/left/?editors=1111)
+[Check out disclosure-widget on codepen.](https://codepen.io/fuzzylogicx/pen/MWERKQo/left/?editors=1010)
 
 Caveats and to-dos:
 - I haven’t yet tried writing tests for a web component
 - I should find out how to refer to the custom element name in JavaScript without repeating it
 - I should look into whether `observedAttributes` and `attributeChangedCallback` are more appropriate than typical event listeners
+
+## References
+
+I found Eric Bidelman’s article [Custom Elements v1: Reusable Web Components](https://developers.google.com/web/fundamentals/web-components/customelements) pretty handy. In particular it taught me how to create a `<template>` inclding a `<slot>` that automatically contains the Light DOM content, then to attach that to the Shadow DOM.
