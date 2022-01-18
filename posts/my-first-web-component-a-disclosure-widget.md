@@ -34,4 +34,4 @@ Caveats and to-dos:
 
 ## References
 
-I found Eric Bidelman’s article [Custom Elements v1: Reusable Web Components](https://developers.google.com/web/fundamentals/web-components/customelements) pretty handy. In particular it taught me how to create a `<template>` inclding a `<slot>` that automatically contains the Light DOM content, then to attach that to the Shadow DOM.
+I found Eric Bidelman’s article [Custom Elements v1: Reusable Web Components](https://developers.google.com/web/fundamentals/web-components/customelements) pretty handy. In particular it taught me how to create a `<template>` including a `<slot>` to automatically ringfence the Light DOM content, and then to attach that template to the Shadow DOM to achieve my enhanced component.
