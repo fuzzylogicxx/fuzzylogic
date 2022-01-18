@@ -69,7 +69,7 @@ For cases where you are animating or sliding the hidden content into view, toggl
 
 ## Hide visually (i.e. from sighted people)
 
-We’ll usually want to hide something visually (only) when its purpose is solely to provide extra context to Assistive Technologies. An example would be adding additional, visually-hidden text to a “Read more” link such as “about Joe Biden” since that would be beneficial to screen reader users.
+We’ll usually want to hide something visually (only) when its purpose is solely to provide extra context to Assistive Technologies. An example would be appending additional, visually-hidden text to a “Read more” link such as “about Joe Biden” since that would be beneficial to screen reader users.
 
 We can achieve this with a `visually-hidden` class in CSS and by applying that class to our element.
 
@@ -91,6 +91,10 @@ We can achieve this with a `visually-hidden` class in CSS and by applying that c
 
 Essentially this hides whatever it’s applied to unless it’s a focusable element currently being focused by screen reader controls or the tab key, in which case it is revealed.
 
+Note that if adding to link text to make it more accessible, always _append_ rather than inserting words into the middle of the existing text. That way, you avoid solving an accessibility for one group but creating another for another group (Dragon speech recognition software users).
+
+### Visually hidden until focused
+
 There are other CSS approaches to hiding visually. One approach is to not only add `position: absolute` (removing the element from the document flow) but also position it off-screen with `left: -100vw` or similar. The use case for this approach might be when you want your visually hidden element to support being revealed and for that reveal to occur via a transition/animation from off-screen into the viewport. See [Scott O’Hara’s off screen skip-links example](https://codepen.io/scottohara/pen/QKmWJG).
 
 ## Hide from Assistive Technologies (such as screen readers)
@@ -103,12 +107,12 @@ To achieve this we can apply `aria-hidden="true"` to our element so that screen 
 
 ``` html
 <button>
-  <svg focusable="false" aria-hidden="true"><!--...--></svg>
+  <svg aria-hidden="true" focusable="false"><!--...--></svg>
   Search
 </button>
 
 <a href="/search">
-  <svg focusable="false" aria-hidden="true"><!--...--></svg>
+  <svg aria-hidden="true" focusable="false"><!--...--></svg>
   Search
 </a>
 ```
