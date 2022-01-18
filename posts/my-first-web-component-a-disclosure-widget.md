@@ -30,4 +30,4 @@ After a couple of years of reading about web components (and a lot of head-scrat
 Caveats and to-dos:
 - I haven’t yet tried writing tests for a web component
 - I should find out how to refer to the custom element name in JavaScript without repeating it
-- I should look into whether `observedAttributesCallback` and `observedAttributes` are more appropriate than typical event listeners
+- I should look into whether `observedAttributes` and `attributeChangedCallback` are more appropriate than typical event listeners
