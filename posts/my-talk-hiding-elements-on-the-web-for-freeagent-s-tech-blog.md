@@ -3,6 +3,7 @@ date: 2022-01-19T13:08:38Z
 title: My talk, “Hiding elements on the web” for FreeAgent’s tech blog
 description: Hiding is a tricky front-end and accessibility topic so I try to cover
   some good practices and responsible choices. Hope it helps someone.
+location: Glasgow
 tags:
 - note
 - aria
