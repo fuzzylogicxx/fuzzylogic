@@ -33,8 +33,10 @@ And there are lots of interesting examples in the replies.
 
 I plan to read up on some of the stories behind these systems.
 
-I really like Web Components but given that I don’t take a “JavaScript all the things” approach to development and design system components, I’ve been reluctant to consider that web components should be used for _every component_ in a system. They would certainly offer a lovely, HTML-based interface for component consumers and offer other interoperability benefits such as Figma integration. But if we shift to client-side JavaScript all the business logic that we’re currently managing on the server then the user pays the price of downloading that additional code.
+I really like Web Components but given that I don’t take a “JavaScript all the things” approach to development and design system components, I’ve been reluctant to consider that web components should be used for _every component_ in a system. They would certainly offer a lovely, HTML-based interface for component consumers and offer interoperability benefits such as Figma integration. But if we shift all the business logic that we currently manage on the server to client-side JavaScript then:
 
-You might also get into questions like “is it practical for every component, even small things with no interactivity, to be a custom element?” and Jim Neilsen has previously written that we need to be wary of [HTML semantics and accessibility issues](https://blog.jim-nielsen.com/2021/custom-elements-without-js/).
+- the user pays the price of downloading that additional code; 
+- you’re writing client-side JavaScript even for those of your components that aren’t interactive; and
+- you’re making _everything_ a custom element (which as Jim Neilsen has previously written [brings HTML semantics and accessibility challenges](https://blog.jim-nielsen.com/2021/custom-elements-without-js/)).
 
 However maybe we can keep the JavaScript for our Web Component-based components really lightweight? I don’t know. For now I’m interested to just watch and learn.
