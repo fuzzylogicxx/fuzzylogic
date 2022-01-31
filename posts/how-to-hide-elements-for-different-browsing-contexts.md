@@ -9,6 +9,7 @@ tags:
 - css
 - aria
 - html
+- hiding
 ---
 In order to code modern component designs we often need to hide then reveal elements. At other times we want to provide content to one type of user but hide it from another because it’s not relevant to their mode of browsing. In all cases accessibility should be front and centre in our thoughts. Here’s my approach, heavily inspired by Scott O’Hara’s definitive guide [Inclusively Hidden](https://www.scottohara.me/blog/2017/04/14/inclusively-hidden.html).
 ---
