@@ -22,7 +22,7 @@ mainImage.isAnchor: false
 ---
 Warning: this entry is a work-in-progress and incomplete. That said, it's still a useful reference to me which is why I've published it. I’ll flesh it out soon!
 
-There are lots of different strands of web development. You try your best to be good at all of them, but it ain’t gonna happen—there’s only so much time in the day! 
+There are lots of different strands of web development. You try your best to be good at all of them, but it ain’t gonna happen—there’s only so much time in the day!
 
 Animation is an area where I know _a little_ but would love to know more, and from a practical perspective I’d certainly benefit from having some road-ready solutions to common challenges. As ever I want to favour web standards over libraries where possible, and take an approach that’s accessible, progressively-enhanced and performance-optimised.
 
@@ -33,27 +33,31 @@ Here’s my attempt to break down web animation into bite-sized chunks for ocass
 
 Animation lets us make something visually move between different states over a given period of time.
 
-## Simple animation with transition
+## Benefits of animation
+
+Animation is a good way of providing visual feedback, teaching users how to use a part of the interface, or adding life to a website and making it feel more “real”.
+
+## Simple animation with transition properties
 
 Animation via the CSS `transition` shorthand property is the most performant method for subtle animations. It is suited to subtle hover and focus effects.
 
-We can `transition` another CSS property such as `transform` or `opacity` to move between two different element states that have been defined using that property. The first state would be in the element’s starting styles and the other in either its `:hover` or `:focus` styles or in a class that'd be applied by JavaScript following an event. 
+We can `transition` another CSS property such as `transform` or `opacity` to move between two different element states that have been defined using that property. The first state would be in the element’s starting styles and the other in either its `:hover` or `:focus` styles or in a class that'd be applied by JavaScript following an event.
 
-Without the `transition` the state change would still happen (e.g. opacity change from 1 to 0) but would be instantaneous. 
+Without the `transition` the state change would still happen (e.g. opacity change from 1 to 0) but would be instantaneous.
 
 Here’s an example “move up on hover” effect adapted from Stephanie Eckles’s [Smol CSS](https://smolcss.dev/#smol-transitions).
 <figure>
-  
+
 ``` html
 <div class="u-animate u-animate--rise">
   <span>rise</span>
 </div>
 ```
-  
+
 </figure>
 
 <figure>
-  
+
 ``` css
 .u-animate > * {
   --transition-property: transform;
@@ -65,46 +69,70 @@ Here’s an example “move up on hover” effect adapted from Stephanie Eckles�
   transform: translateY(-25%);
 }
 ```
-  
+
 </figure>
 
-Note that 
+Note that
 1. we use custom properties to make it really easy to transition a different property than `transform` without writing repetitious CSS.
-2. we have a parent and child (`<div>` and `<span>` respectively in this example) and we avoid the accidental flicker which can occur when the mouse is close to an animatable element’s border by having the child be the _effect_ which animates when the _trigger_ (the parent) is hovered.  
+2. we have a parent and child (`<div>` and `<span>` respectively in this example) and we avoid the accidental flicker which can occur when the mouse is close to an animatable element’s border by having the child be the _effect_ which animates when the _trigger_ (the parent) is hovered.
 
-## Animation versus transition
+## Complex and auto-running effects with animation properties
 
-If an animation needs to run on page load, or is more complex than a simple A to B state change, a CSS `animation` may be more appropriate than `transition`.
+If an animation needs to run on page load, or is more complex than a simple A to B state change, then a CSS `animation` may be more appropriate than `transition`.
 
-Animations can 
-- include intermediate steps in the move from initial to final state
-- loop infinitely
+Animations can
 - run automatically or be triggered
+- go from an initial state through multiple intermediate steps to a final state rather than just from state one to state two
 - run forwards, in reverse, or alternate directions
+- loop infinitely
+
+We achieve complex animations by:
+
+1. using `keyframes` to define the stages and styles of the animation; and
+1. applying `animation` properties to the element we want to animate, including assiging one or more keyframe names.
+
+Here’s how you do it:
+
+<figure>
+
+```
+@keyframes name-of-animation {
+  0%    { opacity: 0; }
+  20%   { opacity: 1; }
+  80%   { opacity: 0; }
+  100%  { opacity: 1; }
+}
+
+.with-animation {
+  animation: name-of-animation 5s infinite;
+}
+```
+
+</figure>
 
 ## Performance
 
-A smooth animation should run at 60fps (frames per second). Animations that are too computationally expensive result in frames being dropped, i.e. a lesser fps rate, making the animation appear janky.
+A smooth animation should run at 60fps (frames per second). Animations that are too computationally expensive result in frames being dropped, i.e. a reduced fps rate, making the animation appear janky.
 
 ### Cheap and slick properties
 
 The CSS properties `transform` and `opacity` are very cheap to animate. Also, browsers often optimise these types of animation using hardware acceleration. To hint to the browser that it should optimise an animation property (and to ensure it is handled by the GPU rather than passed from CPU to GPU causing a noticeable glitch) we should use the CSS `will-change` property.
 
 <figure>
-  
+
 ``` css
 .my-element {
   will-change: transform;
 }
 ```
-  
+
 </figure>
 
 ### Expensive properties
 
 CSS properties which affect layout such as `height` are very expensive to animate. Animating height causes a chain reaction where sibling elements have to move too. Use `transform` over layout-affecting properties such as `width` or `left` if you can.
 
-Some other CSS properties are less expensive but still not ideal, for example `background-color`. It doesn't affect layout but requires a repaint per frame. 
+Some other CSS properties are less expensive but still not ideal, for example `background-color`. It doesn't affect layout but requires a repaint per frame.
 
 Test your animations on a popular low-end device.
 
@@ -124,7 +152,7 @@ Intro to be written.
 
 The anchor’s initial state would be positioned off-canvas above the viewport (`transform: translateY(-10em)`).
 
-Its `:focus` styles define a different state where the intial `translate` has been undone so that the link is visible (`transform: translateY(0em)`). 
+Its `:focus` styles define a different state where the intial `translate` has been undone so that the link is visible (`transform: translateY(0em)`).
 
 If we `transition` the `transform` property then we can animate the change of state over a chosen duration, and with our preferred timing function for the _acceleration curve_.
 
@@ -144,7 +172,7 @@ To be written.
 
 To be written.
 
-<!-- 
+<!--
 My animation-related pens that might be handy
 - Auto slide-in (after delay) then slide out w. CSS and vanilla JS https://codepen.io/fuzzylogicx/pen/OYZmVQ
 - Animate a scrolled-to element w. vanilla JS and CSS https://codepen.io/fuzzylogicx/pen/vwjgbq
@@ -156,7 +184,7 @@ My animation-related pens that might be handy
 
 ## Accessibility
 
-Accessibility and animation can co-exist, as Cassie Evans explains in her CSS-Tricks article [Empathetic Animation](https://css-tricks.com/empathetic-animation/). We should consider which parts of our website are suited to animation (for example perhaps not on serious, time-sensitive tasks) and we can also respect reduced motion preferences at a global level or in a more finer-grained way per component. 
+Accessibility and animation can co-exist, as Cassie Evans explains in her CSS-Tricks article [Empathetic Animation](https://css-tricks.com/empathetic-animation/). We should consider which parts of our website are suited to animation (for example perhaps not on serious, time-sensitive tasks) and we can also respect reduced motion preferences at a global level or in a more finer-grained way per component.
 
 ## Notes
 
@@ -164,5 +192,8 @@ Accessibility and animation can co-exist, as Cassie Evans explains in her CSS-Tr
 
 ## References
 
+- [Inspiration: the animate.css library](https://animate.style/)
 - [CSS transitions and transforms](https://thoughtbot.com/blog/transitions-and-transforms) on Thoughtbot
 - [CSS Transitions](https://www.joshwcomeau.com/animation/css-transitions/) by Josh Comeau
+- [Keyframe animation syntax](https://css-tricks.com/snippets/css/keyframe-animation-syntax/) on CSS-Tricks
+- [CSS animation for beginners](https://thoughtbot.com/blog/css-animation-for-beginners) on Thoughtbot
