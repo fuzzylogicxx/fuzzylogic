@@ -25,7 +25,7 @@ draft: false
 After a couple of years of reading about web components (and a lot of head-scratching), I’ve finally got around to properly creating one… or at least a rough first draft!
 ---
 
-[Check out disclosure-widget on codepen.](https://codepen.io/fuzzylogicx/pen/MWERKQo/left/?editors=1010)
+[Check out disclosure-widget on codepen.](https://codepen.io/fuzzylogicx/pen/MWERKQo/?editors=1010)
 
 Caveats and to-dos:
 - I haven’t yet tried writing tests for a web component
