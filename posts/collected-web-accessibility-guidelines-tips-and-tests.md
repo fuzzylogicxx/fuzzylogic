@@ -85,7 +85,7 @@ To test that a website contains a skip link, visit a page then press the tab key
 
 When developing a collapsible menu, place your menu `<button>` _within_ your `<nav>` element and hide the inner list rather than hiding the `<nav>` element itself. That way, we are not obscuring from Assistive Technologies the fact that a navigation still exists. ATs can still access the nav via landmark navigation. This is important because landmark discovery is one of the fundamental ways AT users scan, determine and navigate a site’s structure.
 
-# Modal dialogues
+## Modal dialogues
 
 [You probably don’t want to set the modal’s heading as an `<h1>`](https://stackoverflow.com/a/38467898). It likely displays content that exists on the page (which already has an `<h1>`) at a lower level of the document hierarchy.
 
