@@ -19,8 +19,9 @@ mainImage.isAnchor: false
 draft: false
 
 ---
-> Q: What’s just one thing that every single person can do in the progression toward an accessible internet?  
-
-> A: When you’re talking to colleagues, peers… promote the notion that accessibility is just part of what we do because we’re good at our job. It’s not extraordinary, it’s not unusual, it’s not something you can drop because you’re pushing for launch.
-
 Here’s a lovely, short (13 min) interview from an accessibility expert with a really positive outlook—highly recommended.
+
+> Q: What’s just one thing that every single person can do in the progression toward an accessible internet?  
+>
+> A: When you’re talking to colleagues, peers… promote the notion that accessibility is just part of what we do because we’re good at our job. It’s not extraordinary, it’s not unusual, it’s not something you can drop because you’re pushing for launch.
+---
