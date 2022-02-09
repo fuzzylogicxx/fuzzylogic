@@ -28,17 +28,17 @@ Thanks once again to Matt Hobbs and GOV.UK for sharing their website visitor sta
 >
 > \- Safari - 36.82% 
 >
-> \- Edge 7.38% 
+> \- Edge - 7.38% 
 >
-> \- Samsung Internet 7.08% 
+> \- Samsung Internet - 7.08% 
 >
-> \- Firefox 1.35% 
+> \- Firefox - 1.35% 
 >
-> \- Android Webview 0.72% 
+> \- Android Webview - 0.72% 
 >
-> \- Safari (in-app) 0.61% 
+> \- Safari (in-app) - 0.61% 
 >
-> \- Internet Explorer 0.5% 
+> \- Internet Explorer - 0.5% 
 >
 > 100% = 187,969,863
 >
@@ -47,5 +47,6 @@ Thanks once again to Matt Hobbs and GOV.UK for sharing their website visitor sta
 —Matt Hobbs, [@TheRealNooshu](https://twitter.com/TheRealNooshu)
 
 In particular, their “usage by device type” stats see mobile at ~67%, Desktop at ~30.5%, Tablet at ~2.5%.
+---
 
 In terms of comparative traffic, according to [Simliar Web’s Top 10 most visited UK websites list](https://www.similarweb.com/top-websites/united-kingdom/) they’re hovering around #10.
