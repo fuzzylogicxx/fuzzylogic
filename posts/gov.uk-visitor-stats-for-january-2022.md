@@ -46,4 +46,6 @@ Thanks once again to Matt Hobbs and GOV.UK for sharing their website visitor sta
 
 —Matt Hobbs, [@TheRealNooshu](https://twitter.com/TheRealNooshu)
 
-In particular, their “usage by device type” stats see mobile at \~![📱](https://abs-0.twimg.com/emoji/v2/svg/1f4f1.svg)67%, ![🖥️](https://abs-0.twimg.com/emoji/v2/svg/1f5a5.svg)desktop at \~30.5% ![💊](https://abs-0.twimg.com/emoji/v2/svg/1f48a.svg) Tablet at \~2.5%.
+In particular, their “usage by device type” stats see mobile at ~67%, Desktop at ~30.5%, Tablet at ~2.5%.
+
+In terms of comparative traffic, according to [Simliar Web’s Top 10 most visited UK websites list](https://www.similarweb.com/top-websites/united-kingdom/) they’re hovering around #10.
