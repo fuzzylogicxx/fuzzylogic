@@ -21,3 +21,5 @@ fields:
 - type: boolean
   name: draft
   label: draft
+pages:
+- posts/i-ve-started-so-i-ll-panic-what-it-s-really-like-to-go-on-mastermind-on-the-guardian.md
