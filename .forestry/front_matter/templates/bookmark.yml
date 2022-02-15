@@ -5,6 +5,7 @@ fields:
 - type: datetime
   name: date
   label: date
+  default: '2022-02-15T21:03:21Z'
 - type: text
   name: title
   label: title
@@ -14,33 +15,9 @@ fields:
 - type: list
   name: tags
   label: tags
-- type: boolean
-  name: noteWithTitle
-  label: noteWithTitle
 - type: text
   name: linkTarget
   label: linkTarget
-- type: text
-  name: mainImage.url
-  label: mainImage.url
-- type: text
-  name: mainImage.alt
-  label: mainImage.alt
-- type: text
-  name: mainImage.aspectRatioWidth
-  label: mainImage.aspectRatioWidth
-- type: text
-  name: mainImage.aspectRatioHeight
-  label: mainImage.aspectRatioHeight
-- type: text
-  name: mainImage.srcsetWidths
-  label: mainImage.srcsetWidths
-- type: text
-  name: mainImage.sizes
-  label: mainImage.sizes
-- type: boolean
-  name: mainImage.isAnchor
-  label: mainImage.isAnchor
 - type: boolean
   name: draft
   label: draft
