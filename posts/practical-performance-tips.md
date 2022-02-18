@@ -66,11 +66,19 @@ I’ve recently used the following to assist performance of a large CSS backgrou
 
 <figure>
   
-```
+``` html
 <link rel="preload" href="bg-illustration.svg" as="image" media="(min-width: 60em)">
 ```
   
 </figure>
+
+## Self-host your assets
+
+Using third-party hosting services for fonts or other assets no longer offers the previously-touted benefit of the asset potentially already being in the user’s browser cache. Cross domain caching has been disabled in all major browsers.
+
+You can still take advantage of the benefits of CDNs for reducing network latency, but preferably as part of your own infrastructure.
+
+
 
 <!--
 Other stuff to add:
