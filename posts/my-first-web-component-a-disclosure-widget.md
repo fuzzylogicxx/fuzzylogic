@@ -27,10 +27,12 @@ After a couple of years of reading about web components (and a lot of head-scrat
 
 [Check out disclosure-widget on codepen.](https://codepen.io/fuzzylogicx/pen/MWERKQo/?editors=1010)
 
+See also [my pen which imports and consumes the component.](https://codepen.io/fuzzylogicx/pen/MWERbPZ)
+
 Caveats and to-dos:
 - I haven’t yet tried writing tests for a web component
 - I should find out how to refer to the custom element name in JavaScript without repeating it
-- I should look into whether `observedAttributes` and `attributeChangedCallback` are more appropriate than typical event listeners
+- I should look into whether `observedAttributes` and `attributeChangedCallback` are more appropriate than the more typical event listeners I used
 
 ## References
 
