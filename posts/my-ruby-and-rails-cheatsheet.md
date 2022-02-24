@@ -399,6 +399,41 @@ end
 
 </figure>
 
+## Double splat operator
+
+My understanding is that when you pass `**foo` as a parameter to a method call then it represents a hash (e.g. `foo = {}`), the content of which might be unknown at the time of calling. Here’s an example, based on a ViewComponent for outputting accessible SVG icons:
+
+In `IconComponent.rb`:
+
+<figure>
+  
+``` ruby
+def aria_role
+  title ? { role: "img" } : { aria: { hidden: true } }
+end
+```
+
+</figure>
+
+In the `icon_component.html.erb` template:
+
+<figure>
+  
+``` ruby
+<%= tag.svg(
+  class: svg_class, 
+  fill: "currentColor", 
+  …
+  **aria_role
+) do %>
+  …
+<% end %>
+```
+
+</figure>
+  
+The `**aria_role` argument resolves to the `hash` output by the `aria_role` method, resulting in valid arguments for calling Rails’s `tag.svg`.
+
 ## require
 
 `require` allows you to bring other resources into your current context.
