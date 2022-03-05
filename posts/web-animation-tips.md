@@ -22,9 +22,7 @@ mainImage.isAnchor: false
 ---
 Warning: this entry is a work-in-progress and incomplete. That said, it's still a useful reference to me which is why I've published it. I’ll flesh it out soon!
 
-There are lots of different strands of web development. You try your best to be good at all of them, but it ain’t gonna happen—there’s only so much time in the day!
-
-Animation is an area where I know _a little_ but would love to know more, and from a practical perspective I’d certainly benefit from having some road-ready solutions to common challenges. As ever I want to favour web standards over libraries where possible, and take an approach that’s lean, accessible, progressively-enhanced and performance-optimised.
+There are lots of different strands of web development. You try your best to be good at all of them, but there’s only so much time in the day! Animation is an area where I know _a little_ but would love to know more, and from a practical perspective I’d certainly benefit from having some road-ready solutions to common challenges. As ever I want to favour web standards over libraries where possible, and take an approach that’s lean, accessible, progressively-enhanced and performance-optimised.
 
 Here’s my attempt to break down web animation into bite-sized chunks for ocassional users like myself.
 ---
@@ -39,7 +37,7 @@ Animation is a good way of providing visual feedback, teaching users how to use 
 
 ## Simple animation with `transition` properties
 
-For subtle animations, the CSS `transition` shorthand property is the most performant approach.
+For subtle animations triggered by an event, the CSS `transition` shorthand property is the most performant approach.
 
 If we use a CSS property such as `transform` or `opacity` (or both together) to define two different states for an element, we can then `transition` between those states.
 
@@ -81,9 +79,7 @@ Note that:
 
 ## Complex animations with `animation` properties
 
-If an animation needs to run on page load, or is more complex than a simple A to B state change, then a CSS `animation` may be more appropriate than `transition`.
-
-Animations can:
+If an animation needs to run on page load, or is more complex than a simple A to B state change, then a CSS `animation` may be more appropriate than `transition`. Using this approach, animations can:
 
 - run automatically as well as being triggered
 - go from an initial state through multiple intermediate steps to a final state rather than just from state A to state B
@@ -92,8 +88,8 @@ Animations can:
 
 We achieve complex animations by:
 
-1. using `keyframes` to define the stages and styles of the animation; and
-1. applying `animation` properties to the element we want to animate, including assiging one or more keyframe names.
+1. using `keyframes` to define a reusable “template” animation that includes multiple states; then
+1. applying `animation` properties to an element we want to animate, including assiging one or more keyframe names.
 
 Here’s how you do it:
 
@@ -113,6 +109,8 @@ Here’s how you do it:
 ```
 
 </figure>
+
+One other thing to mention is that while there are a few good rules of thumb, it also seems to me that the choice between `transition` or `animation` is not totally binary. For example some developers seem to simply prefer animation with `keyframes` even when `transition` is viable and would (as far as I’m aware) be a potentially better choice. See [Jhey’s “entrance animations” tip](https://twitter.com/jh3yy/status/1498987146207973377) where he creates simple, two-state animations that are triggered in reponse to an event which seems to me like a case for `transition`… however he advocates `keyframes` and `animation`. Perhaps some engineers prefer one CSS syntax over the other; find it more flexible to set up reusable animations with keyframes than CSS classes; find that one fits better with their approach to using custom properties… or combinations of those reasons. It’s also entirely possible that I’m missing something important in my understanding of the two options. For now I’ll assume it’s OK to plough your own furrow. 
 
 ## Performance
 
@@ -215,6 +213,8 @@ CSS:
 </figure>
 
 To see this in action, visit my pen [Hiding: visually hidden until focused](https://codepen.io/fuzzylogicx/debug/bGRjvVj) and press the <kbd>tab</kbd> key.
+
+### Animate onto screen
 
 ### Animated disclosure
 
