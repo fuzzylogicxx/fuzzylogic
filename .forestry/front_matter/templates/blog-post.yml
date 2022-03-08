@@ -140,6 +140,7 @@ pages:
 - posts/w3c-design-system.md
 - posts/w3c-html-element-sampler.md
 - posts/web-animation-tips.md
+- posts/web-components-with-declarative-shadow-dom-via-lit-and-eleventy.md
 - posts/webmention.app-automate-your-outgoing-webmentions.md
 - posts/what-i-learned-from-watching-a-screen-reader-user-browse-a-website.md
 - posts/what-open-source-design-systems-are-built-with-web-components.md
