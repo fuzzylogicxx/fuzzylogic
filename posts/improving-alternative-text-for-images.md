@@ -20,7 +20,8 @@ mainImage.isAnchor: false
 draft: false
 
 ---
-Some colleagues at work have recently been asking interesting questions about “good/appropriate alternative text for images”. I definitely reckon it’s a topic worth revisiting because it feels like the landscape has changed a bit on this front over the years. 
+Some colleagues at work have recently been asking interesting questions about “good/appropriate alternative text for images”. I definitely reckon it’s a topic worth revisiting because it feels like the landscape has changed a bit on this front over the years.
+---
 
 I think the web design industry has traditionally been:
 
