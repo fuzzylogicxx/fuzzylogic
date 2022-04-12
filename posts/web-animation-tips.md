@@ -110,7 +110,7 @@ Here’s how you do it:
 
 </figure>
 
-One other thing to mention is that while there are a few good rules of thumb, it also seems to me that the choice between `transition` or `animation` is not totally binary. For example some developers seem to simply prefer animation with `keyframes` even when `transition` is viable and would (as far as I’m aware) be a potentially better choice. See [Jhey’s “entrance animations” tip](https://twitter.com/jh3yy/status/1498987146207973377) where he creates simple, two-state animations that are triggered in reponse to an event which seems to me like a case for `transition`… however he advocates `keyframes` and `animation`. Perhaps some engineers prefer one CSS syntax over the other; find it more flexible to set up reusable animations with keyframes than CSS classes; find that one fits better with their approach to using custom properties… or combinations of those reasons. It’s also entirely possible that I’m missing something important in my understanding of the two options. For now I’ll assume it’s OK to plough your own furrow. 
+One other thing to mention is that while there are a few good rules of thumb, it also seems to me that the choice between `transition` or `animation` is not totally binary. For example some developers seem to simply prefer animation with `keyframes` even when `transition` is viable and would (as far as I’m aware) be a potentially better choice. See [Jhey’s “entrance animations” tip](https://twitter.com/jh3yy/status/1498987146207973377) where he creates simple, two-state animations that are triggered in reponse to an event which seems to me like a case for `transition`… however he advocates `keyframes` and `animation`. Perhaps some engineers prefer one CSS syntax over the other; find it more flexible to set up reusable animations with keyframes than CSS classes; find that one fits better with their approach to using custom properties… or combinations of those reasons. It seems that  It’s also entirely possible that I’m missing something important in my understanding of the two options. For now I’ll assume it’s OK to plough your own furrow. 
 
 ## Performance
 
@@ -214,7 +214,48 @@ CSS:
 
 To see this in action, visit my pen [Hiding: visually hidden until focused](https://codepen.io/fuzzylogicx/debug/bGRjvVj) and press the <kbd>tab</kbd> key.
 
-### Animate onto screen
+### Animating in an existing element
+
+To be written.
+
+### Animating in a newly added element
+
+Stephanie Eckles shared a great CSS-only solution for [animating in a newly added element](https://thinkdobecreate.com/articles/css-animating-newly-added-element/) which handily includes a Codepen demo. She mentions “CSS-only” because it’s common for developers to achieve the combined goals of i) element is initially hidden; plus ii) animating it in after a delay… by using a JavaScript `setTimeout()` to apply a CSS class (containing a `transition`) to the element following a short delay. Stephanie’s alternative approach combines hiding the element in its default styles with an `animation` that includes the necessary delay and also finishes in the keyframe’s single `100%` final state to get the same effect minus the JavaScript. Using CSS rather than setTimeout() for the delay feels like a nice improvement.
+
+<figure>
+
+HTML: 
+  
+```html
+<button>Add List Item</button>
+<ul>
+  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum facilis perspiciatis dignissimos, et dolores pariatur.</li>
+</ul>
+```
+  
+CSS: 
+  
+```html
+li {
+  animation: show 600ms 100ms cubic-bezier(0.38, 0.97, 0.56, 0.76) forwards;
+
+  // Prestate
+  opacity: 0;
+  // remove transform for just a fade-in
+  transform: rotateX(-90deg);
+  transform-origin: top center;
+}
+
+@keyframes show {
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+```
+
+</figure>
+
 
 ### Animated disclosure
 
