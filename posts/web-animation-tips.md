@@ -216,11 +216,13 @@ To see this in action, visit my pen [Hiding: visually hidden until focused](http
 
 ### Animating in an existing element
 
-To be written.
+This is pretty straightforward with CSS (keyframes, opacity and animation) only. 
+
+Check out my [fade in and out on page load with CSS](https://codepen.io/fuzzylogicx/pen/ZNoLQB?editors=1100) codepen.
 
 ### Animating in a newly added element
 
-Stephanie Eckles shared a great CSS-only solution for [animating in a newly added element](https://thinkdobecreate.com/articles/css-animating-newly-added-element/) which handily includes a Codepen demo. She mentions “CSS-only” because it’s common for developers to achieve the combined goals of i) element is initially hidden; plus ii) animating it in after a delay… by using a JavaScript `setTimeout()` to apply a CSS class (containing a `transition`) to the element following a short delay. Stephanie’s alternative approach combines hiding the element in its default styles with an `animation` that includes the necessary delay and also finishes in the keyframe’s single `100%` final state to get the same effect minus the JavaScript. Using CSS rather than setTimeout() for the delay feels like a nice improvement.
+Stephanie Eckles shared a great CSS-only solution for [animating in a newly added element](https://thinkdobecreate.com/articles/css-animating-newly-added-element/) which handily includes a Codepen demo. She mentions “CSS-only” because it’s common for developers to achieve the combined goals of i) element is initially hidden; plus ii) inserting a small delay before animating in… by using a JavaScript `setTimeout()` to apply a CSS class (containing a `transition`) to the element following a short delay. Stephanie’s alternative approach combines i) hiding the element in its default styles; with ii) an `animation` that includes the necessary delay and also finishes in the keyframe’s single `100%` final state… to get the same effect minus the JavaScript. Avoiding reliance on JS and finding a solution lower down the stack is always good.
 
 <figure>
 
@@ -256,6 +258,9 @@ li {
 
 </figure>
 
+Jhey Tompkins shared another CSS-only technique for [adding elements to the DOM with snazzy entrance animations](https://codepen.io/jh3y/pen/KKyrQYZ). He also uses just a single keyframes state but in his case the `from` state which he uses to set the element’s initial `opacity:0`, then in his animation he uses an `animation-fill-mode` of `both` (rather than `forwards` as Stephanie used). 
+
+I can’t profess to totally understand `both` however if you change Jhey’s example to use `forwards` instead, then the element being animated in will temporarily appear before the animation starts rather than being initially invisible. Changing it to `backwards` gets us back on track, so I guess the necessary value relates to whether you’re going for `from`/`0%` or `to`/`100%`… and `both` just covers you for both cases. I’d probably try to use the appropriate one rather than `both` just in case there’s a performance implication.
 
 ### Animated disclosure
 
