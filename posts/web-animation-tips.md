@@ -27,7 +27,7 @@ There are lots of different strands of web development. You try your best to be 
 Here’s my attempt to break down web animation into bite-sized chunks for ocassional users like myself.
 ---
 
-## A simple definition
+## Defining animation
 
 Animation lets us make something visually move between different states over a given period of time.
 
@@ -37,19 +37,20 @@ Animation is a good way of providing visual feedback, teaching users how to use 
 
 ## Simple animation with `transition` properties
 
-For subtle animations triggered by an event, the CSS `transition` shorthand property is the most performant approach.
+CSS `transition` is great for subtle animations triggered by an event.
 
-If we use a CSS property such as `transform` or `opacity` (or both together) to define two different states for an element, we can then `transition` between those states.
+We start by defining two different states for an element—for example `opacity:1` and `opacity:0`—and then `transition` between those states.
 
 The first state would be in the element’s starting styles (either defined explicitly or existing implicitly based on property defaults) and the other in either its `:hover` or `:focus` styles or in a class applied by JavaScript following an event.
 
-Without the `transition` the state change would still happen (for example opacity changing from `1` to `0`) but would be instantaneous.
+Without the `transition` the state change would still happen but would be instantaneous.
 
-Here’s an example “rise on hover” effect, adapted from Stephanie Eckles’s [Smol CSS](https://smolcss.dev/#smol-transitions).
+You’re not limited to animating only one property change and might, for example, transition between `opacity` and `transform` states simultaneously.
+
+Here’—an example “rise on hover” effect, adapted from Stephanie Eckles’s [Smol CSS](https://smolcss.dev/#smol-transitions).
 
 <figure>
-
-``` html
+—` html
 <div class="u-animate u-animate--rise">
   <span>rise</span>
 </div>
@@ -79,24 +80,24 @@ Note that:
 
 ## Complex animations with `animation` properties
 
-If an animation needs to run on page load, or is more complex than a simple A to B state change, then a CSS `animation` may be more appropriate than `transition`. Using this approach, animations can:
+If an element needs to animate automatically (perhaps on page load or when added to the DOM), or is more complex than a simple A to B state change, then a CSS `animation` may be more appropriate than `transition`. Using this approach, animations can:
 
-- run automatically as well as being triggered
+- run automatically or in response to an event
 - go from an initial state through multiple intermediate steps to a final state rather than just from state A to state B
 - run forwards, in reverse, or alternate directions
 - loop infinitely
 
-We achieve complex animations by:
+The required approach is:
 
-1. using `keyframes` to define a reusable “template” animation that includes multiple states; then
-1. applying `animation` properties to an element we want to animate, including assiging one or more keyframe names.
+1. use `@keyframes` to define a reusable “template” set of animation states (or _frames_); then
+1. apply `animation` properties to an element we want to animate, including one or more `@keyframes` to be used.
 
 Here’s how you do it:
 
 <figure>
 
 ``` css
-@keyframes my-animation {
+@keyframes flash {
   0%    { opacity: 0; }
   20%   { opacity: 1; }
   80%   { opacity: 0; }
@@ -104,13 +105,29 @@ Here’s how you do it:
 }
 
 .animate-me {
-  animation: my-animation 5s infinite;
+  animation: flash 5s infinite;
 }
 ```
 
 </figure>
 
-One other thing to mention is that while there are a few good rules of thumb, it also seems to me that the choice between `transition` or `animation` is not totally binary. For example some developers seem to simply prefer animation with `keyframes` even when `transition` is viable and would (as far as I’m aware) be a potentially better choice. See [Jhey’s “entrance animations” tip](https://twitter.com/jh3yy/status/1498987146207973377) where he creates simple, two-state animations that are triggered in reponse to an event which seems to me like a case for `transition`… however he advocates `keyframes` and `animation`. Perhaps some engineers prefer one CSS syntax over the other; find it more flexible to set up reusable animations with keyframes than CSS classes; find that one fits better with their approach to using custom properties… or combinations of those reasons. It seems that  It’s also entirely possible that I’m missing something important in my understanding of the two options. For now I’ll assume it’s OK to plough your own furrow. 
+Note that you can also opt to include just one state in your `@keyframes` rule, usually the `from` (i.e. initial or `0%`) state or `to` (i.e. final or `100%`) state. You’d tend to do that for a two-state animation where the other “state” is in the element’s default styles, and you’d either be _starting_ from the default styles (if your single `@keyframes` state is `to`) or finishing on them (if your single `@keyframes` state is `from`).
+
+## transition vs animation
+
+As far as I can tell there’s no major performance benefit of one over the other, so that’s not an issue.
+
+When the animation will be triggered by pseudo-class-based events like `:hover` or `:focus` and is simple i.e. based on just two states, `transition` feels like the right choice. 
+
+Beyond that, the choice gets a bit less binary and seems to come down to developer preference. 
+
+For utility classes and classes that get added by JS to existing, visible elements following an event, either approach could be used. Arguably `transition` is the slightly simpler CSS to write so if it covers your needs it may be preferential.
+
+For elements that need to animate on page load (perhaps an alert animating into view) or when they are newly added to the DOM (e.g. to-do list items), `animation` and `keyframes` feel the better choice. Likewise animations that involve multiple frames.
+
+However you might find that developers prefer one technique over the other when both are viable because, for example, its syntax fits better with how they like to use custom properties.
+
+I fully expect to learn more about best practices and my own preferences the more I use animation.
 
 ## Performance
 
@@ -216,13 +233,15 @@ To see this in action, visit my pen [Hiding: visually hidden until focused](http
 
 ### Animating in an existing element
 
-This is pretty straightforward with CSS (keyframes, opacity and animation) only. 
+For this requirement we want an element to animate from invisible to visible on page load. This is pretty straightforward with CSS only using `@keyframes`, `opacity` and `animation`.
 
 Check out my [fade in and out on page load with CSS](https://codepen.io/fuzzylogicx/pen/ZNoLQB?editors=1100) codepen.
 
 ### Animating in a newly added element
 
-Stephanie Eckles shared a great CSS-only solution for [animating in a newly added element](https://thinkdobecreate.com/articles/css-animating-newly-added-element/) which handily includes a Codepen demo. She mentions “CSS-only” because it’s common for developers to achieve the combined goals of i) element is initially hidden; plus ii) inserting a small delay before animating in… by using a JavaScript `setTimeout()` to apply a CSS class (containing a `transition`) to the element following a short delay. Stephanie’s alternative approach combines i) hiding the element in its default styles; with ii) an `animation` that includes the necessary delay and also finishes in the keyframe’s single `100%` final state… to get the same effect minus the JavaScript. Avoiding reliance on JS and finding a solution lower down the stack is always good.
+Stephanie Eckles shared a great CSS-only solution for [animating in a newly added element](https://thinkdobecreate.com/articles/css-animating-newly-added-element/) which handily includes a Codepen demo. She mentions “CSS-only” because it’s common for developers to achieve the combined goals of i) element is initially hidden; plus ii) inserting a small delay before animating in… by using a JavaScript `setTimeout()` to apply a CSS class (containing a `transition`) to the element following a short delay. However Stephanie’s alternative approach combines i) hiding the element in its default styles; with ii) an `animation` that includes the necessary delay and also finishes in the keyframe’s single `100%` state… to get the same effect minus the JavaScript. 
+
+Avoiding reliance on JS and finding a solution lower down the stack is always good.
 
 <figure>
 
@@ -258,9 +277,9 @@ li {
 
 </figure>
 
-Jhey Tompkins shared another CSS-only technique for [adding elements to the DOM with snazzy entrance animations](https://codepen.io/jh3y/pen/KKyrQYZ). He also uses just a single keyframes state but in his case the `from` state which he uses to set the element’s initial `opacity:0`, then in his animation he uses an `animation-fill-mode` of `both` (rather than `forwards` as Stephanie used). 
+Jhey Tompkins shared another CSS-only technique for [adding elements to the DOM with snazzy entrance animations](https://codepen.io/jh3y/pen/KKyrQYZ). He also uses just a single `@keyframes` state but in his case the `from` state which he uses to set the element’s initial `opacity:0`, then in his animation he uses an `animation-fill-mode` of `both` (rather than `forwards` as Stephanie used). 
 
-I can’t profess to totally understand `both` however if you change Jhey’s example to use `forwards` instead, then the element being animated in will temporarily appear before the animation starts rather than being initially invisible. Changing it to `backwards` gets us back on track, so I guess the necessary value relates to whether you’re going for `from`/`0%` or `to`/`100%`… and `both` just covers you for both cases. I’d probably try to use the appropriate one rather than `both` just in case there’s a performance implication.
+I can’t profess to fully understand `both` however if you change Jhey’s example to use `forwards` instead, then the element being animated in will temporarily appear before the animation starts (which ain’t good) rather than being initially invisible. Changing it to `backwards` gets us back on track, so I guess the necessary value relates to whether you’re going for `from`/`0%` or `to`/`100%`… and `both` just covers you for both cases. I’d probably try to use the appropriate one rather than `both` just in case there’s a performance implication.
 
 ### Animated disclosure
 
