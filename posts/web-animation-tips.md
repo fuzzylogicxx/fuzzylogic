@@ -122,9 +122,9 @@ When the animation will be triggered by pseudo-class-based events like `:hover` 
 
 Beyond that, the choice gets a bit less binary and seems to come down to developer preference. But here are a couple of notes that might help in making a decision.
 
-For elements that need to “animate in” on page load—say, an alert—or when newly added to the DOM—such as items in a to-do list—an `animation` with `keyframes` feels the better choice. This is because `transition` requires the presence of two CSS rules, leading to dedicated JavaScript to grab the element and apply a class, whereas animation does not and can move between states automatically including including a delay between them. 
+For elements that need to “animate in” on page load—say, an alert—or when newly added to the DOM—such as items in a to-do list—an `animation` with `keyframes` feels the better choice. This is because `transition` requires the presence of two CSS rules, leading to dedicated JavaScript to grab the element and apply a class, whereas `animation` requires only one and can move between initial and final states automatically including inserting a delay before starting. 
 
-Animations that involve many frames require `@keyframes` and `animation`.
+For animations that involve many frames, use `@keyframes` and `animation`.
 
 For utility classes and classes that get added by JS to _existing, visible_ elements following an event, either approach could be used. Arguably `transition` is the slightly simpler CSS to write so if it covers your needs it may be preferential. Then again, you might want to reuse the animations applied by those classes for both existing, visible elements and new, animated-in elements, in which case you might feel that instead using `@keyframes` and `animation` covers you for all situations.
 
