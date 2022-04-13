@@ -122,9 +122,9 @@ When the animation will be triggered by pseudo-class-based events like `:hover` 
 
 Beyond that, the choice gets a bit less binary and seems to come down to developer preference. 
 
-For utility classes and classes that get added by JS to existing, visible elements following an event, either approach could be used. Arguably `transition` is the slightly simpler CSS to write so if it covers your needs it may be preferential.
+For utility classes and classes that get added by JS to _existing, visible_ elements following an event, either approach could be used. Arguably `transition` is the slightly simpler CSS to write so if it covers your needs it may be preferential.
 
-For elements that need to animate on page load (perhaps an alert animating into view) or when they are newly added to the DOM (e.g. to-do list items), `animation` and `keyframes` feel the better choice. Likewise animations that involve multiple frames.
+For elements that need to “animate in” on page load (perhaps an alert) or when newly added to the DOM (e.g. items in a to-do list), `animation` with `keyframes` feels the better choice. Likewise animations that involve many frames.
 
 However you might find that developers prefer one technique over the other when both are viable because, for example, its syntax fits better with how they like to use custom properties.
 
@@ -240,7 +240,7 @@ Check out my [fade in and out on page load with CSS](https://codepen.io/fuzzylog
 
 ### Animating in a newly added element
 
-Stephanie Eckles shared a great CSS-only solution for [animating in a newly added element](https://thinkdobecreate.com/articles/css-animating-newly-added-element/) which handily includes a Codepen demo. She mentions “CSS-only” because it’s common for developers to achieve the combined goals of i) element is initially hidden; plus ii) inserting a small delay before animating in… by using a JavaScript `setTimeout()` to apply a CSS class (containing a `transition`) to the element following a short delay. However Stephanie’s alternative approach combines i) hiding the element in its default styles; with ii) an `animation` that includes the necessary delay and also finishes in the keyframe’s single `100%` state… to get the same effect minus the JavaScript. 
+Stephanie Eckles shared a great CSS-only solution for [animating in a newly added element](https://thinkdobecreate.com/articles/css-animating-newly-added-element/) which handily includes a Codepen demo. She mentions “CSS-only” because it’s common for developers to achieve the fancy animation via `transition` but that means needing to “make a fake event” via a JavaScript `setTimeout()` so that you can transition from the newly-added, invisible and class-free element state to adding a CSS class (perhaps called `show`) that contains the `opacity:1`, fancy transforms and a `transition`. However Stephanie’s alternative approach combines i) hiding the element in its default styles; with ii) an `animation` that includes the necessary delay and also finishes in the keyframe’s single `100%` state… to get the same effect minus the JavaScript. 
 
 Avoiding reliance on JS and finding a solution lower down the stack is always good.
 
