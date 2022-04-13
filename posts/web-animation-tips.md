@@ -47,10 +47,11 @@ Without the `transition` the state change would still happen but would be instan
 
 You’re not limited to animating only one property change and might, for example, transition between `opacity` and `transform` states simultaneously.
 
-Here’—an example “rise on hover” effect, adapted from Stephanie Eckles’s [Smol CSS](https://smolcss.dev/#smol-transitions).
+Here’s an example “rise on hover” effect, adapted from Stephanie Eckles’s [Smol CSS](https://smolcss.dev/#smol-transitions).
 
 <figure>
-—` html
+
+``` html
 <div class="u-animate u-animate--rise">
   <span>rise</span>
 </div>
