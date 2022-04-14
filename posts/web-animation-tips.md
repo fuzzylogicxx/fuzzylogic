@@ -37,7 +37,7 @@ Animation is a good way of providing visual feedback, teaching users how to use 
 
 ## Simple animation with `transition` properties
 
-CSS `transition` is great for subtle animations triggered by an event.
+CSS `transition` is great for simple animations triggered by an event.
 
 We start by defining two different states for an element—for example `opacity:1` and `opacity:0`—and then `transition` between those states.
 
@@ -45,7 +45,7 @@ The first state would be in the element’s starting styles (either defined expl
 
 Without the `transition` the state change would still happen but would be instantaneous.
 
-You’re not limited to animating only one property change and might, for example, transition between `opacity` and `transform` states simultaneously.
+You’re not limited to only one property being animated and might, for example, transition between different `opacity` and `transform` states simultaneously.
 
 Here’s an example “rise on hover” effect, adapted from Stephanie Eckles’s [Smol CSS](https://smolcss.dev/#smol-transitions).
 
@@ -83,7 +83,7 @@ Note that:
 
 If an element needs to animate automatically (perhaps on page load or when added to the DOM), or is more complex than a simple A to B state change, then a CSS `animation` may be more appropriate than `transition`. Using this approach, animations can:
 
-- run automatically or in response to an event
+- run automatically (you don’t _need_ an event to trigger a state change)
 - go from an initial state through multiple intermediate steps to a final state rather than just from state A to state B
 - run forwards, in reverse, or alternate directions
 - loop infinitely
@@ -122,11 +122,11 @@ When the animation will be triggered by pseudo-class-based events like `:hover` 
 
 Beyond that, the choice gets a bit less binary and seems to come down to developer preference. But here are a couple of notes that might help in making a decision.
 
-For elements that need to “animate in” on page load—say, an alert—or when newly added to the DOM—such as items in a to-do list—an `animation` with `keyframes` feels the better choice. This is because `transition` requires the presence of two CSS rules, leading to dedicated JavaScript to grab the element and apply a class, whereas `animation` requires only one and can move between initial and final states automatically including inserting a delay before starting. 
+For elements that need to “animate in” on page load such as an alert, or when newly added to the DOM such as items in a to-do list, an `animation` with `keyframes` feels the better choice. This is because `transition` requires the presence of two CSS rules, leading to dedicated JavaScript to grab the element and apply a class, whereas `animation` requires only one and can move between initial and final states automatically including inserting a delay before starting. 
 
-For animations that involve many frames, use `@keyframes` and `animation`.
+For animations that involve many frames; control over the number of iterations; or looping… use `@keyframes` and `animation`.
 
-For utility classes and classes that get added by JS to _existing, visible_ elements following an event, either approach could be used. Arguably `transition` is the slightly simpler CSS to write so if it covers your needs it may be preferential. Then again, you might want to reuse the animations applied by those classes for both existing, visible elements and new, animated-in elements, in which case you might feel that instead using `@keyframes` and `animation` covers you for all situations.
+For utility classes and classes that get added by JS to _existing, visible_ elements following an event, either approach could be used. Arguably `transition` is the slightly simpler and more elegant CSS to write if it covers your needs. Then again, you might want to reuse the animations applied by those classes for both existing, visible elements and new, animated-in elements, in which case you might feel that instead using `@keyframes` and `animation` covers more situations.
 
 ## Performance
 
@@ -327,6 +327,7 @@ Accessibility and animation can co-exist, as Cassie Evans explains in her CSS-Tr
 - [animate.css on github](https://github.com/animate-css/animate.css) (good for searching for keyframe CSS)
 - [CSS transitions and transforms](https://thoughtbot.com/blog/transitions-and-transforms) on Thoughtbot
 - [CSS Transitions](https://www.joshwcomeau.com/animation/css-transitions/) by Josh Comeau
+- [Transition vs animation](https://cssanimation.rocks/transition-vs-animation/) on CSS Animation
 - [Keyframe animation syntax](https://css-tricks.com/snippets/css/keyframe-animation-syntax/) on CSS-Tricks
 - [CSS animation for beginners](https://thoughtbot.com/blog/css-animation-for-beginners) on Thoughtbot
 - [Using CSS Transions on auto dimensions](https://css-tricks.com/using-css-transitions-auto-dimensions/) on CSS-Tricks
