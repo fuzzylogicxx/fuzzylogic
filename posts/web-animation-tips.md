@@ -112,7 +112,7 @@ Here’s how you do it:
 
 </figure>
 
-Note that you can also opt to include just one state in your `@keyframes` rule, usually the `from` (i.e. initial or `0%`) state or `to` (i.e. final or `100%`) state. You’d tend to do that for a two-state animation where the other “state” is in the element’s default styles, and you’d either be _starting_ from the default styles (if your single `@keyframes` state is `to`) or finishing on them (if your single `@keyframes` state is `from`).
+Note that you can also opt to include just one state in your `@keyframes` rule, usually the initial state (written as either `from` or `0%`)  or final state (written as either `to` or `100%`). You’d tend to do that for a two-state animation where the other “state” is in the element’s default styles, and you’d either be _starting_ from the default styles (if your single `@keyframes` state is `to`) or finishing on them (if your single `@keyframes` state is `from`).
 
 ## Should I use `transition` or `animation`?
 
