@@ -1,5 +1,5 @@
 ---
-date: 2019-06-11T19:18:08.000+00:00
+date: 2022-04-18T14:18:08.000+00:00
 title: April 2022 mixtape
 description: I put together a fairly spacey and mellow selection of organic electronics
 tags:
@@ -21,7 +21,7 @@ mainImage.isAnchor: false
 draft: false
 
 ---
-I put together a fairly spacey and mellow selection of laidback electronic sounds. It has a wee nod to summer… well, I think so at least.
+I put together a fairly spacey and mellow selection of laidback electronic sounds. To me, it has a little nod to summer.
 ---
 
 [Download my April 2022 mixtape.](https://fuzzylogic.me/audio/lh_mixtape_april_2022_mas4.mp3)
