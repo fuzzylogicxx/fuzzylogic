@@ -202,6 +202,8 @@ Configure any setting:
   
 ``` bash
 git config [--global] <key> <value>
+  
+git config --global user.email "myname@domain.com"
 ```
 
 </figure>
