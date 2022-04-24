@@ -3,12 +3,12 @@ date: 2022-04-18T14:18:08.000+00:00
 title: April 2022 mixtape
 description: I put together a fairly spacey and mellow selection of organic electronics
 tags:
+- note
 - mixtape
 - electronic
 - reggae
 - mix
 - music
-- note
 noteWithTitle: true
 linkTarget: ''
 mainImage.url: ''
