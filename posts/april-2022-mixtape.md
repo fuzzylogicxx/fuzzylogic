@@ -42,4 +42,4 @@ Here’s the tracklist:
 * Kofi B - Mmobrowa (Hagan Edit)
 * State of grace — That’s when we’ll be free
 
-This was a nice opportunity to get back into the rhythm of programming music of varying styles and tempos. Kit-wise, I used two Technics 1210s, a Pioneer CDJ-700, an Isonoe 420 mixer and an Eventide Timefactor delay.
+This was a nice opportunity to get back into the rhythm of programming music of varying styles and tempos. Kit-wise, I used two Technics 1210s, a Pioneer XDJ-700, an Isonoe 420 mixer and an Eventide Timefactor delay.
