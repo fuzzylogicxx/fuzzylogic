@@ -10,6 +10,7 @@ tags:
 - mix
 - music
 noteWithTitle: true
+location: Malaga, Spain
 linkTarget: ''
 mainImage.url: ''
 mainImage.alt: ''
