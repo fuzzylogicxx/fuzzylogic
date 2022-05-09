@@ -39,7 +39,7 @@ Specify the viewport size by giving your `<svg>` element a width and height, e.g
 
 <figure>
 
-```
+``` html
 <svg width="600" height="400">
   <!-- svg content -->
 </svg>
@@ -49,11 +49,11 @@ Specify the viewport size by giving your `<svg>` element a width and height, e.g
 
 We _could_ specify units (such as `em` or `px`) but don’t need to. Unitless values are regarded as being set in _user space_ using _user units_ which effectively equate to pixels so our example above renders a 600px by 400px viewport.
 
-The width of the viewport can also be set in CSS. Setting `width: 100%` makes the SVG viewport fluid in a given container.
+The width of the viewport can also be set in CSS. Setting `width:100%` makes the SVG viewport fluid in a given container.
 
-### ViewBox
+### viewBox
 
-The _viewport coordinate system_ starts at the top left corner of the viewport at point (0, 0). The _user coordinate system_ is by default identical to the that of the viewport however it can be modified using the `viewBox` attribute.
+The _viewport coordinate system_ starts at the top left (0, 0) corner of the SVG viewport. The _user coordinate system_ is by default identical to that of the viewport, starting in the same place and with equal dimensions and units, however it can be modified using the `viewBox` attribute.
  
 `viewBox` takes a value in the format: `x y width height`. The first two values set the upper-left corner of the viewbox and the second two its dimensions.
 
