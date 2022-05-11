@@ -51,11 +51,15 @@ We _could_ specify units (such as `em` or `px`) but don’t need to. Unitless va
 
 The width of the viewport can also be set in CSS. Setting `width:100%` makes the SVG viewport fluid in a given container.
 
-### viewBox
+### Viewbox
 
 The _viewport coordinate system_ starts at the top left (0, 0) corner of the SVG viewport. The _user coordinate system_ is by default identical to that of the viewport, starting in the same place and with equal dimensions and units, however it can be modified using the `viewBox` attribute.
  
 `viewBox` takes a value in the format: `x y width height`. The first two values set the upper-left corner of the viewbox and the second two its dimensions.
+
+You can set the aspect ratio of the viewbox to the same as for the SVG viewport, or differently.
+
+You might (optionally) use the `viewBox` attribute to _transform_ the SVG graphic by scaling or translating it, or to _crop_ it.
 
 Specifying a smaller viewbox than viewport results in cropping the graphic to those dimensions and then zooming it in i.e. scaling it up so that it fills the entire viewport area.
 
