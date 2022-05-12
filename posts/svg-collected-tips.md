@@ -22,6 +22,7 @@ SVG is an amazing technology which I regularly use for icons and occasionally fo
 ## Table of contents
 
 * [Canvas, viewport and viewbox](#canvas-viewport-and-viewbox)
+* [Arranging on a grid](#arranging-on-a-grid)
 
 ## Canvas, viewport and viewBox
 
@@ -62,6 +63,20 @@ You can set the aspect ratio of the viewbox to the same as for the SVG viewport,
 You might (optionally) use the `viewBox` attribute to _transform_ the SVG graphic by scaling or translating it, or to _crop_ it.
 
 Specifying a smaller viewbox than viewport results in cropping the graphic to those dimensions and then zooming it in i.e. scaling it up so that it fills the entire viewport area.
+
+## Arranging elements on a grid
+
+[Cassie Evans recommends](https://www.cassie.codes/posts/swipey-image-grids/) that when considering an arrangement of elements it’s nice to start with a simple grid – like that created by the following `<svg>` – onto which you can plot elements. You might even start by sketching with paper and pencil. 
+
+<figure>
+
+``` html
+<svg viewBox="0 0 100 100">
+  <!-- svg content, perhaps <rect>s -->
+</svg>
+```
+  
+</figure>
 
 
 
