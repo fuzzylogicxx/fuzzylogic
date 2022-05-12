@@ -66,7 +66,7 @@ Specifying a smaller viewbox than viewport results in cropping the graphic to th
 
 ## Arranging elements on a grid
 
-[Cassie Evans recommends](https://www.cassie.codes/posts/swipey-image-grids/) that when considering an arrangement of elements it’s nice to start with a simple grid – like that created by the following `<svg>` – onto which you can plot elements. You might even start by sketching with paper and pencil. 
+[Cassie Evans recommends](https://www.cassie.codes/posts/swipey-image-grids/) that when considering an arrangement of elements it’s nice to start with a simple grid using nice round numbers, – like that created by the following `<svg>` – making it easy to then plot elements on top. You might even start by sketching with paper and pencil. 
 
 <figure>
 
