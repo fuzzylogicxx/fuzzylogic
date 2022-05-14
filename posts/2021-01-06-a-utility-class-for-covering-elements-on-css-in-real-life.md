@@ -2,7 +2,7 @@
 date: "2021-01-06T15:25:29.773Z"
 title: "A Utility Class for Covering Elements (on CSS { In Real Life })"
 description: "A utility for overlaying one element on top (and fully covering) another from Michelle Barker"
-tags: [link, css, development, cssgrid, logicalproperties, inset, positioning, utility, layout]
+tags: [link, css, development, cssgrid, logicalproperties, inset, positioning, utility, layout, overlay]
 linkTarget: "https://css-irl.info/a-utility-class-for-covering-elements/"
 ---
 Need to overlay one HTML element on top of and fully covering another, such as a heading with translucent background on top of an image? Michelle Barker has us covered with this blog post in which she creates an `overlay` utility to handle this. She firstly shows how it can be accomplished with positioning, then modernises her code using the `inset` CSS logical property, before finally demonstrating a neat CSS Grid based approach.
