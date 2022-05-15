@@ -27,6 +27,10 @@ Using grid-area is slightly neater than Michelle’s [https://fuzzylogic.me/post
 
 Evolve to images with text [https://smolcss.dev/#smol-background-picture](https://smolcss.dev/#smol-background-picture "https://smolcss.dev/#smol-background-picture")
 
-Good because this allows us to make the image content which can be good for accessibility and good for performance (due to all the new image loading stuff we can do versus bg images).
+Good because this allows us to make the image _content_ which can be good for accessibility, good for performance (due to all the new image loading stuff we can do versus bg images) and more flexible for styling.
 
-Note: `position: relative;` on the item we want on top is only needed because of the filter on the image. Remove the filter and you don’t need the `position` or any `z-index`
+Note: `position: relative;` on the item we want on top is only needed because of the filter on the image. Remove the filter and you don’t need the `position` or any `z-index`. In general I think some types of content will layer with no extra requirements and others need a wee stacking-related nudge.
+
+Using grid for a Hero / Banner.
+
+[https://moderncss.dev/3-popular-website-heroes-created-with-css-grid-layout/](https://moderncss.dev/3-popular-website-heroes-created-with-css-grid-layout/ "https://moderncss.dev/3-popular-website-heroes-created-with-css-grid-layout/") uses same idea of a single grid-template-area that both content and image layer onto, then some grid positioning properties to align elements within that.
