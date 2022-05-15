@@ -84,7 +84,7 @@ Specifying a smaller viewbox than viewport results in cropping the graphic to th
 
 <figure>
   <img style="margin-inline: auto;" src="https://res.cloudinary.com/fuzzylogic/image/upload/v1652611257/wepik-2022415-113410_zouman.jpg" />
-  <figcaption>A 100×100 grid for SVG sketching</figcaption>  
+  <figcaption>100×100 grid sketched on <a href="https://www.freepik.com/photos/square-paper">Kues’ graph paper photo</a></figcaption>
 </figure>
 
 ## Inline SVG for icons
