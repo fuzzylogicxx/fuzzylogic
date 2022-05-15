@@ -83,6 +83,32 @@ Specifying a smaller viewbox than viewport results in cropping the graphic to th
   <figcaption>A 100×100 grid for SVG sketching</figcaption>  
 </figure>
 
+## Inline SVG for icons
+
+Having tried various icon systems including using `<symbol>` and `<use>`, Chris Coyier advocates that it’s perhaps simpler and better to [just include the icons inline](https://css-tricks.com/pretty-good-svg-icon-system/). Perhaps use the appropriate `include` technique for your stack to keep the code maintainable.
+
+## Choose an SVG embedding technique that suits the task
+
+There are a variety of flavours and uses of SVG, including:
+
+- icons
+- infographics
+- illustrations
+- SVG that include text
+- SVG that include animation.
+
+As Sara Souidean covers in her talk “A Smashing Case Study”, your choice of SVG embedding technique depends on the nature of the project and the specific use case.
+
+To do: summarise Sara’s technique for SVG with illustration and accessible text.
+
+## Choose the best-performing format
+
+When you’re tasked with coding an illustration-based image, it’s tempying to automatically see that as a job for SVG. However keep in mind that for some images the SVG file size will be massive and PNG will perform much better, so compare the two options.
+
+
 ## References
 
 * [Understanding SVG Coordinate Systems](https://www.sarasoueidan.com/blog/svg-coordinate-systems/) by Sara Soueidan
+* [Swipey image grids](https://www.cassie.codes/posts/swipey-image-grids/) by Cassie Evans
+* [A pretty good icon system](https://css-tricks.com/pretty-good-svg-icon-system/) by Chris Coyier
+* [A Smashing Case Study](https://vimeo.com/214427831) recorded presentation by Sara Souidean
