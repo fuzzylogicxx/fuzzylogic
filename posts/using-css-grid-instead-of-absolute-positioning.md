@@ -1,8 +1,11 @@
 ---
 date: 2022-05-15T11:42:39Z
-title: Using CSS Grid instead of absolute positioning
+title: Layering elements with Grid rather than positioning
 description: ''
-tags: []
+tags:
+- css
+- positioning
+- cssgrid
 noteWithTitle: false
 linkTarget: ''
 mainImage.url: ''
@@ -12,25 +15,25 @@ mainImage.aspectRatioHeight: ''
 mainImage.srcsetWidths: ''
 mainImage.sizes: ''
 mainImage.isAnchor: false
-draft: true
+draft: false
 
 ---
-My simple pen for parent with two children both taking up same space, one atop the other 
+A while back [I bookmarked Michelle Barker’s CSS Grid based overlay technique](https://fuzzylogic.me/posts/2021-01-06-a-utility-class-for-covering-elements-on-css-in-real-life/) which neatly allows layering one element atop another using CSS Grid rather than absolute positioning. Stephanie Eckles has taken the idea a little further on with her [Smol Stack Layout](https://smolcss.dev/#smol-stack-layout) which offers a slightly more flexible markup structure, some intuitive grid area naming and a neat `aspect-ratio` API.
 
-Layering elements with CSS Grid: [https://codepen.io/fuzzylogicx/pen/XWZNqqo](https://codepen.io/fuzzylogicx/pen/XWZNqqo "https://codepen.io/fuzzylogicx/pen/XWZNqqo")
+Stephanie’s component is feature-packed and opinionated to the extent that it took me a while to understand all the moving parts, so for simplicity I’ve created a pared-back version on CodePen: see [Layering utility with CSS Grid](https://codepen.io/fuzzylogicx/pen/XWZNqqo).
 
-based on [https://smolcss.dev/#smol-stack-layout](https://smolcss.dev/#smol-stack-layout "https://smolcss.dev/#smol-stack-layout")
+While Michelle’s utility kept the markup really simple with the container doubling-up as the first visual “layer in the cake”, I think for flexibility and robustness I prefer the idea of a container which only sets the aspect ratio, with the _layers_ being represented by two or more child elements.
 
-Good because absolute positioning is brittle / for a bygone era. For example it doesn’t play well with responsiveness. Also, it’s often used in tandem with pseudo elements. I’ve done this myself (a little) and I loved the ingenuity of Lea Verou’s CSS Secrets book that brought a lot of these techniques to the table, but personally I find these solutions hard to reverse engineer and maintain. I find it easier to relate CSS boxes to real HTML elements rather than magical hidden ones.
+## Layering text upon images
 
-Using grid-area is slightly neater than Michelle’s [https://fuzzylogic.me/posts/2021-01-06-a-utility-class-for-covering-elements-on-css-in-real-life/](https://fuzzylogic.me/posts/2021-01-06-a-utility-class-for-covering-elements-on-css-in-real-life/ "https://fuzzylogic.me/posts/2021-01-06-a-utility-class-for-covering-elements-on-css-in-real-life/") and I think I kinda prefer the idea of there being a container and the stacked items are children of that, rather than the parent being the first item in the “stack”.
+In [Smol background picture](https://smolcss.dev/#smol-background-picture), Stephanie goes further, leaning on her layering utility to cleverly layer text upon images. This is a modern alternative to the type of effect we previously achieved with background images. It uses a _content image_ marked up using `<picture>` to progressively enhance the image format (`jpg` for old browsers, `webp` for new browsers) and is styled with `object-fit: cover` in order to perfectly span its container.
 
-Evolve to images with text [https://smolcss.dev/#smol-background-picture](https://smolcss.dev/#smol-background-picture "https://smolcss.dev/#smol-background-picture")
+This modern approach is great because often from an accessibility perspective our background images should actually be _content_, described properly with `alt`, to provide an equivalent experience. Furthermore it tends to be better for performance with there now being so many new image techniques and attributes at our disposal when compared to background images and how they are rendered. Lastly, handling the image as content makes it more flexible for styling.
 
-Good because this allows us to make the image _content_ which can be good for accessibility, good for performance (due to all the new image loading stuff we can do versus bg images) and more flexible for styling.
+## Using Grid for a “Hero” Banner
 
-Note: `position: relative;` on the item we want on top is only needed because of the filter on the image. Remove the filter and you don’t need the `position` or any `z-index`. In general I think some types of content will layer with no extra requirements and others need a wee stacking-related nudge.
+Another noteworthy member of this family of techniques from Stephanie is her [Hero with CSS Grid](https://moderncss.dev/3-popular-website-heroes-created-with-css-grid-layout/). Here she uses the same idea of a single grid-template-area with child _content_ and _image_ stacked up in layers, alongside some nifty use of grid positioning properties to align elements within that. This one is very flexible, very responsive, and super-useful.
 
-Using grid for a Hero / Banner.
+## Summing up
 
-[https://moderncss.dev/3-popular-website-heroes-created-with-css-grid-layout/](https://moderncss.dev/3-popular-website-heroes-created-with-css-grid-layout/ "https://moderncss.dev/3-popular-website-heroes-created-with-css-grid-layout/") uses same idea of a single grid-template-area that both content and image layer onto, then some grid positioning properties to align elements within that.
+I really like this move from absolute positioning, because it always felt brittle. It doesn’t play well with responsive layouts, and isn’t resilient to cases where adjacent elements could overlap. Furthermore you often see absolute positioning used in conjunction with pseudo elements and while I’ve occasionally taken this approach (and appreciate the creativity behind these techniques) I’ll admit I find it much easier to read and maintain CSS that relates to actual structural elements rather than “magical” CSS elements. I much prefer these simple, modern and fit-for-purpose CSS Grid based approaches.
