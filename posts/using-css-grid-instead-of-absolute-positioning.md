@@ -1,7 +1,7 @@
 ---
 date: 2022-05-15T11:42:39Z
 title: Layering elements with Grid rather than positioning
-description: ''
+description: Thoughts on Stephanie Eckles’ brilliant grid-based layering utilities
 tags:
 - css
 - positioning
