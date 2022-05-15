@@ -22,7 +22,7 @@ SVG is an amazing technology which I regularly use for icons and occasionally fo
 ## Table of contents
 
 * [Canvas, viewport and viewbox](#canvas-viewport-and-viewbox)
-* [Arranging on a grid](#arranging-on-a-grid)
+* [Arranging elements on a grid](#arranging-elements-on-a-grid)
 
 ## Canvas, viewport and viewBox
 
@@ -66,7 +66,7 @@ Specifying a smaller viewbox than viewport results in cropping the graphic to th
 
 ## Arranging elements on a grid
 
-[Cassie Evans recommends](https://www.cassie.codes/posts/swipey-image-grids/) that when considering an arrangement of elements it’s nice to start with a simple grid using nice round numbers, – like that created by the following `<svg>` – making it easy to then plot elements on top. You might even start by sketching with paper and pencil. 
+[Cassie Evans recommends](https://www.cassie.codes/posts/swipey-image-grids/) that when planning an arrangement of elements it’s nice to start with a simple grid using nice round numbers such as 100×100 – per the following `<svg>` – making it easy to then plot elements on top. You might even start by sketching with paper and pencil. 
 
 <figure>
 
@@ -78,7 +78,10 @@ Specifying a smaller viewbox than viewport results in cropping the graphic to th
   
 </figure>
 
-
+<figure>
+  <img style="margin-inline: auto;" src="https://res.cloudinary.com/fuzzylogic/image/upload/v1652611257/wepik-2022415-113410_zouman.jpg" />
+  <figcaption>A 100×100 grid for SVG sketching</figcaption>  
+</figure>
 
 ## References
 
