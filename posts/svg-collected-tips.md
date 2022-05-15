@@ -23,6 +23,10 @@ SVG is an amazing technology which I regularly use for icons and occasionally fo
 
 * [Canvas, viewport and viewbox](#canvas-viewport-and-viewbox)
 * [Arranging elements on a grid](#arranging-elements-on-a-grid)
+* [Inline SVG for icons](#inline-svg-for-icons)
+* [Choose an SVG embedding technique that suits the task](#choose-an-svg-embedding-technique-that-suits-the-task)
+* [Choose the best-performing format](#choose-the-best-performing-format)
+* [Exporting and optimising SVG in design tools](#exporting-and-optimising-svg-in-design-tools)
 
 ## Canvas, viewport and viewBox
 
@@ -104,6 +108,10 @@ To do: summarise Sara’s technique for SVG with illustration and accessible tex
 ## Choose the best-performing format
 
 When you’re tasked with coding an illustration-based image, it’s tempying to automatically see that as a job for SVG. However keep in mind that for some images the SVG file size will be massive and PNG will perform much better, so compare the two options.
+
+## Exporting and optimising SVG in design tools
+
+To export an SVG in Figma, right-click it (or select it on the left hand side) then select “copy as SVG”. There’s also an “export as SVG” option on the right.
 
 
 ## References
