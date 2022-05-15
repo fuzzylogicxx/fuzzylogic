@@ -18,17 +18,17 @@ mainImage.isAnchor: false
 draft: false
 
 ---
-A while back [I bookmarked Michelle Barker’s CSS Grid based overlay technique](https://fuzzylogic.me/posts/2021-01-06-a-utility-class-for-covering-elements-on-css-in-real-life/) which neatly allows layering one element atop another using CSS Grid rather than absolute positioning. Stephanie Eckles has taken the idea a little further on with her [Smol Stack Layout](https://smolcss.dev/#smol-stack-layout) which offers a slightly more flexible markup structure, some intuitive grid area naming and a neat `aspect-ratio` API.
+A while back I bookmarked Michelle Barker’s [CSS Grid based overlay technique](https://fuzzylogic.me/posts/2021-01-06-a-utility-class-for-covering-elements-on-css-in-real-life/) which neatly allows layering one element atop another using CSS Grid rather than absolute positioning. Now, Stephanie Eckles has taken the idea a step further with her [Smol Stack Layout](https://smolcss.dev/#smol-stack-layout) which offers a more flexible markup structure, some intuitive grid area naming and a neat `aspect-ratio` API.
 
-Stephanie’s component is feature-packed and opinionated to the extent that it took me a while to understand all the moving parts, so for simplicity I’ve created a pared-back version on CodePen: see [Layering utility with CSS Grid](https://codepen.io/fuzzylogicx/pen/XWZNqqo).
+Stephanie’s component is feature-packed and opinionated to the extent that it took me a while to understand all the moving parts. So for simplicity I’ve created a pared-back version on CodePen: see [Layering utility with CSS Grid](https://codepen.io/fuzzylogicx/pen/XWZNqqo).
 
-While Michelle’s utility kept the markup really simple with the container doubling-up as the first visual “layer in the cake”, I think for flexibility and robustness I prefer the idea of a container which only sets the aspect ratio, with the _layers_ being represented by two or more child elements.
+While Michelle’s utility kept the markup really simple with the container doubling-up as the first visual “layer in the cake”, I think for flexibility and robustness I prefer Stephanie’s approach where the container only serves to set the aspect ratio, with the _layers_ represented by two or more child elements.
 
 ## Layering text upon images
 
-In [Smol background picture](https://smolcss.dev/#smol-background-picture), Stephanie goes further, leaning on her layering utility to cleverly layer text upon images. This is a modern alternative to the type of effect we previously achieved with background images. It uses a _content image_ marked up using `<picture>` to progressively enhance the image format (`jpg` for old browsers, `webp` for new browsers) and is styled with `object-fit: cover` in order to perfectly span its container.
+In [Smol background picture](https://smolcss.dev/#smol-background-picture), Stephanie goes further, leaning on her layering utility to cleverly layer text upon images. This is a modern alternative to the type of effect we previously achieved with background images. It uses a content image marked up using `<picture>` to progressively enhance the format (heavier-weight `jpg` for old browsers, lightweight `webp` for new browsers) and is styled with `object-fit: cover` in order to perfectly span its container.
 
-This modern approach is great because often from an accessibility perspective our background images should actually be _content_, described properly with `alt`, to provide an equivalent experience. Furthermore it tends to be better for performance with there now being so many new image techniques and attributes at our disposal when compared to background images and how they are rendered. Lastly, handling the image as content makes it more flexible for styling.
+This modern approach is great because often from an accessibility perspective our background images should really be _content_, described properly with `alt`, to provide equivalent visual and non-visual experiences. Furthermore using a content image tends to be better for performance with there now being so many new image techniques and attributes at our disposal when compared to background images. Lastly, handling the image as content makes it more flexible for styling.
 
 ## Using Grid for a “Hero” Banner
 
@@ -36,4 +36,4 @@ Another noteworthy member of this family of techniques from Stephanie is her [He
 
 ## Summing up
 
-I really like this move from absolute positioning, because it always felt brittle. It doesn’t play well with responsive layouts, and isn’t resilient to cases where adjacent elements could overlap. Furthermore you often see absolute positioning used in conjunction with pseudo elements and while I’ve occasionally taken this approach (and appreciate the creativity behind these techniques) I’ll admit I find it much easier to read and maintain CSS that relates to actual structural elements rather than “magical” CSS elements. I much prefer these simple, modern and fit-for-purpose CSS Grid based approaches.
+I really like this move from absolute positioning because it always felt brittle. It doesn’t play well with responsive layouts, and isn’t resilient to cases where adjacent elements could overlap. Furthermore you often see absolute positioning used in conjunction with pseudo elements and while I’ve occasionally taken this approach (and appreciate the creativity behind these techniques) I’ll admit I find it much easier to read and maintain CSS that relates to actual structural elements rather than “magical” CSS elements. I much prefer these simple, modern and fit-for-purpose CSS Grid based approaches.
