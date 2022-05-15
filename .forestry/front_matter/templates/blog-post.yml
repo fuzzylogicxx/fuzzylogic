@@ -142,6 +142,7 @@ pages:
 - posts/the-guardian-digital-design-style-guide.md
 - posts/use-eleventy-templating-to-include-static-code-demos.md
 - posts/using-aria-current-is-a-win-win-situation.md
+- posts/using-css-grid-instead-of-absolute-positioning.md
 - posts/w3c-design-system.md
 - posts/w3c-html-element-sampler.md
 - posts/web-animation-tips.md
