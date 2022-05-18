@@ -8,6 +8,7 @@ tags:
 - details
 - html
 noteWithTitle: true
+location: Glasgow
 linkTarget: ''
 mainImage.url: ''
 mainImage.alt: ''
