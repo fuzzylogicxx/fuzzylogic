@@ -22,16 +22,36 @@ draft: false
 ---
 The fairly-recently added `<details>` element is a great, native HTML way to toggle content visibility.
 
-<div class="codepen" data-height="265" data-theme-id="0" data-default-tab="html,result" data-user="fuzzylogicx" data-slug-hash="gEYyqZ" data-prefill='{"title":"Disclosure Element","tags":[],"stylesheets":[],"scripts":[]}'>
-  <pre data-lang="html"><details>
-  <summary>Overview</summary>
-  <ol>
-    <li>Cash on hand: $500.00</li>
-    <li>Current invoice: $75.30</li>
-    <li>Due date: 5/6/19</li>
-  </ol>
-</details></pre>
-  <pre data-lang="css" ></pre>
-  
-</div>
-<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+<div class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="WNOJbKd" data-preview="true" data-user="fuzzylogicx"  data-prefill='{"title":"Hiding: native disclosure using <details>","tags":["hide","hiding","html","details"],"scripts":[],"stylesheets":[]}'>
+  <pre data-lang="html">&lt;p>Lorem ipsum dolor sit amet.&lt;/p>
+
+&lt;details>
+  &lt;summary>System Requirements&lt;/summary>
+  &lt;p>Requires a computer running an operating system. The computer
+    must have some memory and ideally some kind of long-term storage.&lt;/p>
+&lt;/details>
+
+&lt;p class="end">Remember: built-in beats bolt-on, bigly!&lt;/p>
+
+&lt;!-- 
+&lt;details> is great but there are a few gotchas:
+- Not totally flexible design-wise
+- Unsuitable for accordions with multiple sibling elements unless you add some JS
+- Unsupported in IE 11 (but content is still available)
+--></pre>
+  <pre data-lang="css">:root {
+  font-size: 110%;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+input,
+button {
+  font-size: inherit;
+}
+
+.end {
+  margin-top: 2rem;
+}
+</pre></div>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
