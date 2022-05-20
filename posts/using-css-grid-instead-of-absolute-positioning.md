@@ -19,6 +19,7 @@ draft: false
 
 ---
 A while back I bookmarked Michelle Barker’s [CSS Grid based overlay technique](https://fuzzylogic.me/posts/2021-01-06-a-utility-class-for-covering-elements-on-css-in-real-life/) which neatly allows layering one element atop another using CSS Grid rather than absolute positioning. Now, Stephanie Eckles has taken the idea a step further with her [Smol Stack Layout](https://smolcss.dev/#smol-stack-layout) which offers a more flexible markup structure, some intuitive grid area naming and a neat `aspect-ratio` API.
+---
 
 Stephanie’s component is feature-packed and opinionated to the extent that it took me a while to understand all the moving parts. So for simplicity I’ve created a pared-back version on CodePen: see [Layering utility with CSS Grid](https://codepen.io/fuzzylogicx/pen/XWZNqqo).
 
