@@ -74,11 +74,13 @@ I noted that Github handle their repository “directory indexes” using the [A
 </div>
 ```
 
-I don’t think I’d pick this approach in most cases. It turns multiple tab-stops into a single tab-stop (the grid is a single _widget_) which is perhaps useful for some cases, but I’ve yet to encounter them. It then also requires you to do manual focus management within the widget.
+I don’t think I’d pick this approach right now. It turns multiple tab-stops into a single tab-stop (the grid is a single _widget_) which is perhaps useful for some cases, but I’ve yet to encounter them. It then also requires you to do manual focus management within the widget. 
+
+It’s an interesting approach, though, and one I’ll keep in the back of my mind.
 
 ## You can achieve table “bells and whistles” accessibly
 
-Here are some other handy, accessible techniques, courtesy of Adrian Roselli:
+Here are some handy, accessible techniques, courtesy of Adrian Roselli:
 
 - [Accessibly including inputs in tables](https://adrianroselli.com/2019/05/uniquely-labeling-fields-in-a-table.html)
 - [Responsive accessible tables](https://adrianroselli.com/2017/11/a-responsive-accessible-table.html) and simpler [Under-engineered responsive tables](https://adrianroselli.com/2020/11/under-engineered-responsive-tables.html)
