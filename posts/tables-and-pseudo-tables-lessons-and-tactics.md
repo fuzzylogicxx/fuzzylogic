@@ -41,7 +41,7 @@ Note: I think [it’s OK to use the description list element](https://tetralogic
 
 I noted that Github handle their repository “directory indexes” using the [ARIA grid role](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/grid_role). Their HTML is like this (I’ve abbreviated it a little):
 
-```
+``` html
 <div role="grid" aria-labelledby="files" class="…">
   <div class="sr-only" role="row">
     <div role="columnheader">Type</div>
