@@ -20,7 +20,7 @@ mainImage.isAnchor: false
 draft: false
 
 ---
-In my work building and maintaining a Design System which serves a data-heavy web application, I have to think about HTML tables a lot. The challenge is that 99% of table tutorials show _really simple_ table examples… whereas in reality design and product teams often want to squeeze in lots more. It’s really hard to balance those needs against accessibility, systemisation, styling and responsiveness. 
+At work I have to think about complex HTML tables a lot. The challenge with doing tables well is that 99% of online table tutorials use fairly simple examples… whereas in reality design and product teams often want to squeeze in lots more. It’s really hard to balance those needs against accessibility, systemisation, styling and responsiveness. 
 
 Heads up: I’ve published this post early while it’s still a work in progress because it’s better for me to have it available for reference than languishing in drafts and forgotten. Apologies if you read it in a temporarily rough state.
 ---
