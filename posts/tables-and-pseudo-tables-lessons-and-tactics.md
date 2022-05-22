@@ -33,9 +33,9 @@ Here are my new rules of thumb.
 
 In addition to developing a component wrapping the HTML `table` element to handle simple data tables, I recently created an alternate component for “tables with bells and whistles”. It used a combination of the HTML [description list](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dl) element plus CSS Grid plus some `display: contents` in lieu of the currently poorly supported subgrid. This approach allowed recreating a table-like appearance but facilitating much more responsive layout flexibility, amongst other benefits.
 
-This resulted in an accessibiliy fail around the use of a description list in this way. Popular combinations of browsers and assistive technologies do not support description lists sufficiently to convey the intended crucial relationships between the faux table headers and faux table cells.
+Unfortunately this resulted in an accessibiliy fail around using the description list in this way. Popular combinations of browsers and assistive technologies do not support description lists sufficiently to convey the intended crucial relationships between the faux table headers and faux table cells.
 
-Note: I think [it’s OK to use the description list element](https://tetralogical.com/blog/2022/04/29/lists/) – just not for such an unconventional and complex use case. 
+Note: I think [it’s OK to use the description list element](https://tetralogical.com/blog/2022/04/29/lists/) in general – just not for such an unconventional and complex use case. 
 
 ## ARIA Grid role: an alternative in theory (if not in practice)
 
@@ -74,11 +74,11 @@ I noted that Github handle their “repository directory indexes” using the [A
 </div>
 ```
 
-I like the idea of looking at alternatives to tables but don’t think I’d pick this approach right now. Where there are lots of focusable elements it turns multiple tab-stops into _one_ (the grid is a single _widget_) which is perhaps useful for some cases, but I’ve yet to encounter them. This then requires you to do manual focus management within the widget. 
+I like the idea of looking at alternatives to tables but don’t think I’d take this approach right now. Where there are lots of focusable elements it turns those multiple tab-stops into _one_ (the grid is a single _widget_) which is perhaps useful for some cases, but I’ve yet to encounter them. It’d also require you to do manual focus management within the widget. 
 
 It’s an interesting approach though, and one I’ll keep in the back of my mind.
 
-## You can achieve table “bells and whistles” accessibly
+## You can achieve “bells and whistles” within a table accessibly
 
 Here are some handy techniques – done accesibly – courtesy of Adrian Roselli:
 
