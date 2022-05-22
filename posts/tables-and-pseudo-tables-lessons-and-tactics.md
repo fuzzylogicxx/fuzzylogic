@@ -20,12 +20,12 @@ mainImage.isAnchor: false
 draft: false
 
 ---
-In my work building and maintaining a Design System which serves a data-heavy web application, I have to think about HTML tables a lot. The challenge is that 99% of table tutorials show simple table examples whereas in reality design and product teams often want to squeeze in a whole lot more. This makes it hard to balance those needs against accessibility, systemisation, styling – the table element is fairly inflexible – and responsiveness. 
+In my work building and maintaining a Design System which serves a data-heavy web application, I have to think about HTML tables a lot. The challenge is that 99% of table tutorials show _really simple_ table examples… whereas in reality design and product teams often want to squeeze in lots more. It’s really hard to balance those needs against accessibility, systemisation, styling and responsiveness. 
 
 Heads up: I’ve published this post early while it’s still a work in progress because it’s better for me to have it available for reference than languishing in drafts and forgotten. Apologies if you read it in a temporarily rough state.
 ---
 
-Following a pause after a lot of work on tables I’ve recently gained additional insight into the possibilities and constraints, mainly thanks to an accessibility review by [Tetralogical](https://tetralogical.com/) and through reading some great articles by [Adrian Roselli](https://adrianroselli.com/). 
+Following a lot of work on tables I’ve recently gained additional insight into the possibilities and constraints, thanks to an accessibility review by [Tetralogical](https://tetralogical.com/) and some great articles by [Adrian Roselli](https://adrianroselli.com/). 
 
 Here are my new rules of thumb.
 
@@ -37,9 +37,9 @@ This resulted in an accessibiliy fail around the use of a description list in th
 
 Note: I think [it’s OK to use the description list element](https://tetralogical.com/blog/2022/04/29/lists/) – just not for such an unconventional and complex use case. 
 
-## ARIA Grid role: an alternative in theory if not in practice
+## ARIA Grid role: an alternative in theory (if not in practice)
 
-I noted that Github handle their repository “directory indexes” using the [ARIA grid role](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/grid_role). Their HTML is like this (I’ve abbreviated it a little):
+I noted that Github handle their “repository directory indexes” using the [ARIA grid role](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/grid_role). Their HTML is like this (I’ve abbreviated it a touch):
 
 ``` html
 <div role="grid" aria-labelledby="files" class="…">
@@ -74,13 +74,13 @@ I noted that Github handle their repository “directory indexes” using the [A
 </div>
 ```
 
-I don’t think I’d pick this approach right now. It turns multiple tab-stops into a single tab-stop (the grid is a single _widget_) which is perhaps useful for some cases, but I’ve yet to encounter them. It then also requires you to do manual focus management within the widget. 
+I like the idea of looking at alternatives to tables but don’t think I’d pick this approach right now. Where there are lots of focusable elements it turns multiple tab-stops into _one_ (the grid is a single _widget_) which is perhaps useful for some cases, but I’ve yet to encounter them. This then requires you to do manual focus management within the widget. 
 
-It’s an interesting approach, though, and one I’ll keep in the back of my mind.
+It’s an interesting approach though, and one I’ll keep in the back of my mind.
 
 ## You can achieve table “bells and whistles” accessibly
 
-Here are some handy, accessible techniques, courtesy of Adrian Roselli:
+Here are some handy techniques – done accesibly – courtesy of Adrian Roselli:
 
 - [Accessibly including inputs in tables](https://adrianroselli.com/2019/05/uniquely-labeling-fields-in-a-table.html)
 - [Responsive accessible tables](https://adrianroselli.com/2017/11/a-responsive-accessible-table.html) and simpler [Under-engineered responsive tables](https://adrianroselli.com/2020/11/under-engineered-responsive-tables.html)
