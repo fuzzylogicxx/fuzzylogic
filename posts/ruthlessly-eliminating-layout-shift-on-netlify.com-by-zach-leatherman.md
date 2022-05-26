@@ -1,7 +1,8 @@
 ---
 date: 2021-05-12T17:02:07Z
 title: Ruthlessly eliminating layout shift on netlify.com, by Zach Leatherman
-description: ''
+description: Zach’s banner web component is choc-full of interesting thinking and
+  techniques
 tags:
 - link
 - progressiveenhancement
