@@ -20,42 +20,44 @@ mainImage.aspectRatioHeight: ''
 mainImage.srcsetWidths: ''
 mainImage.sizes: ''
 mainImage.isAnchor: false
-draft: true
+draft: false
 
 ---
-I love hearing about clever front-end solutions which combine technologies and achieve multiple goals. In Zach’s post we hear how Netlify’s website suffered from _layout shift_ when conditionally rendering dismissible promo banners and how he addressed this by reconsidering the problem and switching responsibilities around the stack.
+I love hearing about clever front-end solutions which combine technologies and achieve multiple goals. In Zach’s post we hear how Netlify’s website suffered from layout shift when conditionally rendering dismissible promo banners, and how he addressed this by rethinking the problem and shifting responsibilities around the stack.
 
-Here’s my summary of smart ideas covered in the post:
+Here’s my summary of the smart ideas covered in the post:
 
-* decide on the appropriate server-rendered content… in this case showing the banner, which made the most common use case faster-loading
-* have the banner “dismiss” button’s event handling script store the banner’s `href` URL in the user’s browser localStorage as an identifier accessible on return visits
-* process lightweight but critical JavaScript logic _early_ in the <head>… in this case a check for this banner’s identifier existing in localStorage
-* under certain conditions – in this case when the banner was previously seen and dismissed – set a “state” class on the `<html>` element, such as `banner--hide`
+* decide on the appropriate server-rendered content… in this case showing rather than hiding the banner, making the most common use case faster to load
+* have the banner “dismiss” button’s event handling script store the banner’s `href` in the user’s localStorage as an identifier accessible on return visits
+* process lightweight but critical JavaScript logic _early_ in the `<head>`… in this case a check for this banner’s identifier existing in localStorage
+* under certain conditions – in this case when the banner was previously seen and dismissed – set a “state” class (`banner--hide`) on the `<html>` element, leading to the component being hidden seamlessly by CSS
 * build the banner as a web component, the first layer of which being a custom element `<announcement-banner>` and the second a JavaScript class to enhance it
-* delegate responsibility for presenting the banner’s “dismiss” button to the same script responsible for the component’s enhancements, meaning that if it breaks, a broken button isn’t presented.
+* delegate responsibility for presenting the banner’s “dismiss” button to the same script responsible for the component’s enhancements, meaning that a broken button won’t be presented if that script were to break.
 
-So much to like in there. Here are some further thoughts the article raised.
+So much to like in there! 
+
+Here are some further thoughts the article provoked.
 
 ## Web components FTW
 
-It feels like creating a component like this as a web component leads to a real convergence of benefits:
+It feels like creating a component such as this one as a _web component_ leads to a real convergence of benefits:
 
-* tool-free, async JS loading as an ES module
+* tool-free, async loading of the component JS as an ES module
 * fast, native element discovery (no need for a `document.querySelector`)
-* enforces a nice, idiomatic class providing encapsulation and high-performing callbacks
-* resilience and progressive enhancement by putting all your JS-dependent stuff into the JS class and having that enhance your more basic initial custom element. If that JS breaks, you still have the basic element and won’t present any broken elements.
+* enforces using a nice, idiomatic class providing encapsulation and high-performing native callbacks
+* resilience and progressive enhancement by putting all your JS-dependent stuff into the JS class and having that enhance your basic custom element. If that JS breaks, you still have the basic element and won’t present any broken elements.
 
-And share it like Zach did.
+Even better, you end up with framework-independent, standards-based component that you could share with others for reuse elsewhere, just like Zach did.
 
-## Multiple buttons
+## Multiple banners
 
-stringified object
+I could see there being a case where there are multiple banners during the same time period. I guess in that situation the localStorage `banner` value could be a stringified object rather than a simple, single-URL string.
 
 ## Setting context on the root
 
-We already know this technique from the likes of libraries like modernizr and performant font-loading approaches, but this article serves as a reminder. Note: we apply the class to the HTML element because at this early stage we can’t manipulate the element itself because it’s not yet in the DOM.
+It’s really handy to have a way to exert just-in-time control over the display of a server-rendered element in a way that avoids flashes of content… and adding a class to the `<html>` element offers that. In this approach, we run the small amount of JavaScript required to test a local condition (e.g. checking for a value in localStorage) _really early_. That lets us process our conditional logic before the element is rendered… although this also means that it’s not yet available in the DOM for direct manipulation. But adding a class to the HTML element means that we can pre-prepare CSS to use that class as a contextual selector for hiding the element.
 
-…CSS already prepped to use this as a contextual selector for hiding the component.
+We’re already familiar with the technique of placing classes on the root element from libraries like [modernizr](https://modernizr.com/) and some font-loading approaches, but this article serves as a reminder that we can employ it whenever we need it.
 
 ## Handling the close button
 
