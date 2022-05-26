@@ -74,7 +74,7 @@ If I were going down Zach’s route I think I’d replace `opacity` with `visibi
 
 ## Side-thoughts
 
-In a server-side scripted application – one using Rails or PHP, for example – you could alternatively handle persisting state with _cookies_ rather than localStorage… allowing you to test for the presence of the cookie on the _server_ then handle conditional rendering of the banner on the server too, rather than needing classes which trigger hiding. I can see an argument for that. Thing is though, not everyone’s working in that environment. Zach’s solution is more standalone.
+In a server-side scripted application – one using Rails or PHP, for example – you could alternatively handle persisting state with _cookies_ rather than localStorage… allowing you to test for the presence of the cookie on the _server_ then handle conditional rendering of the banner on the server too, rather than needing classes which trigger hiding. I can see an argument for that. Thing is though, not everyone’s working in that environment. Zach has provided a standalone solution.
 
 ## References
 
