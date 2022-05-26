@@ -27,11 +27,12 @@ I love hearing about clever front-end solutions which combine technologies and s
 
 Here’s my summary of smart ideas in the post:
 
-* choosing the appropriate server-rendered content – in this case showing the banner
-* having the banner “dismiss” button’s event handling script store the banner’s `href` URL in the user’s browser localStorage as an identifier that can be accessed on return visits
-* processing lightweight but critical JavaScript logic _early_ in the <head>… in this case the check for this banner’s URL existing in localStorage
-* handling the banner as a web component, firstly with a custom element `<announcement-banner>` and secondly with JavaScript to enhance it
-* delegating responsibility for presenting the banner’s “dismiss” button to the same script responsible for the component’s enhanced functionality, meaning that if it breaks, a broken button isn’t presented.
+* decide on the appropriate server-rendered content – in this case showing the banner
+* have the banner “dismiss” button’s event handling script store the banner’s `href` URL in the user’s browser localStorage as an identifier that can be accessed on return visits
+* process lightweight but critical JavaScript logic _early_ in the <head>… in this case the check for this banner’s URL existing in localStorage
+* under certain conditions – in this case when the banner was previously seen and dismissed – set a “state” class on the `<html>` element, such as `banner--hide`
+* build the banner as a web component, the first layer of which being a custom element `<announcement-banner>` and the second a JavaScript class to enhance it
+* delegate responsibility for presenting the banner’s “dismiss” button to the same script responsible for the component’s enhanced functionality, meaning that if it breaks, a broken button isn’t presented.
 
 ## Web components FTW
 
@@ -48,11 +49,19 @@ And share it like Zach did.
 
 stringified object
 
-## Setting context on the root 
+## Setting context on the root
 
-We already know this technique from the likes of libraries like modernizr and performant font-loading approaches, but this article serves as a reminder
+We already know this technique from the likes of libraries like modernizr and performant font-loading approaches, but this article serves as a reminder. Note: we apply the class to the HTML element because at this early stage we can’t manipulate the element itself because it’s not yet in the DOM.
 
-## Handling the close button 
+…CSS already prepped to use this as a contextual selector for hiding the component.
+
+## Handling the close button
+
+…
+
+> We use opacity to toggle the close button so that it doesn’t reflow the component when it’s enabled via JavaScript.
+
+I think what Zach’s saying is that the alternatives – inserting the button with JS, or toggling the `hidden` attribute or its CSS counterpart `display:none` - would affect geometry causing a reflow whereas contrast does not.
 
 I love that level of diligence!
 
