@@ -23,25 +23,27 @@ mainImage.isAnchor: false
 draft: true
 
 ---
-I love hearing about clever front-end solutions which combine technologies and straddle concerns! Zach’s post describes how Netlify’s website suffered from _layout shift_ when conditionally rendering dismissible promo banners and how, by reconsidering the problem and switching responsibilities around the stack, he addressed it.
+I love hearing about clever front-end solutions which combine technologies and achieve multiple goals. In Zach’s post we hear how Netlify’s website suffered from _layout shift_ when conditionally rendering dismissible promo banners and how he addressed this by reconsidering the problem and switching responsibilities around the stack.
 
-Here’s my summary of smart ideas in the post:
+Here’s my summary of smart ideas covered in the post:
 
-* decide on the appropriate server-rendered content – in this case showing the banner
-* have the banner “dismiss” button’s event handling script store the banner’s `href` URL in the user’s browser localStorage as an identifier that can be accessed on return visits
-* process lightweight but critical JavaScript logic _early_ in the <head>… in this case the check for this banner’s URL existing in localStorage
+* decide on the appropriate server-rendered content… in this case showing the banner, which made the most common use case faster-loading
+* have the banner “dismiss” button’s event handling script store the banner’s `href` URL in the user’s browser localStorage as an identifier accessible on return visits
+* process lightweight but critical JavaScript logic _early_ in the <head>… in this case a check for this banner’s identifier existing in localStorage
 * under certain conditions – in this case when the banner was previously seen and dismissed – set a “state” class on the `<html>` element, such as `banner--hide`
 * build the banner as a web component, the first layer of which being a custom element `<announcement-banner>` and the second a JavaScript class to enhance it
-* delegate responsibility for presenting the banner’s “dismiss” button to the same script responsible for the component’s enhanced functionality, meaning that if it breaks, a broken button isn’t presented.
+* delegate responsibility for presenting the banner’s “dismiss” button to the same script responsible for the component’s enhancements, meaning that if it breaks, a broken button isn’t presented.
+
+So much to like in there. Here are some further thoughts the article raised.
 
 ## Web components FTW
 
-convergence of virtues:
+It feels like creating a component like this as a web component leads to a real convergence of benefits:
 
-* async loading with ES modules
-* native element discovery without the need for document.querySelector
-* a nice class with encapsulation and performant callbacks
-* resilience and progressive enhancement via enhancements only being applied if the component’s JavaScript class runs successfully, minimising the risk of presenting broken elements
+* tool-free, async JS loading as an ES module
+* fast, native element discovery (no need for a `document.querySelector`)
+* enforces a nice, idiomatic class providing encapsulation and high-performing callbacks
+* resilience and progressive enhancement by putting all your JS-dependent stuff into the JS class and having that enhance your more basic initial custom element. If that JS breaks, you still have the basic element and won’t present any broken elements.
 
 And share it like Zach did.
 
