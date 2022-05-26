@@ -1,5 +1,5 @@
 ---
-date: 2022-05-26T17:02:07Z
+date: 2021-05-12T17:02:07Z
 title: Ruthlessly eliminating layout shift on netlify.com, by Zach Leatherman
 description: ''
 tags:
