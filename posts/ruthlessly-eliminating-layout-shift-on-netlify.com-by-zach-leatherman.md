@@ -61,15 +61,19 @@ We’re already familiar with the technique of placing classes on the root eleme
 
 ## Handling the close button
 
-…
+Zach’s approach to handling the banner’s dismiss button was interesting. He makes sure that it’s not shown unless the web component’s JavaScript runs successfully which is great, but rather than inject it with JavaScript he includes it in the initial HTML but hidden with CSS, and his method of hiding is `opacity`.
 
 > We use opacity to toggle the close button so that it doesn’t reflow the component when it’s enabled via JavaScript.
 
-I think what Zach’s saying is that the alternatives – inserting the button with JS, or toggling the `hidden` attribute or its CSS counterpart `display:none` - would affect geometry causing a reflow whereas contrast does not. 
+I think what Zach’s saying is that the alternatives – inserting the button with JS, or toggling the `hidden` attribute or its CSS counterpart `display:none` – would [affect geometry causing the browser to perform layout](https://csstriggers.com/display)… whereas [modifying opacity does not](https://csstriggers.com/opacity). 
 
-I love that level of diligence!
+I love that level of diligence! Typically I prefer to [delegate responsibility for inserting JS-dependent buttons to JavaScript](https://twitter.com/jaffathecake/status/1230388412806520833) because in comparison to including a button in the server-rendered HTML then hiding it, it feels more resilient and a more maintainable separation of concerns. However as always the best solution depends on the situation.
 
-If I were going down Zach’s route I think I’d replace `opacity` with `visibility` since the latter removes the element from the document which feels more accessible, but still without triggering reflow (like `display` would).
+If I were going down Zach’s route I think I’d replace `opacity` with `visibility` since the latter hiding method removes the hidden element from the document which feels more accessible, while still [avoiding triggering the reflow](https://csstriggers.com/visibility) that `display` would.
+
+## Side-thoughts
+
+In a server-side scripted application – one using Rails or PHP, for example – you could alternatively handle persisting state with _cookies_ rather than localStorage… allowing you to test for the presence of the cookie on the _server_ then handle conditional rendering of the banner on the server too, rather than needing classes which trigger hiding. I can see an argument for that. Thing is though, not everyone’s working in that environment. Zach’s solution is more standalone.
 
 ## References
 
