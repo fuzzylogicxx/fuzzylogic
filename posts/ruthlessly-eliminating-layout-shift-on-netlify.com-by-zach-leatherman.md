@@ -65,10 +65,14 @@ We’re already familiar with the technique of placing classes on the root eleme
 
 > We use opacity to toggle the close button so that it doesn’t reflow the component when it’s enabled via JavaScript.
 
-I think what Zach’s saying is that the alternatives – inserting the button with JS, or toggling the `hidden` attribute or its CSS counterpart `display:none` - would affect geometry causing a reflow whereas contrast does not.
+I think what Zach’s saying is that the alternatives – inserting the button with JS, or toggling the `hidden` attribute or its CSS counterpart `display:none` - would affect geometry causing a reflow whereas contrast does not. 
 
 I love that level of diligence!
 
+If I were going down Zach’s route I think I’d replace `opacity` with `visibility` since the latter removes the element from the document which feels more accessible, but still without triggering reflow (like `display` would).
+
 ## References
 
+* Zach’s [Herald of the dog](https://github.com/zachleat/herald-of-the-dog) web component
 * [CSS Triggers](https://csstriggers.com/) of reflow and repaint
+* [Minimising layout thrashing](https://www.harrytheo.com/blog/2021/09/dom-reflow-and-layout-thrashing/)
