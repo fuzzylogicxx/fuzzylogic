@@ -63,6 +63,7 @@ fields:
   name: draft
   label: draft
 pages:
+- posts/a-better-birthday-input-by-vitaly-friedman.md
 - posts/a-dao-of-web-design-on-a-list-apart.md
 - posts/a-few-days-off-in-dunkeld-and-bridge-of-allan.md
 - posts/a-front-end-developer-s-job.md
