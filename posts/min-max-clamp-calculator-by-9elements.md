@@ -12,7 +12,7 @@ tags:
 - fluid
 - clamp
 noteWithTitle: false
-linkTarget: ''
+linkTarget: 'https://min-max-calculator.9elements.com/'
 mainImage.url: ''
 mainImage.alt: ''
 mainImage.aspectRatioWidth: ''
