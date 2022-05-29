@@ -24,7 +24,7 @@ The HTML `details` element continues to gain fans and get developers’ juices f
 
 > I love the details/summary HTML elements. So versatile. My favorite part is being able to show a collapsed state from the start without worrying about potential operability issues if JavaScript fails to run (since its behavior doesn't need it).
 
-Scott goes on to describe how creating disclosure widgets (controls that hide and show stuff) with resilience in mind is so much more difficult when not using `<details>` since it and can require complex progressive enhancement techniques. At the very least these involve making content available by default in case JavaScript fails, then hiding it when the disclosure widget script loads successfully, ideally without a jarring flash of content in between.
+Scott goes on to describe how creating disclosure widgets (controls that hide and show stuff) with resilience in mind is so much more difficult when not using `<details>` since it can require complex progressive enhancement techniques. At the very least these involve making content available by default in case JavaScript fails, then hiding it when the disclosure widget script loads successfully, ideally without a jarring flash of content in between.
 ---
 
 Like Scott says, the `<details>` element is different because you can have the content collapsed (hidden) by default without worrying about JavaScript and workarounds since the hidden content can be toggled open natively. That‘s a real superpower… and also makes you wonder: how many different places and different ways might we use this super-element?
@@ -55,4 +55,4 @@ Using a custom disclosure widget put together with JavaScript and ARIA is not th
 
 ## Summing up
 
-So far I’ve been cautious about using `details` for more than simple cases but I’m starting to think the time may have come to take it further. A “hamburger” menu pattern might be a safe place to start… whereas I might not use it in situations where the “summary” (i.e. the toggle) needs to be more complex, for example on [a subnavigation trigger which includes both a link and a button](https://adrianroselli.com/2019/06/link-disclosure-widget-navigation.html#Pattern). When I do try it, it’d be great to employ some proper accessibility testing and get feedback.
+So far I’ve been cautious about using `details` for more than simple cases but I’m starting to think the time may have come to take it further, possibly using Zach’s web component. A “hamburger” menu pattern might be a safe place to start… whereas I might not use it in situations where the “summary” (i.e. the toggle) needs to be more complex, for example on [a subnavigation trigger which includes both a link and a button](https://adrianroselli.com/2019/06/link-disclosure-widget-navigation.html#Pattern). When I do try it, it’d be great to employ some proper accessibility testing and get feedback.
