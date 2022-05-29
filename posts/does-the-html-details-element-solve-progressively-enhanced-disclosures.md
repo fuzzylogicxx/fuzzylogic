@@ -17,7 +17,7 @@ mainImage.aspectRatioHeight: ''
 mainImage.srcsetWidths: ''
 mainImage.sizes: ''
 mainImage.isAnchor: false
-draft: true
+draft: false
 
 ---
 The HTML `details` element continues to gain fans and get developers’ juices flowing. [Scott Jehl recently tweeted:](https://twitter.com/scottjehl/status/1524746181271863296)
@@ -37,9 +37,11 @@ A while back, GitHub caused a flutter by using details in lots of interesting wa
 
 I’ve [previously noted](https://fuzzylogic.me/posts/web-components-as-progressive-enhancement-by-cloud-four/) Zach Leatherman’s [details-utils](https://www.zachleat.com/web/details-utils/) – a great example of using a web component to enhance an existing HTML element, in this case `<details>`. The enhancements include:
 
-* to do: add enhancements
+- animated open/close
+- closed by default on narrow screens, open by default on wide
+- and more
 
-And Zach has already used it on (to do: add detail)
+And Zach has already used it on the navigation menus on [jamstack.org](https://jamstack.org/) and [netlify.com](https://www.netlify.com/), amongst other use cases.
 
 ## A note of caution
 
