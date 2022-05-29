@@ -90,6 +90,7 @@ pages:
 - posts/details-and-summary-for-no-javascript-disclosure-widgets.md
 - posts/disclosure-with-css-rather-than-javascript-dos-and-don-ts.md
 - posts/division-and-construction-in-design-systems.md
+- posts/does-the-html-details-element-solve-progressively-enhanced-disclosures.md
 - posts/don-t-set-cursor-pointer-on-buttons.md
 - posts/doppler-type-scale-with-dynamic-line-height.md
 - posts/duet-design-system.md
