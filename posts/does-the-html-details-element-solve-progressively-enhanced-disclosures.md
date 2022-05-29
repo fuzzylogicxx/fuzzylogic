@@ -49,7 +49,7 @@ And Zach has already used it on (to do: add detail)
 
 ## Alternative approaches
 
-Using a custom disclosure widget put together with JavaScript and ARIA is not the end of the world. In fact I recently tried my hand at a disclosure widget web component 
+Using a custom disclosure widget put together with JavaScript and ARIA is not the end of the world. In fact I recently tried my hand at a [disclosure widget web component](https://fuzzylogic.me/posts/my-first-web-component-a-disclosure-widget/) and early impressions are that the combination of fast, async ES modules plus native DOM discovery (which you get with web components) might alleviate the “flicker of content” issue I mentioned at the start.
 
 ## Summing up
 
