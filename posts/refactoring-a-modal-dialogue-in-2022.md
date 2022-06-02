@@ -35,4 +35,4 @@ However with recent browser advances especially improvements made by Safari, the
 
 However first I think we’d need to make an informed decision regarding our satisfaction with support, based on the updated advice at the start of Scott O’Hara’s excellent article [Having an Open Dialog](https://www.scottohara.me/blog/2019/03/05/open-dialog.html).
 
-Additionally we should _definitely_ be keeping one eye on proposals around [the exciting new `togglepopup` and `popup` attributes](https://twitter.com/jh3yy/status/1529909208098947072).
+Additionally we should _definitely_ be keeping one eye on proposals around [the exciting new `togglepopup` and `popup` attributes](https://twitter.com/jh3yy/status/1529909208098947072) which promise the holy grail of entirely HTML-powered modal dialogues with no JavaScript dependency.
