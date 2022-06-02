@@ -33,6 +33,6 @@ For a long time the best – meaning accessible, framework-agnostic, feature-pac
 
 However with recent browser advances (especially from Safari), there’s an argument that the time has now come that we no longer need custom solutions and can go native. So we might reach for [the native  `<dialog>` HTML element](https://twitter.com/Una/status/1508926326392164353).
 
-However first I think we’d need to make an informed decision regarding our satisfaction with support, based on the updated advice at the start of Scott O’Hara’s excellent article [Having an Open Dialog](https://www.scottohara.me/blog/2019/03/05/open-dialog.html).
+However first I think we’d need to make an informed decision regarding our satisfaction with support, based on the updated advice in Scott O’Hara’s article [Having an Open Dialog](https://www.scottohara.me/blog/2019/03/05/open-dialog.html).
 
 Additionally we should _definitely_ be keeping one eye on proposals around [the exciting new `togglepopup` and `popup` attributes](https://twitter.com/jh3yy/status/1529909208098947072) which promise the holy grail of entirely HTML-powered modal dialogues with no JavaScript dependency.
