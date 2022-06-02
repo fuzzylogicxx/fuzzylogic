@@ -25,7 +25,7 @@ draft: false
 I put together a fairly spacey and mellow selection of laidback electronic sounds with a little nod to summer.
 ---
 
-[Download my April 2022 mixtape.](https://drive.google.com/uc?id=1oFjh8wpmYm22iPq1Np0pFMFW1XgBKsHX&export=download)
+[Download my April 2022 mixtape.](https://drive.google.com/uc?export=download&id=1xdHzCc-GyrRr40Yp-dUp6yYTXkCSOpvf)
 
 Here’s the tracklist:
 
