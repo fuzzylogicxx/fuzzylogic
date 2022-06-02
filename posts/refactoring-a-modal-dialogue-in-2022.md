@@ -31,7 +31,7 @@ For a long time the best – meaning accessible, framework-agnostic, feature-pac
 * [Kitty Giraudel’s a11y-dialog](https://a11y-dialog.netlify.app/); and 
 * [Scott O’Hara’s Vanilla Modal Dialog](https://scottaohara.github.io/accessible_modal_window/)
 
-However with recent browser advances especially improvements made by Safari, there’s an argument that the time has now come that we no longer need custom solutions and can go native. So we might reach for [the native  `<dialog>` HTML element](https://twitter.com/Una/status/1508926326392164353).
+However with recent browser advances (especially from Safari), there’s an argument that the time has now come that we no longer need custom solutions and can go native. So we might reach for [the native  `<dialog>` HTML element](https://twitter.com/Una/status/1508926326392164353).
 
 However first I think we’d need to make an informed decision regarding our satisfaction with support, based on the updated advice at the start of Scott O’Hara’s excellent article [Having an Open Dialog](https://www.scottohara.me/blog/2019/03/05/open-dialog.html).
 
