@@ -4,7 +4,7 @@ title: Refactoring a modal dialogue in 2022
 description: It’s time to revisit our modal dialogue, and there are things to consider
 tags:
 - entry
-- " a11y"
+- a11y
 - modal
 - javascript
 - html
