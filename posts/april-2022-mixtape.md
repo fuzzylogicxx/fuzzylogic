@@ -2,6 +2,11 @@
 date: 2022-04-18T14:18:08.000+00:00
 title: April 2022 mixtape
 description: I put together a fairly spacey and mellow selection of organic electronics
+mainImage:
+  url: https://res.cloudinary.com/fuzzylogic/image/upload/v1654428981/a4255247757_10_mlxk3g.jpg
+  alt: "Side A of the 7-inch vinyl release of Mato’s “Summer Madness”."
+  aspectRatioWidth: 320
+  aspectRatioHeight: 320
 tags:
 - note
 - mixtape
@@ -24,6 +29,19 @@ draft: false
 ---
 I put together a fairly spacey and mellow selection of laidback electronic sounds with a little nod to summer.
 ---
+
+{% if app.environment == "production" %}
+
+<figure>
+  {% respimg "" + mainImage.url + "",
+  "" + mainImage.alt + "",
+  "(min-width: 1600px) 646px, (min-width: 700px) 612px, 91.58vw",
+  mainImage.aspectRatioWidth, mainImage.aspectRatioHeight,
+  [320, 640, 960, 1200] %}
+  <figcaption>Mato’s “Summer Madness”, as featured on the mix</figcaption>
+</figure>
+
+{% endif %}
 
 [Download my April 2022 mixtape.](https://drive.google.com/uc?export=download&id=1xdHzCc-GyrRr40Yp-dUp6yYTXkCSOpvf)
 
