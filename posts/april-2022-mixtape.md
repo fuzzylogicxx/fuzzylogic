@@ -33,11 +33,11 @@ I put together a fairly spacey and mellow selection of laidback electronic sound
 {% if app.environment == "production" %}
 
 <figure>
-  {% respimg "" + mainImage.url + "",
-  "" + mainImage.alt + "",
-  "(min-width: 1600px) 646px, (min-width: 700px) 612px, 91.58vw",
-  mainImage.aspectRatioWidth, mainImage.aspectRatioHeight,
-  [320, 640, 960, 1200] %}
+    <picture>
+      <source type="image/avif" srcset="https://res.cloudinary.com/fuzzylogic/image/upload/f_avif,q_auto,w_1292/v1654430744/a4255247757_01_magtey.png" />
+      <source type="image/webp" srcset="https://res.cloudinary.com/fuzzylogic/image/upload/f_webp,q_auto,w_1292/v1654430744/a4255247757_01_magtey.png" />
+      <img class="img-full-parent-width" src="https://res.cloudinary.com/fuzzylogic/image/upload/f_jpg,q_auto,w_1292/v1654430744/a4255247757_01_magtey.png" width="1292" height="1292" alt="Side A of the 7-inch vinyl release of Mato’s “Summer Madness" loading="lazy" decoding="async" />
+</picture>
   <figcaption>Mato’s “Summer Madness”, as featured on the mix</figcaption>
 </figure>
 
