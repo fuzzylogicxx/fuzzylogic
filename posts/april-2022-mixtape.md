@@ -3,7 +3,7 @@ date: 2022-04-18T14:18:08.000+00:00
 title: April 2022 mixtape
 description: I put together a fairly spacey and mellow selection of organic electronics
 mainImage:
-  url: https://res.cloudinary.com/fuzzylogic/image/upload/v1654431737/mato_1500_squooshed_pcdxok.jpg
+  url: https://res.cloudinary.com/fuzzylogic/image/upload/v1654433393/mato_1500_squooshed_mozjpg_xjrkhl.jpg
   alt: "Side A of the 7-inch vinyl release of Mato’s “Summer Madness”."
   aspectRatioWidth: 320
   aspectRatioHeight: 320
@@ -34,9 +34,9 @@ I put together a fairly spacey and mellow selection of laidback electronic sound
 
 <figure>
   <picture>
-    <source type="image/avif" srcset="https://res.cloudinary.com/fuzzylogic/image/upload/f_avif,q_auto,w_1292/v1654431737/mato_1500_squooshed_pcdxok.jpg" />
-    <source type="image/webp" srcset="https://res.cloudinary.com/fuzzylogic/image/upload/f_webp,q_auto,w_1292/v1654431737/mato_1500_squooshed_pcdxok.jpg" />
-      <img class="img-full-parent-width" src="https://res.cloudinary.com/fuzzylogic/image/upload/f_jpg,q_auto,w_1292/v1654431737/mato_1500_squooshed_pcdxok.jpg" width="1292" height="1292" alt="Side A of the 7-inch vinyl release of Mato’s “Summer Madness" loading="lazy" decoding="async" />
+    <source type="image/avif" srcset="https://res.cloudinary.com/fuzzylogic/image/upload/f_avif,q_auto,w_1292/v1654433393/mato_1500_squooshed_mozjpg_xjrkhl.jpg" />
+    <source type="image/webp" srcset="https://res.cloudinary.com/fuzzylogic/image/upload/f_webp,q_auto,w_1292/v1654433393/mato_1500_squooshed_mozjpg_xjrkhl.jpg" />
+      <img class="img-full-parent-width" src="https://res.cloudinary.com/fuzzylogic/image/upload/f_jpg,q_auto,w_1292/v1654433393/mato_1500_squooshed_mozjpg_xjrkhl.jpg" width="1292" height="1292" alt="Side A of the 7-inch vinyl release of Mato’s “Summer Madness" loading="lazy" decoding="async" />
 </picture>
   <figcaption>Mato’s “Summer Madness”, as featured on the mix</figcaption>
 </figure>
