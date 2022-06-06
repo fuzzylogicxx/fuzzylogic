@@ -44,6 +44,6 @@ Stephanie also addresses the question of whether we should write every _componen
 
 Lastly, Stephanie tackles how ready Cascade Layers are to use right now. At the time she wrote the article – January 2022 – the feature wasn’t widely supported, so wasn’t an option. Additionally Cascade Layers can’t really be used as a progressive enhancement because its nature is so all-encompassing and because testing for feature support using `@supports` isn’t an option.
 
-_However_ like Eric Meyer mentions, a few months is a long time in CSS support! And as I write in June 2022 the browser support picture is currently [looking quite healthy](https://caniuse.com/?search=cascade%20layers). However given that the first browsers to add support were only released a few months ago in February or March of this year, I think we might need to wait on a little longer to use this on larger, higher-traffic sites. 
+_However_ like Eric Meyer mentions, a few months is a long time in CSS support! And as I write in June 2022 the browser support picture is currently [looking quite healthy](https://caniuse.com/?search=cascade%20layers). However given that the first browsers to add support were only released a few months ago in February or March of this year, I think we might need to wait a bit longer (maybe a year?) to use this on larger, higher-traffic sites. 
 
 Nothing to stop us experimenting on our smaller and intranet-based sites, though!
