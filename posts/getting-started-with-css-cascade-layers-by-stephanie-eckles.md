@@ -21,9 +21,9 @@ mainImage.isAnchor: false
 draft: false
 
 ---
-Yesterday I read [Eric Meyer discussing CSS Cascade Layers](https://aneventapart.com/news/post/looking-ahead-june-2022) and saying that its transition from first public working draft to shipping as a full public release in every major desktop and mobile browser had happened so fast it made his head spin. Amazing stuff and a real indicator of the turbo-boosted pace at which modern CSS is now moving. 
+Yesterday I read [Eric Meyer discussing CSS Cascade Layers](https://aneventapart.com/news/post/looking-ahead-june-2022) and commenting that the speed at which it had transitioned from first public working draft to shipping as a full public release in every major desktop and mobile browser had made his head spin. Amazing stuff and an indicator of the turbo-boosted pace at which modern CSS is now evolving.
 
-It also made me want to properly read up on Cascade Layers, because I knew a bit of the theory but wanted to consider using it in practice. I’m no great fan of “cascade-taming” CSS frameworks like BEM and SUIT (although I acknowledge why we have them) so I’m interested to know if Cascade Layers can replace them. Stephanie Eckles’ article is an excellent primer.
+It also made me want to properly read up on Cascade Layers, because I knew some of the theory but now wanted to consider using it in practice. I’m no great fan of “cascade-taming” CSS frameworks like BEM and SUIT (although I acknowledge why we have them) so I’m interested to know if Cascade Layers can replace them. Stephanie Eckles’ article is an excellent primer.
 ---
 
 I liked the idea of a specifying a stack like this:
