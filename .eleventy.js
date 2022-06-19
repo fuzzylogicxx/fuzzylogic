@@ -14,6 +14,19 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.addLayoutAlias('post', 'layouts/post.njk');
 
+  //
+  // Shortcodes
+  //
+
+  // Get current year
+  // https://11ty.rocks/eleventyjs/dates/#year-shortcode
+  eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
+
+
+
+
+
+
   // Tell 11ty that when changes are made inside the src/sass dir, it should recompile.
   // Needed so that the purge-and-inline-css transform runs every time we make a Sass update.
   // …so that our updated styles get put into the <head> and we can check them.
