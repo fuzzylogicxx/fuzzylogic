@@ -15,10 +15,14 @@
       {%- endif -%}
     </title>
 
-    <link rel="preload" href="/fonts/sans/SourceSans3-Regular-subset.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/fonts/sans/SourceSans3-Semibold-subset.woff2" as="font" type="font/woff2" crossorigin>
+    {#
+      Re-add as I build the CSS back up again.
+      <link rel="preload" href="/fonts/sans/SourceSans3-Regular-subset.woff2" as="font" type="font/woff2" crossorigin>
+      <link rel="preload" href="/fonts/sans/SourceSans3-Semibold-subset.woff2" as="font" type="font/woff2" crossorigin>
 
-    <link href="/css/theme.css" rel="stylesheet">
+      <link href="/css/theme.css" rel="stylesheet">
+    #}
+
     <!-- THIS COMMENT WILL BE REPLACED WITH INLINED, MINIFIED CSS -->
 
     <meta name="author" content="{{ metadata.author.name }}">
@@ -55,8 +59,12 @@
     <meta name="application-name" content="{{ metadata.name }}">
     <meta name="msapplication-TileColor" content="#da532c">
 
+    {#
+     To-do: Re-add as I build the CSS back up again.
+
     <meta name="theme-color" content="{{ tokens.colorLight }}" media="(prefers-color-scheme: light)">
     <meta name="theme-color" content="{{ tokens.colorDark }}" media="(prefers-color-scheme: dark)">
+    #}
 
     {#
       Specify that the page supports both dark and light color schemes, and the page author prefers light.
@@ -66,7 +74,10 @@
       what I’m specifying in CSS.)
       https://web.dev/color-scheme/
     #}
+    {#
+      To-do: Re-add as I build the CSS back up again.
     <meta name="color-scheme" content="light dark">
+    #}
 
     <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.name }}">
 
@@ -98,6 +109,16 @@
   </head>
   <body{% if bodyclass %} class="{{ bodyclass }}"{% endif %}>
 
+    <!-- Skip link(s) -->
+    <div class="u-hidden-until-focused">
+      <a class="u-hidden-until-focused__item u-hidden-until-focused__link" href="#skip-link-target">Skip to main content</a>
+    </div>
+
+    <!-- spring-cleaning banner -->
+    <div class="banner">
+      <p>I’m doing a code spring-clean and stripping things back. Please bear with me while things look a little rough.</p>
+    </div>
+
     <!-- Header begins -->
     <header id="global-header" class="global-header">
       <div class="container">
@@ -110,10 +131,7 @@
                 <path class="logo-logomark" fill="#343534" d="M148.82 113.583V81.63l27.658 15.981-27.658 15.972zm-3.854-31.953v35.29c0 .687.368 1.325.967 1.668.295.181.626.257.956.257.339 0 .67-.076.968-.257l30.55-17.646.014 34.177-63.058 36.41-.005-72.809 29.608-17.09zm-41.765 7.841L50.39 58.978 79.98 41.89l63.06 36.407-29.605 17.089-10.234-5.915zm6.364 46.756l-27.657 15.974v-31.958l27.657 15.984zm-28.623-20.984a1.947 1.947 0 00-1.924 0 1.95 1.95 0 00-.961 1.673v35.285l-29.604-17.082.007-72.808 63.049 36.409-.014 34.175-30.553-17.652zm103.487-17.635c0-1.468-.78-2.816-2.054-3.548L82.031 36.117a4.115 4.115 0 00-2.051-.544c-.706 0-1.412.178-2.046.544L44.605 55.361a4.089 4.089 0 00-2.169 3.612l-.012 77.257c0 1.46.779 2.819 2.055 3.548l33.455 19.315c.634.362 1.34.542 2.046.542.706 0 1.412-.18 2.051-.542l27.294-15.767.019 31.544a4.086 4.086 0 004.094 4.087c.713 0 1.413-.178 2.051-.543l66.904-38.636a4.107 4.107 0 002.051-3.551l-.015-38.619z" />
               </svg>
             </a>
-            <nav aria-label="page" id="skip-links" class="skip-links">
-              <a href="#primary-content">Main content</a>
-              <a href="#global-footer">Footer and Navigation</a>
-            </nav>
+
             <nav aria-label="site" class="header-menu">
               {% set navPages = collections.all | eleventyNavigation %}
               <ul class="list-custom">
@@ -124,7 +142,8 @@
               {%- endfor %}
               </ul>
             </nav>
-            <div class="search-ui invisible">
+
+            <div class="search-ui" hidden>
               <form class="form-custom global-search-form" role="search" aria-label="Unique identifier goes here" action="https://www.google.co.uk/search" method="get">
                 <input type="hidden" name="q" id="q" value="site:{{metadata.url}}" />
                 <div class="form-group">
@@ -134,12 +153,13 @@
               </form>
               <ol class="search-results" aria-live="polite"></ol>
             </div>
+
           </div>
         </div>
       </div>
     </header>
 
-    <main id="primary-content" class="primary-content{% if templateClass %} {{ templateClass }}{% endif %}">
+    <main id="skip-link-target" class="primary-content{% if templateClass %} {{ templateClass }}{% endif %}">
       {{ content | safe }}
     </main>
 
@@ -188,7 +208,7 @@
 
           </div>
 
-          <p class="copyright centre-with-centred-text">&copy; 2017–2021 <a href="{{ metadata.url | url }}">Laurence Hughes</a></p>
+          <p class="copyright centre-with-centred-text">&copy; 2017–{% year %} <a href="{{ metadata.url | url }}">Laurence Hughes</a></p>
 
         </div>
 

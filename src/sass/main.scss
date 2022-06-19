@@ -1,609 +1,189 @@
-@use "settings/all" as settings;
-@use "base/all" as base;
-// @use "layouts/all" as layouts;
-// @use "components/all" as components;
-// @use "utilities/all" as utilities;
+/* ==========================================================================
+   # SIMPLEST RESET (JUST A 1ST DRAFT)
+   ========================================================================== */
 
-@use 'fonts';
-
-// Presets, functions and resets
-@use 'variables_general';
-@use 'mixins_general';
-@use 'resets_and_improvements';
-
-// // Typographic and other core HTML elements
-@use 'typography';
-@use 'list_utils';
-@use 'code';
-@use 'section-permalinks';
-@use 'prism-base16-monokai.dark';
-
-@use 'tables';
-
-// // Layout and responsiveness
-@use 'responsive_layout_utilities';
-// //@import 'media_objects';
-// //@import 'breakout';
-@use 'rooted_footer';
-
-
-// // Buttons, special links, and forms
-@use 'svg_and_text_pairs';
-@use 'forms_and_buttons';
-
-// // Other components
-// //@import 'profile_pic';
-// //@import 'tabs';
-@use 'skiplinks';
-// //@import 'modals';
-// //@import 'show_and_hide';
-// //@import 'content_slider';
-@use 'search';
-
-// // Minimum required utility classes
-@use 'helpers';
-
-///////////////////////////////////
-// Common patterns
-///////////////////////////////////
-
-// Icons in menus (e.g. search magnifying glass)
-
-.footer-menu svg,
-.header-menu svg {
-  display: block;
+html {
+  box-sizing: border-box;
 }
 
-// Captions
-
-figcaption {
-  font-size: typography.scale-value(-2)+rem;
-  color: var(--color-ink-offset);
-  margin-top: typography.scale-value(-6)+rem;
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
+body {
+	font-family: system-ui, sans-serif;
+  font-size: 115%;
+  line-height: 1.4;
+  margin: 0;
+  padding: 0;
+}
 
-// Responsive Embedded Media (youtube videos etc)
-
-.embed-container {
-  position: relative;
-  padding-bottom: 56.25%;
-  height: 0;
-  overflow: hidden;
+img {
   max-width: 100%;
 }
-.embed-container iframe, .embed-container object, .embed-container embed {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
 
-
-// Index pages (e.g. Work, Labs)
-
-.section-index-header {
-  background: linear-gradient(var(--color-highlight), var(--color-highlight)) no-repeat bottom left/2.4em 0.2ch;
-  padding-bottom: typography.scale-value(4)+rem;
-  // Add a generous whitespace after, overriding any generic stack spacing
-  & + * {
-    margin-top: 2rem;
-  }
-}
-
-
-// Blog stuff
-
-.posts-list-group-heading {
-  margin-bottom: 2rem;
-  font-size: typography.scale-value(0)+rem;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  //color: #333;
-}
-
-.h-entry header {
-  @include typography.stack();
-  //position: relative;
-}
-
-.h-entry header > * + * {
-  --flow-space: #{(typography.scale-value(-5) - typography.scale-value(-6))}rem;
-}
-
-.h-entry header div {
-  font-size: typography.scale-value(-1)+rem;
-  color: var(--color-ink-offset);
-}
-
-
-.h-entry header div > * + * {
-  margin-left: (typography.scale-value(-1) - typography.scale-value(-2))+rem;
-}
-
-.post-type {
-  font-size: typography.scale-value(-1)+rem;
-  color: var(--color-ink-offset);
-  font-weight: 600;
-}
-
-.bookmark-options {
-  color: var(--color-ink-offset);
-}
-
-.dt-published {
-  font-size: typography.scale-value(-1)+rem;
-  color: var(--color-ink-offset);
-  a {
-    color: var(--color-ink-offset);
-  }
-
-  /*@include mixins_general.at-least(typography.$bp-wide-two) {
-    position: absolute;
-    left: -10rem;
-    top: 0;
-    text-align: right;
-  }*/
-}
-
-/*.dt-published {
-  @include mixins_general.at-least(typography.$bp-wide-two) {
-    display: block;
-  }
-}*/
-
-/*.entry-meta {
-  color: #999;
-
-  a {
-    color: #999;
-    text-decoration: underline solid #999;
-  }
-}
-
-.published { //.dt-published
-  color: gray;
-}
-
-.entry-meta .posted-on::before {
-  content: " · ";
-}*/
-
-/*.h-entry > * + * {
-  --flow-space: 1rem;
-  margin-top: var(--flow-space);
-}*/
-
-.prose footer h3 + *,
-.prose footer h2 + * {
-  --flow-space: 1em;
-}
-
-// .tag {
-//   font-size: inherit;
-//   font-weight: 600;
-//   display: inline-block;
-//   // cursor: pointer;
-//   // font-family: var(--font-special);
-//   color: #999;
-//   // background-color: black;
-//   padding: .2em typography.scale-value(-1)+rem;
-//   border: 1px solid #ccc;
-// }
-
-// Posts in List
-
-.feed-entry-title {
-  font-size: (typography.scale-value(-2) + typography.scale-value(-3))+rem;
-  @include mixins_general.at-least(typography.$bp-wide-two) {
-    //font-size: typography.scale-value(2)+rem;
-    font-size: (typography.scale-value(1) + typography.scale-value(-5))+rem;
-  }
-  a {
-    text-decoration: none;
-    &.text-icon-pair span {
-      text-decoration: none;
-    }
-  }
-}
-
-/*.home-feed-wrap {
-  margin-top: 3rem;
-}*/
-
-/*.home-feed-wrap {
-  max-width: 45rem;
-}
-
-.hfeed, .hentry {
-  max-width: none;
-}
-
-.hentry {
-  overflow: hidden;
-}
-
-.hentry > * {
-  display: flex;
-  flex-wrap: wrap;
-  margin: calc(1rem / 2 * -1); // instead of var(--s1) I’ve just inserted 1rem for now.
-}
-
-.hentry > * > * {
-  flex-basis: 10rem;
-  flex-grow: 1;
-  margin: calc(1rem / 2);
-}
-
-.hentry > * > :last-child {
-  order: 1;
-}
-
-.hentry > * > :first-child {
-  order: 2;
-  flex-basis: 0;
-  flex-grow: 999;
-  min-width: calc(70% - 1rem);
-}
-
-.hentry footer {
+svg {
   display: block;
-  text-align: right;
-}*/
-
-
-
-/*.with-sidebar-on-left > * > :last-child {
-  flex-basis: 0;
-  flex-grow: 999;
-  min-width: calc(50% - 1rem);
-}*/
-
-/*.hentry > * > :last-child {
-  flex-basis: 0;
-  flex-grow: 999;
-  min-width: calc(50% - 0px);
-}*/
-
-
-/*.with-sidebar-blog-layout > *,
-.with-sidebar-media-object > * {
-  margin: calc(1rem / 2 * -1); // instead of var(--s1) I’ve just inserted 1rem for now.
 }
 
-.with-sidebar > * > * {
-  margin: calc(0px / 2);
-  flex-grow: 1;
+pre code {
+  white-space: pre-wrap;
 }
 
-.with-sidebar-blog-layout > * > * {
-  margin: calc(1rem / 2);
-  flex-basis: 20rem;
+/* ==========================================================================
+   # HIDING
+   ========================================================================== */
+
+/*
+ * 1. Hide from all contexts
+ * 2. Hide visually but not from keyboard navigation nor from screen readers.
+ * Ref: Scott O’Hara’s best practice method https://www.scottohara.me/blog/2017/04/14/inclusively-hidden.html
+ * 3. Alternative visually hidden technique for special cases when we want to animate content into view on focus…
+ * …the most common example being the “Skip to content” pattern.
+*/
+
+/* [1] */
+
+.u-hidden-from-all,
+[hidden] {
+  display: none !important;
 }
 
-.with-sidebar-media-object > * > * {
-  margin: calc(1rem / 2);
-  flex-basis: 15rem;
+/* [2] */
+
+.u-visually-hidden:not(:focus):not(:active) {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px; /* stylelint-disable-line unit-disallowed-list */
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px; /* stylelint-disable-line unit-disallowed-list */
 }
 
-.with-sidebar-on-left > * > :last-child {
-  flex-basis: 0;
-  flex-grow: 999;
-  min-width: calc(50% - 0px);
-}
+/* [3] */
 
-.with-sidebar-on-right > * > :first-child {
-  flex-basis: 0;
-  flex-grow: 999;
-  min-width: calc(50% - 0px);
-}
+.u-hidden-until-focused {
+  left: -100vw;
+  position: absolute;
 
-.with-sidebar-blog-layout.with-sidebar-on-left > * > :last-child,
-.with-sidebar-media-object.with-sidebar-on-left > * > :last-child {
-  min-width: calc(50% - 1rem);
-}
+  &__item {
+    z-index: 1;
+    background: var(--color-blue);
+    color: var(--color-white);
+    left: 0;
+    padding: 0.75em;
+    position: fixed;
+    top: 0;
+    transform: translateY(-10em);
+    transition: transform .2s ease-in-out;
 
-.with-sidebar-blog-layout.with-sidebar-on-right > * > :first-child,
-.with-sidebar-media-object.with-sidebar-on-right > * > :first-child {
-  min-width: calc(50% - 1rem);
-}*/
-
-.traverse {
-  display: flex;
-  margin-top: 5rem;
-  a[rel~=prev] {
-    margin-right: auto;
-  }
-  a[rel~=next] {
-    margin-left: auto;
-  }
-}
-
-.browse-more {
-  margin-top: 5rem;
-  text-align: center;
-}
-
-
-
-
-///////////////////////////////////
-// Global Header
-///////////////////////////////////
-
-.global-header {
-  padding-top: typography.$space-xxs;
-  padding-bottom: typography.$space-xxs;
-  a {
-    text-decoration: none;
-  }
-  a[aria-current] {
-    border-bottom: 1px solid var(--color-highlight);
-  }
-}
-
-.logo-and-header-menu-wrap {
-  justify-content: space-between;
-}
-
-.logo {
-  line-height: 1;
-  svg {
-    display: block;
-    @include mixins_general.at-least(typography.$bp-wide-one) {
-      width: (typography.scale-value(9) + typography.scale-value(-6))+rem;
-      height: (typography.scale-value(9) + typography.scale-value(-6))+rem;
+    &:focus {
+      transform: translateY(0em); /* stylelint-disable-line length-zero-no-unit */
     }
   }
-}
 
-.logo-roundel-background {
-  @media (prefers-color-scheme: dark) {
-    fill: var(--color-band);
-  }
-}
+  .u-hidden-until-focused__link {
 
-.logo-logomark {
-  @media (prefers-color-scheme: dark) {
-    fill: white;
-  }
-}
-
-.header-menu {
-  @include responsive_layout_utilities.cluster(); //2rem
-  text-transform: uppercase;
-  font-weight: 600;
-  font-size: (typography.scale-value(-6) + typography.scale-value(-5))+rem;
-  @include mixins_general.at-least(typography.$bp-wide-one) {
-    --space: 2rem;
-  }
-}
-
-.header-menu-home {
-  display: none;
-  @include mixins_general.at-least(typography.$bp-wide-one) {
-    display: block;
-  }
-}
-
-.header-menu-toggle a::after {
-  display: inline-block;
-  width: 0;
-  height: 0;
-  margin-left: .2em;
-  vertical-align: .2em;
-  content: "";
-  border-top: .3em solid;
-  border-right: .3em solid transparent;
-  border-bottom: 0;
-  border-left: .3em solid transparent;
-}
-
-
-// BBC-style greedy navigation
-
-.header-menu-hidden {
-  display: none;
-}
-
-
-
-/////////////////
-// Global Footer
-/////////////////
-
-.global-footer {
-  --color-footer: var(--color-light);
-  @media (prefers-color-scheme: dark) {
-    --color-footer: var(--color-ink);
-  }
-  font-size: typography.scale-value(-1)+rem;
-  background: var(--color-band);
-  color: var(--color-footer);
-
-  a {
-    color: var(--color-footer);
-  }
-
-  a[aria-current] {
-    border-bottom: 1px solid var(--color-highlight);
-  }
-
-  li a {
-    text-decoration: none;
     &:hover {
-      text-decoration: underline;
+      color: var(--color-white);
     }
   }
 }
 
-// Start nested stack styles
-.global-footer-contents-wrap {
-  padding-top: 2em;
-  padding-bottom: 2em;
-  @include typography.stack(2em);
-}
+/* ==========================================================================
+   # IMAGES
+   ========================================================================== */
 
-.footer-grid,
-.footer-grid section {
-  @include typography.stack(2em);
-}
+/*
+ * 1. Remove the border on images in older browsers.
+ * 2. Set images to display block because we will never want to display them inline.
+ * 3. Prevent wide images from overflowing their parent, and cap their width sensibly.
+ * 4. Ensure an image’s aspect ratio is maintained when it has the HTML height attribute set AND also CSS max-width has been triggered.
+ * 5. Explictly set an image to 100% container-width so that we know it will achieve that width even if
+      it has a width attribute (present for performance reasons) set to something narrower. Note: I have not included height: auto.
+      It’s only required when the image has the HTML height attribute set and I already have a previous rule above dealing with that.
+*/
 
-// space between footer grid sections
-.footer-grid > * + * {
-  --flow-space: 2em;
-}
+img {
+  /* [1] */
+  border-style: none;
 
-// space between the elements within footer grid sections
-.footer-grid section > * + * {
-  --flow-space: 1em;
-}
+  /* [2] */
+  display: block;
 
-.footer-grid {
+  /* [3] */
+  max-width: 100%;
+  max-width: min(60rem, 100%); /* stylelint-disable-line declaration-block-no-duplicate-properties */
 
-  @supports (display: grid) {
+  /* [4] */
+  &[height] {
+    height: auto;
+  }
 
-    @include mixins_general.at-least(typography.$bp-wide-two) {
-      // deactivate the stack margins used when grid is not supported.
-      & > * + * {
-        margin-top: 0;
-      }
-      display: grid;
-      grid-gap: 2em;
-      grid-template-columns: repeat(3, 1fr);
-    }
+  /* [5] */
+  .img-full-parent-width {
+    width: 100%;
   }
 }
 
-.copyright {
-  color: var(--color-ink-on-band);
-  a {
-    color: var(--color-ink-on-band);
-    text-decoration-color: var(--color-ink-on-band);
-  }
+/* ==========================================================================
+   # ICONS
+   ========================================================================== */
+
+.text-icon-pair { // todo: rename to .icon__with-text or similar
+  display: inline-flex;
+  align-items: center;
+  gap: 0.125em;
 }
 
+/* ==========================================================================
+   # BUTTONS
+   ========================================================================== */
 
+// todo: the HTML should reuse .icon__with-text rather than reinventing.
 
-
-
-
-///////////////////
-// Primary Content
-///////////////////
-
-.primary-content {
-  padding-top: typography.$space-l;
-  padding-bottom: 3rem;
-  @include mixins_general.at-least(typography.$width-pressure-point-one) {
-    padding-bottom: 6rem;
-  }
-
-  &.with-header-banner {
-    padding-top: 0;
-  }
-
-  // Page-specific element spacing within the <main> element
-  .page-home & {
-    @include typography.stack(4rem);
-  }
-
+.btn-icon {
+  display: flex;
+  align-items: center;
+  gap: 0.125em;
 }
 
+/* ==========================================================================
+   # ARTICLES
+   ========================================================================== */
 
+// this is horrible. Sort the HTML out.
 
-
-///////////////////
-// Index page
-///////////////////
-
-// Intro
-
-.intro {
-  --measure: 32rem; // tighter
-  background: linear-gradient(var(--color-highlight), var(--color-highlight)) no-repeat bottom left/2.4em 0.2ch;
-  padding-bottom: typography.scale-value(4)+rem;
-  @include typography.stack();
-  & > * + * {
-    --flow-space: #{typography.scale-value(2)}rem;
-  }
-  h1 {
-    font-weight: 600;
-    line-height: ( ((typography.scale-value(-4) * 3) + (typography.scale-value(-5))) / (typography.scale-value(3)) );
-    font-size: typography.scale-value(3)+rem;
-    letter-spacing: -.016em;
-
-    @include mixins_general.at-least(typography.$width-pressure-point-one) {
-      font-size: typography.scale-value(4)+rem;
-    }
-    @include mixins_general.at-least(typography.$bp-wide-four) {
-      font-size: (2 + typography.scale-value(-6))+rem;
-      line-height: 1.015; // just by eye-balling because it wants to be just above 1.
-    }
-  }
+article header div {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
+/* ==========================================================================
+   # PAGE LAYOUT
+   ========================================================================== */
 
-
-///////////////////
-// Bookshelf
-///////////////////
-
-.reading-years {
-  --flow-space: 3em;
+// Temporary way of setting measure just so that banner can be full-width but everything else not.
+#global-header, main, #global-footer {
+  max-width: 65ch;
+  margin: 1rem;
 }
 
-.books {
-  > * + * {
-    margin-top: 2rem;
-    @supports (display: grid) {
-      margin-top: 0;
-    }
-  }
-  display: grid;
-  grid-gap: 1em;
-  grid-template-columns: 1fr;
+/* ==========================================================================
+   # BANNER
+   ========================================================================== */
 
-  @include mixins_general.at-least(30em) {
-    @include responsive_layout_utilities.grid(18ch, 2rem);
-  }
-}
+.banner {
+  max-width: 100%;
+  background: #333;
+  color: #fff;
+  padding: 1rem;
 
-.book {
-  max-width: 250px;
-  @supports (display: grid) {
-    max-width: none;
-  }
-  display: grid;
-  grid-template-columns: 18ch 1fr;
-  grid-gap: 1em;
-
-  @include mixins_general.at-least(30em) {
-    display: block;
+  > * {
+    margin: 0;
   }
 }
-
-.book-cover {
-  --numerator: 8;
-  --denomenator: 5;
-}
-
-.book-info {
-  --flow-space: #{typography.scale-value(-6)}rem;
-  font-size: #{typography.scale-value(-1)}rem;
-  line-height: 1.2;
-  margin-top: #{typography.scale-value(-2)}rem;
-
-  h3 {
-    font-size: #{typography.scale-value(0)}rem;
-    line-height: ( ((typography.scale-value(-4) * 3) + (typography.scale-value(-5))) / (typography.scale-value(3)) );
-  }
-}
-
-
-// Print styles
-// intentionally using @import rather than @use
-// because @use has to come at the top of the file.
-// todo: refactor to avoid using @import, because it’s deprecated.
-@import 'print';

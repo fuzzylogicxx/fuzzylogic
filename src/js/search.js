@@ -49,7 +49,7 @@ export default () => {
     });
 
     // Show the enhanced UI
-    searchUI.classList.toggle('invisible');
+    searchUI.hidden = !searchUI.hidden;
     searchInput.focus();
 
     // listen for input changes in the enhanced UI
