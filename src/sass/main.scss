@@ -28,8 +28,50 @@ svg {
   display: block;
 }
 
-pre code {
-  white-space: pre-wrap;
+// pre code {
+//   white-space: pre-wrap;
+// }
+
+// https://css-tricks.com/styling-code-in-and-out-of-blocks/
+
+// For all <code>
+
+// https://github.com/h5bp/html5-boilerplate/blob/main/dist/css/normalize.css
+// …because browsers have weird sizing quirks for the code element.
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+ code,
+ kbd,
+ samp,
+ pre {
+   font-family: monospace, monospace; /* 1 */
+   font-size: 1em; /* 2 */
+ }
+
+// Code in text
+p > code,
+li > code,
+dd > code,
+td > code {
+  background: #ffeff0;
+  word-wrap: break-word;
+  box-decoration-break: clone;
+  padding: .1rem .3rem .2rem;
+  border-radius: .2rem;
+}
+
+// Code blocks
+pre > code {
+  display: block;
+  background: none;
+  white-space: pre;
+  -webkit-overflow-scrolling: touch;
+  overflow-x: scroll;
+  max-width: 100%;
+  min-width: 100px;
+  padding: 0;
 }
 
 /* ==========================================================================
@@ -161,6 +203,11 @@ article header div {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+}
+
+.traverse {
+  display: flex;
+  justify-content: space-between;
 }
 
 /* ==========================================================================
