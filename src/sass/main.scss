@@ -57,7 +57,11 @@ dd > code,
 td > code {
   background: #ffeff0;
   word-wrap: break-word;
+
+  // https://caniuse.com/css-boxdecorationbreak
+  -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
+
   padding: .1rem .3rem .2rem;
   border-radius: .2rem;
 }
