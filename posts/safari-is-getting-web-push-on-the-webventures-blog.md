@@ -24,11 +24,15 @@ mainImage.isAnchor: false
 draft: false
 
 ---
-Roderick E.J.H. Gadellaa, author of the Webventures blog writes that at their June 2022 Worldwide Developers Conference (WWDC) Apple announced that it will bring Web Push to Safari, including iOS Safari.
+Roderick E.J.H. Gadellaa, author of the Webventures blog writes that at their June 2022 Worldwide Developers Conference (WWDC) Apple announced that it will bring Web Push (web-based push notifications) to Safari, including iOS Safari.
 
 > MacOS is going to get it first and iOS will receive it in a later iOS 16.x update, sometime in 2023.
 
 This could be a big deal, because…
+
+> The lack of the web being able to do push notifications on iOS is probably the biggest reason why web developers see a potential project end up being built as a native app instead of a web app
+
+…and… 
 
 > Web Push on iOS will change the “we need to build a native app” decision.
 
