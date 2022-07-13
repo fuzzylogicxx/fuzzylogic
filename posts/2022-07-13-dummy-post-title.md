@@ -4,6 +4,7 @@ title: "Dummy post title"
 description: "Dummy meta desc"
 tags: [link, thing]
 linkTarget: "https://dummy1.com/"
+draft: true
 ---
 Dummy excerpt
 ---
