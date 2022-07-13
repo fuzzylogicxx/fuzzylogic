@@ -2,6 +2,11 @@
    # SIMPLEST RESET (JUST A 1ST DRAFT)
    ========================================================================== */
 
+/**
+ * 1. Figure is for images, illustrations, diagrams, code snippets etc. No need
+ * for any of those use cases to require the browser default inline margin.
+ */
+
 html {
   box-sizing: border-box;
 }
@@ -28,9 +33,13 @@ svg {
   display: block;
 }
 
-// pre code {
-//   white-space: pre-wrap;
-// }
+/* 1 */
+figure {
+  margin-inline: 0;
+}
+
+
+
 
 // https://css-tricks.com/styling-code-in-and-out-of-blocks/
 
@@ -150,7 +159,7 @@ pre > code {
  * 4. Ensure an image’s aspect ratio is maintained when it has the HTML height attribute set AND also CSS max-width has been triggered.
  * 5. Explictly set an image to 100% container-width so that we know it will achieve that width even if
       it has a width attribute (present for performance reasons) set to something narrower. Note: I have not included height: auto.
-      It’s only required when the image has the HTML height attribute set and I already have a previous rule above dealing with that.
+      It’s only required when the image has the HTML height attribute set and I already have a previous rule handling that.
 */
 
 img {
@@ -168,11 +177,11 @@ img {
   &[height] {
     height: auto;
   }
+}
 
-  /* [5] */
-  .img-full-parent-width {
-    width: 100%;
-  }
+/* [5] */
+.u-full-parent-width {
+  width: 100% !important;
 }
 
 /* ==========================================================================
@@ -201,7 +210,7 @@ img {
    # ARTICLES
    ========================================================================== */
 
-// this is horrible. Sort the HTML out.
+// this is horrible. To do: sort the HTML out.
 
 article header div {
   display: flex;

@@ -180,7 +180,7 @@ img[height] {
   wide as its container’s maximum width because otherwise on wide
   viewports the image would stretch and the results might not be great.
   */
-.img-full-parent-width {
+.u-full-parent-width {
   width: 100%;
 }
 ```
