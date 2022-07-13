@@ -99,7 +99,7 @@ const createFileInGithub = async params => {
       branch: 'v3',
       committer: {
           name: 'fuzzylogicxx',
-          email: 'laurence@fuzzylogicdigital.com'
+          email: 'laurencehughes1976@gmail.com'
       },
       content: Buffer.from(fileContent).toString('base64')
   }
