@@ -10,9 +10,9 @@ layout:
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bookmarker | Fuzzy Logic</title>
 
-    <link rel="preload" href="/fonts/sans/SourceSansPro-Regular-subset-v4.woff2" as="font" type="font/woff2" crossorigin>
+    {# <link rel="preload" href="/fonts/sans/SourceSansPro-Regular-subset-v4.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/fonts/sans/source-sans-pro-v12-latin-600.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/fonts/sans/SourceSansPro-It-subset-v4.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/sans/SourceSansPro-It-subset-v4.woff2" as="font" type="font/woff2" crossorigin> #}
 
     <link href="/css/theme.css" rel="stylesheet">
     <style>{% include "css/main.css" %}</style>
@@ -48,7 +48,7 @@ layout:
 
     <main id="primary-content" class="primary-content">
 
-      <h1>Create Bookmark</h1>
+      <h1>Create Bookmark 1</h1>
 
       <div data-controller="hello">
 
@@ -56,7 +56,7 @@ layout:
 
           <div class="form-group">
             <label for="title">Post Title</label>
-            <input id="title" data-target="hello.title" type="text">
+            <input id="title" data-hello-target="title" type="text">
           </div>
 
           <div class="form-group">
@@ -66,7 +66,7 @@ layout:
 
           <div class="form-group">
             <label for="excerpt">Post Excerpt</label>
-            <textarea data-target="hello.excerpt"></textarea>
+            <textarea data-hello-target="excerpt"></textarea>
           </div>
 
           <div class="form-group">
@@ -76,7 +76,7 @@ layout:
 
           <div class="form-group">
             <label for="url">3rd Party URL</label>
-            <input data-target="hello.url" type="text">
+            <input data-hello-target="url" type="text">
           </div>
 
           <div class="form-group">
@@ -115,62 +115,54 @@ layout:
     <!-- Polyfills before any other scripts so that subsequent JS (which might use matches() and so on) is polyfilled -->
     <script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
 
-    <script src="https://unpkg.com/stimulus/dist/stimulus.umd.js"></script>
-    <script>
-      (() => {
-        const application = Stimulus.Application.start()
+    <script type="module">
+      import { Application, Controller } from "https://unpkg.com/@hotwired/stimulus/dist/stimulus.js"
+      window.Stimulus = Application.start()
 
-        application.register("hello", class extends Stimulus.Controller {
+      Stimulus.register("hello", class extends Controller {
+        static targets = [ "token", "title", "description", "excerpt", "body", "url", "via", "tags", "h0neep0ot" ]
 
-          // define stimulus DOM elements
-          static get targets() {
-            return [ "token", "title", "description", "excerpt", "body", "url", "via", "tags", "h0neep0ot" ]
-          }
-
-          // When main form element loads, pre-populate some fields
-          connect() {
+        connect() {
             const queryParams = new URLSearchParams(window.location.search);
             this.titleTarget.value = queryParams.get("title");
             this.excerptTarget.value = `> ${queryParams.get("body")}`;
 
             this.urlTarget.value = queryParams.get("url");
+        }
+
+        // Save Bookmark
+        save(e) {
+          e.preventDefault();
+
+          const url = '/.netlify/functions/share'; // http://localhost:8888/.netlify/functions/share
+
+          if (this.h0neep0otTarget.value.length) {
+            console.log("Bad robot");
+            return;
           }
 
-          // Save Bookmark
-          save(e) {
-            e.preventDefault();
-
-            const url = '/.netlify/functions/share'; // http://localhost:8888/.netlify/functions/share
-
-            if (this.h0neep0otTarget.value.length) {
-              console.log("Bad robot");
-              return;
-            }
-
-            fetch(url, {
-                method: 'POST',
-                body: JSON.stringify({
-                  token: this.tokenTarget.value,
-                  title: this.titleTarget.value,
-                  description: this.descriptionTarget.value,
-                  excerpt: this.excerptTarget.value,
-                  body: this.bodyTarget.value,
-                  url: this.urlTarget.value,
-                  via: this.viaTarget.value,
-                  additionalTags: this.tagsTarget.value
-                }),
-                headers: {
-                    'Content-Type': 'application/json'
-                }
-            }).then((response) => {
-              console.log(response);
-            }).catch((err) => {
-              console.log(err);
-            });
-          }
-
-        })
-      })()
+          fetch(url, {
+              method: 'POST',
+              body: JSON.stringify({
+                token: this.tokenTarget.value,
+                title: this.titleTarget.value,
+                description: this.descriptionTarget.value,
+                excerpt: this.excerptTarget.value,
+                body: this.bodyTarget.value,
+                url: this.urlTarget.value,
+                via: this.viaTarget.value,
+                additionalTags: this.tagsTarget.value
+              }),
+              headers: {
+                  'Content-Type': 'application/json'
+              }
+          }).then((response) => {
+            console.log(response);
+          }).catch((err) => {
+            console.log(err);
+          });
+        }
+      })
     </script>
   </body>
 </html>
