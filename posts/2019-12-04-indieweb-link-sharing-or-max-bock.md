@@ -12,7 +12,7 @@ This was a fantastic walkthrough by [Max](https://twitter.com/mxbck). And based 
 
 I already use this site to save _Bookmarks_ so I’m hooking into that. For the bookmark-saving form, I’ve used [Stimulus](https://stimulusjs.org/) rather than [Preact](https://preactjs.com/). But otherwise this is very much based on Max’s superb tutorial.
 
-Here’s my bookmarklet so that future-me can create a new browser bookmark and paste this in.
+Here’s my bookmarklet code so that future-me can create a new browser bookmark, edit it and paste this in.
 
 <figure>
   
