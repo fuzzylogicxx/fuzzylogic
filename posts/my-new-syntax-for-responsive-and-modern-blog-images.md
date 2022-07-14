@@ -26,7 +26,7 @@ mainImage.isAnchor: false
 draft: false
 
 ---
-I’ve started trialling different HTML and technologies for the “simple” (i.e. non art-directed) responsive article images on this site. I’m continuing to lean on Cloudinary as my free image host, CDN and format-conversion service. But at the HTML level I’ve moved from a complicated `<img srcset>` based approach which included many resized versions of the same image. I now use a simpler `<picture>` and `<source>` based pattern that keeps the number of images and breakpoints low, leaning instead into the performance gains offered by the newer image formats `avif` and `webp`.
+I’ve started trialling different HTML and technologies for the “simple” (i.e. non art-directed) responsive images used in blog articles on this site. I’m continuing to lean on Cloudinary as my free image host, CDN and format-conversion service. But at the HTML level I’ve moved from a complicated `<img srcset>` based approach which included many resized versions of the same image. I now use a simpler `<picture>` and `<source>` based pattern that keeps the number of images and breakpoints low, leaning instead into the performance gains offered by the newer image formats `avif` and `webp`.
 ---
 
 My new approach is based on advice in Jake Archibald’s brilliant article   
