@@ -12,9 +12,15 @@ This was a fantastic walkthrough by [Max](https://twitter.com/mxbck). And based 
 
 I already use this site to save _Bookmarks_ so I’m hooking into that. For the bookmark-saving form, I’ve used [Stimulus](https://stimulusjs.org/) rather than [Preact](https://preactjs.com/). But otherwise this is very much based on Max’s superb tutorial.
 
-Here’s my bookmarklet so that future-me can drag it to a browser’s Bookmarks bar for quick access when necessary.
+Here’s my bookmarklet so that future-me can create a new browser bookmark and paste this in.
 
-<p><a class="bookmarklet" href="javascript:(function(){var title = document.getElementsByTagName('title')[0].innerHTML;title = encodeURIComponent(title);var selection = '';if (window.getSelection) {selection = window.getSelection().toString();} else if (document.selection &amp;&amp; document.selection.type != 'Control') {selection = document.selection.createRange().text;}selection = encodeURIComponent(selection);new_window=window.open('https://fuzzylogic.me/bookmarker/?title='+title+'&amp;body='+selection+'&amp;url='+encodeURIComponent(document.location.href),'Sharer','resizable,scrollbars,status=0,toolbar=0,menubar=0,titlebar=0,width=680,height=700,location=0');})();">Share on fuzzylogic.me</a></p>
+<figure>
+  
+``` js
+javascript:(function(){var title = document.getElementsByTagName('title')[0].innerHTML;title = encodeURIComponent(title);var selection = '';if (window.getSelection) {selection = window.getSelection().toString();} else if (document.selection &amp;&amp; document.selection.type != 'Control') {selection = document.selection.createRange().text;}selection = encodeURIComponent(selection);new_window=window.open('https://fuzzylogic.me/bookmarker/?title='+title+'&amp;body='+selection+'&amp;url='+encodeURIComponent(document.location.href),'Sharer','resizable,scrollbars,status=0,toolbar=0,menubar=0,titlebar=0,width=680,height=700,location=0');})();
+```
+  
+</figure>
 
 Incidentally, this process also provided a great way to dip my toes into the world of Netlify Functions and their supporting tools, [netlify-dev](https://www.netlify.com/products/dev/) and [netlify-lambda](https://github.com/netlify/netlify-lambda).
 
