@@ -1,6 +1,6 @@
 ---
 date: "2022-07-15T11:29:59.657Z"
-title: "Perceived affordances and the functionality mismatch (by LÃ©onie Watson)"
+title: "Perceived affordances and the functionality mismatch (by Léonie Watson)"
 description: "Léonie tackles the prickly subject of “element re-purposing” in web development"
 tags: [link, a11y, buttons, affordance, repurposing, ]
 linkTarget: "https://tink.uk/perceived-affordances-and-the-functionality-mismatch/"
