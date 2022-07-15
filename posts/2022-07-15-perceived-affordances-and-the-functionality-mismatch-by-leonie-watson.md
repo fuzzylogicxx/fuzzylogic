@@ -14,4 +14,4 @@ Relatedly, [Lea](https://twitter.com/LeaVerou) has also gathered her post-discus
 
 Thank you so much, Lea and Léonie.
 
-(via @LeonieWatson)
+[(via @LeonieWatson)](https://twitter.com/LeonieWatson/status/1547651790115520521)
