@@ -1,4 +1,16 @@
 /* ==========================================================================
+   # TOKENS
+   ========================================================================== */
+
+:root {
+  --color-dark: #141414;
+  --color-link: rgb(61,162,153);
+  --color-link-hover: rgb(15,131,122);
+}
+
+
+
+/* ==========================================================================
    # SIMPLEST RESET (JUST A 1ST DRAFT)
    ========================================================================== */
 
@@ -18,7 +30,8 @@ html {
 }
 
 body {
-	font-family: system-ui, sans-serif;
+	color: var(--color-dark);
+  font-family: system-ui, sans-serif;
   font-size: 115%;
   line-height: 1.4;
   margin: 0;
@@ -37,8 +50,6 @@ svg {
 figure {
   margin-inline: 0;
 }
-
-
 
 
 // https://css-tricks.com/styling-code-in-and-out-of-blocks/
@@ -86,6 +97,19 @@ pre > code {
   min-width: 100px;
   padding: 0;
 }
+
+/* ==========================================================================
+   # LINKS
+   ========================================================================== */
+
+a {
+  color: var(--color-link);
+
+  &:hover {
+    color: var(--color-link-hover);
+  }
+}
+
 
 /* ==========================================================================
    # HIDING
@@ -245,5 +269,28 @@ article header div {
 
   > * {
     margin: 0;
+  }
+}
+
+/* ==========================================================================
+   # LOGO
+   ========================================================================== */
+
+.logo {
+  color: var(--color-dark);
+  font-size: 1.75em;
+  text-decoration: none;
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+
+  &:hover {
+    color: var(--color-link-hover);
+  }
+
+  &__text {
+    font-size: 0.8em;
+    margin-block-start: 12px;
+    letter-spacing: -0.0125em;
   }
 }
