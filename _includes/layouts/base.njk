@@ -131,11 +131,11 @@
               <span class="logo__text">Fuzzy Logic <span class="u-visually-hidden">Homepage</span></span>
             </a>
 
-            <nav aria-label="site" class="header-menu">
+            <nav aria-label="site" class="primary-navigation">
               {% set navPages = collections.all | eleventyNavigation %}
-              <ul class="list-custom">
+              <ul role="list">
               {%- for entry in navPages %}
-                <li id="nav-{{ entry.title | lower }}">
+                <li class="primary-navigation__item" id="nav-{{ entry.title | lower }}">
                   <a{% if entry.url == page.url %} aria-current="page"{% endif %} href="{{ entry.url | url }}">{{ entry.title }}</a>
                 </li>
               {%- endfor %}
