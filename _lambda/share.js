@@ -27,11 +27,11 @@ const generateFrontmatter = yaml => {
   let fm = []
   fm.push('---')
   Object.keys(yaml).forEach(key => {
-      if (yaml[key] && yaml[key].constructor == String) {
-          fm.push(`${key}: ${yaml[key]}`)
-      } else if (typeof yaml[key] === 'boolean') {
-          fm.push(`${key}: ${String(yaml[key])}`)
-      }
+    if (yaml[key] && yaml[key].constructor == String) {
+      fm.push(`${key}: ${yaml[key]}`)
+    } else if (typeof yaml[key] === 'boolean') {
+      fm.push(`${key}: ${String(yaml[key])}`)
+    }
   })
   fm.push('---')
   return fm.join('\n')
@@ -39,13 +39,14 @@ const generateFrontmatter = yaml => {
 
 // generate the new md file content
 const generateFileContent = data => {
-  const { title, description, url, via, excerpt, body, additionalTags } = data
+  const { title, description, url, location, via, excerpt, body, additionalTags } = data
   const date = DateTime.utc().toISO({ suppressMilliseconds: true })
 
   const frontMatter = generateFrontmatter({
     date: `"${date}"`,
     title: `"${sanitize(title)}"`,
     description: `"${description}"`,
+    location: `"${sanitize(location)}"`,
     tags: `[link, ${additionalTags}]`,
     linkTarget: `"${url}"`
   })
@@ -55,7 +56,7 @@ const generateFileContent = data => {
     content += '\n' + excerpt + '\n---\n'
   }
   if (body) {
-      content += '\n' + body
+    content += '\n' + body
   }
   if (via) {
     const vialink =
