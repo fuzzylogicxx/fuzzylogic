@@ -14,8 +14,17 @@ layout:
     <link rel="preload" href="/fonts/sans/source-sans-pro-v12-latin-600.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/fonts/sans/SourceSansPro-It-subset-v4.woff2" as="font" type="font/woff2" crossorigin> #}
 
-    <link href="/css/theme.css" rel="stylesheet">
-    <style>{% include "css/main.css" %}</style>
+    {# <link href="/css/theme.css" rel="stylesheet"> #}
+    {# <style>{% include "css/main.css" %}</style> #}
+
+    <style>
+      label:not(.radio-label) {
+        display: block;
+      }
+      .form-group {
+        margin-top: 1rem;
+      }
+    </style>
 
     <meta name="robots" content="noindex, nofollow">
 
@@ -29,20 +38,6 @@ layout:
     <meta name="apple-mobile-web-app-title" content="{{ metadata.name }}">
     <meta name="application-name" content="{{ metadata.name }}">
     <meta name="msapplication-TileColor" content="#da532c">
-
-    <meta name="theme-color" content="{{ tokens.colorLight }}" media="(prefers-color-scheme: light)">
-    <meta name="theme-color" content="{{ tokens.colorDark }}" media="(prefers-color-scheme: dark)">
-
-    {#
-      Specify that the page supports both dark and light color schemes, and the page author prefers light.
-      This is really a presentational thing (and can also be specified in CSS) however the meta tag helps browsers
-      to do their thing *faster*.
-      (NB Ensure that the order of preference in the "content" attribute doesn’t go out of sync with
-      what I’m specifying in CSS.)
-      https://web.dev/color-scheme/
-    #}
-    <meta name="color-scheme" content="light dark">
-
   </head>
   <body{% if bodyclass %} class="{{ bodyclass }}"{% endif %}>
 
@@ -55,38 +50,91 @@ layout:
         <form class="form-custom" accept-charset="UTF-8">
 
           <div class="form-group">
-            <label for="title">Post Title</label>
-            <input id="title" name="title" data-hello-target="title" type="text">
+            <span>Type</span>
+            <div>
+                <input type="radio" id="bookmark" name="posttype" value="bookmark" checked>
+                <label class="radio-label" for="huey">Bookmark</label>
+              </div>
+
+              <div>
+                <input
+                  type="radio"
+                  id="newbook"
+                  name="posttype"
+                  value="newbook"
+                  data-action="hello#revealBookFields">
+                <label class="radio-label" for="newbook">Started reading</label>
+              </div>
+
+              <div>
+                <input type="radio" id="somethingelse" name="posttype" value="somethingelse">
+                <label class="radio-label" for="somethingelse">Something else</label>
+              </div>
           </div>
 
-          <div class="form-group">
-            <label for="description">Post Meta Description</label>
-            <textarea data-target="hello.description"></textarea>
+          <div data-hello-target="newbookfields" hidden>
+            <div class="form-group">
+              <label for="booktitle">Book Title</label>
+              <input id="booktitle" name="booktitle" data-hello-target="booktitle" type="text">
+            </div>
+
+            <div class="form-group">
+              <label for="bookauthor">Book Author</label>
+              <input id="bookauthor" name="bookauthor" data-hello-target="bookauthor" type="text">
+            </div>
+
+            <div class="form-group">
+              <label for="bookafilliateurl">Bookshop Affiliate URL</label>
+              <input
+                type="text"
+                id="bookafilliateurl"
+                name="bookafilliateurl"
+                data-hello-target="bookaffiliateurl"
+                data-action="blur->hello#populateFieldsForBookPost">
+            </div>
           </div>
 
-          <div class="form-group">
-            <label for="excerpt">Post Excerpt</label>
-            <textarea data-hello-target="excerpt"></textarea>
-          </div>
+          <div data-hello-target="bookmarkfields">
+            <div class="form-group">
+              <label for="title">Post Title</label>
+              <input id="title" name="title" data-hello-target="title" type="text">
+            </div>
 
-          <div class="form-group">
-            <label for="body">Post Body</label>
-            <textarea name="body" data-target="hello.body"></textarea>
-          </div>
+            <div class="form-group">
+              <label for="description">Post Meta Description</label>
+              <textarea data-hello-target="description"></textarea>
+            </div>
 
-          <div class="form-group">
-            <label for="url">3rd Party URL</label>
-            <input name="url" data-hello-target="url" type="text">
-          </div>
+            <div class="form-group">
+              <label for="excerpt">Post Excerpt</label>
+              <textarea data-hello-target="excerpt"></textarea>
+            </div>
 
-          <div class="form-group">
-            <label for="via">Via (optional)</label>
-            <input data-target="hello.via" type="text">
+            <div class="form-group">
+              <label for="body">Post Body</label>
+              <textarea name="body" data-hello-target="body"></textarea>
+            </div>
+
+            <div class="form-group">
+              <label for="url">3rd Party URL</label>
+              <input name="url" data-hello-target="url" type="text">
+            </div>
+
+            <div class="form-group">
+              <label for="location">Location</label>
+              <input data-hello-target="location" type="text">
+            </div>
+
+            <div class="form-group">
+              <label for="via">Via (optional)</label>
+              <input data-target="hello.via" type="text">
+            </div>
+
           </div>
 
           <div class="form-group">
             <label for="tags">Tags</label>
-            <input data-target="hello.tags" type="text">
+            <input data-hello-target="tags" type="text">
           </div>
 
           <div class="form-group">
@@ -120,14 +168,35 @@ layout:
       window.Stimulus = Application.start()
 
       Stimulus.register("hello", class extends Controller {
-        static targets = [ "token", "title", "description", "excerpt", "body", "url", "via", "tags", "h0neep0ot" ]
+        static targets = [
+          "newbookfields", "bookmarkfields", "token",
+          "booktitle", "bookauthor", "bookaffiliateurl",
+          "title", "description", "excerpt", "body", "url", "location", "via", "tags", "h0neep0ot"
+        ]
 
         connect() {
-            const queryParams = new URLSearchParams(window.location.search);
-            this.titleTarget.value = queryParams.get("title");
-            this.excerptTarget.value = `> ${queryParams.get("body")}`;
+          const queryParams = new URLSearchParams(window.location.search);
 
+          if (queryParams.get("title")) {
+            this.titleTarget.value = queryParams.get("title");
+          }
+          this.excerptTarget.value = (!queryParams.get("body") ? "" : `> ${queryParams.get("body")}`);
+          if (queryParams.get("url")) {
             this.urlTarget.value = queryParams.get("url");
+          }
+        }
+
+        revealBookFields(e) {
+          this.newbookfieldsTarget.hidden = false;
+          //this.bookmarkfieldsTarget.hidden = true;
+        }
+
+        populateFieldsForBookPost() {
+          this.titleTarget.value = `Reading ${this.booktitleTarget.value} by ${this.bookauthorTarget.value}`;
+          this.descriptionTarget.value = `I’ve started reading ${this.booktitleTarget.value}, by ${this.bookauthorTarget.value}.`;
+          this.bodyTarget.value = `I’ve started reading [${this.booktitleTarget.value}](${this.bookaffiliateurlTarget.value}), by ${this.bookauthorTarget.value}.`;
+          this.locationTarget.value = "Glasgow";
+          this.tagsTarget.value = "note, book, ";
         }
 
         // Save Bookmark
