@@ -42,14 +42,16 @@ const generateFileContent = data => {
   const { title, description, url, location, via, excerpt, body, additionalTags } = data
   const date = DateTime.utc().toISO({ suppressMilliseconds: true })
 
-  const frontMatter = generateFrontmatter({
+  const fmProperties = {
     date: `"${date}"`,
     title: `"${sanitize(title)}"`,
     description: `"${description}"`,
-    location: `"${sanitize(location)}"`,
     tags: `[link, ${additionalTags}]`,
-    linkTarget: `"${url}"`
-  })
+    ...(location && { location: `"${sanitize(location)}"` }),
+    ...(url && { linkTarget: `"${url}"` })
+  };
+
+  const frontMatter = generateFrontmatter(fmProperties)
 
   let content = frontMatter
   if (excerpt) {
