@@ -177,6 +177,7 @@ layout:
         connect() {
           const queryParams = new URLSearchParams(window.location.search);
 
+          this.tagsTarget.value = "link,";
           if (queryParams.get("title")) {
             this.titleTarget.value = queryParams.get("title");
           }
@@ -196,7 +197,7 @@ layout:
           this.descriptionTarget.value = `I’ve started reading ${this.booktitleTarget.value}, by ${this.bookauthorTarget.value}.`;
           this.bodyTarget.value = `I’ve started reading [${this.booktitleTarget.value}](${this.bookaffiliateurlTarget.value}), by ${this.bookauthorTarget.value}.`;
           this.locationTarget.value = "Glasgow";
-          this.tagsTarget.value = "note, book, ";
+          this.tagsTarget.value = "note, book,";
         }
 
         // Save Bookmark
@@ -220,7 +221,7 @@ layout:
                 body: this.bodyTarget.value,
                 url: this.urlTarget.value,
                 via: this.viaTarget.value,
-                additionalTags: this.tagsTarget.value
+                tags: this.tagsTarget.value
               }),
               headers: {
                   'Content-Type': 'application/json'

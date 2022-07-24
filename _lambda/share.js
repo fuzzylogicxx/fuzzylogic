@@ -39,14 +39,14 @@ const generateFrontmatter = yaml => {
 
 // generate the new md file content
 const generateFileContent = data => {
-  const { title, description, url, location, via, excerpt, body, additionalTags } = data
+  const { title, description, url, location, via, excerpt, body, tags } = data
   const date = DateTime.utc().toISO({ suppressMilliseconds: true })
 
   const fmProperties = {
     date: `"${date}"`,
     title: `"${sanitize(title)}"`,
     description: `"${description}"`,
-    tags: `[link, ${additionalTags}]`,
+    tags: `[${tags}]`,
     ...(location && { location: `"${sanitize(location)}"` }),
     ...(url && { linkTarget: `"${url}"` })
   };
