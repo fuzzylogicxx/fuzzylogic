@@ -23,6 +23,59 @@
 }
 
 
+/* ==========================================================================
+   # FLUID TYPESCALE TOKENS
+   ========================================================================== */
+
+/* @link https://utopia.fyi/type/calculator?c=320,21,1.2,1140,24,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l */
+
+/* @link https://utopia.fyi/type/calculator?c=320,19,1.2,1140,22,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l */
+
+:root {
+  --step--2: clamp(0.82rem, calc(0.80rem + 0.11vw), 0.88rem);
+  --step--1: clamp(0.99rem, calc(0.95rem + 0.22vw), 1.10rem);
+  --step-0: clamp(1.19rem, calc(1.11rem + 0.37vw), 1.38rem);
+  --step-1: clamp(1.43rem, calc(1.31rem + 0.57vw), 1.72rem);
+  --step-2: clamp(1.71rem, calc(1.54rem + 0.86vw), 2.15rem);
+  --step-3: clamp(2.05rem, calc(1.80rem + 1.24vw), 2.69rem);
+  --step-4: clamp(2.46rem, calc(2.11rem + 1.75vw), 3.36rem);
+  --step-5: clamp(2.96rem, calc(2.47rem + 2.42vw), 4.20rem);
+}
+
+
+/* ==========================================================================
+   # FONTS
+   ========================================================================== */
+
+@layer base {
+
+  @font-face {
+    font-family: Source Sans Pro;
+    src: url(/fonts/sans/SourceSans3-Regular-subset.woff2) format("woff2"),
+        url(/fonts/sans/SourceSans3-Regular-subset.zopfli.woff) format("woff");
+    font-weight: 400;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: Source Sans Pro;
+    src: url(/fonts/sans/SourceSans3-It-subset.woff2) format("woff2"),
+        url(/fonts/sans/SourceSans3-It-subset.zopfli.woff) format("woff");
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: Source Sans Pro;
+    src: url(/fonts/sans/SourceSans3-Semibold-subset.woff2) format("woff2"),
+        url(/fonts/sans/SourceSans3-Semibold-subset.zopfli.woff) format("woff");
+    font-weight: 600;
+    font-display: swap;
+  }
+
+}
+
 
 /* ==========================================================================
    # SIMPLEST RESET (JUST A 1ST DRAFT)
@@ -47,7 +100,8 @@
 
   body {
     color: var(--color-dark);
-    font-family: system-ui, sans-serif;
+    font-family: 'Source Sans Pro', system-ui, sans-serif;
+    // font-size: var(--step-0);
     font-size: 115%;
     line-height: 1.4;
     margin: 0;
@@ -144,6 +198,19 @@
     list-style: none;
     margin-inline: 0;
     padding-inline: 0;
+  }
+
+}
+
+
+/* ==========================================================================
+   # TYPOGRAPHY
+   ========================================================================== */
+
+@layer base {
+
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
   }
 
 }
@@ -353,7 +420,7 @@
 
 .logo {
   color: var(--color-dark);
-  font-size: 1.75em;
+  font-size: 1.5em;
   text-decoration: none;
   display: flex;
   gap: 0.75rem;
@@ -365,7 +432,7 @@
 
   &__text {
     font-size: 0.8em;
-    margin-block-start: 12px;
+    margin-block-start: 14px;
     letter-spacing: -0.0125em;
   }
 }
