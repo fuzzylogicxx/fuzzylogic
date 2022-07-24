@@ -1,5 +1,5 @@
 ---
-date: "2022-07-24T09:52:09.035Z"
+date: "2022-07-03T09:52:09.035Z"
 title: "Reading The New Breed: How to think about robots by Kate Darling"
 description: "I’ve started reading The New Breed: How to think about robots, by Kate Darling."
 location: "Glasgow"
