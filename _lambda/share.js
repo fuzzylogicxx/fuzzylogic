@@ -39,24 +39,31 @@ const generateFrontmatter = yaml => {
 
 // generate the new md file content
 const generateFileContent = data => {
-  const { title, description, url, location, via, excerpt, body, additionalTags } = data
+  const { title, description, url, location, via, excerpt, body, tags } = data
   const date = DateTime.utc().toISO({ suppressMilliseconds: true })
 
-  const frontMatter = generateFrontmatter({
+  const fmProperties = {
     date: `"${date}"`,
     title: `"${sanitize(title)}"`,
-    description: `"${description}"`,
-    location: `"${sanitize(location)}"`,
-    tags: `[link, ${additionalTags}]`,
-    linkTarget: `"${url}"`
-  })
+    description: `"${sanitize(description)}"`,
+    tags: `[${tags}]`
+  };
+
+  if (location) {
+    fmProperties.location = `"${sanitize(location)}"`;
+  }
+  if (url) {
+    fmProperties.linkTarget = `"${url}"`;
+  }
+
+  const frontMatter = generateFrontmatter(fmProperties)
 
   let content = frontMatter
   if (excerpt) {
     content += '\n' + excerpt + '\n---\n'
   }
   if (body) {
-    content += '\n' + body
+    content += '\n' + sanitize(body)
   }
   if (via) {
     const vialink =
