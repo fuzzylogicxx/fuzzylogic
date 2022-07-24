@@ -8,11 +8,11 @@ linkTarget: "https://codepen.io/thebabydino/pen/XWEMgqY"
 Ana demonstrates how to achieve a range slider effect accessibly, using web standards and without needing to reach for libraries.
 ---
 
-This offers a number of features and benefits:
+As [Ana’s tweet explains](https://twitter.com/anatudor/status/1549284325765554176), this offers a number of features and benefits:
 
 - can drag thumb with JS disabled
 - receives focus
 - keyboard navigation
 - clicking track moves thumb there and changes slider value
 - seen as slider in Accessibility panel
-- no library needed, so less code in total (via anatudor)
+- no library needed, so less code in total 
