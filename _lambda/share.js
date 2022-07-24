@@ -45,11 +45,16 @@ const generateFileContent = data => {
   const fmProperties = {
     date: `"${date}"`,
     title: `"${sanitize(title)}"`,
-    description: `"${description}"`,
-    tags: `[${tags}]`,
-    ...(location && { location: `"${sanitize(location)}"` }),
-    ...(url && { linkTarget: `"${url}"` })
+    description: `"${sanitize(description)}"`,
+    tags: `[${tags}]`
   };
+
+  if (location) {
+    fmProperties.location = `"${sanitize(location)}"`;
+  }
+  if (url) {
+    fmProperties.linkTarget = `"${url}"`;
+  }
 
   const frontMatter = generateFrontmatter(fmProperties)
 
@@ -58,7 +63,7 @@ const generateFileContent = data => {
     content += '\n' + excerpt + '\n---\n'
   }
   if (body) {
-    content += '\n' + body
+    content += '\n' + sanitize(body)
   }
   if (via) {
     const vialink =
