@@ -10,7 +10,9 @@ Léonie tackles the prickly subject of “element re-purposing” in web develop
 > Using one element or set of elements (usually because of their functionality) and styling them to look like something else is a common pattern […but…] it creates a mismatch between the actions people expect they can take and the ones they actually can.
 ---
 
-Relatedly, [Lea](https://twitter.com/LeaVerou) has also gathered her post-discussion thoughts and decisions into a blog post [What is the best way to mark up an exclusive button group?](https://lea.verou.me/2022/07/button-group/) _and_ shared a new [`button-group` web component](https://github.com/LeaVerou/nudeforms/tree/main/button-group)! 
+Relatedly, [Lea](https://twitter.com/LeaVerou) has also gathered her post-discussion thoughts and decisions into a blog post [What is the best way to mark up an exclusive button group?](https://lea.verou.me/2022/07/button-group/) _and_ shared a new [`button-group` web component](https://github.com/LeaVerou/nudeforms/tree/main/button-group)!
+
+Meanwhile, Léonie already has a [theme-toggle web component](https://github.com/LJWatson/website-tink-eleventy/search?q=theme-toggle) on her personal website which demonstrates the use of buttons and `aria-pressed`.
 
 Thank you so much, Lea and Léonie.
 
