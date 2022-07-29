@@ -31,6 +31,6 @@ comp scone (and Prosecco but post-spa rules preclude!),
 
 pitch-black walk to Taybank, 
 
-great food soup leek and gawatercress creamy w bread, lovely monkfish (surprise chips) and great wine. Music Session downstairs, 
+Beautiful setting (upstairs), lovely staff and menu – loved it! Great food: soup leek and watercress creamy soup w bread, lovely monkfish, serrano ham, crab véloute and surprise chips, and great [cataratto white wine](https://www.wine-searcher.com/grape-90-catarratto) – maybe [this one](https://www.vivino.com/GB/en/rallo-ciello-bianco-catarratto/w/2773114?year=2019) but who knows. Really want to go back with Clair. Music Session downstairs, 
 
 BofA, Wallace Monument, Hideaway, WoodWinters bevvy shop, chat grub and tunes
