@@ -15,6 +15,8 @@ lorem
 
 ## Modern Responsive Images
 
+(Sara Souidean’s go-to syntax explainer resource https://dev.opera.com/articles/responsive-images/)
+
 In his fantastic series [Responsive Images 101](https://cloudfour.com/thinks/responsive-images-101-definitions/) Jason Grigsby defines Responsive Images as:
 
 > A method for providing the browser with multiple image sources depending on display density, size of the image element in the page, or any number of other factors.
@@ -25,6 +27,8 @@ I rarely need this in practice.
 Note that you can now avoid layout shifts after images load by specifying `width` and `height` attributes on your `picture`’s `source` elements. https://twitter.com/_zouhir/status/1414961958701305856
 
 ## Serving sharp images to hi-density screens
+
+(Check my notes, I also have a Note on this. Delete it asap after publishing)
 
 Jake’s lazy and long/proper approaches: https://jakearchibald.com/2021/serving-sharp-images-to-high-density-screens/
 
