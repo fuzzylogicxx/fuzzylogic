@@ -17,3 +17,17 @@ Meanwhile, Léonie already has a [theme-toggle web component](https://github.com
 Thank you so much, Lea and Léonie.
 
 [(via @LeonieWatson)](https://twitter.com/LeonieWatson/status/1547651790115520521)
+
+## Update July 19/7/22
+
+I just had a twitter conversation with Adrian Roselli where I suggested that the reasons for developers considering radio inputs over buttons for Lea’s use case might be more nuanced than simply misunderstanding HTML. I’m not sure we agreed on that one in the end, however Adrian shared [some helpful heuristics when choosing betweeen JS-powered buttons and forms](https://twitter.com/aardrian/status/1549365053580890112):
+
+> A checkbox, radio button, select menu are meant to gather information. The submit button sends the form (whether get, post, or an AJAX call). A button (non-submit) causes a change on the page, such as toggling a control, showing or hiding something, etc. Different context/use.
+
+> I think it would help to think of form fields as for *forms*. Forms that users intentionally submit (no matter if processed client- or server-side). Forms that gather info. Buttons that have states (expanded, pressed, etc) are for manipulation of the current view.
+
+Takeaways: 
+- Pick the HTML solution that is generally intended for your use case.
+- Use a form if you’re gathering information but if you’re not, don’t. There will be exceptions like “filter forms” but that’s an edge case and most forms are not like that. 
+- Forms are ideally things that users intentionally submit, via a submit button. This helps rule out “clever forms” as an option. 
+- Use a button to cause a change on, or manipulate, the current page.
