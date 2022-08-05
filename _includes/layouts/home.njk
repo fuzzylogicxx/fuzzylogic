@@ -3,18 +3,11 @@ layout: layouts/base.njk
 templateClass: home-main
 ---
 
-<div class="container">
-  <section class="intro prose">
-    <h1>Hi, I’m Laurence.</h1>
-    <p class="no-hyphens">I’m a Glaswegian web developer creating responsive websites which balance design, technology and accessibility. I also make music, play records and ping pongs. This is my online home; a playground for coding fun and place to share thoughts on the web, music and more.</p>
+<div class="container l-flow">
+  <section class="l-flow intro prose">
+    <h1>A stream of consciousness by Laurence Hughes</h1>
+    <p class="no-hyphens">Hi, I’m Laurence. I’m a Glaswegian web developer using modern web standards to create user-focused, responsive websites. I also make music, play records and ping pongs. This is my online home; a playground for coding fun and place to share thoughts on the web, music and more.</p>
   </section>
+
+  {{ content | safe }}
 </div>
-
-<div class="centre-with-gutter">
-
-    {{ content | safe }}
-
-</div>
-
-
-
