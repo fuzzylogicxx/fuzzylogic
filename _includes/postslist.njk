@@ -1,20 +1,8 @@
-<section class="h-feed centre">
+<section class="l-flow h-feed centre">
 {% for post in postslist %}
-  <article class="h-entry prose">
+  <article class="l-flow h-entry prose">
     <header>
       <div>
-        <span class="post-type text-icon-pair">
-        {% if (post.data.tags[1] === 'link') -%}
-          <svg aria-hidden="true" focusable="false" width="1em" height="1em"><use xlink:href="#icon-bookmark"></use></svg>
-          <span>Bookmark</span>
-        {% elif(post.data.tags[1] === 'note') -%}
-          <svg aria-hidden="true" focusable="false" width="1em" height="1em"><use xlink:href="#icon-note"></use></svg>
-          <span>Note</span>
-        {% else -%}
-          <svg aria-hidden="true" focusable="false" width="1em" height="1em"><use xlink:href="#icon-entry"></use></svg>
-          <span>Entry</span>
-        {% endif -%}
-        </span>
         <time class="dt-published" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
         {% if(post.data.tags[1] === 'note') -%} <span>·</span> <a href="{{ post.url | url }}">{{ post.date | readableTime }}</a> <span>·</span> {{ post.data.location }}</span>{% endif -%}
       </div>
@@ -28,7 +16,7 @@
         {# <p><a href="{{ post.url | url }}">{{ post.date | readableTime }}</a> <span>·</span> {{ post.data.location }}</span></p> #}
       {% endif -%}
     </header>
-    <div class="e-content">
+    <div class="l-flow e-content">
     {% if (post.data.page.excerpt) -%}
       {%- set excerpt = post.data.page.excerpt -%}{{ excerpt | markdownStringToHTML | safe }}
       {% if post.data.mainImage.url and (app.environment == "production") %}
