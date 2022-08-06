@@ -139,7 +139,6 @@
                   <a{% if entry.url == page.url %} aria-current="page"{% endif %} href="{{ entry.url | url }}">{{ entry.title }}</a>
                 </li>
               {%- endfor %}
-                <li><a href="{{ metadata.feed.url | url }}">RSS</a></li>
               </ul>
             </nav>
 
