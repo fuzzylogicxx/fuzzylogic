@@ -450,6 +450,20 @@
     font-size: var(--step--1);
   }
 
+  .direct-link {
+    text-decoration: none;
+
+    &:link,
+    &:visited,
+    &:active {
+      color: transparent;
+    }
+
+    &:hover {
+      color: var(--color-link-hover);
+    }
+  }
+
   .traverse {
     display: flex;
     justify-content: space-between;
@@ -501,7 +515,7 @@
 
   .logo {
     color: var(--color-dark);
-    font-size: 1.5em;
+    font-size: 1.7em;
     text-decoration: none;
     display: flex;
     gap: 0.75rem;

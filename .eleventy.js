@@ -6,6 +6,9 @@ const pluginSyntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
 const { PurgeCSS } = require('purgecss');
 const { minify } = require("terser");
 
+const markdownIt = require("markdown-it");
+const markdownItAnchor = require("markdown-it-anchor");
+
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(pluginNavigation);
   eleventyConfig.addPlugin(pluginRss);
@@ -40,7 +43,7 @@ module.exports = function(eleventyConfig) {
   // For example, use a transform to format/prettify an HTML file with proper whitespace.
   //
 
-  // For each .html file replace a placeholder line in the <head> with a inlined <style> block.
+  // For each .html file replace a placeholder line in the <head> with an inlined <style> block.
   // Include only the CSS required by the page, thanks to the purgecss NPM package.
   // Note 1: this covers everything; it doesn’t need invoked/called elsewhere.
   // Note 2: for each page, the page’s HTML content and its output path are available.
@@ -237,29 +240,46 @@ module.exports = function(eleventyConfig) {
     excerpt: true
   });
 
+
   //
-  // Markdown Plugins
+  // Customize Markdown library and settings:
   //
-  let markdownIt = require('markdown-it');
-  let markdownItAnchor = require('markdown-it-anchor');
-  let options = {
+  let markdownLibrary = markdownIt({
     html: true,
     breaks: true,
     linkify: true
-  };
-  let opts = {
-    permalink: true,
-    permalinkClass: 'section-link',
-    permalinkSymbol: '#'
-  };
+  }).use(markdownItAnchor, {
+    permalink: markdownItAnchor.permalink.ariaHidden({
+      placement: "after",
+      class: "direct-link",
+      symbol: "#"
+    }),
+    level: [1,2,3,4]
+    // , slugify: eleventyConfig.getFilter("slugify")
+  });
+  eleventyConfig.setLibrary("md", markdownLibrary);
 
-  mdi = new markdownIt(options);
+  // let markdownIt = require('markdown-it');
+  // let markdownItAnchor = require('markdown-it-anchor');
+  // let options = {
+  //   html: true,
+  //   breaks: true,
+  //   linkify: true
+  // };
+  // let opts = {
+  //   permalink: true,
+  //   permalinkClass: 'section-link',
+  //   permalinkSymbol: '#'
+  // };
 
-  eleventyConfig.setLibrary('md', mdi.use(markdownItAnchor, opts));
+  // mdi = new markdownIt(options);
+
+  // eleventyConfig.setLibrary('md', mdi.use(markdownItAnchor, opts));
 
   // Render a markdown string from a .md file (e.g. a post excerpt) as the target HTML in Nunjucks
+
   eleventyConfig.addNunjucksFilter('markdownStringToHTML', markdownString =>
-    mdi.render(markdownString)
+    markdownLibrary.render(markdownString)
   );
 
   //

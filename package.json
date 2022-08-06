@@ -37,14 +37,14 @@
     "dotenv": "^8.2.0",
     "encoding": "^0.1.12",
     "luxon": "^1.26.0",
-    "markdown-it": "^12.0.4",
-    "markdown-it-anchor": "^7.1.0",
+    "markdown-it": "^13.0.1",
+    "markdown-it-anchor": "^8.6.4",
     "netlify-lambda": "^1.6.3",
-    "node-fetch": "^2.6.1",
+    "node-fetch": "^2.6.7",
     "npm-run-all": "^4.1.5",
     "purgecss": "^4.0.3",
     "sass": "^1.32.8",
     "slugify": "^1.4.7",
-    "terser": "^5.6.1"
+    "terser": "^5.14.2"
   }
 }
