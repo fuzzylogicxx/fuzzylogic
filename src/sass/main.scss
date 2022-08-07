@@ -6,7 +6,7 @@
  * Establish a layer order up-front, from lowest to highest priority.
  */
 
-@layer reset, base, layouts, components, utilities;
+@layer base, layouts, links, components, utilities;
 
 
 /* ==========================================================================
@@ -20,6 +20,13 @@
     --color-light: #fff;
     --color-link: rgb(14, 131, 123);
     --color-link-hover: rgb(8,78,73); /* 40% darker. Less than 30% wasn’t noticeable on hover */
+
+    // Measure
+    --measure: 65ch;
+    --heading-measure: 50ch;
+
+    // Borders
+    --border-thin: 1px;
 
     // Fluid type, moving between two modular scales (i) tighter; and ii) more expansive)
     // @link https://utopia.fyi/type/calculator?c=320,17,1.067,1140,19,1.125,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l
@@ -105,13 +112,19 @@
 
 @layer base {
 
-  html {
+  :root {
     box-sizing: border-box;
 
     // Disable now-unnecessary iPhone behaviour
     // https://css-tricks.com/your-css-reset-needs-text-size-adjust-probably/
     text-size-adjust: none;
     -webkit-text-size-adjust: none;
+
+    color: var(--color-dark);
+    font-family: 'Source Sans Pro', system-ui, sans-serif;
+
+    // At the :root level I like being explicit about the browser font-size default (16px).
+    font-size: 100%;
   }
 
   *,
@@ -125,19 +138,17 @@
   }
 
   body {
-    color: var(--color-dark);
-    font-family: 'Source Sans Pro', system-ui, sans-serif;
     font-size: var(--step-0);
     line-height: 1.4;
     min-height: 100vh;
   }
 
   p, li, blockquote {
-    max-width: 65ch;
+    max-width: var(--measure);
   }
 
   h1, h2, h3 {
-    max-width: 50ch;
+    max-width: var(--heading-measure);
   }
 
   ul, ol {
@@ -160,6 +171,18 @@
 
   svg {
     display: block;
+  }
+
+  /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
   }
 
 
@@ -219,7 +242,7 @@
    # LINKS
    ========================================================================== */
 
-@layer base {
+@layer links {
 
   a {
     color: var(--color-link);
@@ -379,6 +402,38 @@
     margin-top: var(--flow-space,1em);
   }
 
+  .l-box {
+    padding: var(--space-s);
+    border: var(--border-thin) solid;
+    color: var(--color-dark);
+    background-color: var(--color-light);
+
+    * {
+      color: inherit;
+    }
+
+    &--invert {
+      color: var(--color-light);
+      background-color: var(--color-dark);
+    }
+
+    &--outlined {
+      border: 0 solid;
+      outline: var(--border-thin) solid transparent;
+      outline-offset: calc(var(--border-thin) * -1);
+    }
+
+    &--med {
+      padding: var(--space-m);
+    }
+  }
+
+  .l-center {
+    box-sizing: content-box;
+    margin-inline: auto;
+    max-inline-size: var(--measure);
+  }
+
 }
 
 
@@ -450,6 +505,20 @@
     font-size: var(--step--1);
   }
 
+  .direct-link {
+    text-decoration: none;
+
+    &:link,
+    &:visited,
+    &:active {
+      color: transparent;
+    }
+
+    &:hover {
+      color: var(--color-link-hover);
+    }
+  }
+
   .traverse {
     display: flex;
     justify-content: space-between;
@@ -464,11 +533,11 @@
 @layer components {
 
   // Temporary way of setting measure just so that banner can be full-width but everything else not.
-  #global-header, main, #global-footer {
+  .global-header, .primary-content, .global-footer {
     // max-width: 65ch;
     // margin: 1rem;
 
-    padding-inline: 1.5em; // temp
+    //padding-inline: 1.5em; // temp
   }
 
 }
@@ -483,7 +552,7 @@
   .banner {
     background: #333;
     color: #fff;
-    margin: 0; // ensure there’s no margin-top arising from the parent using our “flow” layout.
+    margin: 0; // ensure there’s no margin-top arising by mistake from a parent .flow class
     padding: 1em 1.5em;
 
     & > * {
@@ -493,6 +562,24 @@
 
 }
 
+
+/* ==========================================================================
+   # GLOBAL HEADER
+   ========================================================================== */
+
+@layer components {
+
+  .global-header {
+    // usually we want this to be the visually topmost element
+    // (unless we’re showing a banner)
+    // But local server software sometimes injects script elements above
+    // and if the parent has a .flow class then the combination would give the header a margin we don’t want.
+    // margin: 0;
+  }
+
+}
+
+
 /* ==========================================================================
    # LOGO
    ========================================================================== */
@@ -501,7 +588,7 @@
 
   .logo {
     color: var(--color-dark);
-    font-size: 1.5em;
+    font-size: 1.7em;
     text-decoration: none;
     display: flex;
     gap: 0.75rem;

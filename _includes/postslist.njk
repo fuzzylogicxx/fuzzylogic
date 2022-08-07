@@ -7,11 +7,7 @@
         {% if(post.data.tags[1] === 'note') -%} <span>·</span> <a href="{{ post.url | url }}">{{ post.date | readableTime }}</a> <span>·</span> {{ post.data.location }}</span>{% endif -%}
       </div>
       {% if (post.data.tags[1] !== 'note' or post.data.noteWithTitle) -%}
-        {% if (post.data.linkTarget) -%}
-        <h3 class="feed-entry-title"><a href="{{ post.data.linkTarget | url }}" class="text-icon-pair offsite">{{ post.data.title }}</a></h3>
-        {% else %}
         <h3 class="feed-entry-title"><a rel="bookmark" class="p-name u-url" href="{{ post.url | url }}">{{ post.data.title }}</a></h3>
-        {% endif %}
       {% else -%}
         {# <p><a href="{{ post.url | url }}">{{ post.date | readableTime }}</a> <span>·</span> {{ post.data.location }}</span></p> #}
       {% endif -%}
@@ -26,11 +22,6 @@
       {%- if post.data.mainImage.isAnchor %}</a>{%- endif %}
       {%- if post.data.mainImage.figcaption %}<figcaption>{{ post.data.mainImage.figcaption }}</figcaption>{%- endif %}
       </figure>
-      {% endif %}
-      {% if (post.data.linkTarget) -%}
-      <p class="bookmark-options"><a href="{{ post.url | url }}">Read my notes</a> / <a class="text-icon-pair offsite" href="{{ post.data.linkTarget | url }}"><span>Visit original</span> <svg aria-hidden="true" focusable="false" width="1em" height="1em"><use xlink:href="#icon-offsite"></use></svg></a></p>
-      {%- else -%}
-      <p><a href="{{ post.url | url }}">Read entry »</a></p>
       {% endif %}
     {%- else -%}
       {{ post.templateContent | markdownStringToHTML | safe }}
