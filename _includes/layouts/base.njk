@@ -107,21 +107,16 @@
     <link rel="pingback" href="https://webmention.io/fuzzylogic.me/xmlrpc">
     <link rel="webmention" href="https://webmention.io/fuzzylogic.me/webmention">
   </head>
-  <body class="l-flow{% if bodyclass %} {{ bodyclass }}{% endif %}">
+  <body class="{% if bodyclass %}{{ bodyclass }}{% endif %}">
 
     <!-- Skip link(s) -->
     <div class="u-hidden-until-focused">
       <a class="u-hidden-until-focused__item u-hidden-until-focused__link" href="#skip-link-target">Skip to main content</a>
     </div>
 
-    <!-- spring-cleaning banner -->
-    <div class="banner">
-      <p>I’m doing a code spring-clean and stripping things back. Please bear with me while things look a little rough.</p>
-    </div>
-
     <!-- Header begins -->
     <header id="global-header" class="global-header">
-      <div class="container">
+      <div class="l-box l-box--med l-box--outlined">
         <div class="cluster">
           <div class="l-flow logo-and-header-menu-wrap">
             <a href="{{ '/' | url }}" class="logo">
@@ -164,7 +159,7 @@
 
     <footer aria-label="site" id="global-footer" class="global-footer">
 
-      <div class="container">
+      <div class="l-box l-box--med l-box--outlined">
 
         <div class="l-flow global-footer-contents-wrap">
 
