@@ -1,5 +1,5 @@
 ---
-date: 2022-02-15T21:03:21Z
+date: 2022-08-08T08:25:21Z
 title: 'Inclusive user research: recruiting participants (by Ela Gorla on Tetralogical’s
   blog)'
 description: Excellent advice on recruiting usability testing participants with disabilities
