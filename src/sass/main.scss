@@ -152,13 +152,24 @@
   }
 
   ul, ol {
-    margin: 0;
+    // Set margin and padding such that list markers
+    // don’t hang out in the margin on the narrowest screens.
+    // Note: it’s better to do it this way than set list-style-position
+    // to `inside`. This way avoids text wrapping underneath marker.
+    margin: 0 0 0 var(--space-m);
     padding: 0;
+
+    // On wider screens we can allow hanging list bullets.
+    // It’s a nice typographic effect.
+    @media only screen and (min-width: 60em) {
+      margin-left: 0;
+    }
   }
 
   ul[role='list'],
   ol[role='list'] {
     list-style: none;
+    margin-left: 0;
   }
 
   img, picture {
