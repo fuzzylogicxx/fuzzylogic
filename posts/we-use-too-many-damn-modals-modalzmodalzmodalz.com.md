@@ -1,6 +1,6 @@
 ---
 date: 2022-08-09T20:03:21Z
-title: We use too many damn modals (modalzmodalzmodalz.com)
+title: We use too many damn modals (modalz modalz modalz dot com)
 description: Advice on using (or ideally avoiding) modal dialogues
 tags:
 - link
@@ -10,7 +10,7 @@ linkTarget: https://modalzmodalzmodalz.com/
 draft: false
 
 ---
-## At our fortnightly Accessibility Forum at work, we just had a great discussion about modal dialogues. We started by discussing whether focus should be completely trapped within the modal or if the user should at least have access to the browser toolbar (we decided on the former). We then moved onto a general discussion on the pros and cons of modals, which led me to share MODALZ MODALZ MODALZ with the team.
+At our fortnightly Accessibility Forum at work, we just had a great discussion about modal dialogues. We started by discussing whether focus should be completely trapped within the modal or if the user should at least have access to the browser toolbar (we decided on the former). We then moved onto a general discussion on the pros and cons of modals, which led me to share MODALZ MODALZ MODALZ with the team.
 ---
 
 Adrian Egger’s website presents some interesting suggestions, which I’ll summarise below:
