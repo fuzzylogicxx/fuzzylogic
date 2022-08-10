@@ -575,6 +575,16 @@ git restore .
   
 </figure>
   
+Get your local feature branch out of a problem state by resetting to the state it is on the remote (e.g. at last `push`).
+  
+<figure>
+
+```bash
+git reset --hard origin/my-branch
+```
+  
+</figure>
+   
 Undo all the changes in a given commit:
 
 <figure>
