@@ -3,6 +3,7 @@ date: 2022-08-09T15:37:54Z
 title: Putting a full stop on truncation
 description: Truncation isn’t a great content strategy so maybe we should just design
   for wrapping content
+location: Glasgow
 tags:
 - note
 - content
