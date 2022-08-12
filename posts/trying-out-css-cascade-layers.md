@@ -1,5 +1,5 @@
 ---
-date: 2022-07-29T15:53:31Z
+date: 2022-08-12T15:00:31Z
 title: Experimenting with CSS cascade layers
 description: 'After enjoying Bramus van Damme’s talk at CSS Day I’ve been trying CSS cascade layers on my personal site'
 tags: [entry, css, cascade]
