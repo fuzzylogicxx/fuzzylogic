@@ -18,27 +18,34 @@ draft: true
 Back in June I attended CSS Day in Amsterdam. One of my favourite talks was [The CSS Cascade – A Deep Dive](https://www.youtube.com/watch?v=zEPXyqj7pEA) by Bramus van Damme. Bramus covered everything we wanted to know about the cascade but were afraid to ask! This included an introduction to CSS Cascade Layers – another potentially game-changing CSS development.
 ---
 
-I previously [enjoyed Stephanie Eckles’s article _Getting Started with CSS Cascade Layers_](https://fuzzylogic.me/posts/getting-started-with-css-cascade-layers-by-stephanie-eckles/) so my interest was already piqued. However seeing Bramus’s talk in person really helped bring home the practical benefits of CSS layers. For example, in a battle between the selectors `ul[class]` defined early in the “reset” section of our styles and `.nav` defined later in our “components” section, `ul[class]` would win… which is not what we want. This has previously led people to hack around the problem by adding extra specificity to the latter selector or by adding `:where` to the former to decrease its specificity, neither of which are desirable. With layers we can do:
+I previously [enjoyed Stephanie Eckles’s article _Getting Started with CSS Cascade Layers_](https://fuzzylogic.me/posts/getting-started-with-css-cascade-layers-by-stephanie-eckles/) so my interest was already piqued. However seeing Bramus’s talk in person really helped bring home the practical benefits of CSS layers. For example, currently if we have the selectors `ul[class]` defined early in the “reset” section of our styles and `.nav` defined later in a “components” section, `ul[class]` would win due to its specificity… which is not what we want. We want our component styles to override our global styles. This has previously led people to hack around the problem by adding extra specificity to the latter selector or by [wrapping `:where()` around the former](https://css-tricks.com/using-the-specificity-of-where-as-a-css-reset/) to decrease its specificity – neither of which are desirable. With layers we can do:
 
 <figure>
   
 ``` css
+@layer reset, components;
+  
 @layer reset {
-
+  ul[class] {
+    /* set margin to 0 here */
+  }
+}
+  
+@layer components {
+  .nav {
+    /* set custom margins here */
+  }
 }
 ```  
   
 </figure>
 
-Miriam Suzanne’s guide [https://css-tricks.com/css-cascade-layers/](https://css-tricks.com/css-cascade-layers/ "https://css-tricks.com/css-cascade-layers/")
-Mention that it’s safe to do it on my personal site
+And `.nav` gets that higher specificity that we want.
 
+I also like that layers fit well with an [ITCSS](https://www.creativebloq.com/web-design/manage-large-css-projects-itcss-101517528) approach.
 
+## Taking layers for a spin
 
-Link to my existing bookmark (Steph Eckles)
+Cascade Layers are relatively newly-supported in browsers but pretty all-consuming in your CSS to the extent that using them in a progressively-enhanced approach isn’t yet an option. So I wouldn’t yet advocate using Layers on an important production website. However there’s nothing to stop me test-driving them on my personal site – users on old browsers still get the essential content although very few styles – so I’ve taken the plunge. 
 
-Mention ITCSS
-
-
-
-Working already! And without the need for hard-to-read [specificity hacks](https://css-tricks.com/using-the-specificity-of-where-as-a-css-reset/) in your reset like setting `:where(h1)`. If you set disable margins on your `h2` in your reset styles at the top but then have an h2 in a low-specificity layout like a flow utility and _want_ there to be a margin, normally the reset style would win which would be frustrating. But if you put your reset styles in a `reset` layer and your layout styles in a `layouts` layer and set the layers order as `reset, layouts` then the layout styles win! Really cool.
+And it’s working really well already! If you set disable margins on your `h2` in your reset styles at the top but then have an h2 in a low-specificity layout like a flow utility and _want_ there to be a margin, normally the reset style would win which would be frustrating. But if you put your reset styles in a `reset` layer and your layout styles in a `layouts` layer and set the layers order as `reset, layouts` then the layout styles win! Really cool.
