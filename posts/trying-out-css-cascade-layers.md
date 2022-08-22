@@ -14,7 +14,7 @@ mainImage.sizes: ''
 mainImage.isAnchor: false
 
 ---
-Back in June I attended CSS Day in Amsterdam. One of my favourite talks was [The CSS Cascade – A Deep Dive](https://www.youtube.com/watch?v=zEPXyqj7pEA) by Bramus van Damme. Bramus covered everything we wanted to know about the cascade but were afraid to ask! This included an introduction to CSS Cascade Layers – another potentially game-changing CSS development.
+Back in June I attended CSS Day in Amsterdam. One of my favourite talks was [The CSS Cascade – A Deep Dive](https://www.youtube.com/watch?v=zEPXyqj7pEA) by Bramus van Damme. Bramus covered everything we wanted to know about the cascade but were afraid to ask! And that included an introduction to CSS _Cascade Layers_ – the latest game-changing CSS feature.
 ---
 
 I previously [enjoyed Stephanie Eckles’s article _Getting Started with CSS Cascade Layers_](https://fuzzylogic.me/posts/getting-started-with-css-cascade-layers-by-stephanie-eckles/) so my interest was already piqued. However seeing Bramus’s talk in person really helped bring home the practical benefits of CSS layers. For example, currently if we have the selectors `ul[class]` defined early in the “reset” section of our styles and `.nav` defined later in a “components” section, that “reset” selector would win due to its higher specificity. That’s not what we want – we want our component styles to override our global styles. This has previously led people to hack around the problem by adding extra specificity to the latter selector or by [wrapping `:where()` around the former](https://css-tricks.com/using-the-specificity-of-where-as-a-css-reset/) to decrease its specificity – neither of which are desirable. With layers we can do:
