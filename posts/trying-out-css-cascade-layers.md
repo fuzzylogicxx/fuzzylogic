@@ -15,7 +15,20 @@ mainImage.isAnchor: false
 draft: true
 
 ---
-In early June I attended CSS Day in Amsterdam and one of my favourite talks was Bramus van Damme’s [foo](https://www.youtube.com/watch?v=zEPXyqj7pEA).
+Back in June I attended CSS Day in Amsterdam. One of my favourite talks was [The CSS Cascade – A Deep Dive](https://www.youtube.com/watch?v=zEPXyqj7pEA) by Bramus van Damme. Bramus covered everything we wanted to know about the cascade but were afraid to ask! This included an introduction to CSS Cascade Layers – another potentially game-changing CSS development.
+---
+
+I previously [enjoyed Stephanie Eckles’s article _Getting Started with CSS Cascade Layers_](https://fuzzylogic.me/posts/getting-started-with-css-cascade-layers-by-stephanie-eckles/) so my interest was already piqued. However seeing Bramus’s talk in person really helped bring home the practical benefits of CSS layers. For example, in a battle between the selectors `ul[class]` defined early in the “reset” section of our styles and `.nav` defined later in our “components” section, `ul[class]` would win… which is not what we want. This has previously led people to hack around the problem by adding extra specificity to the latter selector or by adding `:where` to the former to decrease its specificity, neither of which are desirable. With layers we can do:
+
+<figure>
+  
+``` css
+@layer reset {
+
+}
+```  
+  
+</figure>
 
 Miriam Suzanne’s guide [https://css-tricks.com/css-cascade-layers/](https://css-tricks.com/css-cascade-layers/ "https://css-tricks.com/css-cascade-layers/")
 Mention that it’s safe to do it on my personal site
