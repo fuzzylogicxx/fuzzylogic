@@ -89,5 +89,6 @@ It’s not because I care specifically about IE 11. To me, the website should wo
 And finally—there’s no reason not to! If you want to use any brand new feature (now or in the future) in a responsible way you _always_ have to employ a degree of progressive enhancement—that’s not going to change even when IE 11 is a distant memory. So what difference does it make? IE 11 disappearing doesn’t really change the way I need to work.
 
 Refs:
+- https://tetralogical.com/blog/2022/08/24/ie-support/
 - https://www.hassellinclusion.com/blog/should-accessible-websites-still-support-ie11/
 - https://www.gov.uk/service-manual/technology/testing-with-assistive-technologies
