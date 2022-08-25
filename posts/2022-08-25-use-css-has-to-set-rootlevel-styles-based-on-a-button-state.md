@@ -1,13 +1,23 @@
 ---
 date: "2022-08-25T13:56:10.056Z"
-title: "Use CSS :has to set root-level styles based on a button state"
+title: "Use CSS :has to set root-level styles based on a button’s state"
 description: "Lovely dark mode tip from Google's Jhey"
-tags: [link, css, has, parent, darkmode]
+tags: [link, css, has, a11y, buttons, parent, darkmode, toggle]
 linkTarget: "https://twitter.com/jh3yy/status/1562081979801239553"
 ---
-Great tip from Jhey in which he advises to use a button (rather than a checkbox or similar) for your dark-mode toggle, then use a combination `:has` and the buttonâs programatically-conveyed state to set a root-level custom property.
+Great tip here from Jhey. He advises using a `button` with ARIA and a little JavaScript for your dark-mode toggle. And to apply the dark styles, use a CSS selector which targets the `:root` parent (via `:has()`) of the button when in “pressed” state and sets a root-level custom property to “on”.
 
-:root:has([aria-pressed=true]) {--dark:1;}
+<figure>
+
+``` css
+:root:has([aria-pressed=true]) {
+  --dark:1;
+}
+```
+
+</figure>
 ---
 
-Aside from the clever CSS, I really like the way Jhey advocates for using a button for this kind of interface, like LÃ©onie did recently.
+Seriously clever stuff! 
+
+And aside from the CSS, I really like the way Jhey advocates using a `button` rather than a form element such as a checkbox for this kind of interface, much [like Léonie did recently](https://fuzzylogic.me/posts/2022-07-15-perceived-affordances-and-the-functionality-mismatch-by-leonie-watson/).
