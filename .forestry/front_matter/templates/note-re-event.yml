@@ -1,0 +1,65 @@
+---
+label: Note re. event
+hide_body: false
+fields:
+- type: datetime
+  name: date
+  label: date
+- type: text
+  name: title
+  label: title
+- type: text
+  name: description
+  label: description
+- type: field_group
+  name: mainImage
+  label: mainImage
+  fields:
+  - type: text
+    name: url
+    label: url
+  - type: text
+    name: alt
+    label: alt
+  - type: text
+    name: aspectRatioWidth
+    label: aspectRatioWidth
+  - type: text
+    name: aspectRatioHeight
+    label: aspectRatioHeight
+- type: list
+  name: tags
+  label: tags
+- type: boolean
+  name: noteWithTitle
+  label: noteWithTitle
+- type: text
+  name: location
+  label: location
+- type: text
+  name: linkTarget
+  label: linkTarget
+- type: text
+  name: mainImage.url
+  label: mainImage.url
+- type: text
+  name: mainImage.alt
+  label: mainImage.alt
+- type: text
+  name: mainImage.aspectRatioWidth
+  label: mainImage.aspectRatioWidth
+- type: text
+  name: mainImage.aspectRatioHeight
+  label: mainImage.aspectRatioHeight
+- type: text
+  name: mainImage.srcsetWidths
+  label: mainImage.srcsetWidths
+- type: text
+  name: mainImage.sizes
+  label: mainImage.sizes
+- type: boolean
+  name: mainImage.isAnchor
+  label: mainImage.isAnchor
+- type: boolean
+  name: draft
+  label: draft
