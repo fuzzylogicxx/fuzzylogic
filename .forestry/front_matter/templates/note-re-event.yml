@@ -16,6 +16,12 @@ fields:
 - type: list
   name: tags
   label: tags
+  default:
+  - note
+  - event
+  - festival
+  - weouthere
+  - music
 - type: boolean
   name: noteWithTitle
   default: true
