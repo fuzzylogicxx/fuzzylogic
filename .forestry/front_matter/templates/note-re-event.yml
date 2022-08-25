@@ -9,11 +9,11 @@ fields:
 - type: text
   name: title
   label: title
-  default: 'XYZ at We Out Here 2022'
+  default: XYZ at We Out Here 2022
 - type: text
   name: description
   label: description
-  default: 'Currently checking out XYZ at We Out Here Festival 2022'
+  default: Currently checking out XYZ at We Out Here Festival 2022
 - type: list
   name: tags
   label: tags
@@ -30,7 +30,9 @@ fields:
 - type: text
   name: location
   label: location
-  default: 'Abbots Ripton, Cambridgeshire'
+  default: Abbots Ripton, Cambridgeshire
 - type: boolean
   name: draft
   label: draft
+pages:
+- posts/xyz-at-we-out-here-2022.md
