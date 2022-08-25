@@ -1,5 +1,5 @@
 ---
-date: 2022-04-18T14:18:08.000+00:00
+date: 2022-08-25T15:34:08.000+00:00
 title: XYZ at We Out Here 2022
 description: Currently checking out XYZ at We Out Here Festival 2022
 mainImage:
