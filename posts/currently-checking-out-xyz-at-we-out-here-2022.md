@@ -22,7 +22,7 @@ mainImage.aspectRatioHeight: ''
 mainImage.srcsetWidths: ''
 mainImage.sizes: ''
 mainImage.isAnchor: false
-draft: false
+draft: true
 
 ---
 Currently checking out XYZ [@weoutherefest](https://twitter.com/weoutherefest) 2022
