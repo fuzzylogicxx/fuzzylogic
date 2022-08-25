@@ -18,6 +18,7 @@
     // Colours
     --color-dark: #141414;
     --color-light: #fff;
+    --color-grey: #eee;
     --color-link: rgb(14, 131, 123);
     --color-link-hover: rgb(8,78,73); /* 40% darker. Less than 30% wasn’t noticeable on hover */
 
@@ -27,42 +28,43 @@
 
     // Borders
     --border-thin: 1px;
+    --border-thick: 4px;
 
     // Fluid type, moving between two modular scales (i) tighter; and ii) more expansive)
-    // @link https://utopia.fyi/type/calculator?c=320,17,1.067,1140,19,1.125,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l
-    --step--2: clamp(0.93rem, calc(0.93rem + 0.01vw), 0.94rem);
-    --step--1: clamp(1.00rem, calc(0.97rem + 0.12vw), 1.06rem);
-    --step-0: clamp(1.06rem, calc(1.01rem + 0.24vw), 1.19rem);
-    --step-1: clamp(1.13rem, calc(1.05rem + 0.40vw), 1.34rem);
-    --step-2: clamp(1.21rem, calc(1.09rem + 0.57vw), 1.50rem);
-    --step-3: clamp(1.29rem, calc(1.13rem + 0.78vw), 1.69rem);
-    --step-4: clamp(1.38rem, calc(1.17rem + 1.02vw), 1.90rem);
-    --step-5: clamp(1.47rem, calc(1.21rem + 1.31vw), 2.14rem);
+    // @link https://utopia.fyi/type/calculator?c=320,17,1.067,1140,20,1.125,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l
+    --step--2: clamp(0.93rem, calc(0.91rem + 0.11vw), 0.99rem);
+    --step--1: clamp(1.00rem, calc(0.95rem + 0.23vw), 1.11rem);
+    --step-0: clamp(1.06rem, calc(0.99rem + 0.37vw), 1.25rem);
+    --step-1: clamp(1.13rem, calc(1.03rem + 0.53vw), 1.41rem);
+    --step-2: clamp(1.21rem, calc(1.06rem + 0.73vw), 1.58rem);
+    --step-3: clamp(1.29rem, calc(1.10rem + 0.95vw), 1.78rem);
+    --step-4: clamp(1.38rem, calc(1.13rem + 1.22vw), 2.00rem);
+    --step-5: clamp(1.47rem, calc(1.16rem + 1.53vw), 2.25rem);
 
     // Fluid space, moving between two modular scales (i) tighter; and ii) more expansive)
-    // @link https://utopia.fyi/space/calculator?c=320,17,1.067,1140,19,1.125,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l
+    // @link https://utopia.fyi/space/calculator?c=320,17,1.067,1140,20,1.125,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l
     --space-3xs: clamp(0.25rem, calc(0.23rem + 0.12vw), 0.31rem);
     --space-2xs: clamp(0.56rem, calc(0.54rem + 0.12vw), 0.63rem);
-    --space-xs: clamp(0.81rem, calc(0.79rem + 0.12vw), 0.88rem);
-    --space-s: clamp(1.06rem, calc(1.01rem + 0.24vw), 1.19rem);
-    --space-m: clamp(1.63rem, calc(1.55rem + 0.37vw), 1.81rem);
-    --space-l: clamp(2.13rem, calc(2.03rem + 0.49vw), 2.38rem);
-    --space-xl: clamp(3.19rem, calc(3.04rem + 0.73vw), 3.56rem);
-    --space-2xl: clamp(4.25rem, calc(4.05rem + 0.98vw), 4.75rem);
-    --space-3xl: clamp(6.38rem, calc(6.08rem + 1.46vw), 7.13rem);
+    --space-xs: clamp(0.81rem, calc(0.76rem + 0.24vw), 0.94rem);
+    --space-s: clamp(1.06rem, calc(0.99rem + 0.37vw), 1.25rem);
+    --space-m: clamp(1.63rem, calc(1.53rem + 0.49vw), 1.88rem);
+    --space-l: clamp(2.13rem, calc(1.98rem + 0.73vw), 2.50rem);
+    --space-xl: clamp(3.19rem, calc(2.97rem + 1.10vw), 3.75rem);
+    --space-2xl: clamp(4.25rem, calc(3.96rem + 1.46vw), 5.00rem);
+    --space-3xl: clamp(6.38rem, calc(5.94rem + 2.20vw), 7.50rem);
 
-    /* One-up pairs */
+    // One-up pairs
     --space-3xs-2xs: clamp(0.25rem, calc(0.10rem + 0.73vw), 0.63rem);
-    --space-2xs-xs: clamp(0.56rem, calc(0.44rem + 0.61vw), 0.88rem);
-    --space-xs-s: clamp(0.81rem, calc(0.67rem + 0.73vw), 1.19rem);
-    --space-s-m: clamp(1.06rem, calc(0.77rem + 1.46vw), 1.81rem);
-    --space-m-l: clamp(1.63rem, calc(1.33rem + 1.46vw), 2.38rem);
-    --space-l-xl: clamp(2.13rem, calc(1.56rem + 2.80vw), 3.56rem);
-    --space-xl-2xl: clamp(3.19rem, calc(2.58rem + 3.05vw), 4.75rem);
-    --space-2xl-3xl: clamp(4.25rem, calc(3.13rem + 5.61vw), 7.13rem);
+    --space-2xs-xs: clamp(0.56rem, calc(0.42rem + 0.73vw), 0.94rem);
+    --space-xs-s: clamp(0.81rem, calc(0.64rem + 0.85vw), 1.25rem);
+    --space-s-m: clamp(1.06rem, calc(0.75rem + 1.59vw), 1.88rem);
+    --space-m-l: clamp(1.63rem, calc(1.28rem + 1.71vw), 2.50rem);
+    --space-l-xl: clamp(2.13rem, calc(1.49rem + 3.17vw), 3.75rem);
+    --space-xl-2xl: clamp(3.19rem, calc(2.48rem + 3.54vw), 5.00rem);
+    --space-2xl-3xl: clamp(4.25rem, calc(2.98rem + 6.34vw), 7.50rem);
 
-    /* Custom pairs */
-    --space-s-l: clamp(1.06rem, calc(0.55rem + 2.56vw), 2.38rem);
+    // Custom pairs
+    --space-s-l: clamp(1.06rem, calc(0.50rem + 2.80vw), 2.50rem);
   }
 }
 
@@ -172,7 +174,14 @@
     margin-left: 0;
   }
 
-  img, picture {
+  blockquote {
+    border-left: var(--border-thick) solid var(--color-grey);
+    padding-left: var(--space-xs);
+    font-style: italic;
+  }
+
+  img,
+  picture {
     max-width: 100%;
   }
 
@@ -277,7 +286,7 @@
   }
 
   h1 {
-    font-size: var(--step-3);
+    font-size: var(--step-4);
     line-height: 1;
   }
 
@@ -410,7 +419,23 @@
 @layer layouts {
 
   .l-flow > * + * {
-    margin-top: var(--flow-space,1em);
+    margin-top: var(--flow-space, 1em);
+
+    // Flow (https://piccalil.li/quick-tip/flow-utility/) / Stack ()
+    // We want the ability to have:
+    // - per-element exceptions within a single stack
+    // - nested stacks where the nested one takes on default spacing rather than the
+    // custom spacing that was set on a parent.
+    // I think the key might be to use custom properties for per-element exceptions only.
+    // The element the modified custom property should be applied to should be a stack child.
+    // Might also (if nec.) consider including an extra div as "insulation" in nested stacks.
+    // This part of EveryLayout’s docs feels important:
+    // “Importantly we set the --space value on the children and don’t “hoist” it up.
+    // If the parent is where the property is set, it will get overridden if the parent becomes
+    // a child in nesting”
+    // Feels like nesting should *just work?*
+
+
   }
 
   .l-box {
@@ -443,8 +468,23 @@
     box-sizing: content-box;
     margin-inline: auto;
     max-inline-size: var(--measure);
+
+    &--wrapper {
+      max-inline-size: 60em;
+    }
   }
 
+  .l-cluster {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space, 1rem);
+    justify-content: flex-start;
+    align-items: center;
+
+    &--space-between {
+      justify-content: space-between;
+    }
+  }
 }
 
 
@@ -497,8 +537,8 @@
 @layer components {
 
   // Lists of articles
-  .h-feed {
-    // --flow-space: 3em;
+  .h-feed > * + * {
+    margin-top: var(--space-m);
   }
 
   // Individual articles
@@ -583,6 +623,7 @@
     // But local server software sometimes injects script elements above
     // and if the parent has a .flow class then the combination would give the header a margin we don’t want.
     // margin: 0;
+    padding: var(--space-m) var(--space-s) var(--space-xl);
   }
 
 }
@@ -606,11 +647,29 @@
       color: var(--color-link-hover);
     }
 
+    &__mark {
+      margin-top: -0.35em;
+    }
+
     &__text {
-      font-size: 0.8em;
-      margin-block-start: 14px;
-      letter-spacing: -0.0125em;
+      font-size: var(--step-1);
+      // font-size: 0.8em;
+      // margin-block-start: 14px;
+      // letter-spacing: -0.0125em;
     }
   }
 
 }
+
+
+/* ==========================================================================
+   # PRIMARY NAV
+   ========================================================================== */
+
+   @layer components {
+
+    .primary-navigation {
+      font-size: var(--step--1);
+    }
+
+  }
