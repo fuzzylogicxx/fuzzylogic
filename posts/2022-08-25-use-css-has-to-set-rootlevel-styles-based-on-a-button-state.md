@@ -5,7 +5,7 @@ description: "Lovely dark mode tip from Google's Jhey"
 tags: [link, css, has, a11y, buttons, parent, darkmode, toggle]
 linkTarget: "https://twitter.com/jh3yy/status/1562081979801239553"
 ---
-Great tip here from Jhey. He advises using a `button` with ARIA and a little JavaScript for your dark-mode toggle. And to apply the dark styles, use a CSS selector which targets the `:root` parent (via `:has()`) of the button when in “pressed” state and sets a root-level custom property to “on”.
+Great tip here from Jhey. He advises using a `button` with ARIA and a little JavaScript for your dark-mode toggle. And to apply the dark styles, use a CSS selector which targets the `:root` parent of the button when in “pressed” state and sets a root-level custom property to “on”.
 
 <figure>
 
