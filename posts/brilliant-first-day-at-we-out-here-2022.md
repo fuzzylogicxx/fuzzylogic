@@ -18,7 +18,7 @@ Had such a good day yesterday [@weoutherefest](https://twitter.com/weoutherefest
 We saw:
 
 * Enny
-* Sally
+* Sally (A Man Called Adam)
 * Aletha
 
 Followed by a short break for Char Sui Vermicelli at the NAM stall and a cracking coffee, then…
@@ -28,6 +28,6 @@ Followed by a short break for Char Sui Vermicelli at the NAM stall and a crackin
 * Pearson Sound
 * Alex Nut
 
-Our absolute was Charlie Dark in the forest. Amazing setting and an amazing set. Charlie has such great energy both on the decks and on the mic. He played a mix of house, techno, disco and broken biznizz – right up my street! Great mixing too (aided by his old-school lollipop headphone).   
+Our absolute highlight was Charlie Dark in the forest. Amazing woodland setting and an amazing set! Charlie has such great energy both on the decks and on the mic. He played a mix of house, techno, disco and broken biznizz – right up my street! Great mixing too (aided by his old-school lollipop headphone).
 
 Time for Rount Two!
