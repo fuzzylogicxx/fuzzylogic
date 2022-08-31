@@ -356,18 +356,66 @@ Also: keep your public interface small.
 
 The convention I have worked with is that any method that returns a `boolean` should end with a question mark. This saves having to add prefixes like “is-” to method names. If a method does not return a boolean, its name should not end with a question mark.
 
-### Named Parameters
+### Parameters
 
-When this method is called (in this case “when the ViewComponent is instantiated”)
-- none of the parameters are mandatory.
-- you need to add the parameter name before the value you’re passing e.g. `<%= render(CardComponent.new(size: :small, full_height: true)) do %>`
+The standard configuration of method parameters (no colon and no default value) sets them as required arguments that must be passed in order when you call the method. For example:
+
+<figure>
+
+``` ruby
+def write(file, data, mode)
+  …
+end
+
+write("cats.txt", "cats are cool!", "w")
+```
+  
+</figure>
+
+By setting a parameter to have a default value, it becomes an optional argument when calling the method.
+
+<figure>
+
+``` ruby
+def write(file, data, mode = "w")
+  …
+end
+  
+write("shopping_list.txt", "bacon")
+```
+  
+</figure>
+
+#### Named Parameters
+
+Configuring your method with named parameters makes the method call read a little more clearly (via the inclusion of the keywords in the call) and increases flexibility because the order of arguments is not important. After every parameter, add a colon. Parameters are mandatory unless configured with a default value.
+
+Here’s an example.
+
+<figure>
+
+``` ruby
+def write(file:, data:, mode: "ascii")
+  …
+end
+  
+write(data: 123, file: "test.txt")
+```
+  
+</figure>
+
+And here’s how you might do things for a `Card` ViewComponent.
 
 <figure>
 
 ``` ruby
 def initialize(size: nil, full_height: false, data: nil)
+  …
+end
+  
+<%= render(CardComponent.new(size: :small, full_height: true)) do %>
 ```
-
+  
 </figure>
 
 ## Check if thing is an array and is non-empty
