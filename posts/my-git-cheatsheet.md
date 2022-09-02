@@ -475,11 +475,19 @@ pick 33d5b7a Message for commit #1
 pick 9480b3d Message for commit #2
 pick 5c67e61 Message for commit #3
 
-# change 'pick' to ‘fixup’ to condense commits, say if #2 was just a small fix to #1
+# change 'pick' to 'fixup' to condense commits, say if #2 was just a small fix to #1
 pick 33d5b7a Message for commit #1
 fixup 9480b3d Message for commit #2
 pick 5c67e61 Message for commit #3
+  
+# alternatively if use 'squash', after saving it will open an editor 
+# and prompt you to set a new commit message for the combined stuff.
+pick 33d5b7a Message for commit #1
+squash 9480b3d Message for commit #2
+squash 5c67e61 Message for commit #3
 ```
+  
+[More on squash including a handly little video if I forget how it works.](https://www.git-tower.com/learn/git/faq/git-squash)
 
 </figure>
   
