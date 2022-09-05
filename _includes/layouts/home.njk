@@ -3,13 +3,19 @@ layout: layouts/base.njk
 templateClass: home-main
 ---
 
-<div class="l-box l-box--med l-box--outlined">
-  <div class="l-flow">
+<div class="l-box l-box--outlined">
+  <div class="l-center l-center--wrapper">
     <section class="l-flow intro prose">
-      <h1>A stream of consciousness by Laurence Hughes</h1>
+      <h1><span class="u-display:block">A stream of consciousness</span> by Laurence Hughes</h1>
       <p class="no-hyphens">Hi, I’m Laurence. I’m a Glaswegian web developer using modern web standards to create user-focused, responsive websites. I also make music, play records and ping pongs. This is my online home; a playground for coding fun and place to share thoughts on the web, music and more.</p>
     </section>
+  </div>
+</div>
 
-    {{ content | safe }}
+<div class="l-box l-box--outlined">
+  <div class="l-center l-center--wrapper">
+    <div class="l-flow">
+      {{ content | safe }}
+    </div>
   </div>
 </div>

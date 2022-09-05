@@ -2,55 +2,59 @@
 layout: layouts/base.njk
 templateClass: post-main
 ---
-<div class="l-box l-box--med l-box--outlined">
+<div class="l-box l-box--outlined">
 
-  <article class="l-flow h-entry prose centre" itemtype="http://schema.org/BlogPosting">
+  <div class="l-center l-center--wrapper">
 
-    <header>
-      <div>
-        <time class="dt-published" itemprop="datePublished" datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time>
-        {% if(tags[1] === 'note') -%} <span>·</span> {{ page.date | readableTime }} <span>·</span> {{ location }}</span>{% endif -%}
-      </div>
-      {%- if (tags[1] !== 'note') and (title) -%}<h1 class="p-name" itemprop="headline">{{ title }}</h1>{%- endif -%}
-    </header>
+    <article class="l-flow h-entry prose centre" itemtype="http://schema.org/BlogPosting">
 
-    <div class="l-flow e-content {{ "article-type-listing" if isList }}" itemprop="articleBody">
+      <header>
+        <div>
+          <time class="dt-published" itemprop="datePublished" datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time>
+          {% if(tags[1] === 'note') -%} <span>·</span> {{ page.date | readableTime }} <span>·</span> {{ location }}</span>{% endif -%}
+        </div>
+        {%- if (tags[1] !== 'note') and (title) -%}<h1 class="p-name" itemprop="headline">{{ title }}</h1>{%- endif -%}
+      </header>
 
-      {% if linkTarget %}
-      <a class="text-icon-pair" href="{{ linkTarget }}">
-        <span>Direct Link</span>
-        <svg class="text-icon-pair-icon" aria-hidden="true" focusable="false" width="1em" height="1em"><use xlink:href="#icon-offsite"></use></svg>
-      </a>
-      {% endif %}
+      <div class="l-flow e-content {{ "article-type-listing" if isList }}" itemprop="articleBody">
 
-      {{ content | safe }}
+        {% if linkTarget %}
+        <a class="text-icon-pair" href="{{ linkTarget }}">
+          <span>Direct Link</span>
+          <svg class="text-icon-pair-icon" aria-hidden="true" focusable="false" width="1em" height="1em"><use xlink:href="#icon-offsite"></use></svg>
+        </a>
+        {% endif %}
 
-    </div> <!-- /.e-content -->
+        {{ content | safe }}
 
-    <footer class="l-flow full-article-footer stack">
+      </div> <!-- /.e-content -->
 
-      <h2 class="h3">Related topics</h2>
+      <footer class="l-flow full-article-footer stack">
 
-      <div class="cluster">
-        <ul role="list" class="tags">
-        {% for tag in tags %}
-          {%- if (tag != "posts") and (tag != "link") and (tag != "note") and (tag != "entry") -%}
-          {% set tagUrl %}/tags/{{ tag }}/{% endset %}
-          <li><a rel="tag" href="{{ tagUrl | url }}" class="tag">{{ tag }}</a></li>
-          {%- endif -%}
-        {% endfor %}
-        </ul>
-      </div>
+        <h2 class="h3">Related topics</h2>
 
-      <nav class="traverse">
-        {%- set previousPost = collections.posts | getPreviousCollectionItem(page) %}
-        {%- if previousPost %}<a rel="prev" href="{{ previousPost.url | url }}"><span aria-hidden="true">← </span>Previous post</a></li>{% endif %}
-        {%- set nextPost = collections.posts | getNextCollectionItem(page) %}
-        {%- if nextPost %}<a rel="next" href="{{ nextPost.url | url }}">Next post<span aria-hidden="true"> →</span></a>{% endif %}
-      </nav>
+        <div class="cluster">
+          <ul role="list" class="tags">
+          {% for tag in tags %}
+            {%- if (tag != "posts") and (tag != "link") and (tag != "note") and (tag != "entry") -%}
+            {% set tagUrl %}/tags/{{ tag }}/{% endset %}
+            <li><a rel="tag" href="{{ tagUrl | url }}" class="tag">{{ tag }}</a></li>
+            {%- endif -%}
+          {% endfor %}
+          </ul>
+        </div>
 
-    </footer>
+        <nav class="traverse">
+          {%- set previousPost = collections.posts | getPreviousCollectionItem(page) %}
+          {%- if previousPost %}<a rel="prev" href="{{ previousPost.url | url }}"><span aria-hidden="true">← </span>Previous post</a></li>{% endif %}
+          {%- set nextPost = collections.posts | getNextCollectionItem(page) %}
+          {%- if nextPost %}<a rel="next" href="{{ nextPost.url | url }}">Next post<span aria-hidden="true"> →</span></a>{% endif %}
+        </nav>
 
-  </article>
+      </footer>
+
+    </article>
+
+  </div>
 
 </div> <!-- /.container -->
