@@ -13,9 +13,7 @@ location: Abbots Ripton, Cambridgeshire
 draft: false
 
 ---
-Had such a good day yesterday [@weoutherefest](https://twitter.com/weoutherefest?s=21&t=U7_g4kzt2lqS6k_83zUQkw) with Tom, Jason and Craig.
-
-We saw:
+Had such a good day yesterday [@weoutherefest](https://twitter.com/weoutherefest?s=21&t=U7_g4kzt2lqS6k_83zUQkw) with Tom, Jason and Craig. We saw:
 
 * Enny
 * Sally (A Man Called Adam)
