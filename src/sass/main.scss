@@ -19,6 +19,7 @@
     --color-dark: #141414;
     --color-light: #fff;
     --color-grey: #eee;
+    --color-grey-text: #757575;
     --color-link: rgb(14, 131, 123);
     --color-link-hover: rgb(8,78,73); /* 40% darker. Less than 30% wasn’t noticeable on hover */
 
@@ -549,8 +550,17 @@
   article header div {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: 0.25rem;
+    color: var(--color-grey-text);
     font-size: var(--step--1);
+
+    a {
+      color: var(--color-grey-text);
+
+      &:hover {
+        color: var(--color-link-hover);
+      }
+    }
   }
 
   .direct-link {
@@ -669,7 +679,20 @@
    @layer components {
 
     .primary-navigation {
-      font-size: var(--step--1);
+      // font-size: var(--step-1);
     }
 
   }
+
+
+/* ==========================================================================
+   # MISC UTILITIES
+   ========================================================================== */
+
+@layer utilities {
+
+  .u-display\:block {
+    display: block;
+  }
+
+}
