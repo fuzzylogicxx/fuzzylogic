@@ -34,6 +34,7 @@ Caveats and notes:
 * [Skip links](#skip-links)
 * [Navigation and menus](#navigation-and-menus)
 * [Modal dialogues](#modal-dialogues)
+* [ARIA](#aria)
 
 ## Ensure keyboard support
 
@@ -88,6 +89,16 @@ When developing a collapsible menu, place your menu `<button>` _within_ your `<n
 ## Modal dialogues
 
 [You probably don’t want to set the modal’s heading as an `<h1>`](https://stackoverflow.com/a/38467898). It likely displays content that exists on the page (which already has an `<h1>`) at a lower level of the document hierarchy.
+
+## ARIA
+
+Apply ARIA carefully. No ARIA is better than bad ARIA.
+
+Seek to use semantic HTML elements rather than reinvent the wheel. As Bruce Lawson says, “Built-in beats bolt-on, bigly”.
+
+HTML landmark elements (`<main>`, `<header>`, `<nav>` etc.) have built-in, implicit ARIA roles so there is no need to add `role="navigation"` (or similar) explictly as this would be duplication.
+
+There is no need to add the `aria-label` attribute to a `<nav>` or `<header>` (etc) element unless there are multiple of that element in the document, in which case provide a distinguishing `aria-label` for each. This label will allow an assistive technology user to be able to quickly understand the purpose of each.
 
 ## References
 
