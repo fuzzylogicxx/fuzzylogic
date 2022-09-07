@@ -106,3 +106,4 @@ There is no need to add the `aria-label` attribute to a `<nav>` or `<header>` (e
 * Sara Soueidan’s video tutorial [Practical tips for building more accessible front-ends](https://aneventapart.com/news/post/practical-tips-for-building-more-accessible-front-ends)
 * Adrian Roselli’s [Responsive type and zoom](https://adrianroselli.com/2019/12/responsive-type-and-zoom.html)
 * Heydon Pickering’s tweet about [buttons in navs](https://twitter.com/heydonworks/status/766948134169620480) and Scott O’Hara’s follow up article [Landmark Discoverability](https://www.scottohara.me/blog/2016/08/10/discovering-landmarks.html)
+* [Labelling landmarks, on MDN](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/navigation_role#labeling_landmarks)
