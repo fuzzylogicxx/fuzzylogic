@@ -4,7 +4,9 @@
     <header>
       <div>
         <time class="dt-published" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
-        {% if(post.data.tags[1] === 'note') -%} <span>·</span> <a href="{{ post.url | url }}">{{ post.date | readableTime }}</a> <span>·</span> {{ post.data.location }}</span>{% endif -%}
+        {% if(post.data.tags[1] === 'note') -%}
+          at <a href="{{ post.url | url }}">{{ post.date | readableTime }}</a>{% if(post.data.location) -%}, {{ post.data.location }}{% endif -%}
+        {% endif -%}
       </div>
       {% if (post.data.tags[1] !== 'note' or post.data.noteWithTitle) -%}
         <h3 class="feed-entry-title"><a rel="bookmark" class="p-name u-url" href="{{ post.url | url }}">{{ post.data.title }}</a></h3>
