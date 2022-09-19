@@ -2,21 +2,18 @@
 layout: layouts/base.njk
 ---
 
-<div class="l-box l-box--outlined">
-  <div class="l-center l-center--wrapper">
+<div class="primary-content__body">
+  <div class="l-center l-center--wrapper-narrow">
 
-    <div class="centre-with-gutter">
+    <article class="l-flow prose">
 
-      <article class="l-flow prose">
+      <header class="section-index-header">
+        <h1>{{ renderData.title or title }}</h1>
+      </header>
 
-        <header class="section-index-header">
-          <h1>{{ renderData.title or title }}</h1>
-        </header>
+      {{ content | safe }}
 
-        {{ content | safe }}
+    </article>
 
-      </article>
-
-    </div>
   </div>
 </div>

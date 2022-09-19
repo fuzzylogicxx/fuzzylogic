@@ -18,6 +18,7 @@
     // Colours
     --color-dark: #141414;
     --color-light: #fff;
+    --color-grey-with-hue: #f0f0f0;
     --color-grey: #eee;
     --color-grey-text: #757575;
     --color-link: rgb(14, 131, 123);
@@ -419,25 +420,31 @@
 
 @layer layouts {
 
-  .l-flow > * + * {
-    margin-top: var(--flow-space, 1em);
+  // Flow
 
-    // Flow (https://piccalil.li/quick-tip/flow-utility/) / Stack ()
-    // We want the ability to have:
-    // - per-element exceptions within a single stack
-    // - nested stacks where the nested one takes on default spacing rather than the
-    // custom spacing that was set on a parent.
-    // I think the key might be to use custom properties for per-element exceptions only.
-    // The element the modified custom property should be applied to should be a stack child.
-    // Might also (if nec.) consider including an extra div as "insulation" in nested stacks.
-    // This part of EveryLayout’s docs feels important:
-    // “Importantly we set the --space value on the children and don’t “hoist” it up.
-    // If the parent is where the property is set, it will get overridden if the parent becomes
-    // a child in nesting”
-    // Feels like nesting should *just work?*
+  .l-flow {
 
+    & > * + * {
+      margin-top: var(--space-s, 1rem);
+
+      // Flow (https://piccalil.li/quick-tip/flow-utility/) / Stack ()
+      // We want the ability to have:
+      // - per-element exceptions within a single stack
+      // - nested stacks where the nested one takes on default spacing rather than the
+      // custom spacing that was set on a parent.
+      // I think the key might be to use custom properties for per-element exceptions only.
+      // The element the modified custom property should be applied to should be a stack child.
+      // Might also (if nec.) consider including an extra div as "insulation" in nested stacks.
+      // This part of EveryLayout’s docs feels important:
+      // “Importantly we set the --space value on the children and don’t “hoist” it up.
+      // If the parent is where the property is set, it will get overridden if the parent becomes
+      // a child in nesting”
+      // Feels like nesting should *just work?*
+    }
 
   }
+
+  // Box
 
   .l-box {
     padding: var(--space-s);
@@ -465,6 +472,8 @@
     }
   }
 
+  // Center
+
   .l-center {
     box-sizing: content-box;
     margin-inline: auto;
@@ -473,17 +482,44 @@
     &--wrapper {
       max-inline-size: 60em;
     }
+
+    &--wrapper-narrow {
+      max-inline-size: 42em;
+    }
   }
+
+  // Cluster
 
   .l-cluster {
     display: flex;
     flex-wrap: wrap;
-    gap: var(--space, 1rem);
+    gap: var(--space-s, 1rem);
     justify-content: flex-start;
     align-items: center;
 
     &--space-between {
       justify-content: space-between;
+    }
+  }
+
+  // Switcher
+
+  .l-switcher {
+    --switcher-threshold: 30rem;
+    --switcher-gap: var(--space-s, 1rem);
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--switcher-gap);
+
+    & > * {
+      flex-grow: 1;
+      flex-basis: calc((var(--switcher-threshold) - 100%) * 999);
+    }
+
+    & > :nth-last-child(n+4),
+    & > :nth-last-child(n+4) ~ * {
+      flex-basis: 100%;
     }
   }
 }
@@ -539,7 +575,7 @@
 
   // Lists of articles
   .h-feed > * + * {
-    margin-top: var(--space-m);
+    margin-top: var(--space-2xl);
   }
 
   // Individual articles
@@ -548,9 +584,6 @@
   }
 
   article header div {
-    display: flex;
-    align-items: center;
-    gap: 0.25rem;
     color: var(--color-grey-text);
     font-size: var(--step--1);
 
@@ -633,10 +666,37 @@
     // But local server software sometimes injects script elements above
     // and if the parent has a .flow class then the combination would give the header a margin we don’t want.
     // margin: 0;
-    padding: var(--space-m) var(--space-s) var(--space-xl);
+    padding: var(--space-m) var(--space-s);
   }
 
 }
+
+
+/* ==========================================================================
+   # PRIMARY CONTENT
+   ========================================================================== */
+
+   @layer components {
+
+    .primary-content {
+      // padding: var(--space-m) var(--space-s) var(--space-3xl);
+
+      &__intro {
+        background-color: var(--color-grey-with-hue);
+        padding: var(--space-m) var(--space-s);
+      }
+
+      &__body {
+        padding: 0 var(--space-s) var(--space-3xl) var(--space-s);
+
+        .primary-content__intro + & {
+          padding-top: var(--space-m);
+        }
+      }
+    }
+
+  }
+
 
 
 /* ==========================================================================
@@ -686,6 +746,26 @@
 
 
 /* ==========================================================================
+   # GLOBAL FOOTER
+   ========================================================================== */
+
+   @layer components {
+
+    .global-footer {
+      background-color: var(--color-grey-with-hue);
+      padding: var(--space-m) var(--space-s);
+      font-size: var(--step--1);
+
+      &__grid {
+        --switcher-gap: var(--space-m, 1rem);
+      }
+
+    }
+
+  }
+
+
+  /* ==========================================================================
    # MISC UTILITIES
    ========================================================================== */
 
