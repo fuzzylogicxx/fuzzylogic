@@ -20,6 +20,7 @@ draft: false
 
 ---
 My colleague Anda and I just had a good conversation about tabs, and specifically the company’s tabs component. I’ve mentioned before that our tabs are unconventional and potentially confusing, and Anda was interested to hear more.
+---
 
 ## Conventional tabbed interfaces
 
@@ -38,7 +39,7 @@ I’m not happy with this from an affordance point of view. Naming and presentin
 
 ## Confused language causes problems
 
-One real-life problem with our tabs is that they have been engineered as if they are conventional tabs, however since the actual use case is often _navigation_ this implementation is inappropriate. 
+One real-life problem with our tabs is that they have been engineered as if they are conventional tabs, however since the actual use case is often _navigation_ the semantics are inappropriate. 
 
 We currently give each “tab” [the ARIA `tab` role](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/tab_role), defined as follows:
 
