@@ -21,18 +21,16 @@ Real tabbed interfaces
 
 [https://design-system.service.gov.uk/components/tabs/](https://design-system.service.gov.uk/components/tabs/ "https://design-system.service.gov.uk/components/tabs/")
 
-Ours are just the “tabs” with no tab panels, and each “tab” generally points to _different pages_ rather than somewhere on the same page – i.e. they are a navigation menu made to look like a tabbed interface.
+Ours are just the “tabs” with no tab panels, and each “tab” generally points to _different pages_ rather than somewhere on the same page – i.e. they are a navigation menu made to look like a tabbed interface. 
 
-I don’t like that from an affordance point of view. Making something appear like one thing and naming it so, but then having it function differently (or use materials intended for another purpose) leads to usability problems and confusion. (Ref buttons and links, Lea and Léonie)
+I’m not happy with this from an affordance point of view. Naming and presenting something as one thing but then having it function differently (or use materials intended for another purpose) leads to usability problems and communication breakdowns. (Ref buttons and links, Lea and Léonie)
 
-One real-life problem with our tabs (likely arising from confusion) is that they have been engineered as if they are real tabs, but since the actual use case is _navigation_ this implementation is inappropriate. The output HTML contains ARIA that will do more harm than good. This is an accessibility fail. (You can see how this might have happened; if someone asks you to build a Tabs component, you’re going to build a proper Tabs component.)
+One real-life problem with our tabs is that they have (understandably) been engineered as if they are conventional tabs, however since the actual use case is often _navigation_ this implementation is inappropriate. 
 
-We’re giving each of those things (which are just navigation links rather than tabs because there is no corresponding tab panel) a role of `tab` . The [definition for a role of tab](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/tab_role) is:
+We give each “tab” [the ARIA `tab` role](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/tab_role), which is defined as follows:
 
 > The ARIA `tab` role indicates an interactive element inside a `tablist` that, when activated, displays its associated `tabpanel`.
 
-…which is just not true in our case.
+But this isn’t true of our tabs – they have no corresponding `tabpanel`. They’re just navigation links. Our mismatch of including tabs-related ARIA for a non-tabs use case will do more harm than good. It’s an accessibility fail.
 
-Again, I wonder if you maybe build it so that it
-
-If content for one or more `tabpanel` is provided, apply the complicated ARIA attributes for proper tabs. If not, don’t. This means we allow consumers to either get a real tabbed interface, or simply create “a nav menu that looks like tabs” which doesn’t include inappropriate and harmful ARIA attributes. I don’t agree with the latter as a design approach, but that’s a battle for another day! 
+If content for one or more `tabpanel` is provided, apply the complicated ARIA attributes for proper tabs. If not, don’t. This means we allow consumers to either get a real tabbed interface, or simply create “a nav menu that looks like tabs” which doesn’t include inappropriate and harmful ARIA attributes. I don’t agree with the latter as a design approach, but that’s a conversation for another day!
