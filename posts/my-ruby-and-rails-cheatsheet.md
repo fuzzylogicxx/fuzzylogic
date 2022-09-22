@@ -20,6 +20,7 @@ This is not intended to be an authoritative guide but merely my notes from vario
 
 - [The Rails Console](#the-rails-console)
 - [Rspec](#rspec)
+- [Debugging](#debugging)
 - [Helpers](#helpers)
 - [blank? vs empty?](#blank%3F-versus-empty%3F)
 - [frozen_string_literal](#frozen_string_literal%3A-true)
@@ -119,6 +120,16 @@ let(:example_data_obj) {
 </figure>
 
 Note: if you need multiple data variables so as to handle different scenarios, it’s generally more readable to define the data being tested right next to the test.
+
+## Debugging
+
+I’ll cover debugging related to more specific file types later but here’s a simple tip. You can check the value of a variable or expression at a given line in a method by:
+
+1. add `byebug` on a line of its own at the relevant place in your file, then save file
+2. switch to the browser and reload your page
+3. in the terminal tab that’s running the Rails server (which should now be stopped at the debugging breakpoint), at the bottom type the variable name of interest. You won’t see any text but just trust that your typing is taking effect. Press <kbd>return</kbd>
+4. you’ll now see the value of that variable as it is at the debugging breakpoint
+5. When you’re done, remove your `byebug`. You may need to type continue (or `c` for short) followed by <kbd>return</kbd> at the command prompt to get the server back on track.
 
 ## Helpers
 
