@@ -595,6 +595,10 @@
       }
     }
   }
+  
+  h1.p-name {
+    margin-top: var(--space-3xs);
+  }
 
   .direct-link {
     text-decoration: none;
@@ -690,7 +694,7 @@
         padding: 0 var(--space-s) var(--space-3xl) var(--space-s);
 
         .primary-content__intro + & {
-          padding-top: var(--space-m);
+          padding-top: var(--space-l);
         }
       }
     }
