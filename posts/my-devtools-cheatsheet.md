@@ -26,6 +26,12 @@ Then you can execute its methods or inspect its attribute values, for example:
 
 <kbd>$0.offsetParent</kbd>
 
+### Debug event-based behaviour
+
+In Chrome, right-click on the relevant element (e.g. a button) and select “Inspect Element”. By default, the Styles panel is selected but instead select the _Event Listeners_ panel. In there you can see all events (e.g. _click_) currently being listened for on that element (and its parent elements so as to include instances of _event delegation_).
+
+Each event can be expanded to show which element has the event listener attached – for example it might be the current element or might be `document`. From here you can get to the script containing the code. Click a line number within the code to add a breakpoint. This will pause code execution on that line until you click the play button to continue. You might also log the current value of a variable here.
+
 ## Pause JavaScript execution
 
 <kbd>Cmd + backslash</kbd>
@@ -53,3 +59,7 @@ Inspect the element, click the properties tab, toggle open the top item.
 ### Throttle network/bandwidth
 
 Go to tab _Network_ then change _Throttling_ to your desired setting, for example “Slow 3G”, or “offline”.
+
+## References
+
+- [How to view and edit JavaScript in your browser's developer tools](https://gomakethings.com/how-to-view-and-edit-javascript-in-your-browsers-developer-tools/)
