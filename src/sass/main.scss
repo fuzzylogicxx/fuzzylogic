@@ -144,7 +144,16 @@
   body {
     font-size: var(--step-0);
     line-height: 1.4;
+
+    // let’s get the footer displaying at the bottom of the viewport
+    // regardless of the amount of <main> or <footer> content
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .global-footer {
+    margin-top: auto;
   }
 
   p, li, blockquote {
@@ -425,7 +434,8 @@
   .l-flow {
 
     & > * + * {
-      margin-top: var(--space-s, 1rem);
+      --flow-gap: var(--space-s, 1rem);
+      margin-top: var(--flow-gap);
 
       // Flow (https://piccalil.li/quick-tip/flow-utility/) / Stack ()
       // We want the ability to have:
@@ -440,6 +450,10 @@
       // If the parent is where the property is set, it will get overridden if the parent becomes
       // a child in nesting”
       // Feels like nesting should *just work?*
+    }
+
+    &--large > * + * {
+      --flow-gap: var(--space-l, 1rem);
     }
 
   }
@@ -491,14 +505,20 @@
   // Cluster
 
   .l-cluster {
+    --cluster-gap: var(--space-s, 1rem);
+
     display: flex;
     flex-wrap: wrap;
-    gap: var(--space-s, 1rem);
+    gap: var(--cluster-gap);
     justify-content: flex-start;
     align-items: center;
 
     &--space-between {
       justify-content: space-between;
+    }
+
+    &--xs {
+      --cluster-gap: var(--space-xs);
     }
   }
 
@@ -564,6 +584,14 @@
 
 }
 
+/* ==========================================================================
+   # TAGS
+   ========================================================================== */
+
+.tags {
+  --cluster-gap: var(--space-xs);
+}
+
 
 /* ==========================================================================
    # ARTICLES
@@ -583,7 +611,7 @@
     // --flow-space: 1em;
   }
 
-  article header div {
+  .post__meta {
     color: var(--color-grey-text);
     font-size: var(--step--1);
 
@@ -595,10 +623,20 @@
       }
     }
   }
-  
-  h1.p-name {
-    margin-top: var(--space-3xs);
+
+  .post__header {
+    display: flex;
+    flex-direction: column-reverse;
   }
+
+  .post__footer {
+    // https://every-layout.dev/layouts/stack/#the-solution ("Exceptions" section)
+    --flow-gap: var(--space-l, 1rem);
+  }
+
+  // h1.p-name {
+  //   margin-top: var(--space-3xs);
+  // }
 
   .direct-link {
     text-decoration: none;

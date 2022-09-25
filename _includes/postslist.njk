@@ -2,7 +2,7 @@
 {% for post in postslist %}
   <article class="l-flow h-entry prose">
     <header>
-      <div>
+      <div class="post__meta">
         <time class="dt-published" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
         {% if(post.data.tags[1] === 'note') -%}
           at <a href="{{ post.url | url }}">{{ post.date | readableTime }}</a>{% if(post.data.location) -%}, {{ post.data.location }}{% endif -%}
