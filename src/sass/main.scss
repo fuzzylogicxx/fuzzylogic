@@ -144,7 +144,16 @@
   body {
     font-size: var(--step-0);
     line-height: 1.4;
+
+    // let’s get the footer displaying at the bottom of the viewport
+    // regardless of the amount of <main> or <footer> content
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .global-footer {
+    margin-top: auto;
   }
 
   p, li, blockquote {
@@ -425,7 +434,7 @@
   .l-flow {
 
     & > * + * {
-      margin-top: var(--space-s, 1rem);
+      margin-top: var(--flow-gap, var(--space-s));
 
       // Flow (https://piccalil.li/quick-tip/flow-utility/) / Stack ()
       // We want the ability to have:
@@ -440,6 +449,10 @@
       // If the parent is where the property is set, it will get overridden if the parent becomes
       // a child in nesting”
       // Feels like nesting should *just work?*
+    }
+
+    &--large > * + * {
+      --flow-gap: var(--space-l, 1rem);
     }
 
   }
@@ -492,13 +505,23 @@
 
   .l-cluster {
     display: flex;
-    flex-wrap: wrap;
-    gap: var(--space-s, 1rem);
     justify-content: flex-start;
     align-items: center;
+    flex-wrap: wrap;
+
+    // if a --cluster-gap var is set, use that.
+    // But we don’t set --cluster-gap with any default,
+    // because (for now) when its passed in we want that value
+    // to propagate to nested clusters too,
+    // rather than the nested cluster resetting the gap to a default value.
+    gap: var(--cluster-gap, var(--space-s));
 
     &--space-between {
       justify-content: space-between;
+    }
+
+    &--xs {
+      --cluster-gap: var(--space-xs);
     }
   }
 
@@ -564,6 +587,14 @@
 
 }
 
+/* ==========================================================================
+   # TAGS
+   ========================================================================== */
+
+.tags {
+  --cluster-gap: var(--space-2xs);
+}
+
 
 /* ==========================================================================
    # ARTICLES
@@ -583,7 +614,7 @@
     // --flow-space: 1em;
   }
 
-  article header div {
+  .post__meta {
     color: var(--color-grey-text);
     font-size: var(--step--1);
 
@@ -595,10 +626,20 @@
       }
     }
   }
-  
-  h1.p-name {
-    margin-top: var(--space-3xs);
+
+  .post__header {
+    display: flex;
+    flex-direction: column-reverse;
   }
+
+  .post__footer {
+    // https://every-layout.dev/layouts/stack/#the-solution ("Exceptions" section)
+    --flow-gap: var(--space-l, 1rem);
+  }
+
+  // h1.p-name {
+  //   margin-top: var(--space-3xs);
+  // }
 
   .direct-link {
     text-decoration: none;

@@ -6,39 +6,47 @@ templateClass: post-main
 <div class="primary-content__body">
   <div class="l-center l-center--wrapper-narrow">
 
-    <article class="l-flow h-entry prose centre" itemtype="http://schema.org/BlogPosting">
+    <article class="l-flow post h-entry prose" itemtype="http://schema.org/BlogPosting">
 
-      <header>
-        <div>
-          <time class="dt-published" itemprop="datePublished" datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time>
-          {% if(tags[1] === 'note') -%} <span>·</span> {{ page.date | readableTime }} <span>·</span> {{ location }}</span>{% endif -%}
+      <header class="post__header">
+        {%- if (title) -%}
+          {% set article_title = title %}
+        {%- else -%}
+          {% set article_title = "Note: " + (page.date | readableDate) + "," + (page.date | readableTime) %}
+        {%- endif -%}
+        {%- if (article_title) -%}<h1 class="p-name" itemprop="headline">{{ article_title }}</h1>{%- endif -%}
+
+        <div class="post__meta">
+          <time itemprop="datePublished" class="dt-published" datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time>
+          {% if(tags[1] === 'note') -%}
+            at {{ page.date | readableTime }}{% if(location) -%}, {{ location }}{% endif -%}
+          {% endif -%}
         </div>
-        {%- if (tags[1] !== 'note') and (title) -%}<h1 class="p-name" itemprop="headline">{{ title }}</h1>{%- endif -%}
       </header>
 
-      <div class="l-flow e-content {{ "article-type-listing" if isList }}" itemprop="articleBody">
-
-        {% if linkTarget %}
+      {% if linkTarget %}
+      <div class="post-source">
         <a class="text-icon-pair" href="{{ linkTarget }}">
           <span>Direct Link</span>
           <svg class="text-icon-pair-icon" aria-hidden="true" focusable="false" width="1em" height="1em"><use xlink:href="#icon-offsite"></use></svg>
         </a>
-        {% endif %}
+      </div>
+      {% endif %}
+
+      <div class="l-flow e-content {{ "article-type-listing" if isList }}" itemprop="articleBody">
 
         {{ content | safe }}
 
       </div> <!-- /.e-content -->
 
-      <footer class="l-flow full-article-footer stack">
-
-        <h2 class="h3">Related topics</h2>
-
-        <div class="cluster">
-          <ul role="list" class="tags">
+      <footer class="l-flow l-flow--large post__footer">
+        <div class="l-cluster tags">
+          <p>Filed under:</p>
+          <ul role="list" class="l-cluster">
           {% for tag in tags %}
             {%- if (tag != "posts") and (tag != "link") and (tag != "note") and (tag != "entry") -%}
             {% set tagUrl %}/tags/{{ tag }}/{% endset %}
-            <li><a rel="tag" href="{{ tagUrl | url }}" class="tag">{{ tag }}</a></li>
+            <li><a rel="tag" href="{{ tagUrl | url }}" class="tags__tag">{{ tag }}</a></li>
             {%- endif -%}
           {% endfor %}
           </ul>
@@ -50,9 +58,7 @@ templateClass: post-main
           {%- set nextPost = collections.posts | getNextCollectionItem(page) %}
           {%- if nextPost %}<a rel="next" href="{{ nextPost.url | url }}">Next post<span aria-hidden="true"> →</span></a>{% endif %}
         </nav>
-
       </footer>
-
     </article>
 
   </div>
