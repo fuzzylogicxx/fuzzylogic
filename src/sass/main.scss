@@ -434,8 +434,7 @@
   .l-flow {
 
     & > * + * {
-      --flow-gap: var(--space-s, 1rem);
-      margin-top: var(--flow-gap);
+      margin-top: var(--flow-gap, var(--space-s));
 
       // Flow (https://piccalil.li/quick-tip/flow-utility/) / Stack ()
       // We want the ability to have:
@@ -505,13 +504,17 @@
   // Cluster
 
   .l-cluster {
-    --cluster-gap: var(--space-s, 1rem);
-
     display: flex;
-    flex-wrap: wrap;
-    gap: var(--cluster-gap);
     justify-content: flex-start;
     align-items: center;
+    flex-wrap: wrap;
+
+    // if a --cluster-gap var is set, use that.
+    // But we don’t set --cluster-gap with any default,
+    // because (for now) when its passed in we want that value
+    // to propagate to nested clusters too,
+    // rather than the nested cluster resetting the gap to a default value.
+    gap: var(--cluster-gap, var(--space-s));
 
     &--space-between {
       justify-content: space-between;
@@ -589,7 +592,7 @@
    ========================================================================== */
 
 .tags {
-  --cluster-gap: var(--space-xs);
+  --cluster-gap: var(--space-2xs);
 }
 
 

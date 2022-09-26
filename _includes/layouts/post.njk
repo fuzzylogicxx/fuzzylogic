@@ -40,9 +40,9 @@ templateClass: post-main
       </div> <!-- /.e-content -->
 
       <footer class="l-flow l-flow--large post__footer">
-        <div class="l-flow">
-          <h2 class="h3">Related topics</h2>
-          <ul role="list" class="l-cluster tags">
+        <div class="l-cluster tags">
+          <p>Filed under:</p>
+          <ul role="list" class="l-cluster">
           {% for tag in tags %}
             {%- if (tag != "posts") and (tag != "link") and (tag != "note") and (tag != "entry") -%}
             {% set tagUrl %}/tags/{{ tag }}/{% endset %}

@@ -1,5 +1,8 @@
-<section class="l-flow h-feed centre">
-{% for post in postslist %}
+<section class="l-flow">
+  {% if page.url == "/" %}<h2>Latest Posts</h2>{% endif %}
+
+<div class="h-feed">
+  {% for post in postslist %}
   <article class="l-flow h-entry prose">
     <header>
       <div class="post__meta">
@@ -43,4 +46,5 @@
     </footer> #}
   </article>
 {% endfor %}
+</div>
 </section>

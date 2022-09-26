@@ -5,8 +5,6 @@ bodyclass: page-home
 
 {% set postslist = collections.posts | head(-5) | reverse %}
 
-<h2 class="posts-list-group-heading">Latest Posts</h2>
-
 {% include "postslist.njk" %}
 
-<p class="browse-more"><a href="{{ '/posts/' | url }}">Browse more posts</a></p>
+<p class="browse-more"><a href="{{ '/posts/' | url }}">Browse journal archive</a></p>
