@@ -36,3 +36,5 @@ I don’t have anything further to add at the moment other than to say that if I
 I’d probably also tweet Scott and ask if he can say anything more on his closing statement which was:
 
 > I have more thoughts on the accessibility of contenteditable elements, but that will also have to be a topic for another day…
+
+Update 27-09-22: I’ve also remembered that (if I were to pursue Option 1: input within cell) Adrian Roselli has an article on [Accessibly including inputs in tables](https://adrianroselli.com/2019/05/uniquely-labeling-fields-in-a-table.html).
