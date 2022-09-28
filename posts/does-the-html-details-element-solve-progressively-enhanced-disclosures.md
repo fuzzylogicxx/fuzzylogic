@@ -59,7 +59,7 @@ So far I’ve been cautious about using `details` for more than simple cases but
 
 ## Update 29 Sep 2022
 
-It seems that using <details> for interactive elements such as hamburger menus may not be such a good idea after all.
+It seems that using `<details>` for interactive elements such as hamburger menus may not be such a good idea after all.
   
 - [A details element as a burger menu is not accessible](https://cloudfour.com/thinks/a-details-element-as-a-burger-menu-is-not-accessible/) on Cloud Four’s blog
 - [The details and summary elements, again](https://www.scottohara.me//blog/2022/09/12/details-summary.html) by Scott O’Hara
