@@ -31,14 +31,14 @@ Like Scott says, the `<details>` element is different because you can have the c
 
 ## GitHub’s use of details
 
-A while back, GitHub caused a flutter by using details in lots of interesting ways. To do: add links
+Back in 2019, GitHub caused a flutter by [going all-in on `<details>`](https://twitter.com/muanchiou/status/1091331877636661249) to make various interesting UI elements interactive without JS. [Muan](https://twitter.com/muanchiou) has co-created a number of components for Github where `<details>` is used to, for example, open menus. They also [shared notes from a talk on this subject](https://github.com/muan/details-on-details). And [Chris Coyier for one was impressed and intrigued](https://css-tricks.com/using-details-for-menus-and-dialogs-is-an-interesting-idea/).
 
 ## Zach Leatherman’s details-utils
 
 I’ve [previously noted](https://fuzzylogic.me/posts/web-components-as-progressive-enhancement-by-cloud-four/) Zach Leatherman’s [details-utils](https://www.zachleat.com/web/details-utils/) – a great example of using a web component to enhance an existing HTML element, in this case `<details>`. The enhancements include:
 
 - animated open/close
-- closed by default on narrow screens, open by default on wide
+- a quantum aspect ideal for responsive design – closed by default on narrow screens, open by default on wide
 - and more
 
 And Zach has already used it on the navigation menus on [jamstack.org](https://jamstack.org/) and [netlify.com](https://www.netlify.com/), amongst other use cases.
@@ -56,3 +56,11 @@ Using a custom disclosure widget put together with JavaScript and ARIA is not th
 ## Summing up
 
 So far I’ve been cautious about using `details` for more than simple cases but I’m starting to think the time may have come to take it further, possibly using Zach’s web component. A “hamburger” menu pattern might be a safe place to start… whereas I might not use it in situations where the “summary” (i.e. the toggle) needs to be more complex, for example on [a subnavigation trigger which includes both a link and a button](https://adrianroselli.com/2019/06/link-disclosure-widget-navigation.html#Pattern). When I do try it, it’d be great to employ some proper accessibility testing and get feedback.
+
+## Update 29 Sep 2022
+
+It seems that using <details> for interactive elements such as hamburger menus may not be such a good idea after all.
+  
+- [A details element as a burger menu is not accessible](https://cloudfour.com/thinks/a-details-element-as-a-burger-menu-is-not-accessible/) on Cloud Four’s blog
+- [The details and summary elements, again](https://www.scottohara.me//blog/2022/09/12/details-summary.html) by Scott O’Hara
+
