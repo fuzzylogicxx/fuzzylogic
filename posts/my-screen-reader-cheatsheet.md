@@ -53,5 +53,5 @@ This is a great way to check if your content structure makes sense to a screen r
 ### References
 
 - [Ethan Marcotte’s Introduction to Screen Readers Using VoiceOver](https://thegymnasium.com/take5/introduction-to-screen-readers-using-voiceover)
-- [Mac VoiceOver testing the simple way](https://cloudfour.com/thinks/mac-voiceover-testing-the-simple-way/)(https://cloudfour.com/thinks/mac-voiceover-testing-the-simple-way/) on Cloud Four’s blog
+- [Mac VoiceOver testing the simple way](https://cloudfour.com/thinks/mac-voiceover-testing-the-simple-way/) on Cloud Four’s blog
 - [Data Tables on Inclusive Components](https://inclusive-components.design/data-tables/)
