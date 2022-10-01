@@ -26,7 +26,9 @@ Then:
 
 - <kbd>Ctrl-Option-A</kbd> to have VoiceOver read the entire page.
 - <kbd>Ctrl</kbd> to pause VoiceOver, and <kbd>Ctrl</kbd> again to resume.
-- Tab through items on the page using the tab key. This will move to the next focusable item (button, link, input).
+- Find any unexpected issues by
+  - Tab through items on the page using the tab key. This will move to the next focusable item (button, link, input).
+  - navigate through all the content using <kbd>Ctrl-Option-→</kbd>. While this is not how most screen reader users will read the page, it doesn’t take long and lets you confirm that everything VoiceOver announces makes sense.
 
 #### Quickly jump to specific page elements
 
@@ -43,4 +45,5 @@ Then:
 ### References
 
 - [Ethan Marcotte’s Introduction to Screen Readers Using VoiceOver](https://thegymnasium.com/take5/introduction-to-screen-readers-using-voiceover)
+- [Mac VoiceOver testing the simple way](https://cloudfour.com/thinks/mac-voiceover-testing-the-simple-way/)(https://cloudfour.com/thinks/mac-voiceover-testing-the-simple-way/) on Cloud Four’s blog
 - [Data Tables on Inclusive Components](https://inclusive-components.design/data-tables/)
