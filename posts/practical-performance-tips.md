@@ -78,6 +78,10 @@ Using third-party hosting services for fonts or other assets no longer offers th
 
 You can still take advantage of the benefits of CDNs for reducing network latency, but preferably as part of your own infrastructure.
 
+## Miscellaneous
+
+[Critical CSS is often a wasted effort](https://csswizardry.com/2022/09/critical-css-not-so-fast/) due to CSS not being a bottleneck, so is generally not worth doing.
+
 
 
 <!--
