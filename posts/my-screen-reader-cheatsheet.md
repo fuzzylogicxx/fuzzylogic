@@ -27,15 +27,23 @@ Then:
 - <kbd>Ctrl-Option-A</kbd> to have VoiceOver read the entire page.
 - <kbd>Ctrl</kbd> to pause VoiceOver, and <kbd>Ctrl</kbd> again to resume.
 - Find any unexpected issues by
-  - Tab through items on the page using the tab key. This will move to the next focusable item (button, link, input). You can verify all interactive elements have a focus style, all interactive elements are reachable by keyboard, all off-screen or hidden elements don’t get focused when they shouldn’t and that the spoken label for each interactive element has sufficient context to understand it (“click here” and “menu” isn’t sufficient). 
-  - navigate through all the content using <kbd>Ctrl-Option-→</kbd>. While this is not how most screen reader users will read the page, it doesn’t take long and lets you confirm that everything VoiceOver announces makes sense.
 
-#### Quickly jump to specific page elements
+#### Tabbing
+
+Tab through items on the page using the tab key. This will move to the next focusable item (button, link, input). You can verify all interactive elements have a focus style, all interactive elements are reachable by keyboard, all off-screen or hidden elements don’t get focused when they shouldn’t and that the spoken label for each interactive element has sufficient context to understand it (“click here” and “menu” isn’t sufficient). 
+
+#### Navigating with the right-pointing arrow key
+
+Navigate through all the content using <kbd>Ctrl-Option-→</kbd>. While this is not how most screen reader users will read the page, it doesn’t take long and lets you confirm that everything VoiceOver announces makes sense.
+
+#### Using Rotor to scan and jump to specific elements
 
 - <kbd>Ctrl-Option-U</kbd> to open Rotor
 - Browse categories using left and right arrows. This includes the _Landmarks_ menu.
 - Down arrow to browse within the categories
 - press Return to select an item
+
+This is a great way to check if your content structure makes sense to a screen reader. Checking the headings illustrates the outline of the page. Viewing the links helps ensure they all have a name that makes sense without visual context. Checking landmarks helps ensure that the proper ARIA roles have been applied. You might find that a list of articles is not titled appropriately or that headings are not properly nested.
 
 ### Tables
 - Navigate to a table using <kbd>Ctrl-Option-Cmd-T<kbd>
