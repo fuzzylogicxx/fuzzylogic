@@ -27,7 +27,7 @@ Then:
 - <kbd>Ctrl-Option-A</kbd> to have VoiceOver read the entire page.
 - <kbd>Ctrl</kbd> to pause VoiceOver, and <kbd>Ctrl</kbd> again to resume.
 - Find any unexpected issues by
-  - Tab through items on the page using the tab key. This will move to the next focusable item (button, link, input).
+  - Tab through items on the page using the tab key. This will move to the next focusable item (button, link, input). You can verify all interactive elements have a focus style, all interactive elements are reachable by keyboard, all off-screen or hidden elements don’t get focused when they shouldn’t and that the spoken label for each interactive element has sufficient context to understand it (“click here” and “menu” isn’t sufficient). 
   - navigate through all the content using <kbd>Ctrl-Option-→</kbd>. While this is not how most screen reader users will read the page, it doesn’t take long and lets you confirm that everything VoiceOver announces makes sense.
 
 #### Quickly jump to specific page elements
