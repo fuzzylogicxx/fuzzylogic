@@ -35,14 +35,14 @@ Ask: does it…
 1. _take the user to another page_? Then it’ll be a link – the `<a>` (anchor) element.
 2. _cause something to change on the current page_, or _submit a form_? Then it’ll be a button – i.e. the `<button>` element.
 
-If it’s a link (<a>):
+If it’s a link (`<a`):
 
 * it should be underlined so people know it’s a link
 * it should have a hover state, for example stay underlined but change colour
 * in cases where it’s a CTA you might _choose_ to design it to look button-like and remove some standard link affordances. Just be aware you’re only “calling” it a button. In real user-experienced terms, it’s still a link.
 * it does not natively have a disabled state. We shouldn’t be disabling links.
 
-If it’s a button (<button>):
+If it’s a button (`<button>`):
 
 * it should look like a button, i.e. like a pill or rectangle
 * It should _not look like a link_ – that’d confuse users into thinking it takes them to another page.
