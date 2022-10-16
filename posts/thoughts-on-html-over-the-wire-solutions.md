@@ -17,6 +17,10 @@ draft: true
 ---
 [https://twitter.com/mxbck/status/1581595524180094977](https://twitter.com/mxbck/status/1581595524180094977 "https://twitter.com/mxbck/status/1581595524180094977")
 
+htmx
+
+Turbo: “the speed of an SPA without having to write any JS“
+
 Good
 
 * replacing SPAs as an approach
