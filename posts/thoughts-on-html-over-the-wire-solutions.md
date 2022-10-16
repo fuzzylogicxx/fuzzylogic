@@ -37,7 +37,7 @@ Questions/Notes:
 
 What about conveying state?
 
-When you replace some HTML: need to add aria-live=polite [https://tink.uk/accessible-forms-with-aria-live-regions/](https://tink.uk/accessible-forms-with-aria-live-regions/ "https://tink.uk/accessible-forms-with-aria-live-regions/")
+When you replace some HTML: need to add aria-live=polite [https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Live_Regions](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Live_Regions "https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Live_Regions") [https://tink.uk/accessible-forms-with-aria-live-regions/](https://tink.uk/accessible-forms-with-aria-live-regions/ "https://tink.uk/accessible-forms-with-aria-live-regions/")
 
 Links should not be used as a button. If you do they need role=button, but even still you’ll need to [recreate and likely miss the other features of a button](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/button_role#description), and confuse with perceived affordance and functionality mismatches
 
