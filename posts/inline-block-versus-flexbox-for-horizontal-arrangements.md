@@ -1,7 +1,7 @@
 ---
 date: 2022-10-17T13:31:09Z
 title: inline-block versus flexbox for horizontal arrangements
-description: ''
+description: 'Gathering my thoughts on what feels like an outdated approach'
 tags:
 - entry
 - responsive
@@ -17,7 +17,7 @@ mainImage.aspectRatioHeight: ''
 mainImage.srcsetWidths: ''
 mainImage.sizes: ''
 mainImage.isAnchor: false
-draft: true
+draft: false
 
 ---
 Something I’ve found interesting while reviewing recent code test submissions (within job applications) at work is that more developers than I’d expect still use `display: inline-block` when they need to lay out multiple elements horizontally such as the items in a navigation menu. It’s interesting because Flexbox – which has now been around for almost 10 years – gives you a modern, purpose-built solution to that.
