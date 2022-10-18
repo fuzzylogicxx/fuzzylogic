@@ -92,7 +92,7 @@ When developing a collapsible menu, place your menu `<button>` _within_ your `<n
 
 ## ARIA
 
-Apply ARIA carefully. No ARIA is better than bad ARIA.
+Apply ARIA carefully. [No ARIA is better than bad ARIA.](https://www.w3.org/WAI/ARIA/apg/practices/read-me-first/#x2-1-no-aria-is-better-than-bad-aria)
 
 Seek to use semantic HTML elements rather than reinvent the wheel. As Bruce Lawson says, “Built-in beats bolt-on, bigly”.
 
