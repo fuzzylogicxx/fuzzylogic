@@ -1,8 +1,13 @@
 ---
-date: 2022-10-16T13:16:06Z
+date: 2022-10-22T09:16:06Z
 title: Thoughts on HTML over the wire solutions
-description: ''
-tags: []
+description: The DX seems great, but what about accessibility and resilience?
+tags:
+- entry
+- turbo
+- javascript
+- progressiveenhancement
+- a11y
 noteWithTitle: false
 linkTarget: ''
 mainImage.url: ''
@@ -12,7 +17,7 @@ mainImage.aspectRatioHeight: ''
 mainImage.srcsetWidths: ''
 mainImage.sizes: ''
 mainImage.isAnchor: false
-draft: true
+draft: false
 
 ---
 [Max Böck just tweeted his excitement about htmx](https://twitter.com/mxbck/status/1581595524180094977):
@@ -27,30 +32,16 @@ These new approaches are attractive because they let us create user interfaces t
 
 However I have some concerns.
 
-I’m concerned about the “no javascript” language being used, for example in articles titled [Hotwire: reactive Rails with no JavaScript](https://evilmartians.com/chronicles/hotwire-reactive-rails-with-no-javascript).
+I’m concerned about the “no javascript” language being used, for example in articles titled [Hotwire: reactive Rails with no JavaScript](https://evilmartians.com/chronicles/hotwire-reactive-rails-with-no-javascript). Let’s be clear about what Turbo and htmx are in simple material terms. As Reddit user nnuri puts it in [do Hotwire and htmx have a commitment to accessibility?](https://www.reddit.com/r/rails/comments/tx8lj7/does_hotwire_have_an_a11y_commitment/) the approach is based on:
 
-[In general, do Hotwire and htmx have a commitment to accessibility?](https://www.reddit.com/r/rails/comments/tx8lj7/does_hotwire_have_an_a11y_commitment/)
+> a JavaScript library in the client's browser that manipulates the DOM.
 
-> The reason is the pragmatic reality of what Hotwire is: a JavaScript library in the client's browser that manipulates the DOM.
+Your UI that uses htmx or Turbo is dependent on that JS library. And JS is the most brittle part of the stack. So you need to think about resilience. The [htmx docs has a section on progressive enhancement](https://htmx.org/docs/#progressive_enhancement) but it doesn’t convince. 
 
-When the content or state of a page is changed, you need to convey this programatically. We normally need to handle this in JavaScript. 
+Secondly if you have client-side JS that changes content and state, that brings added accessibility responsibilities. When the content or state of a page is changed, you need to convey this programatically. We normally need to handle this in JavaScript. Do they cover the requirements of accessible JS components, or even let you customise them to do so? For example [when replacing HTML you need to add aria-live](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Live_Regions https://tink.uk/accessible-forms-with-aria-live-regions/).
 
-I feel it’s all oriented toward DX but doesn’t make UX considerations and implications clear.
+Another concern relates to matching user expectations. Just because you _can_ do something doesn’t mean you should. For example, links should not be used to do the job of a `button`. If you do, they need `role=button` however this is inadvisable because you then need to [recreate (and will likely miss) the other features of a button](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/button_role#description), and will also likely confuse people due to mismatches between perceived affordance and actual functionality. Additionally, as Jeremy Keith has written, [links should not delete things](https://adactio.com/journal/17768).
 
-* without having to write any JS is misleading. It’s still dependent on JS (you need the library JS) so requires same resilience considerations but you might forget that due to the potentially misleading hype. 
-* It’s still based on client-side JS that changes content and state so that carries responsibilities
-* does it cover the requirements of accessible JS components or let you customise? Is it more likely to make them ignored because people just rely on the library?
+In general I feel the message of the new _HTML over the wire_ solutions is very weighted toward _developer experience_ but doesn’t make _user experience_ considerations and implications clear. Due to [unanswered questions regarding accessibility](https://github.com/bigskysoftware/htmx/issues/731) I worry that firstly they’re not natively mature in their understanding and approach on that front, and secondly that their framing of benefits is likely to make accessibility ignored due to engineers thinking that they can totally rely on the library.
 
-Not convinced about [https://htmx.org/docs/#progressive_enhancement](https://htmx.org/docs/#progressive_enhancement "https://htmx.org/docs/#progressive_enhancement")
-
-Questions/Notes:
-
-What about conveying state?
-
-When you replace some HTML: need to add aria-live=polite [https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Live_Regions](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Live_Regions "https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Live_Regions") [https://tink.uk/accessible-forms-with-aria-live-regions/](https://tink.uk/accessible-forms-with-aria-live-regions/ "https://tink.uk/accessible-forms-with-aria-live-regions/")
-
-Links should not be used as a button. If you do, they need role=button, but even still you’ll need to [recreate and likely miss the other features of a button](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/button_role#description), and confuse with perceived affordance and functionality mismatches
-
-_Links_ should not delete things https://adactio.com/journal/17768
-
-[https://github.com/bigskysoftware/htmx/issues/731](https://github.com/bigskysoftware/htmx/issues/731 "https://github.com/bigskysoftware/htmx/issues/731")
+I’d be really pleased if my concerns could be allayed because in general I like the approach.
