@@ -26,7 +26,7 @@ draft: false
 
 ---
 
-There’s a similar excitement at my place of work (and among the Rails community in general) about [Turbo](https://turbo.hotwired.dev/), which promises:
+There’s similar excitement at my place of work (and among the Rails community in general) about [Turbo](https://turbo.hotwired.dev/). It promises:
 
 > the speed of an SPA without having to write any JS
 
@@ -38,11 +38,11 @@ I’m concerned about the “no javascript” language being used, for example i
 
 > a JavaScript library in the client's browser that manipulates the DOM.
 
-Your UI that uses htmx or Turbo is dependent on that JS library. And JS is the most brittle part of the stack. So you need to think about resilience. The [htmx docs has a section on progressive enhancement](https://htmx.org/docs/#progressive_enhancement) but it doesn’t convince. 
+Your UI that uses htmx or Turbo is dependent on that JS library. And JS is the most brittle part of the stack. So you need to think about resilience and access. The [htmx docs has a section on progressive enhancement](https://htmx.org/docs/#progressive_enhancement) but it doesn’t convince. 
 
-Secondly if you have client-side JS that changes content and state, that brings added accessibility responsibilities. When the content or state of a page is changed, you need to convey this programatically. We normally need to handle this in JavaScript. Do they cover the requirements of accessible JS components, or even let you customise them to do so? For example [when replacing HTML you need to add aria-live](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Live_Regions https://tink.uk/accessible-forms-with-aria-live-regions/).
+Secondly if you have client-side JS that changes content and state, that brings added accessibility responsibilities. When the content or state of a page is changed, you need to convey this programatically. We normally need to handle this in JavaScript. Do these solutions cover the requirements of accessible JS components, or even let you customise them to do add the necessary state changes yourself? For example [when replacing HTML you need to add aria-live](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Live_Regions https://tink.uk/accessible-forms-with-aria-live-regions/).
 
-Another concern relates to matching user expectations. Just because you _can_ do something doesn’t mean you should. For example, links should not be used to do the job of a `button`. If you do, they need `role=button` however this is inadvisable because you then need to [recreate (and will likely miss) the other features of a button](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/button_role#description), and will also likely confuse people due to mismatches between perceived affordance and actual functionality. Additionally, as Jeremy Keith has written, [links should not delete things](https://adactio.com/journal/17768).
+Another concern relates to user expectations. Just because you _can_ do something doesn’t mean you should. For example, links should not be used to do the job of a `button`. If you do, they need `role=button` however this is inadvisable because you then need to [recreate (and will likely miss) the other features of a button](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/button_role#description), and will also likely confuse people due to mismatches between perceived affordance and actual functionality. Additionally, as Jeremy Keith has written, [links should not delete things](https://adactio.com/journal/17768).
 
 In general I feel the message of the new _HTML over the wire_ solutions is very weighted toward _developer experience_ but doesn’t make _user experience_ considerations and implications clear. Due to [unanswered questions regarding accessibility](https://github.com/bigskysoftware/htmx/issues/731) I worry that firstly they’re not natively mature in their understanding and approach on that front, and secondly that their framing of benefits is likely to make accessibility ignored due to engineers thinking that they can totally rely on the library.
 
