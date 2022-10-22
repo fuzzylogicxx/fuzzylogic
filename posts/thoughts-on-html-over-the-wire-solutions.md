@@ -24,6 +24,8 @@ draft: false
 
 > htmx (and similar "HTML over the wire" approaches) could someday replace Javascript SPAs. Cool to see a real-world case study on that, and with promising results
 
+---
+
 There’s a similar excitement at my place of work (and among the Rails community in general) about [Turbo](https://turbo.hotwired.dev/), which promises:
 
 > the speed of an SPA without having to write any JS
