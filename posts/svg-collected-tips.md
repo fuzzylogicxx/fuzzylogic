@@ -21,12 +21,26 @@ SVG is an amazing technology which I regularly use for icons and occasionally fo
 
 ## Table of contents
 
+* [Introduction to SVG](#introduction-to-svg)
 * [Canvas, viewport and viewbox](#canvas-viewport-and-viewbox)
 * [Arranging elements on a grid](#arranging-elements-on-a-grid)
 * [Inline SVG for icons](#inline-svg-for-icons)
 * [Choose an SVG embedding technique that suits the task](#choose-an-svg-embedding-technique-that-suits-the-task)
 * [Choose the best-performing format](#choose-the-best-performing-format)
 * [Exporting and optimising SVG in design tools](#exporting-and-optimising-svg-in-design-tools)
+
+## Introduction to SVG
+
+It’s an image format (like jpg and png) but also an XML-based markup language. So it’s a bit like HTML in that you can “compose a whole from a bunch of parts” – but it is focused on graphics. As a web graphics technology it has many benefits, for example:
+
+- scalable, 
+- manipulable by CSS and JS, 
+- has a small file-size if well-optimised, and 
+- can be made accessible.
+- It’s built for drawing in a way HTML and CSS are not.
+- It can guide users, reduce their cognitive load, and provide personality and moments of fun.
+
+Here’s a classic example: [Log-in Avatar](https://codepen.io/dsenneff/pen/2c3e5bc86b372d5424b00edaf4990173)
 
 ## Canvas, viewport and viewBox
 
