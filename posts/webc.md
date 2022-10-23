@@ -1,8 +1,14 @@
 ---
 date: 2022-10-23T16:28:08Z
 title: WebC
-description: ''
-tags: []
+description: WebC, the latest addition to the Eleventy suite of technologies, is focused
+  on making Web Components easier to use.
+tags:
+- entry
+- javascript
+- webcomponents
+- progressiveenhancement
+- 11ty
 noteWithTitle: false
 linkTarget: ''
 mainImage.url: ''
@@ -12,20 +18,27 @@ mainImage.aspectRatioHeight: ''
 mainImage.srcsetWidths: ''
 mainImage.sizes: ''
 mainImage.isAnchor: false
-draft: true
+draft: false
 
 ---
-* Web components as the consumer developer’s authoring interface. 
-* Having web components at the core is great – especially for Design Systems – because unlike with proprietary component frameworks, WC’s do not work within a single stack only but rather are platform and stack agnostic meaning we could reuse them across products.
-* Whereas normally a WC is JS-dependent even when the component has no JS-dependent content, with WebC the content will still be rendered to screen when JS fails or is unavailable. This is because WebC takes your `.webc` component file and converts it to the output HTML required.
-* Progressive enhancement friendly. As above, your no-JS HTML foundational will render. But you can also colocate your foundational baseline and your scripts and CSS to enhance it in the same file.
-* Component builders can write components in a single file, rather than separate template and JS
-* lots of other goodies like scoped styles and JS, aggregated styles and JS, and much more.
+WebC, the latest addition to the [Eleventy](https://www.11ty.dev/) suite of technologies, is focused on making [Web Components](https://developer.mozilla.org/en-US/docs/Web/Web_Components) easier to use. I have to admit, it took me a while to work out the idea behind this one, but I see it now and it looks interesting.
 
-Resources
+With my Design System hat on, I’ll consider this from the point of view of both component _producers_ and _consumers_.
 
-Docs [https://www.11ty.dev/docs/languages/webc/](https://www.11ty.dev/docs/languages/webc/ "https://www.11ty.dev/docs/languages/webc/")
+With WebC, web components are the consumer developer’s authoring interface. So for example you might add a badge component into your page with `<my-badge text='Lorem ipsum'></my-badge>`.
 
-Crash course video tutorial [https://www.youtube.com/watch?v=X-Bpjrkz-V8](https://www.youtube.com/watch?v=X-Bpjrkz-V8 "https://www.youtube.com/watch?v=X-Bpjrkz-V8")
+From the component creator perspective: whereas normally web components frustratingly require accompanying JavaScript even when the component would otherwise have no JS-dependent content, with WebC the content will still be rendered to screen when JS fails or is unavailable. This is because WebC takes your `.webc` component file and compiles it to the output HTML required.
 
-Progressively enhanced interactive components video tutorial [https://www.youtube.com/watch?v=p0wDUK0Z5Nw](https://www.youtube.com/watch?v=p0wDUK0Z5Nw "https://www.youtube.com/watch?v=p0wDUK0Z5Nw")
+WebC is progressive enhancement friendly. As mentioned above, your no-JS HTML foundation will render. But going further, you can also colocate your foundational baseline beside the scripts and CSS that enhance it within the same file.
+
+This ability to write components within a single file (rather than separate template and script files) is pretty nice in general.
+
+There are lots of other goodies too such as the ability to scope your styles and JavaScript to your component, and to set styles and JS to be aggregated in a way that your layout file can optionally load only the styles and scripts required for components on a given page.
+
+Using web components is great – especially for Design Systems – because unlike with proprietary component frameworks, they do not couple your components to a single technology stack but rather are platform and stack-agnostic, meaning they could be reused across products.
+
+Useful resources:
+
+* [WebC docs](https://www.11ty.dev/docs/languages/webc/)
+* [_Crash course_ video tutorial](https://www.youtube.com/watch?v=X-Bpjrkz-V8) 
+* [Progressively enhanced interactive components video tutorial](https://www.youtube.com/watch?v=p0wDUK0Z5Nw)
