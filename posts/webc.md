@@ -15,8 +15,10 @@ mainImage.isAnchor: false
 draft: true
 
 ---
-* Web components as the consumer developer’s authoring interface. This is great – especially for Design Systems – because unlike with frameworks, WC’s are not locked to a single stack but instead are platform and stack agnostic meaning we could reuse them across products.
-* Whereas normally a WC is JS-dependent even when the component has no JS-dependent content, with WebC the content will still be rendered to screen when JS fails or is unavailable. This is because WebC 
+* Web components as the consumer developer’s authoring interface. 
+* Having web components at the core is great – especially for Design Systems – because unlike with proprietary component frameworks, WC’s do not work within a single stack only but rather are platform and stack agnostic meaning we could reuse them across products.
+* Whereas normally a WC is JS-dependent even when the component has no JS-dependent content, with WebC the content will still be rendered to screen when JS fails or is unavailable. This is because WebC takes your `.webc` component file and converts it to the output HTML required.
+* Progressive enhancement friendly. As above, your no-JS HTML foundational will render. But you can also colocate your foundational baseline and your scripts and CSS to enhance it in the same file.
 * Component builders can write components in a single file, rather than separate template and JS
 * lots of other goodies like scoped styles and JS, aggregated styles and JS, and much more.
 
