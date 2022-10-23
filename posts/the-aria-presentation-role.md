@@ -4,6 +4,8 @@ title: The ARIA presentation role
 description: I’ve never properly understood when you would use this role
 tags:
 - note
+- javascript
+- aria
 - progressiveenhancement
 - a11y
 noteWithTitle: true
