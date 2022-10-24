@@ -24,6 +24,8 @@ draft: false
 WebC, the latest addition to the [Eleventy](https://www.11ty.dev/) suite of technologies, is focused on making [Web Components](https://developer.mozilla.org/en-US/docs/Web/Web_Components) easier to use. I have to admit, it took me a while to work out the idea behind this one, but I see it now and it looks interesting.
 ---
 
+Here are a few of the selling points for WebC, as I see them.
+
 With WebC, web components are the consumer developer’s authoring interface. So for example you might add a badge component into your page with `<my-badge text='Lorem ipsum'></my-badge>`.
 
 Using web components is great – especially for Design Systems – because unlike with proprietary component frameworks, components are not coupled to a single technology stack but rather are platform and stack-agnostic, meaning they could be reused across products.
