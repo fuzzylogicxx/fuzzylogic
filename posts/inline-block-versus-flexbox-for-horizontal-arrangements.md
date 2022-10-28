@@ -32,7 +32,7 @@ Here’s why I think Flexbox is much better:
 1. Styling a context rather than individual items plays better with modern component-oriented organisation and ideas. It‘s good to keep components [encapsulated and context-agnostic](https://mxstbr.com/thoughts/margin/), [handing off layout to separate, fit-for-purpose tools](https://every-layout.dev/).
 1. Flexbox is built for _responsiveness_, i.e. built for the modern era. `inline-block` was not.
 1. the default `align-items:stretch` means that items laid out in a row are automatically full parent-height which is often desirable for larger touch targets and achieving hover styles.
-1. `inline-block` retains some of the properties of `inline` that are undesirable for this type of use-case.
+1. `inline-block` retains some of the properties of `inline` that are undesirable for this type of use-case. Who can be bothered with whitespace in the code appearing on the screen, or having to work with `vertical-align` when you don’t need to.
 
 I also don’t see any reason to _not_ use Flexbox. It’s conventional (see for example navigation menus on [BBC](https://www.bbc.co.uk/), [Tetralogical](https://tetralogical.com/)), recommended by CSS experts (Rachel Andrew, Jen Simmons etc), performant and well-supported by browsers. You are not going “fancy”, “cutting edge” or “overkill” by using Flexbox. For the “horizontal menu” use case, it’s simply a more suitable choice than the older alternatives. 
 
