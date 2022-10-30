@@ -34,7 +34,7 @@ Tabs are a device intended to improve content density. They should deliver a _sa
 
 ## Faux tabs
 
-But in our Design System at work, ours are currently just the “tabs” with no tab panels, and each “tab” generally points to _different pages_ rather than somewhere on the same page – i.e. it’s a navigation menu made to look like a tabbed interface. 
+But in our Design System at work, ours are currently just the “tabs” with no tab panels, and each “tab” generally points to _another page_ rather than somewhere on the same page. In other words it’s a navigation menu made to look like a tabbed interface. 
 
 I’m not happy with this from an affordance point of view. Naming and presenting something as one thing but then having it function _differently_ leads to usability problems and communication breakdowns. As the Inclusive Components Tabbed Interfaces page says:
 
