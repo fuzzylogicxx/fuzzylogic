@@ -16,9 +16,11 @@ mainImage.isAnchor: false
 draft: true
 
 ---
-references 
+references
 
-[https://adamsilver.io/blog/building-an-accessible-autocomplete-control/](https://adamsilver.io/blog/building-an-accessible-autocomplete-control/ "https://adamsilver.io/blog/building-an-accessible-autocomplete-control/")
+Adam Silver
+
+* [https://adamsilver.io/blog/building-an-accessible-autocomplete-control/](https://adamsilver.io/blog/building-an-accessible-autocomplete-control/ "https://adamsilver.io/blog/building-an-accessible-autocomplete-control/")
 
 Adrian Roselli (same article)
 
