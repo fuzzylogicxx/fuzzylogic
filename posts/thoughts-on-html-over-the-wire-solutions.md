@@ -50,6 +50,6 @@ I’d be really pleased if my concerns could be allayed because in general I lik
 
 ## Update 30/1//22
 
-I decided to revisit a book I read back in 2007 – [Jeremy Keith’s _Bulletproof Ajax_](https://bulletproofajax.com/). I had forgotten this, but it actually contains a section titled “Ajax and accessibility”. In admitted that reconciling the two is challenging and despite listing approaches to mitigating issues acknowledged that the situation was not great. However since 2007 – specifically since around 2014 – WAI-ARIA has been a completed W3C recommendation and provides means of making web pages more accessible, particularly when dealing with dynamic content. 
+I decided to revisit a book I read back in 2007 – [Jeremy Keith’s _Bulletproof Ajax_](https://bulletproofajax.com/). I had forgotten this, but it actually contains a section titled “Ajax and accessibility”. It acknowledges that reconciling the two is challenging and despite listing approaches to mitigating issues admits that the situation was not great. However since 2007 – specifically since around 2014 – WAI-ARIA has been a completed W3C recommendation and provides means of making web pages more accessible, particularly when dealing with dynamic content. 
 
 I don’t often have cause to use more than a few go-to ARIA attributes, but I wanted to brush up on my knowledge and will list my learnings here when I’m done. 
