@@ -26,10 +26,11 @@ My colleague Anda and I just had a good conversation about tabs, and specificall
 
 Here are some great examples of _tabs_ components.
 
-* [https://inclusive-components.design/tabbed-interfaces/](https://inclusive-components.design/tabbed-interfaces/ "https://inclusive-components.design/tabbed-interfaces/")
-* [https://design-system.service.gov.uk/components/tabs/](https://design-system.service.gov.uk/components/tabs/ "https://design-system.service.gov.uk/components/tabs/")
+* [Inclusive Components – Tabbed Interfaces](https://inclusive-components.design/tabbed-interfaces/)
+* [Tabs component in GOV.UK Design System](https://design-system.service.gov.uk/components/tabs/)
+* [ARIA Tabs by Adrian Roselli](https://adrianroselli.com/2013/02/aria-tabs.html)
 
-It’s a device intended to improve content density. A same-page experience. Activating a tab reveals its corresponding tab panel. The whole thing is ideally progressively-enhanced, starting as a basic Table of Contents. There’s quite a lot of advanced semantics, state and interactivity under the hood.
+Tabs are a device intended to improve content density. They should deliver a _same-page experience_. Activating a tab reveals its corresponding tab panel. Ideally the approach employs progressive enhancement, starting as a basic Table of Contents. There’s quite a lot of advanced semantics, state and interactivity under the hood.
 
 ## Faux tabs
 
