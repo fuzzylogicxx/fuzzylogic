@@ -16,7 +16,9 @@ mainImage.isAnchor: false
 draft: true
 
 ---
-references
+At work there’s currently a plan to reconcile our various _Autocomplete_ implementations which were created at different times in different ways into a single, reusable component. So far there has been a written audit of all instances and how they differ in terms of both functionality and technical makeup. There’s also been some design work to identify visual commonalities and avoid future inconsistencies. I’d now like to add another perspective: an investigation into what materials and approach is required to build something accessible and resilient. My experience is that to achieve the right result, HTML and other constraints of the medium can’t just follow and bend to design decisions, but rather must be part of and integral to them.
+
+My team will soon be refactoring our modal dialogue component. Ours has a few deficiencies, needs better developer experience and documentation, is not built to our Design System component standards, and could use a resilience boost from some progressive enhancement.
 
 Adam Silver
 
