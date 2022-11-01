@@ -109,7 +109,9 @@ Because in the industry form fields are often handled with JavaScript and not su
 
 Using a `<form>` provides additional semantics allowing additional accessibility. It helps assistive devices like screen readers better understand the content of the page and gives the person using them more meaningful information.
 
-By putting form fields inside a form we also ensure we match user expectations. We support the functionality (such as the different ways of submitting a form) that users expect when presented with form fields. The other side of this coin is that we shouldn’t use form fields (nor a `<form>`) when they are _not_ appropriate. A checkbox, radio button, or select menu is meant to _gather information_. So [to let the user manipulate the current view, use a `button` rather than checkboxes or radio buttons](https://fuzzylogic.me/posts/2022-07-15-perceived-affordances-and-the-functionality-mismatch-by-leonie-watson/).
+By putting form fields inside a form we also ensure we match user expectations. We support the functionality (such as the different ways of submitting a form) that users expect when presented with form fields. 
+
+If you’re thinking “but what about form fields that don’t _look like_ form fields?” then you’ve entered the problem territory of “deceptive user interfaces” – the situation where perceived affordances don’t match actual functionality, which causes confusion for some people. This is to be avoided. We shouldn’t use form fields (nor a `<form>`) when they are _not_ appropriate. A checkbox, radio button, or select menu is meant to _gather information_. So if your goal is instead [to let the user manipulate the current view, use a `button` rather than checkboxes or radio buttons](https://fuzzylogic.me/posts/2022-07-15-perceived-affordances-and-the-functionality-mismatch-by-leonie-watson/).
   
 References: 
 - [Why use a form element when submitting fields with JavaScript](https://gomakethings.com/why-use-a-form-element-when-submitting-fields-with-javascript/)
