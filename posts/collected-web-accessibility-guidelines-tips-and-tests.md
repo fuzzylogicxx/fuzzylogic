@@ -35,6 +35,7 @@ Caveats and notes:
 * [Navigation and menus](#navigation-and-menus)
 * [Modal dialogues](#modal-dialogues)
 * [ARIA](#aria)
+* [Forms](#forms)
 
 ## Ensure keyboard support
 
@@ -99,6 +100,25 @@ Seek to use semantic HTML elements rather than reinvent the wheel. As Bruce Laws
 HTML landmark elements (`<main>`, `<header>`, `<nav>` etc.) have built-in, implicit ARIA roles so there is no need to add `role="navigation"` (or similar) explictly as this would be duplication.
 
 There is no need to add the `aria-label` attribute to a `<nav>` or `<header>` (etc) element unless there are multiple of that element in the document, in which case provide a distinguishing `aria-label` for each. This label will allow an assistive technology user to be able to quickly understand the purpose of each.
+
+## Forms
+
+Because in the industry form fields are often handled with JavaScript and not submitted, people sometimes question whether form fields should live inside a form (`<form>`). My answer is **yes**, and here’s why. 
+
+### Using the form element improves usability and accessibility
+
+Using a `<form>` provides additional semantics allowing additional accessibility. It helps assistive devices like screen readers better understand the content of the page and gives the person using them more meaningful information.
+
+By putting form fields inside a form we also ensure we match user expectations. We support the functionality (such as the different ways of submitting a form) that users expect when presented with form fields. The other side of this coin is that we shouldn’t use form fields (nor a `<form>`) when they are _not_ appropriate. A checkbox, radio button, or select menu is meant to _gather information_. So [to let the user manipulate the current view, use a `button` rather than checkboxes or radio buttons](https://fuzzylogic.me/posts/2022-07-15-perceived-affordances-and-the-functionality-mismatch-by-leonie-watson/).
+  
+References: 
+- [Why use a form element when submitting fields with JavaScript](https://gomakethings.com/why-use-a-form-element-when-submitting-fields-with-javascript/)
+- [Lea Verou and Leonie Watson’s discussion regarding Toggles](https://fuzzylogic.me/posts/2022-07-15-perceived-affordances-and-the-functionality-mismatch-by-leonie-watson/)
+- [My conversation about forms with accessibility expert Adrian Roselli](https://fuzzylogic.me/posts/2022-07-15-perceived-affordances-and-the-functionality-mismatch-by-leonie-watson/#update-july-19%2F7%2F22)
+
+### Using the form element simplifies your JavaScript for event handling
+
+Using the `form` element can also make it easier for you to meet user expectations in your JS-powered experience. This is because it gives you a single element (`form`) and event combination that allows listening to _multiple_ interactions. With a form element you can add a listener for the `submit()` event. This event fires automatically in response to the various ways users expect to submit a form, including pressing <kbd>enter</kbd> inside a field.
 
 ## References
 
