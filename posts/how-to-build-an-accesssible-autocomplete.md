@@ -33,11 +33,11 @@ I’ll flesh out my findings in due course, but for now here are the key resourc
 * _ARIA Combobox_ is a pattern that combines ARIA `combobox`, `textbox` and `listbox` roles, and the benefit it brings is to allow a level of custom design that you couldn’t achieve with `Datalist`.
 * `Autocomplete` (not to be confused with the HTML `autocomplete` _attribute_) describes a control which provides users with suggestions that may not be available in the DOM already… for example when you fetch options via Ajax in reponse to what the user types.
 
-Adrian’s article led me onto…
+With regard to Autocomplete, Adrian points to [Adam Silver’s _Building an accessible autocomplete control_](https://adamsilver.io/blog/building-an-accessible-autocomplete-control/).
 
-[Adam Silver’s _Building an accessible autocomplete control_](https://adamsilver.io/blog/building-an-accessible-autocomplete-control/)
-
-And the following resources from Sarah Higley (which include listbox and combobox implementation advice):
+And for advice on whether or not to go with a native select or a custom control, and how best to implement listbox and combobox if that’s your choice, Adrian points to the following resources from Sarah Higley:
 
 * [`<select>` your poison part 2](https://www.24a11y.com/2019/select-your-poison-part-2/#select-poison-recommendations) (see the _Roll your own_ section at bottom)
 * [Recommended Combobox Patterns](https://codepen.io/smhigley/pen/gObMVzv) pen
+
+I also see that GOV.UK have marked a possible _Autocomplete_ component as one of their [next priorities](https://design-system.service.gov.uk/community/upcoming-components-patterns/) to review. Their [Autocomplete discussion thread](https://github.com/alphagov/govuk-design-system/discussions/2374) includes examples and research and will be really helpful.
