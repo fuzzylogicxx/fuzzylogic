@@ -21,8 +21,10 @@ mainImage.isAnchor: false
 draft: false
 
 ---
-At work there are plans afoot to reconcile various differing _Autocomplete_ implementations into a single, reusable component. So far there’s been a written audit presenting all instances and how they differ in functional and technical respects. There’s also been design work to identify visual commonalities and avoid future inconsistencies. I’d now like to add another perspective: an investigation into which HTML materials and (if necessary) ARIA supplements are appropriate to ensure we build something accessible and resilient. My experience is that to achieve the right result, HTML semantics and related concerns can’t just follow and bend to spec and visual design goals, but rather must _influence_ the setting of those goals.
+At work there are plans afoot to reconcile various differing _Autocomplete_ implementations into a single, reusable component. So far there’s been a written audit presenting all instances and how they differ in functional and technical respects. There’s also been design work to identify visual commonalities and avoid future inconsistencies. I’d now like to add another perspective: an investigation into which HTML materials and (if necessary) ARIA supplements are appropriate to ensure we build something accessible and resilient.
 ---
+
+My experience is that to achieve the right result, HTML semantics and related concerns can’t just follow and bend to spec and visual design goals, but rather must _influence_ the setting of those goals.
 
 I’ll flesh out my findings in due course, but for now here are the key resources I’ve identified and plan to dig deep into.   
 
