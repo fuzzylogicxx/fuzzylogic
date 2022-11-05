@@ -37,7 +37,7 @@ Adrian Roselli’s article [Disclosure Widgets](https://adrianroselli.com/2020/0
 - highly custom `select` alternatives when `listbox` is innapropriate because it needs to include items that do not have the `option` role
 - a toggle-tip
 
-However something Adrian addresses (and I’ve previously written about) is the question around [for which collapse/expand use cases we can safely use the _native_ `details` element](https://fuzzylogic.me/posts/does-the-html-details-element-solve-progressively-enhanced-disclosures/). There’s a lot to menmtion here but since I’d prefer to present a simple heuristic let’s go meta here and use a `details`:
+However something Adrian addresses (and I’ve previously written about) is the question around [for which collapse/expand use cases we can safely use the _native_ `details` element](https://fuzzylogic.me/posts/does-the-html-details-element-solve-progressively-enhanced-disclosures/). There’s a lot to mention but since I’d prefer to present a simple heuristic let’s go meta here and use a `details`:
 
 <details>
   <summary>Use <code>details</code> for basic narrative content and panels but otherwise use a DIY disclosure</summary>
