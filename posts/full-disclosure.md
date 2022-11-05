@@ -35,13 +35,16 @@ Something Adrian addresses (and I’ve previously blogged about) is the question
 <details>
   <summary>Use `details` for simple interface and styling requirements otherwise use a DIY disclosure</summary>
   <div>
-    It’s either a bad idea or at the very least “challenging” to use a native `details` for:
     
-    - a hamburger menu
-    - an accordion
-    - custom styling
+    <p>It’s either a bad idea or at the very least “challenging” to use a native `details` for:</p>
     
-    Note to self: add more detail and links to this section when I get the chance.
+    <ul>
+      <li>a hamburger menu</li>
+      <li>an accordion/li>
+      <li>custom styling/li>
+    </ul>
+    
+    <p>Note to self: add more detail and links to this section when I get the chance.</p>
   </div>
 </details>
 
