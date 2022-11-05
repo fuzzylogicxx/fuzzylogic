@@ -40,7 +40,7 @@ Adrian Roselli’s article [Disclosure Widgets](https://adrianroselli.com/2020/0
 However something Adrian addresses (and I’ve previously written about) is the question around [for which collapse/expand use cases we can safely use the _native_ `details` element](https://fuzzylogic.me/posts/does-the-html-details-element-solve-progressively-enhanced-disclosures/). There’s a lot to menmtion here but since I’d prefer to present a simple heuristic let’s go meta here and use a `details`:
 
 <details>
-  <summary>Use <code>details</code> for basic narrative content otherwise use a DIY disclosure</summary>
+  <summary>Use <code>details</code> for basic narrative content and panels but otherwise use a DIY disclosure</summary>
     
   <p>It’s either a bad idea or at the very least “challenging” to use a native `details` for:</p>
     
