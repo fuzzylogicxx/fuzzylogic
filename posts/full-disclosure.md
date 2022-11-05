@@ -23,17 +23,17 @@ mainImage.isAnchor: false
 draft: false
 
 ---
-Whether I’m thinking about inclusive hiding, hamburger menus or web components, one UI pattern I keep revisiting is the _disclosure widget_. Perhaps it’s because you can use this small pattern to consider so many wider aspects of good web development. So for future reference, here’s a braindump of my knowledge and resources on the subject.
+Whether I’m thinking about inclusive hiding, hamburger menus or web components one UI pattern I keep revisiting is the _disclosure widget_. Perhaps it’s because you can use this small pattern to bring together so many other wider aspects of good web development. So for future reference, here’s a braindump of my knowledge and resources on the subject.
+---
 
-A disclosure widget is for collapsing and expanding something. You might alternately describe that as hiding and showing something. The reason we collapse content relates to _content density_ – the idea being that we have a finite amount of screen estate so might want to reduce the space taken up by secondary content, or finer details, or repeated content so as to push the page’s key messages to the fore and save the user some scrolling. With a disclosure widget we collapse detailed content into a smaller snippet that the user can activate to expand (and collapse again) the full details.
+A disclosure widget is for collapsing and expanding something. You might alternately describe that as hiding and showing something. The reason we collapse content relates to _content density_ – the idea being that we have a finite amount of screen estate so might want to reduce the space taken up by secondary content, or finer details, or repeated content so as to push the page’s key messages to the fore and save the user some scrolling. With a disclosure widget we collapse detailed content into a smaller snippet that the user can activate to expand the full details (and collapse them again).
 
 Adrian Roselli’s article [Disclosure Widgets](https://adrianroselli.com/2020/05/disclosure-widgets.html) is a great primer on the available technical options and when each might be appropriate.
 
-Something Adrian addresses (and I’ve previously blogged about) is the question around [for which collapse/expand use cases we can safely use the native details element](https://fuzzylogic.me/posts/does-the-html-details-element-solve-progressively-enhanced-disclosures/). I just want to present a Tl;DR heuristic here but since there’s also lots ot more to add let’s go meta and use a `details`!
+Something Adrian addresses (and I’ve previously blogged about) is the question around [for which collapse/expand use cases we can safely use the native details element](https://fuzzylogic.me/posts/does-the-html-details-element-solve-progressively-enhanced-disclosures/). I just want to present a Tl;DR heuristic here but since there’s also lots more to mention let’s go meta here and use a `details`!
 
 <details>
-  <summary>
-    Use `details` for simple interface and styling requirements otherwise use a DIY disclosure</summary>
+  <summary>Use `details` for simple interface and styling requirements otherwise use a DIY disclosure</summary>
   <div>
     It’s either a bad idea or at the very least “challenging” to use a native `details` for:
     - a hamburger menu
