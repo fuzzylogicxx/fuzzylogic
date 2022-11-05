@@ -33,13 +33,13 @@ Adrian Roselli’s article [Disclosure Widgets](https://adrianroselli.com/2020/0
 Something Adrian addresses (and I’ve previously blogged about) is the question around [for which collapse/expand use cases we can safely use the native details element](https://fuzzylogic.me/posts/does-the-html-details-element-solve-progressively-enhanced-disclosures/). I just want to present a Tl;DR heuristic but since there’s also lots more to mention let’s go meta here and use a `details`!
 
 <details>
-  <summary>Use `details` for simple situations otherwise use a DIY disclosure</summary>
+  <summary>Use <code>details</code> when your needs are basic otherwise use a DIY disclosure</summary>
     
   <p>It’s either a bad idea or at the very least “challenging” to use a native `details` for:</p>
     
   <ul>
     <li>a hamburger menu</li>
-    <li>an accordion/li>
+    <li>an accordion</li>
   </ul>
   
   <p>In terms of styling terms it’s tricky to use a `details` for:
