@@ -26,14 +26,21 @@ draft: false
 Whether I’m thinking about inclusive hiding, hamburger menus or web components one UI pattern I keep revisiting is the _disclosure widget_. Perhaps it’s because you can use this small pattern to bring together so many other wider aspects of good web development. So for future reference, here’s a braindump of my knowledge and resources on the subject.
 ---
 
-A disclosure widget is for collapsing and expanding something. You might alternately describe that as hiding and showing something. The reason we collapse content relates to _content density_ – the idea being that we have a finite amount of screen estate so might want to reduce the space taken up by secondary content, or finer details, or repeated content so as to push the page’s key messages to the fore and save the user some scrolling. With a disclosure widget we collapse detailed content into a smaller snippet that the user can activate to expand the full details (and collapse them again).
+A disclosure widget is for collapsing and expanding something. You might alternately describe that as hiding and showing something. The reason we collapse content relates to _content density_ – the idea being that user’s have a finite amount of screen estate (and attention) so we might want to reduce the space taken up by secondary content, or finer details, or repeated content so as to push the page’s key messages to the fore and save the user some scrolling. With a disclosure widget we collapse detailed content into a smaller snippet that the user can activate to expand the full details (and collapse them again).
 
-Adrian Roselli’s article [Disclosure Widgets](https://adrianroselli.com/2020/05/disclosure-widgets.html) is a great primer on the available technical options and when each might be appropriate.
+Adrian Roselli’s article [Disclosure Widgets](https://adrianroselli.com/2020/05/disclosure-widgets.html) is a great primer on the available native and custom ARIA options, how to implement them and where each might be appropriate. Adrian’s article helpfully offers that a disclosure widget (the custom ARIA flavour) can be used as a base in order to achieve some other common UI requirements so long as you’re aware there are extra considerations and handle those carefully. Examples include:
 
-Something Adrian addresses (and I’ve previously blogged about) is the question around [for which collapse/expand use cases we can safely use the native details element](https://fuzzylogic.me/posts/does-the-html-details-element-solve-progressively-enhanced-disclosures/). I just want to present a Tl;DR heuristic but since there’s also lots more to mention let’s go meta here and use a `details`!
+- link and disclosure widget navigation
+- table with expando rows
+- accordion
+- hamburger navigation
+- highly custom `select` alternatives when `listbox` is innapropriate because it needs to include items that do not have the `option` role
+- a toggle-tip
+
+However something Adrian addresses (and I’ve previously written about) is the question around [for which collapse/expand use cases we can safely use the _native_ `details` element](https://fuzzylogic.me/posts/does-the-html-details-element-solve-progressively-enhanced-disclosures/). There’s a lot to menmtion here but since I’d prefer to present a simple heuristic let’s go meta here and use a `details`:
 
 <details>
-  <summary>Use <code>details</code> when your needs are basic otherwise use a DIY disclosure</summary>
+  <summary>Use <code>details</code> for basic narrative content otherwise use a DIY disclosure</summary>
     
   <p>It’s either a bad idea or at the very least “challenging” to use a native `details` for:</p>
     
