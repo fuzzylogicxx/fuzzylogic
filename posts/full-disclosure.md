@@ -30,7 +30,7 @@ A disclosure widget is for collapsing and expanding something. You might alterna
 
 Adrian Roselli’s article [Disclosure Widgets](https://adrianroselli.com/2020/05/disclosure-widgets.html) is a great primer on the available technical options and when each might be appropriate.
 
-Something Adrian addresses (and I’ve previously blogged about) is the question around [for which collapse/expand use cases we can safely use the native details element](https://fuzzylogic.me/posts/does-the-html-details-element-solve-progressively-enhanced-disclosures/). I just want to present a Tl;DR heuristic here but since there’s also lots more to mention let’s go meta here and use a `details`!
+Something Adrian addresses (and I’ve previously blogged about) is the question around [for which collapse/expand use cases we can safely use the native details element](https://fuzzylogic.me/posts/does-the-html-details-element-solve-progressively-enhanced-disclosures/). I just want to present a Tl;DR heuristic but since there’s also lots more to mention let’s go meta here and use a `details`!
 
 <details>
   <summary>Use `details` for simple situations otherwise use a DIY disclosure</summary>
