@@ -36,17 +36,16 @@ Something Adrian addresses (and I’ve previously blogged about) is the question
   <summary>Use `details` for simple interface and styling requirements otherwise use a DIY disclosure</summary>
   <div>
     It’s either a bad idea or at the very least “challenging” to use a native `details` for:
+    
     - a hamburger menu
     - an accordion
     - custom styling
     
-    To do: add more detail and links to this section when I get the chance.
+    Note to self: add more detail and links to this section when I get the chance.
   </div>
 </details>
 
-
-
-Heydon Pickering’s [Collapsible sections](https://inclusive-components.design/collapsible-sections/) on Inclusive Components is excellent, and covers progressive enhancement and a web component version. It’s also oriented toward _multiple_ adjacent sections (an accordion although it doesn’t use that term) and includes fantastic advice regarding: 
+Heydon Pickering’s [Collapsible sections](https://inclusive-components.design/collapsible-sections/) on Inclusive Components is excellent, and includes consideration of progressive enhancement and an excellent web component version. It’s also oriented toward _multiple_ adjacent sections (an accordion although it doesn’t use that term) and includes fantastic advice regarding: 
 
 * appropriate markup including screen reader considerations
 * how best to programmatically switch _state_ (such as open/closed) within a web component
