@@ -38,7 +38,7 @@ I’m concerned about the “no javascript” language being used, for example i
 
 > a JavaScript library in the client's browser that manipulates the DOM.
 
-Your UI that uses htmx or Turbo is dependent on that JS library. And JS is the most brittle part of the stack. So you need to think about resilience and access. The [htmx docs has a section on progressive enhancement](https://htmx.org/docs/#progressive_enhancement) but it doesn’t convince. 
+Your UI that uses htmx or Turbo is dependent on that JS library. And JS is the most brittle part of the stack. So you need to think about resilience and access. The [htmx docs has a section on progressive enhancement](https://htmx.org/docs/#progressive_enhancement) but I’m not convinced it’s part of the design. 
 
 Secondly if you have client-side JS that changes content and state, that brings added accessibility responsibilities. When the content or state of a page is changed, you need to convey this programatically. We normally need to handle this in JavaScript. Do these solutions cover the requirements of accessible JS components, or even let you customise them to do add the necessary state changes yourself? For example [when replacing HTML you need to add aria-live](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Live_Regions) (see also [Léonie Watson on accessible forms with ARIA live regions](https://tink.uk/accessible-forms-with-aria-live-regions/)).
 
@@ -50,6 +50,11 @@ I’d be really pleased if my concerns could be allayed because in general I lik
 
 ## Update 30/1//22
 
-I decided to revisit a book I read back in 2007 – [Jeremy Keith’s _Bulletproof Ajax_](https://bulletproofajax.com/). I had forgotten this, but it actually contains a section titled “Ajax and accessibility”. It acknowledges that reconciling the two is challenging and despite listing approaches to mitigating issues admits that the situation was not great. However since 2007 – specifically since around 2014 – WAI-ARIA has been a completed W3C recommendation and provides means of making web pages more accessible, particularly when dealing with dynamic content. 
+I decided to revisit a book I read back in 2007 – [Jeremy Keith’s _Bulletproof Ajax_](https://bulletproofajax.com/). I had forgotten this, but it actually contains a section titled “Ajax and accessibility”. It acknowledged that reconciling the two is challenging and despite listing ideas for mitigating issues, it admitted that the situation was not great. However since 2007 – specifically since around 2014 – WAI-ARIA has been a completed W3C recommendation and provides a means of making web pages more accessible, particularly when dealing with dynamic content. 
 
-I don’t often have cause to use more than a few go-to ARIA attributes, but I wanted to brush up on my knowledge and will list my learnings here when I’m done. 
+I don’t often have cause to use more than a few go-to ARIA attributes, however here’s my understanding of how you might approach making Ajax-driven content changes accessible by using ARIA. 
+
+To do: write this section.
+
+References:
+- [ARIA Live Regions on MDN](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Live_Regions)
