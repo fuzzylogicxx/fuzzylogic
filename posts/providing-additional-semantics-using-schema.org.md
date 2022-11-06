@@ -22,6 +22,7 @@ draft: false
 
 ---
 I’ve been using [schema.org](https://schema.org/) for a few years now, but haven’t yet logged any notes and usage advice. Schema.org gives websites a practical, structured data approach for communicating the meaning of their content in finer detail than they could with native HTML alone. Google etc can then parse this and use it in their interfaces to offer users a richer view of your data.
+---
 
 Schema.org lets you pick from different types of _properties_ for describing your content, such as book, person, place or event. Alternatively a more generic article you might use _BlogPosting_.
 
