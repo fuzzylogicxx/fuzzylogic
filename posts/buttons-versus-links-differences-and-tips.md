@@ -44,19 +44,24 @@ These patterns in combination have given rise to a collective _muddle_ over butt
 
 There are two HTML elements of interest here.
 
-Hyperlinks are created using the HTML _anchor_ element (`<a>`).
+Hyperlinks are created using the HTML _anchor_ element (`<a>`). Buttons (by which I mean real buttons rather than links styled to appear as buttons) are implemented with the HTML _button_ element (`<button>`).
 
-Buttons (by which I mean real buttons rather than links styled to appear as buttons) are implemented with the HTML _button_ element (`<button>`).
+Although a slight oversimplification, I think [David MacDonald’s heuristic](https://twitter.com/davidmacd/status/1309954746602713098) works well:
+
+If it GOES someWHERE use a link
+<span style="display:block;">If it DOES someTHING use a button</span>
 
 A link…
 
 * _goes somewhere_ (i.e. navigates to another place)
 * normally links to another document (i.e. page) on the current website or on another website
 * can alternatively link to a different section of the same page
-* is an HTTP GET request by default. It’s intended to _get_ a page or resource rather than to _change_ something
 * historically and by default appears underlined
-* offers specific right-click options to mouse users (open in new tab, copy URL, etc)
+* when hovered or focused offers visual feedback from the browser’s status bar
 * uses the “pointing hand” mouse pointer
+* results in browser making an HTTP `GET` request by default. It’s intended to _get_ a page or resource rather than to _change_ something
+* offers specific right-click options to mouse users (open in new tab, copy URL, etc)
+* typically results in an address which can be bookmarked
 * can be activated by pressing the return key
 * is announced by screen readers as “Link”
 * is available to screen reader users within an overall _Links_ list
@@ -69,7 +74,9 @@ A button…
 * historically and by default appears in a pill or rounded rectangle
 * uses the normal mouse pointer arrow
 * can be activated by pressing return _or space._
-* is announced by screen readers as “Button” (no need to explicitly apply the [ARIA button role](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/button_role))
+* implictly gets the [ARIA button role](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/button_role). 
+* can be extended with further ARIA button-related states like `aria-pressed`
+* is announced by screen readers as “Button”
 * unlike a link is not available to screen reader users within a dedicated list
 
 ## Our responsibilities
