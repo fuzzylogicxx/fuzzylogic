@@ -48,7 +48,8 @@ Hyperlinks are created using the HTML _anchor_ element (`<a>`). Buttons (by whic
 
 Although a slight oversimplification, I think [David MacDonald’s heuristic](https://twitter.com/davidmacd/status/1309954746602713098) works well:
 
-If it GOES someWHERE use a link<br />
+If it GOES someWHERE use a link
+
 If it DOES someTHING use a button
 
 A link…
