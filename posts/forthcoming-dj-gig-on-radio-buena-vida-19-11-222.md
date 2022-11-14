@@ -19,7 +19,7 @@ mainImage.isAnchor: false
 draft: false
 
 ---
-I’ve been stockpiling good records for a while and it’s time they got an airing. I’ll be playing a few on Radio Buena Vida, Saturday 19/11 at 4–5pm. Tune in or even come hang out in the café, if you’re in the hood.
+I’ve been stockpiling good records for a while and it’s time they got an airing. I’ll be playing a few on [Radio Buena Vida](https://buenavida.co.uk/), Saturday 19/11 at 4–5pm. Tune in or even come hang out in the café, if you’re in the hood.
 
 <iframe 
 title="Terry by Nahash" 
