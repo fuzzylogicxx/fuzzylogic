@@ -1,8 +1,7 @@
 ---
 date: 2022-11-16T10:43:06Z
 title: Should I use the HTML title attribute?
-description: My research suggests that the html title attribute is almost always to
-  be avoided
+description: My research suggests that the html title attribute is almost always to be avoided
 tags:
 - entry
 - a11y
@@ -18,7 +17,6 @@ mainImage.srcsetWidths: ''
 mainImage.sizes: ''
 mainImage.isAnchor: false
 draft: false
-
 ---
 People have used the HTML title attribute to achieve a native “tooltip” effect for many years. However accessibility experts have recommended that we should avoid this practice, and here I summarise my research on the topic.
 ---
