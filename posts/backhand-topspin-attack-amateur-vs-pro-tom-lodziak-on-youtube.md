@@ -1,5 +1,5 @@
 ---
-date: 2022-02-15T21:03:21Z
+date: 2022-11-21T10:03:21Z
 title: Backhand topspin attack - Amateur vs Pro (Tom Lodziak on YouTube)
 description: A lovely slow-mo comparison of Liam Pitchford’s technique versus that
   of an amateur
