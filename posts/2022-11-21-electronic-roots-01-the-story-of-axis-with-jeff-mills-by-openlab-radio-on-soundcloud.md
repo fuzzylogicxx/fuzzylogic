@@ -2,7 +2,7 @@
 date: "2022-11-21T16:30:06.492Z"
 title: "Electronic Roots 01: The Story Of Axis, with Jeff Mills by OpenLab Radio (on SoundCloud)"
 description: "Great interview with Jeff Mills"
-tags: [link, techno, detroit, axix, music, culture]
+tags: [link, techno, detroit, axis, music, culture]
 linkTarget: "https://soundcloud.com/openlabradio/electronic-roots-jeff-mills-on-the-story-of-axis-past-present-future"
 ---
 Loved this thoughtful and insightful interview with Jeff Mills by [Marcus Barnes](https://twitter.com/mgoldenbarnes).
