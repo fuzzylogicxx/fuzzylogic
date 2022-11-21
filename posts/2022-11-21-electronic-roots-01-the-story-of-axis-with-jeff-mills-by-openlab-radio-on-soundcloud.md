@@ -5,7 +5,7 @@ description: "Great interview with Jeff Mills"
 tags: [link, techno, detroit, axix, music, culture]
 linkTarget: "https://soundcloud.com/openlabradio/electronic-roots-jeff-mills-on-the-story-of-axis-past-present-future"
 ---
-Loved this interview with Jeff Mills.
+Loved this thoughtful and insightful interview with Jeff Mills by [Marcus Barnes](https://twitter.com/mgoldenbarnes).
 ---
 
-Among the highlights were is thoughts on wether his music could viably still be described as 'Detroit' given how long he's lived away from the motor city, and also his reflections on the impact on he and his peers of the 1980 film [American Gigolo](https://www.imdb.com/title/tt0080365/).
+Among the highlights were Jeff’s thoughts on whether his music could viably still be described as “Detroit” given how long he's lived away from the motor city, and also his reflections on the impact on himn and his peers of the 1980 film [American Gigolo](https://www.imdb.com/title/tt0080365/).
