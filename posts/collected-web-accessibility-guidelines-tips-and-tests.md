@@ -28,6 +28,8 @@ Caveats and notes:
 
 * [If you only had 5 minutes](#if-you-only-had-5-minutes)
 * [Content structure](#content-structure)
+* [Semantic HTML and ARIA](#semantic-html-and-aria)
+* [Forms](#forms)
 * [Ensure keyboard support](#ensure-keyboard-support)
 * [Content resizing](#content-resizing)
 * [Better link text](#better-link-text)
@@ -36,8 +38,6 @@ Caveats and notes:
 * [Favour native over custom components except where they have known issues](#favour-native-over-custom-components-except-where-they-have-known-issues)
 * [Navigation and menus](#navigation-and-menus)
 * [Modal dialogues](#modal-dialogues)
-* [ARIA](#aria)
-* [Forms](#forms)
 
 ## If you only had 5 minutes
 
@@ -55,6 +55,34 @@ Having only 5 minutes would be bad, of course, and you shouldn’t do that. The 
 The page’s content should be well-structured as this makes it easier to understand for all, especially people with reading and cognitive disabilities. It should consist of short sections of content preceded by clear headings. It should employ lists where appropriate. It should place the most important content at the beginning of the page or section to give it prominence.
 
 Check your page for any long passages of text with no structure. Ensure that sufficient prominence is given to the most important information and calls to action.
+
+## Semantic HTML and ARIA
+
+Apply ARIA carefully. [No ARIA is better than bad ARIA.](https://www.w3.org/WAI/ARIA/apg/practices/read-me-first/#x2-1-no-aria-is-better-than-bad-aria)
+
+Seek to use semantic HTML elements rather than reinvent the wheel. As Bruce Lawson says, “Built-in beats bolt-on, bigly”. HTML landmark elements (`<main>`, `<header>`, `<nav>` etc.) have built-in, implicit ARIA roles so there is no need to add `role="navigation"` (or similar) explictly as this would be duplication.
+
+There is no need to add the `aria-label` attribute to a `<nav>` or `<header>` (etc) element unless there are multiple of that element in the document, in which case provide a distinguishing `aria-label` for each. This label will allow an assistive technology user to be able to quickly understand the purpose of each.
+
+## Favour native over custom components except where they have known issues
+
+Native components require very little work, are familiar to users, and are generally accessible by default. Custom components can be built to appear and behave as designers want, but require much more effort to build and are challenging to make accessible.
+
+There are exceptions. Since the native options are flawed across browsers, accessibility experts recommend useing custom solutions for: 
+- form error field messages
+- focus indicator styles
+
+## Forms
+
+Because in the industry form fields are often handled with JavaScript and not submitted, people sometimes question whether form fields should live inside a form (`<form>`). My answer is **yes**, and here’s why. 
+
+### Using the form element improves usability and accessibility
+
+Using a `<form>` provides additional semantics allowing additional accessibility. It helps assistive devices like screen readers better understand the content of the page and gives the person using them more meaningful information.
+
+By putting form fields inside a form we also ensure we match user expectations. We support the functionality (such as the different ways of submitting a form) that users expect when presented with form fields. 
+
+If you’re thinking “but what about form fields that don’t _look like_ form fields?” then you’ve entered the problem territory of “deceptive user interfaces” – the situation where perceived affordances don’t match actual functionality, which causes confusion for some people. This is to be avoided. We shouldn’t use form fields (nor a `<form>`) when they are _not_ appropriate. A checkbox, radio button, or select menu is meant to _gather information_. So if your goal is instead [to let the user manipulate the current view, use a `button` rather than checkboxes or radio buttons](https://fuzzylogic.me/posts/2022-07-15-perceived-affordances-and-the-functionality-mismatch-by-leonie-watson/).
 
 ## Ensure keyboard support
 
@@ -96,14 +124,6 @@ Websites should provide a “Skip to content” link because they provide an imp
 
 To test that a website contains a skip link, visit a page then press the tab key and the skip link should appear. Then activate it using the enter key and check that focus moves to the main content area. Press tab again to ensure that focus moves to the first actionable element in the main content. 
 
-## Favour native over custom components except where they have known issues
-
-Native components require very little work, are familiar to users, and are generally accessible by default. Custom components can be built to appear and behave as designers want, but require much more effort to build and are challenging to make accessible.
-
-There are exceptions. Since the native options are flawed across browsers, accessibility experts recommend useing custom solutions for: 
-- form error field messages
-- focus indicator styles
-
 ## Navigation and menus
 
 When developing a collapsible menu, place your menu `<button>` _within_ your `<nav>` element and hide the inner list rather than hiding the `<nav>` element itself. That way, we are not obscuring from Assistive Technologies the fact that a navigation still exists. ATs can still access the nav via landmark navigation. This is important because landmark discovery is one of the fundamental ways AT users scan, determine and navigate a site’s structure.
@@ -111,28 +131,6 @@ When developing a collapsible menu, place your menu `<button>` _within_ your `<n
 ## Modal dialogues
 
 [You probably don’t want to set the modal’s heading as an `<h1>`](https://stackoverflow.com/a/38467898). It likely displays content that exists on the page (which already has an `<h1>`) at a lower level of the document hierarchy.
-
-## ARIA
-
-Apply ARIA carefully. [No ARIA is better than bad ARIA.](https://www.w3.org/WAI/ARIA/apg/practices/read-me-first/#x2-1-no-aria-is-better-than-bad-aria)
-
-Seek to use semantic HTML elements rather than reinvent the wheel. As Bruce Lawson says, “Built-in beats bolt-on, bigly”.
-
-HTML landmark elements (`<main>`, `<header>`, `<nav>` etc.) have built-in, implicit ARIA roles so there is no need to add `role="navigation"` (or similar) explictly as this would be duplication.
-
-There is no need to add the `aria-label` attribute to a `<nav>` or `<header>` (etc) element unless there are multiple of that element in the document, in which case provide a distinguishing `aria-label` for each. This label will allow an assistive technology user to be able to quickly understand the purpose of each.
-
-## Forms
-
-Because in the industry form fields are often handled with JavaScript and not submitted, people sometimes question whether form fields should live inside a form (`<form>`). My answer is **yes**, and here’s why. 
-
-### Using the form element improves usability and accessibility
-
-Using a `<form>` provides additional semantics allowing additional accessibility. It helps assistive devices like screen readers better understand the content of the page and gives the person using them more meaningful information.
-
-By putting form fields inside a form we also ensure we match user expectations. We support the functionality (such as the different ways of submitting a form) that users expect when presented with form fields. 
-
-If you’re thinking “but what about form fields that don’t _look like_ form fields?” then you’ve entered the problem territory of “deceptive user interfaces” – the situation where perceived affordances don’t match actual functionality, which causes confusion for some people. This is to be avoided. We shouldn’t use form fields (nor a `<form>`) when they are _not_ appropriate. A checkbox, radio button, or select menu is meant to _gather information_. So if your goal is instead [to let the user manipulate the current view, use a `button` rather than checkboxes or radio buttons](https://fuzzylogic.me/posts/2022-07-15-perceived-affordances-and-the-functionality-mismatch-by-leonie-watson/).
   
 References: 
 - [Why use a form element when submitting fields with JavaScript](https://gomakethings.com/why-use-a-form-element-when-submitting-fields-with-javascript/)
