@@ -26,16 +26,35 @@ Caveats and notes:
 
 ## Table of contents
 
+* [If you only had 5 minutes](#if-you-only-had-5-minutes)
+* [Content structure](#content-structure)
 * [Ensure keyboard support](#ensure-keyboard-support)
 * [Content resizing](#content-resizing)
-* [Content structure](#content-structure)
 * [Better link text](#better-link-text)
 * [Supporting high contrast mode](#supporting-high-contrast-mode)
 * [Skip links](#skip-links)
+* [Favour native over custom components except where they have known issues](#favour-native-over-custom-components-except-where-they-have-known-issues)
 * [Navigation and menus](#navigation-and-menus)
 * [Modal dialogues](#modal-dialogues)
 * [ARIA](#aria)
 * [Forms](#forms)
+
+## If you only had 5 minutes
+
+If someone had a web page and only had 5 minutes to find and tackle the lowest hanging fruit accessibility wise, I’d probably echo Jeremy Keith’s advice to ensure that the page covers the following:
+
+- uses headings, and sensibly
+- uses landmarks (header, nav, main etc)
+- marks up forms sensibly (for example using labels and appropriate buttons)
+- give images sensible text alternatives
+
+Having only 5 minutes wouldn’t be great, of course, but the above give good bang-for-your-buck.
+
+## Content structure
+
+The page’s content should be well-structured as this makes it easier to understand for all, especially people with reading and cognitive disabilities. It should consist of short sections of content preceded by clear headings. It should employ lists where appropriate. It should place the most important content at the beginning of the page or section to give it prominence.
+
+Check your page for any long passages of text with no structure. Ensure that sufficient prominence is given to the most important information and calls to action.
 
 ## Ensure keyboard support
 
@@ -63,12 +82,6 @@ Check your web page to ensure that links clearly describe the content they link 
 
 Better link text also improves the flow and clarity of your content and so improves the experience for everyone.
 
-## Content structure
-
-The page’s content should be well-structured as this makes it easier to understand for all, especially people with reading and cognitive disabilities. It should consist of short sections of content preceded by clear headings. It should employ lists where appropriate. It should place the most important content at the beginning of the page or section to give it prominence.
-
-Check your page for any long passages of text with no structure. Ensure that sufficient prominence is given to the most important information and calls to action.
-
 ## Supporting high contrast mode
 
 Some people find it easier to read content when it’s in a particular colour against a specific background colour. Operating systems provide options to allow users to configure this to their preference. Websites must support support the user’s ability to apply this.
@@ -82,6 +95,14 @@ Having changed the contrast, check that your web page’s content is fully visib
 Websites should provide a “Skip to content” link because they provide an important accessibility aid to keyboard users and those who use specialised input devices. For these users, having to step through all of the navigation links would be tiring and frustrating. Providing a skip link allows them to bypass the navigation and skip to the page’s main content.
 
 To test that a website contains a skip link, visit a page then press the tab key and the skip link should appear. Then activate it using the enter key and check that focus moves to the main content area. Press tab again to ensure that focus moves to the first actionable element in the main content. 
+
+## Favour native over custom components except where they have known issues
+
+Native components require very little work, are familiar to users, and are generally accessible by default. Custom components can be built to appear and behave as designers want, but require much more effort to build and are challenging to make accessible.
+
+There are exceptions. Since the native options are flawed across browsers, accessibility experts recommend useing custom solutions for: 
+- form error field messages
+- focus indicator styles
 
 ## Navigation and menus
 
@@ -129,3 +150,4 @@ Using the `form` element can also make it easier for you to meet user expectatio
 * Adrian Roselli’s [Responsive type and zoom](https://adrianroselli.com/2019/12/responsive-type-and-zoom.html)
 * Heydon Pickering’s tweet about [buttons in navs](https://twitter.com/heydonworks/status/766948134169620480) and Scott O’Hara’s follow up article [Landmark Discoverability](https://www.scottohara.me/blog/2016/08/10/discovering-landmarks.html)
 * [Labelling landmarks, on MDN](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/navigation_role#labeling_landmarks)
+* Tetralogical’s [Foundations: native versus custom components](https://tetralogical.com/blog/2022/11/08/foundations-native-versus-custom-components/)
