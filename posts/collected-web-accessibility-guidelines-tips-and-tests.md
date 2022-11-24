@@ -41,14 +41,14 @@ Caveats and notes:
 
 ## If you only had 5 minutes
 
-If someone had a web page and only had 5 minutes to find and tackle the lowest hanging fruit accessibility wise, I’d probably echo [Jeremy Keith’s advice](https://skiptocontent.huxleydigital.co.uk/video/caring-about-the-world-wide-web-with-jeremy-keith/) to ensure that the page covers the following:
+If someone had a web page and only had 5 minutes to find and tackle the lowest hanging fruit accessibility-wise, I’d probably echo [Jeremy Keith’s advice](https://skiptocontent.huxleydigital.co.uk/video/caring-about-the-world-wide-web-with-jeremy-keith/) to ensure that the page covers the following:
 
 - uses headings, and sensibly
 - uses landmarks (header, nav, main etc)
 - marks up forms sensibly (for example using labels and appropriate buttons)
 - provides images with decent text alternatives
 
-Having only 5 minutes wouldn’t be great, of course, but the above give good bang-for-your-buck.
+Having only 5 minutes would be bad, of course, and you shouldn’t do that. The point is that if pushed, the above give good bang-for-your-buck.
 
 ## Content structure
 
