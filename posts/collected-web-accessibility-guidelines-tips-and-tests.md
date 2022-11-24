@@ -84,6 +84,15 @@ By putting form fields inside a form we also ensure we match user expectations. 
 
 If you’re thinking “but what about form fields that don’t _look like_ form fields?” then you’ve entered the problem territory of “deceptive user interfaces” – the situation where perceived affordances don’t match actual functionality, which causes confusion for some people. This is to be avoided. We shouldn’t use form fields (nor a `<form>`) when they are _not_ appropriate. A checkbox, radio button, or select menu is meant to _gather information_. So if your goal is instead [to let the user manipulate the current view, use a `button` rather than checkboxes or radio buttons](https://fuzzylogic.me/posts/2022-07-15-perceived-affordances-and-the-functionality-mismatch-by-leonie-watson/).
 
+References: 
+- [Why use a form element when submitting fields with JavaScript](https://gomakethings.com/why-use-a-form-element-when-submitting-fields-with-javascript/)
+- [Lea Verou and Leonie Watson’s discussion regarding Toggles](https://fuzzylogic.me/posts/2022-07-15-perceived-affordances-and-the-functionality-mismatch-by-leonie-watson/)
+- [My conversation about forms with accessibility expert Adrian Roselli](https://fuzzylogic.me/posts/2022-07-15-perceived-affordances-and-the-functionality-mismatch-by-leonie-watson/#update-july-19%2F7%2F22)
+
+### Using the form element simplifies your JavaScript for event handling
+
+Using the `form` element can also make it easier for you to meet user expectations in your JS-powered experience. This is because it gives you a single element (`form`) and event combination that allows listening to _multiple_ interactions. With a form element you can add a listener for the `submit()` event. This event fires automatically in response to the various ways users expect to submit a form, including pressing <kbd>enter</kbd> inside a field.
+
 ## Ensure keyboard support
 
 Web pages need to support those who navigate the page by keyboard.
@@ -131,15 +140,6 @@ When developing a collapsible menu, place your menu `<button>` _within_ your `<n
 ## Modal dialogues
 
 [You probably don’t want to set the modal’s heading as an `<h1>`](https://stackoverflow.com/a/38467898). It likely displays content that exists on the page (which already has an `<h1>`) at a lower level of the document hierarchy.
-  
-References: 
-- [Why use a form element when submitting fields with JavaScript](https://gomakethings.com/why-use-a-form-element-when-submitting-fields-with-javascript/)
-- [Lea Verou and Leonie Watson’s discussion regarding Toggles](https://fuzzylogic.me/posts/2022-07-15-perceived-affordances-and-the-functionality-mismatch-by-leonie-watson/)
-- [My conversation about forms with accessibility expert Adrian Roselli](https://fuzzylogic.me/posts/2022-07-15-perceived-affordances-and-the-functionality-mismatch-by-leonie-watson/#update-july-19%2F7%2F22)
-
-### Using the form element simplifies your JavaScript for event handling
-
-Using the `form` element can also make it easier for you to meet user expectations in your JS-powered experience. This is because it gives you a single element (`form`) and event combination that allows listening to _multiple_ interactions. With a form element you can add a listener for the `submit()` event. This event fires automatically in response to the various ways users expect to submit a form, including pressing <kbd>enter</kbd> inside a field.
 
 ## References
 
