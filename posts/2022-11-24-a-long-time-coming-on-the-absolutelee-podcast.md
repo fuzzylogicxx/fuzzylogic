@@ -9,7 +9,8 @@ linkTarget: "https://www.absolutelee.co.uk/podcast-episodes/a-long-time-coming"
 ---
 
 While watching David Baddiel's excellent [Jews Don't Count](https://www.channel4.com/programmes/david-baddiel-jews-dont-count) documentary on Channel Four I was intrigued by the section in which he spoke to Jason Lee, leading me to seek out this podcast episode.
-In the nineties at the height of lads’ culture, Baddiel and Frank Skinner essentially bullied and abused footballer Lee, mocking his appearance in particular. 
+
+In the nineties at the height of “lads’ culture”, Baddiel and Frank Skinner essentially bullied and abused footballer Lee, mocking his appearance in particular. 
 
 This conversation, difficult as it sounded, is fascinating. It throws up so many moral ambiguities, such as whether or not Baddiel is a fit person to publicly campaign against racism, and related questions around acceptance, rehabilitation and moving on.
 
