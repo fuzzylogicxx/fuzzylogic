@@ -16,11 +16,30 @@ mainImage.isAnchor: false
 draft: true
 
 ---
-Recently I’ve been reflecting on what we front-end developers do in the modern era. Working on a design system in 2022, it feels now more than ever that my job embodies the convergence of a host of interesting goals, disciplines, skills and experiences. Yet not long ago a colleague recalled a previous teammate of his teasing him that front-end developers “put the froth on the cappuccino”. While this gave us all a laugh, I imagine it also reflects a fairly common misunderstanding of our role.
+Recently I’ve been reflecting on what we front-end developers do in the modern era. Working on a design system in 2022, it feels now more than ever that my job embodies the convergence of a host of interesting goals, disciplines, skills and experiences. Yet not long ago a colleague recalled a previous teammate of his teasing him that front-end developers “put the froth on the cappuccino”. While this gave us all a laugh, I imagine it also reflects a fairly common misunderstanding and undervaluing of our role.
 
-Meanwhile there’s another, newer image of front-end development that is very JavaScript-oriented and arose in this era of package management and JavaScript frameworks. In this definition, front-end developers spend their time `npm install`ing packages, managing resultant dependencies, configuring build tools and manipulating API data. For some developers that’s no doubt the case! I’m conscious of [the great divide](https://css-tricks.com/the-great-divide/) and freely admit I’m [a front of the front-ender](https://bradfrost.com/blog/post/front-of-the-front-end-and-back-of-the-front-end-web-development/).
+Meanwhile there’s another, newer image of front-end development that is very JavaScript-oriented and arose in this era of JavaScript dependency management and JavaScript frameworks. In this definition, front-end developers spend their time wrangling JavaScript, configuring build tools and manipulating API data. For some developers that’s no doubt the case! I’m conscious of [the great divide](https://css-tricks.com/the-great-divide/) and freely admit I’m [a front of the front-ender](https://bradfrost.com/blog/post/front-of-the-front-end-and-back-of-the-front-end-web-development/).
 
-With all of these different perspectives around
+-------
+
+Description of a “Design System engineer” (for a job application form) that I suggested:
+
+- Very strong knowledge and understanding of the core web standards: HTML, CSS and JavaScript
+- Strong appreciation of the need for appropriate HTML semantics to achieve resilience and accessibility
+- Understands component-based architecture and delivery including concepts like atomic design, composition, variants and versioning
+- Advanced understanding of web accessibility including how to create accessible interactive components
+- Excellent attention to detail in implementing designs in code
+- Strong appreciation of responsive / multi-device considerations
+- Comfortable in modern CSS including BEM-like methodologies, ITCSS architecture, and modern approaches such as Flexbox, CSS Grid, custom properties
+- Competence in testing JavaScript and Ruby-based components
+- Git
+- Committed to constantly learning and improving technical knowledge and skills
+
+-------
+
+
+
+
 
 Here are some of the key areas I find myself working in from day-to-day.
 
