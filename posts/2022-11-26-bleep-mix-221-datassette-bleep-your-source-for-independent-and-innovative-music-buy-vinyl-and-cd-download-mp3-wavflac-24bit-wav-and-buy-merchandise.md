@@ -1,6 +1,6 @@
 ---
 date: "2021-02-01T15:53:53.094Z"
-title: Bleep Mix #221 - Datassette (on Bleep.com)
+title: "Bleep Mix #221 - Datassette (on Bleep.com)"
 description: "Great mix by one of my favourite electronic producers, Datassette"
 tags: [link, music, mix, electronic]
 linkTarget: "https://bleep.com/features/bleep-mix-221-Datassette"
