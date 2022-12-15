@@ -320,7 +320,7 @@ git branch newbranchname
 
 </figure>
   
-Create and switch to new branch:
+Create and switch to new branch (`main` or whatever branch you want to branch off): 
 
 <figure>
   
@@ -330,6 +330,8 @@ git checkout -b mynewbranch
 
 </figure>
   
+Note that if you branch off `foo_feature` then when creating a PR in GitHub you can change the `Base` from `main` to the branch you branched off. This specifies that you are requesting your changes be merged into `foo_feature` rather than `main` and makes the comparison of changes relative to `foo_feature` rather than `main`.
+   
 Switch to an existing branch:
 
 <figure>
