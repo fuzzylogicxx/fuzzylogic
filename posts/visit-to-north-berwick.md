@@ -28,7 +28,7 @@ Here are some of the things I did:
 * A walk around the harbour including great cliff views out to the Firth of Forth
 * A visit to the seabird centre where, amongst other things, I learned that gannets inhabit the Bass rock and that a gathering of gannets is called a _gannetry_! 
 * Pretty good lil’ shops! I particularly enjoyed the Steampunk coffee shop which also houses the Orange Moon record store.
-* Enjoyed a pint at The Auld Hoose and The Ship Inn. It turns out that my friend Kris’s dad (who I knew pretty well) was a regular at the latter.
+* Enjoyed a pint at The Ship Inn and The Auld Hoose. It turns out that my friend Kris’s dad (who I knew pretty well) was a regular at the latter.
 * A nice _frutti de mare_ pasta dinner at Bella Italia
 
 Next time I visit (hopefully with Clair and Rudy) I should go in summer so I can catch The Lobster Shack open! I’d also like to visit nearby Tantallon Castle.
