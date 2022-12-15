@@ -330,7 +330,7 @@ git checkout -b mynewbranch
 
 </figure>
   
-Note that if you branch off `foo_feature` then when creating a PR in GitHub you can change the `Base` from `main` to the branch you branched off. This specifies that you are requesting your changes be merged into `foo_feature` rather than `main` and makes the comparison of changes relative to `foo_feature` rather than `main`.
+Note that if you branch off `foo_feature` then when creating a PR in GitHub for your changes in `mynewbranch` you can change the _Base_ branch from the default of `main` to `foo_feature`. This specifies that you are requesting your changes be merged into `foo_feature` rather than `main` and makes the comparison of changes relative to `foo_feature` rather than `main`.
    
 Switch to an existing branch:
 
