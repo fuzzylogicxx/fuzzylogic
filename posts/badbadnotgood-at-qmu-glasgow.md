@@ -27,4 +27,4 @@ We braved -7° conditions to meet at Tennent’s Bar on Byres Rd where we watche
 
 We wangled a standing position on the balcony which was ideal as we could see the band, the visuals (lovely 16mm and 35mm film projections created specially for the music) and generally hear things much better. Each band member – drummer, bassist, saxophonist and keyboard player – are outstanding musicians, and together they’re incredibly tight. Led by drummer Alex Sowinski’s good vibes on the mic, they finished off their tour hitting all the right notes to send us into Christmas on a high.
 
-Last thing to mention is I have BadBadNotGood to thank for introducing me to the music of Arthur Verocai, via [his amazing string arrangements on Talk Memory](https://youtu.be/BUePFld3UHo). And for that I’m very thankful!
+Last thing to mention is I have BadBadNotGood to thank for introducing me to the music of [Arthur Verocai](https://undergroundsolushn.com/arthur-verocai-arthur-verocai.html), via [his amazing string arrangements on Talk Memory](https://youtu.be/BUePFld3UHo). And for that I’m very thankful!
