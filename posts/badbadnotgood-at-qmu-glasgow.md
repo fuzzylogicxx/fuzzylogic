@@ -1,8 +1,7 @@
 ---
 date: 2022-12-14T11:16:58Z
-title: BadBadNotGood in Glasgow
+title: BadBadNotGood at QMU, Glasgow
 description: Great gig hearing fantastic musicians with friends
-location: QMU, Glasgow
 tags:
 - note
 - gigs
