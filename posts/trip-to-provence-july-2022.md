@@ -45,7 +45,7 @@ Monday
 Gigigondas cut aboot
 2 other towns cut aboot. 
 - Vaison La Romagne
-- …
+- Seguret
 Art shop with Brazillian guy’s cool art. Website for Cesar Henao’s art: Infinitisation (dot something). Shop was called nartex or similar
 Brasserie universal: Tuna steak!!!
 
