@@ -3,7 +3,7 @@ date: 2023-01-02T21:03:21Z
 title: 'Lean “plugin subscription form” by Chris Ferdinandi '
 description: You don’t need to include a JS library when a lightweight vanilla JS
   solution would do the job
-tags: []
+tags: [link, form, progressiveenancement, lean, javascript, validation]
 linkTarget: https://gomakethings.com/more-html-less-javascript/
 draft: false
 
