@@ -1,5 +1,5 @@
 ---
-date: 2022-02-15T21:03:21Z
+date: 2023-01-02T21:03:21Z
 title: 'Lean “plugin subscription form” by Chris Ferdinandi '
 description: You don’t need to include a JS library when a lightweight vanilla JS
   solution would do the job
