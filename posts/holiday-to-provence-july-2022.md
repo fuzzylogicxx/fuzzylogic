@@ -1,16 +1,8 @@
 ---
-title: "Trip to Provence, July 2022"
-draft: true
-description: …
+title: "Post-COVID holiday in Provence, July 2022"
+draft: false
+description: 
 date: 2022-07-29 17:30:00
-mainImage:
-  url: https://res.cloudinary.com/fuzzylogic/image/upload/v1601734993/IMG_2723_wa3cmm.jpg
-  alt: Laurence, Clair and Rudy at the Cluanie Inn, Glenmoriston, in September 2020
-  aspectRatioWidth: 386
-  aspectRatioHeight: 290
-  isAnchor: true
-  figcaption: Laurence, Clair and Rudy at the Cluanie Inn, Glenmoriston, in September 2020
-openGraphImage: "https://res.cloudinary.com/fuzzylogic/image/upload/q_auto,f_auto,w_1200/v1601734993/IMG_2723_wa3cmm.jpg"
 tags:
   - entry
   - holiday
@@ -18,17 +10,47 @@ tags:
   - travel
   - food
 ---
-
+Like most folks we didn’t holiday abroad during 2020 and 2021, when COVID was at its height. Trips abroad are a luxury and privilege so this was no hardship. However I’ll admit that once restrictions were lifted and things felt safer, we were pretty excited to head for some sun and good food, and set our sights on a first trip together to the south of France.
 ---
-<figure>
-  {% respimg "" + mainImage.url + "", "" + mainImage.alt + "", "(min-width: 1600px) 646px, (min-width: 700px) 612px, 91.58vw", mainImage.aspectRatioWidth, mainImage.aspectRatioHeight %}
-  <figcaption>{{ mainImage.figcaption }}</figcaption>
-</figure>
 
-7 nights at Désir de Provence (hosts Sylvie and Igor), Sarrians, France.
+## The location
 
-First day (Sat)
+We spent seven nights at [Désir de Provence](https://en.desirdeprovence.com/), hosted by owners Sylvie and Igor.
 
+## Dining out
+
+La Bastide Bleue restaurant, Séguret.
+
+Hotel Montmirail in Vacqueyras.
+
+Wine in the heart of the countryside at [Domaine Mathiflo](https://domaine-mathiflo.com/). 
+
+Les Ramparts in Venasque – incredible nighttime view over the mountains
+
+[Monsieur Tu](https://www.tripadvisor.com/Restaurant_Review-g608811-d23724147-Reviews-Monsieur_Tu-L_Isle_sur_la_Sorgue_Vaucluse_Provence_Alpes_Cote_d_Azur.html) at L’isle sur la sorgue Meal where we had a lovely meal of fish and wine by the canal.
+
+Chez Serge in Carpentras.
+
+## Other highlights
+
+Antiques market at Carpentras.
+
+We spent one day walking around the towns of Gigigondas, Seguret and Vaison La Romagne.
+
+St Remy de Provence on a Wednesday morning for a fantastic market.
+
+[Carrieres Lumieres](https://www.carrieres-lumieres.com/en/node/994) (caves featuring art installations) which was amazing.
+
+Aix en Provence. [Vasarely Foundation](https://www.fondationvasarely.org/en/) for Kinetic art. Lovely shops and vibe.
+
+L’isle sur la sorgue – a lovely town which had an antiques market that blew Clair’s mind!
+
+## If we had more time
+
+Hopefully on a future stay in the area we can visit Gord, Russelet (“the Colorado of Provence”), and Nimmes.
+
+
+<!--
 Arrive after delays and Europcar racket
 Best hosts!
 night dinner (booked by Sylvie) – La Bastide Bleue restaurant, Séguret. Beautiful outdoor garden/courtyard setting, lovely food. We learned “squid” either that night or the next. Practiced a little French as they didn’t speak much English which was refreshing!
@@ -50,6 +72,7 @@ Gigigondas cut aboot
 Art shop with Brazillian guy’s cool art. Website for Cesar Henao’s art: Infinitisation (dot something). Shop was called nartex or similar
 Brasserie universal: Tuna steak!!!
 
+https://www.fondationvasarely.org/en/
 Kinetic art
 Aix en Provence. 
 - Bought sunglasses, Persol. Assistant was great – completely straightforward, no messing! Exactly what I needed.
@@ -75,8 +98,5 @@ Last day
 
 Last night – Chez Serge in Carpentras.
 
-If we had more time:
-- Gord 
-- Russelet (colorado of provence)
-- Nimmes
-- lots more
+
+-->
