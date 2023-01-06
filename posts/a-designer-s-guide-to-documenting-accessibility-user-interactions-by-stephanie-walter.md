@@ -3,7 +3,7 @@ date: 2023-01-06T21:03:21Z
 title: A Designer’s Guide to Documenting Accessibility & User Interactions (by Stephanie
   Walter)
 description: Stephanie argues that designs should include accessibility-related annotations
-tags: []
+tags: [link, a11y, design, wireframes, annotation]
 linkTarget: https://stephaniewalter.design/blog/a-designers-guide-to-documenting-accessibility-user-interactions/
 draft: false
 
