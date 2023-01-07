@@ -23,7 +23,7 @@ La Bastide Bleue restaurant, Séguret.
 
 Hotel Montmirail in Vacqueyras.
 
-Wine in the heart of the countryside at [Domaine Mathiflo](https://domaine-mathiflo.com/). 
+Beautiful local wine at [Domaine Mathiflo](https://domaine-mathiflo.com/) in Suzette (right in the heart of the countryside). 
 
 Les Ramparts in Venasque – incredible nighttime view over the mountains
 
@@ -35,13 +35,15 @@ Chez Serge in Carpentras.
 
 Antiques market at Carpentras.
 
-We spent one day walking around the towns of Gigigondas, Seguret and Vaison La Romagne.
+A day walking around the towns of Gigigondas, Seguret and Vaison La Romagne.
 
 St Remy de Provence on a Wednesday morning for a fantastic market.
 
 [Carrieres Lumieres](https://www.carrieres-lumieres.com/en/node/994) (caves featuring art installations) which was amazing.
 
 Aix en Provence. [Vasarely Foundation](https://www.fondationvasarely.org/en/) for Kinetic art. Lovely shops and vibe.
+
+[Chateau du Barroux](https://www.chateaudubarroux.fr/en/) was a stunning hilltop location with a castle, cobbled streets, a chapel and incredible panoramic views of the surrounding region including Mont Ventoux.
 
 L’isle sur la sorgue – a lovely town which had an antiques market that blew Clair’s mind!
 
