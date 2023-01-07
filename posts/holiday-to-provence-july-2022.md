@@ -27,7 +27,7 @@ Beautiful local wine at [Domaine Mathiflo](https://domaine-mathiflo.com/) in Suz
 
 Les Ramparts in Venasque – incredible nighttime view over the mountains
 
-[Monsieur Tu](https://www.tripadvisor.com/Restaurant_Review-g608811-d23724147-Reviews-Monsieur_Tu-L_Isle_sur_la_Sorgue_Vaucluse_Provence_Alpes_Cote_d_Azur.html) at L’isle sur la sorgue Meal where we had a lovely meal of fish and wine by the canal.
+[Monsieur Tu](https://www.tripadvisor.com/Restaurant_Review-g608811-d23724147-Reviews-Monsieur_Tu-L_Isle_sur_la_Sorgue_Vaucluse_Provence_Alpes_Cote_d_Azur.html) at L’isle sur la Sorgue, where we had a lovely meal of fish and wine by the canal.
 
 Chez Serge in Carpentras.
 
