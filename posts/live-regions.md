@@ -15,7 +15,9 @@ mainImage.isAnchor: false
 draft: true
 
 ---
-Anda asked for some thoughts regarding a “copy to clipboard” component. After the copy event, a message appears saying “Copied”.
+Anda asked for some thoughts regarding a “copy to clipboard” component. After the copy event, a message appears saying “Copied”. 
+
+(I _think_ GitHub get around the accessible announcement issue by making the trigger (button) and the “Copied” announcement _the same element_., Focus is already on the element that changes therefore the change is announced. Their approach is to change the value of the already-present `aria-label` attribute.)
 
 I went looking at Adam Silver’s book and Scott O’s [Are we live?](https://www.scottohara.me/blog/2022/02/05/are-we-live.html)
 
