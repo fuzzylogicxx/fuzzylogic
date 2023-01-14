@@ -327,6 +327,7 @@ Accessibility and animation can co-exist, as Cassie Evans explains in her CSS-Tr
 - [animate.css on github](https://github.com/animate-css/animate.css) (good for searching for keyframe CSS)
 - [CSS transitions and transforms](https://thoughtbot.com/blog/transitions-and-transforms) on Thoughtbot
 - [CSS Transitions](https://www.joshwcomeau.com/animation/css-transitions/) by Josh Comeau
+- [Keyframe Animations](https://www.joshwcomeau.com/animation/keyframe-animations/) by Josh Comeau
 - [Transition vs animation](https://cssanimation.rocks/transition-vs-animation/) on CSS Animation
 - [Keyframe animation syntax](https://css-tricks.com/snippets/css/keyframe-animation-syntax/) on CSS-Tricks
 - [CSS animation for beginners](https://thoughtbot.com/blog/css-animation-for-beginners) on Thoughtbot
