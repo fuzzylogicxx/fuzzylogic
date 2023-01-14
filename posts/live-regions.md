@@ -19,9 +19,13 @@ Anda asked for some thoughts regarding a “copy to clipboard” component. Afte
 
 I went looking at Adam Silver’s book and Scott O’s [Are we live?](https://www.scottohara.me/blog/2022/02/05/are-we-live.html)
 
+I _think_ one option is to _send focus_ to the content that changes, and that will cause it to be announced accessibly too. That’s not always a suitable option – you may not want to switch focus from the element currently in use.
+
+Other options:
+
 output is the native HTML element ([Scott O article](https://www.scottohara.me/blog/2019/07/10/the-output-element.html))
 
-ARIA role=status
+ARIA role=status (equivalent to `polite`)
 
 aria-live=polite
 
@@ -29,6 +33,10 @@ I _think_ output is safe to use, perhaps with the addition of role=status (for a
 
 For accessibility does the element need to be ever present rather than either toggled hidden/visible or injected?
 
-Yes, the element should be ever present; only its content should change. Whether using a container set as a live region (meaning inner content will change and we want that communicated) or an `output` element, you update the contents but don’t show/hide or add/delete the element.
+Yes, the element should be ever present; only its content should change. Whether using a container set as a live region (meaning inner content will change and we want that communicated) or an `output` element, you update the contents but don’t show/hide or add/delete the element. I guess in some cases you might make an announcement element _visually hidden_ when it’s for screen readers only, but that’s different from “hidden from everyone” which causes problems.
 
 I think per [Scott’s toast example](https://scottaohara.github.io/tests/html-output/toastput-aria.html) we want a container div wrapping the <output> and this container handles styling, then the <output> should be empty but populated with the text “Copied” by the click event handler, then after a few seconds the output’s textContent should be set to empty again.
+
+Misc references:
+
+* [Marcy Sutton course section on aria live regions](https://frontendmasters.com/courses/javascript-accessibility/announcements-with-aria-live-regions/) 
