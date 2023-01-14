@@ -17,7 +17,9 @@ draft: true
 ---
 Anda asked for some thoughts regarding a “copy to clipboard” component. After the copy event, a message appears saying “Copied”.
 
-output is the native HTML element
+I went looking at Adam Silver’s book and Scott O’s [Are we live?](https://www.scottohara.me/blog/2022/02/05/are-we-live.html)
+
+output is the native HTML element ([Scott O article](https://www.scottohara.me/blog/2019/07/10/the-output-element.html))
 
 ARIA role=status
 
