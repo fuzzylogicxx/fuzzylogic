@@ -22,4 +22,4 @@ Aside from tutorials this guide also includes a great [_Learn_](https://webcompo
 
 I hope that in future the guide will cover testing Web Components too.
 
-Lastly, I’m enjoying the Embed Mastodon Toot web component tutorial so far, and to help it sink in (and save the code for posterity) I’ve [chucked the code into a pen](https://codepen.io/fuzzylogicx/pen/RwBgveM).
+Lastly, I like the [Embed Mastodon Toot](https://webcomponents.guide/tutorials/mastodon-toot-embed/) web component tutorial, and to help it sink in (and save the code for posterity) I’ve [chucked the code into a pen](https://codepen.io/fuzzylogicx/pen/RwBgveM).
