@@ -17,7 +17,7 @@ draft: true
 ---
 (
 
-Anda asked for some thoughts regarding a “copy to clipboard” component. It set my mind racing. It’s a great example of where a component being “physically small” probably leads folks to think it’d be quick and easy to create but in reality to build it responsibly requires a disproportionate amount of thinking!
+Anda asked for some thoughts regarding a “copy to clipboard” component. It set my mind racing. It’s a great example of where a component being “physically small” probably leads folks to think it’d be quick and easy to create but in reality to build it responsibly requires a disproportionate amount of thinking! (Another way of saying this: [the smaller the pattern is, the easier to overlook the complex needs](https://adrianroselli.com/2020/01/defining-toast-messages.html#comment-186754))
 
 I started by looking at Adam Silver’s book and Scott O’Hara’s [Are we live?](https://www.scottohara.me/blog/2022/02/05/are-we-live.html) because ARIA live regions were at the front of my mind… but ended up down a rabbithole and kept seeing more and more layers!
 
@@ -29,7 +29,7 @@ How is the message to be announced? And dismissed? Will it need interacted with?
 
 I _think_ one option to make an update be announced is to _send focus_ to the relevant element, which also causes it to be announced accessibly. That’s not always a suitable option: i) you may not want to switch focus from the element currently in use, ii) the target may not be focusable by default; iii) there may be no useful reason to focus it (e.g. if it’s a short message with no interactive elements). I think in this case it doesn’t make sense to shift focus onto the “Copied” message.
 
-Actually, GitHub somewhat cleverly get around the accessible announcement issue by making the trigger (button) and element announcing “Copied!” _the same element_. Focus is already on the element that changes therefore the change is announced. Their approach is to label the element with `aria-label` as “Copy” on page-load and change the value to “Copied!” after click/copy). However their resulting interface (with its visual tickmark on successful copy) is quite opinionated and restrictive, and `aria-label` isn’t necessarily an ideal choice. 
+Actually, GitHub somewhat cleverly get around the accessible announcement issue by making the trigger (button) and element announcing “Copied!” _the same element_. Focus is already on the element that changes therefore the change is announced. Their approach is to label the element with `aria-label` as “Copy” on page-load and change the value to “Copied!” after click/copy). However their resulting interface (with its visual tickmark on successful copy) is quite opinionated and restrictive, and [`aria-label` isn’t necessarily an ideal choice](https://github.com/github/clipboard-copy-element/commit/93894dba09a6e9e95ae22058f93348ede55cdb46) for various reasons.
 
 So how do we define this pattern in order to get an accessible approach? Is the “Copied!” message a toast? Or is this a cousin of disclosure widget e.g. a tooltip, or toggletip?
 
@@ -57,7 +57,7 @@ Actually, should the message animate away of its own accord or should it be in r
 
 Should the message disappear and be scrubbed in response to the user moving focus from the trigger (or uses the Esc key)? This is how Heydon’s toggletip works. [https://codepen.io/heydon/pen/zdYdQv](https://codepen.io/heydon/pen/zdYdQv "https://codepen.io/heydon/pen/zdYdQv") / [https://inclusive-components.design/tooltips-toggletips/](https://inclusive-components.design/tooltips-toggletips/ "https://inclusive-components.design/tooltips-toggletips/")
 
-Or if the message should disappear and be wiped of its own accord, how should that work? Maybe make the JS for a successful copy apply the “start” state (populate “Copied!” text, add animation class) then after a little delay also add the “end” state (set text to empty, invert the animation)? An alternative is the class we apply to set a single CSS `animation` that includes all of the states (enter, wait, exit). Then we just need to delete the text. We could tap into `Element.getAnimations()` and wait (via a promise) for the animations to finish then delete the text. This is the approach [Adam Argyle demonstrates in his Toast solution](https://web.dev/building-a-toast-component/#putting-all-the-javascript-together). 
+Or if the message should disappear and be wiped of its own accord, how should that work? Maybe make the JS for a successful copy apply the “start” state (populate “Copied!” text, add animation class) then after a little delay also add the “end” state (set text to empty, invert the animation)? An alternative is the class we apply to set a single CSS `animation` that includes all of the states (enter, wait, exit). Then all that remains is to delete the text. We could tap into `Element.getAnimations()` and wait (via a promise) for the animations to finish then delete the text. This is the approach [Adam Argyle demonstrates in his Toast solution](https://web.dev/building-a-toast-component/#putting-all-the-javascript-together). 
 
 Styling 
 
