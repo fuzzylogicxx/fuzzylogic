@@ -37,7 +37,7 @@ Adrian Roselli’s article [Disclosure Widgets](https://adrianroselli.com/2020/0
 - highly custom `select` alternatives when `listbox` is innapropriate because it needs to include items that do not have the `option` role
 - a toggle-tip
 
-However something Adrian addresses (and I’ve previously written about) is the question around [for which collapse/expand use cases we can safely use the _native_ `details` element](https://fuzzylogic.me/posts/does-the-html-details-element-solve-progressively-enhanced-disclosures/). There’s a lot to mention but since I’d prefer to present a simple heuristic let’s go meta here and use a `details`:
+Something Adrian addresses (and I’ve previously written about) is the question around [for which collapse/expand use cases we can safely use the _native_ `details` element](https://fuzzylogic.me/posts/does-the-html-details-element-solve-progressively-enhanced-disclosures/). There’s a lot to mention but since I’d prefer to present a simple heuristic let’s go meta here and use a `details`:
 
 <details>
   <summary>Use <code>details</code> for basic narrative content and panels but otherwise use a DIY disclosure</summary>
@@ -60,6 +60,8 @@ However something Adrian addresses (and I’ve previously written about) is the 
     
   <p>Note to self: add more detail and links to this section when I get the chance.</p>
 </details>
+
+I’ve also noticed that [Adrian has a handy pen combining code for numerous disclosure widget variations](https://codepen.io/aardrian/pen/dyowpJj?editors=0100).
 
 Heydon Pickering’s [Collapsible sections](https://inclusive-components.design/collapsible-sections/) on Inclusive Components is excellent, and includes consideration of progressive enhancement and an excellent web component version. It’s also oriented toward _multiple_ adjacent sections (an accordion although it doesn’t use that term) and includes fantastic advice regarding: 
 
