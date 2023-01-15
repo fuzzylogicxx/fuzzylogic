@@ -1,5 +1,5 @@
 ---
-date: 2023-01-14T19:33:42Z
+date: 2023-01-14T19:33:42.000+00:00
 title: Live regions
 description: ''
 tags: []
@@ -21,11 +21,17 @@ Anda asked for some thoughts regarding a “copy to clipboard” component. It s
 
 Animation:
 
-The goal is to animate in then animate away the content. (Or at least to animate it away). The element being animated should probably be a `div` wrapper around an `<output>` which could start with its `opacity` set to `0`. I think this is a case for CSS’s `transition` rather than `animation` (although you could prob use either). Why? It’ll happen via a class applied to an existing element by JS in response to an event, rather than an animation that needs to happen on page load or to an element inserted into the DOM. _Hang on_: actually if it the goal were just _animating away_ I might go for transition, however if the goal is more complex e.g. “animate in, then wait for x seconds, then animate away” then I’d reach for `animation`.
+The goal is to animate _in_ then animate _away_ the content. (Or at least to animate it away). The element being animated should probably be a `div` wrapper around an `<output>` which could start with its `opacity` set to `0`. I think this is a case for CSS’s `transition` rather than `animation` (although you could prob use either). Why? It’ll happen via a class applied to an existing element by JS in response to an event, rather than an animation that needs to happen on page load or to an element inserted into the DOM. _Hang on_: actually if it the goal were just _animating away_ I might go for transition, however if the goal is more complex e.g. “animate in, then wait for x seconds, then animate away” then I’d reach for `animation`.
+
+Actually, should the message animate away of its own accord or should in response to an event. And actually, I need to remember we don’t just need to animate out the message’s visibility; we actually need to delete the message too!
+
+Maybe toggletip better:
+
+[https://inclusive-components.design/tooltips-toggletips/](https://inclusive-components.design/tooltips-toggletips/ "https://inclusive-components.design/tooltips-toggletips/") /  [https://codepen.io/heydon/pen/zdYdQv](https://codepen.io/heydon/pen/zdYdQv "https://codepen.io/heydon/pen/zdYdQv")
 
 Announcing the change:
 
-After the copy event, a message appears saying “Copied”. 
+After the copy event, a message appears saying “Copied”.
 
 (I _think_ GitHub get around the accessible announcement issue by making the trigger (button) and the “Copied” announcement _the same element_. Focus is already on the element that changes therefore the change is announced. Their approach is to change the value of the already-present `aria-label` attribute.)
 
@@ -49,10 +55,10 @@ For accessibility does the element need to be ever present rather than either to
 
 Yes, the element should be ever present; only its content should change. Whether using a container set as a live region (meaning inner content will change and we want that communicated) or an `output` element, you update the contents but don’t show/hide or add/delete the element. I guess in some cases you might make an announcement element _visually hidden_ when it’s for screen readers only, but that’s different from “hidden from everyone” which causes problems.
 
-I guess if the message needs to animate in and away, it should be 
+I guess if the message needs to animate in and away, it should be
 
 I think per [Scott’s toast example](https://scottaohara.github.io/tests/html-output/toastput-aria.html) we want a container div wrapping the <output> and this container handles styling, then the <output> should be empty but populated with the text “Copied” by the click event handler, then after a few seconds the output’s textContent should be set to empty again.
 
 Misc references:
 
-* [Marcy Sutton course section on aria live regions](https://frontendmasters.com/courses/javascript-accessibility/announcements-with-aria-live-regions/) 
+* [Marcy Sutton course section on aria live regions](https://frontendmasters.com/courses/javascript-accessibility/announcements-with-aria-live-regions/)
