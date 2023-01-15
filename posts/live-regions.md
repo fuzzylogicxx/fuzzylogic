@@ -1,6 +1,6 @@
 ---
 date: 2023-01-14T19:33:42.000+00:00
-title: Live regions
+title: A copy to clipboard component
 description: ''
 tags: []
 noteWithTitle: false
@@ -19,9 +19,9 @@ draft: true
 
 Anda asked for some thoughts regarding a “copy to clipboard” component. It set my mind racing. It’s a great example of where a component being “physically small” probably leads folks to think it’d be quick and easy to create but in reality to build it responsibly requires a disproportionate amount of thinking!
 
-I went looking at Adam Silver’s book and Scott O’s [Are we live?](https://www.scottohara.me/blog/2022/02/05/are-we-live.html) but then went down a rabbithole and kept seeing more and more considerations!
+I started by looking at Adam Silver’s book and Scott O’Hara’s [Are we live?](https://www.scottohara.me/blog/2022/02/05/are-we-live.html) because ARIA live regions were at the front of my mind… but ended up down a rabbithole and kept seeing more and more layers!
 
-Best practice research, complex Accessibility, JavaScript, animation, complex layout…
+_Best practice research, complex Accessibility, JavaScript, animation, complex layout…_
 
 Accessibility and definition
 
@@ -55,11 +55,9 @@ The goal is to animate _in_ then animate _away_ the content. (Or at least to ani
 
 Actually, should the message animate away of its own accord or should it be in response to an event? And actually, I need to remember we don’t just need to animate out the message’s visibility; we actually need to delete the message too!
 
-Should the message disappear and be scrubbed in response to the user moving focus from the trigger? (Or similarly hits the Esc key). This is how Heydon’s toggletip works.
+Should the message disappear and be scrubbed in response to the user moving focus from the trigger (or uses the Esc key)? This is how Heydon’s toggletip works. [https://codepen.io/heydon/pen/zdYdQv](https://codepen.io/heydon/pen/zdYdQv "https://codepen.io/heydon/pen/zdYdQv") / [https://inclusive-components.design/tooltips-toggletips/](https://inclusive-components.design/tooltips-toggletips/ "https://inclusive-components.design/tooltips-toggletips/")
 
-[https://codepen.io/heydon/pen/zdYdQv](https://codepen.io/heydon/pen/zdYdQv "https://codepen.io/heydon/pen/zdYdQv") / [https://inclusive-components.design/tooltips-toggletips/](https://inclusive-components.design/tooltips-toggletips/ "https://inclusive-components.design/tooltips-toggletips/")
-
-Or if it should disappear and scrub of its own accord, how should that work? Have the JS just 
+Or if the message should disappear and be wiped of its own accord, how should that work? Maybe make the JS for a successful copy apply the “start” state (populate “Copied!” text, add animation class) then after a little delay also add the “end” state (set text to empty, invert the animation)? An alternative is the class we apply to set a single CSS `animation` that includes all of the states (enter, wait, exit). Then we just need to delete the text. We could tap into `Element.getAnimations()` and wait (via a promise) for the animations to finish then delete the text. This is the approach [Adam Argyle demonstrates in his Toast solution](https://web.dev/building-a-toast-component/#putting-all-the-javascript-together). 
 
 Styling 
 
