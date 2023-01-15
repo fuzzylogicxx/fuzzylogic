@@ -42,3 +42,5 @@ There are lots of interesting ideas and considerations in Adam’s tutorial, suc
 Thanks for this, [Adam](@argyleink)!
 
 (via [Adam’s tweet](https://twitter.com/argyleink/status/1468620728052305924))
+
+There’s some nice code in here but the demo page minifies and obfuscates everything. However the [toast component source](https://github.com/argyleink/gui-challenges/tree/main/toast) is available on GitHub.
