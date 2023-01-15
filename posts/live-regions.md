@@ -17,46 +17,58 @@ draft: true
 ---
 (
 
-Anda asked for some thoughts regarding a “copy to clipboard” component. It set my mind racing. A good example of where a component being “physically small” probably leads folks to think it’d be quick and easy to create but in reality it requires – at least to build responsibly – a disproportionate amount of thinking!
+Anda asked for some thoughts regarding a “copy to clipboard” component. It set my mind racing. It’s a great example of where a component being “physically small” probably leads folks to think it’d be quick and easy to create but in reality to build it responsibly requires a disproportionate amount of thinking!
+
+I went looking at Adam Silver’s book and Scott O’s [Are we live?](https://www.scottohara.me/blog/2022/02/05/are-we-live.html) but then went down a rabbithole and kept seeing more and more considerations!
+
+Best practice research, complex Accessibility, JavaScript, animation, complex layout…
+
+Accessibility and definition
+
+How is the message to be announced? And dismissed? Will it need interacted with? Might it occur multiple times and need to be announced each time? Might there be multiple on the page (so IDs need to be unique, JS needs to handle this, etc)?
+
+I _think_ one option to make an update be announced is to _send focus_ to the relevant element, which also causes it to be announced accessibly. That’s not always a suitable option: i) you may not want to switch focus from the element currently in use, ii) the target may not be focusable by default; iii) there may be no useful reason to focus it (e.g. if it’s a short message with no interactive elements). I think in this case it doesn’t make sense to shift focus onto the “Copied” message.
+
+Actually, GitHub somewhat cleverly get around the accessible announcement issue by making the trigger (button) and element announcing “Copied!” _the same element_. Focus is already on the element that changes therefore the change is announced. Their approach is to label the element with `aria-label` as “Copy” on page-load and change the value to “Copied!” after click/copy). However their resulting interface (with its visual tickmark on successful copy) is quite opinionated and restrictive, and `aria-label` isn’t necessarily an ideal choice. 
+
+So how do we define this pattern in order to get an accessible approach? Is the “Copied!” message a toast? Or is this a cousin of disclosure widget e.g. a tooltip, or toggletip?
+
+Probably a toast or toggletip (it’s click-based) but not a Tooltip (it’s hover/focus based). And I’m kinda drawn more to toast because I feel our use case is more “a message appearing in response to an event”, rather than “an info-revealing trigger that’s labelled or described by the revealed info”. Also I particularly don’t fancy tooltip not only because its not click-driven but because it gets you into complex accessibility considerations (see Sarah H and Scott O links).
+
+I love Anda’s idea of using `<output>`! It’s the native HTML element that provides a “native ARIA role=status”. ([https://www.scottohara.me/blog/2019/07/10/the-output-element.html](https://www.scottohara.me/blog/2019/07/10/the-output-element.html "https://www.scottohara.me/blog/2019/07/10/the-output-element.html")). 
+
+Related options are ARIA `role=status` and `aria-live=polite`. `role=status` is equivalent to `aria-live=polite`). Is `output` safe to use? I _think_ so, perhaps best accompanied by `role=status` (at least for a while).
+
+For accessibility does the `output` need to be a) ever-present rather than b) either toggled hidden/visible or injected? From research I believe the element should be ever present; only its content should change. Whether using a) a container set as a live region (meaning “inner content will change and we want that communicated”) or b) an `output` element, you update the contents but don’t show/hide or add/delete the element. I guess in some cases (not ours here) you might make an announcement element _visually hidden_ when it’s for screen readers only, but that’s different from “hiding from everyone” which causes problems.
+
+I _think_ per [Scott’s toast example](https://scottaohara.github.io/tests/html-output/toastput-aria.html) we want a container div wrapping the <output> and this container handles styling, then the <output> should be empty but populated with the text “Copied” by the click event handler, then after a few seconds the output’s textContent should be set to empty again. (Also check what markup Heydon uses because he uses ARIA rater than `output` although I think his is pretty similar)
+
+For accessibility does the element need to be ever present rather than either toggled hidden/visible or injected?
+
+PE:
+
+It should only appear on the “happy JS path” (JS enabled, generally non-blocked and working, and _this specific_ JS supported and working). Or to put it another way, it should not appear at all if the trigger would be broken. Therefore I’d use “progressive enhancement”. A web component is a good way of doing that, because one of their benefits is that (done right) they are natively PE-centric. But it’s not the only way. You could use Stimulus or whatever.
 
 Animation:
 
 The goal is to animate _in_ then animate _away_ the content. (Or at least to animate it away). The element being animated should probably be a `div` wrapper around an `<output>` which could start with its `opacity` set to `0`. I think this is a case for CSS’s `transition` rather than `animation` (although you could prob use either). Why? It’ll happen via a class applied to an existing element by JS in response to an event, rather than an animation that needs to happen on page load or to an element inserted into the DOM. _Hang on_: actually if it the goal were just _animating away_ I might go for transition, however if the goal is more complex e.g. “animate in, then wait for x seconds, then animate away” then I’d reach for `animation`.
 
-Actually, should the message animate away of its own accord or should in response to an event. And actually, I need to remember we don’t just need to animate out the message’s visibility; we actually need to delete the message too!
+Actually, should the message animate away of its own accord or should it be in response to an event? And actually, I need to remember we don’t just need to animate out the message’s visibility; we actually need to delete the message too!
 
-Maybe toggletip better:
+Should the message disappear and be scrubbed in response to the user moving focus from the trigger? (Or similarly hits the Esc key). This is how Heydon’s toggletip works.
 
-[https://inclusive-components.design/tooltips-toggletips/](https://inclusive-components.design/tooltips-toggletips/ "https://inclusive-components.design/tooltips-toggletips/") /  [https://codepen.io/heydon/pen/zdYdQv](https://codepen.io/heydon/pen/zdYdQv "https://codepen.io/heydon/pen/zdYdQv")
+[https://codepen.io/heydon/pen/zdYdQv](https://codepen.io/heydon/pen/zdYdQv "https://codepen.io/heydon/pen/zdYdQv") / [https://inclusive-components.design/tooltips-toggletips/](https://inclusive-components.design/tooltips-toggletips/ "https://inclusive-components.design/tooltips-toggletips/")
 
-Announcing the change:
+Or if it should disappear and scrub of its own accord, how should that work? Have the JS just 
 
-After the copy event, a message appears saying “Copied”.
+Styling 
 
-(I _think_ GitHub get around the accessible announcement issue by making the trigger (button) and the “Copied” announcement _the same element_. Focus is already on the element that changes therefore the change is announced. Their approach is to label the element with `aria-label` as “Copy” on page-load and change the value to “Copied!” after click/copy))
-
-I went looking at Adam Silver’s book and Scott O’s [Are we live?](https://www.scottohara.me/blog/2022/02/05/are-we-live.html)
-
-I _think_ one option is to _send focus_ to the content that changes, and that will cause it to be announced accessibly too. That’s not always a suitable option – you may not want to switch focus from the element currently in use.
-
-Other options:
-
-output is the native HTML element ([Scott O article](https://www.scottohara.me/blog/2019/07/10/the-output-element.html))
-
-ARIA role=status (equivalent to `polite`)
-
-aria-live=polite
-
-I _think_ output is safe to use, perhaps with the addition of role=status (for a while).
-
-For accessibility does the element need to be ever present rather than either toggled hidden/visible or injected?
-
-Yes, the element should be ever present; only its content should change. Whether using a container set as a live region (meaning inner content will change and we want that communicated) or an `output` element, you update the contents but don’t show/hide or add/delete the element. I guess in some cases you might make an announcement element _visually hidden_ when it’s for screen readers only, but that’s different from “hidden from everyone” which causes problems.
-
-I guess if the message needs to animate in and away, it should be
-
-I think per [Scott’s toast example](https://scottaohara.github.io/tests/html-output/toastput-aria.html) we want a container div wrapping the <output> and this container handles styling, then the <output> should be empty but populated with the text “Copied” by the click event handler, then after a few seconds the output’s textContent should be set to empty again.
+Positioning the copy at the top-right of the code snippet then making the msg show underneath and centred is tricky.
 
 Misc references:
 
 * [Marcy Sutton course section on aria live regions](https://frontendmasters.com/courses/javascript-accessibility/announcements-with-aria-live-regions/)
+* [https://inclusive-components.design/tooltips-toggletips/](https://inclusive-components.design/tooltips-toggletips/ "https://inclusive-components.design/tooltips-toggletips/")
+* [https://twitter.com/aardrian/status/1405483122913861633](https://twitter.com/aardrian/status/1405483122913861633 "https://twitter.com/aardrian/status/1405483122913861633")
+* [https://github.com/scottaohara/a11y_tooltips](https://github.com/scottaohara/a11y_tooltips "https://github.com/scottaohara/a11y_tooltips")
+* [Using promises to wait until animations finish](https://web.dev/building-a-toast-component/#putting-all-the-javascript-together)
