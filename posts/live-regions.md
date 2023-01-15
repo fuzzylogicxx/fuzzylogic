@@ -33,9 +33,7 @@ Announcing the change:
 
 After the copy event, a message appears saying “Copied”.
 
-(I _think_ GitHub get around the accessible announcement issue by making the trigger (button) and the “Copied” announcement _the same element_. Focus is already on the element that changes therefore the change is announced. Their approach is to change the value of the already-present `aria-label` attribute.)
-
-)
+(I _think_ GitHub get around the accessible announcement issue by making the trigger (button) and the “Copied” announcement _the same element_. Focus is already on the element that changes therefore the change is announced. Their approach is to label the element with `aria-label` as “Copy” on page-load and change the value to “Copied!” after click/copy))
 
 I went looking at Adam Silver’s book and Scott O’s [Are we live?](https://www.scottohara.me/blog/2022/02/05/are-we-live.html)
 
