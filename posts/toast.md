@@ -22,3 +22,7 @@ draft: true
 Scott O output element post
 
 Adam A
+
+Me mucking about in codepen [https://codepen.io/fuzzylogicx/pen/OJwjxXO/c4402b97e31707cd96649b3a2c41a4fb](https://codepen.io/fuzzylogicx/pen/OJwjxXO/c4402b97e31707cd96649b3a2c41a4fb "https://codepen.io/fuzzylogicx/pen/OJwjxXO/c4402b97e31707cd96649b3a2c41a4fb")
+
+Are toasts even a good idea?
