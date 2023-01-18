@@ -19,6 +19,8 @@ draft: true
 
 Anda asked for some thoughts regarding a “copy to clipboard” component. It set my mind racing. It’s a great example of where a component being “physically small” probably leads folks to think it’d be quick and easy to create but in reality to build it responsibly requires a disproportionate amount of thinking! (Another way of saying this: [the smaller the pattern is, the easier to overlook the complex needs](https://adrianroselli.com/2020/01/defining-toast-messages.html#comment-186754))
 
+WIP pen [https://codepen.io/fuzzylogicx/pen/YzjxXjr/77d5d7fc91df8413a26848d6cbba2e8a?editors=1111](https://codepen.io/fuzzylogicx/pen/YzjxXjr/77d5d7fc91df8413a26848d6cbba2e8a?editors=1111 "https://codepen.io/fuzzylogicx/pen/YzjxXjr/77d5d7fc91df8413a26848d6cbba2e8a?editors=1111")
+
 I started by looking at Adam Silver’s book and Scott O’Hara’s [Are we live?](https://www.scottohara.me/blog/2022/02/05/are-we-live.html) because ARIA live regions were at the front of my mind… but ended up down a rabbithole and kept seeing more and more layers!
 
 _Best practice research, complex Accessibility, JavaScript, animation, complex layout…_
