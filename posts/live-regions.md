@@ -50,8 +50,6 @@ For accessibility does the `output` need to be a) ever-present rather than b) ei
 
 I _think_ per [Scott’s O’s toast demo](https://scottaohara.github.io/tests/html-output/toastput-aria.html) we want a container div wrapping the <output> and this container handles styling, then the <output> should be empty but populated with the text “Copied” by the click event handler, then after a few seconds the output’s textContent should be set to empty again. (Also check what markup Heydon uses because he uses ARIA rater than `output` although I think his is pretty similar)
 
-For accessibility does the element need to be ever present rather than either toggled hidden/visible or injected?
-
 PE:
 
 It should only appear on the “happy JS path” (JS enabled, generally non-blocked and working, and _this specific_ JS supported and working). Or to put it another way, it should not appear at all if the trigger would be broken. Therefore I’d use “progressive enhancement”. A web component is a good way of doing that, because one of their benefits is that (done right) they are natively PE-centric. But it’s not the only way. You could use Stimulus or whatever.
