@@ -21,7 +21,7 @@ If the feature is not a match for another specific pattern such as a modal dialo
 
 From Form Patterns by Adam Silver:
 
-Screen readers will normally only announce content when it is focused, but live regions announce their content when it changes. This means we can communicate to screen reader users without asking them to leave their current location.
+Screen readers will normally only announce the content of the focused element, but live regions announce their content when it _changes_. This means we can communicate to screen reader users without asking them to leave their current location.
 
 Examples
 
