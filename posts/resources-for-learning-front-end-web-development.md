@@ -28,9 +28,18 @@ A designer colleague recently asked me what course or resources I would recommen
 For future reference, here are my tips.
 ---
 
-## Learning HTML & CSS
+## Bob
 
-I recommend choosing a course or courses from CSS-Tricks’ post [Where do you learn HTML and CSS in 2020?](https://css-tricks.com/where-do-you-learn-html-css-in-2020/)
+Google’s web.dev training resource have also been adding some excellent guides, such as:
+
+[Learn HTML](https://web.dev/learn/html/)
+[Learn Accessibility](https://web.dev/learn/accessibility/)
+[Learn CSS](https://web.dev/learn/css/)
+[Learn Responsive Design](https://web.dev/learn/design/)
+
+One thing I would suggest is that people don’t look at Learn HTML and think “that’s easy, I know HTML”. People 100% underestimate how complicated, how fast-moving, and how important HTML is.
+
+MDN: not only as a key general resource but also [MDN’s guides](https://developer.mozilla.org/en-US/docs/Learn).
 
 ## Learning CSS, specifically
 
@@ -43,3 +52,16 @@ I recommended choosing a course or courses from CSS-Tricks’ post [Beginner Jav
 ## Learning Responsive Design
 
 I recommend Jeremy Keith’s [Learn Responsive Design](https://web.dev/learn/design/) course on web.dev.
+
+## Lists of courses
+
+You might choose a course or courses from CSS-Tricks’ post [Where do you learn HTML and CSS in 2020?](https://css-tricks.com/where-do-you-learn-html-css-in-2020/)
+
+## Recommended books
+
+- [Resilient Web Design](https://resilientwebdesign.com/) by Jeremy Keith. A fantastic wide-screen perspective on what we’re doing, who we’re doing it for, and how to go about it. Read online or listen as an audiobook.
+- [Inclusive Components](https://inclusive-components.design/) by Heydon Pickering. A unique, accessible approach to building interactive components, from someone who’s done this for BBC, Bulb, Spotify.
+- [Every Layout](https://every-layout.dev/) by Heydon Pickering & Andy Bell. Introducing layout primitives, for handling responsive design in Design Systems at scale (plus so many insights about the front-end)
+- [Atomic Design](https://bradfrost.com/blog/post/atomic-web-design/) by Brad Frost. A classic primer on Design Systems and component-composition oriented thinking.
+- [Practical SVG](https://abookapart.com/products/practical-svg) by Chris Coyier. Learn why and how to use SVG to make websites more aesthetically sharp, performant, accessible and flexible.
+- [Web Typography](http://book.webtypography.net/) by Richard Rutter. Elevate the web by applying the principles of typography via modern web typography techniques.
