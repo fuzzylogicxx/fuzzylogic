@@ -32,6 +32,10 @@ For future reference, here are my tips.
 
 I recommend choosing a course or courses from CSS-Tricks’ post [Where do you learn HTML and CSS in 2020?](https://css-tricks.com/where-do-you-learn-html-css-in-2020/)
 
+## Learning CSS, specifically
+
+Check out Steve Griffith’s video series [Learning CSS](https://www.youtube.com/playlist?list=PLyuRouwmQCjl4wTSNbb8RTKZuyMhoIxBe). Steve’s videos are comprehensive and well-paced. It contains a whole range of topics (over 100!), starting from the basics like [CSS Box Model](https://www.youtube.com/watch?v=RubwqbzQUcg&list=PLyuRouwmQCjl4wTSNbb8RTKZuyMhoIxBe&index=6).
+
 ## Learning JavaScript
 
 I recommended choosing a course or courses from CSS-Tricks’ post [Beginner JavaScript notes](https://css-tricks.com/beginner-javascript-notes/), especially as it includes Wes Bos’s [Beginner JavaScript Notes + Reference](https://wesbos.com/javascript).
