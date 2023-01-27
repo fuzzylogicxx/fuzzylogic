@@ -28,18 +28,20 @@ A designer colleague recently asked me what course or resources I would recommen
 For future reference, here are my tips.
 ---
 
-## Bob
+## Everything in one place
 
 Google’s web.dev training resource have also been adding some excellent guides, such as:
 
-[Learn HTML](https://web.dev/learn/html/)
-[Learn Accessibility](https://web.dev/learn/accessibility/)
-[Learn CSS](https://web.dev/learn/css/)
-[Learn Responsive Design](https://web.dev/learn/design/)
+- [Learn HTML](https://web.dev/learn/html/)
+- [Learn Accessibility](https://web.dev/learn/accessibility/)
+- [Learn CSS](https://web.dev/learn/css/)
+- [Learn Responsive Design](https://web.dev/learn/design/)
 
-One thing I would suggest is that people don’t look at Learn HTML and think “that’s easy, I know HTML”. People 100% underestimate how complicated, how fast-moving, and how important HTML is.
+Another great one-stop shop is [MDN Web Docs](https://developer.mozilla.org/en-US/). Not only is MDN an amazing general quick reference for all HTML elements, CSS properties, JavaScript APIs etc but for more immersive learning there are also [MDN’s guides](https://developer.mozilla.org/en-US/docs/Learn).
 
-MDN: not only as a key general resource but also [MDN’s guides](https://developer.mozilla.org/en-US/docs/Learn).
+## General advice: pay attention to HTML
+
+Note: one general piece of advice is that people don’t look at Learn HTML and think “that’s easy, I know HTML”. People 100% underestimate how complicated, fast-moving, and important HTML is.
 
 ## Learning CSS, specifically
 
