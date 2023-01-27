@@ -45,7 +45,7 @@ One general piece of advice is that when people look at lists of courses (whethe
 
 ## Learning CSS, specifically
 
-Check out Steve Griffith’s video series [Learning CSS](https://www.youtube.com/playlist?list=PLyuRouwmQCjl4wTSNbb8RTKZuyMhoIxBe). Steve’s videos are comprehensive and well-paced. It contains a whole range of topics (over 100!), starting from the basics like [CSS Box Model](https://www.youtube.com/watch?v=RubwqbzQUcg&list=PLyuRouwmQCjl4wTSNbb8RTKZuyMhoIxBe&index=6).
+If you prefer videos, you could check out Steve Griffith’s video series [Learning CSS](https://www.youtube.com/playlist?list=PLyuRouwmQCjl4wTSNbb8RTKZuyMhoIxBe). Steve’s videos are comprehensive and well-paced. It contains a whole range of topics (over 100!), starting from the basics like [CSS Box Model](https://www.youtube.com/watch?v=RubwqbzQUcg&list=PLyuRouwmQCjl4wTSNbb8RTKZuyMhoIxBe&index=6).
 
 ## Learning JavaScript
 
