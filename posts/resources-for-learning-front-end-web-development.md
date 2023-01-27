@@ -39,9 +39,9 @@ Google’s web.dev training resource have also been adding some excellent guides
 
 Another great one-stop shop is [MDN Web Docs](https://developer.mozilla.org/en-US/). Not only is MDN an amazing general quick reference for all HTML elements, CSS properties, JavaScript APIs etc but for more immersive learning there are also [MDN’s guides](https://developer.mozilla.org/en-US/docs/Learn).
 
-## General advice: pay attention to HTML
+## Pay attention to HTML
 
-Note: one general piece of advice is that people don’t look at Learn HTML and think “that’s easy, I know HTML”. People 100% underestimate how complicated, fast-moving, and important HTML is.
+One general piece of advice is that when people look at lists of courses (whether or not they are new to web development) they ensure to learn HTML. People tend to underestimate how complicated, fast-moving and important HTML is.
 
 ## Learning CSS, specifically
 
