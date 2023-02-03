@@ -45,7 +45,30 @@ One general piece of advice is that when people look at lists of courses (whethe
 
 ## Learning CSS, specifically
 
+CSS is as much about concepts and features – e.g. the cascade and specificity, layout, responsive design, typography, custom properties – as it is about syntax. In fact probably more so.
+
+Most tutorials will focus on the concepts but not necessarily so much on practicalities like writing-style or file organisation.
+
+Google’s [Learn CSS](https://web.dev/learn/css/) course should be pretty good for the modern concepts.
+
+Google also have [Learn Responsive Design](https://web.dev/learn/design/).
+
+If you’re coming from a kinda non-CSS-oriented perspective, Josh W Comeau’s [CSS for JavaScript Developers](https://css-for-js.dev/) (paid course) could be worth a look.
+
 If you prefer videos, you could check out Steve Griffith’s video series [Learning CSS](https://www.youtube.com/playlist?list=PLyuRouwmQCjl4wTSNbb8RTKZuyMhoIxBe). Steve’s videos are comprehensive and well-paced. It contains a whole range of topics (over 100!), starting from the basics like [CSS Box Model](https://www.youtube.com/watch?v=RubwqbzQUcg&list=PLyuRouwmQCjl4wTSNbb8RTKZuyMhoIxBe&index=6).
+
+In terms of HTML and CSS writing style (BEM etc) and file organisation (ITCSS etc), here’s a (version of a) “style guide” that my team came up with for one of our documentation websites. I think it’s pretty good!
+
+CSS and HTML Style Guide (to do: add link here)
+
+For more on ITCSS and Harry Roberts’s thoughts on CSS best practices, see:
+
+- [Manage large projects with ITCSS](https://www.creativebloq.com/web-design/manage-large-css-projects-itcss-101517528) 
+- [Harry’s Skillshare course on ITCSS](https://www.skillshare.com/en/classes/Modern-CSS-Writing-Better-Cleaner-More-Scalable-Code/771669373)
+- Harry’s [CSS Guidelines](https://cssguidelin.es/) rulebook
+- Harry’s _Discovr_ demo project
+  - [Discovr CSS directory](https://github.com/csswizardry/discovr/tree/master/css)
+  - [Discovr demo site](https://rawgit.com/csswizardry/discovr/master/index.html)
 
 ## Learning JavaScript
 
