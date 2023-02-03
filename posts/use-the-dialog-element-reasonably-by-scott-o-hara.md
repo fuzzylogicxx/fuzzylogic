@@ -28,6 +28,6 @@ However the happy day has arrived. The other day Scott posted [Use the dialog el
 
 That’s an important green-light!
 
-And this of course means that we can stop DIYing modal dialogues from `div`s plus super-complicated scripting and custom ARIA, and intead let a native HTML element do most of the heavy lifting for us. 
+And this of course means that we can stop DIYing modal dialogues from `div`s plus super-complicated scripting and custom ARIA, and instead let a native HTML element do most of the heavy lifting for us. 
 
 From a Design System perspective, I’d previously suggested to my team that when we revisit our _Modal_ component we should err toward a good custom dialogue library first, however I’m now likely to recommend we go for native `dialog` instead. Which is great!
