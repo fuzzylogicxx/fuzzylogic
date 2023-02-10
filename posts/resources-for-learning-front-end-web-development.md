@@ -76,6 +76,12 @@ For more on ITCSS and Harry Roberts’s thoughts on CSS best practices, see:
 
 I recommended choosing a course or courses from CSS-Tricks’ post [Beginner JavaScript notes](https://css-tricks.com/beginner-javascript-notes/), especially as it includes Wes Bos’s [Beginner JavaScript Notes + Reference](https://wesbos.com/javascript).
 
+If you like learning by video, check out [Steve Griffith’s JavaScript playlist](https://www.youtube.com/@SteveGriffith-Prof3ssorSt3v3/playlists?view=50&sort=dd&shelf_id=2).
+
+Once you start using JS in anger, I definitely recommend bookmarking Chris Ferdinandi’s [Methods and APIs reference guide](https://vanillajstoolkit.com/reference/).
+
+If you’re then looking for a lightweight library for applying sprinkles of JavaScript, you could try [Stimulus](https://stimulus.hotwired.dev/).
+
 ## Learning Responsive Design
 
 I recommend Jeremy Keith’s [Learn Responsive Design](https://web.dev/learn/design/) course on web.dev.
