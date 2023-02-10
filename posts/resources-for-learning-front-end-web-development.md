@@ -43,6 +43,8 @@ Another great one-stop shop is [MDN Web Docs](https://developer.mozilla.org/en-U
 
 One general piece of advice is that when people look at lists of courses (whether or not they are new to web development) they ensure to learn HTML. People tend to underestimate how complicated, fast-moving and important HTML is.
 
+Also, everything else – accessibility, CSS, JavaScript, performance, resilience – requires a foundation of good HTML. Think _HTML first_!
+
 ## Learning CSS, specifically
 
 CSS is as much about concepts and features – e.g. the cascade and specificity, layout, responsive design, typography, custom properties – as it is about syntax. In fact probably more so.
