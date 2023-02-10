@@ -1,7 +1,7 @@
 ---
 date: 2021-12-22T22:42:48Z
 title: Web animation tips
-description: 'Some notes and tips to help quickly address animation challenges '
+description: 'Some notes and tips to help quickly address animation challenges'
 tags:
 - entry
 - javascript
@@ -284,7 +284,7 @@ I can’t profess to fully understand `both` however if you change Jhey’s exam
 
 Here’s an interesting conundrum.
 
-For disclosure (i.e. show and hide) widgets, I tend to either use the native HTML `<details>` element if possible or else a [simple, accessible DIY disclosure](https://codepen.io/fuzzylogicx/pen/YzQjyoj?editors=1010) in which executing a `trigger` toggles a content element’s `hidden` attribute. In both cases, there’s no animation; the change from hidden to revealed and back again is immediate.
+For disclosure (i.e. collapse and expand) widgets, I tend to either use the native HTML `<details>` element if possible or else a [simple, accessible DIY disclosure](https://codepen.io/fuzzylogicx/pen/YzQjyoj?editors=1010) in which activating a `trigger` toggles a nearby content element’s visibility. In both cases, there’s no animation; the change from hidden to revealed and back again is immediate.
 
 To my mind it’s generally preferable to keep it simple and avoid animating a disclosure widget. For a start, it’s tricky! The `<details>` element can’t be (easily) animated. And if using a DIY widget it’ll likely involve animating one of the [expensive properties](#expensive-properties). Animating `height` or `max-height` is also gnarly when working with variable (auto) length content and often requires developers to go beyond CSS and reach for JavaScript to calculate computed element heights. Lastly, forgetting the technical challenges, there’s often _no real need_ to animate disclosure; it might only hinder rather than help the user experience.
 
@@ -294,6 +294,8 @@ Options:
 - [Animate the `<details>` element](https://css-tricks.com/how-to-animate-the-details-element-using-waapi/). This is a nice, standards-oriented approach. But it might only be viable for when you don’t need to mess with `<details>` appearance too much. We’d struggle to apply very custom styles, or to handle a “show the first few list items but not all” requirement like in the BBC Sounds example;
 - [Animate CSS Grid](https://nemzes.net/posts/animating-height-auto/#the-solutions). This is a nice idea but for now the animation only works in Firefox. It’d be great to just consider it a progressive enhancement so it just depends on whether the animation is deemed core to the experience;
 - [Animate from a max-height of 0 to “something sufficient”](https://codepen.io/fuzzylogicx/pen/wvPMxvm) (my pen is inspired by [Scott O’Hara’s disclosure example](https://codepen.io/scottohara/pen/ybLMOm)). This is workable but not ideal; you kinda need to set a max-height sweetspot otherwise your animation will be delayed and too long. You could of course add some JavaScript to get the exact necessary height then set it. BBC use `max-height` for their tracklist animation and those tracklists likely vary in length so I expect they use some JavaScript for height calculation.
+
+Update 20/2/23: [the “animate CSS Grid” option now has wide browser support](https://caniuse.com/mdn-css_properties_grid-template-rows_animation) and is probably my preferred approach. I made a codepen that demonstrates [a disclosure widget with animation of `grid-template-rows`](https://codepen.io/fuzzylogicx/pen/zYLbRxw/2dd66701b7198814e8f856d72eeee8f5).
 
 ### Ringing bell icon
 
