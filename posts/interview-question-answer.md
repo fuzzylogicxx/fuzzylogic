@@ -28,6 +28,10 @@ You could answer it like this:
 
 Your browser sends an HTTP request which gets routed through a local modem/router then gets sent to a nameserver. That nameserver routes the request to the correct IP address, which will resolve to some sort of web server. That server will serve up either some static files, or run some backend code in order to generate a resource (probably an html page). When the HTML page is returned, your browser will parse it, which will likely generate more requests, and the cycle will repeat.
 
+To do: 
+- add something about HTTPS
+- add more about the front-end aspects: DOM, CSSOM, Accessibility tree, render blocking resources etc
+
 ## References:
 
 - [My favorite interview question](https://benmccormick.org/2017/07/24/my-favorite-interview-question/), by Ben McCormick
