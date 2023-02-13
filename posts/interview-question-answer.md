@@ -1,6 +1,6 @@
 ---
 date: 2022-11-08T09:12:33Z
-title: Interview question answer
+title: The “how web requests work” interview question
 description: Answer to a typical tech interview question
 tags:
 - request
