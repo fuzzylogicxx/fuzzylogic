@@ -16,12 +16,12 @@ mainImage.aspectRatioHeight: ''
 mainImage.srcsetWidths: ''
 mainImage.sizes: ''
 mainImage.isAnchor: false
-draft: true
+draft: false
 
 ---
 There’s a classic web developer interview question that goes something like this:
 
-What happens when you type in “www.bbc.co.uk” into a browser? Describe the journey that results in you seeing a page.
+What happens when you type in “bbc.co.uk” into a browser? Describe the journey that results in you seeing a page.
 ---
 
 You could answer it like this:
