@@ -20,7 +20,7 @@ mainImage.isAnchor: false
 draft: false
 
 ---
-## I’ve started reading some entries from Manuel Matuzovic’s [100 days of (more or less) modern CSS](https://www.matuzo.at/blog/2022/100-days-of-more-or-less-modern-css/) series, and began with the excellent [Day 99: Native Nesting](https://www.matuzo.at/blog/2023/100daysof-day99/). It clearly explains how to use the [now-agreed syntax](https://webkit.org/blog/13813/try-css-nesting-today-in-safari-technology-preview/) for various common scenarios.
+I’ve started reading some entries from Manuel Matuzovic’s [100 days of (more or less) modern CSS](https://www.matuzo.at/blog/2022/100-days-of-more-or-less-modern-css/) series, and began with the excellent [Day 99: Native Nesting](https://www.matuzo.at/blog/2023/100daysof-day99/). It clearly explains how to use the [now-agreed syntax](https://webkit.org/blog/13813/try-css-nesting-today-in-safari-technology-preview/) for various common scenarios.
 ---
 
 The syntax is pretty close to what we’re used to doing with Sass, which is great! I’m now also clear that nested selectors must always start with a symbol rather than a letter. Often they would naturally do so anyway. But in cases where they wouldn’t – essentially only when nesting an “element selector” – we start it with an “&”. So:
