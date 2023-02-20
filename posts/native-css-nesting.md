@@ -35,4 +35,4 @@ Straightforward enough!
 
 Regarding [browser support for CSS nesting](https://caniuse.com/css-nesting), at the time of writing it is available in Chrome and Safari Technology Preview only.
 
-I would therefore only use it for demos and for the most non-essential enhancements. We’ll need to hold off any _full-scale switch_ from Sass nesting to CSS nesting for large and important production websites until this is in Firefox and standard Safari, and most people have those versions. So a little while away yet, but given the current rate of browser updates, likely sooner than we might think!
+I would therefore only use it for demos and for the most non-essential enhancements. We’ll need to hold off any _full-scale switch_ from Sass nesting to CSS nesting for large and important production websites until this is in Firefox and standard Safari, and until a sufficient percentage of users has the up-to-date versions. So a little while away yet, but given the current rate of browser updates, likely sooner than we might think!
