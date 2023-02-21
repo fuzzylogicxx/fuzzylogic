@@ -15,7 +15,10 @@ mainImage.isAnchor: false
 draft: true
 
 ---
-(
+Update: why do a number of implementations of Copy to Clipboard put the copyable text in an input?
+https://twitter.com/fuzzylogicx/status/1626548106060783617
+https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Interact_with_the_clipboard
+End update.
 
 Anda asked for some thoughts regarding a “copy to clipboard” component. It set my mind racing. It’s a great example of where a component being “physically small” probably leads folks to think it’d be quick and easy to create but in reality to build it responsibly requires a disproportionate amount of thinking! (Another way of saying this: [the smaller the pattern is, the easier to overlook the complex needs](https://adrianroselli.com/2020/01/defining-toast-messages.html#comment-186754))
 
