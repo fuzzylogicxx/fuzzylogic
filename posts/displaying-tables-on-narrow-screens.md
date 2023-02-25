@@ -18,3 +18,5 @@ draft: true
 Erik Kennedy [https://ckarchive.com/b/75u7h8hk4mne3](https://ckarchive.com/b/75u7h8hk4mne3 "https://ckarchive.com/b/75u7h8hk4mne3")
 
 He suggests three different approaches.
+
+I’ve [previously mentioned my adventures with tables](https://fuzzylogic.me/posts/tables-and-pseudo-tables-lessons-and-tactics/).
