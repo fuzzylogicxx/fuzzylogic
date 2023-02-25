@@ -22,7 +22,7 @@ mainImage:
   <figcaption>TNF003: Side B artwork
 </figure>
 
-It’s taken a few years, but me and Tom are excited to be releasing a new record on our label, [The Nuclear Family](https://nuclearfami.ly/).
+It’s taken a few years, but me and Tom are excited to be releasing a new record on our label, [The Nuclear Family](https://www.discogs.com/label/708424-The-Nuclear-Family).
 
 [Check out the audio previews](https://soundcloud.com/the_nuclear_family/sets/tnf-003-surface-noise-clips).
 
