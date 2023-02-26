@@ -1,6 +1,6 @@
 ---
 date: 2023-02-26T11:06:08Z
-title: Fuzzy Logic w/ Laurence Hughes (12/2/23) on Clyde Built Radio
+title: Fuzzy Logic with Laurence Hughes (12/2/23) on Clyde Built Radio
 description: On February 12th, 2023 I recorded a live show on Clyde Built Radio.
 tags:
 - radio
@@ -35,9 +35,9 @@ I recently made a first visit to [Clyde Built Radio’s](https://www.clydebuiltr
 
 {% endif %}
 
-It was lovely to spin records on a Sunday morning, and I started suitably mellow with some atmospheric solo piano from Detroit’s Ian Finklestein flowing into a modern take on Steve Reich from Bitchin Bajas. From there I moved into some hazy electronics, added a dash of 80s boogie then landed on house music royalty with sounds from Abacus and Larry Heard.
+It was lovely to spin records on a Sunday morning, and I started suitably mellow with some atmospheric solo piano from Detroit’s Ian Finklestein followed by a modern take on Steve Reich from Bitchin Bajas. From there I moved into some hazy electronics, added a dash of 80s boogie then landed on house music royalty with sounds from Abacus and Larry Heard.
 
-You can [listen to the show](https://soundcloud.com/clydebuiltradio/fuzzy-logic-w-laurence-hughes) on demand.
+[Listen to the show on demand.](https://soundcloud.com/clydebuiltradio/fuzzy-logic-w-laurence-hughes)
 
 Here’s the tracklist for my mix:
 
