@@ -35,7 +35,7 @@ I recently made a first visit to [Clyde Built Radio’s](https://www.clydebuiltr
 
 {% endif %}
 
-It was lovely to spin records on a Sunday morning, and it felt appropriate to start mellow with some atmospheric solo piano and Steve Reich-like vibes. From there I moved into some hazy electronics, added a dash of 80s boogie then landed on house music royalty with sounds from Abacus and Larry Heard.
+It was lovely to spin records on a Sunday morning, and I started suitably mellow with some atmospheric solo piano from Detroit’s Ian Finklestein flowing into a modern take on Steve Reich from Bitchin Bajas. From there I moved into some hazy electronics, added a dash of 80s boogie then landed on house music royalty with sounds from Abacus and Larry Heard.
 
 You can [listen to the show](https://soundcloud.com/clydebuiltradio/fuzzy-logic-w-laurence-hughes) on demand.
 
