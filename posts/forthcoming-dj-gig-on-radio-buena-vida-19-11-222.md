@@ -1,7 +1,7 @@
 ---
 date: 2022-11-13T15:26:49Z
-title: Forthcoming DJ gig on Radio Buena Vida 19/11/222
-description: Forthcoming DJ gig on Radio Buena Vida 19/11/222
+title: Forthcoming DJ gig on Radio Buena Vida 19/11/22
+description: Forthcoming DJ gig on Radio Buena Vida 19/11/22
 tags:
 - note
 - music
