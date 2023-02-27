@@ -17,6 +17,7 @@ mainImage:
 mainImage.srcsetWidths: ''
 mainImage.sizes: ''
 mainImage.isAnchor: false
+openGraphImage: "https://res.cloudinary.com/fuzzylogic/image/upload/q_auto,f_auto,w_1400/v1677414630/clyde_1400_feb2023_mozjpg_yxhxkz.jpg"
 draft: false
 ---
 Having pre-recorded previous shows, I recently made a first visit to [Clyde Built Radio’s](https://www.clydebuiltradio.com/) station at the Barras market for a live show and really enjoyed it. It’s such a great location and it was a nice change to spin records on a Sunday morning.
