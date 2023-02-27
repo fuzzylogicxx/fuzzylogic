@@ -303,7 +303,7 @@
 
   h1 {
     font-size: var(--step-4);
-    line-height: 1;
+    line-height: 1.1;
   }
 
   h2 {
@@ -317,9 +317,26 @@
   }
 
   figcaption {
+    color: var(--color-grey-text);
     font-size: var(--step--2);
+    line-height: 1.1;
+    margin-top: var(--space-3xs);
+    margin-left: var(--space-2xs-xs);
   }
 
+  .prose {
+    hyphens: auto;
+    font-feature-settings: "kern", "liga", "clig", "calt", "onum", "pnum";
+  }
+
+  @supports (font-kerning: normal) and (font-variant-ligatures: common-ligatures contextual) and (font-variant-numeric: oldstyle-nums proportional-nums) {
+    .prose {
+      font-kerning: normal;
+      font-variant-ligatures: common-ligatures contextual;
+      font-variant-numeric: oldstyle-nums proportional-nums;
+      font-feature-settings: normal;
+    }
+  }
 }
 
 

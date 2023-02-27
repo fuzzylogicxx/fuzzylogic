@@ -1,6 +1,6 @@
 ---
 date: 2023-02-26T11:06:08Z
-title: Fuzzy Logic with Laurence Hughes (12/2/23) on Clyde Built Radio
+title: Fuzzy Logic show (Feb ‘23), Clyde Built Radio
 description: On February 12th, 2023 I recorded a live show on Clyde Built Radio.
 tags:
 - radio
@@ -19,7 +19,7 @@ mainImage.sizes: ''
 mainImage.isAnchor: false
 draft: false
 ---
-I recently made a first visit to [Clyde Built Radio’s](https://www.clydebuiltradio.com/) station at the Barras market, having recorded previous shows at home. I really enjoyed it. What a great little space!
+Having pre-recorded previous shows, I recently made a first visit to [Clyde Built Radio’s](https://www.clydebuiltradio.com/) station at the Barras market for a live show and really enjoyed it. It’s such a great location and it was a nice change to spin records on a Sunday morning.
 ---
 
 {% if app.environment == "production" %}
@@ -30,16 +30,16 @@ I recently made a first visit to [Clyde Built Radio’s](https://www.clydebuiltr
     <source type="image/webp" srcset="https://res.cloudinary.com/fuzzylogic/image/upload/f_webp,q_55,w_1292/v1677414630/clyde_1400_feb2023_mozjpg_yxhxkz.jpg" />
       <img class="u-full-parent-width" src="https://res.cloudinary.com/fuzzylogic/image/upload/f_jpg,q_auto,w_1292/v1677414630/clyde_1400_feb2023_mozjpg_yxhxkz.jpg" width="1400" height="1050" alt="Three records – by Bitchin Bajas, Isotope 217 and Visions of Tomorrow – that featured on Laurence Hughes’s February 2023 Clyde Built Radio show" loading="lazy" decoding="async" />
   </picture>
-  <figcaption>The show features records by Bitchin Bajas, Isotope 217 and Visions of Tomorrow</figcaption>
+  <figcaption>Featured sounds from Bitchin Bajas, Isotope 217 and Visions of Tomorrow</figcaption>
 </figure>
 
 {% endif %}
 
-It was lovely to spin records on a Sunday morning, and I started suitably mellow with some atmospheric solo piano from Detroit’s Ian Finklestein followed by a modern take on Steve Reich from Bitchin Bajas. From there I moved into some hazy electronics, added a dash of 80s boogie then landed on house music royalty with sounds from Abacus and Larry Heard.
+I started off gently with atmospheric music from Detroit’s Ian Finklestein followed by a modern take on Steve Reich from Bitchin Bajas. From there it was into some hazy electronics and a dash of 80s boogie before landing on sounds from house music legends Abacus and Larry Heard.
 
-[Listen to the show on demand.](https://soundcloud.com/clydebuiltradio/fuzzy-logic-w-laurence-hughes)
+[Listen to the show.](https://soundcloud.com/clydebuiltradio/fuzzy-logic-w-laurence-hughes)
 
-Here’s the tracklist for my mix:
+Here’s the tracklist:
 
 1. Ian Finklestein – Ago-ra
 1. Bitchin Bajas – Amorpha
