@@ -2,7 +2,7 @@
 date: 2023-02-25T14:24:43Z
 title: Displaying tables on narrow screens
 description: ''
-tags: []
+tags: [web,development,css,html,a11y,responsive,tables]
 noteWithTitle: false
 linkTarget: ''
 mainImage.url: ''
@@ -21,7 +21,7 @@ But still, we should strive to come up with good user experiences, and feasible 
 
 I was interested to read Erik Kennedy’s recent newsletter on [_The best way to display tables on mobile_](https://ckarchive.com/b/75u7h8hk4mne3)
 
-Erik suggests three different approaches.
+Erik suggests three different approaches, in reverse order of preference.
 
 <ol reversed>
   <li></li>
