@@ -83,7 +83,9 @@ It’s an interesting approach though, and one I’ll keep in the back of my min
 Here are some handy techniques – done accesibly – courtesy of Adrian Roselli:
 
 - [Accessibly including inputs in tables](https://adrianroselli.com/2019/05/uniquely-labeling-fields-in-a-table.html)
-- [Responsive accessible tables](https://adrianroselli.com/2017/11/a-responsive-accessible-table.html) and simpler [Under-engineered responsive tables](https://adrianroselli.com/2020/11/under-engineered-responsive-tables.html)
+- [Under-engineered responsive tables](https://adrianroselli.com/2020/11/under-engineered-responsive-tables.html)
+- [Responsive accessible tables](https://adrianroselli.com/2017/11/a-responsive-accessible-table.html) – this more complex approach employs JavaScript to i) apply appropriate ARIA roles to existing table HTML, and ii) create clever alternate labelling using pseudo elements. It uses CSS to change the `display` of the table and its children to create a small-screen-friendly layout. The JS-applied roles serve to maintain the necessary semantics that would otherwise be lost when applying the radical CSS changes.
+- [Charlie Cathcart’s responsive table](https://codepen.io/pixelchar/pen/rNaKLM) is similar although to the above although perhaps less comprehensive. However it might have other interesting aspects.
 - [Clip long, overflowing content](https://adrianroselli.com/2016/02/keyboard-and-overflow.html)
 - [Expandable rows](https://adrianroselli.com/2019/09/table-with-expando-rows.html)
 - [Fixed headers](https://adrianroselli.com/2020/01/fixed-table-headers.html)
