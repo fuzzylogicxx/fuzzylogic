@@ -1,5 +1,5 @@
 ---
-date: 2023-02-26T21:54:48Z
+date: 2023-02-26T21:54:48.000+00:00
 title: Does Copy to clipboard require an input element?
 description: ''
 tags: []
@@ -15,9 +15,16 @@ mainImage.isAnchor: false
 draft: true
 
 ---
-It’s a hangover from `select` and `execCommand()`. 
+Received a design with a “Copy code to clipboard” component. The code is in what appears to be a text `input`. The engineer gets in touch wondering how to build it, probably because they see that it should look like an input, but they know that it’s not actually part of a form or necessarily an input at all, therefore they don’t know which component to use. I instinctively question it too, asking for confirmation that:
 
-It is no longer necessary due to the Clipboard API. 
+* bob
+* sue
+
+And when the engineer confirms my assumptions, I then suggest that ideally the design be revisited so that it looks different from an input, otherwise it could be [confusing](https://tink.uk/perceived-affordances-and-the-functionality-mismatch/). 
+
+It’s a hangover from `select()` and `execCommand()`. 
+
+It is no longer necessary now we have the Clipboard API. 
 
 Also `execCommand()` is deprecated (no longer recommended).
 
