@@ -15,9 +15,11 @@ mainImage.isAnchor: false
 draft: true
 
 ---
-Responsive design for tables is tricky. Sure, you can just make the table’s container horizontally scrollable but that’s more a developer convenience than a great user experience. And if you then try to do something more clever, you can run into challenges [as I have learned in the past](https://fuzzylogic.me/posts/tables-and-pseudo-tables-lessons-and-tactics/).
+Responsive design for tables is tricky. Sure, you can just make the table’s container horizontally scrollable but that’s more a developer convenience than a great user experience. And if you instead try to do something more clever, you can run into challenges [as I have learned in the past](https://fuzzylogic.me/posts/tables-and-pseudo-tables-lessons-and-tactics/).
 
-I was interested to read Erik Kennedy’s [_The best way to display tables on mobile_](https://ckarchive.com/b/75u7h8hk4mne3)
+But still, we should strive to come up with good user experiences, and feasible technical solutions to support them. 
+
+I was interested to read Erik Kennedy’s recent newsletter on [_The best way to display tables on mobile_](https://ckarchive.com/b/75u7h8hk4mne3)
 
 Erik suggests three different approaches.
 
