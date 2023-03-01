@@ -29,6 +29,10 @@ Erik suggests three different approaches.
   <li></li>
 </ol>
 
+Do I agree with the above? If so could Adrian R’s accessible solution be used to achieve them?
 
+A similar article worth checking is Andrew Coyle’s [The Responsive Table](https://coyleandrew.medium.com/the-responsive-table-44d533fde1e9). He describes the following approaches:
 
-
+1. Horizontal overflow table
+2. Transitional table (Adrian R or Charlie Cathcart)
+3. Priority responsive table
