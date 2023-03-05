@@ -1,6 +1,6 @@
 ---
 date: 2023-02-26T21:54:48.000+00:00
-title: Does Copy to clipboard require an input element?
+title: Does a “Copy to clipboard” UI require an input element?
 description: ''
 tags: []
 noteWithTitle: false
@@ -15,7 +15,9 @@ mainImage.isAnchor: false
 draft: true
 
 ---
-Received a design with a “Copy code to clipboard” component. The code is in what appears to be a text `input`. The engineer gets in touch wondering how to build it, probably because they see that it should look like an input, but they know that it’s not actually part of a form or necessarily an input at all, therefore they don’t know which component to use. I instinctively question it too, asking for confirmation that:
+At work, we in the Design System team recently received an enquiry regarding a “Copy referral code to clipboard” component. In the design, the referral code is displayed inside what appears to be a text input. The engineer asked which existing component, if any, should be used to build it. I imagine this question arose from their noting that it should _look like_ an input but that technically it’s not actually part of a “create” or “update” form, nor would it really be an `input` in any other behavioural sense.
+
+I instinctively question it too, asking for confirmation that:
 
 * bob
 * sue
