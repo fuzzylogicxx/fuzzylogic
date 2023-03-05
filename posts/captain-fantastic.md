@@ -26,4 +26,5 @@ Clair and I loved this story of Viggo Mortensen’s Ben Cash and family temporar
   <iframe title="Official Trailer for movie “Captain Fantastic”" width="560" height="315" src="https://www.youtube.com/embed/w5jeBvjcJe4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
 
-Judging by his movie review for The Guardian, [Mark Kermode seemed to like it too](https://www.theguardian.com/film/2016/sep/11/captain-fantastic-review-viggo-mortensen).
+
+Judging by his movie review for The Guardian, [Mark Kermode seemed to like Captain Fantastic too](https://www.theguardian.com/film/2016/sep/11/captain-fantastic-review-viggo-mortensen).
