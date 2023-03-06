@@ -15,7 +15,9 @@ mainImage.isAnchor: false
 draft: true
 
 ---
-I remember a time, maybe around ten years ago, when I became aware of some CSS properties that promised improved font-rendering, namely `-webkit-font-smoothing` (set to `antialisased`) and `text-rendering` (set to `optimizeLegibility`). Such was my excitement at the marginal gains after adding them and seeing the effect on pages in Chrome/Mac, that I for a while I threw caution to the wind and used them as standard in production. I wasn’t alone.
+I remember there was a time, maybe around ten years ago, when I became aware of some CSS properties for improving font-rendering, namely `-webkit-font-smoothing` set to `antialiased` and `text-rendering` set to `optimizeLegibility`. And after trying them, such was my excitement at the marginal gains observed on pages viewed in Chrome/Mac that I threw caution to the wind and for a while used these – pretty much at the global level – in production. 
+
+And I wasn’t alone. It was pretty common to see these in the CSS of popular websites.
 
 However blah. And since then I haven’t used them. And no one has complained.
 
