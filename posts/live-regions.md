@@ -15,12 +15,6 @@ mainImage.isAnchor: false
 draft: true
 
 ---
-Update: why do a number of implementations of Copy to Clipboard put the copyable text in an input?
-https://twitter.com/fuzzylogicx/status/1626548106060783617
-https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Interact_with_the_clipboard
-
-Here’s one that doesn’t use an input: https://adamsilver.io/blog/the-trouble-with-mailto-email-links-and-what-to-do-instead/. It uses `navigator.clipboard.text` and doesn’t use an input.
-End update.
 
 Anda asked for some thoughts regarding a “copy to clipboard” component. It set my mind racing. It’s a great example of where a component being “physically small” probably leads folks to think it’d be quick and easy to create but in reality to build it responsibly requires a disproportionate amount of thinking! (Another way of saying this: [the smaller the pattern is, the easier to overlook the complex needs](https://adrianroselli.com/2020/01/defining-toast-messages.html#comment-186754))
 
@@ -45,7 +39,7 @@ Actually, GitHub somewhat cleverly get around the accessible announcement issue 
 
 So how do we define this pattern in order to get an accessible approach? Is the “Copied!” message a toast? Or is this a cousin of disclosure widget e.g. a tooltip, or toggletip?
 
-Probably a toast or toggletip (it’s click-based) but not a Tooltip (it’s hover/focus based). And I’m kinda drawn more to toast because I feel our use case is more “a message appearing in response to an event”, rather than “an info-revealing trigger that’s labelled or described by the revealed info”. Also I particularly don’t fancy tooltip not only because its not click-driven but because it gets you into complex accessibility considerations (see Sarah H and Scott O links).
+Probably a toast or toggletip (it’s click-based) but not a Tooltip (it’s hover/focus based). And I’m kinda drawn more to toast because I feel our use case is more “a message appearing in response to an event”, rather than “a trigger which causes info to be revealed, that’s labelled or described by the revealed info”. Also I don’t particularly fancy tooltip not only because its not click-driven but because it gets you into complex accessibility considerations (see Sarah H and Scott O links).
 
 I love Anda’s idea of using `<output>`! It’s the native HTML element that provides a “native ARIA role=status”. ([https://www.scottohara.me/blog/2019/07/10/the-output-element.html](https://www.scottohara.me/blog/2019/07/10/the-output-element.html "https://www.scottohara.me/blog/2019/07/10/the-output-element.html")). 
 
