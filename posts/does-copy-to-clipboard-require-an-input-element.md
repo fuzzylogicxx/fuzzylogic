@@ -22,7 +22,16 @@ I instinctively question it too, asking for confirmation that:
 * bob
 * sue
 
-And when the engineer confirms my assumptions, I then suggest that ideally the design be revisited so that it looks different from an input, otherwise it could be [confusing](https://tink.uk/perceived-affordances-and-the-functionality-mismatch/). 
+And when the engineer confirms my assumptions, I then suggest that ideally the design be revisited so that it looks different from an input, otherwise it could be [confusing](https://tink.uk/perceived-affordances-and-the-functionality-mismatch/).
+
+I then went digging. Which led to the question: why do a number of implementations of Copy to Clipboard put the copyable text in an input? 
+
+- https://twitter.com/fuzzylogicx/status/1626548106060783617 
+- https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Interact_with_the_clipboard
+
+Here’s one that doesn’t use an input: https://adamsilver.io/blog/the-trouble-with-mailto-email-links-and-what-to-do-instead/. It uses navigator.clipboard.text and doesn’t use an input.
+
+Summary: 
 
 It’s a hangover from `select()` and `execCommand()`. 
 
