@@ -1,7 +1,8 @@
 ---
 date: 2023-02-26T21:54:48.000+00:00
 title: Does a “Copy to clipboard” UI require an input element?
-description: ''
+description: A dive into why the industry creates Copy to clipboard a certain (potentially
+  outdated) way
 tags: []
 noteWithTitle: false
 linkTarget: ''
@@ -15,23 +16,14 @@ mainImage.isAnchor: false
 draft: true
 
 ---
-At work, we in the Design System team recently received an enquiry regarding a “Copy referral code to clipboard” component. In the design, the referral code is displayed inside what appears to be a text input. The engineer asked which existing component, if any, should be used to build it. I imagine this question arose from their noting that it should _look like_ an input but that technically it’s not actually part of a “create” or “update” form, nor would it really be an `input` in any other behavioural sense.
+At work, we in the Design System team recently received an enquiry from a software engineer regarding a “Copy to clipboard” component. In the Figma design, a copyable referral code is displayed inside what looks like a text input. The engineer asked if a suitable component exists to use to build this. I expect they were unsure of what to use after noting that it should _look like_ an input but that functionally nothing is being created, updated or searched so there seems to be no actual need for a form or input.
 
-I instinctively question it too, asking for confirmation that:
+I started by considering the semantics and accessibility perspective. I asked for confirmation that:
 
-* bob
-* sue
+* foo
+* bar
 
-And when the engineer confirms my assumptions, I then suggest that ideally the design be revisited so that it looks different from an input, otherwise it could be [confusing](https://tink.uk/perceived-affordances-and-the-functionality-mismatch/).
-
-I then went digging. Which led to the question: why do a number of implementations of Copy to Clipboard put the copyable text in an input? 
-
-- https://twitter.com/fuzzylogicx/status/1626548106060783617 
-- https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Interact_with_the_clipboard
-
-Here’s one that doesn’t use an input: https://adamsilver.io/blog/the-trouble-with-mailto-email-links-and-what-to-do-instead/. It uses navigator.clipboard.text and doesn’t use an input.
-
-Summary: 
+The engineer confirmed those assumptions. Foo could be [confusing](https://tink.uk/perceived-affordances-and-the-functionality-mismatch/). So  I suggested that ideally the design be revisited so that it looks different from an input.
 
 It’s a hangover from `select()` and `execCommand()`. 
 
