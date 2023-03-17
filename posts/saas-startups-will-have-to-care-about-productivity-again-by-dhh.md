@@ -3,7 +3,7 @@ date: 2023-03-13T21:26:49Z
 title: SaaS startups will have to care about productivity again, by DHH
 description: DH suggests that companies can reach profitability quicker via better
   tools and techniques
-tags: []
+tags: [productivity, design, fullstack, divide, roles, frontend]
 noteWithTitle: false
 linkTarget: ''
 mainImage.url: ''
