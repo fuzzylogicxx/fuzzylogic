@@ -91,6 +91,7 @@ pages:
 - posts/custom-multi-checkbox-and-multi-radio-controls.md
 - posts/custom-state-toggles-and-how-to-build-them-responsibly.md
 - posts/design-engineering-on-the-clearleft-podcast.md
+- posts/design-systems-should-avoid-god-components-and-swiss-army-knives.md
 - posts/details-and-summary-for-no-javascript-disclosure-widgets.md
 - posts/disclosure-with-css-rather-than-javascript-dos-and-don-ts.md
 - posts/displaying-tables-on-narrow-screens.md
