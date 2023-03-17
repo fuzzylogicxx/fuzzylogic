@@ -44,7 +44,7 @@ It seems that a number of Design Systems have a _Flex_ component. My feeling, th
 
 ## Button
 
-I’ve talked before about [the “Everything is a button” mindset and how its harmful](https://fuzzylogic.me/posts/buttons-versus-links-differences-and-tips/).
+I’ve talked before about [the “Everything is a button” mindset and how it’s harmful](https://fuzzylogic.me/posts/buttons-versus-links-differences-and-tips/). Buttons and links are fundamentally different HTML elements, and bundling them together has a number of ill effects that I see on a regular basis.
 
 ## References
 
