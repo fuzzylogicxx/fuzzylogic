@@ -40,7 +40,7 @@ I appreciate that often we need pragmatic solutions, so if our designs have lots
 
 ## Flex
 
-It seems that a number of Design Systems have a _Flex_ component. My feeling, though,  is that these represent an early reaction to the emergence of CSS’s Flexbox, rather than being sensible system or consumer friendly components. 
+It seems that a number of Design Systems have a _Flex_ component. My feeling, though,  is that these represent an early reaction to the emergence of CSS’s Flexbox, rather than necessarily being sensible system-friendly or consumer-friendly components. CSS layout covers _a lot_ and I think breaking this down into different smaller tools (Stack, Inline, Grid etc) works better. 
 
 ## Button
 
