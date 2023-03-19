@@ -23,10 +23,10 @@ mainImage.isAnchor: false
 draft: false
 
 ---
-Something we often talk about in our Design System team is that components should not be like Swiss Army Knives. It’s better for them to be laser-focused because by limiting their scope to a single task rather than them reaching into or knowing about different contexts, they are more reusable, flexible, extensible.
+Something we often talk about in our Design System team is that components should not be like Swiss Army Knives. It’s better for them to be laser-focused because by limiting their scope to a single task they are more reusable, flexible, extensible.
 ---
 
-Discussions often arise when we consider the flip-side – components which do too much, know too much, or care too much! Here are some examples.
+Discussions often arise when we consider the flip-side – components which do too much, know too much, or care too much! When they cover too much ground or make assumptions about their context, things go wrong. Here are some examples.
 
 ## Card
 
