@@ -1,9 +1,13 @@
 ---
 date: 2023-02-26T21:54:48.000+00:00
 title: Does a “Copy to clipboard” UI require an input element?
-description: A dive into why the industry creates Copy to clipboard a certain (potentially
-  outdated) way
-tags: []
+description: A look into why Copy to clipboard components are often designed and built
+  a certain (maybe outdated) way
+tags:
+- forms
+- input
+- a11y
+- html
 noteWithTitle: false
 linkTarget: ''
 mainImage.url: ''
@@ -16,9 +20,9 @@ mainImage.isAnchor: false
 draft: true
 
 ---
-At work, we in the Design System team recently received an enquiry from a software engineer regarding a “Copy to clipboard” component. In the Figma design, a copyable referral code is displayed inside what looks like a text input. The engineer asked if a suitable component exists to use to build this. I expect they were unsure of what to use after noting that it should _look like_ an input but that functionally nothing is being created, updated or searched so there seems to be no actual need for a form or input.
+At work, we in the Design System team recently received an enquiry from a software engineer regarding a “Copy to clipboard” component. In the Figma design, a copyable referral code is displayed inside what looks like a text input. The engineer asked if a suitable component exists for that part. I expect they were unclear on what to use after noting that it should _look like_ an input but that functionally there seems to be no need for an input or form since the user does not enter text, and nothing is being created, updated or searched.
 
-I started by considering the semantics and accessibility perspective. I asked for confirmation that:
+That mismatch confused me too. I started by considering the semantics and accessibility perspective. I asked for confirmation that:
 
 * foo
 * bar
