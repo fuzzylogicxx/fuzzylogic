@@ -16,18 +16,13 @@ We might use this because we want to be able to set focus to a particular elemen
 
 Alternatively we might use this because we want to prevent a normally tabbable element from being tabbable. [Sara Souidean uses this technique](https://aneventapart.com/news/post/practical-tips-for-building-more-accessible-front-ends) (in combination with `aria-hidden=true`) on e-commerce product teaser “media objects” in order to limit the number of duplicate links that keyboard users must tab through.
 
-<aside>
-  <details>
-    <summary>Aside regarding Skip Links</summary>
+## Tabindex on page targets to assist with keyboard focus
 
-Incidentally, I sometimes see people including `tabindex="-1"` on their `main` element. This is a special use case in support of “skip links”, the solution for helping keyboard users and users of Assistive Technologies avoid having to tab through logo and navigation elements and instead skip directly to the main content. As [Ben Myers writes](https://benmyers.dev/blog/skip-links/), the inclusion of the `tabindex` attribute is a _belt and braces_ action to ensure the skip experience is not just a visual “jump” but actually sets focus properly.
+I’ve often seen `tabindex="-1"` used as a companion to the `id` attribute on elements of a page intended to be directly accessible via links. Examples include a `main` element that should be directly accessible from a “Skip to content” link, or the headings in a blog article to support sharing direct links to page sections. 
 
-> When a user follows our skip link, we want their keyboard focus to move to our target. Modern browsers will move that focus for us, but some older browsers will only move the focus if the target is focusable. If it’s not focusable, the page will scroll down but the user's focus will still be at the top of the page.
+Before HTML5, creating an internal “link target” required creating an anchor element that used the `name` attribute. In HTML5 this use of anchor was deprecated with authors instead encouraged to add the `id` attribute to any element they wish. The reason why developers added `tabindex="-1"` to their `main` and `h2` (etc) “targets” is because some older browsers, when responding to a link to such a resource, would move visual focus (i.e. scroll to the element) but not move keyboard focus if the target element was not focusable. Including `tabindex` solved that problem.
 
-Given that [the browser issues seem to be mostly resolved](https://axesslab.com/skip-links/) and that GOV.UK found that including the `tabindex` attribute could be harmful, I’m inclined to go without it. Or if absolutely necessary, [use JavaScript to manage the `tabindex`-driven focusability of fragment-driven targets](https://github.com/selfthinker/dokuwiki_template_writr/blob/master/js/skip-link-focus-fix.js ) like Anika Henke from GOV.uk suggests (…or [use `focus()` like Scott O’Hara](https://github.com/scottaohara/accessible_modal_window/blob/9e40b6291b567057ec5fb09dbc686b26ac7eac9e/assets--demo/demo.js)).
-    
-  </details>
-</aside>
+Modern browsers will move the focus for us and so using `tabindex` for this purpose is no longer necessary.
 
 ## tabindex="0"
 
