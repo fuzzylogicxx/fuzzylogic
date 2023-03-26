@@ -20,9 +20,9 @@ Alternatively we might use this because we want to prevent a normally tabbable e
 
 I’ve often seen `tabindex="-1"` used as a companion to the `id` attribute on elements of a page intended to be directly accessible via links. Examples include a `main` element that should be directly accessible from a “Skip to content” link, or the headings in a blog article to support sharing direct links to page sections. 
 
-Before HTML5, creating an internal “link target” required creating an anchor element that used the `name` attribute. In HTML5 this use of anchor was deprecated with authors instead encouraged to add the `id` attribute to any element they wish. The reason why developers added `tabindex="-1"` to their `main` and `h2` (etc) “targets” is because some older browsers, when responding to a link to such a resource, would move visual focus (i.e. scroll to the element) but not move keyboard focus if the target element was not focusable. Including `tabindex` solved that problem.
+Before HTML5, creating an internal “link target” required creating an anchor element that used the `name` attribute. In HTML5 this use of anchor was deprecated with authors instead encouraged to add the `id` attribute to any element they wish. The reason why developers added `tabindex="-1"` to their `main` and `h2` (etc) “targets” is because some older browsers, when responding to a link to such a resource, would move visual focus to the target element (i.e. scroll to it) but not _programatically_ set focus to it if the target element was not focusable. Including `tabindex="-1"` solved that problem.
 
-Modern browsers will move the focus for us and so using `tabindex` for this purpose is no longer necessary.
+Modern browsers move the focus correctly and so using `tabindex` for this purpose is no longer necessary.
 
 ## tabindex="0"
 
