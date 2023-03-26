@@ -16,7 +16,7 @@ We might use this because we want to be able to set focus to a particular elemen
 
 Alternatively we might use this because we want to prevent a normally tabbable element from being tabbable. [Sara Souidean uses this technique](https://aneventapart.com/news/post/practical-tips-for-building-more-accessible-front-ends) (in combination with `aria-hidden=true`) on e-commerce product teaser “media objects” in order to limit the number of duplicate links that keyboard users must tab through.
 
-## Tabindex on page targets to assist with keyboard focus
+### Tabindex on page targets to assist with keyboard focus
 
 I’ve often seen `tabindex="-1"` used as a companion to the `id` attribute on elements of a page intended to be directly accessible via links. Examples include a `main` element that should be directly accessible from a “Skip to content” link, or the headings in a blog article to support sharing direct links to page sections. 
 
