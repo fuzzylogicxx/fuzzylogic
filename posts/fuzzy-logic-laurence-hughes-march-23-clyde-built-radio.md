@@ -31,12 +31,12 @@ I recorded my second radio show of 2023 live at the Clyde Built Radio studio at 
     <source type="image/webp" srcset="https://res.cloudinary.com/fuzzylogic/image/upload/f_webp,q_55,w_1292/v1680028894/clyde_1400_mar2023_mozjpg_iejw5x.jpg" />
       <img class="u-full-parent-width" src="https://res.cloudinary.com/fuzzylogic/image/upload/f_jpg,q_auto,w_1292/v1680028894/clyde_1400_mar2023_mozjpg_iejw5x.jpg" width="1400" height="1050" alt="Three records – by Bitchin Bajas, Isotope 217 and Visions of Tomorrow – that featured on Laurence Hughes’s February 2023 Clyde Built Radio show" loading="lazy" decoding="async" />
   </picture>
-  <figcaption>Laurence in the Clyde Built studio at the Barras market</figcaption>
+  <figcaption>At the Clyde Built Radio studio</figcaption>
 </figure>
 
 {% endif %}
 
-To follow [last month’s show](https://fuzzylogic.me/posts/fuzzy-logic-laurence-hughes-feb-23-clyde-built-radio/), this month I went for a set of reggae, electronics and other assorted good vibes.
+This month I went for a set of reggae, electronics and other assorted good vibes.
 
 [Listen to the show on Soundcloud.](https://soundcloud.com/clydebuiltradio/fuzzy-logic-w-laurence-1)
 
