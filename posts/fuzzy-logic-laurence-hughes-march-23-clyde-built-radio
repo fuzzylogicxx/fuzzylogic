@@ -1,14 +1,13 @@
 ---
-date: 2023-03-27T11:06:08Z
-title: Fuzzy Logic show (March ‘23), Clyde Built Radio
-description: My second show of 2023 on Clyde Built Radio was great fun.
+date: 2023-03-27T17:20:00Z
+title: Fuzzy Logic show (March 23), Clyde Built Radio
+description: My second show of 2023 on Clyde Built Radio was great fun
 tags:
 - radio
 - mix
 - music
 - note
 noteWithTitle: true
-linkTarget: ''
 mainImage:
   url: https://res.cloudinary.com/fuzzylogic/image/upload/v1680028894/clyde_1400_mar2023_mozjpg_iejw5x.jpg
   alt: "Laurence in the Clyde Built studio at the Barras market"
@@ -19,8 +18,9 @@ mainImage.sizes: ''
 mainImage.isAnchor: false
 openGraphImage: "https://res.cloudinary.com/fuzzylogic/image/upload/q_auto,f_auto,w_1400/v1680028894/clyde_1400_mar2023_mozjpg_iejw5x.jpg"
 draft: false
+
 ---
-I recorded my second radio show of 2023 live at the Clyde Built Radio studio on Sunday. The Hong Kong market was on so it was buzzing at the Barras market and it was bright and sunny with the clocks having just gone forward.
+I recorded my second radio show of 2023 live at the Clyde Built Radio studio at the weekend. The Hong Kong market was on so it was buzzing at the Barras on a bright and sunny on Sunday with the clocks just gone forward.
 ---
 
 {% if app.environment == "production" %}
