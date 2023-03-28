@@ -55,4 +55,4 @@ Here’s the tracklist:
 1. Romaal Kultan – Meditate
 1. Language – Tranquility Bass
 
-Thanks to [Amy](https://www.instagram.com/a.rodger.s/) for the invite, and Matthew, the engineer on the day.
+Thanks to [Amy](https://www.instagram.com/a.rodger.s/) for arranging, and to Matthew, the engineer on the day.
