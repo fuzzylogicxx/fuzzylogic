@@ -20,7 +20,7 @@ openGraphImage: "https://res.cloudinary.com/fuzzylogic/image/upload/q_auto,f_aut
 draft: false
 
 ---
-I recorded my second radio show of 2023 live at the Clyde Built Radio studio at the weekend. The Hong Kong market was on so it was buzzing at the Barras on a bright and sunny on Sunday with the clocks just gone forward.
+I recorded my second radio show of 2023 live at the Clyde Built Radio studio at the weekend. It was a bright and sunny Sunday with the clocks just gone forward and the Barras buzzing as it hosted a Hong Kong street market.
 ---
 
 {% if app.environment == "production" %}
