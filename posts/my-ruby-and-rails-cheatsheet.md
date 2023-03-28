@@ -460,7 +460,7 @@ end
 
 ## Double splat operator
 
-My understanding is that when you pass `**foo` as a parameter to a method call then it represents a hash (e.g. `foo = {}`), the content of which might be unknown at the time of calling. Here’s an example, based on a ViewComponent for outputting accessible SVG icons:
+My understanding is that when you pass `**foo` as a parameter to a method call then it represents the hash (e.g. `foo = {}`) that will be returned from `def foo` elsewhere. If there are multiple items in the hash, it’ll spread them out as key-value pairs (e.g. as HTML attribute name and attribute value pairs). This is handy when you don’t know which attributes you need to include at the time of rendering a thing and want that logic to reside in the component internals. Here’s an example, based on a ViewComponent for outputting accessible SVG icons:
 
 In `IconComponent.rb`:
 
