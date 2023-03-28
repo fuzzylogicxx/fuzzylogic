@@ -1,0 +1,61 @@
+---
+date: 2023-03-28T19:30:08Z
+title: Fuzzy Logic show (March ‘23), Clyde Built Radio
+description: My second show of 2023 on Clyde Built Radio was great fun.
+tags:
+- radio
+- mix
+- music
+- note
+noteWithTitle: true
+linkTarget: ''
+mainImage:
+  url: https://res.cloudinary.com/fuzzylogic/image/upload/v1680028894/clyde_1400_mar2023_mozjpg_iejw5x.jpg
+  alt: "Laurence in the Clyde Built studio at the Barras market"
+  aspectRatioWidth: 1400
+  aspectRatioHeight: 1050
+mainImage.srcsetWidths: ''
+mainImage.sizes: ''
+mainImage.isAnchor: false
+openGraphImage: "https://res.cloudinary.com/fuzzylogic/image/upload/q_auto,f_auto,w_1400/v1680028894/clyde_1400_mar2023_mozjpg_iejw5x.jpg"
+draft: false
+---
+I recorded my second radio show of 2023 live at the Clyde Built Radio studio on Sunday. The Hong Kong market was on so it was buzzing at the Barras market and it was bright and sunny with the clocks having just gone forward.
+---
+
+{% if app.environment == "production" %}
+
+<figure>
+  <picture>
+    <source type="image/avif" srcset="https://res.cloudinary.com/fuzzylogic/image/upload/f_avif,q_55,w_1292/v1680028894/clyde_1400_mar2023_mozjpg_iejw5x.jpg" />
+    <source type="image/webp" srcset="https://res.cloudinary.com/fuzzylogic/image/upload/f_webp,q_55,w_1292/v1680028894/clyde_1400_mar2023_mozjpg_iejw5x.jpg" />
+      <img class="u-full-parent-width" src="https://res.cloudinary.com/fuzzylogic/image/upload/f_jpg,q_auto,w_1292/v1680028894/clyde_1400_mar2023_mozjpg_iejw5x.jpg" width="1400" height="1050" alt="Three records – by Bitchin Bajas, Isotope 217 and Visions of Tomorrow – that featured on Laurence Hughes’s February 2023 Clyde Built Radio show" loading="lazy" decoding="async" />
+  </picture>
+  <figcaption>Laurence in the Clyde Built studio at the Barras market</figcaption>
+</figure>
+
+{% endif %}
+
+To follow [last month’s show](https://fuzzylogic.me/posts/fuzzy-logic-laurence-hughes-feb-23-clyde-built-radio/), this month I went for a set of reggae, electronics and other assorted good vibes.
+
+<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1478629783&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/clydebuiltradio" title="Clyde Built Radio" target="_blank" style="color: #cccccc; text-decoration: none;">Clyde Built Radio</a> · <a href="https://soundcloud.com/clydebuiltradio/fuzzy-logic-w-laurence-1" title="Fuzzy Logic w/ Laurence Hughes (26/3/23)" target="_blank" style="color: #cccccc; text-decoration: none;">Fuzzy Logic w/ Laurence Hughes (26/3/23)</a></div>
+
+[Listen to the show on Soundcloud.](https://soundcloud.com/clydebuiltradio/fuzzy-logic-w-laurence-hughes)
+
+Here’s the tracklist:
+
+1. Mali-I	- Next Level Intro
+1. Robert Ffrench	– You are so special
+1. Radio Trip	– No Oud
+1. Lucas Croon – Japon
+1. Babeth	– Orchestra Reggae
+1. Tyrone Evans – Rise Up (Version)
+1. Gateway Shuffle – Snapping
+1. Cy Gorman – Dewy Drip
+1. Peech Boys – Don’t make me wait (Dub)
+1. Purelink – Dozen Sunbeams (Nice Girl version)
+1. Abacus – The Lower End Theory
+1. Ossie – I hurt you
+1. Fingers Inc – Bye Bye
+
+Thanks to [Amy](https://www.instagram.com/a.rodger.s/) for the invite, and Matthew, the engineer on the day.
