@@ -460,7 +460,7 @@ end
 
 ## Double splat operator
 
-My understanding is that when you pass `**foo` as a parameter to a method call then it represents the hash that will be returned from a method `def foo` elsewhere. That contents of that hash might be different under different circumstances which is why you’re not just specifying literal attributes and values. If there are multiple items in the hash, it’ll spread them out as multiple key-value pairs (e.g. as multiple HTML attribute name and attribute value pairs). This is handy when you don’t know which attributes you need to include at the time of rendering a component and want the logic for determining that to reside in the component internals. Here’s an example, based on a ViewComponent for outputting accessible SVG icons:
+My understanding is that when you pass `**foo` as a parameter to a method call then it represents the hash that will be returned from a method `def foo` elsewhere. The contents of that hash might be different under different circumstances which is why you’d use the double-splat rather than just specifying literal attributes and values. If there are multiple items in the hash, it’ll spread them out as multiple key-value pairs (e.g. as multiple HTML attribute name and attribute value pairs). This is handy when you don’t know which attributes you need to include at the time of rendering a component and want the logic for determining that to reside in the component internals. Here’s an example, based on a ViewComponent for outputting accessible SVG icons:
 
 In the `icon_component.html.erb` template:
 
