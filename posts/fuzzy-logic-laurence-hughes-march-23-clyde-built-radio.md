@@ -20,7 +20,7 @@ openGraphImage: "https://res.cloudinary.com/fuzzylogic/image/upload/q_auto,f_aut
 draft: false
 
 ---
-I recorded my second radio show of 2023 live at the Clyde Built Radio studio at the weekend. It was a bright and sunny Sunday with the clocks just gone forward and the Barras buzzing as it hosted a Hong Kong street market.
+I recorded my second radio show of 2023 live at the Clyde Built Radio studio at the weekend. It was great playing records there on a sunny Sunday with the clocks just gone forward and the Barras buzzing as it hosted a Hong Kong street market.
 ---
 
 {% if app.environment == "production" %}
@@ -38,9 +38,7 @@ I recorded my second radio show of 2023 live at the Clyde Built Radio studio at 
 
 To follow [last month’s show](https://fuzzylogic.me/posts/fuzzy-logic-laurence-hughes-feb-23-clyde-built-radio/), this month I went for a set of reggae, electronics and other assorted good vibes.
 
-<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1478629783&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/clydebuiltradio" title="Clyde Built Radio" target="_blank" style="color: #cccccc; text-decoration: none;">Clyde Built Radio</a> · <a href="https://soundcloud.com/clydebuiltradio/fuzzy-logic-w-laurence-1" title="Fuzzy Logic w/ Laurence Hughes (26/3/23)" target="_blank" style="color: #cccccc; text-decoration: none;">Fuzzy Logic w/ Laurence Hughes (26/3/23)</a></div>
-
-[Listen to the show on Soundcloud.](https://soundcloud.com/clydebuiltradio/fuzzy-logic-w-laurence-hughes)
+[Listen to the show on Soundcloud.](https://soundcloud.com/clydebuiltradio/fuzzy-logic-w-laurence-1)
 
 Here’s the tracklist:
 
