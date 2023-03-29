@@ -292,10 +292,10 @@ But let’s just say you _have to do it_, perhaps because the design spec requir
 
 Options:
 - [Animate the `<details>` element](https://css-tricks.com/how-to-animate-the-details-element-using-waapi/). This is a nice, standards-oriented approach. But it might only be viable for when you don’t need to mess with `<details>` appearance too much. We’d struggle to apply very custom styles, or to handle a “show the first few list items but not all” requirement like in the BBC Sounds example;
-- [Animate CSS Grid](https://nemzes.net/posts/animating-height-auto/#the-solutions). This is a nice idea but for now the animation only works in Firefox. It’d be great to just consider it a progressive enhancement so it just depends on whether the animation is deemed core to the experience;
+- [Animate CSS Grid](https://nemzes.net/posts/animating-height-auto/#the-solutions). This is a nice idea but for now the animation only works in Firefox<sup>*</sup>. It’d be great to just consider it a progressive enhancement so it just depends on whether the animation is deemed core to the experience;
 - [Animate from a max-height of 0 to “something sufficient”](https://codepen.io/fuzzylogicx/pen/wvPMxvm) (my pen is inspired by [Scott O’Hara’s disclosure example](https://codepen.io/scottohara/pen/ybLMOm)). This is workable but not ideal; you kinda need to set a max-height sweetspot otherwise your animation will be delayed and too long. You could of course add some JavaScript to get the exact necessary height then set it. BBC use `max-height` for their tracklist animation and those tracklists likely vary in length so I expect they use some JavaScript for height calculation.
 
-Update 20/2/23: [the “animate CSS Grid” option now has wide browser support](https://caniuse.com/mdn-css_properties_grid-template-rows_animation) and is probably my preferred approach. I made a codepen that demonstrates [a disclosure widget with animation of `grid-template-rows`](https://codepen.io/fuzzylogicx/pen/zYLbRxw/2dd66701b7198814e8f856d72eeee8f5).
+* Update 20/2/23: [the “animate CSS Grid” option now has wide browser support](https://caniuse.com/mdn-css_properties_grid-template-rows_animation) and is probably my preferred approach. I made a codepen that demonstrates [a disclosure widget with animation of `grid-template-rows`](https://codepen.io/fuzzylogicx/pen/zYLbRxw/2dd66701b7198814e8f856d72eeee8f5).
 
 ### Ringing bell icon
 
