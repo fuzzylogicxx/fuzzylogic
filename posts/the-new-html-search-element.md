@@ -21,7 +21,8 @@ mainImage.isAnchor: false
 draft: false
 
 ---
-My work colleague [Ryan](https://twitter.com/ryandeegan) recently drew my attention to the new HTML `search` element. This morning I read [Scott O’Hara’s excellent primer](https://www.scottohara.me/blog/2023/03/24/search-element.html). Scott worked on implementing `<search>`, and his article cleared up my questions around what it is and when we can start using it. 
+My work colleague [Ryan](https://twitter.com/ryandeegan) recently drew my attention to the new HTML `search` element. This morning I read [Scott O’Hara’s excellent primer](https://www.scottohara.me/blog/2023/03/24/search-element.html). Scott worked on implementing `<search>`, and his article cleared up my questions around what it is and when we can start using it.
+---
 
 Firstly `<search>` is not a “search input” – it’s not a replacement for any existing `input` elements. Instead it’s a native HTML element to create a `search` [landmark](https://www.w3.org/TR/wai-aria-1.2/#landmark_roles), something that until now we could only achieve by applying `role="search"` to another element.
 
@@ -41,14 +42,14 @@ So as Scott himself admits:
 
 ## Do I have a use for this?
 
-If you have a search function or search page and currently miss the opportunity to offer a _search_ landmark via `role=search` you could do so (and improve things for your users) by providing a search landmark, either the old way or the new way.  
+If you have a search function or search page and currently miss the opportunity to offer a _search_ landmark you could do so and improve the user experience.
 
 ## Can I use the `<search>` element today?
 
-As Scott mentions, it’s not yet available in browsers (although it likely will arrive soon). So if you added `<search>` (just as I’ve typed it there) to a page, it wouldn’t currently create a search landmark. So you _could_ wait for a while before using the element. Alternatively, because HTML’s design is intentionally geared toward a progressive enhancement mindset, you could take [Jeremy Keith’s approach](https://adactio.com/links/20054) and safely use the following today:=
+As Scott mentions, it’s not yet available in browsers (although it likely will arrive soon). So if you added `<search>` (just as I’ve typed it there) to a page, it wouldn’t currently create a search landmark. So you _could_ wait for a while before using the element. Alternatively, because HTML’s design is intentionally geared toward a progressive enhancement mindset, you could take [Jeremy Keith’s approach](https://adactio.com/links/20054) and safely use the following today:
 
     <search role="search">
      ...
     </search>
 
-Jeremy knows that when browsers encounter an HTML element they don’t know, they don’t break but rather treat it as an anonymous element and carry on. So he includes `<search>` to start adopting the new standard today, but bolts on `role=search` temporarily to manually provide the landmark until browsers understand `search`. He’ll then remove the `role=search` part once support for `search` is widespread.
+Jeremy knows that when browsers encounter an HTML element they don’t know, they don’t break but rather treat it as an anonymous element and carry on. So he includes `<search>` to start adopting the new element today, but bolts on `role=search` temporarily to manually provide the landmark until browsers understand `search`. He’ll then remove the `role=search` part once support for `search` is widespread.
