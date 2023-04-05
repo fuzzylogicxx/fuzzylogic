@@ -26,7 +26,7 @@ My work colleague [Ryan](https://twitter.com/ryandeegan) recently drew my attent
 
 Firstly `<search>` is not a “search input” – it’s not a replacement for any existing `input` elements. Instead it’s a native HTML element to create a `search` [landmark](https://www.w3.org/TR/wai-aria-1.2/#landmark_roles), something that until now we could only achieve by applying `role="search"` to another element.
 
-Landmarks are an important semantic structure allowing screen reader users to orient themselves and jump to important areas of a web page. Existing landmarks you might know include `<header>`, `<main>`, `<footer>`. So you would use `<search>` to _wrap around_ a search function, thus providing additional accessibility. And it lets you do so with a native HTML element instead of re-purposing another element by adding ARIA properties, per [the first rule of ARIA use](https://www.w3.org/TR/using-aria/#rule1). It’d look something like this:
+Landmarks are an important semantic structure allowing screen reader users to orient themselves and jump to important areas of a web page. Existing landmark-signalling elements you might know include `<header>`, `<main>`, `<footer>`. So you would use `<search>` to _wrap around_ a search function, thus providing additional accessibility. And it lets you do so with a native HTML element instead of re-purposing another element by adding ARIA properties, per [the first rule of ARIA use](https://www.w3.org/TR/using-aria/#rule1). It’d look something like this:
 
     <search>
       <form action="/path/to/search/">
