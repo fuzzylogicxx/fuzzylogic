@@ -21,7 +21,7 @@ mainImage.isAnchor: false
 draft: false
 
 ---
-I’m a fan of web designers and developers collaborating closely rather than designers throwing mock-ups (considered to be “the final look”) over the wall. Recently I read two newsletters relating to this topic, or perhaps more accurately about perceived divisions between design and development and some better, more modern ways of thinking.
+I’m a fan of web designers and developers collaborating closely rather than designers throwing mock-ups (intended to represent the final result) over the wall. Recently I read two newsletters relating to this topic, or perhaps more accurately about perceived divisions between design and development and some better, more modern ways of thinking.
 ---
 
 The first, [The best handoff is no handoff](https://mailchi.mp/smashingmagazine.com/better-design-estimates-1134673?e=854bbd5846) from Smashing Magazine, presents alternatives to waterfall including [The Hot Potato Process](https://danmall.com/posts/hot-potato-process/) espoused by Brad Frost and Dan Mall. 
