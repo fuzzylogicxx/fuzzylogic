@@ -1,6 +1,6 @@
 ---
 date: 2023-04-09T10:20:03Z
-title: Handoff versus collaboration
+title: Collaboration versus handoff, and avoiding broken promises
 description: I recently received two newsletters loosely related to perceived divisions
   between design and development
 tags:
