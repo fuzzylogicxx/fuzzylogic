@@ -8,7 +8,7 @@ tags:
 - responsive
 - containerqueries
 - css
-noteWithTitle: false
+noteWithTitle: true
 linkTarget: ''
 mainImage.url: ''
 mainImage.alt: ''
