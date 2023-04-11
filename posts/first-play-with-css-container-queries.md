@@ -20,7 +20,7 @@ mainImage.isAnchor: false
 draft: false
 
 ---
-In responsive design we generally want the same component to get a different set of styles when in a different context. Up until recently the only “context” that we could check was the _viewport_ size, which wasn’t ideal. Sometimes you want an element to be styled one way in a main content column but differently in a sidebar, and querying the viewport ain’t gonna help with that. But recently, everything changed. We can now use CSS to query the size of any given container and [this feature is supported in all major browsers](https://caniuse.com/css-container-queries).
+In responsive design we generally want the same component to get a different set of styles when in a different context. Up until recently the only “context” that we could check was the _viewport_ size, which wasn’t ideal. For example sometimes you want an element to be styled one way in a main content column but differently in a sidebar, and querying the viewport ain’t gonna help with that. But recently, everything changed. We can now use CSS to query the size of any given container and [this feature is supported in all major browsers](https://caniuse.com/css-container-queries).
 
 There’s a bit of new syntax to learn, so I recently had [my first play with container queries](https://codepen.io/fuzzylogicx/pen/xxaeVbQ?editors=1100) on codepen.
 
