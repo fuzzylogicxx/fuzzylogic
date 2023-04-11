@@ -20,11 +20,11 @@ mainImage.isAnchor: false
 draft: false
 
 ---
-We can now use CSS to query the size of any given container, rather than only the viewport, and [this feature is supported in all major browsers](https://caniuse.com/css-container-queries).
+In responsive design we generally want the same comnponent to get different styles (CSS) dependent on its context. Up until recently the only “context” that we could check was the _viewport_ size, which wasn’t ideal. Sometimes you want an element to be styled one way in a main content column but differently in a sidebar, and querying the viewport ain’t gonna help with that. But recently, everything changed. We can now use CSS to query the size of any given container and [this feature is supported in all major browsers](https://caniuse.com/css-container-queries).
 
-Here’s [my first play with container queries, on codepen](https://codepen.io/fuzzylogicx/pen/xxaeVbQ?editors=1100).
+There’s a bit of new syntax to learn, so I recently had [my first play with container queries](https://codepen.io/fuzzylogicx/pen/xxaeVbQ?editors=1100) on codepen.
 
-My codepen is pretty trivial but the goal was only to do the most minimal test that lets me understand the key syntax. It turns out that it’s quite straightforward.
+My pen is pretty trivial, but the goal was specifically to do the most minimal test that lets me test-drive the key syntax. It turns out that it’s quite straightforward.
 
 Define an element as a container:
 
