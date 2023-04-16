@@ -32,9 +32,11 @@ Define an element as a container:
 
 <figure>
 
-    .sidebar {
-      container: ctr-sidebar / inline-size;
-    }
+``` css
+.sidebar {
+  container: ctr-sidebar / inline-size;
+}
+```
 
 </figure>
 
@@ -42,11 +44,13 @@ Change the styles of another element (`.foo`) when it’s inside that container 
 
 <figure>
 
-    @container ctr-sidebar (max-width: 300px) {
-      .foo {
-    	// context-specific styles go here 
-      }
-    }
+``` css
+@container ctr-sidebar (max-width: 300px) {
+  .foo {
+    // context-specific styles go here 
+  }
+}
+```
 
 </figure>
 
