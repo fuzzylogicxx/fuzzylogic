@@ -11,7 +11,7 @@ noteWithTitle: true
 draft: false
 
 ---
-My latest radio show is dedicated tc o Ryuichi Sakamoto, who sadly died recently. I played a couple of tracks by the great man alongside more of my favourite electronic music in various flavours.
+My latest radio show is dedicated to Ryuichi Sakamoto, who sadly died recently. I played a couple of tracks by the great man alongside more of my favourite music.
 ---
 
 This month I went for a set of reggae, electronics and other assorted good vibes.
