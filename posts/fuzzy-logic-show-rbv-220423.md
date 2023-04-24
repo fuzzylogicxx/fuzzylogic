@@ -14,9 +14,7 @@ draft: false
 My latest radio show is dedicated to Ryuichi Sakamoto, who sadly died recently. I played a couple of tracks by the great man alongside more of my favourite music.
 ---
 
-This month I went for a set of reggae, electronics and other assorted good vibes.
-
-[Listen to the show on Soundcloud.](https://soundcloud.com/clydebuiltradio/fuzzy-logic-w-laurence-1)
+[Listen to the show on Soundcloud.](https://soundcloud.com/radiobuenavida/fuzzy-logic-w-laurence-hughes-radio-buena-vida-220423)
 
 Here’s the tracklist:
 
