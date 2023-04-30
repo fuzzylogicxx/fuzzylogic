@@ -232,9 +232,11 @@ To see this in action, visit my pen [Hiding: visually hidden until focused](http
 
 ### Animating in an existing element
 
-For this requirement we want an element to animate from invisible to visible on page load. This is pretty straightforward with CSS only using `@keyframes`, `opacity` and `animation`.
+For this requirement we want an element to animate from invisible to visible on page load. I can imagine doing this with an image or an alert, for example. This is pretty straightforward with CSS only using `@keyframes`, `opacity` and `animation`.
 
 Check out my [fade in and out on page load with CSS](https://codepen.io/fuzzylogicx/pen/ZNoLQB?editors=1100) codepen.
+
+
 
 ### Animating in a newly added element
 
@@ -334,3 +336,4 @@ Accessibility and animation can co-exist, as Cassie Evans explains in her CSS-Tr
 - [Keyframe animation syntax](https://css-tricks.com/snippets/css/keyframe-animation-syntax/) on CSS-Tricks
 - [CSS animation for beginners](https://thoughtbot.com/blog/css-animation-for-beginners) on Thoughtbot
 - [Using CSS Transions on auto dimensions](https://css-tricks.com/using-css-transitions-auto-dimensions/) on CSS-Tricks
+- Jhey Tompkins’s [Image fade with interest](https://codepen.io/jh3y/pen/qBJWEzm) codepen
