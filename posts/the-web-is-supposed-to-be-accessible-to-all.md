@@ -1,5 +1,5 @@
 ---
-date: "2022-10-19T22:02:26.841Z"
+date: "2023-06-13T22:02:26.841Z"
 title: "The web is fundamentally designed to be accessible to all"
 description: "A handy reference when talking to folks who don’t realise that accessibility should be non-negotiable"
 tags: [link, a11y, design]
