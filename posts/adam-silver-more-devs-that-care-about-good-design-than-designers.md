@@ -1,6 +1,6 @@
 ---
 date: 2023-06-13T17:57:01Z
-title: A UX observation regarding accessibility, by Adam Silver
+title: A UX observation regarding good design, by Adam Silver
 description: 'A spicy but somewhat relatable observation on attitudes to accessibility, and the meaning of good design'
 tags:
 - link
