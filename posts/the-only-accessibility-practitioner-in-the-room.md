@@ -1,5 +1,5 @@
 ---
-date: 2023-05-22T15:57:01Z
+date: 2023-06-22T15:57:01Z
 title: The only accessibility specialist in the room (on Tetralogical)
 description: 'Henny Swan with some advice for those who accessibility responsibility falls to'
 tags:
