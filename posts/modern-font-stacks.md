@@ -5,7 +5,7 @@ description: System font stack CSS organised by typeface classification for ever
 tags:
 - link
 - typography
-- font
+- fonts
 noteWithTitle: false
 linkTarget: https://modernfontstacks.com/
 mainImage.url: ''
