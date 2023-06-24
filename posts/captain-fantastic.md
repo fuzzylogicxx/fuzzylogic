@@ -6,7 +6,6 @@ tags:
 - note
 - film
 - off-grid
-- 
 location: Banchory Farm, Fife
 noteWithTitle: true
 linkTarget: ''
