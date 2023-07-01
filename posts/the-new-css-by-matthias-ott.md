@@ -1,4 +1,4 @@
-d---
+---
 date: 2023-07-01T17:20:01Z
 title: The New CSS (by Mattias Ott)
 description: 'Matthias argues that in this new era of CSS, the design tools (Figma etc) are now the limiting factor'
@@ -9,7 +9,7 @@ tags:
 - tools
 - cssday
 noteWithTitle: false
-linkTarget: https://chriscoyier.net/2023/05/12/add-opacity-to-an-existing-color/
+linkTarget: https://matthiasott.com/notes/the-new-css
 mainImage.url: ''
 mainImage.alt: ''
 mainImage.aspectRatioWidth: ''
