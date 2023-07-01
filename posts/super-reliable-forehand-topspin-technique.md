@@ -1,7 +1,7 @@
 ---
 date: Created
 title: Super-reliable forehand loop technique
-description: Refreshingly original film about a family temporarily leaving their off-grid existence
+description: Great tutorial from Tom Lodziak in which coach Emma Harradine demonstrates her excellent forehand loop technique
 tags:
 - link
 - tabletennis
