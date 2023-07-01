@@ -15,7 +15,7 @@ mainImage.srcsetWidths: ''
 mainImage.sizes: ''
 mainImage.isAnchor: false
 ---
-Here are my quick links and tips for creating a markdown-file-based blog post using only github.com and no CMS. I’ve put these on this site so that they’re on the web therefore I can access them whereever I am.
+Here are my quick links and tips for creating a markdown-file-based blog post using only github.com and no CMS. I’ve put these on this site so that they’re on the web therefore I can access them wherever I am.
 
 Why do I create posts this way? Because I’ve tried forestry.io (now _Tina_) and Netlify CMS and I no longer have the time or inclination to maintain their dependencies, load their JavaScript or make ongoing updates as they evolve. I’ve also found them a little flaky. So instead let’s see how this lo-fi approach works.
 
