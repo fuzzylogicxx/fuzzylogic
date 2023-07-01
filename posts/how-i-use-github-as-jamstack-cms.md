@@ -15,14 +15,18 @@ mainImage.srcsetWidths: ''
 mainImage.sizes: ''
 mainImage.isAnchor: false
 ---
-Here are my quick links and tips (that I can use whereever I am) for creating a blog post using github.com. Why do I create posts this way? Because I’ve tried Forestry and Netlify CMS and I don’t have the time or inclination to maintain dependecies for them or change in line with their updates. I’ve also found them a little flaky. So instead let’s see how this lo-fi approach works.
+Here are my quick links and tips for creating a markdown-file-based blog post using only github.com and no CMS. I’ve put these on this site so that they’re on the web therefore I can access them whereever I am.
+
+Why do I create posts this way? Because I’ve tried forestry.io (now _Tina_) and Netlify CMS and I no longer have the time or inclination to maintain their dependencies, load their JavaScript or make ongoing updates as they evolve. I’ve also found them a little flaky. So instead let’s see how this lo-fi approach works.
 
 This post is mainly for my own reference but who knows, maybe it’ll be useful to someone else too.
 ---
 
+Step 1:
+
 [Create a new markdown file in my posts directory](https://github.com/fuzzylogicxx/fuzzylogic/new/v3/posts)
 
-Use one of these previous posts as a template (copy and paste):
+Step 2: use one of these previous posts as a template (open, copy then paste into my new markdown file):
 
 - [Standard blog entry](https://raw.githubusercontent.com/fuzzylogicxx/fuzzylogic/v3/posts/collected-web-accessibility-guidelines-tips-and-tests.md)
 - [Bookmark](https://raw.githubusercontent.com/fuzzylogicxx/fuzzylogic/v3/posts/add-opacity-to-existing-color.md)
@@ -38,3 +42,7 @@ Use one of these previous posts as a template (copy and paste):
 - [All of my tags](https://fuzzylogic.me/tags/)
 - [Images: how I optimise, host, and code for performance and responsiveness](https://fuzzylogic.me/posts/my-new-syntax-for-responsive-and-modern-blog-images/)
 - [Set frontmatter date to `Created`](https://www.11ty.dev/docs/dates/)
+
+## Other notes
+
+Reminder to self: create a bookmark for this post on all my devices. Name it “Nu Gh post”.
