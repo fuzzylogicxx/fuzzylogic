@@ -20,7 +20,7 @@ mainImage.isAnchor: false
 draft: false
 
 ---
-Matthias feels the recent slew of enhancements to CSS have completely changed the game.
+Matthias feels that the recent slew of additions to CSS have completely changed the game.
 
 > this time, something feels different… the changes coming to CSS are so fundamental on so many levels that it almost feels like a singularity. There is now the CSS before and the CSS after the early 2020s.
 
