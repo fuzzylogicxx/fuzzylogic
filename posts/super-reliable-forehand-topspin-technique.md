@@ -1,5 +1,5 @@
 ---
-date: Created
+date: 2023-07-01 09:20:01 UTC
 title: Super-reliable forehand loop technique
 description: Great tutorial from Tom Lodziak in which coach Emma Harradine demonstrates her excellent forehand loop technique
 tags:
