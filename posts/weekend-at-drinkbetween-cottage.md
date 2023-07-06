@@ -22,11 +22,11 @@ Me, Clair and Rudy just enjoyed a lovely weekend break. We stayed at [Drinkbetwe
 
 The cottage has recently been restored by the farm owners and was the perfect environment to relax. 
 
-Our nearest neighbours were some colourful pheasants, a flock of sheep and three highland cows grazing in the fields opposite. Beyond them, there was a view onto the firth of forth and Forth bridges. Not far from home, but in the middle of the countryside. Bliss!
+Our nearest neighbours were some colourful pheasants, a flock of sheep and three highland cows grazing in the fields opposite. Beyond them, there was a view onto the firth of forth and Forth bridges.
 
-On the Saturday we enjoyed a short trip to the nearby towns of Aberdour via Burntisland, and moseyed down to the lovely Silver beach where we stopped for a coffee at [Sands](https://www.tripadvisor.co.uk/Restaurant_Review-g551742-d3472542-Reviews-Sands-Aberdour_Fife_Scotland.html)https://www.tripadvisor.co.uk/Restaurant_Review-g551742-d3472542-Reviews-Sands-Aberdour_Fife_Scotland.html.
+On the Saturday we enjoyed a short trip to the nearby towns of Aberdour via Burntisland, and moseyed down to the lovely Silver beach where we stopped for a coffee at [Sands](https://www.tripadvisor.co.uk/Restaurant_Review-g551742-d3472542-Reviews-Sands-Aberdour_Fife_Scotland.html).
 
-Clair brought and made beautiful food and at night we watched [Captain Fantastic](https://fuzzylogic.me/posts/captain-fantastic/)https://fuzzylogic.me/posts/captain-fantastic/.
+Clair brought and made beautiful food and at night we watched [Captain Fantastic](https://fuzzylogic.me/posts/captain-fantastic/).
 
 It was a reminder of just how great a well-needed change of pace and scenery you can get in a short distance and space of time.
 
