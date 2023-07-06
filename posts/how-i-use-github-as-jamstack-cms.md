@@ -1,5 +1,5 @@
 ---
-date: 2023-07-01 08:20:01 UTC
+date: 2023-07-01T08:20:00+00:00
 title: How I use github.com as my JAMstack CMS
 description: Quick links and tips to create a blog post using github.com 
 tags:
