@@ -1,5 +1,5 @@
 ---
-date: 2023-07-01T08:20:00+00:00
+date: 2023-07-03T17:20:01Z
 title: How I use github.com as my JAMstack CMS
 description: Quick links and tips to create a blog post using github.com 
 tags:
@@ -14,6 +14,7 @@ mainImage.aspectRatioHeight: ''
 mainImage.srcsetWidths: ''
 mainImage.sizes: ''
 mainImage.isAnchor: false
+
 ---
 Here are my quick links and tips for creating a markdown-file-based blog post using only github.com and no CMS. I’ve put these on this site so that they’re on the web therefore I can access them wherever I am.
 
