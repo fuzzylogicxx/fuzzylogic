@@ -1,6 +1,6 @@
 ---
 date: 2022-07-05T17:20:01Z
-title: Progressive enhancement is relevant even in sites that break without JavaScript
+title: Progressive enhancement is relevant in sites which require JavaScript too
 description: Remember that JavaScript unavailable is a greater possibility than JavaScript disabled
 tags:
 - note
