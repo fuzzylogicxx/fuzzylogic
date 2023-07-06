@@ -1,5 +1,5 @@
 ---
-date: 2022-07-05T21:38:19Z
+date: 2022-07-05T17:20:01Z
 title: Progressive enhancement is relevant even in sites that break without JavaScript
 description: Remember that JavaScript unavailable is a greater possibility than JavaScript disabled
 tags:
