@@ -31,6 +31,7 @@ When considering resilience around JavaScript, we can consider the “factors re
 1. does the user’s browser support the JavaScript features the developers have used (i.e. does the browser “cut the mustard”?)
 1. is the JavaScript error-free? It’s easy for some malformed JSON to creep in and break it…
 
-And the point my colleague made relates to Layer 1 only. And that layer – JavaScript being disabled by the user – is actually the least likely factor to cause JavaScript not to work.
+And the point my colleague made relates to Layer 1 only. And that layer – JavaScript being disabled by the user – is actually the least likely explanation for a 
+JavaScript-dependent feature not working.
 
 So it's really important to remember that when we build things with progressive enhancement we are not just addressing Layer 1, but Layers 2—5 too (as well as other layers I’ve probably forgotten!)
