@@ -9,6 +9,7 @@ tags:
 - note
 noteWithTitle: true
 mainImage:
+  cloudinary_unique_path: v1680028894/clyde_1400_mar2023_mozjpg_iejw5x.jpg
   url: https://res.cloudinary.com/fuzzylogic/image/upload/v1680028894/clyde_1400_mar2023_mozjpg_iejw5x.jpg
   alt: "Laurence in the Clyde Built studio at the Barras market"
   aspectRatioWidth: 1400
@@ -20,21 +21,22 @@ openGraphImage: "https://res.cloudinary.com/fuzzylogic/image/upload/q_auto,f_aut
 draft: false
 
 ---
-I recorded my second radio show of 2023 live at the Clyde Built Radio studio at the weekend. It was great playing records there on a sunny Sunday with the clocks just gone forward and the Barras buzzing as it hosted a Hong Kong street market.
----
 
-{% if app.environment == "production" %}
+<p class="lede">I recorded my second radio show of 2023 live at the Clyde Built Radio studio at the weekend. It was great playing records there on a sunny Sunday with the clocks just gone forward and the Barras buzzing as it hosted a Hong Kong street market.</p>
 
-<figure>
-  <picture>
-    <source type="image/avif" srcset="https://res.cloudinary.com/fuzzylogic/image/upload/f_avif,q_55,w_1292/v1680028894/clyde_1400_mar2023_mozjpg_iejw5x.jpg" />
-    <source type="image/webp" srcset="https://res.cloudinary.com/fuzzylogic/image/upload/f_webp,q_55,w_1292/v1680028894/clyde_1400_mar2023_mozjpg_iejw5x.jpg" />
-      <img class="u-full-parent-width" src="https://res.cloudinary.com/fuzzylogic/image/upload/f_jpg,q_auto,w_1292/v1680028894/clyde_1400_mar2023_mozjpg_iejw5x.jpg" width="1400" height="1050" alt="Laurence at the Clyde Built Radio studio in March 2023" loading="lazy" decoding="async" />
-  </picture>
-  <figcaption>At the Clyde Built Radio studio</figcaption>
-</figure>
 
-{% endif %}
+
+  <figure>
+    {% respimg
+      "" + mainImage.cloudinary_unique_path + "",
+      "" + mainImage.alt + "",
+      mainImage.aspectRatioWidth,
+      mainImage.aspectRatioHeight
+    %}
+    <figcaption>At the Clyde Built Radio studio</figcaption>
+  </figure>
+
+
 
 This month I went for a set of reggae, electronics and other assorted good vibes.
 

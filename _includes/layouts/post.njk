@@ -1,12 +1,12 @@
 ---
 layout: layouts/base.njk
-templateClass: post-main
+templateClass: primary-content--post
 ---
 
 <div class="primary-content__body">
   <div class="l-center l-center--wrapper-narrow">
 
-    <article class="l-flow post h-entry prose" itemscope itemtype="http://schema.org/BlogPosting">
+    <article class="post l-flow h-entry prose" itemscope itemtype="http://schema.org/BlogPosting">
 
       <header class="post__header">
         {%- if (title) -%}
@@ -33,7 +33,7 @@ templateClass: post-main
       </div>
       {% endif %}
 
-      <div class="l-flow e-content {{ "article-type-listing" if isList }}" itemprop="articleBody">
+      <div class="post-body l-flow e-content {{ "article-type-listing" if isList }}" itemprop="articleBody">
 
         {{ content | safe }}
 

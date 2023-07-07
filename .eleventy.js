@@ -201,39 +201,69 @@ module.exports = function(eleventyConfig) {
     return [...tagSet].sort();
   });
 
-  // Cloudinary / Responsive Images
+  // Responsive images (currently using Cloudinary both as image host and for image transformation features)
   eleventyConfig.cloudinaryCloudName = 'fuzzylogic';
-  eleventyConfig.srcsetWidths = [320, 640, 960, 1280, 1600, 1920, 2240, 2560];
-  eleventyConfig.fallbackWidth = 640;
-  eleventyConfig.aspectRatioWidth = 320;
-  eleventyConfig.aspectRatioHeight = 240;
+  eleventyConfig.cloudinaryImgURLStart = `https://res.cloudinary.com/${eleventyConfig.cloudinaryCloudName}/image/upload/`;
+  eleventyConfig.cloudinaryImgQuality = '55';
+
+  // width: based on my current layout where content col is 646 wide this is 2x as wide as needed
+  eleventyConfig.cloudinaryImgWidth = '1292';
 
   eleventyConfig.addShortcode('respimg', function(
-    src,
+    cloudinaryImgUniquePath,
     alt,
-    sizes,
-    aspectRatioWidth = eleventyConfig.aspectRatioWidth,
-    aspectRatioHeight = eleventyConfig.aspectRatioHeight,
-    srcsetWidthRange = eleventyConfig.srcsetWidths
-  ) {
-    const cloudinaryBase = `https://res.cloudinary.com/${eleventyConfig.cloudinaryCloudName}/image/upload/`;
-    var cloudinaryImgPath = src.replace(cloudinaryBase, '');
-    return `<img
-    class="u-full-parent-width"
-    srcset="${srcsetWidthRange
-      .map(w => {
-        return `${cloudinaryBase}q_auto,f_auto,w_${w}/${cloudinaryImgPath} ${w}w`;
-      })
-      .join(', ')}"
-    sizes="${sizes ? sizes : '100vw'}"
-    src="${cloudinaryBase}q_auto,f_auto,w_${
-      eleventyConfig.fallbackWidth
-    }/${cloudinaryImgPath}"
-    width="${aspectRatioWidth}" height="${aspectRatioHeight}"
-    ${alt ? `alt="${alt}"` : ''}
-    loading="lazy"
-    decoding="async" />`;
+    aspectRatioWidth,
+    aspectRatioHeight
+    ) {
+      return `<picture>
+        <source type="image/avif" srcset="${eleventyConfig.cloudinaryImgURLStart}f_avif,q_${eleventyConfig.cloudinaryImgQuality},w_${eleventyConfig.cloudinaryImgWidth}/${cloudinaryImgUniquePath}" />
+        <source type="image/webp" srcset="${eleventyConfig.cloudinaryImgURLStart}f_webp,q_${eleventyConfig.cloudinaryImgQuality},w_${eleventyConfig.cloudinaryImgWidth}/${cloudinaryImgUniquePath}" />
+        <img
+          class="u-full-parent-width"
+          src="${eleventyConfig.cloudinaryImgURLStart}f_jpg,q_${eleventyConfig.cloudinaryImgQuality},w_${eleventyConfig.cloudinaryImgWidth}/${cloudinaryImgUniquePath}"
+          width="${aspectRatioWidth}"
+          height="${aspectRatioHeight}"
+          alt="${alt}"
+          loading="lazy"
+          decoding="async" />
+      </picture>`;
   });
+
+
+
+
+  // eleventyConfig.cloudinaryCloudName = 'fuzzylogic';
+  // eleventyConfig.srcsetWidths = [320, 640, 960, 1280, 1600, 1920, 2240, 2560];
+  // eleventyConfig.fallbackWidth = 640;
+  // eleventyConfig.aspectRatioWidth = 320;
+  // eleventyConfig.aspectRatioHeight = 240;
+
+  // eleventyConfig.addShortcode('respimg', function(
+  //   src,
+  //   alt,
+  //   sizes,
+  //   aspectRatioWidth = eleventyConfig.aspectRatioWidth,
+  //   aspectRatioHeight = eleventyConfig.aspectRatioHeight,
+  //   srcsetWidthRange = eleventyConfig.srcsetWidths
+  // ) {
+  //   const cloudinaryBase = `https://res.cloudinary.com/${eleventyConfig.cloudinaryCloudName}/image/upload/`;
+  //   var cloudinaryImgPath = src.replace(cloudinaryBase, '');
+  //   return `<img
+  //   class="u-full-parent-width"
+  //   srcset="${srcsetWidthRange
+  //     .map(w => {
+  //       return `${cloudinaryBase}q_auto,f_auto,w_${w}/${cloudinaryImgPath} ${w}w`;
+  //     })
+  //     .join(', ')}"
+  //   sizes="${sizes ? sizes : '100vw'}"
+  //   src="${cloudinaryBase}q_auto,f_auto,w_${
+  //     eleventyConfig.fallbackWidth
+  //   }/${cloudinaryImgPath}"
+  //   width="${aspectRatioWidth}" height="${aspectRatioHeight}"
+  //   ${alt ? `alt="${alt}"` : ''}
+  //   loading="lazy"
+  //   decoding="async" />`;
+  // });
 
   // Excerpts (https://www.11ty.io/docs/data-frontmatter/#example%3A-parse-excerpts-from-content)
   eleventyConfig.setFrontMatterParsingOptions({
