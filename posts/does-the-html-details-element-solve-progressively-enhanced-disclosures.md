@@ -29,6 +29,10 @@ Scott goes on to describe how creating disclosure widgets (controls that hide an
 
 Like Scott says, the `<details>` element is different because you can have the content collapsed (hidden) by default without worrying about JavaScript and workarounds since the hidden content can be toggled open natively. That‘s a real superpower… and also makes you wonder: how many different places and different ways might we use this super-element?
 
+## My latest thinking
+
+Before we go any further, I’m going to say that 
+
 ## GitHub’s use of details
 
 Back in 2019, GitHub caused a flutter by [going all-in on `<details>`](https://twitter.com/muanchiou/status/1091331877636661249) to make various interesting UI elements interactive without JS. [Muan](https://twitter.com/muanchiou) has co-created a number of components for Github where `<details>` is used to, for example, open menus. They also [shared notes from a talk on this subject](https://github.com/muan/details-on-details). And [Chris Coyier for one was impressed and intrigued](https://css-tricks.com/using-details-for-menus-and-dialogs-is-an-interesting-idea/).
@@ -43,8 +47,11 @@ I’ve [previously noted](https://fuzzylogic.me/posts/web-components-as-progress
 
 And Zach has already used it on the navigation menus on [jamstack.org](https://jamstack.org/) and [netlify.com](https://www.netlify.com/), amongst other use cases.
 
-## A note of caution
+## Notes of caution
 
+* [The details element and in-page search](https://www.matuzo.at/blog/2023/details-find-in-page/) by Manuel Matuzovic
+- [A details element as a burger menu is not accessible](https://cloudfour.com/thinks/a-details-element-as-a-burger-menu-is-not-accessible/) on Cloud Four’s blog
+- [The details and summary elements, again](https://www.scottohara.me//blog/2022/09/12/details-summary.html) by Scott O’Hara
 * [Disclosure widgets by Adrian Roselli](https://adrianroselli.com/2020/05/disclosure-widgets.html)
 * [Details and summary are not…](https://adrianroselli.com/2019/04/details-summary-are-not-insert-control-here.html)
 * [Details content showing up in find (Ctrl+F)](https://adrianroselli.com/2019/04/details-summary-are-not-insert-control-here.html#comment-208747)
@@ -55,12 +62,4 @@ Using a custom disclosure widget put together with JavaScript and ARIA is not th
 
 ## Summing up
 
-So far I’ve been cautious about using `details` for more than simple cases but I’m starting to think the time may have come to take it further, possibly using Zach’s web component. A “hamburger” menu pattern might be a safe place to start… whereas I might not use it in situations where the “summary” (i.e. the toggle) needs to be more complex, for example on [a subnavigation trigger which includes both a link and a button](https://adrianroselli.com/2019/06/link-disclosure-widget-navigation.html#Pattern). When I do try it, it’d be great to employ some proper accessibility testing and get feedback.
-
-## Update 29 Sep 2022
-
-It seems that using `<details>` for interactive elements such as hamburger menus may not be such a good idea after all.
-  
-- [A details element as a burger menu is not accessible](https://cloudfour.com/thinks/a-details-element-as-a-burger-menu-is-not-accessible/) on Cloud Four’s blog
-- [The details and summary elements, again](https://www.scottohara.me//blog/2022/09/12/details-summary.html) by Scott O’Hara
-
+I’ve been cautious about using `details` for more than cases matching its intended usage but had started to think the time was right to take it further – possibly using Zach’s web component. My thinking was that perhaps a “hamburger” menu pattern might be a safe place to start. However based on the findings shared in the above _Notes of caution_ section I’ve decided to stay safe and accessible. The behaviour when the user does an in-page search, and the current browser inconsistencies in announcing the `summary` as an expand/collapse button tell me that a custom JS and ARIA disclosure widget is better for the custom UI cases.
