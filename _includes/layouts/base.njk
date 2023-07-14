@@ -37,7 +37,11 @@
     <meta property="og:title" content="{{ renderData.title or title or metadata.title }}" />
     <meta property="og:description" content="{{ renderData.description or description or metadata.description }}" />
 
+    {%- if (openGraphImage or metadata.open_graph.image) -%}
     <meta property="og:image" content="{{ openGraphImage or metadata.open_graph.image }}" />
+    {%- elif (cloudinary_unique_path) -%}
+    <meta property="og:image" content="https://res.cloudinary.com/fuzzylogic/image/upload/q_auto,f_auto,c_crop,g_north,w_1200,h_630/{{ cloudinary_unique_path }}" />
+    {%- endif -%}
 
     <meta property="og:url" content="{{ metadata.url_base }}{{ page.url }}" />
 

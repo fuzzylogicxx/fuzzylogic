@@ -32,7 +32,7 @@ I’ve noticed that a lot of my recent favourites are from Australia: artists li
 
 <b>Current Favourite Track:</b> Twin Turbo
 
-<div class="aspect-ratio-wide">
+<div class="l-frame">
   <iframe title="Sleep D – Twin Turbo" loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/IpvqnMpaV28" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
@@ -44,7 +44,7 @@ Originally released in 1982, this electronic pop oddity has been reissued by <sp
 
 <b>Current Favourite Track:</b> Disco Dub (Jura Soundsystem Extended Edit)
 
-<div class="aspect-ratio-wide">
+<div class="l-frame">
   <iframe title="Bella Vista – Mister Wong" loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/b9zHwx-i7KM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
@@ -56,7 +56,7 @@ Vibes legend Roy Ayers’ 1976 rare groove classic _Searching_ gets a welcome 7�
 
 <b>Current Favourite Track:</b> Searching
 
-<div class="aspect-ratio-wide">
+<div class="l-frame">
   <iframe title="Roy Ayers – Searching" loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/vc48ITjETAk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
@@ -68,7 +68,7 @@ A stellar slice of reissued eighties electrofunk which I heard while tuned in to
 
 <b>Current Favourite Track:</b> We're Running Out Of Time
 
-<div class="aspect-ratio-wide">
+<div class="l-frame">
   <iframe title="Oscar Weathers – We're Running Out Of Time" loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/7THzYjrjTbc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
@@ -80,7 +80,7 @@ A lovely 7″ slab of dubbed out, psychedelic soul from Will Dorey aka _Skinshap
 
 <b>Current Favourite Track:</b> IDK Dub
 
-<div class="aspect-ratio-wide">
+<div class="l-frame">
   <iframe title="Skinshape – IDK Dub" loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/AV26TeS1nfA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
@@ -92,7 +92,7 @@ Another excellent release from Edinburgh’s Unthank (sister label of Firecracke
 
 <b>Current Favourite Track:</b> Coconut Groove
 
-<div class="aspect-ratio-wide">
+<div class="l-frame">
   <iframe title="Benoit B – Caution 9′6″ High" loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/gjan4jxZgD8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
@@ -112,7 +112,7 @@ Obscure and limited various artists release from Rimini-based label Duca Bianco,
 
 I’m really enjoying Joy Orbison’s journey as a producer and loved the 2018 7″ _Diamonds_  under his Sin Falta pseudonym. This occupies a similar glitchy and heady space and showcases some really interesting sounds and ideas while still having enough oomph for DJs and dancefloors of taste.
 
-<div class="aspect-ratio-wide">
+<div class="l-frame">
   <iframe title="Joy O – Burn" loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/dMRMZLqlVaw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 

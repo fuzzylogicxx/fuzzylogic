@@ -26,6 +26,6 @@ draft: false
 ---
 Enjoyed this funny and touching film about a Syrian asylum seeker searching for happiness on a remote Scottish island.
 
-<div class="aspect-ratio-wide">
+<div class="l-frame">
   <iframe title="Official Trailer for movie “Limbo”" loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/3O--8AuuhgA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>

@@ -51,7 +51,7 @@ Real nice roots reggae and dub instrumentals from sunny Manchester. Mr Birchall 
 
 <b>Favourite track(s):</b> African Village Dance / Village Dub.
 
-<div class="aspect-ratio-wide">
+<div class="l-frame">
   <iframe title="Nat Birchall meets Al Breadwinner – African Village Dance" loading="lazy" width="560" height="315" src="https://www.youtube-nocookie.com/embed/oo35Duhy-8c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
@@ -63,7 +63,7 @@ As a big fan of Om Unit’s ouput around 2011 and Seekers’ 2017 [RunComeTest E
 
 <b>Favourite Track:</b> Nu Killa
 
-<div class="aspect-ratio-wide">
+<div class="l-frame">
   <iframe title="Om Unit meets Seekers International – Nu Killa" loading="lazy" width="560" height="315" src="https://www.youtube-nocookie.com/embed/MXfv_QEwhR4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
@@ -75,7 +75,7 @@ Lovely gatefold double-vinyl LP that sees two of Auld Reekie’s finest join for
 
 <b>Favourite Track:</b> Shapes
 
-<div class="aspect-ratio-wide">
+<div class="l-frame">
   <iframe title="Linkwood & Other Lands – Shapes" loading="lazy" width="560" height="315" src="https://www.youtube-nocookie.com/embed/oCdHPH77b5c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
@@ -87,7 +87,7 @@ Beautiful ambient textures and downtempo electronics with that typically quirky 
 
 <b>Favourite track:</b> Correndor.
 
-<div class="aspect-ratio-wide"><iframe title="Satoshi & Makoto – Correndor" width="560" height="315" src="https://www.youtube-nocookie.com/embed/qBJBzwbFQFg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<div class="l-frame"><iframe title="Satoshi & Makoto – Correndor" width="560" height="315" src="https://www.youtube-nocookie.com/embed/qBJBzwbFQFg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
 [Grab a copy on Bandcamp](https://nemutai.bandcamp.com/album/cz-5000-sounds-sequences-vol-ii)
 
@@ -97,7 +97,7 @@ Lovely four-tracker of slow and atmospheric late-night grooves from Italy and el
 
 <b>Favourite track:</b> Lucas Croon – Japon.
 
-<div class="aspect-ratio-wide">
+<div class="l-frame">
   <iframe title="Lucas Croon – Japon" loading="lazy" width="560" height="315" src="https://www.youtube-nocookie.com/embed/QVt99311d4A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
@@ -109,7 +109,7 @@ A nice surprise from Gilles Peterson’s label, this is a brand new, authentic j
 
 <b>Favourite track:</b> Aspects
 
-<div class="aspect-ratio-wide">
+<div class="l-frame">
   <iframe title="Linkwood & Other Lands – Shapes" loading="lazy" width="560" height="315" src="https://www.youtube-nocookie.com/embed/wxtnkyaF5ug" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
@@ -119,7 +119,7 @@ A nice surprise from Gilles Peterson’s label, this is a brand new, authentic j
 
 Another beauty from Melbourne-based Ryan Hunter whose previous releases – whether under this alias for the [Refresco EP](https://www.discogs.com/Midnight-Tenderness-Refresco-/release/11909269), or as Turner Street Sound for 2018’s amazing [Bunsens](https://www.discogs.com/Turner-Street-Sound-Bunsens-Vol-1/release/11577583) – have been much appreciated ‘round these parts. This one, on lovely transparent golden 7″, offers a speedy, skanking and soulful update to the traditional dub techno blueprint.
 
-<div class="aspect-ratio-wide">
+<div class="l-frame">
   <iframe title="Sansibar – Technology" loading="lazy" width="560" height="315" src="https://www.youtube-nocookie.com/embed/hEnv0MTYB64" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
@@ -131,7 +131,7 @@ No-messin’, pacey, but cinematic electro which sounds like it’s from Detroit
 
 <b>Favourite track:</b> Technology
 
-<div class="aspect-ratio-wide">
+<div class="l-frame">
   <iframe title="Sansibar – Technology" loading="lazy" width="560" height="315" src="https://www.youtube-nocookie.com/embed/xIqqBlIysN4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
@@ -144,7 +144,7 @@ Limited edition moody drone/ambient 7″ from Russia, with accompanying [drone m
 
 <b>Favourite track:</b> Blocks
 
-<div class="aspect-ratio-wide">
+<div class="l-frame">
   <iframe title="Art Crime – Blocks" loading="lazy" width="560" height="315" src="https://www.youtube-nocookie.com/embed/SDzs-BPplP0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
@@ -156,7 +156,7 @@ Fairly amazing leftfield ambient sounds, and even moreso given that the producer
 
 <b>Favourite track:</b> Fearless
 
-<div class="aspect-ratio-wide">
+<div class="l-frame">
   <iframe title="Linkwood & Other Lands – Shapes" loading="lazy" width="560" height="315" src="https://www.youtube-nocookie.com/embed/V56TYz3gBBc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
@@ -168,7 +168,7 @@ Shout out to [Gav](https://linktr.ee/0ther_Lands) who played this wonderful 1977
 
 <b>Favourite track:</b> Name
 
-<div class="aspect-ratio-wide">
+<div class="l-frame">
   <iframe title="Linkwood & Other Lands – Shapes" loading="lazy" width="560" height="315" src="https://www.youtube-nocookie.com/embed/l7VDC6_KJm4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
@@ -190,7 +190,7 @@ Proper New Jersey style garage from Baltimore’s DJ Spen (ably assisted on remi
 
 <b>Favourite track:</b> Till You Get There (DJ Spen and Sean McCabe remix)
 
-<div class="aspect-ratio-wide">
+<div class="l-frame">
   <iframe title="Linkwood & Other Lands – Shapes" loading="lazy" width="560" height="315" src="https://www.youtube-nocookie.com/embed/PvXmr-0qIXU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
@@ -202,7 +202,7 @@ My first encounter with Das Ding was his track [H.S.T.A.](https://www.youtube.co
 
 <b>Favourite track:</b> Category Collapse (Heap Remix)
 
-<div class="aspect-ratio-wide">
+<div class="l-frame">
   <iframe title="Das Ding – Category Collapse (Heap Remix)" loading="lazy" width="560" height="315" src="https://www.youtube-nocookie.com/embed/_3v1SZwgEaY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
@@ -234,7 +234,7 @@ Killer reggae reissue: beaut packaging, lovely red and green vinyl, and sounds t
 
 <b>Favourite track:</b> Inglan is a Bitch
 
-<div class="aspect-ratio-wide">
+<div class="l-frame">
   <iframe title="Linton Kwesi Johnson – Inglan is a Bitch" loading="lazy" width="560" height="315" src="https://www.youtube-nocookie.com/embed/oJ4UBztigF0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
@@ -247,7 +247,7 @@ Big up [Jamie](https://twitter.com/jamiethomsonno1) who brought this one to my a
 
 <b>Favourite track:</b> Exit
 
-<div class="aspect-ratio-wide">
+<div class="l-frame">
   <iframe title="Sedgwick – Exit" loading="lazy" width="560" height="315" src="https://www.youtube-nocookie.com/embed/IlaY4H84ADg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 

@@ -571,6 +571,25 @@
       flex-basis: 100%;
     }
   }
+
+  // Frame
+  // https://every-layout.dev/layouts/frame
+
+  .l-frame {
+    --n: 16;
+    --d: 9;
+    aspect-ratio: var(--n) / var(--d);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & > * {
+      inline-size: 100%;
+      block-size: 100%;
+      object-fit: cover;
+    }
+  }
 }
 
 
@@ -845,5 +864,4 @@
   .u-display\:block {
     display: block;
   }
-
 }

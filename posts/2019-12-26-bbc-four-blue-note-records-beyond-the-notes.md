@@ -8,8 +8,8 @@ linkTarget: "https://www.bbc.co.uk/programmes/m000b8pd"
 > The story behind Blue Note Records, founded in New York in 1939 by two German Jewish refugees who allowed their musicians complete artistic freedom, revolutionising jazz in the process.
 ---
 
-A great watch with a fantastic back story, great interviews and amazing music including this from Art Blakey: 
+A great watch with a fantastic back story, great interviews and amazing music including this from Art Blakey:
 
-<div class="aspect-ratio-wide">
+<div class="l-frame">
   <iframe title="Art Blakey & Lee Morgan – Moanin’ (alt. take)" loading="lazy" width="560" height="315" src="https://www.youtube-nocookie.com/embed/nCHdXDfNgrw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>

@@ -24,6 +24,6 @@ I first heard this stellar slice of deep funk a few years back on Kon and Amirâ€
 
 Check it out!
 
-<div class="aspect-ratio-wide">
+<div class="l-frame">
   <iframe title="Video of Everybodyâ€™s on a Trip by Garden of Eden" loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/FIi10Bww5LM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
