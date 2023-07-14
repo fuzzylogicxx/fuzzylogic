@@ -32,10 +32,10 @@ Step 2: use one of these previous posts as a template (open, copy then paste int
 - [Standard blog entry](https://raw.githubusercontent.com/fuzzylogicxx/fuzzylogic/v3/posts/collected-web-accessibility-guidelines-tips-and-tests.md)
 - [Bookmark](https://raw.githubusercontent.com/fuzzylogicxx/fuzzylogic/v3/posts/add-opacity-to-existing-color.md)
 - [Short note](https://raw.githubusercontent.com/fuzzylogicxx/fuzzylogic/v3/posts/captain-fantastic.md)
-- [Note with photo](https://fuzzylogic.me/posts/fuzzy-logic-laurence-hughes-march-23-clyde-built-radio/)
+- [Note with photo]([https://fuzzylogic.me/posts/fuzzy-logic-laurence-hughes-march-23-clyde-built-radio/](https://fuzzylogic.me/posts/join-the-future/))
 - [Book I’ve started reading](https://fuzzylogic.me/posts/i-ve-started-reading-the-15-minute-city-by-natalie-whittle/)
 - [Film I just watched](https://raw.githubusercontent.com/fuzzylogicxx/fuzzylogic/v3/posts/captain-fantastic.md)
-- [Record I bought/love (video)](https://fuzzylogic.me/posts/plant43-%E2%80%93-light-pollution/) 
+- [(Video of) record I bought/love](https://fuzzylogic.me/posts/plant43-%E2%80%93-light-pollution/) 
 - [Mix I’ve just recorded](https://fuzzylogic.me/posts/fuzzy-logic-laurence-hughes-march-23-clyde-built-radio/)
 
 ## Useful references
