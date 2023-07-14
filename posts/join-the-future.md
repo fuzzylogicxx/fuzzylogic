@@ -24,6 +24,7 @@ draft: false
 > It’s important to set the record straight. Normally when people talk about the early UK scene the same few things get mentioned. The real underground never gets talked about."
 ---
 
+{% if app.environment == "production" %}
 <figure>
   {% respimgV2
     "" + mainImage.cloudinary_unique_path + "",
@@ -33,6 +34,7 @@ draft: false
   %}
   <figcaption>{{ mainImage.figcaption }}</figcaption>
 </figure>
+{% endif %}
 
 I loved this! It tells the stories behind many of the lesser-reported UK scenes and record labels. And it really helped to join a lot of musical dots for me, covering music I first heard on cassettes as a teenager thirty years ago.
 

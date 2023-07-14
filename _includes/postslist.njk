@@ -20,7 +20,7 @@
     <div class="l-flow e-content">
     {% if (post.data.page.excerpt) -%}
       {%- set excerpt = post.data.page.excerpt -%}{{ excerpt | markdownStringToHTML | safe }}
-      {% if post.data.mainImage.url or post.data.mainImage.cloudinary_unique_path %}
+      {% if app.environment == "production" and (post.data.mainImage.url or post.data.mainImage.cloudinary_unique_path) %}
       <figure>
       {%- if post.data.mainImage.isAnchor %}<a href="{{ post.url | url }}">{%- endif %}
         {%- if post.data.mainImage.cloudinary_unique_path %}
