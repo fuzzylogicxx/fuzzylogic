@@ -69,8 +69,11 @@ Taking Jake’s guidance and tweaking it for my Cloudinary-based context, my rec
 And my process was as follows:
 
 1. Take a photo (for me, that’ll be on my phone). Without doing anything special it’ll already be wide enough.
-1. Apply use the HEIC format. [To get around that](https://discussions.apple.com/thread/253906990), do: Share, Copy, open Files > _HEIC to JPG_, paste and it’ll save as JPG.
-1. Drop it into [Squoosh](https://squoosh.app/) and do the following: rotate it if necessary, resize it to 1300 wide (based on my current layout, `1292` is twice as wide (2 × 646) as the image would need to go and making it a little wider does no harm), reduce its quality a bit (stopping before it gets noticeably bad)
+1. Apple use the HEIC format. [To get around that](https://discussions.apple.com/thread/253906990), do: Share, Copy, open Files > _HEIC to JPG_, paste and it’ll save as JPG.
+1. Drop it into [Squoosh](https://squoosh.app/) and do the following:
+  - rotate it if necessary
+  - resize it to 1300 wide (in my current layout `1292` is twice as wide (2 × 646) as the image would need to go, and I just round up to 1300)
+  - reduce its quality a bit (stopping before it gets noticeably bad)
 1. Encode that as a `mozjpg` which gave the best size reduction and as far as I can tell, is a safe approach to use.
 1. Upload to my Cloudinary account then copy its new Cloudinary URL.
 1. Prepare the image HTML per the above snippet. The first `source` [tells Cloudinary to use format `avif`](https://cloudinary.com/blog/how_to_adopt_avif_for_images_with_cloudinary#how_do_i_do_that_), while for the second source it’s `webp`, and for the fallback `img` it’s `jpg`.
