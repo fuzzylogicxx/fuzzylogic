@@ -36,7 +36,7 @@ Amidst the rocky parts, February also provided a couple of nice moments. On a vi
 
 <b>Current Favourite Track:</b> Futo
 
-<div class="aspect-ratio-wide">
+<div class="l-frame">
   <iframe title="Shida Shahabi – Futo" loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/Ctxp1lQcL9s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
@@ -49,7 +49,7 @@ Okay, I’m late with this one – it was released in April ‘19 – but who ca
 
 <b>Current Favourite Track:</b> Curls
 
-<div class="aspect-ratio-wide">
+<div class="l-frame">
   <iframe title="Bibio – Curls" loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/Vx9_FIIH-UM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
@@ -64,7 +64,7 @@ Who knew there was a reggae version of The Gap Band’s early eighties classic, 
 
 <b>Current Favourite Track:</b> Outstanding
 
-<div class="aspect-ratio-wide">
+<div class="l-frame">
   <iframe title="Al Charles – Outstanding" loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/ZQIkpRWjREU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
@@ -76,7 +76,7 @@ Sydney–born, Melbourne–based producer Samantha Poulter aka Logic1000 is a ne
 
 <b>Current Favourite Track:</b> Na feat. DJ Plead
 
-<div class="aspect-ratio-wide">
+<div class="l-frame">
   <iframe title="Logic1000 – Na feat. DJ Plead" loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/5hLmiSjflSg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
@@ -88,7 +88,7 @@ I loved Glaswegian Perko’s first release, _NV Auto_; its blend of dubbed out s
 
 <b>Current Favourite Track:</b> Stutter
 
-<div class="aspect-ratio-wide">
+<div class="l-frame">
   <iframe title="Perko – Stutter" loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/ZZ10HO1KAps" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
@@ -100,7 +100,7 @@ This is the dub remix version of the Texas band’s second LP, _Con Todo El Mond
 
 <b>Current Favourite Track:</b> Four of Five
 
-<div class="aspect-ratio-wide">
+<div class="l-frame">
   <iframe title="Khruangbin – Four of Five" loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/i2keZMh7x9w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
@@ -112,7 +112,7 @@ This has been on my wants list for an age but every time I tried to get a copy l
 
 <b>Current Favourite Track:</b> I Don’t Really
 
-<div class="aspect-ratio-wide">
+<div class="l-frame">
   <iframe title="Lo Kindre – I Don’t Really" loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/iN9I3TPG12w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 

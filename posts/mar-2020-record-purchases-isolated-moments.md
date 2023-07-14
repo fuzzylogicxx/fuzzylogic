@@ -33,7 +33,7 @@ So sang D-Train on _Music_ and never has the sentiment resonated more than durin
 
 Cooped up at home and deprived of face-to-face contact with friends and family, I’ve found that music can really lift the spirits.
 
-Fortunately, the supply of great records hasn’t stopped and there are a number of trusty online stores to keep us connected. 
+Fortunately, the supply of great records hasn’t stopped and there are a number of trusty online stores to keep us connected.
 
 Let’s dive into the stack of wax that has been keeping me (mostly) sane during lockdown.
 
@@ -43,7 +43,7 @@ Here’s a pair of jazzy hip hop instrumentals from Finland, both riffing on the
 
 <b>Favourite Track:</b> Minor Minor
 
-<div class="aspect-ratio-wide">
+<div class="l-frame">
   <iframe title="The Stance Brothers – Minor Minor" loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/Ec4d5NdsOGg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
@@ -55,7 +55,7 @@ Beautiful sounds from Malmo that straddle the organic and the electronic, settli
 
 <b>Favourite Track:</b> Klappen 11
 
-<div class="aspect-ratio-wide">
+<div class="l-frame">
   <iframe title="Golden Ivy - Kläppen 11" loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/SuzpuUFznHU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
@@ -67,7 +67,7 @@ My favourite release to date from Parisian producer D.K. was [his stellar collab
 
 <b>Favourite Track:</b> Untitled 11 (not yet on YouTube)
 
-<div class="aspect-ratio-wide">
+<div class="l-frame">
   <iframe title="D.K. – Untitled 1" loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/LDBIwyOP-7Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
@@ -79,7 +79,7 @@ My favourite release to date from Parisian producer D.K. was [his stellar collab
 
 <b>Favourite Track:</b> Shooz Who
 
-<div class="aspect-ratio-wide">
+<div class="l-frame">
   <iframe title="Datassette – Shooz Who" loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/kG_p6SlLFq4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
@@ -91,7 +91,7 @@ These days I try not to buy records for just one track, but this is something sp
 
 <b>Favourite Track:</b> Formally Unknown – Lotus Turbo
 
-<div class="aspect-ratio-wide">
+<div class="l-frame">
   <iframe title="Formally Unknown – Lotus Turbo" loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/PIJJ-sYeI_A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
@@ -103,7 +103,7 @@ I’d urge any fans of serious electro to get on this tout suite – you won’t
 
 <b>Favourite Track:</b> Kuldaboli – Draumur inní heilann þinn
 
-<div class="aspect-ratio-wide">
+<div class="l-frame">
   <iframe loading="lazy" width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/708251818&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
 </div>
 
@@ -115,7 +115,7 @@ Solid LP from one half of Beautiful Swimmers, taking in house/techno cuts that e
 
 <b>Favourite Track:</b> Shoutout Seefeel
 
-<div class="aspect-ratio-wide">
+<div class="l-frame">
   <iframe title="Formally Unknown – Lotus Turbo" loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/h_HpCpaY1J0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 

@@ -24,7 +24,7 @@ Nice video here from Tom Lodziak in which coach Emma Harradine demonstrates a fo
 
 I’ve always liked the idea of this shot – the archetypal third ball in the rally – being like a well-oiled machine, but have never quite nailed it. So I’m gonna study this!
 
-<div class="aspect-ratio-wide">
+<div class="l-frame">
   <iframe title="Emma Haradine’s super-reliable forehand loop technique" width="560" height="315" src="https://www.youtube.com/embed/XcS7ol2GP10" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
 ---
@@ -38,4 +38,4 @@ The key points are:
 5. Contact ball at top of its bounce – don’t let it drop
 6. Rotate hips, upper-body
 7. The key is consistency and spin. This shot is a set-up not a winner
-8. Next shot can be more direct and faster, but don’t blast it either – there’s no need. Going for position is really effective.  
+8. Next shot can be more direct and faster, but don’t blast it either – there’s no need. Going for position is really effective.

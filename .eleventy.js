@@ -201,6 +201,36 @@ module.exports = function(eleventyConfig) {
     return [...tagSet].sort();
   });
 
+  // Responsive image shortcode V2
+  // (currently using Cloudinary both as image host and for its image transformation features)
+  eleventyConfig.cloudinaryCloudName = 'fuzzylogic';
+  eleventyConfig.cloudinaryImgURLStart = `https://res.cloudinary.com/${eleventyConfig.cloudinaryCloudName}/image/upload/`;
+  eleventyConfig.cloudinaryImgQuality = '55';
+
+  // width: based on my current layout where content col is 646 wide, this is 2x as wide as needed
+  eleventyConfig.cloudinaryImgWidth = '1292';
+
+  eleventyConfig.addShortcode('respimgV2', function(
+    cloudinaryImgUniquePath,
+    alt,
+    aspectRatioWidth,
+    aspectRatioHeight
+    ) {
+      return `<picture>
+        <source type="image/avif" srcset="${eleventyConfig.cloudinaryImgURLStart}f_avif,q_${eleventyConfig.cloudinaryImgQuality},w_${eleventyConfig.cloudinaryImgWidth}/${cloudinaryImgUniquePath}" />
+        <source type="image/webp" srcset="${eleventyConfig.cloudinaryImgURLStart}f_webp,q_${eleventyConfig.cloudinaryImgQuality},w_${eleventyConfig.cloudinaryImgWidth}/${cloudinaryImgUniquePath}" />
+        <img
+          class="u-full-parent-width"
+          src="${eleventyConfig.cloudinaryImgURLStart}f_jpg,q_${eleventyConfig.cloudinaryImgQuality},w_${eleventyConfig.cloudinaryImgWidth}/${cloudinaryImgUniquePath}"
+          width="${aspectRatioWidth}"
+          height="${aspectRatioHeight}"
+          alt="${alt}"
+          loading="lazy"
+          decoding="async" />
+      </picture>`;
+    }
+  );
+
   // Cloudinary / Responsive Images
   eleventyConfig.cloudinaryCloudName = 'fuzzylogic';
   eleventyConfig.srcsetWidths = [320, 640, 960, 1280, 1600, 1920, 2240, 2560];

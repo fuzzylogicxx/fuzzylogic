@@ -15,4 +15,4 @@ draft: false
 ---
 Looking forward to Stuart Maconie’s Freak Zone show on 6Music tonight, talking about Plaid’s Not for Threes LP plus other experimental electronics. <https://bbc.in/3nMeOS5>. *Headspin* is still killer!
 
-<div class="aspect-ratio-wide"><iframe title="Plaid – Headspin" width="560" height="315" src="https://www.youtube-nocookie.com/embed/72ZAMCzjxrk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<div class="l-frame"><iframe title="Plaid – Headspin" width="560" height="315" src="https://www.youtube-nocookie.com/embed/72ZAMCzjxrk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
