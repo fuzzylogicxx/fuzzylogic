@@ -47,3 +47,20 @@ If it’s a button (`<button>`):
 * it should look like a button, i.e. like a pill or rectangle
 * It should _not look like a link_ – that’d confuse users into thinking it takes them to another page.
 * So it shouldn’t be underlined by default or on hover. It should have some other hover state.
+
+## Testing the decision tree
+
+Let’s take the example of a control for launching a modal dialogue. 
+
+The simple decision is a button, because it causes something to cange on the current page. In this case it causes a dialogue to appear on the current page. 
+
+Some might argue that it could be a link. This is usually swayed by the fact that dialogues are often (perhaps inadvisably) used as a kind of “fake page”. And to get someone to a “page” we use a link, right? Advocates of the link option might also have progressive enhancement in mind. If they present a link either to a named fragment further down the page or to a separate page, that offers a resilient baseline experience regardless of whether or not JavaScript is available. The idea is that they also have JavaScript to enhance the link when the user’s environment supports it, perhaps adding `role=button`.
+
+However a `button` is the more accessible and user-friendly approach for launching the modal.
+
+- [Adrian Roselli on stackoverflow](https://stackoverflow.com/questions/38594369/is-it-more-accessible-to-use-a-button-or-a-to-open-close-a-modal)
+- [Adrian Roselli conversation with Jeremy Keith](https://twitter.com/aardrian/status/1322160454723129345)
+- [Other Adrian Roselli musings on Jeremy’s post](https://twitter.com/aardrian/status/1321947480112680960)
+- Chris Ferdinandi on [a progressive enhancement approach which replaces a link with a button](https://gomakethings.com/progressively-enhancing-a-link-into-a-button-with-vanilla-javascript/)
+
+ 
