@@ -52,9 +52,9 @@ If it’s a button (`<button>`):
 
 Let’s take the example of a control for launching a modal dialogue. 
 
-The simple decision is a button, because it causes something to cange on the current page. In this case it causes a dialogue to appear on the current page. 
+The obvious choice is a button, because the control causes something to change on the current page. In this case it causes a dialogue to appear on the current page.
 
-Some might argue that it could be a link. This is usually swayed by the fact that dialogues are often (perhaps inadvisably) used as a kind of “fake page”. And to get someone to a “page” we use a link, right? Advocates of the link option might also have progressive enhancement in mind. If they present a link either to a named fragment further down the page or to a separate page, that offers a resilient baseline experience regardless of whether or not JavaScript is available. The idea is that they also have JavaScript to enhance the link when the user’s environment supports it, perhaps adding `role=button`.
+Some might argue that it could be a link. This is usually influenced by the fact that dialogues are often (perhaps inadvisably) used as a kind of “fake page”. And to get someone to a “page” we use a link, right? Advocates of the link option might also have progressive enhancement in mind. If they present a link either to a named fragment further down the page or to a separate page, that offers a resilient baseline experience regardless of whether or not JavaScript is available. The idea is that they also have JavaScript to enhance the link when the user’s environment supports it, perhaps adding `role=button`.
 
 However a `button` is the more accessible and user-friendly approach for launching the modal.
 
