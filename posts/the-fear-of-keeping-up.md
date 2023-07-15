@@ -20,9 +20,9 @@ mainImage.isAnchor: false
 draft: false
 
 ---
-Great post by Chris here on the double-edged-sword of our rapidly-evolving web standards. On the one hand the HTML, CSS and JavaScript standards are removing the need for many custom tools. However:
+Great post by Chris here on the double-edged-sword of our rapidly-evolving web standards, and how to stay sane. On the one hand the HTML, CSS and JavaScript standards are removing the need for many custom tools. However:
 
-> it can also leave you feel like its impossible to keep up or learn it all. And that’s because you can’t! The field is literally too big to learn everything. “Keeping up” is both impossible and overrated. It’s the path to burnout.
+> it can also leave you feeling like it’s impossible to keep up or learn it all. And that’s because you can’t! The field is literally too big to learn everything. “Keeping up” is both impossible and overrated. It’s the path to burnout.
 ---
 
 Chris’s suggestion – something I find reassuring and will return to in moments of doubt – is that we focus on:
