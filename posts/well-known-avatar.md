@@ -4,9 +4,9 @@ title: A well known URL for your personal avatar (by Jim Neilsen)
 description: 'Put an avatar somewhere that’s easy to access'
 tags:
 - link
-- design
-- colour
-- css
+- avatar
+- wellknown
+- personalsite
 noteWithTitle: false
 linkTarget: https://blog.jim-nielsen.com/2023/well-known-avatar/
 mainImage.url: ''
