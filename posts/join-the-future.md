@@ -36,7 +36,7 @@ draft: false
 </figure>
 {% endif %}
 
-I loved this! It tells the stories behind many of the lesser-reported UK scenes and record labels. And it really helped to join a lot of musical dots for me, covering music I first heard on cassettes as a teenager thirty years ago.
+I loved this! It tells the stories behind many of the lesser-reported UK scenes and record labels. And it really helped to join a lot of musical dots for me, covering music I first heard on cassettes as a teenager thirty years ago. (That includes fairly obscure labels such as [Chill](https://www.discogs.com/label/3894-Chill) – that brilliant quote about “setting the record straight” was from their A+R man Tim Raidl).
 
 I also loved Matt’s passion for telling the stories of these people and communities.
 
