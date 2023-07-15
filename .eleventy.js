@@ -333,6 +333,7 @@ module.exports = function(eleventyConfig) {
   // Note: no 'css' entry because we’re inlining CSS so don’t need any physical css files in the public dir.
 
   // the easy stuff
+  eleventyConfig.addPassthroughCopy('.well-known');
   eleventyConfig.addPassthroughCopy('img');
   eleventyConfig.addPassthroughCopy('fonts');
   eleventyConfig.addPassthroughCopy('android-chrome-192x192.png');

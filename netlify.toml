@@ -35,11 +35,16 @@
   from = "/thoughts/flexible-tag-style-collections-and-pages-for-non-tag-key-in-eleventy/"
   to = "/posts/flexible-tag-like-functionality-for-custom-keys-in-eleventy/"
   status = 301
-  
+
 [[redirects]]
   from = "/posts/progressive-enhancement-heuristics/"
   to = "/posts/browser-support-heuristics/"
   status = 301
+
+[[redirects]]
+  from = "/.well-known/avatar"
+  to = "/.well-known/avatar.jpg"
+  status = 200
 
 [[redirects]]
   from = "/blog/"
