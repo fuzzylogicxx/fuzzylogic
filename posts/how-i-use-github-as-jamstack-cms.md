@@ -29,12 +29,12 @@ Step 1:
 
 Step 2: use one of these previous posts as a template (open, copy then paste into my new markdown file):
 
-- [Standard blog entry](https://raw.githubusercontent.com/fuzzylogicxx/fuzzylogic/v3/posts/collected-web-accessibility-guidelines-tips-and-tests.md)
-- [Bookmark](https://raw.githubusercontent.com/fuzzylogicxx/fuzzylogic/v3/posts/add-opacity-to-existing-color.md)
-- [Short note](https://raw.githubusercontent.com/fuzzylogicxx/fuzzylogic/v3/posts/captain-fantastic.md)
-- [Note with photo]([https://fuzzylogic.me/posts/fuzzy-logic-laurence-hughes-march-23-clyde-built-radio/](https://fuzzylogic.me/posts/join-the-future/))
+- [Standard blog entry](https://github.com/fuzzylogicxx/fuzzylogic/blob/v3/posts/collected-web-accessibility-guidelines-tips-and-tests.md)
+- [Bookmark](https://github.com/fuzzylogicxx/fuzzylogic/blob/v3/posts/add-opacity-to-existing-color.md)
+- [Short note](https://github.com/fuzzylogicxx/fuzzylogic/blob/v3/posts/captain-fantastic.md)
+- [Note with photo](https://github.com/fuzzylogicxx/fuzzylogic/blob/v3/posts/join-the-future.md)
 - [Book I’ve started reading](https://fuzzylogic.me/posts/i-ve-started-reading-the-15-minute-city-by-natalie-whittle/)
-- [Film I just watched](https://raw.githubusercontent.com/fuzzylogicxx/fuzzylogic/v3/posts/captain-fantastic.md)
+- [Film I just watched](https://github.com/fuzzylogicxx/fuzzylogic/blob/v3/posts/captain-fantastic.md)
 - [(Video of) record I bought/love](https://fuzzylogic.me/posts/plant43-%E2%80%93-light-pollution/) 
 - [Mix I’ve just recorded](https://fuzzylogic.me/posts/fuzzy-logic-laurence-hughes-march-23-clyde-built-radio/)
 
