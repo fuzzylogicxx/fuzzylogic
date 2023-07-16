@@ -22,7 +22,7 @@ mainImage.isAnchor: false
 draft: false
 
 ---
-Love [Matt Wilde’s](https://twitter.com/mattwildemusic) music and his new LP _Hello World_ is even better than expected.
+Love [Matt Wilde’s](https://www.mattwilde.com/) music and his new LP _Hello World_ is even better than expected.
 
 Beautiful laid-back and understated vibe from start to finish. Lovely artwork too.
 ---
