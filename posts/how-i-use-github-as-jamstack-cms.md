@@ -27,9 +27,9 @@ Step 1:
 
 [Create a new markdown file in my posts directory](https://github.com/fuzzylogicxx/fuzzylogic/new/v3/posts)
 
-Step 2: use one of these previous posts as a template (open, copy then paste into my new markdown file):
+Step 2: use one of these previous posts as a template (use the “copy raw file” icon-button then paste into my new markdown file):
 
-- [Standard blog entry](https://github.com/fuzzylogicxx/fuzzylogic/blob/v3/posts/collected-web-accessibility-guidelines-tips-and-tests.md)
+- [Standard blog entry](https://github.com/fuzzylogicxx/fuzzylogic/blob/v3/posts/basic_entry.md)
 - [Bookmark](https://github.com/fuzzylogicxx/fuzzylogic/blob/v3/posts/add-opacity-to-existing-color.md)
 - [Short note](https://github.com/fuzzylogicxx/fuzzylogic/blob/v3/posts/captain-fantastic.md)
 - [Note with photo](https://github.com/fuzzylogicxx/fuzzylogic/blob/v3/posts/join-the-future.md)
