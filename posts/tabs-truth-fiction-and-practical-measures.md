@@ -22,6 +22,10 @@ draft: false
 My colleague Anda and I just had a good conversation about tabs, and specifically the company’s tabs component. I’ve mentioned before that our tabs are unconventional and potentially confusing, and Anda was interested to hear more.
 ---
 
+## What’s the purpose of a tabbed interface?
+
+A tabbed interface is a space-saving tool for collapsing parallel content into panels, with one panel visible at a time but all accessible on-demand. While switching between tab panels the user is kept within the same wider context i.e. the same page, rather than being moved around. 
+
 ## Conventional tabbed interfaces
 
 Here are some great examples of _tabs_ components.
