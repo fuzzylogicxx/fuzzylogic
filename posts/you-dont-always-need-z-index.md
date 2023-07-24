@@ -8,6 +8,9 @@ tags:
 - development
 - css
 - positioning
+- order
+- zindex
+- cssgrid
 location: Glasgow
 noteWithTitle: true
 linkTarget: ''
@@ -22,7 +25,7 @@ draft: false
 
 ---
 
-There’s a great section on [Source order and layers](https://every-layout.dev/layouts/imposter/) in Every Layout’s _Impostor_ layout. It’s a reminder that when needing to layer one element on top of the other you should:
+There’s a great section on [Source order and layers](https://every-layout.dev/layouts/imposter/) in Every Layout’s _Imposter_ layout. It’s a reminder that when needing to layer one element on top of the other you should:
 
 1. favour a modern layout approach such as CSS Grid over absolute positioning; and
 2. not apply `z-index` unless it’s necessary.
