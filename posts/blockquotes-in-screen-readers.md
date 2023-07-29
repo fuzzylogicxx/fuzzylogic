@@ -12,7 +12,10 @@ noteWithTitle: false
 linkTarget: https://adrianroselli.com/2023/07/blockquotes-in-screen-readers.html
 
 ---
-Adrian tests how blockquotes, marked up in a variety of ways, are announced in different screen readers. He concludes that his personal choice is as follows:
+Adrian tests how blockquotes, marked up in a variety of ways, are announced in different screen readers. 
+---
+
+He concludes that his personal choice is as follows:
 
 ```
 <main>
@@ -26,10 +29,8 @@ Adrian tests how blockquotes, marked up in a variety of ways, are announced in d
 ```
 ---
 
-He goes on to mention that the `footer` is used simply a styling hook, since in the context of a `main` it is not a landmark and is strictly presentational. 
-
-The `cite` element has semantic intent – it’s [the element for marking up the title of a cited creative work](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/cite) – even if those semantics are not always exposed to users. 
-
 He avoids the `cite` _attribute_ completely because it creates noise in JAWS, and recommends against using `figure` with `figcaption` because it results in unnecessarily verbose and duplicate announcements.
+
+In his chosen approach the `footer` is used mainly as a sensible styling hook, since in the context of a `main` (as opposed to as a direct child of `body`) it is not regarded a landmark and is strictly presentational. The `cite` element has semantic intent – it’s [the element for marking up the title of a cited creative work](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/cite) – even if those semantics are not always exposed to users.
 
 So there’s an action for my team at work, because our blockquote component currently uses `figure` and `figcaption`. Perhaps at the time of build we took advice from one of the MDN or W3C pages which Adrian has now shown weren’t ideal.
