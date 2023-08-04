@@ -9,21 +9,27 @@ tags:
 - standard
 draft: true
 ---
-Something Adrian Roselli said recently has stuck with me. The gist was that developers shouldn’t treat MDN as gospel, but rather refer to the proper specifications for web standards.
+Something Adrian Roselli said recently has stuck with me. The gist was that when developers need definitive guidance they shouldn’t treat MDN as gospel, but rather refer to the proper specifications for web standards.
 ---
 
-HTML
+## HTML
 [The HTML Living Standard](https://html.spec.whatwg.org/multipage/)
 
-ARIA
+The [_Edition for Web Developers_](https://html.spec.whatwg.org/dev/) version looks handy. It seems to be streamlined and you can also use the forward-slash key to jump straight into a search then type something like “popover” to access that specification quickly.
+
+## WCAG Accessibility 
+
+[How to Meet WCAG (Quick Reference)](https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships)
+
+Adrian referenced / linked to this in one of his blog articles.
+
+## ARIA
 [W3C’s ARIA in HTML document](https://www.w3.org/TR/html-aria/)
 
 Adrian will quote or reference this when talking about roles, landmarks and the like… for example when [he tweeted about developers using `section`](https://twitter.com/aardrian/status/1587524667325177864).
 
 Note: it (somewhat confusingly) describes itself as a W3C _recommendation_. But despite that naming it should be regarded as definitive guidance. That description links to an explainer of W3C recommendation confirming that these are specifications which have been endorsed by W3C, that software manufacturers should implement, and that may be cited as W3C standards. My understanding is that if a specification is at an earlier stage it will be described as a W3C proposed recommendation.
 
-[How to Meet WCAG (Quick Reference)](https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships)
-Adrian referenced / linked to this
 
 
 
