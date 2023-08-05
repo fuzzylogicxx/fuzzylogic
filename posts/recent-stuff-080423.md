@@ -1,6 +1,6 @@
 ---
 date: 2023-08-04T21:45:53.000+00:00
-title: Lately (08-04-2023)
+title: Lately… (08-04-2023)
 description: Recent activity and thoughts.
 tags:
 - entry
