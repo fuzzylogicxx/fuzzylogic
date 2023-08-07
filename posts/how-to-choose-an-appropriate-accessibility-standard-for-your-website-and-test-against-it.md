@@ -23,8 +23,9 @@ While not aimed specifically at the UK market, deque.com’s article [What to lo
 
 > If you don’t have specific accessibility regulations that apply to your organization but want to avoid legal risk, WCAG 2.1 A and AA compliance is a reasonable standard to adopt.
 
-## Additional references:
+## Additional references
 
 - [GOV.UK’s overview of WCAG 2.1](https://www.gov.uk/service-manual/helping-people-to-use-your-service/understanding-wcag)
 - [WCAG 2.1 Official Docs](https://www.w3.org/TR/WCAG21/)
 - [UK Accessibility Laws](https://siteimprove.com/en-gb/accessibility/uk-accessibility-laws/) on siteimprove.com
+- [Disabled access to websites under UK Law (from 2011)](https://www.pinsentmasons.com/out-law/guides/disabled-access-to-websites-under-uk-law)
