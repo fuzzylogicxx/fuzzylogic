@@ -5,7 +5,7 @@ description: "Get started, and think of accessibility as an ongoing journey with
 tags: [link, a11y, progress]
 linkTarget: "https://meryl.net/accessibility-progress-over-perfection/"
 ---
-This post from earlier this year offers a similar encouraging message to Henny Swanâs recent âThe only accessibility specialist in the roomâ. It contains advice thatâs worth remembering when we have one of those âwhatâs the point?â moments. 
+This post from earlier this year offers a similar encouraging message to Henny Swan’s recent [_The only accessibility specialist in the room_](https://fuzzylogic.me/posts/the-only-accessibility-practitioner-in-the-room/). It contains advice that’s worth remembering when we have one of those ”what’s the point?’ moments! 
 ---
 
 Advice like:
