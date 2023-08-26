@@ -43,16 +43,18 @@ Caveats and notes:
 
 If someone had a web page and only had 5 minutes to find and tackle the lowest hanging fruit accessibility-wise, I’d probably echo [Jeremy Keith’s advice](https://skiptocontent.huxleydigital.co.uk/video/caring-about-the-world-wide-web-with-jeremy-keith/) to ensure that the page covers the following:
 
-- uses headings, and sensibly
-- uses landmarks (header, nav, main etc)
+- uses headings sensibly
+- uses landmarks (representing roles like `banner`, `navigation`, `main`, `contentinfo`)
 - marks up forms sensibly (for example using labels and appropriate buttons)
 - provides images with decent text alternatives
 
-Having only 5 minutes would be bad, of course, and you shouldn’t do that. The point is that if pushed, the above give good bang-for-your-buck.
+(Note: headings and landmarks are used by screen reader users to get a feel for the page then jump to areas of interest.)
+
+Spending just 5 minutes would be bad, of course, and you shouldn’t do that. The point is that if pushed, the above give good bang-for-your-buck.
 
 ## Content structure
 
-The page’s content should be well-structured as this makes it easier to understand for all, especially people with reading and cognitive disabilities. It should consist of short sections of content preceded by clear headings. It should employ lists where appropriate. It should place the most important content at the beginning of the page or section to give it prominence.
+The page’s content should be well structured as this makes it easier to understand for all, especially people with reading and cognitive disabilities. It should consist of short sections of content preceded by clear headings. It should employ lists where appropriate. It should place the most important content at the beginning of the page or section to give it prominence.
 
 Check your page for any long passages of text with no structure. Ensure that sufficient prominence is given to the most important information and calls to action.
 
@@ -60,15 +62,17 @@ Check your page for any long passages of text with no structure. Ensure that suf
 
 Apply ARIA carefully. [No ARIA is better than bad ARIA.](https://www.w3.org/WAI/ARIA/apg/practices/read-me-first/#x2-1-no-aria-is-better-than-bad-aria)
 
-Seek to use semantic HTML elements rather than reinvent the wheel. As Bruce Lawson says, “Built-in beats bolt-on, bigly”. HTML landmark elements (`<main>`, `<header>`, `<nav>` etc.) have built-in, implicit ARIA roles so there is no need to add `role="navigation"` (or similar) explictly as this would be duplication.
+Using semantic HTML elements is preferable to bolting on semantics via attributes since the semantics are conveyed natively avoiding redundancy and duplication. As Bruce Lawson says, “Built-in beats bolt-on, bigly”. 
 
-There is no need to add the `aria-label` attribute to a `<nav>` or `<header>` (etc) element unless there are multiple of that element in the document, in which case provide a distinguishing `aria-label` for each. This label will allow an assistive technology user to be able to quickly understand the purpose of each.
+Create a small number of [landmarks](https://developer.mozilla.org/en-US/blog/aria-accessibility-html-landmark-roles/) using the appropriate HTML elements. For some of these elements it’s appropriate to bolster them with a label. For example with `nav` and `aside`, i) there’s a decent chance there might be multiple on the page; and ii) each instance creates a landmark even if it’s nested within another HTML element, so it’s helpful to distinguish each different landmark by using sensible accessible names. And in the case of the `section` element it _needs_ an acessible name in order for it to act as a `region` landmark. For all of these you can use `aria-labelledby` set to the `id` of an inner heading, or use `aria-label`.
+
+Note that when using multiple `<header>` (or `footer`) elements on a page, where one and one only is a direct child of `body` wile the others are used within `article` or similar elements, there’s perhaps less need to add custom accessible names. That’s because only a direct child of `body` will be treated as a landmark and the others won’t, therefore they won’t be butting against each other in a screen reader’s _Landmarks_ menu and need distinguished.
 
 ## Favour native over custom components except where they have known issues
 
 Native components require very little work, are familiar to users, and are generally accessible by default. Custom components can be built to appear and behave as designers want, but require much more effort to build and are challenging to make accessible.
 
-There are exceptions. Since the native options are flawed across browsers, accessibility experts recommend useing custom solutions for: 
+There are exceptions. Since the native options are flawed across browsers, accessibility experts recommend using custom solutions for: 
 - form error field messages
 - focus indicator styles
 
@@ -143,9 +147,10 @@ When developing a collapsible menu, place your menu `<button>` _within_ your `<n
 
 ## References
 
+* [Using HTML landmark roles to improve accessibility](https://developer.mozilla.org/en-US/blog/aria-accessibility-html-landmark-roles/) and [Adrian R’s suggestions for additions](https://github.com/orgs/mdn/discussions/383)
+* [Navigation (landmark) role, on MDN](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/navigation_role)
 * Tetralogical’s [Quick Accessibility Tests](https://www.youtube.com/playlist?list=PLTqm2yVMMUKWTr9XWdW5hJ9tk512Ow0SE) YouTube playlist
 * Sara Soueidan’s video tutorial [Practical tips for building more accessible front-ends](https://aneventapart.com/news/post/practical-tips-for-building-more-accessible-front-ends)
 * Adrian Roselli’s [Responsive type and zoom](https://adrianroselli.com/2019/12/responsive-type-and-zoom.html)
 * Heydon Pickering’s tweet about [buttons in navs](https://twitter.com/heydonworks/status/766948134169620480) and Scott O’Hara’s follow up article [Landmark Discoverability](https://www.scottohara.me/blog/2016/08/10/discovering-landmarks.html)
-* [Labelling landmarks, on MDN](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/navigation_role#labeling_landmarks)
 * Tetralogical’s [Foundations: native versus custom components](https://tetralogical.com/blog/2022/11/08/foundations-native-versus-custom-components/)
