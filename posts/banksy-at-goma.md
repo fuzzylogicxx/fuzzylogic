@@ -1,6 +1,6 @@
 ---
 date: 2023-07-06T22:17:15Z
-title: Banksy’s Cut and Run exibition
+title: Banksy’s Cut and Run exhibition
 description: I loved the presentation, the art, and Banksy’s words about his ideas and influences
 tags:
 - note
