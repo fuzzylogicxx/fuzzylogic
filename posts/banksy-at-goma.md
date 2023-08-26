@@ -33,6 +33,6 @@ I really enjoyed the way the exhibition was arranged and presented with the vari
 
 I liked Banky self-effacing introduction saying that really he was cheating and gets (steals) all his inspiration from others, or _real_ artists.
 
-I loved where he talked about the light-switch moment about not needing to add a background but rather to make the location the background, and how that then fires the imagination with the challenge “How much of the bg/location can you use?”
+I loved where he talked about the light-switch moment about not needing to add a background but rather to make the real-life location the background, and how that then fires the imagination with the challenge “How much of the environment can you integrate into the piece?”. How much space could there be between the girl and the balloon?
 
 Lastly, the final area is a treat. It simulates Banksy’s bedroom growing up and the music, art and films which influenced him. There’s a great description of how the graffitied sign in Jaws – where a sign presenting Amity Island as a paradise is doctored with a shark fin and “Help!” speech bubble – was an early example of art that really spoke to him. In this graffiti he saw a wonderful combination of satire, powerless people finding a way to make their voice heard, humour, art and rebellion.
