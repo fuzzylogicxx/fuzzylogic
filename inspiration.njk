@@ -10,9 +10,7 @@ permalink: inspiration/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumbe
 title: "Inspiration: Website Designs"
 ---
 
-<header class="section-index-header">
-  <h1>{{ renderData.title or title }}</h1>
-</header>
+<h1>{{ renderData.title or title }}</h1>
 
 <div class="grid" data-min="18ch">
   {% for item in inspiration %}
