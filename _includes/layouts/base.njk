@@ -111,7 +111,7 @@
     <link rel="pingback" href="https://webmention.io/fuzzylogic.me/xmlrpc">
     <link rel="webmention" href="https://webmention.io/fuzzylogic.me/webmention">
   </head>
-  <body class="{% if bodyclass %}{{ bodyclass }}{% endif %}">
+  <body {% if bodyclass %}class="{{ bodyclass }}"{% endif %}>
 
     <!-- Skip link(s) -->
     <div class="u-hidden-until-focused">
