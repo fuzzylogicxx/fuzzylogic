@@ -12,7 +12,7 @@ Here are some recurring development decisions I make when maintaining my persona
 
 ## Where should I put the landmark-related HTML elements in the source?
 
-I have one `header`, one `main` and one `footer` element as _direct children_ of the body element. This isn’t arbitrary. A `header` at this level will be treated as a `banner` landmark and a `footer` as the page’s `contentinfo` landmark. When they are nested more deeply (for example within a “wrapper” div they will not be treated as those landmarks. You’d have to bolt-on aria attributes. My understanding is that it’s better to exploit elements with built-in semantics than to bolt them on.
+I have one `header`, one `main` and one `footer` element as _direct children_ of the body element. This isn’t arbitrary. A `header` at this level will be treated as a `banner` landmark and a `footer` as the page’s `contentinfo` landmark. When they are nested more deeply (for example within a “wrapper” div) they are not automatically given landmark status. You’d have to bolt-on aria attributes. My understanding is that it’s better to exploit elements with built-in semantics than to bolt them on.
 
 ## How should I centre main content in a way that works well with responsiveness, full-width section backgrounds etc?
 
