@@ -22,9 +22,9 @@ I mentally break the page up from top to bottom into slices that correspond to l
 
 Within each section, nest a dedicated [Center](https://every-layout.dev/layouts/center/) layout for your width-constraining wrappers.
 
-This approach offers the best of all worlds semantically. It doesn’t constrain your markup which I find preferential for setting appropriate semantics and accessibility. You don’t need to put a “wrapper div” around everything. Instewd you can have landmark-related elements as direct children of `body`, applying padding to those and nesting centred wrappers inside them.
+This approach offers the best of all worlds. It doesn’t constrain your markup, which I find preferential for setting appropriate semantics and accessibility. You don’t need to put a “wrapper div” around everything. Instead you can have landmark-related elements as direct children of `body`, applying padding to those and nesting centred wrappers inside them.
 
-This approach also avoids problems such as unwanted collapsing margins and general margin weirdness. You often encounter that problem when using vertical margins in situations where “boxes with padding” would be more appropriate. Relatedly, I find that flow (or [stack](https://every-layout.dev/layouts/stack/)) layouts are generally best used _within_ each of your nested wrappers rather than at the top level.
+By making proper use of `padding`, this approach also avoids problems such as unwanted collapsing margins and general margin weirdness. You often encounter that problem when using vertical margins in situations where “boxes with padding” would be more appropriate. Relatedly, I find that flow (or [stack](https://every-layout.dev/layouts/stack/)) layouts are generally best used _within_ each of your nested wrappers rather than at the top level.
 
 ## How should I mark up lists of articles?
 
