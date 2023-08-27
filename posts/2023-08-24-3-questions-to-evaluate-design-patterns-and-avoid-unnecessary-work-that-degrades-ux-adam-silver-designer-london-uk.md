@@ -7,7 +7,7 @@ linkTarget: "https://adamsilver.io/blog/3-questions-to-evaluate-design-patterns-
 ---
 Adam offers tips for how to proceed when we are presented with a request for a shiny new pattern which is not grounded in research but rather follows a fad.
 
-> The purpose of design is to solve actual problems. Not made up ”I’m bored so I’ll come up with something new” problems.
+> The purpose of design is to solve actual problems. Not made up “I’m bored so I’ll come up with something new” problems.
 
 > So how can we evaluate these patterns, avoid unnecessary work and ultimately avoid patterns that degrade UX?
 ---
