@@ -17,9 +17,15 @@ I make `header`, `main` and `footer` direct children of the body element. This i
 
 ## How should I centre the content? Use an overall page wrapper? What about when sections have a full-width background?
 
-Composition! Use a dedicated box layout and give it padding. Within that use a dedicated center layout for your wrappers. You get the best of all worlds.
+Composition! 
 
-Flow/stack layouts are generally best _within_ those boxes rather than at the top level.
+Slice page up into vertical sections (based on logical groups and/or full-width backgrounds) and give them padding on all sides. The lateral padding will give you your gutters on narrow screens. You might use a box layout but more likely might not consider them true boxes if the lateral padding is different from the vertical padding so you might just DIY them. 
+
+Within each section, nest a dedicated center layout for your width-constraining wrappers. 
+
+This approach offers the best of all worlds semantically (landmark elements at the top level) and stylistically versus the “wrapper div around everything” approach. 
+
+It also avoids problems such as collapsing margins that would be caused by trying to use vertical margins in situations where “boxes with padding” is more appropriate. Relatedly, flow/stack layouts are generally best _within_ your wrappers rather than at the top level.
 
 ## Should lists of articles be a bunch of sibling `article`s? Should they be in a list elememt?
 
@@ -31,4 +37,8 @@ Different switched-on developers tackle this differently, so it’s hard to say 
 - https://tetralogical.com/news/ vs https://tetralogical.com/blog/
 - https://ethanmarcotte.com/wrote/ has nested lists to handle years then months, with each post teaser marked up as an `article` inside an `li`
 
-I currently use sibling `article`s, no wrapping list.
+I currently use sibling `article`s, no wrapping list. Article feels right becauase each is discreet and could be (in fact are) syndicated. Could be persuaded to do list because it tells SR users how many there are. 
+
+## Should a blog post page be marked up as an article or just using main?
+
+I mark it up as an `article` for same reasons discreet/syndicated. It’s inside a `main` because I have one main on every page.
