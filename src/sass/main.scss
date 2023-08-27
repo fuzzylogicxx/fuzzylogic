@@ -179,9 +179,11 @@
 
     // On wider screens we can allow hanging list bullets.
     // It’s a nice typographic effect.
-    @media only screen and (min-width: 60em) {
-      margin-left: 0;
-    }
+    // ** TODO: disabled until I update it to only happen where appropriate **
+
+    // @media only screen and (min-width: 60em) {
+    //   margin-left: 0;
+    // }
   }
 
   ul[role='list'],
@@ -324,19 +326,22 @@
     margin-left: var(--space-2xs-xs);
   }
 
-  .prose {
-    hyphens: auto;
-    font-feature-settings: "kern", "liga", "clig", "calt", "onum", "pnum";
-  }
+  // ** Disable fancy hyphens and number settings.
+  // TODO: re-enable in better-scoped classes/places only **
 
-  @supports (font-kerning: normal) and (font-variant-ligatures: common-ligatures contextual) and (font-variant-numeric: oldstyle-nums proportional-nums) {
-    .prose {
-      font-kerning: normal;
-      font-variant-ligatures: common-ligatures contextual;
-      font-variant-numeric: oldstyle-nums proportional-nums;
-      font-feature-settings: normal;
-    }
-  }
+  // .prose {
+  //   hyphens: auto;
+  //   font-feature-settings: "kern", "liga", "clig", "calt", "onum", "pnum";
+  // }
+
+  // @supports (font-kerning: normal) and (font-variant-ligatures: common-ligatures contextual) and (font-variant-numeric: oldstyle-nums proportional-nums) {
+  //   .prose {
+  //     font-kerning: normal;
+  //     font-variant-ligatures: common-ligatures contextual;
+  //     font-variant-numeric: oldstyle-nums proportional-nums;
+  //     font-feature-settings: normal;
+  //   }
+  // }
 }
 
 
@@ -345,8 +350,8 @@
    ========================================================================== */
 
 /*
- * 1. Hide from all contexts
- * 2. Hide visually but not from keyboard navigation nor from screen readers.
+ * 1. Hide in all usage contexts
+ * 2. Hide visually only (but show it if it’s a focusable element that’s been focused/active by user via keyboard nav’n or screen reader.)
  * Ref: Scott O’Hara’s best practice method https://www.scottohara.me/blog/2017/04/14/inclusively-hidden.html
  * 3. Alternative visually hidden technique for special cases when we want to animate content into view on focus…
  * …the most common example being the “Skip to content” pattern.
@@ -361,7 +366,6 @@
   }
 
   /* [2] */
-
   .u-visually-hidden:not(:focus):not(:active) {
     clip: rect(0 0 0 0);
     clip-path: inset(50%);
@@ -373,7 +377,6 @@
   }
 
   /* [3] */
-
   .u-hidden-until-focused {
     left: -100vw;
     position: absolute;
@@ -613,9 +616,6 @@
 }
 
 
-
-
-
 /* ==========================================================================
    # BUTTONS
    ========================================================================== */
@@ -830,6 +830,10 @@
 
     .primary-navigation {
       // font-size: var(--step-1);
+
+      [aria-current=page] {
+        color: var(--color-link-hover);
+      }
     }
 
   }
@@ -850,6 +854,12 @@
         --switcher-gap: var(--space-m, 1rem);
       }
 
+      // the footer has a grey background against which our standard
+      // link colour would have insufficient contrast,
+      // so darken links
+      a {
+        color: var(--color-dark);
+      }
     }
 
   }

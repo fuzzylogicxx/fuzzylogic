@@ -27,7 +27,7 @@ templateClass: post-main
       {% if linkTarget %}
       <div class="post-source">
         <a class="text-icon-pair" href="{{ linkTarget }}">
-          <span>Direct Link</span>
+          <span>Visit external resource</span>
           <svg class="text-icon-pair-icon" aria-hidden="true" focusable="false" width="1em" height="1em"><use xlink:href="#icon-offsite"></use></svg>
         </a>
       </div>
@@ -52,7 +52,7 @@ templateClass: post-main
           </ul>
         </div>
 
-        <nav class="traverse">
+        <nav class="traverse" aria-label="Pagination">
           {%- set previousPost = collections.posts | getPreviousCollectionItem(page) %}
           {%- if previousPost %}<a rel="prev" href="{{ previousPost.url | url }}"><span aria-hidden="true">← </span>Previous post</a></li>{% endif %}
           {%- set nextPost = collections.posts | getNextCollectionItem(page) %}
