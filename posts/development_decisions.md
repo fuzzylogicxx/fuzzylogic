@@ -1,35 +1,36 @@
 ---
 date: 2023-12-04T09:14:53.000+00:00
-title: Development decisions
+title: Blog development decisions
 description: Decisions I regularly make when maintaining my blog-style personal website
 tags:
 - entry
 - web
 - development
-draft: true
 ---
 Here are some recurring development decisions I make when maintaining my personal website/blog, with some accompanying rationale.
 ---
 
-## Where should I put the main semantic landmark HTML elements in the source?
+## Where should I put the landmark-related HTML elements in the source?
 
-I make `header`, `main` and `footer` direct children of the body element. This isn’t arbitrary. A `header` at this level will be treated as a `banner` landmark and a `footer` as the page’s `contentinfo` landmark. If they were nested more deeply they would not, by default.  
+I have one `header`, one `main` and one `footer` element as _direct children_ of the body element. This isn’t arbitrary. A `header` at this level will be treated as a `banner` landmark and a `footer` as the page’s `contentinfo` landmark. When they are nested more deeply (for example within a “wrapper” div they will not be treated as those landmarks. You’d have to bolt-on aria attributes. My understanding is that it’s better to exploit elements with built-in semantics than to bolt them on.
 
-## How should I centre the content? Use an overall page wrapper? What about when sections have a full-width background?
+## How should I centre main content in a way that works well with responsiveness, full-width section backgrounds etc?
 
-Composition! 
+My hard-learned approach is to use composition rather than try to do everything with “god” layouts. 
 
-Slice page up into vertical sections (based on logical groups and/or full-width backgrounds) and give them padding on all sides. The lateral padding will give you your gutters on narrow screens. You might use a box layout but more likely might not consider them true boxes if the lateral padding is different from the vertical padding so you might just DIY them. 
+I mentally break the page up from top to bottom into slices that correspond to logical groups of content and/or parts that need a dedicated full-width background. Each section is represented by a `div` and I give it `padding` on all sides. The lateral padding handily gives you the gutters you need on narrow screens. (You _could_ use a [Box](https://every-layout.dev/layouts/box/) layout for these sections. I tend not to consider them to be “true boxes” because usually their lateral padding differs from their vertical padding. So I just apply their styles on a case by case basis.)
 
-Within each section, nest a dedicated center layout for your width-constraining wrappers. 
+Within each section, nest a dedicated [Center](https://every-layout.dev/layouts/center/) layout for your width-constraining wrappers.
 
-This approach offers the best of all worlds semantically (landmark elements at the top level) and stylistically versus the “wrapper div around everything” approach. 
+This approach offers the best of all worlds semantically. It doesn’t constrain your markup which I find preferential for setting appropriate semantics and accessibility. You don’t need to put a “wrapper div” around everything. Instewd you can have landmark-related elements as direct children of `body`, applying padding to those and nesting centred wrappers inside them.
 
-It also avoids problems such as collapsing margins that would be caused by trying to use vertical margins in situations where “boxes with padding” is more appropriate. Relatedly, flow/stack layouts are generally best _within_ your wrappers rather than at the top level.
+This approach also avoids problems such as unwanted collapsing margins and general margin weirdness. You often encounter that problem when using vertical margins in situations where “boxes with padding” would be more appropriate. Relatedly, I find that flow (or [stack](https://every-layout.dev/layouts/stack/)) layouts are generally best used _within_ each of your nested wrappers rather than at the top level.
 
-## Should lists of articles be a bunch of sibling `article`s? Should they be in a list elememt?
+## How should I mark up lists of articles?
 
-Different switched-on developers tackle this differently, so it’s hard to say definitively. Sometimes they even do it differently across different pages on their own site!
+Should they be a bunch of sibling `article`s? Should they be in a list element?
+
+Different switched-on developers tackle this differently, so it’s hard to say the definitive best approach. Sometimes developers even do it differently across different pages on their own site!
 
 - https://tink.uk/ (`article`, no list)
 - https://www.matuzo.at/ (`article`, no list)
@@ -42,3 +43,7 @@ I currently use sibling `article`s, no wrapping list. Article feels right becaua
 ## Should a blog post page be marked up as an article or just using main?
 
 I mark it up as an `article` for same reasons discreet/syndicated. It’s inside a `main` because I have one main on every page.
+
+
+
+I’ll add more to this article over time.
