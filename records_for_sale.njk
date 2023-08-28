@@ -99,7 +99,7 @@ eleventyExcludeFromCollections: true
 
 </div>
 
-<nav class="traverse">
+<nav class="traverse" aria-label="Pagination">
   {%- if pagination.previousPageHref %}<a rel="prev" href="{{ pagination.previousPageHref }}"><span aria-hidden="true">←</span> Previous Page</a>{%- endif %}
   {%- if pagination.nextPageHref %}<a rel="next" href="{{ pagination.nextPageHref }}"> Next Page <span aria-hidden="true">→</span></a>{%- endif %}
 </nav>

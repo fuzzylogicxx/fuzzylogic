@@ -8,9 +8,7 @@ permalink: photos/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber }}/
 title: Photos
 ---
 
-<header class="section-index-header">
-  <h1>{{ renderData.title or title }}</h1>
-</header>
+<h1>{{ renderData.title or title }}</h1>
 
 <div class="grid" data-min="18ch">
   {% for photo in photos %}
@@ -22,7 +20,7 @@ title: Photos
   {% endfor %}
 </div>
 
-<nav class="traverse">
+<nav class="traverse" aria-label="Pagination">
   {%- if pagination.nextPageHref %}<a rel="prev" href="{{ pagination.nextPageHref }}"><span aria-hidden="true">←</span> Older Photos</a>{%- endif %}
   {%- if pagination.previousPageHref %}<a rel="next" href="{{ pagination.previousPageHref }}">Newer Photos <span aria-hidden="true">→</span></a>{%- endif %}
 </nav>

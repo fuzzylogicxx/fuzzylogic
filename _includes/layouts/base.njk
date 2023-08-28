@@ -94,7 +94,8 @@
         import patchMinForGrids from '/assets/js/patch_css_min_for_grids.js';
 
         // Enhance the search experience with JS
-        enhanceSearch();
+        // ** Disabled until I stop using a link for the job of a button. **
+        //enhanceSearch();
 
         // Patch browser support for CSS’s min() in .grid component instances.
         const grids = document.querySelectorAll('.grid');
@@ -111,7 +112,7 @@
     <link rel="pingback" href="https://webmention.io/fuzzylogic.me/xmlrpc">
     <link rel="webmention" href="https://webmention.io/fuzzylogic.me/webmention">
   </head>
-  <body class="{% if bodyclass %}{{ bodyclass }}{% endif %}">
+  <body {% if bodyclass %}class="{{ bodyclass }}"{% endif %}>
 
     <!-- Skip link(s) -->
     <div class="u-hidden-until-focused">
@@ -159,7 +160,7 @@
       {{ content | safe }}
     </main>
 
-    <footer aria-label="site" class="global-footer">
+    <footer class="global-footer">
 
       <div class="l-center l-center--wrapper">
 

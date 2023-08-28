@@ -14,7 +14,7 @@ pagination:
 {% set postslist = posts %}
 {% include "postslist.njk" %}
 
-<nav class="traverse">
+<nav class="traverse" aria-label="Pagination">
   {%- if pagination.nextPageHref %}<a rel="prev" href="{{ pagination.nextPageHref }}"><span aria-hidden="true">←</span> Older Posts</a>{%- endif %}
   {%- if pagination.previousPageHref %}<a rel="next" href="{{ pagination.previousPageHref }}">Newer Posts <span aria-hidden="true">→</span></a>{%- endif %}
 </nav>
