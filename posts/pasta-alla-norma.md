@@ -25,3 +25,5 @@ This recipe from Gousto, with a few tweaks from Clair, is a straight winner. Alt
 ---
 
 Delicious, and a perfect example of a vegetarian meal where I didn’t miss meat at all.
+
+I’ll have a go at this one myself soon. I think most people would enjoy it!
