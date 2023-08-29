@@ -1,5 +1,5 @@
 ---
-date: 2023-07-11T16:34:01Z
+date: 2023-08-29T18:34:01Z
 title: Sicilian-Style Pasta Alla Norma With Aubergine (and Artichoke!)
 description: This recipe from Gousto, with Clair’s tweaks, is a winner
 tags:
