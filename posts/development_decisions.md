@@ -1,5 +1,5 @@
 ---
-date: 2023-12-04T09:14:53.000+00:00
+date: 2023-08-28T09:14:53.000+00:00
 title: Blog development decisions
 description: Decisions I regularly make when maintaining my blog-style personal website
 tags:
