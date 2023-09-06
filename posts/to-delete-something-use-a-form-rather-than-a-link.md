@@ -33,9 +33,9 @@ Dan mentions that in the past Rails UJS set an unsdesirable historical precedent
 
 > Hyperlinks… are links to other resources that… cause the user agent to navigate to those resources, e.g. to visit them in a browser or download them.
 
-And [as Dan goes on to say](https://discuss.hotwired.dev/t/destroy-record-in-turbo-frame/2731/8) links that’s why links make a GET request. 
+And [as Dan goes on to say](https://discuss.hotwired.dev/t/destroy-record-in-turbo-frame/2731/8) that’s why links make a GET request. 
 > A GET request is a visit, it says “show me this” and it’s idempotent. When you make the same request it’ll show the same thing.
 
-If on the other hand you want a control that does something (in this case requst an entity to be deleted) then the appropriate HTML element is a form.
+If on the other hand you want a control that performs an action (in this case request an entity to be deleted) then the appropriate HTML element is usually a button, and in this case a submit button within a form.
 
 Relatedly, Jeremy Keith previously wrote about how to use request methods properly in his excellent post [Get safe](https://adactio.com/journal/17768).
