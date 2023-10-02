@@ -20,7 +20,7 @@ mainImage.aspectRatioHeight: ''
 mainImage.srcsetWidths: ''
 mainImage.sizes: ''
 mainImage.isAnchor: false
-draft: true
+draft: false
 
 ---
 In this talk at State of the Browser, Amy offers some suggestions for making work feel more meaninful.
