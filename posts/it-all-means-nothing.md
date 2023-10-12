@@ -12,7 +12,7 @@ tags:
 - life
 noteWithTitle: false
 youtubeId: JVmPmd5s4g
-linkTarget: https://chriscoyier.net/2023/05/12/add-opacity-to-an-existing-color/
+linkTarget: https://youtu.be/Q0v2YJLq8n8?si=DBGeFc08kVTk45JL
 mainImage.url: ''
 mainImage.alt: ''
 mainImage.aspectRatioWidth: ''
