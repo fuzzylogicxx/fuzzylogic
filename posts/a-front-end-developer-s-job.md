@@ -1,8 +1,11 @@
 ---
-date: 2022-04-24T18:23:47Z
+date: 2022-04-24T09:14:53.000+00:00
 title: A front-end developer’s job
 description: I’ve been reflecting on what we front-end developers do in the modern era
-tags: entry, web, frontend
+tags:
+- entry
+- web
+- frontend
 noteWithTitle: false
 linkTarget: ''
 mainImage.url: ''
@@ -13,7 +16,6 @@ mainImage.srcsetWidths: ''
 mainImage.sizes: ''
 mainImage.isAnchor: false
 draft: false
-
 ---
 Recently I’ve been reflecting on what we front-end developers do in the modern era. Working on a design system in 2022, I feel now more than ever that my job represents a convergence of a range of interesting disciplines, goals, skills and experiences. These include UX knowledge and usability testing, a degree of design savvy, systems and atomic thinking, accessibility knowledge and strong skills with the core web standards. That’s my understanding of front-end development.
 
@@ -45,11 +47,11 @@ I list this first not due to alphabetical order, but because it’s arguably the
 
 ## Resilience
 
-Words.
+I might add more about this later.
 
 ## Performance
 
-Words.
+I might add more about this later.
 
 ## UX
 
