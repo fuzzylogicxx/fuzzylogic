@@ -19,12 +19,13 @@ draft: false
 ---
 Recently I’ve been reflecting on what we front-end developers do in the modern era. Working on a design system in 2022, I feel now more than ever that my job represents a convergence of a range of interesting disciplines, goals, skills and experiences. These include UX knowledge and usability testing, a degree of design savvy, systems and atomic thinking, accessibility knowledge and strong skills with the core web standards. That’s my understanding of front-end development.
 
-Yet not long ago a colleague recalled when a previous teammate of his teased him that front-end developers “put the froth on the cappuccino”. While this gave us all a laugh, I imagine it also reflects one common misunderstanding and undervaluing of our role.
+Yet not long ago a colleague recalled the time a teammate teased him that front-end developers “put the froth on the cappuccino”. While this gave us all a laugh, I imagine it also reflects one common misunderstanding and undervaluing of our role.
 
 Meanwhile there’s another image of front-end development that’s very engineering rather than user experience oriented. This focuses on JavaScript and tooling and arose in the era of NPM and JavaScript frameworks. In this definition, front-end developers spend their time wrangling JavaScript, configuring build tools and manipulating API data. 
 
 I’m conscious of [the great divide](https://css-tricks.com/the-great-divide/) and while my career has straddled that divide, I’ll freely admit that at heart I’m [a front of the front-ender](https://bradfrost.com/blog/post/front-of-the-front-end-and-back-of-the-front-end-web-development/).
--------
+
+---
 
 Here’s a description of a “Design System engineer” that I recently compiled during while my team were recruiting for a software engineer:
 
@@ -39,52 +40,60 @@ Here’s a description of a “Design System engineer” that I recently compile
 - Comfortable with Git
 - Committed to constantly learning and improving technical knowledge and skills
 
-And here are some of the key things I find myself thinking about or working on regularly.
+Something else I remember noting down was that:
 
-## Accessibility
+> User interfaces should be user-centric, purpose-driven, appropriate, accessible and consistent (not arbitrary).
+
+I guess my point there was that good front-end developers build user interfaces in a very considered manner.
+
+## Areas of interest
+
+Here are some of the key areas I find myself thinking about or working on regularly.
+
+### Accessibility
 
 I list this first not due to alphabetical order, but because it’s arguably the cornerstone of our job. That’s for two reasons. Firstly, because the web was designed to be accessible to all therefore it’s incumbent on us to uphold that. (Of course it’s not just _our_ job, however we tend to be both the primary evangelists and last line of defence). Secondly, so many other aspects of front-end development can only be done well when you start from an accessible foundation. This is something that becomes clearer and clearer the longer you do this job.
 
-## Resilience
+### Resilience
 
 I might add more about this later.
 
-## Performance
+### Performance
 
 I might add more about this later.
 
-## UX
+### UX
 
 I might add more about this later.
 
-## Documentation
+### Documentation
 
 I might add more about this later.
 
-## Adaptability
+### Adaptability
 
 I might add more about this later.
 
-## Design System considerations
+### Design System considerations
 
 - Componentization
 - Creating component APIs
 - Composition
 - Documentation
 
-## Scalability
+### Scalability
 
 At scale, you can’t just write _new code_ for everything. You have to focus on creating reusable things.
 
-## Maintainability and sustainability
+### Maintainability and sustainability
 
 I might add more about this later.
 
-## Integration into the company’s language framework 
+### Integration into the company’s language framework 
 
 This can be challenging. I might add more about this later.
 
-## Adding interactivity 
+### Adding interactivity 
 
 I might add more about this later.
 
