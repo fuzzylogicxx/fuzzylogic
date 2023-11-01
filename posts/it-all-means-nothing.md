@@ -1,5 +1,5 @@
 ---
-date: 2023-11-02T16:34:01Z
+date: 2023-10-02T16:34:01Z
 title: It all means nothing in the end (a talk by Amy Hupe)
 description: 'Amy offers some suggestions for making work feel more meaninful'
 tags:
