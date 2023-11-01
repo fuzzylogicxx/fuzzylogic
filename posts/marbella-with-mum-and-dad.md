@@ -20,7 +20,7 @@ mainImage.isAnchor: false
 draft: false
 
 ---
-> My folks haven’t managed a holiday outside of Scotland in a long time. So it’s been nice to spend a week together in Spain. 
+My folks haven’t managed a holiday outside of Scotland in a long time. So it’s been nice to spend a week together in Spain. 
 ---
 
 {% if app.environment == "production" %}
