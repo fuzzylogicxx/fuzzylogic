@@ -45,6 +45,8 @@ I was there with Tom and Simon. Here’s a little phone recording captured by To
 
 <div class="l-frame"><iframe title="Short clip of Robert Henke’ CBM 8032 AV show, live in Glasgow" width="560" height="315" src="https://www.youtube-nocookie.com/embed/CDs_LSEDHkM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
+We left thinking that Robert really is a genius. I’ve always loved his music and he is still doing fresh, inventive and wonderful things.
+
 Additional info:
 
-- [Tramway event page for CBM 8032 AV](https://www.tramway.org/event/941c88f0-1649-4260-8f1e-afff00f70935)https://www.tramway.org/event/941c88f0-1649-4260-8f1e-afff00f70935
+- [Tramway event page for CBM 8032 AV](https://www.tramway.org/event/941c88f0-1649-4260-8f1e-afff00f70935)
