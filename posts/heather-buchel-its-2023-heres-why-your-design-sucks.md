@@ -31,10 +31,10 @@ Heather makes lots of good points in this post. But the part that resonates most
 
 > if our design partners are now at a different table, how do we expect them to acquire the deeply technical knowledge they need to know? The people we task with designing websites, I've found, often have huge gaps in their understanding of… the core concepts of web design.
 
-Heather argues that designers don’t _need_ to learn to code but that “design requires a deep understanding of a subject”. Strong agree!
+Heather argues that designers don’t need to learn to code but that “design requires a deep understanding of a subject”. Strong agree!
 
-Likewise, due to the arrival and evolution of the front-end role such that i) developers are separate from designers; and ii) within developers there’s a further split, where the majority don’t possess “front of the front-end” skills:
+Likewise, the arrival and evolution of the front-end role such that i) developers are separate from designers; and ii) within developers there’s a further split where the majority lack “front of the front-end” skills has meant that:
 
 > We now live in a world where our designers aren't allowed to… acquire the technical design knowledge they need to actually do their job and our engineers never learn about the technical design knowledge that they need to build the thing correctly.
 
-Heather’s post does a great job of articulating the problem. They understandably don’t have the answers, but suggest that firstly education gaps and secondly how companies hire are contributing factors so changes there could be impactful. 
+Heather’s post does a great job of articulating the problem. They understandably don’t have the answers, but suggest that firstly education gaps and secondly how companies hire are contributing factors. So changes there could be impactful. 
