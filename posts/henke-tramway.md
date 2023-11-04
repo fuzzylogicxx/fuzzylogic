@@ -18,6 +18,7 @@ tags:
   - note
   - music
   - gig
+  - event
   - electronic
   - techno
 draft: false
