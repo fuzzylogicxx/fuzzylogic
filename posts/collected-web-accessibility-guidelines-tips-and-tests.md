@@ -135,9 +135,9 @@ Having changed the contrast, check that your web page’s content is fully visib
 
 ## Skip links
 
-Websites should provide a “Skip to content” link because they provide an important accessibility aid to keyboard users and those who use specialised input devices. For these users, having to step through all of the navigation links would be tiring and frustrating. Providing a skip link allows them to bypass the navigation and skip to the page’s main content.
+Websites should provide a “Skip to content” link because this provides an important accessibility aid to keyboard users and those who use specialised input devices. For these users, having to step through (typically via the tab key) all of the navigation links on every page would be tiring and frustrating. Providing a skip link allows them to bypass the navigation and skip to the page’s main content.
 
-To test that a website contains a skip link, visit a page then press the tab key and the skip link should appear. Then activate it using the enter key and check that focus moves to the main content area. Press tab again to ensure that focus moves to the first actionable element in the main content. 
+To test that a website contains a skip link, visit a page then press the tab key and the skip link should appear. Then activate it using the enter key and check that focus moves to the main content area. Press tab again to ensure that focus moves to the first actionable element in the main content.
 
 ## Navigation and menus
 
@@ -149,7 +149,7 @@ When developing a collapsible menu, place your menu `<button>` _within_ your `<n
 
 ## References
 
-* [Using HTML landmark roles to improve accessibility](https://developer.mozilla.org/en-US/blog/aria-accessibility-html-landmark-roles/) and [Adrian R’s suggestions for additions](https://github.com/orgs/mdn/discussions/383)
+* [Using HTML landmark roles to improve accessibility](https://developer.mozilla.org/en-US/blog/aria-accessibility-html-landmark-roles/) MDN article. And [Adrian R’s suggestions for additions](https://github.com/orgs/mdn/discussions/383)
 * [Navigation (landmark) role, on MDN](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/navigation_role)
 * Tetralogical’s [Quick Accessibility Tests](https://www.youtube.com/playlist?list=PLTqm2yVMMUKWTr9XWdW5hJ9tk512Ow0SE) YouTube playlist
 * Sara Soueidan’s video tutorial [Practical tips for building more accessible front-ends](https://aneventapart.com/news/post/practical-tips-for-building-more-accessible-front-ends)
