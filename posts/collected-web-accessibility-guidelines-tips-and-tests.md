@@ -1,7 +1,7 @@
 ---
 date: 2021-12-04T09:14:53.000+00:00
 title: Collected web accessibility guidelines, tips and tests
-description: Collected web accessibility nuggets
+description: I’ve picked up lots of accessibility knowledge over years of developing websites. Here, I gather some key tips in one place as a useful reference.
 tags:
 - web
 - a11y
