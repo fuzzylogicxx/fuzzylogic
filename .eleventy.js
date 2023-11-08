@@ -210,6 +210,10 @@ module.exports = function(eleventyConfig) {
   // width: based on my current layout where content col is 646 wide, this is 2x as wide as needed
   eleventyConfig.cloudinaryImgWidth = '1292';
 
+  // I removed the following two attrs because of https://cloudfour.com/thinks/stop-lazy-loading-product-and-hero-images/
+  // loading="lazy"
+  // decoding="async"
+  // TODO: if poss, make them optional parameters.
   eleventyConfig.addShortcode('respimgV2', function(
     cloudinaryImgUniquePath,
     alt,
@@ -224,9 +228,7 @@ module.exports = function(eleventyConfig) {
           src="${eleventyConfig.cloudinaryImgURLStart}f_jpg,q_${eleventyConfig.cloudinaryImgQuality},w_${eleventyConfig.cloudinaryImgWidth}/${cloudinaryImgUniquePath}"
           width="${aspectRatioWidth}"
           height="${aspectRatioHeight}"
-          alt="${alt}"
-          loading="lazy"
-          decoding="async" />
+          alt="${alt}" />
       </picture>`;
     }
   );
