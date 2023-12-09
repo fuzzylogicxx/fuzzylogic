@@ -49,7 +49,9 @@ Cool video that Abe Duque took that night of him walking through Berlin, enterin
 
 The bit I remember is [this DJ Rasoul tune](https://www.discogs.com/master/1024893-DJ-Rasoul-Deep-Inside-EP)https://www.discogs.com/master/1024893-DJ-Rasoul-Deep-Inside-EP playing. (the best mix isn’t on youtube).
 
-Article that might be interesting http://www.lovefromberlin.net/tresor-a-history-of-berlins-iconic-music-venues/
+Good articles inc photos
+- https://bldgblog.com/2007/01/tresor/
+- http://www.lovefromberlin.net/tresor-a-history-of-berlins-iconic-music-venues/
 
 
 
