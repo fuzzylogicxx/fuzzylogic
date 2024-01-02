@@ -7,6 +7,7 @@ tags:
 - holiday
 - cottage
 - rudy
+- travel
 linkTarget: ''
 mainImage.url: ''
 mainImage.alt: ''
