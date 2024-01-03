@@ -5,17 +5,25 @@ description: What I did and how I felt in 2023
 tags:
 - entry
 - review
+- review-of-year
 - 2023
 draft: true
 ---
-How was 2023 for me? It was like this.
+How was 2023 for you? For me, it was like this.
 ---
 
 ## Events
 
 In contrast to the Covid years [I attended various events](https://fuzzylogic.me/tags/event/). 
 
-There were seven music gigs: Apiento in London, Melting Pot at Queen’s Park Rec (Luke Una and Odyssey), Melting Pot vs LGWB at BAAD in Sept, Om Unit at Sleazy’s, Robert Henke, A Certain Ratio (Nov 12) and Sleaford Mods.
+There were seven music gigs: 
+- Apiento in London,
+- Melting Pot at Queen’s Park Rec (where I saw Luke Una and Odyssey),
+- Melting Pot vs LGWB at BAAD,
+- Om Unit at Sleazy’s,
+- [Robert Henke at Tramway](https://fuzzylogic.me/posts/henke-tramway/),
+- A Certain Ratio at Stereo in November and
+- Sleaford Mods in December.
 
 Clair and I went to two weddings: Caitlin and Ross’s in June at Lochside House Hotel, then Tom and Lou’s at Coats Paisley in late July.
 
@@ -23,15 +31,35 @@ For work I once again attended CSS Day in Amsterdam. In addition I went to the i
 
 Two funerals. At end of Aug, Simon’s mum died. Aunt Elsie.
 
+## Travel
+
+### Abroad
+
+[I travelled](https://fuzzylogic.me/tags/travel/) to six different countries including England.
+
+First we went to Sicily for Fiona’s 40th birthday, staying in Palermo then Taormina.
+
+Later Clair and I enjoyed ten days in Geneva and Annecy.
+
+In November [I took my parents for a week in Marbella](https://fuzzylogic.me/posts/marbella-with-mum-and-dad/).
+
+### Home 
+
+I enjoyed a couple of trips around Scotland.
+
+There was our March [weekend at Banchory Farm in Fife](https://fuzzylogic.me/posts/weekend-at-drinkbetween-cottage/). 
+
+Then in July I had an overnight stay in Alyth.
+
 ## Hanging out with friends
 
-One of my highlights of the year was a trip to London with Tom. 
+My trip to London with Tom was a real highlight. 
 
-There were some lovely less formal get-togethers. 
+And there were a number of other fun get-togethers. 
 
-Simon and Nathalie’s in January for a post-Xmas cheesefest. 
+Chez Simon and Nathalie in January for a post-Xmas cheesefest. 
 
-Also had the race night in Kirky with Craig and Jim, a night which inclded a narrow escape. 
+Also had the race night in Kirky with Craig and Jim, a night which included a narrow escape. 
 
 Visit to Tom and Nessa’s. Drinks at Sloanes for Lydia and Anna’s birthday. A May catch-up at the Bungo for Criona and Jim’s visit. Cara’s first communion. Tom’s stag in April where I enjoyed the Paisley food and frink festival, watched St Mirren and went to a cool local pub. 5th August was a party at Craigy B’s.
 
@@ -49,18 +77,6 @@ Sparklehorse and Patrick duck club.
 
 Xmas: work night, TT night out, Xmas day, Doug & Zoe, Kirky boys, Hogmanay. March me and si drink in Granary then to Andy P and Danny’s thing.
 
-## Travel
-
-[I travelled](https://fuzzylogic.me/tags/travel/) to six different countries including England and also enjoyed a couple of trips around Scotland.
-
-Stayed at drinkwater farm early March. 
-
-Went to Alyth in July during summer Fridays. 
-
-Geneva and fondue!
-
-Marbs in November. Will be visiting more.
-
 ## Eating out
 
 Clair and I had a lovely lunch with Charlie at Inver. Curry with pals at Dishoom in Edinburgh.
@@ -73,11 +89,22 @@ My niece Caitlin got married.
 
 My niece Charlotte had her second child – Mason, a brother for Marc.
 
-Rudy: At same time, Rudy went to Kate’s to see if he would hang out without pining and it went well. 
+That eventful June aside, everything seems to be ticking along.
+
+Clair is doing well and happy in her new fitness groove, which makes me happy. 
+
+The behaviour of Rudy, our nervous border terrier, has been a mixed bag, but mostly good. There are lots of signs of improvement. At same time, Rudy went to Kate’s to see if he would hang out without pining and it went well. 
 
 ## Books
 
-Read Open by Andre Agassi.  
+It wasn’t a productive year for reading; I couldn’t find the motivation. I read:
+- Open, Andre Agassi’s autobiography
+- Join the Future
+- The Islander
+
+And I started The Candy House.
+
+The good news is that they are all great, and recommended. 
 
 ## Music
 
@@ -109,28 +136,24 @@ Making coffee. Learning Spanish.
 
 ## Work
 
+I’m fortunate. I have a good job, with a good package including great holidays (now including summer Fridays off). And I work with smart and lovely people.
+
 Some good things happened. Brand. Accessibility. Empowerment of others.
 
 In the latter part of the year I really lost the energy to attempt to stay on top of all the blog posts I get by RSS, or to write on my blog. This was a bit of a change – I’m usually pretty excited and motivated in that regard.
 
 ## Health and mood
 
-Physical health fine. Weight OK. Clean bill of health at december dental check-up. I can’t remember being ill too often, although being in bed with the cold on my birthday was a bit of a damp squib. Could always be fitter but physically all’s well. 
+My physical health was fine. Weight OK. Clean bill of health at december dental check-up. I can’t remember being ill very often, although being stuck in bed with the cold on my birthday was a bit of a damp squib. I could always be fitter but generally speaking I’m physically fit and well. 
 
-As for mood and mental resilience, that’s a bit more complicated. 
+As for mood and mental stability, that’s a bit more complicated. 
 
-I’ve noticed changes. Some situations I used to be comfortable in, I’m now not. Some things I used to want to do or go to, I now don’t. Generally I’m OK with this.
+Firstly I’ve noticed changes. There are situations I used to be comfortable in – such as large gatherings – where I’m now not. There are things I used to want to do or go to, that I now don’t. Generally I’m OK with this. It could be a post-pandemic effect, or a symptom of ageing. I don’t know, but it feels natural so I’m adapting to it. As long as I ensure to see people in other ways, it’s fine. 
 
-More concerning is the slightly-too-regular occurence of low mood and low energy.
+More concerning is the slightly-too-regular occurence of low mood, low energy and mental fatigue. Working on a Design System team [can feel overwhelming](https://amyhupe.co.uk/articles/burn-baby-burnout/), futile or both. Working primarily from home is no doubt money and time-saving but can feel claustrophobic. I get really frustrated at things. My mental resilience isn’t what it was. 
 
-Mental health wasn’t always great, and this needed to be (and has been) acknowledged. 
+At times, perhaps as a side-effect of the above, I’ve dropped the ball and forgotten people and things I should prioritise.
 
-Work can feel either overwhelming, futile or both.
+In summary my mental health wasn’t always great, and this needs acknowledged. I’ve acknowledged it to an extent: at one particularly burnt-out moment taking a couple of days off work and providing the real reason for doing so which was a first. I’ve also had some external advice that I should look for some help. It actually feels positive and relieving to acknowledge these issues. The next steps are to get some help and advice, and take some structured steps toward improving things for me and those around me. I’ll do that early in the new year. 
 
-Events going on elsewhere in the world feel too horrendous to fully engage with beyond a few charity contributions. I’m not happy about that but it’s a symptom of how already tired I’ve felt.
-
-It actually feels positive to acknowledge poor mental health and call it out. 
-
-The next steps are to take more structured steps to 
-
-Energy: what gives and takes away.
+My last thought on this is that I had an interesting chat with one of my closest friends recently. He talked about things that give and take away energy. I’ve been thinking a lot about what those things are, for me. In 2024 I want to do more of the things that give me energy, and less of the other.
