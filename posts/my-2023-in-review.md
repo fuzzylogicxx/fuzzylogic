@@ -65,8 +65,6 @@ Visit to Tom and Nessa’s. Drinks at Sloanes for Lydia and Anna’s birthday. A
 
 12th Aug climbed Ben Lomond with Mark and Alan.
 
-Crabshakk with Gillian, Tom and Nessa.
-
 I’m early October had lunch at Jason and Lydia’s. On Sat 11th Nov met Mick and Laura, Tom & Nessa at Blackfriars. 
 
 17th March (St Pats day) went out on lash with Mark. Few places inc O’Neills then back at ours and Ailsa came. 
@@ -79,7 +77,13 @@ Xmas: work night, TT night out, Xmas day, Doug & Zoe, Kirky boys, Hogmanay. Marc
 
 ## Eating out
 
-Clair and I had a lovely lunch with Charlie at Inver. Curry with pals at Dishoom in Edinburgh.
+Clair and I had a lovely lunch with Charlie at Inver. 
+
+Curry with pals at Dishoom in Edinburgh.
+
+Crabshakk with Gillian, Tom and Nessa.
+
+On Hogmanay, Clair and I ate at Brett and we loved it.
 
 ## Family
 
