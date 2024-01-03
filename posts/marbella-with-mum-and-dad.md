@@ -7,6 +7,7 @@ tags:
 - holiday
 - marbella
 - spain
+- travel
 noteWithTitle: true
 mainImage:
   cloudinary_unique_path: v1698837341/IMG_3723_1_af9w8l.jpg 
