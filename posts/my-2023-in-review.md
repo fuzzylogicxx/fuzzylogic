@@ -31,7 +31,7 @@ There were some lovely less formal get-togethers.
 
 Simon and Nathalie’s in January for a post-Xmas cheesefest. 
 
-Also had the race night in Kirky with Craig and Jim and a small motif. 
+Also had the race night in Kirky with Craig and Jim, a night which inclded a narrow escape. 
 
 Visit to Tom and Nessa’s. Drinks at Sloanes for Lydia and Anna’s birthday. A May catch-up at the Bungo for Criona and Jim’s visit. Cara’s first communion. Tom’s stag in April where I enjoyed the Paisley food and frink festival, watched St Mirren and went to a cool local pub. 5th August was a party at Craigy B’s.
 
@@ -41,9 +41,25 @@ Crabshakk with Gillian, Tom and Nessa.
 
 I’m early October had lunch at Jason and Lydia’s. On Sat 11th Nov met Mick and Laura, Tom & Nessa at Blackfriars. 
 
+17th March (St Pats day) went out on lash with Mark. Few places inc O’Neills then back at ours and Ailsa came. 
+
+Met Mick at the pot still one day.
+
+Sparklehorse and Patrick duck club.
+
+Xmas: work night, TT night out, Xmas day, Doug & Zoe, Kirky boys, Hogmanay. March me and si drink in Granary then to Andy P and Danny’s thing.
+
 ## Travel
 
 [I travelled](https://fuzzylogic.me/tags/travel/) to six different countries including England and also enjoyed a couple of trips around Scotland.
+
+Stayed at drinkwater farm early March. 
+
+Went to Alyth in July during summer Fridays. 
+
+Geneva and fondue!
+
+Marbs in November. Will be visiting more.
 
 ## Eating out
 
@@ -60,6 +76,8 @@ My niece Charlotte had her second child – Mason, a brother for Marc.
 Rudy: At same time, Rudy went to Kate’s to see if he would hang out without pining and it went well. 
 
 ## Books
+
+Read Open by Andre Agassi.  
 
 ## Music
 
@@ -87,7 +105,7 @@ Mr Inbetween.
 
 ## Other
 
-Had the cold on my birthday. Was in bed. 
+Making coffee. Learning Spanish. 
 
 ## Work
 
@@ -95,9 +113,15 @@ Some good things happened. Brand. Accessibility. Empowerment of others.
 
 In the latter part of the year I really lost the energy to attempt to stay on top of all the blog posts I get by RSS, or to write on my blog. This was a bit of a change – I’m usually pretty excited and motivated in that regard.
 
-## Health and outlook
+## Health and mood
 
-I’ve noticed myself changing. Things I used to want to do or go to, I now don’t. I’m OK with this.
+Physical health fine. Weight OK. Clean bill of health at december dental check-up. I can’t remember being ill too often, although being in bed with the cold on my birthday was a bit of a damp squib. Could always be fitter but physically all’s well. 
+
+As for mood and mental resilience, that’s a bit more complicated. 
+
+I’ve noticed changes. Some situations I used to be comfortable in, I’m now not. Some things I used to want to do or go to, I now don’t. Generally I’m OK with this.
+
+More concerning is the slightly-too-regular occurence of low mood and low energy.
 
 Mental health wasn’t always great, and this needed to be (and has been) acknowledged. 
 
@@ -110,7 +134,3 @@ It actually feels positive to acknowledge poor mental health and call it out.
 The next steps are to take more structured steps to 
 
 Energy: what gives and takes away.
-
-
-Still to categorise:
-Stayed at drinkwater farm early March. 17th March (St Pats day) went out on lash with Mark. Few places inc O’Neills then back at ours and Ailsa came. Read Open by Andre Agassi. Met Mick at the pot still one day. Went to Alyth in July during summer Fridays. Geneva and fondue! Sparklehorse and Patrick duck club. Xmas: work night, TT night out, Xmas day, Doug & Zoe, Kirky boys, Hogmanay. March me and si drink in Granary then to Andy P and Danny’s thing. Making coffee. Learning Spanish. Marbs timeshare.
