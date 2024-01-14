@@ -137,12 +137,12 @@ I’ve been learning Spanish, using [Language Transfer’s course](https://www.l
 I’m lucky – I have a good job with great benefits. I work with smart and lovely people. Even still, me and work (meaning my field of work and industry) don’t always see eye to eye.
 
 In the positive column for 2023: 
-- our team were instrumnental in implemnenting a brand refresh.
+- our team was instrumental in implementing a brand refresh
 - we made material progress in promoting accessible practices
-- I did a deep-dive on how to write documentation properly, and our team is improving on that front
+- I began learning how to write documentation properly, and we have made strides on that front
 - at scoring I seem to be progressing and had some nice feedback
 - I’m trying to get better at empowering others. I’m having some success but have _lots_ of room for improvement
-- I got inspiration at three conferences: CSS Day, Design Systems Day in Edinburgh, and my employer’s own internal staff conference which was excellent.
+- I went to three inspiring conferences: CSS Day, Design Systems Day in Edinburgh, and my employer’s own internal staff conference which was excellent.
 
 In the negative column: 
 - I had at least one mental blowout. It was caused by thinking too deeply about a complex and frustrating area. It left me in pretty bad shape mentally, and needing time off.
