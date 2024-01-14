@@ -67,11 +67,11 @@ Then in July I had an overnight stay in Alyth.
 
 ## Eating out
 
-While in London, Tom and I enjoyed a nice breakfast at Fallow on Clair’s recommendation. (Although she was subsequently horrified at me missing the opportunity and only ordering scrambled eggs on toast! My excuse is I was hungover and needed comfort food). On the same trip we had amazing sushi at [Brilliant Corners](https://brilliantcornerslondon.co.uk/) in Dalston. It really is my happy place.
+While in London, Tom and I enjoyed a nice breakfast at Fallow on Clair’s recommendation. (Although she was subsequently horrified at me missing the foodie opportunity by only ordering scrambled eggs on toast! My excuse is I was hungover and needed comfort food). On the same trip we had amazing sushi at [Brilliant Corners](https://brilliantcornerslondon.co.uk/) in Dalston. It really is my happy place.
 
 In Spring, Clair and I had an overdue catchup with Charlie over a lovely lunch at [Inver](https://inverrestaurant.co.uk/). 
 
-I made a first visit to Dishoom in Edinburgh, along with a couple of good pals, and it lived up to the hype.
+I made a first visit to Dishoom in Edinburgh, alongside two good pals, and it lived up to the hype.
 
 In autumn I enjoyed a lovely Saturday afternoon at [Crabshakk](https://www.crabshakk.co.uk/) on Byres Road with Gillian, Tom and Nessa.
 
@@ -81,24 +81,23 @@ Special mention has to go to our evening at Café du Soleil in Geneva where we b
 
 ## Family
 
-All the major family-related activity seemed to happen in June. Sadly, my Aunt Elsie died. She was in her nineties and the last 10 years had seen a steep decline. 
+All the major family-related activity seemed to happen in June. Sadly, my Aunt Elsie died. She was in her nineties and the last ten years had seen a steep decline. 
 
 On a happier note my niece Caitlin married her partner Ross in June in a beautiful wedding at Lochside House Hotel.
 
 My niece Charlotte had her second child – Mason, a brother for Marc.
 
-That eventful June aside, everything seems to be ticking along. 
+That eventful June aside, everything seems to be ticking along. My mum and dad are well. Clair had a challenging year with work, but the work she does is brilliant and with fantastic clients. She’s generally doing well and happy in her new fitness groove, which makes me happy too. 
 
-My mum and dad are well. Clair had a challenging year with work, but the work she does is brilliant and with fantastic clients. She’s generally doing well and happy in her new fitness groove, which makes me happy too. 
-
-Rudy, our nervous border terrier, has been a mixed bag beeaviour-wise, but mostly good. There are lots of signs of improvement. And regardless of the behavioural issues he is just a wee legend who’s full of love and we adore him.
+Rudy, our nervous border terrier, has been a mixed bag behaviour-wise, but mostly good. There are lots of signs of improvement. And regardless of the behavioural issues he is just a wee legend who’s full of love and we adore him.
 
 ## Books
 
 It wasn’t a productive year for reading; I just couldn’t find the motivation. Still, I read:
 
+- Possibilities, Herbie Hancock’s autobiography
 - Open, Andre Agassi’s autobiography
-- Join the Future
+- [Join the Future](https://fuzzylogic.me/tags/book/)
 - The Islander
 
 And I started The Candy House.
@@ -117,15 +116,15 @@ In January we visited the Tramway theatre and checked out two exhibitions. The f
 
 In July I saw [Moorcroft at the Tron](https://www.tron.co.uk/shows/moorcroft-2/) theatre. 
 
-In September I went to the Armadillo to see the updated version of The Celtic Story with Marty and Michael (and thanks to Gillian for the tickets). I had first seen this thirty years previous and it was nice to revisit the club’s history.
+In September I went to the Armadillo to see the updated version of The Celtic Story with Marty and Michael (with thanks to Gillian for the tickets). I had first seen this thirty years previous and it was nice to revisit the club’s history.
 
 ## TV
 
 Back in January I loved [Mystery Road – Origin](https://fuzzylogic.me/posts/mystery-road-origin/).
 
-Later in the year, the Succession finale really lived up to its billing and was a fitting end to a brilliant sbow. 
+Later in the year, the Succession finale really lived up to its billing – a fitting end to a brilliant sbow. 
 
-Latterly I really enjoyed [Mr Inbetween](https://www.imdb.com/title/tt7472896/). Scott Ryan, the lead, is brilliant. 
+Latterly I really enjoyed [Mr Inbetween](https://www.imdb.com/title/tt7472896/). Scott Ryan, the lead, is a talent. 
 
 ## Other noteworthy stuff
 
@@ -135,7 +134,7 @@ I’ve been learning Spanish, using [Language Transfer’s course](https://www.l
 
 ## Work
 
-I’m lucky – I have a good job with great holidays. I work with smart and lovely people. Even still, me and work (meaning my field of work and industry norms) don’t always get on.
+I’m lucky – I have a good job with great benefits. I work with smart and lovely people. Even still, me and work (meaning my field of work and industry) don’t always see eye to eye.
 
 In the positive column for 2023: 
 - our team were instrumnental in implemnenting a brand refresh.
@@ -159,8 +158,8 @@ More concerning were the too-regular occurences of low mood, low energy, frustra
 
 While low mood has a significant negative impact on me, it can impact others too. At times I’ve struggled to see the bigger picture and dropped the ball, forgetting people I should prioritise.
 
-In summary my mental health wasn’t always great, and it was time to acknowledge that properly. I’ve since done this and feel better for it. There’s a journey ahead. Maybe I’ll write about it more soon.
+In summary my mental health wasn’t always great and it was time to acknowledge that properly. Since then I’ve done this and I feel better for it. There’s a journey ahead. Maybe I’ll write about it more soon.
 
-## In summary
+## Let’s go round again
 
-So long, 2023 – you were mostly pretty good and I’m grateful for it. Even the bad bits have given me helpful pause for thought. I’ve been making positive change already, so onwards and upwards.
+So long, 2023 – you were mostly pretty good and I’m grateful. Even the bad bits have given me helpful pause for thought. I’ve been making positive change already, so onwards and upwards.
