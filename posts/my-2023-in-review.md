@@ -11,9 +11,7 @@ tags:
 How was 2023 for you? For me, it was like this.
 ---
 
-## Music
-
-### Gigs
+## Music gigs
 
 In welcome contrast to the Covid years I went to a variety of in-person events, including seven gigs: 
 
@@ -27,7 +25,7 @@ In welcome contrast to the Covid years I went to a variety of in-person events, 
 
 Of those, my highlights were definitely Robert Henke and A Certain Ratio.
 
-## Buying, listening and playing 
+## Music buying, listening and playing
 
 I’m still buying music on vinyl and more, albeit at a slightly reduced rate. My taste continues to shift organically and I really enjoy exploring. My highlights included [Skinshape’s Craterellus Tubaeformis](https://www.discogs.com/release/28911571-Skinshape-Craterellus-Tubaeformis), [A Certain Ratio’s 1982](https://www.discogs.com/release/26602412-A-Certain-Ratio-1982) and [Jamma-Dee’s Perceptions](https://www.discogs.com/release/28178659-Jamma-Dee-Perceptions).
 
