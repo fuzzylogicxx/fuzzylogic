@@ -93,11 +93,11 @@ Rudy, our nervous border terrier, has been a mixed bag behaviour-wise, but mostl
 
 ## Books
 
-It wasn’t a productive year for reading; I just couldn’t find the motivation. Still, I read:
+It wasn’t a productive year for reading; I just couldn’t find the motivation. Still, [I read a few](https://fuzzylogic.me/tags/book/).
 
 - Possibilities, Herbie Hancock’s autobiography
 - Open, Andre Agassi’s autobiography
-- [Join the Future](https://fuzzylogic.me/tags/book/)
+- [Join the Future](https://fuzzylogic.me/posts/join-the-future/)
 - The Islander
 
 And I started The Candy House.
