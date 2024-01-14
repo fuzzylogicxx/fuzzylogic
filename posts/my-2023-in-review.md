@@ -105,7 +105,7 @@ And I started The Candy House.
 
 The good news is that they are all great, and recommended. 
 
-## Films=
+## Films
 
 Of note were Aftersun and Oppenheimer, the latter of which I saw at the GFT in July.
 
@@ -117,7 +117,7 @@ In January we visited the Tramway theatre and checked out two exhibitions. The f
 
 In July I saw [Moorcroft at the Tron](https://www.tron.co.uk/shows/moorcroft-2/) theatre. 
 
-Celtic story revisited at Armadillo in September.
+In September I went to the Armadillo to see the updated version of The Celtic Story with Marty and Michael (and thanks to Gillian for the tickets). I had first seen this thirty years previous and it was nice to revisit the club’s history.
 
 ## TV
 
