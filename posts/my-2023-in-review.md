@@ -67,23 +67,23 @@ Then in July I had an overnight stay in Alyth.
 
 ## Eating out
 
-Fallow and Brilliant Corners while in London.
+While in London, Tom and I enjoyed a nice breakfast at Fallow on Clair’s recommendation. (Although she was subsequently horrified at me missing the opportunity and only ordering scrambled eggs on toast! My excuse is I was hungover and needed comfort food). On the same trip we had amazing sushi at [Brilliant Corners](https://brilliantcornerslondon.co.uk/) in Dalston. It really is my happy place.
 
-Clair and I had a lovely lunch with Charlie at Inver. 
+In Spring, Clair and I had an overdue catchup with Charlie over a lovely lunch at [Inver](https://inverrestaurant.co.uk/). 
 
-Curry with pals at Dishoom in Edinburgh.
+I made a first visit to Dishoom in Edinburgh, along with a couple of good pals, and it lived up to the hype.
 
-Crabshakk with Gillian, Tom and Nessa.
+In autumn I enjoyed a lovely Saturday afternoon at [Crabshakk](https://www.crabshakk.co.uk/) on Byres Road with Gillian, Tom and Nessa.
 
-On Hogmanay, Clair and I ate at Brett and we loved it.
+On Hogmanay, Clair and I ate at [Brett](https://www.barbrett.co.uk/) and we loved it. It was brilliant to sit at the pass and watch the chefs at work.
 
-Special mention has to go to our evening at Café du Soleil in Geneva where we both had our first taste of fondue. 
+Special mention has to go to our evening at Café du Soleil in Geneva where we both had our first taste of fondue. Cheese heaven.
 
 ## Family
 
-All the major family-related activity seemed to happen in June. Sadly, my Aunt Elsie died. She was in her nineties and the last 10 years had seen a real decline. 
+All the major family-related activity seemed to happen in June. Sadly, my Aunt Elsie died. She was in her nineties and the last 10 years had seen a steep decline. 
 
-On a happier note my niece Caitlin married her partner Ross in June in a beautiful weeding at Lochside House Hotel.
+On a happier note my niece Caitlin married her partner Ross in June in a beautiful wedding at Lochside House Hotel.
 
 My niece Charlotte had her second child – Mason, a brother for Marc.
 
