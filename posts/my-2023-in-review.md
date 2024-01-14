@@ -12,13 +12,12 @@ draft: true
 How was 2023 for you? For me, it was like this.
 ---
 
-## Events
-
-In contrast to the Covid years [I went to a variety of events](https://fuzzylogic.me/tags/event/). 
+## Music
 
 ### Gigs
 
-There were seven music gigs: 
+In contrast to the Covid years I enjoyed a variety of in-person events. I went to seven gigs: 
+
 - Apiento in London,
 - Melting Pot at Queen’s Park Rec (where I saw Luke Una and Odyssey),
 - Melting Pot vs Let’s Go Way Back at BAAD,
@@ -27,25 +26,53 @@ There were seven music gigs:
 - A Certain Ratio at Stereo in November and
 - Sleaford Mods in December.
 
-My highlights were Robert Henke and A Certain Ratio.
+Of those, my highlights were Robert Henke and A Certain Ratio.
 
-### Weddings
+## Listening / buying 
 
-Clair and I went to two weddings: Caitlin and Ross’s in June at Lochside House Hotel, then Tom and Lou’s at Coats Paisley in late July.
+I’m still buying music on vinyl and more, at a slightly reduced rate. My taste continues to shift organically and I really enjoy that. My musical highlights included [Skinshape’s Craterellus Tubaeformis](https://www.discogs.com/release/28911571-Skinshape-Craterellus-Tubaeformis), [A Certain Ratio’s 1982](https://www.discogs.com/release/26602412-A-Certain-Ratio-1982) and [Jamma-Dee’s Perceptions](https://www.discogs.com/release/28178659-Jamma-Dee-Perceptions).
 
-### Funerals 
+[I recorded three radio shows](https://fuzzylogic.me/tags/radio/) and was pretty pleased with them, on the whole.
 
-Sadly, there were two funerals to attend. 
+## Seeing friends
 
-My Aunt Elsie died in June.
+My April trip to London with [Tom](https://tomchurchill.com/) was a real highlight. 
 
-In late August, my friend Simon’s mum died. It was a beautiful ceremony for an inspirational lady.
+There were a number of other fun get-togethers.
+
+- Chez Simon and Nathalie in January for a post-Xmas cheesefest
+- A charity race night in Kirky with Craig and Jim, where lady luck shone upon me
+- Visit to Tom and Nessa’s.
+- 17th March (St Pats day) went out on lash with Mark. Few places inc O’Neills then back at ours and Ailsa came.
+- March me and si drink in Granary then to Andy P and Danny’s thing.
+- Drinks at Sloanes for Lydia and Anna’s birthday.
+- May catch-up at the Bungo for Criona and Jim’s visit.
+- Cara’s first communion
+- Tom G’s stag in April: where I enjoyed the Paisley food and frink festival, watched St Mirren and went to a cool local pub.
+- Tom and Lou’s at Coats Paisley in late July.
+- Craigy B’s birthday house-party in August
+- climbing Ben Lomond with Mark and Alan.
+- Sunday lunch at Jason and Lydia’s in early October
+- met Mick & Laura, Tom & Nessa at Blackfriars in November
+- Met Mick at the pot still one day.
+- Sparklehorse and Patrick duck club.
+- November friendsgiving
+- Xmas: work night,
+- TT night out,
+- Xmas day,
+- Doug & Zoe,
+- Kirky boys,
+- Hogmanay.
+
+When I look at all that, I realise that I’ve done not too badly at keeping in touch with friends. Obviously there are those that I saw too rarely or not at all, and I’ll try to rectify that in the new year.
+
+One sadder entry: in late August, my friend Simon’s mum died. It was a beautiful ceremony for an inspirational lady.
 
 ## Travel
 
 ### Abroad
 
-[I travelled](https://fuzzylogic.me/tags/travel/) to six different countries including England.
+[I travelled](https://fuzzylogic.me/tags/travel/) to six different countries, if you include England.
 
 First stop was Amsterdam in June for work: I attended the CSS Day conference for the second year running. 
 
@@ -63,37 +90,6 @@ There was our March [weekend at Banchory Farm in Fife](https://fuzzylogic.me/pos
 
 Then in July I had an overnight stay in Alyth.
 
-## Hanging out with friends
-
-My April trip to London with [Tom](https://tomchurchill.com/) was a real highlight. 
-
-There were a number of other fun get-togethers. 
-
-- Chez Simon and Nathalie in January for a post-Xmas cheesefest
-- A charity race night in Kirky with Craig and Jim, where lady luck shone upon me
-- Visit to Tom and Nessa’s.
-- 17th March (St Pats day) went out on lash with Mark. Few places inc O’Neills then back at ours and Ailsa came.
-- March me and si drink in Granary then to Andy P and Danny’s thing.
-- Drinks at Sloanes for Lydia and Anna’s birthday.
-- May catch-up at the Bungo for Criona and Jim’s visit.
-- Cara’s first communion
-- Tom G’s stag in April: where I enjoyed the Paisley food and frink festival, watched St Mirren and went to a cool local pub.
-- Craigy B’s birthday house-party in August
-- climbing Ben Lomond with Mark and Alan.
-- Sunday lunch at Jason and Lydia’s in early October
-- met Mick & Laura, Tom & Nessa at Blackfriars in November
-- Met Mick at the pot still one day.
-- Sparklehorse and Patrick duck club.
-- November friendsgiving
-- Xmas: work night,
-- TT night out,
-- Xmas day,
-- Doug & Zoe,
-- Kirky boys,
-- Hogmanay.
-
-When I look at all that, I realise that I’ve done not too badly at keeping in touch with friends. Obviously there are those that I saw too rarely or not at all, and I’ll try to rectify that in the new year.
-
 ## Eating out
 
 Clair and I had a lovely lunch with Charlie at Inver. 
@@ -110,7 +106,7 @@ Special mention has to go to our evening at Café du Soleil in Geneva where we b
 
 Everything seemed to happen in June. My Aunt Elsie died – she was in her nineties and the last 10 years had seen a sad decline. 
 
-My niece Caitlin got married.
+My niece Caitlin married her partner Ross in June at Lochside House Hotel.
 
 My niece Charlotte had her second child – Mason, a brother for Marc.
 
@@ -131,17 +127,11 @@ And I started The Candy House.
 
 The good news is that they are all great, and recommended. 
 
-## Music
-
-I’m still buying music on vinyl and otherwise, at a slightly reduced pace. My taste continues to shift and twist and I really enjoy that. My musical highlights included [Skinshape’s Craterellus Tubaeformis](https://www.discogs.com/release/28911571-Skinshape-Craterellus-Tubaeformis), [A Certain Ratio’s 1982](https://www.discogs.com/release/26602412-A-Certain-Ratio-1982) and [Jamma-Dee’s Perceptions](https://www.discogs.com/release/28178659-Jamma-Dee-Perceptions).
-
-[I recorded three radio shows](https://fuzzylogic.me/tags/radio/) and was pretty pleased with them, on the whole.
-
 ## Films
 
-Aftersun
+I can’t remember everything I saw. I’m sure I’ll update this as my memory returns. 
 
-21 July went to see Oppenheimer at GFT. 
+However of note were Aftersun and Oppenheimer, which I saw at the GFT in July.
 
 ## Other arts
 
@@ -163,7 +153,7 @@ Making coffee. Learning Spanish.
 
 ## Work
 
-I’m fortunate. I have a good job with great holidays (now including summer Fridays off). I work with smart and lovely people.
+I’m fortunate. I have a good job with great holidays. I work with smart and lovely people.
 
 In the positive column: Brand. Accessibility. Progress and nice feedback. Empowerment of others. Three conferences: CSS Day, the in-person day of Design Systems Day in Edinburgh. And my employer FreeAgent held their second staff conference which was excellent.
 
