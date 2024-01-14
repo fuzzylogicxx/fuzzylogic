@@ -105,11 +105,11 @@ And I started The Candy House.
 
 The good news is that they are all great, and recommended. 
 
-## Films
-
-I really can’t remember everything I saw. I’m sure I’ll update this as my memory returns.
+## Films=
 
 Of note were Aftersun and Oppenheimer, the latter of which I saw at the GFT in July.
+
+I also saw [Captain Fantastic](https://fuzzylogic.me/posts/captain-fantastic/) which isn’t new but is… fantastic!
 
 ## Other arts
 
