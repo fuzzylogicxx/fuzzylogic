@@ -1,21 +1,13 @@
 ---
 date: 2024-01-15T17:17:15Z
-title: Captain Fantastic
-description: Refreshingly original film about a family temporarily leaving their off-grid existence
+title: Teabag on a spoon technique
+description: "Mr Scruff’s tip for quick tea-making"
 tags:
 - note
-- film
-- off-grid
-location: Banchory Farm, Fife
+- tea
+- howto
+location: Glasgow
 noteWithTitle: true
-linkTarget: ''
-mainImage.url: ''
-mainImage.alt: ''
-mainImage.aspectRatioWidth: ''
-mainImage.aspectRatioHeight: ''
-mainImage.srcsetWidths: ''
-mainImage.sizes: ''
-mainImage.isAnchor: false
 draft: true
 
 ---
