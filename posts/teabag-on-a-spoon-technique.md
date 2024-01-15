@@ -1,5 +1,6 @@
 ---
-title: Brew-making: the teabag on a spoon technique
+date: 2024-01-12T15:49:53.000+00:00
+title: “Brew-making: the teabag on a spoon technique”
 description: “Mr Scruff’s tip for quick tea-making”
 tags:
 - note
@@ -7,7 +8,6 @@ tags:
 - howto
 location: Glasgow
 noteWithTitle: true
-
 ---
 At work today I mentioned Mr Scruff’s tip for quick tea-making. My teammates laughed and said they felt like they were on an episode of _Would I lie to you?_ I had to prove I wasn’t talking rubbish and went looking for the tip online. It has all but disappeared from the web but thanks to [Wayback Machine](https://archive.org/web/) I was able to find a cache of the page from 2007.
 
