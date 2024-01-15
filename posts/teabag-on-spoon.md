@@ -21,15 +21,15 @@ Mr Scruff starts by saying:
 
 And here are the steps:
 
-1. Boil the kettle with fresh water..no reboiling!
-2. Warm the mug..you can do this by pouring in a little warm water from the kettle while it is boiling, swishing it around & emptying it. This will help keep your brew warm for longer, essential for forgetful types like myself!
+1. Boil the kettle with fresh water… no reboiling!
+2. Warm the mug… you can do this by pouring in a little warm water from the kettle while it is boiling, swishing it around & emptying it. This will help keep your brew warm for longer, essential for forgetful types like myself!
 3. Pour milk into the cup. If this offends you, you can add it later.
 4. Take a spoon (tablespoons are best, but a teaspoon will do)
 5. Place the teabag on the spoon, and hold it horizontally over the mug.
 6. When the kettle has boiled, hold it over the teabag, and pour as slowly as possible from as high as possible, without making the water splash upwards off the teabag. If you are doing this correctly, you will see little bubbles in the teabag, which is a sign of the oxygen in the boiling water doing its job.
 7. When the cup is full, add the milk if you have not done so, and examine your brew. If your tea is the correct colour (mine is a kind of brick red/malty brown) then you can discard the teabag. If it is not strong enough for your taste, then delicately lower the teabag onto the top of the tea, and slip the spoon out from under it. Leave it there until the brew is strong enough, and gently remove the bag with the spoon. There is no need to stir the bag or squash it in any way..tease the flavour out!
 8. Add sugar/salt/cheese/pickle to taste.
-9. Sit down & enjoy your brew!
+9. Sit down and enjoy your brew!
 10. Repeat from stage 1.
 
 Cheers!
