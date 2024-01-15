@@ -35,4 +35,4 @@ And here are the steps:
 
 Cheers!
 
-PS if you don’t already know Mr Scruff I heartily recommend [getting acquainted](https://www.mrscruff.com/)https://www.mrscruff.com/.
+PS if you don’t already know Mr Scruff I heartily recommend [getting acquainted](https://www.mrscruff.com/).
