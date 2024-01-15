@@ -8,7 +8,7 @@ tags:
 - howto
 location: Glasgow
 noteWithTitle: true
-draft: true
+draft: false
 
 ---
 At work today I mentioned Mr Scruff’s tip for quick tea-making. My teammates laughed and said they felt like they were on an episode of _Would I lie to you?_ I had to prove I wasn’t talking rubbish and went looking for the tip online. It has all but disappeared from the web but thanks to [Wayback Machine](https://archive.org/web/) I was able to find a cache of the page from 2007.
