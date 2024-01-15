@@ -1,5 +1,5 @@
 ---
-date: 2023-03-05T20:17:15Z
+date: 2024-01-15T17:17:15Z
 title: Captain Fantastic
 description: Refreshingly original film about a family temporarily leaving their off-grid existence
 tags:
