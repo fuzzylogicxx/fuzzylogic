@@ -14,6 +14,7 @@ draft: false
 At work today I mentioned Mr Scruff’s tip for quick tea-making. My teammates laughed and said they felt like they were on an episode of _Would I lie to you?_ I had to prove I wasn’t talking rubbish and went looking for the tip online. It has all but disappeared from the web but thanks to [Wayback Machine](https://archive.org/web/) I was able to find a cache of the page from 2007.
 
 So here is the tea-making tip, listed in full for posteri-tea! (Sorry…)
+---
 
 Mr Scruff starts by saying:
 
@@ -33,3 +34,5 @@ And here are the steps:
 10. Repeat from stage 1.
 
 Cheers!
+
+PS if you don’t already know Mr Scruff I heartily recommend [getting acquainted](https://www.mrscruff.com/)https://www.mrscruff.com/.
