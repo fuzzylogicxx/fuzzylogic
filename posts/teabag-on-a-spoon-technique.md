@@ -16,7 +16,7 @@ So here is the tea-making tip, listed in full for posteri-tea! (Sorry…)
 
 Mr Scruff starts by saying:
 
-> Some people ask me about the teabag on a spoon technique, which I learnt from Peter Parker of Fingathing. Here is the full breakdown of the method for making black tea in a mug with a teabag.
+Some people ask me about the teabag on a spoon technique, which I learnt from Peter Parker of Fingathing. Here is the full breakdown of the method for making black tea in a mug with a teabag.
 
 And here are the steps:
 
