@@ -1,31 +1,20 @@
 ---
 date: 2024-01-15T20:17:15Z
-title: Brew-making: the “teabag on a spoon” technique
-description: Mr Scruff’s tip for quick tea-making 
+title: Brew-making: the teabag on a spoon technique
+description: “Mr Scruff’s tip for quick tea-making”
 tags:
 - note
 - tea
-- how-to
+- howto
 location: Glasgow
 noteWithTitle: true
-linkTarget: ''
-mainImage.url: ''
-mainImage.alt: ''
-mainImage.aspectRatioWidth: ''
-mainImage.aspectRatioHeight: ''
-mainImage.srcsetWidths: ''
-mainImage.sizes: ''
-mainImage.isAnchor: false
-draft: false
+
 ---
-At work today I mentioned Mr Scruff’s tip for quick tea-making. My teammates laughed and said they felt like they were on an episode of _Would I lie to you?_
+At work today I mentioned Mr Scruff’s tip for quick tea-making. My teammates laughed and said they felt like they were on an episode of _Would I lie to you?_ I had to prove I wasn’t talking rubbish and went looking for the tip online. It has all but disappeared from the web but thanks to [Wayback Machine](https://archive.org/web/) I was able to find a cache of the page from 2007.
 
-I noticed that this tip has all but disappeared from the internet but thanks to [Wayback Machine](https://archive.org/web/) I was able to find a cache of the page from 2007.
+So here is the tea-making tip, listed in full for posteri-tea! (Sorry…)
 
-So here is the tea-making tip, listed in full here for posteri-tea! (Sorry…)
----
-
-Mr Scruff starts by saying
+Mr Scruff starts by saying:
 
 > Some people ask me about the teabag on a spoon technique, which I learnt from Peter Parker of Fingathing. Here is the full breakdown of the method for making black tea in a mug with a teabag.
 
