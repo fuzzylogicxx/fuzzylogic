@@ -1,5 +1,5 @@
 ---
-date: 2024-02-01T15:49:53.000+00:00
+date: 2024-01-02T15:49:53.000+00:00
 title: My 2023 in review
 description: What I did and how I felt in 2023
 tags:
