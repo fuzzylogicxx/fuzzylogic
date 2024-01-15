@@ -1,5 +1,4 @@
 ---
-date: 2024-01-15T17:49:53.000+00:00
 title: Brew-making: the teabag on a spoon technique
 description: “Mr Scruff’s tip for quick tea-making”
 tags:
