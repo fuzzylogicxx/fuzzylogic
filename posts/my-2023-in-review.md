@@ -112,7 +112,7 @@ I also saw [Captain Fantastic](https://fuzzylogic.me/posts/captain-fantastic/) w
 
 In January we visited the Tramway theatre and checked out two exhibitions. The first was [a selection of works by Glasgow artist Norman Gilbert](https://www.tramway.org/event/4abdfe69-2eea-4921-a9f4-aee500f041af), and the second the installation [The Rumble of a Tireless Land](https://www.tramway.org/event/d0c95f0d-cec7-4467-beed-aef300fb7d34) by Iza Tarasewicz. 
 
-In July I saw [Moorcroft at the Tron](https://www.tron.co.uk/shows/moorcroft-2/) theatre. 
+In July I went to [Banksy’s _Cut and run_ exhibition](https://fuzzylogic.me/posts/banksy-at-goma/) at the GOMA, which I loved. Later that month I saw the excellent [Moorcroft at the Tron](https://www.tron.co.uk/shows/moorcroft-2/) theatre. 
 
 In September I went to the Armadillo to see the updated version of The Celtic Story with Marty and Michael (with thanks to Gillian for the tickets). I had first seen this thirty years previous and it was nice to revisit the club’s history.
 
@@ -148,9 +148,11 @@ In the negative column:
 
 ## Health
 
-My physical health was fine. I’m doing enough exercise to keep my weight in check. I can’t remember being ill very often, although being stuck in bed with the cold on my birthday was no fun. I could always be fitter but generally speaking I’m physically fit and well. 
+My physical health was fine. I’m doing enough exercise to keep my weight in check. I can’t remember being ill very often, although being stuck in bed with the cold on my birthday was no fun. I could always be fitter but generally speaking I’m physically fit and well.
 
-As for mood and mental stability, that’s more complicated. Firstly I’ve noticed changes to preferences and comfort zones. There are situations I used to enjoy – such as larger gatherings – and now don’t. Generally I’m OK with this. It could be a post-pandemic effect, or a symptom of ageing. Regardless it feels natural so I’m adapting. As long as I find time to see the important people in my life one way or another, it’s fine. 
+A couple of small but impactful changes of note: after Clair told me about [Tim Spector](https://theguardian.com/lifeandstyle/2022/may/15/go-with-your-gut-tim-spector-power-of-microbiome) and how we shoud avoid spiking our blood sugar, I cut out the large glass of Tropicana orange juice I drank daily for years. I also cut down the amount of granola I eat at breakfast and swapped in nuts and seeds, or a breakfast of brown toast and eggs. This is no doubt having a positive impact on my weight but also, I hope, keeping me healthier long-term. On a similar note, I now try hard to go to sleep earlier and avoid feeling the need to snooze the alarm.
+
+As for mood and mental stability, that’s been less stable. Firstly I’ve noticed changes to prefere, nces and comfort zones. There are situations I used to enjoy – such as larger gatherings – and now don’t. Generally I’m OK with this. It could be a post-pandemic effect, or a symptom of ageing. Regardless it feels natural so I’m adapting. As long as I find time to see the important people in my life one way or another, it’s fine. 
 
 More concerning were the too-regular occurences of low mood, low energy, frustration and mental fatigue. Working on a Design System team [can feel overwhelming](https://amyhupe.co.uk/articles/burn-baby-burnout/) or futile or both. Working primarily from home saves time and money but can feel claustrophobic, and mixes parts of life that should be separate. I also generally find too many things vying for my attention and struggle to focus. A big, noticeable change is that my mental resilience isn’t what it was.
 
