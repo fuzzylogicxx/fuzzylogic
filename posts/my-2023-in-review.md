@@ -120,7 +120,7 @@ In September I went to the Armadillo to see the updated version of The Celtic St
 
 Back in January I loved [Mystery Road – Origin](https://fuzzylogic.me/posts/mystery-road-origin/).
 
-Later in the year, the Succession finale really lived up to its billing – a fitting end to a brilliant sbow. 
+Later in the year, the Succession finale really lived up to its billing – a fitting end to a brilliant show.
 
 Latterly I really enjoyed [Mr Inbetween](https://www.imdb.com/title/tt7472896/). Scott Ryan, the lead, is a talent. 
 
@@ -132,12 +132,12 @@ I’ve been learning Spanish, using [Language Transfer’s course](https://www.l
 
 ## Work
 
-I’m lucky – I have a good job with great benefits. I work with smart and lovely people. Even still, me and work (meaning my field of work and industry) don’t always see eye to eye.
+I’m lucky – I have a good job with great benefits. I work with smart and lovely people. Even still, me and my job don’t always see eye to eye.
 
 In the positive column for 2023: 
 - our team was instrumental in implementing a brand refresh
-- we made material progress in promoting accessible practices
-- I began learning how to write documentation properly, and we have made strides on that front
+- we made material progress in promoting company-wide accessible practices
+- I began learning how to write documentation more formally, and we have made strides on that front
 - at scoring I seem to be progressing and had some nice feedback
 - I’m trying to get better at empowering others. I’m having some success but have _lots_ of room for improvement
 - I went to three inspiring conferences: CSS Day, Design Systems Day in Edinburgh, and my employer’s own internal staff conference which was excellent.
@@ -152,7 +152,7 @@ My physical health was fine. I’m doing enough exercise to keep my weight in ch
 
 A couple of small but impactful changes of note: after Clair told me about [Tim Spector](https://theguardian.com/lifeandstyle/2022/may/15/go-with-your-gut-tim-spector-power-of-microbiome) and how we shoud avoid spiking our blood sugar, I cut out the large glass of Tropicana orange juice I drank daily for years. I also cut down the amount of granola I eat at breakfast and swapped in nuts and seeds, or a breakfast of brown toast and eggs. This is no doubt having a positive impact on my weight but also, I hope, keeping me healthier long-term. On a similar note, I now try hard to go to sleep earlier and avoid feeling the need to snooze the alarm.
 
-As for mood and mental stability, that’s been less stable. Firstly I’ve noticed changes to prefere, nces and comfort zones. There are situations I used to enjoy – such as larger gatherings – and now don’t. Generally I’m OK with this. It could be a post-pandemic effect, or a symptom of ageing. Regardless it feels natural so I’m adapting. As long as I find time to see the important people in my life one way or another, it’s fine. 
+As for mood and mental stability, that’s less straightforward. Firstly I’ve noticed changes to preferences and comfort zones. There are situations I used to enjoy – such as larger gatherings – and now don’t. Generally I’m OK with this. It could be a post-pandemic effect, or a symptom of ageing. Regardless it feels natural so I’m adapting. As long as I find time to see the important people in my life one way or another, it’s fine. 
 
 More concerning were the too-regular occurences of low mood, low energy, frustration and mental fatigue. Working on a Design System team [can feel overwhelming](https://amyhupe.co.uk/articles/burn-baby-burnout/) or futile or both. Working primarily from home saves time and money but can feel claustrophobic, and mixes parts of life that should be separate. I also generally find too many things vying for my attention and struggle to focus. A big, noticeable change is that my mental resilience isn’t what it was.
 
