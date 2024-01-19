@@ -15,22 +15,14 @@ mainImage.aspectRatioHeight: ''
 mainImage.srcsetWidths: ''
 mainImage.sizes: ''
 mainImage.isAnchor: false
-draft: true
+draft: false
 
 ---
-sourdough and butter or e.v.o.o. 4.25
-whipped feta, banana chilli, oregano, honey and toasted flatbread 5.50
-fried artichokes, garlic yoghurt and burnt aleppo butter 7.50
-crab, tubetti, chive and urfa pepper 12.00
-beef tartare, egg yolk, horseradish and croutons 8.50
+My generous nieces and nephews clubbed together to give us the Christmas present of a voucher for [Ox and Finch](https://www.oxandfinch.com/). Keen to use it, we got together with James and Grant for a lovely Sunday dinner.
+---
 
-spiced haddock, parsnip purée, capers and preserved lemon
-fried sprouts, ranch dressing, lardons and macadamia
-slow-cooked lamb shoulder, braised barley and salsa verde
+It’s a “small plates” affair, so sharing is the order of the day. We had sourdough and butter (the bread in good restaurants is always amazing), whipped feta with honey, fried artichokes with garlic yoghurt, and – my two favourites – the crab tubetti and beef tartare. To drink I had a white wine – the ‘le campuget’ grenache viognier – then their _px old fashioned_ (the _px_ standing for pedro ximénez). 
 
-warm ginger cake, poached pear and crème fraîche 6.50
-affogato and biscotti (make it boozy?) from 4.50
+We also shared the warm ginger cake with poached pear, while James had the affogato. 
 
-
-grenache viognier ‘le campuget’, château de campuget, languedoc, france 
-px old fashioned (bulleit, pedro ximénez, golden raisins)
+It was fantastic and – thanks to that thoughful gift – didn’t cost us a penny. What a great Christmas present.
