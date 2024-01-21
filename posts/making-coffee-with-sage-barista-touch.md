@@ -61,3 +61,4 @@ Now that you have a good shot of espresso, you could make (for example) a flat w
 - [Sage Barista Touch intruction manual](https://assets.sageappliances.com/BES880/SES880_UK_IB_B18_WEB.pdf)
 - [Dialling in tutorial for the Sage Barista Touch](https://youtu.be/rnrvcU6OUDM?si=3LKGmBDODbR73sSB) by American barista Matt Davis
 - [Dave Wells’s instructional video](https://www.youtube.com/watch?v=60RQmVvDFr4)
+- [Breville’s video tutorial playlist](https://www.youtube.com/playlist?list=PLRSnFecax3hF0lck1JIwiCCvCT8zJNRhW)
