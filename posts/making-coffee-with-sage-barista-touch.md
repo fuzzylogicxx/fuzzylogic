@@ -19,10 +19,10 @@ Here are my go-to resources and my rules-of-thumb. I’m not saying they’re pe
 Overall I want:
 - a good taste, as a result of
 - a grind of 18-19g, and
-- a pull where liquid flows from 7 seconds or more (and ideally a little more), and
+- a pull where liquid flows from 7 seconds or more, and
 - a conventional yield such as a 2oz double-espresso.
 
-Once you’ve achieved the above from a process of trial and error, dial in the settings (grind, dose) and log any additional necessary notes so that you can easily repeat the same process achieving the same results. 
+Once you’ve achieved the above from a process of trial and error, dial in the settings (grind, dose) and log any additional notes so that you can easily repeat the same process achieving the same results. 
 
 ## How it works in practice
 
