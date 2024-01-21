@@ -30,9 +30,9 @@ If I buy a new bag of coffee beans for a coffee I’m trying for the first time,
 
 Note: before you start, you want your coffee’s roast date to be no more than 3 weeks ago and you’ll need coffee scales and one or two espresso shot glasses with measuring lines.
 
-Fill up the tank with fresh water. Pour out some water into your mug to warm things up.
+Fill up the tank with fresh water. Use the hot water feature to pour out some hot water into your mug to warm everything up.
 
-Start with a grind size of 12 and a grind time of 20 seconds (they’re middly, sensible starting points). 
+Start with a grind size of 12 and a grind time of 20 seconds (they’re sensible middling starting points). 
 
 Place your portafilter with funnel attached on your scales (turned off) then turn on the scales so that they’re zeroed appropriately. 
 
