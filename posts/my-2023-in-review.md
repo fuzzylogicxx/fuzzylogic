@@ -126,7 +126,7 @@ Latterly I really enjoyed [Mr Inbetween](https://www.imdb.com/title/tt7472896/).
 
 ## Other noteworthy stuff
 
-Clair brought home her work coffee machine so I learned to make coffee from wholebeans. Definitely harder than you’d think. Respect to the baristas!
+[I learned to make coffee from whole beans.](https://fuzzylogic.me/posts/making-coffee-with-sage-barista-touch/)
 
 I’ve been learning Spanish, using [Language Transfer’s course](https://www.languagetransfer.org/complete-spanish) and am enjoying that.
 
