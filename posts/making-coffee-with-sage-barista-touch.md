@@ -50,13 +50,14 @@ Once we’ve achieved a good begin-flow point and a steady flow, I want to ident
     
 Once you’ve hit your yield, and so long as the time was between 25-35 seconds, taste it. If you like it you could dial in that brew time and stop there. If it’s at say 28+ seconds (indicating that the water’s taking a long time to make its way though the coffee) I might also try increasing the grind size by one (larger grind = less dense = water gets through faster) and seeing if I can achieve the target yield within a few less seconds. 
 
-Another little tweak I sometimes make to achieve the balance of begin-flow-time, steady flow and yield is to slightly increase or reduce the amount of coffee. For example adding a few milligrams (a dose of 18.5g versus 18g) might start the flow just a little later, when thats what you need.
+Another little tweak I sometimes make to achieve the balance of begin-flow-time, steady flow and yield is to slightly increase or reduce the amount of coffee. For example adding a few milligrams (a dose of 18.5g versus 18g) might start the flow just a little later, when that’s what you need.
 
 If you tried different settings, compare the taste in separate shot glasses. Go with the one you like! Dial in (save/overwrite) your grind size, grind time and brew time. I’ve noticed that the grind size can move a bit of its own accord between uses, so noting the settings for this coffee down somewhere is a good idea too.
 
-Now you have a good shot of espresso and could make (for example) a flat white, or add water and a drop of milk for an americano, or just have the espresso if you’re feeling Italian.
+Now that you have a good shot of espresso, you could make (for example) a flat white… or add water and a drop of milk for an americano… or just have the espresso itself if you’re feeling Italian.
 
 ## Resources
 
-- [Sage Barista Touch intruction manual](https://assets.sageappliances.com/BES880/SES880_UK_IB_B18_WEB.pdf)https://assets.sageappliances.com/BES880/SES880_UK_IB_B18_WEB.pdf
-- [Dialling in tutorial for the Sage Barista Touch](https://youtu.be/rnrvcU6OUDM?si=3LKGmBDODbR73sSB)https://youtu.be/rnrvcU6OUDM?si=3LKGmBDODbR73sSB by American barista Matt Davis
+- [Sage Barista Touch intruction manual](https://assets.sageappliances.com/BES880/SES880_UK_IB_B18_WEB.pdf)
+- [Dialling in tutorial for the Sage Barista Touch](https://youtu.be/rnrvcU6OUDM?si=3LKGmBDODbR73sSB) by American barista Matt Davis
+- [Dave Wells’s instructional video](https://www.youtube.com/watch?v=60RQmVvDFr4)
