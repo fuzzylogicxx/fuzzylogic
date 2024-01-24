@@ -21,7 +21,7 @@ mainImage.isAnchor: false
 draft: false
 
 ---
-I just deactivated my Twitter (X) account. In the context of me making a bunch of other small changes for the better, it feels like the time is right.
+I just deactivated my Twitter (X) account. Within the wider current context of other small, positive changes I’m making, it feels like the time is right.
 
 I gave it a little thought, but not much. There were plenty of reasons to deactivate (for my own good and because X under Elon is x-crutiating) and not many good reasons to stay. 
 
