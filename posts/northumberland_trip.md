@@ -32,7 +32,7 @@ Prior to Christmas we’d been talking about giving ourselves the present of a t
 </figure>
 {% endif %}
 
-Friday’s check-in wasn’t til 4pm so we started with a drive to North Berwick. There, we visited the Lobster Shack. Clair had fish and chips while I had seafood chowder (which Clair admitted was the pick of the dishes). The weather was of the good January sort – chilly but sunny so we had a wee stroll along the beach and let Rudy have a run.
+Friday’s check-in wasn’t til 4pm so we started with a drive to North Berwick. There, we visited the [Lobster Shack](https://www.lobstershack.co.uk). Clair had fish and chips while I had seafood chowder (which Clair admitted was the pick of the dishes). The weather was of the good January sort – chilly but sunny so we had a wee stroll along the beach and let Rudy have a run.
 
 [Charlton Gate cottage](https://www.airbnb.co.uk/rooms/51219157?source_impression_id=p3_1706962399_4Fe%2BGwkjVw%2BncR1l) was perfect. We were in splended isolation, except for the neighbouring sheep and grouse. The cottage itself was comfortable with all the cooking and telly-watching facilities you’d need, plus a comfy bed.
 
