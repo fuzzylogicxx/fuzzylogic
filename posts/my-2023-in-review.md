@@ -73,7 +73,7 @@ I made a first visit to Dishoom in Edinburgh, alongside two good pals, and it li
 
 In autumn I enjoyed a lovely Saturday afternoon at [Crabshakk](https://www.crabshakk.co.uk/) on Byres Road with Gillian, Tom and Nessa.
 
-On Hogmanay, Clair and I ate at [Brett](https://www.barbrett.co.uk/) and we loved it. It was brilliant to sit at the pass and watch the chefs at work.
+On Hogmanay, [Clair and I ate at Brett](https://fuzzylogic.me/posts/brett-hogmanay-23/) and loved it.
 
 Special mention has to go to our evening at Café du Soleil in Geneva where we both had our first taste of fondue. Cheese heaven.
 
