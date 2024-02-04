@@ -20,7 +20,7 @@ draft: false
 ---
 Clair and I just rounded off the year in style with lunch and drinks at [Bar Brett](https://www.barbrett.co.uk/) on Great Western Road. We had a bird’s eye view too, sat overlooking the pass watching the chefs at work.
 
-Between us we enjoyed a variety of small dishes including oysters, sourdough bread with chicken fat butter, cod toast, smoked beetroot, clams, lobster ravioli, mushroom XO noodles, Coley with curried mussels and a Basque cheesecake.
+Between us we enjoyed a variety of small dishes including oysters, sourdough bread with chicken fat butter, cod toast, smoked beetroot with tahini, clams, lobster ravioli, mushroom XO linguine, Peterhead Coley with curried mussel sauce and a Basque cheesecake.
 
 We tried a few glasses of wine: Veiled Vineyards Old Vine Semillon (white), a Delamotte Blanc de Blancs (champagne), and Le Grand A (Burgundy white) – all lovely. 
 
