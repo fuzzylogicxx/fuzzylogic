@@ -25,4 +25,4 @@ Next was a visit to Pisces although we were runnning a bit early so stopped for 
 
 At Pisces (which was once the site of the legendary _Greek Golden Kebab_) we both tried the Smash burger and fries, and it was pretty tasty.
 
-We’d hoped to visit the ‘hood’s latest cafe, bar and restaurany [Henry’s](https://www.instagram.com/henrysglasgow/?hl=en) for a nightcap, but on arrival there it was jam-packed so we resolved to come back another time.
+We’d hoped to visit the ‘hood’s latest cafe, bar and restaurant [Henry’s](https://www.instagram.com/henrysglasgow/?hl=en) for a nightcap, but on arrival there it was jam-packed so we resolved to come back another time.
