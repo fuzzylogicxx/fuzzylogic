@@ -15,9 +15,17 @@ draft: true
 A tasty and healthy asian-style recipe from Gousto, which I enjoyed cooking and eating.
 ---
 
-## Ingredients
+## Ingredients (for two people)
 
-…
+- Diced chicken thigh (250g)
+- Dried chilli flakes (0.5 tbsp)
+- Fine egg noodle nests (2)
+- Ginger and garilc paste (15g)
+- Pho broth base (25g)
+- Soy sauce (8ml)
+- Spinach (80g)
+- Toasted sesame oil (10ml)
+- Vegetable oil
 
 ## Instructions
 
