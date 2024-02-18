@@ -30,7 +30,9 @@ Caveats and notes:
 * [Content structure](#content-structure)
 * [Semantic HTML and ARIA](#semantic-html-and-aria)
 * [Favour native over custom components except where they have known issues](#favour-native-over-custom-components-except-where-they-have-known-issues)
+* [Make custom components convey state accessibly](#make-custom-components-convey-state-accessibly)
 * [Forms](#forms)
+* [Links and buttons](#links-and-buttons)
 * [Ensure keyboard support](#ensure-keyboard-support)
 * [Content resizing](#content-resizing)
 * [Better link text](#better-link-text)
@@ -43,7 +45,7 @@ Caveats and notes:
 
 If someone had a web page and only had 5 minutes to find and tackle the lowest hanging fruit accessibility-wise, I’d probably echo [Jeremy Keith’s advice](https://skiptocontent.huxleydigital.co.uk/video/caring-about-the-world-wide-web-with-jeremy-keith/) to ensure that the page covers the following:
 
-- uses headings sensibly
+- uses heading elements sensibly
 - uses landmarks (representing roles like `banner`, `navigation`, `main`, `contentinfo`)
 - marks up forms sensibly (for example using labels and appropriate buttons)
 - provides images with decent text alternatives
@@ -54,7 +56,11 @@ Spending just 5 minutes would be bad, of course, and you shouldn’t do that. Th
 
 ## Content structure
 
-The page’s content should be well structured as this makes it easier to understand for all, especially people with reading and cognitive disabilities. It should consist of short sections of content preceded by clear headings. It should employ lists where appropriate. It should place the most important content at the beginning of the page or section to give it prominence.
+The page’s content should be well structured as this makes it easier to understand for all, especially people with reading and cognitive disabilities. 
+
+It should consist of short sections of content preceded by clear headings. Use the appropriate heading level for the place in the page. Don’t use an inappropriate heading level to achieve a given appearance such as a smaller size. Instead use the appropriate heading element then use CSS to achieve your desired style.
+
+It should employ lists where appropriate. It should place the most important content at the beginning of the page or section to give it prominence.
 
 Check your page for any long passages of text with no structure. Ensure that sufficient prominence is given to the most important information and calls to action.
 
@@ -68,7 +74,7 @@ Create a small number of [landmarks](https://developer.mozilla.org/en-US/blog/ar
 
 For some landmark-generating elements it’s appropriate to bolster them with a label or _accessible name_. For example with `nav` and `aside`, i) there’s a decent chance there might be multiple on the page; and ii) each instance creates a landmark even when it’s nested within a deeper HTML element. So it’s helpful to distinguish each different landmark of the same type by using sensible accessible names otherwise you’d get multiple navigation menus all represented by the same “navigation” in the _Landmarks_ menu. In the case of the `section` element it _needs_ an acessible name in order for it to act as a `region` landmark. For all of these you can use `aria-labelledby` set to the `id` of an inner heading, or use `aria-label`.
 
-Note that when using multiple `<header>` (or `footer`) elements on a page, where one and one only is a direct child of `body` wile the others are used within `article` or similar elements, there’s perhaps less need to add custom accessible names. That’s because only a direct child of `body` will be treated as a landmark and the others won’t, therefore they won’t be butting against each other in a screen reader’s _Landmarks_ menu and need distinguished.
+Note that when using multiple `<header>` (or `footer`) elements on a page, where one and one only is a direct child of `body` while the others are used within `article` or similar elements, there’s perhaps less need to add custom accessible names. That’s because only a direct child of `body` will be treated as a landmark and the others won’t, therefore they won’t be butting against each other in a screen reader’s _Landmarks_ menu and need distinguished.
 
 ## Favour native over custom components except where they have known issues
 
@@ -77,6 +83,10 @@ Native components require very little work, are familiar to users, and are gener
 There are exceptions. Since the native options are flawed across browsers, accessibility experts recommend using custom solutions for: 
 - form error field messages
 - focus indicator styles
+
+## Make custom components convey state accessibly
+
+Now that you’re building a custom component you don’t get accessibility out of the box. Whether it’s a _Like_ button or a disclosure widget, you can’t rely on a visual change alone to convey a UI change to all users. You’ll need to use the right element (note – it often starts with a `button`) and then use ARIA to convey states such as _pressed_ or _expanded_ to screen reader users.
 
 ## Forms
 
@@ -98,6 +108,18 @@ References:
 ### Using the form element simplifies your JavaScript for event handling
 
 Using the `form` element can also make it easier for you to meet user expectations in your JS-powered experience. This is because it gives you a single element (`form`) and event combination that allows listening to _multiple_ interactions. With a form element you can add a listener for the `submit()` event. This event fires automatically in response to the various ways users expect to submit a form, including pressing <kbd>enter</kbd> inside a field.
+
+## Anchors and buttons
+
+When you need to let the user navigate to another page (or part of a page) or download a file, use an anchor element.
+
+For ea you need to let the user trigger an action such as copying to clipboard, launching a modal or submitting a form, use a button element.
+
+Anchors should include an `href` attribute otherwise the browser will treat it like a non-interactive element. This means the link will not be included in the expected focus order and will not present a pointer to mouse users like it should. These days there is no remaining use case for an anchor without an `href`. We no longer need [named anchors](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#name) to create link-target locations within the page because we can use the `id` attribute (on any element) for that. And if you want an interactive element that does not link somewhere, you should use `button`.
+
+Do not remove the focus outline from links and buttons in CSS, unless it’s to provide a better version.
+
+Ensure you always give links and buttons an accessible name, even when they use icons rather than text. This might be through visually hidden text or perhaps using an ARIA-related attribute.
 
 ## Ensure keyboard support
 
@@ -152,6 +174,7 @@ When developing a collapsible menu, place your menu `<button>` _within_ your `<n
 * [Using HTML landmark roles to improve accessibility](https://developer.mozilla.org/en-US/blog/aria-accessibility-html-landmark-roles/) MDN article. And [Adrian R’s suggestions for additions](https://github.com/orgs/mdn/discussions/383)
 * [Navigation (landmark) role, on MDN](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/navigation_role)
 * Tetralogical’s [Quick Accessibility Tests](https://www.youtube.com/playlist?list=PLTqm2yVMMUKWTr9XWdW5hJ9tk512Ow0SE) YouTube playlist
+* [Basic accessibility mistakes I often see in audits](https://gomakethings.com/basic-accessibility-mistakes-i-often-see-in-audits/) by Chris Ferdinandi
 * Sara Soueidan’s video tutorial [Practical tips for building more accessible front-ends](https://aneventapart.com/news/post/practical-tips-for-building-more-accessible-front-ends)
 * Adrian Roselli’s [Responsive type and zoom](https://adrianroselli.com/2019/12/responsive-type-and-zoom.html)
 * Heydon Pickering’s tweet about [buttons in navs](https://twitter.com/heydonworks/status/766948134169620480) and Scott O’Hara’s follow up article [Landmark Discoverability](https://www.scottohara.me/blog/2016/08/10/discovering-landmarks.html)
