@@ -7,7 +7,7 @@ tags:
 - web
 - edinburgh
 - friends
-draft: true
+draft: false
 ---
 I’m starting 2024 as I mean to continue – by seeing and hanging out with friends more often. Yesterday [Tom](https://tomchurchill.com/) and I had a great day moseying around Edinburgh.
 ---
