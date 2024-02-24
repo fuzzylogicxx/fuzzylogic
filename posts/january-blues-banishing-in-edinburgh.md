@@ -20,6 +20,8 @@ Next stop was St Andrew’s Square for a saunter around the menswear floor in Ha
 
 We hopped on an Edinburgh tram outside (first time for both of us) headed for Port of Leith. We caught the [Leith Saturday market](https://www.tripadvisor.co.uk/Attraction_Review-g186525-d10061789-Reviews-Leith_Market-Edinburgh_Scotland.html) where Tom was beguiled by a purveyor of exotic olive oil (I can't believe I'm typing this) before we stumbled upon a great wee record stall. To my surprise it wasn’t just the usual selection of records no-one wants but instead had plenty of gems. I picked up two LPs from my wishlist – Vangelis's Earth (featuring the glorious [Let it happen](https://youtu.be/sYXL2WwQn1I?si=GWxoTE0aCFwwwl5G)) and Spacek’s [Curvatia](https://www.discogs.com/release/218037-Spacek-Curvatia).
 
-All that record shopping gives you an appetite so it was off to [Teuchter’s Landing](https://teuchtersbar.co.uk/teuchters-landing-bar-edinburgh/) for some food and refreshments. 
+All that record shopping gives you an appetite so it was off to [Teuchter’s Landing](https://teuchtersbar.co.uk/teuchters-landing-bar-edinburgh/) for some food and refreshments. With Burns Night just around the corner we honoured the bars by enjoying haggis, neeps and tatties and a dram (Craigellachie 13y). 
 
-Our final stop was the [Shore Bar](https://www.fishersrestaurants.co.uk/shore-bar-and-restaurant/). 
+Our final stop was the [Shore Bar](https://www.fishersrestaurants.co.uk/shore-bar-and-restaurant/) where we caught up with a couple of Edinburgh-dwelling pals Gav and Nick.
+
+After all that I was back on the train home by around 10 pm – mission accomplished.
