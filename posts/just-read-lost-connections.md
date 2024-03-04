@@ -9,15 +9,15 @@ tags:
 - mentalhealth
 - connection
 - community
-draft: true
+draft: false
 
 ---
-When I chatted with a consellor in January I described one symptom of my recent bouts of low mood and mental fatigue as a weird sense of _disconnection_. The recent lockdowns during the covid pandemic were obvious contributors to that but didn’t feel like the full story.
+When chatting with a consellor in January about some bouts of low mood and mental fatigue I described one symptom as a strange sense of _disconnection_. The recent lockdowns during the covid pandemic were obvious contributors but didn’t feel like the full story.
 
-Reassuringly it turned out I’m far from alone in feeling this way, since one of her suggestions was to read Johann Hari’s bestselling book Lost Connections: why you’re depressed and how to find hope.
+Reassuringly it seems I’m far from alone in feeling this way, since one of her suggestions was to read Johann Hari’s bestselling book [Lost Connections: why you’re depressed and how to find hope.](https://uk.bookshop.org/p/books/lost-connections-why-you-re-depressed-and-how-to-find-hope-johann-hari/910739?ean=9781408878729)
 
-Hari argues that the primary factors causing depression and anxiety are environmental and societal – not the “chemical imbalance” nor the pill-based solution we’ve been sold for so long.
+Hari argues that the primary factors causing depression and anxiety are environmental and societal – not the “chemical imbalance” nor the pill-based solution story we’ve been sold for so long.
 
-…
+Hari frames depression and anxiety as natural reactions to and signifiers of an imbalance caused by unmet human psychological needs. The modern world can be lonely and runs on dubious values. We need community, meaningful values, interaction with the natural world, a sense of worth and being respected, a secure future, and release from any shame resulting from previous mistreatment.
 
-On the whole I really enjoyed this book – well as much as you can enjoy a book about depression!
+On the whole I really enjoyed this book – well, as much as you can enjoy a book about depression!
