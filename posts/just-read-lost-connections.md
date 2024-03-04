@@ -1,5 +1,5 @@
 ---
-title: I’ve started reading The 15 Minute City, by Natalie Whittle.
+title: Recently read: Lost Connections by Johann Hari
 description: Hari’s enjoyable book argues that the primary factors causing depression and anxiety are environmental and societal
 date: 2024-03-04T10:00:00Z
 mainImage.isAnchor: false
