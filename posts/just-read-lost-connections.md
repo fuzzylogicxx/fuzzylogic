@@ -12,7 +12,7 @@ tags:
 draft: false
 
 ---
-When chatting with a consellor in January about some bouts of low mood and mental fatigue I described one symptom as a strange sense of _disconnection_. The recent lockdowns during the covid pandemic were obvious contributors but didn’t feel like the full story.
+When chatting with a consellor in January about some bouts of low mood and mental fatigue I described one symptom as a strange sense of _disconnection_. And while the recent lockdowns during the pandemic were obvious contributors to that, they didn’t feel like the full story.
 
 Reassuringly it seems I’m far from alone in feeling this way, since one of her suggestions was to read Johann Hari’s bestselling book [Lost Connections: why you’re depressed and how to find hope.](https://uk.bookshop.org/p/books/lost-connections-why-you-re-depressed-and-how-to-find-hope-johann-hari/910739?ean=9781408878729)
 
