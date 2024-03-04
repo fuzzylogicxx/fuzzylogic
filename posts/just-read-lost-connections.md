@@ -1,19 +1,23 @@
 ---
 title: I’ve started reading The 15 Minute City, by Natalie Whittle.
-description: I’ve started reading The 15 Minute City, by Natalie Whittle.
-date: 2022-04-14T10:00:00Z
-location: Glasgow
+description: Hari’s enjoyable book argues that the primary factors causing depression and anxiety are environmental and societal
+date: 2024-03-04T10:00:00Z
 mainImage.isAnchor: false
 tags:
-- note
+- entry
 - book
-- future
-- history
-- transport
-- health
-- cities
-- environment
-draft: false
+- mentalhealth
+- connection
+- community
+draft: true
 
 ---
-I’ve started reading [The 15 Minute City](https://uk.bookshop.org/a/4340/9781910022474), by Natalie Whittle.
+When I chatted with a consellor in January I described one symptom of my recent bouts of low mood and mental fatigue as a weird sense of _disconnection_. The recent lockdowns during the covid pandemic were obvious contributors to that but didn’t feel like the full story.
+
+Reassuringly it turned out I’m far from alone in feeling this way, since one of her suggestions was to read Johann Hari’s bestselling book Lost Connections: why you’re depressed and how to find hope.
+
+Hari argues that the primary factors causing depression and anxiety are environmental and societal – not the “chemical imbalance” nor the pill-based solution we’ve been sold for so long.
+
+…
+
+On the whole I really enjoyed this book – well as much as you can enjoy a book about depression!
