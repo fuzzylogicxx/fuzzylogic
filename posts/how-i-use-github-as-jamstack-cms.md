@@ -30,7 +30,7 @@ Step 1:
 Step 2: use one of these previous posts as a template (use the “copy raw file” icon-button then paste into my new markdown file):
 
 - [Standard blog entry](https://github.com/fuzzylogicxx/fuzzylogic/blob/v3/posts/basic_entry.md)
-- [Bookmark](https://github.com/fuzzylogicxx/fuzzylogic/blob/v3/posts/add-opacity-to-existing-color.md)
+- [Bookmark](https://github.com/fuzzylogicxx/fuzzylogic/blob/v3/posts/template-post-bookmark.md)
 - [Short note](https://github.com/fuzzylogicxx/fuzzylogic/blob/v3/posts/captain-fantastic.md)
 - [Note with photo](https://github.com/fuzzylogicxx/fuzzylogic/blob/v3/posts/join-the-future.md)
 - [Book I’ve started reading](https://fuzzylogic.me/posts/i-ve-started-reading-the-15-minute-city-by-natalie-whittle/)
@@ -40,6 +40,7 @@ Step 2: use one of these previous posts as a template (use the “copy raw file�
 
 ## Useful references
 
+- [grab current datetime in right format](https://fusionauth.io/dev-tools/date-time) (see the _Date/time_ field under _Convert from strings_)
 - [All of my tags](https://fuzzylogic.me/tags/)
 - [Images: how I optimise, host, and code for performance and responsiveness](https://fuzzylogic.me/posts/my-new-syntax-for-responsive-and-modern-blog-images/)
 - [Set frontmatter date to `Created`](https://www.11ty.dev/docs/dates/)
