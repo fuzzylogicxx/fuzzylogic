@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 date: 2024-03-12T14:52:15.456Z
 title: 'Data Visualization Design Guidelines (by Smashing Mag)'
 description: 'Lots of good tips and links for creating charts and graphs in a 6-minute read'
