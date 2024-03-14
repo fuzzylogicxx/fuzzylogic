@@ -11,12 +11,12 @@ draft: true
 ---
 Growing up, I often heard my Dad use the old Scottish phrase _mony a mickle maks a muckle_ and I’ve always loved it. It means that combining lots of little things is worthwhile because collectively they form a bigger, more important thing.
 
-Over the last six months I’ve been making lots of small tweaks to my life. It’s a work in progress but I’m seeing wider improvements and feeling better for it.
+It seems to be true in ways I hadn’t even considered. Over the last six months I’ve been making lots of small tweaks to how I live. It’s a work in progress but I’m seeing wider improvements and feeling better for it.
 ---
 
 ## My starting point
 
-It’s worth relating what was going on in my life before trying these tweaks. While there wasn’t any particular emergency, there were a number of low-level issues.
+It’s worth relating what was going on in my life prior to making these tweaks. While there wasn’t any particular emergency there were a number of lower-level flags.
 
 - I had recently taken days off work for stress and mental fatigue triggered by the nature of my job.
 - I obsessed about things, both work-related matters and hobbies. These OCD-like symptoms were counterproductive and mentally draining.
