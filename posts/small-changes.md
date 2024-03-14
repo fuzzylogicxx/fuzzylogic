@@ -9,37 +9,35 @@ tags:
 - diet
 draft: true
 ---
-Growing up, I often heard my Dad use the old Scottish phrase _mony a mickle maks a muckle_ and I’ve always loved it. It means that combining lots of little things is worthwhile because collectively they form a bigger, more important thing.
+Growing up, I often heard my Dad use the old Scottish phrase _mony a mickle maks a muckle_ and I’ve always loved it. It means that there’s value in collecting small things because together they form a more important thing. It seems true in ways I hadn’t even considered. Over the last six months I’ve made lots of small tweaks to how I live. It’s a work in progress but I’m seeing wider improvements and feeling better.
 
-It seems to be true in ways I hadn’t even considered. Over the last six months I’ve been making lots of small tweaks to how I live. It’s a work in progress but I’m seeing wider improvements and feeling better for it.
+Here are some of my small changes to diet, sleeping patterns, outlook and more that are working so far.
 ---
 
 ## My starting point
 
 It’s worth relating what was going on in my life prior to making these tweaks. While there wasn’t any particular emergency there were a number of lower-level flags.
 
-- I’d recently taken days off work for stress and mental fatigue triggered by the nature of my job.
-- I obsessed about things, both work-related matters and hobbies. These OCD-like symptoms were counterproductive and mentally draining.
+- I’d recently taken days off work for stress and mental fatigue triggered by the nature of my job. And I often found work frustrating.
+- I obsessed about things, both work-related and hobbies. My OCD-like symptoms were counterproductive and mentally draining.
 - I suffered bouts of low mood which affected aspects of personal and home life. I felt tired and disconnected.
 - I was often late to bed and struggling to rise, with knock-on effects for the rest of my day.
 - I was a bit overweight.
-- During and after lockdown (and partly as a result of working from home) I’d developed bad habits. I was just about ready for work at the start of each day but generally without thinking how I ate, and having dressed lazily due to lack of time and organisation.
+- During and after lockdown (and partly as a result of working from home) I’d developed bad habits. I managed to be ready for work at the start of each day but generally without having considered how I ate, and having dressed lazily due to lack of time and organisation.
 
-I guess _mony a mickle maks a muckle_ works both ways! A collection of smaller undesirable things leads to a larger sensation of things being off-kilter.
+I guess _mony a mickle maks a muckle_ works both ways. A collection of smaller undesirable things will lead to a larger malaise. And that’s where I was.
 
 ## Healthier breakfast
 
-I think the idea with holidays is that you unwind completely, but pervesely I like devoting some holiday time to life admin. The change of scenery, relaxed mind and extra time lends an opportunity and perspective I don’t have normally. And it was while on holiday last year that I made the first small change. 
+I think the idea with holidays is to unwind completely, but pervesely I like devoting some time to life admin. It was while on holiday last August that I started making changes. 
 
-Clair told me about scientist and author [Tim Spector’s ideas about diet, avoiding harmful blood sugar spikes, and gut health](https://www.theguardian.com/food/2023/apr/25/eat-fibre-first-and-ditch-the-juice-five-quick-and-easy-tips-for-a-much-healthier-meal).
+Clair told me about scientist and author [Tim Spector’s ideas about diet, avoiding harmful blood sugar spikes, and gut health](https://www.theguardian.com/food/2023/apr/25/eat-fibre-first-and-ditch-the-juice-five-quick-and-easy-tips-for-a-much-healthier-meal). Up til then I’d thought it was relatively healthy to drink a glass of Tropicana every morning, and hadd done so for years. Upon learning the short and long term sugar-related impacts I decided to cut this out completely… and have stuck to it.
 
-I’d been drinking a glass of Tropicana every morning for as long as I can remember. I thought it was healthy but I was wrong. I have now cut this out completely.
+This was made easier because I like coffee and was pleasantly surprised by Tim’s advice that it’s good for you! So I now have no OJ but two strong black-ish coffees with breakfast.
 
-Something that made this easier is that I now enjoy coffee and read that it’s good for you! So I now have no OJ but two coffees with breakfast.
+Food-wise I continued eating the granola I had every morning but started cutting back on the excess and introducing more nuts, seeds and proper yoghurt. 
 
-Food-wise I started by cutting back on excess granola, watching which type I bought and introducing more nuts, seeds and proper yoghurt. But I’ve since switched up the breakfast a bit more.
-
-I now make a breakfast of eggs (poached, scrambled or omelette) with seeded toast on the days I’m working from home. Often I’ll have that with oily fish like Mackerel. Along with my coffees it’s so tasty – I love it! And it starts the day really well.
+However I’ve gone on to switch up my breakfast a bit more. I now make a breakfast of eggs (poached, scrambled or omelette) with seeded toast on the days I’m working from home. Often I’ll have that with oily fish like mackerel. Along with my coffees it’s so tasty – I love it! It fuels me for the morning really well. I enjoy making it, too.
 
 ## Get a good sleep
 
