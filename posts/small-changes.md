@@ -18,8 +18,9 @@ Here are some of my small changes to diet, sleeping patterns, outlook and more t
 
 It’s worth relating what was going on in my life prior to making these tweaks. While there wasn’t any particular emergency there were a number of lower-level flags.
 
-- I’d recently taken days off work for stress and mental fatigue triggered by the nature of my job. And I often found work frustrating.
+- I’d recently taken days off work for stress and mental fatigue triggered by aspects of my job. And I often found work frustrating.
 - I obsessed about things, both work-related and hobbies. My OCD-like symptoms were counterproductive and mentally draining.
+- I was getting my priorities wrong.
 - I suffered bouts of low mood which affected aspects of personal and home life. I felt tired and disconnected.
 - I was often late to bed and struggling to rise, with knock-on effects for the rest of my day.
 - I was a bit overweight.
@@ -29,7 +30,7 @@ I guess _mony a mickle maks a muckle_ works both ways. A collection of smaller u
 
 ## Healthier breakfast
 
-I think the idea with holidays is to unwind completely, but pervesely I like devoting some time to life admin. It was while on holiday last August that I started making changes. 
+I think the idea with a holiday is to unwind completely, but pervesely I like devoting some time to life admin. And it was while on holiday last August with time and space to reflect and think creatively that I started making changes.
 
 Clair told me about scientist and author [Tim Spector’s ideas about diet, avoiding harmful blood sugar spikes, and gut health](https://www.theguardian.com/food/2023/apr/25/eat-fibre-first-and-ditch-the-juice-five-quick-and-easy-tips-for-a-much-healthier-meal). Up til then I’d thought it was relatively healthy to drink a glass of Tropicana every morning, and hadd done so for years. Upon learning the short and long term sugar-related impacts I decided to cut this out completely… and have stuck to it.
 
