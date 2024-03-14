@@ -18,14 +18,14 @@ It seems to be true in ways I hadn’t even considered. Over the last six months
 
 It’s worth relating what was going on in my life prior to making these tweaks. While there wasn’t any particular emergency there were a number of lower-level flags.
 
-- I had recently taken days off work for stress and mental fatigue triggered by the nature of my job.
+- I’d recently taken days off work for stress and mental fatigue triggered by the nature of my job.
 - I obsessed about things, both work-related matters and hobbies. These OCD-like symptoms were counterproductive and mentally draining.
 - I suffered bouts of low mood which affected aspects of personal and home life. I felt tired and disconnected.
-- I was often late to bed and struggling to rise, with knock-on effects for other parts of my day.
-- During and after lockdown (and partly as a result of working from home) I’d developed bad habits. I was just about ready for work in time at the start of each day but without always eating well, and having dressed pretty lazily due to lack of time and organisation.
+- I was often late to bed and struggling to rise, with knock-on effects for the rest of my day.
 - I was a bit overweight.
+- During and after lockdown (and partly as a result of working from home) I’d developed bad habits. I was just about ready for work at the start of each day but generally without thinking how I ate, and having dressed lazily due to lack of time and organisation.
 
-I guess many _mony a mickle maks a muckle_ works both ways! A collection of smaller undesirable things leads to a larger sensation of things being off-kilter.
+I guess _mony a mickle maks a muckle_ works both ways! A collection of smaller undesirable things leads to a larger sensation of things being off-kilter.
 
 ## Healthier breakfast
 
@@ -33,7 +33,7 @@ I think the idea with holidays is that you unwind completely, but pervesely I li
 
 Clair told me about scientist and author [Tim Spector’s ideas about diet, avoiding harmful blood sugar spikes, and gut health](https://www.theguardian.com/food/2023/apr/25/eat-fibre-first-and-ditch-the-juice-five-quick-and-easy-tips-for-a-much-healthier-meal).
 
-I’d been drinking a glass of Tropicana every morning for as long as I can remember – more than ten years for sure. I have now cut this out completely.
+I’d been drinking a glass of Tropicana every morning for as long as I can remember. I thought it was healthy but I was wrong. I have now cut this out completely.
 
 Something that made this easier is that I now enjoy coffee and read that it’s good for you! So I now have no OJ but two coffees with breakfast.
 
