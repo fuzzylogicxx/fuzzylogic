@@ -11,7 +11,7 @@ draft: true
 ---
 Growing up, I often heard my Dad use the old Scottish phrase _mony a mickle maks a muckle_ and I’ve always loved it. It means that there’s value in collecting small things because together they form a more important thing. It seems true in ways I hadn’t even considered. Over the last six months I’ve made lots of small tweaks to how I live. It’s a work in progress but I’m seeing wider improvements and feeling better.
 
-Here are some of my small changes to diet, sleeping patterns, outlook and more that are working so far.
+Here are some of my small changes to diet, sleeping patterns, self-respect and more that are working so far.
 ---
 
 ## My starting point
@@ -19,9 +19,9 @@ Here are some of my small changes to diet, sleeping patterns, outlook and more t
 It’s worth relating what was going on in my life prior to making these tweaks. While there wasn’t any particular emergency there were a number of lower-level flags.
 
 - I’d recently taken days off work for stress and mental fatigue triggered by aspects of my job. And I often found work frustrating.
-- I obsessed about things, both work-related and hobbies. My OCD-like symptoms were counterproductive and mentally draining.
+- I obsessed about everything – work projects, web trends, my supposedly fun hobbies such as music – you name it. My OCD-like symptoms were counterproductive and mentally draining.
+- More generally I suffered bouts of low mood which affected aspects of personal and home life. I felt tired and disconnected.
 - I was getting my priorities wrong.
-- I suffered bouts of low mood which affected aspects of personal and home life. I felt tired and disconnected.
 - I was often late to bed and struggling to rise, with knock-on effects for the rest of my day.
 - I was a bit overweight.
 - During and after lockdown (and partly as a result of working from home) I’d developed bad habits. I managed to be ready for work at the start of each day but generally without having considered how I ate, and having dressed lazily due to lack of time and organisation.
@@ -40,5 +40,25 @@ Food-wise I continued eating the granola I had every morning but started cutting
 
 However I’ve gone on to switch up my breakfast a bit more. I now make a breakfast of eggs (poached, scrambled or omelette) with seeded toast on the days I’m working from home. Often I’ll have that with oily fish like mackerel. Along with my coffees it’s so tasty – I love it! It fuels me for the morning really well. I enjoy making it, too.
 
-## Get a good sleep
+## Earlier to bed
+
+…
+
+## Rise and shine
+
+Diary of CEO mental health doctor https://www.youtube.com/watch?v=FN0_ow76hU8)
+
+## Happy workspace
+
+## I talked to an expert
+
+## Letting fun things be fun
+
+## I’ve started reducing noise
+
+## Reconnection
+
+…
+
+
 
