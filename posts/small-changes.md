@@ -47,7 +47,7 @@ It’s a small but mighty change, this one, which feels less about alarm clocks 
 
 ## Smartening up
 
-As someone who normally appreciates nice clothes I realised that I used to dress better for work and had drifted into lazier habits. I was starting work wearing clothes that were fine for the morning dog walk but not didn’t look smart nor make me feel good. 
+As someone who normally appreciates nice clothes I realised that although I once dressed smartly for work I had drifted into lazier habits. I was starting work wearing clothes that were fine for the morning dog walk but didn’t look smart nor make me feel good.
 
 So I started to organise and look after my clothes a bit better. I sold some old stuff and bought a couple of new things. I earmarked a few work outfits so I’d look more put-together and less thrown-together.
 
@@ -55,15 +55,15 @@ I also supported myself time-wise by starting to lay out work clothes the night 
 
 ## Taking sleep seriously
 
-I realised that in order to have time to eat and dress properly (not to mention walking the dog) I needed to get up earlier. And to get up that early without snoozing the alarm, I needed to be well rested.
-
-I needed to go to bed earlier.
+I realised that in order to have time to shower, eat well and dress properly – not to mention walking the dog – I needed to get up earlier. And to get up early without snoozing the alarm, I needed to be well rested. So I needed to go to bed earlier.
 
 No phone.
 
 ## Happy workspace
 
-## I talked to an expert
+## Acknowledging mental health and taking advice
+
+Acknowledge mental health. Talk about it.
 
 ## Keep fun things fun
 
