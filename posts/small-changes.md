@@ -9,52 +9,75 @@ tags:
 - diet
 draft: true
 ---
-Growing up, I often heard my Dad use the old Scottish phrase _mony a mickle maks a muckle_ and I’ve always loved it. It means that there’s value in collecting small things because together they form a more important thing. It seems true in ways I hadn’t even considered. Over the last six months I’ve made lots of small tweaks to how I live. It’s a work in progress but I’m seeing wider improvements and feeling better.
-
-Here are some of my small changes to diet, sleeping patterns, self-respect and more that are working so far.
+Growing up, I often heard my Dad use the old Scottish phrase _mony a mickle maks a muckle_ and I’ve always loved it. It’s about the value of taking care of the small things because when you do that repeatedly they form something bigger and more important. And it’s true. For example over the last six months I’ve made lots of small tweaks to how I live and I’m feeling a wider benefit.
 ---
 
 ## My starting point
 
 It’s worth relating what was going on in my life prior to making these tweaks. While there wasn’t any particular emergency there were a number of lower-level flags.
 
-- I’d recently taken days off work for stress and mental fatigue triggered by aspects of my job. And I often found work frustrating.
-- I obsessed about everything – work projects, web trends, my supposedly fun hobbies such as music – you name it. My OCD-like symptoms were counterproductive and mentally draining.
-- More generally I suffered bouts of low mood which affected aspects of personal and home life. I felt tired and disconnected.
-- I was getting my priorities wrong.
+- I’d taken days off work for stress and mental fatigue triggered by aspects of my job. I also often became frustrated by work.
+- I was obsessing about everything – work projects, web trends, supposedly fun hobbies – you name it. My OCD-like symptoms were counterproductive and mentally draining.
+- I suffered bouts of low mood which affected aspects of personal and home life. I felt tired and disconnected.
+- I was getting my priorities wrong which wasn’t fair on those closest to me.
+- My life felt disorganised; cluttered and messy.
 - I was often late to bed and struggling to rise, with knock-on effects for the rest of my day.
-- I was a bit overweight.
-- During and after lockdown (and partly as a result of working from home) I’d developed bad habits. I managed to be ready for work at the start of each day but generally without having considered how I ate, and having dressed lazily due to lack of time and organisation.
+- During and after lockdown, partly as a result of working from home, I’d developed bad habits. I just about started work on time each day but generally eating properly, and having dressed lazily due to lack of time and organisation.
+- I was a bit overweight, and probably drinking a little more than I should on nights out.
 
-I guess _mony a mickle maks a muckle_ works both ways. A collection of smaller undesirable things will lead to a larger malaise. And that’s where I was.
+I guess _mony a mickle maks a muckle_ works both ways. A number of smaller unwanted feelings and habits combine to form a wider malaise. And that’s where I was.
 
-## Healthier breakfast
+## Eating better
 
-I think the idea with a holiday is to unwind completely, but pervesely I like devoting some time to life admin. And it was while on holiday last August with time and space to reflect and think creatively that I started making changes.
+I think the idea with a holiday is to unwind completely, but pervesely I like devoting some time to life admin. And it was while on holiday last August with time to reflect and freshen things up that I started making changes.
 
-Clair told me about scientist and author [Tim Spector’s ideas about diet, avoiding harmful blood sugar spikes, and gut health](https://www.theguardian.com/food/2023/apr/25/eat-fibre-first-and-ditch-the-juice-five-quick-and-easy-tips-for-a-much-healthier-meal). Up til then I’d thought it was relatively healthy to drink a glass of Tropicana every morning, and hadd done so for years. Upon learning the short and long term sugar-related impacts I decided to cut this out completely… and have stuck to it.
+Clair told me about scientist and author [Tim Spector’s ideas about diet, avoiding harmful blood sugar spikes, and gut health](https://www.theguardian.com/food/2023/apr/25/eat-fibre-first-and-ditch-the-juice-five-quick-and-easy-tips-for-a-much-healthier-meal). Until then I’d thought it was relatively healthy to drink a glass of Tropicana every morning, and hadd done so for years. Upon learning the short and long term sugar-related impacts I decided to cut this out completely… and have stuck to it.
 
 This was made easier because I like coffee and was pleasantly surprised by Tim’s advice that it’s good for you! So I now have no OJ but two strong black-ish coffees with breakfast.
 
-Food-wise I continued eating the granola I had every morning but started cutting back on the excess and introducing more nuts, seeds and proper yoghurt. 
+Food-wise I continued with granola but cut back on the amount and introduced more nuts, seeds and proper yoghurt. However I’ve since switched it up a bit more and now make a breakfast of eggs (poached, scrambled or omelette) with seeded toast on the days I’m working from home. Often I’ll have that with oily fish like mackerel. Along with my coffees it’s so tasty – I love it! It really fuels me for the morning ahead. I enjoy making it, too.
 
-However I’ve gone on to switch up my breakfast a bit more. I now make a breakfast of eggs (poached, scrambled or omelette) with seeded toast on the days I’m working from home. Often I’ll have that with oily fish like mackerel. Along with my coffees it’s so tasty – I love it! It fuels me for the morning really well. I enjoy making it, too.
+## Getting up without fuss
 
-## Earlier to bed
+I used to hit the snooze button on my alarm clock every morning – a terrible habit. It made me late which is a bad start to the day. My understanding is that it’s also pretty bad for being productive that day due to how it affects your brain.
 
-…
+[Listening to Mel Robbins](https://youtu.be/s78hCiKjAKk?si=poDnICiziIFgF067) helped me realise that being able to exert control over this kinda impulse is a valuable skill, and that I could change this bad habit.
 
-## Rise and shine
+Since deciding to stop hitting the snooze button several months back, I’ve got up straight away _every single day_. I think there’s a “count backwards from 5” technique you can use to help, but I haven’t even needed it.
 
-Diary of CEO mental health doctor https://www.youtube.com/watch?v=FN0_ow76hU8)
+It’s a small but mighty change, this one, which feels less about alarm clocks and more about generally increased discipline and better decision-making. And I feel much better for it.
+
+## Smartening up
+
+As someone who normally appreciates nice clothes I realised that I used to dress better for work and had drifted into lazier habits. I was starting work wearing clothes that were fine for the morning dog walk but not didn’t look smart nor make me feel good. 
+
+So I started to organise and look after my clothes a bit better. I sold some old stuff and bought a couple of new things. I earmarked a few work outfits so I’d look more put-together and less thrown-together.
+
+I also supported myself time-wise by starting to lay out work clothes the night before, especially before mornings where I had an early commute to Edinburgh.
+
+## Taking sleep seriously
+
+I realised that in order to have time to eat and dress properly (not to mention walking the dog) I needed to get up earlier. And to get up that early without snoozing the alarm, I needed to be well rested.
+
+I needed to go to bed earlier.
+
+No phone.
 
 ## Happy workspace
 
 ## I talked to an expert
 
-## Letting fun things be fun
+## Keep fun things fun
 
-## I’ve started reducing noise
+…
+
+## Reducing noise
+
+…
+
+
+
+## Valuing and using what I have
 
 ## Reconnection
 
@@ -62,3 +85,4 @@ Diary of CEO mental health doctor https://www.youtube.com/watch?v=FN0_ow76hU8)
 
 
 
+<!-- Diary of CEO mental health doctor https://www.youtube.com/watch?v=FN0_ow76hU8) -->
