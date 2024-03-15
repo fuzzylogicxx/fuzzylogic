@@ -29,9 +29,7 @@ I guess _mony a mickle maks a muckle_ works both ways. A number of smaller unwan
 
 ## Eating better
 
-I think the idea with a holiday is to unwind completely, but pervesely I like devoting some time to life admin. And it was while on holiday last August with time to reflect and freshen things up that I started making changes.
-
-Clair told me about scientist and author [Tim Spector’s ideas about diet, avoiding harmful blood sugar spikes, and gut health](https://www.theguardian.com/food/2023/apr/25/eat-fibre-first-and-ditch-the-juice-five-quick-and-easy-tips-for-a-much-healthier-meal). Until then I’d thought it was relatively healthy to drink a glass of Tropicana every morning, and hadd done so for years. Upon learning the short and long term sugar-related impacts I decided to cut this out completely… and have stuck to it.
+It was while on holiday last August with time to reflect and freshen things up that I started making changes. Clair told me about scientist and author [Tim Spector’s ideas about diet, avoiding harmful blood sugar spikes, and gut health](https://www.theguardian.com/food/2023/apr/25/eat-fibre-first-and-ditch-the-juice-five-quick-and-easy-tips-for-a-much-healthier-meal). Until then I’d thought it was relatively healthy to drink a glass of Tropicana every morning, and hadd done so for years. Upon learning the short and long term sugar-related impacts I decided to cut this out completely… and have stuck to it.
 
 This was made easier because I like coffee and was pleasantly surprised by Tim’s advice that it’s good for you! So I now have no OJ but two strong black-ish coffees with breakfast.
 
