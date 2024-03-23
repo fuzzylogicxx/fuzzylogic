@@ -37,7 +37,7 @@ This was made easier because I like coffee and was pleasantly surprised by Tim�
 
 Food-wise I continued with granola but cut back on the amount and introduced more nuts, seeds and proper yoghurt. However I’ve since switched it up a bit more and now make a breakfast of eggs (poached, scrambled or omelette) with seeded toast on the days I’m working from home. Often I’ll have that with oily fish like mackerel. Along with my coffees it’s so tasty – I love it! It really fuels me for the morning ahead. I enjoy making it, too.
 
-## Action first – getting up without fuss
+## Action first (thing in the morning)
 
 I used to hit the snooze button on my alarm clock every morning – a terrible habit. It made me late which is a bad start to the day. My understanding is that it’s also pretty bad for being productive that day due to the start-stop-start affects your brain.
 
