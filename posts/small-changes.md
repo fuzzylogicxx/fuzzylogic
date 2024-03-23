@@ -9,23 +9,25 @@ tags:
 - diet
 draft: true
 ---
-Growing up, I often heard my Dad use the old Scottish phrase _mony a mickle maks a muckle_ and I’ve always loved it. It’s about the value of taking care of the small things because when you do that repeatedly they form something bigger and more important. And it’s true. For example over the last six months I’ve made lots of small tweaks to how I live and I’m feeling a wider benefit.
+Growing up, I often heard my Dad use the old Scottish phrase _mony a mickle maks a muckle_ and I’ve always loved it. It’s about the value of taking care of the little things because if you keep doing that they combine for something bigger and more important. 
+
+And it’s true. For example over the last six months I’ve made lots of small changes to how I live and I’m feeling a wider benefit.
 ---
 
-## My starting point
+## Where I started
 
-It’s worth relating what was going on in my life prior to making these tweaks. While there wasn’t any particular emergency there were a number of lower-level flags.
+It’s worth relating what was going on in my life prior to making these tweaks. Although there wasn’t any particular emergency there were a number of lower-level flags.
 
-- I’d taken days off work for stress and mental fatigue triggered by aspects of my job. I also often became frustrated by work.
-- I was obsessing about everything – work projects, web trends, supposedly fun hobbies – you name it. My OCD-like symptoms were counterproductive and mentally draining.
+- I’d taken days off work for stress and mental fatigue triggered by aspects of my job. And I often became frustrated by work.
+- I was obsessing about everything – work projects, web trends, supposedly fun hobbies – you name it. My OCD-like symptoms lead to paralysis and were mentally draining.
+- My life felt disorganised; cluttered and messy.
 - I suffered bouts of low mood which affected aspects of personal and home life. I felt tired and disconnected.
 - I was getting my priorities wrong which wasn’t fair on those closest to me.
-- My life felt disorganised; cluttered and messy.
 - I was often late to bed and struggling to rise, with knock-on effects for the rest of my day.
-- During and after lockdown, partly as a result of working from home, I’d developed bad habits. I just about started work on time each day but generally eating properly, and having dressed lazily due to lack of time and organisation.
-- I was a bit overweight, and probably drinking a little more than I should on nights out.
+- During and after lockdown, partly as a result of working from home, I’d developed bad habits. I just about started work on time each day however I wouldn’t have eaten properly, and would dress lazily due to lack of time and organisation.
+- I was overweight, and probably drinking a little more than I should on nights out.
 
-I guess _mony a mickle maks a muckle_ works both ways. A number of smaller unwanted feelings and habits combine to form a wider malaise. And that’s where I was.
+I guess _mony a mickle maks a muckle_ works in the negative direction too. A number of smaller unwanted feelings and habits combine to form a wider malaise. That’s where I was.
 
 ## Eating better
 
@@ -47,17 +49,19 @@ It’s a small but mighty change, this one, which feels less about alarm clocks 
 
 ## Smartening up
 
-As someone who normally appreciates nice clothes I realised that although I once dressed smartly for work I had drifted into lazier habits. I was starting work wearing clothes that were fine for the morning dog walk but didn’t look smart nor make me feel good.
+I don’t care what people wear; if they’re comfortable and happy, I’m happy. By the same token I also appreciate people who dress well, and feel better and more confident when I make an effort myself.
 
-So I started to organise and look after my clothes a bit better. I sold some old stuff and bought a couple of new things. I earmarked a few work outfits so I’d look more put-together and less thrown-together.
+I realised that although I once dressed smartly for work I had drifted into lazier habits. I was starting work wearing clothes that were fine for the morning dog walk but didn’t make me feel good at work.
 
-I also supported myself time-wise by starting to lay out work clothes the night before, especially before mornings where I had an early commute to Edinburgh.
+So I started to organise and look after my clothes a bit better. I sold some old stuff and bought a couple of new things. I earmarked a few work outfits so I’d look more put-together and less thrown-together. I also supported myself time-wise by starting to lay out work clothes the night before, especially before mornings where I had an early commute to Edinburgh.
+
+I now feel like I show myself and the day ahead a bit more respect.
 
 ## Taking sleep seriously
 
-I realised that in order to have time to shower, eat well and dress properly – not to mention walking the dog – I needed to get up earlier. And to get up early without snoozing the alarm, I needed to be well rested. So I needed to go to bed earlier.
+It was now clear that in order to have time to shower, walk Rudy, dress properly and eat well I needed to get up earlier. And to avoid feeling tired when that early alarm goes off, I needed to be well rested.
 
-No phone.
+I started going to bed for 10pm. I put the phone outside the bedroom. I read for twenty minutes because it helps my brain calm down. 
 
 ## Happy workspace
 
