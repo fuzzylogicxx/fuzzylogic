@@ -45,7 +45,7 @@ I used to hit the snooze button on my alarm clock every morning – a terrible h
 
 Since deciding to stop hitting the snooze button several months back, I’ve got up straight away _every single day_. I think there’s a “count backwards from 5” technique you can use to help, but I haven’t even needed it.
 
-It’s a small but mighty change, this one, which feels less about alarm clocks and more generally about better self-knowledge, discipline and decision-making. And I feel much better for it.
+It’s a small but mighty change, this one, which feels less about alarm clocks and more generally about better self-awareness, discipline and decision-making. And I feel much better for it.
 
 ## Smartening up
 
