@@ -37,15 +37,15 @@ This was made easier because I like coffee and was pleasantly surprised by Tim�
 
 Food-wise I continued with granola but cut back on the amount and introduced more nuts, seeds and proper yoghurt. However I’ve since switched it up a bit more and now make a breakfast of eggs (poached, scrambled or omelette) with seeded toast on the days I’m working from home. Often I’ll have that with oily fish like mackerel. Along with my coffees it’s so tasty – I love it! It really fuels me for the morning ahead. I enjoy making it, too.
 
-## Getting up without fuss
+## Action first – getting up without fuss
 
-I used to hit the snooze button on my alarm clock every morning – a terrible habit. It made me late which is a bad start to the day. My understanding is that it’s also pretty bad for being productive that day due to how it affects your brain.
+I used to hit the snooze button on my alarm clock every morning – a terrible habit. It made me late which is a bad start to the day. My understanding is that it’s also pretty bad for being productive that day due to the start-stop-start affects your brain.
 
-[Listening to Mel Robbins](https://youtu.be/s78hCiKjAKk?si=poDnICiziIFgF067) helped me realise that being able to exert control over this kinda impulse is a valuable skill, and that I could change this bad habit.
+[Listening to Mel Robbins](https://www.tiktok.com/@feedambition/video/7334760705893108997) helped me realise that being able to exert control over this kinda impulse is a valuable skill, and that I could [change this bad habit](https://youtu.be/HSn-L9IXbOY?si=xuKuSsGqdbgfH_N0&t=846).
 
 Since deciding to stop hitting the snooze button several months back, I’ve got up straight away _every single day_. I think there’s a “count backwards from 5” technique you can use to help, but I haven’t even needed it.
 
-It’s a small but mighty change, this one, which feels less about alarm clocks and more about generally increased discipline and better decision-making. And I feel much better for it.
+It’s a small but mighty change, this one, which feels less about alarm clocks and more generally about better self-knowledge, discipline and decision-making. And I feel much better for it.
 
 ## Smartening up
 
