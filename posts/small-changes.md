@@ -49,17 +49,17 @@ It’s a small but mighty change, this one, which feels less about alarm clocks 
 
 ## Smartening up
 
-I don’t care what people wear; if they’re comfortable and happy, I’m happy. By the same token I also appreciate people who dress well, and feel better and more confident when I make an effort myself.
+I realised that although I once dressed smartly for work I had drifted into lazier habits. I was starting work wearing clothes that were fine for the morning dog walk but didn’t make me feel good at work (even when working from home).
 
-I realised that although I once dressed smartly for work I had drifted into lazier habits. I was starting work wearing clothes that were fine for the morning dog walk but didn’t make me feel good at work.
+Now I don’t mind how other people choose to dress; if they’re comfortable and happy, that’s the main thing. But equally I admire people who dress well. And I know I personally feel happier and more confident when I’ve made an effort.
 
-So I started to organise and look after my clothes a bit better. I sold some old stuff and bought a couple of new things. I earmarked a few work outfits so I’d look more put-together and less thrown-together. I also supported myself time-wise by starting to lay out work clothes the night before, especially before mornings where I had an early commute to Edinburgh.
+So I started to organise and look after my clothes a bit better. I retired then sold some old stuff and bought a few new things. I earmarked some work outfits so I’d look more put-together and less thrown-together. I also made life easier for myself by starting to choose and lay out work clothes the night before, especially before an early commute.
 
-I now feel like I show myself and the day ahead a bit more respect.
+The overall effect is to make me feel like I show myself and my work a bit more respect, and I prefer it.
 
 ## Taking sleep seriously
 
-It was now clear that in order to have time to shower, walk Rudy, dress properly and eat well I needed to get up earlier. And to avoid feeling tired when that early alarm goes off, I needed to be well rested.
+It became clear that in order to have time to shower, walk Rudy, dress and eat well I needed to get up earlier. And to avoid feeling tired when that early alarm goes off, I needed to be well rested.
 
 I started going to bed for 10pm. I put the phone outside the bedroom. I read for twenty minutes because it helps my brain calm down. 
 
