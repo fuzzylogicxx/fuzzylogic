@@ -1,7 +1,7 @@
 ---
 date: 2024-03-14T16:07:43.276Z
 title: Small changes
-description: Over the last six months I’ve tweaked parts of my life and I’m feeling better for it
+description: Recently I’ve tweaked some aspects of my life and I’m feeling better for it
 tags:
 - entry
 - health
@@ -9,7 +9,7 @@ tags:
 - diet
 draft: true
 ---
-Growing up, I often heard my Dad use the old Scottish phrase _mony a mickle maks a muckle_ and I’ve always loved it. It’s about the value of taking care of the little things because if you keep doing that they combine for something bigger and more important. 
+Growing up, my Dad often use the old Scots phrase _mony a mickle maks a muckle_ and I’ve always loved it. It’s about the value of taking care of the little things because if you keep it going they combine for something more important. 
 
 And it’s true. For example over the last six months I’ve made lots of small changes to how I live and I’m feeling a wider benefit.
 ---
@@ -47,21 +47,23 @@ Since deciding to stop hitting the snooze button several months back, I’ve got
 
 It’s a small but mighty change, this one, which feels less about alarm clocks and more generally about better self-awareness, discipline and decision-making. And I feel much better for it.
 
-## Smartening up
+## Showing myself more respect
 
-I realised that although I once dressed smartly for work I had drifted into lazier habits. I was starting work wearing clothes that were fine for the morning dog walk but didn’t make me feel good at work (even when working from home).
+I realised that although I once dressed smartly for work I had drifted into lazier habits. I was starting work wearing clothes that were fine for the morning dog walk but didn’t make me feel good at work, even when working from home.
 
-Now I don’t mind how other people choose to dress; if they’re comfortable and happy, that’s the main thing. But equally I admire people who dress well. And I know I personally feel happier and more confident when I’ve made an effort.
+Now, I don’t care how people choose to dress; if they’re comfortable and happy, that’s the main thing. But equally I admire people who dress well. And I know I personally feel happier and more confident when I’ve made an effort.
 
-So I started to organise and look after my clothes a bit better. I retired then sold some old stuff and bought a few new things. I earmarked some work outfits so I’d look more put-together and less thrown-together. I also made life easier for myself by starting to choose and lay out work clothes the night before, especially before an early commute.
+So I started to organise and look after my clothes a bit better. I retired some old stuff and bought a few new things. I earmarked some work outfits so I’d look more put-together, less thrown-together. I started to choose and lay out work clothes the night before, especially before an early commute, as a wee courtesy to my future self.
 
-The overall effect is to make me feel like I show myself and my work a bit more respect, and I prefer it.
+The overall effect is that I feel I now show myself (and my work) a bit more respect.
 
 ## Taking sleep seriously
 
-It became clear that in order to have time to shower, walk Rudy, dress and eat well I needed to get up earlier. And to avoid feeling tired when that early alarm goes off, I needed to be well rested.
+It was clear that to have sufficient pre-work time to walk Rudy, dress and eat well I needed to get up earlier. And to avoid that desire to snooze the alarm, I needed to be well rested.
 
-I started going to bed for 10pm. I put the phone outside the bedroom. I read for twenty minutes because it helps my brain calm down. 
+So I started going to bed for 10pm. I put my phone in a separate room from the bedroom. I allow time to read for twenty minutes because I love it and it helps my brain calm down.
+
+This particular change has been brilliant and really impactful. I’ve noticed a couple of old habits creeping back in – for example messing about on the internet til the last minute, or taking my laptop (rather than my phone) into bed – but I’ve quickly recognised that these are not conducive to a good night’s sleep so I’m quitting those habits too.
 
 ## Happy workspace
 
