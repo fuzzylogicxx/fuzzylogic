@@ -1,5 +1,5 @@
 ---
-date: 2023-03-04T22:47:15Z
+date: 2024-04-03T22:45:57.116Z
 title: Sakamoto’s Opus at the GFT
 description: A lovely midweek night at the cinema to see a beautiful film
 tags:
