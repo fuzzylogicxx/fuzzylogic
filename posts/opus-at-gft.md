@@ -21,12 +21,12 @@ draft: false
 ---
 Just had a memorable midweek night at the cinema with Craig and Jason.
 
-[Opus](https://www.theguardian.com/film/2024/mar/28/ryuichi-sakamoto-opus-review-neo-sora) presents Ryuichi Sakamato at the piano in the final year of is life, consists of him playing twenty pieces and is beautifully shot in black and white by his son, Neo Sora.
+[Opus](https://www.theguardian.com/film/2024/mar/28/ryuichi-sakamoto-opus-review-neo-sora) presents Ryuichi Sakamato at the piano in the final year of is life. It consists of him playing twenty pieces one after the other and is beautifully shot in black and white by his son, Neo Sora.
 
 <div class="l-frame">
   <iframe title="Official UK Trailer for movie “Opus”" width="560" height="315" src="https://www.youtube.com/watch?v=DBYVQuGs5hc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
 
-I found the film’s style and starkness to be quite unusual at first, but once I got into its rhythm it was really beautiful. And the pieces and the playing were at times just mesmerising.
+I found the film’s style and starkness to be quite unusual at first, but once I got into its rhythm it was very immersive. And the pieces and playing were at times just mesmerising.
 
 It was great to unexpectedly bump into [Liam](https://liamnugent.me/), too. I might have known this film would be up his strasse!
