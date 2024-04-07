@@ -11,7 +11,7 @@ draft: true
 ---
 Growing up, I recall my Dad often used the old Scots phrase _mony a mickle maks a muckle_ and I’ve always loved it. It’s about the value of taking care of the little things because if you keep it up you get something bigger. 
 
-And it’s true. For example over the last six months I’ve made lots of small life changes and I’m feeling an overall benefit.
+It’s true, and here’s a good example. Over the last six months I’ve made lots of small changes to my life and I’m feeling an overall benefit.
 ---
 
 ## Where I started
