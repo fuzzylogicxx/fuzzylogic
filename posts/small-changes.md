@@ -16,22 +16,29 @@ It’s true, and here’s a good example. Over the last six months I’ve made l
 
 ## Where I started
 
-I’s interesting to reflect on what was happening in my life prior to making these tweaks. Although there was no particular emergency there were a number of lower-level flags.
+It’s useful for me to reflect on what was happening in my life prior to making these tweaks. Although there was no particular emergency there were a number of lower-level flags.
 
-- I’d taken days off work for stress and mental fatigue triggered by aspects of my job. I often became frustrated by work
-- I was pretty obsessive – work projects, web trends, supposedly fun hobbies – you name it. My OCD-like symptoms lead to paralysis and were mentally draining
-- My life felt disorganised; cluttered and messy
-- I suffered bouts of low mood which affected aspects of personal and home life. I felt tired and disconnected.
-- I was getting my priorities wrong which wasn’t fair on those closest to me
-- I often stayed up late then struggling to get up, with knock-on effects for the rest of my day.
-- During and after lockdown, partly as a result of working from home, I’d developed bad habits. I would only just start work on time each day but without having eaten properly. I would dress lazily due to lack of time and organisation.
-- I was overweight, and probably drinking a little more than I should when socialsing.
+I’d taken days off work for stress and mental fatigue triggered by aspects of my job. I often became frustrated by work.
 
-I guess _mony a mickle maks a muckle_ works in the negative direction too. These smaller unwanted issues combined to form a wider malaise. That’s where I was.
+I was pretty obsessive – work projects, web trends, supposedly fun hobbies – you name it. My OCD-like symptoms lead to paralysis and were mentally draining.
+
+My life felt disorganised; cluttered and messy.
+
+I suffered bouts of low mood which affected aspects of personal and home life. I felt tired and disconnected.
+
+I was getting my priorities wrong which wasn’t fair on those closest to me.
+
+I often stayed up late then struggled to get up, with knock-on effects for the rest of my day.
+
+During and after lockdown, partly as a result of working from home, I’d developed bad habits. I would only just start work on time each day but without having eaten properly. I would dress lazily due to lack of time and organisation.
+
+I was overweight, and probably drinking a little more than I should when socialsing.
+
+So I guess _mony a mickle maks a muckle_ works in the negative direction too. That collection of smaller unwanted issues combined to form a wider malaise. And that’s where I was.
 
 ## Eating better
 
-It was while on holiday last August with time to reflect and freshen things up that I started making changes. Clair told me about scientist and author [Tim Spector’s ideas about diet, avoiding harmful blood sugar spikes, and gut health](https://www.theguardian.com/food/2023/apr/25/eat-fibre-first-and-ditch-the-juice-five-quick-and-easy-tips-for-a-much-healthier-meal). Until then I’d thought it was relatively healthy to drink a glass of Tropicana every morning, and did so for years. Upon learning the short and long term sugar-related impacts I decided to cut this out completely… and have stuck to it.
+It was while on holiday last August with time to reflect that I started making changes. Clair told me about scientist and author [Tim Spector’s ideas about diet, avoiding harmful blood sugar spikes, and gut health](https://www.theguardian.com/food/2023/apr/25/eat-fibre-first-and-ditch-the-juice-five-quick-and-easy-tips-for-a-much-healthier-meal). Until then I’d thought it was relatively healthy to drink a glass of Tropicana every morning, and did so for years. Upon learning the short and long term sugar-related impacts I decided to cut this out completely… and have stuck to it.
 
 I was pleasantly surprised by Tim’s advice that coffee is good for you! So I now have no OJ but two strong black-ish coffees with breakfast.
 
@@ -69,5 +76,10 @@ Recently I’ve noticed a couple of old habits creeping back in – for example 
 
 ## A happier workspace
 
-In winter 2023, Harry Roberts posted an image of [his new workspace](https://images.app.goo.gl/zbdf8LrAir5ooCzS8). It struck me how lean and clean it looked and how that elegance and lack of clutter must be doing wonders for his state of mind at work. So I made some changes to my own. It didn’t take long and it’s now a small source of joy each home-working day.
+In winter 2023, Harry Roberts posted an image of [his new workspace](https://images.app.goo.gl/zbdf8LrAir5ooCzS8). It struck me how lean and clean it looked and how that elegant, clutter-free environment must be doing wonders for his state of mind at work. So I made some changes to my own. It didn’t take long and it’s now a small source of joy each home-working day.
 
+## So far, so good
+
+This year, 2024, has felt really positive so far. My state of mind is good and I feel like I’m generally putting some better vibes out there. I’m gonna do my best to keep this good thing going!
+
+On the slim chance that you read this and made it to the end, thanks for reading. I know that some of the issues that affected me (and I’m still working on) affect others too. If you ever want to talk about it, just shout. It’ll probably be good for both of us.
