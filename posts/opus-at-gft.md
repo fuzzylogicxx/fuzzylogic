@@ -6,6 +6,7 @@ tags:
 - note
 - film
 - music
+- friends
 location: Glasgow Film Theatre 
 noteWithTitle: true
 linkTarget: ''
