@@ -21,7 +21,8 @@ However the UK GDS wrote in 2020 that they had switched to using [inputs of type
 
 In the same article a reader questioned why GDS’s use of text inputs also extended to gathering _dates_ (a subset of numbers) when there is a dedicated input type date for that purpose. GDS answered that there are accessibility and usability problems with browser implementations of `<input type"date">` and linked to [Hassell Inclusion’s 2019 article on date inputs as evidence](https://www.hassellinclusion.com/blog/input-type-date-ready-for-use/).
 
-I love the level of research and detail that the GDS and Hassell articles provide. But the notion of not using the HTML elements meant for the job annoys me. I’m also aware that smart developers like Jeremy Keith note that [input type `date` now has wide browser support and are using it](https://adactio.com/journal/21045).
+I love the level of research and detail that the GDS and Hassell articles provide. But the notion of not using the HTML elements meant for the job annoys me. I’m also aware that smart developers like Jeremy Keith [note that input type `date` now has wide browser support](https://adactio.com/journal/21045) and are using it. (Update: it seems [Jeremy has found some browser support issues too.](https://adactio.com/journal/21050))
+
 
 It’s also worth reiterating that the Hassell article is from 2019 and the GDS one from 2020, and four or five years is a long time in browser support.
 
