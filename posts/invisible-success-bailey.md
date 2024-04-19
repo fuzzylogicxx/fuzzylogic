@@ -1,6 +1,6 @@
 ---
 date: 2024-04-19T07:34:01Z
-title: 'Invisible success'
+title: 'Invisible success, by Eric Bailey'
 description: 'Eric Bailey on the need to tell Design System stories even though it’s difficult'
 tags:
 - link
@@ -13,7 +13,7 @@ tags:
 - communication
 linkTarget: https://ericwbailey.website/published/invisible-success/
 ---
-Here’s Eric Bailey with some very relatabe thoughts on the need to tell Design System stories even though it’s difficult.
+Here’s Eric Bailey with some very relatable thoughts on the need to tell design system stories even though it’s difficult.
 
 <blockquote>
   <p>The component works. And because it works, nobody pays attention to it.</p>
