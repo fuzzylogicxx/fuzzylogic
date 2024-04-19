@@ -13,7 +13,7 @@ tags:
 - communication
 linkTarget: https://ericwbailey.website/published/invisible-success/
 ---
-Here’s Eric Bailey with some very relatabe thoughts on the need to tell Design System stories even though it’s difficult because good Design System work can feel invisible.
+Here’s Eric Bailey with some very relatabe thoughts on the need to tell Design System stories even though it’s difficult.
 
 <blockquote>
   <p>The component works. And because it works, nobody pays attention to it.</p>
@@ -25,7 +25,7 @@ Here’s Eric Bailey with some very relatabe thoughts on the need to tell Design
 
 > A lack of bug reports, accessibility issues, design tweaks, etc. are all objectively great, but there are no easy datapoints you can measure here. By this, I mean it is difficult to quantify a void.
 
-Eric advices thinking about aspects of design system work that are not directly about components, but are also critical part of it:
+Eric advices crafting stories about the important aspects of design system work that are not directly about components:
 
 <blockquote>
   
@@ -34,6 +34,6 @@ Eric advices thinking about aspects of design system work that are not directly 
 
 </blockquote>
 
-At work we are currently working on that very thing with as part of a communication strategy.
+At work we are currently working on that very thing as part of a communication strategy.
 
-Sidenote: Eric introduces the problem frames this in the context of a [Data table component](https://primer.style/components/data-table) he recently worked on for GitHub. It looks good! This is also highly relatable, because I built one of these a few years back, too, and know how much work is involved.
+Sidenote: Eric frames all this in the context of a [Data table component](https://primer.style/components/data-table) he recently worked on for GitHub. It looks good! This is also highly relatable, because I built one of these a few years back, too, and know how much work is involved.
