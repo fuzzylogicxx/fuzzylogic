@@ -51,7 +51,3 @@ Reminder to self: create a bookmark for this post on all my devices. Name it “
 - [All of my tags](https://fuzzylogic.me/tags/)
 - [Images: how I optimise, host, and code for performance and responsiveness](https://fuzzylogic.me/posts/my-new-syntax-for-responsive-and-modern-blog-images/)
 - [Set frontmatter date to `Created`](https://www.11ty.dev/docs/dates/)
-
-## Other notes
-
-Reminder to self: create a bookmark for this post on all my devices. Name it “Nu Gh post”.
