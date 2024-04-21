@@ -1,6 +1,6 @@
 ---
 date: 2024-04-21T10:30:01Z
-title: 'Web Component GitHub Starer Template, by David Darnes'
+title: 'Web Component GitHub Starter Template, by David Darnes'
 description: 'David’s template provides not just the starter component code but also a nice readme, issue template, and publish-to-NPM flow'
 tags:
 - link
