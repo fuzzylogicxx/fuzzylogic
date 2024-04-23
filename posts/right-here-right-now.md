@@ -10,4 +10,4 @@ linkTarget: https://www.martingunnarsson.com/posts/right-here-right-now/
 Martin introduces the “Now” page concept and how he adapted it for showing on his homepage. 
 ---
 
-I quite like the _Now_ concept in general and have already starting tinkering with it. I also really like Martin’s neat, _front matter-free_ solution in Eleventy (single config file plus date-oriented filenames) and could see that being more widely reusable for me for other “light-touch collections”.
+I quite like the _Now_ concept in general and have already starting tinkering with it. I also really like Martin’s neat, _front matter-free_ solution in Eleventy (single config file plus date-oriented filenames) and could see that being more widely reusable for me for other “light-touch, non-page collections”.
