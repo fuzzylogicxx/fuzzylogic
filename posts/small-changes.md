@@ -28,8 +28,6 @@ I suffered bouts of low mood which affected aspects of personal and home life. I
 
 I was getting my priorities wrong which wasn’t fair on those closest to me.
 
-I often stayed up late then struggled to get up, with knock-on effects for the rest of my day.
-
 During and after lockdown, partly as a result of working from home, I’d developed bad habits. I often stayed up late then struggled to get up, with knock-on effects for the rest of my day. I would only just start work on time each day but without having eaten properly. I would dress lazily due to lack of time and organisation.
 
 I was overweight, and probably drinking a little more than I should when socialsing.
@@ -44,7 +42,7 @@ Clair told me about scientist and author [Tim Spector’s ideas about diet, avoi
 
 I was pleasantly surprised by Tim’s advice that coffee is good for you! So I now have no OJ but two strong black-ish coffees (minus sugar) with breakfast.
 
-Food-wise I now tend to make a breakfast of eggs (poached, scrambled or omelette) with seeded toast on days when I’m working from home. I’ll combine that with oily fish like mackerel. Along with my coffee it’s so tasty – I love it! And it really fuels me for the morning ahead. I still sometimes eat granola but have cut back on the amount and the sugary varieties, introducing more nuts, seeds and proper yoghurt.
+Food-wise I now tend to make a breakfast of eggs with seeded toast on days when I’m working from home. I’ll combine that with oily fish like mackerel. Along with my coffee it’s so tasty – I love it! And it really fuels me for the morning ahead. I still sometimes eat granola but have cut back on the amount and the sugary varieties, introducing more nuts, seeds and proper yoghurt.
 
 ## Action first (thing)
 
