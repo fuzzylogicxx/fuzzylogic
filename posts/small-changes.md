@@ -16,7 +16,7 @@ It’s true, and here’s a good example. Over the last six months I’ve made l
 
 ## Where I started
 
-It’s useful for me to reflect on what was happening in my life prior to making these tweaks. Although there was no particular emergency there were a number of lower-level flags.
+It’s useful for me to reflect on what was happening in my life last year. Although there was no particular emergency there were a number of lower-level flags.
 
 I’d taken days off work for stress and mental fatigue triggered by aspects of my job. I often became frustrated by work.
 
@@ -32,7 +32,7 @@ During and after lockdown, partly as a result of working from home, I’d develo
 
 I was overweight, and probably drinking a little more than I should when socialsing.
 
-So I guess _mony a mickle maks a muckle_ works in the negative direction too. That collection of smaller unwanted issues snowballed into a general malaise. And that’s where I was.
+This collection of issues had snowballed into a general malaise.
 
 It was while on holiday last August with a chance to reflect that I started making changes.
 
@@ -122,4 +122,4 @@ Seeing friends and family, and hearing all their news, is a tonic.
 
 This year, 2024, has felt really positive so far. I think those small changes have really helped. My state of mind is good and furthermore I feel like I’m generally putting some better vibes out there. I’m gonna do my best to keep this good thing going!
 
-On the slim chance that you read this and made it to the end, thanks for reading. I know that some of the issues that affected me (and I’m still working on) affect others too. If you ever want to talk about it, just shout. It’ll probably be good for both of us.
+Thanks for reading. I know that some of the issues that affected me (and I’m still working on) affect others too. If you ever want to talk about it, just shout. It’ll probably be good for both of us.
