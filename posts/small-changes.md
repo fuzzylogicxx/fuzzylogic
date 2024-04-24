@@ -30,7 +30,7 @@ I was getting my priorities wrong which wasn’t fair on those closest to me.
 
 During and after lockdown, partly as a result of working from home, I’d developed bad habits. I often stayed up late then struggled to get up, with knock-on effects for the rest of my day. I would only just start work on time each day but without having eaten properly. I would dress lazily due to lack of time and organisation.
 
-I was overweight, and probably drinking a little more than I should when socialsing.
+I was overweight, and probably drinking a little more than I should when socialising.
 
 This collection of issues had snowballed into a general malaise.
 
