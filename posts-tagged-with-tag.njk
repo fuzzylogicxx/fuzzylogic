@@ -14,7 +14,7 @@ pagination:
     - tagList
 eleventyExcludeFromCollections: true
 layout: layouts/page.njk
-renderData:
+eleventyComputed:
   title: Tagged “{{ tag }}”
 permalink: /tags/{{ tag }}/
 ---
