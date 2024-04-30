@@ -1,4 +1,4 @@
-const {DateTime} = require('luxon');
+const { DateTime } = require('luxon');
 const fs = require('fs');
 const pluginNavigation = require("@11ty/eleventy-navigation");
 const pluginRss = require('@11ty/eleventy-plugin-rss');
@@ -73,6 +73,21 @@ module.exports = function(eleventyConfig) {
   // (functions we use elsewhere to modify strings, dates, file contents etc to get what we want)
   //
 
+  eleventyConfig.addFilter("readableDate", (dateObj, format, zone) => {
+		// Formatting tokens for Luxon: https://moment.github.io/luxon/#/formatting?id=table-of-tokens
+		return DateTime.fromJSDate(dateObj, { zone: zone || "utc" }).toFormat(format || "dd LLLL yyyy");
+	});
+
+  eleventyConfig.addFilter('readableTime', dateObj => {
+    return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat('h:mm a');
+  });
+
+  eleventyConfig.addFilter('htmlDateString', (dateObj) => {
+		// dateObj input: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
+		return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat('yyyy-LL-dd');
+	});
+
+
   /**
    * jsmin()
    * custom filter into which we pass some JavaScript and get it back minified.
@@ -95,21 +110,6 @@ module.exports = function(eleventyConfig) {
       // Fail gracefully.
       callback(null, code);
     }
-  });
-
-  // Readable Date filter
-  eleventyConfig.addFilter('readableDate', dateObj => {
-    return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat('dd LLL yyyy');
-  });
-
-  // Readable Time filter
-  eleventyConfig.addFilter('readableTime', dateObj => {
-    return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat('h:mm a');
-  });
-
-  // https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
-  eleventyConfig.addFilter('htmlDateString', dateObj => {
-    return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat('yyyy-LL-dd');
   });
 
   // 'squash' filter (used when creating the search index) | credit Phil Hawksworth
