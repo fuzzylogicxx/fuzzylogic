@@ -5,48 +5,74 @@ description: Logging my website’s current features so I can manage it a bit be
 tags:
 - entry
 - web
-draft: true
+- personalwebsite
 ---
-I like the metaphor for personal websites of _tending to a digital garden_. Like all gardens, they can become a bit unruly and need some weeding. Right now, as I consider updating some software and freshening things up, I realise that I’ve let it overgrow a tad.
+I like the metaphor for personal websites of _tending to a digital garden_. 
 
-So, here’s a post in which I’ll log my website’s current features. 
+Like all gardens, they can become a bit unruly and need some weeding. Right now, as I consider updating some software and freshening things up, I realise that I’ve let it overgrow a tad.
 
-This should be useful in and of itself as a stepping stone to writing a proper readme. However it’ll also help me reflect on my website’s health and maintainability so I can decide which features to nourish and which to prune.
+So, here’s a post in which I’ll log my website’s current features. This should be useful in and of itself as a stepping stone to writing a proper readme. However it’ll also help me reflect on my website’s health and maintainability so I can decide which features to nourish and which to prune.
+
+Note: this post will take a bit of time and a few sessions, so please regard it as a work in progress.
 ---
 
 ## What I want
 
-Before getting lost in stuff I have, I thought it’d be good to set out my higher-level goals and what I feel I have the time to sustain. I think I’d like:
+Before getting lost in stuff I _have_, I thought it’d be good to set out my higher-level goals and what I feel I have the time to sustain. I think I’d like:
 
-- retain SEO through updates
-- four hundos (or close to)
-- simplicity: minimal dependencies, ease of updating 
+- retain URLs and SEO through updates
+- excellent accessibility and performance (four hundos on lighthouse is a good start)
 - use the best of modern web standards
-- sensibly structured content
-- a bit of design personality
-- be able to add and edit content easily
-- be able to insert photos into content easily
+- simplicity: minimal dependencies, easy to make technical updates
+- to maintain some documentation to support ease of updating
+- minimal noise: I don’t want a bunch of emails and alerts from third parties
+- sensibly organised content
 - a search function
+- some personality in the design and content
+- be able to add and edit content easily (a CMS would be nice)
+- be able to insert photos into content easily
+
+And here are a few lower-level wants:
+
+- code snippets should look good
 
 ## What I actually have
 
 This is gonna be a much lower-level set of features than the above goals, but that’s OK. I can ask myself whether each supports my wider goals and are worth the effort.
 
-### Overall approach
+### Main engine
 
-It’s a statically generated site powered by Eleventy. I’m happy with this – it brings a lot of flexibility and performamnce benefits.
+It’s a statically generated site powered by Eleventy.
 
-### Tags infrastructure
+The code is hosted on GitHub. I use for Netlify for production builds, deployments and hosting.
+
+I’m happy with this stack. The parts play well together, it’s free, and it brings a lot of flexibility and performamance benefits.
+
+### CMS
+
+I don’t currently have one, having previously tried both Netlify CMS and Forestry for a while then gave up on them. I currently [use github.com as my CMS](https://fuzzylogic.me/posts/how-i-use-github-as-jamstack-cms/). That works but isn’t ideal. I’m looking for another free or cheap solution.
+
+### Content features
+
+#### Readable time
+
+I created this Eleventy filter to show “time of post” on posts of type `note`. That’s a situation where the `readableDate` filter included with the Eleventy starter blog wasn’t precise enough.
+
+#### Tags infrastructure
 
 I have the following pages:
 - _all tags_ page
 - all posts tagged with [tag]
 
-### Photos section
+#### Photos section
 
 There’s a photos index page and a page for individual photos. I’m not 100% sure why I created this.
 
-Photos are grabbed fetched from Cloudinary using an 11ty [JavaScript data file](https://www.11ty.dev/docs/data-js/).
+Photos are grabbed fetched from Cloudinary using an 11ty [JavaScript data file](https://www.11ty.dev/docs/data-js/). I note that I’ve set it to only fetch those photos when the node environment is `production`. One of the effects of that seems to be that the /photos/ page is not generated (you get a 404) when I build the site locally. I think that’s because the `photos` data collection is empty therefore cannot be paginated therefore the page is not generated.
+
+## Actions I’ve realised I can take
+
+- rename `eleventy.js` to `eleventy.config.js` like in the [Eleventy base blog](https://github.com/11ty/eleventy-base-blog)
+- …
 
 To be continued!
-
