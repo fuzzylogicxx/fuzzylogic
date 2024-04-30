@@ -5,7 +5,7 @@ description: Logging my website’s current features so I can manage it a bit be
 tags:
 - entry
 - web
-- personalwebsite
+- personalsite
 ---
 I like the metaphor for personal websites of _tending to a digital garden_. 
 
@@ -68,7 +68,7 @@ I have the following pages:
 
 There’s a photos index page and a page for individual photos. I’m not 100% sure why I created this.
 
-Photos are grabbed fetched from Cloudinary using an 11ty [JavaScript data file](https://www.11ty.dev/docs/data-js/). I note that I’ve set it to only fetch those photos when the node environment is `production`. One of the effects of that seems to be that the /photos/ page is not generated (you get a 404) when I build the site locally. I think that’s because the `photos` data collection is empty therefore cannot be paginated therefore the page is not generated.
+Photos are fetched from Cloudinary using an 11ty [JavaScript data file](https://www.11ty.dev/docs/data-js/). I note that I’ve set it to only fetch those photos when the node environment is `production`. One of the effects of that seems to be that the /photos/ page is not generated (you get a 404) when I build the site locally. I think that’s because the `photos` data collection is empty therefore cannot be paginated therefore the page is not generated.
 
 ## Actions I’ve realised I can take
 
