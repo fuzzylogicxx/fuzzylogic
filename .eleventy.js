@@ -5,6 +5,7 @@ const pluginRss = require('@11ty/eleventy-plugin-rss');
 const pluginSyntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
 const { PurgeCSS } = require('purgecss');
 const { minify } = require("terser");
+const { execSync } = require('child_process')
 
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
@@ -16,6 +17,14 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.setDataDeepMerge(true);
 
   eleventyConfig.addLayoutAlias('post', 'layouts/post.njk');
+
+  // Build site search index
+  // Run after the site has been built.
+  // Ref: https://rknight.me/blog/using-pagefind-with-eleventy-for-search/
+  eleventyConfig.on('eleventy.after', () => {
+    execSync(`npx pagefind --source _site --glob \"**/*.html\"`, { encoding: 'utf-8' })
+  })
+
 
   //
   // Shortcodes
