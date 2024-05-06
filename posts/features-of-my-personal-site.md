@@ -49,6 +49,10 @@ The code is hosted on GitHub. I use for Netlify for production builds, deploymen
 
 I’m happy with this stack. The parts play well together, it’s free, and it brings a lot of flexibility and performamance benefits.
 
+### Configuration
+
+The minimum node.js version (used as the runtime for building the site including installing its dependencies) is set in a `.nvmrc` configuration file. That’s because that’s how it’s done in the Eleventy Base Blog and i) I’m happy to follow that to avoid confusion when doing future 11ty upgrades, and ii) it seems sensible to set this in the project code rather than only in Netlify thereby locking me into Netlify and again potentially causing confusion in future. Things to remember (from experience) are that that this setting in `.nvrmc` overrides any node version set in [Netlify’s Build and deploy settings](https://app.netlify.com/sites/vigilant-almeida-537bd4/configuration/deploys#dependency-management) and also that I should avoid setting a node version in `netlify.toml` too otherwise they all fight each other.
+
 ### CMS
 
 I don’t currently have one, having previously tried both Netlify CMS and Forestry for a while then gave up on them. I currently [use github.com as my CMS](https://fuzzylogic.me/posts/how-i-use-github-as-jamstack-cms/). That works but isn’t ideal. I’m looking for another free or cheap solution.
