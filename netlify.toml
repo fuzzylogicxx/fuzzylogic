@@ -4,7 +4,7 @@
   functions = "functions"
 
 [build.environment]
-    NODE_VERSION = "10.15"
+    NODE_VERSION = "20"
     TZ = "Europe/London"
 
 # Opt out of Google’s FLoC origin trial (https://adactio.com/journal/18046)
