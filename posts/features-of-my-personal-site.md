@@ -28,6 +28,7 @@ Before getting lost in stuff I _have_, I thought it’d be good to set out my hi
 - minimal noise: I don’t want a bunch of emails and alerts from third parties
 - sensibly organised content
 - a search function
+- a means of contacting me
 - some personality in the design and content
 - be able to add and edit content easily (a CMS would be nice)
 - be able to insert photos into content easily
