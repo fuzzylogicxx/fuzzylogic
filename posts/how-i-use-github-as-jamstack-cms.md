@@ -47,7 +47,4 @@ Step 2: use one of these previous posts as a template (use the “copy raw file�
 
 ## Other notes
 
-Reminder to self: create a bookmark for this post on all my devices. Name it “Nu Gh post”. (see the _Date/time_ field under _Convert from strings_)
-- [All of my tags](https://fuzzylogic.me/tags/)
-- [Images: how I optimise, host, and code for performance and responsiveness](https://fuzzylogic.me/posts/my-new-syntax-for-responsive-and-modern-blog-images/)
-- [Set frontmatter date to `Created`](https://www.11ty.dev/docs/dates/)
+Reminder to self: create a bookmark for this post on all my devices. Name it “Nu Gh post”.
