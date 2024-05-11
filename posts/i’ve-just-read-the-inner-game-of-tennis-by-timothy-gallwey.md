@@ -1,23 +1,14 @@
 ---
 noteWithTitle: true
 draft: false
-mainImage:
-  cloudinary_unique_path: v1689329837/join_the_future_resized_1733x1300_itczyh.jpg
-  alt: Matt Anniss’s book 'Join the Future'
-  figcaption: My copy of Join the Future
-  aspectRatioWidth: 1733
-  aspectRatioHeight: 1300
-mainImage.sizes: ""
-mainImage.isAnchor: false
 date: 2024-03-15
-mainImage.srcsetWidths: ""
 title: I’ve just read The Inner Game of Tennis, by Timothy Gallwey
 tags:
   - note
   - book
   - tennis
   - psychology
-description: I’ve just read Join the Future, by Matt Anniss
+description: I’ve just read The Inner Game of Tennis, by Timothy Gallwey
 ---
 This was an interesting read, recommended by some experienced players at my table tennis club. (The book focuses on tennis but most of it is transferable). This tip came at a good time, as I’m looking to reduce tension from my game.
 ---
@@ -26,7 +17,7 @@ The author presents the following ideas:
 
 You have two selves. Self 1 is your ego. Self 2 is your body and unconscious brain/memory.
 
-Tightness leading to poor results comes from *trying* and overthinking – characteristics of Self 1. We can avoid this.
+Tension with negative impact comes from *trying* and overthinking – characteristics of Self 1. Let’s avoid this.
 
 Self 2 is amazing. Let it do its thing without ego interference. Don’t “try hard”. 
 
