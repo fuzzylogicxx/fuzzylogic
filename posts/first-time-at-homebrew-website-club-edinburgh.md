@@ -1,14 +1,12 @@
 ---
 title: First time at Homebrew Website Club, Edinburgh
-date: 2024-04-30
-description: Great wee blether; should do it more often
+date: 2024-04-30T21:17:15Z
+description: A good chat about personal websites with fellow tinkerers
 tags:
   - note
   - personalsite
   - personalsites
-  - ""
-location: Glasgow southside
-pageSpecificRobotsDirective: noindex, nofollow
+location: Waverley Train Station, Edinburgh
 ---
 Recently my work colleague [Francesco](https://fran.fi/) told me about a new Edinburgh branch of Homebrew Website Club. Exciting! I unfortunately couldn’t make their first event but just attended [their second event](https://events.indieweb.org/2024/04/homebrew-website-club-edinburgh-R0PUj1pjs3wC). Here’s how it was billed:
 
