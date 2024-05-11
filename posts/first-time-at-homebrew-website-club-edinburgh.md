@@ -1,5 +1,6 @@
 ---
 title: First time at Homebrew Website Club, Edinburgh
+noteWithTitle: true
 date: 2024-04-30T21:17:15Z
 description: A good chat about personal websites with fellow tinkerers
 tags:
