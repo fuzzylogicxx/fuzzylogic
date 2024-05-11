@@ -1,12 +1,13 @@
 ---
-title: Gaga
+title: Gaga and Thornowood with Doug
 noteWithTitle: true
-date: 2024-02-24
-description: A good chat about personal websites with fellow tinkerers
+pageSpecificRobotsDirective: "noindex, nofollow"
+date: 2024-02-25
+description: Good company, conversation, food and drinks with Doug 
 tags:
   - note
   - friends
-location: Waverley Train Station, Edinburgh
+location: Dumbarton Road, Glasgow
 ---
 Had a great catch-up with my friend Doug last night. We went for dinner at Gaga in the west end, where co-owner Mark (who we know well from years gone by) gave us a warm welcome and a complimentary cocktail on our arrival – cheers Mark! Food-wise, small plates were the order of the day so we tried fried chicken, prawn toast, sweetcorn fritters, lamb curry and more. Gaga has a great atmosphere and we thoroughly enjoyed it. 
 
