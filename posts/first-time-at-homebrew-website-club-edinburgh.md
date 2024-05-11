@@ -13,4 +13,4 @@ Recently my work colleague [Francesco](https://fran.fi/) told me about a new Edi
 
 > Join us in Edinburgh for demos of personal sites, recent breakthroughs, discussions about the independent web, and to meet IndieWeb community members!
 
-It was good fun! Great to chat about writing, and personal websites with fellow tinkerers. I’m sure I’ll be back.
+It was good fun! Great to chat about and personal websites and writing with fellow tinkerers. I’m sure I’ll be back.
