@@ -319,7 +319,15 @@ module.exports = function(eleventyConfig) {
   // Note: no 'css' entry because we’re inlining CSS so don’t need any physical css files in the public dir.
 
   // the easy stuff
+
+  // CMS
+  // Ref: https://www.cassey.dev/adding-decap-cms-to-11ty/
+  eleventyConfig.addPassthroughCopy("admin");
+
+  // Avatar and anything else to be findable at a well-known location
   eleventyConfig.addPassthroughCopy('.well-known');
+
+  // More…
   eleventyConfig.addPassthroughCopy('img');
   eleventyConfig.addPassthroughCopy('fonts');
   eleventyConfig.addPassthroughCopy('android-chrome-192x192.png');
