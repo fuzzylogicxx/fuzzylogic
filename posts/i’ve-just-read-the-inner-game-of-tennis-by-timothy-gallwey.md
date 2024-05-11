@@ -19,15 +19,14 @@ tags:
   - psychology
 description: I’ve just read Join the Future, by Matt Anniss
 ---
-This was an interesting read, recommended by some experienced players at my table tennis club. (The book focuses on tennis but most of it is tranferable). This tip came at a good time, as I’m looking to reduce tension from my game.
+This was an interesting read, recommended by some experienced players at my table tennis club. (The book focuses on tennis but most of it is transferable). This tip came at a good time, as I’m looking to reduce tension from my game.
+---
 
-- - -
-
-The inner game game suggests the following: 
+The author presents the following ideas: 
 
 You have two selves. Self 1 is your ego. Self 2 is your body and unconscious brain/memory.
 
-Tightness leading to poor results comes from *trying* and overthinking – characteristics of Self 1. Avoid this.
+Tightness leading to poor results comes from *trying* and overthinking – characteristics of Self 1. We can avoid this.
 
 Self 2 is amazing. Let it do its thing without ego interference. Don’t “try hard”. 
 
