@@ -1,6 +1,6 @@
 ---
-date: 2023-12-09T21:33:00Z
-title: Remembering a night at Tresor, 2005
+date: 2024-05-12T16:33:00Z
+title: Memories of a night at Tresor, 2005
 description: 
 tags:
 - note
@@ -10,48 +10,20 @@ tags:
 - berlin
 - music
 noteWithTitle: true
-mainImage:
-  cloudinary_unique_path: v1689329837/join_the_future_resized_1733x1300_itczyh.jpg
-  alt: "Matt Anniss’s book 'Join the Future'"
-  figcaption: "My copy of Join the Future"
-  aspectRatioWidth: 1733
-  aspectRatioHeight: 1300
-mainImage.srcsetWidths: ''
-mainImage.sizes: ''
-mainImage.isAnchor: false
 draft: true
-
 ---
-Tresor (Closing Party) April 5, 2005
-
-Was throwing out a tatty poster of an image I loved (the gated vault with smoke escaping and the text “The Extremist”)
+I was recently sorting through some old stuff when I found a tatty old poster I used to love and that brought back good memories. It shows the [gated basement vault of the original Tresor nightclub](https://bldgblog.com/wp-content/uploads/2007/01/368327890_ce3550f954_o.jpg) at Potsdamer Platz, Berlin. Smoke is billowing out of the room dramatically and it includes the text _The Extremist_. I bought or otherwise acquired this poster on a night in 2005 when me and friends Davie and Tom visited the famous club during a trip to Berlin.
 ---
 
-{% if app.environment == "production" %}
-<figure>
-  {% respimgV2
-    "" + mainImage.cloudinary_unique_path + "",
-    "" + mainImage.alt + "",
-    mainImage.aspectRatioWidth,
-    mainImage.aspectRatioHeight
-  %}
-  <figcaption>{{ mainImage.figcaption }}</figcaption>
-</figure>
-{% endif %}
+That was a great trip. While Davie wasn’t in the best of health at the time, we still got up to a variety of high jinks, including a memorable drinking session with techno legend [Dan Curtin](https://www.discogs.com/artist/3402-Dan-Curtin) who was releasing music on Tom’s label at the time. (I think that was my introduction to strong Belgian beer, and I remember being mightily impressed when Dan cycled off at the end.) I also remember we stayed in Prenzlauer Berg, at [Transit Loft](https://www.transit-loft.de/?lang=en) if I recall rightly.
 
-Photo http://www.lovefromberlin.net/wp-content/uploads/2018/03/tresor-Berlin-alter-standort.jpg (download it!)
+Anyway while reminiscing I embarked on a little bit of internet spelunking. It turns out that there is some interesting video and audio footage from the time we were there. 
 
-Tom and Davie. Stayed at TransitLoft. https://www.transit-loft.de/?lang=en
+I remember that the DJs/acts playing in the _Globus_ upstairs area of Tresor that night included Blake Baxter and Abe Duque. And guess what, here’s [a cool video Abe Duque made that very night](https://www.youtube.com/watch?v=uQj_LbZf3Lw). It shows him walking through Berlin, arriving at the club (you see that striking Tresor logo projected on the building) then entering. There’s also some cool footage of the vibe in Globus.
 
-[Downstairs in the vault (Vainqueur – Lyot at 46 mins) DJ Julien & Gonzague ](https://www.youtube.com/watch?v=b8R0x5cv9I8&list=PLL0yuimDKsEPpgs38NebYId8fMEVC8Ui5&index=29)
+One of my strongest memories of the night was hearing Vainqueur’s _Lyot_ while we were downstairs in the basement. The track is a Basic Channel classic and, while on the harder end of their output, it feels to me like it was tailor-made for environs such as the one we were in. What a moment! So imagine my delight when I found [a live recording of that set by DJs Julien & Gonzague with Lyot at 46 minutes in](https://www.youtube.com/watch?v=b8R0x5cv9I8&list=PLL0yuimDKsEPpgs38NebYId8fMEVC8Ui5&index=29). So good to be able to relive the moment!
 
-Cool video that Abe Duque took that night of him walking through Berlin, entering the club (spotlight with logo on building) and some footage of the vibe in Globus. https://www.youtube.com/watch?v=uQj_LbZf3Lw
+Lastly, here are some excellent articles (with photos) I found on my internet travels which are worth a look.
 
-The bit I remember is [this DJ Rasoul tune](https://www.discogs.com/master/1024893-DJ-Rasoul-Deep-Inside-EP)https://www.discogs.com/master/1024893-DJ-Rasoul-Deep-Inside-EP playing. (the best mix isn’t on youtube).
-
-Good articles inc photos
-- https://bldgblog.com/2007/01/tresor/
-- http://www.lovefromberlin.net/tresor-a-history-of-berlins-iconic-music-venues/
-
-
-
+- [_Tresor_ by BLDGBLOG](https://bldgblog.com/2007/01/tresor/)
+- [_Tresor: A History of Berlin’s Iconic Music Venues_](http://www.lovefromberlin.net/tresor-a-history-of-berlins-iconic-music-venues/) on the _Love from Berlin_ blog
