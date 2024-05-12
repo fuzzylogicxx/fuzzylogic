@@ -1,7 +1,7 @@
 ---
 date: 2024-05-12T16:33:00Z
 title: Memories of a night at Tresor, 2005
-description: 
+description: Our night at a legendary club in Berlin 
 tags:
 - note
 - memory
@@ -10,7 +10,7 @@ tags:
 - berlin
 - music
 noteWithTitle: true
-draft: true
+draft: false
 ---
 I was recently sorting through some old stuff when I found a tatty old poster I used to love and that brought back good memories. It shows the [gated basement vault of the original Tresor nightclub](https://bldgblog.com/wp-content/uploads/2007/01/368327890_ce3550f954_o.jpg) at Potsdamer Platz, Berlin. Smoke is billowing out of the room dramatically and it includes the text _The Extremist_. I bought or otherwise acquired this poster on a night in 2005 when me and friends Davie and Tom visited the famous club during a trip to Berlin.
 ---
