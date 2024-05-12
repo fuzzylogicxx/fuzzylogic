@@ -13,6 +13,6 @@ This was a great watch. Big Zuu (Zubair Hassan) approached his pilgrimage with g
 
 > Chef and rapper Big Zuu makes a pilgrimage to Mecca on a personal spiritual journey to try and understand more about his faith and what it means to be 'a good Muslim'.
 
-I really liked some of the contradictory things Big Zuu tried to reconcile. For example could he be a good mulsim but also enjoy some western ways such as alcohol? How would he feel being in Saudi Arabia (Jeddah and Mecca) in light of negative way the region is stereotyped, and is the fee of nearly £8000 paid to the Saudi government the best place to use his money.
+I really liked some of the contradictory things Big Zuu tried to reconcile. For example could he be a good mulsim but also enjoy some western ways such as alcohol? How would he feel being in Saudi Arabia (Jeddah and Mecca) in light of negative way the region is stereotyped? And is the fee of nearly £8000 paid to the Saudi government the best place to use his money?
 
-In the end there’s a nice theme where Zuu say he’s not perfect nor will he become so but that understanding his faith is just part of striving to become the best version of himself.
+In the end there’s a nice theme where Zuu say he’s not perfect nor will he become so… but that understanding his faith is part of striving to become the best version of himself.
