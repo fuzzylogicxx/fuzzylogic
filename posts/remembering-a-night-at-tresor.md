@@ -21,7 +21,7 @@ Anyway while reminiscing I embarked on a little bit of internet spelunking. It t
 
 I remember that the DJs/acts playing in the _Globus_ upstairs area of the club that night included Blake Baxter and Abe Duque. And guess what, here’s [a cool video Abe Duque made that very night](https://www.youtube.com/watch?v=uQj_LbZf3Lw). It shows him walking through Berlin, arriving at the club (you see that striking Tresor logo projected on the building) then entering. There’s also some cool footage of the vibe in Globus.
 
-One of my strongest memories of the night was hearing Vainqueur’s _Lyot_ while we were downstairs in the basement. The track is a Basic Channel classic and, while on the harder end of their output, it feels to me like it was tailor-made for environs such as the one we were in. What a moment! So imagine my delight when I found [a live recording of that set by DJs Julien & Gonzague with Lyot at 46 minutes in](https://www.youtube.com/watch?v=b8R0x5cv9I8&list=PLL0yuimDKsEPpgs38NebYId8fMEVC8Ui5&index=29). So good to be able to relive the moment!
+One of my strongest memories of the night was hearing Vainqueur’s _Lyot_ while we were downstairs in the basement. The track is a Basic Channel classic and, while on the harder end of their output, it feels to me like it was tailor-made for environs such as the one we were in. What a moment! So imagine my delight when I found [a live recording of that set by DJs Julien & Gonzague with Lyot at 46 minutes](https://youtu.be/b8R0x5cv9I8?si=6mkt7V0TKBenVlcc&t=2745). So good to be able to relive the moment!
 
 Lastly, here are some excellent articles (with photos) I found on my internet travels which are worth a look.
 
