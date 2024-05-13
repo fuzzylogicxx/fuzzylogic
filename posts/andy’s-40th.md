@@ -10,5 +10,6 @@ tags:
   - music
   - djing
 location: Dumbarton Road, Glasgow
+draft: true
 ---
 Wendy Taylor, Robert, Ragnar solveig Oli Andrew Martin Izzie Jamie
