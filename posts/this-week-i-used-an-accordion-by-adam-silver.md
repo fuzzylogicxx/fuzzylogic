@@ -1,8 +1,7 @@
 ---
 title: This week I used an accordion (by Adam Silver)
 date: 2024-05-18
-description: Martin introduces the “Now” page concept and explains how he
-  approached it using Eleventy
+description: Adam describes how he presents risks with a UI pattern, asks for previous rationale, and presents alternatives.
 tags:
   - link
   - ux
@@ -11,7 +10,7 @@ tags:
   - pragmatism
   - search
   - accessibility
-linkTarget: https://www.martingunnarsson.com/posts/right-here-right-now/
+linkTarget: https://ckarchive.com/b/n4uohvh8pzr7ou7q339qeh7o4eggghl
 ---
 I loved this insight into Adam Silver’s thought process. And it came at a timely moment since at work I’m currently trying to promote evidence-based, considered choices regarding user interface patterns.
 ---
