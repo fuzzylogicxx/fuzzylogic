@@ -12,7 +12,7 @@ tags:
 location: Lynch’s Bar, London Road, Glasgow
 draft: true
 ---
-I just had a brilliant time 
+Clair and I just had a brilliant time at our friend’s 40th.
 
 upstairs at Lynch’s Bar, (The Olde Burnt Barns) London Road, Glasgow.
 
@@ -27,7 +27,7 @@ Craigy Moog
 Woody
 BS crew pete
 
-Played two sets. One at the start where I got to play Komiko and Dayton. Asked by Andys sister to play Stevie Wonder’s while they brought a cake happy birthday but had to tell them I was warned explicitly not to play it!
+Played two sets. One at the start where I got to play Komiko, Dayton, A Certain Ratio’s “Constant Curve” and Krush’s House Arrest. Asked by Andys sister to play Stevie Wonder’s while they brought a cake happy birthday but had to tell them I was warned explicitly not to play it!
 
 second set where i played Mr K edit, Freeeze and Sylvester much to Roberts and the Stirling crew’s delight and delgado jazz works.
 
