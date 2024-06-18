@@ -3,15 +3,15 @@ noteWithTitle: true
 draft: false
 pageSpecificRobotsDirective: noindex, nofollow
 date: 2024-02-21
-location: Lynch’s Bar, London Road, Glasgow
+location: Maki & Ramen, Fountainbridge, Edinburgh
 title: Catch-up with Gayle
 tags:
   - note
   - friends
   - dining-out
-description: Great night seeing friends, playing records and celebrating
+description: Long-overdue catch-up with a good friend
 ---
-Had a lovely catch-up with Gayle over lunch while in Edinburgh for work today. We went to Maki and Ramen on Fountainbridge. I had tonkotsu (broth, egg and noodles) with some vegetable gyoza and it was all pretty tasty.
+Had a lovely catch-up with Gayle over lunch while in Edinburgh for work today. We went to Maki and Ramen and I had tonkotsu (broth, egg and noodles) with some vegetable gyoza. It was all pretty tasty.
 
 Gayle and I have been friends since university back in the nineties. Having only exchanged texts of late without seeing each other, a catch-up in person was long overdue.
 
