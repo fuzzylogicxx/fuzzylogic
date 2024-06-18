@@ -2,7 +2,7 @@
 noteWithTitle: true
 draft: false
 pageSpecificRobotsDirective: noindex, nofollow
-date: 2024-02-21
+date: 2024-02-21T17:00:00Z
 location: Maki & Ramen, Fountainbridge, Edinburgh
 title: Catch-up with Gayle
 tags:
