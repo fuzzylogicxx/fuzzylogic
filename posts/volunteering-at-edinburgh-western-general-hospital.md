@@ -4,7 +4,7 @@ draft: false
 title: Volunteering at Edinburgh Western General Hospital
 description: An enjoyable break meeting other workmates and doing something worthwhile
 pageSpecificRobotsDirective: noindex, nofollow
-date: 2024-04-09T17:00
+date: 2024-06-18T17:00
 tags:
   - note
   - volunteering
