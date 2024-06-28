@@ -21,4 +21,4 @@ Our job today was to tidy the area surrounding the FACE garden. The garden serve
 
 Supervised by the conservation charity [TCV](https://www.tcv.org.uk/), we tooled up and set about weeding the garden and paved areas. It was a sunny day, we chatted while we worked to colleagues we hadn’t met, and by the end you could see we had made a significant dent.
 
-I hope we made a small difference and I certainly enjoyed doing it and would do so again. Thanks to my employer for the opportunity.
+I hope we made a useful contribution and I certainly enjoyed doing it and would do so again. Thanks to my employer for the opportunity.
