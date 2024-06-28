@@ -8,6 +8,7 @@ tags:
 - school
 - kids
 - careers
+- connection
 - work
 - softwareengineering
 - community
