@@ -57,7 +57,17 @@ The minimum node.js version (used as the runtime for building the site including
 
 I don’t currently have one, having previously tried both Netlify CMS and Forestry for a while then gave up on them. I currently [use github.com as my CMS](https://fuzzylogic.me/posts/how-i-use-github-as-jamstack-cms/). That works but isn’t ideal. I’m looking for another free or cheap solution.
 
-### Content features
+### Contact form
+
+I use [Netlify Forms](https://docs.netlify.com/forms/setup/#html-forms) for this. That gives me the server-side handling, database storage and admin management aspects of a form for my otherwise-static site.
+
+### Photos section
+
+There’s a photos index page and a page for individual photos. I’m not 100% sure why I created this.
+
+Photos are fetched from Cloudinary using an 11ty [JavaScript data file](https://www.11ty.dev/docs/data-js/). I note that I’ve set it to only fetch those photos when the node environment is `production`. One of the effects of that seems to be that the /photos/ page is not generated (you get a 404) when I build the site locally. I think that’s because the `photos` data collection is empty therefore cannot be paginated therefore the page is not generated.
+
+### Detailed features
 
 #### Readable time
 
@@ -69,11 +79,6 @@ I have the following pages:
 - _all tags_ page
 - all posts tagged with [tag]
 
-#### Photos section
-
-There’s a photos index page and a page for individual photos. I’m not 100% sure why I created this.
-
-Photos are fetched from Cloudinary using an 11ty [JavaScript data file](https://www.11ty.dev/docs/data-js/). I note that I’ve set it to only fetch those photos when the node environment is `production`. One of the effects of that seems to be that the /photos/ page is not generated (you get a 404) when I build the site locally. I think that’s because the `photos` data collection is empty therefore cannot be paginated therefore the page is not generated.
 
 ## Actions I’ve realised I can take
 
@@ -81,3 +86,7 @@ Photos are fetched from Cloudinary using an 11ty [JavaScript data file](https://
 - …
 
 To be continued!
+
+## Update Sunday 30-06-24
+
+I’ve addressed the “a means of contacting me” item on my wants list by [adding a contact form using Netlify forms](https://github.com/fuzzylogicxx/fuzzylogic/pull/96).
