@@ -158,7 +158,7 @@
   }
 
   p, li, blockquote {
-    max-width: var(--measure);
+    max-inline-size: var(--measure);
   }
 
   h2, h3 {
@@ -205,6 +205,15 @@
 
   input, button, textarea, select {
     font: inherit;
+  }
+
+  input, textarea {
+    width: 100%;
+    max-inline-size: var(--measure);
+  }
+
+  label {
+    display: block;
   }
 
   svg {
@@ -480,6 +489,10 @@
       // Feels like nesting should *just work?*
     }
 
+    &--small > * + * {
+      --flow-gap: var(--space-s, 1rem);
+    }
+
     &--large > * + * {
       --flow-gap: var(--space-l, 1rem);
     }
@@ -610,6 +623,12 @@
     & > svg {
       width: 0.75em;
       height: 0.75em;
+    }
+  }
+
+  .form__fields {
+    > * + * {
+      margin-top: 1em;
     }
   }
 
