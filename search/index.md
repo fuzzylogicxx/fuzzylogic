@@ -4,7 +4,7 @@ title: Search
 description: Seek and ye might find.
 eleventyNavigation:
   key: Search
-  order: 4
+  order: 5
 ---
 
 <form action="https://www.google.co.uk/search" method="get" class="search">
