@@ -12,7 +12,7 @@ tags:
   - scotland
 location: Sanquar
 ---
-Having a lovely Sunday morning stroll through a land art installation with Clair and Rudy. Here’s a bit about this interesting place:
+Having a lovely Sunday morning stroll with Clair and Rudy through [Crawick Multiverse](https://www.crawickmultiverse.co.uk/), a land art installation. Here’s a bit about this interesting place:
 
 > Nestled within the rolling hills of Upper Nithsdale in Dumfries and Galloway, this major land restoration project has transformed a former open cast coal mine into a spectacular artland and public amenity.
 
