@@ -3,7 +3,6 @@ noteWithTitle: true
 draft: false
 title: Visit to Crawick Multiverse
 description: A Saturday morning stroll through a land art installation with Clair and Rudy
-pageSpecificRobotsDirective: noindex
 date: 2024-05-19T11:00
 tags:
   - note
