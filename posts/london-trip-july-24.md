@@ -5,45 +5,32 @@ description: Catching friends and enjoying a boat trip in the Big Smoke
 tags:
 - entry
 - web
+- friends
+- london
+- music
+- clothes
 draft: true
 ---
 I had a fantastic time in London last weekend.
 ---
 
-When my pal Mark visited Glasgow in May for The Queen’s Park Weekender he asked if I’d like to join him on his Soulsaver boat party in July – maybe even to play some records – and since I hadn’t caught him down south for a while I gratefully accepted and put it in the calendar.
-
+When my pal Mark visited Glasgow in May for The Queen’s Park Weekender he asked if I’d like to join him on his [Soulsaver boat party](https://ra.co/events/1866753) in July – maybe even to play some records – and since I hadn’t visited him down south for a while I gratefully accepted and put it in the calendar.
 
 ## Thursday
 
-
 I left on Thursday morning having bought a cheaper train ticket using [Avanti Superfare.](https://www.avantisuperfare.co.uk/) That night, after a stroll through a buzzing Chinatown I met Rob, Kirsty, Johnnie and Kate for dinner at [Machiya](https://www.machi-ya.co.uk/). We had a great little meal. My highlights were the Nasu Dengaku (miso-glazed aubergine), Broccoli Itame, Pork Katsudon Donburi and the lovely low-alc Hitachino Ginger Lager.
-
 
 After dinner we went to the ICA (Institute for Contemporary Arts) to check [10 Years of Wisdom Teeth](https://www.ica.art/live/wisdom-teeth) which featured Facta & K-LONE (live), Tristan Arp (live) and Surgeon’s Girl (live). We all enjoyed this although I reckon the music might have flowed a little better if the sequence of acts were reversed. Still, nice venue, nice gig and I also enjoyed their [Sunshine Kölsch lager](https://thegoodnessbrew.co/products/sunshine-kolsch-lager-4-7). Afterwards, we walked together for a bit then when Jonnie and Kate caught the tube at Leicester Square I powered on home. I love walking around cities.
 
-
 ## Friday
-
 
 With a free schedule, my plan was a blissful day of walking, soaking up summer vibes and popping into various record and clothes shops. I’d head southeast from my hotel’s location at Russell Square to Spittalfields then make a beeline north to Stoke Newington via Hoxton and Dalston. 
 
+I started by heading along Clerkenwell Rd. I took a turn at Old Street onto Goswell Rd for a brief detour to see The Barbican Centre. The surrounding area really is a concrete jungle to get lost in. It’s kinda otherwordly! I enjoyed that and am now keen to go to a gig there.
 
-I started by heading along Clerkenwell rd. I took a brief detour around The Barbican Centre. The surrounding area really is a concrete jungle you can get lost in. It’s kinda otherwordly! I enjoyed it and am now keen to go to a gig there.
+Next, I headed for breakfast at [The Breakfast Club, Spitalfields](https://thebreakfastclubcafes.com/spitalfields/). I enjoyed some turkish eggs and a nice americano while reading about a [global IT collapse.](https://www.bbc.co.uk/news/articles/cp4wnrxqlewo). From there it was on to a few shops in and around the Spitalfields Market – [Goodhood](https://goodhoodstore.com/), YMC and the like. It’s cool around there!
 
-
-I kept walking to Spitalfields via Old St and Finsbury square. Breakfast club turkish eggs and nice americano. 
-
-
-Goodhood. 
-
-
-Spitalfields , Shoreditch 
-
-
-Nice dark denim shirt at Sunspel on redchurch st. Folk’s trousers are quite nice, but bit of a luxury I don’t need. 
-
-
-Hoxton. 
+Fuelled and ready to go, I started walking through Shoreditch. Smoking Goat, SNS.
 
 
 LV: bozak ar-4. Void speakers. Sounded good!
