@@ -2,6 +2,7 @@
 date: 2024-07-28T09:14:53.000+00:00
 title: London trip July 2024
 description: Catching friends and enjoying a boat trip in the Big Smoke
+pageSpecificRobotsDirective: "noindex, nofollow"
 tags:
 - entry
 - web
@@ -14,7 +15,7 @@ draft: true
 I had a fantastic time in London last weekend.
 ---
 
-When my pal Mark visited Glasgow in May for The Queen’s Park Weekender he asked if I’d like to join him on his [Soulsaver boat party](https://ra.co/events/1866753) in July – maybe even to play some records – and since I hadn’t visited him down south for a while I gratefully accepted and put it in the calendar.
+When my pal Mark visited Glasgow in May for The Queen’s Park Weekender he asked if I’d like to join him on his [Soulsaver boat party](https://ra.co/events/1866753) in July – maybe even to play some records. Since I hadn’t visited him down south for a while I gratefully accepted and put it in the calendar.
 
 ## Thursday
 
@@ -28,15 +29,21 @@ With a free schedule, my plan was a blissful day of walking, soaking up summer v
 
 I started by heading along Clerkenwell Rd. I took a turn at Old Street onto Goswell Rd for a brief detour to see The Barbican Centre. The surrounding area really is a concrete jungle to get lost in. It’s kinda otherwordly! I enjoyed that and am now keen to go to a gig there.
 
-Next, I headed for breakfast at [The Breakfast Club, Spitalfields](https://thebreakfastclubcafes.com/spitalfields/). I enjoyed some turkish eggs and a nice americano while reading about a [global IT collapse.](https://www.bbc.co.uk/news/articles/cp4wnrxqlewo). From there it was on to a few shops in and around the Spitalfields Market – [Goodhood](https://goodhoodstore.com/), YMC and the like. It’s cool around there!
+Next, I headed for breakfast at [The Breakfast Club, Spitalfields](https://thebreakfastclubcafes.com/spitalfields/). I enjoyed some turkish eggs and a nice americano while reading about an unfolding [global IT collapse.](https://www.bbc.co.uk/news/articles/cp4wnrxqlewo). From there it was on to some shops in and around the Spitalfields Market – [Goodhood](https://goodhoodstore.com/), YMC and the like. It’s cool around there!
 
-Fuelled and ready to go, I started walking through Shoreditch. Smoking Goat, SNS.
+Fuelled up and ready to go, I started walking through Shoreditch. Clair had recommended I eat at [Smoking Goat](https://www.smokinggoatbar.com/) and although it was bad timing to pass by as I was full, I peered in the window, saw it looked lovely inside and with dishes like _Masaman Smoked Short Rib_ on the menu, I’ll be back. I kept walking up Kingsland Road, stopping in at [Sneakersnstuff](https://www.sneakersnstuff.com/) then to grab a coffee at [Moko Made](https://www.instagram.com/mokomadecafe/?hl=en), a lovely little Japanese café. 
 
-
-LV: bozak ar-4. Void speakers. Sounded good!
-
+By now I had reached one of my planned stops – [Love Vinyl](https://www.instagram.com/lovevinyllondon/) in Dalston. I’ve been before and it’s a crate-digger’s dream. This time round I dug out and listened to a whole bunch of different reggae, house and disco. I also really enjoyed the sounds in the shop as they played through a new second-hand collection. Jean-Luc Ponty’s _Computer Incantations for World Peace_ sounded particularly nice through their Bozak ar-4 and Void speakers set-up as the afternoon sun shone through the windows. In the end I picked up some vintage New Jersey house from Larry Rauson and Cassio, a Janet Davis UK 12 on a Lover’s Rock tip and Unique’s What I got is what you need (which had been on the wants list for aeons – likely since the time I realised [it’s the sample source for 808 State’s Ancodia](https://www.whosampled.com/sample/165580/808-State-Ancodia-Unique-What-I-Got-Is-What-You-Need/)).
 
 Bread and butter farmhouse cafe. 
+
+Axe
+
+
+
+
+
+
 
 
 
