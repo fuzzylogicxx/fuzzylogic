@@ -41,15 +41,15 @@ Since I was near Kate’s Stoke Newington flat, this was an another good opportu
 
 ## Saturday
 
-I started the day at the [Sandwich Street Kitchen](https://sandwichstreetkitchen.co.uk/), whose meditteranean breakfast is banging. From there, iot was timew for a walk to Soho where I visited Maharishi before a spot more record shopping at Phonica, where I picked up a lovely new [Terre Thaemlitz 12″](https://www.discogs.com/release/31238626-Terre-Thaemlitz-Tranquilizer-Ep-2-Fina). From there I headed to King’s Cross and Coal Drops Yard. 
+I started the day at the [Sandwich Street Kitchen](https://sandwichstreetkitchen.co.uk/), whose meditteranean breakfast is banging. From there, it was time for a walk to Soho where I visited Maharishi before a spot more record shopping at Phonica, where I picked up a lovely new [Terre Thaemlitz 12″](https://www.discogs.com/release/31238626-Terre-Thaemlitz-Tranquilizer-Ep-2-Fina). From there I headed to King’s Cross and Coal Drops Yard. 
 
-It was a lively Saturday afternoon round tere. 
+It was a lively Saturday afternoon round there. Folks were watching The Wizard of Oz on a big screen while kids were playing in a nearby fountain. The shops and market stalls were buzzing. There were lots of cool food stalls which I would have loved to try but they were mobbed and I was short of time. So after grabbing some [stall merch](https://www.instagram.com/lilwongbakes/) for Clair I headed into Spiritland for a coffee, sandwich and to hear some stellar music played on a beautiful soundsystem. [Phillis Hyman’s Living inside your love](https://youtu.be/8XYGreWaCsA?si=us-VuXD4PZIMa4AI) really hit the spot.
 
-My final fling was Mark’s Soulsaver boat party. It was great fun. The boat was pretty ballin’. I playing a short warm-up set, mostly on the boogie tip but sneaking in the just-acquired Janet Davis reggae tune first. The other DJs, Guy and Mark, had loads more heavy artillery than me so after the first hour they took over and I enjoyed the view of the Thames and London landmarks from out on deck.
+My final fling was Mark’s Soulsaver boat party, leaving from Blackfriar’s Pier. It was great fun! The boat was pretty ballin’. I playing a short warm-up set, mostly on the boogie tip but sneaking in the just-acquired Janet Davis reggae tune first. The other DJs, Guy and Mark, had loads more heavy artillery than me so after the first hour they took over and I enjoyed the view of the Thames and London landmarks from out on deck.
 
 It was a real shame that our mutual friend Andy, who was also due to travel down from Glasgow and DJ, couldn’t make it due to the sudden death of his sister. We missed Andy and our thoughts were definitely with him.
 
-When we reached dry land around 11pm there was the option of an after-party but I’d been drinking pretty sensibly throughout the trip and enjoying decent sleeps so I continued in the same vein before my trip home in the morning. I was pretty proud of managing to control my natural FOMO!
+When we reached dry land around 11pm there was the option of an after-party but I’d been keeping it pretty sensible throughout the trip and enjoying decent sleeps so I continued in the same vein before my trip home in the morning. I was pretty proud of managing to control my natural FOMO!
 
 ## Lastly…
 
