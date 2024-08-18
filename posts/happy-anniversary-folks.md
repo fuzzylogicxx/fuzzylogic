@@ -13,7 +13,7 @@ tags:
   - food
 location: Glasgow
 ---
-I’ve reached the halfway point of short summer working weeks and long weekends, and they been great so far. I began this long weekend with lunch for my parents’ emerald anniversary at the [Broadcroft Hotel](https://www.broadcrofthotel.com/) in Kirkintilloch. My Uncle Liam was there too and we all really enjoyed it.
+I’ve reached the halfway point of short summer working weeks and long weekends, and they’ve been great so far. I began this long weekend with lunch at the [Broadcroft Hotel](https://www.broadcrofthotel.com/) in Kirkintilloch for my parents’ emerald anniversary. My Uncle Liam was there too and we all really enjoyed it.
 
 ---
 
