@@ -5,7 +5,6 @@ description: Catching friends and enjoying a boat trip in the Big Smoke
 pageSpecificRobotsDirective: "noindex, nofollow"
 tags:
 - entry
-- web
 - friends
 - london
 - music
