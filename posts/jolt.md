@@ -1,6 +1,6 @@
 ---
 title: Jolt
-description: "A morning dog walk that gave me pause for thought "
+description: "This morning dog walk gave me pause for thought"
 noteWithTitle: true
 pageSpecificRobotsDirective: noindex, nofollow
 date: 2024-08-22
@@ -10,7 +10,7 @@ tags:
   - mindfulness
 location: Queen’s Park, Glasgow
 ---
-On my morning walk in the park with Rudy, he had an anxious bark at a passing dog. I was caught in the crossfire and got a wee bite to the leg. Now, a while back that would have been unremarkable – he’s had long-term lead anxiety which appears aggressive and has given me some cuts and bruises. But, we’ve worked hard on it and he’s been doing brilliantly, so it was a surprise and a disappointment.
+On this morning’s park walk with Rudy, he had an anxious bark at a passing dog. I was caught in the crossfire and got a wee bite to the leg. Now, a while back that would have been unremarkable – he’s had long-term lead anxiety which appears aggressive and has given me some cuts and bruises. But, we’ve worked hard on it and he’s been doing brilliantly, so it was a surprise and a disappointment.
 
 But since my initial reaction, I’ve come to realise a couple of things and wanted to reflect on them here so that I can understand them and progress.
 
