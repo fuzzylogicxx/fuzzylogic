@@ -14,7 +14,7 @@ tags:
   - food
 location: Glasgow
 ---
-On arriving home after Friday morning’s dog walk I had received some records in the post. I recently deleted my Discogs wants-list – maintained for twenty years but a major distraction – and as a last joyful act I’d identified and have been plugging the key remaining collection gaps. One of those was The Blue Nile’s _Tinseltown in the rain_ – a classic Scottish pop moment with beautiful production – and I enjoyed a brief listen before heading out.
+On arriving home on Friday morning after the dog walk I had received some records in the post. I recently deleted my Discogs wants-list and to help bring that particular chase to an end had noted the last key remaining collection gaps and started plugging them. One of those was The Blue Nile’s _Tinseltown in the rain_ – a classic slice of Scottish pop with beautiful production – and I enjoyed a brief listen before heading out.
 
 ---
 
