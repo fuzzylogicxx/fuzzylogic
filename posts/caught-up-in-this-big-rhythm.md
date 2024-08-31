@@ -5,6 +5,7 @@ noteWithTitle: false
 pageSpecificRobotsDirective: noindex, nofollow
 date: 2024-08-18
 tags:
+  - entry
   - music
   - holiday
   - travel
