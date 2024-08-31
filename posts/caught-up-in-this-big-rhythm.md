@@ -3,7 +3,7 @@ title: Caught up in this big rhythm
 description: An enjoyable long weekend in Kippen and Glasgow
 noteWithTitle: false
 pageSpecificRobotsDirective: noindex, nofollow
-date: 2024-08-18
+date: 2024-08-26
 tags:
   - entry
   - music
