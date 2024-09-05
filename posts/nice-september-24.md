@@ -1,7 +1,8 @@
 ---
 title: Nice, September 24
-description: Nice
+description: Our first few days on the Cote D’Azur
 noteWithTitle: false
+pageSpecificRobotsDirective: noindex, nofollow
 date: 2024-09-04
 tags:
   - entry
