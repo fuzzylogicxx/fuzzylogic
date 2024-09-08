@@ -13,4 +13,4 @@ tags:
   - work
   - LLM
 ---
-Ethan assembles numerous technology articles, some of which are enthusiastic about generative AI and LLMs while others highlight the political, social and health risks.
+Ethan assembles numerous technology articles, some of which are enthusiastic about generative AI and LLMs while others highlight political, social and health impacts and risks.
