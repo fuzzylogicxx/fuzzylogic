@@ -13,7 +13,7 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Meta description", name: "description", widget: "string"}
       - {label: "Note with title", name: "noteWithTitle", widget: "boolean", default: false, required: false}
-      - {label: "Link Target", name: "noteWithTitle", widget: "string", required: false}
+      - {label: "Link Target", name: "linkTarget", widget: "string", required: false}
       - {label: "Page-specific robots directive", name: "pageSpecificRobotsDirective", widget: "string", required: false}
       - {label: "Publish Date", name: "date", widget: "datetime", default: {{now}}, date_format: "YYYY-MM-DD", time_format: "HH:mm"}
       - {label: "tags", name: "tags", widget: "list", ["link"]}
