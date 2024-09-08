@@ -7,7 +7,7 @@ noteWithTitle: false
 linkTarget: https://ethanmarcotte.com/wrote/generative/
 date: 2024-09-08
 tags:
-  - bookmark
+  - link
   - technology
   - AI
   - politics
