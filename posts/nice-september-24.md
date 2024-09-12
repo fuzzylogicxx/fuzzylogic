@@ -8,6 +8,7 @@ tags:
   - entry
   - holiday
   - france
+  - food
 draft: true
 ---
 Refs (I looked at on first days) to review in case I’ve missed anything below.
