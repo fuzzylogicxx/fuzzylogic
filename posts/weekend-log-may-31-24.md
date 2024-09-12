@@ -20,5 +20,3 @@ On Saturday morning I made the hour-long drive to Biggar and enjoyed a walk with
 Later, Clair and I went to No. 10 down the road to meet Mark, followed by Sophie and Anya. I had an interesting chat with Sophie where it turns out that some of the coaching techniques I’ve been learning at work (active listening, asking questions rather than offering solutions) are things she does all the time in her job as an educational psychologist.
 
 We continued on to the Stag and Thistle where we were joined by Tom, Lou and wee James, up from London. They’re still having bother finding a flat here but hopefully not for much longer. Craig F and Alan M soon joined. I couldn’t chat to them for long before leaving but it was nice to see them.
-
-A short hill-walk with my main dog-pal followed by a catch-up with friends makes for a good Saturday.
