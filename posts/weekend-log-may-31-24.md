@@ -1,7 +1,7 @@
 ---
-title: Weekend log 31st May ‘24
+title: Weekend log, 31st May ‘24
 description: Pizza, hill-walking with Rudy and time with friends makes for a good weekend
-noteWithTitle: false
+noteWithTitle: true
 pageSpecificRobotsDirective: noindex, nofollow
 date: 2024-06-01T21:38
 tags:
