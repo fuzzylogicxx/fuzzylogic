@@ -74,7 +74,7 @@ Dinner at La Jetée. Blanquette sur La mer. Scallops, John Dory, clams, veg, sau
 Thursday 
 Breakfast at hotel and I had _all_ the things. Great!
 Back to Nice. Lovely staff at hotel E’sprit d’Azur with recomms. 
-Place du pin great! Kalo’s Greek for Souvlaki. Went wandering, I visited Kosimi and bought a Japanese edition JBs record. Hotel Geneve for wee drink (lovely glass of wine of moment Rosé). Men playing chess with nickers on line behind! Burning Spear Marcus Garvey on. Chill at hotel then due to rain nipped round corner to Thai Fine (and it was fine, in fact it was great! Veg spring rolls and red beef curry super-tasty). 
+Place du pin great! Kalo’s Greek for Souvlaki. Went wandering, I visited Kosimi and bought a Japanese edition JBs record. [Cafe de Chineurs at Hotel Geneve](https://www.le-g-chineurs.com/en/bar) for wee drink (lovely glass of wine of moment Rosé). Men playing chess with nickers on line behind! Burning Spear Marcus Garvey on. Chill at hotel then due to rain nipped round corner to Thai Fine (and it was fine, in fact it was great! Veg spring rolls and red beef curry super-tasty). 
 
 
 
