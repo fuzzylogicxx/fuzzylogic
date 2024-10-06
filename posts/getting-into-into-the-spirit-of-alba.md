@@ -1,5 +1,5 @@
 ---
-title: Getting into into the Spirit of Alba
+title: Getting into the Spirit of Alba
 description: Whisky festival with friends
 noteWithTitle: true
 pageSpecificRobotsDirective: noindex, nofollow
