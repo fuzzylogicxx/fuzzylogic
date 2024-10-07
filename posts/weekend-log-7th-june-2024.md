@@ -20,3 +20,7 @@ The last week was challenging at work. A minor restructure is afoot and with tha
 To unwind after that week, Friday night consisted of watching Scotland play Finland at Hampden. A 2–2 draw to send Steve Clarke’s men off to the Euros.
 
 On Saturday morning I headed to Cathkin Braes for a walk with Rudy. What a view you get up there! You can see pretty much the entire city, and beyond as far as Ben Lomond.
+
+Later that day I visited Davie at his mum’s place in Troon. He’s over visiting following George’s death. We went to River Garden Cafe, Auchencruich for lunch and chatted about family and life.
+
+bad news about Mel, magic dinner at Maison Glaschu, drop Rudy at gran’s, FHC father Louis, back at M&L’s in BofA, dinner at home.
