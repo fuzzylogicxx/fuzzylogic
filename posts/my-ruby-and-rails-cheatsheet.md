@@ -27,6 +27,7 @@ This is not intended to be an authoritative guide but merely my notes from vario
 - [Class-level methods](#class-level-methods)
 - [Constants](#constants)
 - [Symbols](#symbols)
+- [Hashes](#hashes)
 - [ViewComponent](#viewcomponents)
 - [Instance Variables](#instance-variables)
 - [Methods](#methods)
@@ -273,6 +274,26 @@ hash = {a: 1, b: 2, c: 3}
 </figure>
 
 From what I can gather, colons identify something as a Symbol and the colon is at the beginning when its a method name or instance variable but at the end when its a hash key.
+
+## Hashes
+
+A Hash is a dictionary-like collection of unique keys and their values. They’re also called associative arrays. They’re similar to Arrays, but where an Array uses integers as its index, a Hash allows you to use any object type.
+
+Example:
+
+hash = {a: 1, b: 2, c: 3}
+
+### The fetch method for Hash 
+
+Use the fetch method as a neat one-liner to get the value of a Hash key or return something (such as false) if it doesn’t exist in the hash.
+
+<figure>
+
+``` ruby
+@options.fetch(:flush, false)
+```
+
+</figure>
 
 ## ViewComponents
 
