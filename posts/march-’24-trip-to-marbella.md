@@ -25,7 +25,7 @@ After my daily walk I enjoyed chilling on the balcony. I even allowed myself a w
 
 When hanging out in the apartment on my own at night I watched [The Creator](https://www.imdb.com/title/tt11858890/) which was fun, a bit of Curb your enthusiasm (final season) and some [Shogun](https://www.imdb.com/title/tt2788316/).
 
-Food-wise, when I was on my own I kept it simple with dinners at Venta las Pacos – they do stuff like Supa de Mariano, pepper steak + chips and flan. It’s cheap as chips and full of locals arriving after their work. Cibo is also decent, the Hamberguesa Casera at [Asador Nagüeles](https://asadornagueles.com/) is banging and there’s a wee joint (name escapes me) near the harbour where I had a cheap but perfect morning coffee and croissant and could just enjoy watching people go by.
+Food-wise, when I was on my own I kept it simple with dinners at Venta las Pacos – they do stuff like Supa de Mariano, pepper steak with chips and a dessert of flan. It’s cheap as chips and full of locals arriving after their work. Cibo is also decent, the Hamberguesa Casera at [Asador Nagüeles](https://asadornagueles.com/) is banging and there’s a wee joint (name escapes me) near the harbour where I had a cheap but perfect morning coffee and croissant and could just enjoy watching people go by.
 
 [Restaurante el cortijo](https://elcortijoestepona.com/menu/) – no tapas!!!  No pizza, pasta!!! Downpour. Home made apple cake, crème brûlée. monkfish clams prawns in almond almost curry sauce from great grandmother. Beautiful Tempranillo wine. Beef/ham. Tuna tataki. Patatas bravos. / 
 Pan y M ginger health shots / 
