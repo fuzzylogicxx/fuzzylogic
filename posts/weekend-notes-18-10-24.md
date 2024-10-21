@@ -1,9 +1,9 @@
 ---
 title: Weekend notes (18/10/24)
 description: Friends and family
-noteWithTitle: false
-date:
-  ? "{ now }"
+noteWithTitle: true
+pageSpecificRobotsDirective: noindex, nofollow
+date: 2024-10-21T22:23
 tags:
   - note
   - family
