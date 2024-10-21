@@ -1,5 +1,5 @@
 ---
-title: March ’24 trip to Marbella
+title: March ‘24 trip to Marbella
 description: Walking, music, food, scenery and friends
 noteWithTitle: false
 pageSpecificRobotsDirective: noindex, nofollow
@@ -30,7 +30,7 @@ Once Mark arrived we took a walk into the old town and, during a downpour, decid
 
 Clair was next to arrive. The three of us paid a visit to [the Trocadero](https://grupotrocadero.com/en/trocadero-beach/) for late lunch. We had delicious clams, chicken salad and even curry, with a glass of Marques de Riscal Verdejo which definitely hit the spot. It’s a great place.
 
-On the Sunday three of us visited Kala Kuala Chiringuito in San Pedro for another seafood special – more clams, this time with paella. It was then the long-ish walk home along the Paseo Maratimo where we were merry enough to belt out a Pet Shop Boys medley, taking especial pleasure in saying “Che Guevara and Debussy to a disco beat” in the style of Neil Tennant. We stopped in at [Victors beach bar](https://www.instagram.com/victors_beach_1978/?hl=en) where DJ Luis was playing Kerri Chandler (I could recognise those beats from half a mile off!) and we got talking to him and his Londoner friend (another Laurence). That was a great wee vibe. To finish the night we played pool at [That’s Life](https://www.instagram.com/thats_life_marbella/) and did Scotland proud by emerging victorious over our Spanish rivals.
+On the Sunday three of us visited [Kala Kuala Chiringuito](https://kalakalua.com/es) in San Pedro for another seafood special – more clams, this time with paella. It was then the long-ish walk home along the Paseo Maratimo where we were merry enough to belt out a Pet Shop Boys medley, taking especial pleasure in saying “Che Guevara and Debussy to a disco beat” in the style of Neil Tennant. We stopped in at [Victors beach bar](https://www.instagram.com/victors_beach_1978/?hl=en) where DJ Luis was playing Kerri Chandler (I could recognise those beats from half a mile off!) and we got talking to him and his Londoner friend (another Laurence). That was a great wee vibe. To finish the night we played pool at [That’s Life](https://www.instagram.com/thats_life_marbella/) and did Scotland proud by emerging victorious over our Spanish rivals.
 
 After Mark had left, Clair wanted to scratch her itch for Chinese food and we had a lovely meal at [Hong Kong restaurant](https://www.restaurantehk.com/).
 
