@@ -1,5 +1,5 @@
 ---
-title: Glesga on Film and Tough Luck event at Signal Sounds
+title: Tough Luck (with Glesga on Film) event at Signal Sounds
 description: Fun and interesting event hosted by the modular synth shop
 noteWithTitle: true
 date: 2024-10-25T22:36
