@@ -18,6 +18,8 @@ I caught up on some listening: [Cillian Murphy on Desert Island Discs](https://w
 
 Also on the headphones were _The Smile_ – both their [6 Music Artists in residence sessions](https://www.bbc.co.uk/programmes/m001whx3) and their new album _Wall of Eyes_ which is great.
 
+My book of choice during the trip was [The Inner Game of Tennis](https://fuzzylogic.me/posts/i’ve-just-read-the-inner-game-of-tennis-by-timothy-gallwey/) by Timothy Gallwey.
+
 As always, every day I took a long walk along the Paseo Maritimo (the promenade that looks right onto the sea, Gibraltar and Morocco in the distance). With its scenery and mix of walkers, cyclists, dogs and restaurants this walk always makes me feel relaxed and happy. A couple of the days I took a detour to [Buena Vida](https://buenavidamarbella.es/) for a tasty breakfast wrap and coffee. There’s a Scottish guy working there – he’s from Shetland if memory serves me rightly.
 
 After my daily walk I enjoyed chilling on the balcony and occasionally even snuck in a wee afternoon glass of vino while listening to some music. Ain’t gonna lie – that is a nice way to relax on your holiday.
