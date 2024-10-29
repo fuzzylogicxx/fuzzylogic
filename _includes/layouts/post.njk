@@ -7,6 +7,16 @@ templateClass: post-main
   <div class="l-center l-center--wrapper-narrow">
 
     <article class="l-flow post h-entry prose" itemscope itemtype="http://schema.org/BlogPosting">
+      <div>{{ topLevelCategory }}</div>
+
+      <div>
+        <div>A {{ postType }} posted:</div>
+        <div>
+          <time itemprop="datePublished" class="dt-published" datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time>
+          {{ page.date | readableTime }}
+        </div>
+        <div>{% if(location) -%}{{ location }}{% endif -%}</div>
+      </div>
 
       <header class="post__header">
         {%- if (title) -%}
@@ -15,13 +25,6 @@ templateClass: post-main
           {% set article_title = "Note: " + (page.date | readableDate) + "," + (page.date | readableTime) %}
         {%- endif -%}
         {%- if (article_title) -%}<h1 class="p-name" itemprop="headline">{{ article_title }}</h1>{%- endif -%}
-
-        <div class="post__meta">
-          <time itemprop="datePublished" class="dt-published" datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time>
-          {% if(tags[1] === 'note') -%}
-            at {{ page.date | readableTime }}{% if(location) -%}, {{ location }}{% endif -%}
-          {% endif -%}
-        </div>
       </header>
 
       {% if linkTarget %}

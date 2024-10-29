@@ -4,6 +4,17 @@
 <div class="h-feed">
   {% for post in postslist %}
   <article class="l-flow h-entry prose">
+
+      <div>{{ post.data.topLevelCategory }}</div>
+      <div>
+        <div>A {{ post.data.postType }} posted:</div>
+        <div>
+          <time class="dt-published" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
+          {{ post.date | readableTime }}
+        </div>
+        <div>{% if(post.data.location) -%}{{ post.data.location }}{% endif -%}</div>
+      </div>
+
     <header>
       <div class="post__meta">
         <time class="dt-published" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
