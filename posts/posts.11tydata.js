@@ -8,6 +8,9 @@ module.exports = {
     "aspectRatioHeight": 240
   },
   eleventyComputed: {
+    postType: (data) => data.tags[1],
+    topLevelCategory: (data) => data.tags[2],
+
     /**
      * Custom handling for draft posts so they don’t show up unexpectedly.
      * If a page has `draft: true` in its YAML frontmatter then this snippet

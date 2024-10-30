@@ -129,6 +129,9 @@
     font-family: 'Source Sans Pro', system-ui, sans-serif;
 
     // At the :root level I like being explicit about the browser font-size default (16px).
+    // To do: but having read something recently about how this could leak affect a web component,
+    // maybe I should and can remove this. (Although as the value is 100% it’s probs fine. But is what I
+    // have really necessary?)
     font-size: 100%;
   }
 
@@ -493,6 +496,10 @@
       --flow-gap: var(--space-s, 1rem);
     }
 
+    &--3xs > * + * {
+      --flow-gap: var(--space-3xs, 1rem);
+    }
+
     &--large > * + * {
       --flow-gap: var(--space-l, 1rem);
     }
@@ -678,6 +685,11 @@
     // --flow-space: 1em;
   }
 
+  // Individual article heading
+  .post__heading {
+
+  }
+
   .post__meta {
     color: var(--color-grey-text);
     font-size: var(--step--1);
@@ -689,11 +701,6 @@
         color: var(--color-link-hover);
       }
     }
-  }
-
-  .post__header {
-    display: flex;
-    flex-direction: column-reverse;
   }
 
   .post__footer {
