@@ -7,24 +7,20 @@ templateClass: post-main
   <div class="l-center l-center--wrapper-narrow">
 
     <article class="l-flow post h-entry prose" itemscope itemtype="http://schema.org/BlogPosting">
-      <div>{{ topLevelCategory }}</div>
-
-      <div>
-        <div>A {{ postType }} posted:</div>
-        <div>
-          <time itemprop="datePublished" class="dt-published" datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time>
-          {{ page.date | readableTime }}
-        </div>
-        <div>{% if(location) -%}{{ location }}{% endif -%}</div>
-      </div>
-
       <header class="post__header">
         {%- if (title) -%}
           {% set article_title = title %}
         {%- else -%}
           {% set article_title = "Note: " + (page.date | readableDate) + "," + (page.date | readableTime) %}
         {%- endif -%}
-        {%- if (article_title) -%}<h1 class="p-name" itemprop="headline">{{ article_title }}</h1>{%- endif -%}
+        {%- if (article_title) -%}<h1 class="post__heading p-name" itemprop="headline">{{ article_title }}</h1>{%- endif -%}
+
+        <div class="post__meta">
+          <span class="u-visually-hidden">A {{ page.data.postType }} posted on</span>
+          <time itemprop="datePublished" class="dt-published" datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time>
+          in
+          <a rel="tag" href="/tags/{{ topLevelCategory | url }}" class="tag">{{ topLevelCategory }}</a>
+        </div>
       </header>
 
       {% if linkTarget %}

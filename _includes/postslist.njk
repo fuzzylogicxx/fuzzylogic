@@ -5,20 +5,17 @@
   {% for post in postslist %}
   <article class="l-flow h-entry prose">
 
-    <header>
-
-      <div class="l-flow l-flow--3xs">
-        {% if (post.data.tags[1] !== 'note' or post.data.noteWithTitle) -%}
-          <h3 class="feed-entry-title"><a rel="bookmark" class="p-name u-url" href="{{ post.url | url }}">{{ post.data.title }}</a></h3>
-        {% else -%}
-          {# <p><a href="{{ post.url | url }}">{{ post.date | readableTime }}</a> <span>·</span> {{ post.data.location }}</span></p> #}
-        {% endif -%}
-        <div class="post__meta">
-          <span class="u-visually-hidden">A {{ post.data.postType }} posted on</span>
-          <time class="dt-published" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
-          in
-          <a rel="tag" href="/tags/{{ post.data.topLevelCategory | url }}" class="tag">{{ post.data.topLevelCategory }}</a>
-        </div>
+    <header class="l-flow l-flow--3xs">
+      {% if (post.data.tags[1] !== 'note' or post.data.noteWithTitle) -%}
+        <h3 class="feed-entry-title"><a rel="bookmark" class="p-name u-url" href="{{ post.url | url }}">{{ post.data.title }}</a></h3>
+      {% else -%}
+        {# <p><a href="{{ post.url | url }}">{{ post.date | readableTime }}</a> <span>·</span> {{ post.data.location }}</span></p> #}
+      {% endif -%}
+      <div class="post__meta">
+        <span class="u-visually-hidden">A {{ post.data.postType }} posted on</span>
+        <time class="dt-published" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
+        in
+        <a rel="tag" href="/tags/{{ post.data.topLevelCategory | url }}" class="tag">{{ post.data.topLevelCategory }}</a>
       </div>
     </header>
     <div class="l-flow e-content">
@@ -45,9 +42,13 @@
       {{ post.templateContent | markdownStringToHTML | safe }}
     {%- endif %}
     </div>
-    <footer class="stack">
-      Continue reading <span class="u-visually-hidden">“{{ post.data.title }}”</span>
-    </footer>
+    {% if (post.data.page.excerpt) -%}
+      <footer class="stack">
+        <a rel="bookmark" class="p-name u-url" href="{{ post.url | url }}">
+          Continue reading <span class="u-visually-hidden">“{{ post.data.title }}”</span>
+        </a>
+      </footer>
+    {%- endif %}
     {# <footer class="stack">
       <div class="cluster">
         <ul class="tags">
