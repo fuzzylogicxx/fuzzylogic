@@ -493,6 +493,10 @@
       --flow-gap: var(--space-s, 1rem);
     }
 
+    &--3xs > * + * {
+      --flow-gap: var(--space-3xs, 1rem);
+    }
+
     &--large > * + * {
       --flow-gap: var(--space-l, 1rem);
     }

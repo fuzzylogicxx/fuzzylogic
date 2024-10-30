@@ -5,28 +5,21 @@
   {% for post in postslist %}
   <article class="l-flow h-entry prose">
 
-      <div>{{ post.data.topLevelCategory }}</div>
-      <div>
-        <div>A {{ post.data.postType }} posted:</div>
-        <div>
-          <time class="dt-published" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
-          {{ post.date | readableTime }}
-        </div>
-        <div>{% if(post.data.location) -%}{{ post.data.location }}{% endif -%}</div>
-      </div>
-
     <header>
-      <div class="post__meta">
-        <time class="dt-published" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
-        {% if(post.data.tags[1] === 'note') -%}
-          at <a href="{{ post.url | url }}">{{ post.date | readableTime }}</a>{% if(post.data.location) -%}, {{ post.data.location }}{% endif -%}
+
+      <div class="l-flow l-flow--3xs">
+        {% if (post.data.tags[1] !== 'note' or post.data.noteWithTitle) -%}
+          <h3 class="feed-entry-title"><a rel="bookmark" class="p-name u-url" href="{{ post.url | url }}">{{ post.data.title }}</a></h3>
+        {% else -%}
+          {# <p><a href="{{ post.url | url }}">{{ post.date | readableTime }}</a> <span>·</span> {{ post.data.location }}</span></p> #}
         {% endif -%}
+        <div class="post__meta">
+          <span class="u-visually-hidden">A {{ post.data.postType }} posted on</span>
+          <time class="dt-published" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
+          in
+          <a rel="tag" href="/tags/{{ post.data.topLevelCategory | url }}" class="tag">{{ post.data.topLevelCategory }}</a>
+        </div>
       </div>
-      {% if (post.data.tags[1] !== 'note' or post.data.noteWithTitle) -%}
-        <h3 class="feed-entry-title"><a rel="bookmark" class="p-name u-url" href="{{ post.url | url }}">{{ post.data.title }}</a></h3>
-      {% else -%}
-        {# <p><a href="{{ post.url | url }}">{{ post.date | readableTime }}</a> <span>·</span> {{ post.data.location }}</span></p> #}
-      {% endif -%}
     </header>
     <div class="l-flow e-content">
     {% if (post.data.page.excerpt) -%}
@@ -52,6 +45,9 @@
       {{ post.templateContent | markdownStringToHTML | safe }}
     {%- endif %}
     </div>
+    <footer class="stack">
+      Continue reading <span class="u-visually-hidden">“{{ post.data.title }}”</span>
+    </footer>
     {# <footer class="stack">
       <div class="cluster">
         <ul class="tags">
