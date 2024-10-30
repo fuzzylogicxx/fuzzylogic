@@ -16,7 +16,7 @@ location: Glasgow
 ---
 That was a productive and fun weekend.
 
-On Friday, Clair was meeting her mum and cousin in town so I ordered a Kebabish (fish tikka and mutter pilau rice – banging) and watched episode 4 of the _The Penguin_.
+On Friday, Clair was meeting her mum and cousin in town so this was my quiet night in. I settled down to watch episode 4 of the _The Penguin_ and ordered fish tikka from [Kebabish](https://www.kebabishgrill.co.uk/) – banging).
 
 ---
 
