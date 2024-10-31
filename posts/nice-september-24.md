@@ -9,7 +9,6 @@ tags:
   - holiday
   - france
   - food
-draft: true
 ---
 I now see why people love this part of the world. The dramatic coastline, beautiful deep blue Med, stunning buildings and balconies, incredible food scene, culture and history and buzz of activity… I could go on!
 
