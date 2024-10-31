@@ -22,7 +22,7 @@ module.exports = function(eleventyConfig) {
   // Run after the site has been built.
   // Ref: https://rknight.me/blog/using-pagefind-with-eleventy-for-search/
   eleventyConfig.on('eleventy.after', () => {
-    execSync(`npx pagefind --source _site --glob \"**/*.html\"`, { encoding: 'utf-8' })
+    execSync(`npx pagefind --site _site --glob \"**/*.html\"`, { encoding: 'utf-8' })
   })
 
 

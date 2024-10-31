@@ -14,7 +14,7 @@ eleventyNavigation:
   <button type="submit" class="submit" id="search-submit">Search with Google</button>
 </form> -->
 
-<link href="/_pagefind/pagefind-ui.css" rel="stylesheet">
+<link href="/pagefind/pagefind-ui.css" rel="stylesheet">
 
 <!-- <style>
   @media (prefers-color-scheme: dark) {
@@ -28,7 +28,9 @@ eleventyNavigation:
   }
 </style> -->
 
+<p>Type your search term into the form below.</p>
+
 <div id="search" class="search"></div>
 
-<script src="/_pagefind/pagefind-ui.js" onload="new PagefindUI({ element: '#search', showImages: false });"></script>
+<script src="/pagefind/pagefind-ui.js" onload="new PagefindUI({ element: '#search', showImages: false });"></script>
 
