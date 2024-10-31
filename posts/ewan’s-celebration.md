@@ -1,7 +1,7 @@
 ---
 title: Ewan’s celebration
 description: Marking the passing of a good man
-noteWithTitle: false
+noteWithTitle: true
 date: 2024-06-21T16:55
 tags:
   - note
