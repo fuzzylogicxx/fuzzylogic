@@ -7,7 +7,7 @@
     "build:sass": "sass --style=compressed src/sass:_includes/css",
     "watch:eleventy": "eleventy --serve",
     "build:eleventy": "eleventy",
-    "build:lambda": "netlify-lambda build _lambda",
+    "build:searchindex": "npx pagefind --site _site",
     "start": "npm-run-all build:sass --parallel watch:*",
     "build": "ELEVENTY_ENV=production npm-run-all build:*"
   },
