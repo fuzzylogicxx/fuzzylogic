@@ -92,6 +92,14 @@ It’s our job as designers and developers to use the appropriate purpose-built 
 * For triggering JavaScript-powered interactions I’ll typically use a `button`. However in disclosure patterns where the trigger and target element are far apart in the DOM [it can make sense to use a link as the trigger](https://fuzzylogic.me/posts/2021-01-24-adactio-journalaccessible-interactions/).
 * For buttons which are reliant on JavaScript, it’s best to use them within a strategy of progressive enhancement and not render them on the server but rather with client-side JavaScript. That way, if the client-side JavaScript is unsupported or fails, the user won’t be presented with a broken button.
 
+## Update: 23 November 2024
+
+Perhaps a better heuristic than David MacDonald’s mentioned above, is:
+
+Links are for [a simple connection to a resource](https://www.w3.org/TR/html401/struct/links.html); buttons are for actions.
+
+What I prefer about including “a resource” is that the “goes somewhere” definition of a link breaks down for anchors that instruct the linked resource to download (via the `download` attribute) rather than displyed in the browser, but this doesn’t. I also like the inclusion of _simple_ because some buttons (like the submit button of a search form) might finish by taking you to a resource (the search results page) but it’s a complex action not a _simple connection_; you’ve supplied a search query to search a database and get results.
+
 ## References
 
 * [Get safe](https://adactio.com/journal/17768), by Jeremy Keith
