@@ -98,7 +98,7 @@ Perhaps a better heuristic than David MacDonald’s mentioned above, is:
 
 Links are for [a simple connection to a resource](https://www.w3.org/TR/html401/struct/links.html); buttons are for actions.
 
-What I prefer about including “a resource” is that the “goes somewhere” definition of a link breaks down for anchors that instruct the linked resource to download (via the `download` attribute) rather than displyed in the browser, but this doesn’t. I also like the inclusion of _simple_ because some buttons (like the submit button of a search form) might finish by taking you to a resource (the search results page) but it’s a complex action not a _simple connection_; you’ve supplied a search query to search a database and get results.
+What I prefer about including _a resource_ is that the “goes somewhere” definition of a link breaks down for anchors that instruct the linked resource to download (via the `download` attribute) rather than render in the browser, but this doesn’t. I also like the inclusion of _simple_ because some buttons (like the submit button of a search form) might finish by taking you to a resource (the search results page) but that’s a complex action not a _simple connection_; you’re searching a database using your choice of search query.
 
 ## References
 
