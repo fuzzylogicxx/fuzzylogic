@@ -16,6 +16,6 @@ I’ve started reading [*A Promised Land*](https://uk.bookshop.org/a/4340/978024
 
 <figure>
   <a href="https://uk.bookshop.org/a/4340/9780241491515">
-    <img src="https://res.cloudinary.com/fuzzylogic/image/upload/q_auto,f_auto,w_640/v1606339531/a-promised-land-barack-obama_t3klf4.png" alt="Charity run for FreeAgent" loading="lazy" width="640">
+    <img eleventy:ignore src="https://res.cloudinary.com/fuzzylogic/image/upload/q_auto,f_auto,w_640/v1606339531/a-promised-land-barack-obama_t3klf4.png" alt="Charity run for FreeAgent" loading="lazy" width="640">
   </a>
 </figure>

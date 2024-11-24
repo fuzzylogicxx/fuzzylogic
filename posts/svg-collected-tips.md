@@ -33,9 +33,9 @@ SVG is an amazing technology which I regularly use for icons and occasionally fo
 
 It’s an image format (like jpg and png) but also an XML-based markup language. So it’s a bit like HTML in that you can “compose a whole from a bunch of parts” – but it is focused on graphics. As a web graphics technology it has many benefits, for example:
 
-- scalable, 
-- manipulable by CSS and JS, 
-- has a small file-size if well-optimised, and 
+- scalable,
+- manipulable by CSS and JS,
+- has a small file-size if well-optimised, and
 - can be made accessible.
 - It’s built for drawing in a way HTML and CSS are not.
 - It can guide users, reduce their cognitive load, and provide personality and moments of fun.
@@ -48,7 +48,7 @@ Let’s break down the key elements of the SVG coordinate system.
 
 ### Canvas
 
-The canvas is the area where the SVG content is drawn. It’s infinite in both dimensions therefore the SVG can be any size. 
+The canvas is the area where the SVG content is drawn. It’s infinite in both dimensions therefore the SVG can be any size.
 
 ### Viewport
 
@@ -63,7 +63,7 @@ Specify the viewport size by giving your `<svg>` element a width and height, e.g
   <!-- svg content -->
 </svg>
 ```
-  
+
 </figure>
 
 We _could_ specify units (such as `em` or `px`) but don’t need to. Unitless values are regarded as being set in _user space_ using _user units_ which effectively equate to pixels so our example above renders a 600px by 400px viewport.
@@ -73,7 +73,7 @@ The width of the viewport can also be set in CSS. Setting `width:100%` makes the
 ### Viewbox
 
 The _viewport coordinate system_ starts at the top left (0, 0) corner of the SVG viewport. The _user coordinate system_ is by default identical to that of the viewport, starting in the same place and with equal dimensions and units, however it can be modified using the `viewBox` attribute.
- 
+
 `viewBox` takes a value in the format: `x y width height`. The first two values set the upper-left corner of the viewbox and the second two its dimensions.
 
 You can set the aspect ratio of the viewbox to the same as for the SVG viewport, or differently.
@@ -84,7 +84,7 @@ Specifying a smaller viewbox than viewport results in cropping the graphic to th
 
 ## Arranging elements on a grid
 
-[Cassie Evans recommends](https://www.cassie.codes/posts/swipey-image-grids/) that when planning an arrangement of elements it’s nice to start with a simple grid using nice round numbers such as 100×100 – per the following `<svg>` – making it easy to then plot elements on top. You might even start by sketching with paper and pencil. 
+[Cassie Evans recommends](https://www.cassie.codes/posts/swipey-image-grids/) that when planning an arrangement of elements it’s nice to start with a simple grid using nice round numbers such as 100×100 – per the following `<svg>` – making it easy to then plot elements on top. You might even start by sketching with paper and pencil.
 
 <figure>
 
@@ -93,11 +93,11 @@ Specifying a smaller viewbox than viewport results in cropping the graphic to th
   <!-- svg content, perhaps <rect>s -->
 </svg>
 ```
-  
+
 </figure>
 
 <figure>
-  <img style="margin-inline: auto;" src="https://res.cloudinary.com/fuzzylogic/image/upload/v1652611257/wepik-2022415-113410_zouman.jpg" />
+  <img eleventy:ignore style="margin-inline: auto;" src="https://res.cloudinary.com/fuzzylogic/image/upload/v1652611257/wepik-2022415-113410_zouman.jpg" />
   <figcaption>100×100 grid sketched on <a href="https://www.freepik.com/photos/square-paper">Kues’ graph paper photo</a></figcaption>
 </figure>
 
