@@ -247,6 +247,7 @@ module.exports = function(eleventyConfig) {
         <source type="image/avif" srcset="${eleventyConfig.cloudinaryImgURLStart}f_avif,q_${eleventyConfig.cloudinaryImgQuality},w_${eleventyConfig.cloudinaryImgWidth}/${cloudinaryImgUniquePath}" />
         <source type="image/webp" srcset="${eleventyConfig.cloudinaryImgURLStart}f_webp,q_${eleventyConfig.cloudinaryImgQuality},w_${eleventyConfig.cloudinaryImgWidth}/${cloudinaryImgUniquePath}" />
         <img
+          eleventy:ignore
           class="u-full-parent-width"
           src="${eleventyConfig.cloudinaryImgURLStart}f_jpg,q_${eleventyConfig.cloudinaryImgQuality},w_${eleventyConfig.cloudinaryImgWidth}/${cloudinaryImgUniquePath}"
           width="${aspectRatioWidth}"
@@ -274,6 +275,7 @@ module.exports = function(eleventyConfig) {
     const cloudinaryBase = `https://res.cloudinary.com/${eleventyConfig.cloudinaryCloudName}/image/upload/`;
     var cloudinaryImgPath = src.replace(cloudinaryBase, '');
     return `<img
+    eleventy:ignore
     class="u-full-parent-width"
     srcset="${srcsetWidthRange
       .map(w => {
