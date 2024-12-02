@@ -16,7 +16,7 @@ title: Bookshelf
             {% for book in years.books %}
               <div class="stack book">
                 <a class="frame book-cover" href="{{ book.url | url }}" aria-label="Buy {{ book.title }}">
-                  <img src="{{ book.img }}" alt="{{ book.title }}">
+                  <img eleventy:ignore src="{{ book.img }}" alt="{{ book.title }}">
                 </a>
                 <div class="stack book-info">
                   <h3>{{ book.title }}</h3>

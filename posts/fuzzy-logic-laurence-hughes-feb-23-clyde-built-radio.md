@@ -29,7 +29,9 @@ Having pre-recorded previous shows, I recently made a first visit to [Clyde Buil
   <picture>
     <source type="image/avif" srcset="https://res.cloudinary.com/fuzzylogic/image/upload/f_avif,q_55,w_1292/v1677414630/clyde_1400_feb2023_mozjpg_yxhxkz.jpg" />
     <source type="image/webp" srcset="https://res.cloudinary.com/fuzzylogic/image/upload/f_webp,q_55,w_1292/v1677414630/clyde_1400_feb2023_mozjpg_yxhxkz.jpg" />
-      <img class="u-full-parent-width" src="https://res.cloudinary.com/fuzzylogic/image/upload/f_jpg,q_auto,w_1292/v1677414630/clyde_1400_feb2023_mozjpg_yxhxkz.jpg" width="1400" height="1050" alt="Three records – by Bitchin Bajas, Isotope 217 and Visions of Tomorrow – that featured on Laurence Hughes’s February 2023 Clyde Built Radio show" loading="lazy" decoding="async" />
+      <img
+      eleventy:ignore
+      class="u-full-parent-width" src="https://res.cloudinary.com/fuzzylogic/image/upload/f_jpg,q_auto,w_1292/v1677414630/clyde_1400_feb2023_mozjpg_yxhxkz.jpg" width="1400" height="1050" alt="Three records – by Bitchin Bajas, Isotope 217 and Visions of Tomorrow – that featured on Laurence Hughes’s February 2023 Clyde Built Radio show" loading="lazy" decoding="async" />
   </picture>
   <figcaption>Featured sounds from Bitchin Bajas, Isotope 217 and Visions of Tomorrow</figcaption>
 </figure>

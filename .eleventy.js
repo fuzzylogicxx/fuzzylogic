@@ -3,6 +3,7 @@ const fs = require('fs');
 const pluginNavigation = require("@11ty/eleventy-navigation");
 const pluginRss = require('@11ty/eleventy-plugin-rss');
 const pluginSyntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
+const { eleventyImageTransformPlugin } = require("@11ty/eleventy-img");
 const { PurgeCSS } = require('purgecss');
 const { minify } = require("terser");
 
@@ -13,6 +14,28 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(pluginNavigation);
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(pluginSyntaxHighlight);
+
+  eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
+		// which file extensions to process
+		extensions: "html",
+
+		// Add any other Image utility options here:
+
+		// optional, output image formats
+		formats: ["avif", "webp"],
+		// formats: ["auto"],
+
+		// optional, output image widths
+		// widths: ["auto"],
+
+		// optional, attributes assigned on <img> override these values.
+		// defaultAttributes: {
+		// 	loading: "lazy",
+		// 	decoding: "async",
+		// },
+	});
+
+
   eleventyConfig.setDataDeepMerge(true);
 
   eleventyConfig.addLayoutAlias('post', 'layouts/post.njk');

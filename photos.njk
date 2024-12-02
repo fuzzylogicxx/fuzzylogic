@@ -14,6 +14,7 @@ title: Photos
   {% for photo in photos %}
     <a href="/photos/{{ photo.asset_id }}/">
       <img
+        eleventy:ignore
         src="https://res.cloudinary.com/fuzzylogic/image/upload/w_600,ar_1:1,c_fill,g_auto/v{{ photo.version }}/{{ photo.public_id }}.{{ photo.format }}"
       />
     </a>

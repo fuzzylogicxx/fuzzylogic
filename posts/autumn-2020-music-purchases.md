@@ -22,6 +22,7 @@ openGraphImage: "https://res.cloudinary.com/fuzzylogic/image/upload/q_auto,f_aut
 ---
 <figure>
 <img
+  eleventy:ignore
   class="u-full-parent-width"
   sizes="(min-width: 1600px) 646px, (min-width: 700px) 612px, 91.58vw"
   srcset="https://res.cloudinary.com/fuzzylogic/image/upload/q_auto,f_auto,w_414/v1609971455/facefacts_1300_qzkqwh.jpg 414w,

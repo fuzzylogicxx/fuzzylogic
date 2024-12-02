@@ -29,7 +29,9 @@ I recorded my second radio show of 2023 live at the Clyde Built Radio studio at 
   <picture>
     <source type="image/avif" srcset="https://res.cloudinary.com/fuzzylogic/image/upload/f_avif,q_55,w_1292/v1680028894/clyde_1400_mar2023_mozjpg_iejw5x.jpg" />
     <source type="image/webp" srcset="https://res.cloudinary.com/fuzzylogic/image/upload/f_webp,q_55,w_1292/v1680028894/clyde_1400_mar2023_mozjpg_iejw5x.jpg" />
-      <img class="u-full-parent-width" src="https://res.cloudinary.com/fuzzylogic/image/upload/f_jpg,q_auto,w_1292/v1680028894/clyde_1400_mar2023_mozjpg_iejw5x.jpg" width="1400" height="1050" alt="Laurence at the Clyde Built Radio studio in March 2023" loading="lazy" decoding="async" />
+      <img
+      eleventy:ignore
+      class="u-full-parent-width" src="https://res.cloudinary.com/fuzzylogic/image/upload/f_jpg,q_auto,w_1292/v1680028894/clyde_1400_mar2023_mozjpg_iejw5x.jpg" width="1400" height="1050" alt="Laurence at the Clyde Built Radio studio in March 2023" loading="lazy" decoding="async" />
   </picture>
   <figcaption>At the Clyde Built Radio studio</figcaption>
 </figure>

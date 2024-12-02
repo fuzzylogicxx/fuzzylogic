@@ -16,6 +16,6 @@ Our wee Border Terrier, Rudy, is six months old. It’s funny to think how far h
 
 {% if app.environment == "production" %}
 <figure>
-    <img src="https://res.cloudinary.com/fuzzylogic/image/upload/v1605553950/125435883_1615067328665123_36529131671022288_n_xtgozx.jpg" alt="Rudy smiling for the camera while out walking with his puppy pals, Autumn 2020" loading="lazy" width="664" height="960">
+    <img eleventy:ignore src="https://res.cloudinary.com/fuzzylogic/image/upload/v1605553950/125435883_1615067328665123_36529131671022288_n_xtgozx.jpg" alt="Rudy smiling for the camera while out walking with his puppy pals, Autumn 2020" loading="lazy" width="664" height="960">
 </figure>
 {% endif %}

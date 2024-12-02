@@ -70,7 +70,7 @@ Let’s start by going back to basics. I can include an image on a web page like
 
 Note that our markup contains no `width` or `height` attributes, just an `alt` for accessibility. With no size-related attributes (and in the absence of any CSS acting on its width or height) the image simply displays at its intrinsic dimensions i.e. the dimensions at which the file was saved, in this case 250 × 377 pixels. The image is output as follows:
 
-<img src="https://images-eu.bookshop.org/product-images/images/9781780330969.jpg?width=250" alt="“A Visit from the Goon Squad“ by Jennifer Egan" />
+<img eleventy:ignore src="https://images-eu.bookshop.org/product-images/images/9781780330969.jpg?width=250" alt="“A Visit from the Goon Squad“ by Jennifer Egan" />
 
 Now I know that narrow and static images like this feel pretty old-school. Since the Responsive Web Design movement we’re more accustomed to seeing full-column-width media and complex markup for intelligently selecting one file from many options.
 
@@ -96,7 +96,7 @@ When we know the dimensions of our image in advance, we can improve upon our pre
 
 Don’t expect fireworks; this renders the image exactly as before.
 
-<img width="250" height="377" src="https://images-eu.bookshop.org/product-images/images/9781780330969.jpg?width=250" alt="“A Visit from the Goon Squad“ by Jennifer Egan" />
+<img eleventy:ignore width="250" height="377" src="https://images-eu.bookshop.org/product-images/images/9781780330969.jpg?width=250" alt="“A Visit from the Goon Squad“ by Jennifer Egan" />
 
 However, this addition allows the browser to reserve the appropriate space in the page for the image before it has loaded. If we don’t do this, we risk a situation where text immediately after our image renders higher up the page than it should while the image is loading, only to _shift_ jarringly after the image loads.
 
@@ -141,7 +141,7 @@ img {
 
 Here’s an example of a flexible image. It’s 2000 pixels wide, but shrinks to fit inside its narrower parent. Magic!
 
-<img src="https://via.placeholder.com/2000x1500.png/000" />
+<img eleventy:ignore src="https://via.placeholder.com/2000x1500.png/000" />
 
 ## Jank-free responsive images
 
