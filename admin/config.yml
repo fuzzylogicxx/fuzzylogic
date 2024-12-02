@@ -3,11 +3,6 @@ backend:
   branch: v3
 publish_mode: editorial_workflow
 media_folder: "img/uploads"
-media_library:
-  name: cloudinary
-  config:
-    cloud_name: fuzzylogic
-    api_key: 389853243577723
 collections:
   - name: "blog" # Used in routes, e.g., /admin/collections/blog
     label: "Blog" # Used in the UI
