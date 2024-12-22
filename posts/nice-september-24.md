@@ -23,7 +23,9 @@ We browsed the interesting open air photo exhibition at Place Garibaldi for the 
 
 We visited the Musée de la Photographie Charles Nègre, where we saw the exhibitions [Pourquoi m’as-tu abandonnée?](https://museephotographie.nice.fr/expositions/bettina-rheims-pourquoi-mas-tu-abandonnee/) by Bettina Rheims and [You were not chosen](https://museephotographie.nice.fr/expositions/marine-foissey-you-were-not-chosen/) by Marine Foissey.
 
-After travelling to Saint-Jean Cap Ferra (celebrating “120 years heritage and history”) we visited the villa of Effusa de Rothschild. We wandered around the patio, rooms and gardens, stopping for breathtaking views of the bay. We finished at the French Garden at the back of the villa which, with its water jets, is pretty special.
+After travelling to Saint-Jean Cap Ferra (celebrating “120 years heritage and history”) we visited the villa of Ephrussi de Rothschild. We wandered around the patio, rooms and gardens, stopping for breathtaking views of the bay. We finished at the French Garden at the back of the villa which, with its water jets, is pretty special.
+
+Place du Pin and Rue Bonaparte, which we discovered towards the end of the trip, is a bustling little street of modern bars and restaurants. We didn’t have enough time to try too many places but enjoyed some lovely greek street food at [Kalos](https://maps.app.goo.gl/cwsUDQTfvSEJov546).
 
 ### Food and drink
 
@@ -34,6 +36,8 @@ While at Place Rossetti we had Salad Niçoises for lunch (when in Rome…) at re
 [Movida](https://www.movida.today/en/), a little drinks and tapas bar on Quai des Etats-Unis with roof seating overlooking the bay. Serves good cocktails including fiery margarita.
 
 [Maison Margaux](https://www.maisonmargaux.fr/) at Place Magenta for sea bass and rosé wine.
+
+Maybe our best meal in Nice was at Le Bistrot on Rue St Honoré, part of [Hotel du Couvent](https://www.hotelducouvent.com/) and discovered by Clair. We enjoyed a set meal of Oeufs Mimosa, Vitello Tonnato, Capellini a la sauge, Bavette a l’echalote and Clafoutis mirabelle. Everything about this place was interesting and stylish – building, decor, music, staff, food and drink.
 
 ### Areas
 
@@ -56,9 +60,16 @@ I visited two record shops: [Kosimi](https://www.instagram.com/kosimirecords/?hl
 [Hotel Seize](https://hotelseize.fr/): friendly staff and great old-fashioned elevator.
 
 ### Miscellaneous
-
+parks
 The city bus tour we took on Day One served as a great initial orientation, taking us along the grand hotels and casinos of Promendade des Anglais then past the Russian Orthodox church and musicians‘ district up to the train station, continuing into Place Garibaldi, Port Lympia and even onto Villefranche-sur-mer and Saint-Jean-Cap-Ferrat.
 
 
+## Other places we visited / info we picked up
 
+Our lovely hosts at Hotel L’Esprit D’Azur passed on a digital map guide for Nice with categories for [museums](https://maps.app.goo.gl/5Qu7kGRopda95TR26), [free parks and museums](https://maps.app.goo.gl/mkEZ8m4GSRnYh4hMA), [restaurants](https://maps.app.goo.gl/3f6ikHSJnrVmnmeS6), [indoor activities](https://maps.app.goo.gl/T1wHHJTz2K8vCBrp7) and [around Nice](https://maps.app.goo.gl/GeQ5Afc58KPJN79x9).
 
+[La Casita](https://www.tripadvisor.co.uk/Restaurant_Review-g187217-d21276590-Reviews-La_Casita-Antibes_French_Riviera_Cote_d_Azur_Provence_Alpes_Cote_d_Azur.html#/media/21276590/?albumid=-183&type=ALL_INCLUDING_RESTRICTED&category=-183) in Antibes provided one of our favourite meals of the trip. It’s on a busy little street just down from the market. I had John Dory while Clair had Boulettes Viande. 
+
+[La Petite Garoupe](https://www.lapetitegaroupe.com/) restaurant in Antibes – a stunning location on a stormy night. We had [just received bad news](https://fuzzylogic.me/posts/rip-kerso/) and raised a glass to our friend.
+
+[L’Elephant Bleu](https://www.l-elephantbleu.com/antibes/) in Antibes, a Thai restaurant on Boulevard d'Aguillon
