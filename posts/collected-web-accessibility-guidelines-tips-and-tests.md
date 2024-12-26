@@ -66,15 +66,23 @@ Check your page for any long passages of text with no structure. Ensure that suf
 
 ## Semantic HTML and ARIA
 
+While there are generic HTML elements like `div` and `span`, there are many more HTML elements that perform a specific role and convey that role to browers and other technologies. Choosing and using semantic HTML elements appropriately is a very good practice.
+
+Also, using semantic HTML elements is preferable to bolting on semantics via attributes since the semantics are conveyed natively avoiding redundancy and duplication. As Bruce Lawson says, “Built-in beats bolt-on, bigly”.
+
 Apply ARIA carefully. [No ARIA is better than bad ARIA.](https://www.w3.org/WAI/ARIA/apg/practices/read-me-first/#x2-1-no-aria-is-better-than-bad-aria)
 
-Using semantic HTML elements is preferable to bolting on semantics via attributes since the semantics are conveyed natively avoiding redundancy and duplication. As Bruce Lawson says, “Built-in beats bolt-on, bigly”. 
+### Landmarks
 
 Create a small number of [landmarks](https://developer.mozilla.org/en-US/blog/aria-accessibility-html-landmark-roles/) using the appropriate HTML elements. 
 
 For some landmark-generating elements it’s appropriate to bolster them with a label or _accessible name_. For example with `nav` and `aside`, i) there’s a decent chance there might be multiple on the page; and ii) each instance creates a landmark even when it’s nested within a deeper HTML element. So it’s helpful to distinguish each different landmark of the same type by using sensible accessible names otherwise you’d get multiple navigation menus all represented by the same “navigation” in the _Landmarks_ menu. In the case of the `section` element it _needs_ an acessible name in order for it to act as a `region` landmark. For all of these you can use `aria-labelledby` set to the `id` of an inner heading, or use `aria-label`.
 
 Note that when using multiple `<header>` (or `footer`) elements on a page, where one and one only is a direct child of `body` while the others are used within `article` or similar elements, there’s perhaps less need to add custom accessible names. That’s because only a direct child of `body` will be treated as a landmark and the others won’t, therefore they won’t be butting against each other in a screen reader’s _Landmarks_ menu and need distinguished.
+
+### Correct use of aria-label and aria-labelledby
+
+Use the `aria-label` or `aria-labelledby` attributes (only when necessary) on interactive elements – buttons, links, form controls – and on landmark regions. Don’t use them on `<div>`s, `<span>`s, or other elements representing static/noninteractive text-level semantics, such as `<p>`, `<strong>`, `<em>`, and so forth, unless those elements’ roles have been overridden with roles that expect accessible names.
 
 ## Favour native over custom components except where they have known issues
 
@@ -111,9 +119,9 @@ Using the `form` element can also make it easier for you to meet user expectatio
 
 ## Anchors and buttons
 
-When you need to let the user navigate to another page (or part of a page) or download a file, use an anchor element.
+To let the user navigate to a page or page section, or download a file, use an anchor element.
 
-For ea you need to let the user trigger an action such as copying to clipboard, launching a modal or submitting a form, use a button element.
+To let the user trigger an action such as copying to clipboard, launching a modal or submitting a form, use a button element.
 
 Anchors should include an `href` attribute otherwise the browser will treat it like a non-interactive element. This means the link will not be included in the expected focus order and will not present a pointer to mouse users like it should. These days there is no remaining use case for an anchor without an `href`. We no longer need [named anchors](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#name) to create link-target locations within the page because we can use the `id` attribute (on any element) for that. And if you want an interactive element that does not link somewhere, you should use `button`.
 
@@ -179,3 +187,5 @@ When developing a collapsible menu, place your menu `<button>` _within_ your `<n
 * Adrian Roselli’s [Responsive type and zoom](https://adrianroselli.com/2019/12/responsive-type-and-zoom.html)
 * Heydon Pickering’s tweet about [buttons in navs](https://twitter.com/heydonworks/status/766948134169620480) and Scott O’Hara’s follow up article [Landmark Discoverability](https://www.scottohara.me/blog/2016/08/10/discovering-landmarks.html)
 * Tetralogical’s [Foundations: native versus custom components](https://tetralogical.com/blog/2022/11/08/foundations-native-versus-custom-components/)
+* Ben Myers on [where to use aria labelling attributes](https://benmyers.dev/blog/dont-use-aria-label-on-static-text-elements/)
+
