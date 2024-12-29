@@ -90,12 +90,7 @@
     {# in order to be already available as soon as the DOM is ready -#}
     <script type="module">
       {%- set js -%}
-        import enhanceSearch from '/assets/js/search.js';
         import patchMinForGrids from '/assets/js/patch_css_min_for_grids.js';
-
-        // Enhance the search experience with JS
-        // ** Disabled until I stop using a link for the job of a button. **
-        //enhanceSearch();
 
         // Patch browser support for CSS’s min() in .grid component instances.
         const grids = document.querySelectorAll('.grid');
@@ -140,17 +135,6 @@
             {%- endfor %}
             </ul>
           </nav>
-
-          <div class="search-ui" hidden>
-            <form class="form-custom global-search-form" role="search" aria-label="Unique identifier goes here" action="https://www.google.co.uk/search" method="get">
-              <input type="hidden" name="q" id="q" value="site:{{metadata.url}}" />
-              <div class="form-group">
-                <label class="a11y-only" for="search-str">Search for</label>
-                <input type="search" id="search-str" name="q" class="search-str" aria-label="Search for...">
-              </div>
-            </form>
-            <ol class="search-results" aria-live="polite"></ol>
-          </div>
 
         </div>
       </div>
