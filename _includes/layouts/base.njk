@@ -85,24 +85,6 @@
 
     <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.name }}">
 
-    {# Module scripts are deferred (non render-blocking) by default. -#}
-    {# I place up here rather than at bottom to allow it to be DL’d early in parallel -#}
-    {# in order to be already available as soon as the DOM is ready -#}
-    <script type="module">
-      {%- set js -%}
-        import patchMinForGrids from '/assets/js/patch_css_min_for_grids.js';
-
-        // Patch browser support for CSS’s min() in .grid component instances.
-        const grids = document.querySelectorAll('.grid');
-        if (window.NodeList && NodeList.prototype.forEach) { // cuts-mustard check
-          grids.forEach(function (grid, index) {
-            patchMinForGrids(grid);
-          });
-        }
-      {% endset -%}
-      {{ js | jsmin | safe }}
-    </script>
-
     <!-- webmentions -->
     <link rel="pingback" href="https://webmention.io/fuzzylogic.me/xmlrpc">
     <link rel="webmention" href="https://webmention.io/fuzzylogic.me/webmention">
