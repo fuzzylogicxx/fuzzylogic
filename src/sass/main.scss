@@ -25,9 +25,9 @@
     --color-link-hover: rgb(8,78,73); /* 40% darker. Less than 30% wasn’t noticeable on hover */
 
     // Measure
-    --measure: 65ch;
-    --heading-measure: 50ch;
-    --h1-measure: 40ch;
+    --measure: 40.5rem;
+    --heading-measure: 36rem;
+    --h1-measure: 41rem;
 
     // Borders
     --border-thin: 1px;
@@ -78,12 +78,33 @@
 
 @layer base {
 
+  // Clever ”matching” of a system font to our custom font so as to avoid CLS,
+  // using Malte’s approach and tool:
+  // https://www.industrialempathy.com/perfect-ish-font-fallback/?font=Source%20Sans%20Pro
+
+  // Regular
+  @font-face {
+    font-family: "Source Sans Pro-fallback";
+    size-adjust: 93.75%;
+    src: local("Arial");
+    font-weight: 400;
+  }
+
   @font-face {
     font-family: Source Sans Pro;
     src: url(/fonts/sans/SourceSans3-Regular-subset.woff2) format("woff2"),
         url(/fonts/sans/SourceSans3-Regular-subset.zopfli.woff) format("woff");
     font-weight: 400;
     font-display: swap;
+  }
+
+  // Regular Italic
+  @font-face {
+    font-family: "Source Sans Pro-fallback";
+    size-adjust: 93.75%;
+    src: local("Arial");
+    font-weight: 400;
+    font-style: italic;
   }
 
   @font-face {
@@ -93,6 +114,14 @@
     font-weight: 400;
     font-style: italic;
     font-display: swap;
+  }
+
+  // Bold
+  @font-face {
+    font-family: "Source Sans Pro-fallback";
+    size-adjust: 95%;
+    src: local("Arial");
+    font-weight: 600;
   }
 
   @font-face {
@@ -126,7 +155,7 @@
     -webkit-text-size-adjust: none;
 
     color: var(--color-dark);
-    font-family: 'Source Sans Pro', system-ui, sans-serif;
+    font-family: "Source Sans Pro", "Source Sans Pro-fallback", system-ui, sans-serif;
 
     // At the :root level I like being explicit about the browser font-size default (16px).
     // To do: but having read something recently about how this could leak affect a web component,
