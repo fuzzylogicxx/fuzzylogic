@@ -20,22 +20,23 @@ Note: this post will take a bit of time and a few sessions, so please regard it 
 
 Before getting lost in stuff I _have_, I thought it’d be good to set out my higher-level goals and what I feel I have the time to sustain. I think I’d like:
 
-- retain URLs and SEO through updates
+- to retain URLs and SEO through updates
 - excellent accessibility and performance (four hundos on lighthouse is a good start)
-- use the best of modern web standards
+- it to use the best of modern web standards
 - simplicity: minimal dependencies, easy to make technical updates
 - to maintain some documentation to support ease of updating
 - minimal noise: I don’t want a bunch of emails and alerts from third parties
 - sensibly organised content
 - a search function
-- a means of contacting me
+- a way for folks to contact me
 - some personality in the design and content
-- be able to add and edit content easily (a CMS would be nice)
+- be able to add and edit content easily (a mobile-friendly CMS rather than via code only)
 - be able to insert photos into content easily
 
 And here are a few lower-level wants:
 
 - code snippets should look good
+- images complexities handled behind the scenes 
 
 ## What I actually have
 
@@ -55,7 +56,9 @@ The minimum node.js version (used as the runtime for building the site including
 
 ### CMS
 
-I don’t currently have one, having previously tried both Netlify CMS and Forestry for a while then gave up on them. I currently [use github.com as my CMS](https://fuzzylogic.me/posts/how-i-use-github-as-jamstack-cms/). That works but isn’t ideal. I’m looking for another free or cheap solution.
+I use Decap CMS. It’s free and is working OK, however the UI is rubbish on a small screen.
+
+I previously tried both Netlify CMS and Forestry for a while then gave up on them. I also sometimes [use github.com as my CMS](https://fuzzylogic.me/posts/how-i-use-github-as-jamstack-cms/). That works but isn’t ideal.
 
 ### Contact form
 
@@ -87,6 +90,12 @@ I have the following pages:
 
 To be continued!
 
-## Update Sunday 30-06-24
+## Update 15-08-24
+
+I added Decap CMS.
+
+## Update 30-06-24
 
 I’ve addressed the “a means of contacting me” item on my wants list by [adding a contact form using Netlify forms](https://github.com/fuzzylogicxx/fuzzylogic/pull/96).
+
+
