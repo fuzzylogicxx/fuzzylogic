@@ -32,8 +32,8 @@ module.exports = function(eleventyConfig) {
 		// optional, attributes assigned on <img> override these values.
 		defaultAttributes: {
       sizes: "(max-width: 860px) 100vw, 840px",
-      // loading: "lazy",
-		  // decoding: "async",
+      loading: "lazy",
+		  decoding: "async",
 		},
 	});
 
