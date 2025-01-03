@@ -84,10 +84,11 @@
 
   // Regular
   @font-face {
-    font-family: "Source Sans Pro-fallback";
+    font-family: Source Sans Pro-fallback;
     size-adjust: 93.75%;
     src: local("Arial");
     font-weight: 400;
+    font-display: swap;
   }
 
   @font-face {
@@ -100,11 +101,12 @@
 
   // Regular Italic
   @font-face {
-    font-family: "Source Sans Pro-fallback";
+    font-family: Source Sans Pro-fallback;
     size-adjust: 93.75%;
     src: local("Arial");
     font-weight: 400;
     font-style: italic;
+    font-display: swap;
   }
 
   @font-face {
@@ -118,10 +120,11 @@
 
   // Bold
   @font-face {
-    font-family: "Source Sans Pro-fallback";
+    font-family: Source Sans Pro-fallback;
     size-adjust: 95%;
     src: local("Arial");
     font-weight: 600;
+    font-display: swap;
   }
 
   @font-face {
@@ -131,7 +134,6 @@
     font-weight: 600;
     font-display: swap;
   }
-
 }
 
 
