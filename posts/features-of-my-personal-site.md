@@ -46,13 +46,15 @@ This is gonna be a much lower-level set of features than the above goals, but th
 
 It’s a statically generated site powered by Eleventy.
 
-The code is hosted on GitHub. I use for Netlify for production builds, deployments and hosting.
+The code is hosted on GitHub. 
+
+I use for Netlify for production builds, deployments and hosting.
 
 I’m happy with this stack. The parts play well together, it’s free, and it brings a lot of flexibility and performamance benefits.
 
-### Configuration
+#### Node.js
 
-The minimum node.js version (used as the runtime for building the site including installing its dependencies) is set in a `.nvmrc` configuration file. That’s because that’s how it’s done in the Eleventy Base Blog and i) I’m happy to follow that to avoid confusion when doing future 11ty upgrades, and ii) it seems sensible to set this in the project code rather than only in Netlify thereby locking me into Netlify and again potentially causing confusion in future. Things to remember (from experience) are that that this setting in `.nvrmc` overrides any node version set in [Netlify’s Build and deploy settings](https://app.netlify.com/sites/vigilant-almeida-537bd4/configuration/deploys#dependency-management) and also that I should avoid setting a node version in `netlify.toml` too otherwise they all fight each other.
+Eleventy is built in JavaScript and running it requires Node.js, both locally and in production. The minimum Node.js version is set in a `.nvmrc` configuration file. I do it this way because that’s how it’s done in the Eleventy Base Blog. I’m happy to follow that to avoid confusion when doing future 11ty upgrades, and it also seems sensible to set this value in the project code rather than only in Netlify as the latter could lock me into Netlify and cause confusion in future. Things to remember (from experience) are that this setting in `.nvrmc` overrides any node version set in [Netlify’s Build and deploy settings](https://app.netlify.com/sites/vigilant-almeida-537bd4/configuration/deploys#dependency-management) and also that I should avoid setting a node version in `netlify.toml` too otherwise they fight with each other.
 
 ### CMS
 
@@ -64,11 +66,9 @@ I previously tried both Netlify CMS and Forestry for a while then gave up on the
 
 I use [Netlify Forms](https://docs.netlify.com/forms/setup/#html-forms) for this. That gives me the server-side handling, database storage and admin management aspects of a form for my otherwise-static site.
 
-### Photos section
+### Sitemaps
 
-There’s a photos index page and a page for individual photos. I’m not 100% sure why I created this.
-
-Photos are fetched from Cloudinary using an 11ty [JavaScript data file](https://www.11ty.dev/docs/data-js/). I note that I’ve set it to only fetch those photos when the node environment is `production`. One of the effects of that seems to be that the /photos/ page is not generated (you get a 404) when I build the site locally. I think that’s because the `photos` data collection is empty therefore cannot be paginated therefore the page is not generated.
+I provide an [XML sitemap](https://fuzzylogic.me/sitemap.xml) which is intended [for search engines](https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap) and a [human-readable sitemap](https://fuzzylogic.me/sitemap/).
 
 ### Detailed features
 
@@ -98,4 +98,15 @@ I added Decap CMS.
 
 I’ve addressed the “a means of contacting me” item on my wants list by [adding a contact form using Netlify forms](https://github.com/fuzzylogicxx/fuzzylogic/pull/96).
 
+## Update 39-12-04
 
+I recently [removed a bunch of features and pages](https://github.com/fuzzylogicxx/fuzzylogic/pull/157) that had gone stale and only served to make my website harder to maintain. 
+
+- Photos section, including an 11ty [JavaScript data file](https://www.11ty.dev/docs/data-js/) where I fetched photos from Cloudinary using an 11ty
+- Bookshelf
+- Inspiration page
+- Records for sale page and data file
+- Forestry CMS stuff
+- Bookmarker script and lambda folder
+- DIY search feature
+- JavaScript patch for CSS’s `min()` for grids, since that now has wide browser support
