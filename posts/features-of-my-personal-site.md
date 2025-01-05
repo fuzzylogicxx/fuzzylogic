@@ -51,7 +51,7 @@ The code is hosted on GitHub.
 
 I use Netlify for production builds, deployments and hosting.
 
-I’m happy with this stack. The parts play well together, it’s free, and it brings a lot of flexibility and performamance benefits.
+I’m happy with this stack. The parts play well together, it’s free, and it brings a lot of flexibility and performance benefits.
 
 ### CMS
 
@@ -71,7 +71,7 @@ I provide an [XML sitemap](https://fuzzylogic.me/sitemap.xml) which is intended 
 
 #### Home
 
-An intro, and a list latest posts.
+An intro, and a list of latest posts.
 
 #### About
 
@@ -93,17 +93,21 @@ A JS-based form for searching all posts, with an autosuggest function.
 
 #### Avatar
 
-I serve an avatar from a well-known location per Jim Neilsen’s recommendation – [see my avatar](https://fuzzylogic.me/.well-known/avatar).
+I [serve an avatar from a conventional location](https://fuzzylogic.me/posts/well-known-avatar/) per Jim Neilsen’s idea – [see my avatar](https://fuzzylogic.me/.well-known/avatar).
 
 #### Excerpts
 
 I use [gray-matter’s default approach for including, delimiting and parsing excerpts from posts](https://www.11ty.dev/docs/data-frontmatter-customize/#example-parse-excerpts-from-content). The excerpt is both part of the post content but also accessible separately, which is useful for showing only the excerpt in post lists.
 
+It’s not perfect. It’d be useful to have a class on the excerpt. It’d be useful to be able to apply different styling to it on-demand and not on every post.
+
+#### Favicons
+
+To do: write a description.
+
 #### Image plugin
 
 I use Eleventy Image to perform build-time image transformations. It takes images I’ve added in posts and pages and converts and saves them into multiple formats and sizes, and swaps the original markup for modern, responsive, multi-format image markup using `picture` and `source` and pointing to the converted image files.
-
-It’s not perfect. It’d be useful to have a class on the excerpt. It’d be useful to be able to apply different styling to it on-demand and not on every post.
 
 #### Node.js
 
