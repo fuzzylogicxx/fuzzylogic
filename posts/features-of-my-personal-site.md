@@ -33,28 +33,25 @@ Before getting lost in stuff I _have_, I thought it’d be good to set out my hi
 - be able to add and edit content easily (a mobile-friendly CMS rather than via code only)
 - be able to insert photos into content easily
 
-And here are a few lower-level wants:
+And here are a few secondary and lower-level wants:
 
 - code snippets should look good
-- images complexities handled behind the scenes 
+- images complexities handled behind the scenes
+- some indieweb features supporting interactivity with other bloggers and friends
 
 ## What I actually have
 
 This is gonna be a much lower-level set of features than the above goals, but that’s OK. I can ask myself whether each supports my wider goals and are worth the effort.
 
-### Main engine
+### Main tech stack
 
 It’s a statically generated site powered by Eleventy.
 
 The code is hosted on GitHub. 
 
-I use for Netlify for production builds, deployments and hosting.
+I use Netlify for production builds, deployments and hosting.
 
 I’m happy with this stack. The parts play well together, it’s free, and it brings a lot of flexibility and performamance benefits.
-
-#### Node.js
-
-Eleventy is built in JavaScript and running it requires Node.js, both locally and in production. The minimum Node.js version is set in a `.nvmrc` configuration file. I do it this way because that’s how it’s done in the Eleventy Base Blog. I’m happy to follow that to avoid confusion when doing future 11ty upgrades, and it also seems sensible to set this value in the project code rather than only in Netlify as the latter could lock me into Netlify and cause confusion in future. Things to remember (from experience) are that this setting in `.nvrmc` overrides any node version set in [Netlify’s Build and deploy settings](https://app.netlify.com/sites/vigilant-almeida-537bd4/configuration/deploys#dependency-management) and also that I should avoid setting a node version in `netlify.toml` too otherwise they fight with each other.
 
 ### CMS
 
@@ -66,22 +63,65 @@ I previously tried both Netlify CMS and Forestry for a while then gave up on the
 
 I use [Netlify Forms](https://docs.netlify.com/forms/setup/#html-forms) for this. That gives me the server-side handling, database storage and admin management aspects of a form for my otherwise-static site.
 
-### Sitemaps
+### SEO
 
 I provide an [XML sitemap](https://fuzzylogic.me/sitemap.xml) which is intended [for search engines](https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap) and a [human-readable sitemap](https://fuzzylogic.me/sitemap/).
 
+### Key pages
+
+#### Home
+
+An intro, and a list latest posts.
+
+#### About
+
+Some information about me that’s currently split between my interests in the web and music.
+
+#### Contact
+
+A form by which to contact me.
+
+#### Journal Archive
+
+Access to all published posts.
+
+#### Search
+
+A JS-based form for searching all posts, with an autosuggest function.
+
 ### Detailed features
+
+#### Avatar
+
+I serve an avatar from a well-known location per Jim Neilsen’s recommendation – [see my avatar](https://fuzzylogic.me/.well-known/avatar).
+
+#### Excerpts
+
+I use [gray-matter’s default approach for including, delimiting and parsing excerpts from posts](https://www.11ty.dev/docs/data-frontmatter-customize/#example-parse-excerpts-from-content). The excerpt is both part of the post content but also accessible separately, which is useful for showing only the excerpt in post lists.
+
+#### Image plugin
+
+I use Eleventy Image to perform build-time image transformations. It takes images I’ve added in posts and pages and converts and saves them into multiple formats and sizes, and swaps the original markup for modern, responsive, multi-format image markup using `picture` and `source` and pointing to the converted image files.
+
+It’s not perfect. It’d be useful to have a class on the excerpt. It’d be useful to be able to apply different styling to it on-demand and not on every post.
+
+#### Node.js
+
+Eleventy is written in JavaScript and running it requires Node.js, both locally and in production. The minimum Node.js version is set in a `.nvmrc` configuration file. I do it this way because that’s how it’s done in the Eleventy Base Blog. I’m happy to follow that to avoid confusion when doing future 11ty upgrades, and it also seems sensible to set this value in the project code rather than only in Netlify as the latter could lock me into Netlify and cause confusion in future. Things to remember (from experience) are that this setting in `.nvrmc` overrides any node version set in [Netlify’s Build and deploy settings](https://app.netlify.com/sites/vigilant-almeida-537bd4/configuration/deploys#dependency-management) and also that I should avoid setting a node version in `netlify.toml` too otherwise they fight with each other.
 
 #### Readable time
 
 I created this Eleventy filter to show “time of post” on posts of type `note`. That’s a situation where the `readableDate` filter included with the Eleventy starter blog wasn’t precise enough.
 
-#### Tags infrastructure
+#### Tags
 
-I have the following pages:
-- _all tags_ page
-- all posts tagged with [tag]
+When I create a post I apply relevant tags to it. The tag `post` is applied automatically to all posts. And when I create a note using my custom Decap note template it also applies tag `note`. (I should do the same for `entry` and `bookmark`). But aside from those special tags, I apply tag names arbitrarily. 
 
+Each post page shows its associated tags (as links) at the bottom. Each post shows beside its title the “most notable” tag. (Currently it just grabs the third tag since the first tag should automatically be `post` and in second place should be `note`, `entry` or `bookmark`).
+
+And I have the following tag-related pages and templates:
+- an [all tags](https://fuzzylogic.me/tags/) page
+- a template for each tag that generates [a page listing all posts tagged with that tag](https://fuzzylogic.me/tags/accessibility/)
 
 ## Actions I’ve realised I can take
 
