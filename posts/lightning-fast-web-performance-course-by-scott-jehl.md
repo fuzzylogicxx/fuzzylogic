@@ -4,6 +4,7 @@ description: This course was full of insights and practical advice
 noteWithTitle: false
 date: 2024-12-29T11:40
 tags:
+  - entry
   - performance
   - web
   - javascript
