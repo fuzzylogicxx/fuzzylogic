@@ -60,8 +60,6 @@ module.exports = function(eleventyConfig) {
   // …so that our updated styles get put into the <head> and we can check them.
   eleventyConfig.addWatchTarget('./src/sass/');
 
-  eleventyConfig.addWatchTarget('./src/js/');
-
   //
   // Eleventy Transforms
   // Transforms can modify a template’s output.
