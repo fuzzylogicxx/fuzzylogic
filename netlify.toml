@@ -1,7 +1,6 @@
 [build]
   command = "npm run build"
   publish = "_site"
-  functions = "functions"
 
 # Opt out of Google’s FLoC origin trial (https://adactio.com/journal/18046)
 [[headers]]
