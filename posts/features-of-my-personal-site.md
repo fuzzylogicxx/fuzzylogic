@@ -59,10 +59,6 @@ I use Decap CMS. It’s free and is working OK, however the UI is rubbish on a s
 
 I previously tried both Netlify CMS and Forestry for a while then gave up on them. I also sometimes [use github.com as my CMS](https://fuzzylogic.me/posts/how-i-use-github-as-jamstack-cms/). That works but isn’t ideal.
 
-### Contact form
-
-I use [Netlify Forms](https://docs.netlify.com/forms/setup/#html-forms) for this. That gives me the server-side handling, database storage and admin management aspects of a form for my otherwise-static site.
-
 ### SEO
 
 I provide an [XML sitemap](https://fuzzylogic.me/sitemap.xml) which is intended [for search engines](https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap) and a [human-readable sitemap](https://fuzzylogic.me/sitemap/).
@@ -79,7 +75,7 @@ Some information about me that’s currently split between my interests in the w
 
 #### Contact
 
-A form by which to contact me.
+It’s a form, and for its backend I use [Netlify Forms](https://docs.netlify.com/forms/setup/#html-forms). That gives me the server-side handling, database storage and admin management aspects of a form for my otherwise-static site.
 
 #### Journal Archive
 
@@ -87,13 +83,25 @@ Access to all published posts.
 
 #### Search
 
-A JS-based form for searching all posts, with an autosuggest function.
+A JS-based form for searching all posts, with an autosuggest function. I use [pagefind](https://pagefind.app) to power the search.
+
+I don’t like how it’s JavaScript dependant and in future I should look at [trying Zach Leatherman’s web component.](https://chrismcleod.dev/blog/adding-site-search-eleventy-pagefind-web-component/)
+
+#### 404 page
+
+I have a `404.md` file which sets a permalink of (i.e. is built as) `404.html`. [Having made that file available, Netlify does the rest](https://www.11ty.dev/docs/quicktips/not-found/)… which is nice!
 
 ### Detailed features
 
 #### Avatar
 
 I [serve an avatar from a conventional location](https://fuzzylogic.me/posts/well-known-avatar/) per Jim Neilsen’s idea – [see my avatar](https://fuzzylogic.me/.well-known/avatar).
+
+#### Environment variables
+
+I set `NODE_ENV` `production` in my Netlify dashboard. This should mean that packages under  `devDependencies` are not built in production. It also makes the variable available for use in my code to check whether or not the current environment is development or production.
+
+I set `ELEVENTY_ENV` to `production` in the source-controlled `package.json` within the NPM script (under `scripts`) named `build`. This is the script that Netlify runs to build the production site. I think this migt be outdated. I previously used this within a Netlify lambda function that postsed to the Github API to create new bookmark posts. But I don’t do that any more so I think this environment variable can be removed.
 
 #### Excerpts
 
@@ -108,6 +116,16 @@ To do: write a description.
 #### Image plugin
 
 I use Eleventy Image to perform build-time image transformations. It takes images I’ve added in posts and pages and converts and saves them into multiple formats and sizes, and swaps the original markup for modern, responsive, multi-format image markup using `picture` and `source` and pointing to the converted image files.
+
+#### Linting and code formatting tools
+
+I use a `.editorconfig` file to set how my editor should handle things like nested line indentation, inserting an end of file newline and so on. I just go pretty much with what the [11ty base blog repo](https://github.com/11ty/eleventy-base-blog) uses, although I haven’t yet switched from spaces to tabs.
+
+I have a `.prettierrc` config file which sets things like a preference for single rather than double quotes. The idea is that you also have a prettier editor extension enabled (I have one for VS Code enabled) and in your editor settings you set your editor’s default formatter to that prettier extension. It’ll then format files on save.
+
+#### Netlify config
+
+I have a `.netlify.toml` file in which I specify the build command (`npm run build`) and the directory to publish to. I also use it to set far-future expires on custom font `.woff2` files. As far as I’m aware, this is still required. Lastly I have some redirects in there too.
 
 #### Node.js
 
@@ -142,7 +160,7 @@ I added Decap CMS.
 
 I’ve addressed the “a means of contacting me” item on my wants list by [adding a contact form using Netlify forms](https://github.com/fuzzylogicxx/fuzzylogic/pull/96).
 
-## Update 39-12-04
+## Update 39-12-24
 
 I recently [removed a bunch of features and pages](https://github.com/fuzzylogicxx/fuzzylogic/pull/157) that had gone stale and only served to make my website harder to maintain. 
 
