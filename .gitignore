@@ -2,12 +2,4 @@
 _site/
 node_modules/
 .cache
-.env
-
 _includes/css
-
-# Local Netlify folder
-.netlify
-
-# Serverless Functions (compiled folder; source remains under version control)
-functions

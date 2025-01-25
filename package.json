@@ -9,7 +9,7 @@
     "build:eleventy": "eleventy",
     "build:searchindex": "npx pagefind --site _site",
     "start": "npm-run-all build:sass --parallel watch:*",
-    "build": "ELEVENTY_ENV=production npm-run-all build:*"
+    "build": "npm-run-all build:*"
   },
   "repository": {
     "type": "git",
@@ -26,7 +26,6 @@
   },
   "homepage": "https://github.com/11ty/eleventy-base-blog#readme",
   "devDependencies": {
-    "eslint": "^7.23.0",
     "pagefind": "^1.1.1"
   },
   "dependencies": {
