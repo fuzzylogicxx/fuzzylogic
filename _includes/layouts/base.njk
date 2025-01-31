@@ -1,15 +1,15 @@
 <!doctype html>
-<html dir="ltr" lang="en-GB">
+<html dir="ltr" lang="{{ metadata.language }}">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
       {%- if (renderData.title) -%}
-      {{ renderData.title }} | {{ metadata.name }}
+      {{ renderData.title }} | {{ metadata.title }}
       {%- elif (noteTitle) -%}
-      {{ metadata.name }} Note #{{ noteTitle }} | {{ metadata.name }}
+      {{ metadata.title }} Note #{{ noteTitle }} | {{ metadata.title }}
       {%- elif (title) -%}
-      {{ title }} | {{ metadata.name }}
+      {{ title }} | {{ metadata.title }}
       {%- else -%}
       {{ metadata.title }}
       {%- endif -%}
@@ -59,8 +59,8 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="apple-mobile-web-app-title" content="{{ metadata.name }}">
-    <meta name="application-name" content="{{ metadata.name }}">
+    <meta name="apple-mobile-web-app-title" content="{{ metadata.title }}">
+    <meta name="application-name" content="{{ metadata.title }}">
     <meta name="msapplication-TileColor" content="#da532c">
 
     {#
@@ -83,7 +83,7 @@
     <meta name="color-scheme" content="light dark">
     #}
 
-    <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.name }}">
+    <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
 
     <!-- webmentions -->
     <link rel="pingback" href="https://webmention.io/fuzzylogic.me/xmlrpc">

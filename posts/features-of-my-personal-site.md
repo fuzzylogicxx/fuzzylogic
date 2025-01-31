@@ -7,7 +7,7 @@ tags:
 - web
 - personalsite
 ---
-I like the metaphor for personal websites of _tending to a digital garden_. 
+I like the metaphor for personal websites of _tending to a digital garden_.
 
 Like all gardens, they can become a bit unruly and need some weeding. Right now, as I consider updating some software and freshening things up, I realise that I’ve let it overgrow a tad.
 
@@ -25,7 +25,7 @@ Before getting lost in stuff I _have_, I thought it’d be good to set out my hi
 - it to use the best of modern web standards
 - simplicity: minimal dependencies, easy to make technical updates
 - to maintain some documentation to support ease of updating
-- minimal noise: I don’t want a bunch of emails and alerts from third parties
+- minimal noise: I don’t want a bunch of emails from third parties, nor ongoing dependency update alerts
 - sensibly organised content
 - a search function
 - a way for folks to contact me
@@ -47,7 +47,7 @@ This is gonna be a much lower-level set of features than the above goals, but th
 
 It’s a statically generated site powered by Eleventy.
 
-The code is hosted on GitHub. 
+The code is hosted on GitHub.
 
 I use Netlify for production builds, deployments and hosting.
 
@@ -99,9 +99,11 @@ I [serve an avatar from a conventional location](https://fuzzylogic.me/posts/wel
 
 #### Environment variables
 
-I set `NODE_ENV` `production` in my Netlify dashboard. This should mean that packages under  `devDependencies` are not built in production. It also makes the variable available for use in my code to check whether or not the current environment is development or production.
+I set `NODE_ENV` to `production` as an environment variable in my Netlify dashboard. This should mean that packages under `devDependencies` are not built in production which is good because that’d be a waste of time. With the `dotenv` module installed, if the NODE_ENV variable is present its value is loaded into Node.js’s `process.env` property. That allows me to check in JavaScript whether or not the current environment is production. With that, I might avoid outputting draft posts to physical files in production, or avoid hitting API resources in local development.
 
-I set `ELEVENTY_ENV` to `production` in the source-controlled `package.json` within the NPM script (under `scripts`) named `build`. This is the script that Netlify runs to build the production site. I think this migt be outdated. I previously used this within a Netlify lambda function that postsed to the Github API to create new bookmark posts. But I don’t do that any more so I think this environment variable can be removed.
+Only JS files can access `process.env`. So, in order to be able to check “is this production?” in other files such as Nunjucks templates I have an eleventy data file named `app.js` which makes the environment value available via `{{ app.environment }}.
+
+Incidentally I used to set another custom environemt variable called `ELEVENTY_ENV` to `production` in the source-controlled `package.json`, within the `build` NPM script. I think this is now redundant given that I can use `NODE_ENV` for the same purpose. I previously used it within a Netlify lambda function that posted to the Github API to create new bookmark posts. I don’t do that any more so I can delete this environment variable.
 
 #### Excerpts
 
@@ -137,7 +139,7 @@ I created this Eleventy filter to show “time of post” on posts of type `note
 
 #### Tags
 
-When I create a post I apply relevant tags to it. The tag `post` is applied automatically to all posts. And when I create a note using my custom Decap note template it also applies tag `note`. (I should do the same for `entry` and `bookmark`). But aside from those special tags, I apply tag names arbitrarily. 
+When I create a post I apply relevant tags to it. The tag `post` is applied automatically to all posts. And when I create a note using my custom Decap note template it also applies tag `note`. (I should do the same for `entry` and `bookmark`). But aside from those special tags, I apply tag names arbitrarily.
 
 Each post page shows its associated tags (as links) at the bottom. Each post shows beside its title the “most notable” tag. (Currently it just grabs the third tag since the first tag should automatically be `post` and in second place should be `note`, `entry` or `bookmark`).
 
@@ -162,7 +164,7 @@ I’ve addressed the “a means of contacting me” item on my wants list by [ad
 
 ## Update 39-12-24
 
-I recently [removed a bunch of features and pages](https://github.com/fuzzylogicxx/fuzzylogic/pull/157) that had gone stale and only served to make my website harder to maintain. 
+I recently [removed a bunch of features and pages](https://github.com/fuzzylogicxx/fuzzylogic/pull/157) that had gone stale and only served to make my website harder to maintain.
 
 - Photos section, including an 11ty [JavaScript data file](https://www.11ty.dev/docs/data-js/) where I fetched photos from Cloudinary using an 11ty
 - Bookshelf
