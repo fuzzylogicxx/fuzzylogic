@@ -1,7 +1,7 @@
 {
-  "name": "eleventy-base-blog",
+  "name": "fuzzy-logic",
   "version": "5.0.0",
-  "description": "A starter repository for a blog web site using the Eleventy static site generator.",
+  "description": "The personal website of Laurence Hughes, using the Eleventy static site generator.",
   "scripts": {
     "watch:sass": "sass --watch --style=compressed src/sass:_includes/css",
     "build:sass": "sass --style=compressed src/sass:_includes/css",
