@@ -1,0 +1,22 @@
+module.exports = {
+	title: "Fuzzy Logic",
+	url: "https://fuzzylogic.me/",
+  url_base: "https://fuzzylogic.me",
+	language: "en-GB",
+  description: "Fuzzy Logic is the personal website of Laurence Hughes, a web developer based in Glasgow, Scotland.",
+  author: {
+    name: "Laurence Hughes",
+    email: "laurence@fuzzylogic.me"
+  },
+  feed: {
+    subtitle: "Fuzzy Logic is the personal website of Laurence Hughes, a web developer based in Glasgow, Scotland.",
+    filename: "feed.xml",
+    path: "/feed/feed.xml",
+    url: "https://fuzzylogic.me/feed/feed.xml",
+    id: "https://fuzzylogic.me/"
+  },
+  open_graph: {
+    image: "https://fuzzylogic.me/img/social_share_default_1200x630.png",
+    image_alt_text: "Fuzzy Logic logo"
+  }
+};
