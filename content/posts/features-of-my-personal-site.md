@@ -91,7 +91,7 @@ I don’t like how it’s JavaScript dependant and in future I should look at [t
 
 #### 404 page
 
-I have a `404.md` file which sets a permalink of (i.e. is built as) `404.html`. [Having made that file available, Netlify does the rest](https://www.11ty.dev/docs/quicktips/not-found/)… which is nice!
+I have a `404.md` file which sets a permalink of (i.e. is built as) `404.html`. [And having made that file available, Netlify does the rest](https://www.11ty.dev/docs/quicktips/not-found/)… which is nice!
 
 ### Detailed features
 
@@ -119,7 +119,7 @@ It’s not perfect. It’d be useful to have a class on the excerpt. It’d be u
 
 #### Favicons
 
-To do: write a description.
+I updated it a few years ago per Evil Martians article https://evilmartians.com/chronicles/how-to-favicon-in-2021-six-files-that-fit-most-needs but it needs a further update. I’ll need to modify my SVG logo to sit on a solid background.
 
 #### Image plugin
 
@@ -213,10 +213,13 @@ I recently [removed a bunch of features and pages](https://github.com/fuzzylogic
 ## Update 17-02-25
 
 - No need for my own DIY drafts solution: now using [the 11ty preprocessor approach](https://www.11ty.dev/docs/config-preprocessors/#example-drafts) to check if posts are draft and if so not build them (therefore also not publish them) in production.
+- To make “passthrough” a bit easier I have a folder called `public` which is passed through, allowing me to chuck lots of relevant stuff into that rather than defining lots of different things as “passthrough”.
 
 ## Health checklist before/after future updates
 
 - At end: I’ve updated the readme and this health checklist with any new info for future me.
+- I can still reach my avatar at https://fuzzylogic.me/.well-known/avatar
+- Favicons are still reachable and working (per [Evil Martians article](https://evilmartians.com/chronicles/how-to-favicon-in-2021-six-files-that-fit-most-needs). I did not bother with the considerations for a PWA.
 - RSS
   - the RSS feed (which lets people subscribe) is available at https://fuzzylogic.me/feed/feed.xml
 - SEO

@@ -21,9 +21,9 @@
 		3. Learn more: https://github.com/11ty/eleventy-plugin-bundle
 		#}
 
-    {#- The reason I convert tokens to custom properties here rather than in an actual CSS file #}
-    {#- is because the tokens are in an 11ty data file (JSON) and I can only work with that format #}
-    {#- in a templating language (like nunjucks) file. #}
+    {#- The reason I define tokens as custom properties here rather than in an actual CSS file #}
+    {#- is because the tokens (containing the values) are in an 11ty data file (JSON) and #}
+    {#= I can only work with that format in a templating language (like nunjucks) file. #}
 		{%- css %}
       :root {
         /* Colours */
@@ -56,6 +56,14 @@
 
 		{#- Add the heading-anchors web component to the JavaScript bundle #}
 		{%- js %}{% include "node_modules/@zachleat/heading-anchors/heading-anchors.js" %}{% endjs %}
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="apple-mobile-web-app-title" content="{{ metadata.title }}">
+    <meta name="application-name" content="{{ metadata.title }}">
+    <meta name="msapplication-TileColor" content="#da532c">
 	</head>
 	<body>
 		<a href="#skip" class="visually-hidden">Skip to main content</a>

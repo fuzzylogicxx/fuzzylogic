@@ -20,6 +20,12 @@
   [headers.values]
     Cache-Control = "public, max-age=18144000"
 
+# Make an avatar available at a (hopefully in future) “well-known” URL convention
+[[redirects]]
+  from = "/.well-known/avatar"
+  to = "/.well-known/avatar.jpg"
+  status = 200
+
 # Redirect old blog URLs to new Journal URLs
 [[redirects]]
   from = "/thoughts/current-reading-1984-by-george-orwell"

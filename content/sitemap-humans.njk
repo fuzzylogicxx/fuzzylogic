@@ -1,0 +1,12 @@
+---
+permalink: /sitemap/index.html
+eleventyExcludeFromCollections: true
+---
+<h1>Sitemap</h1>
+
+<ul>
+  {% set entries = collections.all %}
+  {%- for entry in entries %}
+    <li><a href="{{ entry.url }}">{{ entry.data.title or 'Untitled' }}</a></li>
+  {%- endfor %}
+</ul>
