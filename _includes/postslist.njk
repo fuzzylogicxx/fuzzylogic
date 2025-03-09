@@ -1,68 +1,9 @@
-<div class="l-flow">
-  {% if page.url == "/" %}<h2>Latest posts</h2>{% endif %}
-
-<div class="h-feed">
-  {% for post in postslist %}
-  <article class="l-flow h-entry prose">
-
-    <header class="l-flow l-flow--3xs">
-      {% if (post.data.tags[1] !== 'note' or post.data.noteWithTitle) -%}
-        <h3 class="feed-entry-title"><a rel="bookmark" class="p-name u-url" href="{{ post.url | url }}">{{ post.data.title }}</a></h3>
-      {% else -%}
-        {# <p><a href="{{ post.url | url }}">{{ post.date | readableTime }}</a> <span>·</span> {{ post.data.location }}</span></p> #}
-      {% endif -%}
-      <div class="post__meta">
-        <span class="u-visually-hidden">A {{ post.data.postType }} posted on</span>
-        <time class="dt-published" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
-        in
-        <a rel="tag" href="/tags/{{ post.data.topLevelCategory | url }}" class="tag">{{ post.data.topLevelCategory }}</a>
-      </div>
-    </header>
-    <div class="l-flow e-content">
-    {% if (post.data.page.excerpt) -%}
-      {%- set excerpt = post.data.page.excerpt -%}{{ excerpt | markdownStringToHTML | safe }}
-      {% if app.environment == "production" and (post.data.mainImage.url or post.data.mainImage.cloudinary_unique_path) %}
-      <figure>
-      {%- if post.data.mainImage.isAnchor %}<a href="{{ post.url | url }}">{%- endif %}
-        {%- if post.data.mainImage.cloudinary_unique_path %}
-          {% respimgV2
-            "" + post.data.mainImage.cloudinary_unique_path + "",
-            "" + post.data.mainImage.alt + "",
-            post.data.mainImage.aspectRatioWidth,
-            post.data.mainImage.aspectRatioHeight
-          %}
-        {%- else -%}
-          {% respimg "" + post.data.mainImage.url + "", "" + post.data.mainImage.alt + "", "(min-width: 1600px) 646px, (min-width: 700px) 612px, 91.58vw", post.data.mainImage.aspectRatioWidth, post.data.mainImage.aspectRatioHeight %}
-        {%- endif %}
-      {%- if post.data.mainImage.isAnchor %}</a>{%- endif %}
-      {%- if post.data.mainImage.figcaption %}<figcaption>{{ post.data.mainImage.figcaption }}</figcaption>{%- endif %}
-      </figure>
-      {% endif %}
-    {%- else -%}
-      {{ post.templateContent | markdownStringToHTML | safe }}
-    {%- endif %}
-    </div>
-    {% if (post.data.page.excerpt) -%}
-      <footer class="stack">
-        <a rel="bookmark" class="p-name u-url" href="{{ post.url | url }}">
-          Continue reading <span class="u-visually-hidden">“{{ post.data.title }}”</span>
-        </a>
-      </footer>
-    {%- endif %}
-    {# <footer class="stack">
-      <div class="cluster">
-        <ul class="tags">
-        {% for tag in post.data.tags %}
-          {%- if (tag != "posts") and (tag != "link") and (tag != "note") and (tag != "entry") -%}
-          {% set tagUrl %}/tags/{{ tag }}/{% endset %}
-          <li><a rel="tag" href="{{ tagUrl | url }}" class="tag">{{ tag }}</a></li>
-          {%- endif -%}
-        {% endfor %}
-        </ul>
-      </div>
-    </footer> #}
-  </article>
-{% endfor %}
-</div>
-
-</div>
+{# {%- css %}.postlist { counter-reset: start-from {{ (postslistCounter or postslist.length) + 1 }} }{% endcss %} #}
+<ol reversed class="postlist">
+{%- for post in postslist | reverse %}
+	<li class="postlist-item{% if post.url == url %} postlist-item-active{% endif %}">
+		<a href="{{ post.url }}" class="postlist-link">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a>
+		<time class="postlist-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate("LLLL yyyy") }}</time>
+	</li>
+{%- endfor %}
+</ol>

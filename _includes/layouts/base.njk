@@ -1,170 +1,90 @@
 <!doctype html>
-<html dir="ltr" lang="{{ metadata.language }}">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>
-      {%- if (renderData.title) -%}
-      {{ renderData.title }} | {{ metadata.title }}
-      {%- elif (noteTitle) -%}
-      {{ metadata.title }} Note #{{ noteTitle }} | {{ metadata.title }}
-      {%- elif (title) -%}
-      {{ title }} | {{ metadata.title }}
-      {%- else -%}
-      {{ metadata.title }}
-      {%- endif -%}
-    </title>
+<html lang="{{ metadata.language }}">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>{{ title or metadata.title }}</title>
+		<meta name="description" content="{{ description or metadata.description }}">
+		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="{{ metadata.title }}">
 
-    {#
-      Re-add as I build the CSS back up again.
-      <link rel="preload" href="/fonts/sans/SourceSans3-Regular-subset.woff2" as="font" type="font/woff2" crossorigin>
-      <link rel="preload" href="/fonts/sans/SourceSans3-Semibold-subset.woff2" as="font" type="font/woff2" crossorigin>
+		{#- let folks know I used Eleventy to build my site #}
+		<meta name="generator" content="{{ eleventy.generator }}">
 
-      <link href="/css/theme.css" rel="stylesheet">
-    #}
+		{#-
+		Plain-text bundles are provided via the `eleventy-plugin-bundle` plugin:
+		1. CSS:
+			* Add to a per-page bundle using `{% css %}{% endcss %}`
+			* Retrieve bundle content using `{% getBundle "css" %}` or `{% getBundleFileUrl "css" %}`
+		2. Or for JavaScript:
+			* Add to a per-page bundle using `{% js %}{% endjs %}`
+			* Retrieve via `{% getBundle "js" %}` or `{% getBundleFileUrl "js" %}`
+		3. Learn more: https://github.com/11ty/eleventy-plugin-bundle
+		#}
 
-    <!-- THIS COMMENT WILL BE REPLACED WITH INLINED, MINIFIED CSS -->
+    {#- The reason I convert tokens to custom properties here rather than in an actual CSS file #}
+    {#- is because the tokens are in an 11ty data file (JSON) and I can only work with that format #}
+    {#- in a templating language (like nunjucks) file. #}
+		{%- css %}
+      :root {
+        /* Colours */
+        --color-dark: {{ tokens.colorDark }};
+        --color-light: {{ tokens.colorLight }};
+        --color-grey-with-hue: {{ tokens.colorGreyWithHue }};
+        --color-grey: {{ tokens.colorGrey }};
+        --color-grey-text: {{ tokens.colorGreyText }};
+        --color-link: {{ tokens.colorLink }};
+        --color-link-hover: {{ tokens.colorLinkHover }}; /* 40% darker. Less than 30% wasn’t noticeable on hover */
 
-    <meta name="author" content="{{ metadata.author.name }}">
-    <meta name="description" content="{{ renderData.description or description or metadata.description }}">
-    <meta name="keywords" content="front-end, frontend, front-end developer, web developer, web developer glasgow, html, css, javascript, vanilla javascript, accessibility, sofrito" />
+        /* Measure */
+        --measure: {{ tokens.measure }};
+        --heading-measure: {{ tokens.headingMeasure }};
+        --h1-measure: {{ tokens.h1Measure }};
 
-    <link rel="canonical" href="{{ metadata.url_base }}{{ page.url }}" />
+        /* Borders */
+        --border-thin: {{ tokens.colorThin }};
+        --border-thick: {{ tokens.colorThick }};
+      }
+    {% endcss %}
+    {%- css %}{% include "public/css/index.css" %}{% endcss %}
+		{#- Or you can add from node_modules #}
+		{# {%- css %}{% include "node_modules/prismjs/themes/prism-okaidia.css" %}{% endcss %} #}
 
-    <meta name="robots" content="{{ pageSpecificRobotsDirective or 'index, follow' }}">
+		{#- Render the CSS bundle using inlined CSS (for the fastest site performance in production) #}
+		<style>{% getBundle "css" %}</style>
+		{#- Renders the CSS bundle using a separate file, if you can't set CSP directive style-src: 'unsafe-inline' #}
+		{#- <link rel="stylesheet" href="{% getBundleFileUrl "css" %}"> #}
 
-    <!-- OG tags: most important -->
-    <meta property="og:title" content="{{ renderData.title or title or metadata.title }}" />
-    <meta property="og:description" content="{{ renderData.description or description or metadata.description }}" />
+		{#- Add the heading-anchors web component to the JavaScript bundle #}
+		{%- js %}{% include "node_modules/@zachleat/heading-anchors/heading-anchors.js" %}{% endjs %}
+	</head>
+	<body>
+		<a href="#skip" class="visually-hidden">Skip to main content</a>
 
-    {%- if (openGraphImage or metadata.open_graph.image) -%}
-    <meta property="og:image" content="{{ openGraphImage or metadata.open_graph.image }}" />
-    {%- elif (cloudinary_unique_path) -%}
-    <meta property="og:image" content="https://res.cloudinary.com/fuzzylogic/image/upload/q_auto,f_auto,c_crop,g_north,w_1200,h_630/{{ cloudinary_unique_path }}" />
-    {%- endif -%}
+		<header>
+			<a href="/" class="home-link">{{ metadata.title }}</a>
 
-    <meta property="og:url" content="{{ metadata.url_base }}{{ page.url }}" />
+			{#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
+			<nav>
+				<h2 class="visually-hidden">Top level navigation menu</h2>
+				<ul class="nav">
+				{%- for entry in collections.all | eleventyNavigation %}
+					<li class="nav-item"><a href="{{ entry.url }}"{% if entry.url == page.url %} aria-current="page"{% endif %}>{{ entry.title }}</a></li>
+				{%- endfor %}
+				</ul>
+			</nav>
+		</header>
 
-    <!-- OG tags: extra credit -->
-    <meta property="og:site_name" content="{{ metadata.url }}" />
+		<main id="skip">
+			<heading-anchors>
+				{{ content | safe }}
+			</heading-anchors>
+		</main>
 
-    <!-- Twitter-specific -->
-    <meta name="twitter:card" content="summary"> <!-- summary_large_image -->
-    <meta name="twitter:image:alt" content="{{ metadata.open_graph.image_alt_text }}">
+		<footer>
+			<p><em>Built with <a href="https://www.11ty.dev/">{{ eleventy.generator }}</a></em></p>
+		</footer>
 
-    <!-- Advice for devices which can 'install' this website on their home screen -->
-    <link rel="manifest" href="/manifest.webmanifest">
-
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="apple-mobile-web-app-title" content="{{ metadata.title }}">
-    <meta name="application-name" content="{{ metadata.title }}">
-    <meta name="msapplication-TileColor" content="#da532c">
-
-    {#
-     To-do: Re-add as I build the CSS back up again.
-
-    <meta name="theme-color" content="{{ tokens.colorLight }}" media="(prefers-color-scheme: light)">
-    <meta name="theme-color" content="{{ tokens.colorDark }}" media="(prefers-color-scheme: dark)">
-    #}
-
-    {#
-      Specify that the page supports both dark and light color schemes, and the page author prefers light.
-      This is really a presentational thing (and can also be specified in CSS) however the meta tag helps browsers
-      to do their thing *faster*.
-      (NB Ensure that the order of preference in the "content" attribute doesn’t go out of sync with
-      what I’m specifying in CSS.)
-      https://web.dev/color-scheme/
-    #}
-    {#
-      To-do: Re-add as I build the CSS back up again.
-    <meta name="color-scheme" content="light dark">
-    #}
-
-    <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
-
-    <!-- webmentions -->
-    <link rel="pingback" href="https://webmention.io/fuzzylogic.me/xmlrpc">
-    <link rel="webmention" href="https://webmention.io/fuzzylogic.me/webmention">
-  </head>
-  <body {% if bodyclass %}class="{{ bodyclass }}"{% endif %}>
-
-    <!-- Skip link(s) -->
-    <div class="u-hidden-until-focused">
-      <a class="u-hidden-until-focused__item u-hidden-until-focused__link" href="#skip-link-target">Skip to main content</a>
-    </div>
-
-    <!-- Header begins -->
-    <header class="global-header">
-      <div class="l-center l-center--wrapper">
-        <div class="l-cluster l-cluster--space-between">
-          <a href="{{ '/' | url }}" class="logo">
-            <svg class="logo__mark" aria-hidden="true" focusable="false" width="2.125em" viewBox="0 0 185 186.5" xmlns="http://www.w3.org/2000/svg">
-              <path fill="currentColor" d="M184.8 80.7a5.18 5.18 0 0 0-2.7-4.6L51.6.7a5 5 0 0 0-2.7-.7 5.44 5.44 0 0 0-2.7.7l-43.4 25A5.31 5.31 0 0 0 0 30.4v100.5a5.18 5.18 0 0 0 2.7 4.6l43.6 25.2a5 5 0 0 0 2.7.7 5.44 5.44 0 0 0 2.7-.7l35.5-20.5v41a5.18 5.18 0 0 0 2.7 4.6 5 5 0 0 0 2.7.7 5.44 5.44 0 0 0 2.7-.7l87-50.2a5.29 5.29 0 0 0 2.7-4.6ZM50.2 103.6a2.75 2.75 0 0 0-2.5 0 2.48 2.48 0 0 0-1.3 2.2v45.9L7.9 129.5V34.8l82 47.4v44.5Zm37.3 27.3-36 20.8v-41.6Zm-8.3-60.8L10.5 30.4 49 8.2l82 47.4-38.5 22.2Zm54.3-10.2v45.9a2.61 2.61 0 0 0 1.3 2.2 2.66 2.66 0 0 0 1.2.3 3.08 3.08 0 0 0 1.3-.3L177 85v44.5l-82 47.4V82.2Zm5 41.6V59.9l36 20.8Z" />
-            </svg>
-            <span class="logo__text">Fuzzy Logic <span class="u-visually-hidden">Homepage</span></span>
-          </a>
-
-          <nav aria-label="Main" class="primary-navigation">
-            {% set navPages = collections.all | eleventyNavigation %}
-            <ul role="list" class="l-cluster">
-            {%- for entry in navPages %}
-              <li class="primary-navigation__item" id="nav-{{ entry.title | lower }}">
-                <a{% if entry.url == page.url %} aria-current="page"{% endif %} href="{{ entry.url | url }}">{{ entry.title }}</a>
-              </li>
-            {%- endfor %}
-            </ul>
-          </nav>
-
-        </div>
-      </div>
-    </header>
-
-    <main id="skip-link-target" class="primary-content{% if templateClass %} {{ templateClass }}{% endif %}">
-      {{ content | safe }}
-    </main>
-
-    <footer class="global-footer">
-
-      <div class="l-center l-center--wrapper">
-
-        <div class="l-cluster l-cluster--space-between">
-          <p class="copyright">&copy; 2017–{% year %} <a href="{{ metadata.url | url }}">Laurence Hughes</a></p>
-          <p><a href="https://github.com/fuzzylogicxx" rel="me">Github profile</a> and <a href="https://github.com/fuzzylogicxx/fuzzylogic/blob/v3/{{ page.inputPath }}">page source</a></p>
-        </div>
-
-      </div>
-
-    </footer>
-
-    <!-- SVGs used repeatedly on the page are better defined as symbols, then <use>d -->
-    <svg width="0" height="0" style="display: none;">
-      <symbol id="icon-offsite" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <title>External Link</title>
-        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"></path>
-      </symbol>
-      <symbol id="icon-bookmark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <title>Bookmark</title>
-        <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
-      </symbol>
-      <symbol id="icon-note" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <title>Note</title>
-        <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12" y2="18"></line>
-      </symbol>
-      <symbol id="icon-entry" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <title>Entry</title>
-        <path d="M20.24 12.24a6 6 0 0 0-8.49-8.49L5 10.5V19h8.5z"></path><line x1="16" y1="8" x2="2" y2="22"></line><line x1="17.5" y1="15" x2="9" y2="15"></line>
-      </symbol>
-      <symbol id="icon-search" viewBox="0 0 56.966 56.966">
-        <title>Search</title>
-          <path fill="currentColor" d="M55.146 51.887L41.588 37.786A22.926 22.926 0 0 0 46.984 23c0-12.682-10.318-23-23-23s-23 10.318-23 23 10.318 23 23 23c4.761 0 9.298-1.436 13.177-4.162l13.661 14.208c.571.593 1.339.92 2.162.92.779 0 1.518-.297 2.079-.837a3.004 3.004 0 0 0 .083-4.242zM23.984 6c9.374 0 17 7.626 17 17s-7.626 17-17 17-17-7.626-17-17 7.626-17 17-17z"></path>
-      </symbol>
-    </svg>
-
-    {% block main %}
-    {# page-specific scripts are placed here #}
-    {% endblock %}
-  </body>
+		<!-- This page `{{ page.url }}` was built on {% currentBuildDate %} -->
+		<script type="module" src="{% getBundleFileUrl "js" %}"></script>
+	</body>
 </html>
