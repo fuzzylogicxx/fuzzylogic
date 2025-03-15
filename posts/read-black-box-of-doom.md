@@ -1,5 +1,5 @@
 ---
-title: Recently read: I’m beginning to worry about this black box of doom
+title: "Recently read: I’m beginning to worry about this black box of doom"
 description: I loved Jason Pargin’s book
 date: 2025-02-25T10:00:00Z
 location: Glasgow
