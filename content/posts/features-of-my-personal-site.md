@@ -216,8 +216,7 @@ I recently [removed a bunch of features and pages](https://github.com/fuzzylogic
 - To make “passthrough” a bit easier I have a folder called `public` which is passed through, allowing me to chuck lots of relevant stuff into that rather than defining lots of different things as “passthrough”.
 
 ## Health checklist before/after future updates
-
-- At end: I’ve updated the readme and this health checklist with any new info for future me.
+- When finished the following: I’ve updated the readme and this health checklist with any changes / new info.
 - I can still reach my avatar at https://fuzzylogic.me/.well-known/avatar
 - Favicons are still reachable and working (per [Evil Martians article](https://evilmartians.com/chronicles/how-to-favicon-in-2021-six-files-that-fit-most-needs). I did not bother with the considerations for a PWA.
 - RSS
@@ -234,15 +233,24 @@ I recently [removed a bunch of features and pages](https://github.com/fuzzylogic
     - you can hit the XML sitemap https://fuzzylogic.me/sitemap.xml and it excludes pages which shouldn’t be indexed:
       - exclude: tag pages; sitemap.xml; 404 page; pages with draft:true (like /posts/draft-test/)
 - Posts
-  - a draft post can’t be reached in the browser – https://fuzzylogic.me/posts/draft-test/
-  - Check a few URLs and make sure they’re still the same and haven’t changed (risk is low, my /posts URL structure is uniform)
+  - Drafts: a draft post can’t be reached in the browser – https://fuzzylogic.me/posts/draft-test/
+  - URLs: check a few URLs and make sure they’re still the same and haven’t changed (risk is low, my /posts URL structure is uniform)
     - flex inline block
     - glyphhanger
-  - doesn’t show linked tags going to tag pages that don’t exist (same list of low-level tags as mentioned below re. the tags page)
-  - excerpts look good
-  - code snippets look good
-  - an image rendered using 11ty Image works properly
-  - an image rendered with an earlier image implementation works properly
+  - Link integrity: doesn’t show linked tags going to tag pages that don’t exist (same list of low-level tags as mentioned below re. the tags page)
+  - Types:
+    - note looks good
+    - bookmark looks good
+    - rest look good
+  - Excerpts: look good
+  - Code snippets: look good
+  - Images:
+    - an image rendered using 11ty Image works properly
+    - an image rendered with an earlier image implementation works properly
+  - Metadata
+    - My custom (via eleventyComputed) 'postType' and 'topLevelCategory' keys still work. Check a post and confirm that it still says "A note created on date in topLevelCategory"
+  - Structured data
+    - schema.org BlogPosting still doing what it should
 - Other pages
   - Human sitemap (for humans) is available at fuzzylogic.me/sitemap and contains the right stuff (although should review this page’s usefulness, generally)
   - The tags page https://fuzzylogic.me/tags/ is available, and doesn’t list low-level tags
@@ -250,3 +258,4 @@ I recently [removed a bunch of features and pages](https://github.com/fuzzylogic
 - Miscellenous
   - Favicons (and related config) files still work
   - Lighthouse scores haven’t regressed. (Taken care of by Netlify plugin? But also manually test)
+  - Indieweb: webmentions still work

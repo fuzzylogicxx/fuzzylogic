@@ -3,12 +3,12 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>{{ title or metadata.title }}</title>
-		<meta name="description" content="{{ description or metadata.description }}">
-		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="{{ metadata.title }}">
 
-		{#- let folks know I used Eleventy to build my site #}
-		<meta name="generator" content="{{ eleventy.generator }}">
+    {#- TODO: decide what to do about Note titles. See base.njk file history. #}
+    <title>{{ title or metadata.title }}</title>
+
+    <meta name="description" content="{{ description or metadata.description }}">
+    <meta name="keywords" content="{{ keywords or metadata.keywords }}">
 
 		{#-
 		Plain-text bundles are provided via the `eleventy-plugin-bundle` plugin:
@@ -25,6 +25,7 @@
     {#- is because the tokens (containing the values) are in an 11ty data file (JSON) and #}
     {#= I can only work with that format in a templating language (like nunjucks) file. #}
 		{%- css %}
+    @layer tokens {
       :root {
         /* Colours */
         --color-dark: {{ tokens.colorDark }};
@@ -44,19 +45,27 @@
         --border-thin: {{ tokens.colorThin }};
         --border-thick: {{ tokens.colorThick }};
       }
+    }
     {% endcss %}
-    {%- css %}{% include "public/css/index.css" %}{% endcss %}
-		{#- Or you can add from node_modules #}
-		{# {%- css %}{% include "node_modules/prismjs/themes/prism-okaidia.css" %}{% endcss %} #}
 
-		{#- Render the CSS bundle using inlined CSS (for the fastest site performance in production) #}
+    {%- css %}{% include "public/css/index.css" %}{% endcss %}
+
+		{#- Grab the amalgamated CSS bundle for the page and render as inlined CSS (for fastest performance in production) #}
 		<style>{% getBundle "css" %}</style>
-		{#- Renders the CSS bundle using a separate file, if you can't set CSP directive style-src: 'unsafe-inline' #}
-		{#- <link rel="stylesheet" href="{% getBundleFileUrl "css" %}"> #}
 
 		{#- Add the heading-anchors web component to the JavaScript bundle #}
 		{%- js %}{% include "node_modules/@zachleat/heading-anchors/heading-anchors.js" %}{% endjs %}
 
+    {#- Grab the amalgamated JS bundle and link to it as a ES module file #}
+    <script type="module" src="{% getBundleFileUrl "js" %}"></script>
+
+    {#- RSS Feed #}
+    <link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="{{ metadata.title }}">
+
+		{#- let folks know I used Eleventy to build my site #}
+		<meta name="generator" content="{{ eleventy.generator }}">
+
+    {#- favicons and related #}
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -64,35 +73,70 @@
     <meta name="apple-mobile-web-app-title" content="{{ metadata.title }}">
     <meta name="application-name" content="{{ metadata.title }}">
     <meta name="msapplication-TileColor" content="#da532c">
+
+    {#- webmentions #}
+    <link rel="pingback" href="https://webmention.io/fuzzylogic.me/xmlrpc">
+    <link rel="webmention" href="https://webmention.io/fuzzylogic.me/webmention">
+
+    {#- SEO #}
+    <link rel="canonical" href="{{ metadata.url_base }}{{ page.url }}">
+    {#-
+        TODO: revisit whether I want the following back as-is or to handle it another way.
+        <meta name="robots" content="{{ pageSpecificRobotsDirective or 'index, follow' }}">
+    #}
+
+    {#- TODO: Open Graph and related tags.
+        See history of base.njk for what I had. Decide whether I need it back.
+    #}
+
+    {#- TODO: reassess whether I want light and dark theme stuff back in.
+        See history of base.njk for what I had.
+    #}
 	</head>
 	<body>
-		<a href="#skip" class="visually-hidden">Skip to main content</a>
+    <!-- Skip to content link -->
+    <div class="u-hidden-until-focused">
+      <a class="u-hidden-until-focused__item u-hidden-until-focused__link" href="#skip-link-target">Skip to main content</a>
+    </div>
 
-		<header>
-			<a href="/" class="home-link">{{ metadata.title }}</a>
+    <!-- Header begins -->
+    <header class="global-header">
+      <div class="l-center l-center--wrapper">
+        <div class="l-cluster l-cluster--space-between">
+          <a href="{{ '/' | url }}" class="logo">
+            {{ metadata.title }}
+          </a>
 
-			{#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
-			<nav>
-				<h2 class="visually-hidden">Top level navigation menu</h2>
-				<ul class="nav">
-				{%- for entry in collections.all | eleventyNavigation %}
-					<li class="nav-item"><a href="{{ entry.url }}"{% if entry.url == page.url %} aria-current="page"{% endif %}>{{ entry.title }}</a></li>
-				{%- endfor %}
-				</ul>
-			</nav>
-		</header>
+          <nav aria-label="Main" class="primary-navigation">
+            <ul role="list" class="l-cluster">
+            {%- for entry in collections.all | eleventyNavigation %}
+              <li class="primary-navigation__item">
+                <a href="{{ entry.url }}"{% if entry.url == page.url %} aria-current="page"{% endif %}>{{ entry.title }}</a>
+              </li>
+            {%- endfor %}
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
 
-		<main id="skip">
-			<heading-anchors>
+    <main id="skip-link-target" class="primary-content">
+      <heading-anchors>
 				{{ content | safe }}
 			</heading-anchors>
-		</main>
+    </main>
 
-		<footer>
-			<p><em>Built with <a href="https://www.11ty.dev/">{{ eleventy.generator }}</a></em></p>
-		</footer>
+    <footer class="global-footer">
+      <div class="l-center l-center--wrapper">
+        <div class="l-cluster l-cluster--space-between">
+          <p class="copyright">&copy; 2017–{% currentYear %} <a href="{{ metadata.url | url }}">Laurence Hughes</a></p>
+          <p>
+            <span>Built with <a href="https://www.11ty.dev/">{{ eleventy.generator }}</a>.</span>
+            Visit <a href="https://github.com/fuzzylogicxx" rel="me">Github profile</a> or <a href="https://github.com/fuzzylogicxx/fuzzylogic/blob/v3/{{ page.inputPath }}">page source</a>.</p>
+        </div>
+      </div>
+    </footer>
 
 		<!-- This page `{{ page.url }}` was built on {% currentBuildDate %} -->
-		<script type="module" src="{% getBundleFileUrl "js" %}"></script>
 	</body>
 </html>

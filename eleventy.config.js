@@ -52,8 +52,8 @@ export default async function(eleventyConfig) {
 		stylesheet: "pretty-atom-feed.xsl",
 		templateData: {
 			eleventyNavigation: {
-				key: "Feed",
-				order: 4
+				key: "RSS",
+				order: 2
 			}
 		},
 		collection: {
@@ -76,7 +76,7 @@ export default async function(eleventyConfig) {
 		// Output formats for each image.
 		formats: ["avif", "webp", "auto"],
 
-		// widths: ["auto"],
+		widths: [800, "auto"],
 
 		failOnError: false,
 		htmlOptions: {
@@ -84,6 +84,7 @@ export default async function(eleventyConfig) {
 				// e.g. <img loading decoding> assigned on the HTML tag will override these values.
 				loading: "lazy",
 				decoding: "async",
+        sizes: "(max-width: 860px) 100vw, 840px",
 			}
 		},
 
@@ -104,6 +105,12 @@ export default async function(eleventyConfig) {
 	eleventyConfig.addShortcode("currentBuildDate", () => {
 		return (new Date()).toISOString();
 	});
+
+  eleventyConfig.addShortcode("currentYear", () => {
+		return (new Date()).getFullYear();
+	});
+
+
 
 	// Features to make your build faster (when you need them)
 

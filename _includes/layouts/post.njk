@@ -1,28 +1,67 @@
 ---
 layout: layouts/base.njk
 ---
-{# Only include the syntax highlighter CSS on blog posts, included with the CSS per-page bundle #}
-{%- css %}{% include "node_modules/prismjs/themes/prism-okaidia.css" %}{% endcss %}
-{%- css %}{% include "public/css/prism-diff.css" %}{%- endcss %}
-<h1>{{ title }}</h1>
+<div class="primary-content__body">
+  <div class="l-center l-center--wrapper-narrow">
+    <article
+      class="l-flow post h-entry prose"
+      itemscope itemtype="http://schema.org/BlogPosting"
+      data-pagefind-body
+    >
+      <header class="post__header">
+        {%- if (title) -%}
+          {% set article_title = title %}
+        {%- else -%}
+          {% set article_title = "Note: " + (page.date | readableDate) + ", " + (page.date | readableTime) %}
+        {%- endif -%}
+        {%- if (article_title) -%}
+          <h1 class="post__heading p-name" itemprop="headline">{{ article_title }}</h1>
+        {%- endif -%}
 
-<ul class="post-metadata">
-	<li><time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time></li>
-	{%- for tag in tags | filterTagList %}
-	{%- set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
-	<li><a href="{{ tagUrl }}" class="post-tag">{{ tag }}</a>{%- if not loop.last %}, {% endif %}</li>
-	{%- endfor %}
-</ul>
+        <div class="post__meta">
+          <span class="u-visually-hidden">A {{ postType }} posted on</span>
+          <time itemprop="datePublished" class="dt-published" datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time>
+          in
+          <a rel="tag" href="/tags/{{ topLevelCategory | url }}" class="tag">{{ topLevelCategory }}</a>
+        </div>
+      </header>
 
-{{ content | safe }}
+      {% if linkTarget %}
+      <div class="post-source">
+        <a class="text-icon-pair" href="{{ linkTarget }}">
+          <span>Visit external resource</span>
+          <svg class="text-icon-pair-icon" aria-hidden="true" focusable="false" width="1em" height="1em"><use xlink:href="#icon-offsite"></use></svg>
+        </a>
+      </div>
+      {% endif %}
 
-{%- if collections.posts %}
-{%- set previousPost = collections.posts | getPreviousCollectionItem %}
-{%- set nextPost = collections.posts | getNextCollectionItem %}
-{%- if nextPost or previousPost %}
-<ul class="links-nextprev">
-	{%- if previousPost %}<li class="links-nextprev-prev">← Previous<br> <a href="{{ previousPost.url }}">{{ previousPost.data.title }}</a></li>{% endif %}
-	{%- if nextPost %}<li class="links-nextprev-next">Next →<br><a href="{{ nextPost.url }}">{{ nextPost.data.title }}</a></li>{% endif %}
-</ul>
-{%- endif %}
-{%- endif %}
+      <div class="l-flow e-content {{ "article-type-listing" if isList }}" itemprop="articleBody">
+
+        {{ content | safe }}
+
+      </div> <!-- /.e-content -->
+
+      <footer class="l-flow l-flow--large post__footer">
+        <div class="l-cluster tags">
+          <p>Filed under:</p>
+          <ul role="list" class="l-cluster">
+          {%- for tag in tags | filterTagList %}
+            {% set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
+            <li><a rel="tag" href="{{ tag }}" class="tags__tag">{{ tag }}</a></li>
+          {%- endfor %}
+          </ul>
+        </div>
+
+        {%- if collections.posts %}
+        <nav class="traverse" aria-label="Pagination">
+          {%- set previousPost = collections.posts | getPreviousCollectionItem %}
+          {%- set nextPost = collections.posts | getNextCollectionItem %}
+
+          {%- if previousPost %}<a rel="prev" href="{{ previousPost.url }}"><span aria-hidden="true">← </span>Previous post</a></li>{% endif %}
+          {%- if nextPost %}<a rel="next" href="{{ nextPost.url }}">Next post<span aria-hidden="true"> →</span></a>{% endif %}
+        </nav>
+        {%- endif %}
+      </footer>
+    </article>
+  </div>
+</div>
