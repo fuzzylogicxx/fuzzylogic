@@ -15,7 +15,7 @@ I loved Jason Pargin’s [I’m beginning to worry about this black box of doom]
 
 It’s one of those stories that captures the zeitgeist amazingly well (a bit like The Social Network did back at the time). In this case it captures the tendency for folks online to blow things out of proportion; to catastrophise and to think the worst. 
 
-The black box has a boogie-man physical form in the book, but it soom becomes clear that it’ a clever metaphor for perhaps the real source of isolation, anxiety and division in the modern culture.
+The black box has a boogie-man physical form in the book, but it soon becomes clear that it’s a clever metaphor for perhaps the real source of anxiety and division in the modern culture.
 
 I loved the charcacters, the dialogue and the dark comedy. I especially enjoyed Ether’s vain attempts to make Abbot realise that everything isn’t really terrible and is arguably – arguably! – the best we’ve ever had it.
 
