@@ -5,6 +5,7 @@ const eleventyNavigation = {
 };
 const description = "Seek and ye might find"
 ---
+
 <link href="/pagefind/pagefind-ui.css" rel="stylesheet">
 
 <!-- <style>
