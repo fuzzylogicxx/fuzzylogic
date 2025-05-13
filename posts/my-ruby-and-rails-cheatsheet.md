@@ -362,7 +362,9 @@ attr_reader :size, :full_height, :data
 
 </figure>
 
-However although that’s the pattern employed by the [ViewComponent website](https://viewcomponent.org/) you could argue it’d be better not to do this because it makes more stuff public than needs to be. Instead you could simply access the instance variables directly (including in the view). I’d like to dig into this one a bit more and just check I’m clear on the syntax (perhaps `card.size`).
+Using `attr_reader` like this automatically generate a “getter” for a given instance variable so that you can refer to that instead of the instance variable inside your class methods. My understanding is that doing so is better than accessing the instance variable direct because, among other benefits, it provides better error messages. [More about using attr_reader](https://ivoanjo.me/blog/2017/09/20/why-i-always-use-attr_reader-to-access-instance-variables). 
+
+[The ViewComponent docs also use attr_reader](https://viewcomponent.org/guide/slots.html#component-slots).
 
 ## Methods
 
@@ -533,19 +535,27 @@ The `do…end` structure in Ruby is called a “block”, and more specifically 
 
 </figure>
 
-Blocks are essentially methods (functions).
+Blocks are essentially anonymous functions.
 
-We can specify that a block must be present. For example:
+When writing functions where we want a block passed in, we can specify that the block is required. For example:
 
 <figure>
 
 ``` ruby
-def has_block(param, &block)
+def do_something(param, &block)
 ```
 
 </figure>
 
 Here, the ampersand (`&`) means that the block is required.
+
+#### yield
+
+When you have a method with a yield statement, it is usually running the block that has been passed to it.
+
+You can also pass an argument to yield e.g. `yield(foo)` and that makes `foo` available to be passed into the block.
+
+See [the yield keyword](https://medium.com/rubycademy/the-yield-keyword-603a850b8921) for more information. 
 
 ### Single-line block
 
