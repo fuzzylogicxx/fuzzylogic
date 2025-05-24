@@ -1,10 +1,20 @@
 ---
-title: Skyelarking
-description: foo
+title: Skye larks
+description: A life-affirming holiday
 noteWithTitle: false
-date:
-  ? "{ now }"
+date: 2025-05-24T18:15
+tags:
+  - holiday
+  - skye
 ---
-https://www.booking.com/hotel/gb/the-kings-berth.en-gb.html?aid=866831&label=Share-uVUrGa%401744273080&sid=b4cee60f80c8e52d3667f07aa5e22aba&dest_id=-2605636&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=1&hpos=1&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1746607862&srpvid=776b3e0a94c00067&type=total&ucfs=1&
+## I’ve just had the most life-affirming short break with wonderful friends, a stunning location, food, music and sunshine. I’m a lucky boy!
 
-Friday Cuchullin restaurant for fish and chips
+I travelled to Skye with Clair, Gillian, Aarti and Ruth for the tenth anniversary of the [Skye Live festival](https://www.skyelive.co.uk/). 
+
+After settling into our apartment at picturesque Portree Harbour on Wednesday afternoon we headed out for dinner at [Scorrybreac](https://scorrybreac.com/) and it was a proper treat. Sat at our upstairs table beside Michael and some of the other lovely festival team, we enjoyed their amazing May tasting menu. That consisted of delights including Mangalitza pork taco, Lochbay scallop (with fennel, bisque and Laphroig whisky) and their oh so tasty treacle soda bread with smoked date butter. I also got to meet chef Calum, who is not only a talented, lovely and generous fella but also a real hoot. We ended up having a bit of a party at the end where he rolled out the big speaker!
+
+
+
+
+
+Thanks to the girls for such good vibes over the whole trip.
