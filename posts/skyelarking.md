@@ -21,7 +21,7 @@ Day 4: it was quiet in the apartment when I woke up so I popped out to nearby [B
 
 Since then I’ve discovered this wonderful video: [The Storr — A Film By Skye Live](https://youtu.be/-zR1MSvPiZM?si=LpiPzo7CaaCU-mcg). 
 
-
+![Skye crew at the tower](/img/uploads/photo-2025-05-11-21-15-01.jpg)
 
 Neil DJing.
 
