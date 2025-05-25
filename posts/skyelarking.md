@@ -17,7 +17,7 @@ Day 2: it was quiet in the apartment when I woke up so I popp
 
 Day 3: 
 
-Day 4: it was quiet in the apartment when I woke up so I popped out to nearby [Birch](<>) café. It was jumping and I recognised a few familiar faces including bands I’d seen on the main stage the previous night. I took a window seat and enjoyed a coffee and granola with rhubarb and yoghurt. Through the window I admired the striking *Sight for Storr Eyes* mural on the wall opposite the café (the work of Donnie Munro) and beside that on a glass plaque, Ellen Renton’s Skye-inspired words from *My Noise is Nothing.* I’d seen she and LoTI perform that as their last track just the other night, and this magical trip was now starting to give me some serious tingles.
+Day 4: it was quiet in the apartment when I woke up so I popped out to nearby [Birch](<>) café. It was jumping and I recognised a few familiar faces including bands I’d seen on the main stage the previous night. I took a window seat and enjoyed a coffee and granola with rhubarb and yoghurt. Through the window I admired the striking *Sight for Storr Eyes* mural on the wall opposite the café (the work of Donnie Munro) and beside that on a glass plaque, Ellen Renton’s Skye-inspired words from *My Noise is Nothing.* I’d seen she and LoTI perform that as their last track just the other night, and this magical trip was now giving me serious tingles.
 
 Since then I’ve discovered this wonderful video: [The Storr — A Film By Skye Live](https://youtu.be/-zR1MSvPiZM?si=LpiPzo7CaaCU-mcg). 
 
