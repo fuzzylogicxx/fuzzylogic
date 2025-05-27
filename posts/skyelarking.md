@@ -17,7 +17,7 @@ Day 2: walk with Clair, Ruth and Aarti to the Cullins Hotel.
 
 Day 3: breakfast at Café Cuil, sing-song
 
-Day 4: it was quiet in the apartment when I woke up so I popped out to nearby [Birch](<>) café. It was jumping and I recognised a few familiar faces including bands I’d seen on the main stage the previous night. I took a window seat and enjoyed a coffee and granola with rhubarb and yoghurt. Through the window I admired the striking *Sight for Storr Eyes* mural (the work of Donnie Munro) on the wall across the road, and on an adjacent glass plaque [Ellen Renton’s](https://ellenrenton.co.uk/) Skye-inspired words from *My Noise is Nothing.* I’d seen she and LoTI perform that as their last track just the other night. This magical trip was now giving me serious tingles.
+Day 4: folks were still sleeping when I woke up so I popped out to nearby [Birch](<>) café. It was jumping and I recognised a few familiar faces including bands I’d seen on the main stage the previous night. I took a window seat and enjoyed a coffee and granola with rhubarb and yoghurt. Through the window I admired the striking *Sight for Storr Eyes* mural (the work of Donnie Munro) on the wall across the road, and on an adjacent glass plaque [Ellen Renton’s](https://ellenrenton.co.uk/) Skye-inspired words from *My Noise is Nothing.* I’d seen she and LoTI perform that as their last track just the other night. This magical trip was now giving me serious tingles.
 
 Since then I’ve discovered this wonderful video: [The Storr — A Film By Skye Live](https://youtu.be/-zR1MSvPiZM?si=LpiPzo7CaaCU-mcg). 
 
