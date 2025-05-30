@@ -8,11 +8,9 @@ tags:
   - book
   - music
 ---
-Clair bought me this book for Christmas thinking I would enjoy it – and I did. 
+Clair bought me this book for Christmas thinking I would enjoy it – and I did. I love the idea of chronicling the milestones of your life using music – music that touched you, that you were obsessed with, or that bonded you with significant others.
 
-I love the idea of chronicling the milestones of your life using music – music that touched you, music you were obsesseed with, or music you shared in common with significant others.
-
-I also enjoyed reading the science behind the feelings. As Jude puts it in the first chapter:
+I also enjoyed reading the science behind the feelings. As Jude asked in the first chapter:
 
 > How do songs affect our emotions so profoundly? How can they activate memories instantly?
 
