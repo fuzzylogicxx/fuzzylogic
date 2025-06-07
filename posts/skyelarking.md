@@ -9,11 +9,15 @@ tags:
 ---
 ## I’ve just had the most life-affirming short break in Skye with friends, music and sunshine.
 
-I made the trip with Clair, Gillian, Aarti and Ruth for the tenth anniversary of the [Skye Live festival](https://www.skyelive.co.uk/). 
+I was at the tenth anniversary of [Skye Live festival](https://www.skyelive.co.uk/) with Clair, Gillian, Aarti and Ruth.
 
-On Wednesday afternoon, after settling into our apartment at Portree Harbour we made the short walk to [Scorrybreac](https://scorrybreac.com/) for dinner and it was a real treat. We shared a table with some of the lovely festival team and enjoyed the restaurant’s May Tasting Menu which included Mangalitza pork taco; Lochbay scallop with fennel, bisque and Laphroig whisky; and treacle soda bread with smoked date butter. I also met chef Calum who is not only a talented and lovely fella but a great laugh! After dinner Calum ordered us to fire up the tunes and it developed into a wee party.
+We arrived on Wednesday, a day before the festival started. After settling into our apartment at Portree Harbour we made the short walk to [Scorrybreac](https://scorrybreac.com/) for dinner and it was a real treat. We shared a table with some of the lovely festival team and enjoyed the restaurant’s May Tasting Menu which included Mangalitza pork taco; Lochbay scallop with fennel, bisque and Laphroig whisky; and treacle soda bread with smoked date butter. I also met chef Calum who’s not only very talented but also a great laugh! After dinner Calum ordered us to fire up the tunes so it developed into a wee party.
 
-Day 2: walk with Clair, Ruth and Aarti to the Cullins Hotel.
+On Thursday morning some of us wandered to the [Cuillin Hills Hotel.](https://www.cuillinhills-hotel-skye.co.uk/) We parked ourselves at a table overlooking the Cuillin mountain range and Portree Bay with the sun sparkling on the water, and settled into a a proper blether. 
+
+That evening, after we had dinner at [Cuchullin](https://www.tripadvisor.co.uk/Restaurant_Review-g551883-d10263818-Reviews-Cuchullin_Restaurant-Portree_Isle_of_Skye_The_Hebrides_Scotland.html?m=69573), I got my first taste of the festival. 
+
+
 
 Day 3: breakfast at Café Cuil, sing-song
 
