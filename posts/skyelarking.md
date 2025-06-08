@@ -9,7 +9,7 @@ tags:
 ---
 ## I’ve just had the most life-affirming short break in Skye with friends, music and sunshine.
 
-I was at the tenth anniversary of [Skye Live festival](https://www.skyelive.co.uk/) with Clair, Gillian, Aarti and Ruth.
+I went with Clair, Gillian, Aarti and Ruth to the tenth anniversary of [Skye Live festival](https://www.skyelive.co.uk/).
 
 We arrived on Wednesday, a day before the festival started. After settling into our apartment at Portree Harbour we made the short walk to [Scorrybreac](https://scorrybreac.com/) for dinner and it was a real treat. We shared a table with some of the lovely festival team and enjoyed the restaurant’s May Tasting Menu which included Mangalitza pork taco; Lochbay scallop with fennel, bisque and Laphroig whisky; and treacle soda bread with smoked date butter. I also met chef Calum who’s not only very talented but also a great laugh! After dinner he ordered us to fire up the tunes so it developed into a wee party.
 
@@ -17,15 +17,15 @@ On Thursday morning some of us wandered to the [Cuillin Hills Hotel.](https://ww
 
 That evening, after our dinner at [Cuchullin](https://www.tripadvisor.co.uk/Restaurant_Review-g551883-d10263818-Reviews-Cuchullin_Restaurant-Portree_Isle_of_Skye_The_Hebrides_Scotland.html?m=69573), I got my first taste of the festival. ”The Lump” (as the location is affectionately known) is ideally sized for a shindig, and when you add into the mix the stunning surrounding scenery it really is the perfect place to relax and soak up good vibes. The general mood of both staff and punters is super-friendly which made me feel really comfortable. After enjoying tunes from Skye Live DJs Michael and Neil on the tower stage we moseyed down to the main stage (a big top tent) to catch [Skippinish](https://www.skipinnish.com/). Their traditional sound featuring lead singer Norrie MacIver’s lovely voice was lapped up by the crowd. And I could tell that this tent – with its cracking lights, sound and atmosphere – was gonna be home to some proper scenes over the coming days.
 
-After the gig it was back to the apartment for a midnight snack of toast and cheese (or roasted cheese depending who you ask) and more laughs.
+After the gig it was back to the apartment for a midnight feast of toast and cheese (or roasted cheese depending who you ask) and more laughs.
 
-Friday started with a drive to [Café Cuil](https://www.cafecuil.com/) in Carbost. Clair recently worked there on a photoshoot for their forthcoming cookbook and had been singing its praises… and it didn’t disappoint. A few of us including me ordered beef brisket (I went for a toastie) and it was delicious. Another highlight was our sharing plate of Scotch pancakes with rhubarb & gingernut crumble and gorse flower mascarpone, which was as good as it sounds.
+Friday started with a drive to [Café Cuil](https://www.cafecuil.com/) in Carbost. Clair recently worked there on a photoshoot for their forthcoming cookbook and had been singing its praises… and it didn’t disappoint. A few of us, me included, ordered beef brisket (I went for the toastie) and it was delicious. Another highlight was our sharing plate of Scotch pancakes with rhubarb & gingernut crumble and gorse flower mascarpone, which was as tasty as it sounds.
 
-With full bellies and happy hearts it was back to the batmobile and we all agreed that this scenic road trip called for a Scottish playlist. I set to work chucking that together and we all proceeded to belt out Somewhere in my heart, Tinseltown in the rain and Sunshine on Leith at the top of our lungs as the hills 
+With happy bellies it was back to the batmobile, where we all agreed that this scenic road trip deserved a Scottish playlist. I set to work chucking that together and we all proceeded to belt out evergreen anthems from Aztec Camera, the Proclaimers and the Blue Nile as we journeyed past hills and lochs. It was joyous!
 
+Next stop was a sea safari. With the sun splitting the heavens we set off on Loch Portree as part of a small group. We were really lucky and saw two sea eagles, both of which swooped to grab mackerel to take back to their nests. As if that wasn’t enough we then met a pod of dolphins who performed a dance for us.
 
-
-Day 3: breakfast at Café Cuil, sing-song
+LoTI
 
 Day 4: folks were still sleeping when I woke up so I popped out to nearby [Birch](<>) café. It was jumping and I recognised a few familiar faces including bands I’d seen on the main stage the previous night. I took a window seat and enjoyed a coffee and granola with rhubarb and yoghurt. Through the window I admired the striking *Sight for Storr Eyes* mural (the work of Donnie Munro) on the wall across the road, and on an adjacent glass plaque [Ellen Renton’s](https://ellenrenton.co.uk/) Skye-inspired words from *My Noise is Nothing.* I’d seen she and LoTI perform that as their last track just the other night. This magical trip was now giving me serious tingles.
 
