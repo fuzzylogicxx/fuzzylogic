@@ -37,6 +37,8 @@ Eins zvei drei pie
 
 More LoTI – DJ. Allowance. Sun. Backdrop if the rolling hills and loch Portree. Crackle and ambience on a nice sound system. Everything felt big. It was mqgic. Quetzal. 
 
+Shat on.
+
 Optimo. Later heard them finish with Madonna and Sweet Dreams. “Everybody’s looking for something” STOP.
 
 Kinnaris Quintet. Bootiful.
