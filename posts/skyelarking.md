@@ -64,12 +64,12 @@ Alien
 
 
 
-Cheers to Clair for driving, to Aarti and Gillian for the invite, to Ruth for great vibes and chats. This one will live long in the memory.  
+Cheers to Clair for driving. Thanks to the girls for the invitation and for good vibes from start to finish!
+
+This one will live long in the memory.  
+
+
 
 
 
 ![Skye crew at the tower](/img/uploads/photo-2025-05-11-21-15-01.jpg)
-
-Neil DJing.
-
-Thanks to the girls for the invitation and for sustained good vibes from start to finish.
