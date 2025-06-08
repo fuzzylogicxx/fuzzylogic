@@ -23,9 +23,9 @@ Friday started with a drive to [Café Cuil](https://www.cafecuil.com/) in Carbos
 
 With happy bellies it was back to the batmobile, where we all agreed that this scenic road trip deserved a Scottish playlist. I set to work chucking that together and we all proceeded to belt out evergreen anthems from Aztec Camera, the Proclaimers and the Blue Nile as we journeyed past hills and lochs. It was joyous!
 
-Next stop was a sea safari. With the sun splitting the heavens we set off on Loch Portree as part of a small group. We were really lucky and saw two sea eagles, both of which swooped to grab mackerel to take back to their nests. As if that wasn’t enough we then met a pod of dolphins who performed a dance for us.
+Next stop was a *sea safari* with [Stardust Boat Trips](https://www.skyeboat-trips.co.uk/). With the sun splitting the heavens we set off in a group of around twelve people onto the Sound of Raasay. We were really lucky and saw two sea eagles which swooped to grab mackerel to take back to their nests. As if that wasn’t enough we then met a pod of dolphins who performed a dance for us.
 
-LoTI
+That evening I headed in to the festival a little ahead of the others as I was keen to catch Lord of the Isles and Ellon Renton’s live performance. 
 
 Day 4: folks were still sleeping when I woke up so I popped out to nearby [Birch](<>) café. It was jumping and I recognised a few familiar faces including bands I’d seen on the main stage the previous night. I took a window seat and enjoyed a coffee and granola with rhubarb and yoghurt. Through the window I admired the striking *Sight for Storr Eyes* mural (the work of Donnie Munro) on the wall across the road, and on an adjacent glass plaque [Ellen Renton’s](https://ellenrenton.co.uk/) Skye-inspired words from *My Noise is Nothing.* I’d seen she and LoTI perform that as their last track just the other night. This magical trip was now giving me serious tingles.
 
