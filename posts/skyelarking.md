@@ -29,7 +29,42 @@ That evening I headed in to the festival a little ahead of the others as I was k
 
 Later we caught Talisk and Valtos playing to a delirious main stage and also heard Eclair Fifi and Emjanero DJing at the tower. After a thoroughly good time, my highlight of the night came in the minutes just before the tent closed. Just when I least expected it, The Vengaboys’ *We like to party (the vengabus)* filled the air, offering a hilarious moment to send everyone home happy. Apparently it’s a tradition!
 
-When I woke on Saturday morning most folks were still sleeping so I visited nearby [Birch](<>) café. It was jumping! I recognised a few familiar faces including bands I’d seen on the main stage the previous night. I took a window seat and enjoyed a coffee and home-made granola. Through the window I admired the [*Sight for Storr Eyes* mural](https://www.whfp.com/2021/04/19/donnie-munro-unveils-sight-for-storr-eyes/) (the work of Donnie Munro) on the wall across the road. On an adjacent glass plaque are [Ellen Renton’s](https://ellenrenton.co.uk/) Skye-inspired words from *My Noise is Nothing.* I’d seen her perform that poem as their final track just the night before, and I loved this little surprise connection. (Note: since then I’ve discovered the wonderful [The Storr — A Film By Skye Live)](https://youtu.be/-zR1MSvPiZM?si=LpiPzo7CaaCU-mcg). 
+When I woke on Saturday morning most folks were still sleeping so I visited nearby [Birch](<>) café. It was jumping! I recognised a few familiar faces including bands I’d seen on the main stage the previous night. I took a window seat and enjoyed a coffee and home-made granola. In front on the wall across the road were the striking [*Sight for Storr Eyes* mural](https://www.whfp.com/2021/04/19/donnie-munro-unveils-sight-for-storr-eyes/) (the work of Donnie Munro) and, on an adjacent glass plaque, [Ellen Renton’s](https://ellenrenton.co.uk/) Skye-inspired words from *My Noise is Nothing.* I’d seen her perform that poem as their final track just the night before! Another special wee moment on this magical trip. (Note: since then I’ve discovered the wonderful [The Storr — A Film By Skye Live)](https://youtu.be/-zR1MSvPiZM?si=LpiPzo7CaaCU-mcg).
+
+Took a wee solo Walk, Loch Portree. Next time I’ll walk to Big Skerry. 
+
+Eins zvei drei pie
+
+More LoTI – DJ. Allowance. Sun. Backdrop if the rolling hills and loch Portree. Crackle and ambience on a nice sound system. Everything felt big. It was mqgic. Quetzal. 
+
+Optimo. Later heard them finish with Madonna and Sweet Dreams. “Everybody’s looking for something” STOP.
+
+Kinnaris Quintet. Bootiful.
+
+Caught a wee bit of the last band Elephant Session but in truth, I was now knackered and ready for bed. At forty-eight years young, I think I did okay!
+
+
+
+
+The Skye crew 
+
+Tim Craig 
+
+Owen
+
+Alien
+
+
+
+
+
+
+
+
+
+Cheers to Clair for driving, to Aarti and Gillian for the invite, to Ruth for great vibes and chats. This one will live long in the memory.  
+
+
 
 ![Skye crew at the tower](/img/uploads/photo-2025-05-11-21-15-01.jpg)
 
