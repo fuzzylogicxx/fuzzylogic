@@ -23,7 +23,7 @@
 
     {#- The reason I define tokens as custom properties here rather than in an actual CSS file #}
     {#- is because the tokens (containing the values) are in an 11ty data file (JSON) and #}
-    {#= I can only work with that format in a templating language (like nunjucks) file. #}
+    {#- I can only work with that format in a templating language (like nunjucks) file. #}
 		{%- css %}
     @layer tokens {
       :root {
@@ -48,7 +48,7 @@
     }
     {% endcss %}
 
-    {%- css %}{% include "public/css/index.css" %}{% endcss %}
+    {%- css %}{% include "css/index.css" %}{% endcss %}
 
 		{#- Grab the amalgamated CSS bundle for the page and render as inlined CSS (for fastest performance in production) #}
 		<style>{% getBundle "css" %}</style>

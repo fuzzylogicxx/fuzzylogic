@@ -215,8 +215,15 @@ I recently [removed a bunch of features and pages](https://github.com/fuzzylogic
 - No need for my own DIY drafts solution: now using [the 11ty preprocessor approach](https://www.11ty.dev/docs/config-preprocessors/#example-drafts) to check if posts are draft and if so not build them (therefore also not publish them) in production.
 - To make “passthrough” a bit easier I have a folder called `public` which is passed through, allowing me to chuck lots of relevant stuff into that rather than defining lots of different things as “passthrough”.
 
+## Update 09-06-25
+
+- When developing locally I run Eleventy with the `--serve` argument which gives me a local server, and watches for changes then re-runs Eleventy (rebuilds my site) and reloads my page in the browser
+- I no longer use Sass; I write plain CSS
+
 ## Health checklist before/after future updates
-- When finished the following: I’ve updated the readme and this health checklist with any changes / new info.
+
+When finished the following: I’ve updated the readme and this health checklist with any changes / new info:
+
 - I can still reach my avatar at https://fuzzylogic.me/.well-known/avatar
 - Favicons are still reachable and working (per [Evil Martians article](https://evilmartians.com/chronicles/how-to-favicon-in-2021-six-files-that-fit-most-needs). I did not bother with the considerations for a PWA.
 - RSS
