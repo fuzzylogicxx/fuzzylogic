@@ -3,17 +3,14 @@ import { feedPlugin } from "@11ty/eleventy-plugin-rss";
 import pluginSyntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
 import pluginNavigation from "@11ty/eleventy-navigation";
 import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
+import pluginFilters from "./_config/filters.js";
 
 // LH custom: use markdown-it-anchors so I can add classes in my markdown posts,
-// like so {.post__intro}. If I were intead to write them as HTML (<p class="intro">),
+// like so {.post__intro}. If I were instead to write them as HTML (<p class="intro">),
 // any markdown (links etc) I put within the opening and closing HTML tags would
 // not get processed into HTML (annoyingly) unless I add silly empty lines above and below
 // the markdown content.
-// (which depends on markdow)
 import markdownitattrs from 'markdown-it-attrs';
-
-
-import pluginFilters from "./_config/filters.js";
 
 /** @param {import("@11ty/eleventy").UserConfig} eleventyConfig */
 export default async function(eleventyConfig) {
@@ -96,7 +93,7 @@ export default async function(eleventyConfig) {
 	// Image optimization: https://www.11ty.dev/docs/plugins/image/#eleventy-transform
 	eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
 		// Output formats for each image.
-		formats: ["avif", "webp", "auto"],
+		formats: ["avif", "webp"],
 
 		widths: [800, "auto"],
 
