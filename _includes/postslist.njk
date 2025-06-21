@@ -1,9 +1,22 @@
-{# {%- css %}.postlist { counter-reset: start-from {{ (postslistCounter or postslist.length) + 1 }} }{% endcss %} #}
-<ol reversed class="postlist">
+<div class="h-feed">
 {%- for post in postslist | reverse %}
-	<li class="postlist-item{% if post.url == url %} postlist-item-active{% endif %}">
-		<a href="{{ post.url }}" class="postlist-link">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a>
-		<time class="postlist-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate("LLLL yyyy") }}</time>
-	</li>
+  <article class="l-flow h-entry prose">
+    <header class="l-flow l-flow--3xs">
+      <h3 data-ha-exclude class="feed-entry-title">
+        <a rel="bookmark" class="p-name u-url" href="{{ post.url }}">
+          {% if (post.data.tags[1] !== 'note' or post.data.noteWithTitle) -%}{{ post.data.title }}{% else -%}Note{% endif -%}
+        </a>
+      </h3>
+      <div class="post__meta">
+        <span class="u-visually-hidden">A {{ post.data.postType }} posted on</span>
+        <time class="dt-published" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
+        in
+        <a rel="tag" href="/tags/{{ post.data.topLevelCategory | url }}" class="tag">{{ post.data.topLevelCategory }}</a>
+      </div>
+    </header>
+    <div class="l-flow e-content">
+      {{ post.data.description }}
+    </div>
+  </article>
 {%- endfor %}
-</ol>
+</div>

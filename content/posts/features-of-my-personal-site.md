@@ -131,6 +131,8 @@ I use a `.editorconfig` file to set how my editor should handle things like nest
 
 I have a `.prettierrc` config file which sets things like a preference for single rather than double quotes. The idea is that you also have a prettier editor extension enabled (I have one for VS Code enabled) and in your editor settings you set your editor’s default formatter to that prettier extension. It’ll then format files on save.
 
+I had stylelint and eslint in the past but must have ditched them, probably to avoid entropy. I might consider re-adding for the code hygiene benefits.
+
 #### Minification and other optimisations
 
 I use `purgecss` and `terser`.
@@ -153,9 +155,9 @@ I use the Sass CSS preprocessor for the functionality and developer conveniences
 
 #### Section links
 
-I provide support for linking directly to headed sections of a page rather than the page’s URL only. This is also knowns as deep linking.
+I provide support for deep linking, i.e. linking to headed sections of a page rather than only to the page’s main URL.
 
-I use the `markdown-it-anchor` npm package. It adds an id attribute to headings (and optionally permalinks) in markdown files.
+I do this via Zach Leatherman’s heading-anchors web component.
 
 #### Slugify
 
@@ -219,6 +221,10 @@ I recently [removed a bunch of features and pages](https://github.com/fuzzylogic
 
 - When developing locally I run Eleventy with the `--serve` argument which gives me a local server, and watches for changes then re-runs Eleventy (rebuilds my site) and reloads my page in the browser
 - I no longer use Sass; I write plain CSS
+- I now use native CSS nesting. That meant I needed to adapt my previous Sass-based nesting: for example, I can [no longer do nesting for the purposes of concatenation](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_nesting/Using_CSS_nesting#concatenation_is_not_possible).
+- I moved to [heading-anchors](https://github.com/zachleat/heading-anchors) from `markdown-it-anchor` for deep linking.
+
+
 
 ## Health checklist before/after future updates
 
