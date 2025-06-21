@@ -229,7 +229,7 @@ I recently [removed a bunch of features and pages](https://github.com/fuzzylogic
 
 When finished the following: I’ve updated the readme and this health checklist with any changes / new info:
 
-- I can still reach my avatar at https://fuzzylogic.me/.well-known/avatar
+- I can still reach my avatar at https://fuzzylogic.me/.well-known/avatar (test on Netlify rater than local)
 - Favicons are still reachable and working (per [Evil Martians article](https://evilmartians.com/chronicles/how-to-favicon-in-2021-six-files-that-fit-most-needs). I did not bother with the considerations for a PWA.
 - RSS
   - the RSS feed (which lets people subscribe) is available at https://fuzzylogic.me/feed/feed.xml
@@ -268,6 +268,5 @@ When finished the following: I’ve updated the readme and this health checklist
   - The tags page https://fuzzylogic.me/tags/ is available, and doesn’t list low-level tags
     - all, nav, post, posts, link, entry, note, tagList
 - Miscellenous
-  - Favicons (and related config) files still work
   - Lighthouse scores haven’t regressed. (Taken care of by Netlify plugin? But also manually test)
   - Indieweb: webmentions still work
