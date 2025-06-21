@@ -7,14 +7,13 @@ tags:
 - web
 - personalsite
 ---
-I like the metaphor for personal websites of _tending to a digital garden_.
+I like the metaphor for personal websites of _tending to a digital garden_.{.post__intro}
 
 Like all gardens, they can become a bit unruly and need some weeding. Right now, as I consider updating some software and freshening things up, I realise that I’ve let it overgrow a tad.
 
 So, here’s a post in which I’ll log my website’s current features. This should be useful in and of itself as a stepping stone to writing a proper readme. However it’ll also help me reflect on my website’s health and maintainability so I can decide which features to nourish and which to prune.
 
 Note: this post will take a bit of time and a few sessions, so please regard it as a work in progress.
----
 
 ## What I want
 

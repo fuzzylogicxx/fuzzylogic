@@ -9,7 +9,7 @@ tags:
   - images
 draft: false
 ---
-I’m testing out the [Eleventy Image plugin](https://www.11ty.dev/docs/plugins/image/). Here’s a post with an image which, if all goes well, will be converted by the plugin from source `jpeg` into lightweight `avif` and `webp` formats and the underlying code transformed from a basic `img` element into comprehensive modern HTML image syntax.{.intro}
+I’m testing out the [Eleventy Image plugin](https://www.11ty.dev/docs/plugins/image/). Here’s a post with an image which, if all goes well, will be converted by the plugin from source `jpeg` into lightweight `avif` and `webp` formats and the underlying code transformed from a basic `img` element into comprehensive modern HTML image syntax.
 
 <figure>
   <img alt="A photo of the sign at the entrance to La Petite Garoupe restaurant, Antibes. The letters are in neon and the sign is surrounded by flowers." src="/img/uploads/img_4088.jpeg" />

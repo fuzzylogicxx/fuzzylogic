@@ -1,6 +1,18 @@
 ---
 layout: layouts/base.njk
 ---
+{# Only include the syntax highlighter CSS on blog posts, included with the CSS per-page bundle #}
+<style>
+  @layer base {
+    {% include "node_modules/prismjs/themes/prism-okaidia.css" %}
+  }
+</style>
+<style>
+  @layer base {
+    {% include "css/prism-diff.css" %}
+  }
+</style>
+
 <div class="primary-content__body">
   <div class="l-center l-center--wrapper-narrow">
     <article

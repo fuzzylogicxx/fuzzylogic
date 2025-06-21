@@ -24,6 +24,8 @@
     {#- I render the token-related custom properties here rather than in a CSS file #}
     {#- because the source tokens are in an 11ty data file (JSON) and #}
     {#- I can only work with that format in a templating language (like nunjucks) file. #}
+
+		{#- Add CSS to the bundle #}
 		{%- css %}
     /* ==========================================================================
       # CASCADE LAYERS DEFINTION
@@ -33,6 +35,12 @@
       * Establish a layer order up-front, from lowest to highest priority.
       */
       @layer base, layouts, links, components, utilities;
+
+
+
+    /* ==========================================================================
+      # DESIGN TOKENS AS CUSTOM PROPERTIES
+      ========================================================================== */
 
       @layer base {
         :root {
