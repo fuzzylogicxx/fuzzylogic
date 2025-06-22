@@ -19,8 +19,8 @@ Here are a few scrappy notes and themes I found interesting and jotted down.
 
 * Scientific and technological advancements that present moral questions
 * the idea of *genetic editing* (modification, I guess) to gain advantage, but with risks and side-effects. The gamble this represents.
-* Human loneliness
-* Human faith/religion (which even Klara, as a rational machine, learned)
+* human loneliness
+* blind faith/religion (which even Klara, as a rational machine, learned)
 * Klara’s capacity for innocence, morality, contentment in a way that the humans seemed incapable of
 * The idea that we can’t create identical clones of people because it’s not just their makeup that makes them unique; there’s also how others love and perceive them (which can’t be copied)
 * the potential dark side-effects of our societal choices and technological advances: environment collapse and pollution; societal divisions (the father Paul’s armed community)
