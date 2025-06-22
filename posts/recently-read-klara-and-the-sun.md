@@ -13,9 +13,9 @@ I didn’t have the appetite for Kazuo’s Ishiguro’s latest novel during the 
 
 I’d read before that Ishiguro is primarily interested in exploring what it is to be human, and uses science and technology elements as a device to support that. In *Never let me go* the device was cloning. In this book, the narrator is an “artificial friend” named Klara who is an AI-powered, empathetic android, and Ishiguro uses Klara’s unique perspective to shine a light on human behaviour and motivations.
 
-I won’t attempt to properly review the book when [others have done it much better](https://www.theguardian.com/books/2021/mar/01/klara-and-the-sun-by-kazuo-ishiguro-review-another-masterpiece). I’ll also just say I really enjoyed it, and recommend it.
+I won’t attempt to properly review the book when [others have done it much better](https://www.theguardian.com/books/2021/mar/01/klara-and-the-sun-by-kazuo-ishiguro-review-another-masterpiece). I’ll just say I really enjoyed it and recommend it.
 
-Here are a few scrappy notes and themes I found interesting and jotted down.
+Here are a few scrappy notes about themes I found interesting and jotted down.
 
 * Scientific and technological advancements that present moral questions
 * the idea of *genetic editing* (modification, I guess) to gain advantage, but with risks and side-effects. The gamble this represents.
