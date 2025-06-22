@@ -14,6 +14,19 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(pluginSyntaxHighlight);
 
+  // Drafts.
+  // See also _data/eleventyDataSchema.js which validates that
+  // `draft` is either undefined or boolean, and raises an error if not.
+  // TODO: add the above schema file once I’ve switched to ES modules.
+	eleventyConfig.addPreprocessor("drafts", "*", (data, content) => {
+		if(data.draft && process.env.ELEVENTY_RUN_MODE === "build") {
+			return false;
+		}
+	});
+
+
+
+
   eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
 		// which file extensions to process
 		extensions: "html",
