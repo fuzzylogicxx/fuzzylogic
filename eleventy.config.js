@@ -4,7 +4,6 @@ const pluginNavigation = require("@11ty/eleventy-navigation");
 const pluginRss = require('@11ty/eleventy-plugin-rss');
 const pluginSyntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
 const { eleventyImageTransformPlugin } = require("@11ty/eleventy-img");
-const { PurgeCSS } = require('purgecss');
 const { minify } = require("terser");
 
 const markdownIt = require("markdown-it");
@@ -42,6 +41,29 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.addLayoutAlias('post', 'layouts/post.njk');
 
+  // Copy the contents of the `public` folder to the output folder
+	// For example, `./public/css/` ends up in `_site/css/`
+	eleventyConfig
+		.addPassthroughCopy({
+			"./public/": "/"
+		});
+
+	// Run Eleventy when these files change:
+	// https://www.11ty.dev/docs/watch-serve/#add-your-own-watch-targets
+
+	// Watch CSS files
+	eleventyConfig.addWatchTarget("css/**/*.css");
+
+  // Per-page bundles, see https://github.com/11ty/eleventy-plugin-bundle
+	// Bundle <style> content and adds a {% css %} paired shortcode
+	eleventyConfig.addBundle("css", {
+		// Add all <style> content to `css` bundle (use <style eleventy:ignore> to opt-out)
+		// Supported selectors: https://www.npmjs.com/package/posthtml-match-helper
+		bundleHtmlContentFromSelector: "style",
+	});
+
+
+
   //
   // Shortcodes
   //
@@ -55,41 +77,7 @@ module.exports = function(eleventyConfig) {
 
 
 
-  // Tell 11ty that when changes are made inside the src/sass dir, it should recompile.
-  // Needed so that the purge-and-inline-css transform runs every time we make a Sass update.
-  // …so that our updated styles get put into the <head> and we can check them.
-  eleventyConfig.addWatchTarget('./src/sass/');
 
-  //
-  // Eleventy Transforms
-  // Transforms can modify a template’s output.
-  // For example, use a transform to format/prettify an HTML file with proper whitespace.
-  //
-
-  // For each .html file replace a placeholder line in the <head> with an inlined <style> block.
-  // Include only the CSS required by the page, thanks to the purgecss NPM package.
-  // Note 1: this covers everything; it doesn’t need invoked/called elsewhere.
-  // Note 2: for each page, the page’s HTML content and its output path are available.
-  eleventyConfig.addTransform('purge-and-inline-css', async (content, outputPath) => {
-    if ("string" !== typeof(outputPath) || !outputPath.endsWith('.html')) {
-      return content;
-    }
-
-    const purgeCSSResults = await new PurgeCSS().purge({
-      content: [{ raw: content }],
-      css: ['_includes/css/main.css'],
-      keyframes: true,
-      // safelist (i.e. always include) our ”single-rule utility classes”.
-      // They use a colon which needs escaped in CSS but not in HTML.
-      // This makes it difficult to get purgecss to match the HTML to the CSS, so safelisting them works around that.
-      safelist: [/\:/]
-    });
-
-    return content.replace(
-      '<!-- THIS COMMENT WILL BE REPLACED WITH INLINED, MINIFIED CSS -->',
-      '<style>' + purgeCSSResults[0].css + '</style>'
-    );
-  });
 
   //
   // Eleventy Filters
