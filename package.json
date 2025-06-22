@@ -1,14 +1,12 @@
 {
-  "name": "eleventy-base-blog",
+  "name": "fuzzy-logic",
   "version": "5.0.0",
-  "description": "A starter repository for a blog web site using the Eleventy static site generator.",
+  "description": "The personal website of Laurence Hughes, using the Eleventy static site generator.",
   "scripts": {
-    "watch:sass": "sass --watch --style=compressed src/sass:_includes/css",
-    "build:sass": "sass --style=compressed src/sass:_includes/css",
     "watch:eleventy": "eleventy --serve",
     "build:eleventy": "eleventy",
     "build:searchindex": "npx pagefind --site _site",
-    "start": "npm-run-all build:sass --parallel watch:*",
+    "start": "npx @11ty/eleventy --serve --quiet",
     "build": "npm-run-all build:*"
   },
   "repository": {
@@ -30,7 +28,6 @@
   },
   "dependencies": {
     "@11ty/eleventy": "^3.0.0",
-    "@11ty/eleventy-cache-assets": "^2.0.3",
     "@11ty/eleventy-img": "^5.0.0",
     "@11ty/eleventy-navigation": "^0.1.6",
     "@11ty/eleventy-plugin-rss": "^1.1.1",
@@ -41,8 +38,6 @@
     "markdown-it": "^13.0.1",
     "markdown-it-anchor": "^8.6.4",
     "npm-run-all": "^4.1.5",
-    "purgecss": "^4.0.3",
-    "sass": "^1.32.8",
     "slugify": "^1.4.7",
     "terser": "^5.14.2"
   }

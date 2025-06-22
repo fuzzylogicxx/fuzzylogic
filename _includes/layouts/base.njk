@@ -1,19 +1,73 @@
 <!doctype html>
-<html dir="ltr" lang="en-GB">
+<html dir="ltr" lang="{{ metadata.language }}">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
-      {%- if (renderData.title) -%}
-      {{ renderData.title }} | {{ metadata.name }}
+      {%- if (title) -%}
+      {{ title }} — {{ metadata.title }}
       {%- elif (noteTitle) -%}
-      {{ metadata.name }} Note #{{ noteTitle }} | {{ metadata.name }}
-      {%- elif (title) -%}
-      {{ title }} | {{ metadata.name }}
+      Note #{{ noteTitle }} — {{ metadata.title }}
       {%- else -%}
       {{ metadata.title }}
       {%- endif -%}
     </title>
+
+    <meta name="description" content="{{ description or metadata.description }}">
+    <meta name="keywords" content="{{ keywords or metadata.keywords }}">
+    <meta name="author" content="{{ metadata.author.name }}">
+
+    <link rel="canonical" href="{{ metadata.url_base }}{{ page.url }}" />
+    <meta name="robots" content="{{ pageSpecificRobotsDirective or 'index, follow' }}">
+
+    {#- I render the token-related custom properties here rather than in a CSS file #}
+    {#- because the source tokens are in an 11ty data file (JSON) and #}
+    {#- I can only work with that format in a templating language (like nunjucks) file. #}
+
+    {#- Add CSS to the bundle #}
+    {%- css %}
+    /* ==========================================================================
+      # CASCADE LAYERS DEFINTION
+      ========================================================================== */
+
+      /**
+      * Establish a layer order up-front, from lowest to highest priority.
+      */
+      @layer base, layouts, links, components, utilities;
+
+
+
+    /* ==========================================================================
+      # DESIGN TOKENS AS CUSTOM PROPERTIES
+      ========================================================================== */
+
+      @layer base {
+        :root {
+          /* Colours */
+          --color-dark: {{ tokens.colorDark }};
+          --color-light: {{ tokens.colorLight }};
+          --color-grey-with-hue: {{ tokens.colorGreyWithHue }};
+          --color-grey: {{ tokens.colorGrey }};
+          --color-grey-text: {{ tokens.colorGreyText }};
+          --color-link: {{ tokens.colorLink }};
+          --color-link-hover: {{ tokens.colorLinkHover }}; /* 40% darker. Less than 30% wasn’t noticeable on hover */
+
+          /* Measure */
+          --measure: {{ tokens.measure }};
+          --heading-measure: {{ tokens.headingMeasure }};
+          --h1-measure: {{ tokens.h1Measure }};
+
+          /* Borders */
+          --border-thin: {{ tokens.borderThin }};
+          --border-thick: {{ tokens.borderThick }};
+        }
+      }
+    {% endcss %}
+
+    {%- css %}{% include "css/index.css" %}{% endcss %}
+
+		{#- Grab the amalgamated CSS bundle for the page and render as inlined CSS (for fastest performance in production) #}
+		<style>{% getBundle "css" %}</style>
 
     {#
       Re-add as I build the CSS back up again.
@@ -23,15 +77,6 @@
       <link href="/css/theme.css" rel="stylesheet">
     #}
 
-    <!-- THIS COMMENT WILL BE REPLACED WITH INLINED, MINIFIED CSS -->
-
-    <meta name="author" content="{{ metadata.author.name }}">
-    <meta name="description" content="{{ renderData.description or description or metadata.description }}">
-    <meta name="keywords" content="front-end, frontend, front-end developer, web developer, web developer glasgow, html, css, javascript, vanilla javascript, accessibility, sofrito" />
-
-    <link rel="canonical" href="{{ metadata.url_base }}{{ page.url }}" />
-
-    <meta name="robots" content="{{ pageSpecificRobotsDirective or 'index, follow' }}">
 
     <!-- OG tags: most important -->
     <meta property="og:title" content="{{ renderData.title or title or metadata.title }}" />
@@ -59,8 +104,8 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="apple-mobile-web-app-title" content="{{ metadata.name }}">
-    <meta name="application-name" content="{{ metadata.name }}">
+    <meta name="apple-mobile-web-app-title" content="{{ metadata.title }}">
+    <meta name="application-name" content="{{ metadata.title }}">
     <meta name="msapplication-TileColor" content="#da532c">
 
     {#
@@ -83,7 +128,7 @@
     <meta name="color-scheme" content="light dark">
     #}
 
-    <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.name }}">
+    <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
 
     <!-- webmentions -->
     <link rel="pingback" href="https://webmention.io/fuzzylogic.me/xmlrpc">
