@@ -9,7 +9,7 @@ tags:
   - technology
   - AI
 ---
-I didn’t have the appetite for Kazuo’s Ishiguro’s latest novel during the pandemic. I started it, but as the  underlying sense of melancholy and “something bad around the corner” began to set in – just like it did in *Never let me go* – I realised I wasn’t in the right frame of mind for it. Cut to 2025 and it was time to give it another go.
+I didn’t have the appetite for Kazuo’s Ishiguro’s latest novel during the pandemic. I started it, but as the  underlying sense of melancholy and “something bad around the corner” began to set in – [just like it did in *Never let me go*](https://fuzzylogic.me/posts/note-2020-10-25t16-00-58-kazuo-ishiguro-%E2%80%93-never-let-me-go/) – I realised I wasn’t in the right frame of mind for it. Cut to 2025 and it was time to give it another go.
 
 I’d read before that Ishiguro is primarily interested in exploring what it is to be human, and uses science and technology elements as a device to support that. In *Never let me go* the device was cloning. In this book, the narrator is an “artificial friend” named Klara who is an AI-powered, empathetic android, and Ishiguro uses Klara’s unique perspective to shine a light on human behaviour and motivations.
 
