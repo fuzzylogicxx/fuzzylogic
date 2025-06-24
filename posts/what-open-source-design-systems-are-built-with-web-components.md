@@ -29,7 +29,6 @@ Alex Page, a Design System engineer at Spotify, has just asked:
 > What open-source design systems are built with web components? Anyone exploring this space? Curious to learn what is working and what is challenging. [#designsystems](https://twitter.com/hashtag/designsystems?src=hashtag_click) [#webcomponents](https://twitter.com/hashtag/webcomponents?src=hashtag_click)
 
 And there are lots of interesting examples in the replies.
----
 
 I plan to read up on some of the stories behind these systems.
 

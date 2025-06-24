@@ -6,7 +6,6 @@ tags: [link, advertising, web]
 linkTarget: "https://thecorrespondent.com/100/the-new-dot-com-bubble-is-here-its-called-online-advertising"
 ---
 > Is online advertising working? We simply don’t know
----
 
 This article reveals that despite $273bn being spent on digital ads globally (figures from 2018) the effectiveness of digital advertising is actually borderline impossible to measure. It is highly likely that any favourable figures suggested by marketers owe more to a combination of the “selection effect” and blind faith.
 

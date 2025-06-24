@@ -33,7 +33,6 @@ I also had my fears dispelled somewhat when I heard that although there’d be l
 I’m pleased to say it went well and generally gave me a warm glow. On reflection I think I prepared well, my nerves were manageable, and I communicated clearly. The kids were lovely and asked lots of questions! What characteristics do you need to be a good software engineer? Did my parents support my career choices? And so on.
 
 They also gave me a lovely certificate and a large Dairy Milk bar (something that’s always welcome in our house).
----
 
 {% if app.environment == "production" %}
 <figure>

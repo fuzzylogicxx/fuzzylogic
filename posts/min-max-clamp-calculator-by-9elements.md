@@ -26,7 +26,6 @@ draft: false
 Here’s a handy tool from the smart folks at 9elements for making a value – such as a font-size, or margin – _fluidly responsive_. In their words the tool…
 
 > calculates the CSS clamp formula to interpolate between two values in a given viewport range.
----
 
 It’s inspired by [Utopia](https://utopia.fyi/) but is for situations when you only need a single clamp formula rather than one for each interval in a type or spacing scale.
 

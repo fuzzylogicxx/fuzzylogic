@@ -8,7 +8,6 @@ linkTarget: "https://www.filamentgroup.com/lab/delegator/"
 Scott Jehl has taken a refreshingly Progressive Enhancement -centric look at Web Components.
 
 > this pattern provides a nice hook for adding progressive enhancements to already-meaningful HTML contained in these custom elements, leaving them resilient in the case of of script loading failures and allowing the page to start rendering before the JS happens to run.
----
 
 He goes further and creates a _factory_ for creating Web Components which allows adding to a single element many small behavioural script enhancements that may or may not relate to each other.
 

@@ -18,6 +18,5 @@ I just watched “Larry’s Garage” – a film by Corrada Rizza about the visi
 <div class="l-frame">
   <iframe title="Larry’s Garage – Larry Levan & The Paradise Garage" loading="lazy" width="640" height="360" src="https://player.vimeo.com/video/470933551" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
----
 
 Unfortunately there’s generally precious little footage of the infamous New York club and what they included I’d seen before, but there was some nice previously unseen interview footage with Larry Levan and overall, although I wasn’t blown away, I enjoyed it.

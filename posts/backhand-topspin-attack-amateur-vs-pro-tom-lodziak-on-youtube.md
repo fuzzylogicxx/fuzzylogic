@@ -13,7 +13,6 @@ draft: false
 
 ---
 Here’s a lovely slow-mo comparison of Liam Pitchford’s backhand technique versus that of an amateur.
----
 
 The main things I take from it are:
 

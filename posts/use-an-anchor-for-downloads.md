@@ -10,10 +10,9 @@ tags:
 - ux
 linkTarget: https://css-tricks.com/building-good-download-button/
 ---
-Question: when presenting users with a means of downloading a file, should you use the `anchor` element or the `button` element? 
+Question: when presenting users with a means of downloading a file, should you use the `anchor` element or the `button` element?
 
 Answer: you should use the `anchor` element.
----
 
 Eric starts by quoting accessibility expert Scott O’Hara to explain why anchor is the appropriate element:
 

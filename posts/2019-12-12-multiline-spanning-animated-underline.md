@@ -6,7 +6,6 @@ tags: [link, animation, css, underline]
 linkTarget: "https://codepen.io/cassie-codes/pen/rNNGdmw"
 ---
 [Cassie Evans](https://twitter.com/cassiecodes) shows us how to combine `background–size`, a `linear-gradient` based `background-image` and a keyframe animation (all in HTML and CSS) for a lovely progressive underline effect on multi-line text.
----
 
 Here’s the gist of it:
 
@@ -19,7 +18,7 @@ body {
   padding: 40vh 30vw;
   font-family: cursive;
   text-align: left;
-  font-size: 130%;  
+  font-size: 130%;
 }
 
 h2 {

@@ -6,7 +6,6 @@ tags: [link, web, development, css, layout, aspectratio, box, images]
 linkTarget: "https://css-tricks.com/a-first-look-at-aspect-ratio/"
 ---
 Chris Coyier takes the new CSS `aspect-ratio` property for a spin and tests how it works in different scenarios.
----
 
 Note that he’s applying it here to elements which do not have an intrinsic aspect-ratio. So, think a container element (`div` or whatever is appropriate) rather than an `img`. This is line with a [Jen’s Simmons’ recent replies to me](https://twitter.com/jensimmons/status/1347583682496892929) when I asked her [whether or not we should apply `aspect-ratio` to an `img`](https://twitter.com/fuzzylogicx/status/1347307685826469894) after she announced [support for `aspect-ratio` in Safari Technical Preview 118](https://twitter.com/jensimmons/status/1347287421633892356).
 

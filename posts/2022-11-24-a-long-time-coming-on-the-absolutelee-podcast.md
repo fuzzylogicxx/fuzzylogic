@@ -6,7 +6,6 @@ tags: [link, podcast, video, racism, antisemitism, allyship]
 linkTarget: "https://www.absolutelee.co.uk/podcast-episodes/a-long-time-coming"
 ---
 > At the height of my playing career, David Baddiel wore blackface and put a pineapple on his head to mock me on national television every Friday night. While the chants have remained ever present, and David’s name has become synonymous with mine, it’s taken 25 years for us to finally meet face-to-face. In this episode, I talk with David about the impact his racist sketches had on me, my family and the wider community, and why allyship needs to become a bigger part of football.
----
 
 While watching David Baddiel's excellent [Jews Don't Count](https://www.channel4.com/programmes/david-baddiel-jews-dont-count) documentary on Channel Four I was intrigued by the section in which he spoke to Jason Lee, leading me to seek out this podcast episode.
 

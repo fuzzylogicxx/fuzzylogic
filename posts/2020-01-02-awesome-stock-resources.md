@@ -6,7 +6,6 @@ tags: [link, stock, photography, tile, background, video, illustration, svg, css
 linkTarget: "https://github.com/neutraltone/awesome-stock-resources"
 ---
 > A collection of links for free stock photography, video and illustration websites
----
 
 In case I need more stock photography than I currently get from [Unsplash](https://source.unsplash.com/), this Github-hosted list could be useful. 
 

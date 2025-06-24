@@ -25,7 +25,6 @@ Meanwhile there’s another image of front-end development that’s very enginee
 
 I’m conscious of [the great divide](https://css-tricks.com/the-great-divide/) and while my career has straddled that divide, I’ll freely admit that at heart I’m [a front of the front-ender](https://bradfrost.com/blog/post/front-of-the-front-end-and-back-of-the-front-end-web-development/).
 
----
 
 Here’s a description of a “Design System engineer” that I recently compiled during while my team were recruiting for a software engineer:
 

@@ -11,6 +11,5 @@ tags:
 draft: true
 ---
 Foo
----
 
 Bus tour https://www.getyourguide.com/palermo-l387/palermo-hop-on-hop-off-tour-24h-ticket-t50725/

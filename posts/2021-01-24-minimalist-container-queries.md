@@ -8,7 +8,6 @@ linkTarget: "https://codepen.io/scottjehl/pen/NWrdRQv"
 Scott Jehl’s experimental take on a container/element query aimed at letting us set responsive styles for our elements based on their immediate context rather than that of the viewport.
 
 > I made a quick and minimal take on approximating Container/Element Queries using a web component and basic CSS selectors.
----
 
 The idea is that for any given instance of the `<c-q>` custom element / web component you would define a scoped custom property which sets the pixel min-widths you’re interested in, like so:
 

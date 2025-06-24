@@ -26,6 +26,5 @@ DHH of 37 Signals and Basecamp offers three pieces of advice for productivity an
   <p>3: Hire designers who work natively with the web.</p>
 </blockquote>
 
----
 
 I’m not a fan of the term “full-stack” and also think it underestimates the complexity/speciality required to work (properly) as a front-end developer. However that aside, I think there is sense in these, even though others I know would disagree.

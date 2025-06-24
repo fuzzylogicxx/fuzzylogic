@@ -8,7 +8,6 @@ tags:
 - development
 ---
 Here are some recurring development decisions I make when maintaining my personal website/blog, with some accompanying rationale.
----
 
 ## Where should landmark-related HTML elements be in the source?
 

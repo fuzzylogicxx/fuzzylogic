@@ -10,7 +10,6 @@ I’m interested by Shoelace’s MO as a collection of pre-rolled, customisable 
 I guess it’s a kind of Bootstrap for web components? I’m interested to see how well it’s done, how customisable the components are, and how useful it is in real life. Or if nothing else, I’m interested to see how they built their components!
 
 It’s definitely an interesting idea.
----
 
 I'll delve into Shoelace in more detail in the future when I have time, but in the meantime I was able to very quickly knock together [a codepen that renders a _Dropdown_ instance](https://codepen.io/fuzzylogicx/pen/rNoVJrQ).
 

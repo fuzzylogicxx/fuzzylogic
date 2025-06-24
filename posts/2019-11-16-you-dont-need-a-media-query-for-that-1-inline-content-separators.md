@@ -6,7 +6,6 @@ tags: [link, responsive, css, mediaqueries, flexbox, overflow]
 linkTarget: "https://medium.com/@mandy.michael/you-dont-need-a-media-query-for-that-1-inline-content-separators-a9c562a597a6"
 ---
 > Create a more flexible component which allows the text to wrap based on the content rather than the viewport size.
----
 
 Here, [Mandy Michael](http://batmandy.com/) explores similar territory to [Every Layout](https://every-layout.dev/) in suggesting that not all responsive pattern challenges require, or indeed are best served by, media queries. 
 

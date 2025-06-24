@@ -15,6 +15,5 @@ Hard to argue with Brad’s logic.
 > Our efforts to reduce duplicative work at the individual level are resulting in duplicative work at the inter-organization level.
 
 > A Global Design System would improve the quality and accessibility of the world’s web experiences, save the world’s web designers and developers millions of hours, and make better use of our collective human potential.
----
 
 > A Global Design System would exist as a standalone library of components that consumers would pull into their projects, style to match their brand/visual language, and integrate into their application’s business logic. Not only would this be far more efficient than having to design, build, test, deploy, and integrate bespoke components from scratch, a Global Design System would give teams added confidence that the components are sturdy and reliable.

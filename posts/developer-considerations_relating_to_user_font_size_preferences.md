@@ -12,7 +12,6 @@ tags:
   - preferences
 ---
 As a front-end developer I’m called upon both to test that web pages support user font-size preferences, and to build pages which offer that support. Here are my notes on how to do both.
----
 
 ## Testing
 

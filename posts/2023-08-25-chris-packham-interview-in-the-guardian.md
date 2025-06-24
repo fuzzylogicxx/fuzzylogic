@@ -8,7 +8,6 @@ linkTarget: "https://www.theguardian.com/environment/2023/aug/19/chris-packham-a
 The naturalist, TV campaigner and activist on growing up, autism and asking himself “what is the best use of me?”.
 
 > He’s such a brilliant, sensitive soul, but it must be hard work being Chris Packham.
----
 
 Growing up I was never a fan of nature programmes like _The Really Wild Show_ so I didn’t pay Chris Packham too much attention. However in the last few years I've grown really fond of him. That's in part due to his revelations about his punky musical leanings and attitude, but more so due to his candid description of his autism, then his work to bring the true nature of autism and neruodivergency into the public eye and in doing so help others.
 

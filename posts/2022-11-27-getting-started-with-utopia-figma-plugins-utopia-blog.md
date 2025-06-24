@@ -8,7 +8,6 @@ linkTarget: "https://utopia.fyi/blog/get-started-with-utopia-figma-plugins/"
 Here’s another tool from the Utopia creators to assist with breakpoint-free fluid responsive design.
 
 > Until now, the tooling for Utopia has been predominantly developer-focused, but we know that's only half the story. To start to address this, we've created a pair of Figma plugins to help designers set out Utopian project foundations.
----
 
 I also really like the idea of having three sets of type styles at both defined viewport sizes.
 

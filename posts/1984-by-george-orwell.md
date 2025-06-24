@@ -5,7 +5,6 @@ description: I’ve just read George Orwell’s dystopian classic.
 tags: [entry, book, catchup, dystopian]
 ---
 I’ve just read _1984_ by George Orwell. I know, I know… I should have done this a long time ago. Anyway, here’s what I thought.
----
 
 I remember a copy of _1984_ being around the house when I was growing up but for some reason I never got around to reading it. I did, however, see the film when I was young – the “Room 101” scene in particular being unforgettable – and have always known the general plot. 
 

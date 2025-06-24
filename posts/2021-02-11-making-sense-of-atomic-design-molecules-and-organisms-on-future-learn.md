@@ -8,7 +8,6 @@ linkTarget: "https://www.futurelearn.com/info/blog/atomic-design-molecules-organ
 From 2015: Alla Kholmatova reflects on the difficulty in choosing between _molecule_ or _organism_ when categorising components using atomic design at FutureLearn. She also provides some handy insights into how they handled it.
 
 > When thinking about complexity of elements, it helps viewing molecules as “helpers” and organisms as “standalone” modules.
----
 
 Whereas _helpers_ can’t really exist on their own, _standalone_ modules can.
 

@@ -14,7 +14,6 @@ draft: false
 
 ---
 Here’s an important update on _native modal dialogues_. TL;DR – it’s now OK to use `dialog`.
----
 
 Last year [I posted that Safari now supported the HTML `dialog` element](https://fuzzylogic.me/posts/refactoring-a-modal-dialogue-in-2022/) meaning that we were within touching distance of being able to adopt it with confidence. My caveat was:
 

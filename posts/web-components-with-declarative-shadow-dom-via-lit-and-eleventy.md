@@ -25,7 +25,6 @@ draft: false
 
 ---
 Here’s a new development in the Web Components story, and one that may have positive implications for resilience, performance and progressive enhancement.
----
 
 [Declarative Shadow DOM](https://web.dev/declarative-shadow-dom/) is a new way to implement and use Shadow DOM directly in HTML rather than by constructing a shadow root in JavaScript.
 

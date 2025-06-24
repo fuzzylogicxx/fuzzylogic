@@ -21,7 +21,6 @@ draft: false
 
 ---
 I’ve never properly understood when you would need to use the ARIA `presentation` role. This is perhaps in part because it is often used inappropriately, for example in situations where `aria-hidden` would be more appropriate. However I think the penny has finally dropped.
----
 
 It’s fairly nuanced stuff so I’ll forgive myself this time!
 

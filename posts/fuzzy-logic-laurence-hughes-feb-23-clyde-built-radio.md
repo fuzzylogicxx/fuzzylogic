@@ -21,7 +21,6 @@ openGraphImage: "https://res.cloudinary.com/fuzzylogic/image/upload/q_auto,f_aut
 draft: false
 ---
 Having pre-recorded previous shows, I recently made a first visit to [Clyde Built Radio’s](https://www.clydebuiltradio.com/) station at the Barras market for a live show and really enjoyed it. It’s such a great location and it was a nice change to spin records on a Sunday morning.
----
 
 {% if app.environment == "production" %}
 

@@ -25,7 +25,6 @@ draft: false
 In web-based products from e-commerce stores to email clients to accounting software you often find index pages where each item in a list (or row in a table) has a _Delete_ option. This is often coded as a link… but it shouldn’t be.
 
 I liked this comment by Rails developer Dan where he advises a fellow Rails developer that to create his Delete control he should use a form rather than a link, via Rails’s `button_to` method.
----
 
 Dan mentions that in the past Rails UJS set an unsdesirable historical precedent by including a pattern of hijacking links for non-GET reqests.
 

@@ -15,7 +15,6 @@ location: Glasgow
 ---
 I’ve reached the halfway point of short summer working weeks and long weekends, and they’ve been great so far. I began this long weekend with lunch at the [Broadcroft Hotel](https://www.broadcrofthotel.com/) in Kirkintilloch for my parents’ emerald anniversary. My Uncle Liam was there too and we all really enjoyed it.
 
----
 
 I had panko breaded Stornoway black pudding with apricot & plum chutney to start, followed by fish pie, then a coffee to finish. In the words of Larry David it was all pretty, pretty good. It’s also pretty, pretty impressive that my folks have been married fifty-five years. My mum was delighted to find a specific Emerald Anniversary card to give Dad, which contained some amusing words about their steadfast love!
 

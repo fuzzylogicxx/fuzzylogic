@@ -25,7 +25,6 @@ Warning: this entry is a work-in-progress and incomplete. That said, it's still 
 There are lots of different strands of web development. You try your best to be good at all of them, but there’s only so much time in the day! Animation is an area where I know _a little_ but would love to know more, and from a practical perspective I’d certainly benefit from having some road-ready solutions to common challenges. As ever I want to favour web standards over libraries where possible, and take an approach that’s lean, accessible, progressively-enhanced and performance-optimised.
 
 Here’s my attempt to break down web animation into bite-sized chunks for ocassional users like myself.
----
 
 ## Defining animation
 

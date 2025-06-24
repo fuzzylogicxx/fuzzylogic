@@ -8,7 +8,6 @@ linkTarget: "https://hiddedevries.nl/en/blog/2020-09-05-when-there-is-no-content
 Hidde de Vries explains why an HTML heading should never be immediately followed by another.
 
 > When you use a heading element, you set the expectation of content.
----
 
 I have always prided myself on using appropriate, semantic HTML, however it’s recently become clear to me that there’s one thing I occasionally do wrongly. Sometimes I follow a page’s title (usually an `h1` element) with a subtitle which I mark up as an `h2`. I considered this the right element for the job and my choice had nothing to do with aesthetics. 
 

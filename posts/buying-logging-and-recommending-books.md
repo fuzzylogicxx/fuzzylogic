@@ -14,7 +14,6 @@ tags:
 draft: false
 ---
 I currently buy books from a mix of physical and online stores including Waterstones, Hive, Blackwells and most recently, [The Outwith Agency](https://www.theoutwithagency.co.uk/) – my new local shop.
----
 
 I have a [Bookshelf](https://fuzzylogic.me/bookshelf/) section of my website which lists a number of books I’ve read, including what I’m currently reading. The idea was very much inspired by [Dave Rupert’s bookshelf](https://daverupert.com/bookshelf/).
 

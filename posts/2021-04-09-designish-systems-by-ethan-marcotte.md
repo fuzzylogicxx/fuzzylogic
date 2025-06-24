@@ -8,7 +8,6 @@ linkTarget: "https://ethanmarcotte.com/wrote/designish-systems/"
 Here’s an interesting new article from Ethan Marcotte, in which he muses on better ways to think about Design Systems based on his recent experience.
 
 > Once you’ve identified the root causes, you’ll be in a far, far better place to choose the right things — and, more importantly, to create a system that finally supports your design.
----
 
 Here’s what I took from it:
 

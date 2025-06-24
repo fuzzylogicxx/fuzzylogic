@@ -8,7 +8,6 @@ linkTarget: "https://www.bbc.co.uk/iplayer/episode/m000pzmb/small-axe-series-1-r
 One of several fantastic films from Oscar-winning director Steve McQueen (_12 Years a Slave_) described as “Love letters to black resilience and triumph in London's West Indian community. Vivid stories of hard-won victories in the face of racism.”
 
 This one tells the story of Leroy Logan, a young black man who joins the police in an attempt to effect change “from the inside” as a consequence of seeing his father assaulted by police officers. He is faced with both his father’s disapproval and institutional racism within the police ranks.
----
 
 A  brilliant and powerful film which left its mark on me.
 

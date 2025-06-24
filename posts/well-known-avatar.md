@@ -20,7 +20,6 @@ draft: false
 
 ---
 I really like Jim’s idea of putting an avatar file somewhere that’s memorable and easy to access by me wherever I am and that also (in the future) might be automatically grabbable by any platform that needs my avatar.
----
 
 So I’ve put my avatar at [fuzzylogic.me/.well-known/avatar](https://fuzzylogic.me/.well-known/avatar).
 

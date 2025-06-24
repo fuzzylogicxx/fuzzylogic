@@ -9,6 +9,5 @@ tags:
 linkTarget: http://www.webaxe.org/supreme-court-favors-digital-accessibility-dominos-case/
 ---
 > Digital products which are a public accommodation must be accessible, or will be subject to a lawsuit (and probably lose).
----
 
 This US Supreme Court decision on October 7, 2019 represents a pretty favourable win for digital accessibility against a big fish that was trying to shirk its responsibilities.

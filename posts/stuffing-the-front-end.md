@@ -23,7 +23,6 @@ draft: false
 
 ---
 Here’s Bridget Stewart, a developer from Ohio, with some thoroughly enjoyable “curmudgeonly” thoughts on why your website doesn’t necessarily need a Javascript framework.
----
 
 With websites taking a median time of 5.8 seconds to show primary content (source: HTTPArchive) and Google warning us that 53% of mobile visits leave pages that take longer than three seconds to load, it’s hard to justify stuffing the front-end unnecessarily.
 

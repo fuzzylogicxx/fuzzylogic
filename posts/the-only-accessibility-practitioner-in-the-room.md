@@ -19,7 +19,6 @@ draft: false
 
 ---
 Henny Swan, director at Tetralogical, with some great advice for those whom accessibility responsibility often falls to.
----
 
 Henny advises:
 

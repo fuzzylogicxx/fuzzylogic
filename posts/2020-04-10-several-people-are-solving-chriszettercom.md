@@ -6,7 +6,6 @@ tags: [link, crosswords, game, puzzle, javascript, react, websockets]
 linkTarget: "https://multicrosser.chriszetter.com/"
 ---
 > I wanted there to be an easy way to complete crosswords together that didn’t need people to pass a phone back and forth or for a copy of the crossword to be made in a shared Google Spreadsheet.
----
 
 _Several People are Solving_ is a lovely [React app](https://github.com/zetter/react-crossword) which started as a fork of The Guardian’s _Frontend_ repo in order to further develop their crossword component.
 

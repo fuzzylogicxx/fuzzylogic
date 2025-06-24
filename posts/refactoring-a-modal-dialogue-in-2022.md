@@ -24,7 +24,6 @@ draft: false
 
 ---
 My team will soon be refactoring our modal dialogue component. Ours has a few deficiencies, needs better developer experience and documentation, is not built to our Design System component standards, and could use a resilience boost from some progressive enhancement.
----
 
 For a long time the best – meaning accessible, framework-agnostic, feature-packed – modal implementations were _custom_. Specifically:
 

@@ -15,7 +15,6 @@ mainImage.isAnchor: false
 
 ---
 Back in June I attended CSS Day in Amsterdam. One of my favourite talks was [The CSS Cascade – A Deep Dive](https://www.youtube.com/watch?v=zEPXyqj7pEA) by Bramus van Damme. Bramus covered everything we wanted to know about the cascade but were afraid to ask! And that included an introduction to CSS _Cascade Layers_ – the latest game-changing CSS feature.
----
 
 I previously [enjoyed Stephanie Eckles’s article _Getting Started with CSS Cascade Layers_](https://fuzzylogic.me/posts/getting-started-with-css-cascade-layers-by-stephanie-eckles/) so my interest was already piqued. However seeing Bramus’s talk in person really helped bring home the practical benefits of CSS layers. 
 

@@ -5,7 +5,6 @@ date: "2020-02-24T09:58:08.051Z"
 tags: [development, editor, cheatsheet, vscode, tool, emmet, autocomplete]
 ---
 Here’s a list of useful (Mac-based) VS Code tips for my reference and yours.
----
 
 ## Use the Command Palette
 

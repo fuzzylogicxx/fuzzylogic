@@ -19,7 +19,6 @@ mainImage:
 openGraphImage: "https://res.cloudinary.com/fuzzylogic/image/upload/q_auto,f_auto,w_1200/v1609971455/facefacts_1300_qzkqwh.jpg"
 ---
 
----
 <figure>
 <img
   eleventy:ignore

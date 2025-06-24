@@ -13,7 +13,6 @@ tags:
 I now see why people love this part of the world. The dramatic coastline, beautiful deep blue Med, stunning buildings and balconies, incredible food scene, culture and history and buzz of activity… I could go on!
 
 Here’s a list of some noteworthy things we did and places we visited on this amazing holiday.
----
 
 ## Nice
 

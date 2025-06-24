@@ -9,7 +9,6 @@ tags:
   - transform
 ---
 Thanks to [a great tip from Lucas Hugdahl on Twitter](https://twitter.com/LucasHugdahl/status/1190438217482264576), here’s how to use CSS custom properties (variables) in your transforms so you don't need to rewrite the whole `transform` rule in order to `transition` (animate) a single property.
----
 
 Let’s take the simple example of a `button` that we want to increase in size when hovered.
 

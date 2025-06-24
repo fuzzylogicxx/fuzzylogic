@@ -29,7 +29,6 @@ draft: false
 > Browser devtools have made redesigning a site such a pleasure. I love writing and adjusting a CSS file right in the sources panel and seeing design changes happen as I type, and saving it back to the file. (…) Designing against live HTML allows happy accidents and discoveries to happen that I wouldn't think of in an unconstrained design mockup
 
 I feel very late to the party here. I tend to tinker in the DevTools Element Styles panel rather than save changes. So, inspired by Scott, I’ve just tried this out on my personal website. Here’s what I did.
----
 
 1. started up my 11ty-based site locally which launches a `localhost` URL for viewing it in the browser;
 2. opened Chrome’s DevTools at _Sources;_

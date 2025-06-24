@@ -18,9 +18,8 @@ mainImage.isAnchor: false
 draft: false
 
 ---
-This interesting website from the GDS accessibility team sets out seven personas, each with different access needs. 
+This interesting website from the GDS accessibility team sets out seven personas, each with different access needs.
 
 > You can use these profiles to experience the web from the perspective of the personas and gain more understanding of accessibility issues.
----
 
 The site explains how to set up a device or browser to give each persona its own profile simulating the persona’s condition(s) and runs the assistive technology they use to help them.

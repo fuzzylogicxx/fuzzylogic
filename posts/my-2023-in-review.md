@@ -9,7 +9,6 @@ tags:
 - 2023
 ---
 How was 2023 for you? For me, it was like this.
----
 
 ## Music gigs
 

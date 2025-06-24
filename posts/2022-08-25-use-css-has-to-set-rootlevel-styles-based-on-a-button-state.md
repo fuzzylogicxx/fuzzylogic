@@ -16,7 +16,6 @@ Great tip here from Jhey. He advises using a `button` with ARIA and a little Jav
 ```
 
 </figure>
----
 
 Seriously clever stuff! 
 

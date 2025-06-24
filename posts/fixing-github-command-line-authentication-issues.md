@@ -7,11 +7,10 @@ tags: [development, git, github, commandline, fix]
 On at least two ocassions I’ve found myself scratching my head when an attempted push to a newly-created Github repo is met with authentication failures, despite me being sure I’m using the correct credentials.
 
 Here’s the lowdown on the issue and how to resolve it.
----
 
 Essentially the problem relates to Github expecting a _personal access token_ rather than a password (although it provides no helpful hints that this is the case).
 
-This might be because your Github account has <abbr title="Two-Factor Authentication">2FA</abbr> enabled, and/or for security purposes because your account is part of an organisation that uses SAML single sign-on (SSO). 
+This might be because your Github account has <abbr title="Two-Factor Authentication">2FA</abbr> enabled, and/or for security purposes because your account is part of an organisation that uses SAML single sign-on (SSO).
 
 In my case, I had previously created a personal access token with the requisite privileges (in my Github account’s [Developer Settings > Tokens](https://github.com/settings/tokens) section) for the purposes of API access, so I was able to just reuse that. However, if need be I could have created a new one.
 

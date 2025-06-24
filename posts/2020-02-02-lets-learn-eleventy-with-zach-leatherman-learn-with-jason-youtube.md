@@ -8,7 +8,6 @@ linkTarget: "https://www.youtube.com/watch?v=j8mJrhhdHWc"
 <div class="l-frame">
   <iframe title="Let’s Learn Eleventy with Jason Lengstorf" loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/j8mJrhhdHWc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
----
 
 A great tutorial video on Eleventy by Jason Lengstorf with guest Zach Leatherman, creator of Eleventy.
 

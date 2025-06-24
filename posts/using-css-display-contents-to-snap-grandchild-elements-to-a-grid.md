@@ -11,7 +11,6 @@ tags:
   - development
 ---
 I realised last night while watching a presentation by Lea Verou that I could streamline my CSS Grid layouts.
----
 
 I’d been creating an overall page grid by setting `body { display: grid; }` then some grid areas but realised that this only worked for direct children and didn’t help with aligning more deeply nested elements to that outer grid.
 

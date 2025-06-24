@@ -25,7 +25,6 @@ draft: false
 I learned something new today when developing in the Firefox Dev Tools console (although this applies to Chrome too)—something which was really useful and which I thought I’d share.
 
 Basically, type `$$('selector')` into the console (replacing _selector_ as desired) and it’ll give you back all matching elements on the page.
----
 
 So for example, `$$('script')` or `$$('li')`.
 

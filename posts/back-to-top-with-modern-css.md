@@ -9,7 +9,6 @@ tags:
 linkTarget: https://codepen.io/daviddarnes/pen/JjxmLpb?editors=0100
 ---
 David cleverly uses CSS alone (and only a few lines) to show a “back to top” link only after the user has started scrolling, then pin its position to the bottom-left of the screen.
----
 
 The clever `margin-top: 110vh` combined with `position: sticky` – since `110vh` is slightly more than 100% of the page’s height – gives the link a _starting position_ that is not initially visible but becomes visible once the user starts scrolling. The `bottom: 0` then ensures that when the user continues scrolling vertically the link “sticks” to the bottom-left of the page.
 

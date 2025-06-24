@@ -9,7 +9,6 @@ mainImage:
   figcaption: A Visit from the Goon Squad
 ---
 I really enjoyed this book, recommended to me by [Gillian](https://twitter.com/Gilco80) and [Tom](https://twitter.com/mrtomchurchill).
----
 
 {% if app.environment == "production" %}
 <figure>

@@ -8,7 +8,6 @@ linkTarget: "https://itty.bitty.site/edit"
 Here’s an interesting tool for creating and sharing small-ish web pages without having to build a website or organise hosting.
 
 > itty.bitty takes html (or other data), compresses it into a URL fragment, and provides a link that can be shared. When it is opened, it inflates that data on the receiver’s side.
----
 
 While I find this idea interesting, I’m not yet 100% sure how or when I’ll use it! I’m sure it’ll come in handy at some point, though.
 

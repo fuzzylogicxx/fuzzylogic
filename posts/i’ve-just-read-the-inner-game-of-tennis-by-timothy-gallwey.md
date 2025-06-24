@@ -11,7 +11,6 @@ tags:
 description: I’ve just read The Inner Game of Tennis, by Timothy Gallwey
 ---
 This was an interesting read, recommended by some experienced players at my table tennis club. (The book focuses on tennis but most of it is transferable). This tip came at a good time, as I’m looking to reduce tension from my game.
----
 
 The author presents the following ideas: 
 

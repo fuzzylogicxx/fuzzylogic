@@ -21,7 +21,6 @@ draft: false
 
 ---
 Something I’ve found interesting while reviewing recent code test submissions (within job applications) at work is that more developers than I’d expect still use `display: inline-block` when they need to lay out multiple elements horizontally such as the items in a navigation menu. It’s interesting because Flexbox – which has now been around for almost 10 years – gives you a modern, purpose-built solution to that.
----
 
 Of course, there is no _crime_ in taking the `inline-block` approach. It’s an option. And I did take a moment just to challenge my assumptions. But having given it a little thought, I am pretty convinced that Flexbox is the better approach and so I think their choice is worth a query. 
 

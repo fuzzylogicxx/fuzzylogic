@@ -25,7 +25,6 @@ draft: false
 A couple of weeks ago I was kindly asked to provide a guest DJ mix for the Vic’s Sunday Soundclash show on Radio Magnetic.
 
 You can [listen to the show](https://www.mixcloud.com/RadioMagnetic/vics-sunday-soundclash-08-w-laurence-hughes/) on demand.
----
 
 Here’s the tracklist for my mix:
 

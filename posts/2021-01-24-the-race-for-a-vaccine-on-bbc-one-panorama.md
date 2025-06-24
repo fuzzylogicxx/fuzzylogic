@@ -6,6 +6,5 @@ tags: [link, coronavirus, vaccine, health, tv]
 linkTarget: "https://www.bbc.co.uk/programmes/m000qdzd"
 ---
 > Panorama tells the inside story of the development of the Oxford vaccine against Covid-19. For the past 11 months, the BBC's medical editor Fergus Walsh followed the team at Oxford University and AstraZeneca, as they designed, developed, manufactured and trialled the vaccine.
----
 
 In the middle of a pretty depressing period, this is fantastic TV about an inspirational scientific effort.

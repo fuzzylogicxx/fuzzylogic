@@ -6,7 +6,6 @@ tags: [link, bem, naming, html, css]
 linkTarget: "https://9elements.com/bem-cheat-sheet/"
 ---
 Here’s a handy resource providing BEM-based naming suggestions for some of the most common web components.
----
 
 It includes sensible BEM naming for such common components as:
 

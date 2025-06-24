@@ -12,7 +12,6 @@ noteWithTitle: true
 draft: false
 ---
 A tasty and healthy asian-style recipe from Gousto, which I enjoyed cooking and eating and would like to make again.
----
 
 ## Ingredients (for two people)
 

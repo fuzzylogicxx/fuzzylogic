@@ -21,7 +21,6 @@ draft: false
 linkTarget: https://www.bbc.co.uk/programmes/m000777d
 ---
 Enjoyed this acid house history lesson from Jeremy Deller – especially some of the footage from the early Manchester scene which I hadn’t seen before.
----
 
 {% if app.environment == "production" %}
 

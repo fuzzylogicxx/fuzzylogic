@@ -20,7 +20,6 @@ draft: true
 When it comes to checking the accessibility of web pages and interfaces, there are varying approaches. 
 
 At the serious, professional end of the spectrum you enlist professional accessibility testers and they’ll conduct a proper audit with feedback closely linked to WCAG criteria and issue severities graded from low to critical. I’ve commissioned this kind of review before, and the results are always fantastic. 
----
 
 Low-hanging fruit audit
   [JK prev](https://fuzzylogic.me/posts/accessibility-testing-on-adactio.com/) 

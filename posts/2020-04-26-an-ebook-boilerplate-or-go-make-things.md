@@ -6,7 +6,6 @@ tags: [link, ebook, book, publishing, markdown, everylayout]
 linkTarget: "https://gomakethings.com/an-ebook-boilerplate/"
 ---
 > My ebook boilerplate is a command-line script that uses Pandoc, wkhtmltopdf, and Calibre to compile all of the files, syntax highlight code snippets, and automatically generate all of the file formats.
----
 
 I’ve recently been discussing with [Clair](https://www.clairirwinphotography.com/) some options for publishing an ebook, which reminded me of this.
 

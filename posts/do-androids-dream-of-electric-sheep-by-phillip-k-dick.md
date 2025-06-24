@@ -9,7 +9,6 @@ mainImage:
   figcaption: Do Androids Dream of Electric Sheep
 ---
 In my ongoing quest to catch up on books I should have read years ago, I recently finished reading “Do Androids Dream of Electric Sheep?” – the book on which _Bladerunner_ was based.
----
 
 {% if app.environment == "production" %}
 <figure>

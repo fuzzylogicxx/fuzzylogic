@@ -6,7 +6,6 @@ tags: [link, javascript, lean, tool, development, css, momentjs, lodash]
 linkTarget: "https://github.com/you-dont-need"
 ---
 A nice list of tips and tools on how to use simpler browser standards and APIs to avoid the added weight of unnecessary JavaScript and libraries.
----
 
 Lodash, Moment and other similar libraries are _expensive_ and we don’t always need them. This Github repo contains a host of nice tips, snippets and code–analysing tools.
 

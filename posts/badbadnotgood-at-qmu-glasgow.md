@@ -20,7 +20,6 @@ mainImage.isAnchor: false
 draft: false
 ---
 Went to see BadBadNotGood with Marty, Jenni and Zippy last night, and they were fantastic. 
----
 
 We braved -7° conditions to meet at Tennent’s Bar on Byres Rd where we watched Argentia beat Croatia in the World Cup semi-final. Then onto the QMU, which provided a real nostalgia hit – I think the last time we were there was to see Roni Size and Reprazent in the _Brown Paper Bag_ era. 
 

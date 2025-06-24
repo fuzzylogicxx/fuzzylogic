@@ -8,7 +8,6 @@ linkTarget: "https://gomakethings.com/when-should-you-add-the-defer-attribute-to
 For many years I’ve placed script elements just before the closing `body` tag rather than in the `<head>`. Since a standard `<script>` element is render-blocking, the theory is that by putting it at the end of the document – after the main content of the page has loaded – it’s no longer blocking anything, and there’s no need to wrap it in a `DOMContentLoaded` event listener.
 
 It turns out that my time-honoured default is OK, but there is a better approach.
----
 
 [Chris](https://gomakethings.com/) has done the research for us and ascertained that placing the `<script>` in the `<head>` and adding the `defer` attribute has the same effect as putting that `<script>` just before the closing body tag but offers improved performance. 
 

@@ -8,7 +8,6 @@ linkTarget: "https://css-tricks.com/how-to-favicon-in-2021/"
 Some excellent favicon tips from Chris Coyier, referencing [Andrey Sitnik’s recent article](https://evilmartians.com/chronicles/how-to-favicon-in-2021-six-files-that-fit-most-needs) of the same name.
 
 > I always appreciate someone looking into and re-evaluating the best practices of something that literally every website needs and has a complex set of requirements.
----
 
 Chris is using:
 

@@ -19,7 +19,6 @@ draft: false
 
 ---
 During a recent November week off I enjoyed a first visit to North Berwick. It’s a beautiful seaside town and I was lucky enough to get lovely cold-but-sunny winter weather.
----
 
 Here are some of the things I did:
 

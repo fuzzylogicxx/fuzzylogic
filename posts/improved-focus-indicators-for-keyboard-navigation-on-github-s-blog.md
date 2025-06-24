@@ -24,7 +24,6 @@ draft: false
 
 ---
 GitHub have recently done some good work on improving keyboard navigation for (and general usability of) their focusable elements such as links, buttons and form controls by improving focus indication. And then they wrote a short-but-sweet article about it, then [tweeted to share that](https://twitter.com/KatieLangerman/status/1519397715859312640) and their work is getting lots of positive recognition from all the right people. Nice job all round, GitHub!
----
 
 Incidentally, that article they wrote really is _very_ short. Maybe they’ll add to it later. The animated gif they include is very descriptive, mind you. And I noticed that they added the following `alt` text to it:
 

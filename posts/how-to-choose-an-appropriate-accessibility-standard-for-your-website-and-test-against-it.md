@@ -5,7 +5,6 @@ date: "2020-09-20T16:58:08.051Z"
 tags: [web, development, a11y, howto]
 ---
 When advocating accessible web practices for a commercial website, the question of “what does the law require us to do?” invariably arises.
----
 
 The appropriate answer to that question should really be that it doesn’t matter. Regardless of the law there is a moral imperative to do the right thing unless you are OK with excluding people, making their web experiences unnecessarily painful, and generally flouting the web’s founding principles.
 

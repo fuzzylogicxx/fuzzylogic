@@ -5,7 +5,6 @@ date: "2020-12-28T16:58:08.051Z"
 tags: [development, cheatsheet, terminal, iterm, iterm2, zsh, ohmyzsh]
 ---
 Here’s a list of useful terminal commands for my reference and yours.
----
 
 ## Using iTerm2 (Terminal Emulator)
 

@@ -8,7 +8,6 @@ linkTarget: "https://modestjs.works/"
 Pascal Laliberté has written a short, free, web-based book which advocates a modest and layered approach to using JavaScript.
 
 > I make the case for The JS Gradient, a principle whereby your app can have multiple coexisting modern JS approaches, starting from the global sprinkles to spot view-models to, yes, an SPA if that’s really necessary. At each point in the gradient, you’ll see when it’s a good idea to go a step further toward heavier JavaScript, or not.
----
 
 Pascal’s philosophy starts with the following ideals:
 

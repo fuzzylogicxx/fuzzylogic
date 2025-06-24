@@ -27,7 +27,6 @@ draft: false
 
 ---
 Just taking a moment for some musings on which way the front-end wind is blowing (from my perspective at least) and how that might practically impact my approach on the next small-ish website that I code.
----
 
 ## I might lean into HTTP2
 

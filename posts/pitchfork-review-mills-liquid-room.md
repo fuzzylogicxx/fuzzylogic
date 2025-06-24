@@ -21,7 +21,6 @@ draft: false
 
 ---
 Pitchfork’s review of Jeff Mills’ seminal mixtape is the best-written and most enjoyable music article I’ve read in years. The mixtape in question is also very close to my heart.
----
 
 > this is a mix without equal, the Techno Bible, unequivocally The One.
 

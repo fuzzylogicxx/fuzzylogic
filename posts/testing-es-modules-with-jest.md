@@ -22,7 +22,6 @@ draft: false
 
 ---
 Here are a few troubleshooting tips to enable Jest, the JavaScript testing framework, to be able to work with ES modules without needing Babel in the mix for transpilation. Let’s get going with a basic set-up.
----
 
 `package.json`
 

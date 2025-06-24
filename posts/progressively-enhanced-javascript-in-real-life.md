@@ -12,7 +12,6 @@ tags:
   - accessibility
 ---
 Over the last couple of days I’ve witnessed a good example of progressive enhancement “In Real Life”. And I think it’s good to log and share these validations of web development best practices when they happen so that their benefits can be seen as real rather than theoretical.
----
 
 A few days ago I noticed that the search function on [my website](https://fuzzylogic.me/) wasn’t working optimally. As usual, I’d click the navigation link “Search” then some JavaScript would reveal a search input and set keyboard focus to it, prompting me to enter a search term. Normally, the JavaScript would then “look ahead” as I type characters, searching the website for matching content and presenting (directly underneath) a list of search result links to choose from.
 

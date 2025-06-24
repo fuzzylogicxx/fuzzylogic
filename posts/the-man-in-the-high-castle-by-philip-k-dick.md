@@ -9,7 +9,6 @@ mainImage:
   figcaption: The Man in the High Castle by Philip K. Dick
 ---
 The second Phillp K Dick I’ve read this year is his alternative-history sci-fi classic.
----
 
 {% if app.environment == "production" %}
 <figure>

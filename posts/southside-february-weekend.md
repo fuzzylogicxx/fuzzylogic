@@ -15,7 +15,6 @@ draft: false
 
 ---
 Last weekend was pretty dull and rainy in Glasgow but Clair and I visited a bunch of great local places to keep the spirits up. 
----
 
 On Friday night we ate at [Wasabi](https://wasabiglasgow.co.uk/) for the first time. It’s a lovely little spot on Pollokshaws Road with a [nicely-sized menu](https://wasabiglasgow.co.uk/). Between us we had Chicken Karage, Avocado Maki, King Prawn Tempura and Beef Ramen. We loved it and will be back.
 

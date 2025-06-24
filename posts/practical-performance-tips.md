@@ -12,7 +12,6 @@ tags:
 - performance
 ---
 I’ve been really interested in the subject of Web Performance since I read Steve Souders’ book _High Performance Websites_ back in 2007. Although some of the principles in that book are still relevant, it’s also fair to say that a lot has changed since then so I decided to pull together some current tips. Disclaimer: This is a living document which I’ll expand over time. Also: I’m a performance _enthusiast_ but not an expert. If I have anything wrong, please let me know.
----
 
 ## Inlining CSS and or JavaScript
 

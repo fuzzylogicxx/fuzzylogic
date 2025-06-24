@@ -10,7 +10,6 @@ tags:
   - mobile
 ---
 Collecting and categorising design patterns for the “Add new item” pattern, including their pros and cons.
----
 
 I received an excellent newsletter from Erik Kennedy on this subject and wanted to document his suggestions. 
 

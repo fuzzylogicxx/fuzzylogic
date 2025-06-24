@@ -12,7 +12,6 @@ tags:
 linkTarget: https://edjohnsonwilliams.co.uk/2019/05/04/replicating-jekyll-s-markdownify-filter-in-nunjucks-with-eleventy/
 ---
 Here, [Ed](https://edjohnsonwilliams.co.uk/) provides some handy code to convert a Markdown-formatted string into HTML in Nunjucks via an Eleventy shortcode.
----
 
 This performs the same role as the [_markdownify_ filter in Jekyll](https://jekyllrb.com/docs/liquid/filters/).
 

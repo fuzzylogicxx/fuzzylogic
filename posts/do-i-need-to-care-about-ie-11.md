@@ -12,7 +12,6 @@ tags:
 draft: true
 ---
 TL;DR: yes, but with a Minimum Viable Experience. 
----
 
 Microsoft are sunsetting IE 11 for xyz.
 

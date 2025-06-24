@@ -9,7 +9,6 @@ tags:
 linkTarget: https://www.smallvictori.es/
 ---
 > No CMS, no installation, no server, no coding required.
----
 
 Another quick and clever way of creating a website; this time by collecting a bunch of files (HTML, video, images, bookmarks) into a folder, connecting Dropbox and _Small Victories_ to that, choosing a theme and Hey Presto, you have a website.
 

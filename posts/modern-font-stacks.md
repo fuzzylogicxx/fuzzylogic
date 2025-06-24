@@ -19,7 +19,6 @@ draft: false
 
 ---
 > System font stack CSS organized by typeface classification for every modern OS. The fastest fonts available. No downloading, no layout shifts, no flashes — just instant renders.
----
 
 This is a great resource for when you want a particular style of font (workhorse sans-serif, grotesque, monospace, display slab serif etc) and to favour a system font rather than a custom font to get performance and simplicity benefits allied to having many weights and characters natively available.
 

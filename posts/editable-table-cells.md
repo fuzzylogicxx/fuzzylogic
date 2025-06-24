@@ -22,7 +22,6 @@ draft: false
 
 ---
 Yesterday the Design System team received a tentative enquiry regarding making table cells editable. I’m not yet sure whether or not this is a good idea – experience and spidey sense tell me it’s not – but regardless I decided to start exploring so as to base my answer on facts and avoid being overly cautious.
----
 
 In my mind’s eye, there are two ways to achieve this:
 

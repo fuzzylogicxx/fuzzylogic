@@ -22,7 +22,6 @@ draft: false
 
 ---
 I’ve written previously about the [important differences between buttons and links](https://fuzzylogic.me/posts/buttons-versus-links-differences-and-tips/). While reviewing some “component refresh” design mocks at work yesterday I noticed the designs were a bit unclear in this regard so I sent the designers a little decision-tree, which I’m noting here for future reference.
----
 
 It’s important both for our users and for us as practitioners to distinguish between links (the `<a>` element) and the `<button>` element. The reason I push this is because they’re fundamentally different functionally, which has important usability implications. Users expect to use mouse, keyboard, browser back-button and assistive tech differently for links than they do for `<button>`s. And if they can’t visually distinguish one from the other, they’ll try things they expect to work then get confused when they don’t work.
 

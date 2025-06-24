@@ -10,7 +10,6 @@ tags:
 draft: false
 ---
 I’m starting 2024 as I mean to continue – by seeing and hanging out with friends more often. Yesterday [Tom](https://tomchurchill.com/) and I had a great day moseying around Edinburgh.
----
 
 After meeting at Waverley and grabbing a quick coffee and bite, we headed to the Scottish National Gallery on The Mound. Tom was keen to see the [Turner watercolours exhibition](https://www.nationalgalleries.org/exhibition/turner-january) which is on every January – apparently the ideal time of year to best show off the works. I probably wouldn’t have visited this unprompted but I’m glad I did. My favourites were perhaps [The Falls of Clyde](https://www.nationalgalleries.org/art-and-artists/19242?collection=46&artwork=37) and [Lake Albano](https://www.nationalgalleries.org/art-and-artists/19238?collection=46&artwork=10).
 

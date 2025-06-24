@@ -14,7 +14,6 @@ This is why, over years of building for the web, I have learned that I can signi
 - Could I author this in CSS instead of choosing a preprocessor?
 
 </blockquote>
----
 
 Fantastic post from Jim Neilson about how your future self will thank you if you keep your technology stack simple now. 
 

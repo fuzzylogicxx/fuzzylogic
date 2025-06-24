@@ -12,7 +12,6 @@ tags:
   - asynchronous
 ---
 A brief explainer (for future-me and anyone else it helps) on what promises are and how to use them. Note: this is not an _official_ definition, but rather one that works for me.
----
 
 In the normal run of things, JavaScript code is _synchronous_. When line 1 has run (perhaps defining a new variable) and the operation has completed, line 2 runs (perhaps operating on the variable we just defined). However sometimes in line 1 we need to do something which will take longer – maybe an unknown length of time – for example to call a function which fetches data from an external API. In many cases we don’t mind that taking a while, or even eventually failing, but we want it to execute _separately_ from the main JavaScript thread so as not to hold up the execution of line 2. So instead of waiting for the task to complete and return its value, our API-calling function instead returns a _promise_ to supply that value in the future.
 

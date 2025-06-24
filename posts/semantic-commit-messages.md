@@ -10,7 +10,6 @@ tags:
 linkTarget: https://seesparkbox.com/foundry/semantic_commit_messages
 ---
 A fairly rigid commit format (`chore`, `fix`, `feat` etc) which should lead to your git log being an easy-to-skim changelog.
----
 
 I’d noticed that my git commit messages could benefit from greater consistency. So I’ve started adopting Sparkbox’s approach.
 

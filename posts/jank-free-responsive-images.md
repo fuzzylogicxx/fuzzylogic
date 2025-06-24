@@ -5,7 +5,6 @@ date: 2019-10-23
 tags: [web, development, rwd, images, jensimmons, firefox, chrome]
 ---
 Here’s how to improve performance and prevent layout _jank_ when browsers load responsive images.
----
 
 Since the advent of the Responsive Web Design era many of us, in our rush to make images flexible and adaptive, stopped applying the HTML `width` and `height` attributes to our images. Instead we’ve let CSS handle the image, setting a `width` or `max-width` of 100% so that our images can grow and shrink but not extend beyond the width of their parent container.
 
@@ -19,7 +18,7 @@ The other day I was testing [this here website](https://fuzzylogic.me/) in Chrom
 
 Based on that, I made the following updates:
 
-1. I added width and height HTML attributes to all images; and 
+1. I added width and height HTML attributes to all images; and
 2. I changed my CSS from `img { max-width: 100%; }` to `img { width: 100%; height: auto; }`.
 
 NB the reason behind #2 was that I found that that CSS works better with an image with inline dimensions than `max-width` does.
@@ -28,7 +27,7 @@ NB the reason behind #2 was that I found that that CSS works better with an imag
 
 Since an image’s actual rendered dimensions will depend on the viewport size and we can’t anticipate that viewport size, I plumped for a `width` of 320 (a narrow mobile width) × `height` of 240, which fits with this site’s standard image aspect ratio of 4:3.
 
-I wasn’t sure if this was a good approach. Perhaps I should have picked values which represented the dimensions of the image on desktop. 
+I wasn’t sure if this was a good approach. Perhaps I should have picked values which represented the dimensions of the image on desktop.
 
 ## Jen Simmons to the rescue
 
@@ -46,4 +45,4 @@ I just tested this new feature in Firefox Nightly 72, using the Inspector’s Ne
 
 ## Lazy Loading
 
-One thing I’m keen to test is that my newly-added inline `width` and `height` attributes play well with `loading="lazy"`. I don’t see why they shouldn’t and in fact they should in theory all support each other well. In tests so far everything seems good, however since `loading="lazy"` is currently only implemented in Chrome I should re-test images in Chrome once it adds support for the new image aspect ratio calculating feature, around the end of 2019. 
+One thing I’m keen to test is that my newly-added inline `width` and `height` attributes play well with `loading="lazy"`. I don’t see why they shouldn’t and in fact they should in theory all support each other well. In tests so far everything seems good, however since `loading="lazy"` is currently only implemented in Chrome I should re-test images in Chrome once it adds support for the new image aspect ratio calculating feature, around the end of 2019.

@@ -17,7 +17,6 @@ draft: false
 
 ---
 SVG is an amazing technology which I regularly use for icons and occasionally for logos and illustrations. I’ve also dipped my toe into animated SVG. But if I’m honest I still find some SVG concepts confusing so I’ve gathered some useful tips here for future reference. Note: this is a living document which I’ll expand over time.
----
 
 ## Table of contents
 

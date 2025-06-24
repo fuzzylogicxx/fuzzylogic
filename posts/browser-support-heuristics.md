@@ -17,7 +17,6 @@ tags:
 draft: false
 ---
 In web development it’s useful when we can say “if the browser supports X, then we know it also supports Y”.
----
 
 There was a small lightbulb moment at work earlier this year when we worked out that:
 

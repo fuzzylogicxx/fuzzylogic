@@ -6,7 +6,6 @@ tags: [link, css, development, cssgrid, logicalproperties, inset, positioning, u
 linkTarget: "https://css-irl.info/a-utility-class-for-covering-elements/"
 ---
 Need to overlay one HTML element on top of and fully covering another, such as a heading with translucent background on top of an image? Michelle Barker has us covered with this blog post in which she creates an `overlay` utility to handle this. She firstly shows how it can be accomplished with positioning, then modernises her code using the `inset` CSS logical property, before finally demonstrating a neat CSS Grid based approach.
----
 
 I like this and can see myself using it – especially the Grid-based version because these days I try to avoid absolute positioning and use modern layout tools instead where possible. 
 

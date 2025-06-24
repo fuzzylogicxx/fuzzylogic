@@ -9,7 +9,6 @@ Absolute gold here regarding accessibility, bloated components, and purpose vers
 
 > It’s easy for a component to become bloated and its purpose increasingly ambiguous.
 
----
 
 The article also makes a fundamental point.
 

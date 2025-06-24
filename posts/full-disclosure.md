@@ -24,7 +24,6 @@ draft: false
 
 ---
 Whether I’m thinking about inclusive hiding, hamburger menus or web components one UI pattern I keep revisiting is the _disclosure widget_. Perhaps it’s because you can use this small pattern to bring together so many other wider aspects of good web development. So for future reference, here’s a braindump of my knowledge and resources on the subject.
----
 
 A disclosure widget is for collapsing and expanding something. You might alternately describe that as hiding and showing something. The reason we collapse content is to save space. The thinking goes that users have a finite amount of screen estate (and attention) so we might want to reduce the space taken up by secondary content, or finer details, or repeated content so as to push the page’s key messages to the fore and save the user some scrolling. With a disclosure widget we collapse detailed content into a smaller snippet that acts as a button the user can activate to expand the full details (and collapse them again).
 

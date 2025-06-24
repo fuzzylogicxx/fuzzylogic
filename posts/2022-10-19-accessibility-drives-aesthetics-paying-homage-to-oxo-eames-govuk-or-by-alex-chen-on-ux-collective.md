@@ -9,6 +9,5 @@ This article is a couple of years old but just popped up on my radar again. UX D
 
 > The article claims that if we are “too accessible” we will meet the needs of the minority but end up hurting those of the majority. This creates a false equivalence between having legitimate access needs and having a preference for a certain aesthetic.
 
----
 
 Alex goes on to praise examples where accessibility is used to drive aesthetics – such as the Eames leg splint and GOV.UK’s design system – as opposed to considering the two ideals opposites or that one needs sacrificed for the other.

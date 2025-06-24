@@ -8,6 +8,5 @@ linkTarget: "https://www.bbc.co.uk/iplayer/episode/m0006p5f/8-days-to-the-moon-a
 > Previously classified cockpit audio, recorded by the astronauts themselves, gives a unique insight into their fears and excitement as they undertake the mission. And dramatic reconstruction brings those recordings to life, recreating the crucial scenes that were never filmed - the exhilarating launch, the first sight of the moon, the dramatic touchdown and nail-biting journey home.
 
 Original archive footage from the Apollo programme is combined with newly shot film and cinematic CGI to create the ultimate documentary of the ultimate human adventure.
----
 
 This can only be described as a stunning audiovisual experience and a fantastic tribute on the 50-year anniversary of the Apollo 11 mission!

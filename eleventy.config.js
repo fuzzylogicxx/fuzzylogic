@@ -260,11 +260,6 @@ module.exports = function(eleventyConfig) {
     decoding="async" />`;
   });
 
-  // Excerpts (https://www.11ty.io/docs/data-frontmatter/#example%3A-parse-excerpts-from-content)
-  eleventyConfig.setFrontMatterParsingOptions({
-    excerpt: true
-  });
-
 
   //
   // Customize Markdown library and settings:
@@ -283,29 +278,6 @@ module.exports = function(eleventyConfig) {
     // , slugify: eleventyConfig.getFilter("slugify")
   });
   eleventyConfig.setLibrary("md", markdownLibrary);
-
-  // let markdownIt = require('markdown-it');
-  // let markdownItAnchor = require('markdown-it-anchor');
-  // let options = {
-  //   html: true,
-  //   breaks: true,
-  //   linkify: true
-  // };
-  // let opts = {
-  //   permalink: true,
-  //   permalinkClass: 'section-link',
-  //   permalinkSymbol: '#'
-  // };
-
-  // mdi = new markdownIt(options);
-
-  // eleventyConfig.setLibrary('md', mdi.use(markdownItAnchor, opts));
-
-  // Render a markdown string from a .md file (e.g. a post excerpt) as the target HTML in Nunjucks
-
-  eleventyConfig.addNunjucksFilter('markdownStringToHTML', markdownString =>
-    markdownLibrary.render(markdownString)
-  );
 
 
   // Don’t process files of these types; just copy them as-is into the public directory.

@@ -26,7 +26,6 @@ draft: false
 A designer colleague recently asked me what course or resources I would recommend for learning front-end web development. She mentioned React at the beginning but I suggested that it’d be better to start by learning HTML, CSS, and JavaScript. As for React: it’s a subset or offshoot of JavaScript so it makes sense to understand vanilla JS first.
 
 For future reference, here are my tips.
----
 
 ## Everything in one place
 

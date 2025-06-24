@@ -23,7 +23,6 @@ draft: false
 
 ---
 The HTML attribute `aria-current` allows us to indicate the currently active element in a sequence. It’s not only great for accessibility but also doubles as a hook to style that element individually.
----
 
 By using `[aria-current]` as your CSS selector (rather than a `.current` class) this also neatly binds and syncs the way you cater to the visual experience and the screen reader experience, reducing the ability for the latter to be forgotten about.
 

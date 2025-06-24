@@ -6,7 +6,6 @@ linkTarget: https://developer.paciellogroup.com/blog/2014/08/using-the-tabindex-
 tags: [link, a11y, focus, tab, tabbingorder, keyboardnavigation, order, cssgrid, flexbox]
 ---
 Léonie Watson explains how the HTML tabindex attribute is used to manage keyboard focus. Of particular interest to me was a clarification of what `tabindex="-1"` does (because I always forget).
----
 
 ## tabindex="-1"
 

@@ -6,6 +6,5 @@ tags: [link, tool, diff]
 linkTarget: "https://www.diffchecker.com/"
 ---
 > Diffchecker is a diff tool to compare text differences between two text files.
----
 
 I had cause to use this free diff tool recently to compare two large minified CSS files and it did the trick better than any others I’ve tried. Thumbs up!

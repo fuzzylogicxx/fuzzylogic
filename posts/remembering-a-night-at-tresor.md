@@ -13,7 +13,6 @@ noteWithTitle: true
 draft: false
 ---
 I was recently sorting through some old stuff when I found a tatty old poster I used to love and that brought back good memories. It shows the [gated basement vault of the original Tresor nightclub](https://bldgblog.com/wp-content/uploads/2007/01/368327890_ce3550f954_o.jpg) at Potsdamer Platz, Berlin. Smoke is billowing out of the room dramatically and it includes the text _The Extremist_. I bought or otherwise acquired this poster on a night in 2005 when me and friends Davie and Tom visited the famous club during a trip to Berlin.
----
 
 That was a great trip. While Davie wasn’t in the best of health at the time, we still got up to a variety of high jinks, including a memorable drinking session with techno legend [Dan Curtin](https://www.discogs.com/artist/3402-Dan-Curtin) who was releasing music on Tom’s label at the time. (I think that was my introduction to strong Belgian beer, and I remember being mightily impressed when Dan cycled off at the end.) I also remember we stayed in Prenzlauer Berg, at [Transit Loft](https://www.transit-loft.de/?lang=en) if I recall rightly.
 

@@ -23,7 +23,6 @@ draft: false
 At work I have to think about complex HTML tables a lot. The challenge with doing tables well is that 99% of online table tutorials use fairly simple examples… whereas in reality design and product teams often want to squeeze in lots more. It’s really hard to balance those needs against accessibility, systemisation, styling and responsiveness. 
 
 Heads up: I’ve published this post early while it’s still a work in progress because it’s better for me to have it available for reference than languishing in drafts and forgotten. Apologies if you read it in a temporarily rough state.
----
 
 Following a lot of work on tables I’ve recently gained additional insight into the possibilities and constraints, thanks to an accessibility review by [Tetralogical](https://tetralogical.com/) and some great articles by [Adrian Roselli](https://adrianroselli.com/). 
 

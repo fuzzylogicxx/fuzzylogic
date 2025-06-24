@@ -24,7 +24,6 @@ draft: false
 
 ---
 Here’s a great new presentation by Dave Rupert (of the [Shop Talk](https://shoptalkshow.com/) show) in which he makes a compelling case for adopting Web Components. Not only do they provide the same benefits of encapsulation and reusability as components in proprietary JavaScript frameworks, but they also bring the reliability and portability of web standards, work without build tools, are suited to progressive enhancement, and may pave the way for a better web. 
----
 
 Dave begins by explaining that Web Components are based on not just a set of technologies but a set of _standards_, namely:
 

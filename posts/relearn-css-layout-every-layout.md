@@ -18,7 +18,6 @@ linkTarget: ''
 
 ---
 Every now and then something comes along in the world of web design that represents a substantial shift. The launch of [Every Layout](https://every-layout.dev/), a new project from Heydon Pickering and Andy Bell, feels like one such moment.
----
 
 In simple terms, we get a bunch of responsive layout utilities: a Box, a Stack, a Sidebar layout and so on. However Every Layout offers so much more—in fact for me it has provided whole new ways of thinking and talking about modern web development. In that sense I’m starting to regard it in terms of classic, game-changing books like [Responsive Web Design](https://abookapart.com/products/responsive-web-design) and [Mobile First](https://abookapart.com/products/mobile-first).
 

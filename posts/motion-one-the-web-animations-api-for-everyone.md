@@ -26,7 +26,6 @@ draft: false
 
 ---
 > A new animation library, built on the Web Animations API for the smallest filesize and the fastest performance.
----
 
 This JavaScript-based animation library—which can be installed via npm—leans on [an existing web API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Animations_API) to keep its file size low and uses hardware accelerated animations where possible to achieve impressively smooth results.
 

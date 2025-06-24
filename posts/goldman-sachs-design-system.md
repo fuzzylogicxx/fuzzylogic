@@ -19,7 +19,6 @@ draft: false
 
 ---
 This Design System reference website sports a smart architecture with some interesting sections.
----
 
 The components are neatly organised into categories. And I like the _Foundations_ area which includes a [Design System Concepts](https://design.gs.com/foundation/design-system-concepts) section serving as a glossary of property and anatomical terms, plus an Accessibility section with neat diagrams.
 

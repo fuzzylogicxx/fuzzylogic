@@ -23,7 +23,6 @@ draft: false
 Heather explores why we no longer have “web designers”. 
 
 > It's been belittled and othered away. It's why we've split that web design role into two; now you're either a UX designer and you can sit at that table over there or you're a front-end developer and you can sit at the table with the people that build websites.
----
 
 Heather makes lots of good points in this post. But the part that resonates most with me is the observation that we have split design and engineering in a way that is dangerous for building proper websites. 
 

@@ -6,6 +6,5 @@ tags: [link, books, personalsites]
 linkTarget: "https://daverupert.com/bookshelf/"
 ---
 Just saw this – https://daverupert.com/bookshelf/ – and now I really need to up my book-logging game!
----
 
 (via [@davatron5000](https://twitter.com/davatron5000))

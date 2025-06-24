@@ -25,7 +25,6 @@ The HTML `details` element continues to gain fans and get developers’ juices f
 > I love the details/summary HTML elements. So versatile. My favorite part is being able to show a collapsed state from the start without worrying about potential operability issues if JavaScript fails to run (since its behavior doesn't need it).
 
 Scott goes on to describe how creating disclosure widgets (controls that hide and show stuff) with resilience in mind is so much more difficult when not using `<details>` since it can require complex progressive enhancement techniques. At the very least these involve making content available by default in case JavaScript fails, then hiding it when the disclosure widget script loads successfully, ideally without a jarring flash of content in between.
----
 
 Like Scott says, the `<details>` element is different because you can have the content collapsed (hidden) by default without worrying about JavaScript and workarounds since the hidden content can be toggled open natively. That‘s a real superpower… and also makes you wonder: how many different places and different ways might we use this super-element?
 

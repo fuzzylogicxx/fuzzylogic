@@ -8,7 +8,6 @@ linkTarget: "https://assistivlabs.com/"
 A tool for testing how accessible your experience is on various assistive technologies – perhaps “like BrowserStack but for screen readers”?
 
 > Assistiv Labs remotely connects you to real assistive technologies, like NVDA, VoiceOver, and TalkBack, using any modern web browser. 
----
 
 I use a Mac for development which means that when I do screen reader testing [I use the Mac’s VoiceOver tool](https://fuzzylogic.me/posts/my-screen-reader-cheatsheet/). However the majority of screen reader users are using NVDA via Firefox on a PC. Perhaps this tool might let me test on that stack without buying a PC.
 

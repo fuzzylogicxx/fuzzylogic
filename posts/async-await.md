@@ -5,7 +5,6 @@ description: A more elegant way of handling promises
 tags: [development, javascript, asynchronous]
 ---
 My notes and reminders for handling promises with `async` and `await` In Real Life.
----
 
 As I see it, the idea is to switch to using `await` when working with promise-returning, asynchronous operations (such as `fetch`) because it lends itself to more flexible and readable code.
 

@@ -23,7 +23,6 @@ draft: false
 
 ---
 Our Design System team has recently received “new component requests” for some custom filtering controls. These _look like_ custom-styled `<select>`s however their “options” appear more like checkboxes and radio buttons. I think the inspiration was [Carbon Design System’s Dropdown component](https://carbondesignsystem.com/components/dropdown/usage) and the idea is to bring consistency to filtering controls in forms. Although it’s not yet time to fully explore this and make a yay/nay decision on the request, I’ve been doing some initial thinking.
----
 
 (Note: this post is kinda a journey and work-in-progress. I’ll return to complete it and tidy up. For now it serves as a handy log of my research.)
 

@@ -12,7 +12,6 @@ tags:
   - cheatsheet
 ---
 I’m no Ruby engineer however even as a front-end developer I’m sometimes called upon to work on [Rails](https://rubyonrails.org/) applications that require me to know my way around. Here are my notes and reminders.
----
 
 This is not intended to be an authoritative guide but merely my notes from various lessons. It’s also a work-in-progress and a living, changing document.
 

@@ -6,7 +6,6 @@ tags: [link, app, development, greenhill, work, vinyl, records, recommendations]
 linkTarget: https://www.rubadub.co.uk/rubadub-app/
 ---
 [Rubadub](https://www.rubadub.co.uk/) have a new mobile app that delivers the RaD crew’s top vinyl recommendations (the best around) direct to your phone.
----
 
 At a time when lots of vinyl releases are highly limited, this gets you early access to the latest heat before it disappears. It should also generally save untold hours browsing/searching since in their recommendations Rubadub have already done the job of separating the wheat from the chaff.
 

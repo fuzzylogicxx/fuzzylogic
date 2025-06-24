@@ -23,7 +23,6 @@ draft: false
 
 ---
 In this journal entry, Jeremy Keith argues that when it comes to accessibility testing it’s not just about finding issues—it’s about finding the issues at the right time.
----
 
 Here’s my summary:
 
