@@ -7,7 +7,6 @@ const { eleventyImageTransformPlugin } = require("@11ty/eleventy-img");
 const { minify } = require("terser");
 
 const markdownIt = require("markdown-it");
-const markdownItAnchor = require("markdown-it-anchor");
 
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(pluginNavigation);
@@ -268,17 +267,13 @@ module.exports = function(eleventyConfig) {
     html: true,
     breaks: true,
     linkify: true
-  }).use(markdownItAnchor, {
-    permalink: markdownItAnchor.permalink.ariaHidden({
-      placement: "after",
-      class: "direct-link",
-      symbol: "#"
-    }),
-    level: [1,2,3,4]
-    // , slugify: eleventyConfig.getFilter("slugify")
   });
   eleventyConfig.setLibrary("md", markdownLibrary);
 
+  // Render HTML from a markdown string from a .md file (e.g. a post’s content or excerpt)
+  eleventyConfig.addNunjucksFilter('markdownStringToHTML', markdownString =>
+    markdownLibrary.render(markdownString)
+  );
 
   // Don’t process files of these types; just copy them as-is into the public directory.
   // Note: no 'css' entry because we’re inlining CSS so don’t need any physical css files in the public dir.

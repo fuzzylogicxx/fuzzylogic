@@ -19,8 +19,14 @@
       </div>
     </header>
     <div class="l-flow e-content">
-      {{ post.templateContent | markdownStringToHTML | safe }}
+      {{ post.content | markdownStringToHTML | safe }}
     </div>
+    {# <footer>
+      <a rel="bookmark" class="p-name u-url" href="{{ post.url | url }}">
+        Continue reading <span class="u-visually-hidden">“{{ post.data.title }}”</span>
+      </a>
+    </footer> #}
+
     {# <footer class="stack">
       <div class="cluster">
         <ul class="tags">
