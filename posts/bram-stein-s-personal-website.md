@@ -22,6 +22,5 @@ draft: false
 
 ---
 Bram Stein, a software architect at Adobe, [wrote the book on Webfonts](https://abookapart.com/products/webfont-handbook), so it’s no surprise that his own website showcases some pretty beautiful typography.
----
 
 Type is set in Expo Serif Pro, Expo Sans Pro and Source Code Pro.

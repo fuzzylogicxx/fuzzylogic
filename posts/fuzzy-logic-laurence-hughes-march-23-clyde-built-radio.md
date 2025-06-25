@@ -21,7 +21,6 @@ draft: false
 
 ---
 I recorded my second radio show of 2023 live at the Clyde Built Radio studio at the weekend. It was great playing records there on a sunny Sunday with the clocks just gone forward and the Barras buzzing as it hosted a Hong Kong street market.
----
 
 {% if app.environment == "production" %}
 

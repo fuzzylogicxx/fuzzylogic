@@ -19,36 +19,14 @@
       </div>
     </header>
     <div class="l-flow e-content">
-    {% if (post.data.page.excerpt) -%}
-      {%- set excerpt = post.data.page.excerpt -%}{{ excerpt | markdownStringToHTML | safe }}
-      {% if app.environment == "production" and (post.data.mainImage.url or post.data.mainImage.cloudinary_unique_path) %}
-      <figure>
-      {%- if post.data.mainImage.isAnchor %}<a href="{{ post.url | url }}">{%- endif %}
-        {%- if post.data.mainImage.cloudinary_unique_path %}
-          {% respimgV2
-            "" + post.data.mainImage.cloudinary_unique_path + "",
-            "" + post.data.mainImage.alt + "",
-            post.data.mainImage.aspectRatioWidth,
-            post.data.mainImage.aspectRatioHeight
-          %}
-        {%- else -%}
-          {% respimg "" + post.data.mainImage.url + "", "" + post.data.mainImage.alt + "", "(min-width: 1600px) 646px, (min-width: 700px) 612px, 91.58vw", post.data.mainImage.aspectRatioWidth, post.data.mainImage.aspectRatioHeight %}
-        {%- endif %}
-      {%- if post.data.mainImage.isAnchor %}</a>{%- endif %}
-      {%- if post.data.mainImage.figcaption %}<figcaption>{{ post.data.mainImage.figcaption }}</figcaption>{%- endif %}
-      </figure>
-      {% endif %}
-    {%- else -%}
-      {{ post.templateContent | markdownStringToHTML | safe }}
-    {%- endif %}
+      {{ post.content | markdownStringToHTML | safe }}
     </div>
-    {% if (post.data.page.excerpt) -%}
-      <footer class="stack">
-        <a rel="bookmark" class="p-name u-url" href="{{ post.url | url }}">
-          Continue reading <span class="u-visually-hidden">“{{ post.data.title }}”</span>
-        </a>
-      </footer>
-    {%- endif %}
+    {# <footer>
+      <a rel="bookmark" class="p-name u-url" href="{{ post.url | url }}">
+        Continue reading <span class="u-visually-hidden">“{{ post.data.title }}”</span>
+      </a>
+    </footer> #}
+
     {# <footer class="stack">
       <div class="cluster">
         <ul class="tags">

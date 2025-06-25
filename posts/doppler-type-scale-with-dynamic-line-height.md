@@ -24,7 +24,6 @@ draft: false
 
 ---
 `line-height` on the web is a tricky thing, but this tool offers a clever solution.
----
 
 It’s relatively easy to set a sensible unit-less default ratio for body text (say `1.5`), but that tends to need tweaked and tested for headings (where spacious line-height doesn’t quite work; but tight line-height is nice until the heading wraps, etc). 
 

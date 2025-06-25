@@ -6,7 +6,6 @@ tags: [link, performance, development, css, javascript, tool, nunjucks, custompr
 linkTarget: "https://www.filamentgroup.com/lab/load-css-simpler/"
 ---
 Scott Jehl of Filament Group demonstrates a one-liner technique for loading external CSS files without them delaying page rendering.
----
 
 While this isn’t really necessary in situations where your (minified and compressed) CSS is small, say 14k or below, it could be useful when working with large CSS files and want to deliver critical CSS separately and the rest asynchronously.
 

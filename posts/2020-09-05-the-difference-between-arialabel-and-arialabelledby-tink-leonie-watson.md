@@ -6,7 +6,6 @@ tags: [link, a11y, development, aria]
 linkTarget: "https://tink.uk/the-difference-between-aria-label-and-aria-labelledby/"
 ---
 > The `aria-label` and `aria-labelledby` attributes do the same thing but in different ways. Sometimes the two attributes are confused and this has unintended results. This post describes the differences between them and how to choose the right one.
----
 
 The key takeaways for me were:
 

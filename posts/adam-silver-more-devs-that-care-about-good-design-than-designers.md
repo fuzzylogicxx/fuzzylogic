@@ -22,7 +22,6 @@ draft: false
 A spicy but somewhat relatable thought from Adam Silver:
 
 > UX observation: I think there might be more devs who care about good design than there are designers. By “good” I mean works for everyone (is accessible) rather than looks nice. What do you think?
----
 
 The ensuing conversation is pretty interesting. I particularly liked these contributions from [Martin Hoyer](https://twitter.com/martynhoyer):
 

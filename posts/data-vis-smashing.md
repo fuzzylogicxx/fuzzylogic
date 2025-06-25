@@ -12,6 +12,5 @@ linkTarget: https://mailchi.mp/smashingmagazine.com/last-seats-smart-interface-d
 Here are a bunch of great tips and resources for creating charts and graphs, condensed into a 6-minute read.
 
 It’d be interesting to look at the key recommendations in this article and compare our web-based charts at work against them.
----
 
 My thanks to Vitaly and the Smashing team for this roundup.

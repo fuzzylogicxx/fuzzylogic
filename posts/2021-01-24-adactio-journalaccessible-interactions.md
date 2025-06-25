@@ -6,7 +6,6 @@ tags: [link, web, development, modal, javascript, a11y, accessibility, aria, fra
 linkTarget: "https://adactio.com/journal/17546"
 ---
 Jeremy Keith takes us through his thought process regarding the choice of link or `button` when planning accessible interactive disclosure elements.
----
 
 A `button` is generally a solid choice as it’s built for general interactivity and carries the expectation that when activated, something somewhere happens. However in some cases a link might be appropriate, for example when the _trigger_ and _target content_ are relatively far apart in the DOM and we feel the need move the user to the target / give it focus.
 

@@ -13,7 +13,6 @@ tags:
   - development
 ---
 I purchased [Scott’s course](https://www.webpagetest.org/learn/lightning-fast-web-performance/) back in 2021 and immediately liked it, but hadn’t found the space to complete it until now. Anyway, I’m glad I have as it’s well structured and full of insights and practical tips. I’ll use this post to summarise my main takeaways.
----
 
 Having completed the course I have much more rounded knowledge in the following areas:
 

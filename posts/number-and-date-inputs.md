@@ -13,7 +13,6 @@ noteWithTitle: true
 draft: false
 ---
 When asking users for numbers and dates, which HTML form elements should we use?
----
 
 When asking the user for numeric information it might feel obvious to use the HTML input type meant for that purpose, namely [number](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/number). 
 

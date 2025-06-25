@@ -24,7 +24,6 @@ draft: false
 
 ---
 In this talk at State of the Browser, Amy offers some suggestions for making work feel more meaningful.
----
 
 <div class="l-frame"><iframe title="It all means nothing in the end (talk by Amy Hupe)" width="560" height="315" src="https://www.youtube.com/embed/Q0v2YJLq8n8?si=NYC7NO8N1kqBvkBP" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 

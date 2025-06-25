@@ -16,16 +16,15 @@ mainImage.isAnchor: false
 draft: false
 
 ---
-I really enjoyed [The 15 Minute City](https://uk.bookshop.org/books/the-15-minute-city-global-change-through-local-living/9781910022474) by Natalie Whittle. 
+I really enjoyed [The 15 Minute City](https://uk.bookshop.org/books/the-15-minute-city-global-change-through-local-living/9781910022474) by Natalie Whittle.
 
 It presents the idea of modern cities in which residents can reach everything they need – shopping, work, school, green space, transport, exercise, culture etc – within 15 minutes on foot or by bike.
----
 
-This idea is already working (or making good progress) in cities like Amsterdam and Paris. 
+This idea is already working (or making good progress) in cities like Amsterdam and Paris.
 
 And during periods of restriction during the Covid-19 pandemic it’s a way of life that people around the world have been forced to try.
 
-There are numerous potential benefits of the idea – for example for physical and mental health, the environment, gaining more family and social time from less commuting, boosting neighbourhood economies through shopping local and so on. 
+There are numerous potential benefits of the idea – for example for physical and mental health, the environment, gaining more family and social time from less commuting, boosting neighbourhood economies through shopping local and so on.
 
 On the other hand the 15-minute idea arguably favours the middle-class over the working-class, leads to diminished interpersonal skills, and ignores the important role of cities (such as London) in performing a wider, globally-connected role.
 

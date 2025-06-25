@@ -6,7 +6,6 @@ tags: [link, web, development, components, designsystems, composition]
 linkTarget: "https://bradfrost.com/blog/post/design-system-components-recipes-and-snowflakes/"
 ---
 An excellent article from Brad Frost in which he gives us some vocabulary for separating context-agnostic components intended for maximal use from specific variants and one-offs.
----
 
 In light of some recent conversations at work, this was in equal measure interesting, reassuring, and thought-provoking.
 

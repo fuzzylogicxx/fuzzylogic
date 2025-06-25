@@ -6,7 +6,6 @@ tags: [link, underline, css, video]
 linkTarget: "https://www.youtube.com/watch?v=sZS-7RX_c7g"
 ---
 We have new properties in CSS for styling underlines, as explained here by Jen Simmons.
----
 
 The relevant properties are:
 

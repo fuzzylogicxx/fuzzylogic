@@ -15,7 +15,6 @@ tags:
 draft: false
 ---
 I’ve played with the various HTML5 Observer APIs (`IntersectionObserver`, `ResizeObserver` and `MutationObserver`) a little over the last few years—for example using `ResizeObserver` in a container query solution for responsive grids. But in all honesty their roles, abilities and differences haven’t yet fully _stuck_ in my brain. So I’ve put together a brief explainer for future reference. 
----
 
 ## Intersection Observer
 

@@ -5,7 +5,6 @@ description: Subgrid for CSS Grid layout has arrived.
 tags: [development,css,cssgrid,layout]
 ---
 Subgrid for CSS Grid Layout has [arrived in Firefox](https://hacks.mozilla.org/2019/12/firefox-71-a-year-end-arrival/) and it looks great. Here’s how I wrapped my head around the new concepts.
----
 
 While MDN has [some nice examples](https://wiki.developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Subgrid), I generally find I need a little extra time, trial and error and note-making in order to fully grasp CSS Grid concepts. 
 

@@ -6,7 +6,6 @@ tags: [link, nunjucks, templatelanguages, javascript, jamstack]
 linkTarget: "https://www.trysmudford.com/blog/encapsulated-11ty-components/"
 ---
 Trys shows us how to use the Nunjucks `macro` to create encapsulated components. This works out less leaky and more predictable than an `include` preceded by variables assigned with `set`.
----
 
 Trys’s solution allows us to render components like so:
 

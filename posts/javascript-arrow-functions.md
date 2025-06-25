@@ -12,7 +12,6 @@ tags:
 draft: false
 ---
 JavaScript arrow functions are one of those bits of syntax about which I occasionally have a brain freeze. Here’s a quick refresher for those moments.
----
 
 <details>
 <summary>Differences between arrow functions and traditional functions</summary>

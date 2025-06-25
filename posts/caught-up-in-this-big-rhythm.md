@@ -17,7 +17,6 @@ location: Glasgow
 ---
 I got home from Friday morning’s dog walk to find some records in the post. I’d recently deleted my Discogs wants-list having realised twenty years too late that it is far too addictive, and as a last hurrah had earmarked a last few key wants. One of those was The Blue Nile’s _Tinseltown in the rain_ – a slice of Scottish pop perfection on Linn records – and I enjoyed a brief listen before heading back out.
 
----
 
 First stop of the afternoon was a visit to Greater Govanhill’s office to collect their latest edition (more on this later).
 

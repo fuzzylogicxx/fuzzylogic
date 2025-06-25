@@ -6,6 +6,5 @@ tags: [link, tool, music, bandcamp, spotify]
 linkTarget: "https://hypem.com/merch-table"
 ---
 A neat online tool (with a positive goal) which lets you paste in a link to one of your Spotify playlists then lets you know which of the tracks or albums are available to buy on Bandcamp.
----
 
 > Support the artists you listen to by buying their stuff.

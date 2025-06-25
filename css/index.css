@@ -610,7 +610,9 @@
   @layer components {
     /* Lists of articles */
     .h-feed > * + * {
-      margin-top: var(--space-2xl);
+      margin-top: var(--space-xl);
+      padding-top: var(--space-xl);
+      border-top: var(--border-thin) solid var(--color-grey-dark);
     }
 
     /* Individual article */

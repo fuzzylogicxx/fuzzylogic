@@ -12,7 +12,6 @@ draft: false
 
 ---
 My latest radio show is dedicated to Ryuichi Sakamoto, who sadly died recently. I played a couple of tracks by the great man alongside more of my favourite music.
----
 
 [Listen to the show on Soundcloud.](https://soundcloud.com/radiobuenavida/fuzzy-logic-w-laurence-hughes-radio-buena-vida-220423)
 

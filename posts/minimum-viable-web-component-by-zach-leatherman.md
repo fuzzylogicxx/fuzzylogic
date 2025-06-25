@@ -11,7 +11,6 @@ draft: false
 
 ---
 [Zach tweeted](https://twitter.com/zachleat/status/1282807913501859841) last year to share a codepen which illustrates the very simple boilerplate needed for a minimum viable web component. Note: his example is so simple that in this case the JavaScript isn’t actually needed for the custom element to work, however the provided JS is a starting point for when you do actually intend to add JS-driven features.
----
 
 The HTML: 
 

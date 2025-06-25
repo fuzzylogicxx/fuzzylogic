@@ -18,7 +18,6 @@ That was a productive and fun weekend.
 
 On Friday, Clair was meeting her mum and cousin in town so this was my quiet night in. I settled down to watch episode 4 of the _The Penguin_ and ordered fish tikka from [Kebabish](https://www.kebabishgrill.co.uk/) – banging).
 
----
 
 I started Saturday with a short Rudy-walk then it was off to Pete’s for some table-tennis practice. I’ve been playing crap recently and wanted to fix things. Pete was as generous as ever with his tips, and his advice on “the triangle” and "dialling up/down power" was really effective! By the end I was playing both forehand and backhand much better.  After this I drove out to Kirky and collected my brother Martin to go for a chat over lunch at Nonna’s Kitchen. On the way home we popped into my niece Chloe’s new house and I enjoyed chasing wee Leo around his garden. At night Clair and I stayed in and watched _Where the Crawdads Sing_ which was enjoyable enough.
 

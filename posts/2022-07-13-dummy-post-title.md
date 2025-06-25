@@ -7,6 +7,5 @@ linkTarget: "https://dummy1.com/"
 draft: true
 ---
 Dummy excerpt
----
 
 Dummy body (via somebody)

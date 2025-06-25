@@ -9,5 +9,4 @@ tags:
 linkTarget: https://design.bulb.co.uk/
 ---
 > It’s a collection of shared patterns and practices that allow our team to build quality user interfaces consistently and quickly.
----
 

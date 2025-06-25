@@ -14,7 +14,6 @@ tags:
 draft: false
 ---
 Last time I tried [Source Code Pro](https://github.com/adobe-fonts/source-code-pro) as my monospaced typeface for code examples in blog posts, it didn’t work out. When viewed in Firefox it would only render in black meaning that I couldn’t display it in white on black for blocks of code. This led to me conceding defeat and using something simpler.
----
 
 It now looks like I can try Source Code Pro again because [the issue has been resolved](https://github.com/adobe-fonts/source-code-pro/issues/250#issuecomment-728646917). This is great news!
 

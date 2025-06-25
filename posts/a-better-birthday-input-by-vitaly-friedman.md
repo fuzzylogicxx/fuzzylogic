@@ -22,7 +22,6 @@ draft: false
 
 ---
 I recently signed up to Vitaly from Smashing Mag’s _Smart Interface Design Patterns_ newsletter. This latest edition regarding “date of birth” inputs was interesting, and well timed as my work colleagues and I are about to revisit our form patterns. It’s a nice explainer on why we should approach UI for dates the user _knows_ differently from UI for dates the user will _choose_.
----
 
 Vitaly recommends that when asking the user for a very specific date that they already know without needing to consult a calendar, drop-downs and calendar look-ups are unnecessary. And avoiding them is probably ideal, because `<input type=date>` and `<select>` based interfaces have some usability and accessibility kinks, as do many date-picker libraries.
 

@@ -26,7 +26,6 @@ By day I’m currently working on our Design System’s _Table_ component. In or
 2. if there is no `<tfoot>` then set all cells in the final row of the `<tbody>` to have no bottom-border.
 
 Modern CSS’s support for writing selectors which traverse the DOM _up, down and sideways_ is pretty amazing here.
----
 
 I’ve gone with:
 

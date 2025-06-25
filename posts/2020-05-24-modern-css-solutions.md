@@ -6,6 +6,5 @@ tags: [link, development, buttons, css, images, dropdown, navigation, responsive
 linkTarget: "https://moderncss.dev/"
 ---
 > Modern CSS Solutions for Old CSS Problems
----
 
 Stephanie Eckles with a beautifully presented series of articles on how to use modern CSS to tackle some of the enduring challenges of web development including dropdown navigation, centring and styling buttons.

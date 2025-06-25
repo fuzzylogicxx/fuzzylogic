@@ -24,7 +24,6 @@ draft: false
 > _By enhancing native HTML instead of replacing it, we can provide a solid baseline experience, and add progressive enhancement as the cherry on top._
 
 Great article by Paul Herbert of Oregon’s Cloud Four. Using a web component to enhance an existing HTML element such as `<textarea>` (rather than always creating a custom element from scratch) feels very lean, resilient and maintainable.
----
 
 Off the top of my head I could see this being a nice approach for other custom form controls.
 

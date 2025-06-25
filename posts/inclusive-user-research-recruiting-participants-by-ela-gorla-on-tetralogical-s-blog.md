@@ -14,6 +14,5 @@ draft: false
 
 ---
 Tetralogical are doing a great series of articles on _running inclusive research_. Their latest is about recruiting participants and covers whether you should recruit people with disabilities as part of your testing and if so who, and how many, and how to recruit them.
----
 
 Previous articles addressed moderating usability testing sessions with people with disabilities, and analysing findings from inclusive user research.

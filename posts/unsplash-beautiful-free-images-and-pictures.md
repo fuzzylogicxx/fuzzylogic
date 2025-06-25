@@ -6,7 +6,6 @@ tags: [link, stock, photography]
 linkTarget: "https://source.unsplash.com/"
 ---
 > The internet’s source of freely usable images. Powered by creators everywhere.
----
 
 I’ve seen a couple of other developers use [photos from Unsplash](https://unsplash.com/) in their demos, and it just came in handy for me recently when needing some free food photography for a website.
 

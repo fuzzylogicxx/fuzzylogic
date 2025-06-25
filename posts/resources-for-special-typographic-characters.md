@@ -17,7 +17,6 @@ tags:
 draft: false
 ---
 A collection of resources for finding that curly quote or em dash character quickly.
----
 
 [Smart quotes for smart people](http://smartquotesforsmartpeople.com/)
 

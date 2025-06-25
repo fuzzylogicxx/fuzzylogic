@@ -11,7 +11,6 @@ tags:
   - a11y
 ---
 Here’s how I’d handle various common SVG icon scenarios with accessibility in mind.
----
 
 ## Just an icon 
 

@@ -6,7 +6,6 @@ tags: [link, tool, remote, pair, development, collaboration]
 linkTarget: "https://screen.so/"
 ---
 > Fast screen sharing with multiplayer control, drawing & video.
----
 
 An application which allows collaborating (and drawing) on files and could be useful for pair programming. Free during the current COVID-19 situation. 
 

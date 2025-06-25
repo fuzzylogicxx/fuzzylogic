@@ -9,7 +9,6 @@ draft: false
 
 ---
 I enjoyed this two-part tutorial from Chris arising from his critique of a subscription form plugin which includes the entire React library to achieve what could be done with a lightweight HTML and vanilla JavaScript solution. Chris advocates a progressively-enhanced approach. Instead of rendering the form with JavaScript he renders it in HTML and argues that not only is there no need for the former approach – because forms natively work without JavaScript – but also it only introduces fragility where we could provide resilience.
----
 
 Part one: [Using a wrecking ball when a hammer would suffice](https://gomakethings.com/using-a-wrecking-ball-for-a-problem-that-requires-hammer/)
 

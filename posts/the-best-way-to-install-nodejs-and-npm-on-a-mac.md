@@ -5,7 +5,6 @@ description: I’ve found that although the NodeJs website includes an installer
 tags: [web, development, nodejs, npm, homebrew, brew]
 ---
 In modern front-end development, we tend to use a number of JavaScript-based build tools (such as task runners like Gulp) which have been created using Node.js and which we install using NPM. Here’s the best way I’ve found for installing and maintaining Node and NPM on a Mac.
----
 
 To install and use NPM packages, we first need to install Node.js and NPM on our computer (in my case a Mac).
 

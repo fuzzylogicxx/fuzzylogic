@@ -10,7 +10,6 @@ tags:
 linkTarget: https://darn.es/web-component-github-starter-template/
 ---
 David’s template provides not just the starter component code but also a nice readme, issue template, and publish-to-NPM flow.
----
 
 It’s also always interesting to see how different developers structure their web component JavaScript. David’s code includes a neat and interesting approach to registering the comoponent, and favours setup being written in the `connectedCallback()`.
 

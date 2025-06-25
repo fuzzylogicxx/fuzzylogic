@@ -24,7 +24,6 @@ tags:
 draft: false
 ---
 Over the years I’ve seen Herr Henke (of [Monolake](https://www.discogs.com/artist/534-Monolake) fame) doing variously-themed live shows and in a variety of locations. I loved [this particular show](https://roberthenke.com/concerts/cbm8032av.html) and it was made even better by catching him at [The Tramway Theatre](https://www.tramway.org/about-tramway/), one of my favourite venues and just 10 minutes walk from home.
----
 
 {% if app.environment == "production" %}
 <figure>

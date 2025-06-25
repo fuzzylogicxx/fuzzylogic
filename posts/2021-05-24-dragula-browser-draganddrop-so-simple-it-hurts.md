@@ -9,6 +9,5 @@ Hereâ€™s a nice, lightweight and framework-free drag and drop UI solution, thatâ
 
 > Drag and drop so simple it hurts
 
----
 
 (via [@mxbck](https://twitter.com/mxbck))

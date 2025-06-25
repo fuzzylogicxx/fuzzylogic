@@ -12,7 +12,6 @@ tags:
 draft: false
 ---
 I had a fantastic time in London last weekend.
----
 
 When my pal Mark visited Glasgow in May for The Queen’s Park Weekender he asked if I’d like to join him on his [Soulsaver boat party](https://ra.co/events/1866753) in July – maybe even to play some records. Since I hadn’t visited him down south for a while I gratefully accepted and put it in the calendar.
 

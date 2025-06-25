@@ -5,7 +5,6 @@ description: "A problem to solve or just a bad idea?"
 tags: [development, design, links, buttons, a11y]
 ---
 You have a “card” component which includes a heading, some text, an image, and a link to the full article, and it’s working great. Then along comes a UX requirement that the _full card_ (not just the button or link) should be clickable. This is where things get complicated.
----
 
 ## TL;DR
 

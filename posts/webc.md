@@ -22,7 +22,6 @@ draft: false
 
 ---
 WebC, the latest addition to the [Eleventy](https://www.11ty.dev/) suite of technologies, is focused on making [Web Components](https://developer.mozilla.org/en-US/docs/Web/Web_Components) easier to use. I have to admit, it took me a while to work out the idea behind this one, but I see it now and it looks interesting.
----
 
 Here are a few of the selling points for WebC, as I see them.
 

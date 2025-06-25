@@ -5,7 +5,6 @@ date: 2019-02-13
 tags: [web, development, ssl, secure, sslcert, certbot, vhosts, letsencrypt]
 ---
 When taking the DIY approach to building a new server, Certbot is a great option for installing secure certificates. However, sometimes you can run into problems. Here, I review the main recurring issues I’ve encountered and how I fixed them.
----
 
 When creating new servers for my projects I use [Certbot](https://certbot.eff.org/) as a means of installing free Let’s Encrypt secure certificates.
 

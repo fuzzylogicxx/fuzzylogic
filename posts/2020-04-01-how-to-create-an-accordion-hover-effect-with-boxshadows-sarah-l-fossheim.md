@@ -6,6 +6,5 @@ tags: [link, css, development, animation, boxshadow, card]
 linkTarget: "https://fossheim.io/writing/posts/css-box-shadow-animation/"
 ---
 > In this tutorial we'll use the box-shadow property to create a layered card component, and animate it on hover.
----
 
 Beautiful effects expertly combining colour, clever box-shadow configurations and position-based animation.

@@ -5,7 +5,6 @@ date: 2019-10-24
 tags: [web, development, javascript, framework, progressiveenhancement, stimulus]
 ---
 I’m dipping my toes into [Stimulus](https://stimulusjs.org/handbook/introduction), the JavaScript micro-framework from Basecamp. Here are my initial thoughts.
----
 
 I immediately like the ethos of Stimulus.
 

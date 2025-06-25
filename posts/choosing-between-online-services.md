@@ -19,7 +19,6 @@ tags:
 draft: false
 ---
 A [recent issue of the dConstruct newsletter](https://tinyletter.com/clearleft/letters/dconstruct-from-clearleft-musique-non-stop) about choosing more ethical online services really chimed with me at a time when I’ve been reflecting on my online habits.
----
 
 [Clearleft](https://clearleft.com/) produce an excellent regular technology-based newsletter – [dConstruct](https://tinyletter.com/clearleft) – to which I heartily recommend subscribing.
 

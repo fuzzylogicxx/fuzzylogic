@@ -17,7 +17,6 @@ tags:
 draft: false
 ---
 When considering using Flexbox or CSS Grid to change the visual order of elements, remember that “with great power comes great responsibility”.
----
 
 Flexbox and CSS Grid have given us new powers to shuffle the visual order of elements on a web page such that it is different to the element order in the source code.
 

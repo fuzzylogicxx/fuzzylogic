@@ -6,7 +6,6 @@ tags: [link, print, css, development, mediaqueries, designsystems]
 linkTarget: "https://www.smashingmagazine.com/2018/05/print-stylesheets-in-2018/"
 ---
 Rachel Andrew explains how to write CSS for a nicely optimised printed page that uses a minimum of ink and paper and ensures that content is easy to read.
----
 
 I really like the section on Workflow that compares the options of 
 1. organising your print styles as a separate stylesheet loaded via a `<link>` in the `<head>` (this is the “traditional” approach); versus

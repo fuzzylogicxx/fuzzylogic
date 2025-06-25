@@ -19,6 +19,5 @@ draft: false
 
 ---
 Here’s how to check the application you’re running locally on your MacBook on your iPhone.
----
 
 It’s pretty much a case of connecting your iPhone to your MacBook by USB, tweaking some settings, then browsing to the application via a given IP in iOS Safari.

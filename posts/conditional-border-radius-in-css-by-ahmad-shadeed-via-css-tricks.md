@@ -24,7 +24,6 @@ draft: false
 
 ---
 Here’s a “media query free” CSS one-liner which lets you set an element to have no border-radius when it is the full width of the viewport, but otherwise to have a border-radius.
----
 
 It uses the same 9999 multiplication technique as [Every Layout](https://every-layout.dev/) do to create a toggle.
 

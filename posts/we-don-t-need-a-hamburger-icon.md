@@ -5,7 +5,6 @@ description: ''
 tags: []
 linkTarget: https://mailchi.mp/smashingmagazine.com/we-dont-need-a-hamburger-icon
 draft: true
-
 ---
 
 Smashing Magazine have recently been making the point that “hamburger menus” are proven to be problematic and violate Luke Wroblewski’s _Obvious Always Wins_ mantra.
@@ -20,4 +19,4 @@ That’s interesting, but there’s no citation and I don’t like that. However
 
 [https://www.nngroup.com/articles/hamburger-menus/](https://www.nngroup.com/articles/hamburger-menus/ "https://www.nngroup.com/articles/hamburger-menus/")
 
-In a follow-up they suggest that we should [never hide critical navigation on mobile](https://mailchi.mp/smashingmagazine.com/never-hide-critical-navigation-on-mobile). This post usefully offers a few alternative navigation patterns. 
+In a follow-up they suggest that we should [never hide critical navigation on mobile](https://mailchi.mp/smashingmagazine.com/never-hide-critical-navigation-on-mobile). This post usefully offers a few alternative navigation patterns.

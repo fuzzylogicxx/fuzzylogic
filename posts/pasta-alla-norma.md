@@ -22,7 +22,6 @@ draft: false
 
 ---
 This recipe from Gousto, with a few tweaks from Clair, is a straight winner. Although I’m sure it’s delicious as they list it, Clair substituted linguine for rigatoni and as a treat added some [artichoke hearts](https://www.waitrose.com/ecom/products/waitrose-sliced-artichoke-hearts/017483-8480-8481) which took it to the next level.
----
 
 Delicious, and a perfect example of a vegetarian meal where I didn’t miss meat at all.
 

@@ -22,7 +22,6 @@ Caveats and notes:
 1. this is a living document which I’ll expand over time; 
 2. I’m standing on the shoulders of real experts and I list my [references](#references) at the foot of the article; and
 3. if I’ve got anything wrong, please [let me know!](https://twitter.com/fuzzylogicx)
----
 
 ## Table of contents
 

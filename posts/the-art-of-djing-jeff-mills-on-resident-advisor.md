@@ -23,7 +23,6 @@ draft: false
 
 ---
 Fair play, Jeff – once this interview gets going it’s pretty damn good.
----
 
 Amongst other ground, it covers:
 

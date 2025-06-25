@@ -12,7 +12,6 @@ tags:
 draft: true
 ---
 Lorem
----
 
 ## Prologue: a single JS error breaking all JS for your site
 

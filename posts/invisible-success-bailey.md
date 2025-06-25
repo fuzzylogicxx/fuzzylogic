@@ -21,14 +21,13 @@ Here’s Eric Bailey with some very relatable thoughts on the need to tell desig
   <p>This is objectively great. The problem, however, is how we talk, or fail to talk about this type of success.</p>
 </blockquote>
 
----
 
 > A lack of bug reports, accessibility issues, design tweaks, etc. are all objectively great, but there are no easy datapoints you can measure here. By this, I mean it is difficult to quantify a void.
 
 Eric advices crafting stories about the important aspects of design system work that are not directly about components:
 
 <blockquote>
-  
+
   - Identifying and collecting various ways to weave compelling narratives about the invisible, successful work you’ve done, and then
   - Putting those stories in front of the people who need to know them.
 

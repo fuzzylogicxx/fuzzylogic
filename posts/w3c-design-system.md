@@ -22,7 +22,6 @@ draft: false
 
 ---
 The [W3C](https://www.w3.org/Consortium/) have just published a new Design System. It was developed by British Digital Agency [Studio 24](), who are also working (in the open) on [the redesign of the W3C website](https://www.studio24.net/work/working-in-the-open-with-w3c/).
----
 
 My initial impression is that this Design System feels pretty early-stage and work-in-progress. I’m not completely sold on _all_ of the technical details, however it definitely contains a number of emergent best practices and lots of interesting parts.
 

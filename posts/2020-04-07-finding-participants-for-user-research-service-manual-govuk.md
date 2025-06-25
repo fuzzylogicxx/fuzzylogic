@@ -6,7 +6,6 @@ tags: [link, research, ux, a11y]
 linkTarget: "https://www.gov.uk/service-manual/user-research/find-user-research-participants"
 ---
 > It’s also important to do research with all the different kinds of people who may need your service, including those who: have disabilities or use assistive technologies; have limited digital skills or poor literacy; and may need help to use your service.
----
 
 Useful advice regarding user research from GOV.uk covering how to define participant criteria, find participants for research and handle incentives. 
 

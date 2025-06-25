@@ -6,7 +6,6 @@ tags: [link, music, rock, vinyl, pressing, recording, glasgow]
 linkTarget: "https://www.bbc.co.uk/programmes/b0brzps8"
 ---
 > The sessions recorded by the band in Memphis with the legendary record producer Tom Dowd, along with the Muscle Shoals Rhythm Section musicians Roger Hawkins, drums, and David Hood, bass, did not make the light of day, because some of the mixes were not suitable in the musical climate at the time.
----
 
 A great watch telling an unlikely, touching and at times hilarious story of how the Glasgow band temporarily escaped the madness of the early 90’s scene for Memphis to record an album which was out of step with the time and only revealed its true quality with the benefit of hindsight and maturity. 
 

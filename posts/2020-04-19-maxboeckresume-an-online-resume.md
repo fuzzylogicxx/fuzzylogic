@@ -6,7 +6,6 @@ tags: [link, print, resume, cv, spellcheck, netlify, 11ty]
 linkTarget: "https://github.com/maxboeck/resume"
 ---
 A beautiful, responsive, print-friendly résumé template from [Max](https://mxb.dev/).
----
 
 Some points of note:
 

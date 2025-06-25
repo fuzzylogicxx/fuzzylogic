@@ -15,7 +15,6 @@ The challenge is twofold:
 
 1. provide responsive navigation that’s effective on multiple viewport sizes, and 
 2. ensure that it’s resilient.
----
 
 ## BBC (footer nav, duplication, and PE)
 

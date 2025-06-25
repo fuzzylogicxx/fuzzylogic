@@ -8,7 +8,6 @@ linkTarget: "https://www.w3.org/WAI/fundamentals/accessibility-intro/"
 Working as a web developer, you’ll meet colleagues who don’t realise that **accessibility should be non-negotiable**. So I’m bookmarking for ready access Tim Berners-Lee’s oft-quoted but still powerful statement of intent from 1997.
 
 > The power of the Web is in its universality. Access by everyone regardless of disability is an essential aspect.
----
 
 This particular W3C WAI page goes on to say:
 

@@ -12,6 +12,5 @@ draft: false
 ---
 > docsify generates your documentation website on the fly. Unlike GitBook, it does not generate static html files. Instead, it smartly loads and parses your Markdown files and displays them as a website.
 
----
 
 I just completed a training workshop where the course notes were provided in a website created using this software (and hosted on Netlify), and was really impressed.

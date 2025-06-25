@@ -8,7 +8,6 @@ linkTarget: "https://www.cassie.codes/posts/swipey-image-grids/"
 A lovely post by Cassie Evans in which she demonstrates that SVG is not just for icons and illustrations. You might also reach for it to create a responsive, animated grid of images.
 
 > we have another grid at our disposal. SVG has its own internal coordinate system and it's responsive by design.
----
 
 There are lots of interesting techniques in here such as:
 

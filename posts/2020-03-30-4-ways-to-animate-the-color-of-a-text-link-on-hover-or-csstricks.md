@@ -6,7 +6,6 @@ tags: [link, development, link, hover, animation, interactivity, css, transform]
 linkTarget: "https://css-tricks.com/4-ways-to-animate-the-color-of-a-text-link-on-hover/"
 ---
 > Let’s create a pure CSS effect that changes the color of a text link on hover – but slide that new color in instead of simply swapping colors. 
----
 
 Katherines post explores four different techniques to achieve the effect, and their comparative pros and cons with regard to accessibility, performance, and browser support.
 

@@ -16,7 +16,6 @@ tags:
 draft: false
 ---
 “I’ll just make a few small tweaks to my website…” said I. Cut to three sleep-deprived days later and I’ve rebuilt it, SSG/JAMstack-stylee with Eleventy and Netlify and entirely re-coded the front-end. Silly, but so far so good, and it’s greasy fast!
----
 
 So yes, I’ve just updated my website from being a dynamic, LAMP-stack affair which used Perch CMS and was hosted on Linode to being statically-generated using Eleventy and hosted on Netlify.
 

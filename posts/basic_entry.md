@@ -8,6 +8,5 @@ tags:
 draft: true
 ---
 Foo
----
 
 Bar

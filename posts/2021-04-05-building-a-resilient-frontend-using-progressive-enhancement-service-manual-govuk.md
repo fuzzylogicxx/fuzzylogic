@@ -8,7 +8,6 @@ linkTarget: "https://www.gov.uk/service-manual/technology/using-progressive-enha
 GOV.UK’s guidance on developing using progressive enhancement is pretty great in all departments. It begins with this solid advice:
 
 > you should start by making your page work with just HTML, before adding anything else like Cascading Style Sheets (CSS) and JavaScript. This is because HTML is the most resilient layer. If the HTML fails there’s no web page. Should the CSS or JavaScript fail, the HTML will still render correctly.
----
 
 I particularly like the section where they address the misconception that a resilient baseline is only required in places where the user has explicitly disabled JavaScript and therefore not worth worrying about.
 

@@ -12,7 +12,6 @@ draft: false
 
 ---
 This new resource on Web Components from Keith Cirkel and Kristján Oddsson of GitHub (and friends) is looking great so far.
----
 
 As [I recently tweeted](https://twitter.com/fuzzylogicx/status/1614202359520919553), I love that it’s demoing “vanilla” Web Components first rather than using a library for the demos. 
 

@@ -13,7 +13,6 @@ linkTarget: https://adrianroselli.com/2023/07/blockquotes-in-screen-readers.html
 
 ---
 Adrian tests how blockquotes, marked up in a variety of ways, are announced in different screen readers. 
----
 
 He concludes that his personal choice is as follows:
 
@@ -27,7 +26,6 @@ He concludes that his personal choice is as follows:
   <!-- other content -->
 </main>
 ```
----
 
 He avoids the `cite` _attribute_ completely because it creates noise in JAWS, and recommends against using `figure` with `figcaption` because it results in unnecessarily verbose and duplicate announcements.
 

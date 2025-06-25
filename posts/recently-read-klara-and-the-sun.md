@@ -1,10 +1,11 @@
 ---
 title: "Recently read: Klara and the Sun"
 description: I circled back to Kazuo’s Ishiguro’s latest novel having not had
-  the appetite for it during the pandemic and was glad I did
+  the appetite for it during the pandemic, and loved it.
 noteWithTitle: true
 date: 2025-06-22T16:23
 tags:
+  - note
   - book
   - technology
   - AI

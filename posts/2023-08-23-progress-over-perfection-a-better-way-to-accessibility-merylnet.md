@@ -6,7 +6,6 @@ tags: [link, a11y, progress]
 linkTarget: "https://meryl.net/accessibility-progress-over-perfection/"
 ---
 This post from earlier this year offers a similar encouraging message to Henny Swan’s recent [_The only accessibility specialist in the room_](https://fuzzylogic.me/posts/the-only-accessibility-practitioner-in-the-room/). It contains advice that’s worth remembering when we have one of those ”what’s the point?’ moments! 
----
 
 Advice like:
 

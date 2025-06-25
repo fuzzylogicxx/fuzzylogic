@@ -16,6 +16,5 @@ Braille Institute launch a new, free typeface promising greater legibility and r
 
 > What makes it different from traditional typography design is that it focuses on letterform distinction to increase character recognition, ultimately improving readability.
 
----
 
 via [@brucel](https://twitter.com/brucel)

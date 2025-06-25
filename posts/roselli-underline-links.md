@@ -10,7 +10,6 @@ tags:
 linkTarget: https://adrianroselli.com/2016/06/on-link-underlines.html 
 ---
 Adrian [recommends](https://adrianroselli.com/2016/06/on-link-underlines.html#recommendation) that we underline links in body copy and provides a host of evidence and rationale to back that up.
----
 
 > WCAG guidelines tell us to make sure we do not rely on color alone to distinguish links and even explicitly suggest underlines.
 

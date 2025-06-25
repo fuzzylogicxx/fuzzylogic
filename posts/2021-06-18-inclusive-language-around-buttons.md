@@ -8,7 +8,6 @@ linkTarget: "https://twitter.com/Amy_Hupe/status/1405508276314333184"
 [@Amy_Hupe](https://twitter.com/Amy_Hupe) recently posed a great question on Twitter regarding inclusive language for buttons:
 
 > What's an inclusive way to describe what you do to a (digital) button, given it might be pressed with a mouse click, a screen tap, a key on a keyboard, and so on? I've tended to use "select" but wondering if that's right? 
----
 
 There are a lot of good suggestions and my current feeling is that:
 

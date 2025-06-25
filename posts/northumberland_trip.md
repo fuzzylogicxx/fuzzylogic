@@ -18,7 +18,6 @@ tags:
 - rudy
 ---
 Prior to Christmas we’d been talking about giving ourselves the present of a trip to London. However the train prices were pretty offensive so we opted for a different type of weekend trip – one that was rural, cosy and Rudy-friendly.
----
 
 {% if app.environment == "production" %}
 <figure>

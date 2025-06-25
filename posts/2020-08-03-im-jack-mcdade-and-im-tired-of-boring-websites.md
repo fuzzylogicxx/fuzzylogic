@@ -6,7 +6,6 @@ tags: [link, design, web, fun, inspiration, audio]
 linkTarget: "https://jackmcdade.com/"
 ---
 > I’m Jack McDade and I’m tired of boring websites.
----
 
 So many fun touches in the design for Jack’s personal website! It gave me plenty of chuckles while browsing over the weekend.
 

@@ -6,7 +6,6 @@ tags: [link, designsystems, component, pattern]
 linkTarget: "https://css-tricks.com/newsletter/181/"
 ---
 > My point with all this is that it’s easy to see every problem or design as a new component or a mix of currently existing components. But instead, we should make components that can slot into each other neatly, rather just continue to make more components.
----
 
 An interesting observation from Robin Rendle who leads Gousto’s design system.
 

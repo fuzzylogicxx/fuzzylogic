@@ -10,7 +10,6 @@ linkTarget: "https://bradfrost.com/blog/post/front-of-the-front-end-and-back-of-
 > A front-of-the-front-end developer is a web developer who specializes in writing HTML, CSS, and presentational JavaScript code.
 
 > A back-of-the-front-end developer is a web developer who specializes in writing JavaScript code necessary to make a web application function properly.
----
 
 Brad also offers:
 

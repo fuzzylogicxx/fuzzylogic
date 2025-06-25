@@ -11,7 +11,6 @@ permalink: /posts/images-on-the-web-the-big-picture-part-2/
 draft: true
 ---
 lorem
----
 
 ## Modern Responsive Images
 

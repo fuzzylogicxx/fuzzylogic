@@ -10,7 +10,6 @@ draft: false
 ---
 I don’t often store things in a `Set` in JavaScript, but maybe I should. The fact it will only store *unique values* makes it pretty handy.
 
----
 
 One place I do currently use a `Set` is for the `TagList` in my 11ty-based personal website. I start by defining `TagList` as a new, empty `Set`. I then need to assemble all possible tags so iterate blog posts and for each add its associated tags to `TagList`. This means I can be sure that all duplicates will be removed automatically.
 

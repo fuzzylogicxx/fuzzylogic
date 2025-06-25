@@ -11,7 +11,6 @@ tags:
   - food
 ---
 Like most folks we didn’t holiday abroad during 2020 and 2021, when COVID was at its height. Trips abroad are a luxury and privilege so this was no hardship. However I’ll admit that once restrictions were lifted and things felt safer, we were pretty excited to head for some sun and good food, and set our sights on a first trip together to the south of France.
----
 
 ## The location
 

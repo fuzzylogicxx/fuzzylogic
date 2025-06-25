@@ -19,7 +19,6 @@ mainImage.isAnchor: false
 draft: false
 ---
 Me, Clair and Rudy just enjoyed a lovely weekend break. We stayed at [Drinkbetween cottage on Banchory Farm](https://www.banchoryfarm.co.uk/general-5). While only 70 minutes drive from home it provided some lovely countryside isolation, with the bonus of nice nearby towns to visit nearby too.
----
 
 The cottage has recently been restored by the farm owners and was the perfect environment to relax. 
 

@@ -15,7 +15,6 @@ tags:
 draft: false
 ---
 For a while now I’ve been using [gulp-autoprefixer](https://www.npmjs.com/package/gulp-autoprefixer) as part of my front-end build system. However, I’ve just removed it from my boilerplate. Here’s why.
----
 
 The npm module `gulp-autoprefixer` takes your standard CSS then automatically parses the rules and generates any necessary vendor-prefixed versions, such as `::-webkit-input-placeholder` to patch support for `::placeholder` in older Webkit browsers.
 

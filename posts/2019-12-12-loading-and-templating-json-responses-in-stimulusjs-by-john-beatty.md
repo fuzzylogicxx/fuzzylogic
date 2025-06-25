@@ -6,7 +6,6 @@ tags: [link, stimulus, javascript, api, json]
 linkTarget: "https://johnbeatty.co/2019/01/30/loading-and-templating-json-responses-in-stimulus-js/"
 ---
 Just because Stimulus.js is designed to work primarily with existing HTML doesn’t mean it can’t use JSON APIs when the need arises.
----
 
 Here, John pimps up his Stimulus controller to get and use JSON from a remote API endpoint. 
 

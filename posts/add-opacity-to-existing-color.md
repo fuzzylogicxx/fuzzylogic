@@ -20,7 +20,6 @@ draft: false
 
 ---
 Applying opacity to an existing colour value is a pretty common design requirement, and here Chris presents five ways to achieve it.
----
 
 I’ll admit that the explosion of colour models is one aspect of CSS that leaves me dizzy, so this explanation framed around a practical requirement really helps. The main approaches presented by Chris are:
 

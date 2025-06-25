@@ -6,9 +6,8 @@ tags: [link, music, radio, firecracker, otherlands, nts, thenuclearfamily]
 linkTarget: "https://www.nts.live/shows/lindsay-todd/episodes/into-the-outer-27th-october-2018"
 ---
 Magical sounds in the mix, from Auld Reekie’s finest.
----
 
-Other Lands consistently plays amazing records. 
+Other Lands consistently plays amazing records.
 
 He’s also been cultivating a quirky but cuddly radio voice which, combined with the heartfelt electronic sounds, makes for a warm and fuzzy listen.
 

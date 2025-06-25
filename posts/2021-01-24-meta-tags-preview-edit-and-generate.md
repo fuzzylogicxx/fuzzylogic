@@ -6,6 +6,5 @@ tags: [link, tool, slack, facebook, twitter, google, web, development]
 linkTarget: "https://metatags.io/"
 ---
 A handy tool which lets you type in a URL then inspects that page’s meta tags and shows you how it will be presented on popular websites. 
----
 
 This is really useful for testing how an article will look as a Google search result or when shared on Facebook, Slack and Twitter based on different meta tag values.

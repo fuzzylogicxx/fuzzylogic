@@ -5,7 +5,6 @@ date: "2018-12-01T16:58:08.051Z"
 tags: [development, git, cheatsheet]
 ---
 I’ve used Git for many years but it can still trip me up. At times I’ve worked primarily in a GUI (like Sourcetree or Fork), and other times directly on the command line. I’ve worked on projects where I’ve been the sole developer and others where I’m part of a large team. Regardless of the tools or context, I’ve learned there are certain _need-to-knows_. Here’s a list of useful Git concepts and commands for my reference and yours.
----
 
 Note: the following is not an exhaustive list but rather the thing I keep coming back to and/or regularly forget. For deeper explanations, see the list of resources at the foot of the article.
 
@@ -30,7 +29,7 @@ Note: the following is not an exhaustive list but rather the thing I keep coming
 <details>
   <summary>Option 1: Create a new repo in your Github account</summary>
 
-This generates a new, empty repo (optionally initialised with a README). 
+This generates a new, empty repo (optionally initialised with a README).
 
 Do this when you will be working on a new, dedicated project rather than contributing changes to a pre-existing one.
 </details>
@@ -48,12 +47,12 @@ Github Reference: [Creating a repository from a template](https://help.github.co
 <details>
   <summary>Option 3: Fork an existing repo (usually owned by someone else)</summary>
 
-This generates a new repo which is a copy of another repo, including its commit history. Your commits will update your copy rather than the original repo. 
+This generates a new repo which is a copy of another repo, including its commit history. Your commits will update your copy rather than the original repo.
 
 Do this by clicking the _Fork_ button in the header of a repository.
 
 This is good for (often short-lived) collaboration on an existing repo. You can contribute code to someone else’s project, via PRs.
-   
+
 Github Reference: [Working with forks](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/working-with-forks)
 </details>
 
@@ -62,7 +61,7 @@ Github Reference: [Working with forks](https://help.github.com/en/github/collabo
 `clone` creates a _local copy_ on your computer of a remote (Github-hosted) repo.
 
 <figure>
-  
+
 ``` bash
 cd projects
 git clone https://github.com/githubusername/projectname.git optionallocaldirectoryname
@@ -72,7 +71,7 @@ git clone https://github.com/githubusername/projectname.git optionallocaldirecto
 
 You might be cloning a repo you own, or one owned by someone else (to use its features in your project).
 
-Your local copy will, by default, have its `origin` remote set to the Github repo you cloned. 
+Your local copy will, by default, have its `origin` remote set to the Github repo you cloned.
 
 <details>
   <summary>I cloned an empty new project</summary>
@@ -114,7 +113,7 @@ We’re in easy streets. The default remote is set exactly as you want it. Just 
 
   </figure>
   </details>
-  
+
   <details>
     <summary>The source repo is my fork of a project to which I want to contribute</summary>
 
@@ -132,7 +131,7 @@ This is a special type of clone. I know this is an option, but it‘s not one I�
 
 Although cloning is the easiest way to get started locally, ocassionally I start by coding from scratch instead.
 
-<figure>  
+<figure>
 
 ``` bash
 mkdir myproject && cd myproject
@@ -157,29 +156,29 @@ git push -u origin master
 Remove a remote from your local settings:
 
 <figure>
-  
+
 ``` bash
 git remote rm <name>
 ```
 
 </figure>
-  
+
 Rename a remote:
 
 <figure>
-  
+
 ``` bash
 git remote rename oldname newname
 ```
 
 </figure>
-  
+
 ## Configuration
 
 Configure your favourite editor to be used for commit messages:
 
 <figure>
-  
+
 ``` bash
 git config --global core.editor "nano"
 ```
@@ -189,7 +188,7 @@ git config --global core.editor "nano"
 Use `git st` as a shortcut for `git status` (to stop me mistyping as “statsu”):
 
 <figure>
-  
+
 ``` bash
 git config --global alias.st status
 ```
@@ -199,10 +198,10 @@ git config --global alias.st status
 Configure any setting:
 
 <figure>
-  
+
 ``` bash
 git config [--global] <key> <value>
-  
+
 git config --global user.email "myname@domain.com"
 ```
 
@@ -211,7 +210,7 @@ git config --global user.email "myname@domain.com"
 ## Staging, unstaging and deleting files
 
 <figure>
-  
+
 ``` bash
 # stage all unstaged files
 git add .
@@ -221,11 +220,11 @@ git add filename.txt
 ```
 
 </figure>
-  
+
 Unstage with `reset` (the opposite of `git add`):
 
 <figure>
-  
+
 ``` bash
 # unstage all staged files
 git reset .
@@ -235,65 +234,65 @@ git reset filename.txt
 ```
 
 </figure>
-  
+
 Delete a physical file and stage the deletion for the next commit:
 
 <figure>
-  
+
 ``` bash
 git rm folder/filename.txt
 ```
 
 </figure>
-  
+
 ## Committing updates
 
 Commit with [a multi-line message](https://thoughtbot.com/blog/5-useful-tips-for-a-better-commit-message):
 
 <figure>
-  
+
 ``` bash
 git commit
 ```
 
 </figure>
-  
+
 Commit with short message:
 
 <figure>
-  
+
 ``` bash
 git commit -m "fix: typo in heading"
 ```
 
 </figure>
-  
+
 Stage and commit all changes in a single command (note: doesn’t work with new, untracked files):
 
 <figure>
-  
+
 ``` bash
 git commit -am "fix: typo in heading"
 ```
 
 </figure>
-  
+
 ## Branches
 
 Show all local branches:
 
 <figure>
-  
+
 ``` bash
 git branch
 ```
 
 </figure>
-  
+
 Show all local _and remote_ branches:
 
 <figure>
-  
+
 ``` bash
 git branch -a
 ```
@@ -309,43 +308,43 @@ git branch --sort=-committerdate
 ```
 
 </figure>
-  
+
 Save current state to new branch but don’t yet switch to it (useful after committing to wrong branch):
 
 <figure>
-  
+
 ``` bash
 git branch newbranchname
 ```
 
 </figure>
-  
-Create and switch to new branch (`main` or whatever branch you want to branch off): 
+
+Create and switch to new branch (`main` or whatever branch you want to branch off):
 
 <figure>
-  
+
 ``` bash
 git checkout -b mynewbranch
 ```
 
 </figure>
-  
+
 Note that if you branch off `foo_feature` then when creating a PR in GitHub for your changes in `mynewbranch` you can change the _Base_ branch from the default of `main` to `foo_feature`. This specifies that you are requesting your changes be merged into `foo_feature` rather than `main` and makes the comparison of changes relative to `foo_feature` rather than `main`.
-   
+
 Switch to an existing branch:
 
 <figure>
-  
+
 ``` bash
 git checkout branchname
 ```
 
 </figure>
-  
+
 Save typing by setting the upstream remote branch for your local branch:
 
 <figure>
-  
+
 ``` bash
 # git branch -u remotename/branchname
 git branch -u fuzzylogic/v3
@@ -359,7 +358,7 @@ git pull
 Delete local branch:
 
 <figure>
-  
+
 ``` bash
 git branch -d name_of_branch
 
@@ -368,7 +367,7 @@ git branch -D name_of_branch
 ```
 
 </figure>
-  
+
 ## Save changes temporarily
 
 `stash` is like a clipboard for git.
@@ -386,11 +385,11 @@ git stash pop
 </figure>
 
 ## Staying current and compatible
-  
+
 `fetch` remote branch and `merge` simultaneously:
 
 <figure>
-  
+
 ``` bash
 git pull remotename branchname
 
@@ -412,7 +411,7 @@ git reset --hard origin/master
 Merge another branch (e.g. master) into current branch:
 
 <figure>
-  
+
 ``` bash
 git merge otherbranch
 
@@ -421,7 +420,7 @@ git merge master
 ```
 
 </figure>
-  
+
 ### Rebasing
 
 `git rebase` can be used as:
@@ -441,7 +440,7 @@ While it’s a good idea to `rebase` _before_ making a <abbr title="Pull Request
 Rebuild your feature branch’s changes on top of master:
 
 <figure>
-  
+
 ``` bash
 git checkout master
 git pull origin master
@@ -450,21 +449,21 @@ git rebase master
 ```
 
 </figure>
-  
+
 Force push your rebased branch (again, only when you’re unlikely to have/require collaborators on the PR):
 
 <figure>
-  
+
 ``` bash
 git push --force origin myfeaturebranch
 ```
 
 </figure>
-  
+
 Tidy a feature branch before making a PR:
 
 <figure>
-  
+
 ``` bash
 git checkout myfeaturebranch
 git rebase -i master
@@ -481,28 +480,28 @@ pick 5c67e61 Message for commit #3
 pick 33d5b7a Message for commit #1
 fixup 9480b3d Message for commit #2
 pick 5c67e61 Message for commit #3
-  
-# alternatively if use 'squash', after saving it will open an editor 
+
+# alternatively if use 'squash', after saving it will open an editor
 # and prompt you to set a new commit message for the combined stuff.
 pick 33d5b7a Message for commit #1
 squash 9480b3d Message for commit #2
 squash 5c67e61 Message for commit #3
 ```
-  
+
 [More on squash including a handly little video if I forget how it works.](https://www.git-tower.com/learn/git/faq/git-squash)
 
 </figure>
-  
+
 Undo a rebase:
 
 <figure>
-  
+
 ``` bash
 git reset --hard ORIG_HEAD
 ```
 
 </figure>
-  
+
 For more detail, read [Atlassian’s guide to rebasing](https://www.atlassian.com/git/tutorials/merging-vs-rebasing).
 
 ## Reviewing your activity
@@ -510,7 +509,7 @@ For more detail, read [Atlassian’s guide to rebasing](https://www.atlassian.co
 Show commit history (most recent first; `q` to quit):
 
 <figure>
-  
+
 ``` bash
 git log
 
@@ -522,11 +521,11 @@ git log branchname
 ```
 
 </figure>
-  
+
 Check if your feature branch is trailing behind:
 
 <figure>
-  
+
 ``` bash
 # show commits in master that are not yet in my feature branch
 git log --oneline my-feature..master
@@ -539,11 +538,11 @@ git log --author=Demaree --grep=heroku --oneline Gemfile
 ```
 
 </figure>
-  
+
 Show changes that occurred in the most recent commit or a given commit.
 
 <figure>
-  
+
 ```
 git show
 
@@ -556,17 +555,17 @@ git show 591672e
 Review differences between staged changes and last commit:
 
 <figure>
-  
+
 ``` bash
 git diff --cached
 ```
 
 </figure>
-  
+
 Review changes between a given version/commit and the latest:
 
 <figure>
-  
+
 ``` bash
 git diff 591672e..master
 ```
@@ -576,39 +575,39 @@ git diff 591672e..master
 ## Fixing Things
 
 Discard all your as-yet uncommitted changes:
-  
+
 <figure>
 
 ```bash
 git restore .
 ```
-  
+
 </figure>
-  
+
 Get your local feature branch out of a problem state by resetting to the state it is on the remote (e.g. at last `push`).
-  
+
 <figure>
 
 ```bash
 git reset --hard origin/my-branch
 ```
-  
+
 </figure>
-   
+
 Undo all the changes in a given commit:
 
 <figure>
-  
+
 ``` bash
 git revert 591672e
 ```
 
 </figure>
-  
+
 Alter the previous commit (change the message and/or include further updates):
 
 <figure>
-  
+
 ``` bash
 # we are amending the previous commit rather than creating a new commit.
 # if file changes are staged, it amends previous commit to include those.
@@ -617,11 +616,11 @@ git commit --amend
 ```
 
 </figure>
-  
+
 Move current branch tip backward to a given commit, reset the staging area to match, but leave the working directory alone:
 
 <figure>
-  
+
 ``` bash
 git reset 591672e
 
@@ -630,13 +629,13 @@ git reset --hard 591672e
 ```
 
 </figure>
-  
+
 See what the app/site was like (e.g. whether things worked or were broken) at a given previous commit, noting the following:
 - You’re now “detatched”, in that your computer’s HEAD is pointing at a commit rather than a branch.
 - You’re expected to merely review, not to make commits. Any commits you make would be “homeless”, since commits are supposed to go in branches. (However you could then branch off.)
 
 <figure>
-  
+
 ``` bash
 git checkout 591672e
 ```
@@ -646,7 +645,7 @@ git checkout 591672e
 Return one or more files to the state they were in at a previous commit, without reverting everything else.
 
 <figure>
-  
+
 ``` bash
 git checkout 3aa647dac9a8a251ca223a693d4c140fd3c1db11 /path/to/file.md /path/to/file2.erb
 
@@ -655,25 +654,25 @@ git commit
 ```
 
 </figure>
-  
+
 When `git st` reveals a list of staged files including lots of strange files you don’t want there mixed with others you do…
-  
+
 <figure>
-  
+
 ``` bash
 # add those you want to stay modified and staged
-git add path/to/file-I-want-1.rb path/to/file-I-want-2.md 
+git add path/to/file-I-want-1.rb path/to/file-I-want-2.md
 
 # this will clear all others out of the stage
 git checkout .
 ```
 
 </figure>
-  
+
 Grab one or more commits from elsewhere and drop into your current branch:
 
 <figure>
-  
+
 ``` bash
 git cherry-pick 591672e
 
@@ -682,11 +681,11 @@ git cherry-pick master
 ```
 
 </figure>
-  
+
 Fix a pull that went wrong / shouldn’t have been done:
 
 <figure>
-  
+
 ``` bash
 git pull origin branchname
 # whoops!
@@ -708,7 +707,7 @@ git reset HEAD@{index}
 Revert to the previous branch you were on
 
 <figure>
-  
+
 ``` bash
 git checkout -
 ```
@@ -716,7 +715,7 @@ git checkout -
 </figure>
 
 ## Useful GitHub stuff
-  
+
 - [Review your branches on a repo](https://github.com/[user]/[repo]/branches/yours)
 - [Review PRs and issues you’re subscribed to](https://github.com/notifications/subscriptions), i.e. ones on which you were active or mentioned
 - [Review your or another user’s PRs](https://github.com/pulls?q=is%3Apr+author%3Afuzzylogicxx+archived%3Afalse+)

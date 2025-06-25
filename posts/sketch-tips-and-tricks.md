@@ -5,7 +5,6 @@ date: "2019-06-23T16:58:08.051Z"
 tags: [design, sketch, cheatsheet]
 ---
 Here’s a list of useful (Mac-based) Sketch tips for my reference and yours.
----
 
 ## Commands Quick Reference
 

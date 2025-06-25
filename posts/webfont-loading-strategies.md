@@ -16,7 +16,6 @@ tags:
 draft: false
 ---
 When it comes to webfonts, if you want to serve an accessible and high performance experience across device types it’s not as straightforward as just specifying your fonts in CSS then hoping for the best.
----
 
 We likely have goals such as the following:
 

@@ -22,7 +22,6 @@ draft: false
 
 ---
 Here’s something to keep in mind when designing and developing forms. [GOV.UK](http://gov.uk/)’s accessibility team found last year that there are some accessibility issues with the “conditional reveal” pattern, i.e. when selecting a particular radio button causes more inputs to be revealed.
----
 
 [The full background story](https://accessibility.blog.gov.uk/2021/09/21/an-update-on-the-accessibility-of-conditionally-revealed-questions/) is really interesting but the main headline seems to be: _Keep it simple._
 

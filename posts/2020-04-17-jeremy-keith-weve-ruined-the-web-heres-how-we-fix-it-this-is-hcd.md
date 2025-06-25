@@ -9,7 +9,6 @@ During the COVID situation, people have an urgent need to access critical inform
 
 Here’s a brilliant discussion between [Gerry McGovern](https://gerrymcgovern.com/) and [Jeremy Keith](https://adactio.com/) on that problem, suggesting tactics to help fix things such as performance budgets, introducing tactics at the design stage to mimic slow connections and other access constraints, optimising for return visits, progressive enhancement and more.
 
----
 
 Loved this! 
 

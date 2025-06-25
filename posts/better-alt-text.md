@@ -15,7 +15,6 @@ As most of us know, the HTML `alt` attribute is for providing “alternate text�
 
 The article made some interesting points and even though I’ve been using the `alt` attribute for years I found three common cases where I could improve how I do things.
 
----
 
 ## Avoid starting with “photo of…”
 

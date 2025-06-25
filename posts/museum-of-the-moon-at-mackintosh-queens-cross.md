@@ -5,7 +5,6 @@ date: 2018-06-23 19:36:00
 tags: [entry, moon, family, mackintosh]
 ---
 Today I and my brother Martin and two nieces Sophie and Mia, made a first visit to the [Mackintosh Church](http://www.mackintoshchurch.com/) in Maryhill, Glasgow.
----
 
 We were there to visit _Museum of the Moon_, a new touring artwork by UK artist [Luke Jerram](https://www.lukejerram.com/). I’d first heard about this exhibition when watching the BBC documentary [_Wonders of the Moon_](https://www.bbc.co.uk/programmes/b09qjl7g).
 

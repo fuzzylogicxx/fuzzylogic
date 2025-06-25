@@ -19,7 +19,6 @@ mainImage.isAnchor: false
 draft: false
 ---
 People have used the HTML title attribute to achieve a native “tooltip” effect for many years. However accessibility experts have recommended that we should avoid this practice, and here I summarise my research on the topic.
----
 
 Renowned accessibility solutions provider [The Paciello Group recommend the title attribute should almost always be avoided.](https://www.tpgi.com/using-the-html-title-attribute/) It causes problems for lots of different usage contexts (keyboard, touch device, screen readers). The only place where I can see that it is still helpful is on `iframe`. It _was_ beneficial on form inputs in cases where a visible text label would be redundant and we want to provide our control with a programmatically associated label, however we now have `aria` attributes which do a better job.
 

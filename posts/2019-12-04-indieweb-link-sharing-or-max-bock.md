@@ -6,7 +6,6 @@ tags: [link, indieweb, github, lambda, netlify, bookmarking]
 linkTarget: "https://mxb.dev/blog/indieweb-link-sharing/"
 ---
 > A pain point of the IndieWeb is that it's sometimes not as convenient to share content as it is on the common social media platforms… That’s why I wanted to improve this process for my site.
----
 
 This was a fantastic walkthrough by [Max](https://twitter.com/mxbck). And based on this, I’ve just finished implementing an easy-bookmarking feature on my own website. 
 

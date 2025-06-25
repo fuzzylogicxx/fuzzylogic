@@ -25,7 +25,6 @@ draft: false
 
 ---
 Unlike other HTML5 elements such as `header`, `footer` and `nav`, it’s never been particularly clear to me when is appropriate to use `section`. This is due in large part to many experts having expressed that it doesn’t quite work as intended.
----
 
 I like [HTMHell’s rule-of-thumb regarding `section`](https://www.htmhell.dev/tips/the-section-element/):
 

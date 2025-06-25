@@ -13,7 +13,6 @@ tags:
 linkTarget: https://ckarchive.com/b/n4uohvh8pzr7ou7q339qeh7o4eggghl
 ---
 I loved this insight into Adam Silver’s thought process. And it came at a timely moment since at work I’m currently trying to promote evidence-based, considered choices regarding user interface patterns.
----
 
 My summary of Adam’s key points is:
 

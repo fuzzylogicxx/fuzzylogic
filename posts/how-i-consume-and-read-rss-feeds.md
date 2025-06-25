@@ -13,7 +13,6 @@ tags:
 ---
 I’m currently interested in how to spend less time on social media platforms so as to be less exposed to ads, algorithms and general ill-effects. One approach I’m trialling is going back to the old school and using [RSS](https://en.wikipedia.org/wiki/RSS) to receive and aggregate updates from the people I follow, allowing me to read them in a central, noise-free place and not have to use social platform websites and apps.
 
----
 
 I use the free, open source Mac and iOS app [NetNewsWire](https://ranchero.com/netnewswire/) on my MacBook. This is where I tend to add and organise my RSS feeds as it has a good UI, for example for arranging feeds into suitable folders.
 

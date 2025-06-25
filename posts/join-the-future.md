@@ -22,7 +22,6 @@ draft: false
 
 ---
 > It’s important to set the record straight. Normally when people talk about the early UK scene the same few things get mentioned. The real underground never gets talked about."
----
 
 {% if app.environment == "production" %}
 <figure>

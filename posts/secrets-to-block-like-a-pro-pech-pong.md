@@ -25,7 +25,6 @@ In this tutorial video Seth Pech shares what he’s learned about that most foun
 <div class="l-frame">
   <iframe title="Pech Pong’s secrets to block like a pro tutorial" width="560" height="315" src="https://www.youtube.com/embed/J0tdMgyyCpE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
----
 
 Fundamentals:
 

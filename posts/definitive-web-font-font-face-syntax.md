@@ -11,7 +11,6 @@ tags:
 draft: false
 ---
 These days, whenever I’m about to use a web font on a new site I generally find myself running a google search for the latest “definitive `@font-face` syntax” that covers all modern browser/device needs.
----
 
 For a long time I headed straight for [Paul Irish’s Bulletproof @font-face Syntax](https://www.paulirish.com/2009/bulletproof-font-face-implementation-syntax/) but I noted a few years back that he’d stopped updating it.
 

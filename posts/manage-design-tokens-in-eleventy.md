@@ -21,7 +21,6 @@ draft: false
 
 ---
 One interesting aspect of the [Duet Design System](https://www.duetds.com/) is that they use [Eleventy](https://www.11ty.dev/) to not only generate their reference website but also to generate their Design Tokens.
----
 
 When I think about it, this makes sense. Eleventy is basically a sausage-machine; you put stuff in, tell it how you want it to transform that stuff, and you get something new out the other end. This isn’t just for markdown-to-HTML, but for a variety of formatA-to-formatB transformation needs… including, for example, using JSON to generate CSS.
 

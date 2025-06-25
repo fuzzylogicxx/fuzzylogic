@@ -21,7 +21,6 @@ draft: false
 
 ---
 Over the last couple of days I’ve been watching [an interview with Brad Frost on Storybook’s channel](https://www.youtube.com/watch?v=jR0Gefa4lpg). I’m still only halfway through but it’s great so far.
----
 
 One part I’m loving is, from about 25 mins in, when Brad talks abut how [Atomic Design](https://bradfrost.com/blog/post/atomic-web-design/) _crucially_ includes the notion of not only “breaking interfaces down” (like every DS does) but also “building them back up”. It’s not just the atoms and molecules that are important, but also combining them into (in Atomic Design parlance) organisms and templates, too. For example when using Storybook as an internal workshop (in my team our equivalent is [LookBook](https://github.com/allmarkedup/lookbook)), he makes a point of it not just including components but also templates, so that:
 

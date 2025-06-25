@@ -12,7 +12,6 @@ tags:
 A while back, [Jake Archibald tweeted](https://twitter.com/jaffathecake/status/1230388412806520833):
 
 > Don't render buttons on the server that require JS to work.
----
 
 The idea is that user interface elements which depend on JavaScript (such as buttons) should be rendered _on the client-side_, i.e. with JavaScript.
 

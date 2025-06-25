@@ -9,7 +9,6 @@ mainImage:
   figcaption: The Testament of Gideon Mack by James Robertson
 ---
 A strange, otherwordly and often pretty funny tale of a Scottish minister’s dance with The Devil.
----
 
 {% if app.environment == "production" %}
 <figure>

@@ -17,7 +17,6 @@ draft: false
 
 ---
 I’ve just read _Rise_ by Gina Miller.
----
 
 {% if app.environment == "production" %}
 <figure>

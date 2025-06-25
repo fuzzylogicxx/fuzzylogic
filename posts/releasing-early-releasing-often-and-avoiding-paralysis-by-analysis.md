@@ -5,7 +5,6 @@ description: Getting Things Done requires keeping the perfectionist urges at bay
 tags: [entry, personal, mvp, progressiveenhancement]
 ---
 My name is Laurence Hughes and I’m a perfectionist. But I’m working on it.
----
 
 I’ve suffered from the painful affliction of perfectionism for as long as I can remember (I blame the mother…) and although I’m much better than I used to be, I don’t think it ever fully leaves you.
 

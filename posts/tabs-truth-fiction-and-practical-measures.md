@@ -20,7 +20,6 @@ draft: false
 
 ---
 My colleague Anda and I just had a good conversation about tabs, and specifically the company’s tabs component. I’ve mentioned before that our tabs are unconventional and potentially confusing, and Anda was interested to hear more.
----
 
 ## What’s the purpose of a tabbed interface?
 

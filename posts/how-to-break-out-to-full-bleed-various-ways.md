@@ -11,7 +11,6 @@ tags:
   - fullbleed
 ---
 How to break out to full-bleed, various ways.
----
 
 Adactio mentioned this article https://joshwcomeau.com/css/full-bleed/.
 

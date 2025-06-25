@@ -22,7 +22,6 @@ draft: false
 
 ---
 My work colleague [Ryan](https://twitter.com/ryandeegan) recently drew my attention to the new HTML `search` element. This morning I read [Scott O’Hara’s excellent primer](https://www.scottohara.me/blog/2023/03/24/search-element.html). Scott worked on implementing `<search>`, and his article cleared up my questions around what it is and when we can start using it.
----
 
 Firstly `<search>` is not a “search input” – it’s not a replacement for any existing `input` elements. Instead it’s a native HTML element to create a `search` [landmark](https://www.w3.org/TR/wai-aria-1.2/#landmark_roles), something that until now we could only achieve by applying `role="search"` to another element.
 
