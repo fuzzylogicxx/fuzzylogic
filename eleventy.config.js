@@ -174,6 +174,41 @@ export default async function(eleventyConfig) {
     }
   );
 
+  // Responsive image shortcode V1
+  eleventyConfig.srcsetWidths = [320, 640, 960, 1280, 1600, 1920, 2240, 2560];
+  eleventyConfig.fallbackWidth = 640;
+  eleventyConfig.aspectRatioWidth = 320;
+  eleventyConfig.aspectRatioHeight = 240;
+
+  eleventyConfig.addShortcode('respimg', function(
+    src,
+    alt,
+    sizes,
+    aspectRatioWidth = eleventyConfig.aspectRatioWidth,
+    aspectRatioHeight = eleventyConfig.aspectRatioHeight,
+    srcsetWidthRange = eleventyConfig.srcsetWidths
+  ) {
+    const cloudinaryBase = `https://res.cloudinary.com/${eleventyConfig.cloudinaryCloudName}/image/upload/`;
+    var cloudinaryImgPath = src.replace(cloudinaryBase, '');
+    return `<img
+    eleventy:ignore
+    class="u-full-parent-width"
+    srcset="${srcsetWidthRange
+      .map(w => {
+        return `${cloudinaryBase}q_auto,f_auto,w_${w}/${cloudinaryImgPath} ${w}w`;
+      })
+      .join(', ')}"
+    sizes="${sizes ? sizes : '100vw'}"
+    src="${cloudinaryBase}q_auto,f_auto,w_${
+      eleventyConfig.fallbackWidth
+    }/${cloudinaryImgPath}"
+    width="${aspectRatioWidth}" height="${aspectRatioHeight}"
+    ${alt ? `alt="${alt}"` : ''}
+    loading="lazy"
+    decoding="async" />`;
+  });
+
+
 // End DELETE ASAP
 
 
