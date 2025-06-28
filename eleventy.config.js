@@ -1,64 +1,35 @@
-const { DateTime } = require('luxon');
-const fs = require('fs');
-const pluginNavigation = require("@11ty/eleventy-navigation");
-const pluginRss = require('@11ty/eleventy-plugin-rss');
-const pluginSyntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
-const { eleventyImageTransformPlugin } = require("@11ty/eleventy-img");
-const { minify } = require("terser");
+import { IdAttributePlugin, InputPathToUrlTransformPlugin, HtmlBasePlugin } from "@11ty/eleventy";
+import { feedPlugin } from "@11ty/eleventy-plugin-rss";
+import pluginSyntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
+import pluginNavigation from "@11ty/eleventy-navigation";
+import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
+import pluginFilters from "./_config/filters.js";
 
-const markdownIt = require("markdown-it");
+// LH custom: use markdown-it-anchors so I can add classes in my markdown posts,
+// like so {.post__intro}. If I were instead to write them as HTML (<p class="intro">),
+// any markdown (links etc) I put within the opening and closing HTML tags would
+// not get processed into HTML (annoyingly) unless I add silly empty lines above and below
+// the markdown content.
+import markdownitattrs from 'markdown-it-attrs';
 
-module.exports = function(eleventyConfig) {
-  eleventyConfig.addPlugin(pluginNavigation);
-  eleventyConfig.addPlugin(pluginRss);
-  eleventyConfig.addPlugin(pluginSyntaxHighlight);
-
-  // Drafts.
-  // See also _data/eleventyDataSchema.js which validates that
-  // `draft` is either undefined or boolean, and raises an error if not.
-  // TODO: add the above schema file once I’ve switched to ES modules.
+/** @param {import("@11ty/eleventy").UserConfig} eleventyConfig */
+export default async function(eleventyConfig) {
+	// Drafts, see also _data/eleventyDataSchema.js
 	eleventyConfig.addPreprocessor("drafts", "*", (data, content) => {
 		if(data.draft && process.env.ELEVENTY_RUN_MODE === "build") {
 			return false;
 		}
 	});
 
+  eleventyConfig.amendLibrary("md", (mdLib) => mdLib.use(markdownitattrs));
 
-
-
-  eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
-		// which file extensions to process
-		extensions: "html",
-
-		// Add any other Image utility options here:
-
-		// optional, output image formats
-		formats: ["avif", "webp"],
-		// formats: ["auto"],
-
-		// optional, output image widths
-		// widths: ["auto"],
-    widths: [800, "auto"],
-
-		// optional, attributes assigned on <img> override these values.
-		defaultAttributes: {
-      sizes: "(max-width: 860px) 100vw, 840px",
-      loading: "lazy",
-		  decoding: "async",
-		},
-	});
-
-
-  eleventyConfig.setDataDeepMerge(true);
-
-  eleventyConfig.addLayoutAlias('post', 'layouts/post.njk');
-
-  // Copy the contents of the `public` folder to the output folder
+	// Copy the contents of the `public` folder to the output folder
 	// For example, `./public/css/` ends up in `_site/css/`
 	eleventyConfig
 		.addPassthroughCopy({
 			"./public/": "/"
-		});
+		})
+		.addPassthroughCopy("./content/feed/pretty-atom-feed.xsl");
 
 	// Run Eleventy when these files change:
 	// https://www.11ty.dev/docs/watch-serve/#add-your-own-watch-targets
@@ -66,131 +37,110 @@ module.exports = function(eleventyConfig) {
 	// Watch CSS files
 	eleventyConfig.addWatchTarget("css/**/*.css");
 
-  // Per-page bundles, see https://github.com/11ty/eleventy-plugin-bundle
+	// Watch images for the image pipeline.
+	eleventyConfig.addWatchTarget("content/**/*.{svg,webp,png,jpg,jpeg,gif}");
+
+	// Per-page bundles, see https://github.com/11ty/eleventy-plugin-bundle
 	// Bundle <style> content and adds a {% css %} paired shortcode
 	eleventyConfig.addBundle("css", {
+		toFileDirectory: "dist",
 		// Add all <style> content to `css` bundle (use <style eleventy:ignore> to opt-out)
 		// Supported selectors: https://www.npmjs.com/package/posthtml-match-helper
 		bundleHtmlContentFromSelector: "style",
 	});
 
-
-
-  //
-  // Shortcodes
-  //
-
-  // Get current year
-  // https://11ty.rocks/eleventyjs/dates/#year-shortcode
-  eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
-
-
-
-
-
-
-
-
-  //
-  // Eleventy Filters
-  // (functions we use elsewhere to modify strings, dates, file contents etc to get what we want)
-  //
-
-  eleventyConfig.addFilter("readableDate", (dateObj, format, zone) => {
-		// Formatting tokens for Luxon: https://moment.github.io/luxon/#/formatting?id=table-of-tokens
-		return DateTime.fromJSDate(dateObj, { zone: zone || "utc" }).toFormat(format || "dd LLLL yyyy");
+	// Bundle <script> content and adds a {% js %} paired shortcode
+	eleventyConfig.addBundle("js", {
+		toFileDirectory: "dist",
+		// Add all <script> content to the `js` bundle (use <script eleventy:ignore> to opt-out)
+		// Supported selectors: https://www.npmjs.com/package/posthtml-match-helper
+		bundleHtmlContentFromSelector: "script",
 	});
 
-  eleventyConfig.addFilter('readableTime', dateObj => {
-    return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat('h:mm a');
-  });
+	// Official plugins
+	eleventyConfig.addPlugin(pluginSyntaxHighlight, {
+		preAttributes: { tabindex: 0 }
+	});
+	eleventyConfig.addPlugin(pluginNavigation);
+	eleventyConfig.addPlugin(HtmlBasePlugin);
+	eleventyConfig.addPlugin(InputPathToUrlTransformPlugin);
 
-  eleventyConfig.addFilter('htmlDateString', (dateObj) => {
-		// dateObj input: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
-		return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat('yyyy-LL-dd');
+	eleventyConfig.addPlugin(feedPlugin, {
+		type: "atom", // or "rss", "json"
+		outputPath: "/feed/feed.xml",
+		stylesheet: "pretty-atom-feed.xsl",
+		templateData: {
+			eleventyNavigation: {
+				key: "RSS",
+				order: 2
+			}
+		},
+		collection: {
+			name: "posts",
+			limit: 10,
+		},
+		metadata: {
+			language: "en",
+			title: "Fuzzy Logic",
+			subtitle: "Fuzzy Logic is the personal website of Laurence Hughes, a web developer based in Glasgow, Scotland.",
+			base: "https://fuzzylogic.me/",
+			author: {
+				name: "Laurence Hughes"
+			}
+		}
 	});
 
+	// Image optimization: https://www.11ty.dev/docs/plugins/image/#eleventy-transform
+	eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
+		// Output formats for each image.
+		formats: ["avif", "webp"],
 
-  /**
-   * jsmin()
-   * custom filter into which we pass some JavaScript and get it back minified.
-   * Uses terser for the minification.
-   * Terser config options: https://github.com/terser/terser#minify-options-structure
-   * Example Nunjucks call: {{ myjs | jsmin | safe }}
-   * @param  {String} "const mynum = 123;"
-   * @return {String} the minified JS or, if minification failed, the unminified JS.
-   */
-  eleventyConfig.addNunjucksAsyncFilter("jsmin", async function (
-    code,
-    callback
-  ) {
-    try {
-      var options = { mangle: { toplevel: true }, format: { comments: false } };
-      const minified = await minify(code, options);
-      callback(null, minified.code);
-    } catch (err) {
-      console.error("Terser error: ", err);
-      // Fail gracefully.
-      callback(null, code);
-    }
-  });
+		widths: [800, "auto"],
 
-  // Get the first `n` elements of a collection.
-  eleventyConfig.addFilter('head', (array, n) => {
-    if (n < 0) {
-      return array.slice(n);
-    }
-    return array.slice(0, n);
-  });
+		failOnError: false,
+		htmlOptions: {
+			imgAttributes: {
+				// e.g. <img loading decoding> assigned on the HTML tag will override these values.
+				loading: "lazy",
+				decoding: "async",
+        sizes: "(max-width: 860px) 100vw, 840px",
+			}
+		},
 
-  //
-  // Collections
-  //
+		sharpOptions: {
+			animated: true,
+		},
+	});
 
-  // onlyHistoricPublishDates: function for use as callback in Array.filter()
-  // to exclude any posts with date in the future (i.e. scheduled posts).
-  const now = new Date();
-  const onlyHistoricPublishDates = post => post.date <= now;
+	// Filters
+	eleventyConfig.addPlugin(pluginFilters);
 
-  // Collection of Tags (those for “Live Posts” only)
-  eleventyConfig.addCollection('tagList', function(collection) {
-    // use a Set because values have to be unique so it deals with that out of the box
-    let tagSet = new Set();
-    collection
-      .getFilteredByTag('posts')
-      .filter(onlyHistoricPublishDates)
-      .forEach(function(item) {
-        if ('tags' in item.data) {
-          let tags = item.data.tags;
+	eleventyConfig.addPlugin(IdAttributePlugin, {
+		// by default we use Eleventy’s built-in `slugify` filter:
+		// slugify: eleventyConfig.getFilter("slugify"),
+		// selector: "h1,h2,h3,h4,h5,h6", // default
+	});
 
-          // filter out tags that we don’t want to show in tag lists
-          tags = tags.filter(function(item) {
-            switch (item) {
-              // this and the `filter` list in posts-tagged-with-tag.njk should be the same
-              case 'all':
-              case 'post':
-              case 'posts':
-              case 'link':
-              case 'entry':
-              case 'note':
-                return false;
-            }
+	eleventyConfig.addShortcode("currentBuildDate", () => {
+		return (new Date()).toISOString();
+	});
 
-            return true;
-          });
+  eleventyConfig.addShortcode("currentYear", () => {
+		return (new Date()).getFullYear();
+	});
 
-          for (const tag of tags) {
-            tagSet.add(tag);
-          }
-        }
-      });
+	// Features to make your build faster (when you need them)
 
-    // returning an array in addCollection works from Eleventy 0.5.3
-    // use spread operator on our set within array braces to convert set to array
-    // also sort array of tags alphabetically
-    return [...tagSet].sort();
-  });
+	// If your passthrough copy gets heavy and cumbersome, add this line
+	// to emulate the file copy on the dev server. Learn more:
+	// https://www.11ty.dev/docs/copy/#emulate-passthrough-copy-during-serve
 
+	// eleventyConfig.setServerPassthroughCopyBehavior("passthrough");
+
+
+
+
+  // DELETE THE FOLLOWING ASAP:
   // Responsive image shortcode V2
   // (currently using Cloudinary both as image host and for its image transformation features)
   eleventyConfig.cloudinaryCloudName = 'fuzzylogic';
@@ -224,101 +174,50 @@ module.exports = function(eleventyConfig) {
     }
   );
 
-  // Cloudinary / Responsive Images
-  eleventyConfig.cloudinaryCloudName = 'fuzzylogic';
-  eleventyConfig.srcsetWidths = [320, 640, 960, 1280, 1600, 1920, 2240, 2560];
-  eleventyConfig.fallbackWidth = 640;
-  eleventyConfig.aspectRatioWidth = 320;
-  eleventyConfig.aspectRatioHeight = 240;
-
-  eleventyConfig.addShortcode('respimg', function(
-    src,
-    alt,
-    sizes,
-    aspectRatioWidth = eleventyConfig.aspectRatioWidth,
-    aspectRatioHeight = eleventyConfig.aspectRatioHeight,
-    srcsetWidthRange = eleventyConfig.srcsetWidths
-  ) {
-    const cloudinaryBase = `https://res.cloudinary.com/${eleventyConfig.cloudinaryCloudName}/image/upload/`;
-    var cloudinaryImgPath = src.replace(cloudinaryBase, '');
-    return `<img
-    eleventy:ignore
-    class="u-full-parent-width"
-    srcset="${srcsetWidthRange
-      .map(w => {
-        return `${cloudinaryBase}q_auto,f_auto,w_${w}/${cloudinaryImgPath} ${w}w`;
-      })
-      .join(', ')}"
-    sizes="${sizes ? sizes : '100vw'}"
-    src="${cloudinaryBase}q_auto,f_auto,w_${
-      eleventyConfig.fallbackWidth
-    }/${cloudinaryImgPath}"
-    width="${aspectRatioWidth}" height="${aspectRatioHeight}"
-    ${alt ? `alt="${alt}"` : ''}
-    loading="lazy"
-    decoding="async" />`;
-  });
+// End DELETE ASAP
 
 
-  //
-  // Customize Markdown library and settings:
-  //
-  let markdownLibrary = markdownIt({
-    html: true,
-    breaks: true,
-    linkify: true
-  });
-  eleventyConfig.setLibrary("md", markdownLibrary);
 
-  // Render HTML from a markdown string from a .md file (e.g. a post’s content or excerpt)
-  eleventyConfig.addNunjucksFilter('markdownStringToHTML', markdownString =>
-    markdownLibrary.render(markdownString)
-  );
 
-  // Don’t process files of these types; just copy them as-is into the public directory.
-  // Note: no 'css' entry because we’re inlining CSS so don’t need any physical css files in the public dir.
+};
 
-  // the easy stuff
 
-  // CMS
-  // Ref: https://www.cassey.dev/adding-decap-cms-to-11ty/
-  eleventyConfig.addPassthroughCopy("admin");
 
-  // Avatar and anything else to be findable at a well-known location
-  eleventyConfig.addPassthroughCopy('.well-known');
+export const config = {
+	// Control which files Eleventy will process
+	// e.g.: *.md, *.njk, *.html, *.liquid
+	templateFormats: [
+		"md",
+		"njk",
+		"html",
+		"liquid",
+		"11ty.js",
+	],
 
-  // More…
-  eleventyConfig.addPassthroughCopy('img');
-  eleventyConfig.addPassthroughCopy('fonts');
-  eleventyConfig.addPassthroughCopy('android-chrome-192x192.png');
-  eleventyConfig.addPassthroughCopy('android-chrome-256x256.png');
-  eleventyConfig.addPassthroughCopy('apple-touch-icon.png');
-  eleventyConfig.addPassthroughCopy('favicon-16x16.png');
-  eleventyConfig.addPassthroughCopy('favicon-32x32.png');
-  eleventyConfig.addPassthroughCopy('favicon.ico');
-  eleventyConfig.addPassthroughCopy('mstile-150x150.png');
-  eleventyConfig.addPassthroughCopy('pwa_icon-512x512.png');
-  eleventyConfig.addPassthroughCopy('safari-pinned-tab.svg');
+	// Pre-process *.md files with: (default: `liquid`)
+	markdownTemplateEngine: "njk",
 
-  eleventyConfig.setTemplateFormats([ "md", "njk" ]);
+	// Pre-process *.html files with: (default: `liquid`)
+	htmlTemplateEngine: "njk",
 
-  return {
+	// These are all optional:
+	dir: {
+		input: "content",          // default: "."
+		includes: "../_includes",  // default: "_includes" (`input` relative)
+		data: "../_data",          // default: "_data" (`input` relative)
+		output: "_site"
+	},
 
-    // If your site lives in a different subdirectory, change this.
-    // Leading or trailing slashes are all normalized away, so don’t worry about it.
-    // If you don’t have a subdirectory, use "" or "/" (they do the same thing)
-    // This is only used for URLs (it does not affect your file structure)
-    pathPrefix: '/',
+	// -----------------------------------------------------------------
+	// Optional items:
+	// -----------------------------------------------------------------
 
-    markdownTemplateEngine: 'njk',
-    htmlTemplateEngine: 'njk',
-    dataTemplateEngine: 'njk',
-    passthroughFileCopy: true,
-    dir: {
-      input: '.',
-      includes: '_includes',
-      data: '_data',
-      output: '_site'
-    }
-  };
+	// If your site deploys to a subdirectory, change `pathPrefix`.
+	// Read more: https://www.11ty.dev/docs/config/#deploy-to-a-subdirectory-with-a-path-prefix
+
+	// When paired with the HTML <base> plugin https://www.11ty.dev/docs/plugins/html-base/
+	// it will transform any absolute URLs in your HTML to include this
+	// folder name and does **not** affect where things go in the output folder.
+
+	// pathPrefix: "/",
 };

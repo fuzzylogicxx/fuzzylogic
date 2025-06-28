@@ -1,4 +1,4 @@
-module.exports = {
+export default {
 	title: "Fuzzy Logic",
 	url: "https://fuzzylogic.me/",
   url_base: "https://fuzzylogic.me",
@@ -20,4 +20,4 @@ module.exports = {
     image: "https://fuzzylogic.me/img/social_share_default_1200x630.png",
     image_alt_text: "Fuzzy Logic logo"
   }
-};
+}
