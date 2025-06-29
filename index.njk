@@ -1,8 +1,0 @@
----
-layout: layouts/home.njk
-bodyclass: page-home
----
-
-{% set postslist = collections.posts | head(-5) | reverse %}
-
-{% include "postslist.njk" %}

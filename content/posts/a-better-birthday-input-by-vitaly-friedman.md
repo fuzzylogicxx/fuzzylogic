@@ -7,7 +7,7 @@ tags:
 - link
 - a11y
 - forms
-- UX
+- ux
 - dates
 noteWithTitle: false
 linkTarget: https://mailchi.mp/smashingmagazine.com/your-upcoming-ux-training-with-vitaly-friedman-final-details-1133905

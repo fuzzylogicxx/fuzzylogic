@@ -1,0 +1,10 @@
+<h1>Tags</h1>
+
+<div>
+  <ul role="list" class="l-cluster tags">
+  {% for tag in collections | getKeys | filterTagList | sortAlphabetically %}
+    {% set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
+    <li><a href="{{ tagUrl }}" class="tag">{{ tag }}</a></li>
+  {% endfor %}
+  </ul>
+</div>

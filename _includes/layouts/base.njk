@@ -78,6 +78,11 @@
       <link href="/css/theme.css" rel="stylesheet">
     #}
 
+    {#- Add the heading-anchors web component to the JavaScript bundle #}
+		{%- js %}{% include "node_modules/@zachleat/heading-anchors/heading-anchors.js" %}{% endjs %}
+
+    {#- Grab the amalgamated JS bundle and link to it as a ES module file #}
+    <script type="module" src="{% getBundleFileUrl "js" %}"></script>
 
     <!-- OG tags: most important -->
     <meta property="og:title" content="{{ renderData.title or title or metadata.title }}" />
@@ -177,7 +182,7 @@
       <div class="l-center l-center--wrapper">
 
         <div class="l-cluster l-cluster--space-between">
-          <p class="copyright">&copy; 2017–{% year %} <a href="{{ metadata.url | url }}">Laurence Hughes</a></p>
+          <p class="copyright">&copy; 2017–{% currentYear %} <a href="{{ metadata.url | url }}">Laurence Hughes</a></p>
           <p><a href="https://github.com/fuzzylogicxx" rel="me">Github profile</a> and <a href="https://github.com/fuzzylogicxx/fuzzylogic/blob/v3/{{ page.inputPath }}">page source</a></p>
         </div>
 

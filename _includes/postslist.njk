@@ -19,7 +19,7 @@
       </div>
     </header>
     <div class="l-flow e-content">
-      {{ post.content | markdownStringToHTML | safe }}
+      {{ post.content | safe }}
     </div>
     {# <footer>
       <a rel="bookmark" class="p-name u-url" href="{{ post.url | url }}">
