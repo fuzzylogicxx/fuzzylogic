@@ -4,7 +4,7 @@
 
 This repository contains the source code for https://fuzzylogic.me, the personal website of Laurence Hughes.
 
-## Install
+## Install this 11ty-powered website locally
 
 Make a local directory and move into it:
 

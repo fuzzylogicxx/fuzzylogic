@@ -4,6 +4,7 @@
   "description": "The personal website of Laurence Hughes, using the Eleventy static site generator.",
   "type": "module",
   "scripts": {
+    "prebuild": "rm -rf _site/",
     "build": "npx @11ty/eleventy && npx pagefind --site _site",
     "start": "npx @11ty/eleventy --serve --quiet",
     "debug": "DEBUG=Eleventy* npx @11ty/eleventy",
