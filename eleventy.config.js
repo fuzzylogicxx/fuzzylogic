@@ -7,12 +7,18 @@ import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 // Things deserving their own separate files
 import pluginFilters from "./_config/filters.js";
 
-// LH custom: use markdown-it-anchors so I can add classes in my markdown posts,
+// LH custom imports:
+
+// use markdown-it-anchors so I can add classes in my markdown posts,
 // like so {.post__intro}. If I were instead to write them as HTML (<p class="intro">),
 // any markdown (links etc) I put within the opening and closing HTML tags would
 // not get processed into HTML (annoyingly) unless I add silly empty lines above and below
 // the markdown content.
 import markdownItAttrs from 'markdown-it-attrs';
+
+// use cssnano (which is a configuration for postcss) to transform/minify the CSS we’ll bundle with 11ty Bundle
+import postCSS from "postcss";
+import cssNano from "cssnano";
 
 /** @param {import("@11ty/eleventy").UserConfig} eleventyConfig */
 export default async function(eleventyConfig) {
@@ -48,6 +54,15 @@ export default async function(eleventyConfig) {
 	// Bundle <style> content and adds a {% css %} paired shortcode
 	eleventyConfig.addBundle("css", {
 		toFileDirectory: "dist",
+    // minify bundle content
+		transforms: [
+      async function (content) {
+        // this.type returns the bundle name.
+				// Same as Eleventy transforms, this.page is available here.
+				let result = await postCSS([cssNano]).process(content, { from: this.page.inputPath, to: null });
+				return result.css;
+      }
+    ],
 		// Add all <style> content to `css` bundle (use <style eleventy:ignore> to opt-out)
 		// Supported selectors: https://www.npmjs.com/package/posthtml-match-helper
 		bundleHtmlContentFromSelector: "style",
