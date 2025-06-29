@@ -11,11 +11,6 @@
 # Set far-future expires on .woff2 and .woff files.
 # Was needed for Netlify in the past, but could try removing.
 [[headers]]
-  for = "*.woff"
-  [headers.values]
-    Cache-Control = "public, max-age=18144000"
-
-[[headers]]
   for = "*.woff2"
   [headers.values]
     Cache-Control = "public, max-age=18144000"
@@ -36,6 +31,7 @@
   to = "/posts/browser-support-heuristics/"
   status = 301
 
+# Make an avatar available at a (hopefully in future) “well-known” URL convention
 [[redirects]]
   from = "/.well-known/avatar"
   to = "/.well-known/avatar.jpg"
