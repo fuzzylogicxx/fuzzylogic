@@ -5,7 +5,7 @@ import pluginNavigation from "@11ty/eleventy-navigation";
 import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 
 // Things deserving their own separate files
-import pluginFilters from "../_config/filters.js";
+import pluginFilters from "./_config/filters.js";
 
 // LH custom: use markdown-it-anchors so I can add classes in my markdown posts,
 // like so {.post__intro}. If I were instead to write them as HTML (<p class="intro">),
