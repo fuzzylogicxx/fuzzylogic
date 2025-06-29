@@ -3,14 +3,16 @@ import { feedPlugin } from "@11ty/eleventy-plugin-rss";
 import pluginSyntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
 import pluginNavigation from "@11ty/eleventy-navigation";
 import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
-import pluginFilters from "./_config/filters.js";
+
+// Things deserving their own separate files
+import pluginFilters from "../_config/filters.js";
 
 // LH custom: use markdown-it-anchors so I can add classes in my markdown posts,
 // like so {.post__intro}. If I were instead to write them as HTML (<p class="intro">),
 // any markdown (links etc) I put within the opening and closing HTML tags would
 // not get processed into HTML (annoyingly) unless I add silly empty lines above and below
 // the markdown content.
-import markdownitattrs from 'markdown-it-attrs';
+import markdownItAttrs from 'markdown-it-attrs';
 
 /** @param {import("@11ty/eleventy").UserConfig} eleventyConfig */
 export default async function(eleventyConfig) {
@@ -21,7 +23,9 @@ export default async function(eleventyConfig) {
 		}
 	});
 
-  eleventyConfig.amendLibrary("md", (mdLib) => mdLib.use(markdownitattrs));
+  // Add my own choice of plugins for markdown-it (I want markkdownItAttrs) to 11ty’s provided markdown-it instance.
+  // Ref: https://www.11ty.dev/docs/languages/markdown/#add-your-own-plugins
+  eleventyConfig.amendLibrary("md", (mdLib) => mdLib.use(markdownItAttrs));
 
 	// Copy the contents of the `public` folder to the output folder
 	// For example, `./public/css/` ends up in `_site/css/`
@@ -94,15 +98,19 @@ export default async function(eleventyConfig) {
 	eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
 		// Output formats for each image.
 		formats: ["avif", "webp"],
-
 		widths: [800, "auto"],
-
-		failOnError: false,
+		// failOnError: false,
 		htmlOptions: {
 			imgAttributes: {
-				// e.g. <img loading decoding> assigned on the HTML tag will override these values.
+				// Note that these are defaults, and are overridable on a per-image basis
+        // So, <img loading decoding> assigned on the HTML tag will override these values.
 				loading: "lazy",
 				decoding: "async",
+
+        // My guidance to the browser is:
+        // On viewports that are up to 860px wide, my layout and CSS will employ (roughly) full-width images.
+        // On wider viewports, my layout and CSS will be setting images to a max-width of 840px.
+        // So armed with that knowledge, select the most appropriate image file.
         sizes: "(max-width: 860px) 100vw, 840px",
 			}
 		},
@@ -207,13 +215,7 @@ export default async function(eleventyConfig) {
     loading="lazy"
     decoding="async" />`;
   });
-
-
-// End DELETE ASAP
-
-
-
-
+  // End DELETE ASAP
 };
 
 
