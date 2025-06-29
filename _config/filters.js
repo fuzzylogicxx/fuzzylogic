@@ -44,4 +44,7 @@ export default function(eleventyConfig) {
 		return (tags || []).filter(tag => ["all", "entry", "link", "note", "posts"].indexOf(tag) === -1);
 	});
 
+  eleventyConfig.addFilter("sortAlphabetically", strings =>
+		(strings || []).sort((b, a) => b.localeCompare(a))
+  );
 };

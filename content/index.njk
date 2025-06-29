@@ -4,8 +4,6 @@ const numberOfLatestPostsToShow = 5;
 const bodyclass = "page-home";
 ---
 
-Reinstate sitemap and feeds the new way
-
 {% set postslist = collections.posts | head(-1 * numberOfLatestPostsToShow) | reverse %}
 
 {% include "postslist.njk" %}
