@@ -232,6 +232,41 @@
     }
 
     /* TODO: Code snippet and code block styles go here */
+
+    /* For all <code> */
+
+    /* https://github.com/h5bp/html5-boilerplate/blob/main/dist/css/normalize.css */
+    /* …because browsers have weird sizing quirks for the code element. */
+
+    /**
+    * 1. Correct the inheritance and scaling of font size in all browsers.
+    * 2. Correct the odd `em` font sizing in all browsers.
+    * 3. For the specific combo of monospace within Source Sans Pro, less than 1em works better.
+    */
+    code,
+    kbd,
+    samp,
+    pre {
+      font-family: monospace, monospace; /* 1 */
+      font-size: 1em; /* 2 */
+    }
+
+    /* Code in text */
+    p > code,
+    li > code,
+    dd > code,
+    td > code {
+      font-size: 0.95em; /* 3 */
+      background: #ffeff0;
+      word-wrap: break-word;
+
+      /* https://caniuse.com/css-boxdecorationbreak */
+      -webkit-box-decoration-break: clone;
+      box-decoration-break: clone;
+
+      padding: .1rem .3rem .2rem;
+      border-radius: .2rem;
+    }
   }
 
 
