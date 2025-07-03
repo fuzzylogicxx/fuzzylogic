@@ -26,7 +26,4 @@ Type your search term into the form below.
       <button type="submit">Search</button>
     </form>
   </pagefind-search>
-
 </div>
-
-Search provided by [pagefind](https://pagefind.app/) via the [pagefind-search web component](https://www.zachleat.com/web/pagefind-search/).

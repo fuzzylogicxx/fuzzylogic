@@ -6,9 +6,9 @@
   "scripts": {
     "prebuild": "rm -rf _site/",
     "build": "npx @11ty/eleventy && npx pagefind --site _site",
-    "start": "npx @11ty/eleventy --serve --quiet",
-    "debug": "DEBUG=Eleventy* npx @11ty/eleventy",
+    "start": "npx @11ty/eleventy --serve --quiet --incremental --ignore-initial",
     "debugstart": "DEBUG=Eleventy* npx @11ty/eleventy --serve --quiet",
+    "debug": "DEBUG=Eleventy* npx @11ty/eleventy",
     "benchmark": "DEBUG=Eleventy:Benchmark* npx @11ty/eleventy"
   },
   "repository": {
