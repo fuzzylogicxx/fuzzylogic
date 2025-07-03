@@ -59,6 +59,8 @@ export default async function(eleventyConfig) {
       async function (content) {
         // this.type returns the bundle name.
 				// Same as Eleventy transforms, this.page is available here.
+        if (process.env.ELEVENTY_RUN_MODE !== "build") return content;
+
 				let result = await postCSS([cssNano]).process(content, { from: this.page.inputPath, to: null });
 				return result.css;
       }
