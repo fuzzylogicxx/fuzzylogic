@@ -7,23 +7,26 @@ eleventyNavigation:
   order: 5
 ---
 
-<link href="/pagefind/pagefind-ui.css" rel="stylesheet">
+{#- Add the page-find web component JS to the JavaScript bundle #}
+{%- js %}{% include "node_modules/@zachleat/pagefind-search/pagefind-search.js" %}{% endjs %}
 
-<!-- <style>
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --pagefind-ui-primary: #eeeeee;
-      --pagefind-ui-text: #eeeeee;
-      --pagefind-ui-background: #152028;
-      --pagefind-ui-border: #152028;
-      --pagefind-ui-tag: #152028;
-    }
-  }
-</style> -->
+Type your search term into the form below.
 
-<p>Type your search term into the form below.</p>
+<div>
+  <!-- Fall back to DuckDuckGo site search (use any search engine here) -->
+  <pagefind-search pagefind-autofocus>
+    <form action="https://duckduckgo.com/" method="get" style="min-height: 3.2em;">
+    <!-- min-height to reduce CLS -->
+      <label>
+        Search for:
+        <input type="search" name="q" autocomplete="off" autofocus>
+      </label>
+      <!-- Put your searchable domain here -->
+      <input type="hidden" name="sites" value="fuzzylogic.me">
+      <button type="submit">Search</button>
+    </form>
+  </pagefind-search>
 
-<div id="search" class="search"></div>
+</div>
 
-<script src="/pagefind/pagefind-ui.js" onload="new PagefindUI({ element: '#search', showImages: false });"></script>
-
+Search provided by [pagefind](https://pagefind.app/) via the [pagefind-search web component](https://www.zachleat.com/web/pagefind-search/).
