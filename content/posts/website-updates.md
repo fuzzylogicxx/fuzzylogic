@@ -37,4 +37,12 @@ Here’s what the *Features* section of my readme currently says:
 * [Avatar](https://fuzzylogic.me/.well-known/avatar) available at a well-known location ([Jim Nielsen’s idea](https://blog.jim-nielsen.com/2023/well-known-avatar/))
 * SEO: I provide an [XML sitemap](https://fuzzylogic.me/sitemap.xml) for search engines, and a [human-readable sitemap](https://fuzzylogic.me/sitemap/)
 
-## Other stuff
+## Improving the process of making updates in the future
+
+I’ve created a checklist called [Website post-launch checklist](https://gist.github.com/fuzzylogicxx/b9c377213f95e21672dfdeeb7176c1e5) which I can use after making updates. I’ve added this to my readme. (Perhaps in future I can automate some of the checklist tasks but for now manual is fine.)
+
+I also want to do updates to 11ty and its plugins more regularly – I think that’ll be less painful. I have dependabot alerts turned on and I have also subscribed to the [11ty’s Blog’s](https://www.11ty.dev/blog/) in an effort to hear about upcoming changes.
+
+## Miscellaneous
+
+I’ve added myself to [11ty’s community](https://www.11ty.dev/docs/community/) and am now [listed as an Eleventy author.](https://gist.github.com/fuzzylogicxx/b9c377213f95e21672dfdeeb7176c1e5) I hope that some day I’ll find that [fuzzylogic.me](https://fuzzylogic.me) has been added to 11ty’s Speedlify Leaderboard too – that’d be cool!
