@@ -78,7 +78,19 @@ export default async function(eleventyConfig) {
 		bundleHtmlContentFromSelector: "script",
 	});
 
-	// Official plugins
+  // Create a custom collection of feed-friendly posts.
+  // They exclude posts that have the key 'pageSpecificRobotsDirective'
+  // (which, when I apply it, I set to "noindex, nofollow").
+  // These are pretty personal (and sometimes trivial) notes that I don’t
+  // need indexed on google, and I can use that same flag to not share with my RSS subscribers.
+  // Ref: https://www.11ty.dev/docs/collections-api/
+  eleventyConfig.addCollection("feedPosts", async (collectionsApi) => {
+ 		return collectionsApi.getFilteredByTag("posts").filter(function (item) {
+			return ("pageSpecificRobotsDirective" in item.data === false);
+		});
+	});
+
+  // Official plugins
 	eleventyConfig.addPlugin(pluginSyntaxHighlight, {
 		preAttributes: { tabindex: 0 }
 	});
@@ -97,7 +109,7 @@ export default async function(eleventyConfig) {
 			}
 		},
 		collection: {
-			name: "posts",
+			name: "feedPosts",
 			limit: 10,
 		},
 		metadata: {
