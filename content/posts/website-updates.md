@@ -3,6 +3,13 @@ title: Website updates
 description: Logging some updates I’ve made to my 11ty-powered website
 noteWithTitle: false
 date: 2025-07-06T17:11
+tags:
+  - entry
+  - web
+  - 11ty
+  - maintenance
+  - personalsite
+  - personalsites
 ---
 I’ve recently been updating my website over a series of nights and weekends. The changes aren’t very noticeable to the eye; they mostly involved modernising and streamlining back-end features and technology, plus some improvements to accessibility and performance. I’m really happy to have made them!
 
