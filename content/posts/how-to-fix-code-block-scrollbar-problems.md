@@ -1,11 +1,13 @@
 ---
-title: How to fix code block scrollbar problems
+title: How to fix issues with horizontal scrollbars on code blocks
 description: Foo
 noteWithTitle: false
 date:
   ? "{ now }"
 ---
 ## What
+
+https://github.com/fac/freestyle-reference-website/pull/1047
 
 Fixes broken appearance and unconventional/brittle scroll behaviour of all variations of code snippets. 
 Screenshot of main issue:
