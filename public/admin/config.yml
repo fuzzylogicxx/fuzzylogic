@@ -3,6 +3,7 @@ backend:
   branch: v3
 publish_mode: editorial_workflow
 media_folder: "content/img/uploads"
+public_folder: "/img"
 collections:
   - name: "blog" # Used in routes, e.g., /admin/collections/blog
     label: "Blog" # Used in the UI
