@@ -5,23 +5,13 @@ noteWithTitle: false
 date:
   ? "{ now }"
 ---
-## What
+How I diagnosed a complex little issue and found a solution.
+
+## The issue
 
 https://github.com/fac/freestyle-reference-website/pull/1047
 
-Fixes broken appearance and unconventional/brittle scroll behaviour of all variations of code snippets. 
-Screenshot of main issue:
-
-![]()
-
-## How
-
-Addresses CSS issues in:
-
-* our code snippets (the code wrapper in demos, the common `pre` element, the common `code` element)
-* the page columns which need to resiliently contain wide code snippets
-
-## Why
+Broken appearance and unconventional/brittle scroll behaviour of all variations of code snippets. 
 
 Our code snippets currently have a few issues. 
 
@@ -34,6 +24,13 @@ Our code snippets currently have a few issues.
    ![image](https://github.com/user-attachments/assets/c4245bc8-7314-44ff-8649-d705d20f01a2)
    This update fixes those issues. After the update:
    ![image](https://github.com/user-attachments/assets/eb07f0e8-8ed0-4f4b-8b4b-c53f04faaa51)
+
+## How
+
+Addresses CSS issues in:
+
+* our code snippets (the code wrapper in demos, the common `pre` element, the common `code` element)
+* the page columns which need to resiliently contain wide code snippets
 
 ## Notes
 
