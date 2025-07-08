@@ -1,6 +1,6 @@
 ---
-title: How to fix issues with horizontal scrollbars on code blocks
-description: Foo
+title: Solving unwanted scrollbars on code blocks
+description: How I diagnosed a complex little issue and found a solution
 noteWithTitle: false
 date:
   ? "{ now }"
