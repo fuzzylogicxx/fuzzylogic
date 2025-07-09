@@ -6,7 +6,7 @@ export default function(eleventyConfig) {
 		return DateTime.fromJSDate(dateObj, { zone: zone || "utc" }).toFormat(format || "dd LLLL yyyy");
 	});
 
-	// LH DIY’d.
+	// LH DIY
   // TODO: decide if time-precision is necessary; ditch if not.
   eleventyConfig.addFilter("readableTime", (dateObj, format, zone) => {
 		// Formatting tokens for Luxon: https://moment.github.io/luxon/#/formatting?id=table-of-tokens
@@ -47,4 +47,31 @@ export default function(eleventyConfig) {
   eleventyConfig.addFilter("sortAlphabetically", strings =>
 		(strings || []).sort((b, a) => b.localeCompare(a))
   );
+
+  // LH DIY
+  // Note that I’ll only use this on posts (in lists) of type `entry`.
+  // Those – unlike most short links and notes – are likely to be long and have
+  // structure such as headings, so aren’t conducive to just showing the entire
+  // post in lists.
+  // So most posts in lists won’t use this.
+  eleventyConfig.addFilter("excerpt", (postContent) => {
+    const findExcerptEnd = (postContent) => {
+      if (postContent === '') {
+        return 0;
+      }
+
+      // check for an image first
+      if (postContent.includes('</figure>')) {
+        const imageEndCharacter = postContent.indexOf('</figure>', 0) + 9;
+        if (imageEndCharacter !== -1) return imageEndCharacter;
+      }
+
+      // next check for a paragraph
+      const paragraphClosingTag = postContent.indexOf('</p>', 0) + 4;
+      if (paragraphClosingTag !== -1) return paragraphClosingTag;
+    }
+
+    const excerptEnd = findExcerptEnd(postContent);
+    return postContent.substring(0, excerptEnd);
+	});
 };

@@ -6,7 +6,8 @@
   <article class="l-flow h-entry prose">
 
     <header class="l-flow l-flow--3xs">
-      {% if (post.data.tags[1] !== 'note' or post.data.noteWithTitle) -%}
+      {# Show the post title for all post types except notes (unless it’s a note with a title) #}
+      {% if (post.data.noteWithTitle or (post.data.postType !== 'note')) -%}
         <h3 class="feed-entry-title"><a rel="bookmark" class="p-name u-url" href="{{ post.url | url }}">{{ post.data.title }}</a></h3>
       {% else -%}
         {# <p><a href="{{ post.url | url }}">{{ post.date | readableTime }}</a> <span>·</span> {{ post.data.location }}</span></p> #}
@@ -19,13 +20,28 @@
       </div>
     </header>
     <div class="l-flow e-content">
-      {{ post.content | safe }}
+      {%- if (post.data.postType === 'entry') -%}
+        {{ post.content | excerpt | safe }}
+      {%- else -%}
+        {{ post.content | safe }}
+      {%- endif -%}
+      {#- We want: #}
+        {#- To add a first (Nunjucks) filter (pretty sure a filter is appropriate) that: #}
+          {#- if this is *not* the first post in the list: #}
+          {#- we pass the post content into it: #}
+          {#- and it replaces any instances of loading=eager with loading=lazy and decoding=auto with decoding=async: #}
+        {#- And a second (Nunjucks) filter that: #}
+          {#- if the post is an entry, reduces the content to an excerpt #}
+          {#- and we add a continue reading link at the bottom #}
     </div>
-    {# <footer>
+    {%- if (post.data.postType === 'entry') -%}
+    <footer>
       <a rel="bookmark" class="p-name u-url" href="{{ post.url | url }}">
         Continue reading <span class="u-visually-hidden">“{{ post.data.title }}”</span>
       </a>
-    </footer> #}
+    </footer>
+    {%- endif -%}
+
 
     {# <footer class="stack">
       <div class="cluster">
