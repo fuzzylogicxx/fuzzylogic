@@ -16,9 +16,15 @@ import pluginFilters from "./_config/filters.js";
 // the markdown content.
 import markdownItAttrs from 'markdown-it-attrs';
 
+// use markdown-it-anchors to turn the paragraphs that markdown-it automatically
+// wraps around images into <figure>s.
+import markdownItImplicitFigures from 'markdown-it-implicit-figures';
+
 // use cssnano (which is a configuration for postcss) to transform/minify the CSS we’ll bundle with 11ty Bundle
 import postCSS from "postcss";
 import cssNano from "cssnano";
+
+// end LH custom imports
 
 /** @param {import("@11ty/eleventy").UserConfig} eleventyConfig */
 export default async function(eleventyConfig) {
@@ -32,6 +38,7 @@ export default async function(eleventyConfig) {
   // Add my own choice of plugins for markdown-it (I want markkdownItAttrs) to 11ty’s provided markdown-it instance.
   // Ref: https://www.11ty.dev/docs/languages/markdown/#add-your-own-plugins
   eleventyConfig.amendLibrary("md", (mdLib) => mdLib.use(markdownItAttrs));
+  eleventyConfig.amendLibrary("md", (mdLib) => mdLib.use(markdownItImplicitFigures));
 
 	// Copy the contents of the `public` folder to the output folder
 	// For example, `./public/css/` ends up in `_site/css/`
@@ -88,6 +95,12 @@ export default async function(eleventyConfig) {
  		return collectionsApi.getFilteredByTag("posts").filter(function (item) {
 			return ("pageSpecificRobotsDirective" in item.data === false);
 		});
+	});
+
+	eleventyConfig.setFrontMatterParsingOptions({
+		excerpt: true,
+		// Optional, default is "---"
+		excerpt_separator: "<!-- excerpt -->",
 	});
 
   // Official plugins

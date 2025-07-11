@@ -19,13 +19,24 @@
       </div>
     </header>
     <div class="l-flow e-content">
-      {{ post.content | safe }}
+      {% set post_content = post.content %}
+      {% if (post.page.excerpt) -%}
+        {% set post_content = post.page.excerpt | md %}
+      {% endif -%}
+
+      {% if (loop.first) -%}
+        {{ post_content | loadFirstImageInPostSynchronously | safe }}
+      {% else -%}
+        {{ post_content | safe }}
+      {% endif -%}
     </div>
-    {# <footer>
+    {% if (post.page.excerpt) -%}
+    <footer>
       <a rel="bookmark" class="p-name u-url" href="{{ post.url | url }}">
         Continue reading <span class="u-visually-hidden">“{{ post.data.title }}”</span>
       </a>
-    </footer> #}
+    </footer>
+    {% endif -%}
 
     {# <footer class="stack">
       <div class="cluster">
