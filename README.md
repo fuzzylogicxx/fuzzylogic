@@ -45,7 +45,7 @@ npm run start
 * Hosted with [Netlify](https://www.netlify.com/)
 * Focused on accessibility, performance and web good practices ([100/100 scores for all on Lighthouse](https://pagespeed.web.dev/analysis/https-fuzzylogic-me/dz2w9dl44v?form_factor=mobile))
 * Supports `draft` posts that are skipped in production builds [using 11ty’s Preprocessor API](https://www.11ty.dev/docs/config-preprocessors/#example-drafts)
-* Raw image to modern image conversion via [Eleventy Image plugin](https://www.11ty.dev/docs/plugins/image/): converts formats; generates sizes; turns markdown `img` into the modern HTML for performant, responsive images
+* Raw image to modern image conversion via [Eleventy Image plugin](https://www.11ty.dev/docs/plugins/image/)
 * Content editing via [Decap CMS](https://decapcms.org/)
 * Search feature using [PageFind](https://pagefind.app/) and Zach Leatherman’s [pagefind-search](https://github.com/zachleat/pagefind-search/) web component
 * Contact form using [Netlify Forms](https://docs.netlify.com/forms/setup/#html-forms)
@@ -64,6 +64,39 @@ npm run start
 * [Avatar](https://fuzzylogic.me/.well-known/avatar) available at a well-known location ([Jim Nielsen’s idea](https://blog.jim-nielsen.com/2023/well-known-avatar/))
 * SEO: I provide an [XML sitemap](https://fuzzylogic.me/sitemap.xml) for search engines, and a [human-readable sitemap](https://fuzzylogic.me/sitemap/)
 
+## Subdetails
+
+### Images 
+
+My workflow is as follows.
+
+#### Creating posts that include images
+
+If creating a post manually in my code editor I can manually code an HTML `img`. However I usually prefer creating posts via a CMS. To get my image into the codebase (I no longer host them on cloudinary) I upload it via Decap CMS’s media library. Then I use the image widget in the post body WYSIWIG editor, which creates markdown image code i.e. `![my alt text](/path/to/image.jpg)`.
+
+Importantly I don’t need to fiddle with adding dimension attributes, because that’s taken care of by the 11ty image plugin.
+ 
+#### 11ty image plugin
+
+The 11ty Image plugin does the following for me:
+- automatically works out appropriate `width` and `height` values then adds those attributes to the rendered `<img>`
+- applies the attributes `loading="lazy"` and `decoding="auto"` because I’ve configured those to be applied by default
+  - I can override with `decoding="auto" loading="eager"` on-demand. I run my post, and the first post in my postlist template through a new filter called `loadFirstImageInPostSynchronously`. It sets loading=eager and decoding=auto to override the otherwise-sensible defaults that Eleventy Image plugin would add in the cases where we want above the fold images loaded synchronously.
+- creates optimised formats and multiple sizes
+- transforms the original simple `<img>` into appropriate modern responsive, image markup incorporating the generated sizes and formats
+
+**Excerpts:** 
+I’m using greymatter excerpts, but this time with a better delimiter than the default `---`. My new one is less likely to conflict with horizontal breaks and headings.
+
+## Markdown stuff
+
+11ty ships with markdown-it. I don’t need to install it as a dependency.
+
+I add `markdown-it-attrs` so I can create post content in markdown but also add a class (could be any attribute) onto the end of certain paragraphs such as a post intro paragraph, when I want to.
+
+I add `markdown-it-implicit-figures` to turn the paragraphs that markdown-it automatically wraps around images into `<figure>`s instead (without having to hardcode `figure` HTML and mess with markdown).
+
+I have a filter (`md`) which I ceated for situations where I need to parse markdown into HTML on-demand. This is needed to work with 11ty’s `post.page.excerpt`, since it delivers raw markdown (underscores and all).
 
 ## Post-update checklist
 
