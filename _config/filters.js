@@ -1,4 +1,5 @@
 import { DateTime } from "luxon";
+import markdownIt from "markdown-it";
 
 export default function(eleventyConfig) {
 	// LH DIY’d.
@@ -7,6 +8,15 @@ export default function(eleventyConfig) {
 		// Formatting tokens for Luxon: https://moment.github.io/luxon/#/formatting?id=table-of-tokens
     return DateTime.fromJSDate(dateObj, { zone: zone || "utc" }).toFormat(format || "h:mm a");
 	});
+
+  // Convert raw markdown to HTML
+  // Useful when using the `page.data.excerpt` that 11ty makes available
+  // because it comes as raw markdown, but I want bolding and italics etc to render properly…
+  // so I pass the excerpts through this.
+  // Ref: https://github.com/11ty/eleventy/issues/1380#issuecomment-698457560
+  eleventyConfig.addFilter("md", (content = "") => {
+    return markdownIt().render(content);
+  });
 
   // apply HTML `loading` and `decoding` attributes to images
   // so that they override my 11ty Image plugin “sensible defaults”

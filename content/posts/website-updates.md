@@ -11,9 +11,11 @@ tags:
   - personalsite
   - personalsites
 ---
-I’ve recently been updating my website over a series of nights and weekends. The changes aren’t very noticeable to the eye; they mostly involved modernising and streamlining back-end features and technology, plus some improvements to accessibility and performance. I’m really happy to have made them!
+I’ve recently been updating my website over a series of nights and weekends. The changes aren’t very noticeable to the eye but involved some careful modernisation and streamlining of back-end features and technology, plus improvements to accessibility and performance. I’m really happy to have made them.{.post__intro}
 
-About a year ago I wrote about [the features I wanted on my personal website versus those it had](https://fuzzylogic.me/posts/features-of-my-personal-site/). The work I’ve been doing recently has helped to plug the gaps. 
+<!-- excerpt -->
+
+About a year ago I wrote about [the features I wanted on my personal website versus those it had](https://fuzzylogic.me/posts/features-of-my-personal-site/). The work I’ve been doing recently has helped to plug the gaps.
 
 During this work I documented the latest features of my website [on the readme of my public website repository](https://github.com/fuzzylogicxx/fuzzylogic). I find it really useful to be able to see this information at a glance. It’ll also make life much easier when I want to tweak things in the future.
 
