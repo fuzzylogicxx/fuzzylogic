@@ -1,17 +1,29 @@
 import { DateTime } from "luxon";
 
 export default function(eleventyConfig) {
-	eleventyConfig.addFilter("readableDate", (dateObj, format, zone) => {
-		// Formatting tokens for Luxon: https://moment.github.io/luxon/#/formatting?id=table-of-tokens
-		return DateTime.fromJSDate(dateObj, { zone: zone || "utc" }).toFormat(format || "dd LLLL yyyy");
-	});
-
 	// LH DIY’d.
   // TODO: decide if time-precision is necessary; ditch if not.
   eleventyConfig.addFilter("readableTime", (dateObj, format, zone) => {
 		// Formatting tokens for Luxon: https://moment.github.io/luxon/#/formatting?id=table-of-tokens
     return DateTime.fromJSDate(dateObj, { zone: zone || "utc" }).toFormat(format || "h:mm a");
 	});
+
+  // apply HTML `loading` and `decoding` attributes to images
+  // so that they override my 11ty Image plugin “sensible defaults”
+  // on above the fold images which *should* be loaded eagerly.
+  eleventyConfig.addFilter("loadFirstImageInPostSynchronously", (postContent) => {
+    // apply replacement to first img instance only
+    // Handily, that’s how replace() works by default
+    return postContent.replace('<img ', '<img loading="eager" decoding="auto" ');
+	});
+  // end LH DIY’d
+
+  eleventyConfig.addFilter("readableDate", (dateObj, format, zone) => {
+		// Formatting tokens for Luxon: https://moment.github.io/luxon/#/formatting?id=table-of-tokens
+		return DateTime.fromJSDate(dateObj, { zone: zone || "utc" }).toFormat(format || "dd LLLL yyyy");
+	});
+
+
 
 	eleventyConfig.addFilter("htmlDateString", (dateObj) => {
 		// dateObj input: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string

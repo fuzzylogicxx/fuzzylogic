@@ -19,7 +19,11 @@
       </div>
     </header>
     <div class="l-flow e-content">
-      {{ post.content | safe }}
+      {% if (loop.first) -%}
+        {{ post.content | loadFirstImageInPostSynchronously | safe }}
+      {% else -%}
+        {{ post.content | safe }}
+      {% endif -%}
     </div>
     {# <footer>
       <a rel="bookmark" class="p-name u-url" href="{{ post.url | url }}">
