@@ -64,6 +64,7 @@ npm run start
 * Fluid responsive type and spacing using [Utopia](https://utopia.fyi/)
 * [Avatar](https://fuzzylogic.me/.well-known/avatar) available at a well-known location ([Jim Nielsen’s idea](https://blog.jim-nielsen.com/2023/well-known-avatar/))
 * SEO: I provide an [XML sitemap](https://fuzzylogic.me/sitemap.xml) for search engines, and a [human-readable sitemap](https://fuzzylogic.me/sitemap/)
+* Faster local development: in local `serve` mode I only build what’s necessary. I keep the search-index-generator, CSS minification and other time-consuming processes for production builds.
 
 ### Subfeatures
 
