@@ -47,7 +47,7 @@ npm run start
 * Supports `draft` posts that are skipped in production builds [using 11ty’s Preprocessor API](https://www.11ty.dev/docs/config-preprocessors/#example-drafts)
 * Supports excerpts (I apply using a greymatter delimiter then grab 11ty’s `post.page.excerpt` and pass that through a custom markdown-parsing filter)
 * Content editing via [Decap CMS](https://decapcms.org/)
-* Modern images plus friendly admin workflow: upload as markdown via Decap CMS’s media library and widget; convert into various sizes, modern formats and modern HTML via 11ty’s Image plugin
+* Modern images plus friendly admin workflow: upload as markdown via Decap CMS’s media library and widget; then 11ty’s Image plugin converts that into various sizes, modern formats and modern HTML
 * Search feature using [PageFind](https://pagefind.app/) and Zach Leatherman’s [pagefind-search](https://github.com/zachleat/pagefind-search/) web component
 * Contact form using [Netlify Forms](https://docs.netlify.com/forms/setup/#html-forms)
 * 404 page shown when necessary, thanks to [Netlify’s custom 404 page handling](https://docs.netlify.com/routing/redirects/redirect-options/#custom-404-page-handling)
