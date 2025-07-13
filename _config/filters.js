@@ -1,5 +1,6 @@
 import { DateTime } from "luxon";
 import markdownIt from "markdown-it";
+import markdownItAttrs from 'markdown-it-attrs';
 
 export default function(eleventyConfig) {
 	// LH DIY’d.
@@ -15,7 +16,7 @@ export default function(eleventyConfig) {
   // so I pass the excerpts through this.
   // Ref: https://github.com/11ty/eleventy/issues/1380#issuecomment-698457560
   eleventyConfig.addFilter("md", (content = "") => {
-    return markdownIt().render(content);
+    return markdownIt().use(markdownItAttrs).render(content);
   });
 
   // apply HTML `loading` and `decoding` attributes to images

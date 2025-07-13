@@ -37,8 +37,8 @@ export default async function(eleventyConfig) {
 
   // Add my own choice of plugins for markdown-it (I want markkdownItAttrs) to 11ty’s provided markdown-it instance.
   // Ref: https://www.11ty.dev/docs/languages/markdown/#add-your-own-plugins
-  eleventyConfig.amendLibrary("md", (mdLib) => mdLib.use(markdownItAttrs));
   eleventyConfig.amendLibrary("md", (mdLib) => mdLib.use(markdownItImplicitFigures));
+  eleventyConfig.amendLibrary("md", (mdLib) => mdLib.use(markdownItAttrs));
 
 	// Copy the contents of the `public` folder to the output folder
 	// For example, `./public/css/` ends up in `_site/css/`
