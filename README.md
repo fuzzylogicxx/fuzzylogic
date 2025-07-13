@@ -45,8 +45,9 @@ npm run start
 * Hosted with [Netlify](https://www.netlify.com/)
 * Focused on accessibility, performance and web good practices ([100/100 scores for all on Lighthouse](https://pagespeed.web.dev/analysis/https-fuzzylogic-me/dz2w9dl44v?form_factor=mobile))
 * Supports `draft` posts that are skipped in production builds [using 11ty’s Preprocessor API](https://www.11ty.dev/docs/config-preprocessors/#example-drafts)
-* Raw image to modern image conversion via [Eleventy Image plugin](https://www.11ty.dev/docs/plugins/image/)
+* Supports excerpts (I apply using a greymatter delimiter then grab 11ty’s `post.page.excerpt` and pass that through a custom markdown-parsing filter)
 * Content editing via [Decap CMS](https://decapcms.org/)
+* Modern images plus friendly admin workflow: upload as markdown via Decap CMS’s media library and widget; convert into various sizes, modern formats and modern HTML via 11ty’s Image plugin
 * Search feature using [PageFind](https://pagefind.app/) and Zach Leatherman’s [pagefind-search](https://github.com/zachleat/pagefind-search/) web component
 * Contact form using [Netlify Forms](https://docs.netlify.com/forms/setup/#html-forms)
 * 404 page shown when necessary, thanks to [Netlify’s custom 404 page handling](https://docs.netlify.com/routing/redirects/redirect-options/#custom-404-page-handling)
@@ -64,39 +65,36 @@ npm run start
 * [Avatar](https://fuzzylogic.me/.well-known/avatar) available at a well-known location ([Jim Nielsen’s idea](https://blog.jim-nielsen.com/2023/well-known-avatar/))
 * SEO: I provide an [XML sitemap](https://fuzzylogic.me/sitemap.xml) for search engines, and a [human-readable sitemap](https://fuzzylogic.me/sitemap/)
 
-## Subdetails
+### Subfeatures
 
-### Images 
+#### Important directories
 
-My workflow is as follows.
+The `content` directory is for files I want processed by 11ty – “templates” that contain variables. Note: most of these are partials which I want to end up as HTML pages so they get wrapped in an HTML layout by default. When that isn’t the case (i.e. the file needs processed by 11ty but not into an HTML file) I set `layout: false`.
 
-#### Creating posts that include images
+The `public` directory is for files I want 11ty to skip and pass straight through.
 
-If creating a post manually in my code editor I can manually code an HTML `img`. However I usually prefer creating posts via a CMS. To get my image into the codebase (I no longer host them on cloudinary) I upload it via Decap CMS’s media library. Then I use the image widget in the post body WYSIWIG editor, which creates markdown image code i.e. `![my alt text](/path/to/image.jpg)`.
+11ty puts compiled content into the `_site` directory and it’s served from there to the public. 
 
-Importantly I don’t need to fiddle with adding dimension attributes, because that’s taken care of by the 11ty image plugin.
- 
 #### 11ty image plugin
 
 The 11ty Image plugin does the following for me:
 - automatically works out appropriate `width` and `height` values then adds those attributes to the rendered `<img>`
 - applies the attributes `loading="lazy"` and `decoding="auto"` because I’ve configured those to be applied by default
-  - I can override with `decoding="auto" loading="eager"` on-demand. I run my post, and the first post in my postlist template through a new filter called `loadFirstImageInPostSynchronously`. It sets loading=eager and decoding=auto to override the otherwise-sensible defaults that Eleventy Image plugin would add in the cases where we want above the fold images loaded synchronously.
+  - I override with `decoding="auto" loading="eager"` on-demand. I run my post, and the first post in my postlist template through a new filter called `loadFirstImageInPostSynchronously`. It sets `loading=eager` and `decoding=auto` to override the defaults for above the fold images I want loaded synchronously.
 - creates optimised formats and multiple sizes
 - transforms the original simple `<img>` into appropriate modern responsive, image markup incorporating the generated sizes and formats
 
-**Excerpts:** 
-I’m using greymatter excerpts, but this time with a better delimiter than the default `---`. My new one is less likely to conflict with horizontal breaks and headings.
+#### Markdown
 
-## Markdown stuff
+11ty ships with `markdown-it`. So I don’t need to install it as a dependency. I can refer to it in JavaScript and append plugins to it.
 
-11ty ships with markdown-it. I don’t need to install it as a dependency.
+It’s good to remember that in most cases 11ty _automatically_ uses its own markdown parser and sees a post or page’s content as markdown and transforms it into HTML 👍. I don’t need to pass it through anything custom to achieve that. (I just pass it through `safe` so that Nunjucks renders HTML rather than escaping it and showing the tags on the page.`)
 
 I add `markdown-it-attrs` so I can create post content in markdown but also add a class (could be any attribute) onto the end of certain paragraphs such as a post intro paragraph, when I want to.
 
-I add `markdown-it-implicit-figures` to turn the paragraphs that markdown-it automatically wraps around images into `<figure>`s instead (without having to hardcode `figure` HTML and mess with markdown).
+I add `markdown-it-implicit-figures` to turn the paragraphs that `markdown-it` automatically wraps around images into `<figure>`s instead (without having to hardcode `figure` HTML and mess with markdown).
 
-I have a filter (`md`) which I ceated for situations where I need to parse markdown into HTML on-demand. This is needed to work with 11ty’s `post.page.excerpt`, since it delivers raw markdown (underscores and all).
+I have a filter (`md`) which I ceeated for outlier situations where I need a tool that parses markdown into HTML on-demand. This is needed to work with 11ty’s `post.page.excerpt`, since it delivers raw markdown (underscores and all).
 
 ## Post-update checklist
 
