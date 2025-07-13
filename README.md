@@ -88,7 +88,7 @@ The 11ty Image plugin does the following for me:
 
 11ty ships with `markdown-it`. So I don’t need to install it as a dependency. I can refer to it in JavaScript and append plugins to it.
 
-It’s good to remember that in most cases 11ty _automatically_ uses its own markdown parser and sees a post or page’s content as markdown and transforms it into HTML 👍. I don’t need to pass it through anything custom to achieve that. (I just pass it through `safe` so that Nunjucks renders HTML rather than escaping it and showing the tags on the page.`)
+It’s good to remember that in most cases 11ty _automatically_ uses its own markdown parser and sees a post or page’s content as markdown and transforms it into HTML – I don’t need to pass it through anything custom to achieve that 👍. (I just pass it through Nunjucks’ `safe` so that Nunjucks renders HTML rather than escaping it and showing the tags on the page.)
 
 I add `markdown-it-attrs` so I can create post content in markdown but also add a class (could be any attribute) onto the end of certain paragraphs such as a post intro paragraph, when I want to.
 
