@@ -22,10 +22,33 @@ export default function(eleventyConfig) {
   // apply HTML `loading` and `decoding` attributes to images
   // so that they override my 11ty Image plugin “sensible defaults”
   // on above the fold images which *should* be loaded eagerly.
-  eleventyConfig.addFilter("loadFirstImageInPostSynchronously", (postContent) => {
-    // apply replacement to first img instance only
-    // Handily, that’s how replace() works by default
-    return postContent.replace('<img ', '<img loading="eager" decoding="auto" ');
+  eleventyConfig.addFilter("loadFirstImageInPostSynchronously", (postContent, isLCPImage = false) => {
+    let isMatch = false;
+
+    if (typeof postContent === 'string') {
+      const relevantPart = postContent.slice(0, 450);
+      if (relevantPart.includes('<img ') && relevantPart.includes('<img eleventy:ignore') === false) {
+        isMatch = true;
+      }
+    }
+
+    if (isMatch) {
+      let replacement = '<img loading="eager" decoding="auto"';
+      if (isLCPImage) {
+        // on some pages (like the individual post page/template) there’s no banner,
+        // so the post’s first image can be considered “the LCP image”.
+        // so go further and set fetchpriority=high
+        // https://addyosmani.com/blog/fetch-priority/
+        replacement = '<img fetchpriority="high" loading="eager" decoding="auto"';
+      }
+
+      // apply replacement to first img instance only
+      // Handily, that’s how replace() works by default
+      // return postContent.replace('<img ', '<img loading="eager" decoding="auto" ');
+      return postContent.replace('<img ', replacement);
+    }
+
+    return postContent;
 	});
   // end LH DIY’d
 
