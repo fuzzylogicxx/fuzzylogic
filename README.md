@@ -16,7 +16,7 @@ cd my-blog-name
 Clone this repository into it:
 
 ```
-git clone https://github.com/11ty/eleventy-base-blog.git .
+git clone https://github.com/fuzzylogicxx/fuzzylogic.git .
 ```
 
 Install dependencies
