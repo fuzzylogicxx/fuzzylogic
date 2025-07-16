@@ -140,7 +140,7 @@ img {
 
 Here’s an example of a flexible image. It’s 2000 pixels wide, but shrinks to fit inside its narrower parent. Magic!
 
-<img eleventy:ignore src="https://via.placeholder.com/2000x1500.png/000" />
+<img eleventy:ignore src="https://dummyimage.com/2000x1500/000/fff" />
 
 ## Jank-free responsive images
 

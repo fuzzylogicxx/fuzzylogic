@@ -12,7 +12,7 @@
       {{ metadata.title }}
       {%- endif -%}
     </title>
-    
+
     <meta name="description" content="{{ description or metadata.description }}">
     <meta name="keywords" content="{{ keywords or metadata.keywords }}">
     <meta name="author" content="{{ metadata.author.name }}">
@@ -34,7 +34,7 @@
       /**
       * Establish a layer order up-front, from lowest to highest priority.
       */
-      @layer base, layouts, links, components, utilities;
+      @layer base, layouts, links, components, utilities, thirdparty;
 
 
 
@@ -68,19 +68,18 @@
 
     {%- css %}{% include "css/index.css" %}{% endcss %}
 
+    {%- css %}
+      @layer components {
+        {% include "node_modules/lite-youtube-embed/src/lite-yt-embed.css" %}
+      }
+    {% endcss %}
+
 		{#- Grab the amalgamated CSS bundle for the page and render as inlined CSS (for fastest performance in production) #}
 		<style>{% getBundle "css" %}</style>
 
-    {#-
-      Re-add as I build the CSS back up again.
-      <link rel="preload" href="/fonts/sans/SourceSans3-Regular-subset.woff2" as="font" type="font/woff2" crossorigin>
-      <link rel="preload" href="/fonts/sans/SourceSans3-Semibold-subset.woff2" as="font" type="font/woff2" crossorigin>
-
-      <link href="/css/theme.css" rel="stylesheet">
-    #}
-
     {#- Add the heading-anchors web component to the JavaScript bundle #}
 		{%- js %}{% include "node_modules/@zachleat/heading-anchors/heading-anchors.js" %}{% endjs %}
+		{%- js %}{% include "node_modules/lite-youtube-embed/src/lite-yt-embed.js" %}{% endjs %}
 
     {#- Grab the amalgamated JS bundle and link to it as a ES module file #}
     <script type="module" src="{% getBundleFileUrl "js" %}"></script>

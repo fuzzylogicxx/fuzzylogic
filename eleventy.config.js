@@ -20,9 +20,12 @@ import markdownItAttrs from 'markdown-it-attrs';
 // wraps around images into <figure>s.
 import markdownItImplicitFigures from 'markdown-it-implicit-figures';
 
-// use cssnano (which is a configuration for postcss) to transform/minify the CSS we’ll bundle with 11ty Bundle
+// use cssSnano (which is a configuration for postcss) to transform/minify the CSS we’ll bundle with 11ty Bundle
 import postCSS from "postcss";
 import cssNano from "cssnano";
+
+// Use terser to minify the JavaScript I’ll bundle with 11ty Bundle
+import { minify } from "terser";
 
 // end LH custom imports
 
@@ -80,6 +83,16 @@ export default async function(eleventyConfig) {
 	// Bundle <script> content and adds a {% js %} paired shortcode
 	eleventyConfig.addBundle("js", {
 		toFileDirectory: "dist",
+    // minify bundle content
+		transforms: [
+      async function (content) {
+        // this.type returns the bundle name.
+				// Same as Eleventy transforms, this.page is available here.
+        if (process.env.ELEVENTY_RUN_MODE !== "build") return content;
+				let result = await minify(content);
+				return result.code;
+      }
+    ],
 		// Add all <script> content to the `js` bundle (use <script eleventy:ignore> to opt-out)
 		// Supported selectors: https://www.npmjs.com/package/posthtml-match-helper
 		bundleHtmlContentFromSelector: "script",
