@@ -45,15 +45,15 @@ npm run start
 * Hosted with [Netlify](https://www.netlify.com/)
 * Focused on accessibility, performance and web good practices ([100/100 scores for all on Lighthouse](https://pagespeed.web.dev/analysis/https-fuzzylogic-me/dz2w9dl44v?form_factor=mobile))
 * Supports `draft` posts that are skipped in production builds [using 11ty’s Preprocessor API](https://www.11ty.dev/docs/config-preprocessors/#example-drafts)
-* Supports excerpts (I apply using a greymatter delimiter then grab 11ty’s `post.page.excerpt` and pass that through a custom markdown-parsing filter)
+* Supports excerpts
 * Content editing via [Decap CMS](https://decapcms.org/)
-* Modern images plus friendly admin workflow: upload as markdown via Decap CMS’s media library and widget; then 11ty’s Image plugin converts that into various sizes, modern formats and modern HTML
+* Modern images, and a friendly creator/admin workflow
 * Search feature using [PageFind](https://pagefind.app/) and Zach Leatherman’s [pagefind-search](https://github.com/zachleat/pagefind-search/) web component
 * Contact form using [Netlify Forms](https://docs.netlify.com/forms/setup/#html-forms)
 * 404 page shown when necessary, thanks to [Netlify’s custom 404 page handling](https://docs.netlify.com/routing/redirects/redirect-options/#custom-404-page-handling)
-* Code block syntax highlighting via [prism.js](https://prismjs.com/)
+* Code block syntax highlighting performed at build time rather than on the client, via 11ty’s [Syntax Hightlighting plugin](https://www.11ty.dev/docs/plugins/syntaxhighlight/) which in turn uses [prism.js](https://prismjs.com/)
 * Supports deep-linking to headings via Zach Leatherman’s [heading-anchors](https://github.com/zachleat/heading-anchors) web component
-* RSS feed using 11ty’s [RSS plugin](https://www.11ty.dev/docs/plugins/rss/). I created [a custom collection](https://www.11ty.dev/docs/collections-api/) named `feedPosts` to let me control which posts are shared
+* RSS feed using 11ty’s [RSS plugin](https://www.11ty.dev/docs/plugins/rss/). 
 * Tags page which lists all tags as links; plus “Posts tagged with x” pages
 * Uses [JavaScript modules](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules) for both client-side JS and on the server
 * Pure modern CSS with no pre- or post- processing dependencies. Layers, native nesting, etc.
@@ -76,7 +76,13 @@ The `public` directory is for files I want 11ty to skip and pass straight throug
 
 11ty puts compiled content into the `_site` directory and it’s served from there to the public. 
 
-#### 11ty image plugin
+#### Excerpts
+
+I define an initial part of a post as the excerpt by adding a separator string (the one I’ve defined in my greymatter config) between it and the remaining content. Then in my posts list I grab 11ty’s `post.page.excerpt` and pass that through a custom markdown-parsing filter.
+
+#### Images
+
+I upload source images into the codebase via Decap CMS’s media library and widget, which outputs markdown image syntax. Then, 11ty’s Image plugin transforms this into modern HTML (per my preferred config) which includes the `picture` and `source` elements, while also generating the necessary additional image file sizes and lighter-weight formats.
 
 The 11ty Image plugin does the following for me:
 - automatically works out appropriate `width` and `height` values then adds those attributes to the rendered `<img>`
@@ -84,6 +90,10 @@ The 11ty Image plugin does the following for me:
   - I override with `decoding="auto" loading="eager"` on-demand. I run my post, and the first post in my postlist template through a new filter called `loadFirstImageInPostSynchronously`. It sets `loading=eager` and `decoding=auto` to override the defaults for above the fold images I want loaded synchronously.
 - creates optimised formats and multiple sizes
 - transforms the original simple `<img>` into appropriate modern responsive, image markup incorporating the generated sizes and formats
+
+#### Sharing music
+
+Embedding youtube and bandcamp (etc) players comes at a fairly heavy performance cost. So when sharing music in a post I use Paul Irish’s fantastic [lite-youtube-embed](https://github.com/paulirish/lite-youtube-embed) web component, which is a game-changer.
 
 #### Markdown
 
@@ -96,6 +106,10 @@ I add `markdown-it-attrs` so I can create post content in markdown but also add 
 I add `markdown-it-implicit-figures` to turn the paragraphs that `markdown-it` automatically wraps around images into `<figure>`s instead (without having to hardcode `figure` HTML and mess with markdown).
 
 I have a filter (`md`) which I ceeated for outlier situations where I need a tool that parses markdown into HTML on-demand. This is needed to work with 11ty’s `post.page.excerpt`, since it delivers raw markdown (underscores and all).
+
+#### Controlling feed and search engine content
+
+I have a custom frontmatter key named `pageSpecificRobotsDirective` allowing me to set certain posts to `noindex, nofollow`. I also generate [a custom 11ty collection](https://www.11ty.dev/docs/collections-api/) named `feedPosts` from this and use this as the collection for my RSS feed. This lets me control which posts are amplified.
 
 ## Post-update checklist
 
