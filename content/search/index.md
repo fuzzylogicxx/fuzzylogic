@@ -17,7 +17,7 @@ Type your search term into the form below.
   <pagefind-search pagefind-autofocus>
     <form action="https://duckduckgo.com/" method="get" style="min-height: 3.2em;">
     <!-- min-height to reduce CLS -->
-      <label>
+      <label style="display: inline;">
         Search for:
         <input style="max-width: 16rem;" type="search" name="q" autocomplete="off" autofocus>
       </label>
