@@ -19,7 +19,7 @@ Type your search term into the form below.
     <!-- min-height to reduce CLS -->
       <label>
         Search for:
-        <input type="search" name="q" autocomplete="off" autofocus>
+        <input style="max-width: 16rem;" type="search" name="q" autocomplete="off" autofocus>
       </label>
       <!-- Put your searchable domain here -->
       <input type="hidden" name="sites" value="fuzzylogic.me">
