@@ -16,6 +16,7 @@ eleventyExcludeFromCollections: true
 layout: layouts/page.njk
 eleventyComputed:
   title: Tagged “{{ tag }}”
+  pageSpecificRobotsDirective: noindex
 permalink: /tags/{{ tag }}/
 ---
 {% set postslist = collections[ tag ] | reverse %}
