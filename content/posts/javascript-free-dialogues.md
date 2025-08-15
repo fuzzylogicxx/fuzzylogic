@@ -11,9 +11,11 @@ tags:
   - modal
   - javascript
 ---
-At work, my talented colleague [Anda](http://andapopovici.com/) and I have been taking a fresh look at modal dialogues with a view to modernising relevant design system components. 
+At work, my talented colleague [Anda](http://andapopovici.com/) and I have been taking a fresh look at modal dialogues with a view to modernising relevant design system components. During this project I’ve expanded my knowledge of the HTML dialog element, especially the nitty-gritty of using it in practice.
 
-During this project I’ve expanded [my knowledge of the HTML dialog element](https://fuzzylogic.me/tags/dialog/) and how to use it. And I’ve really enjoyed learning that we’re now in an era where you have the option to both launch and dismiss a dialogue without any reliance on JavaScript. That’s good news not only for resilience but also for lean development and maintenance. It’s also just cool – go HTML!
+<!-- excerpt -->
+
+I’ve really enjoyed learning that we’re now in an era where you have the option to both launch and dismiss a dialogue without any reliance on JavaScript. That’s good news not only for resilience but also for lean development and maintenance. It’s also just cool – go HTML!
 
 To let users dismiss a `dialog` we can nest inside it an implicit or explicit `button type=submit` inside a `form method=dialog`. Activating this button causes the dialog box to close, the states of any other form controls to be saved but not submitted, and sets the [`dialog.returnValue`](https://developer.mozilla.org/en-US/docs/Web/API/HTMLDialogElement/returnValue) to the `value` of the button. Here’s an example:
 
