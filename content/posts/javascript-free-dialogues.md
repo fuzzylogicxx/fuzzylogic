@@ -15,7 +15,7 @@ At work, my talented colleague [Anda](http://andapopovici.com/) and I have been 
 
 During this project I’ve expanded [my knowledge of the HTML dialog element](https://fuzzylogic.me/tags/dialog/) and how to use it. And I’ve really enjoyed learning that we’re now in an era where you have the option to both launch and dismiss a dialogue without any reliance on JavaScript. That’s good news not only for resilience but also for lean development and maintenance. It’s also just cool – go HTML!
 
-To let users dismiss a \`dialog\` we can nest inside it an implicit or explicit \`button type=submit\` inside a \`form method=dialog\`. Activating this button causes the dialog box to close, the states of any other form controls to be saved but not submitted, and sets the [`dialog.returnValue`](https://developer.mozilla.org/en-US/docs/Web/API/HTMLDialogElement/returnValue) to the `value` of the button. Here’s an example:
+To let users dismiss a `dialog` we can nest inside it an implicit or explicit `button type=submit` inside a `form method=dialog`. Activating this button causes the dialog box to close, the states of any other form controls to be saved but not submitted, and sets the [`dialog.returnValue`](https://developer.mozilla.org/en-US/docs/Web/API/HTMLDialogElement/returnValue) to the `value` of the button. Here’s an example:
 
 ```html
 <dialog>
@@ -39,7 +39,7 @@ When thinking about launching dialogues I discovered the new [Invoker Commands A
 </dialog>
 ```
 
-Taking things a step further, you could also use the Invoker API to create the button(s) for dismissing the \`dialog\` too, rather than the form-based approach I mentioned previously.
+Taking things a step further, you could also use the Invoker API to create the button(s) for dismissing the `dialog` too, rather than the form-based approach I mentioned previously.
 
 ```html
 <dialog id="mydialog">
@@ -48,6 +48,6 @@ Taking things a step further, you could also use the Invoker API to create the b
 </dialog>
 ```
 
-At present, the `commandfor` attribute does not yet work across all the major browsers. So right now we won’t be using the Invoker API in production – or if we do it’d only be in cases where we’re using using JS to create a `button` and can first do [feature detection](https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Testing/Feature_detection) to check if the user’s browser supports invoker commands. For now we’ll likely find other ways to launch dialogues, and if we want a non-JS-reliant way to close a \`dialog\` we’d reach for the “form method” approach.
+At present, the `commandfor` attribute does not yet work across all the major browsers. So right now we won’t be using the Invoker API in production – or if we do it’d only be in cases where we’re using using JS to create a `button` and can first do [feature detection](https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Testing/Feature_detection) to check if the user’s browser supports invoker commands. For now we’ll likely find other ways to launch dialogues, and if we want a non-JS-reliant way to close a `dialog` we’d reach for the “form method” approach.
 
-But in general, the future of powerful, declarative HTML looks bright and full of opportunities.
+But in general the future of powerful, declarative HTML looks bright and full of opportunities.
