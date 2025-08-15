@@ -48,6 +48,6 @@ Taking things a step further, you could also use the Invoker API to create the b
 </dialog>
 ```
 
-At present, the \`commandfor\` attribute does not yet work across all the major browsers. So right now we won’t be using the Invoker API in production – or if we do it’d only be in cases where we’re using using JS to create a `button` and can first do [feature detection](https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Testing/Feature_detection) to check if the user’s browser supports invoker commands. For now we’ll likely find other ways to launch dialogues, and if we want a non-JS-reliant way to close a \`dialog\` we’d reach for the “form method” approach.
+At present, the `commandfor` attribute does not yet work across all the major browsers. So right now we won’t be using the Invoker API in production – or if we do it’d only be in cases where we’re using using JS to create a `button` and can first do [feature detection](https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Testing/Feature_detection) to check if the user’s browser supports invoker commands. For now we’ll likely find other ways to launch dialogues, and if we want a non-JS-reliant way to close a \`dialog\` we’d reach for the “form method” approach.
 
 But in general, the future of powerful, declarative HTML looks bright and full of opportunities.
