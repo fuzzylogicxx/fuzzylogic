@@ -10,7 +10,7 @@ tags:
   - a11y
   - 11ty
 ---
-In my recent post [Website updates](<I’ve added myself to 11ty’s community and am now listed as an Eleventy author. I hope that some day I’ll find that fuzzylogic.me has been added to 11ty’s Speedlify Leaderboard too – that’d be cool!>) I said:
+In my recent post [Website updates](https://fuzzylogic.me/posts/website-updates/) I said:
 
 > I’ve added myself to 11ty’s community and am now listed as an Eleventy author. I hope that some day I’ll find that [fuzzylogic.me](https://fuzzylogic.me/) has been added to 11ty’s Speedlify Leaderboard too – that’d be cool!
 
