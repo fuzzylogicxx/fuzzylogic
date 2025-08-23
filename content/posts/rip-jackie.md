@@ -3,8 +3,7 @@ title: A tough loss
 description: In July 2025 my mother-in-law passed away, far too young
 noteWithTitle: true
 pageSpecificRobotsDirective: noindex, nofollow
-date:
-  ? "{ now }"
+date: 2025-08-23T21:15
 tags:
   - note
   - family
