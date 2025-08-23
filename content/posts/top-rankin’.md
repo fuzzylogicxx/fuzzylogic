@@ -1,5 +1,5 @@
 ---
-title: Top Rankin’
+title: Top rankin’
 description: "I’ve been ranked #23 on the Eleventy Speedlify leaderboard"
 noteWithTitle: true
 date: 2025-08-14T22:49
