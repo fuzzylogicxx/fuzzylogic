@@ -31,4 +31,11 @@ To date I’ve mostly reached for `outline` as a debugging tool. Everything gene
 
 I can’t recall seeing many “real” uses of `outline` beyond focus indication, but one that springs to mind is in [EveryLayout’s _Box_ component](https://every-layout.dev/layouts/box/). If you configure your box to use a background colour but no border, the component automatically adds a transparent `outline`. This measure deals with high contrast themes such as Windows High Contrast. They often eliminate backgrounds which would cause a border-free box to lose its shape, but they apply a colour to outlines so our previously-transparent `outline` would become visible, preserving the box shape. Clever stuff.
 
+## Automated dividers
+
+The horizontal local navigation menu on [Heydon Pickering’s website](https://heydonworks.com/latest/) is by far the most creative use of `outline` I’ve seen.
+
+One thing designers look for every so often is dividing lines.
+
+
 
