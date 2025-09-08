@@ -33,7 +33,7 @@ I can’t recall seeing many “real” uses of `outline` beyond focus indicatio
 
 ## Automated dividers
 
-The horizontal local navigation menu on [Heydon Pickering’s website](https://heydonworks.com/latest/) is by far the most creative use of `outline` I’ve seen.
+The horizontal local navigation menu on [Heydon Pickering’s website](https://heydonworks.com/latest/) includes by far the most creative use of `outline` I’ve seen.
 
 One thing designers look for every so often is dividing lines.
 
