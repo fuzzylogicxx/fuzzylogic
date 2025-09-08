@@ -9,9 +9,9 @@ tags:
   - outline
   - a11y
 ---
-I’m partial to going down the rabbit-hole on niche aspects of front-end development. For example a few years ago I felt compelled to dig into *exactly* what’s going on with containers and items in Flexbox-powered layouts, noting my findings in [Flexbox-fu.](https://codepen.io/fuzzylogicx/full/BEEYQL) I do it to go beyond the theory and into practical applications and work out why things behave the way they do. These deep dives take time but are rewarding – usually I’ll learn not just about the initial subject but more besides.  
+I’m partial to going down the rabbit-hole on a niche aspect of front-end development. For example a few years ago I got the urge to dig into what’s going on with containers and items in Flexbox-powered layouts and noted my findings in [Flexbox-fu](https://codepen.io/fuzzylogicx/full/BEEYQL). I do it to go beyond the thing’s theory and into its practical application for solving real web development challenges, gaining a deeper understanding of why things behave the way they do. These deep dives take time but are rewarding; usually I’ll learn about more than I expected.  
 
-Recently I dug into the characteristics and behaviour of the CSS `outline` property. The catalyst was seeing Heydon Pickering’s clever use of outline within a flexbox layout to automate divider lines in a navigation menu. I couldn’t get my head around how it works so I had to reverse engineer it. More on that later, but first a recap of what `outline` is good for.
+Recently I dug into the characteristics and behaviour of the CSS `outline` property. The catalyst was seeing Heydon Pickering’s clever use of outline to automate divider lines within a flexbox powered navigation menu. I couldn’t fathom how it works so decided to reverse-engineer it. More on Heydon’s trick later, but I’ll start with a recap of what `outline` is good for.
 
 ## Focus indicators
 
