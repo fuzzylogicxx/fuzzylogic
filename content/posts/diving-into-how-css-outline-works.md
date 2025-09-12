@@ -19,7 +19,7 @@ The classic use case for `outline` is to provide a visible _focus indicator_ on 
 
 I recall that for a while many developers and designers took exception firstly to focus indicators appearing during mouse interactions, and secondly to how they looked. They started setting `:focus { outline: none; }`, not realising the accessibility implications. [Lea Verou offered a smart compromise](https://remysharp.com/links/2020-08-26-9d483db3) which applies the focus indicator selectively. Nowadays this isn’t necessary since modern browsers employ heuristics to only show the default focus indicator when it is needed – when navigating the page with a keyboard.
 
-I consider browsers’ handling of focus indication as a very sensible default so – call me sensible or lazy – I tend not to mess with it. 
+I consider browsers’ handling of focus indication to be a very sensible default so – call me sensible or lazy – I tend not to mess with it. 
 
 Note: having written the above sentence down, I decided to educate myself by reading Sara Souidean’s [A guide to designing accessible, WCAG-conformant focus indicators](https://www.sarasoueidan.com/blog/focus-indicators/). I note that sticking with the browser defaults will conform to WCAG success criteria which is a good start, but even so might not provide sufficient contrast for real users. So, my approach isn’t terrible but I can do better, perhaps by introducing Sara’s [Universal focus indicator](https://www.sarasoueidan.com/blog/focus-indicators/#a-%E2%80%98universal%E2%80%99-focus-indicator) suggestion into my CSS boilerplate. 
 
