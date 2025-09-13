@@ -40,7 +40,7 @@ CSS `transition` is great for simple animations triggered by an event.
 
 We start by defining two different states for an element—for example `opacity:1` and `opacity:0`—and then `transition` between those states.
 
-The first state would be in the element’s starting styles (either defined explicitly or existing implicitly based on property defaults) and the other in either its `:hover` or `:focus` styles or in a class applied by JavaScript following an event.
+The first state would be in the element’s default styles (either as explicitly-defined property values or existing implicitly based on property defaults) and the other in either its `:hover` or `:focus` styles or in a class applied by JavaScript following an event.
 
 Without the `transition` the state change would still happen but would be instantaneous.
 
