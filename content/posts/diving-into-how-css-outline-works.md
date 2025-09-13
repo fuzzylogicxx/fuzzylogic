@@ -35,25 +35,25 @@ I can’t recall seeing many “real” uses of `outline` beyond focus indicatio
 
 The most creative use of `outline` I’ve seen is on the horizontal local navigation menu on [Heydon Pickering’s website](https://heydonworks.com/latest/). There’s a flex container, configured to support intrinsic responsiveness via `flex-wrap: wrap`, and its flex items apply `outline: .125rem solid`. The magical aspect is that whereas `outline` normally appears on all edges of an element, here the outlines only appear as keyline dividers _between_ nav items. Lots of the outlines you’d expect to see are somehow invisible. This is a really neat trick because it offers the combination of a common design need: dividing lines – with an intrinsically-responsive approach: flexbox with no media queries. A layout like that uses less code, flexes to its content rather than a container, and is more reusable.
 
-So how does it work? To find out, I started playing around with something simple – two elements stacked vertically, both with `outline` applied, and with no gap between them. It’s all in my pen [Conjoined outlines](https://codepen.io/fuzzylogicx/pen/pvjKwWM?editors=1100). Here’s what I learned:
+So how does it work? To find out, I started playing around with something simple – two elements stacked vertically, both with `outline` applied, and with no gap between them. It’s all in my pen [Adjacent outlines](https://codepen.io/fuzzylogicx/pen/pvjKwWM?editors=1100). Here’s what I learned:
 
-### Learning 1: the outlines of vertically-conjoined elements do not occupy the same space
+### Learning 1: the `outline`s of immediately adjacent elements do not occupy the same space
 
 They relate to different spaces on the page. So you see both.
 
-### Learning 2: vertically-conjoined outlines appear in reverse order.
+### Learning 2: immediately adjacent `outline`s appear in reverse order
 
 This is because they exist outside the box they relate to – even outside where the border would be – to the extent that they encroach into the adjoining box.
 
 If element one has a blue outline and element two has a red outline, you’ll see the red outline on the top-edge of div two appears above the blue outline on the bottom edge of div one.
 
-### Learning 3: you can ”hide” the outermost outlines using a container
+### Learning 3: you can hide the outermost outlines using a container
 
 You can visually remove outermost outlines by introducing a container element and setting its overflow to hidden. The container element is now hiding any content that overflows its box including the outlines of child elements.
 
-### Learning 4: use flexbox and a background colour to avoid double-width divider lines
+### Learning 4: avoid double-width dividers by using flexbox and a background colour
 
-By making the container a flex container and setting the background colour of items to a value other than transparent, you can ensure your divider lines don’t double-up.
+By making the container a flex container and setting the background colour of items to a value other than transparent, you can ensure your divider lines don’t double-up.,
 
 
 
