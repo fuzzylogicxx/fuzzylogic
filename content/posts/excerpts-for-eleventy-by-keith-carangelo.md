@@ -15,9 +15,11 @@ tags:
 ---
 Recently I updated this website’s git repository README to include a summary of my approach to supporting post excerpts.
 
-> I define an initial part of a post as the excerpt by adding a separator string (the one I’ve defined in my greymatter config) between it and the remaining content. Then in my posts list I grab 11ty’s `post.page.excerpt` and pass that through a custom markdown-parsing filter.
+> I define an initial part of a post as the excerpt by adding a separator string between it and the remaining content. Then in my posts list I grab 11ty’s `post.page.excerpt` and pass that through a custom markdown-parsing filter.
 
 This works pretty well but sometimes it’s a bit inflexible that the excerpt has to be part of the post. Sometimes you might want to say something different, or shorter and snappier in the excerpt.
+
+<!-- excerpt -->
 
 Keith offers a best of both worlds solution where you can optionally set your excerpt in front matter, and if that exists, use that.
 
