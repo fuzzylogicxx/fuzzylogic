@@ -84,7 +84,7 @@ Maybe, maybe not. I’d probably use it and experiment with it on my own persona
 Pros:
 
 - lets you keep your layouts intrinsic
-- while I admire [Ahmad’s Shadeed’s technique](https://ishadeed.com/article/flexbox-separator/) which uses pseudo elements, Heydon’s technique handles _multiple_ items and dividers automatically. No need to manually manage the CSS `order` of appearance 
+- handles _multiple_ items automatically. While I admire [Ahmad’s Shadeed’s flexbox-separator technique](https://ishadeed.com/article/flexbox-separator/), it uses pseudo elements and requires you to manually manage their `order` in the flexbox arrangement 
 
 Cons:
 
@@ -95,12 +95,4 @@ Cons:
 
 Well, that dive went deeper than expected, but I’m glad to have learned more about `outline`, better focus indicators, CSS box behaviours and a few tricks along the way.
 
-If you have any thoughts on this post and feel like dropping me a little note, please [get in touch](https://fuzzylogic.me/contact/).
-
-
-
-
-
-
-
-
+If you have any thoughts on this post, feel free to [get in touch](https://fuzzylogic.me/contact/).
