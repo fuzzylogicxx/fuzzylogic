@@ -28,7 +28,9 @@ I recall that for a while many developers and designers took exception firstly t
 I consider browsers’ handling of focus indication to be a very sensible default so – call me sensible or call me lazy – I tend not to mess with it. 
 
 <aside>
+
 Note: having written the above sentence down, I decided to educate myself by reading Sara Souidean’s [A guide to designing accessible, WCAG-conformant focus indicators](https://www.sarasoueidan.com/blog/focus-indicators/). I note that sticking with the browser defaults will conform to WCAG success criteria which is a good start, but still might not provide sufficient contrast for real users. So, my approach isn’t terrible but I can do better, perhaps by introducing Sara’s [Universal focus indicator](https://www.sarasoueidan.com/blog/focus-indicators/#a-%E2%80%98universal%E2%80%99-focus-indicator) suggestion into my CSS boilerplate.
+
 </aside>
 
 ## Debugging
