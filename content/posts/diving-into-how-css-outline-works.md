@@ -17,6 +17,8 @@ I’m partial to going down the rabbit-hole on a niche aspect of front-end devel
 
 Recently I dug into the characteristics and behaviour of the CSS `outline` property. The catalyst was seeing Heydon Pickering’s clever use of outline to automate divider lines within a flexbox powered navigation menu. I couldn’t fathom how it works so decided to reverse-engineer it. More on Heydon’s trick later, but I’ll start with a recap of what `outline` is good for.
 
+<!-- excerpt -->
+
 ## Focus indicators
 
 The classic use case for `outline` is to provide a visible _focus indicator_ on interactive elements such as links, buttons and form fields. This supports accessibility by telling people who navigate with their keyboard where they are on the page, or to be more precise that “this element has focus”. Handily, browsers do it for us by default – the user agent supplied `:focus-visible {}` selector uses `outline` to apply a one pixel wide “focus ring” around the currently focused element. 
@@ -51,11 +53,11 @@ They relate to different spaces on the page. So you see both.
 
 This is because they exist outside the box they relate to – even outside where the border would be – to the extent that they encroach into the adjoining box.
 
-If element one has a blue outline and element two has a red outline, you’ll see the red outline on the top-edge of div two appears above the blue outline on the bottom edge of div one.
+If element one has a blue outline and element two has a red outline, you’ll see the red outline on the top-edge of div two appear above the blue outline on the bottom edge of div one.
 
 #### Learning 3: you can hide the outermost outlines using a container
 
-You can visually remove outermost outlines by introducing a container element and setting its overflow to hidden. The container element is now hiding any content that overflows its box including the outlines of child elements.
+You can visually remove outermost outlines by introducing a container element and setting its `overflow` to hidden. The container element is now hiding any content that overflows its box including the outlines of child elements.
 
 #### Learning 4: avoid double-width dividers by using flexbox and a background colour
 
