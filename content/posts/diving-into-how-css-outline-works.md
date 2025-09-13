@@ -55,17 +55,17 @@ Here’s what I learned:
 
 #### Learning 1: the `outline`s of immediately adjacent elements do not occupy the same space
 
-They relate to different spaces on the page. So you see both.
+They relate to different spaces on the page, so you see both. Based on some misguided instinct I had expected the outline on the bottom-edge of the top element to merge into the same 1px space as the outline on the top-edge of the bottom element.
 
 #### Learning 2: immediately adjacent `outline`s appear in reverse order
 
-This is because they exist outside the box they relate to – even outside where the border would be – to the extent that they encroach into the adjoining box.
+This is because they exist outside the borders of the element box they relate to, to the extent that they encroach into the immediately adjacent element’s box!
 
-If element one has a blue outline and element two has a red outline, you’ll see the red outline on the top-edge of div two appear above the blue outline on the bottom edge of div one.
+If the top element has a blue outline and the bottom element has a red outline, you’ll see the the bottom element’s red top edge outline appear above the top element’s blue bottom edge outline.
 
 #### Learning 3: you can hide the outermost outlines using a container
 
-You can visually remove outermost outlines by introducing a container element and setting its `overflow` to hidden. The container element is now hiding any content that overflows its box including the outlines of child elements.
+You can visually remove outermost outlines by introducing a container element and setting its `overflow` to hidden. The container element now hides any content that overflows its box, which in this case includes the outlines applied to child elements. So, those outermost outlines disappear.
 
 #### Learning 4: avoid double-width dividers by using flexbox and a background colour
 
