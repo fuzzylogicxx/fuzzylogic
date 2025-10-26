@@ -59,6 +59,7 @@ npm run start
 * Pure modern CSS with no pre- or post- processing dependencies. Layers, native nesting, etc.
 * Bundling (CSS and JS) via [11ty Bundle plugin](https://www.11ty.dev/docs/plugins/bundle/)
 * Minification with [cssnano](https://github.com/cssnano/cssnano)
+* JS linted to encourage good practices using eslint
 * Design Tokens defined in interoperable JSON then implemented as CSS custom properties (inspired by [Heydon’s approach](https://heydonworks.com/article/design-tokens-in-eleventy/))
 * Intrinsically responsive layouts inspired by [Every Layout](https://every-layout.dev/)
 * Fluid responsive type and spacing using [Utopia](https://utopia.fyi/)
