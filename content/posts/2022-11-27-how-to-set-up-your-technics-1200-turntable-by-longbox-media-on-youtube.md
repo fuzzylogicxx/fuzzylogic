@@ -8,3 +8,7 @@ linkTarget: "https://www.youtube.com/watch?v=-zo72dQV5F0"
 The best SL-1200/10 set-up video I’ve seen.
 
 I especially like the section on testing for channel imbalance by playing a mono record (such as [Nat Birchall's Upright Living LP](https://www.discogs.com/release/15752593-Nat-Birchall-meets-Al-Breadwinner-Upright-Living)) and comparing the output meter for any differences between left and right, then untightening the relevant tonearm screws in order to make adjustments.
+
+## Update 26/10/25:
+
+This one [from Resident Advisor and the Hoppetosse nightclub](https://www.youtube.com/watch?v=VXfWgUvdivA) ain’t bad either (although the Longbox tutorial still edges it).
