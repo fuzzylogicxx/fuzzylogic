@@ -18,9 +18,9 @@ tags:
   - mix
   - music
 ---
-![People congregated inside a dark venue which has deep red and amber lighting](/img/somethingsomewhere.jpg "Photo by Clair Irwin")
+I just did my first proper mix for a few years.
 
-I just did my first proper mix for a few years. 
+![A group of people gathered in a darkened room illuminated by deep reds and ambers](/img/uploads/somethingsomewhere.jpg "Photo by Clair Irwin")
 
 <!-- excerpt -->
 
