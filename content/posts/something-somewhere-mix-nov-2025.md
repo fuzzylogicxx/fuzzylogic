@@ -24,7 +24,7 @@ Over the last few years I’ve played some radio shows but hadn’t done a mix o
 
 <!-- excerpt -->
 
-It’s a mainly vinyl mix of lots of my favourite house-ish tracks of recent years, plus a few oldies. It includes plenty of my evergreen favourite artists and labels: Abacus, Legowelt and Dance Mania are all in the pot. I think my friend Davie would enjoy these tunes, so I’ll dedicate this one to him.
+It’s a one-hour, mainly vinyl selection inna house and techno style featuring lots of my favourite tracks of recent times, plus a few oldies. I think my friend Davie would enjoy these tunes, so I’ll dedicate this one to him.
 
 [Listen to the show on mixcloud.](https://www.mixcloud.com/laurencehughes/something-somewhere-dj-mix/)
 
