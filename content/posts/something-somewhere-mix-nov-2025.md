@@ -24,7 +24,7 @@ Over the last few years I’ve played some radio shows but hadn’t done a mix o
 
 <!-- excerpt -->
 
-It’s a mainly vinyl mix of lots of my favourite house-ish tracks of recent years, plus a few oldies. It includes plenty of my evergreen favourite artists and labels: Abacus, Legowelt and Dance Mania are all in the pot. I think my friend Davie would enjoy these tunes, so I’ll dedicate this one to him.
+It’s a selection of lots of my favourite house-ish records of recent years, plus a few oldies. It includes plenty of my evergreen favourite artists and labels including Abacus, Legowelt and Dance Mania. I reckon my friend Davie would enjoy these tunes, so I’ll dedicate this one to him.
 
 [Listen to the show on mixcloud.](https://www.mixcloud.com/laurencehughes/something-somewhere-dj-mix/)
 
@@ -35,10 +35,13 @@ Here’s the tracklist:
 1. Suzanne Kraft - Dj Safety Track
 1. DJ Joe Lewis – Midnight Dancing
 1. Ryan Spencer – Between Dreams
+1. Two the hardway – Who said?
 1. Beam Up – Zweimal Steppers
-1. Abacus
-1. Ossie
-1. 2-Bit – Rock the house yaul
+1. 2000 Black – Straight forward side steps
+1. Benedek – Donkey Konga
+1. Abacus – Music for Table Tennis
+1. Ossie – I hurt you
+1. 2-Bit Project – Rock the house yaul
 1. Logic1000 – toldmyself
 1. Legowelt – I shat my yoga pants
 1. The Return – New Day
