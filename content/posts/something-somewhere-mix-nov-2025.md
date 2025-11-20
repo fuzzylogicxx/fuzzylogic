@@ -18,17 +18,17 @@ tags:
   - mix
   - music
 ---
-Over the last few years I’ve played some radio shows but hadn’t done a mix of my own. I managed to rectify that the other night!
-
 ![A group of people gathered in a darkened room illuminated by deep reds and ambers](/img/uploads/somethingsomewhere.jpg "Photo by Clair Irwin")
+
+Over the last few years I’ve played some radio shows but hadn’t done a mix of my own. I managed to rectify that the other night.
 
 <!-- excerpt -->
 
-It’s a selection of lots of my favourite house-ish records of recent years, plus a few oldies. It includes plenty of my evergreen favourite artists and labels including Abacus, Legowelt and Dance Mania. I reckon my friend Davie would enjoy these tunes, so I’ll dedicate this one to him.
+This mix is a selection of my favourite house-ish records of recent years, plus a few oldies. It includes plenty of my evergreen favourite artists and labels including Abacus, Legowelt and Dance Mania. I reckon my friend Davie would enjoy these tunes, so I’ll dedicate this one to him.
 
 [Listen to the show on mixcloud.](https://www.mixcloud.com/laurencehughes/something-somewhere-dj-mix/)
 
-Here’s the tracklist:
+The tracklist is:
 
 1. Other Lands - The Caged Mind
 1. Reflection - Cube Loop (Morgan Geist mix)
