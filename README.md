@@ -79,7 +79,7 @@ The `public` directory is for files I want 11ty to skip and pass straight throug
 
 #### Excerpts
 
-I define an initial part of a post as the excerpt by adding a separator string (the one I’ve defined in my greymatter config) between it and the remaining content. Then in my posts list I grab 11ty’s `post.page.excerpt` and pass that through a custom markdown-parsing filter.
+I define an initial part of a post as the excerpt by adding a separator string (`<!-- excerpt -->`) between it and the remaining content. Then in my posts list I grab 11ty’s `post.page.excerpt` and pass that through my custom markdown-parsing _filter_.
 
 #### Images
 
@@ -92,6 +92,8 @@ The 11ty Image plugin does the following for me:
 - creates optimised formats and multiple sizes
 - transforms the original simple `<img>` into appropriate modern responsive, image markup incorporating the generated sizes and formats
 
+One gotcha when using Decap CMS’s image widget is to ensure that it sets the correct path in the generated markdown image (I want `/img/uploads/` rather than just `/img/`). If it doesn’t, I can manually amend it in the editor’s markdown mode.
+
 #### Sharing music
 
 Embedding youtube and bandcamp (etc) players comes at a fairly heavy performance cost. So when sharing music in a post I use Paul Irish’s fantastic [lite-youtube-embed](https://github.com/paulirish/lite-youtube-embed) web component, which is a game-changer.
@@ -100,11 +102,11 @@ Embedding youtube and bandcamp (etc) players comes at a fairly heavy performance
 
 11ty ships with `markdown-it`. So I don’t need to install it as a dependency. I can refer to it in JavaScript and append plugins to it.
 
-It’s good to remember that in most cases 11ty _automatically_ uses its own markdown parser and sees a post or page’s content as markdown and transforms it into HTML – I don’t need to pass it through anything custom to achieve that 👍. (I just pass it through Nunjucks’ `safe` so that Nunjucks renders HTML rather than escaping it and showing the tags on the page.)
+It’s good to remember that in most cases 11ty _automatically_ uses its own markdown parser which will work with a post or page’s markdown content and transform it into HTML – I don’t need to pass the content through anything custom to achieve that 👍. (I just pass it through Nunjucks’ `safe` so that Nunjucks renders HTML rather than escaping it and showing the tags on the page.)
 
-I add `markdown-it-attrs` so I can create post content in markdown but also add a class (could be any attribute) onto the end of certain paragraphs such as a post intro paragraph, when I want to.
+I add `markdown-it-attrs` so that in additional to using basic markdown syntax I can also add a class (or any attribute) onto the end of certain paragraphs such as a post intro paragraph, when I want to. This makes it much more feasible to write the entire post in markdown.
 
-I add `markdown-it-implicit-figures` to turn the paragraphs that `markdown-it` automatically wraps around images into `<figure>`s instead (without having to hardcode `figure` HTML and mess with markdown).
+I add `markdown-it-implicit-figures` to turn the paragraphs that `markdown-it` automatically wraps around images into `<figure>`s instead, rather than having to hardcode `figure` HTML and mess with markdown. I add the `figcaption: "title"` config option, which plucks the `title` out of a markdown image and instead uses it as the content for a figure’s `figcaption`.
 
 I have a filter (`md`) which I ceeated for outlier situations where I need a tool that parses markdown into HTML on-demand. This is needed to work with 11ty’s `post.page.excerpt`, since it delivers raw markdown (underscores and all).
 
