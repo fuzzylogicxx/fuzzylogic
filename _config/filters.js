@@ -1,6 +1,7 @@
 import { DateTime } from "luxon";
 import markdownIt from "markdown-it";
 import markdownItAttrs from 'markdown-it-attrs';
+import markdownItImplicitFigures from 'markdown-it-implicit-figures';
 
 export default function(eleventyConfig) {
 	// LH DIY’d.
@@ -10,13 +11,21 @@ export default function(eleventyConfig) {
     return DateTime.fromJSDate(dateObj, { zone: zone || "utc" }).toFormat(format || "h:mm a");
 	});
 
-  // Convert raw markdown to HTML
-  // Useful when using the `page.data.excerpt` that 11ty makes available
-  // because it comes as raw markdown, but I want bolding and italics etc to render properly…
-  // so I pass the excerpts through this.
+  // Convert raw markdown to HTML.
+  // Useful when working with the `page.data.excerpt` that 11ty makes available,
+  // because it comes as raw markdown however when I use it as the content snippet
+  // per blog post in a list of posts, I want those excerpts rendered
+  // as proper HTML – with bolding, italics, links etc – a string doesn’t cut it.
+  // So I pass the excerpts through this.
+  // Note: the advanced markdown things I’m doing here (including <figure> around images etc)
+  // mirror the way I’ve configured 11ty’s own markdown parser in eleventy.config.js.
+  // I want the exact same HTML results when I generate HTML from markdown using this filter.
   // Ref: https://github.com/11ty/eleventy/issues/1380#issuecomment-698457560
   eleventyConfig.addFilter("md", (content = "") => {
-    return markdownIt().use(markdownItAttrs).render(content);
+    return markdownIt()
+      .use(markdownItAttrs)
+      .use(markdownItImplicitFigures, { figcaption: "title"})
+      .render(content);
   });
 
   // apply HTML `loading` and `decoding` attributes to images

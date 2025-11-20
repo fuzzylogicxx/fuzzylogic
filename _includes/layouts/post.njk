@@ -43,7 +43,7 @@ templateClass: post-main
       </div>
       {% endif %}
 
-      <div class="l-flow e-content {{ "article-type-listing" if isList }}" itemprop="articleBody">
+      <div class="l-flow e-content" itemprop="articleBody">
 
         {%- set isLCPImage = true -%}
         {{ content | loadFirstImageInPostSynchronously(isLCPImage) | safe }}
