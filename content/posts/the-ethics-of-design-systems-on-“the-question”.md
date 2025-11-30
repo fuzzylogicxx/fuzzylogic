@@ -12,13 +12,13 @@ tags:
 ---
 This episode of _The Question_ is – like they say during the conversation – one that doesn’t yet have any ready answers. Right now it’s just important that we’re asking the question and starting to move forward, establish goals and build vocabulary.
 
+<!-- excerpt -->
+
 <lite-youtube videoid="pwWJMjVXaHk">
   <a href="https://youtube.com/watch?v=pwWJMjVXaHk" class="lyt-playbtn" title="Play Video">
     <span class="lyt-visually-hidden">Play Video: The Ethics of Design Systems</span>
   </a>
 </lite-youtube>
-
-<!-- excerpt -->
 
 There was a section where they discussed a spectrum of alignment between company and design system team, and that you can have situations where their ethical positions are not aligned. I’ve definitely felt this when trying to achieve wider buy-in to accessible practices.
 
