@@ -94,9 +94,9 @@ The 11ty Image plugin does the following for me:
 
 One gotcha when using Decap CMS’s image widget is to ensure that it sets the correct path in the generated markdown image (I want `/img/uploads/` rather than just `/img/`). If it doesn’t, I can manually amend it in the editor’s markdown mode.
 
-#### Sharing music
+#### Sharing music and media
 
-Embedding youtube and bandcamp (etc) players comes at a fairly heavy performance cost. So when sharing music in a post I use Paul Irish’s fantastic [lite-youtube-embed](https://github.com/paulirish/lite-youtube-embed) web component, which is a game-changer.
+Embedding youtube and bandcamp (etc) players comes at a fairly heavy performance cost. So when [sharing music in a post](https://github.com/fuzzylogicxx/fuzzylogic/blob/v3/content/posts/2025-07-05-16-56.md) I use Paul Irish’s fantastic [lite-youtube-embed](https://github.com/paulirish/lite-youtube-embed) web component, which is a game-changer.
 
 #### Markdown
 
