@@ -20,8 +20,8 @@ Bridget’s relationship with her sister, Michelle, is also cold. It seems Miche
 
 Our relationships with our parents and siblings can at times be awkward, and can go through ups and downs. I’ve experienced this and there are times when, on reflection, I wished I’d acted differently. The book led me to reflect on this. Happily, my immediate family’s interrelationships are on the whole good. We too have rubbed each other up the wrong way at times, but unlike Bridget and Hen we understand each others’ foibles and accept them, even laugh about them. 
 
-I’ve also known other, more strained relationships in wider family circles. It’s sadly too easy for things to drift and go awry. 
+I’ve also known other, more strained relationships in wider family circles. It’s all too easy for things to drift and go awry. 
 
-Loads to think about after reading this one – I think it will stick with me.
+Loads to think about after reading this one. I think it will stick with me for a while.
 
 Thanks to Anna for the recommendation.
