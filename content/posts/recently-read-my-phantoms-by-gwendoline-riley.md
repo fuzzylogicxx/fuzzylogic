@@ -12,7 +12,7 @@ This was a weird, mixed reading experience for me. It’s a short book and it’
 
 <!-- excerpt -->
 
-Firstly, it focuses on awkward family relationships and the emotions these stir over years and decades. I imagine that parts of it are relatable to many readers; that was certainly true for me. Secondly I read it while my elderly uncle was aving a rough time in hospital, with the strong chance he wouldn’t make it out. I was spending time with him, mum and dad in that context which I guess has beneath-the-surface effects while you’re trying to maintain a brave face. As it happened, I finished the book the night before he passed away.
+Firstly, it focuses on awkward family relationships and the emotions these stir over years and decades. I imagine that parts of it are relatable to many readers; that was certainly true for me. Secondly I read it while my elderly uncle was having a rough time in hospital, with the strong chance he wouldn’t make it out. I was spending time with him, mum and dad in that context which I guess has beneath-the-surface effects while you’re trying to maintain a brave face. As it happened, I finished the book the night before he passed away.
 
 I found it interesting how as the book progresses it shifts your opinion of the narrator, Bridget. Initially as she recounts her relationship with her mum, Hen, you feel that while they often rub each other up the wrong way, it’s fairly typical intergenerational and parent-child tension. There’s wry humour and it feels harmless. Her father, meanwhile, was a boor and her exasperation at his previous behaviour is entirely warranted.
 
