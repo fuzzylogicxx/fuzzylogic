@@ -10,6 +10,7 @@ tags:
   - html
   - a11y
   - accessibility
+  - dialog
 ---
 Manuel sensed a general misunderstanding of what an interactive element is and what *focusable* really means. He wasn’t totally sure himself either, so did some research. It’s a long post but here’s the conclusion:
 
@@ -33,4 +34,4 @@ He highlights another note on the MDN page: “Do not add the `tabindex` propert
 
 He provides proof, too, demonstrating that when you open a `dialog` that contains no interactive elements with `myDialog.showModal()`, the `dialog` element is focused. 
 
-All of which is to confirm: \`dialog\` is an interactive element.
+All of which is to confirm: `dialog` is an interactive element.
