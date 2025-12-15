@@ -26,10 +26,12 @@ The page contains a banner advising that “the `tabindex` attribute must not be
 
 He counters that it’s fine to use the `tabindex` attribute on the `dialog` element – it doesn’t break anything. So the “must not” feels weird. It’d be better to say nothing or say “It’s _unnecessary_ to put the tabindex attribute on the dialog element” because [`dialog` already handles focus well.](https://www.matuzo.at/blog/2023/focus-dialog/)
 
-He highlights another note on the MDN page: “Do not add the `tabindex` property to the `<dialog>` element as it is not interactive and does not receive focus.” Again he counters this, saying that the `dialog` element _does_ receive focus because _it is_ an interactive element. 
+Note: I’ve since read [a conversation between Manuel and Adrian Roselli](https://front-end.social/@matuzo/115428756116841830) and from what I can gather, applying `tabindex` to `dialog` is invalid HTML and the “must” implicitly says that. My takeaway: let’s not apply `tabindex` to `dialog`.
+
+Manuel highlights another note on the MDN page: “Do not add the `tabindex` property to the `<dialog>` element as it is not interactive and does not receive focus.” He counters the second part of that sentence, saying that the `dialog` element _does_ receive focus because _it is_ an interactive element. 
 
 [Dialogs are specifically mentioned in the list of interactive elements in the HTML Spec’s section on *Focus*](https://html.spec.whatwg.org/multipage/interaction.html#focus). Interactive elements are focusable and Manuel goes on to show that `dialog` meets the criteria for a *focusable area*.
 
 He provides proof of `dialog` being focusable too, demonstrating that when you open a `dialog` via `myDialog.showModal()` and the dialog contains no interactive elements, the `dialog` element itself has focus.
 
-All of which is to confirm: `dialog` is an interactive element.
+All of which is backs up Manuel’s assertion that `dialog` is an interactive element.
