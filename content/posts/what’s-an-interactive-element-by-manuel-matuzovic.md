@@ -20,7 +20,7 @@ Manuel sensed a general misunderstanding of what an interactive element is and w
 
 <!-- excerpt -->
 
-Aside: is `dialog` an interactive element?
+## Aside: is `dialog` an interactive element?
 
 Interestingly, Manuel was motivated to do this research after feeling confused when reading some guidance on [MDN’s Dialog element docs](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/dialog).
 
