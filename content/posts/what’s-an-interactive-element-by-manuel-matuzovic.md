@@ -43,6 +43,8 @@ He continues by explaining what _focusable_ means:
 > An element is focusable when it can be focused programmatically, e.g. via the `focus()` method or the `autofocus` attribute.
 >
 > Focusable elements can either be _sequentially focusable_, _click focusable_, both, or none of them.
+> 
+> Users can reach sequentially focusable elements by pressing the Tab key.
 
 And Manuel provides practical proof of `dialog` being focusable via two demos. His first demo shows that when you launch a `dialog` via a `button` that fires `myDialog.showModal()` and that `dialog` contains no interactive elements, the `dialog` element itself has focus. He outputs `document.activeElement.tagName` to the screen and its output is `DIALOG`. His second demo shows that an open dialog element (`<dialog open>`) is _click focusable_ (or _sequentially focusable_ depending on your choice of browser).
 
