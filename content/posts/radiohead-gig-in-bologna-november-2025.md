@@ -15,7 +15,7 @@ Great gig abroad for four pals who were equally excited to be there!
 
 Highlights for me included: 
 
-* the crackling pre-gig atmosphere: lovely ambient sounds followed by a fun audiovisual performance using the motorised black panels that called to mind \_Close Encounters of the Third Kind\_;
+* the crackling pre-gig atmosphere: lovely ambient sounds followed by a fun audiovisual performance via motorised black panels that called to mind _Close Encounters of the Third Kind_;
 * when Thom nimbly moved from standing mic to the piano for the chords at the end of *All I Need*; 
 * how beautiful the glockenspiel parts sounded throughout;
 * Thom’s atmospheric solo effort on *Exit Music* and the applause from Colin; and 
