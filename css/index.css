@@ -195,6 +195,10 @@
       border-left: var(--border-thick) solid var(--color-grey);
       padding-left: var(--space-xs);
       font-style: italic;
+
+      & > * + * {
+        margin-top: var(--flow-gap, var(--space-s));
+      }
     }
 
     img,
