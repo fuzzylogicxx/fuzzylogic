@@ -256,11 +256,18 @@
     }
 
     /* Code in text */
+
+    /* This covers instances of <code> in any heading */
+    code {
+      font-size: 0.9em; /* 3 */
+    }
+
     p > code,
     li > code,
     dd > code,
     td > code {
-      font-size: 0.95em; /* 3 */
+      font-size: 0.85em; /* 3 */
+      font-style: normal;
       background: #ffeff0;
       word-wrap: break-word;
 
