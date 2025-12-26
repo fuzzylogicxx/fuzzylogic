@@ -13,6 +13,14 @@ location: Bologna, Italy
 ---
 Great gig abroad for four pals who were equally excited to be there!
 
+Highlights for me included: 
+
+* the crackling pre-gig atmosphere: lovely ambient sounds followed by a fun audiovisual performance using the motorised black panels that called to mind \_Close Encounters of the Third Kind\_;
+* when Thom nimbly moved from standing mic to the piano for the chords at the end of *All I Need*; 
+* how beautiful the glockenspiel parts sounded throughout;
+* Thom’s atmospheric solo effort on *Exit Music* and the applause from Colin; and 
+* the amazing *The Daily Mail*.
+
 <!-- excerpt -->
 
 The set-list was as follows:
@@ -37,19 +45,13 @@ The set-list was as follows:
 18. Street Spirit (Fade Out)
 
 Encore:
+
 1. Let Down
-1. Weird Fishes/Arpeggi
-1. (Nice Dream)
-1. Present Tense
-1. The Daily Mail
-1. Paranoid Android
-1. Everything in Its Right Place
+2. Weird Fishes/Arpeggi
+3. (Nice Dream)
+4. Present Tense
+5. The Daily Mail
+6. Paranoid Android
+7. Everything in Its Right Place
 
 Source: [Radiohead setlist at Unipol Arena, Casalecchio di Reno, Italy](https://www.setlist.fm/setlist/radiohead/2025/unipol-arena-casalecchio-di-reno-italy-340c9d7.html)
-
-Highlights for me included: 
-- the crackling pre-gig atmosphere with ambient music followed by an audiovisual performance from the black panels that called to mind Close Encounters of the Third Kind;
-- when Thom nimbly moved from standing mic to the piano for the chords at the end of _All I Need_; 
-- how beautiful the glockenspiel parts sounded throughout; 
-- Thom’s atmospheric solo effort on _Exit Music_ including applause from Colin; and 
-- the amazing _The Daily Mail_.
