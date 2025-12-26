@@ -13,6 +13,8 @@ location: Bologna, Italy
 ---
 Great gig abroad for four pals who were equally excited to be there!
 
+<!-- excerpt -->
+
 The set-list was as follows:
 
 1. 2 + 2 = 5
