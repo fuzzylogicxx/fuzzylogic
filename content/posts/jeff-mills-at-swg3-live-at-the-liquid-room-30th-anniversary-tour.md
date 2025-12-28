@@ -25,7 +25,7 @@ In his first set Jeff flew through lots of the tracks he played on the 1995 mix 
 
 We had a great position up near the front, and it was a treat to once again enjoy signature Jeff moves like leaving two records live in the mix while turning around to rifle through his record box. Iconic stuff that brings a smile to your face.
 
-Jeff played for what felt like a couple of hours and at this point the night had delivered [exactly what it said on the tin](https://youtu.be/e7dx2Z9G7Mk?si=gZSb9rN02UfnX7sZ) and most folks would have gone home happy.
+Jeff played for what felt like a couple of hours and at this point the night had delivered [exactly what it said on the tin](https://youtu.be/e7dx2Z9G7Mk?si=gZSb9rN02UfnX7sZ) and most folks would have gone home happy. However this was the night that kept giving.
 
 Next, local DJ and good guy Mark Maxwell (aka *Mother*) took to the decks, giving Jeff a one-hour break. I can’t think of a much harder act to follow but Mark managed it. In delivering a serious set of heads-down techno he held the crowd and the mood brilliantly. No lazy selections, either. I can’t say I knew much of what I heard but at least one track sounded a bit like the *Ancient Methods* label. Bravo, Mark.
 
