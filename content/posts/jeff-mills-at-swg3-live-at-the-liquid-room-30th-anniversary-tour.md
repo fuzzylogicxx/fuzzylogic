@@ -1,9 +1,9 @@
 ---
 title: Jeff Mills at SWG3 - Live At The Liquid Room 30th Anniversary Tour
 description: Brilliant production by La Cheetah Club, with Jeff on vintage form
-noteWithTitle: true
 date: 2025-12-14T19:40
 tags:
+  - entry
   - gigs
   - jeffmills
   - techno
