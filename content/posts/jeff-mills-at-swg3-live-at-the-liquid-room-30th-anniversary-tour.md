@@ -15,11 +15,11 @@ There was a heavy whiff of nostalgia about this gig for me. Jeff Mills is curren
 
 <!-- excerpt -->
 
-We started our night at [Chinaskis](https://www.chinaskisglasgow.com/) which provided a good spot for our ten-strong party to meet, eat and get excited about the night ahead. And we really were excited. Jason, for example, had been attending the gym religiously for months in order to be able dance all night! There was also a hint of deja vu as many of us were also on my stag do at Dekmantel in 2016 where, again, Jeff was performing. On that occassion we bore witness to one of his best sets.
+We started our night at [Chinaskis](https://www.chinaskisglasgow.com/) which provided a good spot for our ten-strong party to meet, eat and get excited about the night ahead. And we really were excited. Jason, for example, had been attending the gym religiously for months in order to be able dance all night! There was also a hint of deja vu as many of us were also on my stag do at Dekmantel in 2016 where, again, Jeff was performing.
 
 We arrived at SWG3 early in order to see a documentary film about the *Live at the Liquid Room* recording. In it, Jeff described how he played a lot of brand new music including some on reel-to-reel and copper discs; how he used certain tones and frequencies to elicit big crowd reactions; and how the set paved the way for how a generation of producers and DJs would conceive, produce and program techno in the future.
 
-The end of the film gave way to the silhouette of the man himself behind a curtain (he likes a bit of drama). Excitingly, Jeff was back to playing vinyl for this gig just like in 1995. So – more crackles, more oomph, moree risk and – yes – more *mistakes*. Exactly the kind of edge-of-the-seat energy that was key to his 90s signature style that I loved.
+The end of the film gave way to the silhouette of the man himself behind a curtain (he likes a bit of drama). Excitingly, Jeff was back to playing vinyl for this gig just like in 1995. So – more crackles, more oomph, more risk and – yes – more *mistakes*. Exactly the kind of edge-of-the-seat energy that was key to his 90s signature style that I loved.
 
 In his first set Jeff flew through lots of the tracks he played on the 1995 mix album: plenty of [Axis](https://www.discogs.com/label/43-Axis) and [Purpose Maker](https://www.discogs.com/label/46-Purpose-Maker) favourites; the brilliant [Luke Slater remix of Ken Ishii’s *Extra*](https://randsrecords.bandcamp.com/track/luke-slater-remix); Surgeon’s *Magneze*. I also loved hearing other nineties belters like Fuse’s *Substance Abuse* and [Circuit Breaker’s *Overkill*](https://youtu.be/Mor-W1AC2Ks?si=_iTum5QV4HwkaLZu).
 
