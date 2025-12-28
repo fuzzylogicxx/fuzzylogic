@@ -43,3 +43,4 @@ PS: I’ve added below a few videos from the night which I’ve found around the
 - [Building layers](https://www.youtube.com/shorts/BKrODTpRWpg)
 - [Out of the darkness into the anthems](https://www.tiktok.com/@xcourtneypaton/video/7583683180826266902)
 - [Sonic Destroyer](https://www.tiktok.com/@xcourtneypaton/video/7583681490865638678)
+- [About ten shorts by Analog Dose](https://www.youtube.com/@analogdose/shorts)
