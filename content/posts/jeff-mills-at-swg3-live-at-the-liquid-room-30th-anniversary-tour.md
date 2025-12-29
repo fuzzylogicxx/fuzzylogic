@@ -9,6 +9,8 @@ tags:
   - techno
 location: Glasgow
 ---
+![Jeff Mills DJing at SWG3, surrounded by green light](/img/jb_mills_swg3.jpeg "Photo by Jason Brunton")
+
 My Saturday night was spent with good friends, enjoying amazing music.
 
 There was a heavy whiff of nostalgia about this gig for me. Jeff Mills is currently on a 30th anniversary tour of his mix album [Live at the Liquid Room](https://fuzzylogic.me/posts/pitchfork-review-mills-liquid-room/). I bought that album on cassette tape back then and was blown away by it. I subsequently saw him DJ in 1996. Since then I’ve experienced Jeff do his thing many times and in various places around the world. His sets are the stuff of legend!
@@ -37,10 +39,10 @@ Another vintage set from Jeff Mills, and a brilliant night with great friends. T
 
 PS: I’ve added below a few videos from the night which I’ve found around the internet. I don’t own any so I guess the links might only last for a while.
 
-- [End of documentary, start of live set](https://www.youtube.com/shorts/FWtEFekOegg)
-- [Alarms](https://www.youtube.com/shorts/Bst8IWDgVQI)
-- [Unknown techno belter](https://www.youtube.com/shorts/hvZgzMID570)
-- [Building layers](https://www.youtube.com/shorts/BKrODTpRWpg)
-- [Out of the darkness into the anthems](https://www.tiktok.com/@xcourtneypaton/video/7583683180826266902)
-- [Sonic Destroyer](https://www.tiktok.com/@xcourtneypaton/video/7583681490865638678)
-- [About ten shorts by Analog Dose](https://www.youtube.com/@analogdose/shorts)
+* [End of documentary, start of live set](https://www.youtube.com/shorts/FWtEFekOegg)
+* [Alarms](https://www.youtube.com/shorts/Bst8IWDgVQI)
+* [Unknown techno belter](https://www.youtube.com/shorts/hvZgzMID570)
+* [Building layers](https://www.youtube.com/shorts/BKrODTpRWpg)
+* [Out of the darkness into the anthems](https://www.tiktok.com/@xcourtneypaton/video/7583683180826266902)
+* [Sonic Destroyer](https://www.tiktok.com/@xcourtneypaton/video/7583681490865638678)
+* [About ten shorts by Analog Dose](https://www.youtube.com/@analogdose/shorts)
