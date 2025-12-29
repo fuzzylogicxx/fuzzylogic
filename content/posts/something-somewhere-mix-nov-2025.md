@@ -1,17 +1,9 @@
 ---
+title: Something, Somewhere (mix, Nov 2025)
 noteWithTitle: false
 draft: false
-mainImage:
-  url: https://res.cloudinary.com/fuzzylogic/image/upload/v1680028894/clyde_1400_mar2023_mozjpg_iejw5x.jpg
-  alt: Laurence in the Clyde Built studio at the Barras market
-  aspectRatioWidth: 1400
-  aspectRatioHeight: 1050
-mainImage.sizes: ""
-mainImage.isAnchor: false
 date: 2025-11-14T18:19
-mainImage.srcsetWidths: ""
-openGraphImage: https://res.cloudinary.com/fuzzylogic/image/upload/q_auto,f_auto,c_crop,g_north,w_1200,h_630/v1680028894/clyde_1400_mar2023_mozjpg_iejw5x.jpg
-title: Something, Somewhere (mix, Nov 2025)
+openGraphImage: https://fuzzylogic.me/img/HHbMABn0YS-1398.avif
 description: A 1 hr selection inna house / techno style
 tags:
   - entry
