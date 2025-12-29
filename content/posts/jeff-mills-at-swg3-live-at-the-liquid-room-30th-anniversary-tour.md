@@ -9,7 +9,7 @@ tags:
   - techno
 location: Glasgow
 ---
-![Jeff Mills DJing at SWG3, surrounded by green light](/img/jb_mills_swg3.jpeg "Photo by Jason Brunton")
+![Jeff Mills DJing at SWG3, surrounded by green light](/img/uploads/jb_mills_swg3.jpeg "Photo by Jason Brunton")
 
 My Saturday night was spent with good friends, enjoying amazing music.
 
