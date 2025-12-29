@@ -9,7 +9,7 @@ tags:
   - techno
 location: Glasgow
 ---
-My Friday night was spent with good friends, enjoying amazing music.
+My Saturday night was spent with good friends, enjoying amazing music.
 
 There was a heavy whiff of nostalgia about this gig for me. Jeff Mills is currently on a 30th anniversary tour of his mix album [Live at the Liquid Room](https://fuzzylogic.me/posts/pitchfork-review-mills-liquid-room/). I bought that album on cassette tape back then and was blown away by it. I subsequently saw him DJ in 1996. Since then I’ve experienced Jeff do his thing many times and in various places around the world. His sets are the stuff of legend!
 
