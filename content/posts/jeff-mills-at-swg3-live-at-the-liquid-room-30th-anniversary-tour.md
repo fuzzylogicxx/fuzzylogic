@@ -38,7 +38,13 @@ At one point when Jeff had taken the music to its most intense, it was accompani
 
 Another vintage set from Jeff Mills, and a brilliant night with great friends. This one will live long in the memory.
 
-PS: I’ve added below a few videos from the night which I’ve found around the internet. I don’t own any so I guess the links might only last for a while.
+## Sidenotes
+
+I noticed that one of the previous sets on the tour (in Tokyo, as far as I can tell) has had a recording and partial tracklist uploaded to mixesdb:
+
+[Jeff Mills at Liquid Room, Tokyo, 2025](https://www.mixesdb.com/w/2025-11-15_-_Jeff_Mills_@_30_Years_Liquid_Room,_Tokyo)
+
+I’ve also added below a few videos from the night which I’ve found around the internet. I don’t own any so I guess the links might only last for a while.
 
 * [End of documentary, start of live set](https://www.youtube.com/shorts/FWtEFekOegg)
 * [Alarms](https://www.youtube.com/shorts/Bst8IWDgVQI)
