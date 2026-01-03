@@ -12,13 +12,11 @@ location: Glasgow
 ---
 ![Jeff Mills DJing at SWG3, surrounded by green light](/img/uploads/jb_mills_swg3_v2.jpeg "Photo by Jason Brunton")
 
-My Saturday night was spent with good friends, enjoying amazing music.
-
-There was a heavy whiff of nostalgia about this gig for me. Jeff Mills is currently on a 30th anniversary tour of his mix album [Live at the Liquid Room](https://fuzzylogic.me/posts/pitchfork-review-mills-liquid-room/). I bought that album on cassette tape back then and was blown away by it. I subsequently saw him DJ in 1996. Since then I’ve experienced Jeff do his thing many times and in various places around the world. His sets are the stuff of legend!
+There was a heavy whiff of nostalgia about this gig for me. Jeff Mills is currently on a 30th anniversary tour of his mix album [Live at the Liquid Room](https://fuzzylogic.me/posts/pitchfork-review-mills-liquid-room/). I bought that album on cassette tape back then and was blown away by it. I subsequently first saw him DJ at the Arena in Glasgow in 1996. Since then I’ve experienced Jeff doing his thing many times and in various places around the world. His sets are the stuff of legend!
 
 <!-- excerpt -->
 
-We started our night at [Chinaskis](https://www.chinaskisglasgow.com/) which provided a good spot for our ten-strong party to meet, eat and get excited about the night ahead. And we really were excited. Jason, for example, had been attending the gym religiously for months in order to be able dance all night! There was also a hint of deja vu as many of us were also on my stag do at Dekmantel in 2016 where, again, Jeff was performing.
+We started our night at [Chinaskis](https://www.chinaskisglasgow.com/) which provided a good spot for our ten-strong party to meet, eat and get excited about the night ahead. And we really were excited. Jason, for example, had been attending the gym religiously for months in order to be able dance all night! There was also a hint of deja vu as many of our group were also on my stag do at Dekmantel in 2016 where, again, Jeff was performing.
 
 We arrived at SWG3 early in order to see a documentary film about the *Live at the Liquid Room* recording. In it, Jeff described how he played a lot of brand new music including some on reel-to-reel and copper discs; how he used certain tones and frequencies to elicit big crowd reactions; and how the set paved the way for how a generation of producers and DJs would conceive, produce and program techno in the future.
 
@@ -36,7 +34,7 @@ When Jeff returned to the decks he shifted to a different sound from his previou
 
 At one point when Jeff had taken the music to its most intense, it was accompanied by piercing green light and smoke surrounding the DJ booth – a really memorable audiovisual experience. To top it off, with the crowd practically on its knees Jeff pulls a handbreak turn into a huge piano vocal track and sends the place into orbit. (I didn’t recognise the track but its very much in the vein of vintage Detroit house from Yolanda or Bridgett Grace). From there he heads into soulful UR classics like [Timeline](https://youtu.be/j9GU2mv0j9A?si=9Z1PFeR4ub63fkG3) and even [Hi-tech Jazz](https://youtu.be/tkjDI_9sSz0?si=1EoloLGu8fLgrHlR). I really appreciate when a DJ takes you from deep into one mood to another completely – “angels and devils” as Derrick Carter once said – and Jeff is a master at that.
 
-Another vintage set from Jeff Mills, and a brilliant night with great friends. This one will live long in the memory.
+Another vintage set from Jeff Mills, and a brilliant night with great friends. Big up Jason, Tom, Craig, Alan, Gillian, Rob, Kirsty, Mark J, Andy P, Jamie, Jonathon, Marco, Steven B and all the other pals I bumped into on the night. This one will live long in the memory!
 
 ## Sidenotes
 
@@ -45,6 +43,14 @@ I noticed that one of the previous sets on the tour (in Tokyo, as far as I can t
 [Jeff Mills at Liquid Room, Tokyo, 2025](https://www.mixesdb.com/w/2025-11-15_-_Jeff_Mills_@_30_Years_Liquid_Room,_Tokyo)
 
 I’ve also added below a few videos from the night which I’ve found around the internet. I don’t own any so I guess the links might only last for a while.
+
+<lite-youtube videoid="FWtEFekOegg">
+  <a href="https://youtube.com/watch?v=Bst8IWDgVQI" class="lyt-playbtn" title="Play Video">
+    <span class="lyt-visually-hidden">Play Video: “Alarms” played by Jeff Mills at SWG3, Glasgow in Decemeber 2025</span>
+  </a>
+</lite-youtube>
+
+…and these too:
 
 * [End of documentary, start of live set](https://www.youtube.com/shorts/FWtEFekOegg)
 * [Alarms](https://www.youtube.com/shorts/Bst8IWDgVQI)
