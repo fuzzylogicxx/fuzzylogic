@@ -44,14 +44,6 @@ I noticed that one of the previous sets on the tour (in Tokyo, as far as I can t
 
 I’ve also added below a few videos from the night which I’ve found around the internet. I don’t own any so I guess the links might only last for a while.
 
-<lite-youtube videoid="FWtEFekOegg">
-  <a href="https://youtube.com/watch?v=Bst8IWDgVQI" class="lyt-playbtn" title="Play Video">
-    <span class="lyt-visually-hidden">Play Video: “Alarms” played by Jeff Mills at SWG3, Glasgow in Decemeber 2025</span>
-  </a>
-</lite-youtube>
-
-…and these too:
-
 * [End of documentary, start of live set](https://www.youtube.com/shorts/FWtEFekOegg)
 * [Alarms](https://www.youtube.com/shorts/Bst8IWDgVQI)
 * [Unknown techno belter](https://www.youtube.com/shorts/hvZgzMID570)
