@@ -20,6 +20,8 @@ This mix is a selection of my favourite house-ish records of recent years, plus 
 
 [Listen to the show on mixcloud.](https://www.mixcloud.com/laurencehughes/something-somewhere-dj-mix/)
 
+Or [download the mix](https://drive.google.com/file/d/1fu7Mxvx4aaTqMPEa2tONsNd7Oai9CZDW/view?usp=sharing) in higher quality.
+
 The tracklist is:
 
 1. Other Lands - The Caged Mind
