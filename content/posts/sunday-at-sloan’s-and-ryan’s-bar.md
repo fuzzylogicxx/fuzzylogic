@@ -9,7 +9,7 @@ tags:
   - friends
   - pub
   - food
-  - diningout
+  - dining-out
 location: Glasgow
 ---
 Hung out with Jason and Lydia, Aldo and Anna today at Sloan’s bar in town. It was a good day – I hadn’t seen the former two for a while and know they’ve had a rough time of late due to a death in the family. They were in good spirits and we enjoyed tasty but well-priced food and drinks. I had Venison Stew, having loved it so much on that [recent excursion to Wild Kabn](https://fuzzylogic.me/posts/2024-11-07-22-20/).
