@@ -11,6 +11,8 @@ tags:
   - marriage
   - edinburgh
 ---
+Lyla, Noto, Tipo, Aizle. Stuart Ralston.
+
 Drive a bit stressful – Edinburgh traffic a bit stressful. A lesson learned!
 
 They knew it was our wedding anniversary and mentioned this at the top of the menu, gave us a warm welcome and a free glass of fizz – nice touches.
