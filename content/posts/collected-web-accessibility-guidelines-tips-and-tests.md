@@ -174,17 +174,16 @@ When developing a collapsible menu, place your menu `<button>` _within_ your `<n
 
 ## Modal dialogues
 
-[You probably don’t want to set the modal’s heading as an `<h1>`](https://stackoverflow.com/a/38467898). It likely displays content that exists on the page (which already has an `<h1>`) at a lower level of the document hierarchy.
+[You probably don’t want to set the dialogue’s heading as an `<h1>`](https://stackoverflow.com/a/38467898). It likely displays content that exists on the page (which already has an `<h1>`) at a lower level of the document hierarchy.
 
 ## References
 
-* [Using HTML landmark roles to improve accessibility](https://developer.mozilla.org/en-US/blog/aria-accessibility-html-landmark-roles/) MDN article. And [Adrian R’s suggestions for additions](https://github.com/orgs/mdn/discussions/383)
+* [Using HTML landmark roles](https://developer.mozilla.org/en-US/blog/aria-accessibility-html-landmark-roles/) MDN article. And [Adrian R’s suggested additions](https://github.com/orgs/mdn/discussions/383)
 * [Navigation (landmark) role, on MDN](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/navigation_role)
-* Tetralogical’s [Quick Accessibility Tests](https://www.youtube.com/playlist?list=PLTqm2yVMMUKWTr9XWdW5hJ9tk512Ow0SE) YouTube playlist
+* [Tetralogical’s Quick Accessibility Tests video playlist](https://www.youtube.com/playlist?list=PLTqm2yVMMUKWTr9XWdW5hJ9tk512Ow0SE) and [Tetralogical’s accompanying article](https://tetralogical.com/blog/2022/01/18/quick-accessibility-tests-anyone-can-do/)
 * [Basic accessibility mistakes I often see in audits](https://gomakethings.com/basic-accessibility-mistakes-i-often-see-in-audits/) by Chris Ferdinandi
 * Sara Soueidan’s video tutorial [Practical tips for building more accessible front-ends](https://aneventapart.com/news/post/practical-tips-for-building-more-accessible-front-ends)
 * Adrian Roselli’s [Responsive type and zoom](https://adrianroselli.com/2019/12/responsive-type-and-zoom.html)
 * Heydon Pickering’s tweet about [buttons in navs](https://twitter.com/heydonworks/status/766948134169620480) and Scott O’Hara’s follow up article [Landmark Discoverability](https://www.scottohara.me/blog/2016/08/10/discovering-landmarks.html)
 * Tetralogical’s [Foundations: native versus custom components](https://tetralogical.com/blog/2022/11/08/foundations-native-versus-custom-components/)
 * Ben Myers on [where to use aria labelling attributes](https://benmyers.dev/blog/dont-use-aria-label-on-static-text-elements/)
-
