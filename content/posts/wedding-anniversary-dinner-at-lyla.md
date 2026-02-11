@@ -11,17 +11,19 @@ tags:
   - marriage
   - edinburgh
 ---
-Lyla, Noto, Tipo, Aizle. Stuart Ralston.
+For our ninth wedding anniversary we decided to break with standard convention and do something special. So we booked lunch at [Lyla](https://lylaedinburgh.co.uk/) located at Royal Terrace, Edinburgh.
 
-Drive a bit stressful – Edinburgh traffic a bit stressful. A lesson learned!
+<!-- excerpt -->
 
-They knew it was our wedding anniversary and mentioned this at the top of the menu, gave us a warm welcome and a free glass of fizz – nice touches.
+Lyla is part of the same group as Noto, Tipo, Aizle – the restaurants of chef Stuart Ralston. Clair worked with Stuart when doing the food photography for [his book](https://uk.bookshop.org/p/books/catalogued-ideas-and-random-thoughts-the-debut-cookbook-by-michelin-starred-chef-stuart-ralston-stuart-ralston/fdadea2ad1e09e2f?ean=9781739174019). 
 
-Decor and vibe lovely.
+After a stressful drive (less learned to never drive to and through Edinburgh on Saturday) we arrived with minutes to spare. The staff knew it was our wedding anniversary and gave us a warm welcome, a free glass of fizz and had personalised our menus – really nice touches.
 
-Food and drink:
+The decor and vibe is really lovely.
 
 Clair was driving but was happy for me to go for the wine pairing.
+
+Here’s what we had to eat and drink:
 
 * Alp blossom cheese, onion, quince
 * Lobster, kohlrabe, sake
@@ -35,6 +37,8 @@ Clair was driving but was happy for me to go for the wine pairing.
 * Plum, creme crue, sake. Paired with [Chateau tirecul la graviere, monbazillac sgn](https://ndjohn.co.uk/products/chateau-tirecul-la-graviere-monbazillac)
 * Malt dulcey bon bon, and kelp & white chocolate financier
 
-nice service including the somellier who hit the right balance of interesting without going too far, and Jade who had recently moved to Edinburgh from Glasgow southside. [](https://www.thewhiskyexchange.com/p/59963/dewazakura-dewasansan-junmai-ginjo)
+The amazing sake the most memorable part.
 
-Amazing sake the most memorable.
+Also, the service was great – including from the sommelier who hit the right balance of interesting without going too far, and from Jade our waitress who had recently moved to Edinburgh from Glasgow southside. [](https://www.thewhiskyexchange.com/p/59963/dewazakura-dewasansan-junmai-ginjo)
+
+A real treat – we loved it.
