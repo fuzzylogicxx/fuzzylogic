@@ -22,7 +22,7 @@ tags:
 ---
 Had a lot fun playing records live from the window of my local radio station.
 
-This selection spanned deep jazz, boogie, brazilian sounds and electronics. It’s tricky to stitch all that together in a coherent way so I’m always pleased and proud when I can pull it off.
+This selection spanned deep jazz, boogie, brazilian sounds and electronics.
 
 [Listen to the show on Soundcloud.](https://soundcloud.com/radiobuenavida/fuzzy-logic-w-laurence-hughes-radio-buena-vida-191122)
 
