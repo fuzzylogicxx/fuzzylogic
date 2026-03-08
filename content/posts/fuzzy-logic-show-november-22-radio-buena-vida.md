@@ -10,7 +10,7 @@ mainImage.sizes: ""
 mainImage.isAnchor: false
 description: I played a bunch of records spanning deep jazz, boogie, brazillian
   and electronics live from the window of my local radio station
-date: 2023-03-27T17:20:00.000Z
+date: 2022-02-19T22:20
 mainImage.srcsetWidths: ""
 openGraphImage: https://res.cloudinary.com/fuzzylogic/image/upload/q_auto,f_auto,c_crop,g_north,w_1200,h_630/v1680028894/clyde_1400_mar2023_mozjpg_iejw5x.jpg
 title: Fuzzy Logic show (November 22), Radio Buena Vida
