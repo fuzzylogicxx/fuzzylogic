@@ -21,7 +21,7 @@ This time I ventured from Japanese reggae and electronics via blissed out new Wa
 
 [Listen to the show on Soundcloud.](https://soundcloud.com/radiobuenavida/fuzzy-logic-w-laurence-hughes?si=97d1ce53d7074880a733431e2658ce2a&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing)
 
-Here’s the tracklist:
+Here’s what I played:
 
 1. Mark de Clive-Lowe – Present Past (Impressive Collective)
 2. Izumi “Mimi” Kobayashi & Tokyo Riddim Band – Lazy Love (Time Capsule)
