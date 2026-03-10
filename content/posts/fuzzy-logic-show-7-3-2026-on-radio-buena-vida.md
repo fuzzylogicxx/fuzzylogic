@@ -20,9 +20,11 @@ tags:
   - my-mixes
   - music
 ---
-Back in the cafe window for the first time since 2023 and it was a blast. Great also to catch up with [Tom](https://tomchurchill.com/) who was on before me, [Aldo 2Sox](https://2sox.bandcamp.com/) and Paul McGuire who were hanging out, and Jason who came along too. Lovely wee vibe!
+![Front cover of the Tokyo Riddim LP on Time Capsule, showing a bunch of people playing instruments and having a good time listening to music](/img/uploads/tokyo_riddim.jpg "The excellent Tokyo Riddim LP on Time Capsule – Japanese reggae!")
 
-On this show I ventured from Japanese reggae and electronics via blissed out Wah Wah Wino gear into my favourite from Tortoise’s amazing *Touch* LP before an upbeat finale.
+Back in the cafe window for the first time since 2023 and it was a blast. Great also to catch up with [Tom](https://tomchurchill.com/) who was on before me, [Aldo 2Sox](https://2sox.bandcamp.com/) and Paul McGuire who were hanging out, and Jason who popped in too.
+
+This time I ventured from Japanese reggae and electronics via blissed out new Wah Wah Wino gear into my favourite from Tortoise’s amazing *Touch* LP, before an upbeat finale.
 
 [Listen to the show on Soundcloud.](https://soundcloud.com/radiobuenavida/fuzzy-logic-w-laurence-hughes?si=97d1ce53d7074880a733431e2658ce2a&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing)
 
