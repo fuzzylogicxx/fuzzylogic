@@ -1,20 +1,11 @@
 ---
-noteWithTitle: true
 draft: false
-mainImage:
-  url: https://res.cloudinary.com/fuzzylogic/image/upload/v1680028894/clyde_1400_mar2023_mozjpg_iejw5x.jpg
-  alt: Laurence in the Clyde Built studio at the Barras market
-  aspectRatioWidth: 1400
-  aspectRatioHeight: 1050
-mainImage.sizes: ""
-mainImage.isAnchor: false
 description: Back in the cafe window for the first time since 2023
 date: 2026-03-08T18:41
-mainImage.srcsetWidths: ""
-openGraphImage: https://res.cloudinary.com/fuzzylogic/image/upload/q_auto,f_auto,c_crop,g_north,w_1200,h_630/v1680028894/clyde_1400_mar2023_mozjpg_iejw5x.jpg
+openGraphImage: https://fuzzylogic.me/img/GD_Sr6fxwR-1200.jpeg
 title: Fuzzy Logic show, 7/3/2026 on Radio Buena Vida
 tags:
-  - note
+  - entry
   - radio
   - mix
   - my-mixes
@@ -22,7 +13,9 @@ tags:
 ---
 ![Front cover of the Tokyo Riddim LP on Time Capsule, showing a bunch of people playing instruments and having a good time listening to music](/img/uploads/tokyo_riddim.jpg "The excellent Tokyo Riddim LP on Time Capsule – Japanese reggae!")
 
-Back in the cafe window for the first time since 2023 and it was a blast. Great also to catch up with [Tom](https://tomchurchill.com/) who was on before me, [Aldo 2Sox](https://2sox.bandcamp.com/) and Paul McGuire who were hanging out, and Jason who popped in too.
+Back playing in the cafe window for the first time since 2023 and it was a blast. 
+
+<!-- excerpt -->
 
 This time I ventured from Japanese reggae and electronics via blissed out new Wah Wah Wino gear into my favourite from Tortoise’s amazing *Touch* LP, before an upbeat finale.
 
@@ -49,4 +42,4 @@ Here’s the tracklist:
 17. Larry P. Rauson – Music Mental #4 (New Generation)
 18. Romaal Kultan – Lock (Self-released) 
 
-Thanks to Speedy, Susan and the RBV team for having me.
+Thanks to Speedy, Susan and the RBV team for having me. Great also to catch up with [Tom](https://tomchurchill.com/) who was on before me, [Aldo 2Sox](https://2sox.bandcamp.com/) and Paul McGuire who were hanging out, and Jason who popped in too.
