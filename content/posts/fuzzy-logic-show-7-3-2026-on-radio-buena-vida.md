@@ -17,18 +17,34 @@ tags:
   - note
   - radio
   - mix
+  - my-mixes
   - music
 ---
-Back in the cafe window for the first time since 2023 and it was a blast. 
+Back in the cafe window for the first time since 2023 and it was a blast. Great also to catch up with [Tom](https://tomchurchill.com/) who was on before me, [Aldo 2Sox](https://2sox.bandcamp.com/) and Paul McGuire who were hanging out, and Jason who came along too. Lovely wee vibe!
 
-Great to catch up with Tom who did his show just before me, Aldo 2Sox and Paul McGuire who were in the café, and Jason who came along especially.
+On this show I ventured from Japanese reggae and electronics via blissed out Wah Wah Wino gear into my favourite from Tortoise’s amazing *Touch* LP before an upbeat finale.
 
-Listen to the show on Souncloud.
+[Listen to the show on Soundcloud.](https://soundcloud.com/radiobuenavida/fuzzy-logic-w-laurence-hughes?si=97d1ce53d7074880a733431e2658ce2a&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing)
 
 Here’s the tracklist:
 
-1. Mark de Clive-Lowe – Past Present
-2. …
-3. Recloose – Like it used to be
+1. Mark de Clive-Lowe – Present Past (Impressive Collective)
+2. Izumi “Mimi” Kobayashi & Tokyo Riddim Band – Lazy Love (Time Capsule)
+3. Man Prince – Everyone has got to go (Snowball)
+4. Officer John – Handle (Wah Wah Wino)
+5. Tokio Ono – Mr Maric (Accidental)
+6. Motorbremsen – Gloria (Born to shine)
+7. YAYA – My Diner (Shinjuku tracks)
+8. Photay – Derecho (Mexican Summer)
+9. Tortoise – Organesson (International Anthem)
+10. Jimi Tenor – Release Me! (Fluid Ounce)
+11. Track Abdullah Rock – Night Rockers, Pt. I (72 Voksenmusik)
+12. Recloose – Like it used to be (100 Limousines)
+13. The Cool Notes – Natural Energy (Abstract Dance)
+14. Abacus – Music for table tennis (D3 Elements)
+15. Kyle Hall – Ghost Dog (Forget the clock)
+16. Psyance - Andromeda’s Dance
+17. Larry P. Rauson – Music Mental #4 (New Generation)
+18. Romaal Kultan – Lock (Self-released) 
 
 Thanks to Speedy, Susan and the RBV team for having me.
