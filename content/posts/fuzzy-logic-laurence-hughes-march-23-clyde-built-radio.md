@@ -3,10 +3,11 @@ date: 2023-03-27T17:20:00Z
 title: Fuzzy Logic show (March 23), Clyde Built Radio
 description: A 1 hr selection of reggae, electronics and more for March
 tags:
-- radio
-- mix
-- music
 - note
+- mix
+- my-mixes
+- radio
+- music
 noteWithTitle: true
 mainImage:
   url: https://res.cloudinary.com/fuzzylogic/image/upload/v1680028894/clyde_1400_mar2023_mozjpg_iejw5x.jpg

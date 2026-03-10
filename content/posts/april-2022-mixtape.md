@@ -13,6 +13,7 @@ tags:
 - electronic
 - reggae
 - mix
+- my-mixes
 - music
 noteWithTitle: true
 location: Malaga, Spain

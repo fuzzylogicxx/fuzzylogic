@@ -2,13 +2,13 @@
 date: "2021-01-07T21:26:38.588Z"
 title: 07/01/21 DJ Mix – Manifold
 description: First in a series of mainly short, off the cuff mixes where I just hit record and see where it goes.
-tags: [entry, music, mix, electro, techno, isonoe]
+tags: [entry, music, mix, my-mixes, electro, techno, isonoe]
 ---
 First in a series of mainly short, off the cuff mixes where I just hit record and see where it goes. This one’s on the Electro tip, having kicked it off with Versalife’s _Manifold_ from last year.
 
 <iframe title="“07/01/21 DJ Mix – Manifold by Laurence Hughes" width="100%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&feed=%2Flaurencehughes%2F7121-mix-manifold%2F" frameborder="0" ></iframe>
 
-## Tracklist: 
+## Tracklist:
 
 1. Versalife – Manifold
 1. Carl Finlow – Components

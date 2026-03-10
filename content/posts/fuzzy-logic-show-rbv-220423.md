@@ -3,10 +3,11 @@ date: 2023-04-24T17:20:00Z
 title: Fuzzy Logic show (April 23), Radio Buena Vida
 description: Featuring Matt Wilde, Robert Ffrench, Ryuichi Sakamoto, Mac deMarco and more. Enjoy!
 tags:
-- radio
-- mix
-- music
 - note
+- mix
+- my-mixes
+- music
+- radio
 noteWithTitle: true
 draft: false
 
