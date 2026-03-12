@@ -15,11 +15,11 @@ tags:
 
 I was back playing in the RBV cafe window for the first time since 2023, and it was a blast!
 
+[Listen to the show on Soundcloud.](https://soundcloud.com/radiobuenavida/fuzzy-logic-w-laurence-hughes?si=97d1ce53d7074880a733431e2658ce2a&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing)
+
 <!-- excerpt -->
 
-This time I ventured from Japanese reggae and electronics via blissed out new Wah Wah Wino gear into my favourite from Tortoise’s amazing *Touch* LP, before an upbeat finale.
-
-[Listen to the show on Soundcloud.](https://soundcloud.com/radiobuenavida/fuzzy-logic-w-laurence-hughes?si=97d1ce53d7074880a733431e2658ce2a&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing)
+For this mix I ventured from Japanese reggae and electronics via blissed out new Wah Wah Wino gear into my favourite from Tortoise’s amazing *Touch* LP, before an upbeat finale.
 
 Here’s what I played:
 
@@ -27,7 +27,7 @@ Here’s what I played:
 2. Izumi “Mimi” Kobayashi & Tokyo Riddim Band – Lazy Love (Time Capsule)
 3. Man Prince – Everyone has got to go (Snowball)
 4. Officer John – Handle (Wah Wah Wino)
-5. Tokio Ono – Mr Maric (Accidental)
+5. Tokio Ono – Mr Maric (Accidental meetings)
 6. Motorbremsen – Gloria (Born to shine)
 7. YAYA – My Diner (Shinjuku tracks)
 8. Photay – Derecho (Mexican Summer)
