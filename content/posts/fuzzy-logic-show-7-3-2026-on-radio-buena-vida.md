@@ -11,7 +11,7 @@ tags:
   - my-mixes
   - music
 ---
-![Front cover of the Tokyo Riddim LP on Time Capsule, showing a bunch of people playing instruments and having a good time listening to music](/img/uploads/tokyo_riddim.jpg "The excellent Tokyo Riddim LP on Time Capsule – Japanese reggae!")
+![Front cover of the Tokyo Riddim LP on Time Capsule, showing a bunch of people playing instruments and having a good time listening to music](/img/uploads/tokyo_riddim_v2.jpg "The excellent Tokyo Riddim LP on Time Capsule – Japanese reggae!")
 
 I was back playing in the RBV cafe window for the first time since 2023, and it was a blast!
 
