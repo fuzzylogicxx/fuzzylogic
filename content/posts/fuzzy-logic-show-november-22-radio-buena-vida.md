@@ -9,6 +9,7 @@ tags:
   - note
   - radio
   - mix
+  - my-mixes
   - music
 ---
 Had a lot fun playing records live from the window of my local radio station.

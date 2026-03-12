@@ -3,10 +3,11 @@ date: 2023-02-26T11:06:08Z
 title: Fuzzy Logic show (Feb ‘23), Clyde Built Radio
 description: On February 12th, 2023 I recorded a live show on Clyde Built Radio.
 tags:
-- radio
-- mix
-- music
 - note
+- mix
+- my-mixes
+- music
+- radio
 noteWithTitle: true
 linkTarget: ''
 mainImage:

@@ -8,6 +8,7 @@ description: A 1 hr selection inna house / techno style
 tags:
   - entry
   - mix
+  - my-mixes
   - music
 ---
 ![A group of people gathered in a darkened room illuminated by deep reds and ambers](/img/uploads/somethingsomewhere.jpg "Photo by Clair Irwin")

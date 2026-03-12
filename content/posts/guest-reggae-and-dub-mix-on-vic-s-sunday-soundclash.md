@@ -4,12 +4,13 @@ title: Guest reggae and dub mix on Vic’s Sunday Soundclash
 description: I recently recorded a guest DJ mix for the Vic’s Sunday Soundclash show
   on Radio Magnetic.
 tags:
+- note
 - radio
 - dub
 - reggae
 - mix
+- my-mixes
 - music
-- note
 noteWithTitle: true
 linkTarget: ''
 mainImage.url: ''
