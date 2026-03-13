@@ -11,7 +11,7 @@ tags:
   - my-mixes
   - music
 ---
-![Front cover of the Tokyo Riddim LP on Time Capsule, showing a bunch of people playing instruments and having a good time listening to music](/img/uploads/tokyo_riddim_v2.jpg "The excellent Tokyo Riddim LP on Time Capsule – Japanese reggae!")
+![A section of the front cover of the LP “past present (tone poems across time)” by Mark de Clive-Lowe. It depicts a scene in Japan where a businessman in a suit stands in front of the entrance to a traditional building or temple.](/img/uploads/mark-past-present.jpg "The excellent “past present” LP by Mark de Clive-Lowe")
 
 I was back playing in the RBV cafe window for the first time since 2023, and it was a blast!
 
