@@ -1,0 +1,18 @@
+---
+layout: layouts/page.njk
+title: Mixes
+permalink: mixes/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber }}/{% endif %}index.html
+pagination:
+  data: collections.my-mixes
+  size: 10
+  reverse: true
+  alias: mixes
+---
+{% set postslist = mixes %}
+{% include "postslist.njk" %}
+
+<nav class="traverse" aria-label="Pagination">
+  {%- if pagination.nextPageHref %}<a rel="prev" href="{{ pagination.nextPageHref }}"><span aria-hidden="true">←</span> Older mixes</a>{%- endif %}
+  {%- if pagination.previousPageHref %}<a rel="next" href="{{ pagination.previousPageHref }}">Newer mixes <span aria-hidden="true">→</span></a>{%- endif %}
+</nav>
+
