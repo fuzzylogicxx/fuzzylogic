@@ -1,9 +1,9 @@
 ---
 draft: false
+title: Fuzzy Logic show, 7/3/2026 on Radio Buena Vida
 description: Back in the cafe window for the first time since 2023
 date: 2026-03-08T18:41
 openGraphImage: https://fuzzylogic.me/img/GD_Sr6fxwR-1200.jpeg
-title: Fuzzy Logic show, 7/3/2026 on Radio Buena Vida
 tags:
   - entry
   - radio
@@ -11,15 +11,15 @@ tags:
   - my-mixes
   - music
 ---
-![Front cover of the Tokyo Riddim LP on Time Capsule, showing a bunch of people playing instruments and having a good time listening to music](/img/uploads/tokyo_riddim_v2.jpg "The excellent Tokyo Riddim LP on Time Capsule – Japanese reggae!")
+![A section of the front cover of the LP “past present (tone poems across time)” by Mark de Clive-Lowe. It depicts a scene in Japan where a businessman in a suit stands in front of the entrance to a traditional building or temple.](/img/uploads/mark-past-present.jpg "The excellent “past present” LP by Mark de Clive-Lowe")
 
 I was back playing in the RBV cafe window for the first time since 2023, and it was a blast!
 
-[Listen to the show on Soundcloud.](https://soundcloud.com/radiobuenavida/fuzzy-logic-w-laurence-hughes?si=97d1ce53d7074880a733431e2658ce2a&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing)
-
-For this mix I ventured from Japanese reggae and electronics via blissed out new Wah Wah Wino gear into my favourite from Tortoise’s amazing *Touch* LP, before an upbeat finale.
-
 <!-- excerpt -->
+
+This time I ventured from Japanese reggae and electronics via blissed out new Wah Wah Wino gear into my favourite from Tortoise’s amazing *Touch* LP, before an upbeat finale.
+
+[Listen to the show on Soundcloud.](https://soundcloud.com/radiobuenavida/fuzzy-logic-w-laurence-hughes?si=97d1ce53d7074880a733431e2658ce2a&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing)
 
 Here’s what I played:
 
@@ -27,7 +27,7 @@ Here’s what I played:
 2. Izumi “Mimi” Kobayashi & Tokyo Riddim Band – Lazy Love (Time Capsule)
 3. Man Prince – Everyone has got to go (Snowball)
 4. Officer John – Handle (Wah Wah Wino)
-5. Tokio Ono – Mr Maric (Accidental meetings)
+5. Tokio Ono – Mr Maric (Accidental)
 6. Motorbremsen – Gloria (Born to shine)
 7. YAYA – My Diner (Shinjuku tracks)
 8. Photay – Derecho (Mexican Summer)
