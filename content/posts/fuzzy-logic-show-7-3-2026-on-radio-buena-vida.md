@@ -17,9 +17,9 @@ I was back playing in the RBV cafe window for the first time since 2023, and it 
 
 [Listen to the show on Soundcloud.](https://soundcloud.com/radiobuenavida/fuzzy-logic-w-laurence-hughes?si=97d1ce53d7074880a733431e2658ce2a&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing)
 
-<!-- excerpt -->
-
 For this mix I ventured from Japanese reggae and electronics via blissed out new Wah Wah Wino gear into my favourite from Tortoise’s amazing *Touch* LP, before an upbeat finale.
+
+<!-- excerpt -->
 
 Here’s what I played:
 
