@@ -4,7 +4,7 @@ title: Search
 description: Seek and ye might find.
 eleventyNavigation:
   key: Search
-  order: 5
+  order: 6
 ---
 
 {#- Add the page-find web component JS to the JavaScript bundle #}
