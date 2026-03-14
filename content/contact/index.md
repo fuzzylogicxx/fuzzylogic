@@ -23,7 +23,7 @@ I’m not on social media much these days so this is a good way to start the con
     </div>
     <div class="form__field">
       <label for="message">Message</label>
-      <textarea id="message" name="message" row="5" cols="20"></textarea>
+      <textarea id="message" name="message" rows="5" cols="20"></textarea>
     </div>
     <div>
       <button type="submit">Send message</button>
