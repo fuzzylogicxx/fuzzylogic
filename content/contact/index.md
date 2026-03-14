@@ -3,7 +3,7 @@ layout: layouts/page.njk
 title: Contact
 eleventyNavigation:
   key: Contact
-  order: 4
+  order: 5
 ---
 
 Want to get in touch? Please do, I’d love to hear from you! (Especially if you’re friendly and not trying to sell me something).

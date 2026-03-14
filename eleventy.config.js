@@ -135,7 +135,7 @@ export default async function(eleventyConfig) {
 		templateData: {
 			eleventyNavigation: {
 				key: "RSS",
-				order: 2
+				order: 3
 			}
 		},
 		collection: {
