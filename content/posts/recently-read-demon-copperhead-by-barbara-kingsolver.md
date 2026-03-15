@@ -11,7 +11,9 @@ tags:
 ---
 This retelling of Dickens’ _David Copperfield_ set in Appalachia was a long but brilliant read.
 
-Demon is a likeable character and his resilience in the face of a life-long struggle against the odds makes for an addictive read. I loved his pride in and sense of belonging to his home. I was struck by the anger that he and his mentors felt about how their region area had been mistreated, plundered and stigmatised. 
+<!-- excerpt -->
+
+Demon is a likeable character and his resilience in the face of a life-long struggle against the odds makes for an addictive read. I loved his pride in and sense of belonging to his home. I was struck by the anger that he and his mentors felt about how their region had been mistreated, plundered and stigmatised. 
 
 And I found it a really clever choice to set this version of the story against the backdrop of the OxyContin scandal and opioid addiction epidemic in the United States, although some sections were heartbreaking.
 
