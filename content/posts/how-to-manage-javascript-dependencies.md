@@ -4,15 +4,13 @@ description: How to manage JavaScript Dependencies
 date: "2019-10-23T16:58:08.051Z"
 tags: [entry, development, javascript, yarn, npm, nodejs, tooling, howto]
 ---
-Managing JavaScript dependencies is about as much fun as a poke in the eye. However even if—like me—you prefer to keep things [lean](https://leanweb.dev/) and dependency-free as far as possible, it’s something you’re going to need to do either in large work projects or as your personal side-project grows. In this post I tackle it head-on to reduce the problem to some simple concepts and practical techniques.
+Managing a project’s third-party JavaScript dependencies is about as much fun as a poke in the eye. However even if you’re like me and prefer keeping things [lean](https://leanweb.dev/) and dependency-free as far as possible, it’s something you’re likely to need to do either in large work projects or as your personal side-project grows. In this post I tackle it head-on to reduce the problem to some simple concepts and practical techniques.
 
-In modern JavaScript applications, we can add tried-and-tested open source libraries and utilities by installing [packages](https://docs.npmjs.com/about-packages-and-modules) from the [NPM registry](https://www.npmjs.com/). This can aid development by letting you concentrate on your application’s _unique features_ rather than reinventing the wheel for already-solved common tasks.
+Why do we install JavaScript package dependencies? For many different reasons. Perhaps you want some developer tools such as linters, code formatters and testing libraries. Maybe you want a polyfill/ponyfill for a new or partially-implemented standard (such as [template-parts](https://github.com/github/template-parts)) so you can safely use that feature. Perhaps you’ve decided that some JavaScript library is critical to your application – it could be a static site generator like Eleventy which runs at build-time, or a whole client-side JavaScript application framework like React. This approach of using some third-party tools can aid development by letting you concentrate on your application’s _unique features_ rather than reinventing the wheel for already-solved common tasks.
 
-A typical example might be to add [axios](https://www.npmjs.com/package/axios) or [node-fetch](https://www.npmjs.com/package/node-fetch) to a Node.js project to provide a means of making API calls.
+In modern applications we can add tried-and-tested open source JavaScript tools, utilities and libraries by installing the relevant [package](https://docs.npmjs.com/about-packages-and-modules) from the [NPM registry](https://www.npmjs.com/). We do this using a _package manager_ such as [npm](https://www.npmjs.com/get-npm) or [yarn](https://yarnpkg.com/). When you or collaborators install a dependency, it manifests itself as a _module_ – a file or directory in the `node_modules` directory that can be loaded by the Node.js `require()` or `import` syntax.
 
-We can use a _package manager_ such as [yarn](https://yarnpkg.com/) or [npm](https://www.npmjs.com/get-npm) to install packages. When our package manager installs a package it logs it as a project _dependency_ which is to say that the project depends upon its presence to function properly. 
-
-It then follows that anyone who wants to run the application should first install its dependencies. 
+When our package manager installs a package it logs it in the file `package.json` as a project _dependency_, which is to say that the project depends upon its presence to function properly. It then follows that anyone who wants to run the application should first install its dependencies.
 
 And it’s the responsibility of the project owner (you and your team) to manage the project’s dependencies over time. This involves:
 
@@ -29,7 +27,7 @@ The whole process might go something like this (NB install [yarn](https://yarnpk
 <figure>
   
 ``` bash
-# Start installing and managing 3rd-party packages.
+# In a new project, start installing and managing 3rd-party packages.
 # (only required if your project doesn’t already have a package.json)
 yarn init  # or npm init
 
