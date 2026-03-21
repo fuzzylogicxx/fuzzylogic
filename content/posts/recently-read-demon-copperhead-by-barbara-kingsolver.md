@@ -9,7 +9,9 @@ tags:
   - dopesick
   - oxycontin
 ---
-This retelling of Dickens’ _David Copperfield_ set in Appalachia was a long but brilliant read.
+![A paperback copy of Barbara Kingsolver’s book “Demon Copperhead” sitting atop a wooden table](/img/uploads/img_4531.jpeg "Barbara Kingsolver’s “Demon Copperhead”")
+
+This retelling of Dickens’ *David Copperfield* set in Appalachia was a long but brilliant read.
 
 <!-- excerpt -->
 
