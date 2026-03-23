@@ -11,7 +11,7 @@ tags:
   - my-mixes
   - music
 ---
-![A section of the front cover of the LP “past present (tone poems across time)” by Mark de Clive-Lowe. It depicts a scene in Japan where a businessman in a suit stands in front of the entrance to a traditional building or temple.](/img/uploads/mark-past-present_v2.jpg "The excellent “past present” LP by Mark de Clive-Lowe")
+![A section of the front cover of the LP “past present (tone poems across time)” by Mark de Clive-Lowe. It depicts a scene in Japan where a businessman in a suit stands in front of the entrance to a traditional building or temple.](/img/uploads/mark-past-present_v3.jpg "The excellent “past present” LP by Mark de Clive-Lowe")
 
 I was back playing in the RBV cafe window for the first time since 2023, and it was a blast!
 
