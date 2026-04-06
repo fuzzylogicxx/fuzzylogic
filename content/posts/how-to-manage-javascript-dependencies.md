@@ -6,9 +6,11 @@ tags: [entry, development, javascript, yarn, npm, nodejs, tooling, howto]
 ---
 Managing a project’s third-party JavaScript dependencies is about as much fun as a poke in the eye. However even if you’re like me and prefer keeping things [lean](https://leanweb.dev/) and dependency-free as far as possible, it’s something you’re likely to need to do either in large work projects or as your personal side-project grows. In this post I tackle it head-on to reduce the problem to some simple concepts and practical techniques.
 
-Why do we install JavaScript package dependencies? For many different reasons. Perhaps you want some developer tools such as linters, code formatters and testing libraries. Maybe you want a polyfill/ponyfill for a new or partially-implemented standard (such as [template-parts](https://github.com/github/template-parts)) so you can safely use that feature. Perhaps you’ve decided that some JavaScript library is critical to your application – it could be a static site generator like Eleventy which runs at build-time, or a whole client-side JavaScript application framework like React. This approach of using some third-party tools can aid development by letting you concentrate on your application’s _unique features_ rather than reinventing the wheel for already-solved common tasks.
+Why do we install JavaScript package dependencies? For many different reasons. Perhaps you want developer tools such as a linter, code formatter or testing library. Or a tool to convert SCSS to CSS, or to minify CSS. Maybe you want a polyfill/ponyfill for an emergent or partially-implemented web standard (such as [template-parts](https://github.com/github/template-parts)) so that you can safely use that feature. Perhaps you’ve decided that some JavaScript library is critical to your application – maybe a static site generator like Eleventy which runs at build-time, or a whole client-side JavaScript application framework like React. Whichever it is, the approach of installing and using some third-party tools can aid development by letting you concentrate on your application’s _unique features_ rather than reinventing the wheel for already-solved common tasks.
 
 In modern applications we can add tried-and-tested open source JavaScript tools, utilities and libraries by installing the relevant [package](https://docs.npmjs.com/about-packages-and-modules) from the [NPM registry](https://www.npmjs.com/). We do this using a _package manager_ such as [npm](https://www.npmjs.com/get-npm) or [yarn](https://yarnpkg.com/). When you or collaborators install a dependency, it manifests itself as a _module_ – a file or directory in the `node_modules` directory that can be loaded by the Node.js `require()` or `import` syntax.
+
+In modern applications we can add tried-and-tested open source JavaScript tools, utilities and libraries by installing the relevant [package](https://docs.npmjs.com/about-packages-and-modules) from the [NPM registry](https://www.npmjs.com/). We do this using a _package manager_ such as [npm](https://www.npmjs.com/get-npm) or [yarn](https://yarnpkg.com/). When you or your collaborators install a dependency, it manifests itself as a _module_ – a file or directory in the `node_modules` directory. You can then load that module into a server-side JavaScript file via Node.js’s `require` (for older CommonJS modules) or `import` (for newer ES modules) functions.
 
 When our package manager installs a package it logs it in the file `package.json` as a project _dependency_, which is to say that the project depends upon its presence to function properly. It then follows that anyone who wants to run the application should first install its dependencies.
 
@@ -26,7 +28,7 @@ The whole process might go something like this (NB install [yarn](https://yarnpk
 
 <figure>
   
-``` bash
+```bash
 # In a new project, start installing and managing 3rd-party packages.
 # (only required if your project doesn’t already have a package.json)
 yarn init  # or npm init
@@ -73,15 +75,33 @@ yarn upgrade-interactive -—latest
 
 If you host your source code on GitHub it’s a great idea to enable [Dependabot](https://github.blog/2020-06-01-keep-all-your-packages-up-to-date-with-dependabot/). Essentially Dependabot has your back with regard to any dependencies that need updated. You set it to send you automated security updates by email so that you know straight away if a vulnerability has been detected in one of your project dependencies and requires action. 
 
-Helpfully, if you have multiple Github repos and more than one of those include the vulnerable package you also get a round-up email with a message something like “A new security advisory on lodash affects 8 of your repositories” with links to the alert for each repo, letting you manage them all at once.
+Helpfully, if you have multiple Github repos and more than one of those include the vulnerable package you also get a round-up email with a message something like “A new security advisory on lodash affects 8 of your repositories” with links to the alert for each repo, letting you manage them all at once. Dependabot also works for a variety of languages and techologies—not just JavaScript—so for example in a Rails project it might email you to suggest bumping a package in your `Gemfile`.
 
-Dependabot also works for a variety of languages and techologies—not just JavaScript—so for example in a Rails project it might email you to suggest bumping a package in your `Gemfile`.
+### Practical example 
 
-### Automated upgrades
+Let’s assume you’ve just recieved a security advisory alert regarding the `minimatch` package.
 
-Sometimes the task is straightforward. The Dependabot alert email tells you about a vulnerability in a package you explicitly installed and the diligent maintainer has already made a patch release available.
+You can’t see any mention of `minimatch` in your repo’s `package.json` so the next thing to do is run the following:
 
-A simple `upgrade` to the relevant patch version would do the job, however [Dependabot can even take care of that for you!](https://docs.github.com/en/github/managing-security-vulnerabilities/configuring-dependabot-security-updates) Dependabot can automatically open a new Pull Request which addresses the vulnerability by updating the relevant dependency. It’ll give the PR a title like
+```bash
+npm ls minimatch
+```
+
+That’ll provide a friendly, condensed dependency tree view from which you’ll see that in your application, `minimatch` is a _transitive dependency_ (a dependency of a dependency). Specifically, your _direct dependencies_ `11ty` and `eslint` both have a dependency on `minimatch`.
+
+Assuming the fix version of the package is within the semver range you’ve already specified you can easily fix the issue with the following command:
+
+```bash
+npm update minimatch
+```
+
+This will update all the packages listed in your command to the latest version (specified by the tag config), respecting the semver constraints of both your package and its dependencies (if they also require the same package).
+
+By default `npm update` will not update the semver values of direct dependencies in your project `package.json`. If you want to also update values in `package.json` you can run: `npm update --save`.
+
+### Automated updates
+
+While it’s good to know how to do the above manually, note that for straightforward security fixes [you can have Dependabot speed up and simplify the process for you.](https://docs.github.com/en/github/managing-security-vulnerabilities/configuring-dependabot-security-updates) You can configure Dependabot to automatically open new Pull Requests to address vulnerabilities by updating the relevant dependency. It’ll give the PR a title like:
 
 > Bump `lodash` from `4.17.11` to `4.17.19`
 
@@ -91,7 +111,7 @@ Note 1: if you work on a corporate repo that is not set up to “automatically o
 
 Note 2: Dependabot can also be set to do automatic version updates even when your installed version does not have a vulnerability. You can enable this by [adding a `dependabot.yml` to your repo](https://github.blog/2020-06-01-keep-all-your-packages-up-to-date-with-dependabot/#keep-all-your-dependencies-updated). But so far I’ve tended to avoid unpredictability and excess noise by having it manage security updates only.
 
-### Manual upgrades
+### Gnarly manual updates
 
 Sometimes Dependabot will alert you to an issue but is unable to fix it for you. Bummer.
  
@@ -161,13 +181,12 @@ Check for vulnerabilities like so:
 
 <figure>
 
-``` bash
+```bash
 yarn audit
 
 # for a specific level only
 yarn audit --level critical
-yarn audit --level high
-  
+yarn audit --level high  
 ```
 
 </figure>
