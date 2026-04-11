@@ -9,7 +9,7 @@ tags:
   - book
   - hiphop
 ---
-![A paperback copy of Dan Charnas’s book “Dilla Time” sitting on a wooden table](/img/uploads/img_28282001_2048x.webp "Dan Charnas’s “Dilla Time”")
+![A paperback copy of Dan Charnas’s book “Dilla Time” sitting on a wooden table](/img/uploads/dilla_time_1400.jpg "Dan Charnas’s “Dilla Time”")
 
 Loved this account of the life and legacy of a hip-hop producer who changed the game.
 
