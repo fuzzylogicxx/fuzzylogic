@@ -3,7 +3,7 @@ title: "Recently read: Dilla Time, by Dan Charnas"
 description: Brilliant account of the life and legacy of a hip-hop producer who
   changed the game
 noteWithTitle: false
-date: 2026-02-15T21:48
+date: 2026-03-20T21:48
 tags:
   - entry
   - book
