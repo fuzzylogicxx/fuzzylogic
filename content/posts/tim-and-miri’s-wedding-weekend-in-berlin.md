@@ -13,6 +13,10 @@ tags:
   - dining-out
 location: Berlin
 ---
+![Our friend Tim, looking relaxed and happy at his post-wedding celebration](/img/uploads/happyweddingtim.jpg "Tim, looking relaxed and happy")
+
+<!-- excerpt -->
+
 Can’t say I’ve had many bad times in Berlin, but we just had another good one!
 
 The occasion was Tim and Miri’s wedding.
