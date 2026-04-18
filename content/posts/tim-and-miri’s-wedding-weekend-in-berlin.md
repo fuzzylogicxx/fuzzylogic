@@ -23,6 +23,8 @@ On the Friday of our arrival we had a nice walk up to Boxhagnerplatz to soak up 
 
 On the day of the wedding we started with a filling brunch back in Friedrichshain at [44 Brekkie](https://www.44brekkie.com/). Then back to the hotel, into our outfits and on to [Dock 10](https://dock10-berlin.de/) for the wedding. It was so great to hang out with Lars & Steffi, Oliver & Steffi (the other one!), Thomas & Lisa, Maik… and of course Tim & Miri!
 
+The location on the Spree river was fantastic and we were treated to an amazing lunch of grilled delights and salads.
+
 Among some of the other folks we met were a lovely couple who work in the world of modular synths (I’ll need to tell Tom and Jason) and Tim’s best “whisky friend”, who is a proper connoisseur and regular visitor to Scotland.
 
 It was a beautiful day.
