@@ -13,19 +13,17 @@ tags:
   - dining-out
 location: Berlin
 ---
+Can’t say I’ve had many bad times in Berlin, but we just had another good one. This time the occasion was Tim and Miri’s wedding.
+
 ![Our friend Tim, looking relaxed and happy at his post-wedding celebration](/img/uploads/happyweddingtim.jpg "Tim, looking relaxed and happy")
 
 <!-- excerpt -->
-
-Can’t say I’ve had many bad times in Berlin, but we just had another good one!
-
-The occasion was Tim and Miri’s wedding.
 
 We stayed at [Habyt – The Waterfront](https://thewaterfront.habyt.com/) in Frierichshain/Ostkreuz (near Ostrkreuz station) which, aside from a pretty small room, was perfect.
 
 On the Friday of our arrival we had a nice walk up to Boxhagnerplatz to soak up sunny, weekend vibes. There, we enjoyed a park beer before going for a lovely Japanese meal at nearby [Iro Izakakya](https://iro-restaurant.de/).
 
-On the day of the wedding we started with a filling brunch back in Friedrichshain at [44 Brekkie](https://www.44brekkie.com/). Then back to the hotel, into our outfits and on to [Dock 10](https://dock10-berlin.de/) for the wedding. It was so great to hang out with Lars & Steffi, Oliver & Steffi (the other one!), Thomas & Lisa, Maik… and of course Tim & Miri!
+On the day of the wedding we started with a filling brunch back in Friedrichshain at [44 Brekkie](https://www.44brekkie.com/). Then back to the hotel, into our outfits and on to [Dock 10](https://dock10-berlin.de/) for the wedding. It was so great to hang out with Lars & Steffi, Oliver & Steffi (the other one!), Thomas & Lisa, Maik… and of course the happy couple, Tim & Miri!
 
 The location on the Spree river was fantastic and we were treated to an amazing lunch of grilled delights and salads.
 
