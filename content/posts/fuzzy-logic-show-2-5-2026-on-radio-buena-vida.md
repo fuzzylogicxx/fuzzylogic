@@ -2,7 +2,7 @@
 draft: false
 title: Fuzzy Logic show, 2/5/2026 on Radio Buena Vida
 description: My second radio show of 2026
-date: 2026-03-08T18:41
+date: 2026-05-09T12:18
 openGraphImage: https://fuzzylogic.me/img/kTdai9oRA2-1200.jpeg
 tags:
   - entry
@@ -11,13 +11,13 @@ tags:
   - my-mixes
   - music
 ---
-![My alt text goes here](/img/uploads/mark-past-present_v3.jpg "Caption here")
+![The cover of Hoavi’s Architectonics LP, which features abstract digital art that uses a centred black square with surrounding gold-coloured shapes](/img/uploads/a3025771794_1x1_1400.jpg "Hoavi’s “Architectonics” LP on the Peak Oil label")
 
 The second radio show of 2026 for me, in my new bimonthly slot.
 
 [Listen to the show on Soundcloud.](https://soundcloud.com/radiobuenavida/fuzzy-logic-w-laurence-1)
 
-I went for an atmospheric and dubby opening, before moving through the BPMs into slo-mo techno from Hoavia and beats from Sholto. Similar to [my March show](https://fuzzylogic.me/posts/fuzzy-logic-show-7-3-2026-on-radio-buena-vida/) I included YAYA’s _My Diner_ but this time the new remix version. I‘m loving those YAYA releases! The quirky acidic dancehall vibe and humour is really refreshing. 
+I went for an atmospheric and dubby opening, before moving through the BPMs into slo-mo techno from Hoavia and beats from Sholto. Similar to [my March show](https://fuzzylogic.me/posts/fuzzy-logic-show-7-3-2026-on-radio-buena-vida/) I included YAYA’s *My Diner* but this time the new remix version. I‘m loving those YAYA releases! The quirky acidic dancehall vibe and humour is really refreshing. 
 
 From there it was into some classic Wally Badarou on Island and some classic soulful vibes from Sounds of Blackness.
 
@@ -40,6 +40,6 @@ Here’s what I played.
 11. Sounds of Blackness – Optimistic – Perspective
 12. Telephones – Sensei (5378 Exchange Mix) – European Carryall 
 13. Funk Masters – Love Money (Siamese)
-13. Alexander Robotnick – Afrikan Kola (Medical Records)
+14. Alexander Robotnick – Afrikan Kola (Medical Records)
 
 It was great to once again see some friendly faces in the café, too – Tom, Jason, Lydia, Paul, Richard and Miles. Cheers to the RBV crew for having me.
