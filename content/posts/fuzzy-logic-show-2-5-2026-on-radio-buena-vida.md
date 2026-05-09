@@ -17,9 +17,9 @@ The second radio show of 2026 for me, in my new bimonthly slot.
 
 [Listen to the show on Soundcloud.](https://soundcloud.com/radiobuenavida/fuzzy-logic-w-laurence-1)
 
-I went for an atmospheric and dubby opening, before moving through the BPMs into slo-mo techno from Hoavia and beats from Sholto. Similar to [my March show](https://fuzzylogic.me/posts/fuzzy-logic-show-7-3-2026-on-radio-buena-vida/) I included YAYA’s *My Diner* but this time the new remix version. I‘m loving those YAYA releases! The quirky acidic dancehall vibe and humour is really refreshing. 
+I went for an atmospheric and dubby opening, before moving through the BPMs into slo-mo techno from Hoavi and beats from Sholto. Similar to [my March show](https://fuzzylogic.me/posts/fuzzy-logic-show-7-3-2026-on-radio-buena-vida/) I included YAYA’s *My Diner* but this time the new remix version. I‘m loving those YAYA releases! The quirky acidic dancehall vibe and humour is really refreshing. 
 
-From there it was into some classic Wally Badarou on Island and some classic soulful vibes from Sounds of Blackness.
+From there it was into some classic Wally Badarou on Island and soulful vibes from Sounds of Blackness.
 
 <!-- excerpt -->
 
