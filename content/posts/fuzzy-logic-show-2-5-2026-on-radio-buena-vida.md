@@ -11,7 +11,7 @@ tags:
   - my-mixes
   - music
 ---
-![The cover of Hoavi’s Architectonics LP, which features abstract digital art that uses a centred black square with surrounding gold-coloured shapes](/img/uploads/a3025771794_1x1_1400.jpg "Hoavi’s “Architectonics” LP on the Peak Oil label")
+![The cover of Hoavi’s Architectonics LP, which features abstract digital art that uses a centred black square with surrounding gold-coloured shapes](/img/uploads/a3025771794_1x1_1400_v2.jpg "Hoavi’s “Architectonics” LP on the Peak Oil label")
 
 The second radio show of 2026 for me, in my new bimonthly slot.
 
