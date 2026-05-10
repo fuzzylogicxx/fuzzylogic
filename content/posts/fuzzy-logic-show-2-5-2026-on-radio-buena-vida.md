@@ -3,7 +3,7 @@ draft: false
 title: Fuzzy Logic show, 2/5/2026 on Radio Buena Vida
 description: My second radio show of 2026
 date: 2026-05-09T12:18
-openGraphImage: https://fuzzylogic.me/img/kTdai9oRA2-1200.jpeg
+openGraphImage: https://fuzzylogic.me/img/Mq2Oqj6spM-1400.jpeg
 tags:
   - entry
   - radio
