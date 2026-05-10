@@ -118,8 +118,15 @@
 
       /* Disable now-unnecessary iPhone behaviour
           https://css-tricks.com/your-css-reset-needs-text-size-adjust-probably/ */
-      text-size-adjust: none;
+      -moz-text-size-adjust: none;
       -webkit-text-size-adjust: none;
+      text-size-adjust: none;
+
+      /*  Turn off subpixel-antialising.
+          Makes web browsers on a Mac OS render text just like everywhere else on a Mac OS.
+          Also results in more consistency across operating systems.
+      */
+      -webkit-font-smoothing: antialiased;
 
       color: var(--color-dark);
       font-family: "Source Sans Pro", "Source Sans Pro-fallback", system-ui, sans-serif;
