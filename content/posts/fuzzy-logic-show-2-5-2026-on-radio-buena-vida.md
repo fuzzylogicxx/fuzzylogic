@@ -30,7 +30,7 @@ Here’s what I played.
 1. Omid Geadizadeh – My eyes drank water – Wah Wah Wino
 2. Adrian Sherwood – The collapse of everything – On-U Sound
 3. Sonia – Easier to love – Athens of the North
-4. Hoavi – Triad of becoming – Wah Wah Wino
+4. Hoavi – Triad of becoming – Peak Oil
 5. Sholto – The Right Orchid – DeepMatter
 6. Keysha – Stop it! – Stroom
 7. Wally Badarou – Chief Inspector (Precinct 13) – Island
@@ -39,7 +39,7 @@ Here’s what I played.
 10. Loose Ends – Hangin' On A String (Frankie Knuckles Club Mix) – South Street
 11. Sounds of Blackness – Optimistic – Perspective
 12. Telephones – Sensei (5378 Exchange Mix) – European Carryall 
-13. Funk Masters – Love Money (Siamese)
-14. Alexander Robotnick – Afrikan Kola (Medical Records)
+13. Funk Masters – Love Money – Siamese
+14. Alexander Robotnick – Afrikan Kola – Medical Records
 
 It was great to once again see some friendly faces in the café, too – Tom, Jason, Lydia, Paul, Richard and Miles. Cheers to the RBV crew for having me.
