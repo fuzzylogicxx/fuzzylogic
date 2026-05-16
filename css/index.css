@@ -101,6 +101,16 @@
       font-weight: 600;
       font-display: swap;
     }
+
+    @font-face {
+      font-family: Antonia;
+      src: url(/fonts/serif/AntoniaVariable-Roman.woff2) format('woff2') tech(variations),
+          url(/fonts/serif/AntoniaVariable-Roman.woff2) format('woff2-variations');
+      font-weight: 1 1000;
+      font-stretch: 50% 200%;
+      font-style: normal;
+      font-display: fallback;
+    }
   }
 
   /* ==========================================================================
@@ -309,7 +319,7 @@
 
   @layer base {
     h1, h2, h3, h4, h5, h6 {
-      font-weight: 600;
+      font-family: Antonia, serif;
     }
 
     h1 {
