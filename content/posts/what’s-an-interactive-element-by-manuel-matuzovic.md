@@ -22,25 +22,25 @@ Manuel sensed a general misunderstanding of what an interactive element is and w
 
 ## Aside: is `dialog` an interactive element?
 
-Interestingly, Manuel was motivated to do this research after feeling confused when reading some guidance on [MDN’s Dialog element docs](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/dialog). He refers to the following note: “Do not add the `tabindex` property to the `<dialog>` element as it is not interactive and does not receive focus.” He takes issue with the second part of that sentence, saying that the `dialog` element _does_ receive focus because _it is_ an interactive element.
+Interestingly, Manuel was motivated to do this research after feeling confused when reading some guidance on [MDN’s Dialog element docs](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/dialog). He refers to the following note: <q>Do not add the `tabindex` property to the `<dialog>` element as it is not interactive and does not receive focus.</q> He takes issue with the second part of that sentence, saying that the `dialog` element _does_ receive focus because _it is_ an interactive element.
 
 Here’s how he goes about proving his assertion.
 
-Firstly he points to [the HTML Spec’s section on *Focus* which specifically includes “dialog boxes” within a list of “interactive widgets”](https://html.spec.whatwg.org/multipage/interaction.html#focus). 
+Firstly he points to [the HTML Spec’s section on *Focus* which specifically includes <q>dialog boxes</q> within a list of <q>interactive widgets</q>](https://html.spec.whatwg.org/multipage/interaction.html#focus).
 
-Secondly he describes how interactive elements can be focused which makes them _focusable areas_. (To put it another way: _interactive elements are focusable_.) He explains what qualifies as a _focusable area_ and that `dialog` meets the qualifying criteria. Specifically this criterion: “the user agent determines the element to be focusable”.
+Secondly he describes how interactive elements can be focused which makes them _focusable areas_. (To put it another way: _interactive elements are focusable_.) He explains what qualifies as a _focusable area_ and that `dialog` meets the qualifying criteria. Specifically this criterion: <q>the user agent determines the element to be focusable</q>.
 
 He continues by explaining what _focusable_ means:
 
 > An element is focusable when it can be focused programmatically, e.g. via the `focus()` method or the `autofocus` attribute.
 >
 > Focusable elements can either be _sequentially focusable_, _click focusable_, both, or none of them.
-> 
+>
 > Users can reach sequentially focusable elements by pressing the Tab key.
 
 And Manuel provides practical proof of the browser regarding `dialog` as being focusable via two demos.
 
-His first demo shows that when you launch a `dialog` via a `button` that fires `myDialog.showModal()` and that `dialog` contains no interactive elements, the `dialog` element itself has focus. He outputs the value of `document.activeElement.tagName` to the screen and it is `DIALOG`. 
+His first demo shows that when you launch a `dialog` via a `button` that fires `myDialog.showModal()` and that `dialog` contains no interactive elements, the `dialog` element itself has focus. He outputs the value of `document.activeElement.tagName` to the screen and it is `DIALOG`.
 
 His second demo shows that an open dialog element (`<dialog open>`) is _click focusable_ (or _sequentially focusable_ depending on your choice of browser).
 
