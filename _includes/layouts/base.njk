@@ -42,17 +42,6 @@
       ========================================================================== */
 
       @layer base {
-        /* Serif font for headings */
-        @font-face {
-          font-family: Antonia;
-          src: url(/fonts/serif/AntoniaVariable-Roman.woff2) format('woff2') tech(variations),
-              url(/fonts/serif/AntoniaVariable-Roman.woff2) format('woff2-variations');
-          font-weight: 300 900;
-          font-stretch: 50% 200%;
-          font-style: normal;
-          font-display: fallback;
-        }
-
         /* Sans font for body text */
 
         /* Clever ”matching” of a system font to our custom font so as to avoid CLS,
@@ -75,6 +64,19 @@
           font-display: swap;
         }
 
+        /* Serif font for headings */
+        @font-face {
+          font-family: Antonia;
+          src: url(/fonts/serif/AntoniaVariable-Roman.woff2) format('woff2') tech(variations),
+              url(/fonts/serif/AntoniaVariable-Roman.woff2) format('woff2-variations');
+          font-weight: 300 900;
+          font-stretch: 50% 200%;
+          font-style: normal;
+          font-display: swap;
+        }
+
+        /* Back to sans font for body text */
+
         /* Regular Italic */
         @font-face {
           font-family: Source Sans Pro-fallback;
@@ -90,22 +92,6 @@
           src: url(/fonts/sans/SourceSans3-It-subset.woff2) format("woff2");
           font-weight: 400;
           font-style: italic;
-          font-display: swap;
-        }
-
-        /* Bold */
-        @font-face {
-          font-family: Source Sans Pro-fallback;
-          size-adjust: 95%;
-          src: local("Arial");
-          font-weight: 600;
-          font-display: swap;
-        }
-
-        @font-face {
-          font-family: Source Sans Pro;
-          src: url(/fonts/sans/SourceSans3-Semibold-subset.woff2) format("woff2");
-          font-weight: 600;
           font-display: swap;
         }
       }
