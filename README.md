@@ -39,11 +39,31 @@ Or build and run on a local development server:
 npm run start
 ```
 
+## Tests
+
+Currently, I use automated tests to check that certain key generated files are present and correct.
+
+Run all current Node test files:
+
+```
+npm test
+```
+
+Alternative direct command:
+
+```
+node --test _tests/*.test.mjs
+```
+
+Tests that need access to the built site should import `siteDir` from `_tests/helpers/site-paths.mjs`.
+You can override this auto-derived path in CI or local debugging by setting `SITE_DIR`.
+
 ## Features
 
 * Statically generated, fast loading pages using [Eleventy](https://www.11ty.dev/)
 * Hosted with [Netlify](https://www.netlify.com/)
 * Focused on accessibility, performance and web good practices ([100/100 scores for all on Lighthouse](https://pagespeed.web.dev/analysis/https-fuzzylogic-me/dz2w9dl44v?form_factor=mobile))
+* Includes automated test suite for ensuring that key statically-generated output files remain present and correct through updates
 * Supports `draft` posts that are skipped in production builds [using 11ty’s Preprocessor API](https://www.11ty.dev/docs/config-preprocessors/#example-drafts)
 * Supports excerpts
 * Content editing via [Decap CMS](https://decapcms.org/)
@@ -53,7 +73,7 @@ npm run start
 * 404 page shown when necessary, thanks to [Netlify’s custom 404 page handling](https://docs.netlify.com/routing/redirects/redirect-options/#custom-404-page-handling)
 * Code block syntax highlighting performed at build time rather than on the client, via 11ty’s [Syntax Hightlighting plugin](https://www.11ty.dev/docs/plugins/syntaxhighlight/) which in turn uses [prism.js](https://prismjs.com/)
 * Supports deep-linking to headings via Zach Leatherman’s [heading-anchors](https://github.com/zachleat/heading-anchors) web component
-* RSS feed using 11ty’s [RSS plugin](https://www.11ty.dev/docs/plugins/rss/). 
+* RSS feed using 11ty’s [RSS plugin](https://www.11ty.dev/docs/plugins/rss/).
 * Tags page which lists all tags as links; plus “Posts tagged with x” pages
 * Uses [JavaScript modules](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules) for both client-side JS and on the server
 * Pure modern CSS with no pre- or post- processing dependencies. Layers, native nesting, etc.
@@ -75,7 +95,7 @@ The `content` directory is for files I want processed by 11ty – “templates�
 
 The `public` directory is for files I want 11ty to skip and pass straight through.
 
-11ty puts compiled content into the `_site` directory and it’s served from there to the public. 
+11ty puts compiled content into the `_site` directory and it’s served from there to the public.
 
 #### Excerpts
 
