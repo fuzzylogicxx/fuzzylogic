@@ -689,6 +689,38 @@
 
 
   /* ==========================================================================
+    # SEARCH
+    ========================================================================== */
+
+  @layer base {
+    @keyframes fadeIn {
+      /* for a 2-step animation in keyframes,
+      defining start or end alone is sufficient */
+      from {
+        opacity: 0;
+      }
+    }
+  }
+
+  @layer components {
+    .search, .searchform-basic {
+      /* min-height to reduce CLS during progressive enhancement */
+      min-height: 3.2em;
+    }
+
+    .searchform-basic {
+      /* fade in the basic fallback form rather than showing it immediatately.
+      This allows time for the enhanced pagefind form to load in and
+      lessens the likelihood of a jarring transition between the two.
+      Note: if the pagefind form fails to load, the basic form will be
+      presented. */
+      animation: fadeIn 3s ease-in-out;
+    }
+  }
+
+
+
+  /* ==========================================================================
     # ARTICLES
     ========================================================================== */
 
