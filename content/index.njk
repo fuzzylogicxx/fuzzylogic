@@ -5,7 +5,6 @@ const bodyclass = "page-home";
 ---
 
 {% set postslist = collections.posts | head(-1 * numberOfLatestPostsToShow) | reverse %}
-
 {% include "postslist.njk" %}
 
 {# List every content page in the project #}

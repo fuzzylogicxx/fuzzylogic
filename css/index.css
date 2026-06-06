@@ -121,8 +121,8 @@
       font-variant-ligatures: common-ligatures no-discretionary-ligatures no-historical-ligatures contextual;
       font-kerning: normal;
 
-      /* let’s get the footer displaying at the bottom of the viewport
-          regardless of the amount of <main> or <footer> content */
+      /* ensure the footer displays at the bottom of the viewport
+      regardless of the amount of <main> or <footer> content */
       min-height: 100vh;
       display: flex;
       flex-direction: column;
@@ -133,7 +133,7 @@
     }
 
     /* the following elements are either less readable,
-    or look wrong, if they stretch too wide, so we set
+    or look wrong, if they stretch too wide. So we set
     a sensible max-width on them */
     p, li, blockquote, h4 {
       max-inline-size: var(--measure);
@@ -285,6 +285,7 @@
   @layer base {
     h1, h2, h3, h4, h5, h6 {
       font-family: Antonia, serif;
+      text-wrap: pretty;
     }
 
     h1, h2, h3, h4 {
@@ -326,6 +327,24 @@
       font-variant-numeric: tabular-nums lining-nums slashed-zero;
     }
 
+    /* Sup and sub */
+    @supports ( font-variant-position: sub ) {
+        sub, .sub {
+            vertical-align: baseline;
+            font-size: 100%;
+            line-height: inherit;
+            font-variant-position: sub;
+        }
+    }
+    @supports ( font-variant-position: super ) {
+        sup, .sup {
+            vertical-align: baseline;
+            font-size: 100%;
+            line-height: inherit;
+            font-variant-position: super;
+        }
+    }
+
     /* quotes */
 
     /* Set punctuation order for inline quotes. */
@@ -344,21 +363,21 @@
     /* <blockquote class="quoted">
       <p>Typography has one plain duty before it.</p>
     </blockquote> */
-    .quoted, .quoted q {
-      quotes: '“' '”' '‘' '’';
+    .quoted, .quoted p, .quoted q {
+      quotes: "“" "”" "‘" "’";
     }
 
     /* Append quotes to the first and last paragraphs in the blockquote. */
     .quoted p:first-of-type::before {
-        content: open-quote;
+      content: open-quote;
     }
     .quoted p:last-of-type::after  {
-        content: close-quote;
+      content: close-quote;
     }
 
     /* prose */
+
     .prose {
-      text-wrap: pretty;
       font-variant-numeric: oldstyle-nums proportional-nums;
       /* Hang all punctuation in your prose block. */
       hanging-punctuation: first allow-end last;
@@ -379,10 +398,43 @@
       hyphenate-limit-lines: 2;
       hyphenate-limit-zone: 8%;
       hyphenate-limit-last: always;
+
+      /* prose spacing:
+      1em makes the space relative to each element.
+      So an h2 gets more space above it than a p, which is what we want.
+      */
+      & > * + * {
+        /* for a body line-height of 1.4 */
+        margin-block-start: var(--prose-space, 0.5lh); /* 1.4em */
+      }
+
+      & > * + h2,
+      & > * + h3 {
+        --prose-space: 1.25em;
+
+        & + p,
+        + .ha + p {
+          --prose-space: 0.3125em;
+        }
+      }
+
+      & h1 + * {
+        /* this could be a div and we don’t want to apply prose-space to its entire contents
+        so do not redefine the custom property value. Instead, customise the margin directly. */
+        margin-block-start: var(--space-m);
+      }
+
+      /*
+      & h2 + p,
+      & h2 + .ha + p,
+      & h3 + p,
+      & h3 + .ha + p {
+        --prose-space: 0.7em;
+      } */
     }
 
     pre, code, var, samp, kbd,
-    h1, h2, h3, h4, h5, h6, .no-hyphens {
+    h1, h2, h3, h4, h5, h6, .u-no-hyphens {
       -webkit-hyphens: manual;
       hyphens: manual;
     }
@@ -492,36 +544,15 @@
 
   @layer layouts {
 
-    /* Flow (https://piccalil.li/quick-tip/flow-utility/) / Stack ()
-    We want the ability to have:
-      - per-element exceptions within a single stack
-      - nested stacks where the nested one takes on default spacing rather than the
-        custom spacing that was set on a parent.
-        I think the key might be to use custom properties for per-element exceptions only.
-        The element the modified custom property should be applied to should be a stack child.
-        Might also (if nec.) consider including an extra div as "insulation" in nested stacks.
-        This part of EveryLayout’s docs feels important:
-        “Importantly we set the --space value on the children and don’t “hoist” it up.
-        If the parent is where the property is set, it will get overridden if the parent becomes
-        a child in nesting”
-        Feels like nesting should *just work?*
-    */
-    .l-flow {
-      & > * + * {
-        margin-block-start: var(--flow-gap, var(--space-s));
-      }
+    /* Stack */
+    .l-stack {
+      display: flex;
+      flex-direction: column;
+      gap: var(--stack-gap, var(--space-s));
     }
 
-    .l-flow--small > * + * {
-      --flow-gap: var(--space-s, 1rem);
-    }
-
-    .l-flow--3xs > * + * {
-      --flow-gap: var(--space-3xs, 1rem);
-    }
-
-    .l-flow--large > * + * {
-      --flow-gap: var(--space-l, 1rem);
+    .l-stack--large {
+      --stack-gap: var(--space-l);
     }
 
     /* Box */
@@ -734,16 +765,14 @@
       border-top: var(--border-thin) solid var(--color-grey-dark);
     }
 
-    /* Individual article */
-    .h-entry {
-      /* --flow-space: 1em; */
-    }
-
-    /* Individual article heading */
-    .post__heading {
-    }
+    /* Individual article header
+    (heading + meta info) */
+    /* .post__header {
+      margin-block-start: 0;
+    } */
 
     .post__meta {
+      margin-block-start: 0;
       color: var(--color-grey-text);
       font-size: var(--step--1);
       font-variant-numeric: lining-nums;
@@ -857,6 +886,13 @@
 
       .primary-content__intro + & {
         padding-top: var(--space-l);
+      }
+    }
+
+    .welcome-message {
+      /* reduce the typical spacing between an h1 and the following paragraph */
+      & h1 + * {
+        margin-block-start: var(--space-xs);
       }
     }
   }

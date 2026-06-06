@@ -6,27 +6,32 @@ eleventyNavigation:
   order: 5
 ---
 
-Want to get in touch? Please do, using the form below.
+<div class="l-stack">
+  <div class="prose">
+    <h1>{{ renderData.title or title }}</h1>
 
-I’m not on social media much these days so this is a good way to start the conversation.
+    Want to get in touch? Please do, using the form below.
 
-<form name="contact" method="POST" data-netlify="true">
-
-  <div class="form__fields">
-    <div class="form__field">
-      <label for="name">Your name</label>
-      <input id="name" type="text" name="name" />
-    </div>
-    <div class="form__field">
-      <label for="email">Your email address</label>
-      <input id="email" type="email" name="email" />
-    </div>
-    <div class="form__field">
-      <label for="message">Message</label>
-      <textarea id="message" name="message" rows="5" cols="20"></textarea>
-    </div>
-    <div>
-      <button type="submit">Send message</button>
-    </div>
+    I’m not on social media much these days so this is a good way to start the conversation.
   </div>
-</form>
+
+  <form name="contact" method="POST" data-netlify="true">
+    <div class="form__fields">
+      <div class="form__field">
+        <label for="name">Your name</label>
+        <input id="name" type="text" name="name" />
+      </div>
+      <div class="form__field">
+        <label for="email">Your email address</label>
+        <input id="email" type="email" name="email" />
+      </div>
+      <div class="form__field">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" cols="20"></textarea>
+      </div>
+      <div>
+        <button type="submit">Send message</button>
+      </div>
+    </div>
+  </form>
+</div>

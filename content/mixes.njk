@@ -11,11 +11,16 @@ pagination:
   reverse: true
   alias: mixes
 ---
-{% set postslist = mixes %}
-{% include "postslist.njk" %}
+<div class="l-stack">
+  <div class="prose">
+    <h1>Mixes</h1>
 
-<nav class="traverse" aria-label="Pagination">
-  {%- if pagination.nextPageHref %}<a rel="prev" href="{{ pagination.nextPageHref }}"><span aria-hidden="true">←</span> Older mixes</a>{%- endif %}
-  {%- if pagination.previousPageHref %}<a rel="next" href="{{ pagination.previousPageHref }}">Newer mixes <span aria-hidden="true">→</span></a>{%- endif %}
-</nav>
+    {% set postslist = mixes %}
+    {% include "postslist.njk" %}
+  </div>
 
+  <nav class="traverse" aria-label="Pagination">
+    {%- if pagination.nextPageHref %}<a rel="prev" href="{{ pagination.nextPageHref }}"><span aria-hidden="true">←</span> Older mixes</a>{%- endif %}
+    {%- if pagination.previousPageHref %}<a rel="next" href="{{ pagination.previousPageHref }}">Newer mixes <span aria-hidden="true">→</span></a>{%- endif %}
+  </nav>
+</div>
