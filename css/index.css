@@ -400,12 +400,12 @@
       hyphenate-limit-last: always;
 
       /* prose spacing:
-      1em makes the space relative to each element.
+      We make the space relative to each element.
       So an h2 gets more space above it than a p, which is what we want.
+      But also we apply a slightly different, appropriate spacing to headings.
       */
       & > * + * {
-        /* for a body line-height of 1.4 */
-        margin-block-start: var(--prose-space, 0.5lh); /* 1.4em */
+        margin-block-start: var(--prose-space, 0.5lh);
       }
 
       & > * + h2,
@@ -419,18 +419,10 @@
       }
 
       & h1 + * {
-        /* this could be a div and we don’t want to apply prose-space to its entire contents
-        so do not redefine the custom property value. Instead, customise the margin directly. */
+        /* this could be a div and we don’t want to apply prose-space to its entire contents.
+        So do not redefine the custom property value. Instead, customise the margin directly. */
         margin-block-start: var(--space-m);
       }
-
-      /*
-      & h2 + p,
-      & h2 + .ha + p,
-      & h3 + p,
-      & h3 + .ha + p {
-        --prose-space: 0.7em;
-      } */
     }
 
     pre, code, var, samp, kbd,

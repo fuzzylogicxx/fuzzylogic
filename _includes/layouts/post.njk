@@ -64,12 +64,12 @@ templateClass: post-main
             </div>
           </footer>
         </article>
-          <nav class="traverse" aria-label="Pagination">
-            {%- set previousPost = collections.posts | getPreviousCollectionItem(page) %}
-            {%- if previousPost %}<a rel="prev" href="{{ previousPost.url | url }}"><span aria-hidden="true">← </span>Previous post</a></li>{% endif %}
-            {%- set nextPost = collections.posts | getNextCollectionItem(page) %}
-            {%- if nextPost %}<a rel="next" href="{{ nextPost.url | url }}">Next post<span aria-hidden="true"> →</span></a>{% endif %}
-          </nav>
+        <nav class="traverse" aria-label="Pagination">
+          {%- set previousPost = collections.posts | getPreviousCollectionItem(page) %}
+          {%- if previousPost %}<a rel="prev" href="{{ previousPost.url | url }}"><span aria-hidden="true">← </span>Previous post</a></li>{% endif %}
+          {%- set nextPost = collections.posts | getNextCollectionItem(page) %}
+          {%- if nextPost %}<a rel="next" href="{{ nextPost.url | url }}">Next post<span aria-hidden="true"> →</span></a>{% endif %}
+        </nav>
       </div>
     </div>
   </div>

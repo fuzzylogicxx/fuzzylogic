@@ -1,10 +1,12 @@
 ---
-layout: layouts/page.njk
+layout: layouts/page_flexible.njk
 title: Sitemap
 permalink: /sitemap/index.html
 eleventyExcludeFromCollections: true
 pageSpecificRobotsDirective: noindex
 ---
+<h1 class="prose">Sitemap</h1>
+
 <ul>
   {% set entries = collections.all %}
   {%- for entry in entries %}

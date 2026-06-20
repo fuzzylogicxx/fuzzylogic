@@ -1,5 +1,5 @@
 ---
-layout: layouts/page.njk
+layout: layouts/page_flexible.njk
 title: Journal
 permalink: posts/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber }}/{% endif %}index.html
 eleventyNavigation:
@@ -11,16 +11,12 @@ pagination:
   reverse: true
   alias: posts
 ---
-<div class="l-stack">
-  <div class="prose">
-    <h1>Journal</h1>
+<h1 class="prose">Journal</h1>
 
-    {% set postslist = posts %}
-    {% include "postslist.njk" %}
-  </div>
+{% set postslist = posts %}
+{% include "postslist.njk" %}
 
-  <nav class="traverse" aria-label="Pagination">
-    {%- if pagination.nextPageHref %}<a rel="prev" href="{{ pagination.nextPageHref }}"><span aria-hidden="true">←</span> Older Posts</a>{%- endif %}
-    {%- if pagination.previousPageHref %}<a rel="next" href="{{ pagination.previousPageHref }}">Newer Posts <span aria-hidden="true">→</span></a>{%- endif %}
-  </nav>
-</div>
+<nav class="traverse" aria-label="Pagination">
+  {%- if pagination.nextPageHref %}<a rel="prev" href="{{ pagination.nextPageHref }}"><span aria-hidden="true">←</span> Older Posts</a>{%- endif %}
+  {%- if pagination.previousPageHref %}<a rel="next" href="{{ pagination.previousPageHref }}">Newer Posts <span aria-hidden="true">→</span></a>{%- endif %}
+</nav>
