@@ -291,7 +291,7 @@
     h1, h2, h3, h4 {
       line-height: 1.1;
       font-variant-numeric: lining-nums;
-  }
+    }
 
     h1 {
       font-size: var(--step-4);
@@ -300,6 +300,13 @@
 
       &.uppercase {
         font-variant-caps: titling-caps;
+      }
+
+      /* target space between an h1 and the next element,
+      regardless of what that next element is and what type of
+      container/pattern the h1 is in */
+      & + * {
+        margin-block-start: var(--space-l);
       }
     }
 
@@ -404,11 +411,11 @@
       So an h2 gets more space above it than a p, which is what we want.
       But also we apply a slightly different, appropriate spacing to headings.
       */
-      & > * + * {
+      & > *:not(h1) + * {
         margin-block-start: var(--prose-space, 0.5lh);
       }
 
-      & > * + h2,
+      & > *:not(h1) + h2,
       & > * + h3 {
         --prose-space: 1.25em;
 
@@ -416,12 +423,6 @@
         + .ha + p {
           --prose-space: 0.3125em;
         }
-      }
-
-      & h1 + * {
-        /* this could be a div and we don’t want to apply prose-space to its entire contents.
-        So do not redefine the custom property value. Instead, customise the margin directly. */
-        margin-block-start: var(--space-m);
       }
     }
 
@@ -882,7 +883,7 @@
     }
 
     .welcome-message {
-      /* reduce the typical spacing between an h1 and the following paragraph */
+      /* here, we want less than the typical space between a h1 and next paragraph */
       & h1 + * {
         margin-block-start: var(--space-xs);
       }

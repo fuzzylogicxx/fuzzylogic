@@ -1,6 +1,6 @@
 ---
 eleventyExcludeFromCollections: true
-layout: layouts/page_flexible.njk
+layout: layouts/page.njk
 pagination:
   data: collections
   size: 1
@@ -19,9 +19,11 @@ eleventyComputed:
   pageSpecificRobotsDirective: noindex
 permalink: /tags/{{ tag }}/
 ---
-<h1 class="prose">Tagged “{{ tag }}”</h1>
+<h1>Tagged “{{ tag }}”</h1>
 
-{% set postslist = collections[ tag ] | reverse %}
-{% include "postslist.njk" %}
+<div class="l-stack l-stack--large">
+  {% set postslist = collections[ tag ] | reverse %}
+  {% include "postslist.njk" %}
 
-<p>See <a href="{{ '/tags/' | url }}">all tags</a>.</p>
+  <p>See <a href="{{ '/tags/' | url }}">all tags</a>.</p>
+</div>

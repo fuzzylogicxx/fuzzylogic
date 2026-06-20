@@ -64,6 +64,7 @@ templateClass: post-main
             </div>
           </footer>
         </article>
+
         <nav class="traverse" aria-label="Pagination">
           {%- set previousPost = collections.posts | getPreviousCollectionItem(page) %}
           {%- if previousPost %}<a rel="prev" href="{{ previousPost.url | url }}"><span aria-hidden="true">← </span>Previous post</a></li>{% endif %}

@@ -1,5 +1,5 @@
 ---
-layout: layouts/page_flexible.njk
+layout: layouts/page.njk
 title: Mixes
 eleventyNavigation:
   key: Mixes
@@ -11,15 +11,14 @@ pagination:
   reverse: true
   alias: mixes
 ---
+<h1>Mixes</h1>
 
-<div class="prose">
-  <h1>Mixes</h1>
-
+<div class="l-stack l-stack--large">
   {% set postslist = mixes %}
   {% include "postslist.njk" %}
-</div>
 
-<nav class="traverse" aria-label="Pagination">
-  {%- if pagination.nextPageHref %}<a rel="prev" href="{{ pagination.nextPageHref }}"><span aria-hidden="true">←</span> Older mixes</a>{%- endif %}
-  {%- if pagination.previousPageHref %}<a rel="next" href="{{ pagination.previousPageHref }}">Newer mixes <span aria-hidden="true">→</span></a>{%- endif %}
-</nav>
+  <nav class="traverse" aria-label="Pagination">
+    {%- if pagination.nextPageHref %}<a rel="prev" href="{{ pagination.nextPageHref }}"><span aria-hidden="true">←</span> Older mixes</a>{%- endif %}
+    {%- if pagination.previousPageHref %}<a rel="next" href="{{ pagination.previousPageHref }}">Newer mixes <span aria-hidden="true">→</span></a>{%- endif %}
+  </nav>
+</div>

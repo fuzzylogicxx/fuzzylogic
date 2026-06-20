@@ -1,5 +1,5 @@
 ---
-layout: layouts/page_prose.njk
+layout: layouts/basic_prose.njk
 title: About
 eleventyNavigation:
   key: About
