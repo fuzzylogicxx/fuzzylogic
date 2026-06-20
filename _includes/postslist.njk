@@ -1,11 +1,8 @@
-<div class="l-flow">
-  {% if page.url == "/" %}<h2>Latest posts</h2>{% endif %}
-
 <div class="h-feed">
   {% for post in postslist %}
-  <article class="l-flow h-entry prose">
+  <article class="prose h-entry">
 
-    <header class="l-flow l-flow--3xs">
+    <header class="prose post__header">
       {% if (post.data.tags[1] !== 'note' or post.data.noteWithTitle) -%}
         <h3 class="feed-entry-title"><a rel="bookmark" class="p-name u-url" href="{{ post.url | url }}">{{ post.data.title }}</a></h3>
       {% else -%}
@@ -18,7 +15,7 @@
         <a rel="tag" href="/tags/{{ post.data.topLevelCategory | url }}" class="tag">{{ post.data.topLevelCategory }}</a>
       </div>
     </header>
-    <div class="l-flow e-content">
+    <div class="prose e-content">
       {% set post_content = post.content %}
       {% if (post.page.excerpt) -%}
         {% set post_content = post.page.excerpt | md %}
@@ -52,6 +49,4 @@
     </footer> #}
   </article>
 {% endfor %}
-</div>
-
 </div>

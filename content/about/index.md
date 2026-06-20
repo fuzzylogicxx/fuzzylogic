@@ -1,10 +1,12 @@
 ---
-layout: layouts/page.njk
+layout: layouts/basic_prose.njk
 title: About
 eleventyNavigation:
   key: About
   order: 4
 ---
+# About
+
 ## Web
 
 I’ve been working as a web developer since 2003.

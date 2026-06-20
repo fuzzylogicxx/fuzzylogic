@@ -4,17 +4,17 @@ layout: layouts/base.njk
 
 <div class="primary-content__intro">
   <div class="l-center l-center--wrapper">
-    <div class="l-flow prose">
+    <div class="prose welcome-message">
       <h1><span class="u-display:block">A stream of consciousness</span> by Laurence Hughes</h1>
-      <p class="no-hyphens">Hi, I’m Laurence. I’m a Glaswegian software engineer using open web standards to create fast, responsive, accessible websites. I’m also a music-loving vinyl junkie and table tennis nerd. This is my online home, where I play with code and share thoughts on the web, music and life.</p>
+      <p class="u-no-hyphens">Hi, I’m Laurence. I’m a Glaswegian software engineer using open web standards to create fast, responsive, accessible websites. I’m also a music-loving vinyl junkie and table tennis nerd. This is my online home, where I play with code and share thoughts on the web, music and life.</p>
     </div>
   </div>
 </div>
 
 <div class="primary-content__body">
   <div class="l-center l-center--wrapper-narrow">
-    <div class="l-flow">
+    <div class="l-stack">
+      <h2>Latest posts</h2>
       {{ content | safe }}
-    </div>
   </div>
 </div>

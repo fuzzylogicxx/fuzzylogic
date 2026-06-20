@@ -1,4 +1,6 @@
 ---
+eleventyExcludeFromCollections: true
+layout: layouts/page.njk
 pagination:
   data: collections
   size: 1
@@ -12,14 +14,16 @@ pagination:
     - entry
     - note
     - tagList
-eleventyExcludeFromCollections: true
-layout: layouts/page.njk
 eleventyComputed:
   title: Tagged “{{ tag }}”
   pageSpecificRobotsDirective: noindex
 permalink: /tags/{{ tag }}/
 ---
-{% set postslist = collections[ tag ] | reverse %}
-{% include "postslist.njk" %}
+<h1>Tagged “{{ tag }}”</h1>
 
-<p>See <a href="{{ '/tags/' | url }}">all tags</a>.</p>
+<div class="l-stack l-stack--large">
+  {% set postslist = collections[ tag ] | reverse %}
+  {% include "postslist.njk" %}
+
+  <p>See <a href="{{ '/tags/' | url }}">all tags</a>.</p>
+</div>
