@@ -418,11 +418,12 @@
       & > *:not(h1) + h2,
       & > * + h3 {
         --prose-space: 1.25em;
+      }
 
-        & + p,
-        + .ha + p {
-          --prose-space: 0.3125em;
-        }
+      & > h2 + p,
+      & > h3 + p,
+      & > .ha + p {
+        --prose-space: 0.3125em;
       }
     }
 
@@ -537,16 +538,63 @@
 
   @layer layouts {
 
-    /* Stack */
+    /* Stack
+    Usage notes:
+    - Use margin-top, not gap, because gap is less flexible to work with for this purpose.
+    You can’t unset or modify gap on an “exception” element. You also get situations when
+    there are other, non-gap styles acting on elements, and end up with gap and margin-top
+    combining in an undesirable way.
+    - When setting or overriding the --stack-gap value, always set it on the children.
+    Do not “hoist” it up. If we set it on the parent, it will get overridden if the parent
+    becomes a child in nesting.
+    */
     .l-stack {
       display: flex;
       flex-direction: column;
-      gap: var(--stack-gap, var(--space-s));
+      justify-content: flex-start;
+
+      /* The child combinator (>) ensures the margins only apply
+      to children of the .l-stack element (and not more deeply nested elements). */
+      & > * + * {
+        margin-block-start: var(--stack-gap, var(--space-s));
+      }
+
+      /* Where the Stack is the only child of its parent, nothing forces it to stretch.
+      A height of 100% ensures the Stack's height matches the parent's, making
+      “splitting the stack” possible. */
+      &:only-child {
+        block-size: 100%;
+      }
     }
 
-    .l-stack--large {
+    .l-stack--large > * + * {
       --stack-gap: var(--space-l);
     }
+
+    /* Recursive stack
+    Notes:
+    1. Use when you want the same stack space at all nesting levels.
+    2. Use with caution, and on simple content, or it’s likely to lead to unwanted results.
+    3. This is a separate class rather than a modifier of the main Stack class,
+    in case the “child combinator” versus “without child combinator” approaches conflict.
+    */
+    .l-stack-recursive * + *  {
+      margin-block-start: var(--stack-gap, var(--space-s));
+    }
+
+    /* Exceptions:
+    Give one or more “stack item” elements within a stack a different “space above” value than
+    the others. Target that/those elements via an appropriate selector; perhaps a class.
+    Set the --stack-gap variable as desired.
+    (If the element is itself a stack, the customised --stack-gap variable should not propagate undesirably to its children,
+    so long as all stack styles that use the custom property always position it on _stack children_ like I mention in usage notes above.)
+    Note: you could also add `.stack-exception + *` to the selector, to apply the spacing below the element as well as above.
+    Example:
+    .stack-exception {
+      --stack-gap: var(--space-xl);
+    }
+    */
+
 
     /* Box */
     .l-box {
