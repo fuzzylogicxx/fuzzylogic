@@ -289,8 +289,11 @@
     }
 
     h1, h2, h3, h4 {
-      line-height: 1.1;
       font-variant-numeric: lining-nums;
+    }
+
+    h1, h2, h3 {
+      line-height: 1.1;
     }
 
     h1 {
@@ -407,23 +410,29 @@
       hyphenate-limit-last: always;
 
       /* prose spacing:
-      We make the space relative to each element.
-      So an h2 gets more space above it than a p, which is what we want.
-      But also we apply a slightly different, appropriate spacing to headings.
+      We make the space above each element relative to the line-height of the element.
+      So an h2 will get more space above it than a p, which is appropriate.
+      We also allow the default spacing to be overridden via a custom property.
       */
       & > *:not(h1) + * {
         margin-block-start: var(--prose-space, 0.5lh);
       }
 
-      & > *:not(h1) + h2,
-      & > * + h3 {
-        --prose-space: 1.25em;
+      /* Reduce the space above elements that immediately follow headings
+      (Use :where() on the .ha class to reduce selector specificity, to allow easier overridding by subsequent rules.)
+      */
+      & > h2 + *,
+      & > h3 + *,
+      & > h4 + *,
+      & > :where(.ha) + * {
+        --prose-space: var(--space-2xs);
       }
 
-      & > h2 + p,
-      & > h3 + p,
-      & > .ha + p {
-        --prose-space: 0.3125em;
+      /* Increase the space above headings */
+      & > *:not(h1) + h2,
+      & > * + h3,
+      & > * + h4 {
+        --prose-space: 1.25em;
       }
     }
 
