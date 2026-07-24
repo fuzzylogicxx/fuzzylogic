@@ -46,7 +46,7 @@
     "luxon": "^3.5.0",
     "markdown-it-attrs": "^4.3.1",
     "markdown-it-implicit-figures": "^0.12.0",
-    "postcss": "^8.5.10",
+    "postcss": "^8.5.22",
     "terser": "^5.43.1",
     "zod": "^3.24.1",
     "zod-validation-error": "^3.4.0"
