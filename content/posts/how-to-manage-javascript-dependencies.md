@@ -93,7 +93,7 @@ Assuming the fix version of the package is within the semver range you’ve alre
 npm update minimatch
 ```
 
-This will update all the packages listed in your command to the latest version (specified by the tag config), respecting the semver constraints of both your package and its dependencies (if they also require the same package).
+[The update command](https://docs.npmjs.com/cli/v8/commands/npm-update) will update each packages listed in your command to its latest version, respecting the semver constraints for your package and its dependencies (if they also require the same package).  
 
 By default `npm update` will not update the semver values of direct dependencies in your project `package.json`. If you want to also update values in `package.json` you can run: `npm update --save`.
 
@@ -127,7 +127,7 @@ Update: use `yarn why sockjs` (replacing `sockjs` as appropriate) to find out wh
 
 When having to work out the required update to address a security vulnerability in a package that is a subdependency, I like to quickly get to a place where the task is framed in plain English, for example:
 
-> To address a vulnerability in `xmlhttprequest-ssl` we need to upgrade `karma` to the closest available version above `4.4.1` where its dependency on `xmlhttprequest-ssl` is `>=1.6.2` 
+> To mitigate a vulnerability in `xmlhttprequest-ssl` we need to upgrade `karma` to the closest available version above `4.4.1` where its dependency on `xmlhttprequest-ssl` uses a fixed version i.e. `>=1.6.2` 
 
 #### Case Study 1
 
@@ -218,11 +218,12 @@ By contrast, tools such as Netlify’s CLI and linters go under `devDependencies
 ## Upgrading best practices
 
 - Check the package CHANGELOG or releases on Github to see what has changed between versions and if there have been any breaking changes (especially when upgrading to the latest version).
-- Use a dedicated PR (Pull Request) for upgrading packages. Keep the tasks separate from new features and bug fixes.
+- Use a dedicated Pull Request (PR) for upgrading packages. Keep the tasks separate from new features and bug fixes.
 - Upgrade to the latest minor version (using `yarn upgrade-interactive`) and merge that before upgrading to major versions (using `yarn upgrade-interactive -—latest`).
 - Test your work on a staging server (or Netlify preview build) before deploying to production.
 
 ## References
+- [NPM vs Yarn cheatsheet](https://shift.infinite.red/npm-vs-yarn-cheat-sheet-8755b092e5cc)
 - [Yarn workflow](https://classic.yarnpkg.com/en/docs/yarn-workflow/)
 - [Semver cheatsheet](https://devhints.io/semver)
 - [Good explanation of the purpose of a lock file](https://www.robertcooper.me/how-yarn-lock-files-work-and-upgrading-dependencies)
