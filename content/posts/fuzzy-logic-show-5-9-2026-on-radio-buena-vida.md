@@ -15,7 +15,7 @@ tags:
 
 In the run-up to this radio show I had recently moved house, so hadn’t had much time for new record shopping. I’m also approaching the big half-century. So it felt timely to go for a theme rather than a selection of new records. Since I was feeling nostalgic I decided to anchor the mix around some early inspirations (New Order and 808 State) and let it flow from there.
 
-Listen to the show on Soundcloud.
+[Listen to the show on Soundcloud.](https://soundcloud.com/radiobuenavida/fuzzy-logic-w-laurence-2)
 
 <!-- excerpt -->
 
