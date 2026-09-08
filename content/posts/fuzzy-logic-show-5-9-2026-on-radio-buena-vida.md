@@ -1,7 +1,7 @@
 ---
 draft: false
 title: Fuzzy Logic show, 5/9/2026 on Radio Buena Vida
-description: Last radio show before a big birthday so I was feeling nostalgic
+description: My September radio show was anchored in early electro, but features some new Datassette too
 date: 2026-09-07T21:07
 openGraphImage: https://fuzzylogic.me/img/4jjusUtF39-1680.jpeg
 tags:
