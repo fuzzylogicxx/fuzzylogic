@@ -8,11 +8,13 @@ tags:
   - birthday
   - family
 ---
-In the words of Ferris Bueller, ”life moves pretty fast“ and true enough, I’m now 50 years old. How did that happen?
+Like Ferris said: ”life moves pretty fast“ and true enough, I’m now 50 years old. How did that happen?
 
-I may be a spring chicken no longer, but I’m healthy, happy and lucky, and just had a memorable few days of celebration with family and friends.
+I’m now no spring chicken, but I feel healthy, happy and lucky, after a memorable few days of celebration with family and friends.
 
 <!-- excerpt -->
+
+First there was a lovely moment on Wednesday at work. Anda called a mysterious team meeting at 11am. It was so sudden and undiscussed that I felt sure that someone was about to deliver bad news about leaving, or similar. However I had been completely fooled as the team proceeded to bestow their best birthday wishes, along with a card and generous voucher from their whip-round. A nice surprise that made my day.
 
 On Thursday night, we had a family dinner at Cibo on Victoria Road. Clair and I felt it was the perfect neighbourhood venue, and owner Michael is a brilliant host.
 
