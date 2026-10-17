@@ -8,9 +8,11 @@ tags:
   - birthday
   - family
 ---
+![Laurence at his joint 50th party, crouched in front of some large, illuminated numbers that make up the year 1976](/img/uploads/datassette_1680.jpg "The Speaking Clock’s “Sodium Yellow Night” LP")
+
 [Life moves pretty fast…](https://youtu.be/vsYBtfQ3QDo?si=sdtq63UW2Btf1nnK) and I’m now 50 years old. How did that happen?
 
-Okay, I’m no spring chicken… but I feel healthy, happy and very lucky after a memorable few days celebrating the milestone with family and friends.
+So I’m no spring chicken… but I feel healthy, happy and very lucky after a memorable few days celebrating the milestone with family and friends.
 
 <!-- excerpt -->
 
@@ -30,10 +32,17 @@ I got some generous presents – among them records; book and restaurant voucher
 
 ## Birthday with Clair
 
-The next day, Friday, was my birthday proper. I was off work so got up slowly and enjoyed reading a few lovely cards from the previous night, and that had come in the post. Special mention to these insane chocolates, handmade in Tyneside, from Ruth! 
+The next day, Friday, was my birthday proper. I was off work so got up slowly and enjoyed reading a some lovely cards from the night before, and that had come in the post. Special mention to these [seriously tasty chocolates, handmade in Tynemouth](https://www.garethjameschocolatier.co.uk/), from Ruth! 
 
-At lunchtime, Clair took me to Vera – a classy new southside eatery. Everything about this place is great – the decor, chill vibe, attentive service… and the food was fantastic.
+At lunchtime, Clair took me to Vera – a classy new southside eatery. Everything about this place is great – tasteful decor and a nice view of the chefs at work, a relaxed vibe, attentive service… and the food was amazing. We had Sea Bream, Gnocci and Cod from the main lunch menu, but perhaps our favourite parts were the starters. The spicy olives were as good as I‘ve tasted, and the caramelised onion flat bread topped with comte cheese was stunning.
 
-## The Party
+## The joint party
 
+Back in January, a number of my long-time, fellow 1976-born pals and I started discussing a joint 50th party. We had lots of friends in common, so we thought it’d be a good way to save them all having to attend too many individual events, and would also bring our oldest pals together for a serious shindig like eld times!
+
+We chose BAaD’s outdoor courtyard as the venue and it worked really well on the day. I was delighted to see friendly faces who’d made the effort to come from near and far.
+
+We had lined up seven of our talented friends to DJ on a specially-constructed stage and they delivered great vibes all day. We had Marty K’s laidback opening, Andy P’s vintage house spliced with a rave interlude, smooth grooves from Colin W, then loads of great house from Simon, Jason and Tom. Somewhere in between, Marty M sprinkled in some 80s disco pop gems from [Gwen Guthrie](https://youtu.be/3gTpcKKuDec?si=d7gKlJb5AW7VpO9I) and [Laura Branigan](https://youtu.be/RP0_8J7uxhs?si=LN7DaRvwN7KRr2oF) which went down a storm.
+
+It was all over too soon, but before the end of the night the southside contingent managed an impromptu post-party drink at the Rum Shack, with more smiling faces til the end of the night.
 
