@@ -1,5 +1,6 @@
 ---
 title: Fifty
+draft: true
 description: Fun times celebrating a milestone birthday
 noteWithTitle: false
 date: 2026-09-22T17:18
