@@ -42,7 +42,7 @@ At lunchtime, Clair took me to Vera – a classy new southside eatery. Everythin
 
 Back in January, a number of my long-time, fellow 1976-born pals and I started discussing a joint 50th party. We had lots of friends in common, so we thought this could save them all having to attend too many individual events, and would also bring together enough of a crowd for a serious shindig like eld times!
 
-We chose BAaD’s outdoor courtyard as the venue and it worked really well on the day. I was delighted to see friendly faces who’d made the effort to come from near and far.
+We chose [BAaD’s](https://www.baadglasgow.com/) outdoor courtyard as the venue and it worked really well on the day. I was delighted to see friendly faces who’d made the effort to come from near and far.
 
 We had lined up seven of our talented friends to DJ on a specially-constructed stage and they delivered great vibes all day. We had Marty K’s laidback opening, Andy P’s vintage house spliced with a rave interlude, smooth grooves from Colin W, then loads of great house from Simon, Jason and Tom. Somewhere in between, Marty M sprinkled in some 80s disco pop gems from [Gwen Guthrie](https://youtu.be/3gTpcKKuDec?si=d7gKlJb5AW7VpO9I) and [Laura Branigan](https://youtu.be/RP0_8J7uxhs?si=LN7DaRvwN7KRr2oF) which went down a storm.
 
