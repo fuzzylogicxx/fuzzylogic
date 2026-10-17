@@ -8,20 +8,32 @@ tags:
   - birthday
   - family
 ---
-Like Ferris said: ”life moves pretty fast“ and true enough, I’m now 50 years old. How did that happen?
+[Life moves pretty fast…](https://youtu.be/vsYBtfQ3QDo?si=sdtq63UW2Btf1nnK) and I’m now 50 years old. How did that happen?
 
-I’m now no spring chicken, but I feel healthy, happy and lucky, after a memorable few days of celebration with family and friends.
+Okay, I’m no spring chicken… but I feel healthy, happy and very lucky after a memorable few days celebrating the milestone with family and friends.
 
 <!-- excerpt -->
 
-First there was a lovely moment on Wednesday at work. Anda called a mysterious team meeting at 11am. It was so sudden and undiscussed that I felt sure that someone was about to deliver bad news about leaving, or similar. However I had been completely fooled as the team proceeded to bestow their best birthday wishes, along with a card and generous voucher from their whip-round. A nice surprise that made my day.
+The first magic moment came on Wednesday at work. Anda called a mysterious team meeting; one so sudden and unheralded that I felt certain someone was about to deliver the sad news that they were leaving, or tell me I’m being fired. However I had fallen for it completely, as the team proceeded to deliver their best advance birthday wishes, along with a card signed by all and a generous gift voucher. A nice surprise that made my day.
 
-On Thursday night, we had a family dinner at Cibo on Victoria Road. Clair and I felt it was the perfect neighbourhood venue, and owner Michael is a brilliant host.
+## A family gathering
 
-There were quite a few generations there – my mum and dad; me, Clair, Martin and Tricia; all ten of my wonderful nieces and nephews; and lastly their lovely kids. My father-in-law Gary came too, along with other relatives and close family friends. This made it feel really special.
+On Thursday night, we had a family dinner at Cibo on Victoria Road. Clair and I felt it was the perfect neighbourhood venue, and owner Michael is a great guy and brilliant host.
 
-It went great! Michael and team put on an excellent menu (complete with nostalgic Italia 90 world cup theme) and everyone loved the food. I had cornetto di salmone, followed by Talgiatelle Rome Mia, then Tiramisu – delicious. My mum and dad have been really busy and must have been tired but they were in great form – as was everyone.
+There were a number of generations in attendance – my mum and dad; Clair and I, Martin and Tricia; all ten of my wonderful nieces and nephews; and their lovely kids. My father-in-law Gary came too, along with other relatives and close family friends. It felt like a really special gathering.
 
-I got some generous presents – records and vouchers; whisky; a real newspaper from the day of my birth among them. And as the lights were dimmed my mum delivered a Spider-man cake (a nod to my comic collector days) while everyone sang, which gave me a big smile and a great laugh.
+And it went great! Michael and team put on an excellent menu (complete with nostalgic _Italia 90_ theme) and everyone loved the food. I had Cornetto di salmone, Talgiatelle Rome Mia, then Tiramisu – delicious. 
 
-The next day, Friday, was my birthday proper. 
+My mum and dad have been busy handling the sale of my uncle’s house following his death and must have been knackered, but they were in great form, as was everyone.
+
+I got some generous presents – among them records; book and restaurant vouchers; whisky and a quaich; a real newspaper from the day of my birth. And there was a memorable moment as the lights were dimmed and my mum delivered a Spider-Man cake – I collected the comics as a wee guy and some might say at 50 I retain an unhealthy interest – while everyone sang, which gave me a big smile and a great laugh.
+
+## Birthday with Clair
+
+The next day, Friday, was my birthday proper. I was off work so got up slowly and enjoyed reading a few lovely cards from the previous night, and that had come in the post. Special mention to these insane chocolates, handmade in Tyneside, from Ruth! 
+
+At lunchtime, Clair took me to Vera – a classy new southside eatery. Everything about this place is great – the decor, chill vibe, attentive service… and the food was fantastic.
+
+## The Party
+
+
