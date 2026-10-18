@@ -1,6 +1,7 @@
 ---
 title: Fifty
 draft: false
+openGraphImage: https://fuzzylogic.me/img/vuoGcYuDaf-1600.jpeg
 description: Fun times celebrating a milestone birthday
 noteWithTitle: false
 pageSpecificRobotsDirective: noindex, nofollow
@@ -28,9 +29,9 @@ On Thursday night, we had a family dinner at Cibo on Victoria Road. Clair and I 
 
 There were a number of generations in attendance – my mum and dad; Clair and I, Martin and Tricia; all ten of my wonderful nieces and nephews; and their lovely kids. My father-in-law Gary came too, along with other relatives and close family friends. It felt like a really special gathering.
 
-And it went great! Michael and team put on an excellent menu (complete with nostalgic *Italia 90* theme) and everyone loved the food. I had Cornetto di salmone, Talgiatelle Rome Mia, then Tiramisu – delicious. 
+And it went great! Michael and team put on an excellent menu (complete with nostalgic *Italia 90* theme) and everyone loved the food. I had Cornetto di salmone, Talgiatelle Rome Mia, then Tiramisu – delicious.
 
-My mum and dad have been busy handling the sale of my uncle’s house following his death and must have been knackered, but they were in great form, as was everyone.
+My mum and dad have been busy handling the sale of my uncle’s house and must have been knackered, but they were in great form, as was everyone.
 
 I got some generous presents – among them records; book and restaurant vouchers; whisky and a quaich; a real newspaper from the day of my birth. And there was a memorable moment as the lights were dimmed and my mum delivered a Spider-Man* cake while everyone sang Happy Birthday, which gave me a big smile and a great laugh.
 
@@ -38,7 +39,7 @@ I got some generous presents – among them records; book and restaurant voucher
 
 ## Birthday with Clair
 
-The next day, Friday, was my birthday proper. I was off work so got up slowly and enjoyed reading a some lovely cards from the night before, and that had come in the post. Special mention to these [seriously tasty chocolates, handmade in Tynemouth](https://www.garethjameschocolatier.co.uk/), from Ruth! 
+The next day, Friday, was my birthday proper. I was off work so got up slowly and enjoyed reading a some lovely cards from the night before, and that had come in the post. Special mention to these [seriously tasty chocolates, handmade in Tynemouth](https://www.garethjameschocolatier.co.uk/), from Ruth!
 
 At lunchtime, Clair took me to Vera – a classy new southside eatery. Everything about this place is great – tasteful decor and a nice view of the chefs at work, a relaxed vibe, attentive service… and the food was amazing. We had Sea Bream, Gnocci and Cod from the main lunch menu, but perhaps our favourite parts were the starters. The spicy olives were as good as I‘ve tasted, and the caramelised onion flat bread topped with comte cheese was stunning.
 
