@@ -1,8 +1,9 @@
 ---
 title: Fifty
-draft: true
+draft: false
 description: Fun times celebrating a milestone birthday
 noteWithTitle: false
+pageSpecificRobotsDirective: noindex, nofollow
 date: 2026-09-22T17:18
 tags:
   - entry
