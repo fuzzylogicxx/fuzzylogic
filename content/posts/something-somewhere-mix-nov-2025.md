@@ -3,7 +3,6 @@ title: Something, Somewhere (mix, Nov 2025)
 noteWithTitle: false
 draft: false
 date: 2025-11-14T18:19
-openGraphImage: https://fuzzylogic.me/img/HHbMABn0YS-1398.jpeg
 description: A 1 hr selection inna house / techno style
 tags:
   - entry

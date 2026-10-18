@@ -14,6 +14,7 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Draft", name: "draft", widget: "boolean", default: false, required: false}
       - {label: "Meta description", name: "description", widget: "string"}
+      - {label: "Open Graph image", name: "openGraphImageSource", widget: "image", required: false, choose_url: false, hint: "Optional. Leave empty to use the first image in the body. Either way it gets cropped to 1200x630 for social sharing."}
       - {label: "Note with title", name: "noteWithTitle", widget: "boolean", default: false, required: false}
       - {label: "Link Target", name: "linkTarget", widget: "string", required: false}
       - {label: "Page-specific robots directive", name: "pageSpecificRobotsDirective", widget: "string", required: false}
@@ -31,6 +32,7 @@ collections:
       - {label: "Title", name: "title", widget: "string", required: false}
       - {label: "Draft", name: "draft", widget: "boolean", default: false, required: false}
       - {label: "Meta description", name: "description", widget: "string", default: "A short note"}
+      - {label: "Open Graph image", name: "openGraphImageSource", widget: "image", required: false, choose_url: false, hint: "Optional. Leave empty to use the first image in the body. Either way it gets cropped to 1200x630 for social sharing."}
       - {label: "Note with title", name: "noteWithTitle", widget: "boolean", default: false, required: false}
       - {label: "Page-specific robots directive", name: "pageSpecificRobotsDirective", widget: "string", default: "noindex, nofollow", required: false}
       - {label: "Publish Date", name: "date", widget: "datetime", default: {{now}}, date_format: "YYYY-MM-DD", time_format: "HH:mm"}

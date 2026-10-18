@@ -103,7 +103,7 @@ I define an initial part of a post as the excerpt by adding a separator string (
 
 #### Images
 
-I upload source images into the codebase via Decap CMS’s media library and widget, which outputs markdown image syntax. Then, 11ty’s Image plugin transforms this into modern HTML (per my preferred config) which includes the `picture` and `source` elements, while also generating the necessary additional image file sizes and lighter-weight formats.
+I upload source images into the codebase via Decap CMS’s media library and widget, which outputs markdown image syntax. Then, when the post is published, 11ty’s Image plugin transforms this into modern HTML (per my preferred config) which includes the `picture` and `source` elements, while also generating the necessary additional image file sizes and lighter-weight formats.
 
 The 11ty Image plugin does the following for me:
 - automatically works out appropriate `width` and `height` values then adds those attributes to the rendered `<img>`
@@ -112,7 +112,16 @@ The 11ty Image plugin does the following for me:
 - creates optimised formats and multiple sizes
 - transforms the original simple `<img>` into appropriate modern responsive, image markup incorporating the generated sizes and formats
 
-One gotcha when using Decap CMS’s image widget is to ensure that it sets the correct path in the generated markdown image (I want `/img/uploads/` rather than just `/img/`). If it doesn’t, I can manually amend it in the editor’s markdown mode.
+##### Open Graph images
+
+I’ve wired things up to automatically set an appropriate Open Graph image for every post.
+
+- Default: a post’s Open Graph image will automatically be set to reuse the first markdown image you added into the `body` field, cropped to 1200×630 by Eleventy Image. It reuses its `alt` text, too.
+- Override: I’ve given posts an optional “Open Graph image” field in Decap so you can add a different OG image, for example when the main image is portrait.
+- When picking an OG image for a post, the system uses this order of preference: the Decap field, then a hand-entered `openGraphImage` URL, then the first body image, then the site default image.
+- For the relevant code, see: the `openGraphImageSource` filter in `_config/filters.js`, the `openGraphImageUrl` shortcode in `eleventy.config.js`, and the meta tags in `_includes/layouts/base.njk`.
+
+Note: Decap’s `public_folder` must stay `/img/uploads` for automatic Open Graph image detection to work.
 
 #### Sharing music and media
 
