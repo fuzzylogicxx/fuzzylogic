@@ -2,7 +2,8 @@ import { IdAttributePlugin, InputPathToUrlTransformPlugin, HtmlBasePlugin } from
 import { feedPlugin } from "@11ty/eleventy-plugin-rss";
 import pluginSyntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
 import pluginNavigation from "@11ty/eleventy-navigation";
-import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
+import Image, { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
+import path from "node:path";
 
 // Things deserving their own separate files
 import pluginFilters from "./_config/filters.js";
@@ -178,6 +179,27 @@ export default async function(eleventyConfig) {
 			animated: true,
 		},
 	});
+
+  // Open Graph image: take the source image chosen in Decap’s “Open Graph image”
+  // field (e.g. /img/uploads/foo.jpg, which lives at content/img/uploads/foo.jpg),
+  // crop it to the standard 1200x630 and return the generated image’s URL
+  // for use in <meta property="og:image">.
+  // Ref: https://www.11ty.dev/docs/plugins/image/#advanced-control-of-sharp-image-processor
+  eleventyConfig.addShortcode("openGraphImageUrl", async function(src) {
+    const isRemote = /^https?:\/\//.test(src);
+    const metadata = await Image(isRemote ? src : path.join("content", src), {
+      widths: [1200],
+      formats: ["jpeg"],
+      outputDir: "_site/img/",
+      urlPath: "/img/",
+      // Crop (from the centre) rather than squash. Eleventy Image detects
+      // that the transform resized the image and uses the new dimensions.
+      transform: (sharp) => {
+        sharp.resize({ width: 1200, height: 630, fit: "cover" });
+      },
+    });
+    return metadata.jpeg[0].url;
+  });
 
 	// Filters
 	eleventyConfig.addPlugin(pluginFilters);

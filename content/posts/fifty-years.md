@@ -1,7 +1,6 @@
 ---
 title: Fifty
 draft: false
-openGraphImage: https://fuzzylogic.me/img/vuoGcYuDaf-1600.jpeg
 description: Fun times celebrating a milestone birthday
 noteWithTitle: false
 pageSpecificRobotsDirective: noindex, nofollow

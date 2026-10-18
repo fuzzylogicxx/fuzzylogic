@@ -3,7 +3,6 @@ draft: false
 title: Fuzzy Logic show, 7/3/2026 on Radio Buena Vida
 description: Back in the cafe window for the first time since 2023
 date: 2026-03-08T18:41
-openGraphImage: https://fuzzylogic.me/img/kTdai9oRA2-1200.jpeg
 tags:
   - entry
   - radio

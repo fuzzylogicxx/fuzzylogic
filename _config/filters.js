@@ -102,4 +102,20 @@ export default function(eleventyConfig) {
   eleventyConfig.addFilter("sortAlphabetically", strings =>
 		(strings || []).sort((b, a) => b.localeCompare(a))
   );
+
+  // Choose the source image (and its alt text) for a page’s Open Graph image.
+  // Use the image set in Decap’s “Open Graph image” field if there is one,
+  // otherwise fall back to the first Media Library image in the post’s markdown.
+  // Returns { src, alt } or undefined. `alt` comes from the matching markdown image, if any.
+  eleventyConfig.addFilter("openGraphImageSource", (rawInput, overrideSrc) => {
+    const markdownImages = [...String(rawInput || "").matchAll(/!\[([^\]]*)\]\((\/img\/uploads\/[^\s)]+)/g)]
+      .map(([, alt, src]) => ({ src, alt }));
+
+    if (overrideSrc) {
+      const match = markdownImages.find(image => image.src === overrideSrc);
+      return { src: overrideSrc, alt: match ? match.alt : "" };
+    }
+
+    return markdownImages[0];
+  });
 };

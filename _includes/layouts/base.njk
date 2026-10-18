@@ -145,11 +145,22 @@
     <meta property="og:title" content="{{ renderData.title or title or metadata.title }}" />
     <meta property="og:description" content="{{ renderData.description or description or metadata.description }}" />
 
-    {%- if (openGraphImage or metadata.open_graph.image) -%}
-    <meta property="og:image" content="{{ openGraphImage or metadata.open_graph.image }}" />
-    {%- elif (cloudinary_unique_path) -%}
-    <meta property="og:image" content="https://res.cloudinary.com/fuzzylogic/image/upload/q_auto,f_auto,c_crop,g_north,w_1200,h_630/{{ cloudinary_unique_path }}" />
-    {%- endif -%}
+    {#- Open Graph image, in order of preference: the Decap “Open Graph image” field; a hand-entered openGraphImage URL;
+        the post’s first image; the site default. The first and third get cropped to 1200x630 by 11ty Image. #}
+    {%- set ogImage = page.rawInput | openGraphImageSource(openGraphImageSource) if (openGraphImageSource or not openGraphImage) %}
+    {%- if ogImage %}
+    <meta property="og:image" content="{{ metadata.url_base }}{% openGraphImageUrl ogImage.src %}" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    {%- if ogImage.alt %}
+    <meta property="og:image:alt" content="{{ ogImage.alt }}" />
+    {%- endif %}
+    {%- elif openGraphImage %}
+    <meta property="og:image" content="{{ openGraphImage }}" />
+    {%- else %}
+    <meta property="og:image" content="{{ metadata.open_graph.image }}" />
+    <meta property="og:image:alt" content="{{ metadata.open_graph.image_alt_text }}" />
+    {%- endif %}
 
     <meta property="og:url" content="{{ metadata.url_base }}{{ page.url }}" />
 
@@ -157,8 +168,18 @@
     <meta property="og:site_name" content="{{ metadata.url }}" />
 
     <!-- Twitter-specific -->
-    <meta name="twitter:card" content="summary"> <!-- summary_large_image -->
+    {%- if ogImage or openGraphImage %}
+    <meta name="twitter:card" content="summary_large_image">
+    {%- else %}
+    <meta name="twitter:card" content="summary">
+    {%- endif %}
+    {%- if ogImage %}
+    {%- if ogImage.alt %}
+    <meta name="twitter:image:alt" content="{{ ogImage.alt }}">
+    {%- endif %}
+    {%- elif not openGraphImage %}
     <meta name="twitter:image:alt" content="{{ metadata.open_graph.image_alt_text }}">
+    {%- endif %}
 
     <!-- Advice for devices which can 'install' this website on their home screen -->
     <link rel="manifest" href="/manifest.webmanifest">
