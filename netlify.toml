@@ -31,6 +31,72 @@
   to = "/posts/browser-support-heuristics/"
   status = 301
 
+# Old (previous.fuzzylogic.me) post URLs whose slugs changed when migrated
+[[redirects]]
+  from = "/thoughts/dj-gig-at-maxs-bar-glasgow-with-jamie-porter-21-07-18"
+  to = "/posts/dj-gig-at-maxs-bar-glasgow-with-jamie-porter/"
+  status = 301
+
+[[redirects]]
+  from = "/thoughts/current-reading-rise-by-gina-miller"
+  to = "/posts/rise-by-gina-miller/"
+  status = 301
+
+[[redirects]]
+  from = "/thoughts/definitive-webfont-font-face-syntax-in-2018"
+  to = "/posts/definitive-web-font-font-face-syntax/"
+  status = 301
+
+[[redirects]]
+  from = "/bytes/details-and-summary-for-no-javascript-accordions"
+  to = "/posts/details-and-summary-for-no-javascript-disclosure-widgets/"
+  status = 301
+
+[[redirects]]
+  from = "/bytes/-in-the-devtools-console"
+  to = "/posts/in-the-devtools-console/"
+  status = 301
+
+[[redirects]]
+  from = "/bytes/display-contents-snaps-nested-elements-to-page-grid"
+  to = "/posts/using-css-display-contents-to-snap-grandchild-elements-to-a-grid/"
+  status = 301
+
+[[redirects]]
+  from = "/bytes/dont-set-cursor-pointer-on-buttons"
+  to = "/posts/don-t-set-cursor-pointer-on-buttons/"
+  status = 301
+
+[[redirects]]
+  from = "/bytes/guest-reggae-and-dub-mix-on-vics-sunday-soundclash"
+  to = "/posts/guest-reggae-and-dub-mix-on-vic-s-sunday-soundclash/"
+  status = 301
+
+[[redirects]]
+  from = "/bytes/webmentionapp-automate-your-outgoing-webmentions"
+  to = "/posts/webmention.app-automate-your-outgoing-webmentions/"
+  status = 301
+
+[[redirects]]
+  from = "/bytes/rutger-hauer-rip"
+  to = "/posts/rutger-hauer-r.i.p/"
+  status = 301
+
+[[redirects]]
+  from = "/bytes/times-healing-by-mac-talla-nan-creag"
+  to = "/posts/time%E2%80%99s-healing-by-mac-talla-nan-creag/"
+  status = 301
+
+[[redirects]]
+  from = "/bytes/dave-ruperts-bookshelf"
+  to = "/posts/2019-08-01-bookshelf-daverupertcom/"
+  status = 301
+
+[[redirects]]
+  from = "/bytes/the-cure-at-bellahouston-park-fri-16819"
+  to = "/posts/1565863401-cure/"
+  status = 301
+
 # Make an avatar available at a (hopefully in future) “well-known” URL convention
 [[redirects]]
   from = "/.well-known/avatar"
