@@ -17,6 +17,11 @@
 
 # Redirect old blog URLs to new Journal URLs
 [[redirects]]
+  from = "/labs/site-version-1.html"
+  to = "/labs/site-version-1/"
+  status = 301
+
+[[redirects]]
   from = "/thoughts/current-reading-1984-by-george-orwell"
   to = "/posts/1984-by-george-orwell/"
   status = 301
