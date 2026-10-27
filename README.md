@@ -125,7 +125,7 @@ Note: Decap’s `public_folder` must stay `/img/uploads` for automatic Open Grap
 
 #### Sharing music and media
 
-Embedding youtube and bandcamp (etc) players comes at a fairly heavy performance cost. So when [sharing music in a post](https://github.com/fuzzylogicxx/fuzzylogic/blob/v3/content/posts/2025-07-05-16-56.md) I use Paul Irish’s fantastic [lite-youtube-embed](https://github.com/paulirish/lite-youtube-embed) web component, which is a game-changer.
+Embedding youtube and bandcamp (etc) players comes at a fairly heavy performance cost. So when [sharing music in a post](https://github.com/fuzzylogicxx/fuzzylogic/blob/main/content/posts/2025-07-05-16-56.md) I use Paul Irish’s fantastic [lite-youtube-embed](https://github.com/paulirish/lite-youtube-embed) web component, which is a game-changer.
 
 #### Markdown
 
