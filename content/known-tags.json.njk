@@ -1,0 +1,6 @@
+---
+permalink: /known-tags.json
+layout: false
+eleventyExcludeFromCollections: true
+---
+{ {% for tag in collections | getKeys | filterTagList %}{{ tag | dump | safe }}: {{ collections[tag].length }}{% if not loop.last %}, {% endif %}{% endfor %} }
