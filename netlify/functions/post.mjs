@@ -46,20 +46,7 @@ async function commitFile({ repo, branch, token, path, content, message }) {
 export default async function handler(request) {
 	if (request.method !== 'POST') return json({ error: 'POST only' }, 405)
 	if (!isAuthorised(request, process.env.POST_SECRET)) {
-		// TEMPORARY DIAGNOSTIC: lengths only, never values. Remove once auth works.
-		const configured = process.env.POST_SECRET
-		return json(
-			{
-				error: 'Unauthorised',
-				debug: {
-					secretConfigured: Boolean(configured),
-					configuredLength: configured?.length ?? 0,
-					configuredHasEdgeWhitespace: configured ? configured !== configured.trim() : false,
-					receivedLength: (request.headers.get('x-post-secret') ?? '').length,
-				},
-			},
-			401,
-		)
+		return json({ error: 'Unauthorised' }, 401)
 	}
 
 	try {
