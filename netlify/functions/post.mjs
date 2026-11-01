@@ -2,6 +2,7 @@ import { timingSafeEqual } from 'node:crypto'
 import { ZodError } from 'zod'
 import { fromZodError } from 'zod-validation-error'
 import { buildPost, payloadSchema } from '../../_lib/build-post.mjs'
+import { githubTarget } from '../../_lib/github-target.mjs'
 import { loadKnownTags } from '../../_lib/known-tags.mjs'
 import { fetchMetadata } from '../../_lib/page-metadata.mjs'
 
@@ -74,8 +75,7 @@ export default async function handler(request) {
 		}
 		if (payload.dryRun) return json({ dryRun: true, ...preview })
 
-		const { GITHUB_TOKEN, GITHUB_REPO, GITHUB_BRANCH = 'main' } = process.env
-		const target = { repo: GITHUB_REPO, branch: GITHUB_BRANCH, token: GITHUB_TOKEN }
+		const target = githubTarget()
 		if (image) {
 			await commitFile({
 				...target,
