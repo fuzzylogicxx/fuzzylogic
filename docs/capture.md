@@ -32,6 +32,10 @@
 
 `type: "note"` needs no `url`, its title is optional, and it needs a `comment`, `quote` or `image`. `date` is London wall-clock time in the same format as the frontmatter; leave it out on the dry run. Tags are matched to your existing ones (see Tags); unknown ones come back in `newTags`.
 
+## Blank fields
+
+Blank strings and `null` are treated as absent (iOS Shortcuts can't easily skip a field), and an `image` with empty `data` means no image. `tags` can be a list or a single comma-separated string such as `"css, design systems"`; blank entries and trailing commas are ignored.
+
 ## Tags
 
 At least one tag besides `link`/`note` is required (the layout links to the first one as the post's category). Tag names that are post types are ignored.
@@ -47,7 +51,7 @@ The site publishes its own tag list at `/known-tags.json` (`content/known-tags.j
 
 1. Accept URLs, Text and Images from the Share Sheet.
 2. *Choose from Menu*: Link / Note.
-3. *Ask for Input*: comment, then tags (comma separated).
+3. *Ask for Input*: comment (may be blank), then tags (comma separated, sent as one text value; no *Split Text* needed).
 4. *Dictionary* → build payload with `dryRun: true`; *Get Contents of URL* (POST, JSON, header `x-post-secret`).
 5. *Get Dictionary Value* `markdown` (and `newTags`). To edit the fetched title or description, take them from this first response, ask for input pre-filled with them, then send the final request with your edited values and the returned `date`.
 6. Show `markdown` → *Choose from Menu*: Publish / Save as draft / Cancel (show the markdown as the prompt).

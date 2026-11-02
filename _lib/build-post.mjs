@@ -16,7 +16,32 @@ export const tagKey = (tag) => tag.toLowerCase().replace(/[^a-z0-9]/g, '')
 const categoryTags = (tags = []) =>
 	tags.filter((tag) => !TYPE_TAGS.includes(tagKey(tag)))
 
-export const payloadSchema = z
+/**
+ * iOS Shortcuts can't easily leave a field out, so blank strings and nulls count
+ * as absent, an image with no data means no image, and `tags` may be one
+ * comma-separated string as well as a list.
+ */
+export function normalisePayload(raw) {
+	if (!raw || typeof raw !== 'object' || Array.isArray(raw)) return raw
+	const cleaned = {}
+	for (const [key, value] of Object.entries(raw)) {
+		if (value === null) continue
+		if (typeof value === 'string' && value.trim() === '') continue
+		cleaned[key] = value
+	}
+	if (typeof cleaned.tags === 'string') cleaned.tags = cleaned.tags.split(',')
+	if (Array.isArray(cleaned.tags)) {
+		cleaned.tags = cleaned.tags
+			.map((tag) => (typeof tag === 'string' ? tag.trim() : tag))
+			.filter((tag) => tag !== '')
+	}
+	if (cleaned.image && typeof cleaned.image === 'object' && !cleaned.image.data) {
+		delete cleaned.image
+	}
+	return cleaned
+}
+
+const payloadObject = z
 	.object({
 		type: z.enum(['link', 'note']),
 		url: z.string().url().optional(),
@@ -58,6 +83,8 @@ export const payloadSchema = z
 		message: 'A note needs a comment, quote or image',
 		path: ['comment'],
 	})
+
+export const payloadSchema = z.preprocess(normalisePayload, payloadObject)
 
 export function slugify(text) {
 	return text
