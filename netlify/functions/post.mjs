@@ -1,8 +1,8 @@
 import { timingSafeEqual } from 'node:crypto'
 import { ZodError } from 'zod'
 import { fromZodError } from 'zod-validation-error'
-import { buildPost, payloadSchema } from '../../_lib/build-post.mjs'
-import { githubTarget } from '../../_lib/github-target.mjs'
+import { buildPost, decapEditUrl, payloadSchema } from '../../_lib/build-post.mjs'
+import { githubEditUrl, githubTarget } from '../../_lib/github-target.mjs'
 import { loadKnownTags } from '../../_lib/known-tags.mjs'
 import { fetchMetadata } from '../../_lib/page-metadata.mjs'
 
@@ -90,7 +90,12 @@ export default async function handler(request) {
 			content: Buffer.from(post.markdown).toString('base64'),
 			message: `Add ${payload.type} post via capture: ${post.path}`,
 		})
-		return json({ dryRun: false, ...preview })
+		return json({
+			dryRun: false,
+			...preview,
+			editUrl: githubEditUrl(target, post.path),
+			decapUrl: decapEditUrl(new URL(request.url).origin, payload.type, post.path),
+		})
 	} catch (error) {
 		if (error instanceof ZodError) {
 			return json({ error: fromZodError(error).message }, 400)
