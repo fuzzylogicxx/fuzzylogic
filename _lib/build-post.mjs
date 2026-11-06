@@ -22,6 +22,14 @@ const categoryTags = (tags = []) =>
  * as absent, an image with no data means no image, and `tags` may be one
  * comma-separated string as well as a list. A photo can be sent as flat fields.
  */
+/** Tidy base64 from Shortcuts: drop a data: prefix and whitespace, undo the URL-safe alphabet, restore padding. */
+export function cleanBase64(data) {
+	if (typeof data !== 'string') return data
+	let b64 = data.replace(/^data:[^,]*,/, '').replace(/\s+/g, '').replace(/-/g, '+').replace(/_/g, '/')
+	while (b64.length % 4) b64 += '='
+	return b64
+}
+
 export function normalisePayload(raw) {
 	if (!raw || typeof raw !== 'object' || Array.isArray(raw)) return raw
 	const cleaned = {}
@@ -29,6 +37,10 @@ export function normalisePayload(raw) {
 		if (value === null) continue
 		if (typeof value === 'string' && value.trim() === '') continue
 		cleaned[key] = value
+	}
+	// A Text field can't be a real boolean in Shortcuts, so accept "true"/"yes" too.
+	if (typeof cleaned.public === 'string') {
+		cleaned.public = ['true', 'yes', 'on', '1'].includes(cleaned.public.trim().toLowerCase())
 	}
 	if (typeof cleaned.tags === 'string') cleaned.tags = cleaned.tags.split(',')
 	if (Array.isArray(cleaned.tags)) {
@@ -52,6 +64,9 @@ export function normalisePayload(raw) {
 	if (cleaned.image && typeof cleaned.image === 'object' && !cleaned.image.data) {
 		delete cleaned.image
 	}
+	if (cleaned.image?.data) {
+		cleaned.image = { ...cleaned.image, data: cleanBase64(cleaned.image.data) }
+	}
 	return cleaned
 }
 
@@ -67,7 +82,7 @@ const payloadObject = z
 		location: z.string().trim().min(1).optional(),
 		image: z
 			.object({
-				data: z.string().min(1), // base64
+				data: z.string().regex(/^[A-Za-z0-9+/]+={0,2}$/, 'Image data is not valid base64'), // base64
 				ext: z.enum(IMAGE_EXTENSIONS),
 				alt: z.string().optional(),
 				caption: z.string().optional(),
@@ -82,6 +97,8 @@ const payloadObject = z
 			})
 			.optional(),
 		draft: z.boolean().optional(),
+		// Notes are private (noindex, left out of the feed) unless this is true.
+		public: z.boolean().optional(),
 		dryRun: z.boolean().optional(),
 	})
 	.refine((p) => p.type !== 'link' || p.url, {
@@ -172,7 +189,7 @@ export function buildFrontmatter(payload, when, tags) {
 	if (description) lines.push(`description: ${yamlString(description)}`)
 	lines.push(`noteWithTitle: ${payload.type === 'note' && Boolean(payload.title)}`)
 	if (payload.type === 'link') lines.push(`linkTarget: ${yamlUrl(payload.url)}`)
-	if (payload.type === 'note') {
+	if (payload.type === 'note' && !payload.public) {
 		lines.push('pageSpecificRobotsDirective: noindex, nofollow')
 	}
 	lines.push(`date: ${when.toFormat(DATE_FORMAT)}`)
