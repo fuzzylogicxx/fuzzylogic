@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict'
 import test from 'node:test'
-import { buildPost, resolveTags, slugify, tagKey } from '../_lib/build-post.mjs'
+import { buildPost, cleanBase64, resolveTags, slugify, tagKey } from '../_lib/build-post.mjs'
 import { loadKnownTags } from '../_lib/known-tags.mjs'
 import { extractMetadata } from '../_lib/page-metadata.mjs'
 
@@ -197,4 +197,18 @@ test('a photo sent as flat imageData/imageAlt fields becomes an image', () => {
 	assert.equal(image.base64, 'QUJD')
 	assert.match(image.path, /\.jpg$/)
 	assert.match(post.markdown, /!\[A cat\]\(\/img\/uploads\/.+\.jpg\)/)
+})
+
+test('image base64 is cleaned: line breaks, data prefix, URL-safe characters, padding', () => {
+	const messy = 'data:image/jpeg;base64,QUJD\nREVG\r\nR0g'
+	const { image } = buildPost({ type: 'note', title: 'T', tags: 'css', imageData: messy })
+	assert.equal(image.base64, 'QUJDREVGR0g=')
+	assert.equal(cleanBase64('a-b_c'), 'a+b/c===')
+})
+
+test('image data that is not base64 is rejected with a clear message', () => {
+	assert.throws(
+		() => buildPost({ type: 'note', title: 'T', tags: 'css', imageData: 'not base64!!' }),
+		/not valid base64/,
+	)
 })

@@ -22,6 +22,14 @@ const categoryTags = (tags = []) =>
  * as absent, an image with no data means no image, and `tags` may be one
  * comma-separated string as well as a list. A photo can be sent as flat fields.
  */
+/** Tidy base64 from Shortcuts: drop a data: prefix and whitespace, undo the URL-safe alphabet, restore padding. */
+export function cleanBase64(data) {
+	if (typeof data !== 'string') return data
+	let b64 = data.replace(/^data:[^,]*,/, '').replace(/\s+/g, '').replace(/-/g, '+').replace(/_/g, '/')
+	while (b64.length % 4) b64 += '='
+	return b64
+}
+
 export function normalisePayload(raw) {
 	if (!raw || typeof raw !== 'object' || Array.isArray(raw)) return raw
 	const cleaned = {}
@@ -52,6 +60,9 @@ export function normalisePayload(raw) {
 	if (cleaned.image && typeof cleaned.image === 'object' && !cleaned.image.data) {
 		delete cleaned.image
 	}
+	if (cleaned.image?.data) {
+		cleaned.image = { ...cleaned.image, data: cleanBase64(cleaned.image.data) }
+	}
 	return cleaned
 }
 
@@ -67,7 +78,7 @@ const payloadObject = z
 		location: z.string().trim().min(1).optional(),
 		image: z
 			.object({
-				data: z.string().min(1), // base64
+				data: z.string().regex(/^[A-Za-z0-9+/]+={0,2}$/, 'Image data is not valid base64'), // base64
 				ext: z.enum(IMAGE_EXTENSIONS),
 				alt: z.string().optional(),
 				caption: z.string().optional(),
