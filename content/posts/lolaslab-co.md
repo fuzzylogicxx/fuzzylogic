@@ -1,5 +1,5 @@
 ---
-noteWithTitle: false
+title: What the Spec episode 01: How Keith got super into browsers
 linkTarget: https://lolaslab.co/what-the-spec/s01/ep01/
 date: 2026-06-06T12:22
 tags:
