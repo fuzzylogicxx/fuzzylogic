@@ -15,7 +15,7 @@ A useful insight into how one organisation handles design tokens via custom prop
 
 <!-- excerpt -->
 
-At work, we’ve been deep in preparation for full-scale rollout of design tokens rollout for well over a year. And we’re partway down the line because we’ve defined them (core and semantic tiers), fed them into [Style Dictionary](https://styledictionary.com/), and converted them to custom properties which we deliver to and serve in consuming applications. 
+At work, we’ve been deep in preparation for full-scale rollout of design tokens for well over a year. And we’re partway down the line because we’ve defined them (core and semantic tiers), fed them into [Style Dictionary](https://styledictionary.com/), and converted them to custom properties which we deliver to and serve in consuming applications. 
 
 Where I think we still have a way to go is in properly appreciating that “using custom properties for design tokens” brings new opportunities and perhaps also risks.
 
@@ -32,7 +32,7 @@ And they say that internally, private tokens often map to their semantic or prim
 
 <figure>
 
-```
+``` css
 --_nys-button-background-color: var(--nys-button-background-color, var(--nys-color-theme));
 ```
 
