@@ -59,7 +59,8 @@ No header → `401`. Bad payload → `400` with the reason. `dryRun: true` never
 }
 ```
 
-- `type: "note"` needs no `url`, its title is optional, and it needs a `comment`, `quote` or `image`.
+- `type: "note"` needs no `url`, its title is optional, and it needs a `comment`, `quote` or `image`. A note's `description` defaults to "A short note" (as in Decap) unless you send one.
+- Shortcuts can't put a variable inside a nested dictionary, so a photo may instead be sent as flat Text fields `imageData` (base64), `imageExt` (defaults to `jpg`), `imageAlt` and `imageCaption`. Same result as `image`.
 - Blank strings and `null` count as absent (Shortcuts can't skip a field); an `image` with empty `data` means no image.
 - `tags` is a list or one comma-separated string. At least one tag besides `link`/`note` is required (the layout links to the first one as the post's category). Post-type tags are ignored.
 - `date` is London wall-clock time, `yyyy-MM-ddTHH:mm`, no offset. Leave it out on the dry run and send back the one returned.
