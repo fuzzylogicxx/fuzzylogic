@@ -38,6 +38,10 @@ export function normalisePayload(raw) {
 		if (typeof value === 'string' && value.trim() === '') continue
 		cleaned[key] = value
 	}
+	// A Text field can't be a real boolean in Shortcuts, so accept "true"/"yes" too.
+	if (typeof cleaned.public === 'string') {
+		cleaned.public = ['true', 'yes', 'on', '1'].includes(cleaned.public.trim().toLowerCase())
+	}
 	if (typeof cleaned.tags === 'string') cleaned.tags = cleaned.tags.split(',')
 	if (Array.isArray(cleaned.tags)) {
 		cleaned.tags = cleaned.tags
@@ -93,6 +97,8 @@ const payloadObject = z
 			})
 			.optional(),
 		draft: z.boolean().optional(),
+		// Notes are private (noindex, left out of the feed) unless this is true.
+		public: z.boolean().optional(),
 		dryRun: z.boolean().optional(),
 	})
 	.refine((p) => p.type !== 'link' || p.url, {
@@ -183,7 +189,7 @@ export function buildFrontmatter(payload, when, tags) {
 	if (description) lines.push(`description: ${yamlString(description)}`)
 	lines.push(`noteWithTitle: ${payload.type === 'note' && Boolean(payload.title)}`)
 	if (payload.type === 'link') lines.push(`linkTarget: ${yamlUrl(payload.url)}`)
-	if (payload.type === 'note') {
+	if (payload.type === 'note' && !payload.public) {
 		lines.push('pageSpecificRobotsDirective: noindex, nofollow')
 	}
 	lines.push(`date: ${when.toFormat(DATE_FORMAT)}`)

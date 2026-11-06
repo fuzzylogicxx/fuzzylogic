@@ -55,11 +55,13 @@ No header → `401`. Bad payload → `400` with the reason. `dryRun: true` never
   "image": { "data": "<base64>", "ext": "jpg", "alt": "", "caption": "" },
   "date": "2025-07-05T17:41",
   "draft": false,
+  "public": false,
   "dryRun": true
 }
 ```
 
 - `type: "note"` needs no `url`, its title is optional, and it needs a `comment`, `quote` or `image`. A note's `description` defaults to "A short note" (as in Decap) unless you send one.
+- Notes are private by default: they get `pageSpecificRobotsDirective: noindex, nofollow`, which also keeps them out of the RSS feed (the feed collection excludes any post that has that key). `"public": true` (or the text `true`/`yes`) omits the key, so the note is indexed and in the feed. Links are unaffected.
 - Shortcuts can't put a variable inside a nested dictionary, so a photo may instead be sent as flat Text fields `imageData` (base64), `imageExt` (defaults to `jpg`), `imageAlt` and `imageCaption`. Same result as `image`.
 - Image base64 is tidied first (line breaks, a `data:` prefix, URL-safe characters, missing padding). If it still isn't valid base64 the request fails with "Image data is not valid base64" (also on a dry run) rather than a GitHub 422.
 - Blank strings and `null` count as absent (Shortcuts can't skip a field); an `image` with empty `data` means no image.

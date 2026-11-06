@@ -212,3 +212,13 @@ test('image data that is not base64 is rejected with a clear message', () => {
 		/not valid base64/,
 	)
 })
+
+test('a note is noindex and out of the feed unless public', () => {
+	const base = { type: 'note', title: 'T', comment: 'Hi', tags: 'css' }
+	const key = /pageSpecificRobotsDirective/
+	assert.match(buildPost(base).post.markdown, key)
+	assert.match(buildPost({ ...base, public: false }).post.markdown, key)
+	assert.doesNotMatch(buildPost({ ...base, public: true }).post.markdown, key)
+	assert.doesNotMatch(buildPost({ ...base, public: 'Yes' }).post.markdown, key)
+	assert.match(buildPost({ ...base, public: 'false' }).post.markdown, key)
+})
