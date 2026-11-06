@@ -168,3 +168,15 @@ test('loadKnownTags returns the parsed list, or null when unavailable', async ()
 		null,
 	)
 })
+
+test('Decap edit URL uses the blog collection for links and note for notes', async () => {
+	const { decapEditUrl } = await import('../_lib/build-post.mjs')
+	assert.equal(
+		decapEditUrl('https://fuzzylogic.me', 'link', 'content/posts/fifty-years.md'),
+		'https://fuzzylogic.me/admin/#/collections/blog/entries/fifty-years',
+	)
+	assert.equal(
+		decapEditUrl('https://fuzzylogic.me', 'note', 'content/posts/2025-07-05-17-41.md'),
+		'https://fuzzylogic.me/admin/#/collections/note/entries/2025-07-05-17-41',
+	)
+})

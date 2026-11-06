@@ -21,3 +21,7 @@ export function githubTarget(env = process.env) {
 	}
 	return { repo, branch, token }
 }
+
+/** One-click link to edit a committed file in the GitHub web editor. */
+export const githubEditUrl = ({ repo, branch }, path) =>
+	`https://github.com/${repo}/edit/${encodeURIComponent(branch)}/${path.split('/').map(encodeURIComponent).join('/')}`

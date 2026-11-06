@@ -216,3 +216,10 @@ export function buildPost(rawPayload, now = new Date(), knownTags = {}) {
 	const post = { path: `${POSTS_DIR}/${filename}`, markdown }
 	return { post, image, newTags, date: when.toFormat(DATE_FORMAT), url: `/posts/${base}/` }
 }
+
+/** Link to the post in Decap CMS: links live in the "blog" collection, notes in "note". */
+export const decapEditUrl = (origin, type, postPath) => {
+	const slug = postPath.split('/').pop().replace(/\.md$/, '')
+	const collection = type === 'note' ? 'note' : 'blog'
+	return `${origin}/admin/#/collections/${collection}/entries/${encodeURIComponent(slug)}`
+}
