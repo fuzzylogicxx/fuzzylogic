@@ -5,6 +5,7 @@ const ZONE = 'Europe/London'
 const DATE_FORMAT = "yyyy-MM-dd'T'HH:mm"
 const UPLOADS_DIR = 'content/img/uploads'
 const POSTS_DIR = 'content/posts'
+const DEFAULT_NOTE_DESCRIPTION = 'A short note'
 const IMAGE_EXTENSIONS = ['jpg', 'jpeg', 'png', 'webp', 'gif']
 // Same list as the filterTagList filter in _config/filters.js: these aren't categories.
 const TYPE_TAGS = ['all', 'entry', 'link', 'note', 'posts']
@@ -19,7 +20,7 @@ const categoryTags = (tags = []) =>
 /**
  * iOS Shortcuts can't easily leave a field out, so blank strings and nulls count
  * as absent, an image with no data means no image, and `tags` may be one
- * comma-separated string as well as a list.
+ * comma-separated string as well as a list. A photo can be sent as flat fields.
  */
 export function normalisePayload(raw) {
 	if (!raw || typeof raw !== 'object' || Array.isArray(raw)) return raw
@@ -34,6 +35,19 @@ export function normalisePayload(raw) {
 		cleaned.tags = cleaned.tags
 			.map((tag) => (typeof tag === 'string' ? tag.trim() : tag))
 			.filter((tag) => tag !== '')
+	}
+	// Shortcuts can't put a variable into a nested dictionary, so the photo may
+	// arrive as flat fields: imageData, imageExt, imageAlt, imageCaption.
+	if (cleaned.imageData && !cleaned.image) {
+		cleaned.image = {
+			data: cleaned.imageData,
+			ext: cleaned.imageExt ?? 'jpg',
+			alt: cleaned.imageAlt,
+			caption: cleaned.imageCaption,
+		}
+	}
+	for (const key of ['imageData', 'imageExt', 'imageAlt', 'imageCaption']) {
+		delete cleaned[key]
 	}
 	if (cleaned.image && typeof cleaned.image === 'object' && !cleaned.image.data) {
 		delete cleaned.image
@@ -152,9 +166,10 @@ export function buildFrontmatter(payload, when, tags) {
 	const lines = []
 	if (payload.title) lines.push(`title: ${yamlString(payload.title)}`)
 	if (payload.draft) lines.push('draft: true')
-	if (payload.description) {
-		lines.push(`description: ${yamlString(payload.description)}`)
-	}
+	// Notes fall back to Decap's default so every page has a meta description.
+	const description =
+		payload.description ?? (payload.type === 'note' ? DEFAULT_NOTE_DESCRIPTION : undefined)
+	if (description) lines.push(`description: ${yamlString(description)}`)
 	lines.push(`noteWithTitle: ${payload.type === 'note' && Boolean(payload.title)}`)
 	if (payload.type === 'link') lines.push(`linkTarget: ${yamlUrl(payload.url)}`)
 	if (payload.type === 'note') {

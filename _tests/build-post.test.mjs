@@ -180,3 +180,21 @@ test('Decap edit URL uses the blog collection for links and note for notes', asy
 		'https://fuzzylogic.me/admin/#/collections/note/entries/2025-07-05-17-41',
 	)
 })
+
+test('a note gets a default meta description, which a supplied one overrides', () => {
+	const base = { type: 'note', title: 'A title', comment: 'Hi', tags: ['css'] }
+	assert.match(buildPost(base).post.markdown, /description: A short note/)
+	assert.match(
+		buildPost({ ...base, description: 'Mine' }).post.markdown,
+		/description: Mine/,
+	)
+})
+
+test('a photo sent as flat imageData/imageAlt fields becomes an image', () => {
+	const { image, post } = buildPost({
+		type: 'note', title: 'T', tags: 'css', imageData: 'QUJD', imageAlt: 'A cat', imageExt: '', imageCaption: '',
+	})
+	assert.equal(image.base64, 'QUJD')
+	assert.match(image.path, /\.jpg$/)
+	assert.match(post.markdown, /!\[A cat\]\(\/img\/uploads\/.+\.jpg\)/)
+})
