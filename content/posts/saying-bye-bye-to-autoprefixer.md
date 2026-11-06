@@ -7,7 +7,7 @@ mainImage.isAnchor: false
 tags:
   - boilerplate
   - build
-  - CSS
+  - css
   - browsers
   - proprietary
   - web
