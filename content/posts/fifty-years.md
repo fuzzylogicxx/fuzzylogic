@@ -12,7 +12,7 @@ tags:
   - family
   - music
 ---
-![Laurence at his joint 50th party crouched in front of a set of large, white, illuminated numbers that make up the year 1976. Laurence is dressed in jeans, blue jacket and striped top, and smiling.](/img/uploads/lh_party_1976_squooshed.jpg)
+![Laurence at his joint 50th party crouched in front of a set of large, white, illuminated numbers that make up the year 1976. Laurence is dressed in jeans, blue jacket and striped top, and smiling.](/img/uploads/lh_party_1976_squooshed.jpg "Rolling back the years at our joint 50th birthday party")
 
 [Life moves pretty fast…](https://youtu.be/vsYBtfQ3QDo?si=sdtq63UW2Btf1nnK) and I’m now 50 years old. How did that happen?
 
