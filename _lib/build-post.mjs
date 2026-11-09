@@ -1,5 +1,6 @@
 import { DateTime } from 'luxon'
 import { z } from 'zod'
+import { stripJpegMetadataBase64 } from './strip-jpeg-metadata.mjs'
 
 const ZONE = 'Europe/London'
 const DATE_FORMAT = "yyyy-MM-dd'T'HH:mm"
@@ -239,7 +240,8 @@ export function buildPost(rawPayload, now = new Date(), knownTags = {}) {
 		image = {
 			path: `${UPLOADS_DIR}/${imageName}`,
 			webPath: `/img/uploads/${imageName}`,
-			base64: payload.image.data,
+			// Public repo: drop GPS and other metadata from JPEGs.
+			base64: stripJpegMetadataBase64(payload.image.data),
 		}
 	}
 
