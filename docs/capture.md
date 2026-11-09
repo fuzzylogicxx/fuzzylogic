@@ -81,6 +81,7 @@ Errors: `{ "error": "..." }` with `400`, `401` or `500`. The Shortcut checks for
 - A link body opens with a blockquote of the selected text, else the page description.
 - `draft: true` posts are committed but not built into the site.
 - Frontmatter follows Decap's field order, so a later Decap save produces no noisy diff.
+- **JPEGs are stripped of private metadata by the function** (`_lib/strip-jpeg-metadata.mjs`, applied in `buildPost`, so on dry runs too): GPS location, camera details, timestamps, XMP, IPTC, comments and any embedded extra images (iPhone HDR/depth) are removed. Kept: the pixels untouched (no re-encode, no quality loss), colour profile and the EXIF Orientation tag (without it phone photos would display sideways). So the Shortcut does not need to re-encode a JPEG to protect location. Other formats (PNG, WebP, GIF) pass through unchanged, so the Shortcut must still convert HEIC to JPEG. A file that starts like a JPEG but can't be parsed is rejected ("Image is not a valid JPEG") rather than published unstripped.
 - A photo is committed first, as its own commit, so it can briefly deploy ahead of the post. Netlify Functions accept ~6 MB per request, so resize in the Shortcut.
 
 ## 3. Link Shortcut: "Post to Fuzzy Logic" (iOS 26)
@@ -102,7 +103,7 @@ Items marked **[verify]** are reconstructed from memory of the build; check them
 **Preview request**
 7. **Get Contents of URL** `Endpoint`
    - Method: **POST**
-   - Headers: `x-post-secret` = `Secret`
+   - Headers: `x-post-secret` = `Secret` (and no other row; a blank header row makes the request fail with "The network connection was lost")
    - Request Body: **JSON**: `type` Text `link`; `url` Text `Link`; `comment` Text `Comment`; `tags` Text `Tags`; `dryRun` Boolean **on**
 8. **Set Variable** `Preview`
 9. Five times, **Get Dictionary Value** for *Value* with key `date`, `title`, `description`, `markdown`, `newTags` in `Preview`, each followed by **Set Variable** `Date`, `Title`, `Description`, `Markdown`, `NewTags`
@@ -137,8 +138,9 @@ Items marked **[verify]** are reconstructed from memory of the build; check them
 - **Get URLs from Input** defaults to the previous variable; clear it and pick **Shortcut Input**.
 - After a **Choose from Menu**, "Contents of URL" is ambiguous, so always use the `Result` variable.
 - "Please choose a value for each parameter" means an action has an empty parameter (often a hidden blank row in an If).
+- **Several fields end up with the same text (e.g. comment, description and image alt all repeat the title).** The server copies each field exactly as received, so check the **Set Variable** actions after each **Ask for Input**. When Set Variable actions are duplicated or prompts are inserted later, a Set Variable can keep pointing at an earlier Ask for Input (every one is labelled *Provided Input*). Tap each Set Variable's input pill and make sure it comes from the Ask for Input directly above it. To isolate it, run a **Show Content** of the variable: if it shows the wrong text, the Set Variable is wrong; if it's right, check the request body pills.
 - ⓘ / Details is disabled until the shortcut has at least one action.
-- An earlier shortcut failed every request with "The network connection was lost" while a fresh one worked; if that recurs, rebuild in a fresh shortcut.
+- **"The network connection was lost" on a request, even on Wi-Fi, is almost always a blank row in the request's Headers.** If there is an empty header slot underneath `x-post-secret` (no name, no value), iOS drops the connection before the server sees anything. Delete the empty row so `x-post-secret` is the only header. This has happened twice (the original "Foo" shortcut, and the Note Shortcut's first request), and duplicating an action or shortcut can carry the blank row into the copy. Check Headers first, before suspecting the network, image size or server. If it still fails, rebuild the request in a fresh shortcut.
 
 ### Testing the Shortcut
 Use **Save as draft** on a throwaway page and delete the draft afterwards. To test the Publish error path safely, publish a page whose slug already exists (expect an "already exists" alert).
