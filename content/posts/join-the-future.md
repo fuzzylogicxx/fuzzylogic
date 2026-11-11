@@ -4,7 +4,7 @@ title: I’ve just read Join the Future, by Matt Anniss
 description: I’ve just read Join the Future, by Matt Anniss
 tags:
 - note
-- book
+- books
 - bleep
 - techno
 - music

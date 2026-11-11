@@ -7,7 +7,7 @@ tags:
   - note
   - music
   - friends
-  - event
+  - events
   - photography
   - glasgow
   - clubs

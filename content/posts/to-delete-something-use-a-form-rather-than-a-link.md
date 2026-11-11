@@ -8,7 +8,7 @@ tags:
 - forms
 - semantics
 - html
-- button
+- buttons
 - rails
 noteWithTitle: false
 linkTarget: https://discuss.hotwired.dev/t/destroy-record-in-turbo-frame/2731/2

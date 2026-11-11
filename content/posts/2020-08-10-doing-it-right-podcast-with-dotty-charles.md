@@ -2,7 +2,7 @@
 date: "2020-08-10T13:21:54.912Z"
 title: "“Doing It Right” Podcast, with Dotty Charles"
 description: "An interview with Ashley ‘Dotty‘ Charles, a writer and broadcaster, on the topic of online outrage"
-tags: [link, podcast, social-media, interview, outrage]
+tags: [link, podcast, social-media, interviews, outrage]
 linkTarget: "https://doingitright.podbean.com/e/doing-it-right-dotty-charles/"
 ---
 An interview with Ashley ‘Dotty’ Charles, a writer and broadcaster, on the topic of online outrage.

@@ -2,7 +2,7 @@
 date: "2022-07-15T11:29:59.657Z"
 title: "Perceived affordances and the functionality mismatch (by Léonie Watson)"
 description: "Léonie tackles the prickly subject of “element re-purposing” in web development"
-tags: [link, accessibility, button, affordance, repurposing]
+tags: [link, accessibility, buttons, affordance, repurposing]
 linkTarget: "https://tink.uk/perceived-affordances-and-the-functionality-mismatch/"
 ---
 Léonie tackles the prickly subject of “element re-purposing” in web development. This post follows a [fantastic Twitter exchange started by Lea Verou](https://twitter.com/LeaVerou/status/1545712667515654144) regarding whether the common visual design request for “adjacent but mututally exclusive buttons” should be built as radio buttons or using `<button>` elements.

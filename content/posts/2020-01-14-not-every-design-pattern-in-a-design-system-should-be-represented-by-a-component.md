@@ -2,7 +2,7 @@
 date: "2020-01-14T09:09:08.918Z"
 title: "Not every Design System Pattern should be represented by a component (CSS-Tricks)"
 description: "Thoughts from Robin Rendle of Gousto on Design System maintainability"
-tags: [link, design-systems, component, pattern]
+tags: [link, design-systems, components, pattern]
 linkTarget: "https://css-tricks.com/newsletter/181/"
 ---
 > My point with all this is that it’s easy to see every problem or design as a new component or a mix of currently existing components. But instead, we should make components that can slot into each other neatly, rather just continue to make more components.

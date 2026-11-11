@@ -8,7 +8,7 @@ tags:
 - work
 - burnout
 - purpose
-- career
+- careers
 - life
 noteWithTitle: false
 youtubeId: JVmPmd5s4g

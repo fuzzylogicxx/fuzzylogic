@@ -5,7 +5,7 @@ date: 2024-03-04T10:00:00Z
 mainImage.isAnchor: false
 tags:
 - entry
-- book
+- books
 - mental-health
 - connection
 - community

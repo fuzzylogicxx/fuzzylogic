@@ -6,7 +6,7 @@ tags:
 - link
 - css
 - design
-- tool
+- tools
 - css-day
 noteWithTitle: false
 linkTarget: https://matthiasott.com/notes/the-new-css

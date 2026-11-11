@@ -4,7 +4,7 @@ description: An image optimisation and resizing tool with lots of different comp
 date: 2018-11-15T12:00:00Z
 tags:
   - link
-  - tool
+  - tools
   - images
   - optimisation
   - performance

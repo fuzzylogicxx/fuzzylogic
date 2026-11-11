@@ -4,7 +4,7 @@ title: Banksy’s Cut and Run exhibition
 description: I loved the presentation, the art, and Banksy’s words about his ideas and influences
 tags:
 - note
-- art
+- arts
 - banksy
 - stencils
 - rebelion

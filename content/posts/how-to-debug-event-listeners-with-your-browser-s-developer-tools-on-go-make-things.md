@@ -9,7 +9,7 @@ tags:
 - browsers
 - event-listener
 - javascript
-- event
+- events
 - debug
 - link
 noteWithTitle: false

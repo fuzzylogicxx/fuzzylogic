@@ -5,7 +5,7 @@ description: "I enjoyed this book about book about how music shapes our lives"
 date: 2025-05-10T16:51
 tags:
   - note
-  - book
+  - books
   - music
 ---
 Clair bought me [Jude Rogers’ book](https://uk.bookshop.org/p/books/the-sound-of-being-human-how-music-shapes-our-lives-jude-rogers/6365021) for Christmas thinking I would enjoy it – and I did. I love the idea of chronicling the milestones of your life using music – music that touched you, that you were obsessed with, or that bonded you with significant others.

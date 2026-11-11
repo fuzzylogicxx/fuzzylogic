@@ -11,7 +11,7 @@ tags:
   - humanity
   - friendship
   - love
-  - book
+  - books
   - film
 draft: false
 ---

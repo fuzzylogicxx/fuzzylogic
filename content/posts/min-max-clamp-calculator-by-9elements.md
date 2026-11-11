@@ -6,7 +6,7 @@ tags:
 - link
 - responsive-design
 - utopia
-- tool
+- tools
 - typography
 - fluid
 - clamp

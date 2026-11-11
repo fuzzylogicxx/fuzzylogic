@@ -2,7 +2,7 @@
 date: "2020-09-19T17:39:04.452Z"
 title: "itty.bitty"
 description: ""
-tags: [link, tool, web, development, share]
+tags: [link, tools, web, development, share]
 linkTarget: "https://itty.bitty.site/edit"
 ---
 Here’s an interesting tool for creating and sharing small-ish web pages without having to build a website or organise hosting.

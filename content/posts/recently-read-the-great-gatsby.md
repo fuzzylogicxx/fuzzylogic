@@ -4,7 +4,7 @@ description: "I’ve just read F. Scott Fitzgerald’s classic, old sport"
 noteWithTitle: false
 date: 2025-03-14T16:51
 tags:
-  - book
+  - books
   - the-american-dream
 ---
 I’ve just finished reading F. Scott Fitzgerald’s _The Great Gatsby_. It’s short so was a perfect holiday read.

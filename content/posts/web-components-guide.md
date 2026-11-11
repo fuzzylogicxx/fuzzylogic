@@ -5,7 +5,7 @@ description: Lovely new resource that’s helping me better understand Web Compo
 tags:
 - web-components
 - javascript
-- event
+- events
 - classes
 linkTarget: https://webcomponents.guide/
 draft: false

@@ -5,7 +5,7 @@ date: 2021-07-01T08:48:00Z
 mainImage.isAnchor: false
 tags:
 - progressive-enhancement
-- button
+- buttons
 - javascript
 - stimulus
 ---

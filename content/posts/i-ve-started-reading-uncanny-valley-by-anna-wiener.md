@@ -9,7 +9,7 @@ tags:
 - silicon-valley
 - startup
 - tech
-- book
+- books
 draft: false
 
 ---

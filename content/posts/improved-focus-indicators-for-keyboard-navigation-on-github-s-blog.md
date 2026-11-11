@@ -5,7 +5,7 @@ description: GitHub have recently done some good accessibility-boosting work by 
   focus indication
 tags:
 - link
-- button
+- buttons
 - input
 - focus
 - accessibility

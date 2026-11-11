@@ -5,7 +5,7 @@ description: A decision-tree to make better decisions regarding buttons and link
 tags:
 - entry
 - link
-- button
+- buttons
 - development
 - design
 - accessibility

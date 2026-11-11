@@ -4,7 +4,7 @@ description: A handy tool for resizing your image to the standard sizes for soci
 date: 2019-01-23T12:00:00Z
 tags:
   - link
-  - tool
+  - tools
   - images
   - social-media
 linkTarget: https://promo.com/tools/image-resizer/

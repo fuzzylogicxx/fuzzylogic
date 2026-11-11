@@ -2,7 +2,7 @@
 date: "2021-06-19T13:08:24.866Z"
 title: "clipboard.js - Copy to clipboard without Flash"
 description: "Handy installable JS package for “copy to clipboard” functionality"
-tags: [link, tool, web, development, copy, javascript]
+tags: [link, tools, web, development, copy, javascript]
 linkTarget: "https://clipboardjs.com/"
 ---
 Here’s a handy JS package for “copy to clipboard” functionality that’s lightweight and installable from npm.

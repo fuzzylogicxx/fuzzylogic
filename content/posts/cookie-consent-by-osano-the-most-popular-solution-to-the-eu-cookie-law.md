@@ -2,7 +2,7 @@
 date: "2019-08-07T13:51:02.901Z"
 title: "Cookie Consent by Osano"
 description: "The most popular solution to the EU cookie law"
-tags: [link, development, tool, cookies, legal]
+tags: [link, development, tools, cookies, legal]
 linkTarget: "https://www.osano.com/cookieconsent"
 ---
 The most popular drop-in solution to the EU Cookie Law requirements.

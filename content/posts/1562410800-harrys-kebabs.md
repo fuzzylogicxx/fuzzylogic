@@ -6,7 +6,7 @@ title: "Note 2019-07-06T11:00:00: Finished Harry’s Kebabs on ‘oliday"
 location: Parque la Carolina, Marbella, Spain
 tags:
   - note
-  - book
+  - books
   - music
   - london
 ---

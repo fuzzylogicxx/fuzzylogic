@@ -6,7 +6,7 @@ tags:
 - entry
 - javascript
 - accessibility
-- tab
+- tabs
 noteWithTitle: false
 linkTarget: ''
 mainImage.url: ''

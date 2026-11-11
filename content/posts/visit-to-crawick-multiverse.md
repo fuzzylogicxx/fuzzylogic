@@ -8,7 +8,7 @@ tags:
   - note
   - family
   - rudy
-  - art
+  - arts
   - scotland
 location: Sanquar
 ---

@@ -7,7 +7,7 @@ tags:
   - link
   - bbc
   - music
-  - art
+  - arts
   - sakamoto
   - japan
 ---

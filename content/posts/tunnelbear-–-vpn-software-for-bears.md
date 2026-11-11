@@ -7,7 +7,7 @@ date: 2018-09-03T15:42:00.000Z
 linkTarget: https://www.tunnelbear.com/
 tags:
   - link
-  - tool
+  - tools
   - vpn
   - encryption
   - inspiration

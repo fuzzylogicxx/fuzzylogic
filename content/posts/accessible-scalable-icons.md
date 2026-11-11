@@ -6,7 +6,7 @@ tags:
   - development
   - how-to
   - svg
-  - icon
+  - icons
   - hide
   - accessibility
 ---

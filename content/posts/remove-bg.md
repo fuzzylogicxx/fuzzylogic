@@ -4,7 +4,7 @@ description: A free, web-based tool which detects a photo’s background and rem
 date: 2019-03-18T12:00:00Z
 tags:
   - link
-  - tool
+  - tools
   - images
 linkTarget: https://www.remove.bg/
 ---

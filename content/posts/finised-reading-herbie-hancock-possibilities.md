@@ -6,7 +6,7 @@ location: Glasgow
 mainImage.isAnchor: false
 tags:
 - note
-- book
+- books
 - jazz
 - bhuddism
 - music

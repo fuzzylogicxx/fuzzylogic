@@ -2,7 +2,7 @@
 date: "2020-01-29T21:20:06.983Z"
 title: "RegExr: Learn, Build, and Test RegEx"
 description: "A nice online tool for testing RegEx patterns in a safe place before using in production."
-tags: [link, regex, development, tool]
+tags: [link, regex, development, tools]
 linkTarget: "https://regexr.com/"
 ---
 > RegExr is an online tool to learn, build, & test Regular Expressions.

@@ -4,7 +4,7 @@ description: I used ImprovMX to give myself a free, branded email address for th
 date: 2018-11-25T12:00:00Z
 tags:
   - link
-  - tool
+  - tools
   - email
   - dns
 linkTarget: https://improvmx.com/

@@ -3,7 +3,7 @@ date: 2019-11-06
 title: WAVE Web Accessibility Evaluation Tool
 description: A suite of website evaluation tools which can identify accessibility and WCAG errors and facilitate human evaluation of web content.
 linkTarget: https://wave.webaim.org/
-tags: [link, accessibility, tool]
+tags: [link, accessibility, tools]
 ---
 The featured article in this week’s [Accessibility Weekly newsletter](https://mailchi.mp/e7e43e8d6906/accessibility-weekly-161significant-wave-updates-and-more) was on recent improvements to the _WAVE_ suite of accessibility testing tools. 
 

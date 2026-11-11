@@ -2,7 +2,7 @@
 date: "2021-01-03T18:42:11.343Z"
 title: "Big picture performance analysis using Lighthouse Parade (on Cloud Four)"
 description: "Lighthouse Parade is a Node.js command line tool that crawls a domain and gathers lighthouse performance data for every page."
-tags: [link, tool, performance, lighthouse]
+tags: [link, tools, performance, lighthouse]
 linkTarget: "https://cloudfour.com/thinks/big-picture-performance-analysis-using-lighthouse-parade/"
 ---
 I like the sound of this performance analysis tool from the clever folks at [Cloud Four](https://cloudfour.com/), especially because it covers your entire site rather than just a single page.

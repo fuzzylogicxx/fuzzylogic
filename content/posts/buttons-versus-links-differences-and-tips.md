@@ -13,7 +13,7 @@ tags:
 - html
 - anchor
 - link
-- button
+- buttons
 - accessibility
 noteWithTitle: false
 linkTarget: ''

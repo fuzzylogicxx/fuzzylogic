@@ -2,7 +2,7 @@
 date: "2020-03-12T09:18:02"
 title: "Block Links: A tricky UI Problem"
 description: "A problem to solve or just a bad idea?"
-tags: [development, design, links, button, accessibility]
+tags: [development, design, links, buttons, accessibility]
 ---
 You have a “card” component which includes a heading, some text, an image, and a link to the full article, and it’s working great. Then along comes a UX requirement that the _full card_ (not just the button or link) should be clickable. This is where things get complicated.
 

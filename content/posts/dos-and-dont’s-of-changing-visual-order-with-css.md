@@ -7,7 +7,7 @@ date: 2021-04-27T08:21:10.275Z
 mainImage.isAnchor: false
 tags:
   - order
-  - tab
+  - tabs
   - css-grid
   - flexbox
   - visual-order

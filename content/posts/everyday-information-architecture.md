@@ -5,7 +5,7 @@ date: 2019-03-17T12:00:00Z
 tags:
   - link
   - design
-  - book
+  - books
   - information-architecture
   - a-book-apart
 linkTarget: https://everydayia.com/

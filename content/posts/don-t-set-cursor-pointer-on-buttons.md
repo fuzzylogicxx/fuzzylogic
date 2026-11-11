@@ -6,7 +6,7 @@ tags:
 - pointer
 - cursor
 - links
-- button
+- buttons
 - how-to
 - accessibility
 - note

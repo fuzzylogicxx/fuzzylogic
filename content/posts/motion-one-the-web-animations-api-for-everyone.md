@@ -7,7 +7,7 @@ tags:
 - link
 - css
 - svg
-- tool
+- tools
 - library
 - javascript
 - animation

@@ -5,7 +5,7 @@ noteWithTitle: false
 date: 2025-10-09T11:48
 tags:
   - entry
-  - book
+  - books
   - magic
   - occult
 ---

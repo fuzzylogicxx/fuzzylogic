@@ -2,7 +2,7 @@
 date: 2019-10-19
 title: Do Androids Dream of Electric Sheep? by Philip K. Dick
 description: I’ve just finished reading the book that Bladerunner was based on
-tags: [entry, book, dystopian, catchup]
+tags: [entry, books, dystopian, catchup]
 mainImage:
   url: https://res.cloudinary.com/fuzzylogic/image/upload/v1571641370/F4A2AEE5-111A-4D7B-AEE3-F93771203FE7_ecgnsi.jpg
   alt: A photo of the book “Do Androids Dream of Electric Sheep?” by Philip K. Dick

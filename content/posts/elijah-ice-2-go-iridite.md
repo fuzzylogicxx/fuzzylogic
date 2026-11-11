@@ -7,7 +7,7 @@ tags:
   - note
   - music
   - my-music
-  - production
+  - productions
 ---
 Here’s the first track I had released, _Ice 2 Go_ under my alias _Elijah_ from the 2002 various artists EP [_Better by Design_](https://iridite.bandcamp.com/album/iridite-productions-better-by-design-ir-003) on Iridite Recordings. When I get the chance I’ll add more of my released tracks, some old sessions that never saw the light of day, and any new works-in-progress.
 

@@ -11,7 +11,7 @@ tags:
 - html
 - css
 - svg
-- icon
+- icons
 - hamburger
 - mobile
 - narrow

@@ -4,7 +4,7 @@ title: Brilliant first day at We Out Here 2022
 description: What a Saturday at We Out Here Festival 2022
 tags:
 - note
-- event
+- events
 - festival
 - we-out-here
 - music

@@ -13,7 +13,7 @@ tags:
   - yarn
   - scripts
   - build
-  - tool
+  - tools
   - web
   - development
 draft: false

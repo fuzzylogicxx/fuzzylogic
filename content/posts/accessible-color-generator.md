@@ -7,7 +7,7 @@ tags:
 - design
 - development
 - web
-- tool
+- tools
 - accessibility
 - colour
 - contrast
