@@ -4,12 +4,11 @@ title: Learn Responsive Design (on web.dev)
 description: Jeremy Keith’s new course for Google’s web.dev
 tags:
 - link
-- rwd
+- responsive-design
 - images
 - performance
 - css
 - html
-- responsive
 - development
 - web
 noteWithTitle: false

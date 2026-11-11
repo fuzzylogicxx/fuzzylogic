@@ -5,7 +5,7 @@ description: A lovely slow-mo comparison of Liam Pitchford’s technique versus 
   of an amateur
 tags:
 - link
-- tabletennis
+- table-tennis
 - backhand
 - technique
 linkTarget: https://youtu.be/2SADb-mzviQ

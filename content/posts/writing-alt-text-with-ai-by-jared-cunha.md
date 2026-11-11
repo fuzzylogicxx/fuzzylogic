@@ -7,9 +7,9 @@ linkTarget: https://jaredcunha.com/blog/writing-alt-text-with-ai
 date: 2025-08-30T16:09
 tags:
   - link
-  - AI
+  - ai
   - alt
-  - a11y
+  - accessibility
 location: ""
 ---
 A thought-provoking look at how LLMs might lower the burden of writing useful alt text for images, and – given the right prompts – produce better results than humans doing it manually.

@@ -2,7 +2,7 @@
 date: "2019-12-14T23:49:56.471Z"
 title: "Modest JS Works"
 description: "Pascal Laliberté makes the case for a modest and graded approach to using JavaScript"
-tags: [link, development, javascript, stimulus, SPA]
+tags: [link, development, javascript, stimulus, spa]
 linkTarget: "https://modestjs.works/"
 ---
 Pascal Laliberté has written a short, free, web-based book which advocates a modest and layered approach to using JavaScript.

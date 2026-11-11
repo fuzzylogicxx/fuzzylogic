@@ -6,12 +6,12 @@ date: 2020-12-13T12:25:28.545Z
 mainImage.isAnchor: false
 tags:
   - browsers
-  - devtools
+  - dev-tools
   - inspector
   - shortcuts
   - development
-  - tool
-  - cheatsheet
+  - tools
+  - cheat-sheet
 ---
 Here’s a (work in progress) list of useful (Mac) Browser DevTools tips, tricks and keyboard shortcuts for my reference and yours. This is a work in progress and I’ll update it as I go.
 

@@ -3,7 +3,7 @@ date: 2023-03-26T17:20:00Z
 title: Quick circle (by Adam Argyle)
 description: A modern and minimal way to create a circle in CSS
 tags:
-- aspectratio
+- aspect-ratio
 - circle
 - css
 - link

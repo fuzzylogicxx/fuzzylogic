@@ -4,11 +4,11 @@ title: It all means nothing in the end (a talk by Amy Hupe)
 description: 'Amy offers some suggestions for making work feel more meaninful'
 tags:
 - link
-- designsystems
+- design-systems
 - work
 - burnout
 - purpose
-- career
+- careers
 - life
 noteWithTitle: false
 youtubeId: JVmPmd5s4g

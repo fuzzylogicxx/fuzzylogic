@@ -4,9 +4,9 @@ title: Brilliant first day at We Out Here 2022
 description: What a Saturday at We Out Here Festival 2022
 tags:
 - note
-- event
+- events
 - festival
-- weouthere
+- we-out-here
 - music
 noteWithTitle: true
 location: Abbots Ripton, Cambridgeshire

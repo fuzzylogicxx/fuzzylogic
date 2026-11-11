@@ -7,7 +7,7 @@ tags:
 - link
 - demo
 - code
-- designsystems
+- design-systems
 - shortcode
 - include
 - 11ty

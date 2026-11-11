@@ -8,7 +8,6 @@ date: 2025-12-14T18:05
 tags:
   - link
   - html
-  - a11y
   - accessibility
   - dialog
 ---

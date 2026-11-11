@@ -6,9 +6,9 @@ description: Paul Herbert of Cloud Four describes using a web component to enhan
 tags:
 - link
 - details
-- progressiveenhancement
+- progressive-enhancement
 - textarea
-- webcomponents
+- web-components
 noteWithTitle: false
 linkTarget: https://cloudfour.com/thinks/web-components-as-progressive-enhancement/
 mainImage.url: ''

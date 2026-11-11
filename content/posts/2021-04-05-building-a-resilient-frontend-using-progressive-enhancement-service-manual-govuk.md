@@ -2,7 +2,7 @@
 date: "2021-04-05T12:06:45.369Z"
 title: "Building a resilient frontend using progressive enhancement (on GOV.UK)"
 description: "GOV.UK’s guidance on developing using progressive enhancement is fantastic"
-tags: [link, govuk, progressiveenhancement, principles]
+tags: [link, gov-uk, progressive-enhancement, principles]
 linkTarget: "https://www.gov.uk/service-manual/technology/using-progressive-enhancement"
 ---
 GOV.UK’s guidance on developing using progressive enhancement is pretty great in all departments. It begins with this solid advice:

@@ -10,7 +10,7 @@ tags:
 - development
 - web
 - ux
-- icon
+- icons
 - clearleft
 noteWithTitle: false
 linkTarget: https://newsletters.feedbinusercontent.com/178/178a12939395b69142308546211a6dbe8f266075.html

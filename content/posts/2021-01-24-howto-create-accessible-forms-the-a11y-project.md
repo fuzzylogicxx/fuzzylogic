@@ -2,7 +2,7 @@
 date: "2020-10-24T17:44:05.553Z"
 title: "How-to: Create accessible forms - The A11Y Project"
 description: "Five bite-sized and practical chunks of advice for creating accessible forms."
-tags: [link, web, development, a11y, accessibility, focus, forms]
+tags: [link, web, development, accessibility, focus, forms]
 linkTarget: "https://www.a11yproject.com/posts/2020-09-19-how-to-write-accessible-forms/"
 ---
 Here are five bite-sized and practical chunks of advice for creating accessible forms.

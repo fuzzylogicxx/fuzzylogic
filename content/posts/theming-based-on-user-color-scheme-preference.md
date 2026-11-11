@@ -6,12 +6,11 @@ tags:
 - entry
 - html
 - css
-- userpreferences
-- preferencequeries
-- darkmode
-- customproperties
-- rwd
-- responsive
+- preferences
+- preference-queries
+- dark-mode
+- custom-properties
+- responsive-design
 noteWithTitle: false
 linkTarget: ''
 mainImage.url: ''

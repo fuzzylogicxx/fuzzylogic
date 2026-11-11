@@ -5,7 +5,7 @@ date: 2019-01-24T12:00:00Z
 tags:
   - link
   - javascript
-  - vanillajs
+  - vanilla-js
   - video
 linkTarget: https://vimeo.com/312124363
 ---

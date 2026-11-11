@@ -8,7 +8,7 @@ tags:
 - 11ty
 - development
 - web
-- designsystems
+- design-systems
 draft: false
 linkTarget: https://www.duetds.com/using-components/
 

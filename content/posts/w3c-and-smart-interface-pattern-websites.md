@@ -7,7 +7,7 @@ tags:
 - html
 - svg
 - animation
-- designsystems
+- design-systems
 - inspiration
 noteWithTitle: true
 linkTarget: ''

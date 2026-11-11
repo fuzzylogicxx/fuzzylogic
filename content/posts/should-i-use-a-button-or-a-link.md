@@ -5,10 +5,10 @@ description: A decision-tree to make better decisions regarding buttons and link
 tags:
 - entry
 - link
-- button
+- buttons
 - development
 - design
-- a11y
+- accessibility
 noteWithTitle: false
 linkTarget: ''
 mainImage.url: ''

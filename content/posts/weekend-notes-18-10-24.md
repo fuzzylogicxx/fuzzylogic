@@ -10,8 +10,8 @@ tags:
   - friends
   - food
   - tv
-  - tabletennis
-  - gig
+  - table-tennis
+  - gigs
 location: Glasgow
 ---
 That was a productive and fun weekend.

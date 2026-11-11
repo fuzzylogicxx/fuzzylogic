@@ -74,8 +74,8 @@ location: Glasgow
 mainImage.isAnchor: false
 tags:
   - note
-  - book
-  - sciencefiction
+  - books
+  - sci-fi
   - fiction
   - gender
 draft: false

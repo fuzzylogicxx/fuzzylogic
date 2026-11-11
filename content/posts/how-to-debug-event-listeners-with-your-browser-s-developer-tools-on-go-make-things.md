@@ -4,10 +4,10 @@ title: How to debug event listeners with your browser’s developer tools (on Go
   Things)
 description: How to debug event listeners in your browser dev tools
 tags:
-- devtools
+- dev-tools
 - chrome
-- browser
-- eventlistener
+- browsers
+- event-listener
 - javascript
 - events
 - debug

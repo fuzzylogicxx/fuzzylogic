@@ -4,8 +4,8 @@ title: Manage Design Tokens in Eleventy
 description: Eleventy offers the ability to transform data, which is handy for creating
   and transforming design tokens
 tags:
-- designtokens
-- designsystems
+- design-tokens
+- design-systems
 - development
 - web
 - 11ty

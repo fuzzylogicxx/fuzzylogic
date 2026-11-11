@@ -2,7 +2,7 @@
 date: "2022-11-02T09:59:26.450Z"
 title: "Choosing a date - we want to know your use cases (a discussion re. gov.uk design system)"
 description: ""
-tags: [link, a11y, datepicker, dates, govuk, designsystems]
+tags: [link, accessibility, datepicker, dates, gov-uk, design-systems]
 linkTarget: "https://github.com/alphagov/govuk-design-system/discussions/2375"
 ---
 > We want to find out if adding a 'date picker' component to the Design System is a good idea.

@@ -4,7 +4,7 @@ description: Great table tennis serving from Craig Bryant, including the infamou
 date: 2019-01-26T12:00:00Z
 tags:
   - link
-  - tabletennis
+  - table-tennis
   - sport
   - video
 linkTarget: https://www.youtube.com/watch?v=EuXKHxRcRbQ

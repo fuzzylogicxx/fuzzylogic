@@ -4,7 +4,7 @@ title: Accessibility Personas
 description: 'A website from the GDS accessibility team which sets out seven personas, each with different access needs. '
 tags:
 - link
-- a11y
+- accessibility
 - personas
 noteWithTitle: false
 linkTarget: https://alphagov.github.io/accessibility-personas/

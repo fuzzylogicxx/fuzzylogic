@@ -5,13 +5,13 @@ description: Zach’s banner web component is choc-full of interesting thinking 
   techniques
 tags:
 - link
-- progressiveenhancement
+- progressive-enhancement
 - reflow
-- webcomponents
+- web-components
 - javascript
 - css
 - performance
-- CLS
+- cls
 noteWithTitle: false
 linkTarget: https://www.zachleat.com/web/layout-shift/
 mainImage.url: ''

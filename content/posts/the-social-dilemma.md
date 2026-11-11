@@ -8,7 +8,7 @@ tags:
   - documentary
   - netflix
   - facebook
-  - socialmedia
+  - social-media
 ---
 I watched Netflix’s documentary [The Social Dilemma](https://www.netflix.com/gb/title/81254224) the other night. It’s been generating a bit of a buzz, and its subject matter – the effects of social media – is one I’m generally interested in. However, I wasn’t a fan.
 

@@ -5,7 +5,7 @@ date: 2018-09-09 10:51:00
 tags:
   - link
   - web
-  - tool
+  - tools
   - colour
   - css
   - design

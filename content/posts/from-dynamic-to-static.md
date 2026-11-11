@@ -9,7 +9,7 @@ tags:
   - netlify
   - hosting
   - linode
-  - personalsite
+  - personal-sites
   - development
   - lamp
   - 11ty

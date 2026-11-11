@@ -4,7 +4,7 @@ title: 'Building a Good Download… Button? by Eric Bailey'
 description: 'Bar'
 tags:
 - link
-- button
+- buttons
 - accessibility
 - affordance
 - ux

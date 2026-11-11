@@ -2,7 +2,7 @@
 title: Setting an accessibility standard for a UK-based commercial website
 description: How to adopt a suitable accessibility standard for your commercial website
 date: "2020-09-20T16:58:08.051Z"
-tags: [web, development, a11y, howto]
+tags: [web, development, accessibility, how-to]
 ---
 When advocating accessible web practices for a commercial website, the question of “what does the law require us to do?” invariably arises.
 

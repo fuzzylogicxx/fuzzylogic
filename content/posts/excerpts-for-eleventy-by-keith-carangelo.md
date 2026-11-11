@@ -10,8 +10,8 @@ tags:
   - excerpts
   - 11ty
   - yaml
-  - frontmatter
-  - personalsites
+  - front-matter
+  - personal-sites
 ---
 Recently I updated this website’s git repository README to include a summary of my approach to supporting post excerpts.
 

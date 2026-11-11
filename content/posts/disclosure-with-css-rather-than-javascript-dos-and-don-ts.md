@@ -6,10 +6,10 @@ tags:
 - entry
 - disclosure
 - javascript
-- a11y
+- accessibility
 - css
 - html
-- howto
+- how-to
 noteWithTitle: false
 linkTarget: ''
 mainImage.url: ''

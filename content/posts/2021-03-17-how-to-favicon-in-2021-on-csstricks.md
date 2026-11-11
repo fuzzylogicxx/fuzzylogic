@@ -2,7 +2,7 @@
 date: "2021-03-17T10:33:03.809Z"
 title: "How to Favicon in 2021 (on CSS-Tricks)"
 description: "Some excellent favicon tips from Chris Coyier, referencing Andrey Sitnik’s recent article"
-tags: [link, favicon, howto, web, development]
+tags: [link, favicon, how-to, web, development]
 linkTarget: "https://css-tricks.com/how-to-favicon-in-2021/"
 ---
 Some excellent favicon tips from Chris Coyier, referencing [Andrey Sitnik’s recent article](https://evilmartians.com/chronicles/how-to-favicon-in-2021-six-files-that-fit-most-needs) of the same name.

@@ -8,7 +8,7 @@ tags:
   - javascript
   - web
   - development
-  - progressiveenhancement
+  - progressive-enhancement
 draft: true
 ---
 Lorem

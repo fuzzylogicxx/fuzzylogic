@@ -5,10 +5,10 @@ description: 'Great comment from a Rails engineer on a discussion thread'
 tags:
 - link
 - web
-- form
+- forms
 - semantics
-- HTML
-- button
+- html
+- buttons
 - rails
 noteWithTitle: false
 linkTarget: https://discuss.hotwired.dev/t/destroy-record-in-turbo-frame/2731/2

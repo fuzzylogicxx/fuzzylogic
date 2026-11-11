@@ -5,7 +5,7 @@ date: 2019-03-10T12:00:00Z
 tags:
   - link
   - performance
-  - serviceworker
+  - service-worker
   - caching
 linkTarget: https://www.filamentgroup.com/lab/cache-state/
 ---

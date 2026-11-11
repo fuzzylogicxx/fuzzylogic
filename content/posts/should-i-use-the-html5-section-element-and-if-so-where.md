@@ -5,9 +5,9 @@ description: A rule-of-thumb for using the HTML section element
 tags:
 - aria
 - region
-- role
+- roles
 - landmark
-- a11y
+- accessibility
 - development
 - heuristics
 - html5

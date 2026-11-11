@@ -5,7 +5,7 @@ description: ''
 tags:
 - link
 - mobile
-- govuk
+- gov-uk
 - analytics
 - stats
 noteWithTitle: false

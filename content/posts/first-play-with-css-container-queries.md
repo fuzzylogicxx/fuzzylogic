@@ -4,9 +4,8 @@ title: First play with CSS Container Queries
 description: The container query syntax is pretty straightforward
 tags:
 - note
-- rwd
-- responsive
-- containerqueries
+- responsive-design
+- container-queries
 - css
 noteWithTitle: true
 linkTarget: ''

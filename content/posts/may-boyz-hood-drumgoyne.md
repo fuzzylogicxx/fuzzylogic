@@ -4,7 +4,6 @@ title: Boys weekend with Rudy
 description: Watching films, climbing hills and enjoying the sun
 tags:
 - note
-- walking
 - hill-walking
 - curry
 - food

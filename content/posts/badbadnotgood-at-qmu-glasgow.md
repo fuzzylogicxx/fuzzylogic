@@ -7,7 +7,7 @@ tags:
 - gigs
 - music
 - jazz
-- hiphop
+- hip-hop
 noteWithTitle: true
 linkTarget: ''
 mainImage.url: ''

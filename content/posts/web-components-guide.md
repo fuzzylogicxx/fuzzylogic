@@ -3,7 +3,7 @@ date: 2023-01-14T10:03:21Z
 title: Web Components Guide
 description: Lovely new resource that’s helping me better understand Web Components
 tags:
-- webcomponents
+- web-components
 - javascript
 - events
 - classes

@@ -7,7 +7,7 @@ tags:
   - development
   - html
   - alt
-  - a11y
+  - accessibility
 ---
 I’ve just read [The A11Y Project’s page on `alt` text](https://www.a11yproject.com/posts/2013-01-14-alt-text/).
 

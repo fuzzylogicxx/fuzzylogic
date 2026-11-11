@@ -2,7 +2,7 @@
 date: "2020-09-05T08:52:36.996Z"
 title: "The difference between aria-label and aria-labelledby (Tink - Léonie Watson)"
 description: "Accessibility Expert Léonie Watson on the differences between aria-label and aria-labelledby and how to choose the right one"
-tags: [link, a11y, development, aria]
+tags: [link, accessibility, development, aria]
 linkTarget: "https://tink.uk/the-difference-between-aria-label-and-aria-labelledby/"
 ---
 > The `aria-label` and `aria-labelledby` attributes do the same thing but in different ways. Sometimes the two attributes are confused and this has unintended results. This post describes the differences between them and how to choose the right one.

@@ -7,8 +7,8 @@ tags:
 - cursor
 - links
 - buttons
-- howto
-- a11y
+- how-to
+- accessibility
 - note
 noteWithTitle: true
 linkTarget: ''

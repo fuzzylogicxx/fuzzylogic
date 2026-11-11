@@ -9,8 +9,8 @@ tags:
 - web
 - html
 - head
-- tool
-- icon
+- tools
+- icons
 - favicon
 draft: false
 linkTarget: https://realfavicongenerator.net/

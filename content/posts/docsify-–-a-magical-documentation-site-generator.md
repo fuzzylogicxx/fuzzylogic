@@ -6,7 +6,7 @@ date: 2020-10-22T19:25:16.988Z
 linkTarget: https://docsify.js.org/
 tags:
   - link
-  - tool
+  - tools
   - documentation
 draft: false
 ---

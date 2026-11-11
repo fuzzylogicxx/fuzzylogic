@@ -2,7 +2,7 @@
 date: "2021-05-24T15:35:50.355Z"
 title: "Inspire.js"
 description: "A web-based, reusable slide deck framework from Lea Verou"
-tags: [link, tool, slides, html, css, javascript]
+tags: [link, tools, slides, html, css, javascript]
 linkTarget: "https://inspirejs.org/"
 ---
 > Lean, hackable, extensible slide deck framework

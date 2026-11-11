@@ -4,11 +4,11 @@ description: How I code SVG icons including icons in links and buttons
 date: 2020-08-07 09:30:00
 tags:
   - development
-  - howto
+  - how-to
   - svg
-  - icon
+  - icons
   - hide
-  - a11y
+  - accessibility
 ---
 Here’s how I’d handle various common SVG icon scenarios with accessibility in mind.
 

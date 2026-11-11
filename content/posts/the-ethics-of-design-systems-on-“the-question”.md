@@ -7,7 +7,7 @@ date: 2025-11-30T11:29
 tags:
   - link
   - ethics
-  - designsystems
+  - design-systems
   - accessibility
 ---
 This episode of _The Question_ is – like they say during the conversation – one that doesn’t yet have any ready answers. Right now it’s just important that we’re asking the question and starting to move forward, establish goals and build vocabulary.

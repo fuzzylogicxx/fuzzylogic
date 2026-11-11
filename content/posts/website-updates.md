@@ -8,8 +8,7 @@ tags:
   - web
   - 11ty
   - maintenance
-  - personalsite
-  - personalsites
+  - personal-sites
 ---
 I’ve recently been updating my website over a series of nights and weekends. The changes aren’t very noticeable to the eye but involved some careful modernisation and streamlining of back-end features and technology, plus improvements to accessibility and performance. I’m really happy to have made them.{.post__intro}
 

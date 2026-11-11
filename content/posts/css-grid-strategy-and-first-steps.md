@@ -4,7 +4,7 @@ description: How I got the hang of CSS Grid in 2018, and a rule of thumb for cho
 date: 2018-11-20T10:00:00
 tags:
   - entry
-  - cssgrid
+  - css-grid
   - css
   - flexbox
 ---

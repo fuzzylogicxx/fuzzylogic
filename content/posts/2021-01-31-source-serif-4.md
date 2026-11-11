@@ -2,7 +2,7 @@
 date: "2021-01-31T21:14:42.380Z"
 title: "Source Serif 4"
 description: "A nice demo page for Source Serif 4 which illustrates its versatility"
-tags: [link, typography, typeface, inspiration, serif, font]
+tags: [link, typography, typeface, inspiration, serif, fonts]
 linkTarget: "https://adobe-fonts.github.io/source-serif/"
 ---
 Here’s a nice demo page for Source Serif 4 which illustrates its versatility.

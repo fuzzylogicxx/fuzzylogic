@@ -8,12 +8,12 @@ tags:
   - entry
   - development
   - heuristics
-  - progressiveenhancement
+  - progressive-enhancement
   - modules
   - javascript
   - css
-  - customproperties
-  - cssgrid
+  - custom-properties
+  - css-grid
 draft: false
 ---
 In web development it’s useful when we can say “if the browser supports X, then we know it also supports Y”.

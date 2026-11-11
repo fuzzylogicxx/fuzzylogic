@@ -8,7 +8,7 @@ date: 2025-08-23T21:28
 tags:
   - link
   - accessibility
-  - designsystems
+  - design-systems
 ---
 Hidde is, like me, both an “accessibility nerd” and “a components enthusiast”. So it’s interesting to see him tackle whether it’s sensible for design systems – even really good ones – to “promise accessibility”.
 

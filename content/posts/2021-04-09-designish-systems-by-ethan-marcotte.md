@@ -2,7 +2,7 @@
 date: "2021-04-09T08:07:23.225Z"
 title: "Design-ish systems (by Ethan Marcotte)"
 description: "Ethan Marcotte recommends we concentrate not on patching things but on creating broader goals by considering the wider issues weâre trying to solve."
-tags: [link, designsystems]
+tags: [link, design-systems]
 linkTarget: "https://ethanmarcotte.com/wrote/designish-systems/"
 ---
 Here’s an interesting new article from Ethan Marcotte, in which he muses on better ways to think about Design Systems based on his recent experience.

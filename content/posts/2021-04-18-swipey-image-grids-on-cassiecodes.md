@@ -2,7 +2,7 @@
 date: "2021-04-18T09:46:45.462Z"
 title: "Swipey image grids (on cassie.codes)"
 description: "Cassie Evans explains that SVG is not just icons and illustrations but can also be used to create animated grids"
-tags: [link, svg, responsive, animation, image, shapes, tutorial]
+tags: [link, svg, responsive-design, animation, images, shapes, tutorial]
 linkTarget: "https://www.cassie.codes/posts/swipey-image-grids/"
 ---
 A lovely post by Cassie Evans in which she demonstrates that SVG is not just for icons and illustrations. You might also reach for it to create a responsive, animated grid of images.

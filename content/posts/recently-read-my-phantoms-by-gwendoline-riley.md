@@ -5,7 +5,7 @@ noteWithTitle: false
 date: 2025-12-07T13:26
 tags:
   - entry
-  - book
+  - books
   - family
 ---
 This was a weird, mixed reading experience for me. It’s a short book and it’s *good* – it had me locked in really quickly and I was finished after a few nights. But it was an uneasy read.

@@ -8,7 +8,7 @@ tags:
 - components
 - language
 - naming
-- designsystems
+- design-systems
 - development
 - web
 noteWithTitle: false

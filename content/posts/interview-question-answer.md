@@ -6,7 +6,7 @@ tags:
 - request
 - http
 - web
-- interview
+- interviews
 noteWithTitle: false
 linkTarget: ''
 mainImage.url: ''

@@ -6,11 +6,11 @@ mainImage.isAnchor: false
 tags:
   - entry
   - clubbing
-  - newyork
+  - new-york
   - disco
   - house
   - gay
-  - larrylevan
+  - larry-levan
 draft: false
 ---
 I just watched “Larry’s Garage” – a film by Corrada Rizza about the visionary New York DJ, Larry Levan and the legendary nightclub he called home.

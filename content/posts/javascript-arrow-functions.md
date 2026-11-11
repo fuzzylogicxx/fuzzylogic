@@ -8,7 +8,7 @@ tags:
   - development
   - javascript
   - syntax
-  - arrowfunctions
+  - arrow-functions
 draft: false
 ---
 JavaScript arrow functions are one of those bits of syntax about which I occasionally have a brain freeze. Here’s a quick refresher for those moments.

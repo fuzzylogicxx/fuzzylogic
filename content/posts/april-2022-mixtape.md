@@ -9,10 +9,9 @@ mainImage:
   aspectRatioHeight: 320
 tags:
 - note
-- mixtape
+- mix
 - electronic
 - reggae
-- mix
 - my-mixes
 - music
 noteWithTitle: true

@@ -6,10 +6,10 @@ tags:
 - entry
 - browsers
 - css
-- howto
+- how-to
 - tip
 - chrome
-- devtools
+- dev-tools
 - development
 - web
 noteWithTitle: false

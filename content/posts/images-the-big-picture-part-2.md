@@ -6,7 +6,7 @@ tags:
   - entry
   - web
   - images
-  - rwd
+  - responsive-design
 permalink: /posts/images-on-the-web-the-big-picture-part-2/
 draft: true
 ---

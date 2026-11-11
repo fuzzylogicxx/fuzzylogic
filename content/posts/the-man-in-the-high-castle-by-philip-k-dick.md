@@ -2,7 +2,7 @@
 date: 2019-12-24
 title: The Man in the High Castle by Philip K. Dick
 description: Just finished reading this alternative-history sci-fi classic
-tags: [entry, book, dystopian, scifi, history]
+tags: [entry, books, dystopian, sci-fi, history]
 mainImage:
   url: https://res.cloudinary.com/fuzzylogic/image/upload/v1577820630/100188E6-836F-47C4-9A52-0C7DCEE33B08_pojazf.jpg
   alt: A photo of the book “The Man in the High Castle” by Philip K. Dick

@@ -4,10 +4,10 @@ title: The Guardian Digital Design Style Guide
 description: Nice tour of the the Guardian’s digital design system
 tags:
 - link
-- theguardian
+- the-guardian
 - styleguide
 - design
-- designsystems
+- design-systems
 linkTarget: https://design.theguardian.com/
 mainImage.url: ''
 mainImage.alt: ''

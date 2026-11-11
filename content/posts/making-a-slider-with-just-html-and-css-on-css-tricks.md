@@ -6,7 +6,7 @@ description: Chris Coyier demonstrates how far we can get in 2019 with HTML and 
 tags:
 - html
 - css
-- howto
+- how-to
 - slider
 - link
 noteWithTitle: false

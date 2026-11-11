@@ -5,7 +5,7 @@ description: Thoughts on Stephanie Eckles’ brilliant grid-based layering utili
 tags:
 - css
 - positioning
-- cssgrid
+- css-grid
 noteWithTitle: false
 linkTarget: ''
 mainImage.url: ''

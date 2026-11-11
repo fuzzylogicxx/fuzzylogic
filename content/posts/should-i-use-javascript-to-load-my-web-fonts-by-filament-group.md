@@ -5,7 +5,7 @@ date: 2019-01-15T12:00:00Z
 tags:
   - link
   - typography
-  - webfonts
+  - web-fonts
   - performance
   - css
 linkTarget: https://www.filamentgroup.com/lab/js-web-fonts.html

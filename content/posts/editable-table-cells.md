@@ -8,7 +8,7 @@ tags:
 - editable
 - tables
 - javascript
-- a11y
+- accessibility
 noteWithTitle: true
 linkTarget: ''
 mainImage.url: ''

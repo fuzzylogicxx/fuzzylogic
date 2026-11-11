@@ -4,7 +4,7 @@ title: 'Tables and pseudo-tables: lessons and tactics'
 description: Things I’ve learned about building complex tables
 tags:
 - entry
-- a11y
+- accessibility
 - css
 - html
 - tables

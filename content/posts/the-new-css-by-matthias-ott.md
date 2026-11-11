@@ -7,7 +7,7 @@ tags:
 - css
 - design
 - tools
-- cssday
+- css-day
 noteWithTitle: false
 linkTarget: https://matthiasott.com/notes/the-new-css
 mainImage.url: ''

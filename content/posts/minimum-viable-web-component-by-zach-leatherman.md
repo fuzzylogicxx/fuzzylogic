@@ -5,7 +5,7 @@ description: Zach Leatherman illustrates the very simple boilerplate needed for 
   minimum viable web component
 tags:
 - link
-- webcomponents
+- web-components
 linkTarget: https://codepen.io/zachleat/pen/dyGjawM
 draft: false
 

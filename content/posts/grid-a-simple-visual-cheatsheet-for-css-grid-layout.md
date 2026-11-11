@@ -5,7 +5,7 @@ date: 2019-02-26T12:00:00Z
 tags:
   - link
   - css
-  - cssgrid
+  - css-grid
   - layout
 linkTarget: http://grid.malven.co/
 ---

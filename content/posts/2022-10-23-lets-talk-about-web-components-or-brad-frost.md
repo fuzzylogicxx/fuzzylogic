@@ -2,7 +2,7 @@
 date: "2022-10-23T20:09:22.405Z"
 title: "Let's talk about web components (by Brad Frost)"
 description: "Fantastic rallying cry by Brad Frost"
-tags: [link, progressiveenhancement, webcomponents]
+tags: [link, progressive-enhancement, web-components]
 linkTarget: "https://bradfrost.com/blog/post/lets-talk-about-web-components/"
 ---
 Brad breaks down the good, bad and ugly of web components but also makes a compelling argument that we should get behind this technology.

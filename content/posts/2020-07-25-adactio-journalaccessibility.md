@@ -2,7 +2,7 @@
 date: "2020-07-25T10:44:04.604Z"
 title: "Accessibility (on adactio.com)"
 description: "Jeremy Keith makes the moral argument for considering accessibility as a prerequisite rather than a potential feature."
-tags: [link, a11y, web]
+tags: [link, accessibility, web]
 linkTarget: "https://adactio.com/journal/17132"
 ---
 Here’s [Jeremy Keith](https://adactio.com/), making the moral case for accessible websites and why we shouldn’t use “you can make more money by not turning people away” as an argument:

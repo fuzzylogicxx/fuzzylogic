@@ -5,7 +5,7 @@ description: Advice on using (or ideally avoiding) modal dialogues
 tags:
 - link
 - modal
-- a11y
+- accessibility
 linkTarget: https://modalzmodalzmodalz.com/
 draft: false
 

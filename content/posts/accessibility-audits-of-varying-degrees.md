@@ -4,8 +4,8 @@ title: Accessibility audits, three different ways
 description: Foo
 tags:
 - web
-- a11y
-- howto
+- accessibility
+- how-to
 noteWithTitle: false
 linkTarget: ''
 mainImage.url: ''

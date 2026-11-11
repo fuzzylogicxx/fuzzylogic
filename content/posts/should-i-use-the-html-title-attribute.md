@@ -4,7 +4,7 @@ title: Should I use the HTML title attribute?
 description: My research suggests that the html title attribute is almost always to be avoided
 tags:
 - entry
-- a11y
+- accessibility
 - html
 - title
 noteWithTitle: false

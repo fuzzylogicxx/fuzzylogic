@@ -8,7 +8,7 @@ tags:
 - forms
 - aria
 - html
-- a11y
+- accessibility
 noteWithTitle: false
 linkTarget: ''
 mainImage.url: ''

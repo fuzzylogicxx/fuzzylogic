@@ -8,7 +8,7 @@ tags:
 - link
 - development
 - web
-- tool
+- tools
 - svg
 noteWithTitle: false
 linkTarget: https://www.svggobbler.com/

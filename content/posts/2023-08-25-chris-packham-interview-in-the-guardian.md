@@ -2,7 +2,7 @@
 date: "2023-08-25T06:31:44.294Z"
 title: "Chris Packham interview in The Guardian"
 description: "The naturalist, TV campaigner and activist on growing up, autism and the best use of me"
-tags: [link, interview, guardian, autism, naturism, climate, environment]
+tags: [link, interviews, the-guardian, autism, naturism, climate, environment]
 linkTarget: "https://www.theguardian.com/environment/2023/aug/19/chris-packham-autism-death-threats-save-planet-attenborough"
 ---
 The naturalist, TV campaigner and activist on growing up, autism and asking himself “what is the best use of me?”.

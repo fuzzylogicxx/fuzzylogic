@@ -2,7 +2,7 @@
 title: Jank-free Responsive Images
 description: Here’s how to improve performance and prevent jank when browsers load responsive images
 date: 2019-10-23
-tags: [web, development, rwd, images, jensimmons, firefox, chrome]
+tags: [web, development, responsive-design, images, jen-simmons, firefox, chrome]
 ---
 Here’s how to improve performance and prevent layout _jank_ when browsers load responsive images.
 

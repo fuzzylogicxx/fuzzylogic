@@ -7,7 +7,7 @@ tags:
 - development
 - web
 - history
-- designsystems
+- design-systems
 noteWithTitle: false
 linkTarget: https://thehistoryoftheweb.com/from-designing-interfaces-to-designing-systems/
 mainImage.url: ''

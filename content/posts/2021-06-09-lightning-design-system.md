@@ -2,7 +2,7 @@
 date: "2021-06-09T12:54:43.128Z"
 title: "Lightning Design System"
 description: "Salesforce’s Design System"
-tags: [link, designsystems]
+tags: [link, design-systems]
 linkTarget: "https://www.lightningdesignsystem.com/"
 ---
 I should have bookmarked it long before now, but just revisiting the Lightning Design System I’m reminded that is really well organised and executed.

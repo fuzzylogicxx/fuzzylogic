@@ -6,10 +6,10 @@ location: Glasgow
 mainImage.isAnchor: false
 tags:
   - note
-  - book
-  - scifi
-  - freewill
-  - timetravel
+  - books
+  - sci-fi
+  - free-will
+  - time-travel
   - physics
 draft: false
 ---

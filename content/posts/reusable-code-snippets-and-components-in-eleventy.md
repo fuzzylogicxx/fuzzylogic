@@ -7,7 +7,7 @@ tags:
 - shortcode
 - macro
 - components
-- designsystems
+- design-systems
 - 11ty
 noteWithTitle: false
 linkTarget: ''

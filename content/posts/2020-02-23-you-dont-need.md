@@ -2,7 +2,7 @@
 date: "2020-02-23T11:09:51.795Z"
 title: "You Don't Need"
 description: "A list of tips and tools on how to use simpler browser standards and avoid adding unnecessary JavaScript and libraries."
-tags: [link, javascript, lean, tool, development, css, momentjs, lodash]
+tags: [link, javascript, lean, tools, development, css, momentjs, lodash]
 linkTarget: "https://github.com/you-dont-need"
 ---
 A nice list of tips and tools on how to use simpler browser standards and APIs to avoid the added weight of unnecessary JavaScript and libraries.

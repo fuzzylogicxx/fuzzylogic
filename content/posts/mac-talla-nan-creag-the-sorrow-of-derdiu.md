@@ -6,7 +6,7 @@ date: 2019-01-17T14:11:00
 tags:
   - note
   - music
-  - recordshopping
+  - record-shopping
 ---
 ![Photo of the LP Mac-Talla Nan Creag – The Sorrow of Derdriu](/img/uploads/img2342.jpg "The Sorrow of Derdriu – photo by Oli Breidfjord")
 

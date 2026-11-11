@@ -5,7 +5,7 @@ description: A nice explanation of why we should approach UI for dates the user 
   differently from that for dates the user will choose
 tags:
 - link
-- a11y
+- accessibility
 - forms
 - ux
 - dates

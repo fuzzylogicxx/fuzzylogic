@@ -4,7 +4,7 @@ description: Good, straightforward table tennis coaching on how to play against 
 date: 2019-03-12T13:00:00Z
 tags:
   - link
-  - tabletennis
+  - table-tennis
   - sport
   - video
 linkTarget: https://www.youtube.com/watch?v=46ZoiHCCnzM

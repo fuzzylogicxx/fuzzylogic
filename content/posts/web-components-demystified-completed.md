@@ -8,7 +8,7 @@ tags:
   - web
   - html
   - javascript
-  - webcomponents
+  - web-components
   - css
 ---
 ![A certificate recognising that Laurence Hughes has completed Scott Jehl’s Web Components Demystified course](/img/uploads/certificate_wc_demystified_course.png)

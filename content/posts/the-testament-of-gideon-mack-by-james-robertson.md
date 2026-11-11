@@ -2,7 +2,7 @@
 date: 2019-10-01
 title: The Testament of Gideon Mack by James Robertson
 description: Strange, otherwordly and often funny tale of a Scottish minister’s dance with The Devil
-tags: [entry, book, religion]
+tags: [entry, books, religion]
 mainImage:
   url: https://res.cloudinary.com/fuzzylogic/image/upload/v1571660696/448E94E3-916B-4620-B4BE-465B6D29946B_cajijd.jpg
   alt: A photo of the book “The Testament of Gideon Mack” by James Robertson

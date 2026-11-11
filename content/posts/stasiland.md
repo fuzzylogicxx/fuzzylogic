@@ -5,7 +5,7 @@ description: I've just finished reading Stasiland by Anna Funder, having
 date: 2018-07-22T17:23:00.000Z
 tags:
   - entry
-  - book
+  - books
   - stasi
   - gdr
   - germany

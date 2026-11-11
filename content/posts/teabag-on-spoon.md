@@ -5,7 +5,7 @@ description: "Mr Scruff’s tip for quick tea-making"
 tags:
 - note
 - tea
-- howto
+- how-to
 location: Glasgow
 noteWithTitle: true
 draft: false

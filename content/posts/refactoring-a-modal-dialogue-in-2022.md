@@ -4,13 +4,12 @@ title: Refactoring a modal dialogue in 2022
 description: It’s time to revisit our modal dialogue, and there are things to consider
 tags:
 - entry
-- a11y
+- accessibility
 - modal
 - javascript
 - html
 - standards
 - dialog
-- modal
 noteWithTitle: false
 linkTarget: ''
 mainImage.url: ''

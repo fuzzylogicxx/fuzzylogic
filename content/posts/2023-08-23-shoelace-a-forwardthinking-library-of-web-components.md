@@ -2,7 +2,7 @@
 date: "2023-08-23T16:12:39.937Z"
 title: "Shoelace: a forward-thinking library of web components"
 description: "I’m interested in the usefulness of this collection of pre-rolled, customisable web components"
-tags: [link, webcomponents, web, development, library]
+tags: [link, web-components, web, development, library]
 linkTarget: "https://shoelace.style/"
 ---
 I’m interested by Shoelace’s MO as a collection of pre-rolled, customisable web components. The idea is that it lets individuals and teams start building with web components – components that are web-native, framework-agnostic and portable – way more quickly.

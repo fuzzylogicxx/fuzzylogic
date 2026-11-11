@@ -7,10 +7,10 @@ location: Glasgow
 tags:
   - note
   - music
-  - record
+  - records
   - vinyl
   - shopping
-  - recordshopping
+  - record-shopping
   - balearic
 ---
 Lovely four-tracker of slow and atmospheric late-night grooves from Italy and elsewhere, as heard on [Denise’s radio show](https://dublab.de/broadcasts/watching-like-nobodys-dancing-din-daa-daa-october-2020/). Favourite track: Lucas Croon – Japon. [Grab a copy on Bandcamp](https://hellyeahrec.bandcamp.com/album/buena-onda-balearic-beats)

@@ -7,8 +7,8 @@ tags:
 - design
 - development
 - web
-- tool
-- a11y
+- tools
+- accessibility
 - colour
 - contrast
 noteWithTitle: false

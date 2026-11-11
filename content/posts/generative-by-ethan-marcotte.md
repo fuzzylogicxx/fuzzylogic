@@ -9,9 +9,9 @@ date: 2024-09-08
 tags:
   - link
   - technology
-  - AI
+  - ai
   - politics
   - work
-  - LLM
+  - llm
 ---
 Ethan assembles numerous technology articles, some of which are enthusiastic about generative AI and LLMs while others highlight political, social and health impacts and risks.

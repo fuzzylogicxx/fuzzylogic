@@ -6,7 +6,7 @@ tags:
 - entry
 - web
 - spec
-- standard
+- standards
 draft: false
 ---
 Something Adrian Roselli said recently has stuck with me. The gist was that when developers need definitive guidance they shouldn’t treat MDN as gospel, but rather refer to the proper specifications for web standards.

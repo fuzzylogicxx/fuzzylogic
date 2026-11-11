@@ -4,8 +4,8 @@ description: How and why we might hide elements from different browsing contexts
 date: 2020-10-08T10:58:00.000+00:00
 tags:
 - development
-- a11y
-- howto
+- accessibility
+- how-to
 - css
 - aria
 - html

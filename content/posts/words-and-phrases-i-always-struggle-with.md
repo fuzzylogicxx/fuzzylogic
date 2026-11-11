@@ -5,7 +5,7 @@ description: I’m jotting down the meanings of those words and phrases that I a
   forget
 tags:
 - entry
-- aidememoire
+- aide-memoire
 - meanings
 - words
 - reference

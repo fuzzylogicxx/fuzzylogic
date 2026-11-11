@@ -2,7 +2,7 @@
 date: "2022-10-02T00:03:28.909Z"
 title: "Better accessible names | hidde.blog"
 description: "Hidde tells us how to give more useful context to Assistive Technologies"
-tags: [link, a11y]
+tags: [link, accessibility]
 linkTarget: "https://hidde.blog/better-accessible-names/"
 ---
 Accessible names are used by assistive technologies to refer to elements on a web page. Hidde tells us how to word them so that they are more useful.

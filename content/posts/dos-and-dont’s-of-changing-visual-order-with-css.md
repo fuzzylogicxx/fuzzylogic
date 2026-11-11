@@ -7,11 +7,11 @@ date: 2021-04-27T08:21:10.275Z
 mainImage.isAnchor: false
 tags:
   - order
-  - tab
-  - cssgrid
+  - tabs
+  - css-grid
   - flexbox
-  - visualorder
-  - a11y
+  - visual-order
+  - accessibility
   - focusable
   - interactive
 draft: false

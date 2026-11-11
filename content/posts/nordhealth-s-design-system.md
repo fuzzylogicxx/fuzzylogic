@@ -5,10 +5,10 @@ description: There’s so much to admire in Nord Health’s Design System and sp
   its reference website
 tags:
 - link
-- webcomponents
+- web-components
 - naming
-- a11y
-- designsystems
+- accessibility
+- design-systems
 noteWithTitle: false
 linkTarget: https://nordhealth.design/
 mainImage.url: ''

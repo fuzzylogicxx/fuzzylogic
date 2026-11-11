@@ -4,7 +4,7 @@ description: Heydon Pickering and Andy Bell’s new project is a game-changer
 date: 2019-09-05T23:00:00Z
 mainImage.isAnchor: false
 tags:
-- cssgrid
+- css-grid
 - flexbox
 - intrinsic
 - html

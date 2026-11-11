@@ -6,7 +6,7 @@ tags:
 - link
 - naming
 - components
-- designsystems
+- design-systems
 linkTarget: https://component.gallery/components/
 draft: false
 

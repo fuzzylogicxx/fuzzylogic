@@ -6,8 +6,8 @@ location: Glasgow
 mainImage.isAnchor: false
 tags:
   - note
-  - book
-  - scifi
+  - books
+  - sci-fi
   - time
   - memory
 draft: false

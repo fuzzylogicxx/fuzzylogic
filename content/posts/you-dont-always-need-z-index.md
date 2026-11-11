@@ -9,8 +9,8 @@ tags:
 - css
 - positioning
 - order
-- zindex
-- cssgrid
+- z-index
+- css-grid
 location: Glasgow
 noteWithTitle: true
 linkTarget: ''

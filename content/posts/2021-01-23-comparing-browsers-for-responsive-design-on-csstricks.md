@@ -2,7 +2,7 @@
 date: "2021-01-23T20:00:14.915Z"
 title: "Comparing Browsers for Responsive Design (on CSS-Tricks)"
 description: "Chris Coyier checks out Sizzy, Polypane et al and decides which suits him best"
-tags: [link, browser, responsive, web, development]
+tags: [link, browsers, responsive-design, web, development]
 linkTarget: "https://css-tricks.com/comparing-browsers-for-responsive-design/"
 ---
 Chris Coyier checks out Sizzy, Polypane et al and decides which suits him best.

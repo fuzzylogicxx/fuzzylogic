@@ -2,7 +2,7 @@
 date: "2020-10-24T21:05:05.034Z"
 title: "Minimalist Container Queries"
 description: "Scott Jehl’s experimental take on a container/element query aimed at letting us set responsive styles for our elements based on their immediate context rather than that of the viewport."
-tags: [link, containerqueries, responsive, css, webcomponents, css, javascript, html]
+tags: [link, container-queries, responsive-design, css, web-components, javascript, html]
 linkTarget: "https://codepen.io/scottjehl/pen/NWrdRQv"
 ---
 Scott Jehl’s experimental take on a container/element query aimed at letting us set responsive styles for our elements based on their immediate context rather than that of the viewport.

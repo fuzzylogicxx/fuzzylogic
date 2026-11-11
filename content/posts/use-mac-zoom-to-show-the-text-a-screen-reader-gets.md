@@ -7,7 +7,6 @@ mainImage.isAnchor: false
 location: Glasgow
 tags:
   - note
-  - a11y
   - accessibility
   - tip
   - testing

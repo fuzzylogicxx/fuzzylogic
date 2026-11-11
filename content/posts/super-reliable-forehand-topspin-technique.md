@@ -4,7 +4,7 @@ title: Super-reliable forehand loop technique
 description: Great tutorial from Tom Lodziak in which coach Emma Harradine demonstrates her excellent forehand loop technique
 tags:
 - link
-- tabletennis
+- table-tennis
 - technique
 - forehand
 location: Glasgow

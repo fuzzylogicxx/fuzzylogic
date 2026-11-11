@@ -8,7 +8,7 @@ tags:
 - writing
 - blog
 - colleagues
-- designsystems
+- design-systems
 noteWithTitle: false
 linkTarget: https://www.andapopovici.com/posts/5-things-design-system/
 mainImage.url: ''

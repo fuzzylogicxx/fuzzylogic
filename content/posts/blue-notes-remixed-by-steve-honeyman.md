@@ -5,9 +5,9 @@ date: 2018-12-13T12:00:00Z
 tags:
   - link
   - css
-  - cssgrid
+  - css-grid
   - design
-  - bluenote
+  - blue-note
 linkTarget: http://stevehoneyman.co.uk/blog/blue-notes-remixed/
 ---
 In August I saw a great presentation by Steve Honeyman on [his self-set challenge to recreate Reid Miles’ iconic Blue Note label artwork in the browser](http://stevehoneyman.co.uk/blue-notes/). I was really inspired by the way Steve used what he knew (classic album covers) to learn what he didn’t know (new layout techniques).

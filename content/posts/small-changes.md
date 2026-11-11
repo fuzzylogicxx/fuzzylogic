@@ -5,7 +5,7 @@ description: Recently I’ve tweaked some aspects of my life and I’m feeling b
 tags:
 - entry
 - health
-- mentalhealth
+- mental-health
 - diet
 draft: false
 ---

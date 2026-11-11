@@ -6,7 +6,7 @@ date: 2019-03-08T19:30:51.384Z
 mainImage.isAnchor: false
 tags:
   - entry
-  - boxshadow
+  - box-shadow
   - css
   - border
   - code

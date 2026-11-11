@@ -2,7 +2,7 @@
 date: "2022-07-13T19:44:49.564Z"
 title: "Avoiding img layout shifts: aspect-ratio vs width & height attributes (on Jake Archibald's blog)"
 description: "Jake helpfully explains the inner workings of presentation hints and the best approach to take for each situation"
-tags: [link, performance, images, aspectratio]
+tags: [link, performance, images, aspect-ratio]
 linkTarget: "https://jakearchibald.com/2022/img-aspect-ratio/"
 ---
 Recently I’ve noticed some developers recommending using the CSS `aspect-ratio` property directly on images. [My understanding of `aspect-ratio`](https://fuzzylogic.me/posts/2021-02-02-a-first-look-at-aspectratio-on-csstricks/) was that it’s not so much intended for elements like `img` which already have an intrinsic aspect ratio, but rather for the likes of `div` which do not. Furthermore, when the goal is to prevent the layout shift that can occur after an image loads we should supply our images with `width` and `height` HTML attributes rather than using CSS.

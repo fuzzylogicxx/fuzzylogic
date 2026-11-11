@@ -4,7 +4,7 @@ title: 'Origami Design System'
 description: 'The FT’s design system has a cool name and some interesting metrics'
 tags:
 - link
-- designsystems
+- design-systems
 linkTarget: https://origami-for-everyone.ft.com/about/measuring-success/#secondary-metrics-1
 ---
 The FT’s design system _Origami_ not only has a cool name but also some interesting metrics. 

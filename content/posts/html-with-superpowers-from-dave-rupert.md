@@ -10,7 +10,7 @@ tags:
 - talk
 - html
 - javascript
-- webcomponents
+- web-components
 noteWithTitle: false
 linkTarget: https://daverupert.com/2021/10/html-with-superpowers/
 mainImage.url: ''

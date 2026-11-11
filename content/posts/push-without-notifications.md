@@ -5,7 +5,7 @@ date: 2018-11-16T12:00:00Z
 tags:
   - link
   - web
-  - serviceworker
+  - service-worker
   - notifications
   - performance
 linkTarget: https://adactio.com/journal/14511

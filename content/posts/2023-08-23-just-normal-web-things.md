@@ -2,7 +2,7 @@
 date: "2023-08-23T21:31:57.430Z"
 title: "Just normal web things."
 description: "Heather suggests that in developers' excitement to do cool new stuff and use cool new tools and techniques we stopped letting people do very normal web things"
-tags: [link, a11y, usability, ux, links, anchor]
+tags: [link, accessibility, usability, ux, links, anchor]
 linkTarget: "https://heather-buchel.com/blog/2023/07/just-normal-web-things/"
 ---
 Heather suggests that in developers’ excitement to do cool new stuff and use cool new tools and techniques “we stopped letting people do very normal web things”. Things like:

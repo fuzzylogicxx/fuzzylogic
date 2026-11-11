@@ -2,7 +2,7 @@
 date: 2023-02-25T14:24:43Z
 title: Displaying tables on narrow screens
 description: 'Collected resources and thoughts on the responsive challenge that is the table element'
-tags: [web,development,css,html,a11y,responsive,tables]
+tags: [web,development,css,html,accessibility,responsive-design,tables]
 noteWithTitle: false
 linkTarget: ''
 mainImage.url: ''

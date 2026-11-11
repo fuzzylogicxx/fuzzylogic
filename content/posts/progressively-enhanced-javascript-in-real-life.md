@@ -4,7 +4,7 @@ description: How my website’s search kept working even when javascript had fai
 date: 2021-01-22T11:46:08.066Z
 mainImage.isAnchor: false
 tags:
-  - progressiveenhancement
+  - progressive-enhancement
   - resilience
   - web
   - development

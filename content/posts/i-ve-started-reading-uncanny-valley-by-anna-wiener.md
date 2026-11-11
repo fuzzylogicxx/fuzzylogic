@@ -6,10 +6,10 @@ location: Glasgow
 mainImage.isAnchor: false
 tags:
 - note
-- siliconvalley
+- silicon-valley
 - startup
 - tech
-- book
+- books
 draft: false
 
 ---

@@ -4,7 +4,7 @@ title: Matt Wilde’s debut LP, Hello World
 description: I’ve just received this album plus goodies, and I’m happy!
 tags:
 - note
-- record
+- records
 - jazz
 - beats
 - photo

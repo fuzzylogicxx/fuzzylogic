@@ -6,11 +6,11 @@ date: 2019-09-02T19:15:40.105Z
 mainImage.isAnchor: false
 tags:
   - fonts
-  - webfonts
+  - web-fonts
   - css
   - html
   - performance
-  - a11y
+  - accessibility
   - javascript
   - preload
 draft: false

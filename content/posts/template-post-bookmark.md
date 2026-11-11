@@ -5,7 +5,6 @@ title: 'Foo'
 description: 'Bar'
 tags:
 - link
-- foo
 linkTarget: https://www.bbc.co.uk/iplayer/episode/m001wtqp/the-rescue
 ---
 Foo

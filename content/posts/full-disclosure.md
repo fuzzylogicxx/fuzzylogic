@@ -9,7 +9,7 @@ tags:
 - web
 - development
 - html
-- a11y
+- accessibility
 - disclosure
 noteWithTitle: false
 linkTarget: ''

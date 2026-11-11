@@ -2,7 +2,7 @@
 date: "2022-11-27T20:30:55.393Z"
 title: "Getting started with Utopia Figma Plugins (Utopia Blog)"
 description: "More goodies from the Clearleft and Utopia team, this time providing Figma tooling for designers"
-tags: [link, utopia, responsive, fluid, design, figma, typography]
+tags: [link, utopia, responsive-design, fluid, design, figma, typography]
 linkTarget: "https://utopia.fyi/blog/get-started-with-utopia-figma-plugins/"
 ---
 Here’s another tool from the Utopia creators to assist with breakpoint-free fluid responsive design.

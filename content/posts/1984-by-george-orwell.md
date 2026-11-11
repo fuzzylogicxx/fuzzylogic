@@ -2,7 +2,7 @@
 date: 2018-09-05
 title: 1984 by George Orwell
 description: I’ve just read George Orwell’s dystopian classic.
-tags: [entry, book, catchup, dystopian]
+tags: [entry, books, catchup, dystopian]
 ---
 I’ve just read _1984_ by George Orwell. I know, I know… I should have done this a long time ago. Anyway, here’s what I thought.
 

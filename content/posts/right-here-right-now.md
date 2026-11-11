@@ -4,7 +4,7 @@ title: 'Right here, right now (by Martin Gunnarson)'
 description: 'Martin introduces the “Now” page concept and explains how he approached it using Eleventy'
 tags:
 - link
-- personalsites
+- personal-sites
 linkTarget: https://www.martingunnarsson.com/posts/right-here-right-now/
 ---
 Martin introduces the “Now” page concept and how he adapted it for showing on his homepage. 

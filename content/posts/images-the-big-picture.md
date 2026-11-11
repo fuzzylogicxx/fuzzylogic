@@ -7,7 +7,7 @@ tags:
   - entry
   - web
   - images
-  - rwd
+  - responsive-design
 permalink: /posts/images-on-the-web-the-big-picture/
 ---
 In modern web development there are a myriad ways to present an image on a web page and it can often feel pretty baffling. In this series I step through the options, moving from basic to flexible images; then from modern responsive images to the new CSS for fitting different sized images into a common shape. By the end I’ll arrive at a flexible, modern boilerplate for images.

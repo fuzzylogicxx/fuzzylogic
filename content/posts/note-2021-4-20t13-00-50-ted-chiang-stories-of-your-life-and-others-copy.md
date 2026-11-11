@@ -6,8 +6,8 @@ location: Glasgow
 mainImage.isAnchor: false
 tags:
 - note
-- book
-- scifi
+- books
+- sci-fi
 - race
 - slavery
 - usa

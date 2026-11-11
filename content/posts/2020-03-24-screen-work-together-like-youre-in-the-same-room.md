@@ -2,7 +2,7 @@
 date: "2020-03-24T17:56:22.566Z"
 title: "Screen - Work together like you're in the same room"
 description: "Screen is a native application which provides fast screen sharing with multiplayer control, drawing & video."
-tags: [link, tool, remote, pair, development, collaboration]
+tags: [link, tools, remote, pair, development, collaboration]
 linkTarget: "https://screen.so/"
 ---
 > Fast screen sharing with multiplayer control, drawing & video.

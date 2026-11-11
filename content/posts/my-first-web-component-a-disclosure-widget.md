@@ -5,11 +5,11 @@ description: A simple web component just so I can get used to the technologies
 tags:
 - entry
 - template
-- shadowdom
+- shadow-dom
 - css
 - html
 - javascript
-- webcomponents
+- web-components
 noteWithTitle: false
 linkTarget: ''
 mainImage.url: ''

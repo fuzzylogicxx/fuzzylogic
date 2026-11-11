@@ -5,7 +5,7 @@ description: ''
 tags:
 - entry
 - javascript
-- a11y
+- accessibility
 - tabs
 noteWithTitle: false
 linkTarget: ''

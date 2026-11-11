@@ -6,7 +6,7 @@ tags:
 - note
 - jazz
 - edinburgh
-- event
+- events
 - festival
 - music
 noteWithTitle: true

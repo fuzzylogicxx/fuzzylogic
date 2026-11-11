@@ -9,7 +9,7 @@ tags:
   - html
   - css
   - javascript
-  - customproperties
+  - custom-properties
 draft: true
 ---
 ## Bridge / not just CSS vars / game-changer

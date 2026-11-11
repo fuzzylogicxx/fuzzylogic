@@ -6,8 +6,8 @@ tags:
 - note
 - javascript
 - aria
-- progressiveenhancement
-- a11y
+- progressive-enhancement
+- accessibility
 noteWithTitle: true
 linkTarget: ''
 mainImage.url: ''

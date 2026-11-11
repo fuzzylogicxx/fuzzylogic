@@ -4,7 +4,7 @@ description: A great resource from Dave Rupert summarising the expected accessib
 date: 2019-03-19T12:00:00Z
 tags:
   - link
-  - a11y
+  - accessibility
   - components
   - aria
 linkTarget: https://davatron5000.github.io/a11y-nutrition-cards

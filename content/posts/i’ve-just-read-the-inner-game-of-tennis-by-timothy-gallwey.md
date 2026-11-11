@@ -5,7 +5,7 @@ date: 2024-03-15
 title: I’ve just read The Inner Game of Tennis, by Timothy Gallwey
 tags:
   - note
-  - book
+  - books
   - tennis
   - psychology
 description: I’ve just read The Inner Game of Tennis, by Timothy Gallwey

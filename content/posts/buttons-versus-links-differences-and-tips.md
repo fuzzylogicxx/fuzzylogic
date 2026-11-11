@@ -13,8 +13,8 @@ tags:
 - html
 - anchor
 - link
-- button
-- a11y
+- buttons
+- accessibility
 noteWithTitle: false
 linkTarget: ''
 mainImage.url: ''

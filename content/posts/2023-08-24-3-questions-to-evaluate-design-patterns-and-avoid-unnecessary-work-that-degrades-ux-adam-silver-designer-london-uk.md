@@ -2,7 +2,7 @@
 date: "2023-08-24T08:46:01.853Z"
 title: "3 questions to evaluate design patterns and avoid unnecessary work that degrades UX (by Adam Silver)"
 description: "Adam offers three questions to ask to help evaluate ideas and avoid shipping something that might negatively impact UX"
-tags: [link, a11y, ux, evaluation, critique]
+tags: [link, accessibility, ux, evaluation, critique]
 linkTarget: "https://adamsilver.io/blog/3-questions-to-evaluate-design-patterns-and-avoid-unnecessary-work-that-degrades-ux/"
 ---
 Adam offers tips for how to proceed when we are presented with a request for a shiny new pattern which is not grounded in research but rather follows a fad.

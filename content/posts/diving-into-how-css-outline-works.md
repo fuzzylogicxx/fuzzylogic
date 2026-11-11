@@ -7,11 +7,10 @@ tags:
   - entry
   - css
   - outline
-  - a11y
+  - accessibility
   - deepdive
   - flexbox
-  - responsive
-  - rwd
+  - responsive-design
 ---
 I’m partial to going down the rabbit-hole on a niche aspect of front-end development. For example a few years ago I got the urge to dig into what’s going on with containers and items in Flexbox-powered layouts and noted my findings in [Flexbox-fu](https://codepen.io/fuzzylogicx/full/BEEYQL). I do it to go beyond the thing’s theory and into its practical application for solving real web development challenges; to gain a deeper understanding of why things behave the way they do. These deep dives take time but are rewarding; usually I’ll learn about more than I expected.  
 

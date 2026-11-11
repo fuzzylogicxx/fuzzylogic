@@ -4,7 +4,7 @@ title: 'A Global Design System, by Brad Frost'
 description: 'Bar'
 tags:
 - link
-- designsystems
+- design-systems
 - accessibility
 linkTarget: https://bradfrost.com/blog/post/a-global-design-system/
 ---

@@ -4,7 +4,7 @@ description: WebAIM’s accessibility analysis of the top one million home pages
 date: 2019-03-12T12:00:00Z
 tags:
   - link
-  - a11y
+  - accessibility
   - web
   - webaim
 linkTarget: https://ethanmarcotte.com/wrote/the-web-we-broke/

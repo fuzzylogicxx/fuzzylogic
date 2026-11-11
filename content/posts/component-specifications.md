@@ -6,7 +6,7 @@ tags:
 - link
 - design
 - documentation
-- designsystems
+- design-systems
 - accessibility
 - ux
 noteWithTitle: false

@@ -6,7 +6,7 @@ date: 2025-02-25T10:00:00Z
 location: Glasgow
 tags:
 - note
-- book
+- books
 - anxiety
 - division
 - culture

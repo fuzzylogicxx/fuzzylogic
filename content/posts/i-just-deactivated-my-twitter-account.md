@@ -4,10 +4,10 @@ title: Bye, Twitter
 description: I just deactivated my Twitter (X) account
 tags:
 - note
-- socialmedia
+- social-media
 - twitter
 - health
-- mentalhealth
+- mental-health
 location: Glasgow
 noteWithTitle: true
 linkTarget: ''

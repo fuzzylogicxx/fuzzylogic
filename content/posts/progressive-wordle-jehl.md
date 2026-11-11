@@ -4,7 +4,7 @@ title: 'How would you build Wordle with just HTML & CSS? by Scott Jehl'
 description: 'Scott proposes an interview question relating to web standards and intelligent use of JavaScript'
 tags:
 - link
-- progressiveenhancement
+- progressive-enhancement
 - html
 - css
 - javascript

@@ -2,7 +2,7 @@
 date: "2020-11-16T21:34:45.513Z"
 title: "Article Layout with CSS Grid (on mastery.games)"
 description: "Very clever article (with gutters) layout achieved using CSS Grid, minmax and a minimum of fuss"
-tags: [link, cssgrid, layout, article, minmax, breakout]
+tags: [link, css-grid, layout, article, minmax, breakout]
 linkTarget: "https://mastery.games/post/article-grid-layout/"
 ---
 Very clever responsive `<article>` layout  (with gutters and breakout images) achieved using CSS Grid, `minmax()`, the `ch` unit and a minimum of fuss. It scales automatically from narrow to wide viewports with no `auto` margins, `max-width` or media query manual overrides in sight.

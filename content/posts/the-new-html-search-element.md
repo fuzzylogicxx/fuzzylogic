@@ -4,11 +4,11 @@ title: The new HTML search element
 description: The search element is a native HTML element for creating a search landmark
   (rather than for creating a search input)
 tags:
-- progressiveenhancement
+- progressive-enhancement
 - html
 - search
 - entry
-- a11y
+- accessibility
 noteWithTitle: false
 linkTarget: ''
 mainImage.url: ''

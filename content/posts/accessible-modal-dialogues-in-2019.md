@@ -9,7 +9,7 @@ tags:
 - html
 - javascript
 - modal
-- a11y
+- accessibility
 noteWithTitle: true
 linkTarget: ''
 mainImage.url: ''

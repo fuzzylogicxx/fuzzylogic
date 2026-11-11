@@ -5,8 +5,8 @@ description: 'A nice interview on DJing with the Detroit legend'
 tags:
 - electronic
 - music
-- '909'
-- jeffmills
+- 909
+- jeff-mills
 - techno
 - djing
 - link

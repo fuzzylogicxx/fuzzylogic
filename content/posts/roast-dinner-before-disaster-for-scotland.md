@@ -5,7 +5,7 @@ noteWithTitle: true
 pageSpecificRobotsDirective: noindex, nofollow
 date: 2024-06-25T18:45
 tags:
-  - posts
+  - entry
   - friends
   - dining-out
   - roast

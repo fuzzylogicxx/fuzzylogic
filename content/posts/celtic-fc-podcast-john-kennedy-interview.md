@@ -9,7 +9,7 @@ tags:
   - note
   - football
   - celtic
-  - interview
+  - interviews
   - injury
 ---
 This is a great one-hour interview and a fantatic insight into John Kennedy’s brief but eventful career – the highs and the crushing lows.

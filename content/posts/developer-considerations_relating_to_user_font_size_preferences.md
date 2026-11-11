@@ -5,10 +5,9 @@ date: 2021-03-18T16:14:27.659Z
 draft: true
 tags:
   - fonts
-  - a11y
   - accessibility
   - css
-  - mediaqueries
+  - media-queries
   - preferences
 ---
 As a front-end developer I’m called upon both to test that web pages support user font-size preferences, and to build pages which offer that support. Here are my notes on how to do both.

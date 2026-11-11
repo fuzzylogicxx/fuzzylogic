@@ -6,7 +6,7 @@ tags:
 - link
 - web
 - git
-- codingstyle
+- coding-style
 linkTarget: https://seesparkbox.com/foundry/semantic_commit_messages
 ---
 A fairly rigid commit format (`chore`, `fix`, `feat` etc) which should lead to your git log being an easy-to-skim changelog.

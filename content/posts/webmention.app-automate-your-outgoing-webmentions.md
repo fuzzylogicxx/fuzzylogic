@@ -3,7 +3,7 @@ date: 2019-06-22T07:49:26Z
 title: 'webmention.app: automate your outgoing webmentions'
 description: webmention.app is a great new IndieWeb project by Remy Sharp to make
   sending outgoing webmentions easier
-tags: [link, indieweb, tool, webmention]
+tags: [link, indieweb, tools, webmentions]
 noteWithTitle: false
 linkTarget: https://webmention.app
 mainImage.url: ''
