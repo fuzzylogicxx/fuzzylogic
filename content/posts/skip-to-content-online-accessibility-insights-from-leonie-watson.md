@@ -5,8 +5,8 @@ description: " Here’s a lovely, short interview from an accessibility expert w
   a really positive outlook—highly recommended."
 tags:
 - link
-- léoniewatson
-- a11y
+- leonie-watson
+- accessibility
 noteWithTitle: false
 linkTarget: https://skiptocontent.huxleydigital.co.uk/video/online-accessibility-leonie-watson/
 mainImage.url: ''

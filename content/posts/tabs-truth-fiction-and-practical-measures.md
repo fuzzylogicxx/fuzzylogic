@@ -5,8 +5,8 @@ description: ''
 tags:
 - entry
 - javascript
-- a11y
-- tabs
+- accessibility
+- tab
 noteWithTitle: false
 linkTarget: ''
 mainImage.url: ''

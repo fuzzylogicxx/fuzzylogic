@@ -2,7 +2,7 @@
 title: Certbot Troubleshooting
 description: When taking the DIY approach to building a new server, Certbot is a great option for installing secure certificates. However, sometimes you can run into problems. Here, I review the main recurring issues I’ve encountered and how I fixed them.
 date: 2019-02-13
-tags: [web, development, ssl, secure, sslcert, certbot, vhosts, letsencrypt]
+tags: [web, development, ssl, secure, sslcert, certbot, vhosts, lets-encrypt]
 ---
 When taking the DIY approach to building a new server, Certbot is a great option for installing secure certificates. However, sometimes you can run into problems. Here, I review the main recurring issues I’ve encountered and how I fixed them.
 

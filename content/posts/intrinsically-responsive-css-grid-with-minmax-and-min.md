@@ -5,7 +5,7 @@ date: 2019-07-31 18:14:00
 tags:
 - link
 - web
-- cssgrid
+- css-grid
 - css
 - layout
 linkTarget: http://evanminto.com/blog/intrinsically-responsive-css-grid-minmax-min/

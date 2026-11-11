@@ -6,11 +6,11 @@ date: 2021-03-07T11:14:27.659Z
 mainImage.isAnchor: false
 tags:
   - fonts
-  - webfonts
+  - web-fonts
   - typography
   - css
   - glyphhanger
-  - howto
+  - how-to
 ---
 On [my personal website](https://fuzzylogic.me) I currently use three web fonts from the _Source Sans 3_ group: regular, italic and semibold. I self-host my fonts because [that’s a good practice](https://csswizardry.com/2019/05/self-host-your-static-assets/). Additionally I use a variety of special characters to add some typographic life to the text.
 

@@ -2,7 +2,7 @@
 date: "2021-01-26T22:35:54.406Z"
 title: "Use CSS Clamp to create a more flexible wrapper utility (on Piccalilli)"
 description: "Andy Bell recommends using CSS clamp() to control your wrapper/container width because it supports setting multiple tolerances using different units simultaneously rather than in a more convoluted way."
-tags: [link, css, web, development, tip, layout, width, constraints, responsive, clamp]
+tags: [link, css, web, development, tip, layout, width, constraints, responsive-design, clamp]
 linkTarget: "https://piccalil.li/quick-tip/use-css-clamp-to-create-a-more-flexible-wrapper-utility"
 ---
 Here’s Andy Bell recommending using CSS `clamp()` to control your wrapper/container `width` because it supports setting a preferred value in `vw` to ensure sensible gutters combined with a maximum tolerance in `rem`—all in a single line of code.

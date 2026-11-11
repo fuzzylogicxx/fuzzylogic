@@ -7,7 +7,7 @@ mainImage.isAnchor: false
 tags:
 - note
 - book
-- scifi
+- sci-fi
 draft: false
 
 ---

@@ -5,10 +5,10 @@ date: 2021-01-27T22:31:13.407Z
 mainImage.isAnchor: false
 tags:
   - entry
-  - internetexplorer
+  - internet-explorer
   - browsers
   - resilience
-  - progressiveenhancement
+  - progressive-enhancement
 draft: true
 ---
 TL;DR: yes, but with a Minimum Viable Experience. 

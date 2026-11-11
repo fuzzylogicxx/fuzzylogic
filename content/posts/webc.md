@@ -6,8 +6,8 @@ description: WebC, the latest addition to the Eleventy suite of technologies, is
 tags:
 - entry
 - javascript
-- webcomponents
-- progressiveenhancement
+- web-components
+- progressive-enhancement
 - 11ty
 noteWithTitle: false
 linkTarget: ''

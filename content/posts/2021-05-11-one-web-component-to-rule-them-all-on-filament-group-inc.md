@@ -2,7 +2,7 @@
 date: "2021-05-11T17:02:01.319Z"
 title: "One web component to rule them all? (on Filament Group, Inc.)"
 description: "Scott Jehl with a refreshingly Progressive Enhancement -centric look at Web Components."
-tags: [link, webcomponents, polyfills, progressiveenhancement, resilience]
+tags: [link, web-components, polyfills, progressive-enhancement, resilience]
 linkTarget: "https://www.filamentgroup.com/lab/delegator/"
 ---
 Scott Jehl has taken a refreshingly Progressive Enhancement -centric look at Web Components.

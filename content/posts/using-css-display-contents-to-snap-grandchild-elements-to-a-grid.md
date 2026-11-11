@@ -6,7 +6,7 @@ mainImage.isAnchor: false
 tags:
   - entry
   - css
-  - cssgrid
+  - css-grid
   - layout
   - development
 ---

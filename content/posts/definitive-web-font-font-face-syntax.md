@@ -5,9 +5,9 @@ date: 2018-11-27T13:14:00.000Z
 mainImage.isAnchor: false
 tags:
   - fonts
-  - webfonts
+  - web-fonts
   - typography
-  - howto
+  - how-to
 draft: false
 ---
 These days, whenever I’m about to use a web font on a new site I generally find myself running a google search for the latest “definitive `@font-face` syntax” that covers all modern browser/device needs.

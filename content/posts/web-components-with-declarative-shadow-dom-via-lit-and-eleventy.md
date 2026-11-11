@@ -7,11 +7,11 @@ tags:
 - entry
 - javascript
 - lit
-- chriscoyier
-- bradfrost
+- chris-coyier
+- brad-frost
 - declarative
-- shadowdom
-- webcomponents
+- shadow-dom
+- web-components
 noteWithTitle: false
 linkTarget: ''
 mainImage.url: ''

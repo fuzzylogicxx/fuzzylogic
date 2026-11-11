@@ -6,7 +6,7 @@ description: A record of a tough moment
 tags:
 - note
 - health
-- mentalhealth
+- mental-health
 location: Home, Glasgow
 noteWithTitle: true
 draft: false

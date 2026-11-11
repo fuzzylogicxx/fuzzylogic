@@ -7,7 +7,7 @@ tags:
   - bookshop
   - hive
   - independent
-  - books
+  - book
   - ecommerce
   - amazon
   - ethics

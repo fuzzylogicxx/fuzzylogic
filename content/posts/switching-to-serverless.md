@@ -6,9 +6,9 @@ tags:
 - entry
 - web
 - development
-- eleventy
+- 11ty
 - netlify
-- JAMstack
+- jamstack
 - serverless
 draft: true
 eleventyExcludeFromCollections: true

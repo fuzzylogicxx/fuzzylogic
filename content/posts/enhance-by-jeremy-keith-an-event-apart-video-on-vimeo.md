@@ -6,7 +6,7 @@ description: A classic talk by Jeremy Keith on Progressive Enhancement and the n
 tags:
 - link
 - layers
-- progressiveenhancement
+- progressive-enhancement
 - adactio
 - presentation
 - video

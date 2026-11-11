@@ -2,7 +2,7 @@
 date: 2019-08-01
 title: A Visit from the Goon Squad, by Jennifer Egan
 description: Great book telling the stories of a cast of interconnected characters linked by the music industry.
-tags: [entry, book, music, dystopian, celebrity, influencers, newyork]
+tags: [entry, book, music, dystopian, celebrity, influencers, new-york]
 mainImage:
   url: https://res.cloudinary.com/fuzzylogic/image/upload/v1571418924/IMG_2430_pgzfhc.jpg
   alt: A photo of the book “A Visit from the Goon Squad” by Jennifer Egan

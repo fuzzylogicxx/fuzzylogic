@@ -5,8 +5,8 @@ description: 'Wonderful guide that’s choc-full of practical examples.'
 tags:
 - link
 - css
-- rwd
-- containerqueries
+- responsive-design
+- container-queries
 linkTarget: https://ishadeed.com/article/css-container-query-guide/
 ---
 This is a wonderful guide that’s choc-full of practical examples.

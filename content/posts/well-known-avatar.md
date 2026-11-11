@@ -5,8 +5,8 @@ description: 'Put an avatar somewhere that’s easy to access'
 tags:
 - link
 - avatar
-- wellknown
-- personalsite
+- well-known
+- personal-sites
 noteWithTitle: false
 linkTarget: https://blog.jim-nielsen.com/2023/well-known-avatar/
 mainImage.url: ''

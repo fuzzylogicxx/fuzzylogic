@@ -6,11 +6,11 @@ description: A fantastic article on accessible expandable/collapsible sections f
 tags:
 - link
 - javascript
-- progressiveenhancement
-- webcomponents
+- progressive-enhancement
+- web-components
 - development
 - web
-- a11y
+- accessibility
 noteWithTitle: false
 linkTarget: https://inclusive-components.design/collapsible-sections/
 mainImage.url: ''

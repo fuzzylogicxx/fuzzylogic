@@ -4,11 +4,11 @@ title: Bram Stein’s personal website
 description: Bram Stein wrote the book on Webfonts so it’s no surprise that his own
   website showcases some pretty beautiful typography.
 tags:
-- personalsites
+- personal-sites
 - design
 - inspiration
 - typography
-- webfonts
+- web-fonts
 noteWithTitle: false
 linkTarget: https://www.bramstein.com/
 mainImage.url: ''

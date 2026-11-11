@@ -10,7 +10,6 @@ tags:
   - food
   - rudy
   - hill-walking
-  - walking
   - friends
 ---
 On Friday night Clair and I went for pizza at new joint in town, [Frank’s Pizza](https://www.frankspizza.uk). It turns out that friend of the family Peter works there and he showed us to a table at just the right time before it became really busy. I went for the sausage and peppers pizza, we shared a portion of Frank’s fries and Peter hooked us up with a new honey dip flavour to try too. Everything was really tasty!

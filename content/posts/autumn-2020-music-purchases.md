@@ -8,7 +8,7 @@ tags:
   - records
   - vinyl
   - shopping
-  - recordshopping
+  - record-shopping
 isList: true
 mainImage:
   url: https://res.cloudinary.com/fuzzylogic/image/upload/v1609971455/facefacts_1300_qzkqwh.jpg

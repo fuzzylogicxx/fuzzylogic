@@ -5,7 +5,7 @@ date: 2019-10-20 15:02:00
 tags:
   - link
   - web
-  - a11y
+  - accessibility
   - testing
 linkTarget: https://www.matuzo.at/blog/beyond-automatic-accessibility-testing-6-things-i-check-on-every-website-i-build/
 ---

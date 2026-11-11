@@ -7,7 +7,7 @@ tags:
   - entry
   - chicago
   - travel
-  - aneventapart
+  - an-event-apart
   - work
 draft: false
 ---

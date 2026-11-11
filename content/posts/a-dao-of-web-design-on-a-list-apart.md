@@ -7,9 +7,8 @@ tags:
 - design
 - development
 - web
-- rwd
+- responsive-design
 - fluid
-- responsive
 noteWithTitle: false
 linkTarget: https://alistapart.com/article/dao/
 mainImage.url: ''

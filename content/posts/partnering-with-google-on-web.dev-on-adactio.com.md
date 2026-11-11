@@ -5,8 +5,7 @@ description: Jeremy Keith of Clearleft talks through the process of writing Lear
   Responsive Design for Google’s web.dev resource
 tags:
 - link
-- responsive
-- rwd
+- responsive-design
 - content
 - development
 - web

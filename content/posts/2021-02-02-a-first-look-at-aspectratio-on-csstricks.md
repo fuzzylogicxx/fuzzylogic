@@ -2,7 +2,7 @@
 date: "2021-02-02T11:37:57.839Z"
 title: "A First Look at aspect-ratio (on CSS-Tricks)"
 description: "Chris Coyier takes the new CSS aspect-ratio property for a spin and tests how it works in different scenarios"
-tags: [link, web, development, css, layout, aspectratio, box, images]
+tags: [link, web, development, css, layout, aspect-ratio, box, images]
 linkTarget: "https://css-tricks.com/a-first-look-at-aspect-ratio/"
 ---
 Chris Coyier takes the new CSS `aspect-ratio` property for a spin and tests how it works in different scenarios.

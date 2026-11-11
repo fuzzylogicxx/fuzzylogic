@@ -7,7 +7,7 @@ tags:
   - web
   - http
   - caching
-  - serviceworker
+  - service-worker
 linkTarget: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Clear-Site-Data
 ---
 The `Clear-Site-Data` HTTP header clears browsing data (cookies, storage, cache) associated with the requesting website. It can even be used to deregister service workers.

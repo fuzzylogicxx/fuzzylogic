@@ -8,8 +8,8 @@ tags:
 - javascript
 - css
 - html
-- a11y
-- howto
+- accessibility
+- how-to
 noteWithTitle: false
 linkTarget: ''
 mainImage.url: ''

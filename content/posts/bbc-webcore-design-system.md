@@ -8,7 +8,7 @@ tags:
 - bbc
 - development
 - web
-- designsystems
+- design-systems
 noteWithTitle: false
 linkTarget: https://static.files.bbci.co.uk/core/storybook/index.html
 mainImage.url: ''

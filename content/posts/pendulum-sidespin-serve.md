@@ -6,7 +6,7 @@ date: 2018-09-06T06:18:00.000Z
 linkTarget: https://www.youtube.com/watch?v=uLA3skhF8rc
 tags:
   - link
-  - tabletennis
+  - table-tennis
   - serve
   - pendulum
   - sidespin

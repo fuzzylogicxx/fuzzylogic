@@ -1,7 +1,7 @@
 ---
 description: The server and client render should not be 1:1.
 date: 2020-03-01T14:11:21+00:00
-tags: [note, ssr, javascript, progressiveenhancement]
+tags: [note, ssr, javascript, progressive-enhancement]
 location: Glasgow
 noteTitle: 1565863401
 ---

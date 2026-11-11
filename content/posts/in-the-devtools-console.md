@@ -1,6 +1,6 @@
 ---
 date: 2019-03-28T00:31:37Z
-title: "$$ in the DevTools Console"
+title: "$ in the DevTools Console"
 description: Shortcuts for DOM element queries you can use in your browser’s Devtools
   console
 tags:
@@ -8,8 +8,8 @@ tags:
 - firefox
 - chrome
 - javascript
-- howto
-- devtools
+- how-to
+- dev-tools
 noteWithTitle: false
 linkTarget: ''
 mainImage.url: ''

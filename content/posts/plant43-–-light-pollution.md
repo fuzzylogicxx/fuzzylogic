@@ -8,10 +8,10 @@ location: Glasgow
 tags:
   - note
   - music
-  - record
+  - records
   - vinyl
   - shopping
-  - recordshopping
+  - record-shopping
   - techno
   - electro
   - electronic

@@ -9,7 +9,7 @@ tags:
   - friends
   - glasgow
   - music
-  - bluenote
+  - blue-note
 location: Glasgow west end
 ---
 Having a good time hanging out with Mr Crolla. We started out at the Blue Note in-store at Loud and Clear. I treated him to a branded cap which he tells me will come in handy for golf, and introduced him to Wayne Shorter via a copy of _Speak No Evil_. Here’s hoping that’s the beginning of a nice journey for him! 

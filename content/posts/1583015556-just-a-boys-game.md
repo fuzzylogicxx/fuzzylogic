@@ -2,7 +2,7 @@
 date: 2020-02-29T22:32:00+00:00
 description: Gritty Glaswegian play from 1979
 noteTitle: 1579384800
-tags: [note, glasgow, family, violence, shipyards, greenock, play]
+tags: [note, glasgow, family, violence, shipyards, greenock]
 location: Glasgow
 ---
 

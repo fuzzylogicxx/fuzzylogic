@@ -8,10 +8,10 @@ tags:
 - development
 - web
 - shopify
-- designsystems
+- design-systems
 - javascript
-- a11y
-- webcomponents
+- accessibility
+- web-components
 noteWithTitle: false
 linkTarget: https://twitter.com/alexpage_/status/1483542442997522433
 mainImage.url: ''

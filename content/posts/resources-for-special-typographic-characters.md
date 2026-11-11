@@ -7,11 +7,11 @@ tags:
   - entry
   - reference
   - entities
-  - specialcharacters
+  - special-characters
   - html
   - punctuation
   - typography
-  - smartquotes
+  - smart-quotes
   - development
   - web
 draft: false

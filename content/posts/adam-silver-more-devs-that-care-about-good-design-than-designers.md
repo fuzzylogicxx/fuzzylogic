@@ -5,7 +5,7 @@ description: 'A spicy but somewhat relatable observation on attitudes to accessi
 tags:
 - link
 - design
-- a11y
+- accessibility
 - tweet
 noteWithTitle: false
 linkTarget: https://twitter.com/adambsilver/status/1667844139642150912

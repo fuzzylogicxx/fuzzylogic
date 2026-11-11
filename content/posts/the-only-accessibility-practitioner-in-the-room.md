@@ -4,7 +4,7 @@ title: The only accessibility specialist in the room – Tetralogical blog
 description: 'Henny Swan with some advice for those who accessibility responsibility falls to'
 tags:
 - link
-- a11y
+- accessibility
 - advice
 noteWithTitle: false
 linkTarget: https://tetralogical.com/blog/2023/06/05/the-only-accessibility-specialist-in-the-room/

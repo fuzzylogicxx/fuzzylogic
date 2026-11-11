@@ -7,7 +7,7 @@ tags:
 - entry
 - images
 - alt
-- a11y
+- accessibility
 noteWithTitle: false
 linkTarget: ''
 mainImage.url: ''

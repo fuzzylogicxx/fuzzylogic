@@ -17,7 +17,7 @@ youtubeId: CDs_LSEDHkM
 tags:
   - note
   - music
-  - gig
+  - gigs
   - event
   - electronic
   - techno

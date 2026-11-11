@@ -1,7 +1,7 @@
 ---
 title: Atomic Design by Brad Frost
 description: The original call-to-arms and manual for Design Systems
-tags: [link, web, designsystems]
+tags: [link, web, design-systems]
 date: 2018-09-12
 linkTarget: http://atomicdesign.bradfrost.com/
 ---

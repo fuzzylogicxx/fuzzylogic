@@ -8,7 +8,7 @@ tags:
   - web
   - development
   - css
-  - fullbleed
+  - full-bleed
 ---
 How to break out to full-bleed, various ways.
 

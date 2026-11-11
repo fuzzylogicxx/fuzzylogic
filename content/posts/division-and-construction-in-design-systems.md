@@ -6,8 +6,8 @@ tags:
 - entry
 - storybook
 - lookbook
-- atomicdesign
-- designsystems
+- atomic-design
+- design-systems
 noteWithTitle: false
 linkTarget: ''
 mainImage.url: ''

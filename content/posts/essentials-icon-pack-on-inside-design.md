@@ -5,7 +5,7 @@ date: 2019-01-10T12:00:00Z
 tags:
   - link
   - design
-  - icons
+  - icon
   - svg
 linkTarget: https://www.invisionapp.com/inside-design/design-resources/essentials-icon-pack/
 ---

@@ -2,7 +2,7 @@
 date: "2020-12-03T08:57:41.246Z"
 title: "Creating websites with prefers-reduced-data (on polypane.app)"
 description: "A media query and related API which allows web developers to keep websites accessible to everyone."
-tags: [link, performance, a11y, mediaqueries, connection, css, javascript]
+tags: [link, performance, accessibility, media-queries, connection, css, javascript]
 linkTarget: "https://polypane.app/blog/creating-websites-with-prefers-reduced-data/"
 ---
 > Even though more and more people get access to the internet every day, not all of them have fast gigabit connections or unlimited data. Using the media query prefers-reduced-data we can keep our sites accessible to everyone.

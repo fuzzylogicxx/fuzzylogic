@@ -5,7 +5,7 @@ date: 2020-10-03 09:48:00
 tags:
   - entry
   - facebook
-  - socialmedia
+  - social-media
 draft: true
 ---
 This is still in draft.

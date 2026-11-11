@@ -9,7 +9,7 @@ tags:
   - rails
   - web
   - development
-  - cheatsheet
+  - cheat-sheet
 ---
 I’m no Ruby engineer however even as a front-end developer I’m sometimes called upon to work on [Rails](https://rubyonrails.org/) applications that require me to know my way around. Here are my notes and reminders.
 

@@ -8,10 +8,10 @@ mainImage.isAnchor: false
 tags:
   - order
   - tab
-  - cssgrid
+  - css-grid
   - flexbox
-  - visualorder
-  - a11y
+  - visual-order
+  - accessibility
   - focusable
   - interactive
 draft: false

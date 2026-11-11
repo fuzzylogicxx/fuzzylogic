@@ -2,7 +2,7 @@
 date: "2020-02-16T17:01:09.794Z"
 title: "Hydration (Adactio: Journal)"
 description: "Jeremy Keith argues that the Gatsby and Next.js approach of “server-side rendering followed by hydration” results in a poor loading experiences and does not equate to progressive enhancement."
-tags: [link, progressiveenhancement, javascript, react, hydration, gatsby]
+tags: [link, progressive-enhancement, javascript, react, hydration, gatsby]
 linkTarget: "https://adactio.com/journal/16404"
 ---
 > The situation we have now is the worst of both worlds: server-side rendering followed by a tsunami of hydration. It has a whiff of progressive enhancement to it (because there’s a cosmetic separation of concerns) but it has none of the user benefits.

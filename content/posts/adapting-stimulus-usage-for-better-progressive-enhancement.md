@@ -4,7 +4,7 @@ description: Can we go a step further and also use Stimulus to render our script
 date: 2021-07-01T08:48:00Z
 mainImage.isAnchor: false
 tags:
-- progressiveenhancement
+- progressive-enhancement
 - button
 - javascript
 - stimulus

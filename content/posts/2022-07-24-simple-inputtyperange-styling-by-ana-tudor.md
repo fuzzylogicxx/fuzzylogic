@@ -2,7 +2,7 @@
 date: "2022-07-24T11:05:35.113Z"
 title: "Simple input[type=range] styling, by Ana Tudor"
 description: "Ana demonstrates how to achieve a range slider effect accessibly"
-tags: [link, codepen, forms, input, range, slider, a11y]
+tags: [link, codepen, forms, input, range, slider, accessibility]
 linkTarget: "https://codepen.io/thebabydino/pen/XWEMgqY"
 ---
 Ana demonstrates how to achieve a range slider effect accessibly, using web standards and without needing to reach for libraries.

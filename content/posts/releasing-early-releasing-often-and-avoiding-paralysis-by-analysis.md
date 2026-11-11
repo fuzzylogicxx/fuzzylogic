@@ -2,7 +2,7 @@
 title: Releasing early, releasing often… and avoiding paralysis by analysis
 date: 2018-07-12 09:02:00
 description: Getting Things Done requires keeping the perfectionist urges at bay.
-tags: [entry, personal, mvp, progressiveenhancement]
+tags: [entry, personal, mvp, progressive-enhancement]
 ---
 My name is Laurence Hughes and I’m a perfectionist. But I’m working on it.
 

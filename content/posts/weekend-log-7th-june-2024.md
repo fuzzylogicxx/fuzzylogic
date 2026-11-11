@@ -11,7 +11,6 @@ tags:
   - friends
   - rudy
   - hill-walking
-  - walking
   - dining-out
   - work
 ---

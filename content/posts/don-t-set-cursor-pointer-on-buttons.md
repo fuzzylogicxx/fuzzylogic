@@ -6,9 +6,9 @@ tags:
 - pointer
 - cursor
 - links
-- buttons
-- howto
-- a11y
+- button
+- how-to
+- accessibility
 - note
 noteWithTitle: true
 linkTarget: ''

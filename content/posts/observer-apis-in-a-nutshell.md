@@ -8,9 +8,9 @@ tags:
   - observer
   - api
   - html5
-  - browserapi
+  - browser-api
   - javascript
-  - containerqueries
+  - container-queries
   - css
 draft: false
 ---

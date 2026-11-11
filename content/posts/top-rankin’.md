@@ -7,7 +7,7 @@ tags:
   - note
   - web
   - performance
-  - a11y
+  - accessibility
   - 11ty
 ---
 In my recent post [Website updates](https://fuzzylogic.me/posts/website-updates/) I said:

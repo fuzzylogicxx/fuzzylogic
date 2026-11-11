@@ -3,8 +3,8 @@ date: 2019-07-04T11:23:16Z
 title: 'Polypane: The browser for responsive web development and design'
 description: Polypane is a browser built specifically for developing responsive websites.
 tags:
-- responsive
-- browser
+- responsive-design
+- browsers
 - development
 - web
 - link

@@ -10,7 +10,7 @@ tags:
 - javascript
 - modules
 - sass
-- webcomponents
+- web-components
 - bem
 - development
 - web

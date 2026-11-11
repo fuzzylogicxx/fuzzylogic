@@ -7,7 +7,7 @@ location: Glasgow
 tags:
   - note
   - music
-  - record
+  - records
   - funk
 ---
 Original 1979 copies of Garden of Eden’s *Everybody’s on a Trip* regularly sell for £200+ so I was pretty happy to hear that it had just been reissued on Backatcha records… and even happier when I managed to snag a copy.

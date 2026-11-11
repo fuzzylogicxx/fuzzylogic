@@ -5,7 +5,7 @@ date: 2018-10-30T16:13:11.546Z
 mainImage.isAnchor: false
 tags:
   - brexit
-  - article50
+  - article-50
   - racism
   - sexism
 mainImage:

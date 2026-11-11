@@ -7,7 +7,7 @@ tags:
   - design
   - music
   - gigs
-  - cssgrid
+  - css-grid
 linkTarget: https://tinnitus.robweychert.com/
 ---
 Brooklyn-based designer and music nerd Rob Weychert has created a lovely “live music diary” website, featuring information about nearly every show he has attended. It’s browsable by genre, artist, venue, city, state, and year.

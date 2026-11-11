@@ -2,7 +2,7 @@
 date: "2023-08-23T16:35:17.505Z"
 title: "A blog post which uses every HTML element (by Patrick Weaver)"
 description: "An interesting post which helps the author (and his readers) understand some of the lesser-used and more obscure HTML elements"
-tags: [link, html, web, a11y, development]
+tags: [link, html, web, accessibility, development]
 linkTarget: https://www.patrickweaver.net/blog/a-blog-post-with-every-html-element/
 ---
 An interesting article which helps the author – and his readers – understand some of the lesser-used and more obscure HTML elements.

@@ -5,9 +5,9 @@ description: 'Great comment from a Rails engineer on a discussion thread'
 tags:
 - link
 - web
-- form
+- forms
 - semantics
-- HTML
+- html
 - button
 - rails
 noteWithTitle: false

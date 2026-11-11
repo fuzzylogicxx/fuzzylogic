@@ -7,7 +7,6 @@ tags:
   - music
   - records
   - djing
-  - mixer
 mainImage:
   url: https://res.cloudinary.com/fuzzylogic/image/upload/v1589137434/lhdjinginmaxsrecordskit_caamev.jpg
   alt: Laurence’s record purchases in March 2020

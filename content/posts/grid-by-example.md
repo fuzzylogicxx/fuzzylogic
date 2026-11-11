@@ -6,7 +6,7 @@ tags:
   - link
   - web
   - css
-  - cssgrid
+  - css-grid
 linkTarget: https://gridbyexample.com/examples/
 ---
 Great resource from CSS Grid expert [Rachel Andrew](https://rachelandrew.co.uk/), with the _Patterns_ and _Examples_ sections which provide quick-start grid layouts being particularly handy.

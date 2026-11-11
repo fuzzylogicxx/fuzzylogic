@@ -10,9 +10,8 @@ tags:
 - html
 - webp
 - avif
-- responsiveimages
-- rwd
-- responsive
+- responsive-images
+- responsive-design
 - images
 noteWithTitle: false
 linkTarget: ''

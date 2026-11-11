@@ -7,7 +7,7 @@ tags:
 - w3c
 - development
 - web
-- designsystems
+- design-systems
 - link
 noteWithTitle: false
 linkTarget: https://design-system.w3.org/

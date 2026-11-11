@@ -8,7 +8,7 @@ tags:
 - ux
 - usability
 - research
-- a11y
+- accessibility
 linkTarget: https://tetralogical.com/blog/2022/08/01/inclusive-user-research-recruiting-participants/
 draft: false
 

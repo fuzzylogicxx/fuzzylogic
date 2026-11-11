@@ -6,7 +6,7 @@ mainImage.isAnchor: false
 tags:
 - entry
 - book
-- mentalhealth
+- mental-health
 - connection
 - community
 draft: false

@@ -2,7 +2,7 @@
 date: "2022-11-27T00:41:53.468Z"
 title: "How to set up your Technics 1200 turntable (by Longbox Media on YouTube)"
 description: "The best SL-1200/10 set-up video I've seen."
-tags: [link, technics, sl1210, howto, djing]
+tags: [link, technics, sl1210, how-to, djing]
 linkTarget: "https://www.youtube.com/watch?v=-zo72dQV5F0"
 ---
 The best SL-1200/10 set-up video I’ve seen.

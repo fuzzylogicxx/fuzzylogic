@@ -3,7 +3,7 @@ date: 2019-07-13T08:50:56Z
 title: Freezing the final frame with animation-fill-mode
 description: ''
 tags:
-- TIL
+- til
 - note
 - animation
 noteWithTitle: true

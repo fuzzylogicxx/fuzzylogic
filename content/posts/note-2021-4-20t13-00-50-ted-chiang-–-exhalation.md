@@ -7,9 +7,9 @@ mainImage.isAnchor: false
 tags:
   - note
   - book
-  - scifi
-  - freewill
-  - timetravel
+  - sci-fi
+  - free-will
+  - time-travel
   - physics
 draft: false
 ---

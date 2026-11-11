@@ -6,8 +6,8 @@ tags:
   - link
   - design
   - book
-  - informationarchitecture
-  - abookapart
+  - information-architecture
+  - a-book-apart
 linkTarget: https://everydayia.com/
 ---
 A Book Apart have a new book – _Everyday Information Architecture_ by Lisa Maria Martin.

@@ -6,7 +6,7 @@ tags:
 - link
 - development
 - web
-- darkmode
+- dark-mode
 - preferences
 - css
 noteWithTitle: false

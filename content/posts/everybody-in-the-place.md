@@ -13,7 +13,7 @@ tags:
 - techno
 - house
 - britain
-- acidhouse
+- acid-house
 - rave
 - music
 - link

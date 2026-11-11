@@ -8,7 +8,7 @@ tags:
 - colour
 - design
 - inspiration
-- cssgrid
+- css-grid
 - layout
 - css
 - development

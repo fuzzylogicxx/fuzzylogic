@@ -7,7 +7,7 @@ location: Glasgow
 tags:
 - note
 - content
-- a11y
+- accessibility
 - overflow
 - wrap
 - css

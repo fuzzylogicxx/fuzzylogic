@@ -2,7 +2,7 @@
 date: "2020-09-28T17:07:07.587Z"
 title: "Ledger of Harms"
 description: "A list of factoids describing societal harms caused by technology platforms, each supported by a citation."
-tags: [link, socialmedia, technology, society, health]
+tags: [link, social-media, technology, society, health]
 linkTarget: "https://ledger.humanetech.com/"
 ---
 Here’s a list of factoids describing societal harms caused by technology platforms, each supported by a citation.

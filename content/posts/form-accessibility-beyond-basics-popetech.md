@@ -5,7 +5,6 @@ description: 'Whitney Lewis explains how to handle accessibility for autocomplet
 tags:
 - link
 - forms
-- form
 - accessibility
 linkTarget: https://blog.pope.tech/2023/09/26/form-accessibility-and-usability-beyond-the-basics/
 ---

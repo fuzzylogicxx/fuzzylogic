@@ -2,7 +2,7 @@
 date: "2021-05-23T09:26:30.032Z"
 title: "Container Queries in Web Components | Max Böck"
 description: "Clever demo with lots of interesting web component related techniques"
-tags: [link, containerqueries, progressiveenhancement, webcomponents, css, html, javascript]
+tags: [link, container-queries, progressive-enhancement, web-components, css, html, javascript]
 linkTarget: "https://mxb.dev/blog/container-queries-web-components/"
 ---
 Max’s demo is really clever and features lots of interesting web component related techniques.

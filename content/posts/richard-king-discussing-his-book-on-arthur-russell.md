@@ -9,7 +9,7 @@ tags:
   - note
   - friends
   - music
-  - books
+  - book
 location: The Glad Café, Glasgow
 ---
 A nice (if brief) catch-up with Gav as we take in David Barbarossa in conversation with Richard King about his new book [Travels Over Feeling](https://www.faber.co.uk/product/9780571379668-travels-over-feeling/) on the life of enigmatic New York musician Arthur Russell.

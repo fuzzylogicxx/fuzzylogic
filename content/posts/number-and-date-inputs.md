@@ -3,10 +3,10 @@ date: 2024-04-08T20:17:15Z
 title: The reliability of HTML number and date inputs
 description: When asking users for numbers and dates, which HTML form elements should we use?
 tags:
-- post
+- entry
 - html
 - input
-- form
+- forms
 - dates
 - accessibility
 noteWithTitle: true

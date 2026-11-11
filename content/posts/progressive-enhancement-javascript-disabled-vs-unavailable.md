@@ -4,7 +4,7 @@ title: Sites which don’t work without JavaScript enabled still benefit from pr
 description: Remember that JavaScript unavailable is a greater possibility than JavaScript disabled
 tags:
 - note
-- progressiveenhancement
+- progressive-enhancement
 - javascript
 noteWithTitle: true
 linkTarget: ''

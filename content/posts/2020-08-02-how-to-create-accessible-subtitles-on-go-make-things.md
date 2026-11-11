@@ -2,7 +2,7 @@
 date: "2020-08-02T13:18:52.446Z"
 title: "How to create accessible subtitles (on Go Make Things)"
 description: "Chris Ferdinandi introducing the ARIA doc-subtitle role"
-tags: [link, a11y]
+tags: [link, accessibility]
 linkTarget: "https://gomakethings.com/how-to-create-accessible-subtitles/"
 ---
 Here’s Chris Ferdinandi, introducing the ARIA <code>doc-subtitle</code> role.

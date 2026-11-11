@@ -2,7 +2,7 @@
 date: "2021-06-18T10:58:47.661Z"
 title: "Inclusive language around buttons"
 description: "What's an inclusive way to describe what you “do” to a digital button?"
-tags: [link, uxwriting, contentdesign, a11y]
+tags: [link, ux-writing, content-design, accessibility]
 linkTarget: "https://twitter.com/Amy_Hupe/status/1405508276314333184"
 ---
 [@Amy_Hupe](https://twitter.com/Amy_Hupe) recently posed a great question on Twitter regarding inclusive language for buttons:

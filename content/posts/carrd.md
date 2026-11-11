@@ -5,7 +5,7 @@ date: 2018-09-06 18:51:00
 tags:
 - link
 - web
-- personalsites
+- personal-sites
 linkTarget: https://carrd.co/
 ---
 These days when friends tell me they want a personal website, it’s often just a single-page profile that they’re really after rather than something pricier and more complicated.

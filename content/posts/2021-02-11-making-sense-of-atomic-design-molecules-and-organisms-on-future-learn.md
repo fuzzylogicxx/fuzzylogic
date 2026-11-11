@@ -2,7 +2,7 @@
 date: "2021-02-11T19:11:43.317Z"
 title: "Making sense of atomic design: molecules and organisms (on Future Learn)"
 description: "From 2015: Alla Kholmatova reflects on the difficulty in choosing between molecule or organism when categorising components using atomic design at FutureLearn."
-tags: [link, designsystems]
+tags: [link, design-systems]
 linkTarget: "https://www.futurelearn.com/info/blog/atomic-design-molecules-organisms"
 ---
 From 2015: Alla Kholmatova reflects on the difficulty in choosing between _molecule_ or _organism_ when categorising components using atomic design at FutureLearn. She also provides some handy insights into how they handled it.

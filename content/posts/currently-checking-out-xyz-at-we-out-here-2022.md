@@ -11,7 +11,7 @@ tags:
 - note
 - music
 - event
-- weouthere
+- we-out-here
 noteWithTitle: true
 location: Abbots Ripton, Cambridgeshire
 linkTarget: ''

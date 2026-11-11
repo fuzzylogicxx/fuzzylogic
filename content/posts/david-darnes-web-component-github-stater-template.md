@@ -4,7 +4,7 @@ title: 'Web Component GitHub Starter Template, by David Darnes'
 description: 'David’s template provides not just the starter component code but also a nice readme, issue template, and publish-to-NPM flow'
 tags:
 - link
-- webcomponents
+- web-components
 - github
 - npm
 linkTarget: https://darn.es/web-component-github-starter-template/

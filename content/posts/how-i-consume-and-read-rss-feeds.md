@@ -9,7 +9,7 @@ tags:
   - email
   - newsletter
   - twitter
-  - personalsites
+  - personal-sites
 ---
 I’m currently interested in how to spend less time on social media platforms so as to be less exposed to ads, algorithms and general ill-effects. One approach I’m trialling is going back to the old school and using [RSS](https://en.wikipedia.org/wiki/RSS) to receive and aggregate updates from the people I follow, allowing me to read them in a central, noise-free place and not have to use social platform websites and apps.
 

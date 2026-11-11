@@ -5,7 +5,7 @@ date: 2025-12-14T19:40
 tags:
   - entry
   - gigs
-  - jeffmills
+  - jeff-mills
   - techno
 location: Glasgow
 ---

@@ -6,7 +6,7 @@ tags:
   - link
   - tool
   - images
-  - socialmedia
+  - social-media
 linkTarget: https://promo.com/tools/image-resizer/
 ---
 A handy tool for resizing your image to the standard sizes for all manner of social media and other applications.

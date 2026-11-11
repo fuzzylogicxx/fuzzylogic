@@ -2,7 +2,7 @@
 title: How to manage JavaScript dependencies
 description: How to manage JavaScript Dependencies
 date: "2019-10-23T16:58:08.051Z"
-tags: [entry, development, javascript, yarn, npm, nodejs, tooling, howto]
+tags: [entry, development, javascript, yarn, npm, nodejs, tooling, how-to]
 ---
 Managing a project’s third-party JavaScript dependencies is about as much fun as a poke in the eye. However even if you’re like me and prefer keeping things [lean](https://leanweb.dev/) and dependency-free as far as possible, it’s something you’re likely to need to do either in large work projects or as your personal side-project grows. In this post I tackle it head-on to reduce the problem to some simple concepts and practical techniques.
 

@@ -7,7 +7,7 @@ tags:
 - design
 - development
 - web
-- responsive
+- responsive-design
 - typography
 - line-height
 - leading

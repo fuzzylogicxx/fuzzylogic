@@ -5,7 +5,7 @@ description: Using the details element to show and hide is getting wider and mor
   interesting usage
 tags:
 - entry
-- progressiveenhancement
+- progressive-enhancement
 - disclosure
 - details
 noteWithTitle: false

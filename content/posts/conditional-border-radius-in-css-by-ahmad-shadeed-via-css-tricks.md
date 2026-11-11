@@ -8,7 +8,7 @@ tags:
 - layout
 - quantum
 - card
-- responsive
+- responsive-design
 - css
 - link
 noteWithTitle: false

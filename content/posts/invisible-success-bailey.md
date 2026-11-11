@@ -5,7 +5,7 @@ description: 'Eric Bailey on the need to tell Design System stories even though 
 tags:
 - link
 - tables
-- designsystems
+- design-systems
 - accessibility
 - stories
 - promotion

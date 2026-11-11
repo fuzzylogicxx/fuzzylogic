@@ -2,7 +2,7 @@
 date: "2021-01-25T10:23:35.008Z"
 title: "Robb Owen - Independent Creative Developer"
 description: "Design inspiration from Wales"
-tags: [link, inspiration, personalsite, typography, colour, fun, animation, design]
+tags: [link, inspiration, personal-sites, typography, colour, fun, animation, design]
 linkTarget: "https://robbowen.digital/"
 ---
 Definite “personal website goals” here in Robb’s beautiful online portfolio and blog.

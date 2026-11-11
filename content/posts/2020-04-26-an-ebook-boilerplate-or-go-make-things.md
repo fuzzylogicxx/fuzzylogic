@@ -2,7 +2,7 @@
 date: "2020-04-26T09:06:00.894Z"
 title: "An ebook boilerplate (on Go Make Things)"
 description: "Chris Ferdinandi’s guide to create an ebook in multiple formats from a collection of markdown files"
-tags: [link, ebook, book, publishing, markdown, everylayout]
+tags: [link, ebook, book, publishing, markdown, every-layout]
 linkTarget: "https://gomakethings.com/an-ebook-boilerplate/"
 ---
 > My ebook boilerplate is a command-line script that uses Pandoc, wkhtmltopdf, and Calibre to compile all of the files, syntax highlight code snippets, and automatically generate all of the file formats.

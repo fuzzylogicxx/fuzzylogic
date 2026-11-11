@@ -3,9 +3,8 @@ date: 2023-02-17T20:03:00Z
 title: No Style Design System
 description: Adam Silver’s collection of accessible form-related components
 tags:
-- designsystems
+- design-systems
 - accessibility
-- a11y
 - forms
 linkTarget: https://nostyle.onrender.com/
 draft: false

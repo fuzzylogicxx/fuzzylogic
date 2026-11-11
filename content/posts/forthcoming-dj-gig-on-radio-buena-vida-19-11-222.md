@@ -5,7 +5,6 @@ description: Forthcoming DJ gig on Radio Buena Vida 19/11/22
 tags:
 - note
 - music
-- djmix
 - djing
 noteWithTitle: true
 linkTarget: ''

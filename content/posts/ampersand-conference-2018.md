@@ -2,7 +2,7 @@
 title: Ampersand Conference 2018
 description: Notes from a fantastic Web Typography conference in Brighton
 date: 2018-06-30
-tags: [note, training, roadtrips, typography]
+tags: [note, training, road-trips, typography]
 mainImage:
   url: https://res.cloudinary.com/fuzzylogic/image/upload/v1572430088/IMG-1997_fyqnjf.jpg
   alt: Attendees take their seats at Ampersand Conference 2018

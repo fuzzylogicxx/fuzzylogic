@@ -6,13 +6,13 @@ location: Glasgow
 tags:
   - note
   - music
-  - record
+  - records
   - vinyl
   - shopping
   - lp
   - dub
   - reggae
-  - natbirchall
+  - nat-birchall
 draft: false
 noteWithTitle: true
 ---

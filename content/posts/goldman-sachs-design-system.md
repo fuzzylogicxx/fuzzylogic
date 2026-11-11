@@ -4,8 +4,8 @@ title: Goldman Sachs Design System
 description: 'This reference website sports a smart architecture with some interesting sections'
 tags:
 - link
-- designsystems
-- a11y
+- design-systems
+- accessibility
 noteWithTitle: false
 linkTarget: https://design.gs.com/home
 mainImage.url: ''

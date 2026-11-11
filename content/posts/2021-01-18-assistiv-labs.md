@@ -2,7 +2,7 @@
 date: "2021-01-18T09:38:32.048Z"
 title: "Assistiv Labs"
 description: "A tool for testing how accessible your experience is on various assistive technologies – perhaps like BrowserStack but for screen readers?"
-tags: [link, tool, testing, a11y, accessibility, screenreader, nvda]
+tags: [link, tool, testing, accessibility, screen-readers, nvda]
 linkTarget: "https://assistivlabs.com/"
 ---
 A tool for testing how accessible your experience is on various assistive technologies – perhaps “like BrowserStack but for screen readers”?

@@ -3,7 +3,7 @@ date: 2021-07-15T07:25:58Z
 title: Favourite Netlify resources
 description: ''
 tags:
-- howto
+- how-to
 - netlify
 noteWithTitle: false
 linkTarget: ''

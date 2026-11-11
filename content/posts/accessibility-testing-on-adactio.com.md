@@ -9,7 +9,7 @@ tags:
 - html
 - testing
 - a11y-audit
-- a11y
+- accessibility
 noteWithTitle: false
 linkTarget: 'https://adactio.com/journal/18458'
 mainImage.url: ''

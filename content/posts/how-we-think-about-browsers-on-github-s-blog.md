@@ -6,7 +6,7 @@ description: Keith Cirkel of Github has written about how they think about brows
 tags:
 - link
 - javascript
-- progressiveenhancement
+- progressive-enhancement
 noteWithTitle: false
 linkTarget: https://github.blog/2022-06-10-how-we-think-about-browsers/
 mainImage.url: ''

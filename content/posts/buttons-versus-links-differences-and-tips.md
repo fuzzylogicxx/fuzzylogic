@@ -14,7 +14,7 @@ tags:
 - anchor
 - link
 - button
-- a11y
+- accessibility
 noteWithTitle: false
 linkTarget: ''
 mainImage.url: ''

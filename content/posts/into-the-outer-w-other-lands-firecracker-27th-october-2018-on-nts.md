@@ -2,7 +2,7 @@
 date: "2018-09-01T13:51:02.901Z"
 title: "Into The Outer feat. Other Lands, 27th October 2018 on NTS"
 description: "Magical sounds in the mix, from Auld Reekie’s finest"
-tags: [link, music, radio, firecracker, otherlands, nts, thenuclearfamily]
+tags: [link, music, radio, firecracker, otherlands, nts, the-nuclear-family]
 linkTarget: "https://www.nts.live/shows/lindsay-todd/episodes/into-the-outer-27th-october-2018"
 ---
 Magical sounds in the mix, from Auld Reekie’s finest.

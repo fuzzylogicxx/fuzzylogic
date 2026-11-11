@@ -8,7 +8,7 @@ tags:
 - development
 - web
 - css
-- a11y
+- accessibility
 - aria
 noteWithTitle: false
 linkTarget: ''

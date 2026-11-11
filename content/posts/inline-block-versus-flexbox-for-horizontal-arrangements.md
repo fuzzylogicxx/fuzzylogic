@@ -4,7 +4,7 @@ title: inline-block versus flexbox for horizontal arrangements
 description: 'Gathering my thoughts on what feels like an outdated approach'
 tags:
 - entry
-- responsive
+- responsive-design
 - flexbox
 - css
 - layout

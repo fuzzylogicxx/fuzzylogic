@@ -15,7 +15,7 @@ tags:
   - spotify
   - bandcamp
   - clearleft
-  - dconstruct
+  - d-construct
 draft: false
 ---
 A [recent issue of the dConstruct newsletter](https://tinyletter.com/clearleft/letters/dconstruct-from-clearleft-musique-non-stop) about choosing more ethical online services really chimed with me at a time when I’ve been reflecting on my online habits.

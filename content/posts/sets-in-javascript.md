@@ -3,7 +3,7 @@ title: Sets in JavaScript
 description: Sets in JavaScript only store unique values which makes them pretty handy
 date: 2020-10-24T16:00:42.453Z
 tags:
-  - set
+  - entry
   - javascript
   - syntax
 draft: false

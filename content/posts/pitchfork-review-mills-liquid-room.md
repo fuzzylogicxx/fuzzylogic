@@ -6,8 +6,8 @@ tags:
 - link
 - techno
 - music
-- mixtape
-- jeffmills
+- mix
+- jeff-mills
 noteWithTitle: false
 linkTarget: https://pitchfork.com/reviews/albums/jeff-mills-live-at-the-liquid-room-tokyo/
 mainImage.url: ''

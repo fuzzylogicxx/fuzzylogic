@@ -6,7 +6,7 @@ tags:
 - note
 - event
 - festival
-- weouthere
+- we-out-here
 - music
 noteWithTitle: true
 location: Abbots Ripton, Cambridgeshire

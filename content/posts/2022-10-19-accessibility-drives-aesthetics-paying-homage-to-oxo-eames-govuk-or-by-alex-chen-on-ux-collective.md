@@ -2,7 +2,7 @@
 date: "2022-10-19T19:43:26.841Z"
 title: "Accessibility drives aesthetics by Alex Chen (on UX Collective)"
 description: "Alex Chen asserts that arguments which pit accessibility against aesthetics create a dangerous false equivalence"
-tags: [link, a11y, design]
+tags: [link, accessibility, design]
 linkTarget: "https://uxdesign.cc/accessibility-drives-aesthetics-5aef77b5d2aa"
 ---
 This article is a couple of years old but just popped up on my radar again. UX Designer Alex Chen asserts that arguments which pit accessibility against aesthetics create a dangerous false equivalence… and I agree.

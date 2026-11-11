@@ -5,7 +5,7 @@ date: 2018-11-14 09:30:00
 tags:
   - entry
   - music
-  - thenuclearfamily
+  - the-nuclear-family
   - productions
   - vinyl
   - otherlands

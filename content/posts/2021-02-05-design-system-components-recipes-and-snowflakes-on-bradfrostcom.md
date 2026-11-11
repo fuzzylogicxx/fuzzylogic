@@ -2,7 +2,7 @@
 date: "2021-02-05T11:18:03.152Z"
 title: "Design system components, recipes, and snowflakes (on bradfrost.com)"
 description: "Brad Frost gives us some vocabulary for separating components which are content and context agnostic and intended for maximal use from more specific variants and one-offs."
-tags: [link, web, development, components, designsystems, composition]
+tags: [link, web, development, components, design-systems, composition]
 linkTarget: "https://bradfrost.com/blog/post/design-system-components-recipes-and-snowflakes/"
 ---
 An excellent article from Brad Frost in which he gives us some vocabulary for separating context-agnostic components intended for maximal use from specific variants and one-offs.

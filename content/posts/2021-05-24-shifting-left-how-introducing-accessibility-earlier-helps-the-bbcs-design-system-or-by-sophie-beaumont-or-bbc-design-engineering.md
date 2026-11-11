@@ -2,7 +2,7 @@
 date: "2021-05-24T10:17:38.384Z"
 title: "Shifting left: how introducing accessibility earlier helps the BBC’s design system (by Sophie Beaumont)"
 description: "Absolute gold from the BBC regarding accessibility, bloated components, and purpose versus appearance."
-tags: [link, designsystems, accessibility]
+tags: [link, design-systems, accessibility]
 linkTarget: "https://medium.com/bbc-design-engineering/shifting-left-how-introducing-accessibility-earlier-helps-the-bbcs-design-system-716ec5cfbcd8"
 ---
 Absolute gold here regarding accessibility, bloated components, and purpose versus appearance.

@@ -7,7 +7,7 @@ date: 2026-11-06T10:33
 tags:
   - link
   - css
-  - designsystems
+  - design-systems
 ---
 > How the NYS Design System uses CSS variables and design tokens to enable consistent, scalable, and customizable UI development across New York State.
 

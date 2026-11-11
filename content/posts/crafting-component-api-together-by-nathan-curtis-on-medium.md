@@ -7,7 +7,7 @@ tags:
 - link
 - components
 - design
-- designsystems
+- design-systems
 noteWithTitle: false
 linkTarget: https://medium.com/eightshapes-llc/crafting-ui-component-api-together-81946d140371
 mainImage.url: ''

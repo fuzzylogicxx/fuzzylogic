@@ -6,8 +6,8 @@ tags:
 - entry
 - turbo
 - javascript
-- progressiveenhancement
-- a11y
+- progressive-enhancement
+- accessibility
 noteWithTitle: false
 linkTarget: ''
 mainImage.url: ''

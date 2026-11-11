@@ -4,9 +4,9 @@ title: Progressively enhanced burger menu tutorial by Andy Bell
 description: ''
 tags:
 - link
-- progressiveenhancement
+- progressive-enhancement
 - proxy
-- webcomponents
+- web-components
 - javascript
 - html
 - css

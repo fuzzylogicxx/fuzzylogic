@@ -5,7 +5,7 @@ description: Fixing the accessibility in VoiceOver of text content which contain
   inner chunks
 tags:
 - link
-- a11y
+- accessibility
 - development
 - web
 - aria

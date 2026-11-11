@@ -7,7 +7,7 @@ date: 2026-03-20T21:48
 tags:
   - entry
   - book
-  - hiphop
+  - hip-hop
 ---
 ![A paperback copy of Dan Charnas’s book “Dilla Time” sitting on a wooden table](/img/uploads/dilla_time_1400.jpg "Dan Charnas’s “Dilla Time”")
 

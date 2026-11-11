@@ -7,7 +7,7 @@ date: 2020-10-22T13:23:37.986Z
 linkTarget: https://www.brailleinstitute.org/freefont
 tags:
   - link
-  - a11y
+  - accessibility
   - typography
   - typeface
 draft: false

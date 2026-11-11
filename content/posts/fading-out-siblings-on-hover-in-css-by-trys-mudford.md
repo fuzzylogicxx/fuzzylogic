@@ -8,7 +8,7 @@ tags:
 - opacity
 - transition
 - transform
-- howto
+- how-to
 - fade
 - animation
 - css

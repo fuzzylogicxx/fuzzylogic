@@ -75,7 +75,7 @@ mainImage.isAnchor: false
 tags:
   - note
   - book
-  - sciencefiction
+  - sci-fi
   - fiction
   - gender
 draft: false

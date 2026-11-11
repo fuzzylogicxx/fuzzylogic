@@ -2,7 +2,7 @@
 date: "2021-01-26T20:05:02.466Z"
 title: "Music For Programming"
 description: "A website dedicated to mixtapes intended to be listened to while programming"
-tags: [link, electronic, music, mix, djmix, datassette]
+tags: [link, electronic, music, mix, datassette]
 linkTarget: "https://www.musicforprogramming.net/"
 ---
 Feel like I’m probably really late to discover this website, but here’s “Music for Programming” from Datassette. Hopefully this’ll be of use to fellow programmers who like music, although I daresay you can probably enjoy it if you’re a normal person too.

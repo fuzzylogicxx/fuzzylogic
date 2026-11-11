@@ -5,7 +5,7 @@ description: Logging my website’s current features so I can manage it a bit be
 tags:
 - entry
 - web
-- personalsite
+- personal-sites
 ---
 I like the metaphor for personal websites of _tending to a digital garden_.
 

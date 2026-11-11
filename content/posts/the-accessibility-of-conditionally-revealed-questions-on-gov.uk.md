@@ -7,7 +7,7 @@ tags:
 - forms
 - development
 - web
-- a11y
+- accessibility
 - link
 noteWithTitle: false
 linkTarget: https://accessibility.blog.gov.uk/2021/09/21/an-update-on-the-accessibility-of-conditionally-revealed-questions/

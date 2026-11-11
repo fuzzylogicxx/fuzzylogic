@@ -8,7 +8,7 @@ tags:
   - link
   - music
   - radio
-  - radiomagnetic
+  - radio-magnetic
   - being
   - firecracker
 draft: false

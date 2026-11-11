@@ -2,7 +2,7 @@
 date: "2023-06-13T22:02:26.841Z"
 title: "The web is fundamentally designed to be accessible to all"
 description: "A handy reference when talking to folks who don’t realise that accessibility should be non-negotiable"
-tags: [link, a11y, design]
+tags: [link, accessibility, design]
 linkTarget: "https://www.w3.org/WAI/fundamentals/accessibility-intro/"
 ---
 Working as a web developer, you’ll meet colleagues who don’t realise that **accessibility should be non-negotiable**. So I’m bookmarking for ready access Tim Berners-Lee’s oft-quoted but still powerful statement of intent from 1997.

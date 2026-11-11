@@ -2,7 +2,7 @@
 date: "2020-12-04T18:23:45.612Z"
 title: "Small Axe - Series 1: Red, White and Blue (on BBC iPlayer)"
 description: "One of several fantastic films on BBC directed by Oscar-winning director Steve McQueen."
-tags: [link, smallaxe, race, racism, music, police, film]
+tags: [link, small-axe, race, racism, music, police, film]
 linkTarget: "https://www.bbc.co.uk/iplayer/episode/m000pzmb/small-axe-series-1-red-white-and-blue"
 ---
 One of several fantastic films from Oscar-winning director Steve McQueen (_12 Years a Slave_) described as “Love letters to black resilience and triumph in London's West Indian community. Vivid stories of hard-won victories in the face of racism.”

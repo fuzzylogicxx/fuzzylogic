@@ -4,7 +4,6 @@ title: It's 2023, here is why your web design sucks (by Heather Buchel)
 description: Heather explores why we no longer have “web designers” and the damage caused
 tags:
 - link
-- split
 - frontend
 - design
 - web

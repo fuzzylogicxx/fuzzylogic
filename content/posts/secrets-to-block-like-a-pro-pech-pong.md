@@ -4,7 +4,7 @@ title: Secrets To Block Like a Pro Tutorial A-Z
 description: Refreshingly original film about a family temporarily leaving their off-grid existence
 tags:
 - link
-- tabletennis
+- table-tennis
 - technique
 - block
 location: Glasgow

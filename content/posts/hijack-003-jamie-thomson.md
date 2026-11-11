@@ -8,7 +8,7 @@ mainImage.isAnchor: false
 tags:
   - mix
   - house
-  - dj
+  - djing
 draft: false
 ---
 Lovely house mix from my friend Jamie.

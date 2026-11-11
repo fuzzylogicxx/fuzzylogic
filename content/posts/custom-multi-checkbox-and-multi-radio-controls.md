@@ -4,7 +4,7 @@ title: Custom multi-checkbox and multi-radio controls
 description: At work, we’ve had a design request to create some custom controls and
   here I consider our approach
 tags:
-- a11y
+- accessibility
 - affordance
 - entry
 - forms

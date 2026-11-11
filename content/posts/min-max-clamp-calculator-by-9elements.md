@@ -4,8 +4,7 @@ title: Min-Max clamp calculator, by 9elements
 description: A handy tool (and lovely website) for creating one-off CSS clamp formulas
 tags:
 - link
-- responsive
-- rwd
+- responsive-design
 - utopia
 - tool
 - typography

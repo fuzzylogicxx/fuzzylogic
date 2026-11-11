@@ -7,9 +7,8 @@ mainImage.isAnchor: false
 tags:
   - note
   - rudy
-  - borderterrier
+  - border-terrier
   - dogs
-  - "2020"
 draft: false
 ---
 Our wee Border Terrier, Rudy, is six months old. It’s funny to think how far he’s come since needing carried everywhere just a short while ago. In this weirdest of years, the wee man has been a constant ray of sunshine. Love ye, Rood!

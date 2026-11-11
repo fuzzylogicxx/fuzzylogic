@@ -2,7 +2,7 @@
 date: "2018-09-16T15:59:24.871Z"
 title: "Cloudinary"
 description: "A very handy tool for image and video upload, storage, optimisation and CDN"
-tags: [link, tool, images, responsiveimages, media, cdn]
+tags: [link, tool, images, responsive-images, media, cdn]
 linkTarget: "https://cloudinary.com/home-6-4-video-b"
 ---
 Cloudinary is a very handy tool for image and video upload, storage, optimisation and CDN.

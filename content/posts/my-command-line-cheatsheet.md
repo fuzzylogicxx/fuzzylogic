@@ -2,7 +2,7 @@
 title: My Command Line Cheatsheet
 description: Useful terminal commands for my reference and yours
 date: "2020-12-28T16:58:08.051Z"
-tags: [development, cheatsheet, terminal, iterm, iterm2, zsh, ohmyzsh]
+tags: [development, cheat-sheet, terminal, iterm, zsh, oh-my-zsh]
 ---
 Here’s a list of useful terminal commands for my reference and yours.
 

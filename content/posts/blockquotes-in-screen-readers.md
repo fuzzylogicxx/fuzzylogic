@@ -6,8 +6,8 @@ tags:
 - link
 - html
 - blockquote
-- a11y
-- screenreaders
+- accessibility
+- screen-readers
 noteWithTitle: false
 linkTarget: https://adrianroselli.com/2023/07/blockquotes-in-screen-readers.html
 

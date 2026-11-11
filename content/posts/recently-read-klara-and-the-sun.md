@@ -8,7 +8,7 @@ tags:
   - note
   - book
   - technology
-  - AI
+  - ai
 ---
 I didn’t have the appetite for Kazuo Ishiguro’s latest novel during the pandemic. I started it, but as the underlying sense of melancholy and “something bad around the corner” began to set in – [just like it did in *Never let me go*](https://fuzzylogic.me/posts/note-2020-10-25t16-00-58-kazuo-ishiguro-%E2%80%93-never-let-me-go/) – I realised I wasn’t in the right frame of mind for it. Cut to 2025 and it was time to give it another go.
 

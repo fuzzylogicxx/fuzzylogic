@@ -12,7 +12,7 @@ tags:
 - css
 - javascript
 - hiding
-- a11y
+- accessibility
 noteWithTitle: true
 linkTarget: ''
 mainImage.url: ''

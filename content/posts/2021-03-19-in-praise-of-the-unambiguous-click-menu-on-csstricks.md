@@ -2,7 +2,7 @@
 date: "2021-03-19T11:51:33.138Z"
 title: "In Praise of the Unambiguous Click Menu (on CSS-Tricks)"
 description: "Mark Root-Wiley explains why navigation menus that appear on click rather than hover are better"
-tags: [link, a11y, accessibility, hover, click, menu, navigation]
+tags: [link, accessibility, hover, click, menu, navigation]
 linkTarget: "https://css-tricks.com/in-praise-of-the-unambiguous-click-menu/"
 ---
 Mark Root-Wiley explains why navigation menus that appear on click rather than hover are better.

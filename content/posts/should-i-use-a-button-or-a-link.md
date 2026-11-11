@@ -8,7 +8,7 @@ tags:
 - button
 - development
 - design
-- a11y
+- accessibility
 noteWithTitle: false
 linkTarget: ''
 mainImage.url: ''

@@ -6,7 +6,7 @@ tags:
   - entry
   - film
   - review
-  - christophernolan
+  - christopher-nolan
 ---
 I watched [Tenet](https://www.imdb.com/title/tt6723592/) again last night (in IMAX with [Jamie](@jamiethomsonno1)) and second time round it all made sense. 
 

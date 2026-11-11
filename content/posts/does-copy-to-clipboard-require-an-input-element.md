@@ -6,7 +6,7 @@ description: A look into why Copy to clipboard components are often designed and
 tags:
 - forms
 - input
-- a11y
+- accessibility
 - html
 noteWithTitle: false
 linkTarget: ''

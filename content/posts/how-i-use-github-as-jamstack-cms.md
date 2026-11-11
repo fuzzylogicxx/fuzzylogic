@@ -4,7 +4,7 @@ title: How I use github.com as my JAMstack CMS
 description: Quick links and tips to create a blog post using github.com 
 tags:
 - entry
-- howto
+- how-to
 noteWithTitle: false
 linkTarget: ''
 mainImage.url: ''

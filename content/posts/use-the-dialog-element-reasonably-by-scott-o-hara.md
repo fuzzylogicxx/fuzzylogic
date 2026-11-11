@@ -3,7 +3,7 @@ date: 2023-02-03T09:03:21Z
 title: Use the dialog element (reasonably), by Scott O’Hara
 description: 'Scott reckons the HTML dialog element is now ready to be used with confidence '
 tags:
-- a11y
+- accessibility
 - modal
 - dialog
 - standards

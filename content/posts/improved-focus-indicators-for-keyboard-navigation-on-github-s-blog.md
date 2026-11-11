@@ -6,10 +6,9 @@ description: GitHub have recently done some good accessibility-boosting work by 
 tags:
 - link
 - button
-- link
 - input
 - focus
-- a11y
+- accessibility
 - github
 noteWithTitle: false
 linkTarget: https://github.blog/changelog/2022-04-27-improved-focus-indicators-for-keyboard-navigation/
