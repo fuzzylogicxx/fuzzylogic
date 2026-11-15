@@ -141,7 +141,6 @@
 
     h1 {
       font-variant-ligatures: discretionary-ligatures;
-      max-width: var(--h1-measure);
     }
 
     ul, ol {
@@ -645,7 +644,7 @@
     }
 
     .l-center--wrapper-narrow {
-      --center-max-inline-size: 42em;
+      --center-max-inline-size: var(--measure);
     }
 
     /* Cluster */

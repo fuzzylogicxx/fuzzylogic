@@ -168,10 +168,13 @@ export default async function(eleventyConfig) {
 				decoding: "async",
 
         // My guidance to the browser is:
-        // On viewports that are up to 860px wide, my layout and CSS will employ (roughly) full-width images.
-        // On wider viewports, my layout and CSS will be setting images to a max-width of 840px.
+        // The centred column is capped at the text measure, 40.5rem (648px at a 16px root; see tokens.measure),
+        // and images fill it.
+        // On viewports up to about 684px wide (648px plus roughly 18px side gutters), my layout and CSS will employ (roughly) full-width images.
+        // On wider viewports, images are at most 648px wide.
         // So armed with that knowledge, select the most appropriate image file.
-        sizes: "(max-width: 860px) 100vw, 840px",
+        // If --measure changes, or images are allowed to be wider than the text, update this to match.
+        sizes: "(max-width: 684px) 100vw, 648px",
 			}
 		},
 
