@@ -1,5 +1,5 @@
 ---
-title: "Modern Web Guidance is now stable on Chrome for developers blog)"
+title: "Modern Web Guidance is now stable (on Chrome for developers blog)"
 description: Modern Web Guidance is now stable at version 1
 noteWithTitle: false
 linkTarget: https://developer.chrome.com/blog/modern-web-guidance-recap
