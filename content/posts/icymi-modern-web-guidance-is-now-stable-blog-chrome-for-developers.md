@@ -13,8 +13,8 @@ tags:
   - web
 ---
 > Frontier models often default to legacy patterns for web development. For example, they prefer a JavaScript animation library over CSS scroll-driven animations, or build complex nested div monsters […] for customizable dropdowns.
-> 
-Modern Web Guidance fixes that by injecting concise, task-scoped guides based on your prompt.
+>
+> Modern Web Guidance fixes that by injecting concise, task-scoped guides based on your prompt.
 
 An interesting project offering coding agents access to a suite of best practice project guides. It’s by the Chrome team, but apparently now also has other browser manufacturers on board.
 
