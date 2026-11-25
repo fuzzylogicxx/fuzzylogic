@@ -2,7 +2,7 @@
 layout: layouts/base.njk
 ---
 <div class="primary-content__body">
-  <div class="l-center l-center--wrapper-narrow">
+  <div class="l-center {% if railLayout %}l-center--wrapper-rail{% else %}l-center--wrapper-narrow{% endif %}">
     {{ content | safe }}
   </div>
 </div>

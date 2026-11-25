@@ -44,6 +44,11 @@
       and off via utility classes */
       --opentype-case: off;
       --opentype-sinf: off;
+
+      /* Rail layout: metadata rail | content column, all from one left edge */
+      --measure-wide: 54rem; /* widest an image (landscape, on article pages) may run */
+      --rail-size: 9.5rem;
+      --rail-gap: var(--space-l);
     }
   }
 
@@ -646,6 +651,75 @@
 
     .l-center--wrapper-narrow {
       --center-max-inline-size: 42em;
+    }
+
+    /* Same width as the header, so the rail shares the logo’s left edge.
+       It is wide enough for the rail plus the widest image (54rem). */
+    .l-center--wrapper-rail {
+      --center-max-inline-size: 60em;
+    }
+
+    /* Rail: metadata sits to the left of the content, both on one shared left edge.
+       Collapses to a single column (meta above content) on narrow screens. */
+    .l-rail {
+      --square-max: 28rem; /* lists */
+
+      display: grid;
+      grid-template-columns: minmax(0, 1fr);
+      row-gap: var(--space-3xs);
+
+      @media (min-width: 52rem) {
+        grid-template-columns: var(--rail-size) minmax(0, 1fr);
+        column-gap: var(--rail-gap);
+      }
+    }
+
+    .l-rail--article {
+      --square-max: 32rem;
+    }
+
+    .l-rail__meta {
+      margin-block-start: 0 !important;
+      color: var(--color-grey-text);
+      font-size: var(--step--1);
+      font-variant-numeric: lining-nums;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      gap: 0 var(--space-2xs);
+
+      @media (min-width: 52rem) {
+        display: block;
+        padding-block-start: 0.35em;
+      }
+
+      a {
+        color: inherit;
+        &:hover { color: var(--color-link-hover); }
+      }
+
+      time { display: block; }
+      @media (max-width: 51.99rem) { time { display: inline; } }
+    }
+
+    /* Images in the content column: landscape runs wide on articles, at the text
+       measure in lists; squares and portraits are capped (never cropped). */
+    .l-rail__main figure {
+      max-inline-size: var(--measure);
+
+      /* the image plugin wraps each img in a <picture> (and a link may wrap that), so match any descendant */
+      &:has(img[data-shape="square"], img[data-shape="portrait"]) {
+        max-inline-size: min(var(--square-max), 100%);
+      }
+    }
+
+    .l-rail--article .l-rail__main figure:has(img[data-shape="landscape"]) {
+      max-inline-size: var(--measure-wide);
+    }
+
+    .l-rail__main figure img {
+      width: 100%;
+      max-inline-size: none;
     }
 
     /* Cluster */

@@ -1,20 +1,18 @@
 <div class="h-feed">
   {% for post in postslist %}
-  <article class="prose h-entry">
-
+  <article class="prose h-entry l-rail">
+    <div class="l-rail__meta post__meta">
+      <span class="u-visually-hidden">A {{ post.data.postType }} posted on</span>
+      <time class="dt-published" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
+      <span class="u-visually-hidden">in</span>
+      <a rel="tag" href="/tags/{{ post.data.topLevelCategory | url }}" class="tag">{{ post.data.topLevelCategory }}</a>
+    </div>
+    <div class="l-rail__main l-stack">
+    {% if (post.data.tags[1] !== 'note' or post.data.noteWithTitle) -%}
     <header class="prose post__header">
-      {% if (post.data.tags[1] !== 'note' or post.data.noteWithTitle) -%}
-        <h3 class="feed-entry-title"><a rel="bookmark" class="p-name u-url" href="{{ post.url | url }}">{{ post.data.title }}</a></h3>
-      {% else -%}
-        {# <p><a href="{{ post.url | url }}">{{ post.date | readableTime }}</a> <span>·</span> {{ post.data.location }}</span></p> #}
-      {% endif -%}
-      <div class="post__meta">
-        <span class="u-visually-hidden">A {{ post.data.postType }} posted on</span>
-        <time class="dt-published" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
-        in
-        <a rel="tag" href="/tags/{{ post.data.topLevelCategory | url }}" class="tag">{{ post.data.topLevelCategory }}</a>
-      </div>
+      <h3 class="feed-entry-title"><a rel="bookmark" class="p-name u-url" href="{{ post.url | url }}">{{ post.data.title }}</a></h3>
     </header>
+    {% endif -%}
     <div class="prose e-content">
       {% set post_content = post.content %}
       {% if (post.page.excerpt) -%}
@@ -34,6 +32,7 @@
       </a>
     </footer>
     {% endif -%}
+    </div> <!-- /.l-rail__main -->
 
     {# <footer class="stack">
       <div class="cluster">

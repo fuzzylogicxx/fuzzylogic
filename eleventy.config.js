@@ -41,12 +41,14 @@ export default async function(eleventyConfig) {
 
   // Add my own choice of plugins for markdown-it (I want markkdownItAttrs) to 11ty’s provided markdown-it instance.
   // Ref: https://www.11ty.dev/docs/languages/markdown/#add-your-own-plugins
+  // Order matters: attrs must run before implicit-figures, otherwise a trailing `{.class}`
+  // on an image makes the paragraph look like “image + text” and no <figure> is created.
+  eleventyConfig.amendLibrary("md", (mdLib) => mdLib.use(markdownItAttrs));
   eleventyConfig.amendLibrary("md", (mdLib) => mdLib.use(
     markdownItImplicitFigures, {
       figcaption: "title"
     }
   ));
-  eleventyConfig.amendLibrary("md", (mdLib) => mdLib.use(markdownItAttrs));
 
 	// Copy the contents of the `public` folder to the output folder
 	// For example, `./public/css/` ends up in `_site/css/`
@@ -168,10 +170,11 @@ export default async function(eleventyConfig) {
 				decoding: "async",
 
         // My guidance to the browser is:
-        // On viewports that are up to 860px wide, my layout and CSS will employ (roughly) full-width images.
-        // On wider viewports, my layout and CSS will be setting images to a max-width of 840px.
-        // So armed with that knowledge, select the most appropriate image file.
-        sizes: "(max-width: 860px) 100vw, 840px",
+        // Images (via their figure) are at most --measure-wide (54rem, 864px at a 16px root) on article pages,
+        // and narrower in lists and for squares. On viewports up to about 880px (864px plus gutters) images are
+        // roughly full width. On wider viewports they are at most 864px wide, so ask for that as the upper bound.
+        // If --measure-wide changes, update this to match.
+        sizes: "(max-width: 879px) 100vw, 864px",
 			}
 		},
 
@@ -179,6 +182,23 @@ export default async function(eleventyConfig) {
 			animated: true,
 		},
 	});
+
+  // PROTOTYPE: tag every <img> with data-shape (landscape | square | portrait), derived from the
+  // width/height attributes the image plugin writes, so CSS can treat each shape differently.
+  // The image plugin adds width/height in its own HTML-transform step (priority -1; higher runs first),
+  // so this must be a PostHTML plugin with a lower priority to see the final <img> attributes.
+  eleventyConfig.htmlTransformer.addPosthtmlPlugin("html", () => (tree) => {
+    tree.match({ tag: "img" }, (node) => {
+      const w = Number(node.attrs?.width);
+      const h = Number(node.attrs?.height);
+      if (w && h && !node.attrs["data-shape"]) {
+        const ratio = w / h;
+        node.attrs["data-shape"] = ratio > 1.05 ? "landscape" : ratio < 0.95 ? "portrait" : "square";
+      }
+      return node;
+    });
+    return tree;
+  }, { priority: -2 });
 
   // Open Graph image: take the source image chosen in Decap’s “Open Graph image”
   // field (e.g. /img/uploads/foo.jpg, which lives at content/img/uploads/foo.jpg),

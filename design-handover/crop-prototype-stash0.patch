@@ -1,0 +1,128 @@
+diff --git a/content/posts/2026-11-09-20-30.md b/content/posts/2026-11-09-20-30.md
+index 15cbeca7..24cab27f 100644
+--- a/content/posts/2026-11-09-20-30.md
++++ b/content/posts/2026-11-09-20-30.md
+@@ -14,7 +14,7 @@ tags:
+ ---
+ What an amazing experience to witness this stunning audiovisual show by Robert Henke (aka Monolake) at The Barbican.
+ 
+-![A scene from FIRST LIGHT performed by Robert Henke at The Barbican. The screen and adjacent walls are enveloped by purple and red colours and a dense, organic mesh of white shapes](/img/uploads/2026-11-09-20-30.jpg "Photo by Susanne Kirchmayr, via Robert Henke’s Instagram")
++![A scene from FIRST LIGHT performed by Robert Henke at The Barbican. The screen and adjacent walls are enveloped by purple and red colours and a dense, organic mesh of white shapes](/img/uploads/2026-11-09-20-30.jpg "Photo by Susanne Kirchmayr, via Robert Henke’s Instagram"){.img-4x3}
+ 
+ <!-- excerpt -->
+ 
+diff --git a/css/index.css b/css/index.css
+index 62fd481e..f6a59b50 100644
+--- a/css/index.css
++++ b/css/index.css
+@@ -540,6 +540,41 @@
+     }
+   }
+ 
++  /* PROTOTYPE (throwaway): image sizing experiments. Apply in markdown with e.g. ![alt](src){.img-4x3}
++     - .img-cover: square sleeve, uncropped, capped at the text measure
++     - .img-4x3 / .img-16x9: crop to ratio. --focus nudges the crop vertically (default centre) */
++  @layer utilities {
++    /* Shape rules (data-shape is added at build time; see eleventy.config.js "imgShape").
++       - square: treated as a cover, uncropped, capped at the text measure
++       - landscape: cropped (never squashed) if taller than --landscape-max-ratio, i.e. 3:2 by default
++       Needs figure to be a size container so the cap is relative to the image’s own width. */
++    figure {
++      container-type: inline-size;
++      max-inline-size: var(--measure); /* one shared width: figures (and captions) match the text column */
++    }
++    img[data-shape="square"],
++    img.img-cover {
++      /* keep the 100% cap too: this overrides the base img max-width, which is what stops images overflowing narrow screens */
++      max-inline-size: min(var(--measure), 100%);
++    }
++    img[data-shape="landscape"] {
++      --landscape-max-ratio: 1.5;
++      width: 100%;
++      max-block-size: calc(100cqw / var(--landscape-max-ratio));
++      object-fit: cover;
++    }
++    img.img-4x3,
++    img.img-16x9 {
++      width: 100%;
++      height: auto;
++      max-inline-size: none;
++      object-fit: cover;
++      object-position: 50% var(--focus, 50%);
++    }
++    img.img-4x3 { aspect-ratio: 4 / 3; }
++    img.img-16x9 { aspect-ratio: 16 / 9; }
++  }
++
+ 
+   /* ==========================================================================
+     # LAYOUTS
+@@ -645,7 +680,7 @@
+     }
+ 
+     .l-center--wrapper-narrow {
+-      --center-max-inline-size: 42em;
++      --center-max-inline-size: var(--measure);
+     }
+ 
+     /* Cluster */
+diff --git a/eleventy.config.js b/eleventy.config.js
+index a99eb900..ac8bed28 100755
+--- a/eleventy.config.js
++++ b/eleventy.config.js
+@@ -41,12 +41,14 @@ export default async function(eleventyConfig) {
+ 
+   // Add my own choice of plugins for markdown-it (I want markkdownItAttrs) to 11ty’s provided markdown-it instance.
+   // Ref: https://www.11ty.dev/docs/languages/markdown/#add-your-own-plugins
++  // Order matters: attrs must run before implicit-figures, otherwise a trailing `{.class}`
++  // on an image makes the paragraph look like “image + text” and no <figure> is created.
++  eleventyConfig.amendLibrary("md", (mdLib) => mdLib.use(markdownItAttrs));
+   eleventyConfig.amendLibrary("md", (mdLib) => mdLib.use(
+     markdownItImplicitFigures, {
+       figcaption: "title"
+     }
+   ));
+-  eleventyConfig.amendLibrary("md", (mdLib) => mdLib.use(markdownItAttrs));
+ 
+ 	// Copy the contents of the `public` folder to the output folder
+ 	// For example, `./public/css/` ends up in `_site/css/`
+@@ -168,10 +170,12 @@ export default async function(eleventyConfig) {
+ 				decoding: "async",
+ 
+         // My guidance to the browser is:
+-        // On viewports that are up to 860px wide, my layout and CSS will employ (roughly) full-width images.
+-        // On wider viewports, my layout and CSS will be setting images to a max-width of 840px.
++        // Images (via their figure) are capped at the text measure, 40.5rem (648px at a 16px root; see tokens.measure).
++        // On viewports up to about 684px wide (648px plus roughly 18px side gutters), my layout and CSS will employ (roughly) full-width images.
++        // On wider viewports, images are at most 648px wide.
+         // So armed with that knowledge, select the most appropriate image file.
+-        sizes: "(max-width: 860px) 100vw, 840px",
++        // If --measure changes, or images are allowed to be wider than the text, update this to match.
++        sizes: "(max-width: 684px) 100vw, 648px",
+ 			}
+ 		},
+ 
+@@ -180,6 +184,23 @@ export default async function(eleventyConfig) {
+ 		},
+ 	});
+ 
++  // PROTOTYPE: tag every <img> with data-shape (landscape | square | portrait), derived from the
++  // width/height attributes the image plugin writes, so CSS can treat each shape differently.
++  // The image plugin adds width/height in its own HTML-transform step (priority -1; higher runs first),
++  // so this must be a PostHTML plugin with a lower priority to see the final <img> attributes.
++  eleventyConfig.htmlTransformer.addPosthtmlPlugin("html", () => (tree) => {
++    tree.match({ tag: "img" }, (node) => {
++      const w = Number(node.attrs?.width);
++      const h = Number(node.attrs?.height);
++      if (w && h && !node.attrs["data-shape"]) {
++        const ratio = w / h;
++        node.attrs["data-shape"] = ratio > 1.05 ? "landscape" : ratio < 0.95 ? "portrait" : "square";
++      }
++      return node;
++    });
++    return tree;
++  }, { priority: -2 });
++
+   // Open Graph image: take the source image chosen in Decap’s “Open Graph image”
+   // field (e.g. /img/uploads/foo.jpg, which lives at content/img/uploads/foo.jpg),
+   // crop it to the standard 1200x630 and return the generated image’s URL
