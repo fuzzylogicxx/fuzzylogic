@@ -815,6 +815,31 @@
       border-top: var(--border-thin) solid var(--color-grey-dark);
     }
 
+    /* Sensible image max-widths for different image shapes and contexts. 
+    Cropping to 3:2 aspect ratio, and the addition of img-* “shape classes” is done 
+    automatically at build time by _lib/image-shapes.mjs. 
+    Figures are capped along with their images, so captions line up.
+    Landscape images (including all cropped ones) stop at the text width; squares and
+    portraits are narrower */
+    .h-feed {
+      --img-square-width: 28rem;
+    }
+
+    .img-landscape,
+    figure:has(.img-landscape) {
+      max-width: min(var(--measure), 100%);
+    }
+
+    .img-square,
+    figure:has(.img-square) {
+      max-width: min(var(--img-square-width, 31rem), 100%);
+    }
+
+    .img-portrait,
+    figure:has(.img-portrait) {
+      max-width: min(22rem, 100%);
+    }
+
     /* Individual article header
     (heading + meta info) */
     /* .post__header {

@@ -8,7 +8,7 @@ tags:
   - webmentions
   - labs
 ---
-![Screenshot of successful webmentions on webmention.rocks](/img/uploads/screenshot-2018-09-12-19-41-46.png "Proof that it worked")
+![Screenshot of successful webmentions on webmention.rocks](/img/uploads/screenshot-2018-09-12-19-41-46.png "Proof that it worked"){.img-uncropped}
 
 Linking to a variety of test posts on [webmention.rocks](https://webmention.rocks) to see if my comment shows up on each of them.
 

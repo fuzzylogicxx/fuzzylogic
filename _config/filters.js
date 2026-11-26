@@ -2,6 +2,7 @@ import { DateTime } from "luxon";
 import markdownIt from "markdown-it";
 import markdownItAttrs from 'markdown-it-attrs';
 import markdownItImplicitFigures from 'markdown-it-implicit-figures';
+import { imageShapes } from '../_lib/image-shapes.mjs';
 
 export default function(eleventyConfig) {
 	// LH DIY’d.
@@ -25,6 +26,7 @@ export default function(eleventyConfig) {
     return markdownIt()
       .use(markdownItAttrs)
       .use(markdownItImplicitFigures, { figcaption: "title"})
+      .use(imageShapes)
       .render(content);
   });
 
