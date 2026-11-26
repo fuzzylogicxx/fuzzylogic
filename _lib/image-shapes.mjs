@@ -1,12 +1,21 @@
-// Describes the shape of each local Markdown image, and crops images to a standard ratio.
-//   img-landscape, img-square or img-portrait: the shape of the image as displayed,
-//     added to any local image under content/img
-//   img-cropped: added to landscape images. Add it by hand to crop a square, e.g. {.img-cropped}
-//   img-uncropped: add by hand to stop a landscape image being cropped, e.g. {.img-uncropped}
-// Images with img-cropped have their src swapped for a cropped copy, so the width and height
-// that end up in the HTML match what is shown.
+// Tools to iterate the local original images, identify each image’s shape, and crop relevant images to our target aspect ratio.
+// It’s not a replacement for our 11ty image HTML Transform. Rather, it preps images so that the 11ty image transform gets the ideal source to work on.
+//
+// Every image file in content/img gets its shape identified. A cropped copy is made of
+// each landscape and square image, except GIFs. The cropped copy is only _used_ if the Markdown
+// image ends up with the class `img-cropped`:
+// - landscape images get that class automatically, unless you opt an image out by adding `{.img-uncropped}`
+// - square images only get it if you manually add `{.img-cropped}` to the markdown image, thus calling it out as an exception
+// - portraits and GIFs are never cropped
+//
+// Each image also gets one of the shape classes `img-landscape`, `img-square` or `img-portrait`, describing its shape as displayed.
+// An original image that’s square but has been opted into cropping will therefore get class img-landscape.
+//
+// Images with img-cropped have their `src` value set at the new, cropped copy rather than the original image, so the width and height
+// that end up in the HTML match what is shown. 
+//
 // Hand-written <img> tags and remote images are left alone.
-
+//
 import {readdir} from 'node:fs/promises';
 import path from 'node:path';
 import Image from '@11ty/eleventy-img';
@@ -20,7 +29,8 @@ const SQUARE_TOLERANCE = 0.05;
 // Generated copies, relative to the content directory. Ignored by git.
 export const CROPPED_DIR = 'img/cropped';
 
-// Image URL (as written in Markdown) → { shape, croppedUrl }
+// siteImages is a lookup.
+// Give it an image URL (as written in Markdown), to get back these details: { shape, croppedUrl }
 const siteImages = new Map();
 
 export function shapeFor(width, height) {
@@ -58,7 +68,7 @@ export async function cropImage(file, {width, height}, outputDir, ratio = CROP_R
 
 // Reading and cropping are asynchronous but Markdown rendering is not,
 // so call this before the build starts.
-export async function loadImages(contentDir = 'content') {
+export async function prepareImages(contentDir = 'content') {
   const imageDir = path.join(contentDir, 'img');
   const croppedDir = path.join(contentDir, CROPPED_DIR);
   const entries = await readdir(imageDir, {recursive: true, withFileTypes: true});

@@ -5,9 +5,9 @@ import pluginNavigation from "@11ty/eleventy-navigation";
 import Image, { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 import path from "node:path";
 
-// Things deserving their own separate files
+// Filters and functions that deserve their own dedicated space
 import pluginFilters from "./_config/filters.js";
-import { imageShapes, loadImages, CROPPED_DIR } from "./_lib/image-shapes.mjs";
+import { imageShapes, prepareImages, CROPPED_DIR } from "./_lib/image-shapes.mjs";
 
 // LH custom imports:
 
@@ -22,7 +22,7 @@ import markdownItAttrs from 'markdown-it-attrs';
 // wraps around images into <figure>s instead.
 import markdownItImplicitFigures from 'markdown-it-implicit-figures';
 
-// use cssSnano (which is a configuration for postcss) to transform/minify the CSS we’ll bundle with 11ty Bundle
+// use cssnano (which is a configuration for postcss) to transform/minify the CSS we’ll bundle with 11ty Bundle
 import postCSS from "postcss";
 import cssNano from "cssnano";
 
@@ -55,7 +55,7 @@ export default async function(eleventyConfig) {
 
   // Add classes describing each image’s shape, and swap in cropped copies where needed.
   // The `md` filter in _config/filters.js does the same.
-  eleventyConfig.on("eleventy.before", () => loadImages());
+  eleventyConfig.on("eleventy.before", () => prepareImages());
   eleventyConfig.amendLibrary("md", (mdLib) => mdLib.use(imageShapes));
 
 	// Copy the contents of the `public` folder to the output folder
@@ -176,7 +176,7 @@ export default async function(eleventyConfig) {
 		htmlOptions: {
 			imgAttributes: {
 				// Note that these are defaults, and are overridable on a per-image basis
-        // So, <img loading decoding> assigned on the HTML tag will override these values.
+        		// So, <img loading decoding> assigned on the HTML tag will override these values.
 				loading: "lazy",
 				decoding: "async",
 

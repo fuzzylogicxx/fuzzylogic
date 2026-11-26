@@ -1,5 +1,10 @@
 .DS_Store
-_site/
-content/img/cropped/
 node_modules/
 .cache
+
+# 11ty-generated static site goes here
+_site/
+
+# We make copies of images in content/img in order to crop those copies to our target aspect ratio.
+# We don’t commit the folder containing the copies because really the only images we want to persist are the original source images.
+content/img/cropped/

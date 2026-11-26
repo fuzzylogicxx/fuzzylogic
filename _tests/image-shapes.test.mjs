@@ -11,7 +11,7 @@ import {
   cropImage,
   cropSize,
   imageShapes,
-  loadImages,
+  prepareImages,
   shapeFor,
 } from '../_lib/image-shapes.mjs';
 import {siteDir} from './helpers/site-paths.mjs';
@@ -101,7 +101,7 @@ test('the md filter used for excerpts adds shape classes', async () => {
       filters[name] = fn;
     },
   });
-  await loadImages();
+  await prepareImages();
 
   const html = filters.md('![a](/img/uploads/happyweddingtim.jpg "Caption")');
   assert.match(html, /<figure><img [^>]*class="img-portrait"/);
