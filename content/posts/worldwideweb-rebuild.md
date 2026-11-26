@@ -10,7 +10,7 @@ tags:
   - cern
 noteWithTitle: true
 ---
-![fuzzylogic.me rendered on the WorldWideWeb browser](/img/uploads/worldwideweb-fuzzylogic-screenshot.png "fuzzylogic.me rendered on WorldWideWeb – not pretty, but readable!")
+![fuzzylogic.me rendered on the WorldWideWeb browser](/img/uploads/worldwideweb-fuzzylogic-screenshot.png "fuzzylogic.me rendered on WorldWideWeb – not pretty, but readable!"){.img-uncropped}
 
 This February, a [team of intrepid developers and designers](https://worldwideweb.cern.ch/colophon/) flew into CERN on a mission to recreate _WorldWideWeb_ – the original web browser from 1990 – within a contemporary browser. This would allow all of us to “experience the rather humble origins of this transformative technology”.
 

@@ -815,6 +815,21 @@
       border-top: var(--border-thin) solid var(--color-grey-dark);
     }
 
+    /* Image widths. The img-* classes are added by _lib/image-shapes.mjs, which also does
+    any cropping. Landscape images, including all cropped ones, are left at full width; squares and portraits
+    are narrower, along with their captions */
+    .e-content :is(.img-square, figure:has(.img-square)) {
+      max-width: min(31rem, 100%);
+    }
+
+    .h-feed .e-content :is(.img-square, figure:has(.img-square)) {
+      max-width: min(28rem, 100%);
+    }
+
+    .e-content :is(.img-portrait, figure:has(.img-portrait)) {
+      max-width: min(22rem, 100%);
+    }
+
     /* Individual article header
     (heading + meta info) */
     /* .post__header {

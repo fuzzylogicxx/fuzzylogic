@@ -10,7 +10,7 @@ tags:
   - my-mixes
   - music
 ---
-![A group of people gathered in a darkened room illuminated by deep reds and ambers](/img/uploads/somethingsomewhere.jpg "Photo by Clair Irwin")
+![A group of people gathered in a darkened room illuminated by deep reds and ambers](/img/uploads/somethingsomewhere.jpg "Photo by Clair Irwin"){.img-cropped}
 
 Over the last few years I’ve played some radio shows but hadn’t done a mix of my own. I managed to rectify that the other night.
 

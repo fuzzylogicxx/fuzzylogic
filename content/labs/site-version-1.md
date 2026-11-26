@@ -11,7 +11,7 @@ The first version of this site, built in 2018 on Perch CMS. It was a single-colu
 
 ## Header and intro
 
-![Version #1 on desktop: the “Hello.” heading, intro paragraph and the first post, with the vertical Fuzzy Logic logo at the bottom right](/img/uploads/site-version-1-desktop-header.jpg)
+![Version #1 on desktop: the “Hello.” heading, intro paragraph and the first post, with the vertical Fuzzy Logic logo at the bottom right](/img/uploads/site-version-1-desktop-header.jpg){.img-uncropped}
 
 ## Posts
 
@@ -19,7 +19,7 @@ The first version of this site, built in 2018 on Perch CMS. It was a single-colu
 
 ## Footer
 
-![Version #1 on desktop: pagination, the “Elsewhere online” links and the copyright line](/img/uploads/site-version-1-desktop-footer.jpg)
+![Version #1 on desktop: pagination, the “Elsewhere online” links and the copyright line](/img/uploads/site-version-1-desktop-footer.jpg){.img-uncropped}
 
 ## On a narrow screen
 
