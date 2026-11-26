@@ -1,6 +1,6 @@
 ---
-draft: false
 title: Fuzzy Logic show, 7/3/2026 on Radio Buena Vida
+draft: false
 description: Back in the cafe window for the first time since 2023
 date: 2026-03-08T18:41
 tags:
@@ -10,7 +10,7 @@ tags:
   - my-mixes
   - music
 ---
-![A section of the front cover of the LP “past present (tone poems across time)” by Mark de Clive-Lowe. It depicts a scene in Japan where a businessman in a suit stands in front of the entrance to a traditional building or temple.](/img/uploads/mark-past-present_v3.jpg "The excellent “past present” LP by Mark de Clive-Lowe")
+![The front cover of the LP “past present (tone poems across time)” by Mark de Clive-Lowe. It depicts a scene in Japan where a businessman in a suit stands in front of the entrance to a traditional building or temple.](/img/uploads/past_present_square_1800.jpg "The excellent “past present” LP by Mark de Clive-Lowe")
 
 I was back playing in the RBV cafe window for the first time since 2023, and it was a blast!
 
